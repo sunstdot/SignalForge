@@ -1,0 +1,31 @@
+{
+  "name": "@tokenburner/collector",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "db:init": "tsx src/database/init.ts"
+  },
+  "dependencies": {
+    "@tokenburner/shared": "workspace:*",
+    "@tokenburner/ai-client": "workspace:*",
+    "better-sqlite3": "^9.4.0",
+    "bullmq": "^5.4.0",
+    "ioredis": "^5.3.0",
+    "node-cron": "^3.0.3",
+    "fast-xml-parser": "^4.3.0",
+    "yaml": "^2.4.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.9",
+    "@types/node": "^20.0.0",
+    "@types/node-cron": "^3.0.11",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.4.0"
+  }
+}
