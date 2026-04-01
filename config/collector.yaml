@@ -1,0 +1,30 @@
+database:
+  path: ./data/tokenburner.db
+
+openrouter:
+  apiKey: ${OPENROUTER_API_KEY}
+
+sources:
+  arxiv:
+    enabled: true
+    categories:
+      - cs.CL
+      - cs.AI
+      - cs.LG
+    maxResults: 20
+
+  github:
+    enabled: true
+    languages:
+      - typescript
+      - python
+      - rust
+    timeRange: weekly
+
+  rss:
+    enabled: false
+    subscriptions: []
+
+pipeline:
+  relevanceThreshold: 6
+  maxDailyItems: 10
