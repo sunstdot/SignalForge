@@ -1,0 +1,24 @@
+{
+  "name": "token-burner",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "collector": "pnpm --filter @tokenburner/collector",
+    "web": "pnpm --filter @tokenburner/web",
+    "collect": "pnpm collector run start",
+    "db:init": "pnpm collector run db:init"
+  },
+  "devDependencies": {
+    "turbo": "^1.13.0",
+    "typescript": "^5.4.0"
+  },
+  "packageManager": "pnpm@8.15.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
