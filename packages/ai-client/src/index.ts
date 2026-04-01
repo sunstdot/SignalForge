@@ -1,2 +1,7 @@
 export * from './client';
-export * from './models';
+export { 
+  MODELS, 
+  WANQING_MODEL_ID_MAP, 
+  getWanQingAppId,
+  type WanQingModelName 
+} from './models';
