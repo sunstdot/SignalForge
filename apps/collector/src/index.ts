@@ -20,11 +20,18 @@ async function main() {
   const db = new DatabaseClient(config.database.path);
   console.log('✓ Database connected');
 
+  // OpenRouter AI client (commented out)
+  // const aiClient = new AIClient({
+  //   apiKey: config.openrouter.apiKey,
+  //   baseURL: config.openrouter.baseUrl
+  // });
+
+  // WanQing AI client
   const aiClient = new AIClient({
-    apiKey: config.openrouter.apiKey,
-    baseURL: config.openrouter.baseUrl
+    apiKey: config.wanqing?.apiKey,
+    baseURL: config.wanqing?.baseUrl
   });
-  console.log('✓ AI client initialized');
+  console.log('✓ WanQing AI client initialized');
 
   console.log('\n📥 Fetching data from sources...');
   const allItems = await fetchFromSources(config);

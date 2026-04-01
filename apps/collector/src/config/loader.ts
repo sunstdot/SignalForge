@@ -4,14 +4,25 @@ import YAML from 'yaml';
 import { z } from 'zod';
 import type { CollectorConfig } from '@tokenburner/shared';
 
+// OpenRouter Configuration (commented out)
+// const configSchema = z.object({
+//   database: z.object({
+//     path: z.string().default('./data/tokenburner.db')
+//   }),
+//   openrouter: z.object({
+//     apiKey: z.string(),
+//     baseUrl: z.string().optional()
+//   }),
+
+// WanQing Configuration
 const configSchema = z.object({
   database: z.object({
     path: z.string().default('./data/tokenburner.db')
   }),
-  openrouter: z.object({
-    apiKey: z.string(),
+  wanqing: z.object({
+    apiKey: z.string().optional(),
     baseUrl: z.string().optional()
-  }),
+  }).optional(),
   sources: z.object({
     arxiv: z.object({
       enabled: z.boolean().default(true),
@@ -45,10 +56,19 @@ export function loadConfig(): CollectorConfig {
     console.warn(`Config file not found at ${configPath}, using defaults`);
   }
 
-  if (process.env.OPENROUTER_API_KEY) {
-    config.openrouter = {
-      ...config.openrouter,
-      apiKey: process.env.OPENROUTER_API_KEY
+  // OpenRouter environment variable (commented out)
+  // if (process.env.OPENROUTER_API_KEY) {
+  //   config.openrouter = {
+  //     ...config.openrouter,
+  //     apiKey: process.env.OPENROUTER_API_KEY
+  //   };
+  // }
+
+  // WanQing environment variable
+  if (process.env.WANQING_API_KEY) {
+    config.wanqing = {
+      ...config.wanqing,
+      apiKey: process.env.WANQING_API_KEY
     };
   }
 

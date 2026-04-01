@@ -2,10 +2,19 @@ export interface CollectorConfig {
   database: {
     path: string;
   };
-  openrouter: {
-    apiKey: string;
+  
+  // OpenRouter Configuration (commented out)
+  // openrouter: {
+  //   apiKey: string;
+  //   baseUrl?: string;
+  // };
+  
+  // WanQing Configuration
+  wanqing?: {
+    apiKey?: string;
     baseUrl?: string;
   };
+  
   sources: {
     arxiv: {
       enabled: boolean;
@@ -27,7 +36,7 @@ export interface CollectorConfig {
     relevanceThreshold: number;
     maxDailyItems: number;
   };
-  scheduling: {
+  scheduling?: {
     fetchCron: string;
     briefingCron: string;
   };

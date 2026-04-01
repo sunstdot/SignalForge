@@ -1,8 +1,14 @@
 database:
   path: ./data/tokenburner.db
 
-openrouter:
-  apiKey: ${OPENROUTER_API_KEY}
+# OpenRouter Configuration (commented out)
+# openrouter:
+#   apiKey: ${OPENROUTER_API_KEY}
+
+# WanQing Configuration
+wanqing:
+  apiKey: ${WANQING_API_KEY}
+  # baseUrl: https://wanqing-api.corp.kuaishou.com/api/agent/v1/apps
 
 sources:
   arxiv:
@@ -19,12 +25,564 @@ sources:
       - typescript
       - python
       - rust
+      - go
     timeRange: weekly
 
   rss:
-    enabled: false
-    subscriptions: []
+    enabled: true
+    subscriptions:
+      - name: "Simon Willison"
+        type: "direct"
+        url: "https://simonwillison.net/atom/everything/"
+        category: ["tech", "ai", "python"]
+        fetchInterval: 3600
+
+      - name: "Jeff Geerling"
+        type: "direct"
+        url: "https://www.jeffgeerling.com/blog.xml"
+        category: ["tech", "hardware", "raspberry-pi"]
+        fetchInterval: 3600
+
+      - name: "Sean Goedecke"
+        type: "direct"
+        url: "https://www.seangoedecke.com/rss.xml"
+        category: ["tech", "software"]
+        fetchInterval: 3600
+
+      - name: "Krebs on Security"
+        type: "direct"
+        url: "https://krebsonsecurity.com/feed/"
+        category: ["security", "tech"]
+        fetchInterval: 3600
+
+      - name: "Daring Fireball"
+        type: "direct"
+        url: "https://daringfireball.net/feeds/main"
+        category: ["tech", "apple"]
+        fetchInterval: 3600
+
+      - name: "Eric Migicovsky"
+        type: "direct"
+        url: "https://ericmigi.com/rss.xml"
+        category: ["tech", "hardware"]
+        fetchInterval: 3600
+
+      - name: "Antirez"
+        type: "direct"
+        url: "http://antirez.com/rss"
+        category: ["tech", "redis", "programming"]
+        fetchInterval: 3600
+
+      - name: "Ibrahim Diallo"
+        type: "direct"
+        url: "https://idiallo.com/feed.rss"
+        category: ["tech", "programming"]
+        fetchInterval: 3600
+
+      - name: "Maurycy"
+        type: "direct"
+        url: "https://maurycyz.com/index.xml"
+        category: ["tech", "ai"]
+        fetchInterval: 3600
+
+      - name: "Pluralistic"
+        type: "direct"
+        url: "https://pluralistic.net/feed/"
+        category: ["tech", "policy"]
+        fetchInterval: 3600
+
+      - name: "Terence Eden"
+        type: "direct"
+        url: "https://shkspr.mobi/blog/feed/"
+        category: ["tech", "web"]
+        fetchInterval: 3600
+
+      - name: "lcamtuf"
+        type: "direct"
+        url: "https://lcamtuf.substack.com/feed"
+        category: ["tech", "security"]
+        fetchInterval: 3600
+
+      - name: "Mitchell Hashimoto"
+        type: "direct"
+        url: "https://mitchellh.com/feed.xml"
+        category: ["tech", "go", "infrastructure"]
+        fetchInterval: 3600
+
+      - name: "Dynomight"
+        type: "direct"
+        url: "https://dynomight.net/feed.xml"
+        category: ["science", "analysis"]
+        fetchInterval: 3600
+
+      - name: "Chris Siebenmann"
+        type: "direct"
+        url: "https://utcc.utoronto.ca/~cks/space/blog/?atom"
+        category: ["tech", "unix"]
+        fetchInterval: 3600
+
+      - name: "Xe Iaso"
+        type: "direct"
+        url: "https://xeiaso.net/blog.rss"
+        category: ["tech", "go", "web"]
+        fetchInterval: 3600
+
+      - name: "The Old New Thing"
+        type: "direct"
+        url: "https://devblogs.microsoft.com/oldnewthing/feed"
+        category: ["tech", "windows", "programming"]
+        fetchInterval: 3600
+
+      - name: "Ken Shirriff"
+        type: "direct"
+        url: "https://www.righto.com/feeds/posts/default"
+        category: ["tech", "hardware", "reverse-engineering"]
+        fetchInterval: 3600
+
+      - name: "Armin Ronacher"
+        type: "direct"
+        url: "https://lucumr.pocoo.org/feed.atom"
+        category: ["tech", "python", "rust"]
+        fetchInterval: 3600
+
+      - name: "Skyfall"
+        type: "direct"
+        url: "https://skyfall.dev/rss.xml"
+        category: ["tech", "programming"]
+        fetchInterval: 3600
+
+      - name: "Gary Marcus"
+        type: "direct"
+        url: "https://garymarcus.substack.com/feed"
+        category: ["ai", "ml"]
+        fetchInterval: 3600
+
+      - name: "Rachel by the Bay"
+        type: "direct"
+        url: "https://rachelbythebay.com/w/atom.xml"
+        category: ["tech", "programming"]
+        fetchInterval: 3600
+
+      - name: "Overreacted"
+        type: "direct"
+        url: "https://overreacted.io/rss.xml"
+        category: ["tech", "react", "frontend"]
+        fetchInterval: 3600
+
+      - name: "Tim Schinkel"
+        type: "direct"
+        url: "https://timsh.org/rss/"
+        category: ["tech"]
+        fetchInterval: 3600
+
+      - name: "John D. Cook"
+        type: "direct"
+        url: "https://www.johndcook.com/blog/feed/"
+        category: ["math", "programming"]
+        fetchInterval: 3600
+
+      - name: "Giles Thomas"
+        type: "direct"
+        url: "https://gilesthomas.com/feed/rss.xml"
+        category: ["tech", "python"]
+        fetchInterval: 3600
+
+      - name: "matklad"
+        type: "direct"
+        url: "https://matklad.github.io/feed.xml"
+        category: ["tech", "rust", "programming"]
+        fetchInterval: 3600
+
+      - name: "Derek Thompson"
+        type: "direct"
+        url: "https://www.theatlantic.com/feed/author/derek-thompson/"
+        category: ["culture", "politics"]
+        fetchInterval: 3600
+
+      - name: "Evan Hahn"
+        type: "direct"
+        url: "https://evanhahn.com/feed.xml"
+        category: ["tech", "javascript"]
+        fetchInterval: 3600
+
+      - name: "Terrible Software"
+        type: "direct"
+        url: "https://terriblesoftware.org/feed/"
+        category: ["tech", "career"]
+        fetchInterval: 3600
+
+      - name: "Rakhim"
+        type: "direct"
+        url: "https://rakhim.exotext.com/rss.xml"
+        category: ["tech", "design"]
+        fetchInterval: 3600
+
+      - name: "Joan Westenberg"
+        type: "direct"
+        url: "https://joanwestenberg.com/rss"
+        category: ["tech", "culture"]
+        fetchInterval: 3600
+
+      - name: "Matt Welsh"
+        type: "direct"
+        url: "https://xania.org/feed"
+        category: ["tech", "systems"]
+        fetchInterval: 3600
+
+      - name: "Micah Lee"
+        type: "direct"
+        url: "https://micahflee.com/feed/"
+        category: ["tech", "security", "privacy"]
+        fetchInterval: 3600
+
+      - name: "Dylan Nesbitt"
+        type: "direct"
+        url: "https://nesbitt.io/feed.xml"
+        category: ["tech"]
+        fetchInterval: 3600
+
+      - name: "Construction Physics"
+        type: "direct"
+        url: "https://www.construction-physics.com/feed"
+        category: ["science", "engineering"]
+        fetchInterval: 3600
+
+      - name: "Tedium"
+        type: "direct"
+        url: "https://feed.tedium.co/"
+        category: ["tech", "history"]
+        fetchInterval: 3600
+
+      - name: "Susam"
+        type: "direct"
+        url: "https://susam.net/feed.xml"
+        category: ["tech", "programming"]
+        fetchInterval: 3600
+
+      - name: "Entropic Thoughts"
+        type: "direct"
+        url: "https://entropicthoughts.com/feed.xml"
+        category: ["tech", "ai"]
+        fetchInterval: 3600
+
+      - name: "Hillel Wayne"
+        type: "direct"
+        url: "https://buttondown.com/hillelwayne/rss"
+        category: ["tech", "formal-methods"]
+        fetchInterval: 3600
+
+      - name: "Dwarkesh Patel"
+        type: "direct"
+        url: "https://www.dwarkeshpatel.com/feed"
+        category: ["tech", "science", "interviews"]
+        fetchInterval: 3600
+
+      - name: "Fernando Borretti"
+        type: "direct"
+        url: "https://borretti.me/feed.xml"
+        category: ["tech", "programming"]
+        fetchInterval: 3600
+
+      - name: "Where's Your Ed At"
+        type: "direct"
+        url: "https://www.wheresyoured.at/rss/"
+        category: ["tech", "business"]
+        fetchInterval: 3600
+
+      - name: "Jay D"
+        type: "direct"
+        url: "https://jayd.ml/feed.xml"
+        category: ["tech"]
+        fetchInterval: 3600
+
+      - name: "Max Woolf"
+        type: "direct"
+        url: "https://minimaxir.com/index.xml"
+        category: ["tech", "ai", "data-science"]
+        fetchInterval: 3600
+
+      - name: "George Hotz"
+        type: "direct"
+        url: "https://geohot.github.io/blog/feed.xml"
+        category: ["tech", "ai", "hacking"]
+        fetchInterval: 3600
+
+      - name: "Paul Graham"
+        type: "direct"
+        url: "http://www.aaronsw.com/2002/feeds/pgessays.rss"
+        category: ["startup", "philosophy"]
+        fetchInterval: 3600
+
+      - name: "The Digital Antiquarian"
+        type: "direct"
+        url: "https://www.filfre.net/feed/"
+        category: ["gaming", "history"]
+        fetchInterval: 3600
+
+      - name: "Jim Nielsen"
+        type: "direct"
+        url: "https://blog.jim-nielsen.com/feed.xml"
+        category: ["tech", "web", "frontend"]
+        fetchInterval: 3600
+
+      - name: "Dave Farquhar"
+        type: "direct"
+        url: "https://dfarq.homeip.net/feed/"
+        category: ["tech"]
+        fetchInterval: 3600
+
+      - name: "jyn"
+        type: "direct"
+        url: "https://jyn.dev/atom.xml"
+        category: ["tech"]
+        fetchInterval: 3600
+
+      - name: "Geoffrey Litt"
+        type: "direct"
+        url: "https://www.geoffreylitt.com/feed.xml"
+        category: ["tech", "research"]
+        fetchInterval: 3600
+
+      - name: "Doug Brown"
+        type: "direct"
+        url: "https://www.downtowndougbrown.com/feed/"
+        category: ["tech"]
+        fetchInterval: 3600
+
+      - name: "brutecat"
+        type: "direct"
+        url: "https://brutecat.com/rss.xml"
+        category: ["tech"]
+        fetchInterval: 3600
+
+      - name: "Eli Bendersky"
+        type: "direct"
+        url: "https://eli.thegreenplace.net/feeds/all.atom.xml"
+        category: ["tech", "programming"]
+        fetchInterval: 3600
+
+      - name: "Abort Retry Fail"
+        type: "direct"
+        url: "https://www.abortretry.fail/feed"
+        category: ["tech", "retro"]
+        fetchInterval: 3600
+
+      - name: "Fabien Sanglard"
+        type: "direct"
+        url: "https://fabiensanglard.net/rss.xml"
+        category: ["tech", "graphics", "games"]
+        fetchInterval: 3600
+
+      - name: "OldVCR"
+        type: "direct"
+        url: "https://oldvcr.blogspot.com/feeds/posts/default"
+        category: ["tech", "retro"]
+        fetchInterval: 3600
+
+      - name: "Bogdan The Geek"
+        type: "direct"
+        url: "https://bogdanthegeek.github.io/blog/index.xml"
+        category: ["tech"]
+        fetchInterval: 3600
+
+      - name: "Hugo Tunius"
+        type: "direct"
+        url: "https://hugotunius.se/feed.xml"
+        category: ["tech", "rust"]
+        fetchInterval: 3600
+
+      - name: "Gwern"
+        type: "direct"
+        url: "https://gwern.substack.com/feed"
+        category: ["science", "ai", "psychology"]
+        fetchInterval: 3600
+
+      - name: "Bert Hubert"
+        type: "direct"
+        url: "https://berthub.eu/articles/index.xml"
+        category: ["tech", "networking"]
+        fetchInterval: 3600
+
+      - name: "chadnauseam"
+        type: "direct"
+        url: "https://chadnauseam.com/rss.xml"
+        category: ["tech"]
+        fetchInterval: 3600
+
+      - name: "Simone"
+        type: "direct"
+        url: "https://simone.org/feed/"
+        category: ["tech", "ai"]
+        fetchInterval: 3600
+
+      - name: "Dragas"
+        type: "direct"
+        url: "https://it-notes.dragas.net/feed/"
+        category: ["tech", "linux"]
+        fetchInterval: 3600
+
+      - name: "Beej"
+        type: "direct"
+        url: "https://beej.us/blog/rss.xml"
+        category: ["tech", "programming", "c"]
+        fetchInterval: 3600
+
+      - name: "HeyParis"
+        type: "direct"
+        url: "https://hey.paris/index.xml"
+        category: ["tech"]
+        fetchInterval: 3600
+
+      - name: "Daniel Wirtz"
+        type: "direct"
+        url: "https://danielwirtz.com/rss.xml"
+        category: ["tech", "productivity"]
+        fetchInterval: 3600
+
+      - name: "Mat Duggan"
+        type: "direct"
+        url: "https://matduggan.com/rss/"
+        category: ["tech", "security"]
+        fetchInterval: 3600
+
+      - name: "Refactoring English"
+        type: "direct"
+        url: "https://refactoringenglish.com/index.xml"
+        category: ["tech", "writing"]
+        fetchInterval: 3600
+
+      - name: "Works on My Machine"
+        type: "direct"
+        url: "https://worksonmymachine.substack.com/feed"
+        category: ["tech", "career"]
+        fetchInterval: 3600
+
+      - name: "Philip Laine"
+        type: "direct"
+        url: "https://philiplaine.com/index.xml"
+        category: ["tech", "go"]
+        fetchInterval: 3600
+
+      - name: "Steve Blank"
+        type: "direct"
+        url: "https://steveblank.com/feed/"
+        category: ["startup", "business"]
+        fetchInterval: 3600
+
+      - name: "Max Bernstein"
+        type: "direct"
+        url: "https://bernsteinbear.com/feed.xml"
+        category: ["tech", "compilers"]
+        fetchInterval: 3600
+
+      - name: "Daniel Delaney"
+        type: "direct"
+        url: "https://danieldelaney.net/feed"
+        category: ["tech", "ai"]
+        fetchInterval: 3600
+
+      - name: "Troy Hunt"
+        type: "direct"
+        url: "https://www.troyhunt.com/rss/"
+        category: ["security", "tech"]
+        fetchInterval: 3600
+
+      - name: "Herman"
+        type: "direct"
+        url: "https://herman.bearblog.dev/feed/"
+        category: ["tech", "productivity"]
+        fetchInterval: 3600
+
+      - name: "Tom Renner"
+        type: "direct"
+        url: "https://tomrenner.com/index.xml"
+        category: ["tech"]
+        fetchInterval: 3600
+
+      - name: "Pixel Melt"
+        type: "direct"
+        url: "https://blog.pixelmelt.dev/rss/"
+        category: ["tech", "security"]
+        fetchInterval: 3600
+
+      - name: "Martin Alderson"
+        type: "direct"
+        url: "https://martinalderson.com/feed.xml"
+        category: ["tech"]
+        fetchInterval: 3600
+
+      - name: "Daniel Hooper"
+        type: "direct"
+        url: "https://danielchasehooper.com/feed.xml"
+        category: ["tech", "graphics"]
+        fetchInterval: 3600
+
+      - name: "Simon Tatham"
+        type: "direct"
+        url: "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/feed.xml"
+        category: ["tech", "puzzles"]
+        fetchInterval: 3600
+
+      - name: "Grant Slatton"
+        type: "direct"
+        url: "https://grantslatton.com/rss.xml"
+        category: ["tech", "ai"]
+        fetchInterval: 3600
+
+      - name: "Experimental History"
+        type: "direct"
+        url: "https://www.experimental-history.com/feed"
+        category: ["science", "psychology"]
+        fetchInterval: 3600
+
+      - name: "Anil Dash"
+        type: "direct"
+        url: "https://anildash.com/feed.xml"
+        category: ["tech", "culture"]
+        fetchInterval: 3600
+
+      - name: "AresLuna"
+        type: "direct"
+        url: "https://aresluna.org/main.rss"
+        category: ["tech", "design"]
+        fetchInterval: 3600
+
+      - name: "Michael Stapelberg"
+        type: "direct"
+        url: "https://michael.stapelberg.ch/feed.xml"
+        category: ["tech", "linux", "go"]
+        fetchInterval: 3600
+
+      - name: "Miguel Grinberg"
+        type: "direct"
+        url: "https://blog.miguelgrinberg.com/feed"
+        category: ["tech", "python", "flask"]
+        fetchInterval: 3600
+
+      - name: "Keygen"
+        type: "direct"
+        url: "https://keygen.sh/blog/feed.xml"
+        category: ["tech", "business"]
+        fetchInterval: 3600
+
+      - name: "mjg59"
+        type: "direct"
+        url: "https://mjg59.dreamwidth.org/data/rss"
+        category: ["tech", "linux", "security"]
+        fetchInterval: 3600
+
+      - name: "computer.rip"
+        type: "direct"
+        url: "https://computer.rip/rss.xml"
+        category: ["tech", "history"]
+        fetchInterval: 3600
+
+      - name: "Ted Unangst"
+        type: "direct"
+        url: "https://www.tedunangst.com/flak/rss"
+        category: ["tech", "openbsd"]
+        fetchInterval: 3600
 
 pipeline:
   relevanceThreshold: 6
-  maxDailyItems: 10
+  maxDailyItems: 15
