@@ -29,16 +29,51 @@ sources:
   github:
     enabled: true
     languages:
-      - typescript
-      - python
-      - rust
-      - go
+      - any    # 所有语言
     timeRange: weekly   # daily | weekly | monthly
 
   # RSS 订阅源
   rss:
     enabled: true
     subscriptions:
+      # === AI 新闻聚合 ===
+      - name: "AI News (Latent Space)"
+        type: "direct"
+        url: "https://www.latent.space/s/ainews/rss"
+        category: ["ai", "news", "daily"]
+        fetchInterval: 3600
+
+      - name: "Ben's Bites"
+        type: "direct"
+        url: "https://www.bensbites.com/rss"
+        category: ["ai", "tools", "weekly"]
+        fetchInterval: 86400  # 周更，每天检查一次
+
+      - name: "Smol AI News"
+        type: "direct"
+        url: "https://news.smol.ai/rss"
+        category: ["ai", "news", "daily"]
+        fetchInterval: 3600
+
+      # === 论文相关 ===
+      - name: "HuggingFace Daily Papers"
+        type: "direct"
+        url: "https://huggingface.co/papers/feed"
+        category: ["ai", "papers", "daily"]
+        fetchInterval: 3600
+
+      - name: "Papers with Code"
+        type: "direct"
+        url: "https://paperswithcode.com/rss"
+        category: ["ai", "papers", "code"]
+        fetchInterval: 3600
+
+      - name: "AMiner"
+        type: "direct"
+        url: "https://www.aminer.cn/rss"
+        category: ["ai", "papers", "science"]
+        fetchInterval: 3600
+
       # === 技术/AI 博客 ===
       - name: "Simon Willison"
         type: "direct"
