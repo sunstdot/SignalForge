@@ -74,10 +74,12 @@ async function main() {
   }
 
   console.log('\n📝 Generating daily briefing...');
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
+  // 获取最近 3 天的文章（而不是仅今天）
+  const since = new Date();
+  since.setDate(since.getDate() - 3);
+  since.setHours(0, 0, 0, 0);
   
-  const recentItems = db.getRecentItems(today, config.pipeline.relevanceThreshold);
+  const recentItems = db.getRecentItems(since, config.pipeline.relevanceThreshold);
   console.log(`Found ${recentItems.length} relevant items for briefing`);
 
   const { briefing, markdown } = await generateBriefing(aiClient, recentItems, {

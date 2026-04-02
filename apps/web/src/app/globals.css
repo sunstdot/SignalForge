@@ -1,3 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Fira+Code:wght@400;500;600&family=Source+Code+Pro:wght@400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --terminal-bg: #0d1117;
+  --terminal-bg-secondary: #161b22;
+  --terminal-bg-tertiary: #21262d;
+  --terminal-border: #30363d;
+  --terminal-text: #e6edf3;
+  --terminal-text-muted: #7d8590;
+  --terminal-cyan: #39d0d8;
+  --terminal-green: #7ee787;
+  --terminal-blue: #58a6ff;
+  --terminal-yellow: #d29922;
+  --terminal-red: #f85149;
+  --terminal-purple: #a371f7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Source Code Pro', ui-monospace, monospace;
+  background-color: var(--terminal-bg);
+  color: var(--terminal-text);
+  line-height: 1.7;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Selection styling */
+::selection {
+  background-color: rgba(57, 208, 216, 0.3);
+  color: var(--terminal-text);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--terminal-bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--terminal-border);
+  border-radius: 5px;
+  border: 2px solid var(--terminal-bg-secondary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #484f58;
+}
+
+/* Terminal prompt styles */
+.prompt {
+  color: var(--terminal-green);
+  user-select: none;
+}
+
+.prompt-cyan {
+  color: var(--terminal-cyan);
+}
+
+.prompt-blue {
+  color: var(--terminal-blue);
+}
+
+/* Grid background pattern */
+.bg-terminal-grid {
+  background-image: 
+    linear-gradient(to right, rgba(48, 54, 61, 0.3) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(48, 54, 61, 0.3) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Dots pattern */
+.bg-terminal-dots {
+  background-image: radial-gradient(circle, rgba(48, 54, 61, 0.5) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+/* Markdown content styling */
+.markdown-content {
+  line-height: 1.8;
+}
+
+.markdown-content h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--terminal-cyan);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--terminal-border);
+}
+
+.markdown-content h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--terminal-green);
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.markdown-content h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--terminal-blue);
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.markdown-content p {
+  margin-bottom: 1rem;
+  color: var(--terminal-text);
+}
+
+.markdown-content ul,
+.markdown-content ol {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.markdown-content ul {
+  list-style-type: none;
+}
+
+.markdown-content ul li {
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.markdown-content ul li::before {
+  content: '›';
+  position: absolute;
+  left: -1.25rem;
+  color: var(--terminal-cyan);
+  font-weight: 600;
+}
+
+.markdown-content ol {
+  list-style-type: decimal;
+}
+
+.markdown-content ol li {
+  margin-bottom: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.markdown-content ol li::marker {
+  color: var(--terminal-cyan);
+}
+
+.markdown-content a {
+  color: var(--terminal-blue);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.markdown-content a:hover {
+  border-bottom-color: var(--terminal-blue);
+}
+
+.markdown-content code {
+  background-color: var(--terminal-bg-tertiary);
+  color: var(--terminal-orange);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.85em;
+  font-family: inherit;
+}
+
+.markdown-content pre {
+  background-color: var(--terminal-bg-secondary);
+  border: 1px solid var(--terminal-border);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  overflow-x: auto;
+}
+
+.markdown-content pre code {
+  background-color: transparent;
+  color: var(--terminal-text);
+  padding: 0;
+  font-size: 0.8125rem;
+  line-height: 1.6;
+}
+
+.markdown-content blockquote {
+  border-left: 3px solid var(--terminal-cyan);
+  padding-left: 1rem;
+  margin-left: 0;
+  margin-bottom: 1rem;
+  color: var(--terminal-text-muted);
+  font-style: italic;
+}
+
+.markdown-content strong {
+  color: var(--terminal-yellow);
+  font-weight: 600;
+}
+
+.markdown-content em {
+  color: var(--terminal-purple);
+}
+
+.markdown-content hr {
+  border: none;
+  border-top: 1px solid var(--terminal-border);
+  margin: 1.5rem 0;
+}
+
+.markdown-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  font-size: 0.8125rem;
+}
+
+.markdown-content th,
+.markdown-content td {
+  border: 1px solid var(--terminal-border);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+.markdown-content th {
+  background-color: var(--terminal-bg-secondary);
+  color: var(--terminal-cyan);
+  font-weight: 600;
+}
+
+.markdown-content tr:nth-child(even) {
+  background-color: rgba(22, 27, 34, 0.5);
+}
+
+/* Terminal window styling */
+.terminal-window {
+  background-color: var(--terminal-bg-secondary);
+  border: 1px solid var(--terminal-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.terminal-header {
+  background-color: var(--terminal-bg-tertiary);
+  border-bottom: 1px solid var(--terminal-border);
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.terminal-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.terminal-dot-red {
+  background-color: var(--terminal-red);
+}
+
+.terminal-dot-yellow {
+  background-color: var(--terminal-yellow);
+}
+
+.terminal-dot-green {
+  background-color: var(--terminal-green);
+}
+
+.terminal-title {
+  margin-left: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--terminal-text-muted);
+}
+
+.terminal-content {
+  padding: 1rem;
+}
+
+/* Syntax highlighting colors for markdown code blocks */
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-title,
+.hljs-section,
+.hljs-doctag,
+.hljs-name,
+.hljs-strong {
+  color: var(--terminal-red);
+}
+
+.hljs-comment {
+  color: var(--terminal-text-muted);
+}
+
+.hljs-string,
+.hljs-title,
+.hljs-section,
+.hljs-built_in,
+.hljs-literal,
+.hljs-type,
+.hljs-addition,
+.hljs-tag,
+.hljs-quote,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class {
+  color: var(--terminal-green);
+}
+
+.hljs-meta,
+.hljs-subst,
+.hljs-symbol,
+.hljs-regexp,
+.hljs-attribute,
+.hljs-deletion,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-link,
+.hljs-bullet {
+  color: var(--terminal-orange);
+}
+
+.hljs-number,
+.hljs-code,
+.hljs-literal,
+.hljs-keyword,
+.hljs-selector-tag {
+  color: var(--terminal-purple);
+}
+
+.hljs-emphasis {
+  color: var(--terminal-yellow);
+}
+
+/* Category badge colors */
+.badge-paper {
+  background-color: rgba(57, 208, 216, 0.1);
+  color: var(--terminal-cyan);
+  border: 1px solid rgba(57, 208, 216, 0.3);
+}
+
+.badge-repo {
+  background-color: rgba(126, 231, 135, 0.1);
+  color: var(--terminal-green);
+  border: 1px solid rgba(126, 231, 135, 0.3);
+}
+
+.badge-news {
+  background-color: rgba(210, 153, 34, 0.1);
+  color: var(--terminal-yellow);
+  border: 1px solid rgba(210, 153, 34, 0.3);
+}
+
+.badge-tweet {
+  background-color: rgba(88, 166, 255, 0.1);
+  color: var(--terminal-blue);
+  border: 1px solid rgba(88, 166, 255, 0.3);
+}
+
+/* Animations */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(57, 208, 216, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(57, 208, 216, 0.5);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Focus styles */
+button:focus-visible,
+a:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--terminal-cyan);
+  outline-offset: 2px;
+}
+
+/* Active tab indicator animation */
+.tab-active {
+  position: relative;
+}
+
+.tab-active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--terminal-cyan);
+  box-shadow: 0 0 8px rgba(57, 208, 216, 0.5);
+}

@@ -7,13 +7,13 @@ export interface BriefingConfig {
   minRelevance: number;
 }
 
-const SYSTEM_PROMPT = `You are creating a daily AI briefing summary. 
-Given a list of AI-related content items, write a 2-3 paragraph overview that:
-1. Highlights the most significant developments
-2. Identifies emerging trends or patterns
-3. Provides context for why these matter
+const SYSTEM_PROMPT = `你正在为技术读者撰写一份每日 AI 简报总结。
+给定一份 AI 相关内容列表，请用中文撰写 2-3 段总览，要求：
+1. 突出最重要的进展
+2. 识别新兴趋势或模式
+3. 提供背景说明这些内容为何重要
 
-Write in a professional but accessible tone suitable for technical readers.`;
+语气专业但易懂，适合技术背景读者阅读。`;
 
 export async function generateBriefing(
   client: AIClient,
@@ -46,11 +46,11 @@ async function generateSummary(
   items: ContentItem[]
 ): Promise<string> {
   if (items.length === 0) {
-    return 'No significant items to report today.';
+    return '今日无重要内容。';
   }
 
   const prompt = items
-    .map((item, i) => `${i + 1}. ${item.title} (${item.sourceType})`)
+    .map((item, i) => `${i + 1}. ${item.title} (${item.sourceType === 'paper' ? '论文' : item.sourceType === 'repo' ? '仓库' : '新闻'})`)
     .join('\n');
 
   try {
@@ -62,6 +62,6 @@ async function generateSummary(
     return response.content.trim();
   } catch (error) {
     console.error('Summary generation error:', error);
-    return `Today's briefing includes ${items.length} items across research papers, repositories, and news.`;
+    return `今日简报包含 ${items.length} 篇文章，涵盖研究论文、开源仓库和新闻。`;
   }
 }

@@ -6,15 +6,15 @@ export interface FilterConfig {
   threshold: number;
 }
 
-const SYSTEM_PROMPT = `You are an AI content curator. Evaluate if the given content is relevant to:
-- Frontend development and AI integration
-- Large Language Models (LLMs) and their applications
-- AI-powered developer tools
-- Machine learning for web applications
-- AI research relevant to practical applications
+const SYSTEM_PROMPT = `你是一位 AI 内容策展人。评估给定内容是否与以下领域相关：
+- 前端开发与 AI 集成
+- 大语言模型 (LLM) 及其应用
+- AI 驱动的开发者工具
+- 面向 Web 应用的机器学习
+- 与实用应用相关的 AI 研究
 
-Rate relevance from 0-10 and provide category tags.
-Respond in JSON format: {"score": number, "categories": string[], "reason": string}`;
+请用 0-10 分评分相关性，并提供中文分类标签（如：["AI研究", "开发者工具", "前端技术"]）。
+以 JSON 格式返回：{"score": 数字, "categories": 字符串数组, "reason": "评分理由"}`;
 
 export async function filterContent(
   client: AIClient,

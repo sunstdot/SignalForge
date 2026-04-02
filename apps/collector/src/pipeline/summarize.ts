@@ -1,17 +1,17 @@
 import { AIClient, MODELS } from '@tokenburner/ai-client';
 import type { ContentItem } from '@tokenburner/shared';
 
-const SYSTEM_PROMPT = `Summarize the following content for a technical audience. 
-Provide:
-1. A concise 2-3 sentence summary
-2. 2-4 key insights or takeaways as bullet points
+const SYSTEM_PROMPT = `请为技术读者总结以下内容，用中文输出。
+提供：
+1. 一段简洁的总结（2-3句话）
+2. 2-4 个关键见解或要点，用 bullet points 列出
 
-Format your response as:
-SUMMARY: [your summary here]
+请按以下格式输出：
+SUMMARY: [中文总结内容]
 
 INSIGHTS:
-- [insight 1]
-- [insight 2]
+- [见解1]
+- [见解2]
 ...`;
 
 export interface SummaryResult {

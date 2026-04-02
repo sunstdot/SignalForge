@@ -66,7 +66,8 @@ export class AIClient {
       model: options.model,
       messages: options.messages,
       temperature: options.temperature ?? 0.7,
-      max_tokens: options.maxTokens
+      max_tokens: options.maxTokens,
+      top_p: undefined  // WanQing doesn't support both temperature and top_p
     });
 
     const choice = response.choices[0];

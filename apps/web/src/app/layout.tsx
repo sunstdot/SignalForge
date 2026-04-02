@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'TokenBurner - AI Intelligence Hub',
-  description: 'Personal AI learning and experimentation system'
+  title: 'TokenBurner ~ AI Intelligence Hub',
+  description: 'Daily AI intelligence briefing with terminal aesthetic'
 };
 
 export default function RootLayout({
@@ -12,8 +12,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className="bg-gray-50 min-h-screen">{children}</body>
+    <html lang="zh-CN" className="dark">
+      <body className="bg-terminal-bg min-h-screen text-terminal-text font-mono antialiased">
+        {/* Grid background pattern */}
+        <div className="fixed inset-0 bg-terminal-grid opacity-30 pointer-events-none" />
+        
+        {/* Main content */}
+        <div className="relative z-10">
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
