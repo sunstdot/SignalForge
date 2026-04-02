@@ -25,6 +25,11 @@ sources:
       - cs.LG      # 机器学习
     maxResults: 20
 
+  # Smol AI News (Web Crawler)
+  smolai:
+    enabled: true
+    maxIssues: 3   # 获取最近3天的内容
+
   # GitHub Trending
   github:
     enabled: true
@@ -48,12 +53,6 @@ sources:
         url: "https://www.bensbites.com/rss"
         category: ["ai", "tools", "weekly"]
         fetchInterval: 86400  # 周更，每天检查一次
-
-      - name: "Smol AI News"
-        type: "direct"
-        url: "https://news.smol.ai/rss"
-        category: ["ai", "news", "daily"]
-        fetchInterval: 3600
 
       # === 论文相关 ===
       - name: "HuggingFace Daily Papers"

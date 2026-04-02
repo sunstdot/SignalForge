@@ -3,6 +3,7 @@ import { DatabaseClient } from './database/client';
 import { loadConfig } from './config/loader';
 import { fetchArxivPapers } from './sources/arxiv';
 import { fetchGitHubTrending } from './sources/github';
+import { fetchSmolAINews } from './sources/smolai';
 import { filterContent } from './pipeline/filter';
 import { summarizeContent } from './pipeline/summarize';
 import { generateBriefing } from './briefing/generator';
@@ -102,7 +103,7 @@ async function main() {
 async function fetchFromSources(config: any) {
   const items = [];
 
-  if (config.sources.arxiv.enabled) {
+  if (config.sources.arxiv?.enabled) {
     try {
       const papers = await fetchArxivPapers(config.sources.arxiv);
       items.push(...papers);
@@ -112,7 +113,17 @@ async function fetchFromSources(config: any) {
     }
   }
 
-  if (config.sources.github.enabled) {
+  if (config.sources.smolai?.enabled) {
+    try {
+      const smolNews = await fetchSmolAINews(config.sources.smolai);
+      items.push(...smolNews);
+      console.log(`  ✓ Smol AI News: ${smolNews.length} issues`);
+    } catch (error) {
+      console.error('  ✗ Smol AI News fetch failed:', error);
+    }
+  }
+
+  if (config.sources.github?.enabled) {
     try {
       const repos = await fetchGitHubTrending(config.sources.github);
       items.push(...repos);
