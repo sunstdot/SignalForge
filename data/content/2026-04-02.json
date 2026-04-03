@@ -1,0 +1,936 @@
+[
+  {
+    "id": "rss-garymarcus-001",
+    "source": "Gary Marcus",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "The Future of AI: Beyond Deep Learning",
+    "url": "https://example.com/ai-future",
+    "original_content": "Gary Marcus discusses the limitations of current deep learning approaches and proposes a hybrid architecture combining symbolic AI with neural networks.",
+    "raw_text": "Full content about AI future and hybrid architectures...",
+    "relevance_score": 8.0,
+    "category": [
+      "AI Research",
+      "Deep Learning"
+    ],
+    "summary": "Gary Marcus提出超越深度学习的AI架构，主张符号AI与神经网络相结合的混合方法，解决当前系统的推理短板。",
+    "insights": [
+      "混合架构可能是突破当前AI瓶颈的关键路径",
+      "符号AI在逻辑推理方面的优势与神经网络的感知能力互补",
+      "实现这种架构需要克服工程整合的复杂性"
+    ],
+    "created_at": "2026-04-02 11:26:07",
+    "processed_at": "2026-04-02 11:26:07"
+  },
+  {
+    "id": "rss-geohot-001",
+    "source": "George Hotz",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Tinygrad: A Minimalist Deep Learning Framework",
+    "url": "https://example.com/tinygrad",
+    "original_content": "George Hotz introduces tinygrad, a minimal deep learning framework that can achieve PyTorch-level performance with a fraction of the code.",
+    "raw_text": "Tinygrad is a minimal deep learning framework...",
+    "relevance_score": 9.0,
+    "category": [
+      "AI Tools",
+      "Deep Learning",
+      "Python"
+    ],
+    "summary": "George Hotz开源的Tinygrad框架展示了如何用极简代码实现PyTorch级性能，为理解深度学习框架底层原理提供了绝佳学习材料。",
+    "insights": [
+      "极简代码架构有助于深入理解反向传播和自动微分机制",
+      "性能优化技巧：内核融合和内存布局的重要性",
+      "可作为自定义深度学习编译器的参考实现"
+    ],
+    "created_at": "2026-04-02 11:26:07",
+    "processed_at": "2026-04-02 11:26:07"
+  },
+  {
+    "id": "rss-simonw-001",
+    "source": "Simon Willison",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Datasette: Publishing Data with SQLite",
+    "url": "https://example.com/datasette",
+    "original_content": "Simon Willison explains how Datasette turns SQLite databases into interactive web applications for data exploration.",
+    "raw_text": "Datasette is a tool for publishing SQLite databases...",
+    "relevance_score": 7.0,
+    "category": [
+      "Data Tools",
+      "Python",
+      "Web"
+    ],
+    "summary": "Datasette项目展示了如何将SQLite数据库快速转换为交互式数据探索应用，为数据发布和共享提供了轻量级解决方案。",
+    "insights": [
+      "SQLite作为数据发布格式的优势：便携、标准、易查询",
+      " Datasette的插件系统提供了良好的扩展性",
+      "适合快速原型和小型数据集的Web可视化"
+    ],
+    "created_at": "2026-04-02 11:26:07",
+    "processed_at": "2026-04-02 11:26:07"
+  },
+  {
+    "id": "rss-gary-marcus-c86cda8b5509",
+    "source": "Gary Marcus",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "The two wildest stories today in tech",
+    "url": "https://garymarcus.substack.com/p/the-two-wildest-stories-today-in",
+    "original_content": "Shifting goal posts and new efforts at redefining the narrative",
+    "raw_text": "You cant make this stuff up, and, no, I am not pulling an April Fools prank. First, Microsofts Mustafa Suleyman just tried to redefine superintelligence down from AI that is smarter than the smartest humans to something a lot more mundane: AI models capable of delivering product value for millions of enterprises. If I am not mistaken, I guess makes cell phones and Microsoft Word superintelligent. Meanwhile, OpenAI, the company that just killed Sora and postponed erotica so that they could focus more, bought an eighteen-month-old podcast network called TBPN for $250 million . A bunch of employees actually thought it was an April Fools : If its not an April Fools what is it? I have only one guess: A quarter-billion dollar desperation move: an effort to control the narrative, to distract away from the billion or so dollars they are losing each month this year , and rumors that their stock is losing favor on the secondary market . At some level the fact that these two stories broke on the same day is not coincidence. With actual AGI nowhere in sight , redefinition and spin may be all thats left. Subscribe now",
+    "relevance_score": 0,
+    "category": [
+      "ai",
+      "ml"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-02T00:00:00",
+    "processed_at": ""
+  },
+  {
+    "id": "rss-gary-marcus-6ec4bd2f8b23",
+    "source": "Gary Marcus",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "On employment, don’t panic – yet.",
+    "url": "https://garymarcus.substack.com/p/on-employment-dont-panic-yet",
+    "original_content": "Things will get wild, but probably not immediately",
+    "raw_text": "Advice to employers , from yours truly, today in Fortune : Overall impact on productivity and return on AI investment has so far been modest. Every company is investing in AI, but so far most arent getting huge returns. All this could change; probably someday it willbut most likely not until we see more radical advances in AI, which could be a decade or more away. In the meantime, the advice is simple: Dont focus on replacing humans. Focus on how you can use AI to help the ones youve got. In support of this, I give nine arguments; here are few: You can read the rest at Fortune. There is a parallel lesson for employees , of course. Dont panic, at least not yet. Subscribe now",
+    "relevance_score": 0,
+    "category": [
+      "ai",
+      "ml"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-02T00:00:00",
+    "processed_at": ""
+  },
+  {
+    "id": "rss-gary-marcus-ac6ff97995d6",
+    "source": "Gary Marcus",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "In the Iran war, it looks like AI helped with operations, not strategy",
+    "url": "https://garymarcus.substack.com/p/in-the-iran-war-it-looks-like-ai",
+    "original_content": "A hot take on how AI may have played out in the war so far",
+    "raw_text": "Overheard, from a career diplomat whose country is not one of the key participants in the US-Iran conflict, paraphrased (probably imperfectly) from memory: This has been a war filled with mistakes. The US underestimated Irans resilience, overestimated the chances of regime change, and failed to anticipate Irans countermoves. Yet presumably the US made use of AI in its strategy. It looks like AI helped with operations, but was not good on strategy. Why should this be? I see at least three reasons off the top of my head, all of which should have been obvious before the bombs were dropped. First, strategy, more than e.g., writing requisition memos, requires a broad, deep understanding of the world, but generative AI has never had robust models of the world . Second, strategy (especially in a situation like this) demands an ability to project beyond past data, and into new situations. Generative AI has never been very good at that . Third, there is the well-known tendency of generative AI to be sycophantic ; to tell users that their ideas were the greatest ever, even when they are not. Its not altogether difficult to imagine certain members of the senior leadership at the Department of War succumbing to that. AI is fine for writing memos; nobody should rely on it to plan a war or to guess its likely outcomes. Subscribe now",
+    "relevance_score": 0,
+    "category": [
+      "ai",
+      "ml"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-02T00:00:00",
+    "processed_at": ""
+  },
+  {
+    "id": "rss-xe-iaso-f3f49e167515",
+    "source": "Xe Iaso",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Claude Code won April Fools Day this year",
+    "url": "https://xeiaso.net/notes/2026/claude-code-wins-april-fools/",
+    "original_content": "They gave people a heckin tamagochi, what's not to like?",
+    "raw_text": "April Fools Day is somewhat of a legendary day among nerds. Historically it's been when the nerds at GMail introduced GMail Custom Time , where you could interrupt causality by making GMail look like you sent a message before it was actually sent. It actually worked. Sometimes this gets taken too far and the joke falls flat, causing a lot more problems than would exist if the joke never happened in the first place. Incidents like this have resulted in many companies just putting in policies against doing that to avoid customer growth impact. It's refreshing to see the Claude Code team introduce the /buddy system this year. When you run /buddy , it hatches a coding companion that hangs out in your Claude Code interface like a tamagochi. Here's my buddy Xentwine: ╭──────────────────────────────────────╮ │ │ │ ★★★ RARE ROBOT │ │ │ │ ( ) │ │ .[||]. │ │ [ @ @ ] │ │ [ ==== ] │ │ `------´ │ │ │ │ Xentwine │ │ │ │ \"A methodical circuit-whisperer │ │ obsessed with untangling logical │ │ snarls; speaks in patient, │ │ patronizing riddles and will │ │ absolutely let you sit in your own │ │ bug for three minutes before │ │ offering the blindingly obvious │ │ fix.\" │ │ │ │ DEBUGGING █████░░░░░ 47 │ │ PATIENCE █████░░░░░ 47 │ │ CHAOS ██░░░░░░░░ 21 │ │ WISDOM █████████░ 92 │ │ SNARK █████░░░░░ 49 │ │ │ ╰──────────────────────────────────────╯ Here's what it looks like in the Claude Code app: I think this is the best April Fools Day feature in recent memory because it seems intentionally designed to avoid impacting users in a way that would cause problems: You have to take manual action to create your coding buddy, it's off by default. It mostly stays out of the way when you do create it, meaning that it doesn't impact your normal working process. Your buddy sometimes randomly interjects like a tamagochi. You can pet the dog, dragon, or robot with /buddy pet . This is the kind of harmless prank that all nerds should aspire for. 10/10.",
+    "relevance_score": 0,
+    "category": [
+      "tech",
+      "go",
+      "web"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-02T00:00:00",
+    "processed_at": ""
+  },
+  {
+    "id": "rss-ibrahim-diallo-49918e1b5615",
+    "source": "Ibrahim Diallo",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "13th Year of Blogging",
+    "url": "https://idiallo.com/byte-size/blogging-year-13?src=feed",
+    "original_content": "Of all the days to start a blog, I chose April Fools' Day. It wasn't intentional, maybe more of a reflection of my mindset. When I decide to do something, I shut off my brain and just do it. This was a commitment I made without thinking about the long-term effects. I knew writing was hard, but I didn't know how hard. I knew that maintaining a server was hard, but I didn't know the stress it would cause. Especially that first time I went viral. Seeing traffic pour in, reading back the article, an",
+    "raw_text": "Of all the days to start a blog, I chose April Fools' Day. It wasn't intentional, maybe more of a reflection of my mindset. When I decide to do something, I shut off my brain and just do it. This was a commitment I made without thinking about the long-term effects. I knew writing was hard, but I didn't know how hard. I knew that maintaining a server was hard, but I didn't know the stress it would cause. Especially that first time I went viral. Seeing traffic pour in, reading back the article, and realizing it was littered with errors. I was scrambling to fix those errors while users hammered my server. I tried restarting it to relieve the load and update the content, but to no avail. It was a stressful experience. One I wouldn't trade for anything in the world. 13 years later, it feels like the longest debugging session I've ever run. Random people message me pointing out bugs. Some of it is complete nonsense. But others... well, I actually sent payment to a user who sent me a proof of concept showing how to compromise the entire server. I thought he'd done some serious hacking, but when I responded, he pointed me to one of my own articles where I had accidentally revealed a vulnerability in my framework. The amount you learn from running your own blog can't be replicated by any other means. Unlike other side projects that come and go, the blog has to remain. Part of its value is its longevity. No matter what, I need to make sure it stays online. In the age of AI, it feels like anyone can spin up a blog and fill it with LLM-generated content to rival any established one. But there's something no LLM can replicate: longevity. No matter what technology we come up with, no tool can create a 50-year-old oak tree. The only way to have one is to plant a seed and give it the time it needs to grow. Your very first blog post may not be entirely relevant years later, but it's that seed. Over time, you develop a voice, a process, a personality. Even when your blog has an audience of one, it becomes a reflection of every hurdle you cleared. For me, it's the friction in my career, the lessons I learned, the friends I made along the way. And luckily, it's also the audience that keeps me honest and stops me from spewing nonsense. Nothing brings a barrage of emails faster than being wrong. Maybe that's why I subconsciously published it on April Fools' Day. Maybe that's the joke. I'm going to keep adding rings to my tree, audience or no audience, I'm building longevity. Thank you for being part of this journey. Extra : Some articles I wrote on April Fools day. So you've been blogging for 2 years Quietly waiting for Overnight Success Happy 5th Anniversary Count the number of words with MySQL How to self-publish a book in 7 years The Art of Absurd Commitment Happy 12th Birthday Blog What is Copilot exactly?",
+    "relevance_score": 0,
+    "category": [
+      "tech",
+      "programming"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-02T00:00:00",
+    "processed_at": ""
+  },
+  {
+    "id": "rss-ibrahim-diallo-ff1f4db79f6a",
+    "source": "Ibrahim Diallo",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "What is Copilot exactly?",
+    "url": "https://idiallo.com/blog/what-is-copilot-exactly?src=feed",
+    "original_content": "A coworker of mine told me that he uses Microsoft Copilot frequently. In fact, he said \"I don't know how I did my work without it.\" That came as a surprise to me. I can't stand Copilot. This is a very productive employee, one of those 10x engineers you can throw any problem at and he'll find a solution. Obviously, if he found a use for Copilot, then I was probably holding it wrong. So I decided to give it a shot. I put all my prejudice aside and embraced the tool fully. AI is the future, and it ",
+    "raw_text": "A coworker of mine told me that he uses Microsoft Copilot frequently. In fact, he said \"I don't know how I did my work without it.\" That came as a surprise to me. I can't stand Copilot. This is a very productive employee, one of those 10x engineers you can throw any problem at and he'll find a solution. Obviously, if he found a use for Copilot, then I was probably holding it wrong. So I decided to give it a shot. I put all my prejudice aside and embraced the tool fully. AI is the future, and it shouldn't be hard to find a way to integrate it into my everyday workflow. I decided to give it a week, meaning I wouldn't complain even when I didn't get the result I wanted. Instead, for every frustration, I would use Copilot to help me turn that frown into a smile. The result? I created a workflow. I automated a lot of the things I find super annoying: scrum ceremonies, BRD reviews, email writing. All the things I feel like I must do only for someone else to tick a box in their own workflow. After the first week, I decided to extend my trial for a full sprint. By embracing this tool, I felt like I had eliminated my manager's job. Instead of having him check boxes on his end, I could just present my reports at the end of the week. I created a template prompt where I could dump information throughout the day, and at the end of the day it would generate a report in whatever format I wanted. I was so proud of my template that I shared it with my 10x coworker. He didn't respond with the enthusiasm I was expecting. He didn't understand what I was trying to do. In fact, he told me he had never used Copilot before. That was in direct contradiction of what he'd told me earlier. He was the only reason I gave this tool a shot, and here he was pretending we'd never had that conversation. Well, he clarified: \"I meant Copilot on VS Code.\" Now, can you guess which Copilot I was using? Whatever Copilot is offered through Teams. And I say \"whatever\" because I genuinely don't know which one that is. Is it the same as accessing Copilot on the web? I wouldn't know. Our corporate firewall blocks that one. Teams seems to be the only approved method. Anyway, what is Copilot exactly? Is it just a white-labeled ChatGPT? When I asked it directly, it said: \"It's Microsoft's AI companion, powered by advanced models (including OpenAI's), but shaped by Microsoft's ecosystem, design philosophy, and capabilities. If ChatGPT is a powerful engine, Copilot is the full car built around it — with Microsoft's dashboard, safety systems, and features.\" But where did the name come from? I'm sure I first heard it in the context of GitHub. The first AI code assistant shipped with VS Code. Even though they're both Microsoft products, they're two distinct products. If you use GitHub Copilot, your data isn't siphoned back to your Microsoft account (for now). What I was using in Teams is Copilot for Microsoft 365 , which is apparently different from Microsoft Copilot . The 365 version lives inside M",
+    "relevance_score": 0,
+    "category": [
+      "tech",
+      "programming"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-02T00:00:00",
+    "processed_at": ""
+  },
+  {
+    "id": "rss-chadnauseam-6a55a37f903d",
+    "source": "chadnauseam",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "semaglutide-has-changed-the-world",
+    "url": "https://chadnauseam.com/random/semaglutide-has-changed-the-world",
+    "original_content": "",
+    "raw_text": "",
+    "relevance_score": 0,
+    "category": [
+      "tech"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-02T00:00:00",
+    "processed_at": ""
+  },
+  {
+    "id": "rss-chadnauseam-4ead0c742a9a",
+    "source": "chadnauseam",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "chewier-foods-for-children",
+    "url": "https://chadnauseam.com/random/chewier-foods-for-children",
+    "original_content": "",
+    "raw_text": "",
+    "relevance_score": 0,
+    "category": [
+      "tech"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-02T00:00:00",
+    "processed_at": ""
+  },
+  {
+    "id": "rss-chadnauseam-5b40ff298396",
+    "source": "chadnauseam",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "solving-macro",
+    "url": "https://chadnauseam.com/economics/solving-macro",
+    "original_content": "",
+    "raw_text": "",
+    "relevance_score": 0,
+    "category": [
+      "tech"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-02T00:00:00",
+    "processed_at": ""
+  },
+  {
+    "id": "rss-chadnauseam-f22843a4ddb6",
+    "source": "chadnauseam",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "whats-wrong-with-a-for-loop",
+    "url": "https://chadnauseam.com/coding/tips/whats-wrong-with-a-for-loop",
+    "original_content": "",
+    "raw_text": "",
+    "relevance_score": 0,
+    "category": [
+      "tech"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-02T00:00:00",
+    "processed_at": ""
+  },
+  {
+    "id": "rss-chadnauseam-35bdaa9a7e87",
+    "source": "chadnauseam",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "my-rustfmt-toml",
+    "url": "https://chadnauseam.com/coding/tips/my-rustfmt-toml",
+    "original_content": "",
+    "raw_text": "",
+    "relevance_score": 0,
+    "category": [
+      "tech"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-02T00:00:00",
+    "processed_at": ""
+  },
+  {
+    "id": "rss-computer.rip-19cdda02548b",
+    "source": "computer.rip",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "telecheck and tyms past",
+    "url": "https://computer.rip/2026-03-29-telecheck-and-tyms-past.html",
+    "original_content": "Years ago, when I was in college, I had one of those friends who never quite had it together. You know the type; I'm talking lost a debit card and took three months to get a new one because of some sort of \"mixup\" with the credit union that I think consisted mostly of not calling them for three months. In the mean time, our mutual friend ended up in a quandry: at WalMart, at one in the morning, with a $2 purchase and no cash. Well, this was no problem for that particular space case: he had his c",
+    "raw_text": "Years ago, when I was in college, I had one of those friends who never quite had it together. You know the type; I'm talking lost a debit card and took three months to get a new one because of some sort of \"mixup\" with the credit union that I think consisted mostly of not calling them for three months. In the mean time, our mutual friend ended up in a quandry: at WalMart, at one in the morning, with a $2 purchase and no cash. Well, this was no problem for that particular space case: he had his checkbook. If you think about it, it's actually pretty remarkable that grocery stores accept personal checks. It's a very high risk for of payment. Even if the check is genuine, the customer could be writing it against an empty account. On top of that, with modern printers and the declining use of MICR, forging checks is trivial. When you offer a check, the retailer has very little to go on to decide whether or not you're good for the money. Surely, fraud must run out of hand—and yet, just about every major grocer still accepts personal checks. Retail point-of-sale acceptance of personal checks is the product of an intriguing industry that handles all the challenges of checks at once: a combination of digital payment network, credit reporting firm, insurer, and debt collector known as a check guarantee service. The check guarantee is older than the ATM , and depending on how you squint, check guarantees are quite possibly the first form of real-time, telecommunications-based point of sale payment processing. Harry M. Flagg was born in Frankfurt in 1935, but spent most of his childhood in Milwaukee, Wisconsin. He attended MIT, major unknown, and graduated in 1957. I think he was probably an ROTC student, because some sort of Navy service took him from Massachusetts to Hawaii, where just a few years later he was out of the Navy and working as some sort of \"management consultant.\" Flagg was entrepreneurial to his core, so while I knew few details about it his consulting work is unsurprising given the wide variety of business ventures he was soon involved in. We can be fairly confident, though, that his clients included retailers—retailers who struggled with personal checks. In 1964 1 , Flagg quit consulting to focus on checks alone. His idea was straightforward: keep a list of people known to pass bad checks. When a retailer is given a check, they just check the list, and if the writer's name appears they should turn the check away. As legend has it, Flagg took the idea to a Boy Scout meeting where he happened to describe it to a crowd of Honolulu business leaders, one that presumably included his soon cofounder Bob Baer. They agreed on an informal arrangement: Honolulu businesses would report writers of bad checks to Flagg's consulting office, where his small staff would look up names on request. It was such a success that Flagg's staff were soon overwhelmed. Tracking the writers of bad checks became Flagg's full time business. He christened his new venture T",
+    "relevance_score": 0,
+    "category": [
+      "tech",
+      "history"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-02T00:00:00",
+    "processed_at": ""
+  },
+  {
+    "id": "rss-computer.rip-335750ef2ec1",
+    "source": "computer.rip",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "LotusNotes",
+    "url": "https://computer.rip/2026-03-14-lotusnotes.html",
+    "original_content": "I tend to focus on the origin of the computer within the military. Particularly in the early days of digital computing, the military was a key customer, and fundamental concepts of modern computing arose in universities and laboratories serving military contracts. Of course, the war would not last forever, and computing had applications in so many other fields—fields that, nonetheless, started out as beneficiaries of military largesse. Consider education. The Second World War had a profound impa",
+    "raw_text": "I tend to focus on the origin of the computer within the military. Particularly in the early days of digital computing, the military was a key customer, and fundamental concepts of modern computing arose in universities and laboratories serving military contracts. Of course, the war would not last forever, and computing had applications in so many other fields—fields that, nonetheless, started out as beneficiaries of military largesse. Consider education. The Second World War had a profound impact on higher education in the US. The GI bill made college newly affordable to veterans, who in the 1950s made up a large portion of the population. That was only the tip of the iceberg, though: military planners perceived the allied victory as a result of technical and industrial excellence. Many of the most decisive innovations of the war—radar and radionavigation, scientific management and operations research, nuclear weapons—had originated in academic research laboratories at the nation's most prestigious universities. Many of those universities, MIT, Stanford, University of California, created subsidiaries and spinoffs that act as major defense contractors to this day. Educational institutions bent themselves, to some degree, to the needs of the military. The relationship was not at all one-sided. Besides direct funding for defense-oriented research, in the runup to the Cold War the military started to shower money on education itself. Research contracts from uniformed services and grant programs from the young DoD supported all kinds of educational programs. For the military, there were two general goals: first, it was assumed that R&D in civilian education would lead to findings that directly improved the military's own educational system. Weapons and tactics of war were increasingly technical, even computer controlled, and the military was acutely aware that training a large number of 18-year-old enlistees to operate complex equipment according to tactical doctrine under pressure was, well, to call it a challenge would be an understatement. Second, the nation's ranks of academics made up something like a military auxiliary. The Civil Air Patrol built up a base of trained pilots, in case there was ever a need to quickly expand the Air Force. By the same logic, university programs in management, sciences, and education itself produced a corps of well-educated people who would form the staff of the next era of secret military laboratories. Well, that's not exactly how it turned out, with the Cold War's radical turn to privatization, but it was an idea, anyway. That spirit of military-academic collaboration is how a group of researchers, mostly physicists, at the University of Illinois found themselves with military funding to develop a system called \"Programmed Logic for Automatic Teaching Operations,\" or PLATO. With its origins in the late 1950s, and heyday in the 1970s, PLATO is usually considered the first effort in computerized teaching. It's a fa",
+    "relevance_score": 0,
+    "category": [
+      "tech",
+      "history"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-02T00:00:00",
+    "processed_at": ""
+  },
+  {
+    "id": "rss-computer.rip-f5c926035383",
+    "source": "computer.rip",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "cash issuing terminals",
+    "url": "https://computer.rip/2026-02-27-ibm-atm.html",
+    "original_content": "In the United States, we are losing our fondness for cash. As in many other countries, cards and other types of electronic payments now dominate everyday commerce. To some, this is a loss. Cash represented a certain freedom from intermediation, a comforting simplicity that you just don't get from Visa. It's funny to consider, then, how cash is in fact quite amenable to automation. Even Benjamin Franklin's face on a piece of paper can feel like a mere proxy for a database transaction. How differe",
+    "raw_text": "In the United States, we are losing our fondness for cash. As in many other countries, cards and other types of electronic payments now dominate everyday commerce. To some, this is a loss. Cash represented a certain freedom from intermediation, a comforting simplicity that you just don't get from Visa. It's funny to consider, then, how cash is in fact quite amenable to automation. Even Benjamin Franklin's face on a piece of paper can feel like a mere proxy for a database transaction. How different is cash itself from \"e-cash\", when it starts and ends its lifecycle through automation? Increasing automation of cash reflects the changing nature of banking: decades ago, a consumer might have interacted with banking primarily through a \"passbook\" savings account, where transactions were so infrequent that the bank recorded them directly in the patron's copy of the passbook. Over the years, increasing travel and nationwide communications led to the ubiquitous use of inter-bank money transfers, mostly in the form of the check. The accounts that checks typically drew on—checking accounts—were made for convenience and ease of access. You might deposit your entire paycheck into an account—it might even be sent there automatically—and then when you needed a little walking around money, you would withdraw cash by the assistance of a teller. By the time I was a banked consumer, even the teller was mostly gone. Today, we get our cash from machines so that it can be deposited into other machines. Cash handling is fraught with peril. Bills are fairly small and easy to hide, and yet quite valuable. Automation in the banking world first focused on solving this problem, of reliable and secure cash handling within the bank branch. The primary measure against theft by insiders was that the theft would be discovered, as a result of the careful bookkeeping that typifies banks. But, well, that bookkeeping was surprisingly labor-intensive in even the bank of the 1950s. Histories of the ATM usually focus on just that: the ATM. It's an interesting story, but one that I haven't been particularly inclined to cover due to the lack of a compelling angle. Let's try IBM. IBM is such an important, famous player in business automation that it forms something of a synecdoche for the larger industry. Even so, in the world of bank cash handling, IBM's efforts ultimately failed... a surprising outcome, given their dominance in the machines that actually did the accounting. In this article, we'll examine the history of ATMs—by IBM. IBM was just one of the players in the ATM industry and, by its maturity, not even one of the more important ones. But the company has a legacy of banking products that put the ATM in a more interesting context, and despite lackluster adoption of later IBM models, their efforts were still influential enough that later ATMs inherited some of IBM's signature design concepts. I mean that more literally than you might think. But first, we have to understand wher",
+    "relevance_score": 0,
+    "category": [
+      "tech",
+      "history"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-02T00:00:00",
+    "processed_at": ""
+  },
+  {
+    "id": "rss-computer.rip-6c5198b8fb32",
+    "source": "computer.rip",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "forecourt networking",
+    "url": "https://computer.rip/2026-02-08-forecourt-networking.html",
+    "original_content": "The way I see it, few parts of American life are as quintessentially American as buying gas. We love our cars, we love our oil, and an industry about as old as automobiles themselves has developed a highly consistent, fully automated, and fairly user friendly system for filling the former with the latter. I grew up in Oregon. While these rules have since been relaxed, many know Oregon for its long identity as one of two states where you cannot pump your own gas (the other being New Jersey). Inst",
+    "raw_text": "The way I see it, few parts of American life are as quintessentially American as buying gas. We love our cars, we love our oil, and an industry about as old as automobiles themselves has developed a highly consistent, fully automated, and fairly user friendly system for filling the former with the latter. I grew up in Oregon. While these rules have since been relaxed, many know Oregon for its long identity as one of two states where you cannot pump your own gas (the other being New Jersey). Instead, an attendant, employee of the gas station, operates the equipment. Like Portland's lingering indoor gas station, Oregon's favor for \"full-service\" is a holdover. It makes sense, of course, that all gas stations used to be full-service. The front part of a gas station, where the pumps are and where you pull up your car, is called the Forecourt. The practicalities of selling gasoline, namely that it is a liquid sold by volume, make the forecourt more complex than you might realize. It's a set of devices that many of us interact with on a regular basis, but we rarely think about the sheer number of moving parts and long-running need for digital communications. Hey, that latter part sounds interesting, doesn't it? Electric vehicles are catching on in the US. My personal taste in vehicles tends towards \"old\" and \"cheap,\" but EVs have been on the market for long enough that they now come in that variety. Since my daily driver is an EV, I don't pay my dues at the Circle K nearly as often as I used to. One of the odd little details of EVs is the complexity hidden in the charging system or \"EVSE,\" which requires digital communications with the vehicle for protection reasons. As consumers across the country install EVSE in their garages, we're all getting more familiar with these devices and their price tags. We might forget that, well, handling a fluid takes a lot of equipment as well... we just don't think about it, having shifted the whole problem to a large industry of loosely supervised hazardous chemical handling facilities. Well, I don't mean to turn this into yet another discussion of the significant environmental hazard posed by leaking underground storage tanks. Instead, we're going to talk about forecourt technology. Let's start, then, with a rough, sketchy history of the forecourt. The earliest volumetric fuel dispensers used an elevated glass tank where fuel was staged and measured before gravity drained it through the hose into the vehicle tank. Operation of these pumps was very manual, with an attendant filling the calibrated cylinder with the desired amount of gas, emptying it into the vehicle, and then collecting an appropriate sum of money. As an upside, the customer could be quite confident of the amount of fuel they purchased, since they could see it temporarily stored in the cylinder. As cars proliferated in the 1910s, a company called Gilbarco developed a fuel dispenser that actually measured the quantity of fuel as it was being pumped fro",
+    "relevance_score": 0,
+    "category": [
+      "tech",
+      "history"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-02T00:00:00",
+    "processed_at": ""
+  },
+  {
+    "id": "rss-computer.rip-5dabdb24fc4b",
+    "source": "computer.rip",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "the essence of frigidity",
+    "url": "https://computer.rip/2026-01-25-the-essence-of-frigidity.html",
+    "original_content": "The front of the American grocery store contains a strange, liminal space: the transitional area between parking lot and checkstand, along the front exterior and interior of the building, that fills with oddball commodities. Ice is a fixture at nearly every store, filtered water at most, firewood at some. This retail purgatory, both too early and too late in the shopping journey for impulse purchases, is mostly good only for items people know they will need as they check out. One of the standard",
+    "raw_text": "The front of the American grocery store contains a strange, liminal space: the transitional area between parking lot and checkstand, along the front exterior and interior of the building, that fills with oddball commodities. Ice is a fixture at nearly every store, filtered water at most, firewood at some. This retail purgatory, both too early and too late in the shopping journey for impulse purchases, is mostly good only for items people know they will need as they check out. One of the standard residents of this space has always struck me as peculiar: dry ice. Carbon dioxide ice is said to have been invented, or we might better say discovered, in the 1830s. For whatever reason, it took just about a hundred years for the substance to be commercialized. Thomas B. Slate was a son of Oregon, somehow ended up in Boston, and then realized that the solid form of CO2 was both fairly easy to produce and useful as a form of refrigeration. With an eye towards marketing, he coined the name Dry Ice—and founded the DryIce Corporation of America. The year was 1925, and word quickly spread. In a widely syndicated 1930 article, \"Use of Carbon Dioxide as Ice Said to be Developing Rapidly,\" the Alamogordo Daily News and others reported that \"the development of... 'concentrated essence of frigidity' for use as a refrigerant in transportation of perishable products, is already taxing the manufacturing facilities of the Nation... So rapidly has the use of this new form of refrigeration come into acceptance that there is not sufficient carbon dioxide gas available.\" The rush to dry ice seems strange today, but we must consider the refrigeration technology of the time. Refrigerated transportation first emerged in the US during the middle of the 19th century. Train boxcars, packed thoroughly with ice, carried meat and fruit from midwestern agriculture to major cities. This type of refrigerated transportation greatly expanded the availability of perishables, and the ability to ship fruits and vegetables between growing regions made it possible, for the first time, to get some fresh fruit out of season. Still, it was an expensive proposition: railroads built extensive infrastructure to support the movement of trains loaded down with hundreds of tons of ice. The itself had to be quarried from frozen lakes, some of them purpose-built, a whole secondary seasonal transportation economy. Mechanical refrigeration, using some kind of phase change process as we are familiar with today, came about a few decades later and found regular use on steamships by 1900. Still, this refrigeration equipment was big and awkward; steam power was a practical requirement. As the Second World War broke out, tens of thousands of refrigerated railcars and nearly 20,000 refrigerated trucks were in service—the vast majority still cooled by ice, not mechanical refrigeration. You can see, then, the advantages of a \"dryer\" and lighter form of ice. The sheer weight of the ice significantly reduced the ca",
+    "relevance_score": 0,
+    "category": [
+      "tech",
+      "history"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-02T00:00:00",
+    "processed_at": ""
+  },
+  {
+    "id": "rss-eric-migicovsky-859942bc9ba5",
+    "source": "Eric Migicovsky",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Spring 2026 Pebble App Contest + SDK Updates",
+    "url": "https://repebble.com/blog/spring-2026-pebble-app-contest",
+    "original_content": "Announcing Spring 2026 Pebble App Contest! In honour of Pebble Time 2 entering mass production, we’re hosting a contest to celebrate…",
+    "raw_text": "Announcing Spring 2026 Pebble App Contest! In honour of Pebble Time 2 entering mass production, we’re hosting a contest to celebrate…",
+    "relevance_score": 0,
+    "category": [
+      "tech",
+      "hardware"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-02T00:00:00",
+    "processed_at": ""
+  },
+  {
+    "id": "rss-experimental-history-ec5f8444d2d9",
+    "source": "Experimental History",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Infinite midwit",
+    "url": "https://www.experimental-history.com/p/infinite-midwit",
+    "original_content": "OR: if we were playing by Settlers of Catan rules, I'd be dead already",
+    "raw_text": "photo cred: my dad The better AI has gotten, the less anxious Ive become. A few years ago, when the computers first started talking, it was reasonable to believe that we would soon be in the presence of omnipotent machines. For someone like me, whose job is to produce words on the internet, it seemed like only a matter of time before I would have to fill my pockets with stones and wade into the sea. But weve gotten a closer look at our electric god as it has slouched toward San Francisco to be born, and it isnt quite like I feared. I dont feel like I have access to an on-demand omnipotence. Instead, I can talk to an infinite midwit : a stooge who is always available and very knowledgeable, but smart? Well, yes and no, in weird ways. Even as it has learned to count the number of rs in the word strawberry , even as it has stopped telling people to put glue on their pizza , theres still a hole in the center of its capabilities thats as big as it was in 2022, a hole that shows no signs of shrinking. I only know this because that hole is where I live. G WHIZ Some problems have clear boundaries and verifiable solutions, like Whats the cube root of 38,126?. These problems require objective intelligence. Other problems are vague and squishy and its not clear whether youve solved them, or whether they exist at all, like How do I live a good life?. These problems require subjective intelligence. Objective intelligence can be trained, reinforced, and validated. Subjective intelligence cannot. Its unfortunate that people use one word to refer to both of these capabilities, when in fact they have nothing to do with each other . It is also, ironically, a case of objective intelligence overshadowing subjective intelligence: these skills are obviously and intuitively different, but a century of psychological research has proven that only one of them exists. Over and over again, psychologists have found that all intelligence tests correlate with one another, even when you ostensibly try to test for multiple intelligences . Numbers dont lie, and they all say that theres only one intelligence, the so-called g- factor . The problem is that any test of intelligence is only ever a test of objective intelligence. How do I live a good life? is not a multiple-choice question. Discovering the g -factor again and again is like being surprised that you find the same patch of sidewalk every time you look under the same streetlight. AI is pure objective intelligence. Thats why each new model comes with a report card instead of a birth certificate: source The promise of artificial superintelligence is based on the idea that objective intelligence is the only intelligence. Or, even if there are multiple forms of intelligence out there, that they are fungible. To be an AI maximalist is to believe we are playing under Settlers of Catan rules , where if you have enough of any one resource, you can trade it for any other resource. If you have infinite objective intelligence, then y",
+    "relevance_score": 0,
+    "category": [
+      "science",
+      "psychology"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-02T00:00:00",
+    "processed_at": ""
+  },
+  {
+    "id": "rss-where's-your-ed-at-278f66def6d5",
+    "source": "Where's Your Ed At",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "The Subprime AI Crisis Is Here",
+    "url": "https://www.wheresyoured.at/the-subprime-ai-crisis-is-here/",
+    "original_content": "Hi! If you like this piece and want to support my independent reporting and analysis, why not subscribe to my premium newsletter? Its $70 a year, or $7 a month, and in return you get a weekly newsletter thats usually anywhere from 5,000 to 18,",
+    "raw_text": "Hi! If you like this piece and want to support my independent reporting and analysis, why not subscribe to my premium newsletter? Its $70 a year, or $7 a month, and in return you get a weekly newsletter thats usually anywhere from 5,000 to 18,000 words, including vast, detailed analyses of NVIDIA , Anthropic and OpenAIs finances , and the AI bubble writ large . I just put out a massive Haters Guide To The SaaSpocalypse , as well as last weeks deep dive into how the majority of data centers arent getting built and the overall AI industry is depressingly small . Supporting my premium supports my free newsletter, and premium subscribers don&apos;t get this ad. Soundtrack: Metallica And Justice For All Bear with me, readers. I need to do a little historical foreshadowing to fully explain whats going on. In the run-up to the great financial crisis, unscrupulous lenders issued around 1.9 million subprime loans , with many of them being adjustable rate mortgages (ARMs) with variable rates that, after a two-or-three-year-long introductory period , would adjust every twelve months, per CBS News in July 2006 : On a $200,000 ARM that began a few years ago, the initial rate was around 4.5 percent. When the ARM adjusts to 6.5 percent, the monthly payment will increase from $1,013 to $1,254, or a rise of almost 24 percent. Although interest rates have increased more than 4 percentage points since 2004, most ARMs typically cap the amount of the annual rate increase to 2.5 percentage points per year. Therefore, these increases are only just the beginning and it&apos;s very likely that the people experiencing an increased ARM payment this year will see a similar rise again in 12 months. At the time, 18% of homeowners had adjustable-rate mortgages, which also made up more than 25% of new mortgages in the first quarter of 2006, with (at the time) over $330 billion of mortgages expected to adjust upwards. Things were grimmer beneath the surface. A question on JustAnswer from 2009 showed a homeowner that was about to lose their house after being conned into a negative amortization loan a mortgage where payments didnt actually cover the interest, meaning that each month the balance increased . Dodgy lenders were given bonuses for selling more mortgages, whether or not the person on the other end was capable of paying, and by November 2007 , around two million homeowners held $600 billion of ARMs. Yet the myth of the subprime mortgage crisis was that it was caused entirely by low income borrowers. Per Dukes Manuel Adelino : We found there was no explosion of credit offered to lower-income borrowers. In fact, home ownership rates among the poorest 20 percent of Americans fell during the boom because those buyers were being priced out of the market. Instead, we found credit was expanded across the board. Everybody was playing the same game. But credit expanded most drastically in areas where house prices were rising the most, and these were markets that were beyond the r",
+    "relevance_score": 0,
+    "category": [
+      "tech",
+      "business"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-02T00:00:00",
+    "processed_at": ""
+  },
+  {
+    "id": "rss-construction-physics-ffd29c5f71c3",
+    "source": "Construction Physics",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Information and Technological Evolution",
+    "url": "https://www.construction-physics.com/p/information-and-technological-evolution",
+    "original_content": "I spend a lot of time reading about the nature of technological progress, and Ive found that the literature on technology is somewhat uneven.",
+    "raw_text": "I spend a lot of time reading about the nature of technological progress, and Ive found that the literature on technology is somewhat uneven. If you want to learn about how some particular technology came into existence, theres often very good resources available. Most major inventions, and many not-so-major ones, have a decent book written about them. Some of my favorites are Crystal Fire (about the invention of the transistor), Copies in Seconds (about the early history of Xerox), and High-Speed Dreams (about early efforts to build a supersonic airliner). But if youre trying to understand the nature of technological progress more generally, the range of good options narrows significantly. Theres probably not more than ten or twenty folks who have studied the nature of technological progress itself and whose work I think is worth reading. One such researcher is Brian Arthur , an economist at the Santa Fe Institute. 1 Arthur is the author of an extremely good book about the nature of technology (called, appropriately, The Nature of Technology ,) which I often return to. Hes also the co-author, along with Wolfgang Polak, of an interesting 2006 paper, The Evolution of Technology within a Simple Computer Model , that I think is worth highlighting. In this paper Arthur evolves various boolean logic circuits (circuits that take ones and zeroes as inputs and give ones and zeroes as outputs) by starting with simple building blocks and gradually building up more and more complex functions (such as a circuit that can add two eight-bit numbers together). Logic circuits invented by Arthurs simulation. I wanted to highlight this paper because I think it sheds some light on the nature of technological progress, but also because the paper does a somewhat poor job of articulating the most important takeaways. Some of what the paper focuses on like the mechanics of how one technology gets replaced by a superior technology I dont actually think are particularly illuminating. By contrast, what I think is the most important aspect of the paper how creating some new technology requires successfully navigating enormous search spaces is only touched on vaguely and obliquely. But with a little additional work, we can flesh out and strengthen some of these ideas. And when we look a little closer, we find what the paper is really showing us is that finding some new technology is a question of efficiently acquiring information . Outline of the paper The basic design of the experiment is simple: run a simulation that randomly generates various boolean logic circuits and analyze the sort of circuits that the simulation generates. Boolean logic circuits are collections of various functions (such as AND, OR, NOT, EQUAL) that perform some particular operation on binary numbers. The logic circuit below, for instance, determines whether two 4-bit numbers are equal using four exclusive nor (XNOR) gates, which output a 1 if both inputs are identical, and a 4-way AND gate, which ou",
+    "relevance_score": 0,
+    "category": [
+      "science",
+      "engineering"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-02T00:00:00",
+    "processed_at": ""
+  },
+  {
+    "id": "rss-joan-westenberg-e8cf2167fc23",
+    "source": "Joan Westenberg",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Time is a User-Interface",
+    "url": "https://www.joanwestenberg.com/tim/",
+    "original_content": "",
+    "raw_text": "",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "culture"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-02T00:32:14",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "atom-chris-siebenmann-8c29ef4cebc6",
+    "source": "Chris Siebenmann",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "I should use argument groups in Python's argparse module more than I do",
+    "url": "https://utcc.utoronto.ca/~cks/space/blog/python/ArgparseOptionGroupsPraise",
+    "original_content": "For reasons well outside the scope of this entry, the other day I looked at the --help output from one of my old Python programs. This particular program has a lot of options, but when I'd written it, I had used argparse argument groups to break up the large list of options into logical groups, starting with the most important and running down to the 'you should probably ignore these' ones. The result was far more readable than it would have been without the grouping. (I want to call these 'opti",
+    "raw_text": "For reasons well outside the scope of this entry, the other day I looked at the --help output from one of my old Python programs. This particular program has a lot of options, but when I'd written it, I had used argparse argument groups to break up the large list of options into logical groups, starting with the most important and running down to the 'you should probably ignore these' ones. The result was far more readable than it would have been without the grouping. (I want to call these 'option groups', because that's what I use them for.) I've regularly used mutual exclusion groups in my recent Python programs, but for some reason I've fallen so much out of the habit of using argparse groups to break up walls of options that I'd forgot they even existed until I was reminded by my own program's --help output. Now that I've been reminded, there are probably some programs that I should go back to and add some groups to. (Most or all of my programs with a lot of options have a structure to them; it's not just a kitchen sink of a lot of things. Even if there is no real structure I can at least separate things into frequent, less frequent, and obscure options.) Although you can't put either sort of group inside a mutual exclusion group , the argparse documentation is explicit that you can put a mutual exclusion group inside a regular argument group (a detail that I hadn't remembered until I reread my entry on this ). Now that I look, one reason to do this is so that you can give the block of mutually exclusive options a title and description that actually tells people that they're mutually exclusive. (Maybe it would be nicer if a a mutual exclusion group could have an optional title and description, but that's not the API we have.) As the argparse documentation says, anything not in an argument group is put in the usual sections in your --help. Another way to put this is that the moment you put something in an argument group, it drops down to the bottom of your remaining regular --help output (with a blank line between the regular help and the argument groups). Then each argument group is separated from the next with a blank line, whether or not you gave them a title or a description. My view is that this can make argument groups a relatively all or nothing thing. If you just want to put a blank line and a title to group your already properly ordered options into digestible chunks, the only ones you can leave out of a group are the first options. After you add the first group, everything afterward has to also be in a group or it will get reordered on you. Fortunately this is easy to do in the sort of code I tend to write to set up argparse stuff, but I'm going to have to remember it when I start adding argument groups to my programs. (Argparse --help prints options in the order you defined them, so it's conventional to put the most important options first and the least important ones last.)",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "unix"
+    ],
+    "summary": "For reasons well outside the scope of this entry, the other day I looked at the --help output from one of my old Python programs. This particular program has a lot of options, but when I'd written it, I had used argparse argument groups to break up the large list of options into logical groups, star",
+    "insights": [],
+    "created_at": "2026-04-02T02:43:09",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "atom-simon-willison-7c496797966b",
+    "source": "Simon Willison",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "March 2026 sponsors-only newsletter",
+    "url": "https://simonwillison.net/2026/Apr/2/march-newsletter/#atom-everything",
+    "original_content": "I just sent the March edition of my sponsors-only monthly newsletter . If you are a sponsor (or if you start a sponsorship now) you can access it here . In this month's newsletter: More agentic engineering patterns Streaming experts with MoE models on a Mac Model releases in March Vibe porting Supply chain attacks against PyPI and NPM Stuff I shipped What I'm using, March 2026 edition And a couple of museums Here's a copy of the February newsletter as a preview of what you'll get. Pay $10/month ",
+    "raw_text": "I just sent the March edition of my sponsors-only monthly newsletter . If you are a sponsor (or if you start a sponsorship now) you can access it here . In this month's newsletter: More agentic engineering patterns Streaming experts with MoE models on a Mac Model releases in March Vibe porting Supply chain attacks against PyPI and NPM Stuff I shipped What I'm using, March 2026 edition And a couple of museums Here's a copy of the February newsletter as a preview of what you'll get. Pay $10/month to stay a month ahead of the free copy! Tags: newsletter",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "ai",
+      "python"
+    ],
+    "summary": "I just sent the March edition of my sponsors-only monthly newsletter . If you are a sponsor (or if you start a sponsorship now) you can access it here . In this month's newsletter: More agentic engineering patterns Streaming experts with MoE models on a Mac Model releases in March Vibe porting Suppl",
+    "insights": [],
+    "created_at": "2026-04-02T05:15:04",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "rss-openai-blog-c32a08ac79ed",
+    "source": "OpenAI Blog",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Codex now offers more flexible pricing for teams",
+    "url": "https://openai.com/index/codex-flexible-pricing-for-teams",
+    "original_content": "Codex now includes pay-as-you-go pricing for ChatGPT Business and Enterprise, providing teams a more flexible option to start and scale adoption.",
+    "raw_text": "Codex now includes pay-as-you-go pricing for ChatGPT Business and Enterprise, providing teams a more flexible option to start and scale adoption.",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "openai",
+      "official"
+    ],
+    "summary": "Codex now includes pay-as-you-go pricing for ChatGPT Business and Enterprise, providing teams a more flexible option to start and scale adoption.",
+    "insights": [],
+    "created_at": "2026-04-02T10:00:00",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "rss-miguel-grinberg-38c6d188269d",
+    "source": "Miguel Grinberg",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "SQLAlchemy 2 In Practice - Chapter 3 - One-To-Many Relationships",
+    "url": "https://blog.miguelgrinberg.com/post/sqlalchemy-2-in-practice---chapter-3---one-to-many-relationships",
+    "original_content": "This is the third chapter of my SQLAlchemy 2 in Practice book. If you'd like to support my work, I encourage you to buy this book, either directly from my store or on Amazon . Thank you! In the previous chapter you learned how to execute a variety of queries on the products table. Interestingly, some of those queries were designed to obtain product manufacturers and not products, and this required duplicates to be removed by grouping the results.",
+    "raw_text": "This is the third chapter of my SQLAlchemy 2 in Practice book. If you'd like to support my work, I encourage you to buy this book, either directly from my store or on Amazon . Thank you! In the previous chapter you learned how to execute a variety of queries on the products table. Interestingly, some of those queries were designed to obtain product manufacturers and not products, and this required duplicates to be removed by grouping the results.",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "python",
+      "flask"
+    ],
+    "summary": "This is the third chapter of my SQLAlchemy 2 in Practice book. If you'd like to support my work, I encourage you to buy this book, either directly from my store or on Amazon . Thank you! In the previous chapter you learned how to execute a variety of queries on the products table. Interestingly, som",
+    "insights": [],
+    "created_at": "2026-04-02T10:17:15",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "rss-pluralistic-6302204a5795",
+    "source": "Pluralistic",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Pluralistic: It's extremely good that Claude's source-code leaked (02 Apr 2026)",
+    "url": "https://pluralistic.net/2026/04/02/limited-monopoly/",
+    "original_content": "Today's links It's extremely good that Claude's source-code leaked: Careful what you wish for. Hey look at this: Delights to delectate. Object permanence: \"Elephantmen\"; Eve Online war bankrolled by casino; Phishers take Mattel for $3m; Sanders wins 6 primaries, CNN airs Jesus \"documentary\"; Cuba is a vaccine powerhouse; Embroidered Toast; Mass layoffs at ATT. Upcoming appearances: Toronto, Montreal, Toronto, San Francisco, London, Berlin, NYC, Hay-on-Wye, London. Recent appearances: Where I've ",
+    "raw_text": "->->->->->->->->->->->->->->->->->->->->->->->->->->->->-> Top Sources: None --> Today's links It's extremely good that Claude's source-code leaked : Careful what you wish for. Hey look at this : Delights to delectate. Object permanence : \"Elephantmen\"; Eve Online war bankrolled by casino; Phishers take Mattel for $3m; Sanders wins 6 primaries, CNN airs Jesus \"documentary\"; Cuba is a vaccine powerhouse; Embroidered Toast; Mass layoffs at ATT. Upcoming appearances : Toronto, Montreal, Toronto, San Francisco, London, Berlin, NYC, Hay-on-Wye, London. Recent appearances : Where I've been. Latest books : You keep readin' em, I'll keep writin' 'em. Upcoming books : Like I said, I'll keep writin' 'em. Colophon : All the rest. It's extremely good that Claude's source-code leaked ( permalink ) Anthropic's developers made an extremely basic configuration error, and as a result, the source-code for Claude Code &#8211; the company's flagship coding assistant product &#8211; has leaked and is being eagerly analyzed by many parties: https://news.ycombinator.com/item?id=47586778 In response, Anthropic is flooding the internet with \"takedown notices.\" These are a special kind of copyright-based censorship demand established by section 512 of the 1998 Digital Millennium Copyright Act (DMCA 512), allowing for the removal of material without any kind of evidence, let alone a judicial order: https://www.removepaywall.com/search?url=https://www.wsj.com/tech/ai/anthropic-races-to-contain-leak-of-code-behind-claude-ai-agent-4bc5acc7 Copyright is a \"strict liability\" statute, meaning that you can be punished for violating copyright even if you weren't aware that you had done so. What's more, \"intermediaries\" &#8211; like web hosts, social media platforms, search engines, and even caching servers &#8211; can be held liable for the copyright violations their users engage in. The liability is tremendous: the DMCA provides for $150,000 per infringement. DMCA 512 is meant to offset this strict liability. After all, there's no way for a platform to know whether one of its users is infringing copyright &#8211; even if a user uploads a popular song or video, the provider can't know whether they've licensed the work for distribution (or even if they are the creator of that work). A cumbersome system in which users would upload proof that they have such a license wouldn't just be onerous &#8211; it would still permit copyright infringement, because there's no way for an intermediary to know whether the distribution license the user provided was genuine. As a compromise, DMCA 512 absolves intermediaries from liability, if they \"expeditiously remove\" material upon notice that it infringes someone's copyright. In practice, that means that anyone can send a notice to any intermediary and have anything removed from the internet. The intermediary who receives this notice can choose to ignore it, but if the notice turns out to be genuine, they can end up on the hook for $150,000 per inf",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "policy"
+    ],
+    "summary": "Today's links It's extremely good that Claude's source-code leaked: Careful what you wish for. Hey look at this: Delights to delectate. Object permanence: \"Elephantmen\"; Eve Online war bankrolled by casino; Phishers take Mattel for $3m; Sanders wins 6 primaries, CNN airs Jesus \"documentary\"; Cuba is",
+    "insights": [],
+    "created_at": "2026-04-02T10:19:42",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "rss-openai-blog-b487a1bf1364",
+    "source": "OpenAI Blog",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "OpenAI acquires TBPN",
+    "url": "https://openai.com/index/openai-acquires-tbpn",
+    "original_content": "OpenAI acquires TBPN to accelerate global conversations around AI and support independent media, expanding dialogue with builders, businesses, and the broader tech community.",
+    "raw_text": "OpenAI acquires TBPN to accelerate global conversations around AI and support independent media, expanding dialogue with builders, businesses, and the broader tech community.",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "openai",
+      "official"
+    ],
+    "summary": "OpenAI acquires TBPN to accelerate global conversations around AI and support independent media, expanding dialogue with builders, businesses, and the broader tech community.",
+    "insights": [],
+    "created_at": "2026-04-02T10:30:00",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "rss-dave-farquhar-3466a81d9cb5",
+    "source": "Dave Farquhar",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Thomas Rattigan, short-lived Commodore CEO",
+    "url": "https://dfarq.homeip.net/thomas-rattigan-short-lived-commodore-ceo/?utm_source=rss&utm_medium=rss&utm_campaign=thomas-rattigan-short-lived-commodore-ceo",
+    "original_content": "On April 23, 1987, Thomas Rattigan drove to work just as he would any other day. But when he arrived at Commodore&#8217;s office building in suburban Philadelphia that morning, company guards informed him he&#8217;d been fired. They escorted him from The post Thomas Rattigan, short-lived Commodore CEO appeared first on The Silicon Underground .",
+    "raw_text": "On April 23, 1987, Thomas Rattigan drove to work just as he would any other day. But when he arrived at Commodore&#8217;s office building in suburban Philadelphia that morning, company guards informed him he&#8217;d been fired. They escorted him from The post Thomas Rattigan, short-lived Commodore CEO appeared first on The Silicon Underground .",
+    "relevance_score": 8.0,
+    "category": [
+      "tech"
+    ],
+    "summary": "On April 23, 1987, Thomas Rattigan drove to work just as he would any other day. But when he arrived at Commodore&#8217;s office building in suburban Philadelphia that morning, company guards informed him he&#8217;d been fired. They escorted him from The post Thomas Rattigan, short-lived Commodore C",
+    "insights": [],
+    "created_at": "2026-04-02T11:00:15",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "rss-terence-eden-afe9bd44a957",
+    "source": "Terence Eden",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Concert Review: London Philharmonic - Pictures at an Exhibition ★★★★★",
+    "url": "https://shkspr.mobi/blog/2026/04/concert-review-london-philharmonic-pictures-at-an-exhibition/",
+    "original_content": "A delightful and emotional rendition of three rather different works. Mark-Anthony Turnage&#039;s &#34;Three Screaming Popes&#34; was a chaotic cacophony. Wild, bizarre, inventive, and seemingly driven by excess. A fascinating performance, although not one I&#039;ll put on in the background. Turnage himself took to the stage to bask in the applause. Bartók&#039;s Violin Concerto No. 1. Reading the story behind the …",
+    "raw_text": "A delightful and emotional rendition of three rather different works. Mark-Anthony Turnage's \"Three Screaming Popes\" was a chaotic cacophony. Wild, bizarre, inventive, and seemingly driven by excess. A fascinating performance, although not one I'll put on in the background. Turnage himself took to the stage to bask in the applause. Bartók's Violin Concerto No. 1. Reading the story behind the composition made the performance by soloist Alina Ibragimova even more terrifying than it might have otherwise been. The sounds emanating from her violin were somewhere between a tantrum and flirtatious coquette. Stunning to see her tear up the stage. Mussorgsky's Pictures at an Exhibition. Outstanding. Hearing a 100 piece orchestra power through the score was exhilarating. It is such a vivid piece. There's no other way to describe it - each movement is distinct and full of character. One of those rare pieces where you can feel the music worming its way into your brain. You can listen to the concert on BBC Radio 3 . Pre- and Post-Show I've written before about The art of the Pre-Show and Post-Show . Venues and shows have multiple ways to make an event special for an audience. This concert did some things really well. For a start - the programme was free! I wish the West End was a bit more like Broadway with a free \"Playbill\" at every show. Even better, the programme was actually useful! Some nice blurbs about the performers and the pieces. I particularly liked this little snippet: How wonderful! It's always someone's first time at an orchestral concert. More programmes should have these little comfort notes. Other than that, there wasn't much. There was no interaction between the conductor and audience, which felt a little odd. The programme had a QR code to a 31(!) point questionnaire. I'm not sure how many people would be bothered to complete that. Royal Festival Hall is a delight - plenty of space, multiple bars, lots of seating areas, and a larger number of spacious &amp; clean toilets. An excellent venue.",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "web"
+    ],
+    "summary": "A delightful and emotional rendition of three rather different works. Mark-Anthony Turnage&#039;s &#34;Three Screaming Popes&#34; was a chaotic cacophony. Wild, bizarre, inventive, and seemingly driven by excess. A fascinating performance, although not one I&#039;ll put on in the background. Turnage",
+    "insights": [],
+    "created_at": "2026-04-02T11:34:07",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "rss-the-old-new-thing-0dde8a34bc95",
+    "source": "The Old New Thing",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Why doesn’t the system let you declare your own messages to have the same semantics as WM_COPY­DATA?",
+    "url": "https://devblogs.microsoft.com/oldnewthing/20260402-00/?p=112196",
+    "original_content": "Tempting but misleading. The post Why doesn&#8217;t the system let you declare your own messages to have the same semantics as &lt;CODE&gt;WM_&lt;WBR&gt;COPY&amp;shy;DATA&lt;/CODE&gt;? appeared first on The Old New Thing .",
+    "raw_text": "In a comment on my discussion on how to return results back from the WM_ COPY­DATA message , Jan Ringoš observed that it felt wasteful that there was this entire infrastructure for copying blocks of memory via a window message, yet only one message uses it! &#8220; I always thought something like EnableWindowMessageDataCopy (HWND, UINT, .) after RegisterWindowMessage and ChangeWindowMessageFilterEx to get application&#8217;s own private WM_COPYDATA would be a little more secure and convenient, should the programmer didn&#8217;t wish to bother with creating shared memory.&#8221; The infrastructure for copying blocks of memory via a window message is used by far more than just one message! The WM_ SET­TEXT and WM_ GET­TEXT message use it for passing string buffers, the WM_ HELP message uses it for passing the HELPINFO structure, the WM_ MDICREATE message uses it for passing the MDICREATSTRUCT structure, and plenty more where those came from. The infrastructure for copying blocks of memory had already existed; it wasn&#8217;t created just for the WM_ COPY­DATA message. adding WM_ COPY­DATA support was just adding a few lines of code to the common function whose job is to prepare messages to be sent between processes (including copying memory between processes). Suppose there were a way for a program to declare that one of its custom messages should have (say) its lParam be a pointer to data and its wParam be the size of the data. That could be misleading because the only behavior would be copying the memory block and not the data inside it. For example, if the structure contained pointers, the pointers would just be copied as raw values, rather than adding the pointed-to-data to the memory block and adjusting the pointers to point to the copy. It also doesn&#8217;t handle the case of sending the message between programs with different pointer or handle sizes, say between a 32-bit program and a 64-bit program.¹ If you need to copy data structures that consists of anything more than scalars (or aggregates of scalars), you&#8217;ll have to do your own marshaling to convert your source data structure into a transfer buffer. In practice, this means that sending the message directly with an as-is buffer is unlikely to be the common case; some type of conversion would have to be made anyway. Furthermore, the WM_ COPY­DATA already knew that you wanted to do this, because it left room for it in the COPY­DATA­STRUCT : typedef struct tagCOPYDATASTRUCT { ULONG_PTR dwData; // ← here DWORD cbData; PVOID lpData; } COPYDATASTRUCT, *PCOPYDATASTRUCT; In addition to describing the memory buffer, there is this extra guy called dwData . You can put your &#8220;message number&#8221; in there, allowing you to multiplex multiple &#8220;messages&#8221; into a single WM_ COPY­DATA message.² You don&#8217;t need Enable­Window­Message­Data­Copy because you already have it at home. The window manager is more concerned with enabling things that weren&#8217;t possible before, rat",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "windows",
+      "programming"
+    ],
+    "summary": "Tempting but misleading. The post Why doesn&#8217;t the system let you declare your own messages to have the same semantics as &lt;CODE&gt;WM_&lt;WBR&gt;COPY&amp;shy;DATA&lt;/CODE&gt;? appeared first on The Old New Thing .",
+    "insights": [],
+    "created_at": "2026-04-02T14:00:00",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "rss-john-d.-cook-1cd20011bc98",
+    "source": "John D. Cook",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Artemis II, Apollo 8, and Apollo 13",
+    "url": "https://www.johndcook.com/blog/2026/04/02/artemis-apollo/",
+    "original_content": "The Artemis II mission launched yesterday. Much like the Apollo 8 mission in 1968, the goal is to go around the moon in preparation for a future mission that will land on the moon. And like Apollo 13, the mission will swing around the moon rather than entering lunar orbit. Artemis II will deliberately follow [&#8230;] The post Artemis II, Apollo 8, and Apollo 13 first appeared on John D. Cook .",
+    "raw_text": "The Artemis II mission launched yesterday. Much like the Apollo 8 mission in 1968, the goal is to go around the moon in preparation for a future mission that will land on the moon. And like Apollo 13, the mission will swing around the moon rather than entering lunar orbit. Artemis II will deliberately follow the trajectory around the moon that Apollo 13 took as a fallback. Apollo 8 spent 2 hours and 44 minutes in low earth orbit (LEO) before performing trans-lunar injection (TLI) and heading toward the moon. Artemis II made one low earth orbit before moving to high earth orbit (HEO) where it will stay for around 24 hours before TLI. The Apollo 8 LEO was essentially circular at an altitude of around 100 nautical miles. The Artemis II HEO is highly eccentric with an apogee of around 40,000 nautical miles. Apollo 8 spent roughly three days traveling to the moon, measured as the time between TLI and lunar insertion orbit. Artemis II will not orbit the moon but instead swing past the moon on a &#8220;lunar free-return trajectory&#8221; like Apollo 13. The time between Artemis&#8217; TLI and perilune (the closest approach to the moon, on the far side) is expected to be about four days. For Apollo 13, this period was three days. The furthest any human has been from earth was the Apollo 13 perilune at about 60 nautical miles above the far side of the moon. Artemis is expected to break this record with a perilune of between 3,500 and 5,200 nautical miles. Related posts Sphere of influence Arenstorf&#8217;s orbit Math developed for going to the moon The post Artemis II, Apollo 8, and Apollo 13 first appeared on John D. Cook .",
+    "relevance_score": 8.0,
+    "category": [
+      "math",
+      "programming"
+    ],
+    "summary": "The Artemis II mission launched yesterday. Much like the Apollo 8 mission in 1968, the goal is to go around the moon in preparation for a future mission that will land on the moon. And like Apollo 13, the mission will swing around the moon rather than entering lunar orbit. Artemis II will deliberate",
+    "insights": [],
+    "created_at": "2026-04-02T14:14:44",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "rss-google-ai-blog-b9151f445ef2",
+    "source": "Google AI Blog",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "New ways to balance cost and reliability in the Gemini API",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-flex-and-priority-inference/",
+    "original_content": "Google is introducing two new inference tiers to the Gemini API, Flex and Priority, to balance cost and latency.",
+    "raw_text": "Google is introducing two new inference tiers to the Gemini API, Flex and Priority, to balance cost and latency.",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "google",
+      "official"
+    ],
+    "summary": "Google is introducing two new inference tiers to the Gemini API, Flex and Priority, to balance cost and latency.",
+    "insights": [],
+    "created_at": "2026-04-02T16:00:00",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "rss-google-ai-blog-aaf3d2dd3969",
+    "source": "Google AI Blog",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Create, edit and share videos at no cost in Google Vids",
+    "url": "https://blog.google/products-and-platforms/products/workspace/google-vids-updates-lyria-veo/",
+    "original_content": "New AI capabilities are coming to Google Vids, powered by Lyria 3 and Veo 3.1, like high-quality video generation at no cost and more.",
+    "raw_text": "New AI capabilities are coming to Google Vids, powered by Lyria 3 and Veo 3.1, like high-quality video generation at no cost and more.",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "google",
+      "official"
+    ],
+    "summary": "New AI capabilities are coming to Google Vids, powered by Lyria 3 and Veo 3.1, like high-quality video generation at no cost and more.",
+    "insights": [],
+    "created_at": "2026-04-02T16:00:00",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "rss-google-deepmind-blog-c64eb2c5c469",
+    "source": "Google DeepMind Blog",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Gemma 4: Byte for byte, the most capable open models",
+    "url": "https://deepmind.google/blog/gemma-4-byte-for-byte-the-most-capable-open-models/",
+    "original_content": "Gemma 4: Our most intelligent open models to date, purpose-built for advanced reasoning and agentic workflows.",
+    "raw_text": "Gemma 4: Our most intelligent open models to date, purpose-built for advanced reasoning and agentic workflows.",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "google",
+      "deepmind"
+    ],
+    "summary": "Gemma 4: Our most intelligent open models to date, purpose-built for advanced reasoning and agentic workflows.",
+    "insights": [],
+    "created_at": "2026-04-02T16:00:49",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "atom-daring-fireball-07c6504d7dbe",
+    "source": "Daring Fireball",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "‘No, We’re Not Stupid. Our Dads Just Got Us Crummy Computers.’",
+    "url": "https://www.reddit.com/r/VintageApple/comments/bq4ucw/mcintosh_jr_vintage_apple_parody/",
+    "original_content": "Back in March 1991, Saturday Night Live ran what I consider the best Apple parody ad ever made: “McIntosh Jr.” Siracusa and I talked about it on The Talk Show this week, celebrating Apple’s 50th anniversary, so I looked it up for the show notes. Alas, this appallingly low-resolution copy hosted on Reddit is seemingly the only free-to-watch copy of it available. (If you can find — or make — a better version, let me know .) If you have a Peacock account, you can watch it in much higher quality in ",
+    "raw_text": "Back in March 1991, Saturday Night Live ran what I consider the best Apple parody ad ever made: “McIntosh Jr.” Siracusa and I talked about it on The Talk Show this week, celebrating Apple’s 50th anniversary, so I looked it up for the show notes. Alas, this appallingly low-resolution copy hosted on Reddit is seemingly the only free-to-watch copy of it available. (If you can find — or make — a better version, let me know .) If you have a Peacock account, you can watch it in much higher quality in their SNL archive: Season 16, Episode 16 , starting at 7:30, just after host Jeremy Irons’s monologue. (It rolls right into a good “Deep Thoughts by Jack Handey”.) We just recorded tomorrow’s episode of Dithering , and Ben asked me my favorite Apple commercial of all time. I was tempted to say this one, despite the fact that it isn’t real. The best parodies are the ones that hew the closest to the truth of their subject, that exaggerate the least. And the message of “McIntosh Jr.” is, at its heart, the actual purpose of the Macintosh, and of Apple writ large. Computers that enable you to do your best work. Bicycles for the mind. And, yes, the power to crush the other kids. That’s what drew me and Siracusa to Apple computers, and keeps us drawn to them today. &amp;nbsp;★&amp;nbsp;",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "apple"
+    ],
+    "summary": "Back in March 1991, Saturday Night Live ran what I consider the best Apple parody ad ever made: “McIntosh Jr.” Siracusa and I talked about it on The Talk Show this week, celebrating Apple’s 50th anniversary, so I looked it up for the show notes. Alas, this appallingly low-resolution copy hosted on R",
+    "insights": [],
+    "created_at": "2026-04-02T18:12:11",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "atom-simon-willison-e2aff6828cd3",
+    "source": "Simon Willison",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "llm-gemini 0.30",
+    "url": "https://simonwillison.net/2026/Apr/2/llm-gemini/#atom-everything",
+    "original_content": "Release: llm-gemini 0.30 New models gemini-3.1-flash-lite-preview , gemma-4-26b-a4b-it and gemma-4-31b-it . See my notes on Gemma 4 . Tags: gemini , llm , gemma",
+    "raw_text": "Release: llm-gemini 0.30 New models gemini-3.1-flash-lite-preview , gemma-4-26b-a4b-it and gemma-4-31b-it . See my notes on Gemma 4 . Tags: gemini , llm , gemma",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "ai",
+      "python"
+    ],
+    "summary": "Release: llm-gemini 0.30 New models gemini-3.1-flash-lite-preview , gemma-4-26b-a4b-it and gemma-4-31b-it . See my notes on Gemma 4 . Tags: gemini , llm , gemma",
+    "insights": [],
+    "created_at": "2026-04-02T18:25:08",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "atom-simon-willison-6e2aefbb1524",
+    "source": "Simon Willison",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Gemma 4: Byte for byte, the most capable open models",
+    "url": "https://simonwillison.net/2026/Apr/2/gemma-4/#atom-everything",
+    "original_content": "Gemma 4: Byte for byte, the most capable open models Four new vision-capable Apache 2.0 licensed reasoning LLMs from Google DeepMind, sized at 2B, 4B, 31B, plus a 26B-A4B Mixture-of-Experts. Google emphasize \"unprecedented level of intelligence-per-parameter\", providing yet more evidence that creating small useful models is one of the hottest areas of research right now. They actually label the two smaller models as E2B and E4B for \"Effective\" parameter size. The system card explains: The smalle",
+    "raw_text": "Gemma 4: Byte for byte, the most capable open models Four new vision-capable Apache 2.0 licensed reasoning LLMs from Google DeepMind, sized at 2B, 4B, 31B, plus a 26B-A4B Mixture-of-Experts. Google emphasize \"unprecedented level of intelligence-per-parameter\", providing yet more evidence that creating small useful models is one of the hottest areas of research right now. They actually label the two smaller models as E2B and E4B for \"Effective\" parameter size. The system card explains: The smaller models incorporate Per-Layer Embeddings (PLE) to maximize parameter efficiency in on-device deployments. Rather than adding more layers or parameters to the model, PLE gives each decoder layer its own small embedding for every token. These embedding tables are large but are only used for quick lookups, which is why the effective parameter count is much smaller than the total. I don't entirely understand that, but apparently that's what the \"E\" in E2B means! One particularly exciting feature of these models is that they are multi-modal beyond just images: Vision and audio : All models natively process video and images, supporting variable resolutions, and excelling at visual tasks like OCR and chart understanding. Additionally, the E2B and E4B models feature native audio input for speech recognition and understanding. I've not figured out a way to run audio input locally - I don't think that feature is in LM Studio or Ollama yet. I tried them out using the GGUFs for LM Studio . The 2B (4.41GB), 4B (6.33GB) and 26B-A4B (17.99GB) models all worked perfectly, but the 31B (19.89GB) model was broken and spat out \"---\\n\" in a loop for every prompt I tried. The succession of pelican quality from 2B to 4B to 26B-A4B is notable: E2B: E4B: 26B-A4B: (This one actually had an SVG error - \"error on line 18 at column 88: Attribute x1 redefined\" - but after fixing that I got probably the best pelican I've seen yet from a model that runs on my laptop.) Google are providing API access to the two larger Gemma models via their AI Studio . I added support to llm-gemini and then ran a pelican through the 31B model using that: llm -m gemini/gemma-4-31b-it 'Generate an SVG of a pelican riding a bicycle' Pretty good, though it is missing the front part of the bicycle frame: Tags: google , ai , generative-ai , local-llms , llms , llm , vision-llms , pelican-riding-a-bicycle , llm-reasoning , gemma , llm-release , lm-studio",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "ai",
+      "python"
+    ],
+    "summary": "Gemma 4: Byte for byte, the most capable open models Four new vision-capable Apache 2.0 licensed reasoning LLMs from Google DeepMind, sized at 2B, 4B, 31B, plus a 26B-A4B Mixture-of-Experts. Google emphasize \"unprecedented level of intelligence-per-parameter\", providing yet more evidence that creati",
+    "insights": [],
+    "created_at": "2026-04-02T18:28:54",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "atom-daring-fireball-d7a8a99e650b",
+    "source": "Daring Fireball",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Axios, Super Popular NPM Package, Was Compromised in Attack on the Module’s Maintainer",
+    "url": "https://www.stepsecurity.io/blog/axios-compromised-on-npm-malicious-versions-drop-remote-access-trojan",
+    "original_content": "StepSecurity: If you have installed axios@1.14.1 or axios@0.30.4, assume your system is compromised. There are zero lines of malicious code inside axios itself, and that’s exactly what makes this attack so dangerous. Both poisoned releases inject a fake dependency, plain-crypto-js@4.2.1 , a package never imported anywhere in the axios source, whose sole purpose is to run a postinstall script that deploys a cross-platform remote access trojan. The dropper contacts a live command-and-control serve",
+    "raw_text": "StepSecurity: If you have installed axios@1.14.1 or axios@0.30.4, assume your system is compromised. There are zero lines of malicious code inside axios itself, and that’s exactly what makes this attack so dangerous. Both poisoned releases inject a fake dependency, plain-crypto-js@4.2.1 , a package never imported anywhere in the axios source, whose sole purpose is to run a postinstall script that deploys a cross-platform remote access trojan. The dropper contacts a live command-and-control server, delivers separate second-stage payloads for macOS, Windows, and Linux, then erases itself and replaces its own package.json with a clean decoy. A developer who inspects their node_modules folder after the fact will find no indication anything went wrong. This was not opportunistic. It was precision. The malicious dependency was staged 18 hours in advance. Three payloads were pre-built for three operating systems. Both release branches were poisoned within 39 minutes of each other. Every artifact was designed to self-destruct. Within two seconds of npm install , the malware was already calling home to the attacker’s server before npm had even finished resolving dependencies. This is among the most operationally sophisticated supply chain attacks ever documented against a top-10 npm package. Could be my bigotry against JavaScript speaking, but I find it unsurprising that this happened to the same framework that this and this happened to. &amp;nbsp;★&amp;nbsp;",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "apple"
+    ],
+    "summary": "StepSecurity: If you have installed axios@1.14.1 or axios@0.30.4, assume your system is compromised. There are zero lines of malicious code inside axios itself, and that’s exactly what makes this attack so dangerous. Both poisoned releases inject a fake dependency, plain-crypto-js@4.2.1 , a package ",
+    "insights": [],
+    "created_at": "2026-04-02T18:42:39",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "atom-daring-fireball-1d4a9992646f",
+    "source": "Daring Fireball",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "OpenAI, Supposedly Tightening Its Focus on Its Core Products, Buys Tech-Industry Talk Show TBPN",
+    "url": "https://www.wsj.com/cmo-today/openai-buys-tech-industry-talk-show-tbpn-484c01c5?st=RUVFWn",
+    "original_content": "Katie Deighton, reporting for The Wall Street Journal (main link is a gift link; also on News+ ): OpenAI bought TBPN to encourage constructive conversation around the changes AI creates by helping the show grow, according to a memo sent by Fidji Simo, the OpenAI’s CEO of applications. TBPN will report to Chris Lehane, OpenAI’s chief global affairs officer, and will help with company communications and marketing outside of the show. “They’ve helped many brands market online and because they have ",
+    "raw_text": "Katie Deighton, reporting for The Wall Street Journal (main link is a gift link; also on News+ ): OpenAI bought TBPN to encourage constructive conversation around the changes AI creates by helping the show grow, according to a memo sent by Fidji Simo, the OpenAI’s CEO of applications. TBPN will report to Chris Lehane, OpenAI’s chief global affairs officer, and will help with company communications and marketing outside of the show. “They’ve helped many brands market online and because they have a strong pulse on where the industry is going, their comms and marketing ideas have really impressed me,” Simo wrote in the memo. But TBPN will remain editorially independent, retaining control over its programming, editorial decisions, guest selection and production schedule, OpenAI said. Yes, I’m sure they’ll remain totally independent. You know, like The Washington Post under Jeff Bezos , and CBS News under David Ellison . Many news and commentary publications have remained steadfastly independent while reporting to the head of PR for a company they ostensibly cover. &amp;nbsp;★&amp;nbsp;",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "apple"
+    ],
+    "summary": "Katie Deighton, reporting for The Wall Street Journal (main link is a gift link; also on News+ ): OpenAI bought TBPN to encourage constructive conversation around the changes AI creates by helping the show grow, according to a memo sent by Fidji Simo, the OpenAI’s CEO of applications. TBPN will repo",
+    "insights": [],
+    "created_at": "2026-04-02T18:58:50",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "rss-jim-nielsen-587ff94f0da7",
+    "source": "Jim Nielsen",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "The Blandness of Systematic Rules vs. The Delight of Localized Sensitivity",
+    "url": "https://blog.jim-nielsen.com/2026/systemic-vs-localized/",
+    "original_content": "Marcin Wichary brings attention to this lovely dialog in ClarisWorks from 1997: He quips: this breaks the rule of button copy being fully comprehensible without having to read the surrounding strings first, perhaps most well-known as the “avoid «click here»” rule. Never Register/​Register Later/​Register Now would solve that problem, but wouldn’t look so neat. This got me thinking about how you judge when an interface should bend to fit systematic rules vs. exert itself and its peculiarities and",
+    "raw_text": "Marcin Wichary brings attention to this lovely dialog in ClarisWorks from 1997: He quips: this breaks the rule of button copy being fully comprehensible without having to read the surrounding strings first, perhaps most well-known as the “avoid «click here»” rule. Never Register/​Register Later/​Register Now would solve that problem, but wouldn’t look so neat. This got me thinking about how you judge when an interface should bend to fit systematic rules vs. exert itself and its peculiarities and context? The trade-off Marcin points out is real: &quot;Never Register / Register Later / Register Now&quot; is fully self-describing and avoids the «click here» rule. However, it kills the elegant terseness that makes that dialog so delightful. “Now / Later / Never” is three words with no filler and a perfect parallel structure. It feels like one of those cases where the rule is sound as a guideline but a thoughtful design supersedes the baseline value provided by the rule. Rules, in a way, are useful structures when you don’t want to think more. But more thinking can result in delightful exceptions that prove better than the outcome any rule can provide. I suppose it really is trade-offs everywhere : When you choose to make decisions on a case-by-case basis, the result can be highly-tailored to the specific context of the problem at hand. However, within a larger system, you can start to lose consistency and coherence across similar UX decision points. When you choose to make system rules override the sensitivities of individual cases, you can lose the magic and delight of finding waypoints tailored exclusively to their peculiarities. As software moves towards “scale”, I can’t help but think that systematic rules swallow all decision making because localized exceptions become points of friction — “We can’t require an experienced human give thought and care to the design of every single dialog box.” What scale wants is automated decision making that doesn’t require skill or expertise because those things, by definition, don’t scale. Then again, when you manufacture upon inhuman lines how can you expect humane outcomes? Reply via: Email · Mastodon · Bluesky",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "web",
+      "frontend"
+    ],
+    "summary": "Marcin Wichary brings attention to this lovely dialog in ClarisWorks from 1997: He quips: this breaks the rule of button copy being fully comprehensible without having to read the surrounding strings first, perhaps most well-known as the “avoid «click here»” rule. Never Register/​Register Later/​Reg",
+    "insights": [],
+    "created_at": "2026-04-02T19:00:00",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "atom-daring-fireball-cfe1a9dae5fb",
+    "source": "Daring Fireball",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Artemis II Crew on Way to Moon",
+    "url": "https://512pixels.net/2026/04/artemis-ii-crew-on-way-to-moon/",
+    "original_content": "Great roundup of links from Stephen Hackett: The crew is made up of Reid Wiseman, Victor Glover, Christina Koch, and CSA (Canadian Space Agency) astronaut Jeremy Hansen. They are now on their way to the moon, set to return in 10 days. Their rocket may be the product of a hugely-flawed program , but right now, that doesn’t matter. They are getting us closer to returning to the lunar surface than we’ve been in 50 years. That’s worth celebrating. &amp;nbsp;★&amp;nbsp;",
+    "raw_text": "Great roundup of links from Stephen Hackett: The crew is made up of Reid Wiseman, Victor Glover, Christina Koch, and CSA (Canadian Space Agency) astronaut Jeremy Hansen. They are now on their way to the moon, set to return in 10 days. Their rocket may be the product of a hugely-flawed program , but right now, that doesn’t matter. They are getting us closer to returning to the lunar surface than we’ve been in 50 years. That’s worth celebrating. &amp;nbsp;★&amp;nbsp;",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "apple"
+    ],
+    "summary": "Great roundup of links from Stephen Hackett: The crew is made up of Reid Wiseman, Victor Glover, Christina Koch, and CSA (Canadian Space Agency) astronaut Jeremy Hansen. They are now on their way to the moon, set to return in 10 days. Their rocket may be the product of a hugely-flawed program , but ",
+    "insights": [],
+    "created_at": "2026-04-02T19:37:10",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "rss-meta-engineering-8302b9d33b60",
+    "source": "Meta Engineering",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "KernelEvolve: How Meta’s Ranking Engineer Agent Optimizes AI Infrastructure",
+    "url": "https://engineering.fb.com/2026/04/02/developer-tools/kernelevolve-how-metas-ranking-engineer-agent-optimizes-ai-infrastructure/",
+    "original_content": "This is the second post in the Ranking Engineer Agent blog series exploring the autonomous AI capabilities accelerating Meta&#8217;s Ads Ranking innovation. The previous post introduced Ranking Engineer Agent&#8217;s ML exploration capability, which autonomously designs, executes, and analyzes ranking model experiments. This post covers how to optimize the low-level infrastructure that makes those models run [...] Read More... The post KernelEvolve: How Meta’s Ranking Engineer Agent Optimizes AI",
+    "raw_text": "This is the second post in the Ranking Engineer Agent blog series exploring the autonomous AI capabilities accelerating Meta&#8217;s Ads Ranking innovation. The previous post introduced Ranking Engineer Agent&#8217;s ML exploration capability , which autonomously designs, executes, and analyzes ranking model experiments. This post covers how to optimize the low-level infrastructure that makes those models run efficiently at scale. We introduce KernelEvolve, an agentic kernel authoring system used by Ranking Engineer Agent and generally applicable to a range of AI models beyond Ads Ranking. Summary Meta operates a large fleet of heterogeneous hardware — NVIDIA GPUs, AMD GPUs, Meta&#8217;s custom MTIA silicon chips, and CPUs. Using this hardware effectively and efficiently requires developing software that translates high-level model operations into efficient, chip-specific instructions called optimized kernels. Authoring and optimizing kernels must be done for each new chip generation and ML model architecture. Beyond standard kernel operators like general matrix multiplications (GEMMs) and convolutions covered by vendor libraries, production workloads require many custom operators across ranking models. With the number of models and number of hardware types and generations, hand-tuning by kernel experts doesn&#8217;t scale. To address the volume of performance optimization work required by the increasing number of models X number of hardware types &amp; generations, we built KernelEvolve , an agent to optimize performance used by Meta’s Ranking Engineer Agent . It enables: Faster development : Compresses weeks of expert engineering time optimizing kernels, including profiling, optimizing, and cross-hardware debugging, into hours of automated search and evaluation, freeing engineers for other work. Better performance : Over 60% inference throughput improvement for the Andromeda Ads model on NVIDIA GPUs and over 25% training throughput improvement for an ads model on Meta&#8217;s custom MTIA silicon chips. Broad applicability : Optimizes across public and proprietary hardware including NVIDIA GPUs, AMD GPUs, MTIA chips and CPUs , generating kernels in high-level DSLs like Triton, Cute DSL, and FlyDSL, as well as low-level languages including CUDA, HIP, and MTIA C++. KernelEvolve treats kernel optimization as a search problem: a purpose-built job-harness evaluates each candidate kernel, feeds diagnostics back to the LLM, and drives a continuous search over hundreds of alternatives, exceeding the performance of human expert generated kernels. More details are available in the paper, “ KernelEvolve: Scaling Agentic Kernel Coding for Heterogeneous AI Accelerators at Meta ,” which will appear at the 53rd International Symposium on Computer Architecture (ISCA) 2026 . Every day, Meta serves billions of AI-powered experiences, from personalized recommendation to generative AI assistants, on a global infrastructure including diverse hardware from NVIDIA, AM",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "meta",
+      "engineering"
+    ],
+    "summary": "This is the second post in the Ranking Engineer Agent blog series exploring the autonomous AI capabilities accelerating Meta&#8217;s Ads Ranking innovation. The previous post introduced Ranking Engineer Agent&#8217;s ML exploration capability, which autonomously designs, executes, and analyzes ranki",
+    "insights": [],
+    "created_at": "2026-04-02T19:59:46",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "atom-daring-fireball-74ba6d189ab4",
+    "source": "Daring Fireball",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "John Buck on the Invention of QuickTime",
+    "url": "https://www.theverge.com/tech/902721/quicktime-history-apple?view_token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6IkcybHEzWGhZTVciLCJwIjoiL3RlY2gvOTAyNzIxL3F1aWNrdGltZS1oaXN0b3J5LWFwcGxlIiwiZXhwIjoxNzc1NTkyNzA0LCJpYXQiOjE3NzUxNjA3MDR9.p4nbje9XKl05Ybv3q31CyAQULuqAB-H9b8qfftSz12k",
+    "original_content": "John Buck at The Verge (gift link), excerpted from his great book, Inventing the Future : Steve Perlman: Almost everyone at Apple, and definitely everywhere else, assumed that multimedia would always require specialized hardware — and be expensive. A few of us thought otherwise. One of the few was Gavin Miller, a research scientist in Apple’s Graphics Group, who worked with Hoffert to crack the problem of software compression and decompression, otherwise known as codec. Gavin Miller, research sc",
+    "raw_text": "John Buck at The Verge (gift link), excerpted from his great book, Inventing the Future : Steve Perlman: Almost everyone at Apple, and definitely everywhere else, assumed that multimedia would always require specialized hardware — and be expensive. A few of us thought otherwise. One of the few was Gavin Miller, a research scientist in Apple’s Graphics Group, who worked with Hoffert to crack the problem of software compression and decompression, otherwise known as codec. Gavin Miller, research scientist: We went for a lunchtime walk, and by the end of it, we had generalized the model to include constant color blocks and 2-bit per-pixel interpolating blocks. This allowed us to trade off quantization artifacts in large flat areas for more detail in textured areas. The result was an increase in quality and performance that helped to make the codec practical for really small video sizes. Just a typical lunchtime walk-and-talk. Fun anecdote from 1990: He asked Peppel to create a product plan that he could announce at Apple’s Worldwide Developers Conference on May 7th. That day, Casey took to the stage and announced QuickTime to a stunned audience, saying, “Apple intends to develop real-time software compression/decompression technology that will run on today’s modular Macintosh systems. A system-wide time coding to allow synchronization of sound, animation, and other time-critical processes.” Casey explained that Apple’s new multimedia architecture would be delivered by the end of the year. He did not say that QuickTime had no budget, staff, or offices. Worthington: We were dumbfounded. Konstantin Othmer, QuickDraw engineer: I was standing next to Bruce Leak, and asked him, “What the heck was that?” He said he had no idea. QuickTime actually shipped by WWDC 1991, teaching Apple the important lesson that anything they announce at WWDC, no matter how premature, will ship as promised. &amp;nbsp;★&amp;nbsp;",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "apple"
+    ],
+    "summary": "John Buck at The Verge (gift link), excerpted from his great book, Inventing the Future : Steve Perlman: Almost everyone at Apple, and definitely everywhere else, assumed that multimedia would always require specialized hardware — and be expensive. A few of us thought otherwise. One of the few was G",
+    "insights": [],
+    "created_at": "2026-04-02T20:12:07",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "atom-simon-willison-ede5c8fe437f",
+    "source": "Simon Willison",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Highlights from my conversation about agentic engineering on Lenny's Podcast",
+    "url": "https://simonwillison.net/2026/Apr/2/lennys-podcast/#atom-everything",
+    "original_content": "I was a guest on Lenny Rachitsky's podcast, in a new episode titled An AI state of the union: We've passed the inflection point, dark factories are coming, and automation timelines . It's available on YouTube , Spotify , and Apple Podcasts . Here are my highlights from our conversation, with relevant links. The November inflection point Software engineers as bellwethers for other information workers Writing code on my phone Responsible vibe coding Dark Factories and StrongDM The bottleneck has m",
+    "raw_text": "I was a guest on Lenny Rachitsky's podcast, in a new episode titled An AI state of the union: We've passed the inflection point, dark factories are coming, and automation timelines . It's available on YouTube , Spotify , and Apple Podcasts . Here are my highlights from our conversation, with relevant links. The November inflection point Software engineers as bellwethers for other information workers Writing code on my phone Responsible vibe coding Dark Factories and StrongDM The bottleneck has moved to testing This stuff is exhausting Interruptions cost a lot less now My ability to estimate software is broken It's tough for people in the middle It's harder to evaluate software The misconception that AI tools are easy Coding agents are useful for security research now OpenClaw Journalists are good at dealing with unreliable sources The pelican benchmark And finally, some good news about parrots YouTube chapters The November inflection point 4:19 - The end result of these two labs throwing everything they had at making their models better at code is that in November we had what I call the inflection point where GPT 5.1 and Claude Opus 4.5 came along. They were both incrementally better than the previous models, but in a way that crossed a threshold where previously the code would mostly work, but you had to pay very close attention to it. And suddenly we went from that to... almost all of the time it does what you told it to do, which makes all of the difference in the world. Now you can spin up a coding agent and say, build me a Mac application that does this thing , and you'll get something back which won't just be a buggy pile of rubbish that doesn't do anything. Software engineers as bellwethers for other information workers 5:49 - I can churn out 10,000 lines of code in a day. And most of it works. Is that good? Like, how do we get from most of it works to all of it works? There are so many new questions that we're facing, which I think makes us a bellwether for other information workers. Code is easier than almost every other problem that you pose these agents because code is obviously right or wrong - either it works or it doesn't work. There might be a few subtle hidden bugs, but generally you can tell if the thing actually works. If it writes you an essay, if it prepares a lawsuit for you, it's so much harder to derive if it's actually done a good job, and to figure out if it got things right or wrong. But it's happening to us as software engineers. It came for us first. And we're figuring out, OK, what do our careers look like? How do we work as teams when part of what we did that used to take most of the time doesn't take most of the time anymore? What does that look like? And it's going to be very interesting seeing how this rolls out to other information work in the future. Lawyers are falling for this really badly. The AI hallucination cases database is up to 1,228 cases now! Plus this bit from the cold open at the start : It used to ",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "ai",
+      "python"
+    ],
+    "summary": "I was a guest on Lenny Rachitsky's podcast, in a new episode titled An AI state of the union: We've passed the inflection point, dark factories are coming, and automation timelines . It's available on YouTube , Spotify , and Apple Podcasts . Here are my highlights from our conversation, with relevan",
+    "insights": [],
+    "created_at": "2026-04-02T20:40:47",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "rss-giles-thomas-e9d854e4fd2c",
+    "source": "Giles Thomas",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Automating starting Lambda Labs instances",
+    "url": "https://www.gilesthomas.com/2026/04/automating-starting-lambda-instances",
+    "original_content": "I've been trying to get an 8x A100 instance on Lambda Labs to do a training run for my LLM from scratch series , but they're really busy at the moment, and it's rare to see anything. Thanks to the wonders of agentic coding, I spent an hour today getting something up and running to help, which I've called lambda-manager . It has three commands: list-instance-types , which prints which kinds of instances are available. list-instance-type-descriptions , which prints out all of the possible instance",
+    "raw_text": "I've been trying to get an 8x A100 instance on Lambda Labs to do a training run for my LLM from scratch series , but they're really busy at the moment, and it's rare to see anything. Thanks to the wonders of agentic coding, I spent an hour today getting something up and running to help, which I've called lambda-manager . It has three commands: list-instance-types , which prints which kinds of instances are available. list-instance-type-descriptions , which prints out all of the possible instance types (available or not) with both their \"friendly\" names -- what you'd see on the website -- and the instance type names that the API uses. launch-when-available , which polls the API until it sees a specified type of instance, at which point it starts one and sends a Telegram message. Let's see if that helps -- though it's been running for six hours now, with no luck...",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "python"
+    ],
+    "summary": "I've been trying to get an 8x A100 instance on Lambda Labs to do a training run for my LLM from scratch series , but they're really busy at the moment, and it's rare to see anything. Thanks to the wonders of agentic coding, I spent an hour today getting something up and running to help, which I've c",
+    "insights": [],
+    "created_at": "2026-04-02T23:30:00",
+    "processed_at": "2026-04-03 06:57:30"
+  }
+]

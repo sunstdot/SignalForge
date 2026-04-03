@@ -2,23 +2,17 @@
   "name": "token-burner",
   "version": "1.0.0",
   "private": true,
+  "description": "AI 驱动的新闻简报收集和展示平台",
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
-    "test": "turbo run test",
-    "lint": "turbo run lint",
-    "collector": "pnpm --filter @tokenburner/collector",
-    "web": "pnpm --filter @tokenburner/web",
-    "collect": "pnpm collector run start",
-    "db:init": "pnpm collector run db:init"
-  },
-  "devDependencies": {
-    "turbo": "^1.13.0",
-    "typescript": "^5.4.0"
-  },
-  "packageManager": "pnpm@8.15.0",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ]
+    "dev": "./start.sh",
+    "dev:frontend": "cd frontend && pnpm dev",
+    "dev:backend": "cd backend && source venv/bin/activate && uvicorn main:app --reload --port 8000",
+    "build": "cd frontend && pnpm build",
+    "start": "cd backend && source venv/bin/activate && uvicorn main:app --host 0.0.0.0 --port 8000",
+    "daily": "cd backend && source venv/bin/activate && python cli.py daily",
+    "collect": "cd backend && source venv/bin/activate && python cli.py collect",
+    "briefing": "cd backend && source venv/bin/activate && python cli.py briefing",
+    "stats": "cd backend && source venv/bin/activate && python cli.py stats",
+    "refetch": "cd backend && source venv/bin/activate && python cli.py refetch"
+  }
 }

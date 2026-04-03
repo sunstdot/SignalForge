@@ -1,0 +1,1641 @@
+[
+  {
+    "id": "atom-george-hotz-84ee36a8a594",
+    "source": "George Hotz",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "The Reckoning",
+    "url": "https://geohot.github.io//blog/jekyll/update/2026/04/03/the-reckoning.html",
+    "original_content": "So go ask your Chomsky What these systems produce – Sediment - Say Anything 10 years ago, when I started comma and discovered the Professional Managerial Class, I used to talk about the reckoning. It was a nebulous concept, but it mostly involved the abrupt fall from grace of these people at the hands of machines. It’s kind of here, and people are way more of sore winners than I thought they’d be. Something I liked about Trump part one is that, despite the rhetoric, he never actually tried to lo",
+    "raw_text": "So go ask your Chomsky What these systems produce – Sediment - Say Anything 10 years ago, when I started comma and discovered the Professional Managerial Class, I used to talk about the reckoning. It was a nebulous concept, but it mostly involved the abrupt fall from grace of these people at the hands of machines. It’s kind of here, and people are way more of sore winners than I thought they’d be. Something I liked about Trump part one is that, despite the rhetoric, he never actually tried to lock up Hillary Clinton. It would frame GPT as a useful tool, and a technological breakthrough—but still “glorified autocomplete” at the end of the day. Yet he does not do this. Instead, he speaks openly and airily about constructing artificial superintelligence, and his extreme concerns about it wiping out humanity. The only possible conclusion is that it’s designed to cause panic. – Schizoposting - Alaric The marketing for AI has been awful. It ratchets the fear up to 11, then expresses shock when most Americans are concerned about AI . Here’s this machine. In the best case, it takes your job. In the worst case, it wipes out humanity. Pay me $20 a month for a sliver of hope of not falling behind. Why are we building this again? Surely, then, superintelligence would necessarily imply supermorality. – Eliezer Yudkowsky Spoiler alert: it doesn’t. Doesn’t matter if it’s machine or mixture of human. I’m surprised how little people in the US view themselves as part of a society. Like you can say this is due to some Russian agitprop or something, but that really doesn’t explain it. Maybe I just see it now living in Hong Kong, there’s something about here that constantly reminds you. And it really works for the benefit of all. I lived in San Diego apartments for 5 years. I never met my neighbors. Most interactions I had with strangers were with homeless people or indifferent shop workers. The value of cleaning up homelessness would pay itself back 100 fold. Then the average interaction would be positive instead of negative, and the overall take on interactions would flip with it. Once men turned their thinking over to machines in the hope that this would set them free. But that only permitted other men with machines to enslave them. – Dune I wish it didn’t have to be this way. AI could bring about such a golden age. But you immediately hear the shot in the head progressive take “a golden age for who?” and that’s such a sad zero sum framing. And when you get back, assuming you get back, take a day to think about how AI will fix South Africa. Or VR will fix South Africa? Or crypto? – Curtis Yarvin Our problems in the world won’t be fixed by AI. There’s never been a revolution people are less excited for, and they aren’t wrong. I’ve dreamed about this for my whole life and I’m not even excited about it. Not like this. Highly targeted email spam is way up. The feeds are more addictive. All PRs on GitHub need to just immediately be closed (hey GitHub, add a reputation ",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "ai",
+      "hacking"
+    ],
+    "summary": "So go ask your Chomsky What these systems produce – Sediment - Say Anything 10 years ago, when I started comma and discovered the Professional Managerial Class, I used to talk about the reckoning. It was a nebulous concept, but it mostly involved the abrupt fall from grace of these people at the han",
+    "insights": [],
+    "created_at": "2026-04-03T00:00:00",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "rss-sean-goedecke-b672de74d670",
+    "source": "Sean Goedecke",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Programming (with AI agents) as theory building",
+    "url": "https://seangoedecke.com/programming-with-ai-agents-as-theory-building/",
+    "original_content": "",
+    "raw_text": "Back in 1985, computer scientist Peter Naur wrote “Programming as Theory Building” . According to Naur - and I agree with him - the core output of software engineers is not the program itself, but the theory of how the program works . In other words, the knowledge inside the engineer’s mind is the primary artifact of engineering work, and the actual software is merely a by-product of that. This sounds weird, but it’s surprisingly intuitive. Every working programmer knows that you cannot make a change to a program simply by having the code. You first need to read through the code carefully enough to build up a mental model (what Naur calls a “theory”) of what it’s supposed to do and how it does it. Then you make the desired change to your mental model, and only after that can you begin modifying the code. Many people 1 think that this is why LLMs are not good tools for software engineering: because using them means that engineers can skip building Naur theories of the system, and because LLMs themselves are incapable of developing a Naur theory themselves. Let’s take those one at a time. Do LLMs let you skip theory-building? Do AI agents let some engineers avoid building detailed mental models of the systems they work on? Of course! As an extreme example, someone could simply punt every task to the latest GPT or Claude model and build no mental model at all 2 . But even a conscientious developer who uses AI tools will necessarily build a less detailed mental model than someone who does it entirely by hand. This is well-attested by the nascent literature on how AI use impacts learning. And it also just makes obvious sense. The whole point of using AI tools is to offload some of the cognitive effort: to be able to just sketch out some of the fine detail in your mental model, because you’re confident that the AI tool can handle it. For instance, you might have a good grasp on what the broad components do in your service, and how the data flows between them, but not the specific detail of how some sub-component is implemented (because you only reviewed that code, instead of writing it). Isn’t this really bad? If you start dropping the implementation details, aren’t you admitting that you don’t really know how your system works? After all, a theory that isn’t detailed enough to tell you what code would need to be written for a particular change is a useless theory, right? I don’t think so. First, it’s simply a fact that every mental model glosses over some fine details . Before LLMs were a thing, it was common to talk about the “breadth of your stack”: roughly, the level of abstraction that your technical mental model could operate at. You might understand every line of code in the system, but what about dependencies? What about the world of Linux abstractions - processes, threads, sockets, syscalls, ports, and buffers? What about the assembly operations that are ultimately performed by your code? It simply can’t be true that giving up any amount of fi",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "software"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-03T00:00:00",
+    "processed_at": "2026-04-03 09:59:40"
+  },
+  {
+    "id": "rss-john-d.-cook-e623171bb47d",
+    "source": "John D. Cook",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Hyperbolic version of Napier’s mnemonic",
+    "url": "https://www.johndcook.com/blog/2026/04/02/hyperbolic-napier-mnemonic/",
+    "original_content": "I was looking through an old geometry book [1] and saw a hyperbolic analog of Napier&#8217;s mnemonic for spherical trigonometry. In hindsight of course there&#8217;s a hyperbolic analog: there&#8217;s a hyperbolic analog of everything. But I was surprised because I&#8217;d never thought of this before. I suppose the spherical version is famous because of its [&#8230;] The post Hyperbolic version of Napier’s mnemonic first appeared on John D. Cook .",
+    "raw_text": "I was looking through an old geometry book [1] and saw a hyperbolic analog of Napier&#8217;s mnemonic for spherical trigonometry. In hindsight of course there&#8217;s a hyperbolic analog: there&#8217;s a hyperbolic analog of everything. But I was surprised because I&#8217;d never thought of this before. I suppose the spherical version is famous because of its practical use in navigational calculations, while the hyperbolic analog is of more theoretical interest. Napier&#8217;s mnemonic is a clever way to remember 10 equations in spherical trig. See the linked post for the meanings of the variables. sin a = sin A sin c = tan b cot B sin b = sin B sin c = tan a cot A cos A = cos a sin B = tan b cot c cos B = cos b sin A = tan a cot c cos c = cot A cot B = cos a cos b The hyperbolic analog replaces every circular function of a , b , or c with its hyperbolic counterpart. sinh a = sin A sinh c = tanh b cot B sinh b = sin B sinh c = tanh a cot A cos A = cosh a sin B = tanh b coth c cos B = cosh b sin A = tanh a coth c cosh c = cot A cot B = cosh a cosh b [1] D. M. Y. Sommerville. The Elements of Non-Euclidean Geometry. 1919. The post Hyperbolic version of Napier’s mnemonic first appeared on John D. Cook .",
+    "relevance_score": 8.0,
+    "category": [
+      "math",
+      "programming"
+    ],
+    "summary": "I was looking through an old geometry book [1] and saw a hyperbolic analog of Napier&#8217;s mnemonic for spherical trigonometry. In hindsight of course there&#8217;s a hyperbolic analog: there&#8217;s a hyperbolic analog of everything. But I was surprised because I&#8217;d never thought of this bef",
+    "insights": [],
+    "created_at": "2026-04-03T01:38:49",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "atom-chris-siebenmann-72c41d66afc9",
+    "source": "Chris Siebenmann",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Using '<code>pkg</code>' for everything on FreeBSD 15 has been nice",
+    "url": "https://utcc.utoronto.ca/~cks/space/blog/unix/FreeBSDPkgManagementNice",
+    "original_content": "Traditionally, the FreeBSD base system was managed through freebsd-update ( also ), which I would call primarily a patch-based system, while third party software was (usually) managed through pkg , a package manager. This was a quite traditional split, but it had some less than ideal aspects, and as of FreeBSD 15 you can choose to manage FreeBSD through pkg using what is called freebsd-base (which is also known as 'pkgbase'). If you're installing FreeBSD 15 from scratch, the installer will let y",
+    "raw_text": "Traditionally, the FreeBSD base system was managed through freebsd-update ( also ), which I would call primarily a patch-based system, while third party software was (usually) managed through pkg , a package manager. This was a quite traditional split, but it had some less than ideal aspects, and as of FreeBSD 15 you can choose to manage FreeBSD through pkg using what is called freebsd-base (which is also known as 'pkgbase'). If you're installing FreeBSD 15 from scratch, the installer will let you choose (and I believe it recommends the pkg based approach). If you upgrade from FreeBSD 14 to FreeBSD 15, there's a post-upgrade conversion process using pkgbasify ( also , also ). (Technically you can use pkgbasify on FreeBSD 14, but pkgbase is officially experimental on FreeBSD 14.) At this point I've been running a pkg based FreeBSD 15 system from more or less when FreeBSD 15 was released, first on a machine that I upgraded from 14 to 15 and then used pkgbasify on, and then on a second machine that I installed FreeBSD 15 on from scratch (partly because I wanted to move my test machine to less valuable hardware ). In both cases, things have been fine. Over time the system has gone from FreeBSD 15.0 release to FreeBSD 15.0-p5, and each pkg-based update has been painless. (Now that I look, the one thing that pkg-based updates haven't done is make ZFS snapshots. I honestly can't remember if freebsd-update did that for patch releases. I don't know how I feel about that, since I never made use of the ZFS snapshots that I believe got made in FreeBSD 14 for at least point upgrades, when going from 14.0 to 14.1 and so on.) That FreeBSD's pkgbase is a bunch of separate packages means that those packages now have a range of versions from '15.0' through '15.0p5' (and now that I look, I have no '15.0p4' packages, which it turns out is because 15.0-p4 was a kernel update that was replaced by 15.0-p5's kernel updates). Fortunately ' freebsd-version ' will let me more or less keep straight which patch level my current setup corresponds to. We installed another FreeBSD 15 system recently and when we did, I recommended picking the pkg option. It's easier to keep everything straight, since we're already used to that sort of experience with Linux. (I often had to look up the specific options I wanted to use with freebsd-update depending on what I was using it for this time around. Although I have no clear picture yet of how one goes from point release to point release in the pkgbase world (from 15.0 to a future 15.1), or even to the next major release (from 15.x to a future 16.0).)",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "unix"
+    ],
+    "summary": "Traditionally, the FreeBSD base system was managed through freebsd-update ( also ), which I would call primarily a patch-based system, while third party software was (usually) managed through pkg , a package manager. This was a quite traditional split, but it had some less than ideal aspects, and as",
+    "insights": [],
+    "created_at": "2026-04-03T03:00:41",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "atom-tedium-d234d4e87117",
+    "source": "Tedium",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Em Dashes: Back In Style?",
+    "url": "https://feed.tedium.co/link/15204/17312777/emdash-cloudflare-wordpress-competitor",
+    "original_content": "Cloudflare’s new attempt to win over the hearts of developers could help keep a few ancient WordPress sites from falling off the internet. That‘s a good thing. Cloudflare started its life nearly 20 years ago, and I found out about it basically because I was running a blog—and obsessed with keeping it online. ShortFormBlog was many things, but the most important was that it was barely held together technically because I did not know what I was doing back then. I learned so many things about conte",
+    "raw_text": "Cloudflare’s new attempt to win over the hearts of developers could help keep a few ancient WordPress sites from falling off the internet. That‘s a good thing. Cloudflare started its life nearly 20 years ago, and I found out about it basically because I was running a blog—and obsessed with keeping it online. ShortFormBlog was many things, but the most important was that it was barely held together technically because I did not know what I was doing back then. I learned so many things about content management from it, but I had to make a few mistakes first. First: I originally built my numbers and blurbs as custom fields, rather than using something flexible like Markdown. (I eventually figured out a system to optimize them using unordered lists and CSS. But that only happened because—I kid you not—AOL News wanted to publish some ShortFormBlog-style posts and I needed to figure out a way to make them portable.) In the midst of all this, I stumbled on Project Honey Pot , the anti-spam initiative that led to Cloudflare, which they were working on at the time. I realized this was going to be a very useful tool. And as a result, I was such an early customer of Cloudflare that they sent me a T-shirt listing me as one of their first 1,000 customers. So it would be a weirdly neat homecoming if I could figure out a way to make ShortFormBlog work with Cloudflare’s new content management tool EmDash . It exists to convince scores of people to move their old unstable, insecure WordPress blogs over to Astro. From a cultural perspective, we have moved past WordPress technically in so many ways, but it sticks around in part because sites stick around, and they can be difficult to move or restructure. Site migrations are hard, and I’ve been through a few in my day. But I dread having to move the 16,000 posts on the original ShortFormBlog archive to somewhere else. (I actually tried, and it was just so much damn work that I had to set it aside.) However, maintaining a WordPress site for something so old is just not a realistic option for most people. It’d be better if the final result was static and relied on minimal plugins. Sponsored By … Well, Us Ever wanted to read Tedium without having those annoying ads all over the site? We have just the plan for you. Sign up for a $3 monthly membership on our Ko-Fi, and we promise we can get rid of them. We have the technology. And it beats an ad blocker. (Web-only for now, email coming soon!) If you think about it, Cloudflare is really built on the foundation of fixing poorly coded WordPress sites so they actually work. ( DepositPhotos.com ) EmDash is a path forward for that, utilizing the of-the-moment technical capabilities of Astro , a website framework that mixes the benefits of static site generators and React-style interactivity, and Cloudflare workers. However, it looks like WordPress in every public-facing way. This has been pitched as a spiritual successor to WordPress, and one might wonder why Cloudflare would ",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "history"
+    ],
+    "summary": "Cloudflare’s new attempt to win over the hearts of developers could help keep a few ancient WordPress sites from falling off the internet. That‘s a good thing. Cloudflare started its life nearly 20 years ago, and I found out about it basically because I was running a blog—and obsessed with keeping i",
+    "insights": [],
+    "created_at": "2026-04-03T03:20:49",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "rss-joan-westenberg-ffe47a20e361",
+    "source": "Joan Westenberg",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "The \"Passive Income\" trap ate a generation of entrepreneurs",
+    "url": "https://www.joanwestenberg.com/the-passive-income-trap-ate-a-generation-of-entrepreneurs/",
+    "original_content": "I had coffee last year with a guy - I won&apos;t use his real name - who told me he was &quot;building a business.&quot; I asked what it did. Dropshipping jade face rollers. I made him say it twice. Jade face rollers. He&apos;d found",
+    "raw_text": "I had coffee last year with a guy - I won&apos;t use his real name - who told me he was &quot;building a business.&quot; I asked what it did. Dropshipping jade face rollers. I made him say it twice. Jade face rollers. He&apos;d found them on Alibaba for $1.20 each, and started selling them through Shopify for $29.99. Never used one himself. Didn&apos;t really know what they were for - something about lymphatic drainage? Reducing puffiness? He said &quot;lymphatic&quot; the way you say a word you&apos;ve only ever read and never heard out loud. Some guy on YouTube said jade rollers were &quot;trending,&quot; the margins looked insane on paper, so he&apos;d &quot;built&quot; a website with stock photos of a dewy-skinned woman rolling a green rock across her cheekbone and started running Facebook ads at $50 a day. Customers would email asking where their stuff was - shipping from Guangzhou, three to six weeks, sometimes way longer - and he&apos;d copy-paste a response he found on a dropshipping subreddit. He had a Google Doc full of pre-written customer service replies. Never talked to a single customer. I swear to god. Five months in, he was $800 in the hole. He told me all this like he&apos;d invented the wheel. I bought him another coffee. I genuinely had no idea what else to do. Jade Roller Guy has become my go-to example of something that went drastically, terribly wrong with how a whole generation of would-be entrepreneurs thought about work and money. A specific ideology - I&apos;ve been calling it Passive Income Brain - grabbed a huge chunk of the people who were, by temperament and ability, most likely to start real businesses, and it gave them a completely fucked set of priorities. Somewhere between 2015 and 2022, &quot;passive income&quot; stopped being a boring financial planning term and became, I don&apos;t know how else to put this, a salvation narrative. I mean that literally. There was an eschatology if you want to get nerdy about it. The Rapture was the day your &quot;passive income&quot; exceeded your monthly expenses and you could quit your job forever. People talked about it with that exact energy. But, of course, the folks making any actual income, of any kind, were the ones selling courses about making passive income. It was an ouroboros. It was an ouroboros that had incorporated in Delaware and was running Facebook ads. The pitch went something like: you, a sucker, currently trade your time for money. This is what employees do, and employees are suckers. (I&apos;m paraphrasing, but not by much.) Smart people build SYSTEMS. A system is anything that generates revenue without your ongoing involvement. Write an ebook. Build a dropshipping store. Create an online course. Set up affiliate websites. The specific vehicle doesn&apos;t matter because the important thing isn&apos;t what you build, it&apos;s the structure. You want a machine that generates cash while you sleep, and once you have that machine, you are free. Free to do wh",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "culture"
+    ],
+    "summary": "I had coffee last year with a guy - I won&apos;t use his real name - who told me he was &quot;building a business.&quot; I asked what it did. Dropshipping jade face rollers. I made him say it twice. Jade face rollers. He&apos;d found",
+    "insights": [],
+    "created_at": "2026-04-03T06:25:28",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "hf-paper-1326fa445569",
+    "source": "HuggingFace Papers",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "DynaVid: Learning to Generate Highly Dynamic Videos using Synthetic Motion Data",
+    "url": "https://huggingface.co/papers/2604.01666",
+    "original_content": "Despite recent progress, video diffusion models still struggle to synthesize realistic videos involving highly dynamic motions or requiring fine-grained motion controllability. A central limitation lies in the scarcity of such examples in commonly used training datasets. To address this, we introduce DynaVid, a video synthesis framework that leverages synthetic motion data in training, which is represented as optical flow and rendered using computer graphics pipelines. This approach offers two k",
+    "raw_text": "Despite recent progress, video diffusion models still struggle to synthesize realistic videos involving highly dynamic motions or requiring fine-grained motion controllability. A central limitation lies in the scarcity of such examples in commonly used training datasets. To address this, we introduce DynaVid, a video synthesis framework that leverages synthetic motion data in training, which is represented as optical flow and rendered using computer graphics pipelines. This approach offers two key advantages. First, synthetic motion offers diverse motion patterns and precise control signals that are difficult to obtain from real data. Second, unlike rendered videos with artificial appearances, rendered optical flow encodes only motion and is decoupled from appearance, thereby preventing models from reproducing the unnatural look of synthetic videos. Building on this idea, DynaVid adopts a two-stage generation framework: a motion generator first synthesizes motion, and then a motion-gui",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "papers",
+      "huggingface"
+    ],
+    "summary": "Despite recent progress, video diffusion models still struggle to synthesize realistic videos involving highly dynamic motions or requiring fine-grained motion controllability. A central limitation lies in the scarcity of such examples in commonly used training datasets. To address this, we introduc",
+    "insights": [],
+    "created_at": "2026-04-03T14:54:19.262332",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "hf-paper-26bc03bc1a73",
+    "source": "HuggingFace Papers",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "T5Gemma-TTS Technical Report",
+    "url": "https://huggingface.co/papers/2604.01760",
+    "original_content": "Autoregressive neural codec language models have shown strong zero-shot voice cloning ability, but decoder-only architectures treat input text as a prefix that competes with the growing audio sequence for positional capacity, weakening text conditioning over long utterances. We present T5Gemma-TTS, an encoder-decoder codec language model that maintains persistent text conditioning by routing bidirectional text representations through cross-attention at every decoder layer. Built on the T5Gemma p",
+    "raw_text": "Autoregressive neural codec language models have shown strong zero-shot voice cloning ability, but decoder-only architectures treat input text as a prefix that competes with the growing audio sequence for positional capacity, weakening text conditioning over long utterances. We present T5Gemma-TTS, an encoder-decoder codec language model that maintains persistent text conditioning by routing bidirectional text representations through cross-attention at every decoder layer. Built on the T5Gemma pretrained encoder-decoder backbone (2B encoder + 2B decoder; 4B parameters), it inherits rich linguistic knowledge without phoneme conversion and processes text directly at the subword level. To improve duration control, we introduce Progress-Monitoring Rotary Position Embedding (PM-RoPE) in all 26 cross-attention layers, injecting normalized progress signals that help the decoder track target speech length. Trained on 170,000 hours of multilingual speech in English, Chinese, and Japanese, T5Gem",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "papers",
+      "huggingface"
+    ],
+    "summary": "Autoregressive neural codec language models have shown strong zero-shot voice cloning ability, but decoder-only architectures treat input text as a prefix that competes with the growing audio sequence for positional capacity, weakening text conditioning over long utterances. We present T5Gemma-TTS, ",
+    "insights": [],
+    "created_at": "2026-04-03T14:54:19.262349",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "hf-paper-cebaaa39691f",
+    "source": "HuggingFace Papers",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "Executing as You Generate: Hiding Execution Latency in LLM Code Generation",
+    "url": "https://huggingface.co/papers/2604.00491",
+    "original_content": "Current LLM-based coding agents follow a serial execution paradigm: the model first generates the complete code, then invokes an interpreter to execute it. This sequential workflow leaves the executor idle during generation and the generator idle during execution, resulting in unnecessary end-to-end latency. We observe that, unlike human developers, LLMs produce code tokens sequentially without revision, making it possible to execute code as it is being generated. We formalize this parallel exec",
+    "raw_text": "Current LLM-based coding agents follow a serial execution paradigm: the model first generates the complete code, then invokes an interpreter to execute it. This sequential workflow leaves the executor idle during generation and the generator idle during execution, resulting in unnecessary end-to-end latency. We observe that, unlike human developers, LLMs produce code tokens sequentially without revision, making it possible to execute code as it is being generated. We formalize this parallel execution paradigm, modeling it as a three-stage pipeline of generation, detection, and execution, and derive closed-form latency bounds that characterize its speedup potential and operating regimes. We then present Eager, a concrete implementation featuring AST-based chunking, dynamic batching with gated execution, and early error interruption. We evaluate Eager across four benchmarks, seven LLMs, and three execution environments. Results show that Eager reduces the non-overlapped execution latency",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "papers",
+      "huggingface"
+    ],
+    "summary": "Current LLM-based coding agents follow a serial execution paradigm: the model first generates the complete code, then invokes an interpreter to execute it. This sequential workflow leaves the executor idle during generation and the generator idle during execution, resulting in unnecessary end-to-end",
+    "insights": [],
+    "created_at": "2026-04-03T14:54:19.262356",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "hf-paper-3b6feb91bdd7",
+    "source": "HuggingFace Papers",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "Automatic Image-Level Morphological Trait Annotation for Organismal Images",
+    "url": "https://huggingface.co/papers/2604.01619",
+    "original_content": "Morphological traits are physical characteristics of biological organisms that provide vital clues on how organisms interact with their environment. Yet extracting these traits remains a slow, expert-driven process, limiting their use in large-scale ecological studies. A major bottleneck is the absence of high-quality datasets linking biological images to trait-level annotations. In this work, we demonstrate that sparse autoencoders trained on foundation-model features yield monosemantic, spatia",
+    "raw_text": "Morphological traits are physical characteristics of biological organisms that provide vital clues on how organisms interact with their environment. Yet extracting these traits remains a slow, expert-driven process, limiting their use in large-scale ecological studies. A major bottleneck is the absence of high-quality datasets linking biological images to trait-level annotations. In this work, we demonstrate that sparse autoencoders trained on foundation-model features yield monosemantic, spatially grounded neurons that consistently activate on meaningful morphological parts. Leveraging this property, we introduce a trait annotation pipeline that localizes salient regions and uses vision-language prompting to generate interpretable trait descriptions. Using this approach, we construct Bioscan-Traits, a dataset of 80K trait annotations spanning 19K insect images from BIOSCAN-5M. Human evaluation confirms the biological plausibility of the generated morphological descriptions. We assess ",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "papers",
+      "huggingface"
+    ],
+    "summary": "Morphological traits are physical characteristics of biological organisms that provide vital clues on how organisms interact with their environment. Yet extracting these traits remains a slow, expert-driven process, limiting their use in large-scale ecological studies. A major bottleneck is the abse",
+    "insights": [],
+    "created_at": "2026-04-03T14:54:19.262360",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "hf-paper-69f88a5e33a7",
+    "source": "HuggingFace Papers",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "UniRecGen: Unifying Multi-View 3D Reconstruction and Generation",
+    "url": "https://huggingface.co/papers/2604.01479",
+    "original_content": "Sparse-view 3D modeling represents a fundamental tension between reconstruction fidelity and generative plausibility. While feed-forward reconstruction excels in efficiency and input alignment, it often lacks the global priors needed for structural completeness. Conversely, diffusion-based generation provides rich geometric details but struggles with multi-view consistency. We present UniRecGen, a unified framework that integrates these two paradigms into a single cooperative system. To overcome",
+    "raw_text": "Sparse-view 3D modeling represents a fundamental tension between reconstruction fidelity and generative plausibility. While feed-forward reconstruction excels in efficiency and input alignment, it often lacks the global priors needed for structural completeness. Conversely, diffusion-based generation provides rich geometric details but struggles with multi-view consistency. We present UniRecGen, a unified framework that integrates these two paradigms into a single cooperative system. To overcome inherent conflicts in coordinate spaces, 3D representations, and training objectives, we align both models within a shared canonical space. We employ disentangled cooperative learning, which maintains stable training while enabling seamless collaboration during inference. Specifically, the reconstruction module is adapted to provide canonical geometric anchors, while the diffusion generator leverages latent-augmented conditioning to refine and complete the geometric structure. Experimental resu",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "papers",
+      "huggingface"
+    ],
+    "summary": "Sparse-view 3D modeling represents a fundamental tension between reconstruction fidelity and generative plausibility. While feed-forward reconstruction excels in efficiency and input alignment, it often lacks the global priors needed for structural completeness. Conversely, diffusion-based generatio",
+    "insights": [],
+    "created_at": "2026-04-03T14:54:19.262365",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "hf-paper-aec5aa65e96d",
+    "source": "HuggingFace Papers",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "Friends and Grandmothers in Silico: Localizing Entity Cells in Language Models",
+    "url": "https://huggingface.co/papers/2604.01404",
+    "original_content": "Language models can answer many entity-centric factual questions, but it remains unclear which internal mechanisms are involved in this process. We study this question across multiple language models. We localize entity-selective MLP neurons using templated prompts about each entity, and then validate them with causal interventions on PopQA-based QA examples. On a curated set of 200 entities drawn from PopQA, localized neurons concentrate in early layers. Negative ablation produces entity-specif",
+    "raw_text": "Language models can answer many entity-centric factual questions, but it remains unclear which internal mechanisms are involved in this process. We study this question across multiple language models. We localize entity-selective MLP neurons using templated prompts about each entity, and then validate them with causal interventions on PopQA-based QA examples. On a curated set of 200 entities drawn from PopQA, localized neurons concentrate in early layers. Negative ablation produces entity-specific amnesia, while controlled injection at a placeholder token improves answer retrieval relative to mean-entity and wrong-cell controls. For many entities, activating a single localized neuron is sufficient to recover entity-consistent predictions once the context is initialized, consistent with compact entity retrieval rather than purely gradual enrichment across depth. Robustness to aliases, acronyms, misspellings, and multilingual forms supports a canonicalization interpretation. The effect i",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "papers",
+      "huggingface"
+    ],
+    "summary": "Language models can answer many entity-centric factual questions, but it remains unclear which internal mechanisms are involved in this process. We study this question across multiple language models. We localize entity-selective MLP neurons using templated prompts about each entity, and then valida",
+    "insights": [],
+    "created_at": "2026-04-03T14:54:19.262370",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "hf-paper-b9c337c29fb8",
+    "source": "HuggingFace Papers",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "LinguDistill: Recovering Linguistic Ability in Vision- Language Models via Selective Cross-Modal Distillation",
+    "url": "https://huggingface.co/papers/2604.00829",
+    "original_content": "Adapting pretrained language models (LMs) into vision-language models (VLMs) can degrade their native linguistic capability due to representation shift and cross-modal interference introduced during multimodal adaptation. Such loss is difficult to recover, even with targeted task-specific fine-tuning using standard objectives. Prior recovery approaches typically introduce additional modules that act as intermediate alignment layers to maintain or isolate modality-specific subspaces, which increa",
+    "raw_text": "Adapting pretrained language models (LMs) into vision-language models (VLMs) can degrade their native linguistic capability due to representation shift and cross-modal interference introduced during multimodal adaptation. Such loss is difficult to recover, even with targeted task-specific fine-tuning using standard objectives. Prior recovery approaches typically introduce additional modules that act as intermediate alignment layers to maintain or isolate modality-specific subspaces, which increases architectural complexity, adds parameters at inference time, and limits flexibility across models and settings. We propose LinguDistill, an adapter-free distillation method that restores linguistic capability by utilizing the original frozen LM as a teacher. We overcome the key challenge of enabling vision-conditioned teacher supervision by introducing layer-wise KV-cache sharing, which exposes the teacher to the student's multimodal representations without modifying the architecture of eith",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "papers",
+      "huggingface"
+    ],
+    "summary": "Adapting pretrained language models (LMs) into vision-language models (VLMs) can degrade their native linguistic capability due to representation shift and cross-modal interference introduced during multimodal adaptation. Such loss is difficult to recover, even with targeted task-specific fine-tunin",
+    "insights": [],
+    "created_at": "2026-04-03T14:54:19.262374",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "hf-paper-a7ca4dc0a86e",
+    "source": "HuggingFace Papers",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "Woosh: A Sound Effects Foundation Model",
+    "url": "https://huggingface.co/papers/2604.01929",
+    "original_content": "The audio research community depends on open generative models as foundational tools for building novel approaches and establishing baselines. In this report, we present Woosh, Sony AI's publicly released sound effect foundation model, detailing its architecture, training process, and an evaluation against other popular open models. Being optimized for sound effects, we provide (1) a high-quality audio encoder/decoder model and (2) a text-audio alignment model for conditioning, together with (3)",
+    "raw_text": "The audio research community depends on open generative models as foundational tools for building novel approaches and establishing baselines. In this report, we present Woosh, Sony AI's publicly released sound effect foundation model, detailing its architecture, training process, and an evaluation against other popular open models. Being optimized for sound effects, we provide (1) a high-quality audio encoder/decoder model and (2) a text-audio alignment model for conditioning, together with (3) text-to-audio and (4) video-to-audio generative models. Distilled text-to-audio and video-to-audio models are also included in the release, allowing for low-resource operation and fast inference. Our evaluation on both public and private data shows competitive or better performance for each module when compared to existing open alternatives like StableAudio-Open and TangoFlux. Inference code and model weights are available at https://github.com/SonyResearch/Woosh. Demo samples can be found at h",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "papers",
+      "huggingface"
+    ],
+    "summary": "The audio research community depends on open generative models as foundational tools for building novel approaches and establishing baselines. In this report, we present Woosh, Sony AI's publicly released sound effect foundation model, detailing its architecture, training process, and an evaluation ",
+    "insights": [],
+    "created_at": "2026-04-03T14:54:19.262378",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "hf-paper-5ad25d7a8b32",
+    "source": "HuggingFace Papers",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "Apriel-Reasoner: RL Post-Training for General-Purpose and Efficient Reasoning",
+    "url": "https://huggingface.co/papers/2604.02007",
+    "original_content": "Building general-purpose reasoning models using reinforcement learning with verifiable rewards (RLVR) across diverse domains has been widely adopted by frontier open-weight models. However, their training recipes and domain mixtures are often not disclosed. Joint optimization across domains poses significant challenges: domains vary widely in rollout length, problem difficulty and sample efficiency. Further, models with long chain-of-thought traces increase inference cost and latency, making eff",
+    "raw_text": "Building general-purpose reasoning models using reinforcement learning with verifiable rewards (RLVR) across diverse domains has been widely adopted by frontier open-weight models. However, their training recipes and domain mixtures are often not disclosed. Joint optimization across domains poses significant challenges: domains vary widely in rollout length, problem difficulty and sample efficiency. Further, models with long chain-of-thought traces increase inference cost and latency, making efficiency critical for practical deployment. We present Apriel-Reasoner, trained with a fully reproducible multi-domain RL post-training recipe on Apriel-Base, a 15B-parameter open-weight LLM, across five domains using public datasets: mathematics, code generation, instruction following, logical puzzles and function calling. We introduce an adaptive domain sampling mechanism that preserves target domain ratios despite heterogeneous rollout dynamics, and a difficulty-aware extension of the standard",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "papers",
+      "huggingface"
+    ],
+    "summary": "Building general-purpose reasoning models using reinforcement learning with verifiable rewards (RLVR) across diverse domains has been widely adopted by frontier open-weight models. However, their training recipes and domain mixtures are often not disclosed. Joint optimization across domains poses si",
+    "insights": [],
+    "created_at": "2026-04-03T14:54:19.262382",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "hf-paper-ac3e184b3371",
+    "source": "HuggingFace Papers",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "Gated Condition Injection without Multimodal Attention: Towards Controllable Linear-Attention Transformers",
+    "url": "https://huggingface.co/papers/2603.27666",
+    "original_content": "Recent advances in diffusion-based controllable visual generation have led to remarkable improvements in image quality. However, these powerful models are typically deployed on cloud servers due to their large computational demands, raising serious concerns about user data privacy. To enable secure and efficient on-device generation, we explore in this paper controllable diffusion models built upon linear attention architectures, which offer superior scalability and efficiency, even on edge devi",
+    "raw_text": "Recent advances in diffusion-based controllable visual generation have led to remarkable improvements in image quality. However, these powerful models are typically deployed on cloud servers due to their large computational demands, raising serious concerns about user data privacy. To enable secure and efficient on-device generation, we explore in this paper controllable diffusion models built upon linear attention architectures, which offer superior scalability and efficiency, even on edge devices. Yet, our experiments reveal that existing controllable generation frameworks, such as ControlNet and OminiControl, either lack the flexibility to support multiple heterogeneous condition types or suffer from slow convergence on such linear-attention models. To address these limitations, we propose a novel controllable diffusion framework tailored for linear attention backbones like SANA. The core of our method lies in a unified gated conditioning module working in a dual-path pipeline, whic",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "papers",
+      "huggingface"
+    ],
+    "summary": "Recent advances in diffusion-based controllable visual generation have led to remarkable improvements in image quality. However, these powerful models are typically deployed on cloud servers due to their large computational demands, raising serious concerns about user data privacy. To enable secure ",
+    "insights": [],
+    "created_at": "2026-04-03T14:54:19.262386",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "rss-fabien-sanglard-f11357828acf",
+    "source": "Fabien Sanglard",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "How Michael Abrash doubled Quake framerate",
+    "url": "https://fabiensanglard.net/quake_asm_optimizations/index.html",
+    "original_content": "",
+    "raw_text": "",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "graphics",
+      "games"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-03T14:54:46.994253",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "rss-fabien-sanglard-48293b23be2b",
+    "source": "Fabien Sanglard",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Let's compile Quake like it's 1997!",
+    "url": "https://fabiensanglard.net/compile_like_1997/index.html",
+    "original_content": "",
+    "raw_text": "",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "graphics",
+      "games"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-03T14:54:46.995219",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "rss-fabien-sanglard-a7eea6d072e1",
+    "source": "Fabien Sanglard",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Is QSpy still cool? Let's play QuakeWorld!",
+    "url": "https://fabiensanglard.net/quakeworld/index.html",
+    "original_content": "",
+    "raw_text": "",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "graphics",
+      "games"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-03T14:54:46.996208",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "rss-fabien-sanglard-8f21dfbaefd5",
+    "source": "Fabien Sanglard",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Building a 1997 Quake PC: Benchmarking GLquake",
+    "url": "https://fabiensanglard.net/quake_pc/glquake/index.html",
+    "original_content": "",
+    "raw_text": "",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "graphics",
+      "games"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-03T14:54:46.996899",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "rss-fabien-sanglard-6340e4051f36",
+    "source": "Fabien Sanglard",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Building a 1997 Quake PC: Benchmarking Vquake",
+    "url": "https://fabiensanglard.net/quake_pc/vquake/index.html",
+    "original_content": "",
+    "raw_text": "",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "graphics",
+      "games"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-03T14:54:46.997708",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "rss-paul-graham-f8b4832637ce",
+    "source": "Paul Graham",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Superlinear Returns",
+    "url": "http://www.paulgraham.com/superlinear.html",
+    "original_content": "",
+    "raw_text": "",
+    "relevance_score": 8.0,
+    "category": [
+      "startup",
+      "philosophy"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-03T14:56:38.813977",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "rss-paul-graham-ee94d981e826",
+    "source": "Paul Graham",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "How to Do Great Work",
+    "url": "http://www.paulgraham.com/greatwork.html",
+    "original_content": "",
+    "raw_text": "",
+    "relevance_score": 8.0,
+    "category": [
+      "startup",
+      "philosophy"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-03T14:56:38.814026",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "rss-paul-graham-f564864bf8e2",
+    "source": "Paul Graham",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "How to Get New Ideas",
+    "url": "http://www.paulgraham.com/getideas.html",
+    "original_content": "",
+    "raw_text": "",
+    "relevance_score": 8.0,
+    "category": [
+      "startup",
+      "philosophy"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-03T14:56:38.814039",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "rss-paul-graham-f6b2377c9073",
+    "source": "Paul Graham",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "The Need to Read",
+    "url": "http://www.paulgraham.com/read.html",
+    "original_content": "",
+    "raw_text": "",
+    "relevance_score": 8.0,
+    "category": [
+      "startup",
+      "philosophy"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-03T14:56:38.814050",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "rss-paul-graham-6bd6fdc3ef42",
+    "source": "Paul Graham",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "What You (Want to)* Want",
+    "url": "http://www.paulgraham.com/want.html",
+    "original_content": "",
+    "raw_text": "",
+    "relevance_score": 8.0,
+    "category": [
+      "startup",
+      "philosophy"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-03T14:56:38.814060",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "hf-paper-a9aecd36b86c",
+    "source": "HuggingFace Papers",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "Investigating Autonomous Agent Contributions in the Wild: Activity Patterns and Code Change over Time",
+    "url": "https://huggingface.co/papers/2604.00917",
+    "original_content": "The rise of large language models for code has reshaped software development. Autonomous coding agents, able to create branches, open pull requests, and perform code reviews, now actively contribute to real-world projects. Their growing role offers a unique and timely opportunity to investigate AI-driven contributions and their effects on code quality, team dynamics, and software maintainability. In this work, we construct a novel dataset of approximately 110,000 open-source pull requests, inclu",
+    "raw_text": "The rise of large language models for code has reshaped software development. Autonomous coding agents, able to create branches, open pull requests, and perform code reviews, now actively contribute to real-world projects. Their growing role offers a unique and timely opportunity to investigate AI-driven contributions and their effects on code quality, team dynamics, and software maintainability. In this work, we construct a novel dataset of approximately 110,000 open-source pull requests, including associated commits, comments, reviews, issues, and file changes, collectively representing millions of lines of source code. We compare five popular coding agents, including OpenAI Codex, Claude Code, GitHub Copilot, Google Jules, and Devin, examining how their usage differs in various development aspects such as merge frequency, edited file types, and developer interaction signals, including comments and reviews. Furthermore, we emphasize that code authoring and review are only a small par",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "papers",
+      "huggingface"
+    ],
+    "summary": "The rise of large language models for code has reshaped software development. Autonomous coding agents, able to create branches, open pull requests, and perform code reviews, now actively contribute to real-world projects. Their growing role offers a unique and timely opportunity to investigate AI-d",
+    "insights": [],
+    "created_at": "2026-04-03T16:21:09.447244",
+    "processed_at": "2026-04-03 08:24:16"
+  },
+  {
+    "id": "hf-paper-452b1d935ea5",
+    "source": "HuggingFace Papers",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "VOID: Video Object and Interaction Deletion",
+    "url": "https://huggingface.co/papers/2604.02296",
+    "original_content": "Existing video object removal methods excel at inpainting content \"behind\" the object and correcting appearance-level artifacts such as shadows and reflections. However, when the removed object has more significant interactions, such as collisions with other objects, current models fail to correct them and produce implausible results. We present VOID, a video object removal framework designed to perform physically-plausible inpainting in these complex scenarios. To train the model, we generate a",
+    "raw_text": "Existing video object removal methods excel at inpainting content \"behind\" the object and correcting appearance-level artifacts such as shadows and reflections. However, when the removed object has more significant interactions, such as collisions with other objects, current models fail to correct them and produce implausible results. We present VOID, a video object removal framework designed to perform physically-plausible inpainting in these complex scenarios. To train the model, we generate a new paired dataset of counterfactual object removals using Kubric and HUMOTO, where removing an object requires altering downstream physical interactions. During inference, a vision-language model identifies regions of the scene affected by the removed object. These regions are then used to guide a video diffusion model that generates physically consistent counterfactual outcomes. Experiments on both synthetic and real data show that our approach better preserves consistent scene dynamics after",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "papers",
+      "huggingface"
+    ],
+    "summary": "Existing video object removal methods excel at inpainting content \"behind\" the object and correcting appearance-level artifacts such as shadows and reflections. However, when the removed object has more significant interactions, such as collisions with other objects, current models fail to correct t",
+    "insights": [],
+    "created_at": "2026-04-03T16:21:09.447263",
+    "processed_at": "2026-04-03 08:24:16"
+  },
+  {
+    "id": "hf-model-5a5b20cc1da7",
+    "source": "HuggingFace Models",
+    "source_type": "model",
+    "subscription_id": null,
+    "title": "🤗 Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled",
+    "url": "https://huggingface.co/Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled",
+    "original_content": "Task: image-text-to-text | Downloads: 487,446 | Likes: 2,165",
+    "raw_text": "Task: image-text-to-text | Downloads: 487,446 | Likes: 2,165",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "models",
+      "huggingface"
+    ],
+    "summary": "Task: image-text-to-text | Downloads: 487,446 | Likes: 2,165",
+    "insights": [],
+    "created_at": "2026-04-03T16:55:42.633047",
+    "processed_at": "2026-04-03 08:58:49"
+  },
+  {
+    "id": "hf-model-491a8a650be1",
+    "source": "HuggingFace Models",
+    "source_type": "model",
+    "subscription_id": null,
+    "title": "🤗 CohereLabs/cohere-transcribe-03-2026",
+    "url": "https://huggingface.co/CohereLabs/cohere-transcribe-03-2026",
+    "original_content": "Task: automatic-speech-recognition | Downloads: 84,600 | Likes: 746",
+    "raw_text": "Task: automatic-speech-recognition | Downloads: 84,600 | Likes: 746",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "models",
+      "huggingface"
+    ],
+    "summary": "Task: automatic-speech-recognition | Downloads: 84,600 | Likes: 746",
+    "insights": [],
+    "created_at": "2026-04-03T16:55:42.633073",
+    "processed_at": "2026-04-03 08:58:49"
+  },
+  {
+    "id": "hf-model-2d0f16bac7e1",
+    "source": "HuggingFace Models",
+    "source_type": "model",
+    "subscription_id": null,
+    "title": "🤗 google/gemma-4-31B-it",
+    "url": "https://huggingface.co/google/gemma-4-31B-it",
+    "original_content": "Task: image-text-to-text | Downloads: 76,200 | Likes: 502",
+    "raw_text": "Task: image-text-to-text | Downloads: 76,200 | Likes: 502",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "models",
+      "huggingface"
+    ],
+    "summary": "Task: image-text-to-text | Downloads: 76,200 | Likes: 502",
+    "insights": [],
+    "created_at": "2026-04-03T16:55:42.633085",
+    "processed_at": "2026-04-03 08:58:49"
+  },
+  {
+    "id": "hf-model-fcfacb051911",
+    "source": "HuggingFace Models",
+    "source_type": "model",
+    "subscription_id": null,
+    "title": "🤗 baidu/Qianfan-OCR",
+    "url": "https://huggingface.co/baidu/Qianfan-OCR",
+    "original_content": "Task: image-text-to-text | Downloads: 26,980 | Likes: 835",
+    "raw_text": "Task: image-text-to-text | Downloads: 26,980 | Likes: 835",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "models",
+      "huggingface"
+    ],
+    "summary": "Task: image-text-to-text | Downloads: 26,980 | Likes: 835",
+    "insights": [],
+    "created_at": "2026-04-03T16:55:42.633096",
+    "processed_at": "2026-04-03 08:58:49"
+  },
+  {
+    "id": "hf-model-875c7fdb97cb",
+    "source": "HuggingFace Models",
+    "source_type": "model",
+    "subscription_id": null,
+    "title": "🤗 mistralai/Voxtral-4B-TTS-2603",
+    "url": "https://huggingface.co/mistralai/Voxtral-4B-TTS-2603",
+    "original_content": "Task: text-to-speech | Downloads: 4,760 | Likes: 641",
+    "raw_text": "Task: text-to-speech | Downloads: 4,760 | Likes: 641",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "models",
+      "huggingface"
+    ],
+    "summary": "Task: text-to-speech | Downloads: 4,760 | Likes: 641",
+    "insights": [],
+    "created_at": "2026-04-03T16:55:42.633106",
+    "processed_at": "2026-04-03 08:58:49"
+  },
+  {
+    "id": "hf-model-d014c1247631",
+    "source": "HuggingFace Models",
+    "source_type": "model",
+    "subscription_id": null,
+    "title": "🤗 prism-ml/Bonsai-8B-gguf",
+    "url": "https://huggingface.co/prism-ml/Bonsai-8B-gguf",
+    "original_content": "Task: text-generation | Downloads: 26,164 | Likes: 335",
+    "raw_text": "Task: text-generation | Downloads: 26,164 | Likes: 335",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "models",
+      "huggingface"
+    ],
+    "summary": "Task: text-generation | Downloads: 26,164 | Likes: 335",
+    "insights": [],
+    "created_at": "2026-04-03T16:55:42.633114",
+    "processed_at": "2026-04-03 08:58:49"
+  },
+  {
+    "id": "hf-model-01d1095418af",
+    "source": "HuggingFace Models",
+    "source_type": "model",
+    "subscription_id": null,
+    "title": "🤗 Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled-v2-GGUF",
+    "url": "https://huggingface.co/Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled-v2-GGUF",
+    "original_content": "Task: image-text-to-text | Downloads: 227,053 | Likes: 479",
+    "raw_text": "Task: image-text-to-text | Downloads: 227,053 | Likes: 479",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "models",
+      "huggingface"
+    ],
+    "summary": "Task: image-text-to-text | Downloads: 227,053 | Likes: 479",
+    "insights": [],
+    "created_at": "2026-04-03T16:55:42.633122",
+    "processed_at": "2026-04-03 08:58:49"
+  },
+  {
+    "id": "hf-model-efba163ba2c4",
+    "source": "HuggingFace Models",
+    "source_type": "model",
+    "subscription_id": null,
+    "title": "🤗 chromadb/context-1",
+    "url": "https://huggingface.co/chromadb/context-1",
+    "original_content": "Task: text-generation | Downloads: 3,195 | Likes: 360",
+    "raw_text": "Task: text-generation | Downloads: 3,195 | Likes: 360",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "models",
+      "huggingface"
+    ],
+    "summary": "Task: text-generation | Downloads: 3,195 | Likes: 360",
+    "insights": [],
+    "created_at": "2026-04-03T16:55:42.633129",
+    "processed_at": "2026-04-03 08:58:49"
+  },
+  {
+    "id": "hf-model-e9510d43afa2",
+    "source": "HuggingFace Models",
+    "source_type": "model",
+    "subscription_id": null,
+    "title": "🤗 HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive",
+    "url": "https://huggingface.co/HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive",
+    "original_content": "Downloads: 700,218 | Likes: 930",
+    "raw_text": "Downloads: 700,218 | Likes: 930",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "models",
+      "huggingface"
+    ],
+    "summary": "Downloads: 700,218 | Likes: 930",
+    "insights": [],
+    "created_at": "2026-04-03T16:55:42.633136",
+    "processed_at": "2026-04-03 08:58:49"
+  },
+  {
+    "id": "hf-model-0ea922f56cb4",
+    "source": "HuggingFace Models",
+    "source_type": "model",
+    "subscription_id": null,
+    "title": "🤗 google/gemma-4-26B-A4B-it",
+    "url": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+    "original_content": "Task: image-text-to-text | Downloads: 24,366 | Likes: 233",
+    "raw_text": "Task: image-text-to-text | Downloads: 24,366 | Likes: 233",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "models",
+      "huggingface"
+    ],
+    "summary": "Task: image-text-to-text | Downloads: 24,366 | Likes: 233",
+    "insights": [],
+    "created_at": "2026-04-03T16:55:42.633145",
+    "processed_at": "2026-04-03 08:58:49"
+  },
+  {
+    "id": "hf-paper-5e2f39829015",
+    "source": "HuggingFace Papers",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "Omni123: Exploring 3D Native Foundation Models with Limited 3D Data by Unifying Text to 2D and 3D Generation",
+    "url": "https://huggingface.co/papers/2604.02289",
+    "original_content": "Recent multimodal large language models have achieved strong performance in unified text and image understanding and generation, yet extending such native capability to 3D remains challenging due to limited data. Compared to abundant 2D imagery, high-quality 3D assets are scarce, making 3D synthesis under-constrained. Existing methods often rely on indirect pipelines that edit in 2D and lift results into 3D via optimization, sacrificing geometric consistency. We present Omni123, a 3D-native foun",
+    "raw_text": "Recent multimodal large language models have achieved strong performance in unified text and image understanding and generation, yet extending such native capability to 3D remains challenging due to limited data. Compared to abundant 2D imagery, high-quality 3D assets are scarce, making 3D synthesis under-constrained. Existing methods often rely on indirect pipelines that edit in 2D and lift results into 3D via optimization, sacrificing geometric consistency. We present Omni123, a 3D-native foundation model that unifies text-to-2D and text-to-3D generation within a single autoregressive framework. Our key insight is that cross-modal consistency between images and 3D can serve as an implicit structural constraint. By representing text, images, and 3D as discrete tokens in a shared sequence space, the model leverages abundant 2D data as a geometric prior to improve 3D representations. We introduce an interleaved X-to-X training paradigm that coordinates diverse cross-modal tasks over het",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "papers",
+      "huggingface"
+    ],
+    "summary": "Recent multimodal large language models have achieved strong performance in unified text and image understanding and generation, yet extending such native capability to 3D remains challenging due to limited data. Compared to abundant 2D imagery, high-quality 3D assets are scarce, making 3D synthesis",
+    "insights": [],
+    "created_at": "2026-04-03T16:55:42.999348",
+    "processed_at": "2026-04-03 08:58:49"
+  },
+  {
+    "id": "civitai-2510080",
+    "source": "CivitAI",
+    "source_type": "model",
+    "subscription_id": null,
+    "title": "🎨 ageha【Sengoku collection】 (LORA)",
+    "url": "https://civitai.com/models/2510080",
+    "original_content": "Type: LORA | Downloads: 62 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 62 | Rating: 0.0\n<p>I’ve created a Lora model of Ageha, a character from Sengoku Collection!</p><p></p><p>[Trigger Words]</p><p>ageha,</p><p></p><p>[Appearance Prompt]</p><p>hair ornament, flower, hair flower, brown eyes, short hair, brown hair, hairclip, hibiscus, eyelashes,</p><p></p><p>This is my first time creating a Lora model, so it’s not perfect, but I’d be happy if you found it useful.</p>",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "summary": "Type: LORA | Downloads: 62 | Rating: 0.0",
+    "insights": [],
+    "created_at": "2026-04-03T16:55:44.109877",
+    "processed_at": "2026-04-03 08:58:49"
+  },
+  {
+    "id": "civitai-2514805",
+    "source": "CivitAI",
+    "source_type": "model",
+    "subscription_id": null,
+    "title": "🎨 Matsumiya Kiseri Artist Style (LORA)",
+    "url": "https://civitai.com/models/2514805",
+    "original_content": "Type: LORA | Downloads: 3 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 3 | Rating: 0.0\n<p>Type: Artist Style<br />Name: Matsumiya Kiseri<br /><br />Trigger Word: MatsumiyaKiseri<br />Lora strength: 1<br /><br />Adetailer for the faces is recommended, but not necessary.<br /><br />If you have any suggestions for styles you want to see, feel free to share them with me.</p>",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "summary": "Type: LORA | Downloads: 3 | Rating: 0.0",
+    "insights": [],
+    "created_at": "2026-04-03T16:55:44.109964",
+    "processed_at": "2026-04-03 08:58:49"
+  },
+  {
+    "id": "civitai-2503381",
+    "source": "CivitAI",
+    "source_type": "model",
+    "subscription_id": null,
+    "title": "🎨 KNMP_019_BabaKonomi_clothing1 Sherry 'n Cherry 馬場このみシャルム・ニュイ (LORA)",
+    "url": "https://civitai.com/models/2503381",
+    "original_content": "Type: LORA | Downloads: 6 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 6 | Rating: 0.0\n<p>THE IDOLM@STER MILLION LIVE - Sherry 'n Cherry - Baba Konomi </p><h2 id=\"trriger\"><strong>Trriger</strong></h2><pre><code>KNMP_019</code></pre><h3 id=\"normal\"><br />Normal</h3><p><img src=\"https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/8655d85b-5ba0-4d19-9f75-ce420ee58f22/original=true/8655d85b-5ba0-4d19-9f75-ce420ee58f22.jpeg\" /></p><pre><code>konomi_event_sharumu,dress,black gloves,green dress,bare shoulders,hat,mini hat,black stocking,</code></pre><p></p><h3 id=\"another\">Another</h3><p><",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "summary": "Type: LORA | Downloads: 6 | Rating: 0.0",
+    "insights": [],
+    "created_at": "2026-04-03T16:55:44.109971",
+    "processed_at": "2026-04-03 08:58:49"
+  },
+  {
+    "id": "civitai-2514608",
+    "source": "CivitAI",
+    "source_type": "model",
+    "subscription_id": null,
+    "title": "🎨 Wanshitong (Roco Kingdom) (LORA)",
+    "url": "https://civitai.com/models/2514608",
+    "original_content": "Type: LORA | Downloads: 2 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 2 | Rating: 0.0\n<h3 id=\"known-issues\">⚠️ Known Issues</h3><ul><li><p>I didn’t notice during tagging that he actually wears <strong>blue trousers</strong> underneath.<br />If you don’t include prompts like <em>“blue trousers”</em>, he might appear in a full kigurumi suit…<br />(which honestly looks even cuter 😂)</p></li><li><p>Some elements were hard to describe due to limited vocabulary, such as:</p><ul><li><p>his front display tray</p></li><li><p>the small green creature</p></li><li><p>the leaf umbrella</p></l",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "summary": "Type: LORA | Downloads: 2 | Rating: 0.0",
+    "insights": [],
+    "created_at": "2026-04-03T16:55:44.109976",
+    "processed_at": "2026-04-03 08:58:49"
+  },
+  {
+    "id": "civitai-2514774",
+    "source": "CivitAI",
+    "source_type": "model",
+    "subscription_id": null,
+    "title": "🎨 [ILXL] Sonya Lebedev ソーニャ・レベデフ | Melty Doll メルティドール (LORA)",
+    "url": "https://civitai.com/models/2514774",
+    "original_content": "Type: LORA | Downloads: 5 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 5 | Rating: 0.0\n<h2 id=\"commissions-are-open-if-you-have-character-wish-to-be-made-please-check-my-profile-for-details.\"><span style=\"color:rgb(253, 126, 20)\"><strong><em>Commissions are open if you have character wish to be made, please check my profile for details.</em></strong></span></h2><p></p><p>Apperance - Default</p><pre><code>&lt;lora:lebedev_sonya-melty_doll-v2-ixl-manga-soralz:1&gt;, lebedev sonya (melty doll), monochrome, long hair, sidelocks, hair behind ear, hair between eyes, asymmetrical bangs, ",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "summary": "Type: LORA | Downloads: 5 | Rating: 0.0",
+    "insights": [],
+    "created_at": "2026-04-03T16:55:44.109979",
+    "processed_at": "2026-04-03 08:58:49"
+  },
+  {
+    "id": "civitai-2514784",
+    "source": "CivitAI",
+    "source_type": "model",
+    "subscription_id": null,
+    "title": "🎨 dark skin (LORA)",
+    "url": "https://civitai.com/models/2514784",
+    "original_content": "Type: LORA | Downloads: 5 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 5 | Rating: 0.0\n<p>dark skin</p>",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "summary": "Type: LORA | Downloads: 5 | Rating: 0.0",
+    "insights": [],
+    "created_at": "2026-04-03T16:55:44.109981",
+    "processed_at": "2026-04-03 08:58:49"
+  },
+  {
+    "id": "civitai-2514537",
+    "source": "CivitAI",
+    "source_type": "model",
+    "subscription_id": null,
+    "title": "🎨 V67 Deep Sea (Seabed) (LORA)",
+    "url": "https://civitai.com/models/2514537",
+    "original_content": "Type: LORA | Downloads: 4 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 4 | Rating: 0.0\n<h1 id=\"v67-deep-sea-lora-for-flux\"><strong>V67 Deep Sea LoRA for Flux</strong></h1><h2 id=\"abyssal-depths-lost-kingdoms-liquid-dreams\"><strong>Abyssal Depths, Lost Kingdoms, Liquid Dreams</strong></h2><p><strong>Try my models:</strong> <a target=\"_blank\" rel=\"ugc\" href=\"https://civitai.com/user/angelomaiota/models\">https://civitai.com/user/angelomaiota/models</a></p><p><strong>Premise:</strong> If you decide to use my model, I will give you <strong>500 Yellow Buzz</strong> if your image is chos",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "summary": "Type: LORA | Downloads: 4 | Rating: 0.0",
+    "insights": [],
+    "created_at": "2026-04-03T16:55:44.109996",
+    "processed_at": "2026-04-03 08:58:49"
+  },
+  {
+    "id": "civitai-2514781",
+    "source": "CivitAI",
+    "source_type": "model",
+    "subscription_id": null,
+    "title": "🎨 委托项目 commission | 藤堂穗香 todou honoka   |  女教师  Onna Kyoushi (LORA)",
+    "url": "https://civitai.com/models/2514781",
+    "original_content": "Type: LORA | Downloads: 8 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 8 | Rating: 0.0\n<p><span style=\"color:rgb(250, 82, 82)\"><strong>我需要buzz!这可以让我更卖力的创作！✊</strong></span></p><p><span style=\"color:rgb(250, 82, 82)\"><strong>I need buzz！It can make me more creative！✊</strong></span></p><h3><span style=\"color:rgb(253, 126, 20)\"><strong><em>如果需要委托定制，请添加本人联系账号：</em></strong></span></h3><p><span style=\"color:rgb(253, 126, 20)\"><strong><em>微信：xb176022</em></strong></span></p><p><span style=\"color:rgb(253, 126, 20)\"><strong><em>QQ：2849928775</em></strong></span></p><p><span style=\"color:",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "summary": "Type: LORA | Downloads: 8 | Rating: 0.0",
+    "insights": [],
+    "created_at": "2026-04-03T16:55:44.109999",
+    "processed_at": "2026-04-03 08:58:49"
+  },
+  {
+    "id": "civitai-2497533",
+    "source": "CivitAI",
+    "source_type": "model",
+    "subscription_id": null,
+    "title": "🎨 Carmine / Magical Canan まじかるカナン (LORA)",
+    "url": "https://civitai.com/models/2497533",
+    "original_content": "Type: LORA | Downloads: 17 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 17 | Rating: 0.0\n<p>💖Thanks for stopping by! I hope you enjoy my work and welcome to my website for more content💖</p><p>😄 見てくれてありがとう。作品を楽しんでもらえたら嬉しいです、ぜひサイトにも遊びに来てね 😄</p><p>💫 感谢你查看这里，希望你喜欢我的创作，也欢迎到我的网站玩并获取更多内容 💫</p><p><a target=\"_blank\" rel=\"ugc\" href=\"https://sekaiowari.com\">https://sekaiowari.com</a></p><p>I've noticed that some of the content I created has been reposted on other websites. I don't mind that in itself, but please be careful not to be deceived.</p><p>私が作成したコンテンツが他のサイトに転載されているのを見かけました。私はそのこと自体は気に",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "summary": "Type: LORA | Downloads: 17 | Rating: 0.0",
+    "insights": [],
+    "created_at": "2026-04-03T16:55:44.110149",
+    "processed_at": "2026-04-03 08:58:49"
+  },
+  {
+    "id": "civitai-2213699",
+    "source": "CivitAI",
+    "source_type": "model",
+    "subscription_id": null,
+    "title": "🎨 Flux 2D & Klein_9b  (High & Low VRAM), w/ Controlnet, GGUF capable (Workflows)",
+    "url": "https://civitai.com/models/2213699",
+    "original_content": "Type: Workflows | Downloads: 3,197 | Rating: 0.0",
+    "raw_text": "Type: Workflows | Downloads: 3,197 | Rating: 0.0\n<p><span style=\"color:rgb(64, 192, 87)\"><strong>A complete user and troubleshooting guide inclusing a list of </strong></span><span style=\"color:rgb(250, 176, 5)\"><strong>common error messages </strong></span><span style=\"color:rgb(64, 192, 87)\"><strong>can be found here</strong></span><a target=\"_blank\" rel=\"ugc\" href=\"Here\"><strong> </strong></a><a target=\"_blank\" rel=\"ugc\" href=\"https://civitai.com/articles/24678/how-to-use-my-workflows-a-comprehensive-breakdown\"><strong>https://civitai.com/a",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "summary": "Type: Workflows | Downloads: 3,197 | Rating: 0.0",
+    "insights": [],
+    "created_at": "2026-04-03T16:55:44.110211",
+    "processed_at": "2026-04-03 08:58:49"
+  },
+  {
+    "id": "civitai-2454865",
+    "source": "CivitAI",
+    "source_type": "model",
+    "subscription_id": null,
+    "title": "🎨 Any Anima Preview (for LoRA training) (Checkpoint)",
+    "url": "https://civitai.com/models/2454865",
+    "original_content": "Type: Checkpoint | Downloads: 265 | Rating: 0.0",
+    "raw_text": "Type: Checkpoint | Downloads: 265 | Rating: 0.0\n<p>Modified <strong>Anima Preview</strong> for LoRA training.</p><p>It reduces unintended style changes.</p><p>This is <strong>not designed for Anima Yume</strong>. Please use <strong>Any Anima Yume</strong> instead.</p><p><span style=\"color:rgb(253, 126, 20)\">Note: This model is not suitable for image generation. The model tends to generate ugly images.</span></p><p></p><p>LoRA学習用のAnima Previewです。</p><p>意図しない画風の変化を軽減し、精度も改善します。</p><p>注意: このモデルは画像生成に適していません。モデルは醜い画像を生成する傾向があります。</p><p></p><h2 id",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "summary": "Type: Checkpoint | Downloads: 265 | Rating: 0.0",
+    "insights": [],
+    "created_at": "2026-04-03T17:17:03.043059",
+    "processed_at": "2026-04-03 09:20:03"
+  },
+  {
+    "id": "civitai-2510703",
+    "source": "CivitAI",
+    "source_type": "model",
+    "subscription_id": null,
+    "title": "🎨 Nelu (Rob_ishi) | Purple Dragon Girl (LORA)",
+    "url": "https://civitai.com/models/2510703",
+    "original_content": "Type: LORA | Downloads: 3 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 3 | Rating: 0.0\n<p><em>Made for a bounty and was trained on art style created by </em><strong><em>Rob_ishi </em></strong><em>that we're gathered by \"</em><a target=\"_blank\" rel=\"ugc\" href=\"https://civitai.com/user/Garroz\"><strong>Garroz</strong></a>\" <em>and edited by me! (and i'm talking lots of edits and upscales here...)</em><br /></p><p><strong>Settings i usually use:</strong></p><ul><li><p>LoRA Weight: <strong>0.9 – 1.2</strong></p></li><li><p>Sampler: <strong>Euler a</strong> (or DPMPP_2M + Karras if back",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "summary": "Type: LORA | Downloads: 3 | Rating: 0.0",
+    "insights": [],
+    "created_at": "2026-04-03T17:17:03.043086",
+    "processed_at": "2026-04-03 09:20:03"
+  },
+  {
+    "id": "civitai-2514426",
+    "source": "CivitAI",
+    "source_type": "model",
+    "subscription_id": null,
+    "title": "🎨 Samantha the Cat (Infinity Train) (LORA)",
+    "url": "https://civitai.com/models/2514426",
+    "original_content": "Type: LORA | Downloads: 4 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 4 | Rating: 0.0\n<p>A character model of Samantha the Cat from the cartoon, \"Infinity Train\".</p>",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "summary": "Type: LORA | Downloads: 4 | Rating: 0.0",
+    "insights": [],
+    "created_at": "2026-04-03T17:17:03.043097",
+    "processed_at": "2026-04-03 09:20:03"
+  },
+  {
+    "id": "civitai-2507805",
+    "source": "CivitAI",
+    "source_type": "model",
+    "subscription_id": null,
+    "title": "🎨 Minamino Kanade (Suite Precure♪) /南野 奏 (スイートプリキュア♪) (LORA)",
+    "url": "https://civitai.com/models/2507805",
+    "original_content": "Type: LORA | Downloads: 10 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 10 | Rating: 0.0\n<p>prompt example :</p><p>anime screencap,solo,1girl,minaminokanade,kanadenormal,long sleeves,white sleeves,&lt;lora:minaminokanade_IL:0.8&gt;,high definition,amazing quality,best quality,very aesthetic,masterpiece,absurdres,</p><p>anime screencap,solo,1girl,minaminokanade,kanadesummer,&lt;lora:minaminokanade_IL:0.8&gt;,high definition,amazing quality,best quality,very aesthetic,masterpiece,absurdres,</p><p>anime screencap,solo,1girl,minaminokanade,kanadeschool,&lt;lora:minaminokanade_IL:0.8&gt;",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "summary": "Type: LORA | Downloads: 10 | Rating: 0.0",
+    "insights": [],
+    "created_at": "2026-04-03T17:17:03.043107",
+    "processed_at": "2026-04-03 09:20:03"
+  },
+  {
+    "id": "civitai-2150403",
+    "source": "CivitAI",
+    "source_type": "model",
+    "subscription_id": null,
+    "title": "🎨 bob hair Ai influencer Women [SFW+NSFW] [Multi Model] (LORA)",
+    "url": "https://civitai.com/models/2150403",
+    "original_content": "Type: LORA | Downloads: 426 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 426 | Rating: 0.0\n<p>This lora is great at producing caucasian with bob hair and cuvy body images</p>",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "summary": "Type: LORA | Downloads: 426 | Rating: 0.0",
+    "insights": [],
+    "created_at": "2026-04-03T17:17:03.043116",
+    "processed_at": "2026-04-03 09:20:03"
+  },
+  {
+    "id": "civitai-2502602",
+    "source": "CivitAI",
+    "source_type": "model",
+    "subscription_id": null,
+    "title": "🎨 MS_Gilrs_ILL (LORA)",
+    "url": "https://civitai.com/models/2502602",
+    "original_content": "Type: LORA | Downloads: 79 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 79 | Rating: 0.0\n<p>Just as I already publish AI-based characters for SDXL and Flux, I will also be publishing AI-based characters for Illustrious here under MS_Gilrs_ILL.</p><p>All the girls were created over time using Stable Diffusion and do not represent real people.</p><p>If there are too many similarities to real people, or if anyone feels harassed or offended, please let me know. I will then delete the LoRA.</p><p>I will be publishing more models here in the future, so check back regularly… you might like",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "summary": "Type: LORA | Downloads: 79 | Rating: 0.0",
+    "insights": [],
+    "created_at": "2026-04-03T17:17:03.043125",
+    "processed_at": "2026-04-03 09:20:03"
+  },
+  {
+    "id": "civitai-2514830",
+    "source": "CivitAI",
+    "source_type": "model",
+    "subscription_id": null,
+    "title": "🎨 界张春华-三国杀OL (LORA)",
+    "url": "https://civitai.com/models/2514830",
+    "original_content": "Type: LORA | Downloads: 3 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 3 | Rating: 0.0\n<p>炼出来的脸型有点圆了，建议使用时加上slender face</p>",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "summary": "Type: LORA | Downloads: 3 | Rating: 0.0",
+    "insights": [],
+    "created_at": "2026-04-03T17:17:03.043133",
+    "processed_at": "2026-04-03 09:20:03"
+  },
+  {
+    "id": "civitai-2514796",
+    "source": "CivitAI",
+    "source_type": "model",
+    "subscription_id": null,
+    "title": "🎨 Wuthering Waves_Denia-(Post-transformation)丨鸣潮_达妮娅-第二形态 (LORA)",
+    "url": "https://civitai.com/models/2514796",
+    "original_content": "Type: LORA | Downloads: 3 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 3 | Rating: 0.0\n<p><span style=\"color:rgb(250, 82, 82)\"><strong>如果您需要定制lora，你可以通过QQ：3692722976添加我</strong></span></p><p><span style=\"color:rgb(230, 73, 128)\"><strong>If you need a custom LoRA, feel free to DM me on CivitAI. I'll reply as soon as I see your message!</strong></span></p><p></p><p><span style=\"color:rgb(252, 192, 46)\">----------------------&gt;</span></p><h3 id=\"v0.9\"><span style=\"color:rgb(121, 80, 242)\"><strong>V0.9</strong></span></h3><p></p><h3 id=\"tag\"><span style=\"color:rgb(121, 80, 242)\"><st",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "summary": "Type: LORA | Downloads: 3 | Rating: 0.0",
+    "insights": [],
+    "created_at": "2026-04-03T17:17:03.043142",
+    "processed_at": "2026-04-03 09:20:03"
+  },
+  {
+    "id": "civitai-2513630",
+    "source": "CivitAI",
+    "source_type": "model",
+    "subscription_id": null,
+    "title": "🎨 Nagaharu | Нагахару [Illustrious] (LORA)",
+    "url": "https://civitai.com/models/2513630",
+    "original_content": "Type: LORA | Downloads: 3 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 3 | Rating: 0.0\n<h3 id=\"have-fun-my-fellow-furs!-hey-everyone-3-you-all-are-awesome-less3.-i'd-love-to-see-your-creations!-veselites-moi-pushistiki!-vsem-privetik-3-vy-vse-zamechatelnye-less3.-hotelos-by-uvidet-vashi-generacii!\"><span style=\"color:rgb(18, 184, 134)\"><strong><img src=\"https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/05396019-f7b4-4b15-82b3-13dd1226aa22/width=525/05396019-f7b4-4b15-82b3-13dd1226aa22.jpeg\" />😊 </strong></span><span style=\"color:rgb(130, 201, 30)\"><strong>Have fun, my fellow furs! ",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "summary": "Type: LORA | Downloads: 3 | Rating: 0.0",
+    "insights": [],
+    "created_at": "2026-04-03T17:17:03.043152",
+    "processed_at": "2026-04-03 09:20:03"
+  },
+  {
+    "id": "civitai-2513369",
+    "source": "CivitAI",
+    "source_type": "model",
+    "subscription_id": null,
+    "title": "🎨 picike2 (LORA)",
+    "url": "https://civitai.com/models/2513369",
+    "original_content": "Type: LORA | Downloads: 5 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 5 | Rating: 0.0\n<p><img src=\"https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/09eb1c64-e6f1-40dd-9bc0-d5850cc27cfc/original=true/09eb1c64-e6f1-40dd-9bc0-d5850cc27cfc.jpeg\" /></p>",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "summary": "Type: LORA | Downloads: 5 | Rating: 0.0",
+    "insights": [],
+    "created_at": "2026-04-03T17:17:03.043161",
+    "processed_at": "2026-04-03 09:20:03"
+  },
+  {
+    "id": "civitai-2514843",
+    "source": "CivitAI",
+    "source_type": "model",
+    "subscription_id": null,
+    "title": "🎨 Wuthering Waves_Hiyuki-(Post-transformation) 丨鸣潮_绯雪-第二形态 (LORA)",
+    "url": "https://civitai.com/models/2514843",
+    "original_content": "Type: LORA | Downloads: 0 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 0 | Rating: 0.0\n<p><span style=\"color:rgb(250, 82, 82)\"><strong>如果您需要定制lora，你可以通过QQ：3692722976添加我</strong></span></p><p><span style=\"color:rgb(230, 73, 128)\"><strong>If you need a custom LoRA, feel free to DM me on CivitAI. I'll reply as soon as I see your message!</strong></span></p><p></p><p><span style=\"color:rgb(252, 192, 46)\">----------------------&gt;</span></p><h3 id=\"v0.9\"><span style=\"color:rgb(121, 80, 242)\"><strong>V0.9</strong></span></h3><p></p><h3 id=\"tag\"><span style=\"color:rgb(121, 80, 242)\"><st",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "summary": "Type: LORA | Downloads: 0 | Rating: 0.0",
+    "insights": [],
+    "created_at": "2026-04-03T17:25:07.180236",
+    "processed_at": "2026-04-03 09:27:49"
+  },
+  {
+    "id": "github-a21af028915c",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "subscription_id": null,
+    "title": "ultraworkers/claw-code — [Notice] The repo temporarily locked while ownership transfer. in the meantime w",
+    "url": "https://github.com/ultraworkers/claw-code",
+    "original_content": "[Notice] The repo temporarily locked while ownership transfer. in the meantime we maintain on here: https://github.com/ultraworkers/claw-code-parity. The fastest repo in history to surpass 100K stars ⭐. Better Harness Tools that make real things done. Built in Rust using oh-my-codex. | ⭐ 156,799 stars | Language: Rust",
+    "raw_text": "[Notice] The repo temporarily locked while ownership transfer. in the meantime we maintain on here: https://github.com/ultraworkers/claw-code-parity. The fastest repo in history to surpass 100K stars ⭐. Better Harness Tools that make real things done. Built in Rust using oh-my-codex. | ⭐ 156,799 stars | Language: Rust",
+    "relevance_score": 8.0,
+    "category": [
+      "开源项目",
+      "Rust"
+    ],
+    "summary": "[Notice] The repo temporarily locked while ownership transfer. in the meantime we maintain on here: https://github.com/ultraworkers/claw-code-parity. The fastest repo in history to surpass 100K stars ⭐. Better Harness Tools that make real things done. Built in Rust using oh-my-codex. | ⭐ 156,799 sta",
+    "insights": [],
+    "created_at": "2026-04-03T17:56:55.565509",
+    "processed_at": "2026-04-03 09:59:40"
+  },
+  {
+    "id": "github-28188c7fb2eb",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "subscription_id": null,
+    "title": "claude-code-best/claude-code — 原汁原昧 Claude Code 可运行,可构建, 可调试版; Typescript 类型全修复; 企业级可靠性; 安全无毒, lock 文件保真, 可直接 b",
+    "url": "https://github.com/claude-code-best/claude-code",
+    "original_content": "原汁原昧 Claude Code 可运行,可构建, 可调试版; Typescript 类型全修复; 企业级可靠性; 安全无毒, lock 文件保真, 可直接 bun i; bun run dev 启动 | ⭐ 12,560 stars | Language: TypeScript",
+    "raw_text": "原汁原昧 Claude Code 可运行,可构建, 可调试版; Typescript 类型全修复; 企业级可靠性; 安全无毒, lock 文件保真, 可直接 bun i; bun run dev 启动 | ⭐ 12,560 stars | Language: TypeScript",
+    "relevance_score": 8.0,
+    "category": [
+      "开源项目",
+      "TypeScript"
+    ],
+    "summary": "原汁原昧 Claude Code 可运行,可构建, 可调试版; Typescript 类型全修复; 企业级可靠性; 安全无毒, lock 文件保真, 可直接 bun i; bun run dev 启动 | ⭐ 12,560 stars | Language: TypeScript",
+    "insights": [],
+    "created_at": "2026-04-03T17:56:55.565533",
+    "processed_at": "2026-04-03 09:59:40"
+  },
+  {
+    "id": "github-672962b0fe83",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "subscription_id": null,
+    "title": "sanbuphy/learn-coding-agent — Research on Coding Agents",
+    "url": "https://github.com/sanbuphy/learn-coding-agent",
+    "original_content": "Research on Coding Agents | ⭐ 11,111 stars",
+    "raw_text": "Research on Coding Agents | ⭐ 11,111 stars",
+    "relevance_score": 8.0,
+    "category": [
+      "开源项目"
+    ],
+    "summary": "Research on Coding Agents | ⭐ 11,111 stars",
+    "insights": [],
+    "created_at": "2026-04-03T17:56:55.565542",
+    "processed_at": "2026-04-03 09:59:40"
+  },
+  {
+    "id": "github-c8b1f28170a6",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "subscription_id": null,
+    "title": "openai/codex-plugin-cc — Use Codex from Claude Code to review code or delegate tasks.",
+    "url": "https://github.com/openai/codex-plugin-cc",
+    "original_content": "Use Codex from Claude Code to review code or delegate tasks. | ⭐ 10,995 stars | Language: JavaScript",
+    "raw_text": "Use Codex from Claude Code to review code or delegate tasks. | ⭐ 10,995 stars | Language: JavaScript",
+    "relevance_score": 8.0,
+    "category": [
+      "开源项目",
+      "JavaScript"
+    ],
+    "summary": "Use Codex from Claude Code to review code or delegate tasks. | ⭐ 10,995 stars | Language: JavaScript",
+    "insights": [],
+    "created_at": "2026-04-03T17:56:55.565551",
+    "processed_at": "2026-04-03 09:59:40"
+  },
+  {
+    "id": "github-f6682f4efbb6",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "subscription_id": null,
+    "title": "Gitlawb/openclaude — Open Claude Is Open-source coding-agent CLI for OpenAI, Gemini, DeepSeek, Ollama",
+    "url": "https://github.com/Gitlawb/openclaude",
+    "original_content": "Open Claude Is Open-source coding-agent CLI for OpenAI, Gemini, DeepSeek, Ollama, Codex, GitHub Models, and 200+ models via OpenAI-compatible APIs. | ⭐ 8,690 stars | Language: TypeScript",
+    "raw_text": "Open Claude Is Open-source coding-agent CLI for OpenAI, Gemini, DeepSeek, Ollama, Codex, GitHub Models, and 200+ models via OpenAI-compatible APIs. | ⭐ 8,690 stars | Language: TypeScript",
+    "relevance_score": 8.0,
+    "category": [
+      "开源项目",
+      "TypeScript"
+    ],
+    "summary": "Open Claude Is Open-source coding-agent CLI for OpenAI, Gemini, DeepSeek, Ollama, Codex, GitHub Models, and 200+ models via OpenAI-compatible APIs. | ⭐ 8,690 stars | Language: TypeScript",
+    "insights": [],
+    "created_at": "2026-04-03T17:56:55.565559",
+    "processed_at": "2026-04-03 09:59:40"
+  },
+  {
+    "id": "github-0bce9c57f82b",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "subscription_id": null,
+    "title": "ChinaSiro/claude-code-sourcemap",
+    "url": "https://github.com/ChinaSiro/claude-code-sourcemap",
+    "original_content": "⭐ 8,181 stars | Language: TypeScript",
+    "raw_text": "⭐ 8,181 stars | Language: TypeScript",
+    "relevance_score": 8.0,
+    "category": [
+      "开源项目",
+      "TypeScript"
+    ],
+    "summary": "⭐ 8,181 stars | Language: TypeScript",
+    "insights": [],
+    "created_at": "2026-04-03T17:56:55.565571",
+    "processed_at": "2026-04-03 09:59:40"
+  },
+  {
+    "id": "github-d576b99fda68",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "subscription_id": null,
+    "title": "Kuberwastaken/claurst — Your favorite Terminal Coding Agent, now in Rust & a Breakdown of the Claude Cod",
+    "url": "https://github.com/Kuberwastaken/claurst",
+    "original_content": "Your favorite Terminal Coding Agent, now in Rust & a Breakdown of the Claude Code leak & discoveries | ⭐ 7,548 stars | Language: Rust",
+    "raw_text": "Your favorite Terminal Coding Agent, now in Rust & a Breakdown of the Claude Code leak & discoveries | ⭐ 7,548 stars | Language: Rust",
+    "relevance_score": 8.0,
+    "category": [
+      "开源项目",
+      "Rust"
+    ],
+    "summary": "Your favorite Terminal Coding Agent, now in Rust & a Breakdown of the Claude Code leak & discoveries | ⭐ 7,548 stars | Language: Rust",
+    "insights": [],
+    "created_at": "2026-04-03T17:56:55.565582",
+    "processed_at": "2026-04-03 09:59:40"
+  },
+  {
+    "id": "github-9e88e84eade5",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "subscription_id": null,
+    "title": "titanwings/colleague-skill — 将冰冷的离别化为温暖的 Skill，欢迎加入数字生命1.0！Transforming cold farewells into warm skills? It's",
+    "url": "https://github.com/titanwings/colleague-skill",
+    "original_content": "将冰冷的离别化为温暖的 Skill，欢迎加入数字生命1.0！Transforming cold farewells into warm skills? It's giving rebirth era. Welcome to Digital Life 1.0. 🫶 | ⭐ 6,171 stars | Language: Python",
+    "raw_text": "将冰冷的离别化为温暖的 Skill，欢迎加入数字生命1.0！Transforming cold farewells into warm skills? It's giving rebirth era. Welcome to Digital Life 1.0. 🫶 | ⭐ 6,171 stars | Language: Python",
+    "relevance_score": 8.0,
+    "category": [
+      "开源项目",
+      "Python"
+    ],
+    "summary": "将冰冷的离别化为温暖的 Skill，欢迎加入数字生命1.0！Transforming cold farewells into warm skills? It's giving rebirth era. Welcome to Digital Life 1.0. 🫶 | ⭐ 6,171 stars | Language: Python",
+    "insights": [],
+    "created_at": "2026-04-03T17:56:55.565591",
+    "processed_at": "2026-04-03 09:59:40"
+  },
+  {
+    "id": "github-3821ff6915a2",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "subscription_id": null,
+    "title": "emdash-cms/emdash — EmDash is a full-stack TypeScript CMS based on Astro; the spiritual successor to",
+    "url": "https://github.com/emdash-cms/emdash",
+    "original_content": "EmDash is a full-stack TypeScript CMS based on Astro; the spiritual successor to WordPress | ⭐ 4,885 stars | Language: TypeScript | Topics: astro, cms, emdash, typescript",
+    "raw_text": "EmDash is a full-stack TypeScript CMS based on Astro; the spiritual successor to WordPress | ⭐ 4,885 stars | Language: TypeScript | Topics: astro, cms, emdash, typescript",
+    "relevance_score": 8.0,
+    "category": [
+      "开源项目",
+      "TypeScript",
+      "astro",
+      "cms"
+    ],
+    "summary": "EmDash is a full-stack TypeScript CMS based on Astro; the spiritual successor to WordPress | ⭐ 4,885 stars | Language: TypeScript | Topics: astro, cms, emdash, typescript",
+    "insights": [],
+    "created_at": "2026-04-03T17:56:55.565600",
+    "processed_at": "2026-04-03 09:59:40"
+  },
+  {
+    "id": "github-e836017706b1",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "subscription_id": null,
+    "title": "tvytlx/ai-agent-deep-dive — AI Agent 源码深度研究报告",
+    "url": "https://github.com/tvytlx/ai-agent-deep-dive",
+    "original_content": "AI Agent 源码深度研究报告 | ⭐ 4,866 stars | Language: Python",
+    "raw_text": "AI Agent 源码深度研究报告 | ⭐ 4,866 stars | Language: Python",
+    "relevance_score": 8.0,
+    "category": [
+      "开源项目",
+      "Python"
+    ],
+    "summary": "AI Agent 源码深度研究报告 | ⭐ 4,866 stars | Language: Python",
+    "insights": [],
+    "created_at": "2026-04-03T17:56:55.565609",
+    "processed_at": "2026-04-03 09:59:40"
+  },
+  {
+    "id": "github-c9deef924f93",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "subscription_id": null,
+    "title": "NanmiCoder/cc-haha — Claude Code 泄露源码 - 本地可运行版本",
+    "url": "https://github.com/NanmiCoder/cc-haha",
+    "original_content": "Claude Code 泄露源码 - 本地可运行版本 | ⭐ 4,259 stars | Language: TypeScript",
+    "raw_text": "Claude Code 泄露源码 - 本地可运行版本 | ⭐ 4,259 stars | Language: TypeScript",
+    "relevance_score": 8.0,
+    "category": [
+      "开源项目",
+      "TypeScript"
+    ],
+    "summary": "Claude Code 泄露源码 - 本地可运行版本 | ⭐ 4,259 stars | Language: TypeScript",
+    "insights": [],
+    "created_at": "2026-04-03T17:56:55.565615",
+    "processed_at": "2026-04-03 09:59:40"
+  },
+  {
+    "id": "github-30e7d17a9cd2",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "subscription_id": null,
+    "title": "VoltAgent/awesome-design-md — Collection of DESIGN.md files that capture design systems from popular websites.",
+    "url": "https://github.com/VoltAgent/awesome-design-md",
+    "original_content": "Collection of DESIGN.md files that capture design systems from popular websites. Drop one into your project and let coding agents build matching UI. | ⭐ 4,146 stars | Language: HTML | Topics: awesome-list, design-md, design-system, design-tokens, figma",
+    "raw_text": "Collection of DESIGN.md files that capture design systems from popular websites. Drop one into your project and let coding agents build matching UI. | ⭐ 4,146 stars | Language: HTML | Topics: awesome-list, design-md, design-system, design-tokens, figma",
+    "relevance_score": 8.0,
+    "category": [
+      "开源项目",
+      "HTML",
+      "awesome-list",
+      "design-md"
+    ],
+    "summary": "Collection of DESIGN.md files that capture design systems from popular websites. Drop one into your project and let coding agents build matching UI. | ⭐ 4,146 stars | Language: HTML | Topics: awesome-list, design-md, design-system, design-tokens, figma",
+    "insights": [],
+    "created_at": "2026-04-03T17:56:55.565623",
+    "processed_at": "2026-04-03 09:59:40"
+  },
+  {
+    "id": "github-d53b1aebbbbc",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "subscription_id": null,
+    "title": "ultraworkers/claw-code-parity — claw-code Rust port parity work - it is temporary work while claw-code repo is d",
+    "url": "https://github.com/ultraworkers/claw-code-parity",
+    "original_content": "claw-code Rust port parity work - it is temporary work while claw-code repo is doing migration | ⭐ 3,861 stars | Language: Rust",
+    "raw_text": "claw-code Rust port parity work - it is temporary work while claw-code repo is doing migration | ⭐ 3,861 stars | Language: Rust",
+    "relevance_score": 8.0,
+    "category": [
+      "开源项目",
+      "Rust"
+    ],
+    "summary": "claw-code Rust port parity work - it is temporary work while claw-code repo is doing migration | ⭐ 3,861 stars | Language: Rust",
+    "insights": [],
+    "created_at": "2026-04-03T17:56:55.565632",
+    "processed_at": "2026-04-03 09:59:40"
+  },
+  {
+    "id": "github-f6ae6c9dc722",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "subscription_id": null,
+    "title": "JackChen-me/open-multi-agent — TypeScript multi-agent framework — one runTeam() call from goal to result. Auto ",
+    "url": "https://github.com/JackChen-me/open-multi-agent",
+    "original_content": "TypeScript multi-agent framework — one runTeam() call from goal to result. Auto task decomposition, parallel execution. 3 dependencies, deploys anywhere Node.js runs. | ⭐ 2,847 stars | Language: TypeScript | Topics: agent-framework, ai-agents, anthropic, claude, llm",
+    "raw_text": "TypeScript multi-agent framework — one runTeam() call from goal to result. Auto task decomposition, parallel execution. 3 dependencies, deploys anywhere Node.js runs. | ⭐ 2,847 stars | Language: TypeScript | Topics: agent-framework, ai-agents, anthropic, claude, llm",
+    "relevance_score": 8.0,
+    "category": [
+      "开源项目",
+      "TypeScript",
+      "agent-framework",
+      "ai-agents"
+    ],
+    "summary": "TypeScript multi-agent framework — one runTeam() call from goal to result. Auto task decomposition, parallel execution. 3 dependencies, deploys anywhere Node.js runs. | ⭐ 2,847 stars | Language: TypeScript | Topics: agent-framework, ai-agents, anthropic, claude, llm",
+    "insights": [],
+    "created_at": "2026-04-03T17:56:55.565640",
+    "processed_at": "2026-04-03 09:59:40"
+  },
+  {
+    "id": "github-b6400e3d5b99",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "subscription_id": null,
+    "title": "drona23/claude-token-efficient — One CLAUDE.md file. Keeps Claude responses terse. Reduces output verbosity on he",
+    "url": "https://github.com/drona23/claude-token-efficient",
+    "original_content": "One CLAUDE.md file. Keeps Claude responses terse. Reduces output verbosity on heavy workflows. Drop-in, no code changes. | ⭐ 2,823 stars",
+    "raw_text": "One CLAUDE.md file. Keeps Claude responses terse. Reduces output verbosity on heavy workflows. Drop-in, no code changes. | ⭐ 2,823 stars",
+    "relevance_score": 8.0,
+    "category": [
+      "开源项目"
+    ],
+    "summary": "One CLAUDE.md file. Keeps Claude responses terse. Reduces output verbosity on heavy workflows. Drop-in, no code changes. | ⭐ 2,823 stars",
+    "insights": [],
+    "created_at": "2026-04-03T17:56:55.565646",
+    "processed_at": "2026-04-03 09:59:40"
+  },
+  {
+    "id": "hf-paper-f045349bb7e8",
+    "source": "HuggingFace Papers",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "Memory-Augmented Vision-Language Agents for Persistent and Semantically Consistent Object Captioning",
+    "url": "https://huggingface.co/papers/2603.24257",
+    "original_content": "Vision-Language Models (VLMs) often yield inconsistent descriptions of the same object across viewpoints, hindering the ability of embodied agents to construct consistent semantic representations over time. Previous methods resolved inconsistencies using offline multi-view aggregation or multi-stage pipelines that decouple exploration, data association, and caption learning, with limited capacity to reason over previously observed objects. In this paper, we introduce a unified, memory-augmented ",
+    "raw_text": "Vision-Language Models (VLMs) often yield inconsistent descriptions of the same object across viewpoints, hindering the ability of embodied agents to construct consistent semantic representations over time. Previous methods resolved inconsistencies using offline multi-view aggregation or multi-stage pipelines that decouple exploration, data association, and caption learning, with limited capacity to reason over previously observed objects. In this paper, we introduce a unified, memory-augmented Vision-Language agent that simultaneously handles data association, object captioning, and exploration policy within a single autoregressive framework. The model processes the current RGB observation, a top-down explored map, and an object-level episodic memory serialized into object-level tokens, ensuring persistent object identity and semantic consistency across extended sequences. To train the model in a self-supervised manner, we collect a dataset in photorealistic 3D environments using a di",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "papers",
+      "huggingface"
+    ],
+    "summary": "Vision-Language Models (VLMs) often yield inconsistent descriptions of the same object across viewpoints, hindering the ability of embodied agents to construct consistent semantic representations over time. Previous methods resolved inconsistencies using offline multi-view aggregation or multi-stage",
+    "insights": [],
+    "created_at": "2026-04-03T17:56:57.233713",
+    "processed_at": "2026-04-03 09:59:40"
+  },
+  {
+    "id": "hf-paper-fafc0e95d123",
+    "source": "HuggingFace Papers",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "AutoMIA: Improved Baselines for Membership Inference Attack via Agentic Self-Exploration",
+    "url": "https://huggingface.co/papers/2604.01014",
+    "original_content": "Membership Inference Attacks (MIAs) serve as a fundamental auditing tool for evaluating training data leakage in machine learning models. However, existing methodologies predominantly rely on static, handcrafted heuristics that lack adaptability, often leading to suboptimal performance when transferred across different large models. In this work, we propose AutoMIA, an agentic framework that reformulates membership inference as an automated process of self-exploration and strategy evolution. Giv",
+    "raw_text": "Membership Inference Attacks (MIAs) serve as a fundamental auditing tool for evaluating training data leakage in machine learning models. However, existing methodologies predominantly rely on static, handcrafted heuristics that lack adaptability, often leading to suboptimal performance when transferred across different large models. In this work, we propose AutoMIA, an agentic framework that reformulates membership inference as an automated process of self-exploration and strategy evolution. Given high-level scenario specifications, AutoMIA self-explores the attack space by generating executable logits-level strategies and progressively refining them through closed-loop evaluation feedback. By decoupling abstract strategy reasoning from low-level execution, our framework enables a systematic, model-agnostic traversal of the attack search space. Extensive experiments demonstrate that AutoMIA consistently matches or outperforms state-of-the-art baselines while eliminating the need for ma",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "papers",
+      "huggingface"
+    ],
+    "summary": "Membership Inference Attacks (MIAs) serve as a fundamental auditing tool for evaluating training data leakage in machine learning models. However, existing methodologies predominantly rely on static, handcrafted heuristics that lack adaptability, often leading to suboptimal performance when transfer",
+    "insights": [],
+    "created_at": "2026-04-03T17:56:57.233738",
+    "processed_at": "2026-04-03 09:59:40"
+  },
+  {
+    "id": "civitai-2514896",
+    "source": "CivitAI",
+    "source_type": "model",
+    "subscription_id": null,
+    "title": "🎨 Nordic Small Town - FLUX (THX 4 arrssenne) (LORA)",
+    "url": "https://civitai.com/models/2514896",
+    "original_content": "Type: LORA | Downloads: 0 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 0 | Rating: 0.0\n<p><span style=\"background-color:rgb(26, 27, 30);color:rgb(141, 141, 143);font-family:-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;;font-size:16px\">With arrssenne's LORA I created 11 dataset images in confui and trained lora with fluxgym (RTX-4090).</span></p>",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "summary": "Type: LORA | Downloads: 0 | Rating: 0.0",
+    "insights": [],
+    "created_at": "2026-04-03T17:56:57.807451",
+    "processed_at": "2026-04-03 09:59:40"
+  },
+  {
+    "id": "civitai-2514620",
+    "source": "CivitAI",
+    "source_type": "model",
+    "subscription_id": null,
+    "title": "🎨 Nightingale (Reincarnation no Kaben) (LORA)",
+    "url": "https://civitai.com/models/2514620",
+    "original_content": "Type: LORA | Downloads: 3 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 3 | Rating: 0.0\n<p>Nightingale (Reincarnation no Kaben)</p>",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "summary": "Type: LORA | Downloads: 3 | Rating: 0.0",
+    "insights": [],
+    "created_at": "2026-04-03T17:56:57.807469",
+    "processed_at": "2026-04-03 09:59:40"
+  },
+  {
+    "id": "civitai-2514613",
+    "source": "CivitAI",
+    "source_type": "model",
+    "subscription_id": null,
+    "title": "🎨 Einstein (Reincarnation no Kaben) (LORA)",
+    "url": "https://civitai.com/models/2514613",
+    "original_content": "Type: LORA | Downloads: 4 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 4 | Rating: 0.0\n<p>Einstein (Reincarnation no Kaben)</p>",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "summary": "Type: LORA | Downloads: 4 | Rating: 0.0",
+    "insights": [],
+    "created_at": "2026-04-03T17:56:57.807475",
+    "processed_at": "2026-04-03 09:59:40"
+  },
+  {
+    "id": "civitai-352019",
+    "source": "CivitAI",
+    "source_type": "model",
+    "subscription_id": null,
+    "title": "🎨 Yuno Rembrandt - Tsukimichi: Moonlit fantasy 1.5/Illustrious (LORA)",
+    "url": "https://civitai.com/models/352019",
+    "original_content": "Type: LORA | Downloads: 324 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 324 | Rating: 0.0\n<h3 id=\"yuno-rembrandt-from-tsukimichi:-moonlit-fantasy\"><span style=\"color:rgb(34, 139, 230)\"><strong>Yuno Rembrandt from Tsukimichi: Moonlit fantasy</strong></span></h3><p><span style=\"color:rgb(250, 82, 82)\"><strong>Keep in mind that settings may vary slightly between different versions. See below for more details.</strong></span></p><p></p><p><span style=\"color:rgb(64, 192, 87)\"><strong>When I tested this with different checkpoints and LoRAs, it seemed to work quite well.</strong></span></p>",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "summary": "Type: LORA | Downloads: 324 | Rating: 0.0",
+    "insights": [],
+    "created_at": "2026-04-03T17:56:57.807481",
+    "processed_at": "2026-04-03 09:59:40"
+  },
+  {
+    "id": "civitai-2512778",
+    "source": "CivitAI",
+    "source_type": "model",
+    "subscription_id": null,
+    "title": "🎨 🌸🏮🎇Four Seasons Matsuri🍁🌨️🏔️ (ill) (LORA)",
+    "url": "https://civitai.com/models/2512778",
+    "original_content": "Type: LORA | Downloads: 4 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 4 | Rating: 0.0\n<p>🌸🏮🎇 Welcome to the captivating realm of Japanese Four Seasons Matsuri LoRA, where traditional festival magic comes alive in stunning detail! ✨🔥 This LoRA is designed to generate authentic, people-free scenes that honor the spirit of Japanese matsuri across every season.</p><p>Experience the delicate charm of spring cherry blossoms surrounding sacred mikoshi and torii gates, the energetic glow of summer fireworks and illuminated floats, the warm abundance of autumn maple leaves with harvest of",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "summary": "Type: LORA | Downloads: 4 | Rating: 0.0",
+    "insights": [],
+    "created_at": "2026-04-03T17:56:57.807487",
+    "processed_at": "2026-04-03 09:59:40"
+  },
+  {
+    "id": "civitai-2514723",
+    "source": "CivitAI",
+    "source_type": "model",
+    "subscription_id": null,
+    "title": "🎨 Maki Gamou (蒲生まき) From Ijirinaide Nagatoro-san / Don't Toy with Me Nagatoro-san (LORA)",
+    "url": "https://civitai.com/models/2514723",
+    "original_content": "Type: LORA | Downloads: 9 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 9 | Rating: 0.0\n<p>Maki Gamou (蒲生まき) From Ijirinaide Nagatoro-san / Don't Toy With Me Nagatoro-san</p><p></p><p>Tag:</p><p>maki gamou, gamou maki, long hair, orange hair, orange eyes, sanpaku, mature female, breasts, large breast, detail, detailed,anime screencap, white shirt, blue skirt</p><p></p><p>Use Wisely</p>",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "summary": "Type: LORA | Downloads: 9 | Rating: 0.0",
+    "insights": [],
+    "created_at": "2026-04-03T17:56:57.807508",
+    "processed_at": "2026-04-03 09:59:40"
+  }
+]

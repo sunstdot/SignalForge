@@ -1,0 +1,45 @@
+/* App-specific styles - TokenBurner Light Terminal Theme */
+
+/* Ensure proper layout */
+#root {
+  min-height: 100vh;
+}
+
+/* Fix for fixed sidebar */
+.ml-64 {
+  margin-left: 16rem;
+}
+
+/* Line clamp utility */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Focus ring color */
+.focus\:ring-2:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--accent-blue-light);
+}
+
+/* Smooth transitions */
+a, button {
+  transition: all 0.15s ease;
+}
+
+/* Selection color */
+::selection {
+  background-color: var(--accent-blue-light);
+  color: var(--text-primary);
+}
+
+/* Prose adjustments for markdown */
+.prose p {
+  margin-bottom: 0.75rem;
+}
+
+.prose p:last-child {
+  margin-bottom: 0;
+}

@@ -1,0 +1,1522 @@
+{
+  "id": "250116e7-b1c0-46d7-bbf9-4dda5269b9b2",
+  "date": "2026-04-03",
+  "items": [
+    {
+      "id": "rss-geohot-001",
+      "title": "Tinygrad: A Minimalist Deep Learning Framework",
+      "source": "George Hotz",
+      "source_type": "rss",
+      "url": "https://example.com/tinygrad",
+      "summary": "George Hotz开源的Tinygrad框架展示了如何用极简代码实现PyTorch级性能，为理解深度学习框架底层原理提供了绝佳学习材料。",
+      "category": [
+        "AI Tools",
+        "Deep Learning",
+        "Python"
+      ],
+      "relevance_score": 9.0,
+      "created_at": "2026-04-02 11:26:07"
+    },
+    {
+      "id": "arxiv-2604.00917v1",
+      "title": "Investigating Autonomous Agent Contributions in the Wild: Activity Patterns and Code Change over Time",
+      "source": "arXiv",
+      "source_type": "paper",
+      "url": "https://arxiv.org/abs/2604.00917v1",
+      "summary": "本研究构建了一个包含约11万个开源pull requests的新数据集，系统性地比较了五种主流AI编码代理（OpenAI Codex、Claude Code、GitHub Copilot、Google Jules和Devin）在实际软件开发中的贡献模式。研究不仅分析了这些AI代理的合并频率、编辑文件类型和开发者交互等即时指标，还特别关注了代码的长期可维护性，发现AI生成的代码虽然在开源项目中使用日益增加，但相比人类编写的代码呈现出更高的代码流失率（churn rate）。\n\n#",
+      "category": [
+        "AI研究",
+        "开发者工具"
+      ],
+      "relevance_score": 9.0,
+      "created_at": "2026-04-01T13:58:30.000Z"
+    },
+    {
+      "id": "arxiv-2604.00920v1",
+      "title": "GPT-NL Public Corpus: A Permissively Licensed, Dutch-First Dataset for LLM Pre-training",
+      "source": "arXiv",
+      "source_type": "paper",
+      "url": "https://arxiv.org/abs/2604.00920v1",
+      "summary": "GPT-NL Public Corpus 是目前最大的荷兰语开放许可语料库，专为大语言模型预训练设计。该语料库包含 36B 个独特的荷兰语 token，以及超过 487B 个其他语言（英语、代码、德语/丹麦语）的 token，所有数据均来自具有宽松许可的数据集，并以 CC-BY 许可证重新发布在 Hugging Face Hub 上。",
+      "category": [
+        "AI研究",
+        "大语言模型",
+        "数据集"
+      ],
+      "relevance_score": 9.0,
+      "created_at": "2026-04-01T14:00:53.000Z"
+    },
+    {
+      "id": "arxiv-2604.00923v1",
+      "title": "Positional Cognitive Specialization: Where Do LLMs Learn To Comprehend and Speak Your Language?",
+      "source": "arXiv",
+      "source_type": "paper",
+      "url": "https://arxiv.org/abs/2604.00923v1",
+      "summary": "Adapting large language models (LLMs) to new languages is an expensive and opaque process. Understanding how language models acquire new languages and multilingual abilities is key to achieve efficien...",
+      "category": [
+        "AI研究",
+        "大语言模型",
+        "机器学习应用"
+      ],
+      "relevance_score": 9.0,
+      "created_at": "2026-04-01T14:03:51.000Z"
+    },
+    {
+      "id": "arxiv-2604.00931v1",
+      "title": "PsychAgent: An Experience-Driven Lifelong Learning Agent for Self-Evolving Psychological Counselor",
+      "source": "arXiv",
+      "source_type": "paper",
+      "url": "https://arxiv.org/abs/2604.00931v1",
+      "summary": "本文提出了PsychAgent，一个用于心理咨询的经验驱动型终身学习智能体。该系统通过三个核心引擎（记忆增强规划引擎、技能进化引擎和强化内化引擎）实现持续自我进化，模仿人类心理咨询师通过临床实践不断提升专业能力的过程。实验表明，PsychAgent在多维度评估中优于GPT-4和Gemini等通用大模型以及领域专用基线模型。\n\n#",
+      "category": [
+        "AI研究",
+        "大语言模型",
+        "开发者工具"
+      ],
+      "relevance_score": 9.0,
+      "created_at": "2026-04-01T14:08:49.000Z"
+    },
+    {
+      "id": "arxiv-2604.00997v1",
+      "title": "Uncertainty-Aware Variational Reward Factorization via Probabilistic Preference Bases for LLM Personalization",
+      "source": "arXiv",
+      "source_type": "paper",
+      "url": "https://arxiv.org/abs/2604.00997v1",
+      "summary": "Reward factorization personalizes large language models (LLMs) by decomposing rewards into shared basis functions and user-specific weights. Yet, existing methods estimate user weights from scarce dat...",
+      "category": [
+        "AI研究",
+        "大语言模型",
+        "前端技术"
+      ],
+      "relevance_score": 9.0,
+      "created_at": "2026-04-01T14:58:51.000Z"
+    },
+    {
+      "id": "github-1197029054",
+      "title": "sanbuphy/learn-coding-agent: Research on Coding Agents",
+      "source": "GitHub",
+      "source_type": "repo",
+      "url": "https://github.com/sanbuphy/learn-coding-agent",
+      "summary": "这是一个关于编码代理（Coding Agents）的研究项目。该项目专注于探索和研究能够自动化编程任务的AI代理系统，旨在理解和开发能够辅助或自动完成代码编写、调试和优化等任务的智能系统。",
+      "category": [
+        "AI研究",
+        "开发者工具",
+        "前端技术"
+      ],
+      "relevance_score": 9.0,
+      "created_at": "2026-03-31T09:07:08.000Z"
+    },
+    {
+      "id": "atom-george-hotz-84ee36a8a594",
+      "title": "The Reckoning",
+      "source": "George Hotz",
+      "source_type": "rss",
+      "url": "https://geohot.github.io//blog/jekyll/update/2026/04/03/the-reckoning.html",
+      "summary": "So go ask your Chomsky What these systems produce – Sediment - Say Anything 10 years ago, when I started comma and discovered the Professional Managerial Class, I used to talk about the reckoning. It was a nebulous concept, but it mostly involved the abrupt fall from grace of these people at the han",
+      "category": [
+        "tech",
+        "ai",
+        "hacking"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T00:00:00"
+    },
+    {
+      "id": "rss-sean-goedecke-b672de74d670",
+      "title": "Programming (with AI agents) as theory building",
+      "source": "Sean Goedecke",
+      "source_type": "rss",
+      "url": "https://seangoedecke.com/programming-with-ai-agents-as-theory-building/",
+      "summary": "",
+      "category": [
+        "tech",
+        "software"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T00:00:00"
+    },
+    {
+      "id": "rss-john-d.-cook-e623171bb47d",
+      "title": "Hyperbolic version of Napier’s mnemonic",
+      "source": "John D. Cook",
+      "source_type": "rss",
+      "url": "https://www.johndcook.com/blog/2026/04/02/hyperbolic-napier-mnemonic/",
+      "summary": "I was looking through an old geometry book [1] and saw a hyperbolic analog of Napier&#8217;s mnemonic for spherical trigonometry. In hindsight of course there&#8217;s a hyperbolic analog: there&#8217;s a hyperbolic analog of everything. But I was surprised because I&#8217;d never thought of this bef",
+      "category": [
+        "math",
+        "programming"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T01:38:49"
+    },
+    {
+      "id": "atom-chris-siebenmann-72c41d66afc9",
+      "title": "Using '<code>pkg</code>' for everything on FreeBSD 15 has been nice",
+      "source": "Chris Siebenmann",
+      "source_type": "rss",
+      "url": "https://utcc.utoronto.ca/~cks/space/blog/unix/FreeBSDPkgManagementNice",
+      "summary": "Traditionally, the FreeBSD base system was managed through freebsd-update ( also ), which I would call primarily a patch-based system, while third party software was (usually) managed through pkg , a package manager. This was a quite traditional split, but it had some less than ideal aspects, and as",
+      "category": [
+        "tech",
+        "unix"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T03:00:41"
+    },
+    {
+      "id": "atom-tedium-d234d4e87117",
+      "title": "Em Dashes: Back In Style?",
+      "source": "Tedium",
+      "source_type": "rss",
+      "url": "https://feed.tedium.co/link/15204/17312777/emdash-cloudflare-wordpress-competitor",
+      "summary": "Cloudflare’s new attempt to win over the hearts of developers could help keep a few ancient WordPress sites from falling off the internet. That‘s a good thing. Cloudflare started its life nearly 20 years ago, and I found out about it basically because I was running a blog—and obsessed with keeping i",
+      "category": [
+        "tech",
+        "history"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T03:20:49"
+    },
+    {
+      "id": "rss-joan-westenberg-ffe47a20e361",
+      "title": "The \"Passive Income\" trap ate a generation of entrepreneurs",
+      "source": "Joan Westenberg",
+      "source_type": "rss",
+      "url": "https://www.joanwestenberg.com/the-passive-income-trap-ate-a-generation-of-entrepreneurs/",
+      "summary": "I had coffee last year with a guy - I won&apos;t use his real name - who told me he was &quot;building a business.&quot; I asked what it did. Dropshipping jade face rollers. I made him say it twice. Jade face rollers. He&apos;d found",
+      "category": [
+        "tech",
+        "culture"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T06:25:28"
+    },
+    {
+      "id": "rss-fabien-sanglard-f11357828acf",
+      "title": "How Michael Abrash doubled Quake framerate",
+      "source": "Fabien Sanglard",
+      "source_type": "rss",
+      "url": "https://fabiensanglard.net/quake_asm_optimizations/index.html",
+      "summary": "",
+      "category": [
+        "tech",
+        "graphics",
+        "games"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T14:54:46.994253"
+    },
+    {
+      "id": "rss-fabien-sanglard-48293b23be2b",
+      "title": "Let's compile Quake like it's 1997!",
+      "source": "Fabien Sanglard",
+      "source_type": "rss",
+      "url": "https://fabiensanglard.net/compile_like_1997/index.html",
+      "summary": "",
+      "category": [
+        "tech",
+        "graphics",
+        "games"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T14:54:46.995219"
+    },
+    {
+      "id": "rss-fabien-sanglard-a7eea6d072e1",
+      "title": "Is QSpy still cool? Let's play QuakeWorld!",
+      "source": "Fabien Sanglard",
+      "source_type": "rss",
+      "url": "https://fabiensanglard.net/quakeworld/index.html",
+      "summary": "",
+      "category": [
+        "tech",
+        "graphics",
+        "games"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T14:54:46.996208"
+    },
+    {
+      "id": "rss-fabien-sanglard-8f21dfbaefd5",
+      "title": "Building a 1997 Quake PC: Benchmarking GLquake",
+      "source": "Fabien Sanglard",
+      "source_type": "rss",
+      "url": "https://fabiensanglard.net/quake_pc/glquake/index.html",
+      "summary": "",
+      "category": [
+        "tech",
+        "graphics",
+        "games"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T14:54:46.996899"
+    },
+    {
+      "id": "rss-fabien-sanglard-6340e4051f36",
+      "title": "Building a 1997 Quake PC: Benchmarking Vquake",
+      "source": "Fabien Sanglard",
+      "source_type": "rss",
+      "url": "https://fabiensanglard.net/quake_pc/vquake/index.html",
+      "summary": "",
+      "category": [
+        "tech",
+        "graphics",
+        "games"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T14:54:46.997708"
+    },
+    {
+      "id": "rss-paul-graham-f8b4832637ce",
+      "title": "Superlinear Returns",
+      "source": "Paul Graham",
+      "source_type": "rss",
+      "url": "http://www.paulgraham.com/superlinear.html",
+      "summary": "",
+      "category": [
+        "startup",
+        "philosophy"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T14:56:38.813977"
+    },
+    {
+      "id": "rss-paul-graham-ee94d981e826",
+      "title": "How to Do Great Work",
+      "source": "Paul Graham",
+      "source_type": "rss",
+      "url": "http://www.paulgraham.com/greatwork.html",
+      "summary": "",
+      "category": [
+        "startup",
+        "philosophy"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T14:56:38.814026"
+    },
+    {
+      "id": "rss-paul-graham-f564864bf8e2",
+      "title": "How to Get New Ideas",
+      "source": "Paul Graham",
+      "source_type": "rss",
+      "url": "http://www.paulgraham.com/getideas.html",
+      "summary": "",
+      "category": [
+        "startup",
+        "philosophy"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T14:56:38.814039"
+    },
+    {
+      "id": "rss-paul-graham-f6b2377c9073",
+      "title": "The Need to Read",
+      "source": "Paul Graham",
+      "source_type": "rss",
+      "url": "http://www.paulgraham.com/read.html",
+      "summary": "",
+      "category": [
+        "startup",
+        "philosophy"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T14:56:38.814050"
+    },
+    {
+      "id": "rss-paul-graham-6bd6fdc3ef42",
+      "title": "What You (Want to)* Want",
+      "source": "Paul Graham",
+      "source_type": "rss",
+      "url": "http://www.paulgraham.com/want.html",
+      "summary": "",
+      "category": [
+        "startup",
+        "philosophy"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T14:56:38.814060"
+    },
+    {
+      "id": "rss-garymarcus-001",
+      "title": "The Future of AI: Beyond Deep Learning",
+      "source": "Gary Marcus",
+      "source_type": "rss",
+      "url": "https://example.com/ai-future",
+      "summary": "Gary Marcus提出超越深度学习的AI架构，主张符号AI与神经网络相结合的混合方法，解决当前系统的推理短板。",
+      "category": [
+        "AI Research",
+        "Deep Learning"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-02 11:26:07"
+    },
+    {
+      "id": "rss-joan-westenberg-e8cf2167fc23",
+      "title": "Time is a User-Interface",
+      "source": "Joan Westenberg",
+      "source_type": "rss",
+      "url": "https://www.joanwestenberg.com/tim/",
+      "summary": "",
+      "category": [
+        "tech",
+        "culture"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-02T00:32:14"
+    },
+    {
+      "id": "atom-chris-siebenmann-8c29ef4cebc6",
+      "title": "I should use argument groups in Python's argparse module more than I do",
+      "source": "Chris Siebenmann",
+      "source_type": "rss",
+      "url": "https://utcc.utoronto.ca/~cks/space/blog/python/ArgparseOptionGroupsPraise",
+      "summary": "For reasons well outside the scope of this entry, the other day I looked at the --help output from one of my old Python programs. This particular program has a lot of options, but when I'd written it, I had used argparse argument groups to break up the large list of options into logical groups, star",
+      "category": [
+        "tech",
+        "unix"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-02T02:43:09"
+    },
+    {
+      "id": "atom-simon-willison-7c496797966b",
+      "title": "March 2026 sponsors-only newsletter",
+      "source": "Simon Willison",
+      "source_type": "rss",
+      "url": "https://simonwillison.net/2026/Apr/2/march-newsletter/#atom-everything",
+      "summary": "I just sent the March edition of my sponsors-only monthly newsletter . If you are a sponsor (or if you start a sponsorship now) you can access it here . In this month's newsletter: More agentic engineering patterns Streaming experts with MoE models on a Mac Model releases in March Vibe porting Suppl",
+      "category": [
+        "tech",
+        "ai",
+        "python"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-02T05:15:04"
+    },
+    {
+      "id": "rss-openai-blog-c32a08ac79ed",
+      "title": "Codex now offers more flexible pricing for teams",
+      "source": "OpenAI Blog",
+      "source_type": "rss",
+      "url": "https://openai.com/index/codex-flexible-pricing-for-teams",
+      "summary": "Codex now includes pay-as-you-go pricing for ChatGPT Business and Enterprise, providing teams a more flexible option to start and scale adoption.",
+      "category": [
+        "ai",
+        "openai",
+        "official"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-02T10:00:00"
+    },
+    {
+      "id": "rss-miguel-grinberg-38c6d188269d",
+      "title": "SQLAlchemy 2 In Practice - Chapter 3 - One-To-Many Relationships",
+      "source": "Miguel Grinberg",
+      "source_type": "rss",
+      "url": "https://blog.miguelgrinberg.com/post/sqlalchemy-2-in-practice---chapter-3---one-to-many-relationships",
+      "summary": "This is the third chapter of my SQLAlchemy 2 in Practice book. If you'd like to support my work, I encourage you to buy this book, either directly from my store or on Amazon . Thank you! In the previous chapter you learned how to execute a variety of queries on the products table. Interestingly, som",
+      "category": [
+        "tech",
+        "python",
+        "flask"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-02T10:17:15"
+    },
+    {
+      "id": "rss-pluralistic-6302204a5795",
+      "title": "Pluralistic: It's extremely good that Claude's source-code leaked (02 Apr 2026)",
+      "source": "Pluralistic",
+      "source_type": "rss",
+      "url": "https://pluralistic.net/2026/04/02/limited-monopoly/",
+      "summary": "Today's links It's extremely good that Claude's source-code leaked: Careful what you wish for. Hey look at this: Delights to delectate. Object permanence: \"Elephantmen\"; Eve Online war bankrolled by casino; Phishers take Mattel for $3m; Sanders wins 6 primaries, CNN airs Jesus \"documentary\"; Cuba is",
+      "category": [
+        "tech",
+        "policy"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-02T10:19:42"
+    },
+    {
+      "id": "rss-openai-blog-b487a1bf1364",
+      "title": "OpenAI acquires TBPN",
+      "source": "OpenAI Blog",
+      "source_type": "rss",
+      "url": "https://openai.com/index/openai-acquires-tbpn",
+      "summary": "OpenAI acquires TBPN to accelerate global conversations around AI and support independent media, expanding dialogue with builders, businesses, and the broader tech community.",
+      "category": [
+        "ai",
+        "openai",
+        "official"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-02T10:30:00"
+    },
+    {
+      "id": "rss-dave-farquhar-3466a81d9cb5",
+      "title": "Thomas Rattigan, short-lived Commodore CEO",
+      "source": "Dave Farquhar",
+      "source_type": "rss",
+      "url": "https://dfarq.homeip.net/thomas-rattigan-short-lived-commodore-ceo/?utm_source=rss&utm_medium=rss&utm_campaign=thomas-rattigan-short-lived-commodore-ceo",
+      "summary": "On April 23, 1987, Thomas Rattigan drove to work just as he would any other day. But when he arrived at Commodore&#8217;s office building in suburban Philadelphia that morning, company guards informed him he&#8217;d been fired. They escorted him from The post Thomas Rattigan, short-lived Commodore C",
+      "category": [
+        "tech"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-02T11:00:15"
+    },
+    {
+      "id": "rss-terence-eden-afe9bd44a957",
+      "title": "Concert Review: London Philharmonic - Pictures at an Exhibition ★★★★★",
+      "source": "Terence Eden",
+      "source_type": "rss",
+      "url": "https://shkspr.mobi/blog/2026/04/concert-review-london-philharmonic-pictures-at-an-exhibition/",
+      "summary": "A delightful and emotional rendition of three rather different works. Mark-Anthony Turnage&#039;s &#34;Three Screaming Popes&#34; was a chaotic cacophony. Wild, bizarre, inventive, and seemingly driven by excess. A fascinating performance, although not one I&#039;ll put on in the background. Turnage",
+      "category": [
+        "tech",
+        "web"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-02T11:34:07"
+    },
+    {
+      "id": "rss-the-old-new-thing-0dde8a34bc95",
+      "title": "Why doesn’t the system let you declare your own messages to have the same semantics as WM_COPY­DATA?",
+      "source": "The Old New Thing",
+      "source_type": "rss",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260402-00/?p=112196",
+      "summary": "Tempting but misleading. The post Why doesn&#8217;t the system let you declare your own messages to have the same semantics as &lt;CODE&gt;WM_&lt;WBR&gt;COPY&amp;shy;DATA&lt;/CODE&gt;? appeared first on The Old New Thing .",
+      "category": [
+        "tech",
+        "windows",
+        "programming"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-02T14:00:00"
+    },
+    {
+      "id": "rss-john-d.-cook-1cd20011bc98",
+      "title": "Artemis II, Apollo 8, and Apollo 13",
+      "source": "John D. Cook",
+      "source_type": "rss",
+      "url": "https://www.johndcook.com/blog/2026/04/02/artemis-apollo/",
+      "summary": "The Artemis II mission launched yesterday. Much like the Apollo 8 mission in 1968, the goal is to go around the moon in preparation for a future mission that will land on the moon. And like Apollo 13, the mission will swing around the moon rather than entering lunar orbit. Artemis II will deliberate",
+      "category": [
+        "math",
+        "programming"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-02T14:14:44"
+    },
+    {
+      "id": "rss-google-ai-blog-b9151f445ef2",
+      "title": "New ways to balance cost and reliability in the Gemini API",
+      "source": "Google AI Blog",
+      "source_type": "rss",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-flex-and-priority-inference/",
+      "summary": "Google is introducing two new inference tiers to the Gemini API, Flex and Priority, to balance cost and latency.",
+      "category": [
+        "ai",
+        "google",
+        "official"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-02T16:00:00"
+    },
+    {
+      "id": "rss-google-ai-blog-aaf3d2dd3969",
+      "title": "Create, edit and share videos at no cost in Google Vids",
+      "source": "Google AI Blog",
+      "source_type": "rss",
+      "url": "https://blog.google/products-and-platforms/products/workspace/google-vids-updates-lyria-veo/",
+      "summary": "New AI capabilities are coming to Google Vids, powered by Lyria 3 and Veo 3.1, like high-quality video generation at no cost and more.",
+      "category": [
+        "ai",
+        "google",
+        "official"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-02T16:00:00"
+    },
+    {
+      "id": "rss-google-deepmind-blog-c64eb2c5c469",
+      "title": "Gemma 4: Byte for byte, the most capable open models",
+      "source": "Google DeepMind Blog",
+      "source_type": "rss",
+      "url": "https://deepmind.google/blog/gemma-4-byte-for-byte-the-most-capable-open-models/",
+      "summary": "Gemma 4: Our most intelligent open models to date, purpose-built for advanced reasoning and agentic workflows.",
+      "category": [
+        "ai",
+        "google",
+        "deepmind"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-02T16:00:49"
+    },
+    {
+      "id": "atom-daring-fireball-07c6504d7dbe",
+      "title": "‘No, We’re Not Stupid. Our Dads Just Got Us Crummy Computers.’",
+      "source": "Daring Fireball",
+      "source_type": "rss",
+      "url": "https://www.reddit.com/r/VintageApple/comments/bq4ucw/mcintosh_jr_vintage_apple_parody/",
+      "summary": "Back in March 1991, Saturday Night Live ran what I consider the best Apple parody ad ever made: “McIntosh Jr.” Siracusa and I talked about it on The Talk Show this week, celebrating Apple’s 50th anniversary, so I looked it up for the show notes. Alas, this appallingly low-resolution copy hosted on R",
+      "category": [
+        "tech",
+        "apple"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-02T18:12:11"
+    },
+    {
+      "id": "atom-simon-willison-e2aff6828cd3",
+      "title": "llm-gemini 0.30",
+      "source": "Simon Willison",
+      "source_type": "rss",
+      "url": "https://simonwillison.net/2026/Apr/2/llm-gemini/#atom-everything",
+      "summary": "Release: llm-gemini 0.30 New models gemini-3.1-flash-lite-preview , gemma-4-26b-a4b-it and gemma-4-31b-it . See my notes on Gemma 4 . Tags: gemini , llm , gemma",
+      "category": [
+        "tech",
+        "ai",
+        "python"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-02T18:25:08"
+    },
+    {
+      "id": "atom-simon-willison-6e2aefbb1524",
+      "title": "Gemma 4: Byte for byte, the most capable open models",
+      "source": "Simon Willison",
+      "source_type": "rss",
+      "url": "https://simonwillison.net/2026/Apr/2/gemma-4/#atom-everything",
+      "summary": "Gemma 4: Byte for byte, the most capable open models Four new vision-capable Apache 2.0 licensed reasoning LLMs from Google DeepMind, sized at 2B, 4B, 31B, plus a 26B-A4B Mixture-of-Experts. Google emphasize \"unprecedented level of intelligence-per-parameter\", providing yet more evidence that creati",
+      "category": [
+        "tech",
+        "ai",
+        "python"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-02T18:28:54"
+    },
+    {
+      "id": "atom-daring-fireball-d7a8a99e650b",
+      "title": "Axios, Super Popular NPM Package, Was Compromised in Attack on the Module’s Maintainer",
+      "source": "Daring Fireball",
+      "source_type": "rss",
+      "url": "https://www.stepsecurity.io/blog/axios-compromised-on-npm-malicious-versions-drop-remote-access-trojan",
+      "summary": "StepSecurity: If you have installed axios@1.14.1 or axios@0.30.4, assume your system is compromised. There are zero lines of malicious code inside axios itself, and that’s exactly what makes this attack so dangerous. Both poisoned releases inject a fake dependency, plain-crypto-js@4.2.1 , a package ",
+      "category": [
+        "tech",
+        "apple"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-02T18:42:39"
+    },
+    {
+      "id": "atom-daring-fireball-1d4a9992646f",
+      "title": "OpenAI, Supposedly Tightening Its Focus on Its Core Products, Buys Tech-Industry Talk Show TBPN",
+      "source": "Daring Fireball",
+      "source_type": "rss",
+      "url": "https://www.wsj.com/cmo-today/openai-buys-tech-industry-talk-show-tbpn-484c01c5?st=RUVFWn",
+      "summary": "Katie Deighton, reporting for The Wall Street Journal (main link is a gift link; also on News+ ): OpenAI bought TBPN to encourage constructive conversation around the changes AI creates by helping the show grow, according to a memo sent by Fidji Simo, the OpenAI’s CEO of applications. TBPN will repo",
+      "category": [
+        "tech",
+        "apple"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-02T18:58:50"
+    },
+    {
+      "id": "rss-jim-nielsen-587ff94f0da7",
+      "title": "The Blandness of Systematic Rules vs. The Delight of Localized Sensitivity",
+      "source": "Jim Nielsen",
+      "source_type": "rss",
+      "url": "https://blog.jim-nielsen.com/2026/systemic-vs-localized/",
+      "summary": "Marcin Wichary brings attention to this lovely dialog in ClarisWorks from 1997: He quips: this breaks the rule of button copy being fully comprehensible without having to read the surrounding strings first, perhaps most well-known as the “avoid «click here»” rule. Never Register/​Register Later/​Reg",
+      "category": [
+        "tech",
+        "web",
+        "frontend"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-02T19:00:00"
+    },
+    {
+      "id": "atom-daring-fireball-cfe1a9dae5fb",
+      "title": "Artemis II Crew on Way to Moon",
+      "source": "Daring Fireball",
+      "source_type": "rss",
+      "url": "https://512pixels.net/2026/04/artemis-ii-crew-on-way-to-moon/",
+      "summary": "Great roundup of links from Stephen Hackett: The crew is made up of Reid Wiseman, Victor Glover, Christina Koch, and CSA (Canadian Space Agency) astronaut Jeremy Hansen. They are now on their way to the moon, set to return in 10 days. Their rocket may be the product of a hugely-flawed program , but ",
+      "category": [
+        "tech",
+        "apple"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-02T19:37:10"
+    },
+    {
+      "id": "rss-meta-engineering-8302b9d33b60",
+      "title": "KernelEvolve: How Meta’s Ranking Engineer Agent Optimizes AI Infrastructure",
+      "source": "Meta Engineering",
+      "source_type": "rss",
+      "url": "https://engineering.fb.com/2026/04/02/developer-tools/kernelevolve-how-metas-ranking-engineer-agent-optimizes-ai-infrastructure/",
+      "summary": "This is the second post in the Ranking Engineer Agent blog series exploring the autonomous AI capabilities accelerating Meta&#8217;s Ads Ranking innovation. The previous post introduced Ranking Engineer Agent&#8217;s ML exploration capability, which autonomously designs, executes, and analyzes ranki",
+      "category": [
+        "ai",
+        "meta",
+        "engineering"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-02T19:59:46"
+    },
+    {
+      "id": "atom-daring-fireball-74ba6d189ab4",
+      "title": "John Buck on the Invention of QuickTime",
+      "source": "Daring Fireball",
+      "source_type": "rss",
+      "url": "https://www.theverge.com/tech/902721/quicktime-history-apple?view_token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6IkcybHEzWGhZTVciLCJwIjoiL3RlY2gvOTAyNzIxL3F1aWNrdGltZS1oaXN0b3J5LWFwcGxlIiwiZXhwIjoxNzc1NTkyNzA0LCJpYXQiOjE3NzUxNjA3MDR9.p4nbje9XKl05Ybv3q31CyAQULuqAB-H9b8qfftSz12k",
+      "summary": "John Buck at The Verge (gift link), excerpted from his great book, Inventing the Future : Steve Perlman: Almost everyone at Apple, and definitely everywhere else, assumed that multimedia would always require specialized hardware — and be expensive. A few of us thought otherwise. One of the few was G",
+      "category": [
+        "tech",
+        "apple"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-02T20:12:07"
+    },
+    {
+      "id": "atom-simon-willison-ede5c8fe437f",
+      "title": "Highlights from my conversation about agentic engineering on Lenny's Podcast",
+      "source": "Simon Willison",
+      "source_type": "rss",
+      "url": "https://simonwillison.net/2026/Apr/2/lennys-podcast/#atom-everything",
+      "summary": "I was a guest on Lenny Rachitsky's podcast, in a new episode titled An AI state of the union: We've passed the inflection point, dark factories are coming, and automation timelines . It's available on YouTube , Spotify , and Apple Podcasts . Here are my highlights from our conversation, with relevan",
+      "category": [
+        "tech",
+        "ai",
+        "python"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-02T20:40:47"
+    },
+    {
+      "id": "rss-giles-thomas-e9d854e4fd2c",
+      "title": "Automating starting Lambda Labs instances",
+      "source": "Giles Thomas",
+      "source_type": "rss",
+      "url": "https://www.gilesthomas.com/2026/04/automating-starting-lambda-instances",
+      "summary": "I've been trying to get an 8x A100 instance on Lambda Labs to do a training run for my LLM from scratch series , but they're really busy at the moment, and it's rare to see anything. Thanks to the wonders of agentic coding, I spent an hour today getting something up and running to help, which I've c",
+      "category": [
+        "tech",
+        "python"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-02T23:30:00"
+    },
+    {
+      "id": "atom-anil-dash-1b1e0df5c764",
+      "title": "On the Vergecast, On Video",
+      "source": "Anil Dash",
+      "source_type": "rss",
+      "url": "https://anildash.com/2026/04/01/vergecast-video/",
+      "summary": "I finally got the chance to drop by one of my favorite podcasts, The Vergecast, where David Pierce had me on to talk about the recent conversation about Apple's moves around video podcasts , as well as the much broader big-picture considerations around keeping podcasts open. We started with groundin",
+      "category": [
+        "tech",
+        "culture"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-01T00:00:00"
+    },
+    {
+      "id": "rss-maurycy-6e1b561e5bc0",
+      "title": "My ramblings are available over gopher",
+      "source": "Maurycy",
+      "source_type": "rss",
+      "url": "https://maurycyz.com/misc/gopher/",
+      "summary": "It has recently come to my attention that people need a thousand lines of C code to read my website. This is unacceptable. For simpler clients, my server supports gopher: /* HTML tags, keywords, commands */ h-n {color: #F27;} /* Values */ h-v {color: #B8F;} /* CSS selectors, attribute/varable names,",
+      "category": [
+        "tech",
+        "ai"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-01T00:00:00"
+    },
+    {
+      "id": "rss-maurycy-9ac0ddee51ba",
+      "title": "GopherTree",
+      "source": "Maurycy",
+      "source_type": "rss",
+      "url": "https://maurycyz.com/projects/gopher/",
+      "summary": "While gopher is usually seen as a proto-web, it's really closer to FTP. It has no markup format, no links and no URLs. Files are arranged in a hierarchically, and can be in any format. This rigid structure allows clients to get creative with how it's displayed ... which is why I'm extremely disappoi",
+      "category": [
+        "tech",
+        "ai"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-01T00:00:00"
+    },
+    {
+      "id": "atom-tedium-b4397b3059de",
+      "title": "Wayne’s World",
+      "source": "Tedium",
+      "source_type": "rss",
+      "url": "https://feed.tedium.co/link/15204/17311236/ronald-g-wayne-apple-interview",
+      "summary": "As Apple hits its 50th anniversary this week, we got a chance to talk to its forgotten third founder: Ronald G. Wayne. Apple is honestly a footnote in his long life. Quick programming note: Starting this week, we’re doing a bit of a throwback and going back to our Tuesday/Thursday roots. And in hono",
+      "category": [
+        "tech",
+        "history"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-01T01:19:32"
+    },
+    {
+      "id": "rss-openai-blog-0f9835b177f9",
+      "title": "Gradient Labs gives every bank customer an AI account manager",
+      "source": "OpenAI Blog",
+      "source_type": "rss",
+      "url": "https://openai.com/index/gradient-labs",
+      "summary": "Gradient Labs uses GPT-4.1 and GPT-5.4 mini and nano to power AI agents that automate banking support workflows with low latency and high reliability.",
+      "category": [
+        "ai",
+        "openai",
+        "official"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-01T02:00:00"
+    },
+    {
+      "id": "rss-pluralistic-0f79e079ca3d",
+      "title": "Pluralistic: Trumpismo vs minilateralism (01 Apr 2026)",
+      "source": "Pluralistic",
+      "source_type": "rss",
+      "url": "https://pluralistic.net/2026/04/01/minilateralism/",
+      "summary": "Today's links Trumpismo vs minilateralism: The enemy gets a vote. Hey look at this: Delights to delectate. Object permanence: My new sigfile is unstoppable; TBL on the future of the web (2006); Wonder Woman sweater pattern; Unpatchable drug cabinets; 50-building mural; DRM v (the next) Netflix. Upco",
+      "category": [
+        "tech",
+        "policy"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-01T10:59:24"
+    },
+    {
+      "id": "rss-dave-farquhar-a98550cf81d4",
+      "title": "How Mark Cuban became rich",
+      "source": "Dave Farquhar",
+      "source_type": "rss",
+      "url": "https://dfarq.homeip.net/how-mark-cuban-became-rich/?utm_source=rss&utm_medium=rss&utm_campaign=how-mark-cuban-became-rich",
+      "summary": "April 1, 1999 was no April Fool&#8217;s joke for Mark Cuban. On that day, he sold his company, broadcast.com, to Yahoo for $5.7 billion and became a billionaire. The deal doesn&#8217;t make a lot of sense today, but at the The post How Mark Cuban became rich appeared first on The Silicon Underground",
+      "category": [
+        "tech"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-01T11:00:04"
+    },
+    {
+      "id": "hf-paper-1326fa445569",
+      "title": "DynaVid: Learning to Generate Highly Dynamic Videos using Synthetic Motion Data",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.01666",
+      "summary": "Despite recent progress, video diffusion models still struggle to synthesize realistic videos involving highly dynamic motions or requiring fine-grained motion controllability. A central limitation lies in the scarcity of such examples in commonly used training datasets. To address this, we introduc",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T14:54:19.262332"
+    },
+    {
+      "id": "hf-paper-26bc03bc1a73",
+      "title": "T5Gemma-TTS Technical Report",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.01760",
+      "summary": "Autoregressive neural codec language models have shown strong zero-shot voice cloning ability, but decoder-only architectures treat input text as a prefix that competes with the growing audio sequence for positional capacity, weakening text conditioning over long utterances. We present T5Gemma-TTS, ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T14:54:19.262349"
+    },
+    {
+      "id": "hf-paper-cebaaa39691f",
+      "title": "Executing as You Generate: Hiding Execution Latency in LLM Code Generation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.00491",
+      "summary": "Current LLM-based coding agents follow a serial execution paradigm: the model first generates the complete code, then invokes an interpreter to execute it. This sequential workflow leaves the executor idle during generation and the generator idle during execution, resulting in unnecessary end-to-end",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T14:54:19.262356"
+    },
+    {
+      "id": "hf-paper-3b6feb91bdd7",
+      "title": "Automatic Image-Level Morphological Trait Annotation for Organismal Images",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.01619",
+      "summary": "Morphological traits are physical characteristics of biological organisms that provide vital clues on how organisms interact with their environment. Yet extracting these traits remains a slow, expert-driven process, limiting their use in large-scale ecological studies. A major bottleneck is the abse",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T14:54:19.262360"
+    },
+    {
+      "id": "hf-paper-69f88a5e33a7",
+      "title": "UniRecGen: Unifying Multi-View 3D Reconstruction and Generation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.01479",
+      "summary": "Sparse-view 3D modeling represents a fundamental tension between reconstruction fidelity and generative plausibility. While feed-forward reconstruction excels in efficiency and input alignment, it often lacks the global priors needed for structural completeness. Conversely, diffusion-based generatio",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T14:54:19.262365"
+    },
+    {
+      "id": "hf-paper-aec5aa65e96d",
+      "title": "Friends and Grandmothers in Silico: Localizing Entity Cells in Language Models",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.01404",
+      "summary": "Language models can answer many entity-centric factual questions, but it remains unclear which internal mechanisms are involved in this process. We study this question across multiple language models. We localize entity-selective MLP neurons using templated prompts about each entity, and then valida",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T14:54:19.262370"
+    },
+    {
+      "id": "hf-paper-b9c337c29fb8",
+      "title": "LinguDistill: Recovering Linguistic Ability in Vision- Language Models via Selective Cross-Modal Distillation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.00829",
+      "summary": "Adapting pretrained language models (LMs) into vision-language models (VLMs) can degrade their native linguistic capability due to representation shift and cross-modal interference introduced during multimodal adaptation. Such loss is difficult to recover, even with targeted task-specific fine-tunin",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T14:54:19.262374"
+    },
+    {
+      "id": "hf-paper-a7ca4dc0a86e",
+      "title": "Woosh: A Sound Effects Foundation Model",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.01929",
+      "summary": "The audio research community depends on open generative models as foundational tools for building novel approaches and establishing baselines. In this report, we present Woosh, Sony AI's publicly released sound effect foundation model, detailing its architecture, training process, and an evaluation ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T14:54:19.262378"
+    },
+    {
+      "id": "hf-paper-5ad25d7a8b32",
+      "title": "Apriel-Reasoner: RL Post-Training for General-Purpose and Efficient Reasoning",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.02007",
+      "summary": "Building general-purpose reasoning models using reinforcement learning with verifiable rewards (RLVR) across diverse domains has been widely adopted by frontier open-weight models. However, their training recipes and domain mixtures are often not disclosed. Joint optimization across domains poses si",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T14:54:19.262382"
+    },
+    {
+      "id": "hf-paper-ac3e184b3371",
+      "title": "Gated Condition Injection without Multimodal Attention: Towards Controllable Linear-Attention Transformers",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2603.27666",
+      "summary": "Recent advances in diffusion-based controllable visual generation have led to remarkable improvements in image quality. However, these powerful models are typically deployed on cloud servers due to their large computational demands, raising serious concerns about user data privacy. To enable secure ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T14:54:19.262386"
+    },
+    {
+      "id": "hf-model-5a5b20cc1da7",
+      "title": "🤗 Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled",
+      "summary": "Task: image-text-to-text | Downloads: 487,446 | Likes: 2,165",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T16:55:42.633047"
+    },
+    {
+      "id": "hf-model-491a8a650be1",
+      "title": "🤗 CohereLabs/cohere-transcribe-03-2026",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/CohereLabs/cohere-transcribe-03-2026",
+      "summary": "Task: automatic-speech-recognition | Downloads: 84,600 | Likes: 746",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T16:55:42.633073"
+    },
+    {
+      "id": "hf-model-2d0f16bac7e1",
+      "title": "🤗 google/gemma-4-31B-it",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/google/gemma-4-31B-it",
+      "summary": "Task: image-text-to-text | Downloads: 76,200 | Likes: 502",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T16:55:42.633085"
+    },
+    {
+      "id": "hf-model-fcfacb051911",
+      "title": "🤗 baidu/Qianfan-OCR",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/baidu/Qianfan-OCR",
+      "summary": "Task: image-text-to-text | Downloads: 26,980 | Likes: 835",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T16:55:42.633096"
+    },
+    {
+      "id": "hf-model-875c7fdb97cb",
+      "title": "🤗 mistralai/Voxtral-4B-TTS-2603",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/mistralai/Voxtral-4B-TTS-2603",
+      "summary": "Task: text-to-speech | Downloads: 4,760 | Likes: 641",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T16:55:42.633106"
+    },
+    {
+      "id": "hf-model-d014c1247631",
+      "title": "🤗 prism-ml/Bonsai-8B-gguf",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/prism-ml/Bonsai-8B-gguf",
+      "summary": "Task: text-generation | Downloads: 26,164 | Likes: 335",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T16:55:42.633114"
+    },
+    {
+      "id": "hf-model-01d1095418af",
+      "title": "🤗 Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled-v2-GGUF",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled-v2-GGUF",
+      "summary": "Task: image-text-to-text | Downloads: 227,053 | Likes: 479",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T16:55:42.633122"
+    },
+    {
+      "id": "hf-model-efba163ba2c4",
+      "title": "🤗 chromadb/context-1",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/chromadb/context-1",
+      "summary": "Task: text-generation | Downloads: 3,195 | Likes: 360",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T16:55:42.633129"
+    },
+    {
+      "id": "hf-model-e9510d43afa2",
+      "title": "🤗 HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive",
+      "summary": "Downloads: 700,218 | Likes: 930",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T16:55:42.633136"
+    },
+    {
+      "id": "hf-model-0ea922f56cb4",
+      "title": "🤗 google/gemma-4-26B-A4B-it",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+      "summary": "Task: image-text-to-text | Downloads: 24,366 | Likes: 233",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T16:55:42.633145"
+    },
+    {
+      "id": "civitai-2510080",
+      "title": "🎨 ageha【Sengoku collection】 (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2510080",
+      "summary": "Type: LORA | Downloads: 62 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T16:55:44.109877"
+    },
+    {
+      "id": "civitai-2514805",
+      "title": "🎨 Matsumiya Kiseri Artist Style (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2514805",
+      "summary": "Type: LORA | Downloads: 3 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T16:55:44.109964"
+    },
+    {
+      "id": "civitai-2503381",
+      "title": "🎨 KNMP_019_BabaKonomi_clothing1 Sherry 'n Cherry 馬場このみシャルム・ニュイ (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2503381",
+      "summary": "Type: LORA | Downloads: 6 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T16:55:44.109971"
+    },
+    {
+      "id": "civitai-2514608",
+      "title": "🎨 Wanshitong (Roco Kingdom) (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2514608",
+      "summary": "Type: LORA | Downloads: 2 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T16:55:44.109976"
+    },
+    {
+      "id": "civitai-2514774",
+      "title": "🎨 [ILXL] Sonya Lebedev ソーニャ・レベデフ | Melty Doll メルティドール (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2514774",
+      "summary": "Type: LORA | Downloads: 5 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T16:55:44.109979"
+    },
+    {
+      "id": "civitai-2514784",
+      "title": "🎨 dark skin (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2514784",
+      "summary": "Type: LORA | Downloads: 5 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T16:55:44.109981"
+    },
+    {
+      "id": "civitai-2514537",
+      "title": "🎨 V67 Deep Sea (Seabed) (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2514537",
+      "summary": "Type: LORA | Downloads: 4 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T16:55:44.109996"
+    },
+    {
+      "id": "civitai-2514781",
+      "title": "🎨 委托项目 commission | 藤堂穗香 todou honoka   |  女教师  Onna Kyoushi (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2514781",
+      "summary": "Type: LORA | Downloads: 8 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T16:55:44.109999"
+    },
+    {
+      "id": "civitai-2497533",
+      "title": "🎨 Carmine / Magical Canan まじかるカナン (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2497533",
+      "summary": "Type: LORA | Downloads: 17 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T16:55:44.110149"
+    },
+    {
+      "id": "civitai-2213699",
+      "title": "🎨 Flux 2D & Klein_9b  (High & Low VRAM), w/ Controlnet, GGUF capable (Workflows)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2213699",
+      "summary": "Type: Workflows | Downloads: 3,197 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T16:55:44.110211"
+    },
+    {
+      "id": "github-a21af028915c",
+      "title": "ultraworkers/claw-code — [Notice] The repo temporarily locked while ownership transfer. in the meantime w",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/ultraworkers/claw-code",
+      "summary": "[Notice] The repo temporarily locked while ownership transfer. in the meantime we maintain on here: https://github.com/ultraworkers/claw-code-parity. The fastest repo in history to surpass 100K stars ⭐. Better Harness Tools that make real things done. Built in Rust using oh-my-codex. | ⭐ 156,799 sta",
+      "category": [
+        "开源项目",
+        "Rust"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T17:56:55.565509"
+    },
+    {
+      "id": "github-28188c7fb2eb",
+      "title": "claude-code-best/claude-code — 原汁原昧 Claude Code 可运行,可构建, 可调试版; Typescript 类型全修复; 企业级可靠性; 安全无毒, lock 文件保真, 可直接 b",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/claude-code-best/claude-code",
+      "summary": "原汁原昧 Claude Code 可运行,可构建, 可调试版; Typescript 类型全修复; 企业级可靠性; 安全无毒, lock 文件保真, 可直接 bun i; bun run dev 启动 | ⭐ 12,560 stars | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T17:56:55.565533"
+    },
+    {
+      "id": "github-672962b0fe83",
+      "title": "sanbuphy/learn-coding-agent — Research on Coding Agents",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/sanbuphy/learn-coding-agent",
+      "summary": "Research on Coding Agents | ⭐ 11,111 stars",
+      "category": [
+        "开源项目"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T17:56:55.565542"
+    },
+    {
+      "id": "github-c8b1f28170a6",
+      "title": "openai/codex-plugin-cc — Use Codex from Claude Code to review code or delegate tasks.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/openai/codex-plugin-cc",
+      "summary": "Use Codex from Claude Code to review code or delegate tasks. | ⭐ 10,995 stars | Language: JavaScript",
+      "category": [
+        "开源项目",
+        "JavaScript"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T17:56:55.565551"
+    },
+    {
+      "id": "github-f6682f4efbb6",
+      "title": "Gitlawb/openclaude — Open Claude Is Open-source coding-agent CLI for OpenAI, Gemini, DeepSeek, Ollama",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Gitlawb/openclaude",
+      "summary": "Open Claude Is Open-source coding-agent CLI for OpenAI, Gemini, DeepSeek, Ollama, Codex, GitHub Models, and 200+ models via OpenAI-compatible APIs. | ⭐ 8,690 stars | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T17:56:55.565559"
+    },
+    {
+      "id": "github-0bce9c57f82b",
+      "title": "ChinaSiro/claude-code-sourcemap",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/ChinaSiro/claude-code-sourcemap",
+      "summary": "⭐ 8,181 stars | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T17:56:55.565571"
+    },
+    {
+      "id": "github-d576b99fda68",
+      "title": "Kuberwastaken/claurst — Your favorite Terminal Coding Agent, now in Rust & a Breakdown of the Claude Cod",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Kuberwastaken/claurst",
+      "summary": "Your favorite Terminal Coding Agent, now in Rust & a Breakdown of the Claude Code leak & discoveries | ⭐ 7,548 stars | Language: Rust",
+      "category": [
+        "开源项目",
+        "Rust"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T17:56:55.565582"
+    },
+    {
+      "id": "github-9e88e84eade5",
+      "title": "titanwings/colleague-skill — 将冰冷的离别化为温暖的 Skill，欢迎加入数字生命1.0！Transforming cold farewells into warm skills? It's",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/titanwings/colleague-skill",
+      "summary": "将冰冷的离别化为温暖的 Skill，欢迎加入数字生命1.0！Transforming cold farewells into warm skills? It's giving rebirth era. Welcome to Digital Life 1.0. 🫶 | ⭐ 6,171 stars | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T17:56:55.565591"
+    },
+    {
+      "id": "github-3821ff6915a2",
+      "title": "emdash-cms/emdash — EmDash is a full-stack TypeScript CMS based on Astro; the spiritual successor to",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/emdash-cms/emdash",
+      "summary": "EmDash is a full-stack TypeScript CMS based on Astro; the spiritual successor to WordPress | ⭐ 4,885 stars | Language: TypeScript | Topics: astro, cms, emdash, typescript",
+      "category": [
+        "开源项目",
+        "TypeScript",
+        "astro",
+        "cms"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T17:56:55.565600"
+    },
+    {
+      "id": "github-e836017706b1",
+      "title": "tvytlx/ai-agent-deep-dive — AI Agent 源码深度研究报告",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/tvytlx/ai-agent-deep-dive",
+      "summary": "AI Agent 源码深度研究报告 | ⭐ 4,866 stars | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T17:56:55.565609"
+    },
+    {
+      "id": "github-c9deef924f93",
+      "title": "NanmiCoder/cc-haha — Claude Code 泄露源码 - 本地可运行版本",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/NanmiCoder/cc-haha",
+      "summary": "Claude Code 泄露源码 - 本地可运行版本 | ⭐ 4,259 stars | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T17:56:55.565615"
+    },
+    {
+      "id": "github-30e7d17a9cd2",
+      "title": "VoltAgent/awesome-design-md — Collection of DESIGN.md files that capture design systems from popular websites.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/VoltAgent/awesome-design-md",
+      "summary": "Collection of DESIGN.md files that capture design systems from popular websites. Drop one into your project and let coding agents build matching UI. | ⭐ 4,146 stars | Language: HTML | Topics: awesome-list, design-md, design-system, design-tokens, figma",
+      "category": [
+        "开源项目",
+        "HTML",
+        "awesome-list",
+        "design-md"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T17:56:55.565623"
+    },
+    {
+      "id": "github-d53b1aebbbbc",
+      "title": "ultraworkers/claw-code-parity — claw-code Rust port parity work - it is temporary work while claw-code repo is d",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/ultraworkers/claw-code-parity",
+      "summary": "claw-code Rust port parity work - it is temporary work while claw-code repo is doing migration | ⭐ 3,861 stars | Language: Rust",
+      "category": [
+        "开源项目",
+        "Rust"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T17:56:55.565632"
+    },
+    {
+      "id": "github-f6ae6c9dc722",
+      "title": "JackChen-me/open-multi-agent — TypeScript multi-agent framework — one runTeam() call from goal to result. Auto ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/JackChen-me/open-multi-agent",
+      "summary": "TypeScript multi-agent framework — one runTeam() call from goal to result. Auto task decomposition, parallel execution. 3 dependencies, deploys anywhere Node.js runs. | ⭐ 2,847 stars | Language: TypeScript | Topics: agent-framework, ai-agents, anthropic, claude, llm",
+      "category": [
+        "开源项目",
+        "TypeScript",
+        "agent-framework",
+        "ai-agents"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T17:56:55.565640"
+    },
+    {
+      "id": "github-b6400e3d5b99",
+      "title": "drona23/claude-token-efficient — One CLAUDE.md file. Keeps Claude responses terse. Reduces output verbosity on he",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/drona23/claude-token-efficient",
+      "summary": "One CLAUDE.md file. Keeps Claude responses terse. Reduces output verbosity on heavy workflows. Drop-in, no code changes. | ⭐ 2,823 stars",
+      "category": [
+        "开源项目"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-03T17:56:55.565646"
+    },
+    {
+      "id": "github-1197124958",
+      "title": "ultrmgns/claude-private: Claude Code without any telemetry - the perfect cli to combo with CCR",
+      "source": "GitHub",
+      "source_type": "repo",
+      "url": "https://github.com/ultrmgns/claude-private",
+      "summary": "这是一个名为 claude-private 的开源项目，提供了一个无遥测数据收集的 Claude Code 命令行工具。该项目旨在为用户提供一个注重隐私保护的 Claude CLI 版本，特别适合与 CCR (Claude Code Runner) 配合使用，让开发者可以在本地环境中使用 Claude AI 能力而不用担心数据被收集。",
+      "category": [
+        "前端技术",
+        "开发者工具"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-03-31T10:50:44.000Z"
+    },
+    {
+      "id": "github-1197732991",
+      "title": "Rangizingo/cc-cache-fix: No description",
+      "source": "GitHub",
+      "source_type": "repo",
+      "url": "https://github.com/Rangizingo/cc-cache-fix",
+      "summary": "⭐ 384 stars | No description",
+      "category": [
+        "前端技术",
+        "AI研究"
+      ],
+      "relevance_score": 4.0,
+      "created_at": "2026-03-31T20:48:54.000Z"
+    },
+    {
+      "id": "github-1197287945",
+      "title": "leookun/cursor-byok-server: Cursor 公益自定义 API，公益 Tab，无 Pro 自定义 API 服务端",
+      "source": "GitHub",
+      "source_type": "repo",
+      "url": "https://github.com/leookun/cursor-byok-server",
+      "summary": "⭐ 43 stars | Cursor 公益自定义 API，公益 Tab，无 Pro 自定义 API 服务端",
+      "category": [
+        "go",
+        "github"
+      ],
+      "relevance_score": 0,
+      "created_at": "2026-03-31T13:18:13.000Z"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-04-03T18:21:57.437752"
+}

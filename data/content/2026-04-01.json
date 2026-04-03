@@ -1,0 +1,1267 @@
+[
+  {
+    "id": "atom-anil-dash-1b1e0df5c764",
+    "source": "Anil Dash",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "On the Vergecast, On Video",
+    "url": "https://anildash.com/2026/04/01/vergecast-video/",
+    "original_content": "I finally got the chance to drop by one of my favorite podcasts, The Vergecast, where David Pierce had me on to talk about the recent conversation about Apple's moves around video podcasts , as well as the much broader big-picture considerations around keeping podcasts open. We started with grounding the conversation in the idea that &quot;Wherever you get your podcasts&quot; is a radical statement . The episode also starts with a wonderful look back at Apple's first half-century as they celebra",
+    "raw_text": "I finally got the chance to drop by one of my favorite podcasts, The Vergecast, where David Pierce had me on to talk about the recent conversation about Apple's moves around video podcasts , as well as the much broader big-picture considerations around keeping podcasts open. We started with grounding the conversation in the idea that &quot;Wherever you get your podcasts&quot; is a radical statement . The episode also starts with a wonderful look back at Apple's first half-century as they celebrate their 50 anniversary, courtesy of Jason Snell, whose Six Colors is one of my favorite tech sites, and whose annual survey of tech expert sentiment on Apple is indispensable. He's completely fluent in Apple's culture and history, and minces no words about their recent moral failures . Definitely worth the watch! I hope you'll check out the entire episode, and let me know what you think, and I'm really glad to get to continue conversations that start on my site and bring them to a broader audience.",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "culture"
+    ],
+    "summary": "I finally got the chance to drop by one of my favorite podcasts, The Vergecast, where David Pierce had me on to talk about the recent conversation about Apple's moves around video podcasts , as well as the much broader big-picture considerations around keeping podcasts open. We started with groundin",
+    "insights": [],
+    "created_at": "2026-04-01T00:00:00",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "rss-maurycy-6e1b561e5bc0",
+    "source": "Maurycy",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "My ramblings are available over gopher",
+    "url": "https://maurycyz.com/misc/gopher/",
+    "original_content": "It has recently come to my attention that people need a thousand lines of C code to read my website. This is unacceptable. For simpler clients, my server supports gopher: /* HTML tags, keywords, commands */ h-n {color: #F27;} /* Values */ h-v {color: #B8F;} /* CSS selectors, attribute/varable names, file names */ h-s {color: #AEE;} /* Comments */ h-c {color: #777;} h-e {color: #F6F;} # telnet maurycyz.com 70 /about.txt --------------------[ About this site: ]--------------------- Publication dat",
+    "raw_text": "It has recently come to my attention that people need a thousand lines of C code to read my website. This is unacceptable. For simpler clients, my server supports gopher: /* HTML tags, keywords, commands */ h-n {color: #F27;} /* Values */ h-v {color: #B8F;} /* CSS selectors, attribute/varable names, file names */ h-s {color: #AEE;} /* Comments */ h-c {color: #777;} h-e {color: #F6F;} # telnet maurycyz.com 70 /about.txt --------------------[ About this site: ]--------------------- Publication date: 2026-02-03 Last updated: 2026-03-06 Yap, yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap. Yap yap yap yap yap yap yap yap yap yap. ... The response is just a text file: it has no markup, no links and no embedded content. For navigation, gopher uses specially formatted directory-style menus: # telnet maurycyz.com 70 / 0READ ME FIRST /gopherinfo.txt maurycyz.com 70 i 1Files..........Programs /programs.map maurycyz.com 70 1 Rock photos /misc/rocks.map maurycyz.com 70 i 0Cool places....on the web /real_pages.txt maurycyz.com 70 1 on gopher /gopherholes.map maurycyz.com 70 i 1Blog...........Projects /projects/ maurycyz.com 70 1 Tutorials /tutorials/ maurycyz.com 70 1 Other /misc/ maurycyz.com 70 1 Photography /astro/ maurycyz.com 70 . The first character on a line indicates the type of the linked resource: td { padding-right: 3em; } 0 Plain text 1 Another directory ... (stuff I don't use) 9 Binary data I Image The type is followed by a tab-separated list containing a display name, file path, hostname and port. Lines beginning with an \"i\" are purely informational and do not link to anything. (This is non-standard, but widely used) Storing metadata in links is weird to modern sensibilities , but it keeps the protocol simple. Menus are the only thing that the client has to understand: there's no URLs, no headers, no mime types &amp;mdash; the only thing sent to the server is the selector (file path), and the only thing received is the file. ... as a bonus, this one liner can download files: # 144 kB if you want to try it. echo /astro/m27/small.jpg | ncat maurycyz.com 70 > nebula.jpg That's quite clunky , but there are lots of programs that support it. If you have Lynx installed, you should be able to just point it at this URL: gopher://maurycyz.com ... although you will want to put ASSUME_CHARSET:utf-8 in /etc/lynx.cfg because it's not 1991 anymore [Citation Needed] I could use informational lines to replicate the webs navigation by making everything a menu &amp;mdash; but that would be against the spirit of the thing: gopher is document retrieval protocol, not a hypertext format. Instead, I converted all my blog posts in plain text and set up some directory-style navigation. I've actually been moving away from using inline links anyways because they have two opposing design goals: While reading, links must be normal text. When you're done, links must be distinct clickable elements. I've never been abl",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "ai"
+    ],
+    "summary": "It has recently come to my attention that people need a thousand lines of C code to read my website. This is unacceptable. For simpler clients, my server supports gopher: /* HTML tags, keywords, commands */ h-n {color: #F27;} /* Values */ h-v {color: #B8F;} /* CSS selectors, attribute/varable names,",
+    "insights": [],
+    "created_at": "2026-04-01T00:00:00",
+    "processed_at": "2026-04-03 08:58:49"
+  },
+  {
+    "id": "rss-maurycy-9ac0ddee51ba",
+    "source": "Maurycy",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "GopherTree",
+    "url": "https://maurycyz.com/projects/gopher/",
+    "original_content": "While gopher is usually seen as a proto-web, it's really closer to FTP. It has no markup format, no links and no URLs. Files are arranged in a hierarchically, and can be in any format. This rigid structure allows clients to get creative with how it's displayed ... which is why I'm extremely disappointed that everyone renders gopher menus like shitty websites: You see all that text mixed into the menu? Those are informational selectors: a non-standard feature that's often used to recreate hyperte",
+    "raw_text": "While gopher is usually seen as a proto-web, it's really closer to FTP. It has no markup format, no links and no URLs. Files are arranged in a hierarchically, and can be in any format. This rigid structure allows clients to get creative with how it's displayed ... which is why I'm extremely disappointed that everyone renders gopher menus like shitty websites: You see all that text mixed into the menu? Those are informational selectors: a non-standard feature that's often used to recreate hypertext. I know this \"limited web\" aesthetic appeals to certain circles, but it removes the things that make the protocol interesting. It would be nice to display gopher menus like what they are, a directory tree : This makes it easy to browse collections of files, and help avoid the Wikipedia problem: Absentmindedly clicking links until you realize it's 3 AM and you have a thousand tabs open... and that you never finished what you wanted to read in the first place. --> I've made the decision to hide informational selectors by default . These have two main uses: creating faux hypertext and adding ASCII art banners. ASCII art banners are simply annoying: Having one in each menu looks cute in a web browser, but having 50 copies cluttering up the directory tree is... not great. Hypertext doesn't work well. In the strict sense, looking ugly is better then not working at all &amp;mdash; but almost everyone who does this also hosts on the web, so it's not a huge loss. If you do find a server that uses them reasonably, they can be renabled with a keyboard shortcut. My client uses a curses GUI that runs in your terminal. It'll handle Unicode like \"Ł\" or \"µA\" fine, but don't expect it to work with things like right-to-left scripts. --> The client also has a built in text viewer , with pagination and proper word-wrap. It supports both UTF-8 and Latin-1 text encodings, but this has to be selected manually: gopher has no mechanism to indicate encoding. (but most text looks the same in both) Bookmarks work by writing items to a locally stored gopher menu, which also serves as a \"homepage\" of sorts. Because it's just a file, I didn't bother implementing any advanced editing features: any text editor works fine for that. The bookmark code is UNIX/Linux specific, but porting should be possible. All this fits within a thousand lines of C code , the same as my ultra-minimal web browser. While arguably a browser, it was practically unusable: lacking basic features like a back button or pagination. The gopher version of the same size is complete enough to replace Lynx as my preferred client. Usage instructions can be found at the top of the source file. Related: /projects/gopher/gophertree.c : Source and instructions /projects/tinyweb/ : 1000 line web browser https://datatracker.ietf.org/doc/html/rfc1436 : Gopher RFC",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "ai"
+    ],
+    "summary": "While gopher is usually seen as a proto-web, it's really closer to FTP. It has no markup format, no links and no URLs. Files are arranged in a hierarchically, and can be in any format. This rigid structure allows clients to get creative with how it's displayed ... which is why I'm extremely disappoi",
+    "insights": [],
+    "created_at": "2026-04-01T00:00:00",
+    "processed_at": "2026-04-03 08:58:49"
+  },
+  {
+    "id": "rss-maurycy-aHR0cHM6Ly9t-0",
+    "source": "Maurycy",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "My ramblings are available over gopher",
+    "url": "https://maurycyz.com/misc/gopher/",
+    "original_content": "[object Object]",
+    "raw_text": "[object Object]",
+    "relevance_score": 0,
+    "category": [
+      "tech",
+      "ai"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T00:00:00.000Z",
+    "processed_at": ""
+  },
+  {
+    "id": "rss-maurycy-aHR0cHM6Ly9t-1",
+    "source": "Maurycy",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "GopherTree",
+    "url": "https://maurycyz.com/projects/gopher/",
+    "original_content": "[object Object]",
+    "raw_text": "[object Object]",
+    "relevance_score": 0,
+    "category": [
+      "tech",
+      "ai"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T00:00:00.000Z",
+    "processed_at": ""
+  },
+  {
+    "id": "atom-tedium-b4397b3059de",
+    "source": "Tedium",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Wayne’s World",
+    "url": "https://feed.tedium.co/link/15204/17311236/ronald-g-wayne-apple-interview",
+    "original_content": "As Apple hits its 50th anniversary this week, we got a chance to talk to its forgotten third founder: Ronald G. Wayne. Apple is honestly a footnote in his long life. Quick programming note: Starting this week, we’re doing a bit of a throwback and going back to our Tuesday/Thursday roots. And in honor of that, we’re sharing a great interview we recently did. Today in Tedium: Recently, I had the chance to talk with a guy whose life, which is past the nine-decade mark, has been defined by just two ",
+    "raw_text": "As Apple hits its 50th anniversary this week, we got a chance to talk to its forgotten third founder: Ronald G. Wayne. Apple is honestly a footnote in his long life. Quick programming note: Starting this week, we’re doing a bit of a throwback and going back to our Tuesday/Thursday roots. And in honor of that, we’re sharing a great interview we recently did. Today in Tedium: Recently, I had the chance to talk with a guy whose life, which is past the nine-decade mark, has been defined by just two weeks of it. You have likely heard the capsule version of his story repeatedly. He’s the man who gave up on one of the largest golden tickets in history. He created the first logo for a company who has been shaped more than any other by its second logo. And as he leaned into other pursuits, the other two people who founded that company with him, each named Steve, became legends in the world of technology. I would like to inform you that Ronald G. Wayne is not just the guy who gave up his 10% stake in Apple after just two weeks. (A point he has recently disputed .) He is so much more than that, a polymath, a creative, a writer, a talented artist, and the guy who meticulously got Atari’s stockroom in order. Today’s Tedium talks about the other 90+ years of Ronald G. Wayne’s 91 years on this planet where he didn’t work for Apple. — Ernie @ Tedium Sponsored By … Well, Us Ever wanted to read Tedium without having those annoying ads all over the site? We have just the plan for you. Sign up for a $3 monthly membership on our Ko-Fi, and we promise we can get rid of them. We have the technology. And it beats an ad blocker. (Web-only for now, email coming soon!) Ronald G. Wayne, shown with the original Apple contract he wrote up. (Handout photos unless noted) Apple’s original logo explains so much about who Ronald G. Wayne actually is If you know Ronald G. Wayne for anything, it is most assuredly for this logo, the first-ever Apple logo: The design of this logo, among other things, reflects Wayne’s interest in postage stamps. It’s a very novel logo—Newton under an apple tree, an Apple about to fall on his head. It’s graceful, but it breaks every rule of modern logo design—it can’t shrink to a letterhead, and it requires a second to figure out what’s going on. But it’s clear the logo was aiming for something else. “It was done in a Gothic design. It was not a modern logo by any stretch of the imagination,” Wayne said of the work, his most visible contribution to one of the largest companies in the world. It reflected a sense of whimsy around the work the company was doing, something Wayne picked up from co-founder Steve Wozniak. But the logo also reflects Wayne’s roots as a design draftsman, a skill he picked up when studying at the High School of Art and Design in New York. Later in life, a couple years after departing the fledgling Apple, that skill led to a contract role at the Lawrence Livermore National Laboratory. But while the federal R&amp;D lab hired him as ",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "history"
+    ],
+    "summary": "As Apple hits its 50th anniversary this week, we got a chance to talk to its forgotten third founder: Ronald G. Wayne. Apple is honestly a footnote in his long life. Quick programming note: Starting this week, we’re doing a bit of a throwback and going back to our Tuesday/Thursday roots. And in hono",
+    "insights": [],
+    "created_at": "2026-04-01T01:19:32",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "rss-openai-blog-0f9835b177f9",
+    "source": "OpenAI Blog",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Gradient Labs gives every bank customer an AI account manager",
+    "url": "https://openai.com/index/gradient-labs",
+    "original_content": "Gradient Labs uses GPT-4.1 and GPT-5.4 mini and nano to power AI agents that automate banking support workflows with low latency and high reliability.",
+    "raw_text": "Gradient Labs uses GPT-4.1 and GPT-5.4 mini and nano to power AI agents that automate banking support workflows with low latency and high reliability.",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "openai",
+      "official"
+    ],
+    "summary": "Gradient Labs uses GPT-4.1 and GPT-5.4 mini and nano to power AI agents that automate banking support workflows with low latency and high reliability.",
+    "insights": [],
+    "created_at": "2026-04-01T02:00:00",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "rss-pluralistic-0f79e079ca3d",
+    "source": "Pluralistic",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Pluralistic: Trumpismo vs minilateralism (01 Apr 2026)",
+    "url": "https://pluralistic.net/2026/04/01/minilateralism/",
+    "original_content": "Today's links Trumpismo vs minilateralism: The enemy gets a vote. Hey look at this: Delights to delectate. Object permanence: My new sigfile is unstoppable; TBL on the future of the web (2006); Wonder Woman sweater pattern; Unpatchable drug cabinets; 50-building mural; DRM v (the next) Netflix. Upcoming appearances: Toronto, Montreal, Toronto, San Francisco, London, Berlin, NYC, Hay-on-Wye, London. Recent appearances: Where I've been. Latest books: You keep readin' em, I'll keep writin' 'em. Upc",
+    "raw_text": "->->->->->->->->->->->->->->->->->->->->->->->->->->->->-> Top Sources: None --> Today's links Trumpismo vs minilateralism : The enemy gets a vote. Hey look at this : Delights to delectate. Object permanence : My new sigfile is unstoppable; TBL on the future of the web (2006); Wonder Woman sweater pattern; Unpatchable drug cabinets; 50-building mural; DRM v (the next) Netflix. Upcoming appearances : Toronto, Montreal, Toronto, San Francisco, London, Berlin, NYC, Hay-on-Wye, London. Recent appearances : Where I've been. Latest books : You keep readin' em, I'll keep writin' 'em. Upcoming books : Like I said, I'll keep writin' 'em. Colophon : All the rest. Trumpismo vs minilateralism ( permalink ) As November Kelly has pointed out, the weirdest thing about Trumpismo is how the man seethes and rails against a game that is thoroughly rigged in America's favor, because he resents having to pretend to play the game at all : https://pluralistic.net/2026/01/26/i-dont-want/#your-greenback-dollar Before Trump, the deal was that everyone would pretend that we had a \"rules-based international order\" in which every country got a fair deal, even as America cheated like hell and sucked the world dry. It's really impossible to overstate how advantageous this was to America. By pretending to be a neutral interchange spot for transoceanic fiber cables, it got to spy on the world's internet traffic: https://pluralistic.net/2025/11/26/difficult-multipolarism/#eurostack By pretending to have a neutral currency, it got to exercise \"dollar dominance\" through which the nations of the world sent America the things they dug out of the ground or built in their factories, in exchange for America making small adjustments to a spreadsheet at the Federal Reserve. And by pretending its tech exports were neutral platforms, America got to raid the world's private data and bank accounts, spying and looting to its heart's content. When Trump kicked off his campaign of incontinent belligerence &#8211; putting tariffs on the exports of countries populated only by penguins, trying to steal Greenland &#8211; it became impossible for the world's leaders to carry on this pretense. This led to Canadian Prime Minister Mark Carney &#8211; the world's most Davos man &#8211; standing up at this year's World Economic Forum to denounce the whole post-war settlement as a bullshit arrangement, announcing that we were in a period of \"rupture\" and promising a new world of \"variable geometry\" in which \"middle powers\" would exist in overlapping webs of alliances, without the USA: https://pluralistic.net/2026/01/27/i-want-to-do-it/#now-make-me-do-it Now, thanks to Trump's America First agenda, America's many advantages are collapsing. The dollar is in retreat, with Ethiopia revaluing its national debt in Chinese renminbi: https://fidelpost.com/ethiopia-and-china-move-toward-final-stage-of-debt-restructuring-agreement/ Even worse: Trump's disastrous war of choice in Iran is heading for a humiliating def",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "policy"
+    ],
+    "summary": "Today's links Trumpismo vs minilateralism: The enemy gets a vote. Hey look at this: Delights to delectate. Object permanence: My new sigfile is unstoppable; TBL on the future of the web (2006); Wonder Woman sweater pattern; Unpatchable drug cabinets; 50-building mural; DRM v (the next) Netflix. Upco",
+    "insights": [],
+    "created_at": "2026-04-01T10:59:24",
+    "processed_at": "2026-04-03 08:58:49"
+  },
+  {
+    "id": "rss-pluralistic-aHR0cHM6Ly9w-1",
+    "source": "Pluralistic",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Pluralistic: Trumpismo vs minilateralism (01 Apr 2026)",
+    "url": "https://pluralistic.net/2026/04/01/minilateralism/",
+    "original_content": "Today's links Trumpismo vs minilateralism: The enemy gets a vote. Hey look at this: Delights to delectate. Object permanence: My new sigfile is unstoppable; TBL on the future of the web (2006); Wonder Woman sweater pattern; Unpatchable drug cabinets; 50-building mural; DRM v (the next) Netflix. Upcoming appearances: Toronto, Montreal, Toronto, San Francisco, London, Berlin, NYC, Hay-on-Wye, London. Recent appearances: Where I've been. Latest books: You keep readin' em, I'll keep writin' 'em. Upc",
+    "raw_text": "Today's links Trumpismo vs minilateralism: The enemy gets a vote. Hey look at this: Delights to delectate. Object permanence: My new sigfile is unstoppable; TBL on the future of the web (2006); Wonder Woman sweater pattern; Unpatchable drug cabinets; 50-building mural; DRM v (the next) Netflix. Upcoming appearances: Toronto, Montreal, Toronto, San Francisco, London, Berlin, NYC, Hay-on-Wye, London. Recent appearances: Where I've been. Latest books: You keep readin' em, I'll keep writin' 'em. Upcoming books: Like I said, I'll keep writin' 'em. Colophon: All the rest. Trumpismo vs minilateralism (permalink) As November Kelly has pointed out, the weirdest thing about Trumpismo is how the man seethes and rails against a game that is thoroughly rigged in America's favor, because he resents having to pretend to play the game at all: https://pluralistic.net/2026/01/26/i-dont-want/#your-greenback-dollar Before Trump, the deal was that everyone would pretend that we had a \"rules-based international order\" in which every country got a fair deal, even as America cheated like hell and sucked the world dry. It's really impossible to overstate how advantageous this was to America. By pretending to be a neutral interchange spot for transoceanic fiber cables, it got to spy on the world's internet traffic: https://pluralistic.net/2025/11/26/difficult-multipolarism/#eurostack By pretending to have a neutral currency, it got to exercise \"dollar dominance\" through which the nations of the world sent America the things they dug out of the ground or built in their factories, in exchange for America making small adjustments to a spreadsheet at the Federal Reserve. And by pretending its tech exports were neutral platforms, America got to raid the world's private data and bank accounts, spying and looting to its heart's content. When Trump kicked off his campaign of incontinent belligerence putting tariffs on the exports of countries populated only by penguins, trying to steal Greenland it became impossible for the world's leaders to carry on this pretense. This led to Canadian Prime Minister Mark Carney the world's most Davos man standing up at this year's World Economic Forum to denounce the whole post-war settlement as a bullshit arrangement, announcing that we were in a period of \"rupture\" and promising a new world of \"variable geometry\" in which \"middle powers\" would exist in overlapping webs of alliances, without the USA: https://pluralistic.net/2026/01/27/i-want-to-do-it/#now-make-me-do-it Now, thanks to Trump's America First agenda, America's many advantages are collapsing. The dollar is in retreat, with Ethiopia revaluing its national debt in Chinese renminbi: https://fidelpost.com/ethiopia-and-china-move-toward-final-stage-of-debt-restructuring-agreement/ Even worse: Trump's disastrous war of choice in Iran is heading for a humiliating defeat for the dollar, with Iran announcing that any peace deal will require a $2m/ship toll to pass through the Strait of Horm",
+    "relevance_score": 0,
+    "category": [
+      "tech",
+      "policy"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T10:59:24.000Z",
+    "processed_at": ""
+  },
+  {
+    "id": "rss-dave-farquhar-a98550cf81d4",
+    "source": "Dave Farquhar",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "How Mark Cuban became rich",
+    "url": "https://dfarq.homeip.net/how-mark-cuban-became-rich/?utm_source=rss&utm_medium=rss&utm_campaign=how-mark-cuban-became-rich",
+    "original_content": "April 1, 1999 was no April Fool&#8217;s joke for Mark Cuban. On that day, he sold his company, broadcast.com, to Yahoo for $5.7 billion and became a billionaire. The deal doesn&#8217;t make a lot of sense today, but at the The post How Mark Cuban became rich appeared first on The Silicon Underground .",
+    "raw_text": "April 1, 1999 was no April Fool&#8217;s joke for Mark Cuban. On that day, he sold his company, broadcast.com, to Yahoo for $5.7 billion and became a billionaire. The deal doesn&#8217;t make a lot of sense today, but at the The post How Mark Cuban became rich appeared first on The Silicon Underground .",
+    "relevance_score": 8.0,
+    "category": [
+      "tech"
+    ],
+    "summary": "April 1, 1999 was no April Fool&#8217;s joke for Mark Cuban. On that day, he sold his company, broadcast.com, to Yahoo for $5.7 billion and became a billionaire. The deal doesn&#8217;t make a lot of sense today, but at the The post How Mark Cuban became rich appeared first on The Silicon Underground",
+    "insights": [],
+    "created_at": "2026-04-01T11:00:04",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "rss-dave-farquhar-aHR0cHM6Ly9k-2",
+    "source": "Dave Farquhar",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "How Mark Cuban became rich",
+    "url": "https://dfarq.homeip.net/how-mark-cuban-became-rich/?utm_source=rssutm_medium=rssutm_campaign=how-mark-cuban-became-rich",
+    "original_content": "April 1, 1999 was no April Fools joke for Mark Cuban. On that day, he sold his company, broadcast.com, to Yahoo for $5.7 billion and became a billionaire. The deal doesnt make a lot of sense today, but at the The post How Mark Cuban became rich appeared first on The Silicon Underground .",
+    "raw_text": "[object Object]",
+    "relevance_score": 0,
+    "category": [
+      "tech"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T11:00:04.000Z",
+    "processed_at": ""
+  },
+  {
+    "id": "rss-dave-farquhar-62432afd3f3a",
+    "source": "Dave Farquhar",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "How Tandy bought Radio Shack",
+    "url": "https://dfarq.homeip.net/how-tandy-bought-radio-shack/?utm_source=rss&utm_medium=rss&utm_campaign=how-tandy-bought-radio-shack",
+    "original_content": "On April 1, 1963, Charles Tandy booked one of the junior ballrooms at the Ritz-Carlton in Boston and put out a call to Radio Shack employees to meet there that evening. There were rumors of changes afloat, but no one The post How Tandy bought Radio Shack appeared first on The Silicon Underground .",
+    "raw_text": "On April 1, 1963, Charles Tandy booked one of the junior ballrooms at the Ritz-Carlton in Boston and put out a call to Radio Shack employees to meet there that evening. There were rumors of changes afloat, but no one The post How Tandy bought Radio Shack appeared first on The Silicon Underground .",
+    "relevance_score": 8.0,
+    "category": [
+      "tech"
+    ],
+    "summary": "On April 1, 1963, Charles Tandy booked one of the junior ballrooms at the Ritz-Carlton in Boston and put out a call to Radio Shack employees to meet there that evening. There were rumors of changes afloat, but no one The post How Tandy bought Radio Shack appeared first on The Silicon Underground .",
+    "insights": [],
+    "created_at": "2026-04-01T11:00:30",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "rss-dave-farquhar-aHR0cHM6Ly9k-1",
+    "source": "Dave Farquhar",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "How Tandy bought Radio Shack",
+    "url": "https://dfarq.homeip.net/how-tandy-bought-radio-shack/?utm_source=rssutm_medium=rssutm_campaign=how-tandy-bought-radio-shack",
+    "original_content": "On April 1, 1963, Charles Tandy booked one of the junior ballrooms at the Ritz-Carlton in Boston and put out a call to Radio Shack employees to meet there that evening. There were rumors of changes afloat, but no one The post How Tandy bought Radio Shack appeared first on The Silicon Underground .",
+    "raw_text": "[object Object]",
+    "relevance_score": 0,
+    "category": [
+      "tech"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T11:00:30.000Z",
+    "processed_at": ""
+  },
+  {
+    "id": "rss-terence-eden-31b21f41421b",
+    "source": "Terence Eden",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Random File Format",
+    "url": "https://shkspr.mobi/blog/2026/04/random-file-format/",
+    "original_content": "This was an idea I had back in the days of Naptster. At the turn of the century, it was common to listen to an &#34;acquired&#34; music file only to find it was missing a few seconds at the end due to a prematurely stopped download. Some video formats would refuse to play at all if the moov atom at the end of the file was missing. I wondered if it would be possible to make a file format which was…",
+    "raw_text": "This was an idea I had back in the days of Naptster. At the turn of the century, it was common to listen to an \"acquired\" music file only to find it was missing a few seconds at the end due to a prematurely stopped download. Some video formats would refuse to play at all if the moov atom at the end of the file was missing . I wondered if it would be possible to make a file format which was close to impossible to read unless the entire file was intact. I don't mean including a checksum to detect download errors - I mean a layout which was intrinsically fragile to corruption. While digging through an old backup CD, I found my original notes. I'm rather impressed at what neophyte-me had constructed. My outline was: The file ends with a 32 bit pointer. This points to the location of the first information block. The information block describes the length of the data block which follows it. At the end of the data block is another 32 bit pointer. This points to the location of the next information block. The start of the file may be a pointer, or it may be padded with random data. There may be random data padded between the data blocks. This ensures that a file which has been only partially downloaded - whether truncated at the end or missing pieces elsewhere - cannot be successfully read. Here's a worked example. Start at the end and follow the thread. Random data. Data block size is 2. Data Data EOF. Data block size is 1. Data. Go to location 1. Random data. Go to location 5. There are, of course, a few downsides to this idea. Most prominently, it bloats file size. If the data block size was a constant 1MB, that would pad the size a negligible amount. But with variable data block size, it could increase it significantly. Random padding also increases the size. If the block size is consistent and there's no random padding data, the files can be mostly reconstructed. Depending on which parts of the file are missing, it may be possible to recover the majority of the file. A location block size of 32 bits restricts the file-size to less than 4GB. A 64 bit pointer might be excessive or might be future-proof! Highly structured files with predictable patterns, or text files, may be easy to recover large bits of information. A malformed file could contain an infinite loop of pointers. Perhaps a magic number should be at the start (or end) of the file? While reading the file is as simple as following the pointers, constructing the file is more complex, especially if blocks have variable lengths. Code Here's a trivial encoder. It reads a file in consistently sized chunks of 1,024 bytes. It shuffles them up and writes them to a new file. The last 4 bytes contain a pointer to the first block, which says the data length is 1,024. After that, there is a 4 byte pointer to the next block location. import random # Size of data, headers, and pointers. data_length = 1024 header_length = 4 pointer_length = 4 # Read the file into a data structure. original_blocks = list()",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "web"
+    ],
+    "summary": "This was an idea I had back in the days of Naptster. At the turn of the century, it was common to listen to an &#34;acquired&#34; music file only to find it was missing a few seconds at the end due to a prematurely stopped download. Some video formats would refuse to play at all if the moov atom at ",
+    "insights": [],
+    "created_at": "2026-04-01T11:34:57",
+    "processed_at": "2026-04-03 08:58:49"
+  },
+  {
+    "id": "rss-terence-eden-aHR0cHM6Ly9z-1",
+    "source": "Terence Eden",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Random File Format",
+    "url": "https://shkspr.mobi/blog/2026/04/random-file-format/",
+    "original_content": "This was an idea I had back in the days of Naptster. At the turn of the century, it was common to listen to an acquired music file only to find it was missing a few seconds at the end due to a prematurely stopped download. Some video formats would refuse to play at all if the moov atom at the end of the file was missing. I wondered if it would be possible to make a file format which was…",
+    "raw_text": "This was an idea I had back in the days of Naptster. At the turn of the century, it was common to listen to an acquired music file only to find it was missing a few seconds at the end due to a prematurely stopped download. Some video formats would refuse to play at all if the moov atom at the end of the file was missing. I wondered if it would be possible to make a file format which was…",
+    "relevance_score": 0,
+    "category": [
+      "tech",
+      "web"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T11:34:57.000Z",
+    "processed_at": ""
+  },
+  {
+    "id": "rss-google-ai-blog-c10527d0fffd",
+    "source": "Google AI Blog",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "The latest AI news we announced in March 2026",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-march-2026/",
+    "original_content": "Here are Google’s latest AI updates from March 2026",
+    "raw_text": "Here are Google’s latest AI updates from March 2026",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "google",
+      "official"
+    ],
+    "summary": "Here are Google’s latest AI updates from March 2026",
+    "insights": [],
+    "created_at": "2026-04-01T13:00:00",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "rss-john-d.-cook-a9e81223d4a7",
+    "source": "John D. Cook",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Pentagonal numbers are truncated triangular numbers",
+    "url": "https://www.johndcook.com/blog/2026/04/01/truncated-triangular-numbers/",
+    "original_content": "Pentagonal numbers are truncated triangular numbers. You can take the diagram that illustrates the nth pentagonal number and warp it into the base of the image that illustrates the (2n − 1)st triangular number. If you added a diagram for the (n − 1)st triangular number to the bottom of the image on the right, you&#8217;d [&#8230;] The post Pentagonal numbers are truncated triangular numbers first appeared on John D. Cook .",
+    "raw_text": "Pentagonal numbers are truncated triangular numbers. You can take the diagram that illustrates the n th pentagonal number and warp it into the base of the image that illustrates the (2 n − 1)st triangular number. If you added a diagram for the ( n − 1)st triangular number to the bottom of the image on the right, you&#8217;d have a diagram for the (2 n − 1)st triangular number. In short, P n = T 2 n − 1 − T n . This is trivial to prove algebraically, though the visual proof above is more interesting. The proof follows immediately from the definition of pentagonal numbers P n = (3 n ² − n )/2 and triangular numbers T n = ( n ² − n )/2. Related posts Partitions and pentagons Tetrahedral numbers A pentagon, hexagon, and decagon walk into a bar … The post Pentagonal numbers are truncated triangular numbers first appeared on John D. Cook .",
+    "relevance_score": 8.0,
+    "category": [
+      "math",
+      "programming"
+    ],
+    "summary": "Pentagonal numbers are truncated triangular numbers. You can take the diagram that illustrates the nth pentagonal number and warp it into the base of the image that illustrates the (2n − 1)st triangular number. If you added a diagram for the (n − 1)st triangular number to the bottom of the image on ",
+    "insights": [],
+    "created_at": "2026-04-01T13:23:42",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "rss-google-ai-blog-b242e73e0ce2",
+    "source": "Google AI Blog",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "We’re creating a new satellite imagery map to help protect Brazil’s forests.",
+    "url": "https://blog.google/products-and-platforms/products/earth/satellite-imagery-brazilian-deforestation/",
+    "original_content": "Google partnered with the Brazilian government on a satellite imagery map to help protect the country’s forests.",
+    "raw_text": "Google partnered with the Brazilian government on a satellite imagery map to help protect the country’s forests.",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "google",
+      "official"
+    ],
+    "summary": "Google partnered with the Brazilian government on a satellite imagery map to help protect the country’s forests.",
+    "insights": [],
+    "created_at": "2026-04-01T13:30:00",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "arxiv-2604.00915v1",
+    "source": "arXiv",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "Orthogonal Learner for Estimating Heterogeneous Long-Term Treatment Effects",
+    "url": "https://arxiv.org/abs/2604.00915v1",
+    "original_content": "Estimation of heterogeneous long-term treatment effects (HLTEs) is widely used for personalized decision-making in marketing, economics, and medicine, where short-term randomized experiments are often combined with long-term observational data. However, HLTE estimation is challenging due to limited overlap in treatment or in observing long-term outcomes for certain subpopulations, which can lead to unstable HLTE estimates with large finite-sample variance. To address this challenge, we introduce the LT-O-learners (Long-Term Orthogonal Learners), a set of novel orthogonal learners for HLTE estimation. The learners are designed for the canonical HLTE setting that combines a short-term randomized dataset $\\mathcal{D}_1$ with a long-term historical dataset $\\mathcal{D}_2$. The key idea of our LT-O-Learners is to retarget the learning objective by introducing custom overlap weights that downweight samples with low overlap in treatment or in long-term observation. We show that the retargeted loss is equivalent to the weighted oracle loss and satisfies Neyman-orthogonality, which means our learners are robust to errors in the nuisance estimation. We further provide a general error bound for the LT-O-Learners and give the conditions under which quasi-oracle rate can be achieved. Finally, our LT-O-learners are model-agnostic and can thus be instantiated with arbitrary machine learning models. We conduct empirical evaluations on synthetic and semi-synthetic benchmarks to confirm the theoretical properties of our LT-O-Learners, especially the robustness in low-overlap settings. To the best of our knowledge, ours are the first orthogonal learners for HLTE estimation that are robust to low overlap that is common in long-term outcomes.",
+    "raw_text": "Estimation of heterogeneous long-term treatment effects (HLTEs) is widely used for personalized decision-making in marketing, economics, and medicine, where short-term randomized experiments are often combined with long-term observational data. However, HLTE estimation is challenging due to limited overlap in treatment or in observing long-term outcomes for certain subpopulations, which can lead to unstable HLTE estimates with large finite-sample variance. To address this challenge, we introduce the LT-O-learners (Long-Term Orthogonal Learners), a set of novel orthogonal learners for HLTE estimation. The learners are designed for the canonical HLTE setting that combines a short-term randomized dataset $\\mathcal{D}_1$ with a long-term historical dataset $\\mathcal{D}_2$. The key idea of our LT-O-Learners is to retarget the learning objective by introducing custom overlap weights that downweight samples with low overlap in treatment or in long-term observation. We show that the retargeted loss is equivalent to the weighted oracle loss and satisfies Neyman-orthogonality, which means our learners are robust to errors in the nuisance estimation. We further provide a general error bound for the LT-O-Learners and give the conditions under which quasi-oracle rate can be achieved. Finally, our LT-O-learners are model-agnostic and can thus be instantiated with arbitrary machine learning models. We conduct empirical evaluations on synthetic and semi-synthetic benchmarks to confirm the theoretical properties of our LT-O-Learners, especially the robustness in low-overlap settings. To the best of our knowledge, ours are the first orthogonal learners for HLTE estimation that are robust to low overlap that is common in long-term outcomes.",
+    "relevance_score": 2.0,
+    "category": [
+      "AI研究"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T13:56:19.000Z",
+    "processed_at": "2026-04-02T02:14:51.024Z"
+  },
+  {
+    "id": "arxiv-2604.00917v1",
+    "source": "arXiv",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "Investigating Autonomous Agent Contributions in the Wild: Activity Patterns and Code Change over Time",
+    "url": "https://arxiv.org/abs/2604.00917v1",
+    "original_content": "The rise of large language models for code has reshaped software development. Autonomous coding agents, able to create branches, open pull requests, and perform code reviews, now actively contribute to real-world projects. Their growing role offers a unique and timely opportunity to investigate AI-driven contributions and their effects on code quality, team dynamics, and software maintainability. In this work, we construct a novel dataset of approximately $110,000$ open-source pull requests, including associated commits, comments, reviews, issues, and file changes, collectively representing millions of lines of source code. We compare five popular coding agents, including OpenAI Codex, Claude Code, GitHub Copilot, Google Jules, and Devin, examining how their usage differs in various development aspects such as merge frequency, edited file types, and developer interaction signals, including comments and reviews. Furthermore, we emphasize that code authoring and review are only a small part of the larger software engineering process, as the resulting code must also be maintained and updated over time. Hence, we offer several longitudinal estimates of survival and churn rates for agent-generated versus human-authored code. Ultimately, our findings indicate an increasing agent activity in open-source projects, although their contributions are associated with more churn over time compared to human-authored code.",
+    "raw_text": "The rise of large language models for code has reshaped software development. Autonomous coding agents, able to create branches, open pull requests, and perform code reviews, now actively contribute to real-world projects. Their growing role offers a unique and timely opportunity to investigate AI-driven contributions and their effects on code quality, team dynamics, and software maintainability. In this work, we construct a novel dataset of approximately $110,000$ open-source pull requests, including associated commits, comments, reviews, issues, and file changes, collectively representing millions of lines of source code. We compare five popular coding agents, including OpenAI Codex, Claude Code, GitHub Copilot, Google Jules, and Devin, examining how their usage differs in various development aspects such as merge frequency, edited file types, and developer interaction signals, including comments and reviews. Furthermore, we emphasize that code authoring and review are only a small part of the larger software engineering process, as the resulting code must also be maintained and updated over time. Hence, we offer several longitudinal estimates of survival and churn rates for agent-generated versus human-authored code. Ultimately, our findings indicate an increasing agent activity in open-source projects, although their contributions are associated with more churn over time compared to human-authored code.",
+    "relevance_score": 9.0,
+    "category": [
+      "AI研究",
+      "开发者工具"
+    ],
+    "summary": "本研究构建了一个包含约11万个开源pull requests的新数据集，系统性地比较了五种主流AI编码代理（OpenAI Codex、Claude Code、GitHub Copilot、Google Jules和Devin）在实际软件开发中的贡献模式。研究不仅分析了这些AI代理的合并频率、编辑文件类型和开发者交互等即时指标，还特别关注了代码的长期可维护性，发现AI生成的代码虽然在开源项目中使用日益增加，但相比人类编写的代码呈现出更高的代码流失率（churn rate）。\n\n#",
+    "insights": [
+      "**首个大规模实证研究**：这是首次针对自主AI编码代理在真实开源项目中的活动模式进行的大规模系统性研究，数据集涵盖数百万行源代码及完整的开发协作信息",
+      "**AI代码质量的长期视角**：研究突破了传统关注代码生成准确性的局限，强调代码的长期存活率和维护成本，发现AI生成代码的churn rate更高，暗示潜在的可维护性问题",
+      "**多维度对比分析**：通过比较五种主流AI编码工具在合并率、文件类型偏好、开发者交互（评论/审查）等多个维度的差异，揭示了不同AI工具的使用特征和局限性",
+      "**软件工程全流程视角**：明确指出代码编写和审查只是软件工程的一小部分，AI代理对整个软件生命周期（特别是维护阶段）的影响需要持续关注和评估"
+    ],
+    "created_at": "2026-04-01T13:58:30.000Z",
+    "processed_at": "2026-04-02T02:14:48.517Z"
+  },
+  {
+    "id": "arxiv-2604.00918v1",
+    "source": "arXiv",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "Generalization Bounds for Spectral GNNs via Fourier Domain Analysis",
+    "url": "https://arxiv.org/abs/2604.00918v1",
+    "original_content": "Spectral graph neural networks learn graph filters, but their behavior with increasing depth and polynomial order is not well understood. We analyze these models in the graph Fourier domain, where each layer becomes an element-wise frequency update, separating the fixed spectrum from trainable parameters and making depth and order explicit. In this setting, we show that Gaussian complexity is invariant under the Graph Fourier Transform, which allows us to derive data-dependent, depth, and order-aware generalization bounds together with stability estimates. In the linear case, our bounds are tighter, and on real graphs, the data-dependent term correlates with the generalization gap across polynomial bases, highlighting practical choices that avoid frequency amplification across layers.",
+    "raw_text": "Spectral graph neural networks learn graph filters, but their behavior with increasing depth and polynomial order is not well understood. We analyze these models in the graph Fourier domain, where each layer becomes an element-wise frequency update, separating the fixed spectrum from trainable parameters and making depth and order explicit. In this setting, we show that Gaussian complexity is invariant under the Graph Fourier Transform, which allows us to derive data-dependent, depth, and order-aware generalization bounds together with stability estimates. In the linear case, our bounds are tighter, and on real graphs, the data-dependent term correlates with the generalization gap across polynomial bases, highlighting practical choices that avoid frequency amplification across layers.",
+    "relevance_score": 3.0,
+    "category": [
+      "AI研究",
+      "机器学习"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T13:58:50.000Z",
+    "processed_at": "2026-04-02T02:14:33.401Z"
+  },
+  {
+    "id": "arxiv-2604.00919v1",
+    "source": "arXiv",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "Multi-Mode Quantum Annealing for Variational Autoencoders with General Boltzmann Priors",
+    "url": "https://arxiv.org/abs/2604.00919v1",
+    "original_content": "Variational autoencoders (VAEs) learn compact latent representations of complex data, but their generative capacity is fundamentally constrained by the choice of prior distribution over the latent space. Energy-based priors offer a principled way to move beyond factorized assumptions and capture structured interactions among latent variables, yet training such priors at scale requires accurate and efficient sampling from intractable distributions. Here we present Boltzmann-machine--prior VAEs (BM-VAEs) trained using quantum annealing--based sampling in three distinct operational modes within a single generative system. During training, diabatic quantum annealing (DQA) provides unbiased Boltzmann samples for gradient estimation of the energy-based prior; for unconditional generation, slower quantum annealing (QA) concentrates samples near low-energy minima; for conditional generation, bias fields are added to direct sampling toward attribute-specific regions of the energy landscape (c-QA). Using up to 2000 qubits on a D-Wave Advantage2 processor, we demonstrate stable and efficient training across multiple datasets, with faster convergence and lower reconstruction loss than a Gaussian-prior VAE. The learned Boltzmann prior enables unconditional generation by sampling directly from the energy-based latent distribution, a capability that plain autoencoders lack, and conditional generation through latent biasing that leverages the learned pairwise interactions.",
+    "raw_text": "Variational autoencoders (VAEs) learn compact latent representations of complex data, but their generative capacity is fundamentally constrained by the choice of prior distribution over the latent space. Energy-based priors offer a principled way to move beyond factorized assumptions and capture structured interactions among latent variables, yet training such priors at scale requires accurate and efficient sampling from intractable distributions. Here we present Boltzmann-machine--prior VAEs (BM-VAEs) trained using quantum annealing--based sampling in three distinct operational modes within a single generative system. During training, diabatic quantum annealing (DQA) provides unbiased Boltzmann samples for gradient estimation of the energy-based prior; for unconditional generation, slower quantum annealing (QA) concentrates samples near low-energy minima; for conditional generation, bias fields are added to direct sampling toward attribute-specific regions of the energy landscape (c-QA). Using up to 2000 qubits on a D-Wave Advantage2 processor, we demonstrate stable and efficient training across multiple datasets, with faster convergence and lower reconstruction loss than a Gaussian-prior VAE. The learned Boltzmann prior enables unconditional generation by sampling directly from the energy-based latent distribution, a capability that plain autoencoders lack, and conditional generation through latent biasing that leverages the learned pairwise interactions.",
+    "relevance_score": 2.0,
+    "category": [
+      "AI研究"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T13:59:40.000Z",
+    "processed_at": "2026-04-02T02:14:30.427Z"
+  },
+  {
+    "id": "rss-the-old-new-thing-e8b716947464",
+    "source": "The Old New Thing",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "The cover of C++: The Programming Language raises questions not answered by the cover",
+    "url": "https://devblogs.microsoft.com/oldnewthing/20260401-00/?p=112180",
+    "original_content": "What are we reading about here? The post The cover of &lt;I&gt;C++: The Programming Language&lt;/I&gt; raises questions not answered by the cover appeared first on The Old New Thing .",
+    "raw_text": "The book C++: The Programming Language ¹ (Waylon Warren, editor) claims to present &#8220;the complex subject of C++ in the most comprehensible and easy to understand language.&#8221; A rather overdone book blurb, in my opinion. Anyway, the book does have an attractive cover, or at least an inoffensive one. But wait, let&#8217;s zoom in on the code shown on the computer monitor. function updatePhotoDescription() { if (descriptions.length &gt; (page * 9) + (currentImage.substring(⟦ blurry ⟧')) { document.getElementById(\"bigImageDesc\").innerHTML + ⟦ blurry ⟧ } } function updateAllImages() { var i = 1; while (i &lt; 10) { var elementId = 'foto' + i; var elementIdBig = 'bigImage' + i; if (page * 9 + i - 1 &lt; photos.length) { document.getElementById( elementId ).src = 'images/⟦ blurry ⟧ document.getElementById( elementIdBig ).src = 'images/⟦ blurry ⟧ } else { document.getElementById( elementId ).src = ''; This isn&#8217;t even C++. It&#8217;s JavaScript! ¹ Note that this is not the book The C++ Programming Language by the language inventor Bjarne Stroustrup. The post The cover of &lt;I&gt;C++: The Programming Language&lt;/I&gt; raises questions not answered by the cover appeared first on The Old New Thing .",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "windows",
+      "programming"
+    ],
+    "summary": "What are we reading about here? The post The cover of &lt;I&gt;C++: The Programming Language&lt;/I&gt; raises questions not answered by the cover appeared first on The Old New Thing .",
+    "insights": [],
+    "created_at": "2026-04-01T14:00:00",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "arxiv-2604.00920v1",
+    "source": "arXiv",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "GPT-NL Public Corpus: A Permissively Licensed, Dutch-First Dataset for LLM Pre-training",
+    "url": "https://arxiv.org/abs/2604.00920v1",
+    "original_content": "We present the GPT-NL Public Corpus, the biggest permissively licensed corpus of Dutch language resources. The GPT-NL Public Corpus contains 21 Dutch-only collections totalling 36B preprocessed Dutch tokens not present in any other LLM pretraining corpus. Additionally, the corpus includes roughly 207B English, 232B Code, and 48B German/Danish tokens taken from existing sets which we further curated for compliance. This corpus includes curated data from large existing corpora like Common Corpus and Common Crawl, as well as newly created Dutch-specific collections. Most newly created Dutch collections consist of content collected in collaboration with organisations or synthetically augmented content. All data is collected and evaluated with the aim of facilitating the creation of (commercial) language models that are lawful, useful and non-harmful. All data included in the GPT-NL Public Corpus is sourced from datasets with permissive licensing and is curated and redistributed under a CC-BY license. The full dataset is publicly available on the Hugging Face Hub.",
+    "raw_text": "We present the GPT-NL Public Corpus, the biggest permissively licensed corpus of Dutch language resources. The GPT-NL Public Corpus contains 21 Dutch-only collections totalling 36B preprocessed Dutch tokens not present in any other LLM pretraining corpus. Additionally, the corpus includes roughly 207B English, 232B Code, and 48B German/Danish tokens taken from existing sets which we further curated for compliance. This corpus includes curated data from large existing corpora like Common Corpus and Common Crawl, as well as newly created Dutch-specific collections. Most newly created Dutch collections consist of content collected in collaboration with organisations or synthetically augmented content. All data is collected and evaluated with the aim of facilitating the creation of (commercial) language models that are lawful, useful and non-harmful. All data included in the GPT-NL Public Corpus is sourced from datasets with permissive licensing and is curated and redistributed under a CC-BY license. The full dataset is publicly available on the Hugging Face Hub.",
+    "relevance_score": 9.0,
+    "category": [
+      "AI研究",
+      "大语言模型",
+      "数据集"
+    ],
+    "summary": "GPT-NL Public Corpus 是目前最大的荷兰语开放许可语料库，专为大语言模型预训练设计。该语料库包含 36B 个独特的荷兰语 token，以及超过 487B 个其他语言（英语、代码、德语/丹麦语）的 token，所有数据均来自具有宽松许可的数据集，并以 CC-BY 许可证重新发布在 Hugging Face Hub 上。",
+    "insights": [
+      "**荷兰语优先的大规模资源**：包含 21 个荷兰语专属数据集，提供 36B 个在其他 LLM 预训练语料库中不存在的荷兰语 token，填补了荷兰语 NLP 资源的空白",
+      "**多语言支持与合规性**：除荷兰语外，还包含约 207B 英语、232B 代码和 48B 德语/丹麦语 token，所有数据经过严格的许可证合规性审查",
+      "**合作与合成数据创新**：新创建的荷兰语数据集主要通过与组织机构合作收集或通过合成方法增强，确保数据的合法性、实用性和无害性",
+      "**完全开放可商用**：所有数据采用宽松的 CC-BY 许可证发布，支持商业化语言模型的开发，降低了企业和研究机构的使用门槛"
+    ],
+    "created_at": "2026-04-01T14:00:53.000Z",
+    "processed_at": "2026-04-02T02:14:26.795Z"
+  },
+  {
+    "id": "arxiv-2604.00921v1",
+    "source": "arXiv",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "Representation Selection via Cross-Model Agreement using Canonical Correlation Analysis",
+    "url": "https://arxiv.org/abs/2604.00921v1",
+    "original_content": "Modern vision pipelines increasingly rely on pretrained image encoders whose representations are reused across tasks and models, yet these representations are often overcomplete and model-specific. We propose a simple, training-free method to improve the efficiency of image representations via a post-hoc canonical correlation analysis (CCA) operator. By leveraging the shared structure between representations produced by two pre-trained image encoders, our method finds linear projections that serve as a principled form of representation selection and dimensionality reduction, retaining shared semantic content while discarding redundant dimensions. Unlike standard dimensionality reduction techniques such as PCA, which operate on a single embedding space, our approach leverages cross-model agreement to guide representation distillation and refinement. The technique allows representations to be reduced by more than 75% in dimensionality with improved downstream performance, or enhanced at fixed dimensionality via post-hoc representation transfer from larger or fine-tuned models. Empirical results on ImageNet-1k, CIFAR-100, MNIST, and additional benchmarks show consistent improvements over both baseline and PCA-projected representations, with accuracy gains of up to 12.6%.",
+    "raw_text": "Modern vision pipelines increasingly rely on pretrained image encoders whose representations are reused across tasks and models, yet these representations are often overcomplete and model-specific. We propose a simple, training-free method to improve the efficiency of image representations via a post-hoc canonical correlation analysis (CCA) operator. By leveraging the shared structure between representations produced by two pre-trained image encoders, our method finds linear projections that serve as a principled form of representation selection and dimensionality reduction, retaining shared semantic content while discarding redundant dimensions. Unlike standard dimensionality reduction techniques such as PCA, which operate on a single embedding space, our approach leverages cross-model agreement to guide representation distillation and refinement. The technique allows representations to be reduced by more than 75% in dimensionality with improved downstream performance, or enhanced at fixed dimensionality via post-hoc representation transfer from larger or fine-tuned models. Empirical results on ImageNet-1k, CIFAR-100, MNIST, and additional benchmarks show consistent improvements over both baseline and PCA-projected representations, with accuracy gains of up to 12.6%.",
+    "relevance_score": 3.0,
+    "category": [
+      "AI研究",
+      "机器学习"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T14:01:41.000Z",
+    "processed_at": "2026-04-02T02:14:15.128Z"
+  },
+  {
+    "id": "arxiv-2604.00923v1",
+    "source": "arXiv",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "Positional Cognitive Specialization: Where Do LLMs Learn To Comprehend and Speak Your Language?",
+    "url": "https://arxiv.org/abs/2604.00923v1",
+    "original_content": "Adapting large language models (LLMs) to new languages is an expensive and opaque process. Understanding how language models acquire new languages and multilingual abilities is key to achieve efficient adaptation. Prior work on multilingual interpretability research focuses primarily on how trained models process multilingual instructions, leaving unexplored the mechanisms through which they acquire new languages during training. We investigate these training dynamics on decoder-only transformers through the lens of two functional cognitive specializations: language perception (input comprehension) and production (output generation). Through experiments on low-resource languages, we demonstrate how perceptual and productive specialization emerges in different regions of a language model by running layer ablation sweeps from the model's input and output directions. Based on the observed specialization patterns, we propose CogSym, a layer-wise heuristic that enables effective adaptation by exclusively fine-tuning a few early and late layers. We show that tuning only the 25% outermost layers achieves downstream task performance within 2-3% deviation from the full fine-tuning baseline. CogSym yields consistent performance with adapter methods such as LoRA, showcasing generalization beyond full fine-tuning. These findings provide insights to better understand how LLMs learn new languages and push toward accessible and inclusive language modeling.",
+    "raw_text": "Adapting large language models (LLMs) to new languages is an expensive and opaque process. Understanding how language models acquire new languages and multilingual abilities is key to achieve efficient adaptation. Prior work on multilingual interpretability research focuses primarily on how trained models process multilingual instructions, leaving unexplored the mechanisms through which they acquire new languages during training. We investigate these training dynamics on decoder-only transformers through the lens of two functional cognitive specializations: language perception (input comprehension) and production (output generation). Through experiments on low-resource languages, we demonstrate how perceptual and productive specialization emerges in different regions of a language model by running layer ablation sweeps from the model's input and output directions. Based on the observed specialization patterns, we propose CogSym, a layer-wise heuristic that enables effective adaptation by exclusively fine-tuning a few early and late layers. We show that tuning only the 25% outermost layers achieves downstream task performance within 2-3% deviation from the full fine-tuning baseline. CogSym yields consistent performance with adapter methods such as LoRA, showcasing generalization beyond full fine-tuning. These findings provide insights to better understand how LLMs learn new languages and push toward accessible and inclusive language modeling.",
+    "relevance_score": 9.0,
+    "category": [
+      "AI研究",
+      "大语言模型",
+      "机器学习应用"
+    ],
+    "summary": "Adapting large language models (LLMs) to new languages is an expensive and opaque process. Understanding how language models acquire new languages and multilingual abilities is key to achieve efficien...",
+    "insights": [],
+    "created_at": "2026-04-01T14:03:51.000Z",
+    "processed_at": "2026-04-02T02:14:12.077Z"
+  },
+  {
+    "id": "arxiv-2604.00927v1",
+    "source": "arXiv",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "Learning Quantised Structure-Preserving Motion Representations for Dance Fingerprinting",
+    "url": "https://arxiv.org/abs/2604.00927v1",
+    "original_content": "We present DANCEMATCH, an end-to-end framework for motion-based dance retrieval, the task of identifying semantically similar choreographies directly from raw video, defined as DANCE FINGERPRINTING. While existing motion analysis and retrieval methods can compare pose sequences, they rely on continuous embeddings that are difficult to index, interpret, or scale. In contrast, DANCEMATCH constructs compact, discrete motion signatures that capture the spatio-temporal structure of dance while enabling efficient large-scale retrieval. Our system integrates Skeleton Motion Quantisation (SMQ) with Spatio-Temporal Transformers (STT) to encode human poses, extracted via Apple CoMotion, into a structured motion vocabulary. We further design DANCE RETRIEVAL ENGINE (DRE), which performs sub-linear retrieval using a histogram-based index followed by re-ranking for refined matching. To facilitate reproducible research, we release DANCETYPESBENCHMARK, a pose-aligned dataset annotated with quantised motion tokens. Experiments demonstrate robust retrieval across diverse dance styles and strong generalisation to unseen choreographies, establishing a foundation for scalable motion fingerprinting and quantitative choreographic analysis.",
+    "raw_text": "We present DANCEMATCH, an end-to-end framework for motion-based dance retrieval, the task of identifying semantically similar choreographies directly from raw video, defined as DANCE FINGERPRINTING. While existing motion analysis and retrieval methods can compare pose sequences, they rely on continuous embeddings that are difficult to index, interpret, or scale. In contrast, DANCEMATCH constructs compact, discrete motion signatures that capture the spatio-temporal structure of dance while enabling efficient large-scale retrieval. Our system integrates Skeleton Motion Quantisation (SMQ) with Spatio-Temporal Transformers (STT) to encode human poses, extracted via Apple CoMotion, into a structured motion vocabulary. We further design DANCE RETRIEVAL ENGINE (DRE), which performs sub-linear retrieval using a histogram-based index followed by re-ranking for refined matching. To facilitate reproducible research, we release DANCETYPESBENCHMARK, a pose-aligned dataset annotated with quantised motion tokens. Experiments demonstrate robust retrieval across diverse dance styles and strong generalisation to unseen choreographies, establishing a foundation for scalable motion fingerprinting and quantitative choreographic analysis.",
+    "relevance_score": 3.0,
+    "category": [
+      "AI研究",
+      "机器学习应用"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T14:06:59.000Z",
+    "processed_at": "2026-04-02T02:14:08.190Z"
+  },
+  {
+    "id": "arxiv-2604.00931v1",
+    "source": "arXiv",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "PsychAgent: An Experience-Driven Lifelong Learning Agent for Self-Evolving Psychological Counselor",
+    "url": "https://arxiv.org/abs/2604.00931v1",
+    "original_content": "Existing methods for AI psychological counselors predominantly rely on supervised fine-tuning using static dialogue datasets. However, this contrasts with human experts, who continuously refine their proficiency through clinical practice and accumulated experience. To bridge this gap, we propose an Experience-Driven Lifelong Learning Agent (\\texttt{PsychAgent}) for psychological counseling. First, we establish a Memory-Augmented Planning Engine tailored for longitudinal multi-session interactions, which ensures therapeutic continuity through persistent memory and strategic planning. Second, to support self-evolution, we design a Skill Evolution Engine that extracts new practice-grounded skills from historical counseling trajectories. Finally, we introduce a Reinforced Internalization Engine that integrates the evolved skills into the model via rejection fine-tuning, aiming to improve performance across diverse scenarios. Comparative analysis shows that our approach achieves higher scores than strong general LLMs (e.g., GPT-5.4, Gemini-3) and domain-specific baselines across all reported evaluation dimensions. These results suggest that lifelong learning can improve the consistency and overall quality of multi-session counseling responses.",
+    "raw_text": "Existing methods for AI psychological counselors predominantly rely on supervised fine-tuning using static dialogue datasets. However, this contrasts with human experts, who continuously refine their proficiency through clinical practice and accumulated experience. To bridge this gap, we propose an Experience-Driven Lifelong Learning Agent (\\texttt{PsychAgent}) for psychological counseling. First, we establish a Memory-Augmented Planning Engine tailored for longitudinal multi-session interactions, which ensures therapeutic continuity through persistent memory and strategic planning. Second, to support self-evolution, we design a Skill Evolution Engine that extracts new practice-grounded skills from historical counseling trajectories. Finally, we introduce a Reinforced Internalization Engine that integrates the evolved skills into the model via rejection fine-tuning, aiming to improve performance across diverse scenarios. Comparative analysis shows that our approach achieves higher scores than strong general LLMs (e.g., GPT-5.4, Gemini-3) and domain-specific baselines across all reported evaluation dimensions. These results suggest that lifelong learning can improve the consistency and overall quality of multi-session counseling responses.",
+    "relevance_score": 9.0,
+    "category": [
+      "AI研究",
+      "大语言模型",
+      "开发者工具"
+    ],
+    "summary": "本文提出了PsychAgent，一个用于心理咨询的经验驱动型终身学习智能体。该系统通过三个核心引擎（记忆增强规划引擎、技能进化引擎和强化内化引擎）实现持续自我进化，模仿人类心理咨询师通过临床实践不断提升专业能力的过程。实验表明，PsychAgent在多维度评估中优于GPT-4和Gemini等通用大模型以及领域专用基线模型。\n\n#",
+    "insights": [
+      "**核心创新**：突破了传统AI心理咨询依赖静态数据集监督微调的局限，首次引入终身学习机制，使模型能像人类专家一样从实践经验中持续学习和进化",
+      "**三引擎架构**：记忆增强规划引擎保证多会话治疗连续性，技能进化引擎从历史咨询轨迹中提取新技能，强化内化引擎通过拒绝微调将技能整合到模型中",
+      "**纵向交互能力**：专门针对心理咨询的多会话长期交互场景设计，通过持久化记忆和战略规划确保治疗的一致性和连贯性",
+      "**性能优势**：在所有评估维度上超越GPT-4、Gemini-3等强大通用模型，证明了终身学习范式在提升多会话咨询质量和一致性方面的有效性"
+    ],
+    "created_at": "2026-04-01T14:08:49.000Z",
+    "processed_at": "2026-04-02T02:14:04.789Z"
+  },
+  {
+    "id": "arxiv-2604.00938v1",
+    "source": "arXiv",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "WARP: Guaranteed Inner-Layer Repair of NLP Transformers",
+    "url": "https://arxiv.org/abs/2604.00938v1",
+    "original_content": "Transformer-based NLP models remain vulnerable to adversarial perturbations, yet existing repair methods face a fundamental trade-off: gradient-based approaches offer flexibility but lack verifiability and often overfit; methods that do provide repair guarantees are restricted to the final layer or small networks, significantly limiting the parameter search space available for repair. We present WARP (Weight-Adjusted Repair with Provability), a constraint-based repair framework that extends repair beyond the last layer of Transformer models. WARP formulates repair as a convex quadratic program derived from a first-order linearization of the logit gap, enabling tractable optimization over a high-dimensional parameter space. Under the condition that the first-order approximation holds, this formulation induces three per-sample guarantees: (i) a positive margin constraint ensuring correct classification on repaired inputs, (ii) preservation constraints over a designated remain set, and (iii) a certified robustness radius derived from Lipschitz continuity. To ensure feasibility across varying model architectures, we introduce a sensitivity-based preprocessing step that conditions the optimization landscape accordingly. We further show that the iterative optimization procedure converges to solutions satisfying all repair constraints under mild assumptions. Empirical evaluation on encoder-only Transformers with varying layer architectures validates that these guarantees hold in practice while improving robustness to adversarial inputs. Our results demonstrate that guaranteed, generalizable Transformer repair is achievable through principled constraint-based optimization.",
+    "raw_text": "Transformer-based NLP models remain vulnerable to adversarial perturbations, yet existing repair methods face a fundamental trade-off: gradient-based approaches offer flexibility but lack verifiability and often overfit; methods that do provide repair guarantees are restricted to the final layer or small networks, significantly limiting the parameter search space available for repair. We present WARP (Weight-Adjusted Repair with Provability), a constraint-based repair framework that extends repair beyond the last layer of Transformer models. WARP formulates repair as a convex quadratic program derived from a first-order linearization of the logit gap, enabling tractable optimization over a high-dimensional parameter space. Under the condition that the first-order approximation holds, this formulation induces three per-sample guarantees: (i) a positive margin constraint ensuring correct classification on repaired inputs, (ii) preservation constraints over a designated remain set, and (iii) a certified robustness radius derived from Lipschitz continuity. To ensure feasibility across varying model architectures, we introduce a sensitivity-based preprocessing step that conditions the optimization landscape accordingly. We further show that the iterative optimization procedure converges to solutions satisfying all repair constraints under mild assumptions. Empirical evaluation on encoder-only Transformers with varying layer architectures validates that these guarantees hold in practice while improving robustness to adversarial inputs. Our results demonstrate that guaranteed, generalizable Transformer repair is achievable through principled constraint-based optimization.",
+    "relevance_score": 8.0,
+    "category": [
+      "AI研究",
+      "机器学习",
+      "开发者工具"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T14:12:49.000Z",
+    "processed_at": "2026-04-02T02:13:51.546Z"
+  },
+  {
+    "id": "arxiv-2604.00942v1",
+    "source": "arXiv",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "Differentially Private Manifold Denoising",
+    "url": "https://arxiv.org/abs/2604.00942v1",
+    "original_content": "We introduce a differentially private manifold denoising framework that allows users to exploit sensitive reference datasets to correct noisy, non-private query points without compromising privacy. The method follows an iterative procedure that (i) privately estimates local means and tangent geometry using the reference data under calibrated sensitivity, (ii) projects query points along the privately estimated subspace toward the local mean via corrective steps at each iteration, and (iii) performs rigorous privacy accounting across iterations and queries using $(\\varepsilon,δ)$-differential privacy (DP). Conceptually, this framework brings differential privacy to manifold methods, retaining sufficient geometric signal for downstream tasks such as embedding, clustering, and visualization, while providing formal DP guarantees for the reference data. Practically, the procedure is modular and scalable, separating DP-protected local geometry (means and tangents) from budgeted query-point updates, with a simple scheduler allocating privacy budget across iterations and queries. Under standard assumptions on manifold regularity, sampling density, and measurement noise, we establish high-probability utility guarantees showing that corrected queries converge toward the manifold at a non-asymptotic rate governed by sample size, noise level, bandwidth, and the privacy budget. Simulations and case studies demonstrate accurate signal recovery under moderate privacy budgets, illustrating clear utility-privacy trade-offs and providing a deployable DP component for manifold-based workflows in regulated environments without reengineering privacy systems.",
+    "raw_text": "We introduce a differentially private manifold denoising framework that allows users to exploit sensitive reference datasets to correct noisy, non-private query points without compromising privacy. The method follows an iterative procedure that (i) privately estimates local means and tangent geometry using the reference data under calibrated sensitivity, (ii) projects query points along the privately estimated subspace toward the local mean via corrective steps at each iteration, and (iii) performs rigorous privacy accounting across iterations and queries using $(\\varepsilon,δ)$-differential privacy (DP). Conceptually, this framework brings differential privacy to manifold methods, retaining sufficient geometric signal for downstream tasks such as embedding, clustering, and visualization, while providing formal DP guarantees for the reference data. Practically, the procedure is modular and scalable, separating DP-protected local geometry (means and tangents) from budgeted query-point updates, with a simple scheduler allocating privacy budget across iterations and queries. Under standard assumptions on manifold regularity, sampling density, and measurement noise, we establish high-probability utility guarantees showing that corrected queries converge toward the manifold at a non-asymptotic rate governed by sample size, noise level, bandwidth, and the privacy budget. Simulations and case studies demonstrate accurate signal recovery under moderate privacy budgets, illustrating clear utility-privacy trade-offs and providing a deployable DP component for manifold-based workflows in regulated environments without reengineering privacy systems.",
+    "relevance_score": 5.0,
+    "category": [
+      "AI研究",
+      "前端技术"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T14:13:59.000Z",
+    "processed_at": "2026-04-02T02:13:38.655Z"
+  },
+  {
+    "id": "arxiv-2604.00947v1",
+    "source": "arXiv",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "Phase transition on a context-sensitive random language model with short range interactions",
+    "url": "https://arxiv.org/abs/2604.00947v1",
+    "original_content": "Since the random language model was proposed by E. DeGiuli [Phys. Rev. Lett. 122, 128301], language models have been investigated intensively from the viewpoint of statistical mechanics. Recently, the existence of a Berezinskii--Kosterlitz--Thouless transition was numerically demonstrated in models with long-range interactions between symbols. In statistical mechanics, it has long been known that long-range interactions can induce phase transitions. Therefore, it has remained unclear whether phase transitions observed in language models originate from genuinely linguistic properties that are absent in conventional spin models. In this study, we construct a random language model with short-range interactions and numerically investigate its statistical properties. Our model belongs to the class of context-sensitive grammars in the Chomsky hierarchy and allows explicit reference to contexts. We find that a phase transition occurs even when the model refers only to contexts whose length remains constant with respect to the sentence length. This result indicates that finite-temperature phase transitions in language models are genuinely induced by the intrinsic nature of language, rather than by long-range interactions.",
+    "raw_text": "Since the random language model was proposed by E. DeGiuli [Phys. Rev. Lett. 122, 128301], language models have been investigated intensively from the viewpoint of statistical mechanics. Recently, the existence of a Berezinskii--Kosterlitz--Thouless transition was numerically demonstrated in models with long-range interactions between symbols. In statistical mechanics, it has long been known that long-range interactions can induce phase transitions. Therefore, it has remained unclear whether phase transitions observed in language models originate from genuinely linguistic properties that are absent in conventional spin models. In this study, we construct a random language model with short-range interactions and numerically investigate its statistical properties. Our model belongs to the class of context-sensitive grammars in the Chomsky hierarchy and allows explicit reference to contexts. We find that a phase transition occurs even when the model refers only to contexts whose length remains constant with respect to the sentence length. This result indicates that finite-temperature phase transitions in language models are genuinely induced by the intrinsic nature of language, rather than by long-range interactions.",
+    "relevance_score": 3.0,
+    "category": [
+      "AI研究"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T14:19:11.000Z",
+    "processed_at": "2026-04-02T02:13:35.505Z"
+  },
+  {
+    "id": "arxiv-2604.00963v1",
+    "source": "arXiv",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "Rapid mixing in positively weighted restricted Boltzmann machines",
+    "url": "https://arxiv.org/abs/2604.00963v1",
+    "original_content": "We show polylogarithmic mixing time bounds for the alternating-scan sampler for positively weighted restricted Boltzmann machines. This is done via analysing the same chain and the Glauber dynamics for ferromagnetic two-spin systems, where we obtain new mixing time bounds up to the critical thresholds.",
+    "raw_text": "We show polylogarithmic mixing time bounds for the alternating-scan sampler for positively weighted restricted Boltzmann machines. This is done via analysing the same chain and the Glauber dynamics for ferromagnetic two-spin systems, where we obtain new mixing time bounds up to the critical thresholds.",
+    "relevance_score": 2.0,
+    "category": [
+      "AI研究"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T14:38:35.000Z",
+    "processed_at": "2026-04-02T02:13:29.602Z"
+  },
+  {
+    "id": "arxiv-2604.00977v1",
+    "source": "arXiv",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "Flow-based Policy With Distributional Reinforcement Learning in Trajectory Optimization",
+    "url": "https://arxiv.org/abs/2604.00977v1",
+    "original_content": "Reinforcement Learning (RL) has proven highly effective in addressing complex control and decision-making tasks. However, in most traditional RL algorithms, the policy is typically parameterized as a diagonal Gaussian distribution, which constrains the policy from capturing multimodal distributions, making it difficult to cover the full range of optimal solutions in multi-solution problems, and the return is reduced to a mean value, losing its multimodal nature and thus providing insufficient guidance for policy updates. In response to these problems, we propose a RL algorithm termed flow-based policy with distributional RL (FP-DRL). This algorithm models the policy using flow matching, which offers both computational efficiency and the capacity to fit complex distributions. Additionally, it employs a distributional RL approach to model and optimize the entire return distribution, thereby more effectively guiding multimodal policy updates and improving agent performance. Experimental trails on MuJoCo benchmarks demonstrate that the FP-DRL algorithm achieves state-of-the-art (SOTA) performance in most MuJoCo control tasks while exhibiting superior representation capability of the flow policy.",
+    "raw_text": "Reinforcement Learning (RL) has proven highly effective in addressing complex control and decision-making tasks. However, in most traditional RL algorithms, the policy is typically parameterized as a diagonal Gaussian distribution, which constrains the policy from capturing multimodal distributions, making it difficult to cover the full range of optimal solutions in multi-solution problems, and the return is reduced to a mean value, losing its multimodal nature and thus providing insufficient guidance for policy updates. In response to these problems, we propose a RL algorithm termed flow-based policy with distributional RL (FP-DRL). This algorithm models the policy using flow matching, which offers both computational efficiency and the capacity to fit complex distributions. Additionally, it employs a distributional RL approach to model and optimize the entire return distribution, thereby more effectively guiding multimodal policy updates and improving agent performance. Experimental trails on MuJoCo benchmarks demonstrate that the FP-DRL algorithm achieves state-of-the-art (SOTA) performance in most MuJoCo control tasks while exhibiting superior representation capability of the flow policy.",
+    "relevance_score": 2.0,
+    "category": [
+      "AI研究"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T14:47:41.000Z",
+    "processed_at": "2026-04-02T02:13:26.783Z"
+  },
+  {
+    "id": "arxiv-2604.00979v1",
+    "source": "arXiv",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "Dual Optimal: Make Your LLM Peer-like with Dignity",
+    "url": "https://arxiv.org/abs/2604.00979v1",
+    "original_content": "Current aligned language models exhibit a dual failure mode we term the Evasive Servant: they sycophantically validate flawed user beliefs while deflecting responsibility with boilerplate disclaimers. We propose the Dignified Peer framework, which counters servility with anti-sycophancy and trustworthiness, and mitigates evasiveness through empathy and creativity. Realizing this agent requires overcoming significant challenges in data supervision, objective collapse, and evaluation bias. We address these issues by introducing the PersonaKnob dataset which features a compositional partial order structure of multiple persona preference. This data is utilized alongside a tolerant constrained Lagrangian DPO algorithm that dynamically balances all persona dimensions to prevent behavioral collapse. Additionally, we employ a psychometrically calibrated Item Response Theory evaluation protocol to disentangle latent model persona capability from confounders like judge biases. Extensive empirical studies demonstrate that our approach successfully build a LLM agent with both dignity and peer.",
+    "raw_text": "Current aligned language models exhibit a dual failure mode we term the Evasive Servant: they sycophantically validate flawed user beliefs while deflecting responsibility with boilerplate disclaimers. We propose the Dignified Peer framework, which counters servility with anti-sycophancy and trustworthiness, and mitigates evasiveness through empathy and creativity. Realizing this agent requires overcoming significant challenges in data supervision, objective collapse, and evaluation bias. We address these issues by introducing the PersonaKnob dataset which features a compositional partial order structure of multiple persona preference. This data is utilized alongside a tolerant constrained Lagrangian DPO algorithm that dynamically balances all persona dimensions to prevent behavioral collapse. Additionally, we employ a psychometrically calibrated Item Response Theory evaluation protocol to disentangle latent model persona capability from confounders like judge biases. Extensive empirical studies demonstrate that our approach successfully build a LLM agent with both dignity and peer.",
+    "relevance_score": 8.0,
+    "category": [
+      "AI研究",
+      "大语言模型",
+      "开发者工具"
+    ],
+    "summary": "Current aligned language models exhibit a dual failure mode we term the Evasive Servant: they sycophantically validate flawed user beliefs while deflecting responsibility with boilerplate disclaimers....",
+    "insights": [],
+    "created_at": "2026-04-01T14:48:44.000Z",
+    "processed_at": "2026-04-02T02:13:22.570Z"
+  },
+  {
+    "id": "arxiv-2604.00986v1",
+    "source": "arXiv",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "Do Phone-Use Agents Respect Your Privacy?",
+    "url": "https://arxiv.org/abs/2604.00986v1",
+    "original_content": "We study whether phone-use agents respect privacy while completing benign mobile tasks. This question has remained hard to answer because privacy-compliant behavior is not operationalized for phone-use agents, and ordinary apps do not reveal exactly what data agents type into which form entries during execution. To make this question measurable, we introduce MyPhoneBench, a verifiable evaluation framework for privacy behavior in mobile agents. We operationalize privacy-respecting phone use as permissioned access, minimal disclosure, and user-controlled memory through a minimal privacy contract, iMy, and pair it with instrumented mock apps plus rule-based auditing that make unnecessary permission requests, deceptive re-disclosure, and unnecessary form filling observable and reproducible. Across five frontier models on 10 mobile apps and 300 tasks, we find that task success, privacy-compliant task completion, and later-session use of saved preferences are distinct capabilities, and no single model dominates all three. Evaluating success and privacy jointly reshuffles the model ordering relative to either metric alone. The most persistent failure mode across models is simple data minimization: agents still fill optional personal entries that the task does not require. These results show that privacy failures arise from over-helpful execution of benign tasks, and that success-only evaluation overestimates the deployment readiness of current phone-use agents. All code, mock apps, and agent trajectories are publicly available at~ https://github.com/tangzhy/MyPhoneBench.",
+    "raw_text": "We study whether phone-use agents respect privacy while completing benign mobile tasks. This question has remained hard to answer because privacy-compliant behavior is not operationalized for phone-use agents, and ordinary apps do not reveal exactly what data agents type into which form entries during execution. To make this question measurable, we introduce MyPhoneBench, a verifiable evaluation framework for privacy behavior in mobile agents. We operationalize privacy-respecting phone use as permissioned access, minimal disclosure, and user-controlled memory through a minimal privacy contract, iMy, and pair it with instrumented mock apps plus rule-based auditing that make unnecessary permission requests, deceptive re-disclosure, and unnecessary form filling observable and reproducible. Across five frontier models on 10 mobile apps and 300 tasks, we find that task success, privacy-compliant task completion, and later-session use of saved preferences are distinct capabilities, and no single model dominates all three. Evaluating success and privacy jointly reshuffles the model ordering relative to either metric alone. The most persistent failure mode across models is simple data minimization: agents still fill optional personal entries that the task does not require. These results show that privacy failures arise from over-helpful execution of benign tasks, and that success-only evaluation overestimates the deployment readiness of current phone-use agents. All code, mock apps, and agent trajectories are publicly available at~ https://github.com/tangzhy/MyPhoneBench.",
+    "relevance_score": 4.0,
+    "category": [
+      "AI研究",
+      "开发者工具"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T14:50:50.000Z",
+    "processed_at": "2026-04-02T02:13:18.583Z"
+  },
+  {
+    "id": "arxiv-2604.00987v1",
+    "source": "arXiv",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "Bridging Structured Knowledge and Data: A Unified Framework with Finance Applications",
+    "url": "https://arxiv.org/abs/2604.00987v1",
+    "original_content": "We develop Structured-Knowledge-Informed Neural Networks (SKINNs), a unified estimation framework that embeds theoretical, simulated, previously learned, or cross-domain insights as differentiable constraints within flexible neural function approximation. SKINNs jointly estimate neural network parameters and economically meaningful structural parameters in a single optimization problem, enforcing theoretical consistency not only on observed data but over a broader input domain through collocation, and therefore nesting approaches such as functional GMM, Bayesian updating, transfer learning, PINNs, and surrogate modeling. SKINNs define a class of M-estimators that are consistent and asymptotically normal with root-N convergence, sandwich covariance, and recovery of pseudo-true parameters under misspecification. We establish identification of structural parameters under joint flexibility, derive generalization and target-risk bounds under distributional shift in a convex proxy, and provide a restricted-optimal characterization of the weighting parameter that governs the bias-variance tradeoff. In an illustrative financial application to option pricing, SKINNs improve out-of-sample valuation and hedging performance, particularly at longer horizons and during high-volatility regimes, while recovering economically interpretable structural parameters with improved stability relative to conventional calibration. More broadly, SKINNs provide a general econometric framework for combining model-based reasoning with high-dimensional, data-driven estimation.",
+    "raw_text": "We develop Structured-Knowledge-Informed Neural Networks (SKINNs), a unified estimation framework that embeds theoretical, simulated, previously learned, or cross-domain insights as differentiable constraints within flexible neural function approximation. SKINNs jointly estimate neural network parameters and economically meaningful structural parameters in a single optimization problem, enforcing theoretical consistency not only on observed data but over a broader input domain through collocation, and therefore nesting approaches such as functional GMM, Bayesian updating, transfer learning, PINNs, and surrogate modeling. SKINNs define a class of M-estimators that are consistent and asymptotically normal with root-N convergence, sandwich covariance, and recovery of pseudo-true parameters under misspecification. We establish identification of structural parameters under joint flexibility, derive generalization and target-risk bounds under distributional shift in a convex proxy, and provide a restricted-optimal characterization of the weighting parameter that governs the bias-variance tradeoff. In an illustrative financial application to option pricing, SKINNs improve out-of-sample valuation and hedging performance, particularly at longer horizons and during high-volatility regimes, while recovering economically interpretable structural parameters with improved stability relative to conventional calibration. More broadly, SKINNs provide a general econometric framework for combining model-based reasoning with high-dimensional, data-driven estimation.",
+    "relevance_score": 7.0,
+    "category": [
+      "AI研究",
+      "机器学习应用",
+      "金融技术"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T14:51:08.000Z",
+    "processed_at": "2026-04-02T02:13:15.324Z"
+  },
+  {
+    "id": "arxiv-2604.00993v1",
+    "source": "arXiv",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "Focal plane wavefront control with model-based reinforcement learning",
+    "url": "https://arxiv.org/abs/2604.00993v1",
+    "original_content": "The direct imaging of potentially habitable exoplanets is one prime science case for high-contrast imaging instruments on extremely large telescopes. Most such exoplanets orbit close to their host stars, where their observation is limited by fast-moving atmospheric speckles and quasi-static non-common-path aberrations (NCPA). Conventional NCPA correction methods often use mechanical mirror probes, which compromise performance during operation. This work presents machine-learning-based NCPA control methods that automatically detect and correct both dynamic and static NCPA errors by leveraging sequential phase diversity. We extend previous work in reinforcement learning for AO to focal plane control. A new model-based RL algorithm, Policy Optimization for NCPAs (PO4NCPA), interprets the focal-plane image as input data and, through sequential phase diversity, determines phase corrections that optimize both non-coronagraphic and post-coronagraphic PSFs without prior system knowledge. Further, we demonstrate the effectiveness of this approach by numerically simulating static NCPA errors on a ground-based telescope and an infrared imager affected by water-vapor-induced seeing (dynamic NCPAs). Simulations show that PO4NCPA robustly compensates static and dynamic NCPAs. In static cases, it achieves near-optimal focal-plane light suppression with a coronagraph and near-optimal Strehl without one. With dynamics NCPA, it matches the performance of the modal least-squares reconstruction combined with a 1-step delay integrator in these metrics. The method remains effective for the ELT pupil, vector vortex coronagraph, and under photon and background noise. PO4NCPA is model-free and can be directly applied to standard imaging as well as to any coronagraph. Its sub-millisecond inference times and performance also make it suitable for real-time low-order correction of atmospheric turbulence beyond HCI.",
+    "raw_text": "The direct imaging of potentially habitable exoplanets is one prime science case for high-contrast imaging instruments on extremely large telescopes. Most such exoplanets orbit close to their host stars, where their observation is limited by fast-moving atmospheric speckles and quasi-static non-common-path aberrations (NCPA). Conventional NCPA correction methods often use mechanical mirror probes, which compromise performance during operation. This work presents machine-learning-based NCPA control methods that automatically detect and correct both dynamic and static NCPA errors by leveraging sequential phase diversity. We extend previous work in reinforcement learning for AO to focal plane control. A new model-based RL algorithm, Policy Optimization for NCPAs (PO4NCPA), interprets the focal-plane image as input data and, through sequential phase diversity, determines phase corrections that optimize both non-coronagraphic and post-coronagraphic PSFs without prior system knowledge. Further, we demonstrate the effectiveness of this approach by numerically simulating static NCPA errors on a ground-based telescope and an infrared imager affected by water-vapor-induced seeing (dynamic NCPAs). Simulations show that PO4NCPA robustly compensates static and dynamic NCPAs. In static cases, it achieves near-optimal focal-plane light suppression with a coronagraph and near-optimal Strehl without one. With dynamics NCPA, it matches the performance of the modal least-squares reconstruction combined with a 1-step delay integrator in these metrics. The method remains effective for the ELT pupil, vector vortex coronagraph, and under photon and background noise. PO4NCPA is model-free and can be directly applied to standard imaging as well as to any coronagraph. Its sub-millisecond inference times and performance also make it suitable for real-time low-order correction of atmospheric turbulence beyond HCI.",
+    "relevance_score": 2.0,
+    "category": [
+      "AI研究",
+      "机器学习应用"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T14:55:15.000Z",
+    "processed_at": "2026-04-02T02:13:01.895Z"
+  },
+  {
+    "id": "arxiv-2604.00994v1",
+    "source": "arXiv",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "Multimodal Analysis of State-Funded News Coverage of the Israel-Hamas War on YouTube Shorts",
+    "url": "https://arxiv.org/abs/2604.00994v1",
+    "original_content": "YouTube Shorts have become central to news consumption on the platform, yet research on how geopolitical events are represented in this format remains limited. To address this gap, we present a multimodal pipeline that combines automatic transcription, aspect-based sentiment analysis (ABSA), and semantic scene classification. The pipeline is first assessed for feasibility and then applied to analyze short-form coverage of the Israel-Hamas war by state-funded outlets. Using over 2,300 conflict-related Shorts and more than 94,000 visual frames, we systematically examine war reporting across major international broadcasters. Our findings reveal that the sentiment expressed in transcripts regarding specific aspects differs across outlets and over time, whereas scene-type classifications reflect visual cues consistent with real-world events. Notably, smaller domain-adapted models outperform large transformers and even LLMs for sentiment analysis, underscoring the value of resource-efficient approaches for humanities research. The pipeline serves as a template for other short-form platforms, such as TikTok and Instagram, and demonstrates how multimodal methods, combined with qualitative interpretation, can characterize sentiment patterns and visual cues in algorithmically driven video environments.",
+    "raw_text": "YouTube Shorts have become central to news consumption on the platform, yet research on how geopolitical events are represented in this format remains limited. To address this gap, we present a multimodal pipeline that combines automatic transcription, aspect-based sentiment analysis (ABSA), and semantic scene classification. The pipeline is first assessed for feasibility and then applied to analyze short-form coverage of the Israel-Hamas war by state-funded outlets. Using over 2,300 conflict-related Shorts and more than 94,000 visual frames, we systematically examine war reporting across major international broadcasters. Our findings reveal that the sentiment expressed in transcripts regarding specific aspects differs across outlets and over time, whereas scene-type classifications reflect visual cues consistent with real-world events. Notably, smaller domain-adapted models outperform large transformers and even LLMs for sentiment analysis, underscoring the value of resource-efficient approaches for humanities research. The pipeline serves as a template for other short-form platforms, such as TikTok and Instagram, and demonstrates how multimodal methods, combined with qualitative interpretation, can characterize sentiment patterns and visual cues in algorithmically driven video environments.",
+    "relevance_score": 4.0,
+    "category": [
+      "AI研究",
+      "机器学习"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T14:55:58.000Z",
+    "processed_at": "2026-04-02T02:12:59.258Z"
+  },
+  {
+    "id": "arxiv-2604.00997v1",
+    "source": "arXiv",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "Uncertainty-Aware Variational Reward Factorization via Probabilistic Preference Bases for LLM Personalization",
+    "url": "https://arxiv.org/abs/2604.00997v1",
+    "original_content": "Reward factorization personalizes large language models (LLMs) by decomposing rewards into shared basis functions and user-specific weights. Yet, existing methods estimate user weights from scarce data in isolation and as deterministic points, leading to inaccurate and unreliable inference. We introduce Variational Reward Factorization (VRF), an uncertainty-aware framework that represents each user's preferences as a variational distribution in a shared preference space. VRF infers user distributions via a variational encoder, derives weights through Wasserstein distance matching with shared probabilistic bases, and downweights uncertain estimates through a variance-attenuated loss. On three benchmarks, VRF outperforms all baselines across seen and unseen users, few-shot scenarios, and varying uncertainty levels, with gains extending to downstream alignment.",
+    "raw_text": "Reward factorization personalizes large language models (LLMs) by decomposing rewards into shared basis functions and user-specific weights. Yet, existing methods estimate user weights from scarce data in isolation and as deterministic points, leading to inaccurate and unreliable inference. We introduce Variational Reward Factorization (VRF), an uncertainty-aware framework that represents each user's preferences as a variational distribution in a shared preference space. VRF infers user distributions via a variational encoder, derives weights through Wasserstein distance matching with shared probabilistic bases, and downweights uncertain estimates through a variance-attenuated loss. On three benchmarks, VRF outperforms all baselines across seen and unseen users, few-shot scenarios, and varying uncertainty levels, with gains extending to downstream alignment.",
+    "relevance_score": 9.0,
+    "category": [
+      "AI研究",
+      "大语言模型",
+      "前端技术"
+    ],
+    "summary": "Reward factorization personalizes large language models (LLMs) by decomposing rewards into shared basis functions and user-specific weights. Yet, existing methods estimate user weights from scarce dat...",
+    "insights": [],
+    "created_at": "2026-04-01T14:58:51.000Z",
+    "processed_at": "2026-04-02T02:12:56.860Z"
+  },
+  {
+    "id": "rss-terrible-software-56b09ae0fcd8",
+    "source": "Terrible Software",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Say the Thing You Want",
+    "url": "https://terriblesoftware.org/2026/04/01/say-the-thing-you-want/",
+    "original_content": "If you want something at work, say it out loud. Your silence isn't saving you.",
+    "raw_text": "You&#8217;re in a 1:1 with your manager, and things are going just fine. You talk about the project and that other thing. Toward the end, she asks: &#8220;Anything else?&#8221; And there is something else. You want to lead that new initiative. Or move to a different team. Or you&#8217;ve been thinking about what stands in the way of your promotion. The thought is right there, sitting in the back of your throat. You&#8217;re going to say it, and then&#8230; &#8220;Nope, all good.&#8221; You get out of the call feeling a specific kind of regret. You rationalize it somehow and then tell yourself you&#8217;ll bring it up next time (you won&#8217;t). The reasons people stay quiet always come down to the same few fears. It feels presumptuous or pushy. Who am I to ask for that? It also feels risky. What if they think I&#8217;m not ready? Or it just feels too exposed. If you say it out loud and don&#8217;t get it, someone saw you want something you can&#8217;t have. And that&#8217;s somehow worse than just not having it. Also, people confuse wanting something with working toward it. Like the thought itself is progress. But a desire you keep to yourself has no surface area. Nobody can react to it, build on it, or help you with it. It just sits there, not happening. When people know what you want, they can help you get it (so obvious, and yet&#8230;). This is especially true for your manager. A big part of their job is putting people in positions where they can grow. But they can&#8217;t send opportunities your way if they don&#8217;t know which direction you&#8217;re heading. They have seven other reports and their own fires to deal with. Picture two engineers on the same team, with similar skill levels. A tech lead opportunity opens up. One of them mentions it in a 1:1: &#8220;I&#8217;d love to take the lead on something like that.&#8221; The other assumes their manager already knows they&#8217;re interested. They&#8217;ve been doing great work. Should be obvious, right? The first engineer will tend to get the role. And yeah, I can hear it already: &#8220;A good manager should know what their people want.&#8221; I try to, but I still miss stuff. Even the most attentive manager is working with incomplete information when you don&#8217;t say things out loud. But if you tell your manager, &#8220;I want to move into engineering management,&#8221; they might say, &#8220;I think you could get there. Here&#8217;s the gap I&#8217;m seeing right now.&#8221; That&#8217;s a map, the most useful thing anyone can hand you. But they can only hand it if you open the door. Without that conversation, you&#8217;re operating on your own self-assessment. And those are almost always incomplete. We all have blind spots about where we&#8217;re strong and where we fall short, and you don&#8217;t close them by thinking harder about yourself. You need someone who sees you from a different angle. You need input, and the best way to get it is to put the thing out there and see what",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "career"
+    ],
+    "summary": "If you want something at work, say it out loud. Your silence isn't saving you.",
+    "insights": [],
+    "created_at": "2026-04-01T15:59:04",
+    "processed_at": "2026-04-03 08:58:49"
+  },
+  {
+    "id": "rss-terrible-software-aHR0cHM6Ly90-0",
+    "source": "Terrible Software",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Say the Thing You Want",
+    "url": "https://terriblesoftware.org/2026/04/01/say-the-thing-you-want/",
+    "original_content": "If you want something at work, say it out loud. Your silence isn't saving you.",
+    "raw_text": "If you want something at work, say it out loud. Your silence isn't saving you.",
+    "relevance_score": 0,
+    "category": [
+      "tech",
+      "career"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T15:59:04.000Z",
+    "processed_at": ""
+  },
+  {
+    "id": "rss-jeff-geerling-e82f991fb16c",
+    "source": "Jeff Geerling",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "DRAM pricing is killing the hobbyist SBC market",
+    "url": "https://www.jeffgeerling.com/blog/2026/dram-pricing-is-killing-the-hobbyist-sbc-market/",
+    "original_content": "Today Raspberry Pi announced more price increases for all Pis with LPDDR4 RAM , alongside a 'right-sized' 3GB RAM Pi 4 for $83.75. The price increases bring the 16GB Pi 5 up to $299.99 . Despite today's date, this is not a joke. I published a video going over the state of the hobbyist 'high end SBC' market (4/8/16 GB models in the current generation), which I'll embed below: .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-cont",
+    "raw_text": "Today Raspberry Pi announced more price increases for all Pis with LPDDR4 RAM , alongside a 'right-sized' 3GB RAM Pi 4 for $83.75. The price increases bring the 16GB Pi 5 up to $299.99 . Despite today's date, this is not a joke. I published a video going over the state of the hobbyist 'high end SBC' market (4/8/16 GB models in the current generation), which I'll embed below: .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; } But if you'd like the tl;dr :",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "hardware",
+      "raspberry-pi"
+    ],
+    "summary": "Today Raspberry Pi announced more price increases for all Pis with LPDDR4 RAM , alongside a 'right-sized' 3GB RAM Pi 4 for $83.75. The price increases bring the 16GB Pi 5 up to $299.99 . Despite today's date, this is not a joke. I published a video going over the state of the hobbyist 'high end SBC'",
+    "insights": [],
+    "created_at": "2026-04-01T16:00:00",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "arxiv-2604.01168v1",
+    "source": "arXiv",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "S0 Tuning: Zero-Overhead Adaptation of Hybrid Recurrent-Attention Models",
+    "url": "https://arxiv.org/abs/2604.01168v1",
+    "original_content": "Using roughly 48 execution-verified HumanEval training solutions, tuning a single initial state matrix per recurrent layer, with zero inference overhead, outperforms LoRA by +10.8 pp (p < 0.001) on HumanEval. The method, which we call S0 tuning, optimizes one state matrix per recurrent layer while freezing all model weights. On Qwen3.5-4B (GatedDeltaNet hybrid), S0 tuning improves greedy pass@1 by +23.6 +/- 1.7 pp (10 seeds). On FalconH1-7B (Mamba-2 hybrid), S0 reaches 71.8% +/- 1.3 and LoRA reaches 71.4% +/- 2.4 (3 seeds), statistically indistinguishable at this sample size while requiring no weight merging. Cross-domain transfer is significant on MATH-500 (+4.8 pp, p = 0.00002, 8 seeds) and GSM8K (+2.8 pp, p = 0.0003, 10 seeds); a text-to-SQL benchmark (Spider) shows no transfer, consistent with the trajectory-steering mechanism. A prefix-tuning control on a pure Transformer (Qwen2.5-3B) degrades performance by -13.9 pp under all nine configurations tested. On Qwen3.5, a per-step state-offset variant reaches +27.1 pp, above both S0 and LoRA but with per-step inference cost. Taken together, the results show that recurrent state initialization is a strong zero-inference-overhead PEFT surface for hybrid language models when verified supervision is scarce. The tuned state is a ~48 MB file; task switching requires no weight merging or model reload. Code and library: https://github.com/jackyoung27/s0-tuning.",
+    "raw_text": "Using roughly 48 execution-verified HumanEval training solutions, tuning a single initial state matrix per recurrent layer, with zero inference overhead, outperforms LoRA by +10.8 pp (p < 0.001) on HumanEval. The method, which we call S0 tuning, optimizes one state matrix per recurrent layer while freezing all model weights. On Qwen3.5-4B (GatedDeltaNet hybrid), S0 tuning improves greedy pass@1 by +23.6 +/- 1.7 pp (10 seeds). On FalconH1-7B (Mamba-2 hybrid), S0 reaches 71.8% +/- 1.3 and LoRA reaches 71.4% +/- 2.4 (3 seeds), statistically indistinguishable at this sample size while requiring no weight merging. Cross-domain transfer is significant on MATH-500 (+4.8 pp, p = 0.00002, 8 seeds) and GSM8K (+2.8 pp, p = 0.0003, 10 seeds); a text-to-SQL benchmark (Spider) shows no transfer, consistent with the trajectory-steering mechanism. A prefix-tuning control on a pure Transformer (Qwen2.5-3B) degrades performance by -13.9 pp under all nine configurations tested. On Qwen3.5, a per-step state-offset variant reaches +27.1 pp, above both S0 and LoRA but with per-step inference cost. Taken together, the results show that recurrent state initialization is a strong zero-inference-overhead PEFT surface for hybrid language models when verified supervision is scarce. The tuned state is a ~48 MB file; task switching requires no weight merging or model reload. Code and library: https://github.com/jackyoung27/s0-tuning.",
+    "relevance_score": 0,
+    "category": [
+      "cs.CL",
+      "cs.LG"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T17:21:15.000Z",
+    "processed_at": ""
+  },
+  {
+    "id": "arxiv-2604.01169v1",
+    "source": "arXiv",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "Bridging the Simulation-to-Experiment Gap with Generative Models using Adversarial Distribution Alignment",
+    "url": "https://arxiv.org/abs/2604.01169v1",
+    "original_content": "A fundamental challenge in science and engineering is the simulation-to-experiment gap. While we often possess prior knowledge of physical laws, these physical laws can be too difficult to solve exactly for complex systems. Such systems are commonly modeled using simulators, which impose computational approximations. Meanwhile, experimental measurements more faithfully represent the real world, but experimental data typically consists of observations that only partially reflect the system's full underlying state. We propose a data-driven distribution alignment framework that bridges this simulation-to-experiment gap by pre-training a generative model on fully observed (but imperfect) simulation data, then aligning it with partial (but real) observations of experimental data. While our method is domain-agnostic, we ground our approach in the physical sciences by introducing Adversarial Distribution Alignment (ADA). This method aligns a generative model of atomic positions -- initially trained on a simulated Boltzmann distribution -- with the distribution of experimental observations. We prove that our method recovers the target observable distribution, even with multiple, potentially correlated observables. We also empirically validate our framework on synthetic, molecular, and experimental protein data, demonstrating that it can align generative models with diverse observables. Our code is available at https://kaityrusnelson.com/ada/.",
+    "raw_text": "A fundamental challenge in science and engineering is the simulation-to-experiment gap. While we often possess prior knowledge of physical laws, these physical laws can be too difficult to solve exactly for complex systems. Such systems are commonly modeled using simulators, which impose computational approximations. Meanwhile, experimental measurements more faithfully represent the real world, but experimental data typically consists of observations that only partially reflect the system's full underlying state. We propose a data-driven distribution alignment framework that bridges this simulation-to-experiment gap by pre-training a generative model on fully observed (but imperfect) simulation data, then aligning it with partial (but real) observations of experimental data. While our method is domain-agnostic, we ground our approach in the physical sciences by introducing Adversarial Distribution Alignment (ADA). This method aligns a generative model of atomic positions -- initially trained on a simulated Boltzmann distribution -- with the distribution of experimental observations. We prove that our method recovers the target observable distribution, even with multiple, potentially correlated observables. We also empirically validate our framework on synthetic, molecular, and experimental protein data, demonstrating that it can align generative models with diverse observables. Our code is available at https://kaityrusnelson.com/ada/.",
+    "relevance_score": 0,
+    "category": [
+      "cs.LG",
+      "cond-mat.mtrl-sci",
+      "q-bio.BM"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T17:21:33.000Z",
+    "processed_at": ""
+  },
+  {
+    "id": "arxiv-2604.01170v1",
+    "source": "arXiv",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "Online Reasoning Calibration: Test-Time Training Enables Generalizable Conformal LLM Reasoning",
+    "url": "https://arxiv.org/abs/2604.01170v1",
+    "original_content": "While test-time scaling has enabled large language models to solve highly difficult tasks, state-of-the-art results come at exorbitant compute costs. These inefficiencies can be attributed to the miscalibration of post-trained language models, and the lack of calibration in popular sampling techniques. Here, we present Online Reasoning Calibration (ORCA), a framework for calibrating the sampling process that draws upon conformal prediction and test-time training. Specifically, we introduce a meta-learning procedure that updates the calibration module for each input. This allows us to provide valid confidence estimates under distributional shift, e.g. in thought patterns that occur across different stages of reasoning, or in prompt distributions between model development and deployment. ORCA not only provides theoretical guarantees on conformal risks, but also empirically shows higher efficiency and generalization across different reasoning tasks. At risk level $δ=0.1$, ORCA improves Qwen2.5-32B efficiency on in-distribution tasks with savings up to 47.5% with supervised labels and 40.7% with self-consistency labels. Under zero-shot out-of-domain settings, it improves MATH-500 savings from 24.8% of the static calibration baseline to 67.0% while maintaining a low empirical error rate, and the same trend holds across model families and downstream benchmarks. Our code is publicly available at https://github.com/wzekai99/ORCA.",
+    "raw_text": "While test-time scaling has enabled large language models to solve highly difficult tasks, state-of-the-art results come at exorbitant compute costs. These inefficiencies can be attributed to the miscalibration of post-trained language models, and the lack of calibration in popular sampling techniques. Here, we present Online Reasoning Calibration (ORCA), a framework for calibrating the sampling process that draws upon conformal prediction and test-time training. Specifically, we introduce a meta-learning procedure that updates the calibration module for each input. This allows us to provide valid confidence estimates under distributional shift, e.g. in thought patterns that occur across different stages of reasoning, or in prompt distributions between model development and deployment. ORCA not only provides theoretical guarantees on conformal risks, but also empirically shows higher efficiency and generalization across different reasoning tasks. At risk level $δ=0.1$, ORCA improves Qwen2.5-32B efficiency on in-distribution tasks with savings up to 47.5% with supervised labels and 40.7% with self-consistency labels. Under zero-shot out-of-domain settings, it improves MATH-500 savings from 24.8% of the static calibration baseline to 67.0% while maintaining a low empirical error rate, and the same trend holds across model families and downstream benchmarks. Our code is publicly available at https://github.com/wzekai99/ORCA.",
+    "relevance_score": 0,
+    "category": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CL",
+      "stat.AP",
+      "stat.ML"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T17:21:50.000Z",
+    "processed_at": ""
+  },
+  {
+    "id": "arxiv-2604.01173v1",
+    "source": "arXiv",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "Safe learning-based control via function-based uncertainty quantification",
+    "url": "https://arxiv.org/abs/2604.01173v1",
+    "original_content": "Uncertainty quantification is essential when deploying learning-based control methods in safety-critical systems. This is commonly realized by constructing uncertainty tubes that enclose the unknown function of interest, e.g., the reward and constraint functions or the underlying dynamics model, with high probability. However, existing approaches for uncertainty quantification typically rely on restrictive assumptions on the unknown function, such as known bounds on functional norms or Lipschitz constants, and struggle with discontinuities. In this paper, we model the unknown function as a random function from which independent and identically distributed realizations can be generated, and construct uncertainty tubes via the scenario approach that hold with high probability and rely solely on the sampled realizations. We integrate these uncertainty tubes into a safe Bayesian optimization algorithm, which we then use to safely tune control parameters on a real Furuta pendulum.",
+    "raw_text": "Uncertainty quantification is essential when deploying learning-based control methods in safety-critical systems. This is commonly realized by constructing uncertainty tubes that enclose the unknown function of interest, e.g., the reward and constraint functions or the underlying dynamics model, with high probability. However, existing approaches for uncertainty quantification typically rely on restrictive assumptions on the unknown function, such as known bounds on functional norms or Lipschitz constants, and struggle with discontinuities. In this paper, we model the unknown function as a random function from which independent and identically distributed realizations can be generated, and construct uncertainty tubes via the scenario approach that hold with high probability and rely solely on the sampled realizations. We integrate these uncertainty tubes into a safe Bayesian optimization algorithm, which we then use to safely tune control parameters on a real Furuta pendulum.",
+    "relevance_score": 0,
+    "category": [
+      "eess.SY",
+      "cs.LG",
+      "math.OC"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T17:23:30.000Z",
+    "processed_at": ""
+  },
+  {
+    "id": "arxiv-2604.01175v1",
+    "source": "arXiv",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "NeuroDDAF: Neural Dynamic Diffusion-Advection Fields with Evidential Fusion for Air Quality Forecasting",
+    "url": "https://arxiv.org/abs/2604.01175v1",
+    "original_content": "Accurate air quality forecasting is crucial for protecting public health and guiding environmental policy, yet it remains challenging due to nonlinear spatiotemporal dynamics, wind-driven transport, and distribution shifts across regions. Physics-based models are interpretable but computationally expensive and often rely on restrictive assumptions, whereas purely data-driven models can be accurate but may lack robustness and calibrated uncertainty. To address these limitations, we propose Neural Dynamic Diffusion-Advection Fields (NeuroDDAF), a physics-informed forecasting framework that unifies neural representation learning with open-system transport modeling. NeuroDDAF integrates (i) a GRU-Graph Attention encoder to capture temporal dynamics and wind-aware spatial interactions, (ii) a Fourier-domain diffusion-advection module with learnable residuals, (iii) a wind-modulated latent Neural ODE to model continuous-time evolution under time-varying connectivity, and (iv) an evidential fusion mechanism that adaptively combines physics-guided and neural forecasts while quantifying uncertainty. Experiments on four urban datasets (Beijing, Shenzhen, Tianjin, and Ancona) across 1-3 day horizons show that NeuroDDAF consistently outperforms strong baselines, including AirPhyNet, achieving up to 9.7% reduction in RMSE and 9.4% reduction in MAE on long-term forecasts. On the Beijing dataset, NeuroDDAF attains an RMSE of 41.63 $μ$g/m$^3$ for 1-day prediction and 48.88 $μ$g/m$^3$ for 3-day prediction, representing the best performance among all compared methods. In addition, NeuroDDAF improves cross-city generalization and yields well-calibrated uncertainty estimates, as confirmed by ensemble variance analysis and case studies under varying wind conditions.",
+    "raw_text": "Accurate air quality forecasting is crucial for protecting public health and guiding environmental policy, yet it remains challenging due to nonlinear spatiotemporal dynamics, wind-driven transport, and distribution shifts across regions. Physics-based models are interpretable but computationally expensive and often rely on restrictive assumptions, whereas purely data-driven models can be accurate but may lack robustness and calibrated uncertainty. To address these limitations, we propose Neural Dynamic Diffusion-Advection Fields (NeuroDDAF), a physics-informed forecasting framework that unifies neural representation learning with open-system transport modeling. NeuroDDAF integrates (i) a GRU-Graph Attention encoder to capture temporal dynamics and wind-aware spatial interactions, (ii) a Fourier-domain diffusion-advection module with learnable residuals, (iii) a wind-modulated latent Neural ODE to model continuous-time evolution under time-varying connectivity, and (iv) an evidential fusion mechanism that adaptively combines physics-guided and neural forecasts while quantifying uncertainty. Experiments on four urban datasets (Beijing, Shenzhen, Tianjin, and Ancona) across 1-3 day horizons show that NeuroDDAF consistently outperforms strong baselines, including AirPhyNet, achieving up to 9.7% reduction in RMSE and 9.4% reduction in MAE on long-term forecasts. On the Beijing dataset, NeuroDDAF attains an RMSE of 41.63 $μ$g/m$^3$ for 1-day prediction and 48.88 $μ$g/m$^3$ for 3-day prediction, representing the best performance among all compared methods. In addition, NeuroDDAF improves cross-city generalization and yields well-calibrated uncertainty estimates, as confirmed by ensemble variance analysis and case studies under varying wind conditions.",
+    "relevance_score": 0,
+    "category": [
+      "cs.LG"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T17:27:43.000Z",
+    "processed_at": ""
+  },
+  {
+    "id": "arxiv-2604.01178v1",
+    "source": "arXiv",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "Screening Is Enough",
+    "url": "https://arxiv.org/abs/2604.01178v1",
+    "original_content": "A core limitation of standard softmax attention is that it does not define a notion of absolute query--key relevance: attention weights are obtained by redistributing a fixed unit mass across all keys according to their relative scores. As a result, relevance is defined only relative to competing keys, and irrelevant keys cannot be explicitly rejected. We introduce Multiscreen, a language-model architecture built around a mechanism we call screening, which enables absolute query--key relevance. Instead of redistributing attention across all keys, screening evaluates each key against an explicit threshold, discarding irrelevant keys and aggregating the remaining keys, thereby removing global competition among keys. Across experiments, Multiscreen achieves comparable validation loss with approximately 40% fewer parameters than a Transformer baseline, enables stable optimization at substantially larger learning rates, maintains strong performance in long-context perplexity, shows little to no degradation in retrieval performance even far beyond the training context length, and reduces inference latency by up to 3.2$\\times$ at 100K context length.",
+    "raw_text": "A core limitation of standard softmax attention is that it does not define a notion of absolute query--key relevance: attention weights are obtained by redistributing a fixed unit mass across all keys according to their relative scores. As a result, relevance is defined only relative to competing keys, and irrelevant keys cannot be explicitly rejected. We introduce Multiscreen, a language-model architecture built around a mechanism we call screening, which enables absolute query--key relevance. Instead of redistributing attention across all keys, screening evaluates each key against an explicit threshold, discarding irrelevant keys and aggregating the remaining keys, thereby removing global competition among keys. Across experiments, Multiscreen achieves comparable validation loss with approximately 40% fewer parameters than a Transformer baseline, enables stable optimization at substantially larger learning rates, maintains strong performance in long-context perplexity, shows little to no degradation in retrieval performance even far beyond the training context length, and reduces inference latency by up to 3.2$\\times$ at 100K context length.",
+    "relevance_score": 0,
+    "category": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T17:29:08.000Z",
+    "processed_at": ""
+  },
+  {
+    "id": "arxiv-2604.01179v1",
+    "source": "arXiv",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "A ROS 2 Wrapper for Florence-2: Multi-Mode Local Vision-Language Inference for Robotic Systems",
+    "url": "https://arxiv.org/abs/2604.01179v1",
+    "original_content": "Foundation vision-language models are becoming increasingly relevant to robotics because they can provide richer semantic perception than narrow task-specific pipelines. However, their practical adoption in robot software stacks still depends on reproducible middleware integrations rather than on model quality alone. Florence-2 is especially attractive in this regard because it unifies captioning, optical character recognition, open-vocabulary detection, grounding and related vision-language tasks within a comparatively manageable model size. This article presents a ROS 2 wrapper for Florence-2 that exposes the model through three complementary interaction modes: continuous topic-driven processing, synchronous service calls and asynchronous actions. The wrapper is designed for local execution and supports both native installation and Docker container deployment. It also combines generic JSON outputs with standard ROS 2 message bindings for detection-oriented tasks. A functional validation is reported together with a throughput study on several GPUs, showing that local deployment is feasible with consumer grade hardware. The repository is publicly available here: https://github.com/JEDominguezVidal/florence2_ros2_wrapper",
+    "raw_text": "Foundation vision-language models are becoming increasingly relevant to robotics because they can provide richer semantic perception than narrow task-specific pipelines. However, their practical adoption in robot software stacks still depends on reproducible middleware integrations rather than on model quality alone. Florence-2 is especially attractive in this regard because it unifies captioning, optical character recognition, open-vocabulary detection, grounding and related vision-language tasks within a comparatively manageable model size. This article presents a ROS 2 wrapper for Florence-2 that exposes the model through three complementary interaction modes: continuous topic-driven processing, synchronous service calls and asynchronous actions. The wrapper is designed for local execution and supports both native installation and Docker container deployment. It also combines generic JSON outputs with standard ROS 2 message bindings for detection-oriented tasks. A functional validation is reported together with a throughput study on several GPUs, showing that local deployment is feasible with consumer grade hardware. The repository is publicly available here: https://github.com/JEDominguezVidal/florence2_ros2_wrapper",
+    "relevance_score": 0,
+    "category": [
+      "cs.RO",
+      "cs.AI",
+      "cs.CV"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T17:29:59.000Z",
+    "processed_at": ""
+  },
+  {
+    "id": "arxiv-2604.01181v1",
+    "source": "arXiv",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "True (VIS) Lies: Analyzing How Generative AI Recognizes Intentionality, Rhetoric, and Misleadingness in Visualization Lies",
+    "url": "https://arxiv.org/abs/2604.01181v1",
+    "original_content": "This study investigates the ability of multimodal Large Language Models (LLMs) to identify and interpret misleading visualizations, and recognize these observations along with their underlying causes and potential intentionality. Our analysis leverages concepts from visualization rhetoric and a newly developed taxonomy of authorial intents as explanatory lenses. We formulated three research questions and addressed them experimentally using a dataset of 2,336 COVID-19-related tweets, half of which contain misleading visualizations, and supplemented it with real-world examples of perceptual, cognitive, and conceptual errors drawn from VisLies, the IEEE VIS community event dedicated to showcasing deceptive and misleading visualizations. To ensure broad coverage of the current LLM landscape, we evaluated 16 state-of-the-art models. Among them, 15 are open-weight models, spanning a wide range of model sizes, architectural families, and reasoning capabilities. The selection comprises small models, namely Nemotron-Nano-V2-VL (12B parameters), Mistral-Small-3.2 (24B), DeepSeek-VL2 (27B), Gemma3 (27B), and GTA1 (32B); medium-sized models, namely Qianfan-VL (70B), Molmo (72B), GLM-4.5V (108B), LLaVA-NeXT (110B), and Pixtral-Large (124B); and large models, namely Qwen3-VL (235B), InternVL3.5 (241B), Step3 (321B), Llama-4-Maverick (400B), and Kimi-K2.5 (1000B). In addition, we employed OpenAI GPT-5.4, a frontier proprietary model. To establish a human perspective on these tasks, we also conducted a user study with visualization experts to assess how people perceive rhetorical techniques and the authorial intentions behind the same misleading visualizations. This allows comparison between model and expert behavior, revealing similarities and differences that provide insights into where LLMs align with human judgment and where they diverge.",
+    "raw_text": "This study investigates the ability of multimodal Large Language Models (LLMs) to identify and interpret misleading visualizations, and recognize these observations along with their underlying causes and potential intentionality. Our analysis leverages concepts from visualization rhetoric and a newly developed taxonomy of authorial intents as explanatory lenses. We formulated three research questions and addressed them experimentally using a dataset of 2,336 COVID-19-related tweets, half of which contain misleading visualizations, and supplemented it with real-world examples of perceptual, cognitive, and conceptual errors drawn from VisLies, the IEEE VIS community event dedicated to showcasing deceptive and misleading visualizations. To ensure broad coverage of the current LLM landscape, we evaluated 16 state-of-the-art models. Among them, 15 are open-weight models, spanning a wide range of model sizes, architectural families, and reasoning capabilities. The selection comprises small models, namely Nemotron-Nano-V2-VL (12B parameters), Mistral-Small-3.2 (24B), DeepSeek-VL2 (27B), Gemma3 (27B), and GTA1 (32B); medium-sized models, namely Qianfan-VL (70B), Molmo (72B), GLM-4.5V (108B), LLaVA-NeXT (110B), and Pixtral-Large (124B); and large models, namely Qwen3-VL (235B), InternVL3.5 (241B), Step3 (321B), Llama-4-Maverick (400B), and Kimi-K2.5 (1000B). In addition, we employed OpenAI GPT-5.4, a frontier proprietary model. To establish a human perspective on these tasks, we also conducted a user study with visualization experts to assess how people perceive rhetorical techniques and the authorial intentions behind the same misleading visualizations. This allows comparison between model and expert behavior, revealing similarities and differences that provide insights into where LLMs align with human judgment and where they diverge.",
+    "relevance_score": 0,
+    "category": [
+      "cs.HC",
+      "cs.CL",
+      "cs.CV"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T17:33:10.000Z",
+    "processed_at": ""
+  },
+  {
+    "id": "arxiv-2604.01193v1",
+    "source": "arXiv",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "Embarrassingly Simple Self-Distillation Improves Code Generation",
+    "url": "https://arxiv.org/abs/2604.01193v1",
+    "original_content": "Can a large language model (LLM) improve at code generation using only its own raw outputs, without a verifier, a teacher model, or reinforcement learning? We answer in the affirmative with simple self-distillation (SSD): sample solutions from the model with certain temperature and truncation configurations, then fine-tune on those samples with standard supervised fine-tuning. SSD improves Qwen3-30B-Instruct from 42.4% to 55.3% pass@1 on LiveCodeBench v6, with gains concentrating on harder problems, and it generalizes across Qwen and Llama models at 4B, 8B, and 30B scale, including both instruct and thinking variants. To understand why such a simple method can work, we trace these gains to a precision-exploration conflict in LLM decoding and show that SSD reshapes token distributions in a context-dependent way, suppressing distractor tails where precision matters while preserving useful diversity where exploration matters. Taken together, SSD offers a complementary post-training direction for improving LLM code generation.",
+    "raw_text": "Can a large language model (LLM) improve at code generation using only its own raw outputs, without a verifier, a teacher model, or reinforcement learning? We answer in the affirmative with simple self-distillation (SSD): sample solutions from the model with certain temperature and truncation configurations, then fine-tune on those samples with standard supervised fine-tuning. SSD improves Qwen3-30B-Instruct from 42.4% to 55.3% pass@1 on LiveCodeBench v6, with gains concentrating on harder problems, and it generalizes across Qwen and Llama models at 4B, 8B, and 30B scale, including both instruct and thinking variants. To understand why such a simple method can work, we trace these gains to a precision-exploration conflict in LLM decoding and show that SSD reshapes token distributions in a context-dependent way, suppressing distractor tails where precision matters while preserving useful diversity where exploration matters. Taken together, SSD offers a complementary post-training direction for improving LLM code generation.",
+    "relevance_score": 0,
+    "category": [
+      "cs.CL"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T17:39:50.000Z",
+    "processed_at": ""
+  },
+  {
+    "id": "arxiv-2604.01195v1",
+    "source": "arXiv",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "ORBIT: Scalable and Verifiable Data Generation for Search Agents on a Tight Budget",
+    "url": "https://arxiv.org/abs/2604.01195v1",
+    "original_content": "Search agents, which integrate language models (LMs) with web search, are becoming crucial for answering complex user queries. Constructing training datasets for deep research tasks, involving multi-step retrieval and reasoning, remains challenging due to expensive human annotation, or cumbersome prerequisites. In this work, we introduce ORBIT, a training dataset with 20K reasoning-intensive queries with short verifiable answers, generated using a frugal framework without relying on paid API services. The modular framework relies on four stages: seed creation, question--answer pair generation, and two stages of verification: self and external. ORBIT spans 15 domains and each training pair requires 4--5 reasoning steps, with external search verification required from the complete web. We train Qwen3-4B as the base model on ORBIT using GRPO and evaluate it on Wikipedia question answering tasks. Extensive experiment results demonstrate that ORBIT-4B achieves strong performance among sub-4B LLMs as search agents, proving the utility of synthetic datasets. Our framework, code and datasets are open-sourced and available publicly.",
+    "raw_text": "Search agents, which integrate language models (LMs) with web search, are becoming crucial for answering complex user queries. Constructing training datasets for deep research tasks, involving multi-step retrieval and reasoning, remains challenging due to expensive human annotation, or cumbersome prerequisites. In this work, we introduce ORBIT, a training dataset with 20K reasoning-intensive queries with short verifiable answers, generated using a frugal framework without relying on paid API services. The modular framework relies on four stages: seed creation, question--answer pair generation, and two stages of verification: self and external. ORBIT spans 15 domains and each training pair requires 4--5 reasoning steps, with external search verification required from the complete web. We train Qwen3-4B as the base model on ORBIT using GRPO and evaluate it on Wikipedia question answering tasks. Extensive experiment results demonstrate that ORBIT-4B achieves strong performance among sub-4B LLMs as search agents, proving the utility of synthetic datasets. Our framework, code and datasets are open-sourced and available publicly.",
+    "relevance_score": 0,
+    "category": [
+      "cs.CL",
+      "cs.AI",
+      "cs.IR"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T17:42:41.000Z",
+    "processed_at": ""
+  },
+  {
+    "id": "arxiv-2604.01197v1",
+    "source": "arXiv",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "Learning and Generating Mixed States Prepared by Shallow Channel Circuits",
+    "url": "https://arxiv.org/abs/2604.01197v1",
+    "original_content": "Learning quantum states from measurement data is a central problem in quantum information and computational complexity. In this work, we study the problem of learning to generate mixed states on a finite-dimensional lattice. Motivated by recent developments in mixed state phases of matter, we focus on arbitrary states in the trivial phase. A state belongs to the trivial phase if there exists a shallow preparation channel circuit under which local reversibility is preserved throughout the preparation. We prove that any mixed state in this class can be efficiently learned from measurement access alone. Specifically, given copies of an unknown trivial phase mixed state, our algorithm outputs a shallow local channel circuit that approximately generates this state in trace distance. The sample complexity and runtime are polynomial (or quasi-polynomial) in the number of qubits, assuming constant (or polylogarithmic) circuit depth and gate locality. Importantly, the learner is not given the original preparation circuit and relies only on its existence. Our results provide a structural foundation for quantum generative models based on shallow channel circuits. In the classical limit, our framework also inspires an efficient algorithm for classical diffusion models using only a polynomial overhead of training and generation.",
+    "raw_text": "Learning quantum states from measurement data is a central problem in quantum information and computational complexity. In this work, we study the problem of learning to generate mixed states on a finite-dimensional lattice. Motivated by recent developments in mixed state phases of matter, we focus on arbitrary states in the trivial phase. A state belongs to the trivial phase if there exists a shallow preparation channel circuit under which local reversibility is preserved throughout the preparation. We prove that any mixed state in this class can be efficiently learned from measurement access alone. Specifically, given copies of an unknown trivial phase mixed state, our algorithm outputs a shallow local channel circuit that approximately generates this state in trace distance. The sample complexity and runtime are polynomial (or quasi-polynomial) in the number of qubits, assuming constant (or polylogarithmic) circuit depth and gate locality. Importantly, the learner is not given the original preparation circuit and relies only on its existence. Our results provide a structural foundation for quantum generative models based on shallow channel circuits. In the classical limit, our framework also inspires an efficient algorithm for classical diffusion models using only a polynomial overhead of training and generation.",
+    "relevance_score": 0,
+    "category": [
+      "quant-ph",
+      "cond-mat.stat-mech",
+      "cs.CC",
+      "cs.LG"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T17:42:56.000Z",
+    "processed_at": ""
+  },
+  {
+    "id": "arxiv-2604.01202v1",
+    "source": "arXiv",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "Therefore I am. I Think",
+    "url": "https://arxiv.org/abs/2604.01202v1",
+    "original_content": "We consider the question: when a large language reasoning model makes a choice, did it think first and then decide to, or decide first and then think? In this paper, we present evidence that detectable, early-encoded decisions shape chain-of-thought in reasoning models. Specifically, we show that a simple linear probe successfully decodes tool-calling decisions from pre-generation activations with very high confidence, and in some cases, even before a single reasoning token is produced. Activation steering supports this causally: perturbing the decision direction leads to inflated deliberation, and flips behavior in many examples (between 7 - 79% depending on model and benchmark). We also show through behavioral analysis that, when steering changes the decision, the chain-of-thought process often rationalizes the flip rather than resisting it. Together, these results suggest that reasoning models can encode action choices before they begin to deliberate in text.",
+    "raw_text": "We consider the question: when a large language reasoning model makes a choice, did it think first and then decide to, or decide first and then think? In this paper, we present evidence that detectable, early-encoded decisions shape chain-of-thought in reasoning models. Specifically, we show that a simple linear probe successfully decodes tool-calling decisions from pre-generation activations with very high confidence, and in some cases, even before a single reasoning token is produced. Activation steering supports this causally: perturbing the decision direction leads to inflated deliberation, and flips behavior in many examples (between 7 - 79% depending on model and benchmark). We also show through behavioral analysis that, when steering changes the decision, the chain-of-thought process often rationalizes the flip rather than resisting it. Together, these results suggest that reasoning models can encode action choices before they begin to deliberate in text.",
+    "relevance_score": 0,
+    "category": [
+      "cs.AI"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T17:46:23.000Z",
+    "processed_at": ""
+  },
+  {
+    "id": "arxiv-2604.01204v1",
+    "source": "arXiv",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "Neural Harmonic Textures for High-Quality Primitive Based Neural Reconstruction",
+    "url": "https://arxiv.org/abs/2604.01204v1",
+    "original_content": "Primitive-based methods such as 3D Gaussian Splatting have recently become the state-of-the-art for novel-view synthesis and related reconstruction tasks. Compared to neural fields, these representations are more flexible, adaptive, and scale better to large scenes. However, the limited expressivity of individual primitives makes modeling high-frequency detail challenging. We introduce Neural Harmonic Textures, a neural representation approach that anchors latent feature vectors on a virtual scaffold surrounding each primitive. These features are interpolated within the primitive at ray intersection points. Inspired by Fourier analysis, we apply periodic activations to the interpolated features, turning alpha blending into a weighted sum of harmonic components. The resulting signal is then decoded in a single deferred pass using a small neural network, significantly reducing computational cost. Neural Harmonic Textures yield state-of-the-art results in real-time novel view synthesis while bridging the gap between primitive- and neural-field-based reconstruction. Our method integrates seamlessly into existing primitive-based pipelines such as 3DGUT, Triangle Splatting, and 2DGS. We further demonstrate its generality with applications to 2D image fitting and semantic reconstruction.",
+    "raw_text": "Primitive-based methods such as 3D Gaussian Splatting have recently become the state-of-the-art for novel-view synthesis and related reconstruction tasks. Compared to neural fields, these representations are more flexible, adaptive, and scale better to large scenes. However, the limited expressivity of individual primitives makes modeling high-frequency detail challenging. We introduce Neural Harmonic Textures, a neural representation approach that anchors latent feature vectors on a virtual scaffold surrounding each primitive. These features are interpolated within the primitive at ray intersection points. Inspired by Fourier analysis, we apply periodic activations to the interpolated features, turning alpha blending into a weighted sum of harmonic components. The resulting signal is then decoded in a single deferred pass using a small neural network, significantly reducing computational cost. Neural Harmonic Textures yield state-of-the-art results in real-time novel view synthesis while bridging the gap between primitive- and neural-field-based reconstruction. Our method integrates seamlessly into existing primitive-based pipelines such as 3DGUT, Triangle Splatting, and 2DGS. We further demonstrate its generality with applications to 2D image fitting and semantic reconstruction.",
+    "relevance_score": 0,
+    "category": [
+      "cs.CV",
+      "cs.AI",
+      "cs.GR",
+      "cs.LG"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T17:48:22.000Z",
+    "processed_at": ""
+  },
+  {
+    "id": "arxiv-2604.01206v1",
+    "source": "arXiv",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "LLM REgression with a Latent Iterative State Head",
+    "url": "https://arxiv.org/abs/2604.01206v1",
+    "original_content": "We present RELISH (REgression with a Latent Iterative State Head), a novel, lightweight architecture designed for text regression with large language models. Rather than decoding numeric targets as text or aggregating multiple generated outputs, RELISH predicts scalar values directly from frozen LLM representations by iteratively refining a learned latent state through cross-attention over token-level representations, and then mapping the final state to a point estimate with a linear regressor. Across five datasets, four LLM backbones, and two LLM training regimes, RELISH consistently outperforms prior baselines from all three major LLM regression families, including autoregressive decoding, regression-aware inference, and existing predictive head methods. Despite these gains, RELISH remains highly parameter-efficient, requiring only 3.4-3.7M trainable parameters across frozen LLM backbones (only 0.01-0.04% additional overhead), far less than LoRA-based alternatives that grow with model size (0.26-0.42%).",
+    "raw_text": "We present RELISH (REgression with a Latent Iterative State Head), a novel, lightweight architecture designed for text regression with large language models. Rather than decoding numeric targets as text or aggregating multiple generated outputs, RELISH predicts scalar values directly from frozen LLM representations by iteratively refining a learned latent state through cross-attention over token-level representations, and then mapping the final state to a point estimate with a linear regressor. Across five datasets, four LLM backbones, and two LLM training regimes, RELISH consistently outperforms prior baselines from all three major LLM regression families, including autoregressive decoding, regression-aware inference, and existing predictive head methods. Despite these gains, RELISH remains highly parameter-efficient, requiring only 3.4-3.7M trainable parameters across frozen LLM backbones (only 0.01-0.04% additional overhead), far less than LoRA-based alternatives that grow with model size (0.26-0.42%).",
+    "relevance_score": 0,
+    "category": [
+      "cs.CL",
+      "cs.LG"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T17:50:32.000Z",
+    "processed_at": ""
+  },
+  {
+    "id": "arxiv-2604.01210v1",
+    "source": "arXiv",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "CliffSearch: Structured Agentic Co-Evolution over Theory and Code for Scientific Algorithm Discovery",
+    "url": "https://arxiv.org/abs/2604.01210v1",
+    "original_content": "Scientific algorithm discovery is iterative: hypotheses are proposed, implemented, stress-tested, and revised. Current LLM-guided search systems accelerate proposal generation, but often under-represent scientific structure by optimizing code-only artifacts with weak correctness/originality gating. We present CliffSearch, an agentic evolutionary framework in which the core evolution operators (pair selection, crossover, mutation, and review) are implemented as LLM agents, and the loop is designed around three principles: (1) each node is a structured scientific artifact, instantiated in either theory+code or code_only mode, (2) reviewer judgments of correctness and originality are first-class selection gates alongside optimization of the benchmark metric of interest, and (3) mutation is split into exploration and correction pathways with distinct objectives. Exploration mutation imports ideas from adjacent scientific domains to increase novelty, while correction mutation performs targeted evidence-guided repair using reviewer signals over theory, code, benchmark results, and runtime errors. We illustrate the framework on three benchmark-grounded studies: transformer hyper-connection evolution, optimizer discovery on a fixed nanoGPT stack, and a smaller native-optimizer ablation. Across these settings, the same loop supports explicit metric direction, reproducible persistence, and reviewer-gated comparison of discoveries under controlled search conditions. The result is a discovery workflow that prioritizes scientific interpretability and correctness while optimizing task metrics under controlled novelty constraints, rather than maximizing candidate throughput alone. Full run artifacts, interactive visualizations, and exported best nodes for the reported studies are available at https://cliffsearch.ai .",
+    "raw_text": "Scientific algorithm discovery is iterative: hypotheses are proposed, implemented, stress-tested, and revised. Current LLM-guided search systems accelerate proposal generation, but often under-represent scientific structure by optimizing code-only artifacts with weak correctness/originality gating. We present CliffSearch, an agentic evolutionary framework in which the core evolution operators (pair selection, crossover, mutation, and review) are implemented as LLM agents, and the loop is designed around three principles: (1) each node is a structured scientific artifact, instantiated in either theory+code or code_only mode, (2) reviewer judgments of correctness and originality are first-class selection gates alongside optimization of the benchmark metric of interest, and (3) mutation is split into exploration and correction pathways with distinct objectives. Exploration mutation imports ideas from adjacent scientific domains to increase novelty, while correction mutation performs targeted evidence-guided repair using reviewer signals over theory, code, benchmark results, and runtime errors. We illustrate the framework on three benchmark-grounded studies: transformer hyper-connection evolution, optimizer discovery on a fixed nanoGPT stack, and a smaller native-optimizer ablation. Across these settings, the same loop supports explicit metric direction, reproducible persistence, and reviewer-gated comparison of discoveries under controlled search conditions. The result is a discovery workflow that prioritizes scientific interpretability and correctness while optimizing task metrics under controlled novelty constraints, rather than maximizing candidate throughput alone. Full run artifacts, interactive visualizations, and exported best nodes for the reported studies are available at https://cliffsearch.ai .",
+    "relevance_score": 0,
+    "category": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T17:51:26.000Z",
+    "processed_at": ""
+  },
+  {
+    "id": "arxiv-2604.01212v1",
+    "source": "arXiv",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "$\\texttt{YC-Bench}$: Benchmarking AI Agents for Long-Term Planning and Consistent Execution",
+    "url": "https://arxiv.org/abs/2604.01212v1",
+    "original_content": "As LLM agents tackle increasingly complex tasks, a critical question is whether they can maintain strategic coherence over long horizons: planning under uncertainty, learning from delayed feedback, and adapting when early mistakes compound. We introduce $\\texttt{YC-Bench}$, a benchmark that evaluates these capabilities by tasking an agent with running a simulated startup over a one-year horizon spanning hundreds of turns. The agent must manage employees, select task contracts, and maintain profitability in a partially observable environment where adversarial clients and growing payroll create compounding consequences for poor decisions. We evaluate 12 models, both proprietary and open source, across 3 seeds each. Only three models consistently surpass the starting capital of \\$200K, with Claude Opus 4.6 achieving the highest average final funds at \\$1.27 M, followed by GLM-5 at \\$1.21 M at 11$\\times$ lower inference cost. Scratchpad usage, the sole mechanism for persisting information across context truncation, is the strongest predictor of success, and adversarial client detection is the primary failure mode, accounting for $47\\%$ of bankruptcies. Our analysis reveals that frontier models still fail through distinct failure modes such as over-parallelization, demonstrating the capability gaps for long-horizon performance. $\\texttt{YC-Bench}$ is open-source, reproducible, and configurable.",
+    "raw_text": "As LLM agents tackle increasingly complex tasks, a critical question is whether they can maintain strategic coherence over long horizons: planning under uncertainty, learning from delayed feedback, and adapting when early mistakes compound. We introduce $\\texttt{YC-Bench}$, a benchmark that evaluates these capabilities by tasking an agent with running a simulated startup over a one-year horizon spanning hundreds of turns. The agent must manage employees, select task contracts, and maintain profitability in a partially observable environment where adversarial clients and growing payroll create compounding consequences for poor decisions. We evaluate 12 models, both proprietary and open source, across 3 seeds each. Only three models consistently surpass the starting capital of \\$200K, with Claude Opus 4.6 achieving the highest average final funds at \\$1.27 M, followed by GLM-5 at \\$1.21 M at 11$\\times$ lower inference cost. Scratchpad usage, the sole mechanism for persisting information across context truncation, is the strongest predictor of success, and adversarial client detection is the primary failure mode, accounting for $47\\%$ of bankruptcies. Our analysis reveals that frontier models still fail through distinct failure modes such as over-parallelization, demonstrating the capability gaps for long-horizon performance. $\\texttt{YC-Bench}$ is open-source, reproducible, and configurable.",
+    "relevance_score": 0,
+    "category": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T17:52:19.000Z",
+    "processed_at": ""
+  },
+  {
+    "id": "rss-hillel-wayne-7399a2c669e0",
+    "source": "Hillel Wayne",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "April Cools Post: New York vs Chicago Pizza",
+    "url": "https://buttondown.com/hillelwayne/archive/april-cools-post-new-york-vs-chicago-pizza/",
+    "original_content": "Happy April Cools! My not-tech post this year is Chicago vs New York Pizza is the Wrong Argument , which is mostly an excuse for me to talk about Chicago food. See here for all of the other April Cools submissions. As of this email we have sixteen posts; there's still time to submit something! 1 This one came out of a pizza argument with Marianne Bellotti , a true New Yorker who doesn't think deep dish is real pizza. I wanted to find a new angle on the old argument and this is what I came up wit",
+    "raw_text": "Happy April Cools! My not-tech post this year is Chicago vs New York Pizza is the Wrong Argument , which is mostly an excuse for me to talk about Chicago food. See here for all of the other April Cools submissions. As of this email we have sixteen posts; there's still time to submit something! 1 This one came out of a pizza argument with Marianne Bellotti , a true New Yorker who doesn't think deep dish is real pizza. I wanted to find a new angle on the old argument and this is what I came up with. Interestingly, there's arguably no real New York analog to deep dish (Khatchapuri is kinda similar but doesn't have the same cultural relevance). If I had to pick something to compare deep dish to, it'd be toasted ravioli (despite that being a appetizer and not an entree). Also, I didn't really touch on it in the article, but one of the annoying things about pizza debates is that the most of the Chicago pizza chains don't serve deep dish . Instead they do \"stuffed pizzas\". Deep dish is crust, cheese, tomato, while stuffed pizza is crust, cheese, another layer of crust, tomato. It's heavy and more casserole like and they always have way too much cheese. Don't get me wrong, it's still decent, but I think it's a worse kind of pizza overall. Anyway, the real point of the post is that Chicago's a damn good sausage city. Even the Home Depots here have hot dogs. Praveen, if you're reading this, you didn't include a link to your post or any contact details with your submission. Email me and we'll get it on the site&#160; &#8617;",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "formal-methods"
+    ],
+    "summary": "Happy April Cools! My not-tech post this year is Chicago vs New York Pizza is the Wrong Argument , which is mostly an excuse for me to talk about Chicago food. See here for all of the other April Cools submissions. As of this email we have sixteen posts; there's still time to submit something! 1 Thi",
+    "insights": [],
+    "created_at": "2026-04-01T17:53:29",
+    "processed_at": "2026-04-03 08:58:49"
+  },
+  {
+    "id": "rss-hillel-wayne-aHR0cHM6Ly9i-0",
+    "source": "Hillel Wayne",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "April Cools Post: New York vs Chicago Pizza",
+    "url": "https://buttondown.com/hillelwayne/archive/april-cools-post-new-york-vs-chicago-pizza/",
+    "original_content": "[object Object]",
+    "raw_text": "[object Object]",
+    "relevance_score": 0,
+    "category": [
+      "tech",
+      "formal-methods"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T17:53:29.000Z",
+    "processed_at": ""
+  },
+  {
+    "id": "arxiv-2604.01215v1",
+    "source": "arXiv",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "The Recipe Matters More Than the Kitchen:Mathematical Foundations of the AI Weather Prediction Pipeline",
+    "url": "https://arxiv.org/abs/2604.01215v1",
+    "original_content": "AI weather prediction has advanced rapidly, yet no unified mathematical framework explains what determines forecast skill. Existing theory addresses specific architectural choices rather than the learning pipeline as a whole, while operational evidence from 2023-2026 demonstrates that training methodology, loss function design, and data diversity matter at least as much as architecture selection. This paper makes two interleaved contributions. Theoretically, we construct a framework rooted in approximation theory on the sphere, dynamical systems theory, information theory, and statistical learning theory that treats the complete learning pipeline (architecture, loss function, training strategy, data distribution) rather than architecture alone. We establish a Learning Pipeline Error Decomposition showing that estimation error (loss- and data-dependent) dominates approximation error (architecture-dependent) at current scales. We develop a Loss Function Spectral Theory formalizing MSE-induced spectral blurring in spherical harmonic coordinates, and derive Out-of-Distribution Extrapolation Bounds proving that data-driven models systematically underestimate record-breaking extremes with bias growing linearly in record exceedance. Empirically, we validate these predictions via inference across ten architecturally diverse AI weather models using NVIDIA Earth2Studio with ERA5 initial conditions, evaluating six metrics across 30 initialization dates spanning all seasons. Results confirm universal spectral energy loss at high wavenumbers for MSE-trained models, rising Error Consensus Ratios showing that the majority of forecast error is shared across architectures, and linear negative bias during extreme events. A Holistic Model Assessment Score provides unified multi-dimensional evaluation, and a prescriptive framework enables mathematical evaluation of proposed pipelines before training.",
+    "raw_text": "AI weather prediction has advanced rapidly, yet no unified mathematical framework explains what determines forecast skill. Existing theory addresses specific architectural choices rather than the learning pipeline as a whole, while operational evidence from 2023-2026 demonstrates that training methodology, loss function design, and data diversity matter at least as much as architecture selection. This paper makes two interleaved contributions. Theoretically, we construct a framework rooted in approximation theory on the sphere, dynamical systems theory, information theory, and statistical learning theory that treats the complete learning pipeline (architecture, loss function, training strategy, data distribution) rather than architecture alone. We establish a Learning Pipeline Error Decomposition showing that estimation error (loss- and data-dependent) dominates approximation error (architecture-dependent) at current scales. We develop a Loss Function Spectral Theory formalizing MSE-induced spectral blurring in spherical harmonic coordinates, and derive Out-of-Distribution Extrapolation Bounds proving that data-driven models systematically underestimate record-breaking extremes with bias growing linearly in record exceedance. Empirically, we validate these predictions via inference across ten architecturally diverse AI weather models using NVIDIA Earth2Studio with ERA5 initial conditions, evaluating six metrics across 30 initialization dates spanning all seasons. Results confirm universal spectral energy loss at high wavenumbers for MSE-trained models, rising Error Consensus Ratios showing that the majority of forecast error is shared across architectures, and linear negative bias during extreme events. A Holistic Model Assessment Score provides unified multi-dimensional evaluation, and a prescriptive framework enables mathematical evaluation of proposed pipelines before training.",
+    "relevance_score": 0,
+    "category": [
+      "cs.LG",
+      "cs.AI",
+      "physics.ao-ph"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T17:53:51.000Z",
+    "processed_at": ""
+  },
+  {
+    "id": "arxiv-2604.01216v1",
+    "source": "arXiv",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "LAtent Phase Inference from Short time sequences using SHallow REcurrent Decoders (LAPIS-SHRED)",
+    "url": "https://arxiv.org/abs/2604.01216v1",
+    "original_content": "Reconstructing full spatio-temporal dynamics from sparse observations in both space and time remains a central challenge in complex systems, as measurements can be spatially incomplete and can be also limited to narrow temporal windows. Yet approximating the complete spatio-temporal trajectory is essential for mechanistic insight and understanding, model calibration, and operational decision-making. We introduce LAPIS-SHRED (LAtent Phase Inference from Short time sequence using SHallow REcurrent Decoders), a modular architecture that reconstructs and/or forecasts complete spatiotemporal dynamics from sparse sensor observations confined to short temporal windows. LAPIS-SHRED operates through a three-stage pipeline: (i) a SHRED model is pre-trained entirely on simulation data to map sensor time-histories into a structured latent space, (ii) a temporal sequence model, trained on simulation-derived latent trajectories, learns to propagate latent states forward or backward in time to span unobserved temporal regions from short observational time windows, and (iii) at deployment, only a short observation window of hyper-sparse sensor measurements from the true system is provided, from which the frozen SHRED model and the temporal model jointly reconstruct or forecast the complete spatiotemporal trajectory. The framework supports bidirectional inference, inherits data assimilation and multiscale reconstruction capabilities from its modular structure, and accommodates extreme observational constraints including single-frame terminal inputs. We evaluate LAPIS-SHRED on six experiments spanning complex spatio-temporal physics: turbulent flows, multiscale propulsion physics, volatile combustion transients, and satellite-derived environmental fields, highlighting a lightweight, modular architecture suited for operational settings where observation is constrained by physical or logistical limitations.",
+    "raw_text": "Reconstructing full spatio-temporal dynamics from sparse observations in both space and time remains a central challenge in complex systems, as measurements can be spatially incomplete and can be also limited to narrow temporal windows. Yet approximating the complete spatio-temporal trajectory is essential for mechanistic insight and understanding, model calibration, and operational decision-making. We introduce LAPIS-SHRED (LAtent Phase Inference from Short time sequence using SHallow REcurrent Decoders), a modular architecture that reconstructs and/or forecasts complete spatiotemporal dynamics from sparse sensor observations confined to short temporal windows. LAPIS-SHRED operates through a three-stage pipeline: (i) a SHRED model is pre-trained entirely on simulation data to map sensor time-histories into a structured latent space, (ii) a temporal sequence model, trained on simulation-derived latent trajectories, learns to propagate latent states forward or backward in time to span unobserved temporal regions from short observational time windows, and (iii) at deployment, only a short observation window of hyper-sparse sensor measurements from the true system is provided, from which the frozen SHRED model and the temporal model jointly reconstruct or forecast the complete spatiotemporal trajectory. The framework supports bidirectional inference, inherits data assimilation and multiscale reconstruction capabilities from its modular structure, and accommodates extreme observational constraints including single-frame terminal inputs. We evaluate LAPIS-SHRED on six experiments spanning complex spatio-temporal physics: turbulent flows, multiscale propulsion physics, volatile combustion transients, and satellite-derived environmental fields, highlighting a lightweight, modular architecture suited for operational settings where observation is constrained by physical or logistical limitations.",
+    "relevance_score": 0,
+    "category": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CV"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T17:55:10.000Z",
+    "processed_at": ""
+  },
+  {
+    "id": "arxiv-2604.01220v1",
+    "source": "arXiv",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "Universal YOCO for Efficient Depth Scaling",
+    "url": "https://arxiv.org/abs/2604.01220v1",
+    "original_content": "The rise of test-time scaling has remarkably boosted the reasoning and agentic proficiency of Large Language Models (LLMs). Yet, standard Transformers struggle to scale inference-time compute efficiently, as conventional looping strategies suffer from high computational overhead and a KV cache that inflates alongside model depth. We present Universal YOCO (YOCO-U), which combines the YOCO decoder-decoder architecture with recursive computation to achieve a synergistic effect greater than either alone. Built on the YOCO framework, YOCO-U implements a Universal Self-Decoder that performs multiple iterations via parameter sharing, while confining the iterative process to shallow, efficient-attention layers. This combination yields a favorable capability-efficiency tradeoff that neither YOCO nor recursion achieves independently. The YOCO architecture provides a constant global KV cache and linear pre-filling, while partial recursion enhances representational depth with limited overhead. Together, YOCO-U improves token utility and scaling behavior while maintaining efficient inference. Empirical results confirm that YOCO-U remains highly competitive in general and long-context benchmarks, demonstrating that the integration of efficient-attention architectures and recursive computation is a promising direction for scalable LLMs.",
+    "raw_text": "The rise of test-time scaling has remarkably boosted the reasoning and agentic proficiency of Large Language Models (LLMs). Yet, standard Transformers struggle to scale inference-time compute efficiently, as conventional looping strategies suffer from high computational overhead and a KV cache that inflates alongside model depth. We present Universal YOCO (YOCO-U), which combines the YOCO decoder-decoder architecture with recursive computation to achieve a synergistic effect greater than either alone. Built on the YOCO framework, YOCO-U implements a Universal Self-Decoder that performs multiple iterations via parameter sharing, while confining the iterative process to shallow, efficient-attention layers. This combination yields a favorable capability-efficiency tradeoff that neither YOCO nor recursion achieves independently. The YOCO architecture provides a constant global KV cache and linear pre-filling, while partial recursion enhances representational depth with limited overhead. Together, YOCO-U improves token utility and scaling behavior while maintaining efficient inference. Empirical results confirm that YOCO-U remains highly competitive in general and long-context benchmarks, demonstrating that the integration of efficient-attention architectures and recursive computation is a promising direction for scalable LLMs.",
+    "relevance_score": 0,
+    "category": [
+      "cs.CL"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T17:58:21.000Z",
+    "processed_at": ""
+  },
+  {
+    "id": "arxiv-2604.01221v1",
+    "source": "arXiv",
+    "source_type": "paper",
+    "subscription_id": null,
+    "title": "HippoCamp: Benchmarking Contextual Agents on Personal Computers",
+    "url": "https://arxiv.org/abs/2604.01221v1",
+    "original_content": "We present HippoCamp, a new benchmark designed to evaluate agents' capabilities on multimodal file management. Unlike existing agent benchmarks that focus on tasks like web interaction, tool use, or software automation in generic settings, HippoCamp evaluates agents in user-centric environments to model individual user profiles and search massive personal files for context-aware reasoning. Our benchmark instantiates device-scale file systems over real-world profiles spanning diverse modalities, comprising 42.4 GB of data across over 2K real-world files. Building upon the raw files, we construct 581 QA pairs to assess agents' capabilities in search, evidence perception, and multi-step reasoning. To facilitate fine-grained analysis, we provide 46.1K densely annotated structured trajectories for step-wise failure diagnosis. We evaluate a wide range of state-of-the-art multimodal large language models (MLLMs) and agentic methods on HippoCamp. Our comprehensive experiments reveal a significant performance gap: even the most advanced commercial models achieve only 48.3% accuracy in user profiling, struggling particularly with long-horizon retrieval and cross-modal reasoning within dense personal file systems. Furthermore, our step-wise failure diagnosis identifies multimodal perception and evidence grounding as the primary bottlenecks. Ultimately, HippoCamp exposes the critical limitations of current agents in realistic, user-centric environments and provides a robust foundation for developing next-generation personal AI assistants.",
+    "raw_text": "We present HippoCamp, a new benchmark designed to evaluate agents' capabilities on multimodal file management. Unlike existing agent benchmarks that focus on tasks like web interaction, tool use, or software automation in generic settings, HippoCamp evaluates agents in user-centric environments to model individual user profiles and search massive personal files for context-aware reasoning. Our benchmark instantiates device-scale file systems over real-world profiles spanning diverse modalities, comprising 42.4 GB of data across over 2K real-world files. Building upon the raw files, we construct 581 QA pairs to assess agents' capabilities in search, evidence perception, and multi-step reasoning. To facilitate fine-grained analysis, we provide 46.1K densely annotated structured trajectories for step-wise failure diagnosis. We evaluate a wide range of state-of-the-art multimodal large language models (MLLMs) and agentic methods on HippoCamp. Our comprehensive experiments reveal a significant performance gap: even the most advanced commercial models achieve only 48.3% accuracy in user profiling, struggling particularly with long-horizon retrieval and cross-modal reasoning within dense personal file systems. Furthermore, our step-wise failure diagnosis identifies multimodal perception and evidence grounding as the primary bottlenecks. Ultimately, HippoCamp exposes the critical limitations of current agents in realistic, user-centric environments and provides a robust foundation for developing next-generation personal AI assistants.",
+    "relevance_score": 0,
+    "category": [
+      "cs.AI",
+      "cs.CV"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-04-01T17:58:33.000Z",
+    "processed_at": ""
+  },
+  {
+    "id": "atom-simon-willison-6acdba8f6a39",
+    "source": "Simon Willison",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "datasette-llm 0.1a6",
+    "url": "https://simonwillison.net/2026/Apr/1/datasette-llm-2/#atom-everything",
+    "original_content": "Release: datasette-llm 0.1a6 The same model ID no longer needs to be repeated in both the default model and allowed models lists - setting it as a default model automatically adds it to the allowed models list. #6 Improved documentation for Python API usage . Tags: llm , datasette",
+    "raw_text": "Release: datasette-llm 0.1a6 The same model ID no longer needs to be repeated in both the default model and allowed models lists - setting it as a default model automatically adds it to the allowed models list. #6 Improved documentation for Python API usage . Tags: llm , datasette",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "ai",
+      "python"
+    ],
+    "summary": "Release: datasette-llm 0.1a6 The same model ID no longer needs to be repeated in both the default model and allowed models lists - setting it as a default model automatically adds it to the allowed models list. #6 Improved documentation for Python API usage . Tags: llm , datasette",
+    "insights": [],
+    "created_at": "2026-04-01T23:01:37",
+    "processed_at": "2026-04-03 06:57:30"
+  }
+]

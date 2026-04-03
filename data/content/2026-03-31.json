@@ -1,0 +1,413 @@
+[
+  {
+    "id": "rss-martin-alderson-aHR0cHM6Ly9t-0",
+    "source": "Martin Alderson",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Telnyx, LiteLLM and Axios: the supply chain crisis",
+    "url": "https://martinalderson.com/posts/telnyx-litellm-axios-supply-chain-crisis/?utm_source=rss&utm_medium=rss&utm_campaign=feed",
+    "original_content": "A cascading wave of supply chain attacks has hit npm and PyPI in under two weeks. LLMs are making it worse, and current mitigations arent enough.",
+    "raw_text": "[object Object]",
+    "relevance_score": 0,
+    "category": [
+      "tech"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-03-31T00:00:00.000Z",
+    "processed_at": ""
+  },
+  {
+    "id": "rss-rakhim-aHR0cHM6Ly9y-0",
+    "source": "Rakhim",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Making human languages irrelevant",
+    "url": "https://rakhim.exotext.com/making-human-languages-irrelevant",
+    "original_content": "If global large-scale human communication continues to be concentrated within large social media platforms and content providers like YouTube, human languages may become sort of irrelevant in that space. Sometimes I Google for something and see a Reddit result in Finnish. I live in Finland, so it makes sense when the search engine prioritizes such results, but most of the time the actual Reddit thread is not in Finnish at all. Reddit can translate any thread with a simple URL param e.g. ?tl=fi f",
+    "raw_text": "If global large-scale human communication continues to be concentrated within large social media platforms and content providers like YouTube, human languages may become sort of irrelevant in that space. Sometimes I Google for something and see a Reddit result in Finnish. I live in Finland, so it makes sense when the search engine prioritizes such results, but most of the time the actual Reddit thread is not in Finnish at all. Reddit can translate any thread with a simple URL param e.g. ?tl=fi for Finnish. These dynamically generated pages are somehow indexed by Google, so a thread like this is shown like this instead for me. Often, a thread from a primarily English-speaking subreddit would randomly contain comments in different languages. YouTube sometimes serves videos in a language different from your locale and automatically enables AI-powered auto-dubbing . I suspect many people never notice these small labels and hidden explanations. The mixing of different languages in Reddit threads and YouTube comments is probably the result of these automated translations. It is not that someone decided to reply in Spanish to an English thread; rather, they hadnt seen the English thread at all – it was in Spanish for them. When I play multiplayer online games with proximity voice chat enabled, I often meet people who would just start talking to me in their native language. Perhaps they just get paired with their local players most of the time, so they got used to it. But perhaps people already start expecting that they can speak any language, and the technology somehow takes care of it all? Probably not yet, but were close. This reminds me of the Babel fish from Douglas Adams The Hitchhikers Guide to the Galaxy .",
+    "relevance_score": 0,
+    "category": [
+      "tech",
+      "design"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-03-31T00:00:00.000Z",
+    "processed_at": ""
+  },
+  {
+    "id": "rss-joan-westenberg-aHR0cHM6Ly93-2",
+    "source": "Joan Westenberg",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "The World's First Bullshit",
+    "url": "https://www.joanwestenberg.com/the-worlds-first-bullshit/",
+    "original_content": "I opened Twitter this morning and three different startups were announcing \"the world&apos;s first\" something. An AI CMO, an autonomous AI marketer, and a design agent \"with taste,\" which is a phrase that made me close my laptop for about ten minutes. None of",
+    "raw_text": "[object Object]",
+    "relevance_score": 0,
+    "category": [
+      "tech",
+      "culture"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-03-31T00:20:34.000Z",
+    "processed_at": ""
+  },
+  {
+    "id": "rss-troy-hunt-aHR0cHM6Ly93-0",
+    "source": "Troy Hunt",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Weekly Update 497",
+    "url": "https://www.troyhunt.com/weekly-update-497/",
+    "original_content": "Day by day, I find we&apos;re eeking more goodness out of OpenClaw and finding the sweet spot between what the humans do well and the agent can run off and do on its own. Significantly, we&apos;re shifting more and more of the workload to the latter",
+    "raw_text": "[object Object]",
+    "relevance_score": 0,
+    "category": [
+      "security",
+      "tech"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-03-31T00:41:44.000Z",
+    "processed_at": ""
+  },
+  {
+    "id": "github-1197029054",
+    "source": "GitHub",
+    "source_type": "repo",
+    "subscription_id": null,
+    "title": "sanbuphy/learn-coding-agent: Research on Coding Agents",
+    "url": "https://github.com/sanbuphy/learn-coding-agent",
+    "original_content": "⭐ 10798 stars | Research on Coding Agents",
+    "raw_text": "Research on Coding Agents",
+    "relevance_score": 9.0,
+    "category": [
+      "AI研究",
+      "开发者工具",
+      "前端技术"
+    ],
+    "summary": "这是一个关于编码代理（Coding Agents）的研究项目。该项目专注于探索和研究能够自动化编程任务的AI代理系统，旨在理解和开发能够辅助或自动完成代码编写、调试和优化等任务的智能系统。",
+    "insights": [
+      "**编码自动化研究方向**：项目聚焦于如何利用AI技术构建能够理解编程需求并自动生成代码的智能代理",
+      "**学习型系统**：从项目名称\"learn-coding-agent\"可以看出，这是一个强调学习和改进能力的编码代理系统",
+      "**开源研究项目**：作为GitHub上的公开项目，为编码AI领域的研究者和开发者提供了学习和参考的资源",
+      "**实用价值**：此类研究对提升软件开发效率、降低编程门槛具有重要意义，可能应用于代码补全、bug修复、代码重构等场景"
+    ],
+    "created_at": "2026-03-31T09:07:08.000Z",
+    "processed_at": "2026-04-02T07:11:03.716Z"
+  },
+  {
+    "id": "rss-pluralistic-aHR0cHM6Ly9w-2",
+    "source": "Pluralistic",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Pluralistic: State Dems must stop ICE from stealing the midterms (31 Mar 2026)",
+    "url": "https://pluralistic.net/2026/03/31/actual-federalist-society/",
+    "original_content": "Today's links State Dems must stop ICE from stealing the midterms: The literal least they can do. Hey look at this: Delights to delectate. Object permanence: Power-strip bug; \"Peaceful Baghdad\" was actually Istanbul; Disney pirates Disney font; AMC v day-and-date; SF growth chart; Cuba’s meritocratic free med schools; Trump strategist v Trump; Monopoly so fragile. Upcoming appearances: Montreal, London, Berlin, NYC, Hay-on-Wye, London. Recent appearances: Where I've been. Latest books: You keep ",
+    "raw_text": "Today's links State Dems must stop ICE from stealing the midterms: The literal least they can do. Hey look at this: Delights to delectate. Object permanence: Power-strip bug; \"Peaceful Baghdad\" was actually Istanbul; Disney pirates Disney font; AMC v day-and-date; SF growth chart; Cuba’s meritocratic free med schools; Trump strategist v Trump; Monopoly so fragile. Upcoming appearances: Montreal, London, Berlin, NYC, Hay-on-Wye, London. Recent appearances: Where I've been. Latest books: You keep readin' em, I'll keep writin' 'em. Upcoming books: Like I said, I'll keep writin' 'em. Colophon: All the rest. State Dems must stop ICE from stealing the midterms (permalink) Donald Trump has announced his intention to steal the midterms with a voter suppression law that would ban the mail-in voting that he himself uses (which he claims is not fit for purpose). This voter suppression campaign is Trump's number one policy priority, and the Safeguard American Voter Eligibility (SAVE) Act that would accomplish this is behind the shutdown and aviation chaos that has hamstrung the country for weeks: https://www.thenation.com/article/politics/save-act-voting-rights-congress/ SAVE requires voters to show up at the polls in possession of ID like birth certificates and passports, and it will fill our polling places with armed, masked ICE agents you know, the guys who just randomly kidnap and murder people for having accents, speaking a language other than English, or being visibly brown. During Trump's aviation crisis, Trump heard about \"Linda,\" a woman who called into a far right talk-radio program to suggest that ICE be deployed to American airports to backstop the TSA agents who'd stopped showing up for work on the very reasonable grounds that they hadn't been paid in a month: https://www.thedailybeast.com/trump-may-have-got-his-ice-airport-idea-from-linda-from-arizona/ Trump loved the idea and the next thing you knew, ICE was at the airports, hanging around like a bad smell and being totally useless. It turns out that the TSA is a trained workforce, unlike ICE, who receive precisely 47 days of training as a kind of MAGA Kabbalah (Trump is the 47th president): https://www.wired.com/story/ice-agents-frustrate-airport-employees-as-shutdown-drags-on/ ICE's uselessness at the country's airports was beyond farcical, though, as ever, The Onion found and nailed the farce in \"How ICE is assisting TSA\": https://theonion.com/how-ice-is-assisting-tsa/ Overseeing the removal of shoes, belts, and abuelas Confiscating, then brandishing dangerous items Assuming all milling-around duties Culling weaker travelers when lines get too long Commiserating about failing the police academy Drinking any shampoo that exceeds the carry-on volume limit Simplifying the customs interview to one question about skull size But having ICE in the airports does serve one purpose. As Steve Bannon gloated on his podcast, ICE in the airports is a way to soften people up for ICE in the polling station",
+    "relevance_score": 0,
+    "category": [
+      "tech",
+      "policy"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-03-31T10:00:59.000Z",
+    "processed_at": ""
+  },
+  {
+    "id": "github-1197124958",
+    "source": "GitHub",
+    "source_type": "repo",
+    "subscription_id": null,
+    "title": "ultrmgns/claude-private: Claude Code without any telemetry - the perfect cli to combo with CCR",
+    "url": "https://github.com/ultrmgns/claude-private",
+    "original_content": "⭐ 291 stars | Claude Code without any telemetry - the perfect cli to combo with CCR",
+    "raw_text": "Claude Code without any telemetry - the perfect cli to combo with CCR",
+    "relevance_score": 8.0,
+    "category": [
+      "前端技术",
+      "开发者工具"
+    ],
+    "summary": "这是一个名为 claude-private 的开源项目，提供了一个无遥测数据收集的 Claude Code 命令行工具。该项目旨在为用户提供一个注重隐私保护的 Claude CLI 版本，特别适合与 CCR (Claude Code Runner) 配合使用，让开发者可以在本地环境中使用 Claude AI 能力而不用担心数据被收集。",
+    "insights": [
+      "**隐私优先设计**：完全移除了遥测功能，确保用户在使用 Claude AI 服务时不会有任何使用数据被收集或上传",
+      "**CLI 工具定位**：专注于命令行界面体验，为开发者提供轻量级的 Claude 集成方案",
+      "**CCR 协同优化**：特别强调与 CCR (Claude Code Runner) 的配合使用，表明这是一个面向代码开发场景的工具链组件",
+      "**开源透明**：作为开源项目，代码公开可审计，用户可以验证其隐私保护承诺的真实性"
+    ],
+    "created_at": "2026-03-31T10:50:44.000Z",
+    "processed_at": "2026-04-02T02:16:48.827Z"
+  },
+  {
+    "id": "rss-dave-farquhar-aHR0cHM6Ly9k-3",
+    "source": "Dave Farquhar",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Quantum hard drives",
+    "url": "https://dfarq.homeip.net/quantum-hard-drives/?utm_source=rssutm_medium=rssutm_campaign=quantum-hard-drives",
+    "original_content": "Quantum was one of several hard drive manufacturers who thrived in the shadow of Seagate and Western Digital in the late 1980s and through the 1990s. On March 31, 2001, Quantum merged with Maxtor, another smaller, independent drive manufacturer. The The post Quantum hard drives appeared first on The Silicon Underground .",
+    "raw_text": "[object Object]",
+    "relevance_score": 0,
+    "category": [
+      "tech"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-03-31T11:00:49.000Z",
+    "processed_at": ""
+  },
+  {
+    "id": "rss-john-d.-cook-aHR0cHM6Ly93-2",
+    "source": "John D. Cook",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Morse code tree",
+    "url": "https://www.johndcook.com/blog/2026/03/31/morse-code-tree/",
+    "original_content": "Peter Vogel posted the following image on X yesterday. The receive side of the coin is a decision tree for decoding Morse code. The shape is what makes this one interesting. Decision trees are typically not very compact. Each branch is usually on its own horizontal level, with diagonal lines going down from each node [] The post Morse code tree first appeared on John D. Cook .",
+    "raw_text": "Peter Vogel posted the following image on X yesterday. The receive side of the coin is a decision tree for decoding Morse code. The shape is what makes this one interesting. Decision trees are typically not very compact. Each branch is usually on its own horizontal level, with diagonal lines going down from each node [] The post Morse code tree first appeared on John D. Cook .",
+    "relevance_score": 0,
+    "category": [
+      "math",
+      "programming"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-03-31T12:12:31.000Z",
+    "processed_at": ""
+  },
+  {
+    "id": "rss-steve-blank-aHR0cHM6Ly9z-0",
+    "source": "Steve Blank",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Solving Yesterdays Problems Will Kill You",
+    "url": "https://steveblank.com/2026/03/31/solving-yesterdays-problems-will-kill-you/",
+    "original_content": "Join us at The 7th Annual Red Queen Conference April 22 -23 Silicon Valley How do Portfolio Acquisition Executives and COCOMs ensure they’re working on the right problem with the right priority before locking in a requirement? Discuss, share and prototype Innovation Targeting concepts with your peers. Get hands-on with the companies and venture []",
+    "raw_text": "Join us at The 7th Annual Red Queen Conference April 22 -23 Silicon Valley How do Portfolio Acquisition Executives and COCOMs ensure they’re working on the right problem with the right priority before locking in a requirement? Discuss, share and prototype Innovation Targeting concepts with your peers. Get hands-on with the companies and venture []",
+    "relevance_score": 0,
+    "category": [
+      "startup",
+      "business"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-03-31T13:00:48.000Z",
+    "processed_at": ""
+  },
+  {
+    "id": "github-1197287945",
+    "source": "GitHub",
+    "source_type": "repo",
+    "subscription_id": null,
+    "title": "leookun/cursor-byok-server: Cursor 公益自定义 API，公益 Tab，无 Pro 自定义 API 服务端",
+    "url": "https://github.com/leookun/cursor-byok-server",
+    "original_content": "⭐ 43 stars | Cursor 公益自定义 API，公益 Tab，无 Pro 自定义 API 服务端",
+    "raw_text": "Cursor 公益自定义 API，公益 Tab，无 Pro 自定义 API 服务端",
+    "relevance_score": 0,
+    "category": [
+      "go",
+      "github"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-03-31T13:18:13.000Z",
+    "processed_at": ""
+  },
+  {
+    "id": "rss-the-old-new-thing-aHR0cHM6Ly9k-1",
+    "source": "The Old New Thing",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Before you check if an update caused your problem, check that it wasnt a problem before the update",
+    "url": "https://devblogs.microsoft.com/oldnewthing/20260331-00/?p=112177",
+    "original_content": "It was going to be like that when I got here. The post Before you check if an update caused your problem, check that it wasnt a problem before the update appeared first on The Old New Thing .",
+    "raw_text": "It was going to be like that when I got here. The post Before you check if an update caused your problem, check that it wasnt a problem before the update appeared first on The Old New Thing .",
+    "relevance_score": 0,
+    "category": [
+      "tech",
+      "windows",
+      "programming"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-03-31T14:00:00.000Z",
+    "processed_at": ""
+  },
+  {
+    "id": "rss-john-d.-cook-aHR0cHM6Ly93-1",
+    "source": "John D. Cook",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Quantum Y2K",
+    "url": "https://www.johndcook.com/blog/2026/03/31/quantum-y2k/",
+    "original_content": "Im skeptical that quantum computing will become practical. However, if it does become practical before were prepared, the worlds financial system could collapse. Everyone agrees we should prepare for quantum computing, even those of us who doubt it will be practical any time soon. Quantum computers exist now, but the question is when and if [] The post Quantum Y2K first appeared on John D. Cook .",
+    "raw_text": "Im skeptical that quantum computing will become practical. However, if it does become practical before were prepared, the worlds financial system could collapse. Everyone agrees we should prepare for quantum computing, even those of us who doubt it will be practical any time soon. Quantum computers exist now, but the question is when and if [] The post Quantum Y2K first appeared on John D. Cook .",
+    "relevance_score": 0,
+    "category": [
+      "math",
+      "programming"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-03-31T14:43:06.000Z",
+    "processed_at": ""
+  },
+  {
+    "id": "rss-google-ai-blog-32a41f63ff92",
+    "source": "Google AI Blog",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Build with Veo 3.1 Lite, our most cost-effective video generation model",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/veo-3-1-lite/",
+    "original_content": "Veo 3.1 Lite is now available in paid preview through the Gemini API and for testing in Google AI Studio.",
+    "raw_text": "Veo 3.1 Lite is now available in paid preview through the Gemini API and for testing in Google AI Studio.",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "google",
+      "official"
+    ],
+    "summary": "Veo 3.1 Lite is now available in paid preview through the Gemini API and for testing in Google AI Studio.",
+    "insights": [],
+    "created_at": "2026-03-31T16:00:00",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "rss-meta-engineering-32b8bc58cedf",
+    "source": "Meta Engineering",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Meta Adaptive Ranking Model: Bending the Inference Scaling Curve to Serve LLM-Scale Models for Ads",
+    "url": "https://engineering.fb.com/2026/03/31/ml-applications/meta-adaptive-ranking-model-bending-the-inference-scaling-curve-to-serve-llm-scale-models-for-ads/",
+    "original_content": "Meta continues to lead the industry in utilizing groundbreaking AI Recommendation Systems (RecSys) to deliver better experiences for people, and better results for advertisers. To reach the next frontier of performance, we are scaling Meta’s Ads Recommender runtime models to LLM-scale &#38; complexity to further a deeper understanding of people’s interests and intent. This increase [...] Read More... The post Meta Adaptive Ranking Model: Bending the Inference Scaling Curve to Serve LLM-Scale Mod",
+    "raw_text": "Meta continues to lead the industry in utilizing groundbreaking AI Recommendation Systems (RecSys) to deliver better experiences for people, and better results for advertisers. To reach the next frontier of performance, we are scaling Meta’s Ads Recommender runtime models to LLM-scale &amp; complexity to further a deeper understanding of people’s interests and intent. This increase in scale &amp; complexity exacerbates a fundamental &#8220;inference trilemma&#8221;: the challenge of balancing the increased model complexity and associated need for compute and memory with the low latency and cost efficiency required for a global service serving billions of people. To overcome this, we have developed the Meta Adaptive Ranking Model, which effectively bends the inference scaling curve with high ROI and industry-leading efficiency. Adaptive Ranking Model replaces a &#8220;one-size-fits-all&#8221; inference approach with intelligent request routing. By dynamically aligning model complexity with a rich understanding of a person’s context and intent, the system ensures every request is served by the most effective &amp; efficient model. This allows Meta Ads to maintain the strict, sub-second latency the platform depends on while providing a high-quality experience for every person. Serving LLM-scale models at Meta’s scale required a fundamental rethink of the inference stack, driven by three key innovations: Inference-Efficient Model Scaling : By shifting to a request-centric architecture, Adaptive Ranking Model serves a LLM-scale &amp; complexity model at sub-second latency, enabling a more sophisticated understanding of a person’s interests and intent without compromising the experience. Model/System Co-Design : By developing hardware-aware model architectures that align model design with underlying hardware system and silicon’s capabilities and limitations, Adaptive Ranking Model significantly improves hardware utilization in heterogeneous hardware environments. Reimagined Serving Infrastructure : Leveraging multi-card architectures and hardware-specific optimizations, Adaptive Ranking Model enables O(1T) parameter scaling, allowing us to serve the LLM-scale runtime RecSys models with unprecedented efficiency. By further integrating LLM-scale intelligence into our ads stack, Adaptive Ranking Model delivers a significant increase in ad conversions and advertiser value while maintaining system-wide computational efficiency. This ensures superior performance for businesses of all sizes. Since launching on Instagram in Q4 2025, Adaptive Ranking Model has delivered a +3% increase in ad conversions and +5% increase in ad click through rate for targeted users. Introducing Meta Adaptive Ranking Model Serving LLM-scale &amp; complexity models in a real-time ads recommendation environment requires resolving a fundamental tension between model complexity and system efficiency. Unlike LLM applications such as chatbots, where response times are measured in seconds",
+    "relevance_score": 8.0,
+    "category": [
+      "ai",
+      "meta",
+      "engineering"
+    ],
+    "summary": "Meta continues to lead the industry in utilizing groundbreaking AI Recommendation Systems (RecSys) to deliver better experiences for people, and better results for advertisers. To reach the next frontier of performance, we are scaling Meta’s Ads Recommender runtime models to LLM-scale &#38; complexi",
+    "insights": [],
+    "created_at": "2026-03-31T16:00:17",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "atom-eli-bendersky-473b74ea563c",
+    "source": "Eli Bendersky",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Summary of reading: January - March 2026",
+    "url": "https://eli.thegreenplace.net/2026/summary-of-reading-january-march-2026/",
+    "original_content": "&quot;Intellectuals and Society&quot; by Thomas Sowell - a collection of essays in which Sowell criticizes &quot;intellectuals&quot;, by which he mostly means left-leaning thinkers and opinions. Interesting, though certainly very biased. This book is from 2009 and focuses mostly on early and mid 20th century; yes, history certainly rhymes. &quot;The Hacker and the State: Cyber Attacks and the New Normal of Geopolitics&quot; by Ben Buchanan - a pretty good overview of some of the the major cyber-",
+    "raw_text": "&quot;Intellectuals and Society&quot; by Thomas Sowell - a collection of essays in which Sowell criticizes &quot;intellectuals&quot;, by which he mostly means left-leaning thinkers and opinions. Interesting, though certainly very biased. This book is from 2009 and focuses mostly on early and mid 20th century; yes, history certainly rhymes. &quot;The Hacker and the State: Cyber Attacks and the New Normal of Geopolitics&quot; by Ben Buchanan - a pretty good overview of some of the the major cyber-attacks done by states in the past 15 years. It doesn't go very deep because it's likely just based on the bits and pieces that leaked to the press; for the same reason, the coverage is probably very partial. Still, it's an interesting and well-researched book overall. &quot;A Primate's Memoir: A Neuroscientist’s Unconventional Life Among the Baboons&quot; by Robert Sapolsky - an account of the author's years spent researching baboons in Kenya. Only about a quarter of the book is really about baboons, though; mostly, it's about the author's adventures in Africa (some of them surely inspired by an intense death wish) and his interaction with the local peoples. I really liked this book overall - it's engaging, educational and funny. Should try more books by this author. &quot;Seeing Like a State&quot; by James C. Scott - the author attempts to link various events in history to discuss &quot;Why do well-intentioned plans for improving the human condition go tragically awry?&quot;; discussing large state plans like scientific forest management, building pre-planned cities and mono-culture agriculture. Some of the chapters are interesting, but overall I'm not sure I'm sold on the thesis. Specifically, the author mixes in private enterprises (like industrial agriculture in the West) with state-driven initiatives in puzzling ways. &quot;Karate-Do: My Way of Life&quot; by Gichin Funakoshi - short autobiography from the founder of modern Shotokan Karate. It's really interesting to find out how recent it all is - prior to WWII, Karate was an obscure art practiced mostly in Okinawa and a bit in other parts of Japan. The author played a critical role in popularizing Karate and spreading it out of Okinawa in the first half of the 20th century. The writing is flowing and succinct - I really liked this book. &quot;A Tale of a Ring&quot; by Ilan Sheinfeld (read in Hebrew) - a multi-generational fictional saga of two families who moved from Danzig (today Gdansk in Poland) to Buenos Aires in late 19th century, with a touch of magic. Didn't like this one very much. &quot;The Wide Wide Sea: Imperial Ambition, First Contact and the Fateful Final Voyage of Captain James Cook&quot; by Hampton Sides - a very interesting account of Captain Cook's last voyage (the one tasked with finding a northwest passage around Canada). The book has a strong focus on his interaction with Polynesian peoples along the way, especially on Hawaii (which he was the first European to visit). &quot;The ",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "programming"
+    ],
+    "summary": "&quot;Intellectuals and Society&quot; by Thomas Sowell - a collection of essays in which Sowell criticizes &quot;intellectuals&quot;, by which he mostly means left-leaning thinkers and opinions. Interesting, though certainly very biased. This book is from 2009 and focuses mostly on early and mid 20t",
+    "insights": [],
+    "created_at": "2026-03-31T17:34:00",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "atom-oldvcr-9b487b29c886",
+    "source": "OldVCR",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Mini-review: David Pogue's Apple: The First 50 Years",
+    "url": "https://oldvcr.blogspot.com/feeds/2653444124126007610/comments/default",
+    "original_content": "I almost never buy e-books, but I decided to spring for an electronic copy of David Pogue's Apple: The First 50 Years to see if I even wanted to bother with the hardcover. Previously the essential tome on Apple (and especially Mac) history was Owen Linzmeyer's Apple Confidential , still on my shelf in the well-thumbed 2.0 paperback. I was prepared to find this book lightweight on the technical side and I expected that it would concentrate far more on Apple the electronics company than Apple the ",
+    "raw_text": "I almost never buy e-books, but I decided to spring for an electronic copy of David Pogue's Apple: The First 50 Years to see if I even wanted to bother with the hardcover. Previously the essential tome on Apple (and especially Mac) history was Owen Linzmeyer's Apple Confidential , still on my shelf in the well-thumbed 2.0 paperback. I was prepared to find this book lightweight on the technical side and I expected that it would concentrate far more on Apple the electronics company than Apple the computer company (after all, the cover's a big flippin' clickwheel). I was pleasantly surprised to be wrong. While I'm much less interested in the history of Apple after, say, the Intel transition (because I'm still bitter), over half the book's 540-odd content pages are dedicated to Apple prior to Jobs' 1997 return. For example, relevant to our recent article , Pogue provides a solid discussion of the Apple-1 (including the little-known Computer Conversor 4000) and a lot of nice period photographs of Jobs and Woz working on it. The Apple III segment is extremely well-written, with even a thermal photo of just how hot that darn thing ran, plus a complex discussion of the Lisa and of course many pages on Jef Raskin and the early Macintosh . Later on, there's a decent section on Copland and its technical aspects that isn't just a rehash of the Wikipedia article, whereas Linzmeyer mostly considers it from the perspective of the events leading to Jobs' return, and Pogue also gives a small but pithy ELI5 on OpenDoc as well. Pogue even has a picture of the iguana iguana powersurgius image embedded in the PowerSurge and Apple Network Server ROMs , and some interesting photographs of early design prototypes of Spartacus, or what would become the Twentieth Anniversary Macintosh. While Pogue doesn't speak much about the Apple Network Server , our favourite Apple system here at Floodgap (because one of them used to serve Floodgap), he at least namedrops it along with the cancelled Power Mac 9700, though oddly he completely omits any mention of the Workgroup Servers (on the other hand, while Linzmeyer provides the codenames for these systems, neither the 9700 nor \"Power Express\" appear in the earlier text). Another notable chapter is \"Moonshots\" (chapter 21). This is aggravatingly brief, but if you ever wanted to see the Cray that John Sculley bought to design the Aquarius RISC chip , you can see it there (love the purple), along with a nice picture of the Jaguar mockup. Kaleida and Taligent get short perfunctory mentions, but they didn't get a lot of print in Owen's text either, and of course Star Trek gets a decent sidebar. The prototype photographs, in fact, are probably the best reason to buy the book. There's a nice photo of the TIM mockup (a corruption of \"Time To Market\") which used a Macintosh Portable to run the show, but was in fact the design prototype for the PowerBook 100. On the other hand, Pogue calls Gary Davidian's early 68K emulator Cognac, but I don",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "retro"
+    ],
+    "summary": "I almost never buy e-books, but I decided to spring for an electronic copy of David Pogue's Apple: The First 50 Years to see if I even wanted to bother with the hardcover. Previously the essential tome on Apple (and especially Mac) history was Owen Linzmeyer's Apple Confidential , still on my shelf ",
+    "insights": [],
+    "created_at": "2026-03-31T19:17:00",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "github-1197732991",
+    "source": "GitHub",
+    "source_type": "repo",
+    "subscription_id": null,
+    "title": "Rangizingo/cc-cache-fix: No description",
+    "url": "https://github.com/Rangizingo/cc-cache-fix",
+    "original_content": "⭐ 384 stars | No description",
+    "raw_text": "",
+    "relevance_score": 4.0,
+    "category": [
+      "前端技术",
+      "AI研究"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-03-31T20:48:54.000Z",
+    "processed_at": "2026-04-02T02:15:32.939Z"
+  },
+  {
+    "id": "atom-chris-siebenmann-3e95110a936f",
+    "source": "Chris Siebenmann",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "Updating Ubuntu packages that you have local changes for with dgit",
+    "url": "https://utcc.utoronto.ca/~cks/space/blog/linux/DgitUpdatingDebsWithChanges",
+    "original_content": "Suppose, not entirely hypothetically, that you've made local changes to an Ubuntu package using dgit and now Ubuntu has come out with an update to that package that you want to switch to, with your local changes still on top. Back when I wrote about moving local changes to a new Ubuntu release with dgit , I wrote an appendix with a theory of how to do this, based on a conversation . Now that I've actually done this, I've discovered that there is a minor variation and I'm going to write it down e",
+    "raw_text": "Suppose, not entirely hypothetically, that you've made local changes to an Ubuntu package using dgit and now Ubuntu has come out with an update to that package that you want to switch to, with your local changes still on top. Back when I wrote about moving local changes to a new Ubuntu release with dgit , I wrote an appendix with a theory of how to do this, based on a conversation . Now that I've actually done this, I've discovered that there is a minor variation and I'm going to write it down explicitly (with additional notes because I forgot some things between then and now). I'll assume we're starting from an existing dgit based repository with a full setup of local changes , including an updated debian/changelog. Our first step, for safety, is to make a branch to capture the current state of our repository. I suggest you name this branch after the current upstream package version that you're on top of, for example if the current upstream version you're adding local changes to can be summarized as 'ubuntu2.6': git branch cslab-2.6 Making a branch allows you to use ' git diff cslab-2.6.. ' later to see exactly what changed between your versions. A useful thing to do here is to exclude the 'debian/' directory from diffs, which can be done with ' git diff cslab-2.6.. -- . :!debian ', although your shell may require you to quote the '!' ( cf ). Then we need to use dgit to fetch the upstream updates: dgit fetch -d ubuntu We need to use '-d ubuntu', at least in current versions of dgit, or 'dgit fetch' gets confused and fails. At this point we have the updated upstream in the remote tracking branch 'dgit/dgit/jammy,-security,-updates' but our local tree is still not updated. (All of dgit's remote tracking branches start with 'dgit/dgit/', while all of its local branches start with just 'dgit/'. This is less than optimal for my clarity.) Normally you would now rebase to shift your local changes on top of the new upstream, but we don't want to immediately do that. The problem is that our top commit is our own dgit-based change to debian/changelog , and we don't want to rebase that commit; instead we'll make a new version of it after we rebase our real local changes. So our first step is to discard our top commit: git reset --hard HEAD~ (In my original theory I didn't realize we had to drop this commit before the rebase, not after, because otherwise things get confused. At a minimum, you wind up with debian/changelog out of order, and I don't know if dropping your HEAD commit after the rebase works right. It's possible you might get debian/changelog rebase conflicts as well, so I feel dropping your debian/changelog change before the rebase is cleaner.) Now we can rebase, for which the simpler two-argument form does work (but not plain rebasing , or at least I didn't bother testing plain rebasing): git rebase dgit/dgit/jammy,-security,-updates dgit/jammy,-security,-updates (If you are wondering how this command possibly works, as I was part way through ",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "unix"
+    ],
+    "summary": "Suppose, not entirely hypothetically, that you've made local changes to an Ubuntu package using dgit and now Ubuntu has come out with an update to that package that you want to switch to, with your local changes still on top. Back when I wrote about moving local changes to a new Ubuntu release with ",
+    "insights": [],
+    "created_at": "2026-03-31T22:07:16",
+    "processed_at": "2026-04-03 06:57:30"
+  },
+  {
+    "id": "rss-joan-westenberg-34aba885971b",
+    "source": "Joan Westenberg",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "The Entire Internet Is a UGC Reaction Video Now",
+    "url": "https://www.joanwestenberg.com/the-entire-internet-is-a-ugc-reaction-video-now/",
+    "original_content": "I keep a folder in Apple Notes called &#x201C;cursed websites,&#x201D; where I save various artefacts that make me feel like the social contract has dissolved. Call it an act of self-loathing. Call it collecting evidence of the fall. Dansugc.com went straight into the folder this morning. It&amp;",
+    "raw_text": "I keep a folder in Apple Notes called &#x201C;cursed websites,&#x201D; where I save various artefacts that make me feel like the social contract has dissolved. Call it an act of self-loathing. Call it collecting evidence of the fall. Dansugc.com went straight into the folder this morning. It&#x2019;s a site where marketers // entrepreneurs (and I find the line between those two groups has become blurred to the point of being illegible) can buy pre-recorded &#x201C;Reaction&#x201D; videos for $3 apiece. You browse a library of 2k clips, sorted by emotion (shocked! Happy! Crying! Excitement!), pick a face you find particularly appealing, download a 5-10 second clip of a stranger performing surprise // delight at nothing in particular, and splice it into your own content. The idea is to make it look like an actual someone had an actual emotional response to your app on TikTok. Custom orders run to $8 and let you specify outfits, emotional arcs etc. The tagline reads: &#x201C;100% Real Humans. Zero AI.&#x201D; And I think that tells you almost everything you need to know about where we are. And where we are is a place where &#x201C;at least the fake fuckery was produced by a biological organism&#x201D; counts as a premium feature. The pitch for selling manufactured authenticity at scale is that at least the people in the factory are still real people. That&#x2019;s the floor. That&#x2019;s what passes for premium. We are drowning in content that is functionally the same as so many designer handbags stitched up alongside so many dupes. The internet is the most powerful communication technology in human history, and we&#x2019;re using it to sell each other $3 clips of faked surprise. I don&#x2019;t blame Dan, if that&#x2019;s even his real name. He&#x2019;s running a business filling a niche. He&#x2019;s recognised that the entire internet advertising &#x201C;ecosystem&#x201D; now runs on simulated, casual, spontaneous &#x201C;cool girl&#x201D; energy. He&#x2019;s simply the shovel-seller in an authenticity gold rush; except the gold is parasocial trust, and the shovels are clips of various women pretending to have their minds blown by your calorie-counting app. 100, ready to post UGC videos per month costs $800. A fully managed campaign for 500 videos goes for $10k. Dan claims over 5 billion total views generated, and I don&#x2019;t doubt his numbers at all. But if this stuff doesn&#x2019;t set off your alarms, even a little, you&#x2019;ve probably been marinating in it so long you&#x2019;ve lost the ability to smell it. What Dan&#x2019;s business lays bare - if you actually sit with it - is that the internet, as a social and cultural space is almost entirely performance. The whole apparatus has been hollowed into a content mill that grinds human attention into micro-conversions. I&#x2019;m aware that I&#x2019;m not the first person to make the complaint that the internet sucks - but every point of suck has now compounded into the final boss of shitty",
+    "relevance_score": 8.0,
+    "category": [
+      "tech",
+      "culture"
+    ],
+    "summary": "I keep a folder in Apple Notes called &#x201C;cursed websites,&#x201D; where I save various artefacts that make me feel like the social contract has dissolved. Call it an act of self-loathing. Call it collecting evidence of the fall. Dansugc.com went straight into the folder this morning. It&amp;",
+    "insights": [],
+    "created_at": "2026-03-31T23:32:07",
+    "processed_at": "2026-04-03 08:58:49"
+  },
+  {
+    "id": "rss-joan-westenberg-aHR0cHM6Ly93-1",
+    "source": "Joan Westenberg",
+    "source_type": "rss",
+    "subscription_id": null,
+    "title": "The Entire Internet Is a UGC Reaction Video Now",
+    "url": "https://www.joanwestenberg.com/the-entire-internet-is-a-ugc-reaction-video-now/",
+    "original_content": "I keep a folder in Apple Notes called cursed websites, where I save various artefacts that make me feel like the social contract has dissolved. Call it an act of self-loathing. Call it collecting evidence of the fall. Dansugc.com went straight into the folder this morning. It&amp;",
+    "raw_text": "[object Object]",
+    "relevance_score": 0,
+    "category": [
+      "tech",
+      "culture"
+    ],
+    "summary": "",
+    "insights": [],
+    "created_at": "2026-03-31T23:32:07.000Z",
+    "processed_at": ""
+  }
+]

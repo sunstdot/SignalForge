@@ -1,113 +1,87 @@
-# TokenBurner 🔥
+# TokenBurner
 
-Personal AI learning and experimentation system. Transform idle AI tokens into valuable cognitive growth.
+AI 驱动的新闻简报收集和展示平台。
 
-## Architecture
-
-```
-┌─────────────┐     ┌─────────────┐     ┌─────────────┐
-│   Input     │────→│  Processing │────→│   Output    │
-│  (Sources)  │     │   (AI Pipeline)   │     │ (Briefing)  │
-└─────────────┘     └─────────────┘     └─────────────┘
-```
-
-## Quick Start
-
-### Prerequisites
-- Node.js 20+
-- pnpm 8+
-- OpenRouter API key
-
-### Installation
-
-```bash
-# Install dependencies
-pnpm install
-
-# Set up environment
-cp .env.example .env
-# Edit .env and add your OPENROUTER_API_KEY
-
-# Run collector (fetch and process data)
-pnpm collect
-
-# Start web dashboard
-pnpm web dev
-```
-
-### Configuration
-
-Edit `config/collector.yaml` to customize:
-- arXiv categories
-- GitHub languages
-- RSS subscriptions (see RSS section below)
-
-## Project Structure
+## 项目结构
 
 ```
 token-burn/
-├── apps/
-│   ├── collector/    # Data collection and AI processing service
-│   └── web/          # Next.js dashboard
-├── packages/
-│   ├── shared/       # Shared types and utilities
-│   └── ai-client/    # OpenRouter API client
-├── config/
-│   └── collector.yaml
-└── docs/
-    └── daily-briefings/
+├── backend/              # Python + FastAPI 后端
+│   ├── routers/          # API 路由
+│   ├── services/         # 业务逻辑（采集、AI处理、简报生成）
+│   ├── config/           # 配置文件（collector.yaml）
+│   ├── data/             # SQLite 数据库
+│   ├── docs/             # 生成的简报文档
+│   ├── cli.py            # CLI 工具
+│   ├── main.py           # FastAPI 入口
+│   └── requirements.txt
+├── frontend/             # React + Vite 前端
+│   ├── src/
+│   │   ├── pages/        # 页面组件
+│   │   └── main.jsx      # 入口
+│   └── package.json
+├── docs/                 # 设计文档
+│   └── superpowers/      # 规划和设计文档
+├── package.json          # 根脚本入口
+└── start.sh              # 一键启动脚本
 ```
 
-## RSS Configuration
+## 快速开始
 
-TokenBurner supports custom RSS feeds via RSSHub.
+### 1. 安装依赖
 
-### 1. RSSHub Setup
-
-Edit `config/rsshub.yaml`:
-```yaml
-rsshub:
-  instanceUrl: "https://your-rsshub-instance.com"
-  accessKey: ""  # Optional
-  isSelfHosted: false
+**后端:**
+```bash
+cd backend
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+pip install -r requirements.txt
 ```
 
-### 2. Add RSS Subscriptions
-
-Edit `config/collector.yaml` and add to `sources.rss.subscriptions`:
-
-```yaml
-subscriptions:
-  # Direct RSS feed
-  - name: "阮一峰的网络日志"
-    type: "direct"
-    url: "https://www.ruanyifeng.com/blog/atom.xml"
-    category: ["tech", "frontend"]
-    fetchInterval: 3600
-
-  # Via RSSHub
-  - name: "Twitter User"
-    type: "rsshub"
-    rsshubRoute: "/twitter/user/username"
-    category: ["social"]
-    fetchInterval: 1800
+**前端:**
+```bash
+cd frontend
+pnpm install
 ```
 
-Enable RSS in collector.yaml:
-```yaml
-sources:
-  rss:
-    enabled: true
+### 2. 配置环境变量
+
+创建 `.env` 文件:
+```bash
+# AI API 配置
+WANQING_API_KEY=your_api_key
+WANQING_BASE_URL=your_base_url
+
+# 或 OpenRouter
+OPENROUTER_API_KEY=your_key
 ```
 
-## Environment Variables
+### 3. 启动服务
 
-| Variable | Description | Required |
-|----------|-------------|----------|
-| `OPENROUTER_API_KEY` | OpenRouter API key | Yes |
-| `DATABASE_PATH` | SQLite database path | No (default: ./data/tokenburner.db) |
-| `CONFIG_PATH` | Collector config path | No (default: ./config/collector.yaml) |
+```bash
+# 同时启动前后端
+./start.sh
 
-## License
+# 或单独启动
+pnpm dev:backend   # http://localhost:8000
+pnpm dev:frontend  # http://localhost:5173
+```
 
-MIT
+### 4. 运行数据采集
+
+```bash
+pnpm collect    # 收集数据
+pnpm process    # AI 处理
+pnpm briefing   # 生成简报
+pnpm stats      # 查看统计
+```
+
+## API 文档
+
+启动后端后访问: http://localhost:8000/docs
+
+## 技术栈
+
+- **Frontend:** React, Vite, TailwindCSS, React Router
+- **Backend:** FastAPI, SQLite, OpenAI
+- **AI:** GPT-4 (via WanQing/OpenRouter)

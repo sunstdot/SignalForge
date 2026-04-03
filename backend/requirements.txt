@@ -1,0 +1,22 @@
+# Web Framework
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+
+# HTTP Client
+aiohttp==3.9.0
+requests==2.31.0
+httpx==0.26.0
+
+# AI/OpenAI
+openai==1.10.0
+
+# Config & Utils
+pyyaml==6.0.1
+python-dotenv==1.0.0
+pydantic==2.5.0
+
+# Async
+asyncio==3.4.3
+
+# XML Parsing
+defusedxml==0.7.1
