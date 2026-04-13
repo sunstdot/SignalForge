@@ -164,6 +164,98 @@ async def generate_ideas(request: dict):
     return {"ideas": generated, "count": len(generated)}
 
 
+@router.post("/generate-ideas/item")
+async def generate_ideas_for_item(request: dict):
+    """针对单条简报内容生成产品思路，返回结构化的产品概念"""
+    item = request.get("item")
+    if not item:
+        raise HTTPException(status_code=400, detail="Item required")
+
+    user_hint = (request.get("user_hint") or "").strip()
+
+    title = item.get("title", "")
+    content = (
+        item.get("chinese_summary")
+        or item.get("summary")
+        or item.get("original_content")
+        or item.get("raw_text")
+        or ""
+    )
+    source = item.get("source", "")
+    url = item.get("url", "")
+    source_type = item.get("source_type", "news")
+    chinese_insights = item.get("chinese_insights", [])
+
+    insights_text = "\n".join(f"- {i}" for i in chinese_insights) if chinese_insights else ""
+
+    prompt = f"""你是一个帮助技术人员发掘实践机会的助手。基于以下文章内容，生成 2-3 个具体可执行的实验想法。
+
+文章标题: {title}
+来源: {source}
+链接: {url}
+内容摘要:
+{content}
+{f"关键洞察:{chr(10)}{insights_text}" if insights_text else ""}
+
+对每个想法，请用 JSON 数组格式输出，每个元素包含以下字段：
+- title: 想法标题（20字以内）
+- why: 这个想法为什么从该文章产生，和文章哪些内容有关（2-3句话）
+- value: 这个想法的技术或业务价值（2-3句话）
+- help: 对你个人/团队的具体帮助是什么（1-2句话）
+- difficulty: easy / medium / hard
+- estimated_days: 预计需要几天（数字）
+- tags: 相关标签列表（2-4个）
+
+只输出 JSON 数组，不要其他文字。格式示例：
+[
+  {{
+    "title": "...",
+    "why": "...",
+    "value": "...",
+    "help": "...",
+    "difficulty": "medium",
+    "estimated_days": 5,
+    "tags": ["标签1", "标签2"]
+  }}
+]
+"""
+
+    if user_hint:
+        prompt += f"\n\n用户方向提示（请优先围绕此方向生成想法，但仍需结合文章内容）:\n{user_hint}"
+
+    from services.chinese_briefer import get_wanqing_client, get_wanqing_app_id, _get_model
+    import json as _json
+
+    client = get_wanqing_client()
+    model_name = _get_model()
+    app_id = get_wanqing_app_id(model_name)
+
+    try:
+        completion = client.chat.completions.create(
+            model=app_id,
+            messages=[{"role": "user", "content": prompt}],
+        )
+        raw = completion.choices[0].message.content.strip()
+
+        # 尝试解析 JSON
+        import re
+        match = re.search(r'\[.*\]', raw, re.DOTALL)
+        if match:
+            ideas = _json.loads(match.group(0))
+        else:
+            ideas = _json.loads(raw)
+
+        return {
+            "ideas": ideas,
+            "source_title": title,
+            "source_url": url,
+            "source": source
+        }
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"生成失败: {str(e)[:200]}")
+
+
 def _get_paper_prompt(item):
     return f"""基于以下论文，设计一个可复现的实验想法：
 
@@ -373,9 +465,69 @@ async def list_logs(exp_id: str):
 @router.post("/{exp_id}/logs")
 async def create_log(exp_id: str, request: dict):
     """添加实验日志"""
-    content = request.get("content", "")
+    content = request.get("content")
     if not content:
         raise HTTPException(status_code=400, detail="Content required")
-    
     log = add_experiment_log(exp_id, content)
+
+    # 如果需要更新状态
+    if request.get("status"):
+        update_experiment(exp_id, {"status": request["status"]})
+
     return log
+
+
+@router.post("/{exp_id}/ideas")
+async def generate_concept_for_experiment(exp_id: str, request: dict):
+    """为选定实验生成完整的产品思路 (Markdown)，并缓存到实验记录中"""
+    exp = get_experiment_by_id(exp_id)
+    if not exp:
+        raise HTTPException(status_code=404, detail="Experiment not found")
+
+    content = request.get("content", "") or exp.get("description", "")
+    if not content:
+        raise HTTPException(status_code=400, detail="Experiment description/content required")
+
+    prompt = f"""你是一位经验丰富的产品经理和创业顾问。基于以下实验初步描述，帮我进行深度产品头脑风暴，输出一份完整的【产品思路与实施草案】。
+
+实验/想法描述:
+{content}
+
+请输出完整的 Markdown 格式报告，包含以下章节：
+1. 💡 **一句话产品定位**：这款产品的本质是什么，解决什么问题。
+2. 🎯 **目标用户与核心痛点**：谁会最需要它？他们目前最痛的点是什么？
+3. ⚙️ **核心功能定义**：3-5个最关键的功能方向。
+4. 🛠️ **技术栈建议**：推荐的前端/后端/AI组件选型及理由。
+5. 💰 **商业价值与变现潜力**：能带来什么业务价值或如何变现？
+6. 🗺️ **MVP 实施路径**：从 0 到 1 的开发计划（分为3-4个阶段，每阶段注明预计天数）。
+7. ⚠️ **最大风险与破局点**：最容易失败的地方在哪里，如何防范。
+8. 🤖 **Vibe Coding 启动提示词**：一段可直接粘贴给 AI 编程助手（Claude/Cursor）的 prompt，描述要构建的产品和 MVP 范围。
+
+仅输出 Markdown 格式的报告正文，不要包含多余的客套话。"""
+
+    from services.chinese_briefer import get_wanqing_client, get_wanqing_app_id, _get_model
+    from services.storage import update_experiment_by_id
+    from datetime import datetime as _dt
+
+    client = get_wanqing_client()
+    app_id = get_wanqing_app_id(_get_model())
+
+    try:
+        completion = client.chat.completions.create(
+            model=app_id,
+            messages=[{"role": "user", "content": prompt}],
+        )
+        markdown_result = completion.choices[0].message.content.strip()
+
+        # 持久化到实验记录
+        update_experiment_by_id(exp_id, {
+            "product_concept": {
+                "content": markdown_result,
+                "generated_at": _dt.now().isoformat(),
+            }
+        })
+
+        return {"ideas": markdown_result, "cached": True}
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"生成产品思路失败: {str(e)[:200]}")
