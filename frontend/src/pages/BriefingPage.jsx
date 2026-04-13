@@ -679,6 +679,70 @@ function CategoryDigest({ digest, loading, onRefresh }) {
   )
 }
 
+function GuidedIdeaPopover({ onGenerate, onClose }) {
+  const [hint, setHint] = useState('')
+  const ref = useRef(null)
+
+  useEffect(() => {
+    function handleKey(e) { if (e.key === 'Escape') onClose() }
+    function handleClickOutside(e) {
+      if (ref.current && !ref.current.contains(e.target)) onClose()
+    }
+    document.addEventListener('keydown', handleKey)
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => {
+      document.removeEventListener('keydown', handleKey)
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [onClose])
+
+  return (
+    <div ref={ref} style={{
+      position: 'absolute', bottom: '36px', right: '0',
+      width: '240px', zIndex: 50,
+      background: 'var(--bg-card)',
+      border: '1px solid var(--border)',
+      borderRadius: '8px',
+      padding: '12px',
+      boxShadow: '0 8px 24px rgba(0,0,0,0.3)'
+    }}>
+      <div className="text-xs mb-2" style={{ color: 'var(--text-muted)' }}>
+        ✏️ 输入你的想法方向（可选）
+      </div>
+      <textarea
+        autoFocus
+        value={hint}
+        onChange={e => setHint(e.target.value)}
+        placeholder="例如：想探索 agent 工具调用的边界…"
+        rows={2}
+        className="w-full text-xs rounded px-2 py-1.5 resize-none"
+        style={{
+          border: '1px solid var(--border)',
+          background: 'var(--bg-secondary)',
+          color: 'var(--text-primary)',
+          outline: 'none'
+        }}
+      />
+      <div className="flex gap-2 mt-2">
+        <button
+          onClick={() => onGenerate(hint)}
+          className="flex-1 text-xs py-1.5 rounded border transition-colors"
+          style={{ color: 'var(--accent-purple, #a78bfa)', borderColor: 'var(--accent-purple, #a78bfa)', background: 'transparent' }}
+        >
+          引导生成
+        </button>
+        <button
+          onClick={() => onGenerate('')}
+          className="flex-1 text-xs py-1.5 rounded border transition-colors"
+          style={{ color: 'var(--text-muted)', borderColor: 'var(--border)', background: 'transparent' }}
+        >
+          直接生成
+        </button>
+      </div>
+    </div>
+  )
+}
+
 function ContentCard({ item, index, cachedSummary, date, onQuickRead }) {
   const typeInfo = SOURCE_TYPE_MAP[item.source_type] || { label: '资讯', badge: 'badge-news' }
   const [genState, setGenState] = useState('idle') // idle | loading | done | error
@@ -689,6 +753,7 @@ function ContentCard({ item, index, cachedSummary, date, onQuickRead }) {
   const [quickState, setQuickState] = useState(cachedSummary ? 'done' : 'idle') // idle | loading | done | error
   const [collapsed, setCollapsed] = useState(false) // 用户手动折叠
   const [popoverOpen, setPopoverOpen] = useState(false)
+  const closePopover = useCallback(() => setPopoverOpen(false), [])
 
   // 当父组件批量生成完成后，更新摘要并展开
   useEffect(() => {
@@ -781,70 +846,6 @@ function ContentCard({ item, index, cachedSummary, date, onQuickRead }) {
     setGenState('done')
   }
 
-  function GuidedIdeaPopover({ onGenerate, onClose }) {
-    const [hint, setHint] = useState('')
-    const ref = useRef(null)
-
-    useEffect(() => {
-      function handleKey(e) { if (e.key === 'Escape') onClose() }
-      function handleClickOutside(e) {
-        if (ref.current && !ref.current.contains(e.target)) onClose()
-      }
-      document.addEventListener('keydown', handleKey)
-      document.addEventListener('mousedown', handleClickOutside)
-      return () => {
-        document.removeEventListener('keydown', handleKey)
-        document.removeEventListener('mousedown', handleClickOutside)
-      }
-    }, [onClose])
-
-    return (
-      <div ref={ref} style={{
-        position: 'absolute', bottom: '36px', right: '0',
-        width: '240px', zIndex: 50,
-        background: 'var(--bg-card)',
-        border: '1px solid var(--border)',
-        borderRadius: '8px',
-        padding: '12px',
-        boxShadow: '0 8px 24px rgba(0,0,0,0.3)'
-      }}>
-        <div className="text-xs mb-2" style={{ color: 'var(--text-muted)' }}>
-          ✏️ 输入你的想法方向（可选）
-        </div>
-        <textarea
-          autoFocus
-          value={hint}
-          onChange={e => setHint(e.target.value)}
-          placeholder="例如：想探索 agent 工具调用的边界…"
-          rows={2}
-          className="w-full text-xs rounded px-2 py-1.5 resize-none"
-          style={{
-            border: '1px solid var(--border)',
-            background: 'var(--bg-secondary)',
-            color: 'var(--text-primary)',
-            outline: 'none'
-          }}
-        />
-        <div className="flex gap-2 mt-2">
-          <button
-            onClick={() => onGenerate(hint)}
-            className="flex-1 text-xs py-1.5 rounded border transition-colors"
-            style={{ color: 'var(--accent-purple, #a78bfa)', borderColor: 'var(--accent-purple, #a78bfa)', background: 'transparent' }}
-          >
-            引导生成
-          </button>
-          <button
-            onClick={() => onGenerate('')}
-            className="flex-1 text-xs py-1.5 rounded border transition-colors"
-            style={{ color: 'var(--text-muted)', borderColor: 'var(--border)', background: 'transparent' }}
-          >
-            直接生成
-          </button>
-        </div>
-      </div>
-    )
-  }
-
   return (
     <article className="content-card">
       <div className="card-header">
@@ -930,7 +931,7 @@ function ContentCard({ item, index, cachedSummary, date, onQuickRead }) {
             ) : (
               <div style={{ position: 'relative' }}>
                 {/* 分割按钮 */}
-                <div className="flex" style={{ border: '1px solid var(--border)', borderRadius: '5px', overflow: 'visible' }}>
+                <div className="flex" style={{ border: '1px solid var(--border)', borderRadius: '5px' }}>
                   {/* 左侧：直接生成 */}
                   <button
                     onClick={genState === 'error' ? () => setGenState('idle') : () => generateIdeas('')}
@@ -966,7 +967,7 @@ function ContentCard({ item, index, cachedSummary, date, onQuickRead }) {
                 {popoverOpen && (
                   <GuidedIdeaPopover
                     onGenerate={generateIdeas}
-                    onClose={() => setPopoverOpen(false)}
+                    onClose={closePopover}
                   />
                 )}
               </div>
