@@ -171,7 +171,7 @@ async def generate_ideas_for_item(request: dict):
     if not item:
         raise HTTPException(status_code=400, detail="Item required")
 
-    user_hint = (request.get("user_hint") or "").strip()
+    user_hint = (request.get("user_hint") or "").strip()[:500]
 
     title = item.get("title", "")
     content = (
