@@ -1,0 +1,725 @@
+[
+  {
+    "id": "rss-openai-blog-f6c272c7f0d8",
+    "source": "OpenAI Blog",
+    "source_type": "rss",
+    "title": "Announcing the OpenAI Safety Fellowship",
+    "url": "https://openai.com/index/introducing-openai-safety-fellowship",
+    "original_content": "A pilot program to support independent safety and alignment research and develop the next generation of talent",
+    "raw_text": "A pilot program to support independent safety and alignment research and develop the next generation of talent",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "openai",
+      "official"
+    ],
+    "created_at": "2026-04-06T10:00:00",
+    "chinese_title": "Announcing the OpenAI Safety Fellowship",
+    "chinese_summary": "生成摘要时出错: Expecting value: line 7 column 5 (char 309)",
+    "chinese_insights": [],
+    "key_topics": [],
+    "summary": "生成摘要时出错: Expecting value: line 7 column 5 (char 309)"
+  },
+  {
+    "id": "rss-openai-blog-65edefcb4544",
+    "source": "OpenAI Blog",
+    "source_type": "rss",
+    "title": "Industrial policy for the Intelligence Age",
+    "url": "https://openai.com/index/industrial-policy-for-the-intelligence-age",
+    "original_content": "Explore our ambitious, people-first industrial policy ideas for the AI era—focused on expanding opportunity, sharing prosperity, and building resilient institutions as advanced intelligence evolves.",
+    "raw_text": "Explore our ambitious, people-first industrial policy ideas for the AI era—focused on expanding opportunity, sharing prosperity, and building resilient institutions as advanced intelligence evolves.",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "openai",
+      "official"
+    ],
+    "created_at": "2026-04-06T02:30:00",
+    "chinese_title": "智能时代的产业政策",
+    "chinese_summary": "本文探讨了面向人工智能时代的雄心勃勃的、以人为本的产业政策理念。随着先进智能的不断发展，政策重点聚焦于扩大机遇、分享繁荣以及构建弹性制度。文章提出需要以人为中心的政策框架，确保AI技术的发展能够普惠全社会，同时建立抵御风险的制度能力，促进长期可持续的繁荣。",
+    "chinese_insights": [
+      "AI产业发展需要以人为中心政策框架，确保技术红利普惠全民",
+      "扩大机遇是智能时代产业政策核心目标，需通过教育和培训提升劳动力技能",
+      "构建弹性制度对于应对AI快速发展带来的社会和经济冲击至关重要"
+    ],
+    "key_topics": [
+      "产业政策",
+      "人工智能",
+      "以人为本"
+    ],
+    "summary": "本文探讨了面向人工智能时代的雄心勃勃的、以人为本的产业政策理念。随着先进智能的不断发展，政策重点聚焦于扩大机遇、分享繁荣以及构建弹性制度。文章提出需要以人为中心的政策框架，确保AI技术的发展能够普惠全社会，同时建立抵御风险的制度能力，促进长期可持续的繁荣。"
+  },
+  {
+    "id": "rss-meta-engineering-5c76a0d63039",
+    "source": "Meta Engineering",
+    "source_type": "rss",
+    "title": "How Meta Used AI to Map Tribal Knowledge in Large-Scale Data Pipelines",
+    "url": "https://engineering.fb.com/2026/04/06/developer-tools/how-meta-used-ai-to-map-tribal-knowledge-in-large-scale-data-pipelines/",
+    "original_content": "AI coding assistants are powerful but only as good as their understanding of your codebase. When we pointed AI agents at one of Meta&#8217;s large-scale data processing pipelines – spanning four repositories, three languages, and over 4,100 files – we quickly found that they weren&#8217;t making useful edits quickly enough. We fixed this by building [...] Read More... The post How Meta Used AI to Map Tribal Knowledge in Large-Scale Data Pipelines appeared first on Engineering at Meta .",
+    "raw_text": "AI coding assistants are powerful but only as good as their understanding of your codebase. When we pointed AI agents at one of Meta&#8217;s large-scale data processing pipelines – spanning four repositories, three languages, and over 4,100 files – we quickly found that they weren&#8217;t making useful edits quickly enough. We fixed this by building a pre-compute engine: a swarm of 50+ specialized AI agents that systematically read every file and produced 59 concise context files encoding tribal knowledge that previously lived only in engineers&#8217; heads. The result: AI agents now have structured navigation guides for 100% of our code modules (up from 5%, covering all 4,100+ files across three repositories). We also documented 50+ &#8220;non-obvious patterns,&#8221; or underlying design choices and relationships not immediately apparent from the code , and preliminary tests show 40% fewer AI agent tool calls per task. The system works with most leading models because the knowledge layer is model-agnostic. The system also maintains itself. Every few weeks, automated jobs periodically validate file paths, detect coverage gaps, re-run quality critics, and auto-fix stale references. The AI isn’t a consumer of this infrastructure, it&#8217;s the engine that runs it. The Problem: AI Tools Without a Map Our pipeline is config-as-code: Python configurations, C++ services, and Hack automation scripts working together across multiple repositories. A single data field onboarding touches configuration registries, routing logic, DAG composition, validation rules, C++ code generation, and automation scripts – six subsystems that must stay in sync. We had already built AI-powered systems for operational tasks, scanning dashboards, pattern-matching against historical incidents, and suggesting mitigations. But when we tried to extend it to development tasks, it fell apart. The AI had no map. It didn&#8217;t know that two configuration modes use different field names for the same operation (swap them and you get silent wrong output), or that dozens of &#8220;deprecated&#8221; enum values must never be removed because serialization compatibility depends on them. Without this context, agents would guess, explore, guess again and often produce code that compiled but was subtly wrong. The Approach: Teach the Agents Before They Explore We used a large-context-window model and task orchestration to structure the work in phases: Two explorer agents mapped the codebase, 11 module analysts read every file and answered five key questions, Two writers generated context files, and 10+ critic passes ran three rounds of independent quality review, Four fixers applied corrections, Eight upgraders refined the routing layer, Three prompt testers validated 55+ queries across five personas, Four gap-fillers covered remaining directories, and Three final critics ran integration tests &#8211; 50+ specialized tasks orchestrated in a single session. The five questions each analyst an",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "meta",
+      "engineering"
+    ],
+    "created_at": "2026-04-06T16:00:50",
+    "chinese_title": "Meta如何利用AI在大型数据管道中映射隐性知识",
+    "chinese_summary": "Meta为解决AI编码助手对其代码库理解不足的问题,构建了一个预计算引擎。该引擎包含50多个专业化AI代理,系统性地阅读了跨越4个代码库、3种编程语言、超过4100个文件的数据处理管道,生成了59份编码隐性知识的上下文文件。实施后AI代理对代码模块的结构化导航覆盖率从5%提升至100%,并记录了50多个非显而易见的模式,测试显示每个任务的AI代理调用减少40%,系统具有模型无关性且能自维护。",
+    "chinese_insights": [
+      "通过预计算引擎将隐性知识显性化,使AI代理能够理解代码间的隐含关系和设计决策,而非仅依赖代码表面结构",
+      "50多个专业化AI代理的协同工作展示了大规模任务编排在代码理解中的有效性,可将复杂的多仓库代码库系统化映射",
+      "自维护机制表明AI不仅是知识的消费者,还可以成为维护知识基础设施的引擎,实现持续更新和质量保证"
+    ],
+    "key_topics": [
+      "AI代码理解",
+      "隐性知识映射",
+      "大型数据管道"
+    ],
+    "summary": "Meta为解决AI编码助手对其代码库理解不足的问题,构建了一个预计算引擎。该引擎包含50多个专业化AI代理,系统性地阅读了跨越4个代码库、3种编程语言、超过4100个文件的数据处理管道,生成了59份编码隐性知识的上下文文件。实施后AI代理对代码模块的结构化导航覆盖率从5%提升至100%,并记录了50多个非显而易见的模式,测试显示每个任务的AI代理调用减少40%,系统具有模型无关性且能自维护。"
+  },
+  {
+    "id": "atom-simon-willison-fc86ae984675",
+    "source": "Simon Willison",
+    "source_type": "rss",
+    "title": "Google AI Edge Gallery",
+    "url": "https://simonwillison.net/2026/Apr/6/google-ai-edge-gallery/#atom-everything",
+    "original_content": "Google AI Edge Gallery Terrible name, really great app: this is Google's official app for running their Gemma 4 models (the E2B and E4B sizes, plus some members of the Gemma 3 family) directly on your iPhone. It works really well. The E2B model is a 2.54GB download and is both fast and genuinely useful. The app also provides \"ask questions about images\" and audio transcription (up to 30s) with the two small Gemma 4 models, and has an interesting \"skills\" demo which demonstrates tool calling agai",
+    "raw_text": "Google AI Edge Gallery Terrible name, really great app: this is Google's official app for running their Gemma 4 models (the E2B and E4B sizes, plus some members of the Gemma 3 family) directly on your iPhone. It works really well. The E2B model is a 2.54GB download and is both fast and genuinely useful. The app also provides \"ask questions about images\" and audio transcription (up to 30s) with the two small Gemma 4 models, and has an interesting \"skills\" demo which demonstrates tool calling against eight different interactive widgets, each implemented as an HTML page (though sadly the source code is not visible): interactive-map, kitchen-adventure, calculate-hash, text-spinner, mood-tracker, mnemonic-password, query-wikipedia, and qr-code. (That demo did freeze the app when I tried to add a follow-up prompt though.) This is the first time I've seen a local model vendor release an official app for trying out their models on in iPhone. Sadly it's missing permanent logs - conversations with this app are ephemeral. Via Hacker News Tags: google , iphone , ai , generative-ai , local-llms , llms , gemini , llm-tool-use",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "ai",
+      "python"
+    ],
+    "created_at": "2026-04-06T05:18:26",
+    "chinese_title": "Google AI Edge Gallery：Google发布首款本地模型iPhone应用",
+    "chinese_summary": "Google正式推出官方应用Google AI Edge Gallery，允许用户直接在iPhone上运行Gemma 4模型（E2B和E4B版本）及Gemma 3部分模型。E2B模型下载大小为2.54GB，运行速度快且实用性强。该应用提供图像问答和30秒音频转录功能，并包含一个创新的\"skills\"演示，展示了对8种不同交互式小部件的tool calling能力。这是首次有本地模型供应商发布官方iOS应用来让用户体验其模型，但目前对话内容为临时的，缺乏永久日志功能。",
+    "chinese_insights": [
+      "Google率先推出官方iPhone本地模型应用，标志着移动端AI部署的重要里程碑，降低了用户接触本地大模型的门槛",
+      "Gemma 4 E2B模型以2.54GB的体积实现实用级性能，验证了移动设备运行高效能小模型的技术可行性",
+      "工具调用(tools calling)功能集成8种交互组件，展示了本地模型与移动端应用深度融合的创新模式"
+    ],
+    "key_topics": [
+      "本地大模型",
+      "移动端AI部署",
+      "Gemma 4"
+    ],
+    "summary": "Google正式推出官方应用Google AI Edge Gallery，允许用户直接在iPhone上运行Gemma 4模型（E2B和E4B版本）及Gemma 3部分模型。E2B模型下载大小为2.54GB，运行速度快且实用性强。该应用提供图像问答和30秒音频转录功能，并包含一个创新的\"skills\"演示，展示了对8种不同交互式小部件的tool calling能力。这是首次有本地模型供应商发布官方iOS应用来让用户体验其模型，但目前对话内容为临时的，缺乏永久日志功能。"
+  },
+  {
+    "id": "atom-simon-willison-d2cf65578388",
+    "source": "Simon Willison",
+    "source_type": "rss",
+    "title": "datasette-ports 0.2",
+    "url": "https://simonwillison.net/2026/Apr/6/datasette-ports-2/#atom-everything",
+    "original_content": "Release: datasette-ports 0.2 No longer requires Datasette - running uvx datasette-ports now works as well. Installing it as a Datasette plugin continues to provide the datasette ports command. Tags: datasette",
+    "raw_text": "Release: datasette-ports 0.2 No longer requires Datasette - running uvx datasette-ports now works as well. Installing it as a Datasette plugin continues to provide the datasette ports command. Tags: datasette",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "ai",
+      "python"
+    ],
+    "created_at": "2026-04-06T03:25:43",
+    "chinese_title": "datasette-ports 0.2 发布：实现独立运行",
+    "chinese_summary": "datasette-ports 0.2 版本正式发布，最大更新是不再依赖 Datasette 即可独立运行。用户现在可以直接使用 uvx datasette-ports 命令启动工具，大幅提升了使用便利性。同时，如果选择将其安装为 Datasette 插件，仍可继续使用 datasette ports 命令，功能保持不变。",
+    "chinese_insights": [
+      "工具从依赖项变为独立应用，降低了使用门槛，用户无需安装 Datasette 即可直接运行",
+      "保持了插件形式的安装选项，兼顾了不同用户的使用习惯和场景需求",
+      "体现了 Simon Willison 对工具易用性的持续优化，使命令行工具更加轻量化和灵活"
+    ],
+    "key_topics": [
+      "datasette-ports",
+      "独立运行",
+      "Datasette 插件"
+    ],
+    "summary": "datasette-ports 0.2 版本正式发布，最大更新是不再依赖 Datasette 即可独立运行。用户现在可以直接使用 uvx datasette-ports 命令启动工具，大幅提升了使用便利性。同时，如果选择将其安装为 Datasette 插件，仍可继续使用 datasette ports 命令，功能保持不变。"
+  },
+  {
+    "id": "atom-simon-willison-5f045cfb6a5d",
+    "source": "Simon Willison",
+    "source_type": "rss",
+    "title": "scan-for-secrets 0.3",
+    "url": "https://simonwillison.net/2026/Apr/6/scan-for-secrets/#atom-everything",
+    "original_content": "Release: scan-for-secrets 0.3 New -r/--redact option which shows the list of matches, asks for confirmation and then replaces every match with REDACTED , taking escaping rules into account. New Python function redact_file(file_path: str | Path, secrets: list[str], replacement: str = \"REDACTED\") -&gt; int . Tags: projects",
+    "raw_text": "Release: scan-for-secrets 0.3 New -r/--redact option which shows the list of matches, asks for confirmation and then replaces every match with REDACTED , taking escaping rules into account. New Python function redact_file(file_path: str | Path, secrets: list[str], replacement: str = \"REDACTED\") -&gt; int . Tags: projects",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "ai",
+      "python"
+    ],
+    "created_at": "2026-04-06T02:59:28",
+    "chinese_title": "scan-for-secrets 0.3 版本发布：新增敏感信息脱敏功能",
+    "chinese_summary": "scan-for-secrets 0.3 版本正式发布，新增 -r/--redact 选项，支持交互式确认后将匹配到的敏感信息批量替换为「REDACTED」，并自动处理转义规则。同时提供 Python 函数 redact_file()，可直接在代码中调用文件脱敏功能。该工具由 Simon Willison 开发，主要用于扫描代码仓库中的敏感信息，提升安全审计效率。",
+    "chinese_insights": [
+      "交互式脱敏机制确保操作可逆，用户可在替换前确认匹配结果，降低误报风险",
+      "转义规则处理使得工具能正确处理复杂格式的敏感信息，如 JSON/XML 中的密钥",
+      "提供 Python API 支持集成到 CI/CD 流程或自动化安全扫描管道中"
+    ],
+    "key_topics": [
+      "敏感信息扫描",
+      "安全红队工具",
+      "代码脱敏",
+      "密钥安全管理"
+    ],
+    "summary": "scan-for-secrets 0.3 版本正式发布，新增 -r/--redact 选项，支持交互式确认后将匹配到的敏感信息批量替换为「REDACTED」，并自动处理转义规则。同时提供 Python 函数 redact_file()，可直接在代码中调用文件脱敏功能。该工具由 Simon Willison 开发，主要用于扫描代码仓库中的敏感信息，提升安全审计效率。"
+  },
+  {
+    "id": "atom-simon-willison-7af04deed390",
+    "source": "Simon Willison",
+    "source_type": "rss",
+    "title": "Cleanup Claude Code Paste",
+    "url": "https://simonwillison.net/2026/Apr/6/cleanup-claude-code-paste/#atom-everything",
+    "original_content": "Tool: Cleanup Claude Code Paste Super-niche tool this. I sometimes copy prompts out of the Claude Code terminal app and they come out with a bunch of weird additional whitespace. This tool cleans that up. Tags: tools , claude-code",
+    "raw_text": "Tool: Cleanup Claude Code Paste Super-niche tool this. I sometimes copy prompts out of the Claude Code terminal app and they come out with a bunch of weird additional whitespace. This tool cleans that up. Tags: tools , claude-code",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "ai",
+      "python"
+    ],
+    "created_at": "2026-04-06T02:55:23",
+    "chinese_title": "清理Claude Code复制粘贴内容工具",
+    "chinese_summary": "这是一款非常小众但实用的工具。当用户从Claude Code终端应用复制代码或提示词时，复制内容经常会包含异常的额外空白字符，这款工具能够自动清理这些多余的空白字符，提升复制代码的可用性和整洁度。该工具由知名技术博主Simon Willison分享，展示了其在日常开发中对工具细节的敏锐观察。",
+    "chinese_insights": [
+      "Claude Code终端应用在复制内容时存在空白字符污染问题，这可能是由于终端渲染或输出格式导致的",
+      "即使是看似微小的工具需求，只要能够解决真实痛点，就具有实际价值",
+      "开发者对代码cleanliness的追求推动着各种细分工具的产生"
+    ],
+    "key_topics": [
+      "Claude Code",
+      "代码清理工具",
+      "终端复制问题"
+    ],
+    "summary": "这是一款非常小众但实用的工具。当用户从Claude Code终端应用复制代码或提示词时，复制内容经常会包含异常的额外空白字符，这款工具能够自动清理这些多余的空白字符，提升复制代码的可用性和整洁度。该工具由知名技术博主Simon Willison分享，展示了其在日常开发中对工具细节的敏锐观察。"
+  },
+  {
+    "id": "atom-simon-willison-7dd2f245428b",
+    "source": "Simon Willison",
+    "source_type": "rss",
+    "title": "datasette-ports 0.1",
+    "url": "https://simonwillison.net/2026/Apr/6/datasette-ports/#atom-everything",
+    "original_content": "Release: datasette-ports 0.1 Another example of README-driven development, this time solving a problem that might be unique to me. I often find myself running a bunch of different Datasette instances with different databases and different in-development plugins, spreads across dozens of different terminal windows - enough that I frequently lose them! Now I can run this: datasette install datasette-ports datasette ports And get a list of every running instance that looks something like this: http",
+    "raw_text": "Release: datasette-ports 0.1 Another example of README-driven development, this time solving a problem that might be unique to me. I often find myself running a bunch of different Datasette instances with different databases and different in-development plugins, spreads across dozens of different terminal windows - enough that I frequently lose them! Now I can run this: datasette install datasette-ports datasette ports And get a list of every running instance that looks something like this: http://127.0.0.1:8333/ - v1.0a26 Databases: data Plugins: datasette-enrichments, datasette-enrichments-llm, datasette-llm, datasette-secrets http://127.0.0.1:8001/ - v1.0a26 Databases: creatures Plugins: datasette-extract, datasette-llm, datasette-secrets http://127.0.0.1:8900/ - v0.65.2 Databases: logs Tags: datasette",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "ai",
+      "python"
+    ],
+    "created_at": "2026-04-06T00:23:55",
+    "chinese_title": "datasette-ports 0.1 发布：轻松管理多个运行中的 Datasette 实例",
+    "chinese_summary": "datasette-ports 0.1 是由 Datasette 作者 Simon Willison 发布的工具，旨在解决管理多个同时运行的 Datasette 实例的痛点。当开发者同时运行数十个分别连接不同数据库和插件的 Datasette 实例时，常常难以快速定位目标实例。该工具安装后可通过简单的「datasette ports」命令，一目了然地列出所有运行中实例的 URL、版本号、数据库列表及已加载的插件信息，显著提升多实例开发场景下的管理效率。这是 README 驱动开发模式的典型实践案例。",
+    "chinese_insights": [
+      "多实例管理是 Datasette 高级用户面临的真实痛点，尤其在同时测试多个数据库和开发中插件时",
+      "该工具以最小化方式解决问题，仅通过一个命令即可获取所有实例的完整状态信息",
+      "README-driven development 模式适合解决个人特定需求，可快速将想法转化为可用工具"
+    ],
+    "key_topics": [
+      "Datasette 多实例管理",
+      "Python 工具开发",
+      "开发者效率工具"
+    ],
+    "summary": "datasette-ports 0.1 是由 Datasette 作者 Simon Willison 发布的工具，旨在解决管理多个同时运行的 Datasette 实例的痛点。当开发者同时运行数十个分别连接不同数据库和插件的 Datasette 实例时，常常难以快速定位目标实例。该工具安装后可通过简单的「datasette ports」命令，一目了然地列出所有运行中实例的 URL、版本号、数据库列表及已加载的插件信息，显著提升多实例开发场景下的管理效率。这是 README 驱动开发模式的典型实践案例。"
+  },
+  {
+    "id": "rss-gary-marcus-332db66668ae",
+    "source": "Gary Marcus",
+    "source_type": "rss",
+    "title": "Sam Altman, unconstrained by the truth",
+    "url": "https://garymarcus.substack.com/p/sam-altman-unconstrained-by-the-truth",
+    "original_content": "New reporting from the New Yorker vindicates concerns that were first raised here",
+    "raw_text": "A central subtheme of this newletter, brought together in this 2024 Guardian article , has been that Sam Altman should not be trusted: Strong reporting in The New Yorker by Ronan Farrow and Andrew Marantz makes the case significantly more strongly. I will let you read the details, of which there are many, for yourself, but here&#8217;s a nice summary of Altman that rings true to me: Read it here . &#167; As a postscript, another thing I have noted about Altman is that when he is in trouble, he often tries to change the narrative with hype, Right now he is in trouble. People are increasingly concerned about the economics of his company, and in big scoop The Information just reported that the even CFO has concerns: Today&#8217;s new OpenAI report on Superintelligence (allegedly a New Deal for the AI era) isn&#8217;t about something real or imminent (as far as I can tell), instead I suspect that it&#8217;s just another Altmanian attempt to distract, in this case from the fact that the economics of his company make no sense. &#167; Now, go read that article in The New Yorker . And think about whether we might need some outside review on this man&#8217;s decisions (as I argued in Taming Silicon Valley) , or whether it would be just fine to leave our fate as a species partly up to him. If some future OpenAI model could enables a massive bioweapon or cyberattack, would you really want Altman deciding, unilaterally, whether or not it is ok to release the model? I sure as hell wouldn&#8217;t. And after you read the Farrow-Marantz New Yorker investigation, you probably wouldn&#8217;t either. Subscribe now",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "ml"
+    ],
+    "created_at": "2026-04-06T16:06:31",
+    "chinese_title": "Sam Altman：不受真相约束的OpenAI领袖引信任危机",
+    "chinese_summary": "Gary Marcus在Newsletter中再次强调Sam Altman不应被信任，并引用《纽约客》 Ronan Farrow和Andrew Marantz的深度调查报告作为佐证。Marcus指出Altman在陷入困境时惯用炒作来转移焦点，当前OpenAI正面临经济压力，The Information报道甚至连CFO都表示担忧。最新发布的Superintelligence报告被质疑是为分散经济问题注意力的宣传手段。Marcus呼吁建立外部审查机制，质疑将人类命运部分交由Altman单边决策是否明智。",
+    "chinese_insights": [
+      "《纽约客》调查记者 Ronan Farrow和Andrew Marantz的深度报道揭示了Altman更多不为人知的行为模式，进一步佐证了关于其不可信任的观点",
+      "OpenAI内部经济状况堪忧，连CFO都公开表达疑虑，而Superintelligence报告疑似为转移焦点的营销手段",
+      "AI安全风险重大，若未来OpenAI模型可被用于制造生物武器或网络攻击，不应允许Altman单方面决定是否发布模型"
+    ],
+    "key_topics": [
+      "AI治理与监管",
+      "OpenAI领导力争议",
+      "AI安全与风险"
+    ],
+    "summary": "Gary Marcus在Newsletter中再次强调Sam Altman不应被信任，并引用《纽约客》 Ronan Farrow和Andrew Marantz的深度调查报告作为佐证。Marcus指出Altman在陷入困境时惯用炒作来转移焦点，当前OpenAI正面临经济压力，The Information报道甚至连CFO都表示担忧。最新发布的Superintelligence报告被质疑是为分散经济问题注意力的宣传手段。Marcus呼吁建立外部审查机制，质疑将人类命运部分交由Altman单边决策是否明智。"
+  },
+  {
+    "id": "rss-jim-nielsen-32eecf0b2670",
+    "source": "Jim Nielsen",
+    "source_type": "rss",
+    "title": "Prototyping with LLMs",
+    "url": "https://blog.jim-nielsen.com/2026/prototyping-with-llm/",
+    "original_content": "Did you know that Jesus gave advice about prototyping with an LLM? Here’s Luke 14:28-30: Suppose one of you wants to build a tower. Won’t you first sit down and estimate the cost to see if you have enough money to complete it? For if you lay the foundation and are not able to finish it, everyone who sees it will ridicule you, saying, ‘This person began to build and wasn’t able to finish.’ That pretty much sums me up when I try to vibe a prototype . Don’t get me wrong, I’m a big advocate of proto",
+    "raw_text": "Did you know that Jesus gave advice about prototyping with an LLM? Here’s Luke 14:28-30: Suppose one of you wants to build a tower. Won’t you first sit down and estimate the cost to see if you have enough money to complete it? For if you lay the foundation and are not able to finish it, everyone who sees it will ridicule you, saying, ‘This person began to build and wasn’t able to finish.’ That pretty much sums me up when I try to vibe a prototype . Don’t get me wrong, I’m a big advocate of prototyping . And LLMs make prototyping really easy and interesting. And because it’s so easy, there’s a huge temptation to jump straight to prototyping. But what I’ve been finding in my own behavior is that I’ll be mid-prototyping with the LLM and asking myself, “What am I even trying to do here?” And the thought I have is: “I’d be in a much more productive place right now if I’d put a tiny bit more thought upfront into what I am actually trying to build.” Instead, I just jumped right in, chasing a fuzzy feeling or idea only to end up in a place where I’m more confused about what I set out to do than when I started. Don’t get me wrong, that’s fine. That’s part of prototyping. It’s inherent to the design process to get more confused before you find clarity. But there’s an alternative to LLM prototyping that’s often faster and cheaper: sketching. I’ve found many times that if I start an idea by sketching it out, do you know where I end up? At a place where I say, “Actually, I don’t want to build this.” And in that case, all I have to do is take my sketch and throw it away. It didn’t cost me any tokens or compute to figure that out. Talk about efficiency! I suppose what I’m saying here is: it’s good to think further ahead than the tracks you’re laying out immediately in front of you. Sketching is a great way to do that. (Thanks to Facundo for prompting these thoughts out of me.) Reply via: Email · Mastodon · Bluesky",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "web",
+      "frontend"
+    ],
+    "created_at": "2026-04-06T19:00:00",
+    "chinese_title": "使用LLM进行原型设计",
+    "chinese_summary": "作者分享了在使用大型语言模型(LLM)进行原型设计过程中的反思。虽然LLM使原型设计变得简单有趣,但作者提醒不要急于直接开始原型开发,而应该先思考清楚自己要构建什么。他建议在投入token和计算资源之前,先通过手绘草图验证想法,如果不想继续开发,丢弃草图即可,成本极低。这是一个更高效、更低成本的方式来厘清思路和验证概念。",
+    "chinese_insights": [
+      "LLM降低了原型设计的门槛,但也容易让人盲目投入,在尚未明确目标时就过早开始编码",
+      "在原型设计前进行充分思考和规划,可以避免浪费计算资源,并更快地厘清真正想要构建的内容",
+      "手绘草图是一种快速、低成本的验证想法的方式,如果发现不想继续开发,直接丢弃即可,不会产生任何token费用"
+    ],
+    "key_topics": [
+      "LLM原型设计",
+      "设计思维",
+      "快速原型验证"
+    ],
+    "summary": "作者分享了在使用大型语言模型(LLM)进行原型设计过程中的反思。虽然LLM使原型设计变得简单有趣,但作者提醒不要急于直接开始原型开发,而应该先思考清楚自己要构建什么。他建议在投入token和计算资源之前,先通过手绘草图验证想法,如果不想继续开发,丢弃草图即可,成本极低。这是一个更高效、更低成本的方式来厘清思路和验证概念。"
+  },
+  {
+    "id": "rss-the-old-new-thing-3a81856f315a",
+    "source": "The Old New Thing",
+    "source_type": "rss",
+    "title": "Learning to read C++ compiler errors: Illegal use of -> when there is no -> in sight",
+    "url": "https://devblogs.microsoft.com/oldnewthing/20260406-00/?p=112208",
+    "original_content": "If the compiler is complaining about things you didn't write, find out who wrote them. The post Learning to read C++ compiler errors: Illegal use of &lt;TT&gt;-&gt;&lt;/TT&gt; when there is no &lt;TT&gt;-&gt;&lt;/TT&gt; in sight appeared first on The Old New Thing .",
+    "raw_text": "A customer reported a problem with a system header file. When they included ole2.h , the compiler reported an error in oaidl.h : MIDL_INTERFACE(\"3127CA40-446E-11CE-8135-00AA004BB851\") IErrorLog : public IUnknown { public: virtual HRESULT STDMETHODCALLTYPE AddError( // error here /* [in] */ __RPC__in LPCOLESTR pszPropName, /* [in] */ __RPC__in EXCEPINFO *pExcepInfo) = 0; }; The error message is oaidl.h(5457,43): error C3927: '-&gt;': trailing return type is not allowed after a non-function declarator oaidl.h(5457,43): error C3613: missing return type after '-&gt;' ('int' assumed) oaidl.h(5457,43): error C3646: 'Log': unknown override specifier oaidl.h(5457,43): error C2275: 'LPCOLESTR': expected an expression instead of a type oaidl.h(5457,43): error C2146: syntax error: missing ')' before identifier 'pszPropName' oaidl.h(5459,60): error C2238: unexpected token(s) preceding ';' The compiler is seeing ghosts: It&#8217;s complaining about things that aren&#8217;t there, like -&gt; and Log. When you see the compiler reporting errors about things that aren&#8217;t in the code, you should suspect a macro, because macros can insert characters into code. In this case, I suspected that there is a macro called AddError whose expansion includes the token -&gt; . The customer reported that they had no such macro. I asked them to generate a preprocessor file for the code that isn&#8217;t compiling. That way, we can see what is being produced by the preprocessor before it goes into the part of the compiler that is complaining about the illegal use of -&gt; . Is there really no -&gt; there? The customer reported back that, oops, they did indeed have a macro called AddError . Disabling the macro fixed the problem. The compiler can at times be obtuse with its error messages, but as far as I know, it isn&#8217;t malicious. If it complains about a misused -&gt; , then there is probably a -&gt; that is being misused. The post Learning to read C++ compiler errors: Illegal use of &lt;TT&gt;-&gt;&lt;/TT&gt; when there is no &lt;TT&gt;-&gt;&lt;/TT&gt; in sight appeared first on The Old New Thing .",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "windows",
+      "programming"
+    ],
+    "created_at": "2026-04-06T14:00:00",
+    "chinese_title": "学习阅读C++编译器错误：当源码中看不到->时却报告非法使用->的错误",
+    "chinese_summary": "本文介绍了一个罕见的C++编译器错误调试案例。客户在包含ole2.h头文件后，编译器在oaidl.h中报告了关于->的非法使用错误，但源代码中明明没有->符号。作者怀疑是宏在暗中作祟，因为宏可以在代码中插入任意字符。经客户确认，确实存在一个名为AddError的宏，其展开内容包含了->符号，导致编译器产生误导性错误信息。生成预处理文件是解决此类问题的关键步骤。",
+    "chinese_insights": [
+      "当编译器报告源码中不存在的符号（如->、Log等）时，首先应怀疑是宏在背后插入了这些字符，而非编译器本身出错",
+      "生成预处理文件（preprocessed file）是诊断宏相关编译错误的有效手段，可以清晰看到宏展开后的实际代码",
+      "编译器错误信息可能具有误导性，但通常背后都有真实原因，本案例中确实存在被误用的->符号，只是被隐藏在宏定义中"
+    ],
+    "key_topics": [
+      "C++编译器错误诊断",
+      "宏调试技巧",
+      "预处理文件分析"
+    ],
+    "summary": "本文介绍了一个罕见的C++编译器错误调试案例。客户在包含ole2.h头文件后，编译器在oaidl.h中报告了关于->的非法使用错误，但源代码中明明没有->符号。作者怀疑是宏在暗中作祟，因为宏可以在代码中插入任意字符。经客户确认，确实存在一个名为AddError的宏，其展开内容包含了->符号，导致编译器产生误导性错误信息。生成预处理文件是解决此类问题的关键步骤。"
+  },
+  {
+    "id": "atom-chris-siebenmann-cdc79a17b614",
+    "source": "Chris Siebenmann",
+    "source_type": "rss",
+    "title": "Finding out what your big RPMs are, in two different 'sizes'",
+    "url": "https://utcc.utoronto.ca/~cks/space/blog/linux/RPMFindingSizes",
+    "original_content": "Suppose, not hypothetically, that you have an old Fedora system with a lot of packages installed and a 70 GByte root filesystem, which is now awkwardly small during system upgrades and so on. You would like to find out which of your roughly 7,500 packages are contributing the most to your space usage. (The real solution is to move to a bigger pair of NVMe drives, but that involves various yak shaving and you want to upgrade to Fedora 43 today .) The simple version of 'how big are your RPMs' is t",
+    "raw_text": "Suppose, not hypothetically, that you have an old Fedora system with a lot of packages installed and a 70 GByte root filesystem, which is now awkwardly small during system upgrades and so on. You would like to find out which of your roughly 7,500 packages are contributing the most to your space usage. (The real solution is to move to a bigger pair of NVMe drives, but that involves various yak shaving and you want to upgrade to Fedora 43 today .) The simple version of 'how big are your RPMs' is to ask rpm for the ordinary (binary) size of all of your installed binary RPMs: rpm -qa --qf '%{SIZE:humaniec} %{N}-%{V}-%{R}.%{ARCH}\\n' | sort -hr This will tell you interesting things, like how the Fedora 43 version of wine-core-11.0-2.fc43.x86_64 is 1.3 GBytes all by itself. However, it's not necessarily the full answer for what is using up your disk space, because a single (source) package can create many binary packages (often these mostly get installed together and it's hard to split them apart in any useful way). For instance, on my work machine with the 70 GByte root partition, there are 263 'texlive' packages and 101 'perl' packages (and 66 'qemu' packages). Often a more useful way to break down packages is by the total installed size for a particular source package. This is where I turn to my ' sumup ' script, and also to ' numfmt ' , to get the following: rpm -qa --qf '%{SIZE} %{SOURCERPM} %{N}-%{V}-%{R}.%{ARCH}\\n' | sumup 2 1 | numfmt --format '%8.1f' --to iec This may reveal surprises that you didn't know. For example, my home desktop has 847 MBytes of packages derived from 'rocm-compilersupport', despite my home machine having no AMD GPU (it uses the integrated Intel GPU). These appear to be present as dependencies of Blender (based on what 'dnf remove' told me it wanted to do). (It can also tell you that lots of binary packages derived from a single source package don't necessarily result in a lot of disk space being consumed. All of those 263 texlive packages amount to 289 Mbytes, and those 101 Perl packages, 43 Mbytes.) I preserved the binary name, version, release, and architecture in the second command, even though it's not used, so that I can later copy and paste the ' rpm ' command snippet to grep its output to find out all of the binary packages derived from a source package of interest. A smart approach to this would be to split this up into two commands: rpm -qa --qf '%{SIZE} %{SOURCERPM} %{N}-%{V}-%{R}.%{ARCH}\\n' >/tmp/foo sumup 2 1 &lt;/tmp/foo | numfmt --format '%8.1f' --to iec Putting the initial output in a file is useful because 'rpm -qa --qf ...' is not necessarily the fastest thing in the world, at least if you're asking it for the 'size' of RPMs. With the initial output saved in a file, I can just grep the file, which is going to be very fast. PS: If your install of Fedora has been around for a while, this may also reveal various obsolete packages. I have llvm-libs packages that seem to go all the way back to Fedora 32. I pr",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "unix"
+    ],
+    "created_at": "2026-04-06T02:50:08",
+    "chinese_title": "使用两种“尺寸”查找大体积RPM包",
+    "chinese_summary": "本文介绍了在Fedora系统中查找占用空间最大的RPM包包的两种方法。作者展示了两种查询维度：一是直接查询二进制RPM包的常规大小，二是统计单个源代码包生成的所有二进制包的总安装大小。通过具体命令示例，揭示了如wine-core占用1.3GB、rocm-compilersupport在无AMD GPU机器上占用847MB等令人惊讶的发现，帮助用户在系统升级前优化磁盘空间。",
+    "chinese_insights": [
+      "单一源代码包可能生成大量二进制包（如263个texlive包、101个perl包），仅看二进制包大小无法反映真实的空间占用情况",
+      "按源代码包维度统计可发现隐藏的空间消耗者，如rocm-compilersupport在集成显卡机器上仍占用847MB",
+      "将rpm查询结果保存到文件可显著提升后续grep检索速度，尤其在查询大量包时效果明显"
+    ],
+    "key_topics": [
+      "RPM包大小分析",
+      "磁盘空间优化",
+      "Fedora系统管理"
+    ],
+    "summary": "本文介绍了在Fedora系统中查找占用空间最大的RPM包包的两种方法。作者展示了两种查询维度：一是直接查询二进制RPM包的常规大小，二是统计单个源代码包生成的所有二进制包的总安装大小。通过具体命令示例，揭示了如wine-core占用1.3GB、rocm-compilersupport在无AMD GPU机器上占用847MB等令人惊讶的发现，帮助用户在系统升级前优化磁盘空间。"
+  },
+  {
+    "id": "rss-ibrahim-diallo-5451c05e06a9",
+    "source": "Ibrahim Diallo",
+    "source_type": "rss",
+    "title": "AI Did It in 12 Minutes. It Took Me 10 Hours to Fix It",
+    "url": "https://idiallo.com/blog/it-took-me-10-hours-to-fix-ai-code?src=feed",
+    "original_content": "I've been working on personal projects since the 2000s. One thing I've always been adamant about is understanding the code I write. Even when Stack Overflow came along, I was that annoying guy who told people not to copy and paste code into their repos. Instead, they should read it and adapt it to their specific case. On personal projects, I've applied this to a fault. Projects never get done because I'm reading and editing code to make it work exactly as I want. I am by no means trying to convi",
+    "raw_text": "I've been working on personal projects since the 2000s. One thing I've always been adamant about is understanding the code I write. Even when Stack Overflow came along, I was that annoying guy who told people not to copy and paste code into their repos. Instead, they should read it and adapt it to their specific case. On personal projects, I've applied this to a fault. Projects never get done because I'm reading and editing code to make it work exactly as I want. I am by no means trying to convince you that my code is high quality. Every day, I regret the design choices I made for this very blog. But at the very least, I like to understand the code that powers my projects. So you can imagine how I struggle with the reviewing part when AI writes a large chunk of our daily work. Large language models are just so verbose, and often produce large blocks of code that don't even get used. I don't want to attribute it to malice (wasting your tokens) when I know this is an emergent technology we are all still adapting to. But it doesn't help that there is just so much code to review. What I tell myself when I review an AI-generated PR is: if I don't have a mental model of how the application works, how can I be of any use when it fails? This past weekend, I decided to tackle a project I've been postponing since I created this blog over a decade ago. I needed a nice interface to upload assets, such as images, to go with each blog post. According to my git history, I started work on it 11 years ago but never finished. Yet I've still been uploading images regularly to go with blog posts. How? Using scp and sftp . Like a caveman. Whenever I finish writing a blog post, I create images in Photoshop or Photopea, fire up FileZilla to connect to my file server, and drag and drop my assets. Then, of course, I have to log back into the blog's admin panel and provide the correct URLs for those assets. It's as primitive as it gets. This was a perfect project to tackle with AI. The good news is that I was able to complete it in a single day. Then the bad news. Well, I read through close to 5,000 lines of code. This is the first time I've used an LLM to write PHP code. I used the GLM-5 model from z.ai, which I've often played with for generating graphs from data. I'll have to try it on a few more PHP projects before I commit to this opinion, but it consistently wrote spaghetti code . Spaghetti code, to me, is anything where logic is embedded directly in a template. HTML, CSS, and database queries all crammed into the same file. That's really hard to maintain. I did realize, though, that my instructions were in direct contradiction with the agent's system prompt. It was explicit in the thinking process: This is NOT a Next.js project - the user explicitly wants a PHP app. So I should NOT use the Next.js project that's already initialized. I should create a PHP application. Wait, but the instructions say \"You are an interactive CLI tool that helps users with software engi",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "programming"
+    ],
+    "created_at": "2026-04-06T13:00:00",
+    "chinese_title": "AI 12分钟完成代码，我花10小时修复",
+    "chinese_summary": "作者Ibrahim Diallo坚持理解自己编写的代码，但面对AI生成的代码时却面临挑战。他决定用AI完成一个拖延11年的博客图片上传功能项目。AI在12分钟内生成了近5000行PHP代码，但作者花了10小时审查和修复。使用的GLM-5模型产出了“意面代码”（逻辑、HTML、CSS和数据库查询混杂在同一文件中），难以维护。作者反思：当对应用没有心智模型时，如何在故障时提供帮助？这一经历揭示了AI代码审查的困境。",
+    "chinese_insights": [
+      "AI生成的代码量大但质量堪忧，近5000行代码中存在逻辑混乱，难以维护",
+      "AI系统指令与用户需求可能存在矛盾，导致生成不符合预期的代码结构",
+      "对开发者而言，理解代码的心智模型对于故障排查至关重要，AI辅助不应替代这一理解过程"
+    ],
+    "key_topics": [
+      "AI代码审查",
+      "技术债务",
+      "开发者工作流"
+    ],
+    "summary": "作者Ibrahim Diallo坚持理解自己编写的代码，但面对AI生成的代码时却面临挑战。他决定用AI完成一个拖延11年的博客图片上传功能项目。AI在12分钟内生成了近5000行PHP代码，但作者花了10小时审查和修复。使用的GLM-5模型产出了“意面代码”（逻辑、HTML、CSS和数据库查询混杂在同一文件中），难以维护。作者反思：当对应用没有心智模型时，如何在故障时提供帮助？这一经历揭示了AI代码审查的困境。"
+  },
+  {
+    "id": "rss-terence-eden-a432f64870bf",
+    "source": "Terence Eden",
+    "source_type": "rss",
+    "title": "[RSS Club] Banana for scale",
+    "url": "https://shkspr.mobi/blog/2026/04/rss-club-banana-for-scale/",
+    "original_content": "This post is exclusive to RSS feed subscribers. Enjoy! I&#039;ve had this idea stuck in my head for a while, so I decided to make it. This is &#34;Scan Slowly And See&#34;. The code is made by cloning some of the banana&#039;s spots. Do let me know if the QR code works for you 🍌 …",
+    "raw_text": "This post is exclusive to RSS feed subscribers. Enjoy! I've had this idea stuck in my head for a while, so I decided to make it. This is \"Scan Slowly And See\". The code is made by cloning some of the banana's spots. Do let me know if the QR code works for you 🍌",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "web"
+    ],
+    "created_at": "2026-04-06T11:34:00",
+    "chinese_title": "[RSS Club] Banana for scale",
+    "chinese_summary": "生成摘要时出错: Expecting ',' delimiter: line 3 column 71 (char 115)",
+    "chinese_insights": [],
+    "key_topics": [],
+    "summary": "生成摘要时出错: Expecting ',' delimiter: line 3 column 71 (char 115)"
+  },
+  {
+    "id": "rss-dave-farquhar-035efc0a6e7c",
+    "source": "Dave Farquhar",
+    "source_type": "rss",
+    "title": "Windows 3.1 released April 6, 1992",
+    "url": "https://dfarq.homeip.net/windows-3-1-released-april-6-1992/?utm_source=rss&utm_medium=rss&utm_campaign=windows-3-1-released-april-6-1992",
+    "original_content": "Released April 6, 1992, Windows 3.1 was the successor to the very successful Windows 3.0. It wasn&#8217;t great, just like Windows 3.0 wasn&#8217;t great. But it was a graphical user interface that ran on very inexpensive ordinary PCs, and enough The post Windows 3.1 released April 6, 1992 appeared first on The Silicon Underground .",
+    "raw_text": "Released April 6, 1992, Windows 3.1 was the successor to the very successful Windows 3.0. It wasn&#8217;t great, just like Windows 3.0 wasn&#8217;t great. But it was a graphical user interface that ran on very inexpensive ordinary PCs, and enough The post Windows 3.1 released April 6, 1992 appeared first on The Silicon Underground .",
+    "relevance_score": 8,
+    "category": [
+      "tech"
+    ],
+    "created_at": "2026-04-06T11:00:29",
+    "chinese_title": "Windows 3.1 于1992年4月6日发布",
+    "chinese_summary": "Windows 3.1于1992年4月6日正式发布,是Windows 3.0的升级继任版本。尽管该系统并非革命性的伟大之作,但它作为图形用户界面(GUI)能够运行在价格低廉的普通个人电脑上,让更多普通用户得以体验图形化操作界面的便捷。这一版本的发布标志着PC图形化时代进一步向大众市场普及,在个人电脑发展史上具有重要的过渡意义。",
+    "chinese_insights": [
+      "Windows 3.1虽非突破性创新,但在PC图形化普及进程中具有承上启下的作用",
+      "该版本的核心价值在于将GUI带入普通消费级PC市场,降低了普通用户的操作门槛",
+      "从市场角度看,3.1的成功为后续Windows操作系统奠定了一定的用户基础"
+    ],
+    "key_topics": [
+      "Windows 3.1",
+      "图形用户界面(GUI)",
+      "个人电脑普及"
+    ],
+    "summary": "Windows 3.1于1992年4月6日正式发布,是Windows 3.0的升级继任版本。尽管该系统并非革命性的伟大之作,但它作为图形用户界面(GUI)能够运行在价格低廉的普通个人电脑上,让更多普通用户得以体验图形化操作界面的便捷。这一版本的发布标志着PC图形化时代进一步向大众市场普及,在个人电脑发展史上具有重要的过渡意义。"
+  },
+  {
+    "id": "rss-martin-alderson-d8f873320747",
+    "source": "Martin Alderson",
+    "source_type": "rss",
+    "title": "What next for the compute crunch?",
+    "url": "https://martinalderson.com/posts/what-next-for-the-compute-crunch/?utm_source=rss&utm_medium=rss&utm_campaign=feed",
+    "original_content": "AI compute demand is growing exponentially while supply constraints bite hard. The next 18-24 months are going to be defined by shortages, rationing and price discovery.",
+    "raw_text": "I thought it'd be a good time to continue on the same theme as my previous two articles The Coming AI Compute Crunch and Is the AI Compute Crunch Here? given that both OpenAI and Anthropic are now publicly agreeing they are (very?) compute starved. Usage is absolutely exploding I came across this really interesting tweet from the COO of GitHub which really underlines the scale of change that the world is seeing now: This shows that GitHub in the last 3 months (!) has seen a ~14x annualised increase in the number of commits. Commits are a crude proxy for inference demand - but even directionally, if we assume that most of the increase is due to coding agents hitting the mainstream, it points to an outrageously large increase in compute requirements for inference. If anything, this is probably a huge undercount - many people new to &quot;vibe coding&quot; are unlikely to get their heads round Git(Hub) quickly - distributed source control is quite confusing to non engineers (and, at least for me, took longer than I'd like to admit to get totally fluent with it as an engineer). Plus this doesn't include all the Cowork usage which is very unlikely to go anywhere near GitHub. OpenAI's Thibault Sottiaux (head of the Codex team) also tweeted recently that AI companies are going through a phase of demand outstripping supply: It's been rumoured - and indeed in my opinion highly likely given how compute intensive video generation is - that Sora was shut down to free up compute for other tasks. All AI companies are feeling this intensely . Even worse, there is a domino effect with this - when Claude Code starts tightening usage limits or experiencing compute-related outages, people start switching to e.g. Codex or OpenCode, putting increased pressure on them. What's actually going on? As I mentioned in my last articles, I believe everyone was looking at these &quot;crazy&quot; compute deals that OpenAI, Anthropic, Microsoft etc were signing like they were going out of fashion back in ~2025 the wrong way. Signing a $100bn &quot;commitment&quot; to buy a load of GPU capacity does not suddenly create said capacity. Concrete needs poured, power needs to be connected, natural gas turbines need to be ordered [1] and GPUs need to be fabricated, racked and networked. All of these products are in short supply, as is the labour required. One of the key points I think worth highlighting that often gets overlooked is how difficult the rollout of GB200 (NVidia's latest chips) has been. Unlike previous generations of GPUs from NVidia the GB200-series is fully liquid cooled - not air cooled as before. Liquid cooling at gigawatt scale just hasn't really been done in datacentres before. From what I've heard it's been unbelievably painful. Liquid cooling significantly increases the power density/m 2 , which makes the electrical engineering required harder - plus a real shortage of skilled labour [2] to plumb it all together - and even shortages of various high end plumbing co",
+    "relevance_score": 8,
+    "category": [
+      "tech"
+    ],
+    "created_at": "2026-04-06T00:00:00",
+    "chinese_title": "算力危机何去何从？",
+    "chinese_summary": "OpenAI和Anthropic公开承认面临严重算力短缺。GitHub近3个月的代码提交量同比增长14倍，反映出AI编码助手带来的推理需求激增。AI公司正处于需求远超供应的阶段，据传Sora因需释放算力而被关闭。百亿美元的计算资源采购承诺无法快速转化为实际产能，基础设施建设周期漫长。更值得关注的是英伟达GB200系列采用全液冷散热设计，在吉瓦级数据中心规模尚无先例，部署难度超乎预期，面临电力密度高、专业技术人员短缺等多重挑战。",
+    "chinese_insights": [
+      "GitHub季度代码提交量同比增长14倍，AI推理需求正以前所未有的速度增长，远超行业预期",
+      "百亿美元算力采购协议无法即时交付，从土建、电力设施到GPU制造组网均需漫长周期",
+      "GB200全液冷散热方案在吉瓦级数据中心尚无先例，部署复杂度极高，正成为算力扩张的新瓶颈"
+    ],
+    "key_topics": [
+      "算力危机",
+      "AI推理需求",
+      "液冷散热",
+      "GPU基础设施"
+    ],
+    "summary": "OpenAI和Anthropic公开承认面临严重算力短缺。GitHub近3个月的代码提交量同比增长14倍，反映出AI编码助手带来的推理需求激增。AI公司正处于需求远超供应的阶段，据传Sora因需释放算力而被关闭。百亿美元的计算资源采购承诺无法快速转化为实际产能，基础设施建设周期漫长。更值得关注的是英伟达GB200系列采用全液冷散热设计，在吉瓦级数据中心规模尚无先例，部署难度超乎预期，面临电力密度高、专业技术人员短缺等多重挑战。"
+  },
+  {
+    "id": "rss-krebs-on-security-dc201ebceab0",
+    "source": "Krebs on Security",
+    "source_type": "rss",
+    "title": "Germany Doxes “UNKN,” Head of RU Ransomware Gangs REvil, GandCrab",
+    "url": "https://krebsonsecurity.com/2026/04/germany-doxes-unkn-head-of-ru-ransomware-gangs-revil-gandcrab/",
+    "original_content": "An elusive hacker who went by the handle \"UNKN\" and ran the early Russian ransomware groups GandCrab and REvil now has a name and a face. Authorities in Germany say 31-year-old Russian Daniil Maksimovich Shchukin headed both cybercrime gangs and helped carry out at least 130 acts of computer sabotage and extortion against victims across the country between 2019 and 2021.",
+    "raw_text": "An elusive hacker who went by the handle &#8220; UNKN &#8221; and ran the early Russian ransomware groups GandCrab and REvil now has a name and a face. Authorities in Germany say 31-year-old Russian Daniil Maksimovich Shchukin headed both cybercrime gangs and helped carry out at least 130 acts of computer sabotage and extortion against victims across the country between 2019 and 2021. Shchukin was named as UNKN (a.k.a. UNKNOWN) in an advisory published by the German Federal Criminal Police (the “Bundeskriminalamt” or BKA for short). The BKA said Shchukin and another Russian &#8212; 43-year-old Anatoly Sergeevitsch Kravchuk &#8212; extorted nearly $2 million euros across two dozen cyberattacks that caused more than 35 million euros in total economic damage. Daniil Maksimovich SHCHUKIN, a.k.a. UNKN, and Anatoly Sergeevitsch Karvchuk, alleged leaders of the GandCrab and REvil ransomware groups. Germany&#8217;s BKA said Shchukin acted as the head of one of the largest worldwide operating ransomware groups GandCrab and REvil, which pioneered the practice of double extortion &#8212; charging victims once for a key needed to unlock hacked systems, and a separate payment in exchange for a promise not to publish stolen data. Shchukin&#8217;s name appeared in a Feb. 2023 filing (PDF) from the U.S. Justice Department seeking the seizure of various cryptocurrency accounts associated with proceeds from the REvil ransomware gang&#8217;s activities. The government said the digital wallet tied to Shchukin contained more than $317,000 in ill-gotten cryptocurrency. The Gandcrab ransomware affiliate program first surfaced in January 2018, and paid enterprising hackers huge shares of the profits just for hacking into user accounts at major corporations. The Gandcrab team would then try to expand that access, often siphoning vast amounts of sensitive and internal documents in the process. The malware&#8217;s curators shipped five major revisions to the GandCrab code, each corresponding with sneaky new features and bug fixes aimed at thwarting the efforts of computer security firms to stymie the spread of the malware. On May 31, 2019, the GandCrab team announced the group was shutting down after extorting more than $2 billion from victims. &#8220;We are a living proof that you can do evil and get off scot-free,&#8221; GandCrab&#8217;s farewell address famously quipped. &#8220;We have proved that one can make a lifetime of money in one year. We have proved that you can become number one by general admission, not in your own conceit.” The REvil ransomware affiliate program materialized around the same as GandCrab&#8217;s demise, fronted by a user named UNKNOWN who announced on a Russian cybercrime forum that he&#8217;d deposited $1 million in the forum&#8217;s escrow to show he meant business. By this time, many cybersecurity experts had concluded REvil was little more than a reorganization of GandCrab. UNKNOWN also gave an interview to Dmitry Smilyanets , a former mali",
+    "relevance_score": 8,
+    "category": [
+      "security",
+      "tech"
+    ],
+    "created_at": "2026-04-06T02:07:17",
+    "chinese_title": "德国曝光\"UNKN\"真实身份：俄罗斯勒索软件巨头GandCrab和REvil头目落网",
+    "chinese_summary": "德国联邦刑事警察局（BKA）近日公布了一名神秘黑客\"UNKN\"（别名UNKNOWN）的真实身份，确认其为31岁的俄罗斯人Daniil Maksimovich Shchukin。Shchukin是全球最大勒索软件组织GandCrab和REvil的领导者，在2019至2021年间针对德国受害者实施至少130次网络攻击，勒索近200万欧元，造成超3500万欧元经济损失。GandCrab于2018年兴起，2019年宣布关停时声称已勒索超20亿美元。REvil则采用创新的\"双重勒索\"模式（先索要解密密钥费，再威胁公开数据），被业内认为是GandCrab的重组升级版。美国司法部2023年文件显示，Shchukin关联的加密货币钱包存有价值超31.7万美元的非法所得。",
+    "chinese_insights": [
+      "双重勒索模式已成为主流：GandCrab和REvil开创的先窃数据再威胁公开的'双重勒索'策略现已成为勒索软件行业标准，反映网络犯罪的专业化演进",
+      "国际执法协作成效显著：BKA通过与多国执法部门合作成功关联多起独立网络攻击至同一犯罪组织，展现跨境网络犯罪调查的复杂性",
+      "网络犯罪呈现组织化特征：从 Affiliate 计划分成机制（2018年GandCrab向黑客支付高额利润分成）到退出声明的\"狂妄宣言\"，表明现代网络犯罪已高度组织化且藐视法律"
+    ],
+    "key_topics": [
+      "勒索软件",
+      "双重勒索",
+      "网络犯罪组织",
+      "GandCrab",
+      "REvil"
+    ],
+    "summary": "德国联邦刑事警察局（BKA）近日公布了一名神秘黑客\"UNKN\"（别名UNKNOWN）的真实身份，确认其为31岁的俄罗斯人Daniil Maksimovich Shchukin。Shchukin是全球最大勒索软件组织GandCrab和REvil的领导者，在2019至2021年间针对德国受害者实施至少130次网络攻击，勒索近200万欧元，造成超3500万欧元经济损失。GandCrab于2018年兴起，2019年宣布关停时声称已勒索超20亿美元。REvil则采用创新的\"双重勒索\"模式（先索要解密密钥费，再威胁公开数据），被业内认为是GandCrab的重组升级版。美国司法部2023年文件显示，Shchukin关联的加密货币钱包存有价值超31.7万美元的非法所得。"
+  },
+  {
+    "id": "atom-daring-fireball-bd0d81510046",
+    "source": "Daring Fireball",
+    "source_type": "rss",
+    "title": "[Sponsor] Zed, a Font Superfamily",
+    "url": "https://www.typotheque.com/blog/zed-a-sans-for-the-needs-of-21century/?utm_source=df",
+    "original_content": "Zed is a type system that was developed with one question in mind: what do readers actually need? Not what looks good in a type specimen, but what works for the widest possible range of readers. We tested Zed with visually impaired patients at a French ophthalmology hospital and found that Zed Text outperformed Helvetica in terms of reading speed across all patient groups. Designed from scratch to perform different functions, it comes in two optical versions — Text and Display — with four variab",
+    "raw_text": "Zed is a type system that was developed with one question in mind: what do readers actually need? Not what looks good in a type specimen, but what works for the widest possible range of readers. We tested Zed with visually impaired patients at a French ophthalmology hospital and found that Zed Text outperformed Helvetica in terms of reading speed across all patient groups. Designed from scratch to perform different functions, it comes in two optical versions — Text and Display — with four variable axes and support for 547 languages, including endangered ones. It is available directly from the designers. &amp;nbsp;★&amp;nbsp;",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "apple"
+    ],
+    "created_at": "2026-04-06T19:15:05",
+    "chinese_title": "[赞助] Zed：一款满足21世纪需求的字体超级家族",
+    "chinese_summary": "Zed是由TypeTogether开发的字体系统，旨在回答一个核心问题：读者真正需要什么样的字体？该系统从零开始设计，针对实际阅读功能进行优化，分为Text和Display两个光学版本。Zed支持四个可变字体轴和547种语言，包括濒危语言。在法国一家眼科医院的临床测试中，Zed Text在阅读速度上超越了Helvetica字体，适用于所有患者群体。该字体可直接从设计师处获取，标志着无障碍阅读字体设计的重要突破。",
+    "chinese_insights": [
+      "以用户需求为导向的字体开发理念：不是追求视觉标本上的美观，而是解决最广泛读者的实际阅读需求",
+      "实证研究验证字体效果：在法国眼科医院与视觉障碍患者合作测试，证明Zed Text在阅读速度上优于经典字体Helvetica",
+      "高度包容性与可及性：支持547种语言包括濒危语言，体现字体设计的社会责任和文化多样性保护"
+    ],
+    "key_topics": [
+      "无障碍字体设计",
+      "可变字体技术",
+      "多语言支持"
+    ],
+    "summary": "Zed是由TypeTogether开发的字体系统，旨在回答一个核心问题：读者真正需要什么样的字体？该系统从零开始设计，针对实际阅读功能进行优化，分为Text和Display两个光学版本。Zed支持四个可变字体轴和547种语言，包括濒危语言。在法国一家眼科医院的临床测试中，Zed Text在阅读速度上超越了Helvetica字体，适用于所有患者群体。该字体可直接从设计师处获取，标志着无障碍阅读字体设计的重要突破。"
+  },
+  {
+    "id": "atom-daring-fireball-7f29574390f6",
+    "source": "Daring Fireball",
+    "source_type": "rss",
+    "title": "Anthropic Accidentally Leaked the Entire Claude Code CLI Source Code",
+    "url": "https://arstechnica.com/ai/2026/03/entire-claude-code-cli-source-code-leaks-thanks-to-exposed-map-file/",
+    "original_content": "Samual Axon, reporting last week for Ars Technica: Early this morning, Anthropic published version 2.1.88 of Claude Code npm package — but it was quickly discovered that package included a source map file, which could be used to access the entirety of Claude Code’s source — almost 2,000 TypeScript files and more than 512,000 lines of code. Security researcher Chaofan Shou was the first to publicly point it out on X , with a link to an archive containing the files. The codebase was then put in a ",
+    "raw_text": "Samual Axon, reporting last week for Ars Technica: Early this morning, Anthropic published version 2.1.88 of Claude Code npm package — but it was quickly discovered that package included a source map file, which could be used to access the entirety of Claude Code’s source — almost 2,000 TypeScript files and more than 512,000 lines of code. Security researcher Chaofan Shou was the first to publicly point it out on X , with a link to an archive containing the files. The codebase was then put in a public GitHub repository, and it has been forked tens of thousands of times. Anthropic publicly acknowledged the mistake in a statement to VentureBeat and other outlets, which reads: Earlier today, a Claude Code release included some internal source code. No sensitive customer data or credentials were involved or exposed. This was a release packaging issue caused by human error, not a security breach. We’re rolling out measures to prevent this from happening again. Not exactly confidence inspiring, given how incredibly sensitive much of the material users give Claude and Claude Code access to. To say the least, it undermines the message that companies should trust their source code to Claude Code when Anthropic accidentally leaked their own source code. &amp;nbsp;★&amp;nbsp;",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "apple"
+    ],
+    "created_at": "2026-04-06T19:04:54",
+    "chinese_title": "Anthropic意外泄露完整Claude Code CLI源代码",
+    "chinese_summary": " Anthropic在发布Claude Code npm包版本2.1.88时，意外包含了源代码映射文件，导致近2000个TypeScript文件和超过512,000行代码被完全暴露。安全研究员Chaofan Shou首先在X平台公开指出这一问题，并提供了文件存档链接，随后代码被上传至GitHub并被fork数万次。Anthropic随后发声明承认这是由人为错误导致的发布打包问题，强调没有泄露敏感客户数据或凭证，但此次事件仍严重损害了用户对Claude Code处理敏感源代码的信任。",
+    "chinese_insights": [
+      "大规模源码泄露暴露内部开发细节：近2000个TypeScript文件、超过51万行代码的泄露，使Anthropic的内部实现完全透明化",
+      "供应链安全风险凸显：npm包发布流程中源代码映射文件的意外 inclusion 成为严重的安全隐患，亟需加强发布审核机制",
+      "信任危机影响深远：作为AI代码助手却意外泄露自身源码，这一声誉打击将削弱企业用户将代码委托给Claude Code的信心"
+    ],
+    "key_topics": [
+      "源代码泄露",
+      "npm包安全",
+      "Claude Code",
+      "Anthropic"
+    ],
+    "summary": " Anthropic在发布Claude Code npm包版本2.1.88时，意外包含了源代码映射文件，导致近2000个TypeScript文件和超过512,000行代码被完全暴露。安全研究员Chaofan Shou首先在X平台公开指出这一问题，并提供了文件存档链接，随后代码被上传至GitHub并被fork数万次。Anthropic随后发声明承认这是由人为错误导致的发布打包问题，强调没有泄露敏感客户数据或凭证，但此次事件仍严重损害了用户对Claude Code处理敏感源代码的信任。"
+  },
+  {
+    "id": "atom-daring-fireball-fdcaac1108f5",
+    "source": "Daring Fireball",
+    "source_type": "rss",
+    "title": "Little Finder Guy Stars in Nine New Videos on TikTok and YouTube",
+    "url": "https://www.macrumors.com/2026/04/02/little-finder-guy-tiktok-youtube/",
+    "original_content": "Juli Clover, at MacRumors: Apple has shared nine Little Finder Guy videos this week, and on TikTok, the thumbnails for the videos come together to make a Little Finder Guy mosaic on the Apple TikTok page. I hope this doesn’t jinx the negotiations, but I’m working on getting Little Finder Guy as my guest for The Talk Show Live From WWDC this June. &amp;nbsp;★&amp;nbsp;",
+    "raw_text": "Juli Clover, at MacRumors: Apple has shared nine Little Finder Guy videos this week, and on TikTok, the thumbnails for the videos come together to make a Little Finder Guy mosaic on the Apple TikTok page. I hope this doesn’t jinx the negotiations, but I’m working on getting Little Finder Guy as my guest for The Talk Show Live From WWDC this June. &amp;nbsp;★&amp;nbsp;",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "apple"
+    ],
+    "created_at": "2026-04-06T16:39:26",
+    "chinese_title": "苹果经典吉祥物 \"Little Finder Guy\" 亮相 TikTok 和 YouTube，发布九支新视频",
+    "chinese_summary": "MacRumors 报道，苹果本周在 TikTok 和 YouTube 平台发布了九支 \"Little Finder Guy\"（小finder guy）短视频。在 TikTok 上，这些视频的缩略图拼接成一幅完整的 \"Little Finder Guy\" 马赛克图案呈现于苹果官方账号。作者透露正在邀请这位经典 Mac 吉祥物作为今年六月 WWDC 大会 \"The Talk Show Live From WWDC\" 节目的嘉宾。",
+    "chinese_insights": [
+      "苹果正利用经典 Mac 吉祥物进行社交媒体营销创新，通过 TikTok 缩略图拼接成马赛克图案的创意形式提升用户互动体验",
+      "Little Finder Guy 作为苹果历史悠久的品牌符号，在 WWDC 2026 前夕重新进入公众视野，兼具怀旧情怀与品牌传承意义",
+      "苹果多平台内容策略同步推进，在 TikTok 和 YouTube 双平台发布内容，扩大触达年轻用户群体的覆盖面"
+    ],
+    "key_topics": [
+      "苹果社交媒体营销",
+      "Little Finder Guy 吉祥物",
+      "WWDC 2026",
+      "TikTok/YouTube 多平台内容"
+    ],
+    "summary": "MacRumors 报道，苹果本周在 TikTok 和 YouTube 平台发布了九支 \"Little Finder Guy\"（小finder guy）短视频。在 TikTok 上，这些视频的缩略图拼接成一幅完整的 \"Little Finder Guy\" 马赛克图案呈现于苹果官方账号。作者透露正在邀请这位经典 Mac 吉祥物作为今年六月 WWDC 大会 \"The Talk Show Live From WWDC\" 节目的嘉宾。"
+  },
+  {
+    "id": "rss-pluralistic-a7935793d6d0",
+    "source": "Pluralistic",
+    "source_type": "rss",
+    "title": "Pluralistic: Your boss wants to use surveillance data to cut your wages (06 Apr 2026)",
+    "url": "https://pluralistic.net/2026/04/06/empiricism-washing/",
+    "original_content": "Today's links Your boss wants to use surveillance data to cut your wages: Tech rights are labor rights (again). Hey look at this: Delights to delectate. Object permanence: Arthur C Clarke v Buddhist monks (x DST); Bomb squad v life-size Mario power-ups; Panama Papers; Chinese antitrust; Consumerism v New Jim Crow; Absurd English spelling; Save Netflix! David Cameron's dad v Panama Papers; Trick photos with a giant coin; End-stage capitalism. Upcoming appearances: Toronto, Montreal, Toronto, San ",
+    "raw_text": "->->->->->->->->->->->->->->->->->->->->->->->->->->->->-> Top Sources: None --> Today's links Your boss wants to use surveillance data to cut your wages : Tech rights are labor rights (again). Hey look at this : Delights to delectate. Object permanence : Arthur C Clarke v Buddhist monks (x DST); Bomb squad v life-size Mario power-ups; Panama Papers; Chinese antitrust; Consumerism v New Jim Crow; Absurd English spelling; Save Netflix! David Cameron's dad v Panama Papers; Trick photos with a giant coin; End-stage capitalism. Upcoming appearances : Toronto, Montreal, Toronto, San Francisco, London, Berlin, NYC, Hay-on-Wye, London. Recent appearances : Where I've been. Latest books : You keep readin' em, I'll keep writin' 'em. Upcoming books : Like I said, I'll keep writin' 'em. Colophon : All the rest. Your boss wants to use surveillance data to cut your wages ( permalink ) What industry calls \"personalized pricing\" is really surveillance pricing: using digital tools' flexibility to change the price for each user, and using surveillance data to guess the worst price you'll accept: https://pluralistic.net/2025/06/24/price-discrimination/ At root, surveillance pricing allows companies to revalue both your savings and your labor. If you get charged $2 for something I only pay $1 for, the seller is essentially reaching into your bank account and revaluing the dollars in it at 50 cents apiece. If you get paid $1 for a job that I make $2 for, then the boss is valuing your labor at 50% of my labor: https://pluralistic.net/2025/06/24/price-discrimination/# Surveillance pricing is a key part of enshittification, relying on three of the key enshittificatory factors that have transformed this era into the enshittocene: I. Monopoly: Surveillance pricing is undesirable to both workers and buyers, so in a competitive market, surveillance pricing would drive labor and consumption to non-surveilling rivals: https://pluralistic.net/2022/02/20/we-should-not-endure-a-king/ II. Regulatory capture: Surveillance pricing only exists because of weak regulation and weak enforcement of existing regulations. To engage in surveillance pricing, a company must first put you under surveillance, something that is only possible in the absence of effective privacy law. In the USA, privacy law hasn't been updated since Congress passed a law in 1988 that banned video-store clerks from disclosing your VHS rentals: https://pluralistic.net/2025/10/31/losing-the-crypto-wars/#surveillance-monopolism In the EU, the strong privacy provisions in the GDPR have been neutralized by US tech giants who fly an Irish flag of convenience. Ireland attracts these companies by allowing them to evade their taxes, but it can only keep these companies by allowing them to break any law that gets in their way, because if Meta can pretend to be Irish this week, it could pretend to be Maltese (or Cypriot, Luxembourgeois, or Dutch) next week: https://pluralistic.net/2023/05/15/finnegans-snooze/#dirty-old-town ",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "policy"
+    ],
+    "created_at": "2026-04-06T09:04:57",
+    "chinese_title": "你的老板想用监控数据来压低你的工资",
+    "chinese_summary": "本文揭示了所谓\"个性化定价\"的本质实际上是\"监控定价\"——企业利用数字工具的灵活性，针对不同用户设定不同价格，并通过监控数据猜测用户可接受的最低价格。这种做法不仅让消费者支付更高费用，更被用于压低员工工资。文章指出监控定价是\"企业恶化\"（enshittification）的关键部分，源于三大因素：市场垄断、监管捕获以及隐私法律的缺失。美国自1988年以来未更新隐私法，欧盟GDPR也被爱尔兰空壳公司规避。",
+    "chinese_insights": [
+      "监控定价本质是双重剥削：消费者被收取更高价格，员工的劳动价值被系统性压低",
+      "隐私法律缺位与市场垄断形成恶性循环，使企业得以滥用监控数据而缺乏竞争压力",
+      "监管捕获导致现行隐私法规形同虚设，企业可通过跨国架构规避法律约束"
+    ],
+    "key_topics": [
+      "监控定价",
+      "隐私保护",
+      "劳动权益",
+      "企业恶化"
+    ],
+    "summary": "本文揭示了所谓\"个性化定价\"的本质实际上是\"监控定价\"——企业利用数字工具的灵活性，针对不同用户设定不同价格，并通过监控数据猜测用户可接受的最低价格。这种做法不仅让消费者支付更高费用，更被用于压低员工工资。文章指出监控定价是\"企业恶化\"（enshittification）的关键部分，源于三大因素：市场垄断、监管捕获以及隐私法律的缺失。美国自1988年以来未更新隐私法，欧盟GDPR也被爱尔兰空壳公司规避。"
+  },
+  {
+    "id": "rss-joan-westenberg-9522cda96e5f",
+    "source": "Joan Westenberg",
+    "source_type": "rss",
+    "title": "The Hacker News tarpit",
+    "url": "https://www.joanwestenberg.com/the-hacker-news-tarpit/",
+    "original_content": "This newsletter is free to read, and it&#x2019;ll stay that way. But if you want more - extra posts each month, no sponsored CTAs, access to the community, and a direct line to ask me things - paid subscriptions are $2.50/month. A lot of people have",
+    "raw_text": "This newsletter is free to read, and it&#x2019;ll stay that way. But if you want more - extra posts each month, no sponsored CTAs, access to the community, and a direct line to ask me things - paid subscriptions are $2.50/month. A lot of people have told me it&#x2019;s worth it. Upgrade Hacker News is a web application with the following features: a list of links, sorted by votes. Comments under those links, also sorted by votes. User accounts with karma. A text submission option. A jobs board. That&apos;s it; that&apos;s the entire product. The database schema would take a handful of tables. You&apos;ve got users, posts, comments, votes, and some metadata. A first-year CS student could design it. And I don&apos;t mean that as an insult to either the first-year CS student or to Hacker News. Well, I spent a Saturday last month vibe coding a Hacker News clone. Took about 3 hours, most of which was me arguing with the AI about CSS. By the end I had a working link aggregator with voting, comments, user accounts, and a ranking algorithm roughly equivalent to the one HN uses. It looked like Hacker News. It functioned like Hacker News. It sorted stories by a points-over-time decay function and everything. My 9 year old could have used it. ...but nobody will ever use it. To be clear - this is not a post about how hard it is to build software. It&apos;s a post about how easy it is to build software, and how that easiness fools people into thinking they understand what they&apos;re looking at when they see a successful product. Every developer who sees HN thinks, &quot;I could build that in a weekend.&quot; And they&apos;re right; they absolutely could. In fact, I&apos;d assume they&apos;re pretty shite at their jobs if they couldn&apos;t. What they couldn&apos;t build in a weekend // month // year // probably ever, is the thing that makes Hacker News actually work. And that ~thing is not the software. Let me list every Hacker News clone I can think of off the top of my head: Lobsters, Tildes, Barnacles, EchoJS, Hashnode, various subreddits pretending to be link aggregators, that one site called Squishy or Squidgy or something that I remember existing briefly in 2019. Some of these are ok. Lobsters is genuinely good. But none of them are Hacker News in the way that matters, which is: none of them are the place where you go when you want to know what several hundred thousand programmers think is interesting right now. You can&apos;t build Place People Go as a feature. It&apos;s a thing that happened over time, through a specific and unrepeatable sequence of events, most of which were not planned and some of which were just luck. Hacker News launched in 2007 as a side project by Paul Graham, who ran Y Combinator. The initial user base was people who read Paul Graham&apos;s essays. Think about what that means for a second. The seed community was a self-selected group of people who were (a) programmers or startup founders, (b) interested enough in ideas to rea",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "culture"
+    ],
+    "created_at": "2026-04-06T23:36:11",
+    "chinese_title": "Hacker News的“焦油坑”",
+    "chinese_summary": "本文作者Joan Westenberg指出，虽然Hacker News的技术架构非常简单（链接排序、评论、用户积分、文本投稿、工作板块），任何初级计算机专业学生都能设计出来，作者本人也仅用3小时通过“氛围编码“就做出了一个可用版本。但真正让Hacker News成功的并非软件本身，而是其独特的历史机遇：2007年由Y Combinator创始人Paul Graham推出，最初用户来自阅读Paul Graham文章的程序员和创业者群体。这种自发形成的社区粘性是无法被复制的，作者列举的Lobsters、Tildes等众多克隆版本都无法取代HN在程序员心中的地位。网络效应的形成是特定且不可重复的历史事件集合，而非功能特性。",
+    "chinese_insights": [],
+    "key_topics": [
+      "网络效应",
+      "社区构建",
+      "产品陷阱",
+      "技术创业"
+    ],
+    "summary": "本文作者Joan Westenberg指出，虽然Hacker News的技术架构非常简单（链接排序、评论、用户积分、文本投稿、工作板块），任何初级计算机专业学生都能设计出来，作者本人也仅用3小时通过“氛围编码“就做出了一个可用版本。但真正让Hacker News成功的并非软件本身，而是其独特的历史机遇：2007年由Y Combinator创始人Paul Graham推出，最初用户来自阅读Paul Graham文章的程序员和创业者群体。这种自发形成的社区粘性是无法被复制的，作者列举的Lobsters、Tildes等众多克隆版本都无法取代HN在程序员心中的地位。网络效应的形成是特定且不可重复的历史事件集合，而非功能特性。"
+  },
+  {
+    "id": "rss-where's-your-ed-at-6d149a3a77eb",
+    "source": "Where's Your Ed At",
+    "source_type": "rss",
+    "title": "News: OpenAI CFO Doesn't Believe Company Ready For IPO, Unsure Revenue Will Support Commitments",
+    "url": "https://www.wheresyoured.at/openai-cfo-news/",
+    "original_content": "Executive Summary OpenAI CFO Sarah Friar has, per The Information, said that OpenAI is not ready to go public in 2026, in part because of the &quot;risks from its spending commitments&quot; and not being sure whether the company&apos;s revenue growth would support its spending commitments. Friar",
+    "raw_text": "Executive Summary OpenAI CFO Sarah Friar has, per The Information, said that OpenAI is not ready to go public in 2026, in part because of the &quot;risks from its spending commitments&quot; and not being sure whether the company&apos;s revenue growth would support its spending commitments. Friar (CFO) no longer reports to Sam Altman (CEO) and hasn&apos;t done so since August 2025. OpenAI&apos;s margins were lower in 2025 &quot;...due to the company having to buy more expensive compute at the last minute.&quot; News out of The Information&apos;s Anissa Gardizy and Amir Efrati over the weekend - OpenAI CFO Sarah Friar has apparently clashed with CEO Sam Altman over timing around OpenAI&apos;s IPO, emphasis mine: She told some colleagues earlier this year that she didn&#x2019;t believe the company would be ready to go public in 2026, because of the procedural and organizational work needed and the risks from its spending commitments, according to a person who spoke to her. She said she wasn&#x2019;t sure yet whether OpenAI would need to pour so much money into obtaining AI servers in the coming years or whether its revenue growth, which has been slowing, would support the commitments , said the person who spoke to her. I cannot express how strange this is. Generally a CFO and CEO are in lock-step over IPO timing, or at the very least the CFO has an iron grip on the actual timing because, well, CEOs love to go public and the CFO generally exists to curb their instincts. Nevertheless, Clammy Sam Altman has clearly sidelined Friar, and as of August last year, the CFO of OpenAI doesn&apos;t report to the CEO . In fact, the person Friar reports to ( Fiji Simo ) just took a medical leave of absence: In an unusual move for a large company, where CFOs almost always answer directly to the CEO, Friar stopped reporting directly to Altman in August last year and instead began reporting to Fidji Simo, who had joined as head of OpenAI&#x2019;s applications business. Simo last week told staff she would take a short medical leave. It is extremely peculiar to not have the Chief Financial Officer report to the Chief Executive Officer , but remember folks, this is OpenAI, the world&apos;s least-normal company! Anyway, all of this seemed really weird, so I asked investor, writer and economist Paul Kedrosky for his thoughts: Having been around this industry as an investor for decades, I cannot recall an example of the CFO of a major pre-IPO tech company (allegedly) taking issue with their own company&apos;s IPO plans. It doesn&apos;t happen. Very cool! Paul is also a guest on this week&apos;s episode of my podcast Better Offline , by the way. Out at 12AM ET Tuesday. Anyway, The Information&apos;s piece also adds another fun detail - that OpenAI&apos;s margins were even worse than expected in 2025: In another sign of its financial pressures, OpenAI told investors that its gross profit margins last year were lower than projected due to the company having to buy more expen",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "business"
+    ],
+    "created_at": "2026-04-06T14:49:40",
+    "chinese_title": "OpenAI CFO质疑公司2026年IPO可行性，对营收支撑支出承诺表示担忧",
+    "chinese_summary": "据The Information报道，OpenAI首席财务官Sarah Friar认为公司可能无法在2026年上市，原因包括支出承诺风险以及营收增长放缓可能难以支撑相关承诺。此外，OpenAI 2025年毛利率低于预期，因公司需紧急采购昂贵的计算资源。自2025年8月起，Friar不再向CEO Sam Altman汇报，而是改向Fidji Simo汇报，此举在大型科技公司中极为罕见。",
+    "chinese_insights": [
+      "CFO与CEO在IPO时间表上公开存在分歧，这在准备上市的大型科技公司中极为罕见，通常 CFO 会支持 IPO 计划而非反对",
+      "OpenAI 面临显著的算力成本压力，2025年毛利率因紧急采购高价计算资源而低于预期，反映出AI基础设施成本挑战",
+      "公司治理结构出现异常安排，CFO不再直接向CEO汇报，且汇报对象Fidji Simo近期开始休医疗假，进一步加剧管理不确定性"
+    ],
+    "key_topics": [
+      "OpenAI IPO",
+      "企业财务管理",
+      "AI算力成本",
+      "公司治理结构"
+    ],
+    "summary": "据The Information报道，OpenAI首席财务官Sarah Friar认为公司可能无法在2026年上市，原因包括支出承诺风险以及营收增长放缓可能难以支撑相关承诺。此外，OpenAI 2025年毛利率低于预期，因公司需紧急采购昂贵的计算资源。自2025年8月起，Friar不再向CEO Sam Altman汇报，而是改向Fidji Simo汇报，此举在大型科技公司中极为罕见。"
+  },
+  {
+    "id": "atom-dylan-nesbitt-220e63926b5f",
+    "source": "Dylan Nesbitt",
+    "source_type": "rss",
+    "title": "The Cathedral and the Catacombs",
+    "url": "https://nesbitt.io/2026/04/06/the-cathedral-and-the-catacombs.html",
+    "original_content": "Eric Raymond’s The Cathedral and the Bazaar is almost thirty years old and people are still finding new ways to extend the metaphor. Drew Breunig recently described a third mode, the Winchester Mystery House , for the sprawling codebases that agentic AI produces: rooms that lead nowhere, staircases into ceilings, a single builder with no plan. That piece got me thinking, though it shares a blind spot with every other response to Raymond I’ve read. As the P2P Foundation pointed out , historical c",
+    "raw_text": "Eric Raymond’s The Cathedral and the Bazaar is almost thirty years old and people are still finding new ways to extend the metaphor. Drew Breunig recently described a third mode, the Winchester Mystery House , for the sprawling codebases that agentic AI produces: rooms that lead nowhere, staircases into ceilings, a single builder with no plan. That piece got me thinking, though it shares a blind spot with every other response to Raymond I’ve read. As the P2P Foundation pointed out , historical cathedrals were communal projects that mobilized entire communities through donations and voluntary labour, not top-down designs imposed by a single architect, and the bazaar isn’t really a market when nothing is priced and there are no merchants. But the responses all stay within the same frame: process, governance, and who builds. I find it odd that in nearly three decades of cathedral-and-bazaar discourse, nobody has written about the catacombs: the dependency graph underneath every project, the deep network of transitive packages and shared libraries and unmaintained infrastructure that the visible building rests on, regardless of whether a cathedral architect or a bazaar crowd built it. When Raymond wrote that “given enough eyeballs, all bugs are shallow”, he was talking about the thing you can see: the project, its source, its public development process. Linus’s law assumes people are looking. The dependency tree breaks that assumption. A typical JavaScript project can pull in hundreds of transitive dependencies that nobody on the team has read, written by maintainers they’ve never heard of, last updated at various points over the past several years. The cathedral’s architects didn’t inspect the catacombs before building on top of them, and the bazaar’s crowd didn’t either, because in both cases the construction process is what gets all the attention while the foundations are treated as someone else’s concern. Josh Bressers argued that successful open source projects are really megachurches now, large structured organizations with budgets and governance, while the actual bazaar is the neglected hobbyist layer underneath. He comes closest to this when he identifies that neglected layer, and Nadia Eghbal’s Roads and Bridges documented the same neglect as an infrastructure funding problem back in 2016. But both are talking about maintainers and their working conditions, which is still a question about people and process. It’s not just that the maintainers of your transitive dependencies are overworked or under-resourced (though they are). It’s that the dependency graph itself is a load-bearing structure that nobody designed and nobody audits as a whole. There are partial efforts: lockfiles, SBOMs, dependency scanners, distro maintainers who vet packages one at a time. But none of them look at the graph as a connected system. It assembled itself through thousands of independent decisions by maintainers who each added whatever looked useful, and the result",
+    "relevance_score": 8,
+    "category": [
+      "tech"
+    ],
+    "created_at": "2026-04-06T10:00:00",
+    "chinese_title": "大教堂、市集与地下墓穴：被忽视的软件依赖图",
+    "chinese_summary": "本文作者Dylan Nesbitt扩展了Eric Raymond经典的“大教堂与市集”隐喻，提出“地下墓穴”(Catacombs)概念——即软件项目依赖图下的传递依赖网络。作者指出，三十年来的讨论都聚焦于过程、治理和构建者，却忽视了依赖图这一“承重结构”：典型的JavaScript项目可能引入数百个无人阅读的传递依赖，由素未谋面的维护者编写，更新时间各不相同。Linus定律“足够多的眼睛，所有bug都是浅的”假设人们在看，但依赖树打破了这个假设。没人以系统视角审计整个依赖图，尽管存在lockfiles、SBOM和依赖扫描器等局部努力。开源项目已演变为大型组织，而实际的“市集”是底下被忽视的爱好者层。",
+    "chinese_insights": [
+      "依赖图是软件项目的“隐藏基础设施”，其规模和问题尚未被充分认识：典型项目可能依赖数百个传递依赖，维护者、更新状态、安全性都不可见",
+      "Linus定律在依赖图层面失效：因为没人系统性审计整个依赖树，“足够 eyeballs”的假设不成立，漏洞可以隐藏在深层传递依赖中",
+      "需要系统性审计视角：现有工具(lockfiles、SBOM、依赖扫描器)都是局部解决方案，需要从整体图结构层面理解和审计依赖关系"
+    ],
+    "key_topics": [
+      "开源软件依赖图",
+      "传递依赖(Transitive Dependencies)安全风险",
+      "软件供应链审计",
+      "开源治理模式演进"
+    ],
+    "summary": "本文作者Dylan Nesbitt扩展了Eric Raymond经典的“大教堂与市集”隐喻，提出“地下墓穴”(Catacombs)概念——即软件项目依赖图下的传递依赖网络。作者指出，三十年来的讨论都聚焦于过程、治理和构建者，却忽视了依赖图这一“承重结构”：典型的JavaScript项目可能引入数百个无人阅读的传递依赖，由素未谋面的维护者编写，更新时间各不相同。Linus定律“足够多的眼睛，所有bug都是浅的”假设人们在看，但依赖树打破了这个假设。没人以系统视角审计整个依赖图，尽管存在lockfiles、SBOM和依赖扫描器等局部努力。开源项目已演变为大型组织，而实际的“市集”是底下被忽视的爱好者层。"
+  },
+  {
+    "id": "rss-anthropic-blog-765cbd076c3c",
+    "source": "Anthropic Blog",
+    "source_type": "blog",
+    "title": "Anthropic expands partnership with Google and Broadcom for multiple gigawatts of next-generation compute",
+    "url": "https://www.anthropic.com/news/google-broadcom-partnership-compute",
+    "original_content": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+    "raw_text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "anthropic",
+      "official"
+    ],
+    "published_date": "2026-04-06",
+    "created_at": "2026-04-06T12:00:00"
+  },
+  {
+    "id": "rss-赛博禅心-a12d55dbec44",
+    "source": "赛博禅心",
+    "source_type": "wechat",
+    "title": "一城一段提示词，300+ 座城市美食图鉴",
+    "url": "https://mp.weixin.qq.com/s?__biz=MzkzNDQxOTU2MQ==&mid=2247515114&idx=1&sn=008b54856318448c2c12f0e60f2c4f17",
+    "original_content": "很适合作为城市宣传材料",
+    "raw_text": "原创 金色传说大聪明 2026-04-06 14:56 河北 很适合作为城市宣传材料 我用 Nano Banana，把全国所有城市，做成了美食地图，用同一个视角： 坐在当地，食物在桌上，城市在窗外，山河在最远处 300+ 个地级&amp;以上城市，全部跑完了，想要对应城市提示词的话，评论区留言 对应留言点赞到 3 个，我就放提示词 比如这个是杭州的 杭州 啊不是，放错了 杭州 先放几张出来 提示词我写得比较细，诗意的部分是我自己加的，结构部分做了严格规范，直接贴进去就能用 北京 钟鼓楼、胡同灰瓦、铜锅、燕山 北京 提示词： 钟鼓楼的影子压过灰瓦，一片接一片 涮锅的热气漫上来，和那些影子混在一起 燕山在窗外，从来就在那里 【视角定位】 深秋午后，坐在鼓楼附近一栋老四合院二层临窗 窗外是连片胡同灰瓦屋顶 钟楼鼓楼在中景，燕山长城在天际 【近景·桌面·写实】 旧木桌靠窗摆放，桌沿占画面最下方 铜制涮锅居中沸腾 薄切羊肉片、冻豆腐、白菜整齐码在锅边小碟 芝麻酱、韭菜花、腐乳三碟蘸料一字排开 一碟糖蒜，一壶二锅头 窗框将室内与室外自然分割 所有食物写实如美食纪录片镜头 【中景·城市·写实】 窗外是连片北京胡同灰瓦屋顶，向远处密密铺展 钟楼和鼓楼的真实轮廓在灰瓦海中央清晰矗立 胡同院落的树冠从屋顶间探出，秋天金黄 国贸CBD的玻璃高楼群从胡同灰瓦的尽头自然升起 两者之间没有任何割裂，这是北京真实的城市断面 【远景·自然·写实】 燕山山脉真实轮廓横亘最远处 深秋山色红黄，长城沿山脊自然蜿蜒 烽火台隐约可辨 华北秋日湛蓝天空，远山有真实的大气透视，轮廓偏蓝 【光线】 深秋午后斜阳从右侧低角度射入窗内 铜锅油面反光强烈 窗框在桌面投下长条阴影 胡同灰瓦在斜阳下泛暖金 远山在侧逆光中轮廓清晰 【情绪】 从这扇窗往外看 灰瓦是一千年，鼓楼是七百年 CBD是三十年，长城是两千年 全都在同一个窗框里 【文字】右上角「北京」，白色细体，简洁 8K，电影级景深，3:4纵向，纪录片摄影质感&#34; 重庆 两江交汇、山城夜色、红锅翻滚、对岸灯火 重庆 提示词： 雾从两条江上爬上来，爬过吊脚楼，爬过防空洞 花椒在锅里炸开的声音盖过了江上的汽笛 这座城市从来就不是平的 【视角定位】 秋末傍晚，坐在南岸南滨路沿江某火锅馆二楼临江窗边 正对嘉陵江与长江交汇的朝天门 渝中半岛的整个城市轮廓从江对面层层叠叠升起来 【近景·桌面·写实】 厚实的老木桌占据画面下方 九宫格红油火锅居中翻滚，牛油锅底表面花椒和干辣椒密密浮着，气泡不断翻上来 毛肚一盘，鹅肠一盘，鸭血一碟，黄喉切成整齐长条 老肉片、耗儿鱼、藕片、土豆片分盘摆开 油碟里蒜泥香油和香菜已经调好 一瓶山城啤酒开了盖，旁边还有一瓶唯怡豆奶 朋友的手伸进画面正在往锅里下毛肚 竹筷、纸巾盒、装蒜瓣的小碗散在桌上 所有食物写实如美食纪录片镜头 【中景·城市·写实】 窗外长江和嘉陵江在朝天门码头交汇，两江水色一浑一清在汇合处形成清晰分界线 渝中半岛从江面拔地而起，吊脚楼群、洪崖洞的层叠灯火建筑沿崖壁向上攀爬 解放碑商圈的现代高楼在半岛脊线上密集矗立 来福士广场的弧形玻璃体量压在朝天门码头正上方 千厮门大桥从左侧横跨嘉陵江，弧形桥身灯带刚刚亮起 索道缆车的轿厢正在从对岸滑过来，悬在江面半空 整个渝中半岛像一艘石头做的船，插满了高楼 【远景·自然·写实】 川东平行岭谷的山脊在城市背后层层排列 南山、铜锣山、中梁山的轮廓依次后退 山与山之间是长江切出的深谷 秋末傍晚的雾气从江面和山谷中升起，远山轮廓在暮霭中逐层变淡变蓝 【光线】 秋末傍晚六点，太阳刚落到南山后面 天空还留着最后一层橘红到深蓝的渐变 渝中半岛的建筑群开始亮灯，窗户一格一格亮起来 火锅翻滚的红油在暮色中泛着暖红色油光 江面反射着天际最后的光和城市最初的灯 近景暖黄室内光与远景冷蓝暮色形成强烈色温对比 【情绪】 两条江在这里撞在一起 吊脚楼是三百年，解放碑是七十年 火锅翻滚的时间大概是四十分钟 但坐在江边吃完这顿 感觉整座山城都在锅里沸腾 【文字】右上角「重庆」，白色细体，简洁 8K，电影级景深，3:4纵向，纪录片摄影质感 广州 骑楼廊道、早茶点心、珠江塔影、白云山 广州 提示词： 珠江的风把骑楼下的气味吹散了又聚回来 荔枝湾的水还是那么绿 一壶茶，什么都可以慢慢说 【视角定位】 午前，坐在珠江边老茶楼骑楼廊道下的圆桌旁 廊柱自然框住江景 珠江水面与对岸广州塔在同一视野里 【近景·桌面·写实】 白台布圆桌占画面最下方 三层竹蒸笼叠放居中 晶莹虾饺透着粉红，白嫩肠粉淋豉油光亮 金黄蛋挞酥皮层次分明 一碟萝卜糕煎面焦脆，凤爪酱色浓郁 青花茶壶正在斟茶，茶流入杯的弧线写实 所有食物写实如美食纪录片镜头 【中景·城市·写实】 骑楼廊道廊柱自然框住中景 珠江北岸骑楼街真实延伸 米黄色灰塑外墙、满洲窗、骑楼拱廊比例准确 老榕树气根从廊柱间垂落 珠江水面横贯中景 对岸广州塔真实矗立 海心桥钢结构跨江 广州港塔吊在远处可见 【远景·自然·写实】 珠江白鹅潭水面向南海方向延伸 两岸老榕树冠连绵 白云山真实山体轮廓横卧最远处 南方午前漫射天光 天空饱满的热带蓝白，有真实的积云 水面有真实的南方强烈漫射反光 【光线】 华南午前漫射白光均匀铺洒 无强烈方向性阴影 蒸笼热气在柔光中呈半透明 珠江水面银白反光补充整体亮度 【情绪】 一盅两件从来不是早饭 是广州人把天下事谈完的方式 从汉代的番禺港到今天的南沙码头 这条珠江从没停止过出海 【文字】右上角「广州」，白色细体，简洁 8K，电影级景深，3:4纵向，纪录片摄影质感 剩下 305 张全在下面，按省排列（ 直辖市和特别行政区，剩下的则是按首字母排列 ），自取 哪个城市的提示词想要， 评论区说城市名，超过 3 赞我就公开 至于跑图的话，可以用老朋友做的 Lovart，NB2 上线它第一时间接入，闲时 0 积分，批量出这种图很稳，一次跑上百张没断过： https://www.lovart.ai/ 通过这个工具，可以把我的这些图改成不同的分辨率，或者完善里面的一些细节。 比如这样把原本的纵图改成横图，21:9 就很合适当公众号的封面了 也比如说， 在这里某一张图片跑得不够好，或者跑得不符合意，可以让 Lovart 批量地去 roll 图 以湖南这个图为例，它原来的图是这样的，我不是很满意（大街上都没什么人） 我就去 把它丢进去，让它给我一次性 roll 10 个 然后我可以从中选一个最合适的 直辖市 包含：北京、天津、上海、重庆（ 按字母顺序排列，下同 ） 特别行政区 安徽 福建 甘肃 广东 广西 贵州 海南 河北 河南 黑龙江 湖北 湖南 吉林 江苏 江西 辽宁 内蒙古 宁夏 青海 山东 山西 陕西 四川 台湾 西藏 新疆 云南 浙江 跳转微信打开",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "startup",
+      "wechat",
+      "chinese"
+    ],
+    "published_date": "2026-04-06",
+    "created_at": "2026-04-06T14:56:00"
+  },
+  {
+    "id": "rss-paperagent-d400cd6aef51",
+    "source": "PaperAgent",
+    "source_type": "wechat",
+    "title": "微软OEL框架：大模型一次部署，终身进化",
+    "url": "https://mp.weixin.qq.com/s?__biz=Mzk0MTYzMzMxMA==&mid=2247506188&idx=1&sn=679a1967e1a078438ed91f8ad2cf27be",
+    "original_content": "",
+    "raw_text": "PaperAgent 2026-04-06 11:39 海南 大家好，我是PaperAgent，不是Agent！ 今天分享一篇微软最新论文 Online Experiential Learning (OEL) ：提出了一个让 LLM在真实部署后持续自我进化的 框架， 无需人工标注、无需奖励模型，也无需服务器端访问用户环境 。 中科大发布文献检索Skill~ Academic Search，亲测好用！ 一、为什么需要在线体验学习？ 当前大模型的训练范式本质上是 离线 的：我们收集人工标注数据做SFT，或者在模拟环境中做RLHF/RL，然后部署为静态模型。一旦部署，模型面对真实世界中海量、多样化的用户交互，却无法从这些交互中学习成长。 刚刚，karpathy开源个人LLM Wiki（第二大脑） 离线训练 vs 在线体验学习 如 Figure 2 所示，传统范式（左）是&#34;封闭世界&#34;：依赖人工标注和模拟环境。而 OEL（右）开启了&#34;开放世界&#34;学习——模型在真实环境中交互产生的经验，被提取为知识并巩固到参数中，形成 部署即训练 的良性循环。 核心挑战 ： 无奖励信号 ：真实环境通常只返回文本反馈（如&#34;你撞到了墙&#34;），而非可优化的标量奖励 无环境访问 ：服务器端无法直接访问用户侧的游戏环境或交互场景 灾难性遗忘 ：持续学习容易损害模型的通用能力 二、OEL方法论：两阶段闭环 OEL 的核心是一个 提取-巩固 的两阶段循环（ Figure 3 ）： OEL框架概览 阶段1：经验知识提取 (Extraction) 模型在多轮交互中收集轨迹 ，其中 是环境文本反馈， 是模型动作。通过一个 知识提取器 （通常就是模型自身），将这些轨迹转化为结构化的&#34;经验知识&#34;： 关键在于 累积式提取 ：处理第 条轨迹时，模型会参考之前积累的知识 ，实现知识的渐进式整合。 阶段2：知识巩固 (Consolidation) 提取出的知识 需要通过 On-Policy Context Distillation 内化到模型参数中。具体做法： 从交互轨迹中构造部分 rollout 前缀 学生模型 基于 生成响应 教师模型 （冻结的初始模型）基于 和 经验知识 生成参考分布 通过 反向KL散度 优化学生模型，使其行为趋近知识增强的教师： 巧妙之处 ：训练时学生 看不到 知识 ，但教师能看到。这迫使学生将 中的知识&#34;压缩&#34;进自身参数，实现 inference-time 的零开销（无需携带长篇经验文本）。 在线学习循环 两个阶段交替进行： 巩固后的模型部署 → 收集更高质量轨迹 → 提取更丰富知识 → 下一轮巩固 形成自我强化的 数据飞轮 三、实验验证：从游戏到真实能力 实验在 TextArena 的两个文本游戏上进行： Frozen Lake （网格导航）和 Sokoban （推箱子）。模型需要在无明确规则说明的情况下，仅通过环境文本反馈（如&#34;你掉进了洞&#34;）自我探索。 1. 持续在线提升 在线学习曲线 Figure 4 展示了 OEL 的多轮迭代效果。蓝色曲线（Extraction）显示：随着经验知识累积，通过率稳步上升，但会逐渐饱和（上下文长度限制）。橙色点（Consolidation）显示：将知识内化到参数后，性能不仅保持，还能 超越 原始水平，并在下一轮从零开始累积时站在更高起点上。 2. 效率与准确性双提升 响应长度优化 Figure 5 揭示了意外收获：随着经验内化，模型的 响应长度显著缩短 （降至约70%）。这说明 OEL 不仅让模型更会解题，还学会了更高效地思考，将探索性试错转化为直接利用内部化知识。 3. 缓解灾难性遗忘 On-Policy vs Off-Policy Figure 6 对比了 On-Policy（OEL使用）与 Off-Policy 上下文蒸馏： 左图（分布内） ：On-Policy 最终达到更高通过率 右图（分布外） ：On-Policy 几乎保持初始模型的 IF-Eval 准确率，而 Off-Policy 出现明显遗忘 这验证了 On-Policy 训练在持续学习中的稳定性优势。 4. 规模定律与知识质量 Table 1 证明： 提取结构化知识远胜于原始轨迹 。原始轨迹包含噪声（如无效探索），直接用于训练甚至会损害性能（7.8 &lt; 7.5），而提炼后的知识能系统性地提升能力。 Table 2 揭示了关键洞察： On-Policy 一致性比模型能力更重要 。即使 4B 模型更强，1.7B 模型使用 自己 轨迹提取的知识，表现反而优于使用 4B 知识。这说明知识必须与学习者当前策略分布匹配，&#34;过强&#34;的知识可能包含不可学习的策略。 5. 模型规模扩展 模型规模效应 Figure 7 显示 OEL 在不同规模（1.7B/4B/8B）的 Qwen3 模型上均有效。虽然初始性能相近，但 OEL 带来的增益随规模增大而提升，且第二轮（Round 2）相比第一轮（Round 1） consistently 提升，证明知识可以持续累积。 四、关键洞察与启示 Reward-Free 学习的可行性 ：无需奖励模型或人工标注，纯文本反馈足以驱动持续学习 知识提取 &gt; 原始数据 ：智能体需要从原始交互中提炼&#34; transferable insights&#34;，而非死记硬背轨迹 策略一致性原则 ：知识源与策略模型的分布匹配至关重要，盲目使用&#34;更强教师&#34;的知识可能适得其反 效率与能力共进 ：经验内化不仅提升准确率，还能压缩推理长度，实现&#34;学得越多，想得越快&#34; ICLR 2026浙大&amp;蚂蚁：LLM写代码很快，但写出来的代码「跑得快」吗？ https://arxiv.org/pdf/2603.16856 Online Experiential Learning for Language Models Microsoft Research https://aka.ms/GeneralAI 动手设计AI Agents：（编排、记忆、插件、workflow、协作） 分享两篇Claude Skills最新论文，有3个核心结论 会学习的龙虾，才是好龙虾：OpenClaw-RL 2026，做Agentic AI，绕不开这两篇开年综述 每天一篇大模型Paper来锻炼我们的思维~已经读到这了，不妨点个👍、❤️、↗️三连，加个星标⭐，不迷路哦~ 跳转微信打开",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "papers",
+      "agent",
+      "wechat",
+      "chinese"
+    ],
+    "published_date": "2026-04-06",
+    "created_at": "2026-04-06T11:39:00"
+  }
+]

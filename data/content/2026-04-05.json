@@ -1,0 +1,1135 @@
+[
+  {
+    "id": "github-a21af028915c",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "title": "ultraworkers/claw-code — The repo is finally unlocked. enjoy the party! The fastest repo in history to su",
+    "url": "https://github.com/ultraworkers/claw-code",
+    "original_content": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex. | ⭐ 167,553 stars | Language: Rust",
+    "raw_text": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex. | ⭐ 167,553 stars | Language: Rust",
+    "relevance_score": 8,
+    "category": [
+      "开源项目",
+      "Rust"
+    ],
+    "created_at": "2026-04-05T11:06:50.733495"
+  },
+  {
+    "id": "github-f6682f4efbb6",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "title": "Gitlawb/openclaude — Open Claude Is Open-source coding-agent CLI for OpenAI, Gemini, DeepSeek, Ollama",
+    "url": "https://github.com/Gitlawb/openclaude",
+    "original_content": "Open Claude Is Open-source coding-agent CLI for OpenAI, Gemini, DeepSeek, Ollama, Codex, GitHub Models, and 200+ models via OpenAI-compatible APIs. | ⭐ 14,832 stars | Language: TypeScript",
+    "raw_text": "Open Claude Is Open-source coding-agent CLI for OpenAI, Gemini, DeepSeek, Ollama, Codex, GitHub Models, and 200+ models via OpenAI-compatible APIs. | ⭐ 14,832 stars | Language: TypeScript",
+    "relevance_score": 8,
+    "category": [
+      "开源项目",
+      "TypeScript"
+    ],
+    "created_at": "2026-04-05T11:06:50.733516"
+  },
+  {
+    "id": "github-28188c7fb2eb",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "title": "claude-code-best/claude-code — 原汁原昧 Claude Code 可运行,可构建, 可调试版; Typescript 类型全修复; 企业级可靠性; 安全无毒, lock 文件保真, 可直接 b",
+    "url": "https://github.com/claude-code-best/claude-code",
+    "original_content": "原汁原昧 Claude Code 可运行,可构建, 可调试版; Typescript 类型全修复; 企业级可靠性; 安全无毒, lock 文件保真, 可直接 bun i; bun run dev 启动 | ⭐ 13,607 stars | Language: TypeScript",
+    "raw_text": "原汁原昧 Claude Code 可运行,可构建, 可调试版; Typescript 类型全修复; 企业级可靠性; 安全无毒, lock 文件保真, 可直接 bun i; bun run dev 启动 | ⭐ 13,607 stars | Language: TypeScript",
+    "relevance_score": 8,
+    "category": [
+      "开源项目",
+      "TypeScript"
+    ],
+    "created_at": "2026-04-05T11:06:50.733525"
+  },
+  {
+    "id": "github-c8b1f28170a6",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "title": "openai/codex-plugin-cc — Use Codex from Claude Code to review code or delegate tasks.",
+    "url": "https://github.com/openai/codex-plugin-cc",
+    "original_content": "Use Codex from Claude Code to review code or delegate tasks. | ⭐ 11,665 stars | Language: JavaScript",
+    "raw_text": "Use Codex from Claude Code to review code or delegate tasks. | ⭐ 11,665 stars | Language: JavaScript",
+    "relevance_score": 8,
+    "category": [
+      "开源项目",
+      "JavaScript"
+    ],
+    "created_at": "2026-04-05T11:06:50.733532"
+  },
+  {
+    "id": "github-672962b0fe83",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "title": "sanbuphy/learn-coding-agent — Research on Coding Agents",
+    "url": "https://github.com/sanbuphy/learn-coding-agent",
+    "original_content": "Research on Coding Agents | ⭐ 11,268 stars",
+    "raw_text": "Research on Coding Agents | ⭐ 11,268 stars",
+    "relevance_score": 8,
+    "category": [
+      "开源项目"
+    ],
+    "created_at": "2026-04-05T11:06:50.733538"
+  },
+  {
+    "id": "github-30e7d17a9cd2",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "title": "VoltAgent/awesome-design-md — Collection of DESIGN.md files that capture design systems from popular websites.",
+    "url": "https://github.com/VoltAgent/awesome-design-md",
+    "original_content": "Collection of DESIGN.md files that capture design systems from popular websites. Drop one into your project and let coding agents build matching UI. | ⭐ 8,790 stars | Language: HTML | Topics: awesome-list, design-md, design-system, design-tokens, figma",
+    "raw_text": "Collection of DESIGN.md files that capture design systems from popular websites. Drop one into your project and let coding agents build matching UI. | ⭐ 8,790 stars | Language: HTML | Topics: awesome-list, design-md, design-system, design-tokens, figma",
+    "relevance_score": 8,
+    "category": [
+      "开源项目",
+      "HTML",
+      "awesome-list",
+      "design-md"
+    ],
+    "created_at": "2026-04-05T11:06:50.733553"
+  },
+  {
+    "id": "github-0bce9c57f82b",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "title": "ChinaSiro/claude-code-sourcemap",
+    "url": "https://github.com/ChinaSiro/claude-code-sourcemap",
+    "original_content": "⭐ 8,380 stars | Language: TypeScript",
+    "raw_text": "⭐ 8,380 stars | Language: TypeScript",
+    "relevance_score": 8,
+    "category": [
+      "开源项目",
+      "TypeScript"
+    ],
+    "created_at": "2026-04-05T11:06:50.733560"
+  },
+  {
+    "id": "github-d576b99fda68",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "title": "Kuberwastaken/claurst — Your favorite Terminal Coding Agent, now in Rust & a Breakdown of the Claude Cod",
+    "url": "https://github.com/Kuberwastaken/claurst",
+    "original_content": "Your favorite Terminal Coding Agent, now in Rust & a Breakdown of the Claude Code leak & discoveries | ⭐ 8,068 stars | Language: Rust",
+    "raw_text": "Your favorite Terminal Coding Agent, now in Rust & a Breakdown of the Claude Code leak & discoveries | ⭐ 8,068 stars | Language: Rust",
+    "relevance_score": 8,
+    "category": [
+      "开源项目",
+      "Rust"
+    ],
+    "created_at": "2026-04-05T11:06:50.733567"
+  },
+  {
+    "id": "github-9e88e84eade5",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "title": "titanwings/colleague-skill — 将冰冷的离别化为温暖的 Skill，欢迎加入数字生命1.0！Transforming cold farewells into warm skills? It's",
+    "url": "https://github.com/titanwings/colleague-skill",
+    "original_content": "将冰冷的离别化为温暖的 Skill，欢迎加入数字生命1.0！Transforming cold farewells into warm skills? It's giving rebirth era. Welcome to Digital Life 1.0. 🫶 | ⭐ 7,232 stars | Language: Python",
+    "raw_text": "将冰冷的离别化为温暖的 Skill，欢迎加入数字生命1.0！Transforming cold farewells into warm skills? It's giving rebirth era. Welcome to Digital Life 1.0. 🫶 | ⭐ 7,232 stars | Language: Python",
+    "relevance_score": 8,
+    "category": [
+      "开源项目",
+      "Python"
+    ],
+    "created_at": "2026-04-05T11:06:50.733585"
+  },
+  {
+    "id": "github-3821ff6915a2",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "title": "emdash-cms/emdash — EmDash is a full-stack TypeScript CMS based on Astro; the spiritual successor to",
+    "url": "https://github.com/emdash-cms/emdash",
+    "original_content": "EmDash is a full-stack TypeScript CMS based on Astro; the spiritual successor to WordPress | ⭐ 7,067 stars | Language: TypeScript | Topics: astro, cms, emdash, typescript",
+    "raw_text": "EmDash is a full-stack TypeScript CMS based on Astro; the spiritual successor to WordPress | ⭐ 7,067 stars | Language: TypeScript | Topics: astro, cms, emdash, typescript",
+    "relevance_score": 8,
+    "category": [
+      "开源项目",
+      "TypeScript",
+      "astro",
+      "cms"
+    ],
+    "created_at": "2026-04-05T11:06:50.733594"
+  },
+  {
+    "id": "github-d53b1aebbbbc",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "title": "ultraworkers/claw-code-parity — Join Discord: https://discord.gg/5TUQKqFWd /  claw-code Rust port parity work - ",
+    "url": "https://github.com/ultraworkers/claw-code-parity",
+    "original_content": "Join Discord: https://discord.gg/5TUQKqFWd /  claw-code Rust port parity work - it is temporary work while claw-code repo is doing migration | ⭐ 6,324 stars | Language: Rust",
+    "raw_text": "Join Discord: https://discord.gg/5TUQKqFWd /  claw-code Rust port parity work - it is temporary work while claw-code repo is doing migration | ⭐ 6,324 stars | Language: Rust",
+    "relevance_score": 8,
+    "category": [
+      "开源项目",
+      "Rust"
+    ],
+    "created_at": "2026-04-05T11:06:50.733600"
+  },
+  {
+    "id": "github-e836017706b1",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "title": "tvytlx/ai-agent-deep-dive — AI Agent 源码深度研究报告",
+    "url": "https://github.com/tvytlx/ai-agent-deep-dive",
+    "original_content": "AI Agent 源码深度研究报告 | ⭐ 5,069 stars | Language: Python",
+    "raw_text": "AI Agent 源码深度研究报告 | ⭐ 5,069 stars | Language: Python",
+    "relevance_score": 8,
+    "category": [
+      "开源项目",
+      "Python"
+    ],
+    "created_at": "2026-04-05T11:06:50.733606"
+  },
+  {
+    "id": "github-c9deef924f93",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "title": "NanmiCoder/cc-haha — Claude Code 泄露源码 - 本地可运行版本（附带核心模块解析）",
+    "url": "https://github.com/NanmiCoder/cc-haha",
+    "original_content": "Claude Code 泄露源码 - 本地可运行版本（附带核心模块解析） | ⭐ 4,902 stars | Language: TypeScript",
+    "raw_text": "Claude Code 泄露源码 - 本地可运行版本（附带核心模块解析） | ⭐ 4,902 stars | Language: TypeScript",
+    "relevance_score": 8,
+    "category": [
+      "开源项目",
+      "TypeScript"
+    ],
+    "created_at": "2026-04-05T11:06:50.733611"
+  },
+  {
+    "id": "github-f6ae6c9dc722",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "title": "JackChen-me/open-multi-agent — TypeScript multi-agent framework — one runTeam() call from goal to result. Auto ",
+    "url": "https://github.com/JackChen-me/open-multi-agent",
+    "original_content": "TypeScript multi-agent framework — one runTeam() call from goal to result. Auto task decomposition, parallel execution. 3 dependencies, deploys anywhere Node.js runs. | ⭐ 4,146 stars | Language: TypeScript | Topics: agent-framework, ai-agents, anthropic, claude, llm",
+    "raw_text": "TypeScript multi-agent framework — one runTeam() call from goal to result. Auto task decomposition, parallel execution. 3 dependencies, deploys anywhere Node.js runs. | ⭐ 4,146 stars | Language: TypeScript | Topics: agent-framework, ai-agents, anthropic, claude, llm",
+    "relevance_score": 8,
+    "category": [
+      "开源项目",
+      "TypeScript",
+      "agent-framework",
+      "ai-agents"
+    ],
+    "created_at": "2026-04-05T11:06:50.733619"
+  },
+  {
+    "id": "github-076552cf0cf4",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "title": "HKUDS/OpenHarness — \"OpenHarness: Open Agent Harness\"",
+    "url": "https://github.com/HKUDS/OpenHarness",
+    "original_content": "\"OpenHarness: Open Agent Harness\" | ⭐ 3,668 stars | Language: Python",
+    "raw_text": "\"OpenHarness: Open Agent Harness\" | ⭐ 3,668 stars | Language: Python",
+    "relevance_score": 8,
+    "category": [
+      "开源项目",
+      "Python"
+    ],
+    "created_at": "2026-04-05T11:06:50.733624"
+  },
+  {
+    "id": "hf-model-2d0f16bac7e1",
+    "source": "HuggingFace Models",
+    "source_type": "model",
+    "title": "🤗 google/gemma-4-31B-it",
+    "url": "https://huggingface.co/google/gemma-4-31B-it",
+    "original_content": "Task: image-text-to-text | Downloads: 287,440 | Likes: 863",
+    "raw_text": "Task: image-text-to-text | Downloads: 287,440 | Likes: 863",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "models",
+      "huggingface"
+    ],
+    "created_at": "2026-04-05T11:06:50.505851"
+  },
+  {
+    "id": "hf-model-5a5b20cc1da7",
+    "source": "HuggingFace Models",
+    "source_type": "model",
+    "title": "🤗 Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled",
+    "url": "https://huggingface.co/Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled",
+    "original_content": "Task: image-text-to-text | Downloads: 524,224 | Likes: 2,295",
+    "raw_text": "Task: image-text-to-text | Downloads: 524,224 | Likes: 2,295",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "models",
+      "huggingface"
+    ],
+    "created_at": "2026-04-05T11:06:50.505875"
+  },
+  {
+    "id": "hf-model-fcfacb051911",
+    "source": "HuggingFace Models",
+    "source_type": "model",
+    "title": "🤗 baidu/Qianfan-OCR",
+    "url": "https://huggingface.co/baidu/Qianfan-OCR",
+    "original_content": "Task: image-text-to-text | Downloads: 36,635 | Likes: 957",
+    "raw_text": "Task: image-text-to-text | Downloads: 36,635 | Likes: 957",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "models",
+      "huggingface"
+    ],
+    "created_at": "2026-04-05T11:06:50.505884"
+  },
+  {
+    "id": "hf-model-491a8a650be1",
+    "source": "HuggingFace Models",
+    "source_type": "model",
+    "title": "🤗 CohereLabs/cohere-transcribe-03-2026",
+    "url": "https://huggingface.co/CohereLabs/cohere-transcribe-03-2026",
+    "original_content": "Task: automatic-speech-recognition | Downloads: 96,615 | Likes: 790",
+    "raw_text": "Task: automatic-speech-recognition | Downloads: 96,615 | Likes: 790",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "models",
+      "huggingface"
+    ],
+    "created_at": "2026-04-05T11:06:50.505891"
+  },
+  {
+    "id": "hf-model-d014c1247631",
+    "source": "HuggingFace Models",
+    "source_type": "model",
+    "title": "🤗 prism-ml/Bonsai-8B-gguf",
+    "url": "https://huggingface.co/prism-ml/Bonsai-8B-gguf",
+    "original_content": "Task: text-generation | Downloads: 32,930 | Likes: 384",
+    "raw_text": "Task: text-generation | Downloads: 32,930 | Likes: 384",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "models",
+      "huggingface"
+    ],
+    "created_at": "2026-04-05T11:06:50.505897"
+  },
+  {
+    "id": "hf-model-0ea922f56cb4",
+    "source": "HuggingFace Models",
+    "source_type": "model",
+    "title": "🤗 google/gemma-4-26B-A4B-it",
+    "url": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+    "original_content": "Task: image-text-to-text | Downloads: 133,224 | Likes: 357",
+    "raw_text": "Task: image-text-to-text | Downloads: 133,224 | Likes: 357",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "models",
+      "huggingface"
+    ],
+    "created_at": "2026-04-05T11:06:50.505903"
+  },
+  {
+    "id": "hf-model-b88ea472e3ac",
+    "source": "HuggingFace Models",
+    "source_type": "model",
+    "title": "🤗 netflix/void-model",
+    "url": "https://huggingface.co/netflix/void-model",
+    "original_content": "Task: video-to-video | Likes: 313",
+    "raw_text": "Task: video-to-video | Likes: 313",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "models",
+      "huggingface"
+    ],
+    "created_at": "2026-04-05T11:06:50.505909"
+  },
+  {
+    "id": "hf-model-73665a6e3a2f",
+    "source": "HuggingFace Models",
+    "source_type": "model",
+    "title": "🤗 google/gemma-4-E4B-it",
+    "url": "https://huggingface.co/google/gemma-4-E4B-it",
+    "original_content": "Task: any-to-any | Downloads: 108,261 | Likes: 310",
+    "raw_text": "Task: any-to-any | Downloads: 108,261 | Likes: 310",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "models",
+      "huggingface"
+    ],
+    "created_at": "2026-04-05T11:06:50.505914"
+  },
+  {
+    "id": "hf-model-01d1095418af",
+    "source": "HuggingFace Models",
+    "source_type": "model",
+    "title": "🤗 Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled-v2-GGUF",
+    "url": "https://huggingface.co/Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled-v2-GGUF",
+    "original_content": "Task: image-text-to-text | Downloads: 241,087 | Likes: 502",
+    "raw_text": "Task: image-text-to-text | Downloads: 241,087 | Likes: 502",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "models",
+      "huggingface"
+    ],
+    "created_at": "2026-04-05T11:06:50.505919"
+  },
+  {
+    "id": "hf-model-e9510d43afa2",
+    "source": "HuggingFace Models",
+    "source_type": "model",
+    "title": "🤗 HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive",
+    "url": "https://huggingface.co/HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive",
+    "original_content": "Downloads: 715,586 | Likes: 969",
+    "raw_text": "Downloads: 715,586 | Likes: 969",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "models",
+      "huggingface"
+    ],
+    "created_at": "2026-04-05T11:06:50.505928"
+  },
+  {
+    "id": "hf-paper-cd8d1de81dd7",
+    "source": "HuggingFace Papers",
+    "source_type": "paper",
+    "title": "LOME: Learning Human-Object Manipulation with Action-Conditioned Egocentric World Model",
+    "url": "https://huggingface.co/papers/2603.27449",
+    "original_content": "Learning human-object manipulation presents significant challenges due to its fine-grained and contact-rich nature of the motions involved. Traditional physics-based animation requires extensive modeling and manual setup, and more importantly, it neither generalizes well across diverse object morphologies nor scales effectively to real-world environment. To address these limitations, we introduce LOME, an egocentric world model that can generate realistic human-object interactions as videos cond",
+    "raw_text": "Learning human-object manipulation presents significant challenges due to its fine-grained and contact-rich nature of the motions involved. Traditional physics-based animation requires extensive modeling and manual setup, and more importantly, it neither generalizes well across diverse object morphologies nor scales effectively to real-world environment. To address these limitations, we introduce LOME, an egocentric world model that can generate realistic human-object interactions as videos conditioned on an input image, a text prompt, and per-frame human actions, including both body poses and hand gestures. LOME injects strong and precise action guidance into object manipulation by jointly estimating spatial human actions and the environment contexts during training. After finetuning a pretrained video generative model on videos of diverse egocentric human-object interactions, LOME demonstrates not only high action-following accuracy and strong generalization to unseen scenarios, but ",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "papers",
+      "huggingface"
+    ],
+    "created_at": "2026-04-05T11:06:50.848882"
+  },
+  {
+    "id": "hf-paper-fd442c7389be",
+    "source": "HuggingFace Papers",
+    "source_type": "paper",
+    "title": "Signals: Trajectory Sampling and Triage for Agentic Interactions",
+    "url": "https://huggingface.co/papers/2604.00356",
+    "original_content": "Agentic applications based on large language models increasingly rely on multi-step interaction loops involving planning, action execution, and environment feedback. While such systems are now deployed at scale, improving them post-deployment remains challenging. Agent trajectories are voluminous and non-deterministic, and reviewing each one, whether through human review or auxiliary LLMs, is slow and cost-prohibitive. We propose a lightweight, signal-based framework for triaging agentic interac",
+    "raw_text": "Agentic applications based on large language models increasingly rely on multi-step interaction loops involving planning, action execution, and environment feedback. While such systems are now deployed at scale, improving them post-deployment remains challenging. Agent trajectories are voluminous and non-deterministic, and reviewing each one, whether through human review or auxiliary LLMs, is slow and cost-prohibitive. We propose a lightweight, signal-based framework for triaging agentic interaction trajectories. Our approach computes cheap, broadly applicable signals from live interactions and attaches them as structured attributes for trajectory triage, identifying interactions likely to be informative without affecting online agent behavior. We organize signals into a coarse-grained taxonomy spanning interaction (misalignment, stagnation, disengagement, satisfaction), execution (failure, loop), and environment (exhaustion), designed for computation without model calls. In a controll",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "papers",
+      "huggingface"
+    ],
+    "created_at": "2026-04-05T11:06:50.848943"
+  },
+  {
+    "id": "hf-paper-1a462a35c10c",
+    "source": "HuggingFace Papers",
+    "source_type": "paper",
+    "title": "An Empirical Recipe for Universal Phone Recognition",
+    "url": "https://huggingface.co/papers/2603.29042",
+    "original_content": "Phone recognition (PR) is a key enabler of multilingual and low-resource speech processing tasks, yet robust performance remains elusive. Highly performant English-focused models do not generalize across languages, while multilingual models underutilize pretrained representations. It also remains unclear how data scale, architecture, and training objective contribute to multilingual PR. We present PhoneticXEUS -- trained on large-scale multilingual data and achieving state-of-the-art performance",
+    "raw_text": "Phone recognition (PR) is a key enabler of multilingual and low-resource speech processing tasks, yet robust performance remains elusive. Highly performant English-focused models do not generalize across languages, while multilingual models underutilize pretrained representations. It also remains unclear how data scale, architecture, and training objective contribute to multilingual PR. We present PhoneticXEUS -- trained on large-scale multilingual data and achieving state-of-the-art performance on both multilingual (17.7% PFER) and accented English speech (10.6% PFER). Through controlled ablations with evaluations across 100+ languages under a unified scheme, we empirically establish our training recipe and quantify the impact of SSL representations, data scale, and loss objectives. In addition, we analyze error patterns across language families, accented speech, and articulatory features. All data and code are released openly.",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "papers",
+      "huggingface"
+    ],
+    "created_at": "2026-04-05T11:06:50.848950"
+  },
+  {
+    "id": "hf-paper-ff95581937a8",
+    "source": "HuggingFace Papers",
+    "source_type": "paper",
+    "title": "Forecasting Supply Chain Disruptions with Foresight Learning",
+    "url": "https://huggingface.co/papers/2604.01298",
+    "original_content": "Anticipating supply chain disruptions before they materialize is a core challenge for firms and policymakers alike. A key difficulty is learning to reason reliably about infrequent, high-impact events from noisy and unstructured inputs - a setting where general-purpose models struggle without task-specific adaptation. We introduce an end-to-end framework that trains LLMs to produce calibrated probabilistic forecasts using realized disruption outcomes as supervision. The resulting model substanti",
+    "raw_text": "Anticipating supply chain disruptions before they materialize is a core challenge for firms and policymakers alike. A key difficulty is learning to reason reliably about infrequent, high-impact events from noisy and unstructured inputs - a setting where general-purpose models struggle without task-specific adaptation. We introduce an end-to-end framework that trains LLMs to produce calibrated probabilistic forecasts using realized disruption outcomes as supervision. The resulting model substantially outperforms strong baselines - including GPT-5 - on accuracy, calibration, and precision. We also show that training induces more structured and reliable probabilistic reasoning without explicit prompting. These results suggest a general pathway for training domain-specific forecasting models that produce decision-ready signals. To support transparency we open-source the evaluation dataset used in this study.\n  Dataset: https://huggingface.co/datasets/LightningRodLabs/supply-chain-predictio",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "papers",
+      "huggingface"
+    ],
+    "created_at": "2026-04-05T11:06:50.848957"
+  },
+  {
+    "id": "hf-paper-4cc734cf4958",
+    "source": "HuggingFace Papers",
+    "source_type": "paper",
+    "title": "CORAL: Towards Autonomous Multi-Agent Evolution for Open-Ended Discovery",
+    "url": "https://huggingface.co/papers/2604.01658",
+    "original_content": "Large language model (LLM)-based evolution is a promising approach for open-ended discovery, where progress requires sustained search and knowledge accumulation. Existing methods still rely heavily on fixed heuristics and hard-coded exploration rules, which limit the autonomy of LLM agents. We present CORAL, the first framework for autonomous multi-agent evolution on open-ended problems. CORAL replaces rigid control with long-running agents that explore, reflect, and collaborate through shared p",
+    "raw_text": "Large language model (LLM)-based evolution is a promising approach for open-ended discovery, where progress requires sustained search and knowledge accumulation. Existing methods still rely heavily on fixed heuristics and hard-coded exploration rules, which limit the autonomy of LLM agents. We present CORAL, the first framework for autonomous multi-agent evolution on open-ended problems. CORAL replaces rigid control with long-running agents that explore, reflect, and collaborate through shared persistent memory, asynchronous multi-agent execution, and heartbeat-based interventions. It also provides practical safeguards, including isolated workspaces, evaluator separation, resource management, and agent session and health management. Evaluated on diverse mathematical, algorithmic, and systems optimization tasks, CORAL sets new state-of-the-art results on 10 tasks, achieving 3-10 times higher improvement rates with far fewer evaluations than fixed evolutionary search baselines across tas",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "papers",
+      "huggingface"
+    ],
+    "created_at": "2026-04-05T11:06:50.848964"
+  },
+  {
+    "id": "hf-paper-9d52d4d9ffc5",
+    "source": "HuggingFace Papers",
+    "source_type": "paper",
+    "title": "Video Models Reason Early: Exploiting Plan Commitment for Maze Solving",
+    "url": "https://huggingface.co/papers/2603.30043",
+    "original_content": "Video diffusion models exhibit emergent reasoning capabilities like solving mazes and puzzles, yet little is understood about how they reason during generation. We take a first step towards understanding this and study the internal planning dynamics of video models using 2D maze solving as a controlled testbed. Our investigations reveal two findings. Our first finding is early plan commitment: video diffusion models commit to a high-level motion plan within the first few denoising steps, after w",
+    "raw_text": "Video diffusion models exhibit emergent reasoning capabilities like solving mazes and puzzles, yet little is understood about how they reason during generation. We take a first step towards understanding this and study the internal planning dynamics of video models using 2D maze solving as a controlled testbed. Our investigations reveal two findings. Our first finding is early plan commitment: video diffusion models commit to a high-level motion plan within the first few denoising steps, after which further denoising alters visual details but not the underlying trajectory. Our second finding is that path length, not obstacle density, is the dominant predictor of maze difficulty, with a sharp failure threshold at 12 steps. This means video models can only reason over long mazes by chaining together multiple sequential generations. To demonstrate the practical benefits of our findings, we introduce Chaining with Early Planning, or ChEaP, which only spends compute on seeds with promising ",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "papers",
+      "huggingface"
+    ],
+    "created_at": "2026-04-05T11:06:50.848969"
+  },
+  {
+    "id": "hf-paper-68dd28d19474",
+    "source": "HuggingFace Papers",
+    "source_type": "paper",
+    "title": "Therefore I am. I Think",
+    "url": "https://huggingface.co/papers/2604.01202",
+    "original_content": "We consider the question: when a large language reasoning model makes a choice, did it think first and then decide to, or decide first and then think? In this paper, we present evidence that detectable, early-encoded decisions shape chain-of-thought in reasoning models. Specifically, we show that a simple linear probe successfully decodes tool-calling decisions from pre-generation activations with very high confidence, and in some cases, even before a single reasoning token is produced. Activati",
+    "raw_text": "We consider the question: when a large language reasoning model makes a choice, did it think first and then decide to, or decide first and then think? In this paper, we present evidence that detectable, early-encoded decisions shape chain-of-thought in reasoning models. Specifically, we show that a simple linear probe successfully decodes tool-calling decisions from pre-generation activations with very high confidence, and in some cases, even before a single reasoning token is produced. Activation steering supports this causally: perturbing the decision direction leads to inflated deliberation, and flips behavior in many examples (between 7 - 79% depending on model and benchmark). We also show through behavioral analysis that, when steering changes the decision, the chain-of-thought process often rationalizes the flip rather than resisting it. Together, these results suggest that reasoning models can encode action choices before they begin to deliberate in text.",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "papers",
+      "huggingface"
+    ],
+    "created_at": "2026-04-05T11:06:50.848974"
+  },
+  {
+    "id": "hf-paper-5de1f6d74c99",
+    "source": "HuggingFace Papers",
+    "source_type": "paper",
+    "title": "MultiGen: Level-Design for Editable Multiplayer Worlds in Diffusion Game Engines",
+    "url": "https://huggingface.co/papers/2603.06679",
+    "original_content": "Video world models have shown immense promise for interactive simulation and entertainment, but current systems still struggle with two important aspects of interactivity: user control over the environment for reproducible, editable experiences, and shared inference where players hold influence over a common world. To address these limitations, we introduce an explicit external memory into the system, a persistent state operating independent of the model's context window, that is continually upd",
+    "raw_text": "Video world models have shown immense promise for interactive simulation and entertainment, but current systems still struggle with two important aspects of interactivity: user control over the environment for reproducible, editable experiences, and shared inference where players hold influence over a common world. To address these limitations, we introduce an explicit external memory into the system, a persistent state operating independent of the model's context window, that is continually updated by user actions and queried throughout the generation roll-out. Unlike conventional diffusion game engines that operate as next-frame predictors, our approach decomposes generation into Memory, Observation, and Dynamics modules. This design gives users direct, editable control over environment structure via an editable memory representation, and it naturally extends to real-time multiplayer rollouts with coherent viewpoints and consistent cross-player interactions.",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "papers",
+      "huggingface"
+    ],
+    "created_at": "2026-04-05T11:06:50.848980"
+  },
+  {
+    "id": "hf-paper-9e0d4b8c08c9",
+    "source": "HuggingFace Papers",
+    "source_type": "paper",
+    "title": "NearID: Identity Representation Learning via Near-identity Distractors",
+    "url": "https://huggingface.co/papers/2604.01973",
+    "original_content": "When evaluating identity-focused tasks such as personalized generation and image editing, existing vision encoders entangle object identity with background context, leading to unreliable representations and metrics. We introduce the first principled framework to address this vulnerability using Near-identity (NearID) distractors, where semantically similar but distinct instances are placed on the exact same background as a reference image, eliminating contextual shortcuts and isolating identity ",
+    "raw_text": "When evaluating identity-focused tasks such as personalized generation and image editing, existing vision encoders entangle object identity with background context, leading to unreliable representations and metrics. We introduce the first principled framework to address this vulnerability using Near-identity (NearID) distractors, where semantically similar but distinct instances are placed on the exact same background as a reference image, eliminating contextual shortcuts and isolating identity as the sole discriminative signal. Based on this principle, we present the NearID dataset (19K identities, 316K matched-context distractors) together with a strict margin-based evaluation protocol. Under this setting, pre-trained encoders perform poorly, achieving Sample Success Rates (SSR), a strict margin-based identity discrimination metric, as low as 30.7% and often ranking distractors above true cross-view matches. We address this by learning identity-aware representations on a frozen backb",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "papers",
+      "huggingface"
+    ],
+    "created_at": "2026-04-05T11:06:50.849032"
+  },
+  {
+    "id": "hf-paper-47f2220795d5",
+    "source": "HuggingFace Papers",
+    "source_type": "paper",
+    "title": "Working Notes on Late Interaction Dynamics: Analyzing Targeted Behaviors of Late Interaction Models",
+    "url": "https://huggingface.co/papers/2603.26259",
+    "original_content": "While Late Interaction models exhibit strong retrieval performance, many of their underlying dynamics remain understudied, potentially hiding performance bottlenecks. In this work, we focus on two topics in Late Interaction retrieval: a length bias that arises when using multi-vector scoring, and the similarity distribution beyond the best scores pooled by the MaxSim operator. We analyze these behaviors for state-of-the-art models on the NanoBEIR benchmark. Results show that while the theoretica",
+    "raw_text": "While Late Interaction models exhibit strong retrieval performance, many of their underlying dynamics remain understudied, potentially hiding performance bottlenecks. In this work, we focus on two topics in Late Interaction retrieval: a length bias that arises when using multi-vector scoring, and the similarity distribution beyond the best scores pooled by the MaxSim operator. We analyze these behaviors for state-of-the-art models on the NanoBEIR benchmark. Results show that while the theoretical length bias of causal Late Interaction models holds in practice, bi-directional models can also suffer from it in extreme cases. We also note that no significant similarity trend lies beyond the top-1 document token, validating that the MaxSim operator efficiently exploits the token-level similarity scores.",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "papers",
+      "huggingface"
+    ],
+    "created_at": "2026-04-05T11:06:50.849060"
+  },
+  {
+    "id": "civitai-2222743",
+    "source": "CivitAI",
+    "source_type": "model",
+    "title": "🎨 #WATW - 🇧🇲 Bermuda (LORA)",
+    "url": "https://civitai.com/models/2222743",
+    "original_content": "Type: LORA | Downloads: 170 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 170 | Rating: 0.0\n<h1 id=\"women-around-the-worldwatw\">🌍<span style=\"color:rgb(18, 184, 134)\">Women around the World</span>🌎<strong>#WATW</strong></h1><p></p><h3 id=\"bermuda\">🇧🇲 Bermuda</h3><p></p><h2 id=\"unstable-evolution-krea\"><a target=\"_blank\" rel=\"ugc\" href=\"https://civitai.com/models/1931032/unstable-evolution-krea\"><span style=\"color:rgb(190, 75, 219)\">unStable Evolution KREA</span></a></h2><h2 id=\"unstable-evolution-fluxxx\"><a target=\"_blank\" rel=\"ugc\" href=\"https://civitai.com/models/1932948/unstable-evo",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "created_at": "2026-04-05T11:06:51.605196"
+  },
+  {
+    "id": "civitai-2519458",
+    "source": "CivitAI",
+    "source_type": "model",
+    "title": "🎨 Velvet Smoke Lounge Playboy Outfit (LORA)",
+    "url": "https://civitai.com/models/2519458",
+    "original_content": "Type: LORA | Downloads: 4 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 4 | Rating: 0.0\n<p><strong>To the bearer of this delicate LoRA~</strong></p><p><br />Tread softly through this twilight spell, and read each word as though it were a dream woven in silver.</p><p><br />You wouldn’t wish to disturb the harmony of this magic… would you?</p><p></p><p>Too many LoRAs braided together may fracture the vision…</p><p><br />This was crafted beneath a quiet sky, with starlight and care, to make your dreams shimmer just so~</p><p></p><p>If it were to be scattered without my blessing… I wou",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "created_at": "2026-04-05T11:06:51.605218"
+  },
+  {
+    "id": "civitai-2320892",
+    "source": "CivitAI",
+    "source_type": "model",
+    "title": "🎨 Cream & Butter Uniform クリーム＆バター制服 / Alice Gear Aegis アリス・ギア・アイギス (LORA)",
+    "url": "https://civitai.com/models/2320892",
+    "original_content": "Type: LORA | Downloads: 163 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 163 | Rating: 0.0\n<p>This is the uniform of maid cafe \"Cream &amp; Butter\" in Alice Gear Aegis.</p><p>Tags (Original Version クリーム＆バター制服):</p><p>cream and butter uniform, maid, waitress, short dress, vertical striped dress, frilled dress, pink dress, collared dress, white collar, red neck ribbon, puffy short sleeves, white wrist cuffs, waist apron, white apron, frilled apron, zettai ryouiki, white thighhighs, see through thighhighs, black shoes, mary janes, name tag,</p><p>Tags (Hatsune Miku Version ウェイトレス/39):</p",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "created_at": "2026-04-05T11:06:51.605226"
+  },
+  {
+    "id": "civitai-2519469",
+    "source": "CivitAI",
+    "source_type": "model",
+    "title": "🎨 Rulutieh / Utawarerumono itsuwari no kamen (LORA)",
+    "url": "https://civitai.com/models/2519469",
+    "original_content": "Type: LORA | Downloads: 8 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 8 | Rating: 0.0\n<h1 id=\"rulutieh-utawarerumono-itsuwari-no-kamen\">Rulutieh / Utawarerumono itsuwari no kamen </h1><p>I learned my lesson because it didn't work with the built-in WAI12 characters.</p><p>This LoRA was trained on WAI12, and optimal results can be obtained with this model.</p><p>WAI12組み込みキャラにて出なかったので学習しました。</p><p>このLoRAはWAI12上で学習されており、同モデルで最適な結果を得る事ができます。</p><p></p><h2 id=\"prompt\">Prompt/プロンプト</h2><pre><code>rulutieh \\(umik\\), 1girl, solo,\nlong hair, long sleeves, red eyes, animal ears, hair tubes,",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "created_at": "2026-04-05T11:06:51.605232"
+  },
+  {
+    "id": "civitai-2518706",
+    "source": "CivitAI",
+    "source_type": "model",
+    "title": "🎨 Tueetch Ambersnout (sealer4258) - Warhammer: Fantasy (LORA)",
+    "url": "https://civitai.com/models/2518706",
+    "original_content": "Type: LORA | Downloads: 5 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 5 | Rating: 0.0\n<p>A Skaven</p>",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "created_at": "2026-04-05T11:06:51.605237"
+  },
+  {
+    "id": "civitai-2517376",
+    "source": "CivitAI",
+    "source_type": "model",
+    "title": "🎨 Kawabata Ria - Detective Conan (ILXL) (LORA)",
+    "url": "https://civitai.com/models/2517376",
+    "original_content": "Type: LORA | Downloads: 6 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 6 | Rating: 0.0\n<p>河端 理亜 A Cottage Surrounded by Zombies ゾンビが囲む別荘 </p><p></p><p>Plz upload the image you made with my Lora at least once, it helps me in many ways</p><p>I usually use WAI-NSFW-illustrious-SDXL for samples (<a target=\"_blank\" rel=\"ugc\" href=\"https://civitai.com/models/827184?modelVersionId=1410435\"><u>https://civitai.com/models/827184?modelVersionId=1410435</u></a>)</p>",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "created_at": "2026-04-05T11:06:51.605241"
+  },
+  {
+    "id": "civitai-2517210",
+    "source": "CivitAI",
+    "source_type": "model",
+    "title": "🎨 Maid 3 (Ep 334) - Detective Conan (ILXL) (LORA)",
+    "url": "https://civitai.com/models/2517210",
+    "original_content": "Type: LORA | Downloads: 8 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 8 | Rating: 0.0\n<p><span style=\"background-color:rgb(26, 27, 30);color:rgb(193, 194, 197);font-family:-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;;font-size:16px\">Maid 3 - The Similar Princesses 似た者プリンセス</span></p><p></p><p>Plz upload the image you made with my Lora at least once, it helps me in many ways</p><p>I usually use WAI-NSFW-illustrious-SDXL for samples (<a target=\"_blank\" rel=\"ugc\" href=\"https:/",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "created_at": "2026-04-05T11:06:51.605247"
+  },
+  {
+    "id": "civitai-2517078",
+    "source": "CivitAI",
+    "source_type": "model",
+    "title": "🎨 Maid 2 (Ep 334) - Detective Conan (ILXL) (LORA)",
+    "url": "https://civitai.com/models/2517078",
+    "original_content": "Type: LORA | Downloads: 9 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 9 | Rating: 0.0\n<p><span style=\"background-color:rgb(26, 27, 30);color:rgb(193, 194, 197);font-family:-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;;font-size:16px\">Maid 2 - The Similar Princesses 似た者プリンセス</span></p><p></p><p>Plz upload the image you made with my Lora at least once, it helps me in many ways</p><p>I usually use WAI-NSFW-illustrious-SDXL for samples (<a target=\"_blank\" rel=\"ugc\" href=\"https:/",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "created_at": "2026-04-05T11:06:51.605252"
+  },
+  {
+    "id": "civitai-2517072",
+    "source": "CivitAI",
+    "source_type": "model",
+    "title": "🎨 Maid 1 (Ep 334) - Detective Conan (ILXL) (LORA)",
+    "url": "https://civitai.com/models/2517072",
+    "original_content": "Type: LORA | Downloads: 9 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 9 | Rating: 0.0\n<p><span style=\"background-color:rgb(26, 27, 30);color:rgb(193, 194, 197);font-family:-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;;font-size:16px\">Maid 1 - The Similar Princesses 似た者プリンセス</span></p><p></p><p>Plz upload the image you made with my Lora at least once, it helps me in many ways</p><p>I usually use WAI-NSFW-illustrious-SDXL for samples (<a target=\"_blank\" rel=\"ugc\" href=\"https:/",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "created_at": "2026-04-05T11:06:51.605256"
+  },
+  {
+    "id": "civitai-2515471",
+    "source": "CivitAI",
+    "source_type": "model",
+    "title": "🎨 Kojima Yuki - Detective Conan (ILXL) (LORA)",
+    "url": "https://civitai.com/models/2515471",
+    "original_content": "Type: LORA | Downloads: 8 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 8 | Rating: 0.0\n<p> 小島 由貴  The Birthday Wine Mystery バースデー·ワインの謎</p><p></p><p>Plz upload the image you made with my Lora at least once, it helps me in many ways</p><p>I usually use WAI-NSFW-illustrious-SDXL for samples (<a target=\"_blank\" rel=\"ugc\" href=\"https://civitai.com/models/827184?modelVersionId=1410435\"><u>https://civitai.com/models/827184?modelVersionId=1410435</u></a>)</p>",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "created_at": "2026-04-05T11:06:51.605260"
+  },
+  {
+    "id": "atom-simon-willison-4b795dd72a88",
+    "source": "Simon Willison",
+    "source_type": "rss",
+    "title": "research-llm-apis 2026-04-04",
+    "url": "https://simonwillison.net/2026/Apr/5/research-llm-apis/#atom-everything",
+    "original_content": "Release: research-llm-apis 2026-04-04 I'm working on a major change to my LLM Python library and CLI tool. LLM provides an abstraction layer over hundreds of different LLMs from dozens of different vendors thanks to its plugin system, and some of those vendors have grown new features over the past year which LLM's abstraction layer can't handle, such as server-side tool execution. To help design that new abstraction layer I had Claude Code read through the Python client libraries for Anthropic, ",
+    "raw_text": "Release: research-llm-apis 2026-04-04 I'm working on a major change to my LLM Python library and CLI tool. LLM provides an abstraction layer over hundreds of different LLMs from dozens of different vendors thanks to its plugin system, and some of those vendors have grown new features over the past year which LLM's abstraction layer can't handle, such as server-side tool execution. To help design that new abstraction layer I had Claude Code read through the Python client libraries for Anthropic, OpenAI, Gemini and Mistral and use those to help craft curl commands to access the raw JSON for both streaming and non-streaming modes across a range of different scenarios. Both the scripts and the captured outputs now live in this new repo. Tags: llm , apis , json , llms",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "ai",
+      "python"
+    ],
+    "created_at": "2026-04-05T00:32:11"
+  },
+  {
+    "id": "rss-fabien-sanglard-f11357828acf",
+    "source": "Fabien Sanglard",
+    "source_type": "rss",
+    "title": "How Michael Abrash doubled Quake framerate",
+    "url": "https://fabiensanglard.net/quake_asm_optimizations/index.html",
+    "original_content": "",
+    "raw_text": "",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "graphics",
+      "games"
+    ],
+    "created_at": "2026-04-05T11:07:30.062970"
+  },
+  {
+    "id": "rss-fabien-sanglard-48293b23be2b",
+    "source": "Fabien Sanglard",
+    "source_type": "rss",
+    "title": "Let's compile Quake like it's 1997!",
+    "url": "https://fabiensanglard.net/compile_like_1997/index.html",
+    "original_content": "",
+    "raw_text": "",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "graphics",
+      "games"
+    ],
+    "created_at": "2026-04-05T11:07:30.063323"
+  },
+  {
+    "id": "rss-fabien-sanglard-a7eea6d072e1",
+    "source": "Fabien Sanglard",
+    "source_type": "rss",
+    "title": "Is QSpy still cool? Let's play QuakeWorld!",
+    "url": "https://fabiensanglard.net/quakeworld/index.html",
+    "original_content": "",
+    "raw_text": "",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "graphics",
+      "games"
+    ],
+    "created_at": "2026-04-05T11:07:30.063769"
+  },
+  {
+    "id": "rss-fabien-sanglard-8f21dfbaefd5",
+    "source": "Fabien Sanglard",
+    "source_type": "rss",
+    "title": "Building a 1997 Quake PC: Benchmarking GLquake",
+    "url": "https://fabiensanglard.net/quake_pc/glquake/index.html",
+    "original_content": "",
+    "raw_text": "",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "graphics",
+      "games"
+    ],
+    "created_at": "2026-04-05T11:07:30.064056"
+  },
+  {
+    "id": "rss-fabien-sanglard-6340e4051f36",
+    "source": "Fabien Sanglard",
+    "source_type": "rss",
+    "title": "Building a 1997 Quake PC: Benchmarking Vquake",
+    "url": "https://fabiensanglard.net/quake_pc/vquake/index.html",
+    "original_content": "",
+    "raw_text": "",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "graphics",
+      "games"
+    ],
+    "created_at": "2026-04-05T11:07:30.064319"
+  },
+  {
+    "id": "atom-chris-siebenmann-6c67391a5b5c",
+    "source": "Chris Siebenmann",
+    "source_type": "rss",
+    "title": "Two little scripts: <code>addup</code> and <code>sumup</code>",
+    "url": "https://utcc.utoronto.ca/~cks/space/blog/sysadmin/LittleScriptsIX",
+    "original_content": "(Once again it's been a while since the last little script .) Every so often I find myself in a situation where I have a bunch of lines with multiple columns and I want to either add up all of the numbers in one column (for example, to get total transfer volume from Apache log files) or add up all of the numbers in one column grouped by the value of a second column. This leads to two scripts, which I call ' addup ' and ' sumup '. Addup is a simple awk script that adds up all the values from some",
+    "raw_text": "(Once again it's been a while since the last little script .) Every so often I find myself in a situation where I have a bunch of lines with multiple columns and I want to either add up all of the numbers in one column (for example, to get total transfer volume from Apache log files) or add up all of the numbers in one column grouped by the value of a second column. This leads to two scripts, which I call ' addup ' and ' sumup '. Addup is a simple awk script that adds up all the values from some column: #!/bin/sh # add up column N awk '{sum += $('$1') } END {print sum}' (Looking at this now, I should use printf and specify a format to avoid scientific notation . A more sophisticated version would do things like allow you to set the column separator character(s) rather than just using the awk default of whitespace, but so far I haven't needed anything more.) My version of sumup is more complicated than I've described, partly it either counts up how many times each value happened for a particular field or it computes a sum of another field for the particular field. This sounds abstract, so let me make it more concrete. Suppose that you have a file of lines that look like: 300 thing1 800 thing2 900 thing1 100 thing3 [...] Sumup can either tell you how many times each of the second field occurs, or sum up the value of the first field for each of the values of the second field (giving you 1200 for thing1, 800 for thing2, and 100 for thing3 in this simple case). The actual sumup that I currently use is a Python program, partly so that I can conveniently print output sorted by the breakdown field. However, my older awk-based version is: #!/bin/sh # sum up field $1 by field $2 # if no $2 is provided, it just counts by one. ( if [ -n \"$2\" ]; then awk '{sums[$'$1'] += $'$2'} END {for (i in sums) print sums[i], i}' else awk '{sums[$'$1'] += 1} END {for (i in sums) print sums[i], i}' fi ) | sort -nr My memory is that this version works fine, although it's been a while since I used it. If there are relatively widely available Unix utilities that will do these jobs, I'm not aware of them, although I wouldn't be surprised if they've emerged by now. PS: Looking at the sort of things I do with these tools, I should also write an 'avgup', although that strays into the lands of statistical analysis where I may also want things like the median.",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "unix"
+    ],
+    "created_at": "2026-04-05T01:20:38"
+  },
+  {
+    "id": "rss-chadnauseam-6a55a37f903d",
+    "source": "chadnauseam",
+    "source_type": "rss",
+    "title": "semaglutide-has-changed-the-world",
+    "url": "https://chadnauseam.com/random/semaglutide-has-changed-the-world",
+    "original_content": "",
+    "raw_text": "",
+    "relevance_score": 8,
+    "category": [
+      "tech"
+    ],
+    "created_at": "2026-04-05T11:09:00.451199"
+  },
+  {
+    "id": "rss-chadnauseam-4ead0c742a9a",
+    "source": "chadnauseam",
+    "source_type": "rss",
+    "title": "chewier-foods-for-children",
+    "url": "https://chadnauseam.com/random/chewier-foods-for-children",
+    "original_content": "",
+    "raw_text": "",
+    "relevance_score": 8,
+    "category": [
+      "tech"
+    ],
+    "created_at": "2026-04-05T11:09:00.451243"
+  },
+  {
+    "id": "rss-chadnauseam-5b40ff298396",
+    "source": "chadnauseam",
+    "source_type": "rss",
+    "title": "solving-macro",
+    "url": "https://chadnauseam.com/economics/solving-macro",
+    "original_content": "",
+    "raw_text": "",
+    "relevance_score": 8,
+    "category": [
+      "tech"
+    ],
+    "created_at": "2026-04-05T11:09:00.451255"
+  },
+  {
+    "id": "rss-chadnauseam-f22843a4ddb6",
+    "source": "chadnauseam",
+    "source_type": "rss",
+    "title": "whats-wrong-with-a-for-loop",
+    "url": "https://chadnauseam.com/coding/tips/whats-wrong-with-a-for-loop",
+    "original_content": "",
+    "raw_text": "",
+    "relevance_score": 8,
+    "category": [
+      "tech"
+    ],
+    "created_at": "2026-04-05T11:09:00.451265"
+  },
+  {
+    "id": "rss-chadnauseam-35bdaa9a7e87",
+    "source": "chadnauseam",
+    "source_type": "rss",
+    "title": "my-rustfmt-toml",
+    "url": "https://chadnauseam.com/coding/tips/my-rustfmt-toml",
+    "original_content": "",
+    "raw_text": "",
+    "relevance_score": 8,
+    "category": [
+      "tech"
+    ],
+    "created_at": "2026-04-05T11:09:00.451275"
+  },
+  {
+    "id": "rss-computer.rip-19cdda02548b",
+    "source": "computer.rip",
+    "source_type": "rss",
+    "title": "telecheck and tyms past",
+    "url": "https://computer.rip/2026-03-29-telecheck-and-tyms-past.html",
+    "original_content": "Years ago, when I was in college, I had one of those friends who never quite had it together. You know the type; I'm talking lost a debit card and took three months to get a new one because of some sort of &quot;mixup&quot; with the credit union that I think consisted mostly of not calling them for three months. In the mean time, our mutual friend ended up in a quandry: at WalMart, at one in the morning, with a $2 purchase and no cash. Well, this was no problem for that particular space case: he",
+    "raw_text": "Years ago, when I was in college, I had one of those friends who never quite had it together. You know the type; I'm talking lost a debit card and took three months to get a new one because of some sort of &quot;mixup&quot; with the credit union that I think consisted mostly of not calling them for three months. In the mean time, our mutual friend ended up in a quandry: at WalMart, at one in the morning, with a $2 purchase and no cash. Well, this was no problem for that particular space case: he had his checkbook. If you think about it, it's actually pretty remarkable that grocery stores accept personal checks. It's a very high risk for of payment. Even if the check is genuine, the customer could be writing it against an empty account. On top of that, with modern printers and the declining use of MICR, forging checks is trivial. When you offer a check, the retailer has very little to go on to decide whether or not you're good for the money. Surely, fraud must run out of hand—and yet, just about every major grocer still accepts personal checks. Retail point-of-sale acceptance of personal checks is the product of an intriguing industry that handles all the challenges of checks at once: a combination of digital payment network, credit reporting firm, insurer, and debt collector known as a check guarantee service. The check guarantee is older than the ATM , and depending on how you squint, check guarantees are quite possibly the first form of real-time, telecommunications-based point of sale payment processing. Harry M. Flagg was born in Frankfurt in 1935, but spent most of his childhood in Milwaukee, Wisconsin. He attended MIT, major unknown, and graduated in 1957. I think he was probably an ROTC student, because some sort of Navy service took him from Massachusetts to Hawaii, where just a few years later he was out of the Navy and working as some sort of &quot;management consultant.&quot; Flagg was entrepreneurial to his core, so while I knew few details about it his consulting work is unsurprising given the wide variety of business ventures he was soon involved in. We can be fairly confident, though, that his clients included retailers—retailers who struggled with personal checks. In 1964 1 , Flagg quit consulting to focus on checks alone. His idea was straightforward: keep a list of people known to pass bad checks. When a retailer is given a check, they just check the list, and if the writer's name appears they should turn the check away. As legend has it, Flagg took the idea to a Boy Scout meeting where he happened to describe it to a crowd of Honolulu business leaders, one that presumably included his soon cofounder Bob Baer. They agreed on an informal arrangement: Honolulu businesses would report writers of bad checks to Flagg's consulting office, where his small staff would look up names on request. It was such a success that Flagg's staff were soon overwhelmed. Tracking the writers of bad checks became Flagg's full time business. He christen",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "history"
+    ],
+    "created_at": "2026-04-05T11:09:15.982570"
+  },
+  {
+    "id": "rss-computer.rip-335750ef2ec1",
+    "source": "computer.rip",
+    "source_type": "rss",
+    "title": "LotusNotes",
+    "url": "https://computer.rip/2026-03-14-lotusnotes.html",
+    "original_content": "I tend to focus on the origin of the computer within the military. Particularly in the early days of digital computing, the military was a key customer, and fundamental concepts of modern computing arose in universities and laboratories serving military contracts. Of course, the war would not last forever, and computing had applications in so many other fields—fields that, nonetheless, started out as beneficiaries of military largesse. Consider education. The Second World War had a profound impa",
+    "raw_text": "I tend to focus on the origin of the computer within the military. Particularly in the early days of digital computing, the military was a key customer, and fundamental concepts of modern computing arose in universities and laboratories serving military contracts. Of course, the war would not last forever, and computing had applications in so many other fields—fields that, nonetheless, started out as beneficiaries of military largesse. Consider education. The Second World War had a profound impact on higher education in the US. The GI bill made college newly affordable to veterans, who in the 1950s made up a large portion of the population. That was only the tip of the iceberg, though: military planners perceived the allied victory as a result of technical and industrial excellence. Many of the most decisive innovations of the war—radar and radionavigation, scientific management and operations research, nuclear weapons—had originated in academic research laboratories at the nation's most prestigious universities. Many of those universities, MIT, Stanford, University of California, created subsidiaries and spinoffs that act as major defense contractors to this day. Educational institutions bent themselves, to some degree, to the needs of the military. The relationship was not at all one-sided. Besides direct funding for defense-oriented research, in the runup to the Cold War the military started to shower money on education itself. Research contracts from uniformed services and grant programs from the young DoD supported all kinds of educational programs. For the military, there were two general goals: first, it was assumed that R&amp;D in civilian education would lead to findings that directly improved the military's own educational system. Weapons and tactics of war were increasingly technical, even computer controlled, and the military was acutely aware that training a large number of 18-year-old enlistees to operate complex equipment according to tactical doctrine under pressure was, well, to call it a challenge would be an understatement. Second, the nation's ranks of academics made up something like a military auxiliary. The Civil Air Patrol built up a base of trained pilots, in case there was ever a need to quickly expand the Air Force. By the same logic, university programs in management, sciences, and education itself produced a corps of well-educated people who would form the staff of the next era of secret military laboratories. Well, that's not exactly how it turned out, with the Cold War's radical turn to privatization, but it was an idea, anyway. That spirit of military-academic collaboration is how a group of researchers, mostly physicists, at the University of Illinois found themselves with military funding to develop a system called &quot;Programmed Logic for Automatic Teaching Operations,&quot; or PLATO. With its origins in the late 1950s, and heyday in the 1970s, PLATO is usually considered the first effort in computerized teach",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "history"
+    ],
+    "created_at": "2026-04-05T11:09:15.989293"
+  },
+  {
+    "id": "rss-computer.rip-f5c926035383",
+    "source": "computer.rip",
+    "source_type": "rss",
+    "title": "cash issuing terminals",
+    "url": "https://computer.rip/2026-02-27-ibm-atm.html",
+    "original_content": "In the United States, we are losing our fondness for cash. As in many other countries, cards and other types of electronic payments now dominate everyday commerce. To some, this is a loss. Cash represented a certain freedom from intermediation, a comforting simplicity that you just don't get from Visa. It's funny to consider, then, how cash is in fact quite amenable to automation. Even Benjamin Franklin's face on a piece of paper can feel like a mere proxy for a database transaction. How differe",
+    "raw_text": "In the United States, we are losing our fondness for cash. As in many other countries, cards and other types of electronic payments now dominate everyday commerce. To some, this is a loss. Cash represented a certain freedom from intermediation, a comforting simplicity that you just don't get from Visa. It's funny to consider, then, how cash is in fact quite amenable to automation. Even Benjamin Franklin's face on a piece of paper can feel like a mere proxy for a database transaction. How different is cash itself from &quot;e-cash&quot;, when it starts and ends its lifecycle through automation? Increasing automation of cash reflects the changing nature of banking: decades ago, a consumer might have interacted with banking primarily through a &quot;passbook&quot; savings account, where transactions were so infrequent that the bank recorded them directly in the patron's copy of the passbook. Over the years, increasing travel and nationwide communications led to the ubiquitous use of inter-bank money transfers, mostly in the form of the check. The accounts that checks typically drew on—checking accounts—were made for convenience and ease of access. You might deposit your entire paycheck into an account—it might even be sent there automatically—and then when you needed a little walking around money, you would withdraw cash by the assistance of a teller. By the time I was a banked consumer, even the teller was mostly gone. Today, we get our cash from machines so that it can be deposited into other machines. Cash handling is fraught with peril. Bills are fairly small and easy to hide, and yet quite valuable. Automation in the banking world first focused on solving this problem, of reliable and secure cash handling within the bank branch. The primary measure against theft by insiders was that the theft would be discovered, as a result of the careful bookkeeping that typifies banks. But, well, that bookkeeping was surprisingly labor-intensive in even the bank of the 1950s. Histories of the ATM usually focus on just that: the ATM. It's an interesting story, but one that I haven't been particularly inclined to cover due to the lack of a compelling angle. Let's try IBM. IBM is such an important, famous player in business automation that it forms something of a synecdoche for the larger industry. Even so, in the world of bank cash handling, IBM's efforts ultimately failed... a surprising outcome, given their dominance in the machines that actually did the accounting. In this article, we'll examine the history of ATMs—by IBM. IBM was just one of the players in the ATM industry and, by its maturity, not even one of the more important ones. But the company has a legacy of banking products that put the ATM in a more interesting context, and despite lackluster adoption of later IBM models, their efforts were still influential enough that later ATMs inherited some of IBM's signature design concepts. I mean that more literally than you might think. But first, we hav",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "history"
+    ],
+    "created_at": "2026-04-05T11:09:15.994825"
+  },
+  {
+    "id": "rss-computer.rip-6c5198b8fb32",
+    "source": "computer.rip",
+    "source_type": "rss",
+    "title": "forecourt networking",
+    "url": "https://computer.rip/2026-02-08-forecourt-networking.html",
+    "original_content": "The way I see it, few parts of American life are as quintessentially American as buying gas. We love our cars, we love our oil, and an industry about as old as automobiles themselves has developed a highly consistent, fully automated, and fairly user friendly system for filling the former with the latter. I grew up in Oregon. While these rules have since been relaxed, many know Oregon for its long identity as one of two states where you cannot pump your own gas (the other being New Jersey). Inst",
+    "raw_text": "The way I see it, few parts of American life are as quintessentially American as buying gas. We love our cars, we love our oil, and an industry about as old as automobiles themselves has developed a highly consistent, fully automated, and fairly user friendly system for filling the former with the latter. I grew up in Oregon. While these rules have since been relaxed, many know Oregon for its long identity as one of two states where you cannot pump your own gas (the other being New Jersey). Instead, an attendant, employee of the gas station, operates the equipment. Like Portland's lingering indoor gas station, Oregon's favor for &quot;full-service&quot; is a holdover. It makes sense, of course, that all gas stations used to be full-service. The front part of a gas station, where the pumps are and where you pull up your car, is called the Forecourt. The practicalities of selling gasoline, namely that it is a liquid sold by volume, make the forecourt more complex than you might realize. It's a set of devices that many of us interact with on a regular basis, but we rarely think about the sheer number of moving parts and long-running need for digital communications. Hey, that latter part sounds interesting, doesn't it? Electric vehicles are catching on in the US. My personal taste in vehicles tends towards &quot;old&quot; and &quot;cheap,&quot; but EVs have been on the market for long enough that they now come in that variety. Since my daily driver is an EV, I don't pay my dues at the Circle K nearly as often as I used to. One of the odd little details of EVs is the complexity hidden in the charging system or &quot;EVSE,&quot; which requires digital communications with the vehicle for protection reasons. As consumers across the country install EVSE in their garages, we're all getting more familiar with these devices and their price tags. We might forget that, well, handling a fluid takes a lot of equipment as well... we just don't think about it, having shifted the whole problem to a large industry of loosely supervised hazardous chemical handling facilities. Well, I don't mean to turn this into yet another discussion of the significant environmental hazard posed by leaking underground storage tanks. Instead, we're going to talk about forecourt technology. Let's start, then, with a rough, sketchy history of the forecourt. The earliest volumetric fuel dispensers used an elevated glass tank where fuel was staged and measured before gravity drained it through the hose into the vehicle tank. Operation of these pumps was very manual, with an attendant filling the calibrated cylinder with the desired amount of gas, emptying it into the vehicle, and then collecting an appropriate sum of money. As an upside, the customer could be quite confident of the amount of fuel they purchased, since they could see it temporarily stored in the cylinder. As cars proliferated in the 1910s, a company called Gilbarco developed a fuel dispenser that actually measured the qua",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "history"
+    ],
+    "created_at": "2026-04-05T11:09:16.003444"
+  },
+  {
+    "id": "rss-computer.rip-5dabdb24fc4b",
+    "source": "computer.rip",
+    "source_type": "rss",
+    "title": "the essence of frigidity",
+    "url": "https://computer.rip/2026-01-25-the-essence-of-frigidity.html",
+    "original_content": "The front of the American grocery store contains a strange, liminal space: the transitional area between parking lot and checkstand, along the front exterior and interior of the building, that fills with oddball commodities. Ice is a fixture at nearly every store, filtered water at most, firewood at some. This retail purgatory, both too early and too late in the shopping journey for impulse purchases, is mostly good only for items people know they will need as they check out. One of the standard",
+    "raw_text": "The front of the American grocery store contains a strange, liminal space: the transitional area between parking lot and checkstand, along the front exterior and interior of the building, that fills with oddball commodities. Ice is a fixture at nearly every store, filtered water at most, firewood at some. This retail purgatory, both too early and too late in the shopping journey for impulse purchases, is mostly good only for items people know they will need as they check out. One of the standard residents of this space has always struck me as peculiar: dry ice. Carbon dioxide ice is said to have been invented, or we might better say discovered, in the 1830s. For whatever reason, it took just about a hundred years for the substance to be commercialized. Thomas B. Slate was a son of Oregon, somehow ended up in Boston, and then realized that the solid form of CO2 was both fairly easy to produce and useful as a form of refrigeration. With an eye towards marketing, he coined the name Dry Ice—and founded the DryIce Corporation of America. The year was 1925, and word quickly spread. In a widely syndicated 1930 article, &quot;Use of Carbon Dioxide as Ice Said to be Developing Rapidly,&quot; the Alamogordo Daily News and others reported that &quot;the development of... 'concentrated essence of frigidity' for use as a refrigerant in transportation of perishable products, is already taxing the manufacturing facilities of the Nation... So rapidly has the use of this new form of refrigeration come into acceptance that there is not sufficient carbon dioxide gas available.&quot; The rush to dry ice seems strange today, but we must consider the refrigeration technology of the time. Refrigerated transportation first emerged in the US during the middle of the 19th century. Train boxcars, packed thoroughly with ice, carried meat and fruit from midwestern agriculture to major cities. This type of refrigerated transportation greatly expanded the availability of perishables, and the ability to ship fruits and vegetables between growing regions made it possible, for the first time, to get some fresh fruit out of season. Still, it was an expensive proposition: railroads built extensive infrastructure to support the movement of trains loaded down with hundreds of tons of ice. The itself had to be quarried from frozen lakes, some of them purpose-built, a whole secondary seasonal transportation economy. Mechanical refrigeration, using some kind of phase change process as we are familiar with today, came about a few decades later and found regular use on steamships by 1900. Still, this refrigeration equipment was big and awkward; steam power was a practical requirement. As the Second World War broke out, tens of thousands of refrigerated railcars and nearly 20,000 refrigerated trucks were in service—the vast majority still cooled by ice, not mechanical refrigeration. You can see, then, the advantages of a &quot;dryer&quot; and lighter form of ice. The sheer weight of the ic",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "history"
+    ],
+    "created_at": "2026-04-05T11:09:16.009119"
+  },
+  {
+    "id": "atom-daring-fireball-40e8ee02628f",
+    "source": "Daring Fireball",
+    "source_type": "rss",
+    "title": "Material Security",
+    "url": "https://material.security/lp-cloud-office-security?utm_source=third-party&utm_medium=email&utm_campaign=20260330-daringfireball",
+    "original_content": "My thanks to Material Security for sponsoring this week at DF. Most security teams don’t have a talent problem, they have a noise problem. Manual phishing remediation, chasing risky OAuth permissions, and auditing file shares shouldn’t be a full-time job. Material Security unifies your cloud workspace, bringing detection and response for email, files, and accounts into one place. It’s security that actually works: augmenting the native gaps in Google and Microsoft without the usual enterprise bl",
+    "raw_text": "My thanks to Material Security for sponsoring this week at DF. Most security teams don’t have a talent problem, they have a noise problem. Manual phishing remediation, chasing risky OAuth permissions, and auditing file shares shouldn’t be a full-time job. Material Security unifies your cloud workspace, bringing detection and response for email, files, and accounts into one place. It’s security that actually works: augmenting the native gaps in Google and Microsoft without the usual enterprise bloat. Stop fighting fragmented consoles and start focusing on strategy. It’s time to simplify your SecOps. See for yourself how Material scales . &amp;nbsp;★&amp;nbsp;",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "apple"
+    ],
+    "created_at": "2026-04-05T01:00:00"
+  },
+  {
+    "id": "atom-daring-fireball-a706ab2f3a23",
+    "source": "Daring Fireball",
+    "source_type": "rss",
+    "title": "Sponsorship Openings for Daring Fireball",
+    "url": "https://daringfireball.net/feeds/sponsors/",
+    "original_content": "Sponsorships have been selling briskly, of late . Knock on wood. As of yesterday, the next opening on the schedule wasn’t until the very end of July. However, due to some schedule rejiggering, next week is now open. After next week, though, the next opening remains the week starting July 27. If you’ve got a product or service you think would be of interest to DF’s audience of people obsessed with high quality and good design, get in touch — especially if you can act quick for next week’s opening",
+    "raw_text": "Sponsorships have been selling briskly, of late . Knock on wood. As of yesterday, the next opening on the schedule wasn’t until the very end of July. However, due to some schedule rejiggering, next week is now open. After next week, though, the next opening remains the week starting July 27. If you’ve got a product or service you think would be of interest to DF’s audience of people obsessed with high quality and good design, get in touch — especially if you can act quick for next week’s opening. I’m also booking sponsorships for Q3 and Q4 2026, and over half of those weeks are already sold. &amp;nbsp;★&amp;nbsp;",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "apple"
+    ],
+    "created_at": "2026-04-05T00:59:00"
+  },
+  {
+    "id": "atom-daring-fireball-eb62e950e344",
+    "source": "Daring Fireball",
+    "source_type": "rss",
+    "title": "iOS 26 Feels Faster Than iOS 18",
+    "url": "https://daringfireball.net/linked/2026/04/03/ios-18-update-for-holdouts",
+    "original_content": "One more follow-up point after I spent two days using an iPhone 16 Pro running iOS 18.7.7 as my main phone. At some point late in the iOS 26 beta cycle last summer, it became obvious that Apple had sped up a bunch of system-level animations. Prime example: the animation when you swipe up from the bottom of the screen to go back to the Home Screen. People noticed . But it hasn’t gotten a lot of attention since. But man, if you want to notice, do what I did and spend two days back on iOS 18. So ma",
+    "raw_text": "One more follow-up point after I spent two days using an iPhone 16 Pro running iOS 18.7.7 as my main phone. At some point late in the iOS 26 beta cycle last summer, it became obvious that Apple had sped up a bunch of system-level animations. Prime example: the animation when you swipe up from the bottom of the screen to go back to the Home Screen. People noticed . But it hasn’t gotten a lot of attention since. But man, if you want to notice, do what I did and spend two days back on iOS 18. So many little things feel slower. I don’t know if anything actually is slower, but because the animations are slower, it looks slower, and that means it feels slower. Apple should speed up some of these animations again this year. (And/or offer a system-wide setting to make them faster. I do not want to eliminate these animations. I just want them to go very very fast.) &amp;nbsp;★&amp;nbsp;",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "apple"
+    ],
+    "created_at": "2026-04-05T00:44:00"
+  },
+  {
+    "id": "atom-daring-fireball-8f635e471d3d",
+    "source": "Daring Fireball",
+    "source_type": "rss",
+    "title": "Class Action Lawsuit Says Perplexity’s ‘Incognito Mode’ Is a ‘Sham’",
+    "url": "https://arstechnica.com/tech-policy/2026/04/perplexitys-incognito-mode-is-a-sham-lawsuit-says/",
+    "original_content": "Ashley Belanger, reporting for Ars Technica: Using developer tools, the lawsuit found that opening prompts are always shared, as are any follow-up questions the search engine asks that a user clicks on. Privacy concerns are seemingly worse for non-subscribed users, the complaint alleged. Their initial prompts are shared with “a URL through which the entire conversation may be accessed by third parties like Meta and Google.” Disturbingly, the lawsuit alleged, chats are also shared with personally",
+    "raw_text": "Ashley Belanger, reporting for Ars Technica: Using developer tools, the lawsuit found that opening prompts are always shared, as are any follow-up questions the search engine asks that a user clicks on. Privacy concerns are seemingly worse for non-subscribed users, the complaint alleged. Their initial prompts are shared with “a URL through which the entire conversation may be accessed by third parties like Meta and Google.” Disturbingly, the lawsuit alleged, chats are also shared with personally identifiable information (PII), even when users who want to stay anonymous opt to use Perplexity’s “Incognito Mode.” That mode, the lawsuit charged, is a “sham.” Everything about Perplexity looks like a scam . &amp;nbsp;★&amp;nbsp;",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "apple"
+    ],
+    "created_at": "2026-04-05T00:32:57"
+  },
+  {
+    "id": "rss-gary-marcus-1354d82ac691",
+    "source": "Gary Marcus",
+    "source_type": "rss",
+    "title": "The back story behind the first “$1.8 Billion” dollar “AI Company”",
+    "url": "https://garymarcus.substack.com/p/the-back-story-behind-the-first-18",
+    "original_content": "AI isn&#8217;t the only thing behind Medvi",
+    "raw_text": "On Thursday, The New York Times published a thing and it went viral, declared as a victory for AI: But there&#8217;s a lot more to be said that was only scarcely touched on in the article. Like this And this And this brutal, compelling dissection on YouTube which it itself built on and extending an earlier (May 2025) dissection from Futurism that The New York Times should have read and addressed in far more detail: A friend of mine who has been tracking this for a while had sees Medvi as &#8220;a fraud-layer on top of also-scammy-but-possibly-less-illegal platforms&#8221;, speculating that &#8220;If there is any money there, they will be sued by all their suppliers and vendors, because I&#8217;m sure they&#8217;re in violation of every agreement in terms of compliance efforts, safe data handling, etc.&#8221; (The friend also is doubtful of the revenue reports, asking &#8220;why would this be the only thing they&#8217;re telling the truth about?&#8221;) All in all, glorifying Medvi was not The New York Times &#8217; finest hour. And hardly the poster child AI boosters should be hoping for. Instead, as the YouTube video author, Voidzilla, notes, if anything Medvi is a warning sign &#8212; for how AI can be abused. Subscribe now",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "ml"
+    ],
+    "created_at": "2026-04-05T16:37:34"
+  },
+  {
+    "id": "rss-jim-nielsen-b8905d584c4d",
+    "source": "Jim Nielsen",
+    "source_type": "rss",
+    "title": "I Tried Vibing an RSS Reader and My Dreams Did Not Come True",
+    "url": "https://blog.jim-nielsen.com/2026/vibe-dreams-didnt-come-true/",
+    "original_content": "Simon Willison wrote about how he vibe coded his dream presentation app for macOS . I also took a stab at vibe coding my dream app: an RSS reader. To clarify: Reeder is my dream RSS app and it already exists, so I guess you could say my dreams have already come true? But I’ve kind of always wanted to try an app where my RSS feed is just a list of unread articles and clicking any one opens it in the format in which it was published (e.g. the original website). So I took a stab at it. (Note: the b",
+    "raw_text": "Simon Willison wrote about how he vibe coded his dream presentation app for macOS . I also took a stab at vibe coding my dream app: an RSS reader. To clarify: Reeder is my dream RSS app and it already exists, so I guess you could say my dreams have already come true? But I’ve kind of always wanted to try an app where my RSS feed is just a list of unread articles and clicking any one opens it in the format in which it was published (e.g. the original website). So I took a stab at it. (Note: the backend portion of this was already solved, as I simply connected to my Feedbin account via the API .) First I tried a macOS app because I never would’ve tried a macOS app before. Xcode, Swift, a Developer Account? All completely outside my wheelhouse. But AI helped be get past that hurdle of going from nothing to something . It was fun to browse articles and see them in situ . A lot of folks have really great personal websites so it’s fun to see their published articles in that format. This was pretty much pure vibes. I didn’t really look at the code at all because I knew I wouldn’t understand any of it. I got it working the first night I sat down and tried it. It was pretty crappy but it worked. From there I iterated. I’d use it for a day, fix things that were off, keep using it, etc. Eventually I got to the point where I thought: Ok, I could use this on my personal computer. I don’t know that I’ll be able to iterate on this much more because its getting more complicated and failing more and more with each ask ( I was just trying to move some stupid buttons around in the UI and the AI was like, “Nah bro, I can’t.”) I have no idea how I’d share this with someone. I don’t think I’d be comfortable sharing this with someone (even though I think I did things like security right by putting credentials in the built-in keychain, etc.) I guess this is where the road stops. I’m picky about software, so the bar for my dreams is high. But I’m also lazy, so my patience is quite low. The intersection of: the LLM failing over and over + my inability to troubleshoot any of it + not wanting to learn = a bad combination for persevering through debugging. Which made me say: “Screw it, I’ll build it as a website!” But websites don’t really work for this kind of app because of CORS. I can’t just stick an article’s URL in an &lt;iframe&gt; and preview it because certain sites have cross site headers that don’t allow it to display under another domain. But that didn’t stop me. I tried building the idea anyway as just a list view. I could install this as a web app on my Mac and I&#39;d get a simple list view: Anytime I clicked on a link, it would open in my default browser. Actually not a bad experience. It worked pretty decent on my phone too. Once I visited my preview deploy, I could &quot;isntall&quot; it to my home screen and then when I opened it, I&#39;d have my latest unread articles. Clicking on any of them would open a webview that I could easily dismiss and get back to",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "web",
+      "frontend"
+    ],
+    "created_at": "2026-04-05T19:00:00"
+  },
+  {
+    "id": "atom-michael-stapelberg-74a089c846a7",
+    "source": "Michael Stapelberg",
+    "source_type": "rss",
+    "title": "Stamp It! All Programs Must Report Their Version",
+    "url": "https://michael.stapelberg.ch/posts/2026-04-05-stamp-it-all-programs-must-report-their-version/",
+    "original_content": "Recently, during a production incident response, I guessed the root cause of an outage correctly within less than an hour (cool!) and submitted a fix just to rule it out, only to then spend many hours fumbling in the dark because we lacked visibility into version numbers and rollouts… 😞 This experience made me think about software versioning again, or more specifically about build info (build versioning, version stamping, however you want to call it) and version reporting. I realized that for th",
+    "raw_text": "Recently, during a production incident response, I guessed the root cause of an outage correctly within less than an hour (cool!) and submitted a fix just to rule it out, only to then spend many hours fumbling in the dark because we lacked visibility into version numbers and rollouts… 😞 This experience made me think about software versioning again, or more specifically about build info (build versioning, version stamping, however you want to call it) and version reporting. I realized that for the i3 window manager, I had solved this problem well over a decade ago, so it was really unexpected that the problem was decidedly not solved at work. In this article, I’ll explain how 3 simple steps (Stamp it! Plumb it! Report it!) are sufficient to save you hours of delays and stress during incident response. Why are our versioning standards so low?! Every household appliance has incredibly detailed versioning! Consider this dishwasher: (Thank you Feuermurmel for sending me this lovely example!) I observed a couple household appliance repairs and am under the impression that if a repair person cannot identify the appliance, they would most likely refuse to even touch it. So why are our standards so low in computers, in comparison? Sure, consumer products are typically versioned somehow and that’s typically good enough (except for, say, USB 3.2 Gen 1×2!). But recently, I have encountered too many developer builds that were not adequately versioned! Software Versioning Unlike a physical household appliance with a stamped metal plate, software is constantly updated and runs in places and structures we often cannot even see. Let’s dig into what we need to increase our versioning standard! Usually, software has a name and some version number of varying granularity: Chrome Chrome 146 Chrome 146.0.7680.80 Chrome f08938029c887ea624da7a1717059788ed95034d-refs/branch-heads/7680_65@{#34} All of these identify the Chrome browser on my computer, but each at different granularity. All are correct and useful, depending on the context. Here’s an example for each: “This works in Chrome for me, did you test in Firefox?” “Chrome 146 contains broken middle-click-to-paste-and-navigate” “I run Chrome 146.0.7680.80 and cannot reproduce your issue” “Apply this patch on top of Chrome f08938029c887ea624da7a1717059788ed95034d-refs/branch-heads/7680_65@{#34} and follow these steps to reproduce: […]” After creating the i3 window manager , I quickly learned that for user support, it is very valuable for programs to clearly identify themselves. Let me illustrate with the following case study. Case Study: i3’s --version and --moreversion When running i3 --version , you will see output like this: % i3 --version i3 version 4.24 (2024-11-06) © 2009 Michael Stapelberg and contributors Each word was carefully deliberated and placed. Let me dissect: i3 version 4.24 : I could have shortened this to i3 4.24 or maybe i3 v4.24 , but I figured it would be helpful to be explicit because i3 is such ",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "linux",
+      "go"
+    ],
+    "created_at": "2026-04-05T16:20:00"
+  },
+  {
+    "id": "rss-ibrahim-diallo-db3295ae9469",
+    "source": "Ibrahim Diallo",
+    "source_type": "rss",
+    "title": "It's not that deep",
+    "url": "https://idiallo.com/blog/its-not-that-deep?src=feed",
+    "original_content": "I have these Sunday evenings where I find myself sitting alone at the kitchen table, thinking about my life and how I got here . Usually, these sessions end with an inspiring idea that makes me want to get up and build something. I remember the old days where I couldn't even sleep because I had all these ideas bubbling in my head, and I could just get up and do it because I had no familial responsibility. I still have that flare in me, but I also don't always give in to those ideas. Instead, som",
+    "raw_text": "I have these Sunday evenings where I find myself sitting alone at the kitchen table, thinking about my life and how I got here . Usually, these sessions end with an inspiring idea that makes me want to get up and build something. I remember the old days where I couldn't even sleep because I had all these ideas bubbling in my head, and I could just get up and do it because I had no familial responsibility. I still have that flare in me, but I also don't always give in to those ideas. Instead, sometimes I chose to do something much simpler. I read. Sometimes it's a book, sometimes it's a blog post. But always, it's something that stimulates my mind more than any startup idea, or tech disruption. There is a blog I follow, I'm not even sure how I stumbled upon it. I don't think it has a newsletter, and it's not in my RSS feed. But, it's in my mind. It's as if I can just feel it when the author posts something new. Right there on the kitchen table, I load it up, and I get a glimpse into someone else's life. I don't know much about this person, but reading her writing is soothing. It's not commercialized, the most I can say about it is, well it is human . When I read something that is written, anything that's written, I expect to hear the voice of the person behind it . Whether it is a struggle, a victory, or just a small remark. It only makes sense when there is a person behind it. Sometimes people write, and in order to sound professional, they remove their voice from it. It becomes like reading a corporate memphis blog. Devoid of any humanity. It's weird how I have these names in my head. Keenen Charles . I check his blog on Sunday evening as well. In fact, here are a few I read recently in no particular order: Henrik Hugo? Jerry (I particularly liked this specific article) Hong Don't know her name Keenen This isn't to tell you that you need to read those articles or you will be left behind. It's not that deep. You can find things you like, and enjoy them at your own comfort. They don't have to be world changing, they don't have to turn you into a millionaire, they just have to make you smile or nod for a moment. The world is constantly trying to remind us that we are at the edge of destruction. But you, the person sitting there, reading a random blog post from this random Guinean guy, yes you. Take it easy for the rest of the day.",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "programming"
+    ],
+    "created_at": "2026-04-05T08:00:00"
+  },
+  {
+    "id": "rss-john-d.-cook-fc6185f9c489",
+    "source": "John D. Cook",
+    "source_type": "rss",
+    "title": "HIPAA compliant AI",
+    "url": "https://www.johndcook.com/blog/2026/04/05/hipaa-compliant-ai/",
+    "original_content": "The best way to run AI and remain HIPAA compliant is to run it locally on your own hardware, instead of transferring protected health information (PHI) to a remote server by using a cloud-hosted service like ChatGPT or Claude. [1]. There are HIPAA-compliant cloud options, but they&#8217;re both restrictive and expensive. Even enterprise options are [&#8230;] The post HIPAA compliant AI first appeared on John D. Cook .",
+    "raw_text": "The best way to run AI and remain HIPAA compliant is to run it locally on your own hardware, instead of transferring protected health information (PHI) to a remote server by using a cloud-hosted service like ChatGPT or Claude. [1]. There are HIPAA-compliant cloud options, but they&#8217;re both restrictive and expensive. Even enterprise options are not &#8220;HIPAA compliant&#8221; out of the box. Instead, they are &#8220;HIPAA eligible&#8221; or that they &#8220;support HIPAA compliance,&#8221; because you still need the right Business Associate Agreement (BAA), configuration, logging, access controls, and internal process around it, and the end product often ends up far less capable than a frontier model. The least expensive and therefore most accessible services do not even allow this as an option. Specific examples: Only sales-managed ChatGPT Enterprise or Edu customers are eligible for a BAA, and OpenAI explicitly says it does not offer a BAA for ChatGPT Business. The consumer ChatGPT Health product says HIPAA and BAAs do not apply. ChatGPT for Healthcare pricing is based on ChatGPT Enterprise, depends on organization size and deployment needs, and requires contacting sales. Even within Enterprise, OpenAI&#8217;s Regulated Workspace spec lists Codex and the multi-step Agent feature as &#8220;Non-Included Functionality,&#8221; i.e. off limits for PHI. Google says Gemini can support HIPAA workloads in Workspace, but NotebookLM is not covered by Google&#8217;s BAA, and Gemini in Chrome is automatically blocked for BAA customers. If a work or school account does not have enterprise-grade data protections, chats in the Gemini app may be reviewed by humans and used to improve Google&#8217;s products. GitHub Copilot, despite being a Microsoft product, is not under Microsoft&#8217;s BAA. Azure OpenAI Service is, but only for text endpoints. While Microsoft is working on their own models, it is unlikely that they will deviate significantly here. Anthropic says its BAA covers only certain &#8220;HIPAA-ready&#8221; services, namely the first-party API and a HIPAA-ready Enterprise plan, and does not cover Claude Free, Pro, Max, Team, Workbench, Console, Cowork, or Claude for Office. The HIPAA-ready Enterprise offering is sales-assisted only. Bundled Claude Code seats are not covered. AWS Bedrock API calls can work, but this requires extensive configuration and carries its own complexities and restrictions. Running AI locally is already practical as of early 2026. Open-weight models that approach the quality of commercial coding assistants run on consumer hardware. A single high-end GPU or a recent Mac with enough unified memory can run a 70B-parameter model at a reasonable token speed. There&#8217;s an interesting interplay between economies of scale and diseconomies of scale. Cloud providers can run a data center at a lower cost per server than a small company can. That&#8217;s the economies of scale. But running HIPAA-compliant computing in the cloud,",
+    "relevance_score": 8,
+    "category": [
+      "math",
+      "programming"
+    ],
+    "created_at": "2026-04-05T23:04:46"
+  },
+  {
+    "id": "rss-terence-eden-ca65e4566732",
+    "source": "Terence Eden",
+    "source_type": "rss",
+    "title": "Someone at BrowserStack is Leaking Users' Email Address",
+    "url": "https://shkspr.mobi/blog/2026/04/someone-at-browserstack-is-leaking-users-email-address/",
+    "original_content": "Like all good nerds, I generate a unique email address for every service I sign up to. This has several advantages - it allows me to see if a message is legitimately from a service, if a service is hacked the hackers can&#039;t go credential stuffing, and I instantly know who leaked my address. A few weeks ago I signed up for BrowserStack as I wanted to join their Open Source programme. I had a few…",
+    "raw_text": "Like all good nerds, I generate a unique email address for every service I sign up to. This has several advantages - it allows me to see if a message is legitimately from a service, if a service is hacked the hackers can't go credential stuffing, and I instantly know who leaked my address. A few weeks ago I signed up for BrowserStack as I wanted to join their Open Source programme. I had a few emails back-and-forth with their support team and finally got set up. A couple of days later I received an email to that email address from someone other than BrowserStack. After a brief discussion, the emailer told me they got my details from Apollo.io. Naturally, I reached out to Apollo to ask them where they got my details from. They replied: Your email address was derived using our proprietary algorithm that leverages publicly accessible information combined with typical corporate email structures (e.g., firstname.lastname@companydomain.com). Wow! A proprietary algorithm, eh? I wonder how much AI it takes to work out \"firstname.lastname\"???? Obviously, their response was inaccurate. There's no way their magical if-else statement could have derived the specific email I'd used with BrowserStack. I called them out on their bullshit and they replied with: Your email address came from BrowserStack (browserstack.com) one of our customers who participates in our customer contributor network by sharing their business contacts with the Apollo platform. The date of collection is 2026-02-25. So I emailed BrowserStack a simple \"Hey guys, what the fuck?\" I love their cheery little \"No spam, we promise!\" Despite multiple attempts to contact them, BrowserStack never replied. Given that this email address was only used with one company, I think there are a few likely possibilities for how Apollo got it. BrowserStack routinely sell or give away their users' data. A third-party service used by BrowserStack siphons off information to send to others. An employee or contractor at BrowserStack is exfiltrating user data and transferring it elsewhere. There are other, more nefarious, explanations - but I consider that to be unlikely. I suspect it is just the normalisation of the shabby trade in personal information undertaken by entities with no respect for privacy. But, it turns out, it gets worse. My next blog post reveals how Apollo got my phone number from from a very big company. Be seeing you 👌",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "web"
+    ],
+    "created_at": "2026-04-05T11:34:03"
+  },
+  {
+    "id": "atom-daring-fireball-b4eb5fadc99b",
+    "source": "Daring Fireball",
+    "source_type": "rss",
+    "title": "An Easter Morning Message of Hope From the Winner of the FIFA Peace Prize",
+    "url": "https://truthsocial.com/@realDonaldTrump/posts/116351998782539414",
+    "original_content": "Donald Trump, sitting president of the United States, on his blog: Tuesday will be Power Plant Day, and Bridge Day, all wrapped up in one, in Iran. There will be nothing like it!!! Open the Fuckin’ Strait, you crazy bastards, or you’ll be living in Hell - JUST WATCH! Praise be to Allah. President DONALD J. TRUMP The Iranian embassy in Japan , quoting Trump: This low level of civility and intelligence shown by a leader of a country is regrettable; the shameful fervor with which intentions to comm",
+    "raw_text": "Donald Trump, sitting president of the United States, on his blog: Tuesday will be Power Plant Day, and Bridge Day, all wrapped up in one, in Iran. There will be nothing like it!!! Open the Fuckin’ Strait, you crazy bastards, or you’ll be living in Hell - JUST WATCH! Praise be to Allah. President DONALD J. TRUMP The Iranian embassy in Japan , quoting Trump: This low level of civility and intelligence shown by a leader of a country is regrettable; the shameful fervor with which intentions to commit war crimes are repeated is staggering; and the fact that the Divine is invoked regardless of ill intentions clearly exposes deep fanaticism. Apologies for sharing this language. It’s getting harder to tell which side is the authoritarian theocratic regime run by demented hateful nut jobs. ( You Crazy Bastards would be an excellent title for a book on the Trump 2.0 administration.) &amp;nbsp;★&amp;nbsp;",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "apple"
+    ],
+    "created_at": "2026-04-05T16:01:59"
+  }
+]

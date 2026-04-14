@@ -1,0 +1,1440 @@
+[
+  {
+    "id": "github-324dca1fa921",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "title": "milla-jovovich/mempalace — The highest-scoring AI memory system ever benchmarked. And it's free.",
+    "url": "https://github.com/milla-jovovich/mempalace",
+    "original_content": "The highest-scoring AI memory system ever benchmarked. And it's free. | ⭐ 40,138 stars | Language: Python | Topics: ai, chromadb, llm, mcp, memory",
+    "raw_text": "The highest-scoring AI memory system ever benchmarked. And it's free. | ⭐ 40,138 stars | Language: Python | Topics: ai, chromadb, llm, mcp, memory",
+    "relevance_score": 8,
+    "category": [
+      "开源项目",
+      "Python",
+      "ai",
+      "chromadb"
+    ],
+    "created_at": "2026-04-11T10:09:49.112737"
+  },
+  {
+    "id": "github-625dbf2069d9",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "title": "alchaincyf/nuwa-skill — 你想蒸馏的下一个员工，何必是同事。蒸馏任何人的思维方式——心智模型、决策启发式、表达DNA。Distill how anyone thinks.",
+    "url": "https://github.com/alchaincyf/nuwa-skill",
+    "original_content": "你想蒸馏的下一个员工，何必是同事。蒸馏任何人的思维方式——心智模型、决策启发式、表达DNA。Distill how anyone thinks. | ⭐ 6,633 stars | Language: Python",
+    "raw_text": "你想蒸馏的下一个员工，何必是同事。蒸馏任何人的思维方式——心智模型、决策启发式、表达DNA。Distill how anyone thinks. | ⭐ 6,633 stars | Language: Python",
+    "relevance_score": 8,
+    "category": [
+      "开源项目",
+      "Python"
+    ],
+    "created_at": "2026-04-11T10:09:49.112795"
+  },
+  {
+    "id": "github-db76cfda3b02",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "title": "farzaa/clicky",
+    "url": "https://github.com/farzaa/clicky",
+    "original_content": "⭐ 3,567 stars | Language: Swift",
+    "raw_text": "⭐ 3,567 stars | Language: Swift",
+    "relevance_score": 8,
+    "category": [
+      "开源项目",
+      "Swift"
+    ],
+    "created_at": "2026-04-11T10:09:49.112819"
+  },
+  {
+    "id": "github-15e11757994b",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "title": "alchaincyf/zhangxuefeng-skill — 张雪峰.skill — 张雪峰的认知操作系统。高考志愿/考研/职业规划的实战思维框架。由女娲.skill生成。",
+    "url": "https://github.com/alchaincyf/zhangxuefeng-skill",
+    "original_content": "张雪峰.skill — 张雪峰的认知操作系统。高考志愿/考研/职业规划的实战思维框架。由女娲.skill生成。 | ⭐ 3,115 stars",
+    "raw_text": "张雪峰.skill — 张雪峰的认知操作系统。高考志愿/考研/职业规划的实战思维框架。由女娲.skill生成。 | ⭐ 3,115 stars",
+    "relevance_score": 8,
+    "category": [
+      "开源项目"
+    ],
+    "created_at": "2026-04-11T10:09:49.112837"
+  },
+  {
+    "id": "github-c37765835b8d",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "title": "xixu-me/awesome-persona-distill-skills — 同事.skill, 女娲.skill, 前任.skill… Curated list of Agent Skills centered on people, r",
+    "url": "https://github.com/xixu-me/awesome-persona-distill-skills",
+    "original_content": "同事.skill, 女娲.skill, 前任.skill… Curated list of Agent Skills centered on people, relationships, commemorative scenes, and methodological perspectives | ⭐ 2,866 stars | Language: JavaScript | Topics: agent-skills, awesome, awesome-list, persona-distill",
+    "raw_text": "同事.skill, 女娲.skill, 前任.skill… Curated list of Agent Skills centered on people, relationships, commemorative scenes, and methodological perspectives | ⭐ 2,866 stars | Language: JavaScript | Topics: agent-skills, awesome, awesome-list, persona-distill",
+    "relevance_score": 8,
+    "category": [
+      "开源项目",
+      "JavaScript",
+      "agent-skills",
+      "awesome"
+    ],
+    "created_at": "2026-04-11T10:09:49.112862"
+  },
+  {
+    "id": "github-382ad2d4cbfd",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "title": "garrytan/gbrain — Garry's Opinionated OpenClaw/Hermes Agent Brain",
+    "url": "https://github.com/garrytan/gbrain",
+    "original_content": "Garry's Opinionated OpenClaw/Hermes Agent Brain | ⭐ 2,619 stars | Language: TypeScript",
+    "raw_text": "Garry's Opinionated OpenClaw/Hermes Agent Brain | ⭐ 2,619 stars | Language: TypeScript",
+    "relevance_score": 8,
+    "category": [
+      "开源项目",
+      "TypeScript"
+    ],
+    "created_at": "2026-04-11T10:09:49.112879"
+  },
+  {
+    "id": "github-f68fc10d8ba4",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "title": "LaurieWired/tailslayer — Library for reducing tail latency in RAM reads",
+    "url": "https://github.com/LaurieWired/tailslayer",
+    "original_content": "Library for reducing tail latency in RAM reads | ⭐ 1,916 stars | Language: C++",
+    "raw_text": "Library for reducing tail latency in RAM reads | ⭐ 1,916 stars | Language: C++",
+    "relevance_score": 8,
+    "category": [
+      "开源项目",
+      "C++"
+    ],
+    "created_at": "2026-04-11T10:09:49.112898"
+  },
+  {
+    "id": "github-f1aa082a6499",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "title": "hotcoffeeshake/tong-jincheng-skill — 童锦程视角 Skill — 用深情祖师爷的思维框架分析人际关系",
+    "url": "https://github.com/hotcoffeeshake/tong-jincheng-skill",
+    "original_content": "童锦程视角 Skill — 用深情祖师爷的思维框架分析人际关系 | ⭐ 1,521 stars",
+    "raw_text": "童锦程视角 Skill — 用深情祖师爷的思维框架分析人际关系 | ⭐ 1,521 stars",
+    "relevance_score": 8,
+    "category": [
+      "开源项目"
+    ],
+    "created_at": "2026-04-11T10:09:49.112913"
+  },
+  {
+    "id": "github-13c2191b859c",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "title": "alchaincyf/hermes-agent-orange-book — Hermes Agent 从入门到精通 · 橙皮书系列 · Nous Research 开源 AI Agent 框架实战指南",
+    "url": "https://github.com/alchaincyf/hermes-agent-orange-book",
+    "original_content": "Hermes Agent 从入门到精通 · 橙皮书系列 · Nous Research 开源 AI Agent 框架实战指南 | ⭐ 1,520 stars",
+    "raw_text": "Hermes Agent 从入门到精通 · 橙皮书系列 · Nous Research 开源 AI Agent 框架实战指南 | ⭐ 1,520 stars",
+    "relevance_score": 8,
+    "category": [
+      "开源项目"
+    ],
+    "created_at": "2026-04-11T10:09:49.112928"
+  },
+  {
+    "id": "github-edaa5547747f",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "title": "KKKKhazix/khazix-skills — 数字生命卡兹克开源的 AI Skills 合集",
+    "url": "https://github.com/KKKKhazix/khazix-skills",
+    "original_content": "数字生命卡兹克开源的 AI Skills 合集 | ⭐ 1,431 stars",
+    "raw_text": "数字生命卡兹克开源的 AI Skills 合集 | ⭐ 1,431 stars",
+    "relevance_score": 8,
+    "category": [
+      "开源项目"
+    ],
+    "created_at": "2026-04-11T10:09:49.112938"
+  },
+  {
+    "id": "github-b759fcbff766",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "title": "fikrikarim/parlor — On-device, real-time multimodal AI. Have natural voice and vision conversations ",
+    "url": "https://github.com/fikrikarim/parlor",
+    "original_content": "On-device, real-time multimodal AI. Have natural voice and vision conversations with an AI that runs entirely on your machine. Powered by Gemma 4 E2B and Kokoro. | ⭐ 1,318 stars | Language: HTML | Topics: apple-silicon, gemma, kokoro, litert-lm, local-llm",
+    "raw_text": "On-device, real-time multimodal AI. Have natural voice and vision conversations with an AI that runs entirely on your machine. Powered by Gemma 4 E2B and Kokoro. | ⭐ 1,318 stars | Language: HTML | Topics: apple-silicon, gemma, kokoro, litert-lm, local-llm",
+    "relevance_score": 8,
+    "category": [
+      "开源项目",
+      "HTML",
+      "apple-silicon",
+      "gemma"
+    ],
+    "created_at": "2026-04-11T10:09:49.112947"
+  },
+  {
+    "id": "github-dac1face2a1c",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "title": "mattmireles/gemma-tuner-multimodal — Fine-tune Gemma 4 and 3n with audio, images and text on Apple Silicon, using PyT",
+    "url": "https://github.com/mattmireles/gemma-tuner-multimodal",
+    "original_content": "Fine-tune Gemma 4 and 3n with audio, images and text on Apple Silicon, using PyTorch and Metal Performance Shaders. | ⭐ 1,154 stars | Language: Python",
+    "raw_text": "Fine-tune Gemma 4 and 3n with audio, images and text on Apple Silicon, using PyTorch and Metal Performance Shaders. | ⭐ 1,154 stars | Language: Python",
+    "relevance_score": 8,
+    "category": [
+      "开源项目",
+      "Python"
+    ],
+    "created_at": "2026-04-11T10:09:49.112953"
+  },
+  {
+    "id": "github-2554f73f6b8a",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "title": "phuryn/claude-usage — A local dashboard for tracking your Claude Code token usage, costs, and session ",
+    "url": "https://github.com/phuryn/claude-usage",
+    "original_content": "A local dashboard for tracking your Claude Code token usage, costs, and session history. Pro and Max subscribers get a progress bar. This gives you the full picture. | ⭐ 816 stars | Language: Python | Topics: claude-code",
+    "raw_text": "A local dashboard for tracking your Claude Code token usage, costs, and session history. Pro and Max subscribers get a progress bar. This gives you the full picture. | ⭐ 816 stars | Language: Python | Topics: claude-code",
+    "relevance_score": 8,
+    "category": [
+      "开源项目",
+      "Python",
+      "claude-code"
+    ],
+    "created_at": "2026-04-11T10:09:49.112961"
+  },
+  {
+    "id": "github-c3e4804770e0",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "title": "wxtsky/CodeIsland",
+    "url": "https://github.com/wxtsky/CodeIsland",
+    "original_content": "⭐ 799 stars | Language: Swift",
+    "raw_text": "⭐ 799 stars | Language: Swift",
+    "relevance_score": 8,
+    "category": [
+      "开源项目",
+      "Swift"
+    ],
+    "created_at": "2026-04-11T10:09:49.112966"
+  },
+  {
+    "id": "github-148364bdecff",
+    "source": "GitHub Trending",
+    "source_type": "repo",
+    "title": "adamlyttleapps/claude-skill-app-onboarding-questionnaire —  A Claude Code skill that designs and builds high-converting questionnaire-style",
+    "url": "https://github.com/adamlyttleapps/claude-skill-app-onboarding-questionnaire",
+    "original_content": " A Claude Code skill that designs and builds high-converting questionnaire-style app onboarding flows — modelled    on proven conversion patterns from top subscription apps like Mob, Headspace and Noom | ⭐ 702 stars",
+    "raw_text": " A Claude Code skill that designs and builds high-converting questionnaire-style app onboarding flows — modelled    on proven conversion patterns from top subscription apps like Mob, Headspace and Noom | ⭐ 702 stars",
+    "relevance_score": 8,
+    "category": [
+      "开源项目"
+    ],
+    "created_at": "2026-04-11T10:09:49.112972"
+  },
+  {
+    "id": "hf-model-2d0f16bac7e1",
+    "source": "HuggingFace Models",
+    "source_type": "model",
+    "title": "🤗 google/gemma-4-31B-it",
+    "url": "https://huggingface.co/google/gemma-4-31B-it",
+    "original_content": "Task: image-text-to-text | Downloads: 1,589,761 | Likes: 1,675",
+    "raw_text": "Task: image-text-to-text | Downloads: 1,589,761 | Likes: 1,675",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "models",
+      "huggingface"
+    ],
+    "created_at": "2026-04-11T10:09:48.578120"
+  },
+  {
+    "id": "hf-model-2f79a3598954",
+    "source": "HuggingFace Models",
+    "source_type": "model",
+    "title": "🤗 zai-org/GLM-5.1",
+    "url": "https://huggingface.co/zai-org/GLM-5.1",
+    "original_content": "Task: text-generation | Downloads: 15,930 | Likes: 935",
+    "raw_text": "Task: text-generation | Downloads: 15,930 | Likes: 935",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "models",
+      "huggingface"
+    ],
+    "created_at": "2026-04-11T10:09:48.578142"
+  },
+  {
+    "id": "hf-model-a3e36e1accc3",
+    "source": "HuggingFace Models",
+    "source_type": "model",
+    "title": "🤗 dealignai/Gemma-4-31B-JANG_4M-CRACK",
+    "url": "https://huggingface.co/dealignai/Gemma-4-31B-JANG_4M-CRACK",
+    "original_content": "Task: image-text-to-text | Downloads: 75,426 | Likes: 900",
+    "raw_text": "Task: image-text-to-text | Downloads: 75,426 | Likes: 900",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "models",
+      "huggingface"
+    ],
+    "created_at": "2026-04-11T10:09:48.578152"
+  },
+  {
+    "id": "hf-model-b2cd1173ff38",
+    "source": "HuggingFace Models",
+    "source_type": "model",
+    "title": "🤗 openbmb/VoxCPM2",
+    "url": "https://huggingface.co/openbmb/VoxCPM2",
+    "original_content": "Task: text-to-speech | Downloads: 3,765 | Likes: 669",
+    "raw_text": "Task: text-to-speech | Downloads: 3,765 | Likes: 669",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "models",
+      "huggingface"
+    ],
+    "created_at": "2026-04-11T10:09:48.578158"
+  },
+  {
+    "id": "hf-model-b88ea472e3ac",
+    "source": "HuggingFace Models",
+    "source_type": "model",
+    "title": "🤗 netflix/void-model",
+    "url": "https://huggingface.co/netflix/void-model",
+    "original_content": "Task: video-to-video | Likes: 739",
+    "raw_text": "Task: video-to-video | Likes: 739",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "models",
+      "huggingface"
+    ],
+    "created_at": "2026-04-11T10:09:48.578164"
+  },
+  {
+    "id": "hf-model-5a5b20cc1da7",
+    "source": "HuggingFace Models",
+    "source_type": "model",
+    "title": "🤗 Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled",
+    "url": "https://huggingface.co/Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled",
+    "original_content": "Task: image-text-to-text | Downloads: 567,166 | Likes: 2,566",
+    "raw_text": "Task: image-text-to-text | Downloads: 567,166 | Likes: 2,566",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "models",
+      "huggingface"
+    ],
+    "created_at": "2026-04-11T10:09:48.578171"
+  },
+  {
+    "id": "hf-model-b0310e0acf74",
+    "source": "HuggingFace Models",
+    "source_type": "model",
+    "title": "🤗 k2-fsa/OmniVoice",
+    "url": "https://huggingface.co/k2-fsa/OmniVoice",
+    "original_content": "Task: text-to-speech | Downloads: 269,789 | Likes: 473",
+    "raw_text": "Task: text-to-speech | Downloads: 269,789 | Likes: 473",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "models",
+      "huggingface"
+    ],
+    "created_at": "2026-04-11T10:09:48.578176"
+  },
+  {
+    "id": "hf-model-73665a6e3a2f",
+    "source": "HuggingFace Models",
+    "source_type": "model",
+    "title": "🤗 google/gemma-4-E4B-it",
+    "url": "https://huggingface.co/google/gemma-4-E4B-it",
+    "original_content": "Task: any-to-any | Downloads: 961,135 | Likes: 564",
+    "raw_text": "Task: any-to-any | Downloads: 961,135 | Likes: 564",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "models",
+      "huggingface"
+    ],
+    "created_at": "2026-04-11T10:09:48.578182"
+  },
+  {
+    "id": "hf-model-0ea922f56cb4",
+    "source": "HuggingFace Models",
+    "source_type": "model",
+    "title": "🤗 google/gemma-4-26B-A4B-it",
+    "url": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+    "original_content": "Task: image-text-to-text | Downloads: 1,269,031 | Likes: 589",
+    "raw_text": "Task: image-text-to-text | Downloads: 1,269,031 | Likes: 589",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "models",
+      "huggingface"
+    ],
+    "created_at": "2026-04-11T10:09:48.578188"
+  },
+  {
+    "id": "hf-model-fcfacb051911",
+    "source": "HuggingFace Models",
+    "source_type": "model",
+    "title": "🤗 baidu/Qianfan-OCR",
+    "url": "https://huggingface.co/baidu/Qianfan-OCR",
+    "original_content": "Task: image-text-to-text | Downloads: 43,619 | Likes: 1,133",
+    "raw_text": "Task: image-text-to-text | Downloads: 43,619 | Likes: 1,133",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "models",
+      "huggingface"
+    ],
+    "created_at": "2026-04-11T10:09:48.578194"
+  },
+  {
+    "id": "hf-paper-f8198b3ee953",
+    "source": "HuggingFace Papers",
+    "source_type": "paper",
+    "title": "Appear2Meaning: A Cross-Cultural Benchmark for Structured Cultural Metadata Inference from Images",
+    "url": "https://huggingface.co/papers/2604.07338",
+    "original_content": "Recent advances in vision-language models (VLMs) have improved image captioning for cultural heritage. However, inferring structured cultural metadata (e.g., creator, origin, period) from visual input remains underexplored. We introduce a multi-category, cross-cultural benchmark for this task and evaluate VLMs using an LLM-as-Judge framework that measures semantic alignment with reference annotations. To assess cultural reasoning, we report exact-match, partial-match, and attribute-level accurac",
+    "raw_text": "Recent advances in vision-language models (VLMs) have improved image captioning for cultural heritage. However, inferring structured cultural metadata (e.g., creator, origin, period) from visual input remains underexplored. We introduce a multi-category, cross-cultural benchmark for this task and evaluate VLMs using an LLM-as-Judge framework that measures semantic alignment with reference annotations. To assess cultural reasoning, we report exact-match, partial-match, and attribute-level accuracy across cultural regions. Results show that models capture fragmented signals and exhibit substantial performance variation across cultures and metadata types, leading to inconsistent and weakly grounded predictions. These findings highlight the limitations of current VLMs in structured cultural metadata inference beyond visual perception.",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "papers",
+      "huggingface"
+    ],
+    "created_at": "2026-04-11T10:09:48.933586"
+  },
+  {
+    "id": "hf-paper-8be9fdf444ff",
+    "source": "HuggingFace Papers",
+    "source_type": "paper",
+    "title": "QEIL v2: Heterogeneous Computing for Edge Intelligence via Roofline-Derived Pareto-Optimal Energy Modeling and Multi-Objective Orchestration",
+    "url": "https://huggingface.co/papers/2602.06057",
+    "original_content": "Deploying large language models (LLMs) on heterogeneous edge devices demands frameworks that jointly optimize energy efficiency, inference quality, and reliability. Our prior QEIL v1 (Kumar & Jha, 2026) achieved 4.82x IPW improvement but relied on static efficiency factors, greedy optimization, and unverified candidate selection. QEIL v2 replaces every static heuristic with physics-grounded, runtime-adaptive models. We introduce three device-workload metrics: DASI (roofline-derived compute utili",
+    "raw_text": "Deploying large language models (LLMs) on heterogeneous edge devices demands frameworks that jointly optimize energy efficiency, inference quality, and reliability. Our prior QEIL v1 (Kumar & Jha, 2026) achieved 4.82x IPW improvement but relied on static efficiency factors, greedy optimization, and unverified candidate selection. QEIL v2 replaces every static heuristic with physics-grounded, runtime-adaptive models. We introduce three device-workload metrics: DASI (roofline-derived compute utilization), CPQ (memory pressure from allocation theory), and Phi (thermal yield from CMOS leakage physics), forming a unified energy equation with every coefficient traceable to semiconductor physics. For optimization, PGSAM (Pareto-Guided Simulated Annealing with Momentum) simultaneously minimizes energy, latency, and device underutilization. At inference time, the EAC/ARDE selection cascade with CSVET early stopping provides progressive verification among repeated samples. Evaluated on WikiText-",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "papers",
+      "huggingface"
+    ],
+    "created_at": "2026-04-11T10:09:48.933604"
+  },
+  {
+    "id": "hf-paper-fbccc4a4c757",
+    "source": "HuggingFace Papers",
+    "source_type": "paper",
+    "title": "The Master Key Hypothesis: Unlocking Cross-Model Capability Transfer via Linear Subspace Alignment",
+    "url": "https://huggingface.co/papers/2604.06377",
+    "original_content": "We investigate whether post-trained capabilities can be transferred across models without retraining, with a focus on transfer across different model scales. We propose the Master Key Hypothesis, which states that model capabilities correspond to directions in a low-dimensional latent subspace that induce specific behaviors and are transferable across models through linear alignment. Based on this hypothesis, we introduce UNLOCK, a training-free and label-free framework that extracts a capabilit",
+    "raw_text": "We investigate whether post-trained capabilities can be transferred across models without retraining, with a focus on transfer across different model scales. We propose the Master Key Hypothesis, which states that model capabilities correspond to directions in a low-dimensional latent subspace that induce specific behaviors and are transferable across models through linear alignment. Based on this hypothesis, we introduce UNLOCK, a training-free and label-free framework that extracts a capability direction by contrasting activations between capability-present and capability-absent Source variants, aligns it with a Target model through a low-rank linear transformation, and applies it at inference time to elicit the behavior. Experiments on reasoning behaviors, including Chain-of-Thought (CoT) and mathematical reasoning, demonstrate substantial improvements across model scales without training. For example, transferring CoT reasoning from Qwen1.5-14B to Qwen1.5-7B yields an accuracy gain",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "papers",
+      "huggingface"
+    ],
+    "created_at": "2026-04-11T10:09:48.933610"
+  },
+  {
+    "id": "hf-paper-473df9e5c31e",
+    "source": "HuggingFace Papers",
+    "source_type": "paper",
+    "title": "Training a Student Expert via Semi-Supervised Foundation Model Distillation",
+    "url": "https://huggingface.co/papers/2604.03841",
+    "original_content": "Foundation models deliver strong perception but are often too computationally heavy to deploy, and adapting them typically requires costly annotations. We introduce a semi-supervised knowledge distillation (SSKD) framework that compresses pre-trained vision foundation models (VFMs) into compact experts using limited labeled and abundant unlabeled data, and instantiate it for instance segmentation where per-pixel labels are particularly expensive. The framework unfolds in three stages: (1) domain",
+    "raw_text": "Foundation models deliver strong perception but are often too computationally heavy to deploy, and adapting them typically requires costly annotations. We introduce a semi-supervised knowledge distillation (SSKD) framework that compresses pre-trained vision foundation models (VFMs) into compact experts using limited labeled and abundant unlabeled data, and instantiate it for instance segmentation where per-pixel labels are particularly expensive. The framework unfolds in three stages: (1) domain adaptation of the VFM(s) via self-training with contrastive calibration, (2) knowledge transfer through a unified multi-objective loss, and (3) student refinement to mitigate residual pseudo-label bias. Central to our approach is an instance-aware pixel-wise contrastive loss that fuses mask and class scores to extract informative negatives and enforce clear inter-instance margins. By maintaining this contrastive signal across both adaptation and distillation, we align teacher and student embedd",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "papers",
+      "huggingface"
+    ],
+    "created_at": "2026-04-11T10:09:48.933615"
+  },
+  {
+    "id": "hf-paper-f8ee84fc6d3b",
+    "source": "HuggingFace Papers",
+    "source_type": "paper",
+    "title": "CylinderDepth: Cylindrical Spatial Attention for Multi-View Consistent Self-Supervised Surround Depth Estimation",
+    "url": "https://huggingface.co/papers/2511.16428",
+    "original_content": "Self-supervised surround-view depth estimation enables dense, low-cost 3D perception with a 360° field of view from multiple minimally overlapping images. Yet, most existing methods suffer from depth estimates that are inconsistent across overlapping images. To address this limitation, we propose a novel geometry-guided method for calibrated, time-synchronized multi-camera rigs that predicts dense metric depth. Our approach targets two main sources of inconsistency: the limited receptive field i",
+    "raw_text": "Self-supervised surround-view depth estimation enables dense, low-cost 3D perception with a 360° field of view from multiple minimally overlapping images. Yet, most existing methods suffer from depth estimates that are inconsistent across overlapping images. To address this limitation, we propose a novel geometry-guided method for calibrated, time-synchronized multi-camera rigs that predicts dense metric depth. Our approach targets two main sources of inconsistency: the limited receptive field in border regions of single-image depth estimation, and the difficulty of correspondence matching. We mitigate these two issues by extending the receptive field across views and restricting cross-view attention to a small neighborhood. To this end, we establish the neighborhood relationships between images by mapping the image-specific feature positions onto a shared cylinder. Based on the cylindrical positions, we apply an explicit spatial attention mechanism, with non-learned weighting, that ag",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "papers",
+      "huggingface"
+    ],
+    "created_at": "2026-04-11T10:09:48.933620"
+  },
+  {
+    "id": "hf-paper-27b86404ba33",
+    "source": "HuggingFace Papers",
+    "source_type": "paper",
+    "title": "ClawBench: Can AI Agents Complete Everyday Online Tasks?",
+    "url": "https://huggingface.co/papers/2604.08523",
+    "original_content": "AI agents may be able to automate your inbox, but can they automate other routine aspects of your life? Everyday online tasks offer a realistic yet unsolved testbed for evaluating the next generation of AI agents. To this end, we introduce ClawBench, an evaluation framework of 153 simple tasks that people need to accomplish regularly in their lives and work, spanning 144 live platforms across 15 categories, from completing purchases and booking appointments to submitting job applications. These ",
+    "raw_text": "AI agents may be able to automate your inbox, but can they automate other routine aspects of your life? Everyday online tasks offer a realistic yet unsolved testbed for evaluating the next generation of AI agents. To this end, we introduce ClawBench, an evaluation framework of 153 simple tasks that people need to accomplish regularly in their lives and work, spanning 144 live platforms across 15 categories, from completing purchases and booking appointments to submitting job applications. These tasks require demanding capabilities beyond existing benchmarks, such as obtaining relevant information from user-provided documents, navigating multi-step workflows across diverse platforms, and write-heavy operations like filling in many detailed forms correctly. Unlike existing benchmarks that evaluate agents in offline sandboxes with static pages, ClawBench operates on production websites, preserving the full complexity, dynamic nature, and challenges of real-world web interaction. A lightwe",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "papers",
+      "huggingface"
+    ],
+    "created_at": "2026-04-11T10:09:48.933629"
+  },
+  {
+    "id": "hf-paper-52b896f9bed6",
+    "source": "HuggingFace Papers",
+    "source_type": "paper",
+    "title": "Small Vision-Language Models are Smart Compressors for Long Video Understanding",
+    "url": "https://huggingface.co/papers/2604.08120",
+    "original_content": "Adapting Multimodal Large Language Models (MLLMs) for hour-long videos is bottlenecked by context limits. Dense visual streams saturate token budgets and exacerbate the lost-in-the-middle phenomenon. Existing heuristics, like sparse sampling or uniform pooling, blindly sacrifice fidelity by discarding decisive moments and wasting bandwidth on irrelevant backgrounds. We propose Tempo, an efficient query-aware framework compressing long videos for downstream understanding. Tempo leverages a Small ",
+    "raw_text": "Adapting Multimodal Large Language Models (MLLMs) for hour-long videos is bottlenecked by context limits. Dense visual streams saturate token budgets and exacerbate the lost-in-the-middle phenomenon. Existing heuristics, like sparse sampling or uniform pooling, blindly sacrifice fidelity by discarding decisive moments and wasting bandwidth on irrelevant backgrounds. We propose Tempo, an efficient query-aware framework compressing long videos for downstream understanding. Tempo leverages a Small Vision-Language Model (SVLM) as a local temporal compressor, casting token reduction as an early cross-modal distillation process to generate compact, intent-aligned representations in a single forward pass. To enforce strict budgets without breaking causality, we introduce Adaptive Token Allocation (ATA). Exploiting the SVLM's zero-shot relevance prior and semantic front-loading, ATA acts as a training-free O(1) dynamic router. It allocates dense bandwidth to query-critical segments while compr",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "papers",
+      "huggingface"
+    ],
+    "created_at": "2026-04-11T10:09:48.933634"
+  },
+  {
+    "id": "hf-paper-4f1c610f9a1c",
+    "source": "HuggingFace Papers",
+    "source_type": "paper",
+    "title": "Faithful GRPO: Improving Visual Spatial Reasoning in Multimodal Language Models via Constrained Policy Optimization",
+    "url": "https://huggingface.co/papers/2604.08476",
+    "original_content": "Multimodal reasoning models (MRMs) trained with reinforcement learning with verifiable rewards (RLVR) show improved accuracy on visual reasoning benchmarks. However, we observe that accuracy gains often come at the cost of reasoning quality: generated Chain-of-Thought (CoT) traces are frequently inconsistent with the final answer and poorly grounded in the visual evidence. We systematically study this phenomenon across seven challenging real-world spatial reasoning benchmarks and find that it af",
+    "raw_text": "Multimodal reasoning models (MRMs) trained with reinforcement learning with verifiable rewards (RLVR) show improved accuracy on visual reasoning benchmarks. However, we observe that accuracy gains often come at the cost of reasoning quality: generated Chain-of-Thought (CoT) traces are frequently inconsistent with the final answer and poorly grounded in the visual evidence. We systematically study this phenomenon across seven challenging real-world spatial reasoning benchmarks and find that it affects contemporary MRMs such as ViGoRL-Spatial, TreeVGR as well as our own models trained with standard Group Relative Policy Optimization (GRPO). We characterize CoT reasoning quality along two complementary axes: \"logical consistency\" (does the CoT entail the final answer?) and \"visual grounding\" (does each reasoning step accurately describe objects, attributes, and spatial relationships in the image?). To address this, we propose Faithful GRPO (FGRPO), a variant of GRPO that enforces consiste",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "papers",
+      "huggingface"
+    ],
+    "created_at": "2026-04-11T10:09:48.933640"
+  },
+  {
+    "id": "hf-paper-9bda52824fc8",
+    "source": "HuggingFace Papers",
+    "source_type": "paper",
+    "title": "AnomalyVFM -- Transforming Vision Foundation Models into Zero-Shot Anomaly Detectors",
+    "url": "https://huggingface.co/papers/2601.20524",
+    "original_content": "Zero-shot anomaly detection aims to detect and localise abnormal regions in the image without access to any in-domain training images. While recent approaches leverage vision-language models (VLMs), such as CLIP, to transfer high-level concept knowledge, methods based on purely vision foundation models (VFMs), like DINOv2, have lagged behind in performance. We argue that this gap stems from two practical issues: (i) limited diversity in existing auxiliary anomaly detection datasets and (ii) over",
+    "raw_text": "Zero-shot anomaly detection aims to detect and localise abnormal regions in the image without access to any in-domain training images. While recent approaches leverage vision-language models (VLMs), such as CLIP, to transfer high-level concept knowledge, methods based on purely vision foundation models (VFMs), like DINOv2, have lagged behind in performance. We argue that this gap stems from two practical issues: (i) limited diversity in existing auxiliary anomaly detection datasets and (ii) overly shallow VFM adaptation strategies. To address both challenges, we propose AnomalyVFM, a general and effective framework that turns any pretrained VFM into a strong zero-shot anomaly detector. Our approach combines a robust three-stage synthetic dataset generation scheme with a parameter-efficient adaptation mechanism, utilising low-rank feature adapters and a confidence-weighted pixel loss. Together, these components enable modern VFMs to substantially outperform current state-of-the-art meth",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "papers",
+      "huggingface"
+    ],
+    "created_at": "2026-04-11T10:09:48.933645"
+  },
+  {
+    "id": "hf-paper-7d3a678bd26e",
+    "source": "HuggingFace Papers",
+    "source_type": "paper",
+    "title": "On the Global Photometric Alignment for Low-Level Vision",
+    "url": "https://huggingface.co/papers/2604.08172",
+    "original_content": "Supervised low-level vision models rely on pixel-wise losses against paired references, yet paired training sets exhibit per-pair photometric inconsistency, say, different image pairs demand different global brightness, color, or white-balance mappings. This inconsistency enters through task-intrinsic photometric transfer (e.g., low-light enhancement) or unintended acquisition shifts (e.g., de-raining), and in either case causes an optimization pathology. Standard reconstruction losses allocate ",
+    "raw_text": "Supervised low-level vision models rely on pixel-wise losses against paired references, yet paired training sets exhibit per-pair photometric inconsistency, say, different image pairs demand different global brightness, color, or white-balance mappings. This inconsistency enters through task-intrinsic photometric transfer (e.g., low-light enhancement) or unintended acquisition shifts (e.g., de-raining), and in either case causes an optimization pathology. Standard reconstruction losses allocate disproportionate gradient budget to conflicting per-pair photometric targets, crowding out content restoration. In this paper, we investigate this issue and prove that, under least-squares decomposition, the photometric and structural components of the prediction-target residual are orthogonal, and that the spatially dense photometric component dominates the gradient energy. Motivated by this analysis, we propose Photometric Alignment Loss (PAL). This flexible supervision objective discounts nui",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "papers",
+      "huggingface"
+    ],
+    "created_at": "2026-04-11T10:09:48.933649"
+  },
+  {
+    "id": "civitai-978260",
+    "source": "CivitAI",
+    "source_type": "model",
+    "title": "🎨 Ivory style (LORA)",
+    "url": "https://civitai.com/models/978260",
+    "original_content": "Type: LORA | Downloads: 319 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 319 | Rating: 0.0\n<p>Creates high-relief ivory carving, with an emphasis on 13th to 15th century. I recommend using the keywords <strong><em>high-relief ivory carving</em></strong>. It may also react to <strong><em>sculpted scene</em></strong>. </p><p><strong><u>Training set: where do the images come from?</u></strong></p><p>I took 49 pictures of ivory carvings. They're primarily from the Imperial Treasury of Vienna and the Vienna Kunsthistorisches Museum. These ones are either in panel formats (sometimes framed)",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "created_at": "2026-04-11T10:09:49.974185"
+  },
+  {
+    "id": "civitai-2533807",
+    "source": "CivitAI",
+    "source_type": "model",
+    "title": "🎨 William Hogarth Style XL Nr. 1 (LORA)",
+    "url": "https://civitai.com/models/2533807",
+    "original_content": "Type: LORA | Downloads: 0 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 0 | Rating: 0.0\n<p></p><p>William Hogarth (1697-1764)</p><p>This is a LoRA dedicated to the style of English painter and printer, William Hogarth. He is best known for his moral and satirical engravings and paintings. Unfortunately, the LoRA can't capture his humor so much but delivers his style pretty well. </p><p>You can learn more here: <a target=\"_blank\" rel=\"ugc\" href=\"https://www.thecollector.com/satirical-art-william-hogarth/\">https://www.thecollector.com/satirical-art-william-hogarth/</a> </p><p></p>",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "created_at": "2026-04-11T10:09:49.974248"
+  },
+  {
+    "id": "civitai-2532529",
+    "source": "CivitAI",
+    "source_type": "model",
+    "title": "🎨 [IL CHARACTER 187] Star Detective Precure Cure Answer (LORA)",
+    "url": "https://civitai.com/models/2532529",
+    "original_content": "Type: LORA | Downloads: 4 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 4 | Rating: 0.0\n<p><span style=\"background-color:rgb(26, 27, 30);color:rgb(141, 141, 143);font-family:-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;;font-size:16px\">187th training Lora through IL, please do not load by Additional Network</span></p>",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "created_at": "2026-04-11T10:09:49.974256"
+  },
+  {
+    "id": "civitai-2533801",
+    "source": "CivitAI",
+    "source_type": "model",
+    "title": "🎨 K-Pop Demon Hunters - Mira (LORA)",
+    "url": "https://civitai.com/models/2533801",
+    "original_content": "Type: LORA | Downloads: 3 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 3 | Rating: 0.0\n<p>Huntrix: Mira classic at this point. My girls requested custom KDH poster, first hunter done, tbc. ;)</p>",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "created_at": "2026-04-11T10:09:49.974260"
+  },
+  {
+    "id": "civitai-2532409",
+    "source": "CivitAI",
+    "source_type": "model",
+    "title": "🎨 Tessia Eralith | テシア・エラリス | The Beginning After the End (LORA)",
+    "url": "https://civitai.com/models/2532409",
+    "original_content": "Type: LORA | Downloads: 3 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 3 | Rating: 0.0\n<p><strong>Source:</strong> <em>The Beginning After the End (Tbate)</em></p><p><strong>Character Description:</strong> Tessia Eralith is the elven princess of Elenoir and a powerful mage. As an elf, she possesses elegant <strong>pointy ears</strong> and a regal, yet gentle demeanor. Her most striking features are her <strong>long grey hair</strong> (often appearing with a silver or gunmetal sheen) which she sometimes styles with a <strong>braid</strong>, and her vibrant <strong>green eyes</stron",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "created_at": "2026-04-11T10:09:49.974270"
+  },
+  {
+    "id": "civitai-2511814",
+    "source": "CivitAI",
+    "source_type": "model",
+    "title": "🎨 Gargoyles & Grotesques [F1D,K9B,Chrm,Illu,ZImg] (LORA)",
+    "url": "https://civitai.com/models/2511814",
+    "original_content": "Type: LORA | Downloads: 87 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 87 | Rating: 0.0\n<p>Architectural guardians in seven materials -- stone, bronze, crystal, ice, jade, clockwork, and coral. A style LoRA that transforms any subject into grotesque sculpture perched on gothic architecture.</p>\n<p><strong>Gargoyles &amp; Grotesques</strong> is trained on 20 diverse gargoyle archetypes spanning creature types (dragon, wolf, eagle, bat, toad, ram, serpent, mantis, monkey, fallen angel), materials (stone, crystal, ice, jade, brass, coral, wood, bone), and architectural settings (Gothi",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "created_at": "2026-04-11T10:09:49.974279"
+  },
+  {
+    "id": "civitai-2490999",
+    "source": "CivitAI",
+    "source_type": "model",
+    "title": "🎨 Any≽^•⩊•^≼Gurim [illustrious] (Checkpoint)",
+    "url": "https://civitai.com/models/2490999",
+    "original_content": "Type: Checkpoint | Downloads: 197 | Rating: 0.0",
+    "raw_text": "Type: Checkpoint | Downloads: 197 | Rating: 0.0\n<p>This model is the result of <span style=\"color:rgb(250, 82, 82)\">merging</span> models <strong>WAI-illustrious-SDXL(V16,V14) + AniMayhem - Pale Rider V3 + Hassaku XL V3.4</strong> . It is part of my model series(<strong>Lain2Waill16Pale3_V05b, LainHass4c_V0.4c, LainWaill14Pale2_V0.3a, LainWaillPale_V0.1a</strong>) and currently represents my best result so far.</p><p></p><p>For some reason,<span style=\"color:rgb(250, 82, 82)\"> errors</span> occur during the final processing stage in <span sty",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "created_at": "2026-04-11T10:09:49.974285"
+  },
+  {
+    "id": "civitai-1890171",
+    "source": "CivitAI",
+    "source_type": "model",
+    "title": "🎨 Kyhu artist style - k-y-h-u (old pen name of iafhy) [ANIMA/IL/ZIT] (LORA)",
+    "url": "https://civitai.com/models/1890171",
+    "original_content": "Type: LORA | Downloads: 394 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 394 | Rating: 0.0\n<p>This style lora is trained on images by KYHU, the old pen name of artist IAHFY. The dataset mainly consists of images of Korra and Asami, but it also works good for other characters. The images have monochrome or low detailed backgrounds. So this lora is best suited for generating characters without detailed backgrounds for Illustrious. Since Anima seems to be better at generating detailed background, you can try if it does better there, but I haven't really tested it. Works nice with additio",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "created_at": "2026-04-11T10:09:49.974293"
+  },
+  {
+    "id": "civitai-2490823",
+    "source": "CivitAI",
+    "source_type": "model",
+    "title": "🎨 Clio Aite for Anima [Phase Connect] (LORA)",
+    "url": "https://civitai.com/models/2490823",
+    "original_content": "Type: LORA | Downloads: 54 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 54 | Rating: 0.0\n<h2 id=\"activation-tags:\">Activation Tags:</h2><pre><code>clioanima</code></pre><p>To make her official costume add as needed</p><pre><code>clio2.0, beret, glasses, black bow, white ascot, medallion, green cape, gray shirt, brown corset, belt, belt pouch, layered skirt, scar across eye, brown pantyhose</code></pre><p>If you want to generate other clothes use</p><pre><code>alternate costume</code></pre><h2 id=\"more-info:\">More Info:</h2><p>Anima preview 3 update: Better details and accuracy, clio",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "created_at": "2026-04-11T10:09:49.974299"
+  },
+  {
+    "id": "civitai-2530144",
+    "source": "CivitAI",
+    "source_type": "model",
+    "title": "🎨 Ivan_Jaxenway_ZIT (LORA)",
+    "url": "https://civitai.com/models/2530144",
+    "original_content": "Type: LORA | Downloads: 8 | Rating: 0.0",
+    "raw_text": "Type: LORA | Downloads: 8 | Rating: 0.0\n<p><span style=\"font-family:&quot;Google Sans&quot;\">Ivan_Jaxenway is a fictional character created by synthesizing various traits.</span><span> </span><span style=\"font-family:&quot;Google Sans&quot;\">He is gentle and warm.</span></p><p><br /></p>",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "models",
+      "image-generation"
+    ],
+    "created_at": "2026-04-11T10:09:49.974304"
+  },
+  {
+    "id": "rss-openai-blog-4a866cffd16b",
+    "source": "OpenAI Blog",
+    "source_type": "blog",
+    "title": "Using custom GPTs",
+    "url": "https://openai.com/academy/custom-gpts",
+    "original_content": "Learn how to build and use custom GPTs to automate workflows, maintain consistent outputs, and create purpose-built AI assistants.",
+    "raw_text": "Learn how to build and use custom GPTs to automate workflows, maintain consistent outputs, and create purpose-built AI assistants.",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "openai",
+      "official"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T00:00:00"
+  },
+  {
+    "id": "rss-openai-blog-81ca7d111db1",
+    "source": "OpenAI Blog",
+    "source_type": "blog",
+    "title": "ChatGPT for customer success teams",
+    "url": "https://openai.com/academy/customer-success",
+    "original_content": "Learn how customer success teams use ChatGPT to manage accounts, improve communication, reduce churn, and drive adoption and renewals.",
+    "raw_text": "Learn how customer success teams use ChatGPT to manage accounts, improve communication, reduce churn, and drive adoption and renewals.",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "openai",
+      "official"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T00:00:00"
+  },
+  {
+    "id": "rss-openai-blog-563d28f6d694",
+    "source": "OpenAI Blog",
+    "source_type": "blog",
+    "title": "Applications of AI at OpenAI",
+    "url": "https://openai.com/academy/applications-of-ai",
+    "original_content": "Explore how OpenAI products like ChatGPT, Codex, and APIs bring AI into real-world use for work, development, and everyday tasks.",
+    "raw_text": "Explore how OpenAI products like ChatGPT, Codex, and APIs bring AI into real-world use for work, development, and everyday tasks.",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "openai",
+      "official"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T00:00:00"
+  },
+  {
+    "id": "rss-google-deepmind-blog-c64eb2c5c469",
+    "source": "Google DeepMind Blog",
+    "source_type": "blog",
+    "title": "Gemma 4: Byte for byte, the most capable open models",
+    "url": "https://deepmind.google/blog/gemma-4-byte-for-byte-the-most-capable-open-models/",
+    "original_content": "Gemma 4: Our most intelligent open models to date, purpose-built for advanced reasoning and agentic workflows.",
+    "raw_text": "Gemma 4: Our most intelligent open models to date, purpose-built for advanced reasoning and agentic workflows.",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "google",
+      "deepmind"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T00:00:00"
+  },
+  {
+    "id": "rss-google-deepmind-blog-161f77b8cd23",
+    "source": "Google DeepMind Blog",
+    "source_type": "blog",
+    "title": "Gemini 3.1 Flash Live: Making audio AI more natural and reliable",
+    "url": "https://deepmind.google/blog/gemini-3-1-flash-live-making-audio-ai-more-natural-and-reliable/",
+    "original_content": "Our latest voice model has improved precision and lower latency to make voice interactions more fluid, natural and precise.",
+    "raw_text": "Our latest voice model has improved precision and lower latency to make voice interactions more fluid, natural and precise.",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "google",
+      "deepmind"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T00:00:00"
+  },
+  {
+    "id": "rss-google-deepmind-blog-c6f8811a85b3",
+    "source": "Google DeepMind Blog",
+    "source_type": "blog",
+    "title": "Protecting people from harmful manipulation",
+    "url": "https://deepmind.google/blog/protecting-people-from-harmful-manipulation/",
+    "original_content": "Google DeepMind researches AI's harmful manipulation risks across areas like finance and health, leading to new safety measures.",
+    "raw_text": "Google DeepMind researches AI's harmful manipulation risks across areas like finance and health, leading to new safety measures.",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "google",
+      "deepmind"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T00:00:00"
+  },
+  {
+    "id": "rss-google-ai-blog-b9151f445ef2",
+    "source": "Google AI Blog",
+    "source_type": "blog",
+    "title": "New ways to balance cost and reliability in the Gemini API",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-flex-and-priority-inference/",
+    "original_content": "Google is introducing two new inference tiers to the Gemini API, Flex and Priority, to balance cost and latency.",
+    "raw_text": "Google is introducing two new inference tiers to the Gemini API, Flex and Priority, to balance cost and latency.",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "google",
+      "official"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T00:00:00"
+  },
+  {
+    "id": "rss-google-ai-blog-aaf3d2dd3969",
+    "source": "Google AI Blog",
+    "source_type": "blog",
+    "title": "Create, edit and share videos at no cost in Google Vids",
+    "url": "https://blog.google/products-and-platforms/products/workspace/google-vids-updates-lyria-veo/",
+    "original_content": "New AI capabilities are coming to Google Vids, powered by Lyria 3 and Veo 3.1, like high-quality video generation at no cost and more.",
+    "raw_text": "New AI capabilities are coming to Google Vids, powered by Lyria 3 and Veo 3.1, like high-quality video generation at no cost and more.",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "google",
+      "official"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T00:00:00"
+  },
+  {
+    "id": "rss-google-ai-blog-b242e73e0ce2",
+    "source": "Google AI Blog",
+    "source_type": "blog",
+    "title": "We’re creating a new satellite imagery map to help protect Brazil’s forests.",
+    "url": "https://blog.google/products-and-platforms/products/earth/satellite-imagery-brazilian-deforestation/",
+    "original_content": "Google partnered with the Brazilian government on a satellite imagery map to help protect the country’s forests.",
+    "raw_text": "Google partnered with the Brazilian government on a satellite imagery map to help protect the country’s forests.",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "google",
+      "official"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T00:00:00"
+  },
+  {
+    "id": "rss-meta-engineering-b186f00a4ef3",
+    "source": "Meta Engineering",
+    "source_type": "blog",
+    "title": "Escaping the Fork: How Meta Modernized WebRTC Across 50+ Use Cases",
+    "url": "https://engineering.fb.com/2026/04/09/developer-tools/escaping-the-fork-how-meta-modernized-webrtc-across-50-use-cases/",
+    "original_content": "At Meta, WebRTC powers real-time audio and video across various platforms. But forking a large open-source project like WebRTC within our monorepo presents unique challenges – over time, an internal fork can drift behind upstream, cutting itself off from community upgrades. We&#8217;re sharing how we escaped this &#8220;forking trap&#8221; &#8211; from building a dual-stack architecture [...] Read More... The post Escaping the Fork: How Meta Modernized WebRTC Across 50+ Use Cases appeared first ",
+    "raw_text": "At Meta, WebRTC powers real-time audio and video across various platforms. But forking a large open-source project like WebRTC within our monorepo presents unique challenges – over time, an internal fork can drift behind upstream, cutting itself off from community upgrades. We&#8217;re sharing how we escaped this &#8220;forking trap&#8221; &#8211; from building a dual-stack architecture that enabled safe A/B testing across 50+ use cases, to the workflows that now keep us continuously upgraded with upstream. This approach improved performance, binary size, and security – and we continue to use it today to A/B test each new upstream release before rolling it out. At Meta, real-time communication (RTC) powers various services, from global Messenger and Instagram video chats to low-latency Cloud Gaming and immersive VR casting on Meta Quest. To meet the performance demands of billions of users, we spent years developing a specialized, high-performance variant of the open-source WebRTC library. Permanently forking a big open-source project can result in a common industry trap. It starts with good intentions: You need a specific internal optimization or a quick bug fix. But over time, as the upstream project evolves and your internal features accumulate, the resources needed to merge in external commits can become prohibitive. Recently, we officially concluded a massive multiyear migration to break this cycle. We successfully moved over 50 use cases from a divergent WebRTC fork to a modular architecture built on top of the latest upstream version – using it as a skeleton while injecting our own proprietary implementations of key components. This article details how we engineered a solution to solve the &#8220;forking trap,&#8221; allowing us to build two versions of WebRTC simultaneously within a single library for the sake of A/B testing, while living in a monorepo environment, with continuous upgrade cycles of the library that’s being tested. The Challenge: The Monorepo and the Static Linker Upgrading a library like WebRTC can be risky, especially when upgrading while serving billions of users and introducing regressions that are hard to rollback. This also eliminates the possibility of a one-time upgrade, which could break some users’ experiences due to the variety of devices and environments we are running at. To mitigate this, we prioritized A/B testing capabilities in order to run the legacy version of WebRTC alongside the new upstream version with clean patches and apply our features in the same app while being able to dynamically switch users between them to verify the new version. Due to application build graph and size constraints, we also prioritized finding a solution to statically link two WebRTC versions. However, this violates the C++ linker One Definition Rule (ODR), causing thousands of symbol collisions, so we turned to finding a way to make two versions of the same library coexist in the same address space. Furthermore, Meta is using",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "meta",
+      "engineering"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T00:00:00"
+  },
+  {
+    "id": "rss-meta-engineering-d4903ac3e731",
+    "source": "Meta Engineering",
+    "source_type": "blog",
+    "title": "Trust But Canary: Configuration Safety at Scale",
+    "url": "https://engineering.fb.com/2026/04/08/security/trust-but-canary-configuration-safety-at-scale-meta-tech-podcast/",
+    "original_content": "As AI increases developer speed and productivity it also increases the need for safeguards. On this episode of the Meta Tech Podcast, Pascal Hartig sits down with Ishwari and Joe from Meta&#8217;s Configurations team to discuss how Meta makes config rollouts safe at scale. Listen in to learn about canarying and progressive rollouts, the health checks [...] Read More... The post Trust But Canary: Configuration Safety at Scale appeared first on Engineering at Meta .",
+    "raw_text": "As AI increases developer speed and productivity it also increases the need for safeguards. On this episode of the Meta Tech Podcast, Pascal Hartig sits down with Ishwari and Joe from Meta&#8217;s Configurations team to discuss how Meta makes config rollouts safe at scale. Listen in to learn about canarying and progressive rollouts, the health checks and monitoring signals used to catch regressions early, and how incident reviews focus on improving systems rather than blaming people. They also talk about how data and AI/machine learning are slashing alert noise and speeding up bisecting when something goes wrong. Download or listen to the episode below: You can also find the episode wherever you get your podcasts, including: Spotify Apple Podcasts Pocket Casts The Meta Tech Podcast is a podcast, brought to you by Meta, where we highlight the work Meta’s engineers are doing at every level – from low-level frameworks to end-user features. Send us feedback on Instagram , Threads , or X . And if you’re interested in learning more about career opportunities at Meta visit the Meta Careers page. The post Trust But Canary: Configuration Safety at Scale appeared first on Engineering at Meta .",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "meta",
+      "engineering"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T00:00:00"
+  },
+  {
+    "id": "rss-meta-engineering-5c76a0d63039",
+    "source": "Meta Engineering",
+    "source_type": "blog",
+    "title": "How Meta Used AI to Map Tribal Knowledge in Large-Scale Data Pipelines",
+    "url": "https://engineering.fb.com/2026/04/06/developer-tools/how-meta-used-ai-to-map-tribal-knowledge-in-large-scale-data-pipelines/",
+    "original_content": "AI coding assistants are powerful but only as good as their understanding of your codebase. When we pointed AI agents at one of Meta&#8217;s large-scale data processing pipelines – spanning four repositories, three languages, and over 4,100 files – we quickly found that they weren&#8217;t making useful edits quickly enough. We fixed this by building [...] Read More... The post How Meta Used AI to Map Tribal Knowledge in Large-Scale Data Pipelines appeared first on Engineering at Meta .",
+    "raw_text": "AI coding assistants are powerful but only as good as their understanding of your codebase. When we pointed AI agents at one of Meta&#8217;s large-scale data processing pipelines – spanning four repositories, three languages, and over 4,100 files – we quickly found that they weren&#8217;t making useful edits quickly enough. We fixed this by building a pre-compute engine: a swarm of 50+ specialized AI agents that systematically read every file and produced 59 concise context files encoding tribal knowledge that previously lived only in engineers&#8217; heads. The result: AI agents now have structured navigation guides for 100% of our code modules (up from 5%, covering all 4,100+ files across three repositories). We also documented 50+ &#8220;non-obvious patterns,&#8221; or underlying design choices and relationships not immediately apparent from the code , and preliminary tests show 40% fewer AI agent tool calls per task. The system works with most leading models because the knowledge layer is model-agnostic. The system also maintains itself. Every few weeks, automated jobs periodically validate file paths, detect coverage gaps, re-run quality critics, and auto-fix stale references. The AI isn’t a consumer of this infrastructure, it&#8217;s the engine that runs it. The Problem: AI Tools Without a Map Our pipeline is config-as-code: Python configurations, C++ services, and Hack automation scripts working together across multiple repositories. A single data field onboarding touches configuration registries, routing logic, DAG composition, validation rules, C++ code generation, and automation scripts – six subsystems that must stay in sync. We had already built AI-powered systems for operational tasks, scanning dashboards, pattern-matching against historical incidents, and suggesting mitigations. But when we tried to extend it to development tasks, it fell apart. The AI had no map. It didn&#8217;t know that two configuration modes use different field names for the same operation (swap them and you get silent wrong output), or that dozens of &#8220;deprecated&#8221; enum values must never be removed because serialization compatibility depends on them. Without this context, agents would guess, explore, guess again and often produce code that compiled but was subtly wrong. The Approach: Teach the Agents Before They Explore We used a large-context-window model and task orchestration to structure the work in phases: Two explorer agents mapped the codebase, 11 module analysts read every file and answered five key questions, Two writers generated context files, and 10+ critic passes ran three rounds of independent quality review, Four fixers applied corrections, Eight upgraders refined the routing layer, Three prompt testers validated 55+ queries across five personas, Four gap-fillers covered remaining directories, and Three final critics ran integration tests &#8211; 50+ specialized tasks orchestrated in a single session. The five questions each analyst an",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "meta",
+      "engineering"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T00:00:00"
+  },
+  {
+    "id": "rss-anthropic-blog-765cbd076c3c",
+    "source": "Anthropic Blog",
+    "source_type": "blog",
+    "title": "Anthropic expands partnership with Google and Broadcom for multiple gigawatts of next-generation compute",
+    "url": "https://www.anthropic.com/news/google-broadcom-partnership-compute",
+    "original_content": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+    "raw_text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "anthropic",
+      "official"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T00:00:00"
+  },
+  {
+    "id": "rss-anthropic-blog-2090a8b42321",
+    "source": "Anthropic Blog",
+    "source_type": "blog",
+    "title": "Australian government and Anthropic sign MOU for AI safety and research",
+    "url": "https://www.anthropic.com/news/australia-MOU",
+    "original_content": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+    "raw_text": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "anthropic",
+      "official"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T00:00:00"
+  },
+  {
+    "id": "rss-anthropic-blog-1bd39e9b6f36",
+    "source": "Anthropic Blog",
+    "source_type": "blog",
+    "title": "Anthropic invests $100 million into the Claude Partner Network",
+    "url": "https://www.anthropic.com/news/claude-partner-network",
+    "original_content": "We’re launching the Claude Partner Network, a program for partner organizations helping enterprises adopt Claude.",
+    "raw_text": "We’re launching the Claude Partner Network, a program for partner organizations helping enterprises adopt Claude.",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "anthropic",
+      "official"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T00:00:00"
+  },
+  {
+    "id": "smolai-e7ac65b68acd",
+    "source": "Smol AI News",
+    "source_type": "smolai",
+    "title": "Meta Superintelligence Labs’ Muse Spark debut and Meta’s return to the frontier",
+    "url": "https://x.com/AIatMeta/status/2041910285653737975",
+    "original_content": "Muse Spark launch : Meta formally launched Muse Spark , the first model from Meta Superintelligence Labs , positioning it as a natively multimodal reasoning model with tool use , visual chain of thought , and multi-agent orchestration / “Contemplating mode.” The model is live in meta.ai and the Meta AI app, with a private API preview for select partners and a stated intention to open-source future versions rather than this first release @AIatMeta , @alexandr_wang , @shengjia_zhao . Several Meta ",
+    "raw_text": "Muse Spark launch : Meta formally launched Muse Spark , the first model from Meta Superintelligence Labs , positioning it as a natively multimodal reasoning model with tool use , visual chain of thought , and multi-agent orchestration / “Contemplating mode.” The model is live in meta.ai and the Meta AI app, with a private API preview for select partners and a stated intention to open-source future versions rather than this first release @AIatMeta , @alexandr_wang , @shengjia_zhao . Several Meta researchers emphasized that the team rebuilt the stack in ~9 months , spanning infrastructure, architecture, optimization, and data pipelines , and framed Spark as only the first point on a larger scaling roadmap @jack_w_rae , @ananyaku , @_jasonwei . Independent eval picture : Third-party benchmarking suggests Spark is a real frontier entrant, though not category-leading across the board. Artificial Analysis scored it 52 on its Intelligence Index, behind only Gemini 3.1 Pro Preview , GPT-5.4 , and Claude Opus 4.6 , while noting strong MMMU-Pro (80.5%) , HLE (39.9%) , and unusually low reasoning token usage — 58M output tokens to run the index, versus 120M for GPT-5.4 and 157M for Claude Opus 4.6 @ArtificialAnlys , token-efficiency detail . Vals placed Muse Spark #3 on its overall index and highlighted strong results on TaxEval , finance, and terminal tasks @ValsAI . Epoch AI reported 39% on FrontierMath tiers 1–3 , 15% on tier 4 , 90% GPQA Diamond , and a preliminary ECI 154 @EpochAIResearch . Scale AI reported ties for #1 on SWE-Bench Pro, HLE, MCP Atlas, and PR Bench Legal @scale_AI . The broad consensus across technical accounts was that Spark is notably stronger than expected for a first MSL release, though weaker on longer-horizon agentic work than the very top proprietary coding/agent models @matthuang , @omarsar0 . What stood out technically : The most interesting research signal from Meta’s thread was less the launch itself than the claimed gains in training efficiency and test-time scaling . Meta says its rebuilt pretraining stack can reach equivalent capability with >10× less compute than Llama 4 Maverick , while RL training showed smooth scaling and a “thought compression” regime where the model becomes more token-efficient under response-length pressure @AIatMeta , @ananyaku . Meta also explicitly highlighted parallel multi-agent inference as a way to improve performance at similar latency, which many engineers flagged as one of the more interesting parts of the release @AIatMeta , @ananyaku , @patrickc . Community testing also quickly found Spark unusually good at image-to-code and one-shot game generation, suggesting strong visual grounding plus coding integration rather than just benchmark tuning @skirano , @mattdeitke , @garrytan .",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "news",
+      "daily"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T00:00:00"
+  },
+  {
+    "id": "smolai-0fb1c9021a96",
+    "source": "Smol AI News",
+    "source_type": "smolai",
+    "title": "Open and hosted model competition: GLM-5.1, Qwen3.6 Plus, and the open ecosystem",
+    "url": "https://x.com/rasbt/status/2041864806534086881",
+    "original_content": "GLM-5.1 emerges as a leading open-weight model : Multiple technical accounts called Zhipu AI’s GLM-5.1 the current flagship open-weight release. Sebastian Raschka noted it appears to use a DeepSeek-V3.2-like architecture with MLA and DeepSeek Sparse Attention , but with more layers and stronger benchmark numbers @rasbt . Others highlighted that it is MIT-licensed and appears to take open SOTA on SWE-Bench Pro @NielsRogge . Together AI also pushed it as production-ready for long-horizon coding an",
+    "raw_text": "GLM-5.1 emerges as a leading open-weight model : Multiple technical accounts called Zhipu AI’s GLM-5.1 the current flagship open-weight release. Sebastian Raschka noted it appears to use a DeepSeek-V3.2-like architecture with MLA and DeepSeek Sparse Attention , but with more layers and stronger benchmark numbers @rasbt . Others highlighted that it is MIT-licensed and appears to take open SOTA on SWE-Bench Pro @NielsRogge . Together AI also pushed it as production-ready for long-horizon coding and tool-using agents, citing 28% coding improvement over GLM-5 from RL post-training and support for thinking mode , structured JSON , and many-round tool use @togethercompute . Qwen3.6 Plus improves materially, but stays proprietary : Alibaba announced Qwen3.6-Plus as fully production-ready and highlighted strong OpenRouter adoption @Alibaba_Qwen . Artificial Analysis’ deeper benchmark thread is more informative: the model scores 50 on its Intelligence Index, up 5 points over Qwen3.5 397B, roughly in line with MiniMax-M2.7 and just below GLM-5.1 (51) . It also notably improves hallucination behavior, lifting the AA-Omniscience Index from -30 to +3 , while keeping a 1M-token context window , native vision input, and relatively cheap pricing—about $483 to run the full Intelligence Index versus $813 for GLM-5.1 and much more for the top Western proprietary models @ArtificialAnlys . The important caveat is that Alibaba did not release weights for a self-hostable equivalent. Open ecosystem increasingly depends on Qwen : Epoch AI and collaborators released The ATOM Report , a 9-month scrape of open-ecosystem activity, arguing that the open model ecosystem is increasingly built on Qwen foundations, with >50% of monthly fine-tunes and downloads attributed to Qwen-derived work @xeophon , follow-up . That reinforces a broader thread running through the day’s discussion: open labs may still trail the top frontier on raw compute, but can remain highly competitive via distillation, rapid architectural imitation, and aggressive cost/performance optimization @EpochAIResearch .",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "news",
+      "daily"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T00:00:00"
+  },
+  {
+    "id": "smolai-69959af61c84",
+    "source": "Smol AI News",
+    "source_type": "smolai",
+    "title": "Agents, harnesses, and the shift from models to managed systems",
+    "url": "https://x.com/AnthropicAI/status/2041929199976640948",
+    "original_content": "Anthropic’s Managed Agents signals the next product layer : Anthropic published an engineering post on Managed Agents , describing it as a hosted runtime for long-running agents and explicitly framing the design problem as building infrastructure for “ programs as yet unthought of ” @AnthropicAI . The reaction from technical builders was immediate: this is less about “another API feature” and more about moving from selling tokens to selling agent outcomes , with the runtime, infra, and tool orch",
+    "raw_text": "Anthropic’s Managed Agents signals the next product layer : Anthropic published an engineering post on Managed Agents , describing it as a hosted runtime for long-running agents and explicitly framing the design problem as building infrastructure for “ programs as yet unthought of ” @AnthropicAI . The reaction from technical builders was immediate: this is less about “another API feature” and more about moving from selling tokens to selling agent outcomes , with the runtime, infra, and tool orchestration increasingly bundled with the model @Yuchenj_UW , @alexalbert__ . That was echoed by practitioners warning that custom infra bets can become obsolete quickly as frontier labs ship more complete agent stacks @jerryjliu0 . Harnesses are becoming a core optimization surface : Several posts converged on the same theme: gains increasingly come from the harness as much as the model. LangChain and JetBrains highlighted custom coding-agent construction with Deep Agents , LangSmith , and ACP @jetbrains , @Hacubu . LangChain also published work on harness hill-climbing , arguing self-improving agents are a systems problem involving eval curation , overfitting control , acceptance gates , and update algorithms rather than one clever prompt @Vtrivedy10 , @hwchase17 . Cursor, meanwhile, shipped several product-level agent improvements: remote agent execution from any machine @cursor_ai and a code review agent that learns from PR activity in real time , with 78% of issues found resolved before merge @cursor_ai . Cline added kanban support , improved terminal persistence, and Droid agent support @cline . New infra for distributed training and agent orchestration : On the infra side, PyTorch’s Monarch received a substantial update, adding Kubernetes support , RDMA on AWS EFA and AMD ROCm , SQL telemetry, live dashboards, and a TUI, with explicit positioning around making supercomputers easier for both humans and agents to operate @PyTorch . LangChain added A2A support in LangSmith Deployments for multi-agent communication @LangChain . W&B shipped Automations , enabling training/eval event triggers into GitHub Actions, deployment workflows, and infra shutdowns @wandb .",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "news",
+      "daily"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T00:00:00"
+  },
+  {
+    "id": "smolai-972109fb2474",
+    "source": "Smol AI News",
+    "source_type": "smolai",
+    "title": "Benchmarks, retrieval, and research methods",
+    "url": "https://x.com/ArtificialAnlys/status/2041896261826310598",
+    "original_content": "APEX-Agents-AA adds a harder long-horizon professional benchmark : Artificial Analysis launched APEX-Agents-AA , its implementation of Mercor’s benchmark for professional work tasks in investment banking, consulting, and law , covering 452 tasks run in its Stirrup harness @ArtificialAnlys . Top models are tightly clustered: GPT-5.4 at 33.3% , Claude Opus 4.6 at 33.0% , and Gemini 3.1 Pro Preview at 32% . The notable meta-point is that even top models are still only solving about one-third of the",
+    "raw_text": "APEX-Agents-AA adds a harder long-horizon professional benchmark : Artificial Analysis launched APEX-Agents-AA , its implementation of Mercor’s benchmark for professional work tasks in investment banking, consulting, and law , covering 452 tasks run in its Stirrup harness @ArtificialAnlys . Top models are tightly clustered: GPT-5.4 at 33.3% , Claude Opus 4.6 at 33.0% , and Gemini 3.1 Pro Preview at 32% . The notable meta-point is that even top models are still only solving about one-third of these realistic, tool-heavy tasks pass@1, indicating substantial remaining room in long-horizon agent reliability. Mid-training and parallel reasoning continue to mature : Meta FAIR released work on RL of Interleaved Reasoning , arguing for a mid-training SFT+RL phase between pretraining and post-training. On Llama-3-8B , they report a 3.2× improvement on reasoning benchmarks over direct post-training RL @jaseweston . FAIR also open-sourced ThreadWeaver , a parallel reasoning method claiming up to 3× speedup while retaining sequential long-CoT performance across six tasks @LongTonyLian . These ideas align closely with the test-time multi-agent and thought-compression themes in Muse Spark. Retrieval and document understanding are shifting local : A notable cluster of posts focused on local PDF/document parsing and retrieval. LlamaIndex released /research-docs , a Claude skill built on local parser LiteParse , with exact citations, page-level bounding boxes, and auditable HTML reports @ErickSky . Muna and Nomic released nomic-layout-v1 for local/on-device PDF layout parsing @usemuna , @andriy_mulyar . Weaviate’s IRPAPERS benchmark found that pure text retrieval and image retrieval fail on different subsets of PDF-search tasks, with the best results coming from multimodal hybrid search ( 49% Recall@1 , 95% Recall@20 ) @weaviate_io . LlamaIndex also documented production failure modes of VLM-based OCR, especially repetition loops and recitation safety errors , reinforcing why dedicated parsers still matter @llama_index .",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "news",
+      "daily"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T00:00:00"
+  },
+  {
+    "id": "smolai-cbe942728fac",
+    "source": "Smol AI News",
+    "source_type": "smolai",
+    "title": "Cybersecurity, Mythos skepticism, and the open-vs-closed debate",
+    "url": "https://x.com/stanislavfort/status/2041922370206654879",
+    "original_content": "The technical backlash to Mythos focused on reproducibility : While much of the timeline was saturated with Mythos speculation, the most technically substantive response came from Stanislav Fort , who reports reproducing Anthropic’s showcased vulnerability analyses with open models , including 8/8 models recovering the flagship FreeBSD zero-day and even a 3B-class model doing so in scoped settings @stanislavfort . Clement Delangue amplified the same point: if small open models recover much of th",
+    "raw_text": "The technical backlash to Mythos focused on reproducibility : While much of the timeline was saturated with Mythos speculation, the most technically substantive response came from Stanislav Fort , who reports reproducing Anthropic’s showcased vulnerability analyses with open models , including 8/8 models recovering the flagship FreeBSD zero-day and even a 3B-class model doing so in scoped settings @stanislavfort . Clement Delangue amplified the same point: if small open models recover much of the showcased analysis, the frontier in AI cyber may be “ super jagged ” rather than monopolized by one closed model @ClementDelangue . That is a much more useful takeaway for engineers than the more theatrical claims circulating elsewhere. Defensive posture, not magical offense, is the practical conclusion : A second thread argued that the important implication of stronger cyber models is not “infinite hacking power” but the need to accelerate patching pipelines, maintainer relationships, secure formats, and blast-radius reduction . Delangue pointed to safetensors joining the PyTorch Foundation as a concrete security hardening step @ClementDelangue . Others pushed back on exaggerated public narratives, noting that exploit generation, persistence, and operational success are very different things @JonKBateman . The clearest engineering message: the models are increasingly good enough that the bottleneck is moving to the defender ecosystem and deployment workflows , not just model capability @ClementDelangue .",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "news",
+      "daily"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T00:00:00"
+  },
+  {
+    "id": "smolai-94fdbf31470d",
+    "source": "Smol AI News",
+    "source_type": "smolai",
+    "title": "Top tweets (by engagement)",
+    "url": "https://x.com/alexandr_wang/status/2041909376508985381",
+    "original_content": "Meta / Muse Spark launch thread : Alexandr Wang’s launch thread on rebuilding Meta’s stack and shipping Muse Spark was the dominant technical story of the day @alexandr_wang . Meta product announcement : Meta’s official Muse Spark launch post drew similarly high engagement and contains the cleanest product summary @AIatMeta . Anthropic Managed Agents : Anthropic’s hosted long-running agents announcement is likely the most strategically important platform/infrastructure post beyond model releases",
+    "raw_text": "Meta / Muse Spark launch thread : Alexandr Wang’s launch thread on rebuilding Meta’s stack and shipping Muse Spark was the dominant technical story of the day @alexandr_wang . Meta product announcement : Meta’s official Muse Spark launch post drew similarly high engagement and contains the cleanest product summary @AIatMeta . Anthropic Managed Agents : Anthropic’s hosted long-running agents announcement is likely the most strategically important platform/infrastructure post beyond model releases @AnthropicAI . Cursor remote agents : Cursor’s ability to run agents on any machine and control them remotely is one of the more immediately usable agent-product updates @cursor_ai . Perplexity’s Billion Dollar Build : Less technical than the above, but still relevant as a signal of where agent-product commercialization is heading @perplexity_ai .",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "news",
+      "daily"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T00:00:00"
+  },
+  {
+    "id": "smolai-58a4ba5fb1a4",
+    "source": "Smol AI News",
+    "source_type": "smolai",
+    "title": "/r/LocalLlama + /r/localLLM Recap 1. Gemma 4 Model Updates and Features",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1sfrrgz/it_looks_like_well_need_to_download_the_new_gemma/",
+    "original_content": "It looks like we’ll need to download the new Gemma 4 GGUFs (Activity: 602): The new Gemma 4 GGUFs have been updated to address several technical issues and enhancements. Key updates include support for attention rotation in heterogeneous iSWA, critical fixes for CUDA buffer overlap, and enhancements in the BPE detokenizer for byte token handling. Additionally, the updates set 'add bos' to true, introduce a specialized parser for Gemma 4, and implement custom newline splitting. These changes are ",
+    "raw_text": "It looks like we’ll need to download the new Gemma 4 GGUFs (Activity: 602): The new Gemma 4 GGUFs have been updated to address several technical issues and enhancements. Key updates include support for attention rotation in heterogeneous iSWA, critical fixes for CUDA buffer overlap, and enhancements in the BPE detokenizer for byte token handling. Additionally, the updates set 'add bos' to true, introduce a specialized parser for Gemma 4, and implement custom newline splitting. These changes are detailed in the GitHub pull requests linked in the post. Commenters are comparing the updates to previous issues with the llama 3 tokenizer and are questioning whether other versions, such as the bartowski and heretic versions, also require updates. shockwaverc13 highlights a recurring issue with tokenizers, comparing the current situation with the Gemma 4 GGUFs to the previous problems encountered with the LLaMA 3 tokenizer. This suggests a pattern of instability or frequent updates required for new models, which can be a significant concern for developers relying on these models for consistent performance. segmond discusses a strategy for dealing with frequent updates and instability in new model releases, suggesting that downloading a model 3-5 times before it stabilizes is common practice. They mention waiting for a week before downloading large models like GLM5.1, indicating a cautious approach to avoid early bugs or issues that might be present in initial releases.",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "news",
+      "daily"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T00:00:00"
+  },
+  {
+    "id": "smolai-f7db9b863cba",
+    "source": "Smol AI News",
+    "source_type": "smolai",
+    "title": "2. GLM-5.1 Model Performance and Comparisons",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1sf0jok/glm51/",
+    "original_content": "GLM-5.1 (Activity: 1029): GLM-5.1 is a cutting-edge model aimed at advancing agentic engineering, with notable improvements in coding capabilities and benchmark performance, particularly on SWE-Bench Pro and NL2Repo . It excels in maintaining effectiveness over prolonged tasks, enhancing problem-solving and iterative optimization. The model supports local deployment via frameworks like SGLang , vLLM , and Transformers . More details can be found on Hugging Face . One comment highlights the impor",
+    "raw_text": "GLM-5.1 (Activity: 1029): GLM-5.1 is a cutting-edge model aimed at advancing agentic engineering, with notable improvements in coding capabilities and benchmark performance, particularly on SWE-Bench Pro and NL2Repo . It excels in maintaining effectiveness over prolonged tasks, enhancing problem-solving and iterative optimization. The model supports local deployment via frameworks like SGLang , vLLM , and Transformers . More details can be found on Hugging Face . One comment highlights the importance of models like GLM-5.1 as alternatives to Anthropic and OpenAI 's coding plans, suggesting a potential shift in reliance. Another comment notes the model's size as a limitation for users with 84GB of VRAM , indicating hardware constraints in practical deployment. The GLM-5.1 model is noted for its substantial size, with a parameter count of 754 billion , which poses significant challenges for deployment even on high-end hardware. For instance, a setup with 4x RTX 6000 PRO GPUs may struggle to accommodate the model, especially when considering the additional memory required for context space. A user has shared resources for GLM-5.1, including GGUFs available on Hugging Face and a blog post detailing the model's features. Additionally, there is a guide on running tool calling, which could be valuable for those looking to implement or experiment with the model. The model's size is a limiting factor for many users, as highlighted by a comment noting that even 84GB of VRAM is insufficient to run GLM-5.1 effectively. This underscores the need for substantial computational resources to leverage the model's capabilities.",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "news",
+      "daily"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T00:00:00"
+  },
+  {
+    "id": "smolai-b6f7970e2935",
+    "source": "Smol AI News",
+    "source_type": "smolai",
+    "title": "3. Local LLM Use Cases and Infrastructure",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1sg2686/it_finally_happened_i_actually_had_a_use_case_for/",
+    "original_content": "It finally happened, I actually had a use case for a local LLM and it was brilliant (Activity: 312): The Reddit post describes a practical use case for a local Large Language Model (LLM) named Gemma 4 during a flight without internet access. The user experienced severe aerosinusitis and utilized the LLM to discover the Toynbee Maneuver , a technique to relieve ear pressure, which effectively alleviated their pain within 10 minutes . This highlights the utility of local LLMs in providing immediat",
+    "raw_text": "It finally happened, I actually had a use case for a local LLM and it was brilliant (Activity: 312): The Reddit post describes a practical use case for a local Large Language Model (LLM) named Gemma 4 during a flight without internet access. The user experienced severe aerosinusitis and utilized the LLM to discover the Toynbee Maneuver , a technique to relieve ear pressure, which effectively alleviated their pain within 10 minutes . This highlights the utility of local LLMs in providing immediate, offline assistance in situations where internet access is unavailable. Commenters noted the impressive capability of small, local models to provide valuable information without internet access, emphasizing the importance of having lightweight models available for offline use. One commenter shared a similar experience of relying on local models when internet access was unavailable. PassengerPigeon343 highlights the utility of small on-device models for scenarios without internet access, emphasizing their readiness and usefulness in providing information when larger models aren't feasible. This underscores the importance of having lightweight models available for immediate, offline use. FenderMoon discusses the use of local models for privacy-sensitive tasks, such as medical advice, to avoid potential data breaches associated with cloud-based AI. This reflects a growing concern for data privacy and the strategic use of local models to mitigate such risks. ObsidianNix recommends using 'medgemma', a model specifically trained on medical jargon, suggesting it offers superior performance in medical contexts compared to general-purpose LLMs. This points to the value of domain-specific models in enhancing accuracy and relevance in specialized fields.",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "news",
+      "daily"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T00:00:00"
+  },
+  {
+    "id": "smolai-e89636d3194c",
+    "source": "Smol AI News",
+    "source_type": "smolai",
+    "title": "Less Technical AI Subreddit Recap /r/Singularity, /r/Oobabooga, /r/MachineLearning, /r/OpenAI, /r/ClaudeAI, /r/StableDiffusion, /r/ChatGPT, /r/ChatGPTCoding, /r/aivideo, /r/aivideo 1. Claude Mythos an",
+    "url": "https://www.reddit.com/r/singularity/comments/1sg2wwj/claude_opus_vs_mythos/",
+    "original_content": "Claude Opus vs Mythos (Activity: 724): The image is a meme contrasting two different personas or states of being, possibly metaphorically representing 'Claude Opus' and 'Mythos'. The left side shows a person in a more intellectual or focused setting, while the right side depicts a more physically active or transformed version of the same person. This duality might symbolize a transformation or a comparison between two different aspects of a person's life or identity, as suggested by the title 'C",
+    "raw_text": "Claude Opus vs Mythos (Activity: 724): The image is a meme contrasting two different personas or states of being, possibly metaphorically representing 'Claude Opus' and 'Mythos'. The left side shows a person in a more intellectual or focused setting, while the right side depicts a more physically active or transformed version of the same person. This duality might symbolize a transformation or a comparison between two different aspects of a person's life or identity, as suggested by the title 'Claude Opus vs Mythos'. The comments do not provide any technical insights, focusing instead on humorous or superficial observations. The comments do not provide any technical insights, focusing instead on humorous or superficial observations. Anthropic's new model, Claude Mythos, is so powerful that it is not releasing it to the public. (Activity: 5830): Anthropic has developed a new AI model named Claude Mythos , which is reportedly so advanced that it is not being released to the public. The model has demonstrated exceptional capabilities in autonomously identifying and exploiting vulnerabilities in software systems. For instance, it discovered a 27-year-old vulnerability in OpenBSD , a 16-year-old flaw in FFmpeg , and chained vulnerabilities in the Linux kernel to escalate user privileges. These findings were made without human intervention, showcasing the model's potential in cybersecurity applications. More details can be found on Anthropic's blog . One comment suggests that the model's non-release is due to its high computational demands, making public access impractical. This highlights a potential limitation in deploying such advanced models widely. In a detailed post on the Frontier Red Team blog , it is revealed that Claude Mythos autonomously identified and exploited several significant vulnerabilities. Notably, it discovered a 27-year-old vulnerability in OpenBSD, a highly secure operating system, allowing remote crashes. It also found a 16-year-old flaw in FFmpeg, undetected by automated tools despite extensive testing, and chained vulnerabilities in the Linux kernel to escalate user privileges to full control, showcasing its advanced capabilities in cybersecurity. The decision not to release Claude Mythos to the public may be influenced by its potentially high computational demands, making public access impractical. This suggests that the model's operational costs and resource requirements are significant, possibly limiting its deployment to environments with substantial computational infrastructure. The comment by jsebrech highlights a concern about the future disparity in AI access, where advanced models like Claude Mythos might be restricted to powerful entities, leaving the general public with only basic models. This could exacerbate existing inequalities, as those with access to such powerful AI could leverage it for significant advantages, potentially widening the gap between different societal groups.",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "news",
+      "daily"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T00:00:00"
+  },
+  {
+    "id": "smolai-50474b2be6fe",
+    "source": "Smol AI News",
+    "source_type": "smolai",
+    "title": "3. Anthropic's Claude Code and User Experiences",
+    "url": "https://www.reddit.com/r/ClaudeAI/comments/1ses1qm/anthropic_stayed_quiet_until_someone_showed/",
+    "original_content": "Anthropic stayed quiet until someone showed Claude's thinking depth dropped 67% (Activity: 2020): A GitHub issue has highlighted a significant drop in the 'thinking depth' of Claude Code , a tool by Anthropic , with a reported 67% decrease by late February. This was corroborated by user logs and behavior patterns, suggesting a regression in the model's ability to process code before editing. The issue has sparked discussions about Anthropic's response to quality regressions, with some users susp",
+    "raw_text": "Anthropic stayed quiet until someone showed Claude's thinking depth dropped 67% (Activity: 2020): A GitHub issue has highlighted a significant drop in the 'thinking depth' of Claude Code , a tool by Anthropic , with a reported 67% decrease by late February. This was corroborated by user logs and behavior patterns, suggesting a regression in the model's ability to process code before editing. The issue has sparked discussions about Anthropic's response to quality regressions, with some users suspecting intentional downgrades to allocate resources for their upcoming model, Mythos . The debate is ongoing, with some users expressing disappointment in Anthropic's handling of the situation and others questioning the validity of the claims. Some users believe Anthropic is deliberately downgrading Claude to save resources for the Mythos model, while others argue that the company's response to the issue was prompt once documented evidence was presented. There is also skepticism about whether the reported 67% drop in thinking depth is methodologically sound. Several users have reported a noticeable decline in the performance of Anthropic's Claude model, particularly the Opus variant, which has been making frequent and obvious mistakes. This has led to speculation that Anthropic might be deliberately downgrading Opus to allocate resources for their upcoming model, Mythos. The timing of these issues coincides with the announcement of Mythos, suggesting a strategic shift in resource allocation to support the new model's development. There is a discussion about the internal processes at Anthropic, with some users suggesting that the company has an internal switch to control model performance. This is based on previously leaked source code and the observation that issues are only addressed when detailed documentation is provided by users. This has raised concerns about transparency and responsiveness to user feedback, as well as the potential impact on Anthropic's internal culture and community engagement. Users have expressed frustration with the current state of Claude, noting that it has become more restricted and less reliable compared to previous versions. This has led to increased costs for users, as they spend more time troubleshooting and dealing with errors. Some users are considering switching to alternative models like Codex due to these issues, highlighting the competitive pressure on Anthropic to maintain model quality and user satisfaction.",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "news",
+      "daily"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T00:00:00"
+  },
+  {
+    "id": "rss-ibrahim-diallo-75fd62a2cc8e",
+    "source": "Ibrahim Diallo",
+    "source_type": "rss",
+    "title": "Your friends are hiding their best ideas from you",
+    "url": "https://idiallo.com/blog/your-friends-are-hiding-their-ideas?src=feed",
+    "original_content": "Back in college, the final project in our JavaScript class was to build a website. We were a group of four, and we built the best website in class. It was for a restaurant called the Coral Reef. We found pictures online, created a menu, and settled on a solid theme. I was taking a digital art class in parallel, so I used my Photoshop skills to place our logo inside pictures of our fake restaurant. All of a sudden, something clicked. We were admiring our website on a CRT monitor when my classmate",
+    "raw_text": "Back in college, the final project in our JavaScript class was to build a website. We were a group of four, and we built the best website in class. It was for a restaurant called the Coral Reef. We found pictures online, created a menu, and settled on a solid theme. I was taking a digital art class in parallel, so I used my Photoshop skills to place our logo inside pictures of our fake restaurant. All of a sudden, something clicked. We were admiring our website on a CRT monitor when my classmate pulled me aside. She had an idea. A business idea. An idea so great that she couldn't share it with the rest of the team. She whispered, covering her mouth with one hand so a lip reader couldn't steal this fantastic idea: \"what if we build websites for people?\" This was the 2000s, of course it was a fantastic idea. The perfect time to spin up an online business after a market crash. But what she didn't know was that, while I was in class in the mornings, my afternoons were spent scouring Craigslist and building crappy websites for a hundred to two hundred dollars a piece. I wasn't going to share my measly spoils. If anything, this was the perfect time to build that kind of service. That's a great idea , I said. There is something satisfying about having an idea validated. A sort of satisfaction we get from the acknowledgment. We are smart, and our ideas are good. Whenever someone learned that I was a developer, they felt this urge to share their \"someday\" idea. It's an app, a website, or some technology I couldn't even make sense of. I used to try to dissect these ideas, get to the nitty-gritty details, scrutinize them. But that always ended in hostility. \"Yeah, you don't get it. You probably don't have enough experience\" was a common response when I didn't give a resounding yes. I don't get those questions anymore, at least not framed in the same way. I have worked for decades in the field, and I even have a few failed start-ups under my belt. I'm ready to hear your ideas. But that job has been taken, not by another eager developer with even more experience, or maybe a successful start-up on their résumé. No, not a person. AI took this job. Somewhere behind a chatbot interface, an AI is telling one of your friends that their idea is brilliant. Another AI is telling them to write out the full details in a prompt and it will build the app in a single stroke. That friend probably shared a localhost:3000 link with you, or a Lovable app, last year. That same friend was satisfied with the demo they saw then and has most likely moved on. In the days when I stood as a judge, validating an idea was rarely what sparked a business. The satisfaction was in the telling. And today, a prompt is rarely a spark either. In fact, the prompt is not enough. My friends share a link to their ChatGPT conversation as proof that their idea is brilliant. I can't deny it, the robot has already spoken. I'm not the authority on good or bad ideas. I've called ideas stupid that went on",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "programming"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T00:47:19"
+  },
+  {
+    "id": "rss-appso-1cb723a2b585",
+    "source": "APPSO",
+    "source_type": "wechat",
+    "title": "突发！Sora 宣布关停，史上最贵 AI 表情包生成器只撑了七个月",
+    "url": "https://mp.weixin.qq.com/s?__biz=MjM5MjAyNDUyMA%3D%3D&idx=1&mid=2651085293&sn=fe32a037f031ce2faea7c4d6d3b295bc",
+    "original_content": "战略收缩，Sora 或许只是开始",
+    "raw_text": "去年 9 月底，Sora 2 上线的第一天，OpenAI CEO Sam Altman（山姆·奥特曼）就把自己的 cameo 权限向所有人开放。很快，他被做成各种荒诞 AI 表情包在社交媒体疯传。 网友玩得不亦乐乎，社交媒体上「AI 视频元年」的口号铺天盖地。 七个月后，他亲手签了 Sora 的死亡通知书。 网友还是懂玩梗 据《华尔街日报》报道。奥特曼在内部信中宣布： Sora 视频平台将全面停运。不只是那个消费端 app，开发者 API、ChatGPT 里的视频生成功能，统统砍掉。干净利落，不留余地。 就在刚刚，Sora 官方也在 X 平台上发文告别： 我们将与 Sora 应用说再见。对于所有使用 Sora 创作、分享并围绕它建立社区的大家：谢谢你们。你们用 Sora 创作的内容意义重大，我们知道这个消息令人失望。 我们很快将分享更多信息，包括应用和 API 的时间表，以及保存你们作品的细节。 – Sora 团队 这大概是 AI 行业过去一年里，最戏剧性的情节。 一个 AI 视频模型杀手的速生速死 回到去年 9 月，Sora 的发布可以说是 OpenAI 最高调的一次产品秀。 它不是一个简单的视频生成工具。OpenAI 给它设计了社交 feed 流，用户可以用 AI 生成视频、发布、互相观看。 本质上，这是一个 AI 原生的短视频社区。奥特曼本人亲自下场玩梗，鼓励用户把他剪进各种流行文化的名场面里。 排场拉满了，市场反响也是真实的。Sora 上线不到五天，下载量就突破了 100 万，一度冲上苹果 App Store 榜首。 开局阶段，用 Sora 生成《海绵宝宝》《皮卡丘》等知名 IP 视频的创作者们引发了一阵狂欢。 但问题从一开始就埋下了。 据《华尔街日报》报道，Sora 上线时，OpenAI 内部就有员工对这个项目消耗的算力规模感到「惊讶」，因为彼时完全没有明确的用户需求验证，公司却已往里砸了大量计算资源。 换句话说，这是一个老板觉得该做的产品，而用户真正的持续需求，始终没有被验证。 数字不会说谎，上线后，这种担忧也逐渐变成了事实。硅谷风投机构 a16z 合伙人 Olivia Moore 在社交媒体上晒出一张 SensorTower 的监测截图： Sora APP 的 30 天用户留存率仅为 1%，60 天留存率直接归零。 奥特曼自己后来也承认，大量用户主要用 Sora 制作趣味表情包分享给好友。这种一次性的娱乐行为，天然缺乏复购动力，也几乎没有变现路径。 产品本身的体验也在加速流失。 实测数据显示，Sora 生成的视频中，真正达到可发布水准的仅占 5% 到 10%，用户平均需要生成十条视频，才可能得到一条满意的结果。加上单次渲染动辄数分钟，一个勉强可用的成片往往要耗掉大半小时。 这种「靠运气」的创作体验，对内容创作者来说是致命的。 版权问题，则从另一个方向压缩了用户的创作空间。 上线初期，生成知名 IP 视频的能力是 Sora 最大的吸引力，但版权方的强烈反对很快迫使 OpenAI 将授权规则从默认可用改为需明确授权，并大幅加强了内容限制。新鲜感退潮之后，留下来的创作空间已所剩无几。 社区功能同样乏善可陈。推荐算法单一，优质内容得不到曝光；用户只能点赞，没有评论和收藏；视频播放过程中无法暂停；搜索体验混乱。 正如Olivia Moore 所分析的：「纯 AI 生成内容的社区，效果劣于人机混合内容的形态。」Sora 产出的优质内容，最终大多流向了短视频平台，它只是一个创作工具，从来没有成为一个独立的社交产品。 一个烧钱的无底洞 留存问题之外，更直接压垮 Sora 的，是它的运营成本。 据外媒估算，每日约 1500 万美元的运营开销（年化约 55 亿美元）、单段 10 秒视频 1.3 美元起步的生成成本、复杂场景下高达 33 美元的单次费用，这些数字让 Sora 的商业模式从一开始就站在悬崖边上。 Sora 负责人 Bill Peebles 甚至公开承认，当前的运营模式「完全不可持续」，团队 GPU 资源已经不堪重负。 为了控制成本，OpenAI 被迫将免费用户的每日生成额度从 30 个削减至 6 个。 但这个决定本身是一把双刃剑，进一步削弱了普通用户的参与意愿，加速了留存的崩塌。与此同时，Google Gemini、Meta，以及国内的可灵、即梦等竞品相继推出视频生成功能，加速了用户的分流。 当 60 天留存率趋近于零的数据摆上桌面，停运就只是时间问题了。 只是，如果说 Sora 的故事里有什么最让人唏嘘的细节， 那一定是迪士尼的那 10 亿美元。 去年 12 月，迪士尼宣布向 OpenAI 投资 10 亿美元，并签署了一份为期三年的授权协议。超过 200 个迪士尼角色将被引入 Sora，用户可以和卢克·天行者一起挥光剑，把自己塞进《玩具总动员》的世界里。 这本该是 AI 与内容产业最具标志性的联姻。 但这笔交易从未完成交割。 据知情人士透露，Disney 方面实际上从未完成这笔投资，合同始终停在纸面上。OpenAI 宣布退出视频业务，直接宣告了这笔合作的终结。 迪士尼发言人表示：「随着新兴 AI 领域的快速发展，我们尊重 OpenAI 退出视频生成业务、将重心转向其他方向的决定。我们珍视双方团队之间富有成效的合作，也将继续探索以负责任的方式拥抱新技术。」 从高调官宣到体面分手，前后不过三个月。10 亿美元级别的战略合作，说散就散。这不仅是 Sora 的失败，更折射出当前 AI 行业现实之残酷。 战略收缩，Sora 或许只是开始 公平地说，Sora 被砍，不完全是因为产品本身的失败。 更根本的原因是，OpenAI 正在经历一场彻底的战略收缩。就在同一天，OpenAI 还宣布叫停了去年推出的「即时结账」购物功能。Sora 同样也是整体「瘦身」的一部分。 这背后有一条清晰的财务逻辑：OpenAI 估值已高达 7300 亿美元，IPO 预期最快落在今年第四季度。 要向资本市场讲好故事，就必须收紧支出、聚焦变现。 哪怕是过去那种「大规模自建数据中心」的豪赌思路，也已悄然转向，OpenAI 正回归云计算采购方的定位，而非押注自己下场造基础设施。 组织层面的变化同样意味深长。 奥特曼在同一封内部信中宣布，他将卸下对安全和安全保障团队的直接管辖。安全研究团队划归首席研究官 Mark Chen 领导的研究组织，安保团队则并入联合创始人兼总裁 Greg Brockman 主导的「规模化」部门。 奥特曼本人将把精力集中在融资、供应链和「以前所未有的规模建设数据中心」上。与此同时，Fidji Simo 的产品部门被正式更名为「AGI 部署」（AGI Deployment）。 更值得一提的是，据 The Information 报道，奥特曼还在内部信中透露了另一个重磅消息： 代号「Spud」的下一代主力模型已完成预训练阶段，预计「几周内」就将正式亮相。 他对这个模型寄予厚望，称团队相信它「真正能够加速经济发展」，并感叹「事情推进之快，超出了我们很多人的预期」。如此看来，释放给 Spud 的算力，很有可能正是来自 Sora 腾出的那部分资源。 奥特曼给出的新方向很明确：聚焦生产力工具，全力押注企业和开发者市",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "tech",
+      "wechat",
+      "chinese"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T00:00:00"
+  },
+  {
+    "id": "rss-appso-fa4f42ee5ea6",
+    "source": "APPSO",
+    "source_type": "wechat",
+    "title": "打车这件事，被千问用 AI 重新定义",
+    "url": "https://mp.weixin.qq.com/s?__biz=MjM5MjAyNDUyMA%3D%3D&idx=1&mid=2651085332&sn=7a779893deed3aa1962d4c46f14e1fcf",
+    "original_content": "动动嘴 ，就出发",
+    "raw_text": "马年春节，「千问帮我」变成了一种新年俗。 5520 万杯奶茶、66 倍的电影票订单、机票单周暴涨 540%——「一句话下单」近 2 亿次的背后，是用嘴巴购物的春节新景象。其中最让我意外的一个数字是：有超过 400 万名 60 岁以上的用户，在这个春节让千问帮忙下了单。那些习惯在 App 界面里迷路的长辈，开始用说话代替点击了。 春节热潮还没退去，千问又增加一个更高频的日常场景——打车。 不过，打车这件事，和之前的那些「一句话下单」不太一样。奶茶口味选错了，大不了将就喝掉；电影票订错了，退改也不算大问题。 但打车是一个对「精确」有刚性要求的场景，地址差一个字，你可能被送到城市的另一头；时间判断出了偏差，误掉的可能是一趟航班。 这意味着 AI 接手打车，没有「差不多就行」的余地 。 说到打车，这件事说难不难，但「顺不顺」这件事，差异很大。打开 App，手动输入目的地，选车型，找定位，点确认……整套流程少说十几下。还好，这已经是最理想的情况了。 麻烦的是那些「塞不进下拉菜单」的需求。「路上顺便接个朋友」、「有孕妇，开得稳一点」——这类话，打车 App 里没有地方填。你也可以上车之后再和司机沟通，但大多数时候凑合凑合就算了。 打车 App 这么多年，把流程打磨得越来越顺，但底层逻辑没变——「人适应 App」。它把你的需求拆成有限的几个下拉选项，你在里面挑，它来执行。 可打车本身就是一件变量特别多的事。起点终点只是最基础的两项，往上叠加的可能是车型偏好、价格区间、时间预约、途经地点、乘客状况、车内环境……每多一个变量，用传统界面操作的成本就多一层。 如果 AI 能理解这些需求，事情就不一样了，这也是千问 AI 打车的逻辑： 让 App 适应人，说出来就能走 。 从最简单的通勤，到带着全家和一堆特殊要求出发，APPSO 带你看看这个 AI 打车到底能不能满足我的需求。 一句话就能走 早上赶时间，我试了最直接的一句：「打车去公司，出租车也可以。」 我说完之后，千问直接展示了行程规划页面：重点显示「已为你规划去上班的行程」，并同步展现了出租车选项——司机已接单。 就这一句话，它理解了「去公司」——调取了常用地址；也听懂了「出租车也可以」——把车型偏好同时带上，直接办妥。从说话到接单，操作步骤：1 步。 这件事本身有点微妙。「打车去公司，出租车也可以」是人对人说话时才会有的表达方式，不是人对系统填的表单。千问让这句话变得可以被执行——这个升级，比「快了几秒」要有意义得多。 之前在高德里设好了家和公司的地址，现在切到千问打车，那些预设直接就在，完全不需要重新配置什么。每天重复的路线，每次都稳稳地执行到位，通勤这种事，要的就是快、准、稳。 就因为这个，我就特别想把千问装到我爸手机上。过去她出门购物哪怕拿着大袋小袋也不愿意自己打车，不是嫌贵，就是不太会用打车软件，输入那些信息对她来说都太过复杂，最后就懒得折腾了。 只要按住语音说了句：「打车回家。」千问马上识别了当前位置并自动填入，就近匹配车辆，常用地址自动记忆识别，司机已接单。确认一下，车就在来的路上了。 「动动嘴，车就来了」的体验，不在于「快了多少秒」，在于说清楚你想要什么，这件事变顺滑多了。甚至那些原本卡在界面门口的老人，终于可以直接走进来了。 那些你「没法输入」的需求，也能满足 最简单的一句话搞定通勤，已经够用了。但打车的需求远不止如此——真正麻烦的，是那些你心里有、嘴上能说、但 App 界面里永远没有输入框的部分。 我试了一句：「叫辆空气清新的车去虹桥T2，我过敏性鼻炎。」 以前这话只能和司机说，而且大多数情况下，等你上车再说已经来不及了。 千问回应后，行程确认页面里「空气清新」选项被自动勾选。AI 直接把鼻炎过敏的诉求翻译成了可筛选的车辆偏好标签，不需要你自己去找选项。 再试一句：「逛了一下午不想挤公交了，帮我叫个特惠快车。」 这句话里藏着两个信息：累了不想挤公交的情绪，和对价格的在意。千问直接匹配了特惠快车，预估费用 9.1 元–12.7 元，确认叫车后支付页面重点显示已支付金额和「平台优惠 -12.8 元」——便宜这件事，不用自己翻菜单比价，说一句就到位了。 还有一次，我说：「娃刚睡着，帮我叫个安静点的车回家。」 这句话的信息量远不止「安静」两个字。「安静点的车」背后的真实需求是：车里别乱说话、别打电话、开稳一点、别急刹——这些对司机行为的隐性期待，千问也能满足。行程确认页面里，直接给司机带句话「车内保持安静」 商务场景同样如此。「接待重要签约客户，帮我安排一辆豪华车，预约明晚 18 点从公司到北京饭店。」一句话说完，千问推荐豪华车，预约时间精确到 18:00。 过去在打车软件里，选车型、设置预约时间、填写目的地，是分别独立的操作流程。现在千问压缩进一句话里，一起办完。 乘车途中，朋友突然发消息：「我也在诶。」 搁以前，虽然打车软件也能添加途经点，但还是要打开软件找到这个选项手动输入再点选，还是相对繁琐，还真不如让朋友自己重新打一辆来得方便。 现在，我可以直接说：「顺路接下我朋友，她在朝阳公园南门。」 地图重新规划，途经点自动标记在地图上。没有重新开单，没有让朋友自己叫车，没有任何别扭，就一句话，插进正在进行的行程里，办完了。 过去叫车，是在系统选项里「圈选需求」。AI 叫车，是用自己的语言「描述需求」。千问负责把你说的话，翻译成可以执行的指令。 那些选项框装不下的，现在说出来，也能办。 越复杂的需求，越能看出差别 前面这些，算是小试牛刀。打车需求的真正复杂度，是多个变量同时出现的时候，千问 AI 打车正是冲着这类复杂场景去的。 「周六下午两点，全家从家出发去西湖景区地面停车场，顺路经过山姆会员商店，要坐得下五个人。」 这句话里塞了四个要素：预约时间、目的地、途经点、座位数。传统打车软件要逐一输入和确认，而且途经点和多人座位的组合往往要反复调整。 千问对这类多变量场景的处理方式是这样的：推荐 6 座商务车，途经点选的山姆会员商店，预约时间定到周六 14:00，变量没有落下任何一个。 真正让我有点触动的是这个场景：「帮我打车去妇保医院，有孕妇，告诉司机不要急刹和猛加速。」 目的地、乘客特殊状况、驾驶行为要求——多个维度同时提出。千问匹配了专车，勾选了驾驶平稳，还生成了一条针对孕妇乘车情况的关怀提示，供用户确认是否传达给司机。 「有孕妇，不要急刹和猛加速」这个细节，AI 读懂了，然后把它翻译成了一套完整的服务指令。以前这些话只能坐上车再说，或者不说，靠运气。下拉菜单从来没有一个选项叫「孕妇乘客，请稳驾并提前知晓」。 需求越复杂，这种差距就越明显。点选式交互的天花板就在那里——它能覆盖的，只有被设计进去的那些需求。自然语言不一样，你能说出来的，基本都能被理解。 而且在这些能力上线后，千问 AI 打车的边界还会继续往外扩。 打车只是开始，要让每次出发都更省心 到这里，千问 AI 打车的基本能力已经摸得差不多了。但更让我惊喜的，是场景串联的体验，这是把打车和其他生活场景连在一起的时刻。 去看演唱会，在鸟巢外说「帮我找鸟巢附近的酒店，演出结束后今天入住，飞猪推荐卡片弹出来，确认第一家，再说「帮我定第一家，再预约一辆车 22 点送我过去」——车和房，两句话搞定",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "tech",
+      "wechat",
+      "chinese"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T00:00:00"
+  },
+  {
+    "id": "rss-appso-e74cd180b1e3",
+    "source": "APPSO",
+    "source_type": "wechat",
+    "title": "刚刚，苹果版 ChatGPT 曝光，AI Siri 将接管你 iPhone 上的一切",
+    "url": "https://mp.weixin.qq.com/s?__biz=MjM5MjAyNDUyMA%3D%3D&idx=1&mid=2651085322&sn=e1c03f3f413645c0a41c35a565cedc82",
+    "original_content": "50 岁的苹果，为什么值得期待",
+    "raw_text": "Siri 要有自己的独立 App 了。 不是那个按一下电源键蹦出来、说两句就断片的 Siri，是一个长得像 ChatGPT、能聊天、能翻历史记录、能上传文档分析的「全新 Siri」。 彭博社记者 Mark Gurman 今天凌晨爆出了一颗重磅炸弹：苹果正在内部测试一款独立的 Siri 应用， 代号 Campo ，计划 6 月 9 日在 WWDC 上随 iOS 27 一起亮相。 如果消息属实，这将是苹果自 2011 年推出 Siri 以来，对这个语音助手最大规模的一次手术。 而今年，恰好是苹果公司成立 50 周年。 一个在 AI 时代掉过队的公司，选择在自己的「金婚之年」亮出一张重新洗过的底牌。 这张牌，叫 Siri。 Siri 终于长大了：一个独立 App、一套全新界面 这次爆料的信息量很大，我尽量翻译成人话。 最直观的变化：Siri 终于有了自己的独立 App。 新版 Siri 将作为一个独立应用出现在 iPhone、iPad 和 Mac 上。打开之后，你会看到一套完整的对话界面——历史对话列表、圆角矩形卡片、可以置顶收藏的聊天、还有一个醒目的「+」号来开新话题。 对话界面长得像 iMessage 的聊天气泡，底部有文字输入框，旁边有语音切换按钮，甚至还能上传文档和照片让 Siri 分析。 是的，苹果终于让 Siri 拥有了一个持续存在的、可回溯的对话空间。这件事 ChatGPT 做了两年多了，但苹果选在这个时间点做，意味着它想把 Siri 从一个「被动唤醒的助手」变成一个「用户会主动打开的工具」。 这是定位上的根本转变。 而更大的野心藏在第二个变化里：Siri 正在吞掉 Spotlight。 苹果正在测试用 Siri 取代 Spotlight——就是你从屏幕中间往下一划出来的那个搜索。新的统一界面会把本地搜索和 AI 问答合并到同一个入口。 据爆料，Siri 会被塞进 Dynamic Island 里。激活 Siri 后，顶部会出现「搜索或询问」的提示。当你提问之后，就会先弹出一个药丸形的「正在搜索」进度条，然后结果以 Liquid Glass 风格的半透明面板展开。想继续追问？往下一拉，就进入对话模式。 是的，没有刻意新增任何按钮，苹果只是把你最熟悉的入口悄悄换了引擎。以后在 iPhone 上找任何东西，第一反应不再是打开 Safari 或某个 App，直接问 Siri 就行。 而如果说前两个变化还停留在「界面」层面，第三个变化才是苹果最拿手的那套：系统级整合。 Ask Siri 的入口，将渗透进整个操作系统。比如选中一段文字、一封邮件、一张照片，点一下「Ask Siri」，就能直接进入对话窗口；键盘顶部还新增「用 Siri 撰写」入口，方便你随时调用写作工具。 尽管类似的功能在第三方 App 里早就有了，但苹果把它做进了系统层，每个内置 App 原生支持，无需跳转，无需复制粘贴。这种润物细无声的整合能力，依然是苹果最难被复制的护城河。 用 Google 的脑子，装苹果的壳 当然，要真正理解这套新 Siri 的价值，光看产品还不够。它背后藏着一段苹果不太愿意主动提起的历史。 如果将时间拨回 2024 年 6 月，苹果在那年的 WWDC 大会上端出了 Apple Intelligence，能读懂上下文、能看屏幕、能跨 App 操作，甚至能从你的邮件里翻出航班信息，回答「我该什么时候去接妈妈」。演示视频做得天花乱坠。 全场欢呼，媒体盛赞。然后，就没有然后了。 科技博主 John Gruber 后来回忆说，那些 Siri 演示全是概念视频，连受控环境下的真机演示都没有。换句话说，在苹果把它搬上 WWDC 舞台的那一刻，增强版 Siri 还远没有准备好。 兜兜转转，增强版 Siri 延期的症结只有一个：内部测试显示，Siri 只有 75%～80% 的时间能正常工作。用户语速稍快就会被打断，复杂查询反应迟缓，偶尔还会退回到 ChatGPT 集成。苹果对产品质量的执念，让它宁愿等，也不愿把一个半成品推给用户。 但这份执念也让苹果付出了真实的代价。 从去年至今，苹果 AI 团队数十名核心成员被竞争对手挖走。基础模型负责人庞若鸣被 Meta 以 2 亿美元签下，Siri 搜索项目负责人跳槽 Meta，关键研究员流失到 OpenAI、xAI、Cohere。 同期，库克做了一个重要决定：把软件工程主管 Craig Federighi 拉来接管 AI 部门，又安排 Vision Pro 团队核心人物 Mike Rockwell 来统管 Siri 团队。 一位以强执行力著称的高管，就这样接手了苹果最紧迫的项目。 但光换帅不够。苹果自研的基础模型只有 1500 亿参数，而要让 Siri 真正「听懂人话」，需要的推理能力远超这个量级。 于是苹果做出了一个务实但大胆的决定——和 Google 签了大约 10 亿美元的合作协议，引入 Gemini 模型。 Google 提供的定制版 Gemini 拥有 1.2 万亿参数，是苹果自研模型的 8 倍。新版 Siri 的诸多功能——摘要生成、任务规划、复杂推理——都将依赖 Google 的大脑。 对于一家恨不得连数据中心螺丝钉都自己造的公司来说，把核心 AI 能力交给竞争对手来提供，需要极大的战略定力。 但费德里吉选择了务实。因为留给苹果的时间窗口已经不多了—— 智能眼镜 N50 等着 Siri 才能发售，带摄像头的 AirPods 等着 Siri 才有灵魂，那个可穿戴吊坠、智能家居中心、桌面机器人，全部在等 Siri 就位。 Siri 不是一个功能，它是苹果未来五年所有新硬件的操作系统。 所以苹果选择了先跑起来。而且并非毫无章法——按照协议，Gemini 模型将运行在苹果的「私有云计算」服务器上，用户数据不经过 Google。苹果借用技术，但牢牢握住隐私。 而且苹果的架构设计本身就是模块化的：端侧小模型处理简单任务和隐私敏感操作，云端大模型处理复杂推理。 这种「插拔式」架构，让苹果可以随时更换背后的引擎，而用户无感知。 今天用 Gemini，明天自研模型追上了，换掉就是。 某种意义上，这不是妥协，是「先租一辆好车上路，同时造自己的引擎」。 50 岁的苹果，为什么值得期待 1976 年 4 月 1 日，乔布斯和沃兹尼亚克在车库里创立了苹果。 2026 年，苹果 50 岁。 过去 50 年里，苹果经历过被逐出、回归、濒临破产、iPod 救命、iPhone 封神、生态帝国成型的全部剧本。几乎每一个十年，都有一个「定义苹果」的产品：Mac、iPod、iPhone、Apple Watch。 而下一个十年，苹果押在了 AI Siri 上。 OpenAI CEO Sam Altman 曾在纽约的一场午餐会上直言不讳：「大家别盯着 Google 了，OpenAI 真正的宿敌，是苹果。」 在 Altman 看来，未来 AI 的主战场不在云端，而在终端。谁能率先打造出「AI 原生设备」，谁就能在下一个十年占据制高点。而苹果手握数亿 iPhone 用户、全球最成熟的硬件供应链，还有能力将 AI 深度整合进芯片和操作系统。 在所有科技公司里，苹果可能仍然是最有可能在 AI 时代赢的那个。 原",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "tech",
+      "wechat",
+      "chinese"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T00:00:00"
+  },
+  {
+    "id": "rss-机器之心-a84f98bf230d",
+    "source": "机器之心",
+    "source_type": "wechat",
+    "title": "帮普通人「驯服」Agent，这支硅谷初创团队冲上了X全球热搜",
+    "url": "https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651026681&idx=1&sn=c0a6b2ec98046f83c0c31387b190b920",
+    "original_content": "一个真正面向普通用户的AI Agent Harness！",
+    "raw_text": "原创 关注AI的 2026-04-09 11:59 北京 一个真正面向普通用户的AI Agent Harness！ 编辑｜Youli 「用一句话交代任务，然后什么都不用管，AI 自动执行。」 这或许是大家最初对「AI 超级助手」的想象。 比如，以常见的电商场景为例：如果你是负责运营的，当描述完「每周一早上 9 点，扫描 3 个竞品网站的价格变动，记录到 Google Sheets，如果波动超过 10% 就在 Slack 通知我。」之后，你希望的是，在每周一的早上 9 点，AI 都会自动执行这一任务。 当然，在今天借助各类技术，确实可以给 AI 安排此类任务。但问题是，你要么需要写代码、配接口，要么紧紧盯着对话框，思考给出的回复是否隐藏「幻觉」，及时进行「古法」手动调试。另外，如果你关掉窗口，它的生命周期也随之结束，下周一你还得重新把它唤醒。而这一切的前提是， 你还得懂点技术才行。 在持续观察这类问题时，机器之心注意到，最近有一家公司在尝试用一种不同的方式去解决它。 3 月 30 日，硅谷初创公司 Creao AI 的新品 CREAO 一经发布，便迅速冲上 X 平台全球热搜榜，引发网友热议，多家媒体跟进报道，资本也在关注。 在网友们看来，CREAO 做的「正是 AI 所需要的转变，不仅仅是给出答案，而是真正把事情搞定，不再被困在聊天框里。」 「终于！聊天结束后，输出还能实际发挥作用，我等这一刻很久了。」 「只需描述你的需求，CREAO 就能实时构建出来，这种想法真的很有意思，它可能会彻底改变我们对自动化和效率的认知。」 那么问题来了，为何一家 AI 初创公司发布的新品，竟能引起如此大的关注？ 在仔细了解 CREAO 的运行机制后，答案逐渐浮现，它做了一件看似微小却极具野心的事情： 自然语言描述完一次需求后，AI 现场编写代码并将其固化为一个可持续、稳定运行的系统，即便是对话结束了，但你所构建的一切仍在运行。 更为重要的是，过程中，没有「你还得懂点技术才行」的前提。 从这个层面上来看，CREAO 带来了一种新的范式实践： 一个真正面向普通用户的 AI Agent Harness。 而这也正是当下行业中的一个亟待解决的问题…… Agent 功能强大，普通用户却完全用不上，何解？ 过去两年，AI Agent 无疑是整个行业最为确定的共识之一，受到全球资本和技术圈的热捧，尤其是以 OpenClaw 为代表的产品，不仅可以理解问题，还可以调用工具、执行任务，甚至完成复杂流程，让业界惊呼「AI 真正第一次具备了干活的能力。」 也正因此，业界认为，经过去年一年「Agent 元年」的沉淀，2026 年，将彻底迎来「Agent 爆发年」。 而在这种 Agent 热潮之下，普通人的 AI 焦虑也与日俱增，试图跟上这波热潮，尤其是前段时间的「全民」安装 Openclaw 热潮，无疑是这种「AI 焦虑」的放大。 如果仔细看，这种「AI 焦虑」的背后隐藏着一个被忽略的现实： 模型性能日益增强，AI 能力持续膨胀，但叙事方式依然握在少数人手里，普通人的使用能力并没有同步提升。 可以从当下比较热门或常用的产品中窥见一二。 比如，OpenClaw、Claude Code 这类工具，具备强大的执行力，但问题在于它们本质上是面向开发者，需要编程能力，你得懂环境配置，懂 API 才能调用，可以说是高门槛的工具。 诸如 ChatGPT、Claude 之类的聊天对话式产品，相对来说操作简单、易用，但也只停留在 Chatbot 的形态里，对话是流水的，任务也是流水的，对话结束即终止，无法持续执行。 而像 Zapier 或 n8n 这种自动化工具，足够稳定，但配置过程极其「反人性」，需要手动配置，缺乏 AI 理解能力。 也就是说，AI 工具千千万，能力各有所长，也有所短，却没有同时满足 「既能理解你，又能替你长期稳定、持续做事」 的产品。 更不要说，再进一步，让普通人也能用的，不需要写代码、不需要配置工具、不需要反复调试的同时，还能够理解你的需求，并持续、稳定执行任务的系统级产品。 其实对于前一个诉求来说，业界已经开始在做了，也涉及到当下 AI 工程领域的一个核心命题： Agent Harness（驯化）。 Agent Harness 是从 2026 年年初开始，就在硅谷技术圈大火的 AI 工程化范式，它的目的 不是为了提升模型基础智力，而是通过构建一套工程化的约束系统，将不可预测的模型「驯化」为稳定、可控的生产工具。 就像博主「宝玉」所言，「Harness」直接释义是「马具」，套在马身上、让人能控制马匹方向和力量的那套装备，用在 AI 编程的语境里就是，「AI Agent 就像一匹动力十足但不太守规矩的马，而 Harness 就是那套让它既能跑得快、又不会跑偏的缰绳和马鞍。」 简单来说， Agent Harness 解决的不是「AI 够不够聪明」的问题，而是「AI 编排好的任务，如何像传统软件一样稳定运行」的问题。 而 CREAO 做的事情则是把这套原本只有硅谷架构师才能折腾明白的事情，简化为普通用户也能掌控的系统能力，不用写代码、不用配工具、不用反复调试，直接「拿来即用」，填补了日益强大的 AI Agent 与普通用户之间的「真空地带」： 一个既能理解自然语言，又能真正持久执行任务的「消费级产品」。 从 AI 工程视角来看，CREAO 其实就是补足 Agent Harness 在用户侧的缺位。 CREAO 重新定义「AI Agent」的消费级入口 为了更容易理解，其实可以把 CREAO 做的事情想象为 「把 OpenClaw 级别的 Agent 执行力，装进 ChatGPT 级别的使用体验里」。 原本只是一次性对话，现在可以变成一个可持续运行的系统。 下面就以前文所说的电商运营场景为例，来看看 CREAO 具体是如何做的。 对于用户而言，你只需要用自然语言描述一下任务：「每周一早上 9 点，扫描 3 个竞品网站的价格变动，记录到 Google Sheets，如果波动超过 10% 就在 Slack 通知我。」 到这里，用户的工作就结束了。接下来，CREAO 会自动完成一整套过程： 理解意图、 自动编写执行代码，它不是直接去执行任务，而是先「写」出一个执行该任务的程序； 连接工具，通过内置的接口， 一键打通 Gmail、Google Sheets、Slack、飞书、小红书、百度等 300 + 平台； 实时执行任务，用户可以看着它完成整个流程； 保存为 Agent，一键锁定为可复用的 Agent； 定时运行，按设定的时间表自动执行，不再需要 AI 参与，确定性执行。 可以看到，相较于「有想法 → 写代码 → 调接口 → 部署」的传统做法，CREAO 是将整个系统构建的过程隐藏起来了，只需要「有想法 → 自然语言描述 → 系统生成」即可完成。 而且，描述一次你想要什么后，CREAO 会将整个工作流程锁定为一个可复用、永久运行的 Agent，按时间表自动执行。 也就是说， 这个 Agent 并不会随着聊天窗口的关闭、对话结束而消失，而是会按照设定持续运行。 这里的底层认知差异在于， AI 仅负责逻辑的定义与编排，一旦执行路径静态化，系统即具",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "research",
+      "wechat",
+      "chinese"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T00:00:00"
+  },
+  {
+    "id": "rss-机器之心-69d7e6f3ddc4",
+    "source": "机器之心",
+    "source_type": "wechat",
+    "title": "读代码前先跑5个「Git命令」？方法火了，网友却吵起来了",
+    "url": "https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651026681&idx=2&sn=d7136c1e324c0ace45b0a5239b47401c",
+    "original_content": "新手读README，高手看Git？",
+    "raw_text": "机器之心 2026-04-09 11:59 北京 新手读README，高手看Git？ 机器之心编辑部 问大家一个问题：当你接触一个陌生的代码库时，第一步是做什么？ 相信大多数人的做法是，打开 README，从目录开始，一行一行往下读。但现在，一些工程师开始采用一种完全不同的方法： 在看代码之前，先看 Git。 最近，一篇名为「在阅读任何代码之前，我会运行的 Git 命令」的文章引发网友热议，文中提出一个看似简单却颇具颠覆性的观点： 代码只是结果，Git 才是过程。 如何理解？ 作者 Ally Piechowski 认为，对于一个新的代码库，打开终端，运行一组 Git 命令，在查看任何文件之前，「提交历史」就能给出一幅关于这个项目的「诊断图」：是谁构建了它、问题集中在哪些地方、团队是自信满满地交付，还是在雷区边缘小心试探…… 因此，Ally Piechowski 建议，在读代码之前，可以先运行这五个 Git 命令： 一、哪些地方改动最多 通过这一 Git 命令，可以查看过去一年中改动最多的 20 个文件，排在最前面的那个文件，几乎总是别人会提前提醒那一个：「哦对，就是那个文件，没人敢动它。」 当然，高频改动并不一定意味着代码不好，有时只是开发活跃，但如果一个文件改动频繁，同时又没人愿意接手，那可能就是最明确的「代码拖累」信号。这里的每一次修改，往往都是「旧补丁上再打补丁」。一个小改动的影响范围难以预测。团队在做估算时会刻意加 buffer，因为他们知道这块代码「会反抗」。 2005 年微软研究院的一项研究发现，基于「变更频率」（churn）的指标，比单纯的复杂度指标更能预测缺陷。往往一个同时「高 churn + 高 bug」的文件，就是最大的风险点。 二、谁在写这些代码？ 查看按提交数量排序的所有贡献者，如果一个人贡献了 60% 以上，那就可能是「关键人依赖」（bus factor），而如果这个人已经在六个月前离开了，那就是危机。 另外在尾部，比如有 30 个贡献者，但过去一年只有 3 个活跃。这说明，构建这个系统的人，并不是现在在维护它的人。 还需要注意的是：如果团队使用 squash merge（压缩合并），作者信息会被压缩。这种情况下，结果反映的是「谁合并了代码」，而不是「谁写了代码」。因此在下结论前，最好先了解团队的合并策略。 三、Bug 都集中在哪？ 这一命令的结构与 churn 分析类似，但只筛选包含 Bug 关键词的提交。将这个列表与前面的 churn 热点做对比，两个列表都出现的文件，就是最高风险代码：它们不断出问题、不断被修补，但从未被彻底解决。 但同时，这也依赖于提交信息的规范程度，如果团队每次都写「update stuff」，那几乎得不到有效信息。不过即便是粗略的 Bug 分布图，也比完全没有要强。 四、项目是在加速，还是在停滞？ 这一命令可以查看整个仓库历史中，每个月的提交数量。如果节奏稳定，则说明项目是健康的；如果某个月提交量突然减半，通常意味着有人离开了；如果 6 到 12 个月呈下降趋势，说明团队正在失去动能；如果是周期性高峰 + 低谷，说明团队是「集中发版」，而不是持续交付。 五、团队有多频繁在「救火」？ 这一命令是查看「回滚」（revert）与「热修复」（hotfix）的频率。一年内偶尔几次是正常的，但如果每隔几周就有一次「回滚」，说明团队并不信任自己的发布流程，而这通常意味着更深层的问题：测试不可靠、缺乏预发布环境（staging），或者部署流程让「回滚」变得困难。 如果结果为零，也是一种信号：要么系统非常稳定，要么团队根本不写清晰的提交信息。 危机模式是很容易识别的：要么存在，要么不存在。 在文章的最后，作者表示，这五个 Git 命令只需要几分钟时间，但却能让你知道：应该先读哪些代码，以及阅读时要重点关注什么，从而让你在一开始就有策略地理解代码库，而非在其中盲目游走。 其实，从作者的分享来看，这几个 Git 命令，改变了传统对代码库的理解方式，提供了一种新的视角， 看到的不再只是「现在的代码长什么样」，而是「现在的代码为何会变成这样」。 与此同时，这种新颖的视角在 Hacker News 上并没有被完全接受，大家热议： 这，真的靠谱吗？ 有网友认为， Git 数据并不总是可靠，Commit Message 也会很水。 他表示，「如果团队有规范的提交信息，这些方法才有用。」但现实中，无论大公司还是中小企业，提交记录往往混乱，清一色的「Changes」、随意 merge、莫名 revert，还有一些人，明明团队约定用 rebase，却还是会提交 merge commit。 所以，他认为，「这一套方法主要只在中大型开源项目中才真正有用 —— 那些有清晰的 CONTRIBUTING.md/ README.md，以及明确的提交规范和合并流程的项目。」 还有网友认为，这种方法是在过度解读 Git 数据，Git 分析并不总是等于真相，很容易误导判断。 他结合自己的亲身经历分析，有时候开发者提交次数多，也许只是因为他们本身能力不行。当然，他也表示，这并不是说提交次数多就等于开发者不好。只是想提醒大家，如果把这些 Git 命令的结果当成事实本身，就有可能看不到全貌。 「如果有人跑完这些命令后跑来跟我说：「我发现某某是提交最多的人，但他 X 个月前离职了，我们该怎么办？？？」我可能要很努力才能忍住不笑……」 此外，还有一个争议点在于， 高 churn 是否等于高风险？ 网友认为，在测试中接触最多的文件往往也是最无关紧要的文件，比如依赖文件（package.json）、lock file、CI 配置，以及一些自动生成文件等，这些文件会频繁改动，但并不代表复杂。 因此，更准确的做法是，将 churn 结合复杂度来看。 那么你呢，你是如何看代码库的？或者觉得这种方法是否有启发，欢迎大家评论区留言、交流！ 参考链接： https://piechowski.io/post/git-commands-before-reading-code/ https://news.ycombinator.com/item?id=47687273 © THE END 转载请联系本公众号获得授权 投稿或寻求报道：liyazhou@jiqizhixin.com 跳转微信打开",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "research",
+      "wechat",
+      "chinese"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T00:00:00"
+  },
+  {
+    "id": "rss-机器之心-f1b9f7178db0",
+    "source": "机器之心",
+    "source_type": "wechat",
+    "title": "清华发布AutoSOTA：一周刷新105个顶会SOTA，推动AI科研回归创新本质",
+    "url": "https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651026681&idx=3&sn=9deeb5041a5a89a45d52bcc26b5bd734",
+    "original_content": "端到端AI科研自动化。",
+    "raw_text": "机器之心 2026-04-09 11:59 北京 端到端AI科研自动化。 在人工智能研究中，许多研究者将大量时间投入到为那 1% 的性能提升反复调参与实验迭代之中。 一个越来越值得重视的问题是：人类科学家最宝贵的直觉与创造力，是否正被困在无止境的「增量式优化」中？ SOTA（State-of-the-Art，当前最佳水平的 AI 模型）长期被视为衡量研究价值的「金标准」。 当一篇学术论文刷新 SOTA 时，人们看到的，往往只是结果的跃升。但在结果背后，真正支撑起一次次「当前最佳」的，往往不是某一个瞬间的灵感，而是此后持续数月甚至数年的高强度实验迭代、参数调整与工程优化。 以 Transformer 架构的发展为例。自 2017 年问世以来，全球科研人员围绕这一架构投入了大量人力与算力，不断提出新变体、设计新模块、优化训练策略，才最终将其在通用语言理解评测集 GLUE 上的性能从约 75% 提升到 90% 以上。 Transformer 架构在 GLUE 评测集上的性能爬升 问题在于，这些优化工作虽然重要，却并不总是最值得由人类科学家重点投入的那一部分。 如果最优秀的科研人才被长期绑定在重复性的性能优化中，那么那些更具原创性、更需要长期思考的问题，谁来持续投入？ AutoSOTA 让 AI 科研自动化走向端到端闭环 正是在这样的背景下，在近期召开的中关村论坛上，清华大学与北京中关村学院联合发布研究成果 —— AutoSOTA 。 目前， AutoSOTA项目已发布预印本论文 。 论文地址： https://arxiv.org/abs/2604.05550 AutoSOTA 面向端到端的 AI 科研自动化，致力于通过科研智能体加速高强度、重复性的实验迭代与优化过程，将研究者从持续的性能打磨中解放出来。 AutoSOTA 研究问题框架 不同于现有的代码优化框架，AutoSOTA 并不是对单一实验环节的局部加速。它将 AI 智能体的赋能边界进一步延伸到实验准备、实验执行等底层繁琐任务，以及研究思路生成等顶层构思环节，旨在实现 从已有 SOTA 到新 SOTA、从现有代码仓库到新代码仓库的端到端 AI 科研自动化 。 AutoSOTA 端到端 AI 科研自动化系统 AutoSOTA 采用 多智能体协作框架 ，借鉴人类算法研究中的分工流程与协作逻辑，使不同科研智能体能够围绕同一目标开展协同设计、实验执行、结果分析与方案迭代。 与此同时，AutoSOTA 配备了完善的 工具库（Toolkit）与技能集（Skill Set） ，不仅能够处理实验运行中的复杂状况，还能够完成文献调研、思路生成、方案设计等高层次任务，从而在顶层规划与底层执行之间形成闭环。 这意味着，AutoSOTA 所追求的并不只是「把实验跑得更快」，而是真正推动 AI 科研自动化从单点辅助走向系统化、持续化、智能化的科研协作过程。 一周时间，发现 105 个性能显著提升的 SOTA 模型 在为期一周的实验中，AutoSOTA 以前一年 AI 顶会论文中的优秀成果为基础，自动 发现了 105 个性能显著提升的模型方案 。其中，超过 60% 的模型具有新颖的结构设计，平均性能提升接近 10%。 基于 AutoSOTA的大规模SOTA AI模型发现 项目地址： https://tsinghua-fib-lab.github.io/AutoSOTA/ 这组结果的意义在于，AutoSOTA 并非只是沿着既有路径进行简单搜索，也不局限于参数组合层面的穷举式优化。它在优化性能的同时，展现出一定程度的结构创新能力，能够在已有研究基础上继续挖掘新的设计空间，发现兼具性能提升与结构新颖性的模型方案。 AutoSOTA 的意义，不止于「再提几分」 AutoSOTA 的意义，不仅在于获得了一批新的 SOTA 结果，更在于它启发人类科学家重新审视科研创新的本质： SOTA 性能的刷新，是否等同于重要的科学突破？ AutoSOTA 启示我们进一步思考：如何将人类科学家最宝贵的注意力，从重复性的实验迭代中重新释放出来，回归到更具原创性、也更需要长期判断与创造力的研究问题上？ 一种可能的人智协作模式是：由科研智能体系统承担大量重复性、密集型、长周期的优化过程，由人类科学家聚焦于提出问题、定义方向、识别机会与构想机制。在这一意义上，AutoSOTA 更像是一种面向科研流程的「创造力放大器」。 它并不是要替代科学家的原创性，而是要把原创性从低效、重复的实验劳动中解放出来。 AutoSOTA启发的人智协同科研范式 真正重要的，不是让研究者永远停留在「把已有模型再推高一点」的循环里，而是让他们有更多机会去面对那些尚未被定义、尚未被解释、也尚未被系统探索的问题。 AutoSOTA 正在朝这一方向迈出关键一步。它不仅展示了科研智能体在 AI 研究自动化中的巨大潜力，也让我们看到，当「性能优化」这项沉重工作逐步被智能体接管之后，科学研究有机会真正回到它最珍贵的起点 —— 提出大胆的问题，探索未知的方向，追求不可替代的原创性突破 。 项目网站： https://tsinghua-fib-lab.github.io/AutoSOTA/ © THE END 转载请联系本公众号获得授权 投稿或寻求报道：liyazhou@jiqizhixin.com 跳转微信打开",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "research",
+      "wechat",
+      "chinese"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T00:00:00"
+  },
+  {
+    "id": "rss-虎嗅-adb20c08dc35",
+    "source": "虎嗅",
+    "source_type": "wechat",
+    "title": "手机不好卖，电脑还在涨",
+    "url": "https://www.huxiu.com/article/4849656.html?f=rss",
+    "original_content": "本文来自微信公众号： 定焦One ，作者：金玙璠，编辑：魏佳，头图来自：AI生成 今年Q1，电脑、手机这两个已经进入存量时代的消费电子市场，出现了截然不同的走向。 4月8日IDC公布的数据显示，2026年Q1，全球PC出货量约6560万台，同比增长2.5%；同期Omdia给出了3.2%的增速，对应约6480万台出货。两家机构的数字略有差异，但结论一致：PC市场在开年又涨了一把。 经历了2022年至2024年的下行周期后，PC市场已经连续多个季度保持增长，增速从2025年Q2的6.5%，涨到Q3的9.4%，Q4则接近10%。 不过，今年初这轮“回暖”并不是平均分配的。按照IDC和Omdia的统计，联想、戴尔的增速都远高于大盘，苹果维持了增长，惠普则成了前五里唯一下滑的那一个。 PC市场在连涨，手机的日子却越来越难，渠道库存、价格压力、换机周期这些老问题被频繁提起。IDC报告显示，2026年Q1全球智能手机出货量约2.9亿部，同比下降6.8%。更严峻的是，IDC将2026年全年出货预期大幅下调至约11亿部，同比下滑约13%。这个数字是近十年来最大跌幅。 PC和手机，都是消费电子的核心品类，",
+    "raw_text": "本文来自微信公众号： 定焦One ，作者：金玙璠，编辑：魏佳，头图来自：AI生成 今年Q1，电脑、手机这两个已经进入存量时代的消费电子市场，出现了截然不同的走向。 4月8日IDC公布的数据显示，2026年Q1，全球PC出货量约6560万台，同比增长2.5%；同期Omdia给出了3.2%的增速，对应约6480万台出货。两家机构的数字略有差异，但结论一致：PC市场在开年又涨了一把。 经历了2022年至2024年的下行周期后，PC市场已经连续多个季度保持增长，增速从2025年Q2的6.5%，涨到Q3的9.4%，Q4则接近10%。 不过，今年初这轮“回暖”并不是平均分配的。按照IDC和Omdia的统计，联想、戴尔的增速都远高于大盘，苹果维持了增长，惠普则成了前五里唯一下滑的那一个。 PC市场在连涨，手机的日子却越来越难，渠道库存、价格压力、换机周期这些老问题被频繁提起。IDC报告显示，2026年Q1全球智能手机出货量约2.9亿部，同比下降6.8%。更严峻的是，IDC将2026年全年出货预期大幅下调至约11亿部，同比下滑约13%。这个数字是近十年来最大跌幅。 PC和手机，都是消费电子的核心品类，都面临着同样的上游成本压力，为什么走势截然相反？这次PC的小幅增长究竟是怎么来的？各大PC厂商正在打什么牌？ 一、备货、换机、新品，撑起了PC的Q1 要回答这个问题，得先了解PC在过去几个季度连续增长的背景。 2025年Q3，全球PC市场的增速已经不低，“有‘低基数’加‘集中换机’的因素”，据PC从业者李泽分析，一方面，疫情期间透支的换机需求，导致此前基数较低，另一方面，Windows 10停止支持的时间表，迫使不少机构集中更新设备。 到了Q4，厂商和渠道为锁定存储的产能和成本，提前下单锁货，把原本该在2026年上半年释放的一部分需求，压到了年底。这推高了2025年底的出货量，自然也挤占了今年Q1的空间。 在这样的背景下，2026年Q1还能有2%–3%的增速，就值得分析了。 首要因素是渠道备货。 2025年下半年以来的全球AI数据中心建设潮，让三星、SK海力士、美光等存储巨头嗅到了利润更高的HBM （高带宽内存） 商机，开始将先进产能大规模转向AI专用内存生产。供给端收缩，需求端旺盛，导致存储芯片价格飙升。 Omdia数据显示，主流PC的DRAM （运行内存芯片） 与存储器物料成本，从2025Q1到2026年Q2，累计上涨了122–237美元。Omdia首席分析师叶茂盛在Q1数据发布时表示，Q1的内存和存储成本属于温和增长，预计从Q2开始有更大幅度上涨。 面对这种“一天一个价”的情况，厂商和渠道都想在价格还没完全涨上去之前多备货、加速发货。到了2026年Q1，这种“防御性囤货”仍在继续。 这意味着，部分出货其实是为后续季度的销售“垫库存”，Q1数据里夹杂了渠道备货的成分，并不能完全解释为终端需求大幅度回暖。 第二个因素，是处于Windows 10换机潮的末期。 微软于2025年10月正式停止对Windows 10的支持，运行旧系统的设备不再接收安全更新。对企业IT部门而言，这意味着合规风险和安全漏洞。所以从2025年Q3开始，全球企业端就在加速换机，截至今年Q1，Windows 10仍有超过四分之一的用户没有完成迁移。这部分用户，尤其是企业用户，在今年Q1继续换机，贡献了相当一部分出货量。 这一点在区域市场中能找到依据。Omdia的区域数据显示，EMEA （欧洲、中东及非洲） Q1出货增速达7.4%，亚太4.3%，两个地区仍有比较强的换机需求。 第三个因素是厂商集中的新品发布。 今年春季，主流厂商联想、惠普、戴尔、华硕，集中更新了一轮新品，带本地AI加速单元的机型的价格继续下探，客观上刺激了部分消费端需求。 综合来看，Q1的增长，是渠道商赶在涨价前备货、企业端因Windows停服换机、消费端赶在价格更高前入手的结果。也正因为这一部分需求被提前透支，机构在公布Q1数据的同时，把2026年全年PC出货预期下调到了同比下滑11.3%。 放到整个消费电子来看，PC的节奏和智能手机并不一样。手机既没有Windows换代这样的限制，也缺乏足够大的企业和教育订单托底，于是，面对同样的内存危机，PC能多撑一两季，手机则更早进入下滑周期。 二、联想躺赢、惠普承压、苹果保守 PC市场这一季Q1 2%–3%的增长，并没有平均落在头部厂商身上。 联想和戴尔，依靠供应链、商用和中小企业客户“吃肉”；惠普在消费端遇到压力，说明这轮供给和成本冲击，对面向大众市场的品牌更不友好；苹果定价权最强，却也无法脱离这轮周期的影响；二线厂商试图靠细分人群和场景把自己拉出纯性价比赛道。 在这一轮反弹里，联想依然是受益最多的玩家，2026年Q1出货1650万台左右，同比增长9%，全球市占超过25%。 这背后，一方面是联想有更强的供应链能力。长期跟踪硬件行业的从业者陈静表示，联想在全球范围内的供应链控制能力，领先多数厂商，在内存、存储涨价和局部缺货的时候，能更早锁定产能和价格。 另一方面是，联想更早把重心放在企业和商用市场，通过“设备+服务+解决方案”的模式，去接住Windows换代和本地算力的需求。 IDC对中国市场的研究显示，2025年以来，中小企业和专业工作站的PC需求连续几个季度同比增速超过30%，工程设计、视频剪辑、本地AI推理这些场景拉动了高端机型的出货。这块市场对售价的敏感度更低，对稳定性的要求更高。联想提前把资源集中到这些客户身上。 相比之下，全球第二的惠普则明显承压。 2025年，惠普过得不算差：它吃到了Windows 10换机的红利，2025年Q4出货还有两位数增长。但2026年Q1出货量 （1210万台） 同比下滑4.9%，市占回落到19%左右。 在李泽看来，惠普高度依赖欧美尤其是美洲市场C端消费市场。这类用户“不急着换机”，惠普自身成本转嫁能力又有限，销量压力自然更大。IDC数据显示，美洲是2026年Q1唯一一个整体出货负增长的市场。 图源/IDC 更关键的是打法节奏。李泽补充道，过去两年，联想在AI PC和混合AI的路线明确，戴尔在企业侧的整套方案也很清晰，惠普则处在CEO过渡期，短期靠成本削减顶着，长期战略在外界看来比较模糊，“当企业都在算账的时候，这一点很容易被投资者和大客户放大”。 排名第三的戴尔，这季的表现有点意外。 戴尔从2025年Q2的同比下滑3%，一路到Q4同比上涨18%，2026年Q1还维持了7.8%的增长 （出货约1030万台） ，份额重新回到接近16%。这样的走势说明，戴尔不是单纯跟着大盘回暖。 李泽分析，底层还是戴尔作为一个“老派PC厂商”的基本盘在起作用，它是供应链里的大买家，有能力把成本往下传导，所以能在2025年底以后，对部分企业客户和高端机型上调价格。 在此基础上，戴尔这一轮更明显的变化是产品结构。2025年之后，它不再只依赖传统商用大客户，而是重点推高配轻薄本、创作者本和移动工作站等。这类机型既承接企业和专业用户预算，又能覆盖“本地算力、AI应用、内容生产”的需求，本质上是在把增长放在高单价和高性能产品上。 排名第四的苹果，在这轮“AI PC浪潮”里打法偏保守，更多是把算力和本地能力塞进既有产品线",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "business",
+      "wechat",
+      "chinese"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T09:55:00"
+  },
+  {
+    "id": "rss-虎嗅-b3475ce56d4b",
+    "source": "虎嗅",
+    "source_type": "wechat",
+    "title": "9系厮杀正酣：蔚来ES9凭什么抢增程的饭碗",
+    "url": "https://www.huxiu.com/article/4849307.html?f=rss",
+    "original_content": "出品|虎嗅汽车组 作者|杨杰 头图|蔚来官方 2026年的中国高端SUV市场，正在上演一场“天王山之战”。 从问界M9以累计超28万台的交付量稳坐钓鱼台，到理想新一代L9 Livis携55.98万元预售价登场，再到4月9日蔚来ES9正式登场，为这场“9系”混战再添一员猛将。 当所有人都把目光投向尺寸参数和配置清单时，一个更深层的分歧正在浮出水面：2026年的高端SUV“9系”战场，早已不是尺寸、算力或沙发彩电的比拼，而是底层能源逻辑的分水岭之战。 回首过往，当增程用“油箱”兜底了用户的长途焦虑，换来了销量规模之际；蔚来也在用“换电站”下注一个极致也更昂贵的未来。 本期《车圈脉动》Vol.33，我们也将探讨，在高端SUV的终局之战中，究竟是增程车用“油箱”带来的销量规模更安全，还是“换电”构筑的利润模型更长久？ 增程系的“护城河” 毋庸置疑的是，“油箱”是过去三年中国新能源高端SUV市场最成功的“心理按摩师”。 乘联会统计数据显示，理想L9曾在2023年以11.4万的销量领跑细分市场，而问界M9的上险量，更是一度超越宝马X5、X7及奔驰GLE、GLS等传统豪华车型，成为高端增程系列的新代",
+    "raw_text": "出品|虎嗅汽车组 作者|杨杰 头图|蔚来官方 2026年的中国高端SUV市场，正在上演一场“天王山之战”。 从问界M9以累计超28万台的交付量稳坐钓鱼台，到理想新一代L9 Livis携55.98万元预售价登场，再到4月9日蔚来ES9正式登场，为这场“9系”混战再添一员猛将。 当所有人都把目光投向尺寸参数和配置清单时，一个更深层的分歧正在浮出水面：2026年的高端SUV“9系”战场，早已不是尺寸、算力或沙发彩电的比拼，而是底层能源逻辑的分水岭之战。 回首过往，当增程用“油箱”兜底了用户的长途焦虑，换来了销量规模之际；蔚来也在用“换电站”下注一个极致也更昂贵的未来。 本期《车圈脉动》Vol.33，我们也将探讨，在高端SUV的终局之战中，究竟是增程车用“油箱”带来的销量规模更安全，还是“换电”构筑的利润模型更长久？ 增程系的“护城河” 毋庸置疑的是，“油箱”是过去三年中国新能源高端SUV市场最成功的“心理按摩师”。 乘联会统计数据显示，理想L9曾在2023年以11.4万的销量领跑细分市场，而问界M9的上险量，更是一度超越宝马X5、X7及奔驰GLE、GLS等传统豪华车型，成为高端增程系列的新代表。 事实上，理想L9与问界M9曾经的成功，本质上是一种用户妥协主义的胜利。它们精准地洞察了高端用户“既要电动车的智能体验，又要燃油车的补能自由”的心理，用一块不大的电池和一个“增程器”，构建了一个完美的“零焦虑”叙事。 如果说，零焦虑是增程产品的立足之本，那么规模化效应，便是增程路线更深的护城河。 过去几年，理想和问界凭借巨大的销量，已经在供应链上形成了成本优势。一个1.5T的增程器成本远低于一套100度的大电池。更低的成本意味着更具攻击性的定价，或更高的利润空间，从而反哺研发与销售网络。 但聚焦2025年市场表现，可以清晰看到，增程系产品正在经历挑战，同样以理想L9为例，其2025年累计销量约为4.5万辆，同比下滑约47%。压力之下，理想将全新一代L9 Livis推至品牌发展的核心位置，旨在冲击60万级的旗舰车型市场，被视作理想“全村的希望”。 2025年新能源细分市场销量表现，数据来源：乘联会；虎嗅制图 更进一步看，增程路线的“规模护城河”也在面临结构性挑战。统计数据显示，2025年，国内增程式乘用车销量同比增长仅6%，增速较2024年的约70%的增速下跌明显，创下2021年以来增速新低。 此外，2025年内新上市的增程车数量超过30款，而2024年同期仅为19款；但增程车单车型平均销量增量却从2024年的近3万辆，降至今年的仅约9000辆。这意味着越来越多玩家涌入同一赛道，但单款车型能分到的蛋糕却越来越小。 在此背景之下，蔚来带着ES9杀入这片由增程车定义规则的红海。其试图用一套产品与定价的组合拳证明：换电，才是高端市场利润更长的坡。 蔚来的“利润赌局” 面对增程产品的规模优势，蔚来给出的答案是：用基建密度，换取体验升维。 在虎嗅看来，蔚来赌的是，其“3分钟换电”的效率逼近甚至超越加油，那么换电就不再是充电的备选，而是对“补能”的重构。 这是一个典型的“先难后易”的利润模型。 前期，蔚来的换电站是巨大的成本中心，建站、运维、囤积电池包，每一分投入都在侵蚀利润，这也是资本市场长期对蔚来模式持保留态度的根本原因。不过，一旦后期网络成型，换电模式或将拥有增程无法比拟的结构性利润优势。 图源：蔚来官方 一方面，用户无需为电池衰减负责，且可以按需灵活升级电池包，这本身就是一个高毛利的增值服务。另一方面，BaaS模式大幅降低了用户的购车门槛，同时将电池这个最大的成本波动项从整车中剥离，让整车毛利率更健康。同时，成规模的换电站本身就是分布式储能节点，未来在虚拟电厂、电网调峰等领域具备可观的商业想象力。 所以，这场战争的本质是，增程用“油箱”换取了当下的销量规模，是当下商业现实的最优解，它证明了理解用户的力量。而蔚来在用“换电”赌一个更长久、更具弹性的利润模型。 要将这条路走到终点，前提是蔚来的财务叙事能够支持其走到那一天，要知道蔚来换电站单站综合投入高达200-300万元，其2026年还要再建1000座换电站，仅此一项就需要接近30亿的现金投入。 当然，要理解蔚来的野心，还要看懂ES9的产品与定价策略。 当下，蔚来ES9已经开启预售，共计发布行政豪华版、行政签名版以及地平线特别版三款新车，预售价分别为52.8万元、58.8万元和65.8万元，采用BaaS电池租用方式购买，预售价下探至42万元。 从中我们可以看到，这款新车不是一辆简单的“9系旗舰”，还是一台为“换电模式”量身定制的商业机器，BaaS则是其中关键一环。10.8万元的差价，不是简单的“电池成本”，而是蔚来为ES9构建的结构性竞争壁垒。 图源：蔚来官方 对消费者而言，42万元的购车门槛，直接将ES9拉入了理想L8甚至L7的价格腹地。用更低的首购成本，获得一辆尺寸、配置全面超越L9的旗舰SUV，这是BaaS带来的降维打击能力。 在产品力层面，蔚来ES9更是拿出了蔚来十一年体系创新的全部家底。尺寸上全面超越ES8，已是蔚来品牌尺寸最大的车型。技术上，其搭载了全域900V高压架构，搭载的“天行智能底盘”集成中国首个量产交付的线控转向、后轮转向，以及全球唯一量产的“电液集成式全主动悬架”技术于一身。 智能座舱层面，ES9前排搭载15.6英寸3K AMOLED悬浮中控屏与48英寸10K分辨率Skyline天际线屏幕，二排配备两块16英寸3.3K分辨率行政屏，内置SkyOS·天枢整车全域操作系统，匹配三颗激光雷达和自研5nm神玑NX9031智驾芯片将参数配置直接拉满。 值得一提的是，蔚来ES9提供了两种座椅布局，且交付时间错开：聚焦商务场合的6座中岛座椅布局版，5月底率先交付；更加偏重家庭场合的7座通道布局版，则在7月底开启交付。 这显然是蔚来的一次“心智卡位”，其希望首批用户和KOL晒出的照片，是ES9“豪华、私密、有排面”的一面，而非“实用、顾家”的一面。毕竟在高端市场，情绪价值比工具价值更重要。 图源：虎嗅拍摄 不过，纵然售价颇具竞争力，蔚来ES9同样面临一系列挑战。 首先就是，在50万级SUV市场，增程车叙事已占据用户心智，ES9试图用纯电换电路线撕开缺口，本质上是对市场规则的又一次挑战。 其次，群狼环伺，“9系”五强争霸格局已定。理想全新L9蓄势二季度，问界M9改款谍照刷屏网络，极氪9X已数月蝉联50万级SUV销冠，未来两个月，多款“9”字头旗舰SUV将密集交锋。尤其值得警注意的是问界M9，2026款新车在尺寸、智驾、三电等方面迎来升级，增程版还首次标配800V高压平台，CLTC纯电续航最高可达400km，增程车型曾经的最后一块短板正在被快速补齐。 当然，最重要的挑战，还是旗舰定价或将拉低蔚来品牌高端化形象的难题。 横向对比，问界M9增程版46.98万元起、极氪9X 46.59万元起、理想L9顶配版更是上探至55.98万元，ES9以42万元的BaaS门槛切入，比问界M9低了近5万元，比极氪9X低了超4万元，虽然形成了显著的价格优势。但毋庸置疑的是，蔚来自身的定价策略在整体下沉，2025年上市的全新ES8整车购买价已降至40.68万元，BaaS后门槛探至29",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "business",
+      "wechat",
+      "chinese"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T09:53:00"
+  },
+  {
+    "id": "rss-虎嗅-ae0ae3c0eb32",
+    "source": "虎嗅",
+    "source_type": "wechat",
+    "title": "王传福答了17年的试卷，“9系”只是答案之一",
+    "url": "https://www.huxiu.com/article/4849573.html?f=rss",
+    "original_content": "出品|虎嗅汽车组 作者|王亚骏 头图|视觉中国 2009年，王传福春风得意。 这是他带领比亚迪进军汽车业务的第六个年头，也是比亚迪登顶自主品牌销量冠军的一年。此前，比亚迪汽车年销量增速均突破100%。这一年，王传福本人还以350亿元的财富首次登上中国首富宝座。 &amp;nbsp; 在此背景下，王传福决定带领比亚迪向更高的目标迈进。 &amp;nbsp; 是年7月，硬顶敞篷轿跑比亚迪S8上市，最高售价20.68万元，这款车是比亚迪冲击高端的首次尝试。彼时，国内自主品牌的车型售价普遍在10万元以下。 比亚迪S8；图源：视觉中国 此次尝试并未取得成功。据多家权威媒体报道，比亚迪S8的总销量不足200辆。 &amp;nbsp; 在此后的17年里，比亚迪通过打造腾势、方程豹和仰望三大高端品牌，进行了多次仰攻。这些行动虽取得了一定的成绩，但比亚迪仍未能彻底摆脱“低价”、“性价比”等标签。 今年，比亚迪又亮出了自己的高端化新武器：汉9系和唐9系。 1月10日，在比亚迪举办的“朝前·第二届王朝盛典”活动中，汉唐“9系”正式亮相；图源：“朝前·第二届王朝盛典”活动&amp;nbsp; 在比亚迪高管的描",
+    "raw_text": "出品|虎嗅汽车组 作者|王亚骏 头图|视觉中国 2009年，王传福春风得意。 这是他带领比亚迪进军汽车业务的第六个年头，也是比亚迪登顶自主品牌销量冠军的一年。此前，比亚迪汽车年销量增速均突破100%。这一年，王传福本人还以350亿元的财富首次登上中国首富宝座。 &amp;nbsp; 在此背景下，王传福决定带领比亚迪向更高的目标迈进。 &amp;nbsp; 是年7月，硬顶敞篷轿跑比亚迪S8上市，最高售价20.68万元，这款车是比亚迪冲击高端的首次尝试。彼时，国内自主品牌的车型售价普遍在10万元以下。 比亚迪S8；图源：视觉中国 此次尝试并未取得成功。据多家权威媒体报道，比亚迪S8的总销量不足200辆。 &amp;nbsp; 在此后的17年里，比亚迪通过打造腾势、方程豹和仰望三大高端品牌，进行了多次仰攻。这些行动虽取得了一定的成绩，但比亚迪仍未能彻底摆脱“低价”、“性价比”等标签。 今年，比亚迪又亮出了自己的高端化新武器：汉9系和唐9系。 1月10日，在比亚迪举办的“朝前·第二届王朝盛典”活动中，汉唐“9系”正式亮相；图源：“朝前·第二届王朝盛典”活动&amp;nbsp; 在比亚迪高管的描述中，这两款D级旗舰车型将搭载“最新的新能源技术、顶尖的辅助驾驶系统”。市场普遍判断，汉9系的起售价在25万元以上，而唐9系的起售价则在30万元以上。 &amp;nbsp; 比亚迪对这两款车的重视程度，从营销和宣发方面便可见一斑。以往，比亚迪的车型营销往往更强调技术参数。但对于汉9系和唐9系，则会更强调场景化叙事和与用户的互动。 &amp;nbsp; 比亚迪方面对虎嗅汽车表示，公司为汉唐“9系”举办了命名征集活动，已收到超10万条用户有关建议，“我们希望与用户建立起情感连接，让比亚迪的品牌形象不再只是‘技术直男’，而是有温度、有情怀的伙伴。” &amp;nbsp; 目前，唐9系已确定将于本月开启预售，下个月正式上市。汉9系也确定将于今年上半年上市。 &amp;nbsp; 这两款车，将与新款问界M9、新款理想L9一起，参与一场国内汽车行业史无前例的仰攻：“9系”之战（ 《车企盯上有钱人，“9系”大战一触即发》 ）。 &amp;nbsp; 那么，在比亚迪的高端化战略中，汉唐“9系”的核心任务是什么？未来，比亚迪是否还会在高端市场继续加码？“9系”车型，又能否成为比亚迪高端化的答案？本期《车圈脉动》Vol.32，虎嗅汽车来解析一番。 核心任务：让老用户买更贵的比亚迪 虽然，从目前公布的配置上看，汉9系和唐9系这两款D级车，将直接对标奔驰S级、宝马X7和奥迪Q7等BBA车型。 &amp;nbsp; 但虎嗅汽车认为，比亚迪王朝系列“9系”更实在的的核心使命，是承接存量客户的换购升级需求。 &amp;nbsp; 毕竟，以低价车型为销量支柱的比亚迪，目前在品牌力方面尚难与BBA比肩，更遑论让用户支付品牌溢价。 比亚迪主品牌与BBA单车平均售价的差异，是它们品牌力差距的直观体现；数据来源：杰兰路 &amp;nbsp; 腾易研究院院长兼首席分析师周丽君告诉虎嗅汽车，他在行业研究中发现这样一个现象，5～8年前购买比亚迪王朝系列车型的车主，将在2026年迎来一批集中的换购升级需求。 &amp;nbsp; 同时，5～8年的时间，足以让一位年轻人成家立业，升级为车市的家庭客户，去换购更大、更贵的汽车。而唐9系这种支持城市NOA功能、后排配置了娱乐系统的7座SUV，也恰好能契合家庭客户的需求。 唐9系；图源：比亚迪官方微博 能否利用9系把握住此次换购潮，一定程度上事关比亚迪能否守护住当下的龙头地位。 &amp;nbsp; 2025年，比亚迪年销量达到了460.2万辆，卫冕全球新能源汽车销冠，但相较于前几年，增速已经出现明显放缓。 而在今年，中国车市正式步入微增长时代，存量博弈愈发激烈，即使是少部分存量客户的流失，也有可能导致王座易位。今年一季度，吉利已经以不足9000辆的微弱优势超越了比亚迪，成为了国内季度销冠。 &amp;nbsp; 同时，利用这两款售价较高的车型承接住换购潮，也有利于提升比亚迪尽快回笼研发资金、提升自身盈利能力。 近年来，比亚迪研发费用不断攀升；数据来源：比亚迪财报 “9系”远非高端化答案 &amp;nbsp; 汉9系和唐9系上市后，比亚迪还有可能继续在“9系”之战中加码。 &amp;nbsp; 今年，比亚迪的高端子品牌方程豹已经确定将上市两款新车型，社媒上普遍猜测，这两款车分别是名为镁9的轿车，和一款名为钛9的大型硬派越野SUV，但比亚迪官方尚未公布这两款车的正式名称。 &amp;nbsp; 比亚迪在品牌高端化的路上不止一场9系的仗要打。 &amp;nbsp; 此前，比亚迪已经在高端市场取得过数场胜利。如汉L、唐L和腾势N9都曾月销过万；比亚迪旗下高端子品牌方程豹在去年更是实现了超300%的销量增幅。但这些成绩并未能帮助比亚迪真正树立起高端形象。 &amp;nbsp; 原因也不难理解，比亚迪最缺的不是高端车型，而是高端心智。在过去五年里，比亚迪在中低价市场的表现实在过于“生猛”，为市场留下的“高性价比”印象也实在过于深刻。 在20万元以下的市场，比亚迪市场份额居首，几乎是第二名和第三名之和；数据来源：国泰海通证券 而几款“9系”车型的成功，显然无法撼动这种根深蒂固的认知。 &amp;nbsp; 比亚迪庞大的体量和布局，决定了高端化是一个系统性大工程。 &amp;nbsp; 自2010年起，公司用了约16年的时间，成功构建起一个覆盖了6万至180万元价格带、包含了55款车型的产品矩阵。 数据来源：易车网 在这个产品矩阵之中，包含了太多需要补课的高端化课程。比如在智能化能力的提升、海外高端市场开拓和品牌建设等等。 &amp;nbsp; 所以，“9系”车型是比亚迪高端化的重要棋子，而并非惟一答案。它们局部的成功，无法让比亚迪整体的高端化战略一蹴而就。这场进入了17年的高端化考试，比亚迪还得继续。",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "business",
+      "wechat",
+      "chinese"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T09:49:55"
+  },
+  {
+    "id": "rss-paperagent-57ccdc647c62",
+    "source": "PaperAgent",
+    "source_type": "wechat",
+    "title": "读博2年后，靠给自己换导师狂发5篇论文！",
+    "url": "https://mp.weixin.qq.com/s?__biz=Mzk0MTYzMzMxMA==&mid=2247506295&idx=1&sn=cdc2f47cc2a89da67f62ae6b5261fdc7",
+    "original_content": "",
+    "raw_text": "PaperAgent 2026-04-10 11:37 湖北 刚读博那一年，最扎心的不是实验做不出、论文写不出，而是 遇到躺平导师 ：既不指导写作，也不帮忙推荐发表，任由你在科研里自生自灭。 看着隔壁实验室的天使导师，从选题到投稿全程护航，发刊顺风顺水；自己却只能摸着石头过河，一篇论文改了大半年， 投稿全靠盲投，屡屡被拒 ，毕业遥遥无期。中等导师靠不住，躺平导师指望不上，天赋和导师资源是先天定局，难道只能认命延毕？ 读博第2年，我彻底想通了：与其等导师开恩，不如主动给自己 找个靠谱的“外挂” 。不靠导师的资源，靠专业的人做专业的事！从选题、实验设计、论文写作到投稿返修，全流程有人带、有人推，把每一份数据都变成可发表的成果，3篇自投打底，1 篇精准推荐，照样能攒够毕业成果，顺利上岸。 别再被不靠谱的导师拖垮了！我们追梦AI汇聚全员博士导师、行业大牛，覆盖各种学科，从 选题立项、框架搭建、内容精修到投稿选刊、返修应对 ，全程 1v1 陪跑，帮你补齐导师缺位的所有环节，哪怕遇到躺平导师，也能靠专业助力高效发刊，稳稳拿捏毕业主动权，彻底告别科研内耗！ 怎样快速完成一篇能够中稿二区以上的论文？ 扫码获取SCI提效写作课 免费赠送SCI大礼包👇 （ 仅用于学术咨询 ，商务合作勿扰 ） 0 1 我们是谁？ 追梦逐光 AI 是专注于 AI + 专业学科领域的科研支持机构，由 上海交通大学技术转化企业 重磅推出，扎根 上海人工智能高地——徐汇西岸模速空间 。能入驻这里，本身就印证了我们团队过硬的 AI 技术背景和专业研发实力；企业信息同步接入市场监管局系统，全程公开透明，靠谱可溯。 我们还是 上海交通大学苏州人工智能研究院、上海交通大学郑州研究院 等单位的官方合作方， 顶会BIBM 2025冠名合作伙伴 ，学术资源与平台实力双重加持，为你的科研之路保驾护航。 02 优质资源 拿到手软 想发论文，但导师指导有限，感觉孤军奋战、无从下手？ 追梦AI 携手 2000+ 各领域顶尖博士导师深度合作 ，精准匹配你的研究方向、投稿需求与学术目标。导师团队100% 博士学历， 来自QS前100高校 ，包括牛津大学、加州大学、约翰・霍普金斯大学、清华、北大、复旦等世界一流学府，更有 顶会顶刊审稿人、workshop、期刊主编、国家重点实验室研究员、大厂算法工程师 等合作，每一位均具备多年论文发表与科研指导经验，实力看得见、背景可溯源。 部分导师展示（左右滑动查看） 所有导师都是发了数篇高水平论文的顶级高手！近年来个人论文产出量在10篇以上。 扫码预约科研大牛1v1meeting 作为 模速空间官方合作机构 ，我们还为学员提供 独家资源 ：免费获取模速空间官方直播课程、优先进入合作实验室实训、直通AI企业内部实习岗位，让你的科研起点直接赢在起跑线。 模速空间官方直播课程 系免费向学员提供的教学资源，不单独售卖，不涉及任何商业收费。 03 论文路上 保驾护航 文献不会找？创新点想不出？实验总卡Bug？论文写不出来？我们帮你砍掉 90%无用功 ，让发表速度翻倍。 6V1个性化辅导体系：1位论文导师 + 1位代码老师 + 学术规划师 + 24小时班班 + 追梦创始人导师 + OpenPaper大模型管家，从选题 → 文献 → 实验 → 写作 → 润色 → 选刊 → 投稿 → 返修，全流程一站式护航。 追梦AI 16周标准化发表冲刺路线 第1周：确定研究方向，筛选高创新课题 第2–3周：完成文献综述，搭建完整论文框架 第4–12周：实验设计、数据收集、代码实现 第12-13周：论文初稿撰写与逻辑优化 第14–15周：期刊精准匹配 + 文章深度润色 第15–16周：投稿 + 返修指导，冲刺录 用 ！ 扫码预约科研大牛1v1meeting 对于科研基础比较好的学员，我们最快能在 10个课时以内 辅导出成果，从原来半年以上的投稿周期，缩短为2-3个月以内，节约科研人50%左右的时间，提升发paper的效率。 有位博三学员，想在 顺利毕业 的基础上多发一些顶会顶刊来提高自己能力，但自己导师散养，在实验阶段总遇bug，找到了 追梦AI James导师 指导，4个月顺利完成一篇论文， 中稿SCI一区 ，最后也成功进入大厂获得高薪工作。 有一位大一学员， 保研申博目标明确 ，在 追梦AI 李老师 专业指导下，潜心科研、高效突破，成功斩获 CCF A 类会议 ACM MM录用 ，学术起点遥遥领先，为未来深造奠定坚实基础。 04 硕果频出 学术进阶 我们提供 全覆盖式学术支持 ：SCI/SSCI期刊论文、CCF会议论文、硕博毕业论文、课题设计、项目申报， 一站式全部搞定，以结果为导向，全程陪伴，直到录用。 本科学生韦同学专注于流体力学研究，在Matrix老师的指导下，论文顺利录取 SCI一区 ，科研实力得到权威认可； 硕士研究生王同学专注于大模型方向研究，本科生叶同学在Ward老师的辅导下，成功录取 CVPR findings ，在大模型相关研究方向上取得亮眼成果… 在 追梦AI 资深导师的专业指导下，大批学员陆续成功录用论文。已有众多同学斩获 SCI 一二区期刊、IOT、ISPP 等优质成果。 扫码查看更多学员案例🔍 05 科研大礼包免费领！ 除此之 外， 立即特别赠送四大科研硬核福利： ✅特别赠送1： 《申博咨询规划一次》 ✅ 特别赠送2： 《1000+热门idea合集》 ✅ 特别赠送3： 《往期大牛热点分析直播课》 ✅ 特别赠送4： 《全方向顶会顶刊论文合集》 无论你是否报名， 扫码添加科研顾问 ，即可免费领取 261G 超全科研学习资料包！ 扫码免费领取科研大礼包 🎁 （ 仅用于学术咨询 ，商务合作勿扰 ） 我们坚决不做流水线式的论文代写，始终坚信科研的核心价值在于你的研究本身。我们要做的，是用 专业的工具和科学的方法 ，帮你更高效地 完成研究、打磨稿件 ，把论文 投到最匹配的地方 ，一路护航直到成功录用。 跳转微信打开",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "papers",
+      "agent",
+      "wechat",
+      "chinese"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T00:00:00"
+  },
+  {
+    "id": "rss-paperagent-32b3b862be67",
+    "source": "PaperAgent",
+    "source_type": "wechat",
+    "title": "写顶会LaTeX论文的门槛彻底被谷歌PaperOrchestra打下来了~",
+    "url": "https://mp.weixin.qq.com/s?__biz=Mzk0MTYzMzMxMA==&mid=2247506295&idx=2&sn=313420aedd244cbe1ad53ebc8713aa7b",
+    "original_content": "实验日志自动转化为符合顶会（CVPR/ICLR..）要求的LaTeX投稿论文，包括深度文献综述和自动生成的可视化图表",
+    "raw_text": "PaperAgent 2026-04-10 11:37 湖北 实验日志自动转化为符合顶会（CVPR/ICLR..）要求的LaTeX投稿论文，包括深度文献综述和自动生成的可视化图表 大家好，我是PaperAgent，不是Agent！ 做科研小伙伴的工具来了，将非结构化的研究素材（想 法摘要、实验日志 ）自动转化为符合 顶会 （CVPR/ICLR..）要求的 LaTeX投稿论文 ，包括深度文献综述和自动生成的可视化图表（下图为得到的ICLR论文） 谷歌PaperOrchestra 是一个 多智能体协作框架 ，在人工评估中相比现有基线实现了 50-68%的绝对胜率提升 。 随着大语言模型(LLM)的快速发展，AI正从&#34;辅助工具&#34;向&#34;科学发现的主动参与者&#34;转变。然而，现有的自动化研究框架在论文写作环节存在三大核心问题： 耦合性过强 ， 文献综述浅薄 ， 可视化受限 。 PaperOrchestra与现有AI写作系统的对比。PaperOrchestra是唯一同时满足： 端到端LaTeX生成、解耦独立运行、支持非结构化输入、针对性文献综述生成、概念图生成的系统。 核心方法：5个Agent协作架构 PaperOrchestra采用 多智能体协作 范式，将论文写作分解为五个专业化步骤： PaperOrchestra框架概览。五个专业化智能体系统性地解析非结构化输入，合成图表与文献，编译完整初稿，并通过迭代优化生成投稿就绪的PDF。 五大智能体详解 关键设计决策 ： Step 2与Step 3并行执行 ：文献搜索与图表生成互不阻塞，提升效率 两阶段文献验证 ：先并发发现候选论文，再顺序通过Semantic Scholar API验证真实性 严格的时间截断 ：CVPR论文截止2024年11月，ICLR截止2024年10月，防止&#34;穿越引用&#34; 评测基准：PaperWritingBench 为系统评估AI论文写作能力，Google构建了 首个标准化基准测试 ： (Figure 5): CVPR 2025数据集统计，包括引用分布、原始材料字数分布、图表数量分布。 基准构成 属性 CVPR 2025 ICLR 2025 论文数量 100篇 100篇 平均引用数 58.52 ± 17.55 59.18 ± 20.01 P0引用(必须引用) 14.86 ± 6.72 13.65 ± 5.57 P1引用(建议引用) 43.66 ± 13.43 45.53 ± 17.36 图表数量 5.20图 + 4.20表 9.19图 + 8.13表 实验日志字数 1,530词 2,387词 实验结果：全面超越现有基线 1. 人工评估：Side-by-Side对比 作者招募11名AI研究人员，对40篇论文进行180对盲评对比： Figure 7: 人工Side-by-Side评估结果热力图。绿色表示PaperOrchestra胜率，红色表示基线胜率。PaperOrchestra在所有AI基线上取得显著优势。 评估维度 vs Single Agent vs AI Scientist-v2 vs Human (GT) 文献综述质量 +67.6% +50.0% -37.8% (仍有差距) 整体论文质量 +37.8% +13.9% -75.7% (人类仍是上限) 关键发现 ： 在 Prior Work Coverage（先前工作覆盖度） 上，PaperOrchestra对Single Agent取得**78.4%**的绝对胜率 在 Critical Analysis &amp; Synthesis（批判分析与综合） 上，显著优于所有AI基线 与人类撰写的Ground Truth相比，在 Scientific Depth 和 Evidence Presentation 上仍有提升空间 2. 自动评估：Citation F1与文献质量 Figure 2: 自动化Side-by-Side评估结果。使用Gemini-3.1-Pro和GPT-5作为评判模型，PaperOrchestra在文献综述和整体论文质量上均显著优于基线。 指标 PaperOrchestra AI Scientist-v2 Single Agent 平均引用数 47.98 14.18 11.46 P0 Recall 63.58% 37.46% 28.16% P1 Recall 15.85% 3.30% 3.27% Overall F1 29.65% 17.26% 11.46% 关键洞察 ： 基线系统（Single Agent/AI Scientist-v2）引用数极少（9-14个），虽P0 Recall看似不低，但 P1 Recall接近0 ，说明它们只引用最明显的基线，缺乏对广泛学术背景的探索 PaperOrchestra生成 45-48个引用 ，接近人类论文的~59个，证明其能主动探索更广阔的学术图景 Table 4: 文献综述质量评分（0-100分制，Gemini-3.1-Pro评判）。PaperOrchestra在Citation Practices和Critical Analysis维度上显著领先。 3. 技术质量评估：模拟同行评审 使用AI Scientist-v2 Reviewer和ScholarPeer两个自动化评审框架： 评审框架 会议 PaperOrchestra AI Scientist-v2 Single Agent Human (GT) AI Scientist-v2 CVPR 5.12 / 48%接受率 4.22 / 22% 4.60 / 33% 5.95 / 71% AI Scientist-v2 ICLR 4.10 / 22%接受率 3.42 / 11% 3.22 / 4% 5.81 / 63% ScholarPeer CVPR 6.93 / 84%接受率 6.30 / 70% 6.35 / 71% 7.07 / 86% ScholarPeer ICLR 7.03 / 81%接受率 6.04 / 64% 6.35 / 72% 7.48 / 94% 核心结论 ：在ScholarPeer（更贴近专家流程的评审系统）下，PaperOrchestra的模拟接受率（84%/81%）已非常接近人类论文（86%/94%）。 https://arxiv.org/pdf/2604.05018 https://yiwen-song.github.io/paper_orchestra/ PaperOrchestra: A Multi-Agent Framework for Automated AI Research Paper Writing 动手设计AI Agents：（编排、记忆、插件、workflow、协作） 分享两篇Claude Skills最新论文，有3个核心结论 会学习的龙虾，才是好龙虾：OpenClaw-RL 2026，做Agentic AI，绕不开这两篇开年综述 每天一篇大模型Paper来锻炼我们的思维~已经读到这了，不妨点个👍、❤️、↗️三连，加个星标⭐，不迷路哦~ 跳转微信打开",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "papers",
+      "agent",
+      "wechat",
+      "chinese"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T00:00:00"
+  },
+  {
+    "id": "rss-paperagent-c86732c4c144",
+    "source": "PaperAgent",
+    "source_type": "wechat",
+    "title": "开源免费，大模型书！449页PDF！",
+    "url": "https://mp.weixin.qq.com/s?__biz=Mzk0MTYzMzMxMA==&mid=2247506266&idx=1&sn=97489614710d0bca22963e8de614ef14",
+    "original_content": "",
+    "raw_text": "PaperAgent 2026-04-09 11:38 湖北 还有人没看过这本书嘛？ 从基础的自然语言处理技术走向大模型的深度学习与实际应用， 全网爆火，449页 ！ 近年来，大模型取得了令人瞩 目的 进展，给基于统计方法的自然语言处理技术带来了前所未有的进步。 本书以 自然语言处理中 语言模型 为主线，涵盖了从基础理论到高级应用的全方位内容。深入讲解大模型的架构设计、训练策略及其应用评估方法， 还包含了 针对大模型本地开发与实际应用开发的实战指南和代码示例。现在！立刻！马上免费拥有它！👇👇 扫码免费领书+ 送 《大模型系列课》 +600篇LLM论文 扫码下方二维码添加微信 免费领取 回复关键字： NLP 即可获得 书+论文 和 视频课 网盘下载地址 （如遇添加频繁请等会再试） 如需其他AI相关资料， 请扫码获 取~ ▲ 目录▲ 大模型写作提示词&amp;系列课 当前大模型正朝着更大规模、更专业、更安全的方向稳步前行，与此同时， 如何让大模型更好地集成到各类业务流程与实际应用中，也成为行业探索的重点。 而在大模型的众多实用场景中，精准的 写作提示词 正是解锁大模型写作潜力的关键。 为了让大家更好地抓住这一趋势、掌握实用技巧，我们不仅联合 顶刊审稿人 打造了 七天入门LLM大模型系列课 ，原价 899元 ，现 0元领取！ 更特意整理了 大模型写作提示词 专属资料。免费送给每一位想要深耕大模型应用的朋友！ 扫码领取资料 长按识别下方二维码，添加微信 免费领取 回复： 大模型方向 扫码解锁课程 （如遇添加频繁请等会再试） 如需其他AI相关资料， 请扫码获 取~ 如需其他AI相关资料， 请扫码获 取~ 大模型前沿idea 写论文最怕的就是没有创新点， “ 创新点 ” 是一篇论文的灵魂，而因为这个理由拒稿意味着整篇论文的价值被否定。 很多同学陷入了写论文困境，其实很大原因是因为 创新点不足， 特别是已经很多创新不足被拒稿的同学，要花费大量的时间来重新立意，然后从头开始去重建自己的论文逻辑。 我整理了 QS前50名大佬的部分现成顶会大模型idea ，很多现有大模型idea可冲一区，让大佬直接带飞！拼手速！手慢无！ ▼下拉滑动查看更多大模型顶会前沿idea▼ 1V1 与大佬meeting 免费咨询，速抢你的 顶会idea 做科研发paper最重要的还是找到适合自己的 创新点， 然而你好不容易找到了idea，却不知 如何跑代码、写的东西结构混乱、实验数据也出错、导师放养中 . .. 那么我建议你可以找到我们！ 沃恩智慧 限时优惠，助力您的科研梦想！（郑重声明：不dai写！高效带写！） 现在联系 小沃 ，即可得到以下福利+ 1000G资源包！ 论文规划咨询/匹配大牛导师指导 国内外申硕申博指导 1000+热门idea合集 各方向热点解析系列课 3000+各大顶会顶刊论文合集 无论您是首次发文，还是希望提升科研水平，我们都将为您 量身打造 最适合的学习路径，助您快速掌握各类计算机SCI论文以及sci论文的核心技能，轻松发表高质量SCI论文！ 免费咨询科研论文规划 沃恩智慧 是沃尔得教育旗下专注学术背景提升品牌， 专注于为 大学生、 硕士、博士 提供专业的学术辅导服务，让每一位学员都能拥有更理想的未来。 作为成立 21年 教辅老机构，沃恩智慧与每位学员签订正式 服务协议+保密协议， 专注为有科研发文需求的学员提供可靠的一站式服务，从根源上解决大家对付费后服务缩水的顾虑， 把中稿保障服务标准白纸黑字落地。 不止是交付论文初稿就结束服务，针对指定服务方案的学员，哪怕遇到拒稿、退稿情况，也会提供免费修改优化的维护服务， 一路跟进直至论文成功中稿 ，真正帮你省心又高效地实现科研目标。 沃恩智慧导师 来自 QS前100/国内TOP10高校/审稿人/教授/博导/大厂高级算法工程师， 个人科研成绩突出，近年来个人论文产出量在10篇以上、活跃在科研一线。除了个人科研成绩突出，更有丰富的论文辅导经验，不仅自己能写出顶会一作，更指导出多名发独立一作论文的学生，满足各个方向的辅导需求。 跳转微信打开",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "papers",
+      "agent",
+      "wechat",
+      "chinese"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T00:00:00"
+  },
+  {
+    "id": "rss-深思圈-ae2917026356",
+    "source": "深思圈",
+    "source_type": "wechat",
+    "title": "a16z最新观点：当 AI Agent 成为软件的主要用户",
+    "url": "https://mp.weixin.qq.com/s?__biz=Mzg3NDc2MjQxMg==&mid=2247494172&idx=1&sn=29b144a9ca7c7ccfc9d02952bd240a15",
+    "original_content": "当一家公司有100个员工却有1000个AI agent在工作时，软件该如何构建？Box CEO与硅谷顶级投资人的这场对话揭示：我们正面临比想象中更剧烈的范式转变。从token预算到权限管理，从API优先到系统记录重构，企业软件的底层逻辑正在",
+    "raw_text": "深思圈 2026-04-10 10:10 浙江 当一家公司有100个员工却有1000个AI agent在工作时，软件该如何构建？Box CEO与硅谷顶级投资人的这场对话揭示：我们正面临比想象中更剧烈的范式转变。从token预算到权限管理，从API优先到系统记录重构，企业软件的底层逻辑正在 你有没有想过，我们构建软件的整套逻辑可能要被彻底推翻了？过去几十年，所有软件都是为人类设计的。我们花无数精力优化用户界面，让按钮更好找，让菜单更清晰，让操作流程更顺畅。但如果未来软件的主要用户不再是人类，而是 AI agent 呢？如果一家公司有一百个人，却有一千个 AI agent 在工作，那我们还应该把重心放在优化人类界面上吗？ 最近在 a16z 的一期播客中，Erik Torenberg、Steven Sinofsky 和 Martin Casado 与 Box CEO Aaron Levie 展开了一场极其深刻的对话。他们讨论的核心问题是：当 AI agent 成为企业软件的主要用户时，整个软件行业将如何重构。这场对话让我意识到，我们正站在一个比大多数人想象中更加剧烈的范式转变的边缘。这不是简单地给现有软件加个 AI 功能，而是从根本上重新思考软件应该如何构建、如何交互、如何被使用。 软件必须为 AI Agent 而建 Aaron Levie 在对话中提出了一个让我深思的观点：如果你有一百倍甚至一千倍于员工数量的 AI agent，那么你的软件就必须为 agent 而建。这不是选择题，而是必然趋势。Box 现在花在思考 agent 界面上的时间，已经和思考人类界面的时间一样多了。这个转变的速度之快，超出了我的预期。 这背后的逻辑其实很简单。当 AI agent 成为主要的软件使用者时，它们会通过 API、CLI（命令行界面）或者 MCP（Model Context Protocol，模型上下文协议）这样的协议来与系统交互。而目前看起来最有效的范式是什么呢？给一个会写代码的 agent 提供对 SaaS 工具的访问权限，让它能够访问你的知识工作流程和上下文信息。这样的 agent 不仅能够读取和理解信息，更关键的是它能够通过编写代码或使用 API 的方式来完成任务。 Anthropic 的 Claude Code、OpenAI 正在开发的超级应用，以及 Perplexity 的计算功能，都在朝着这个方向发展。我认为这种能力的复合增长才刚刚开始。想象一下，一个 agent 不仅能理解你说&#34;帮我分析上季度销售数据&#34;，还能自己写代码去提取数据、进行分析、生成可视化图表，甚至主动发现你没有注意到的趋势。这种能力的边界在哪里？我现在还看不清楚。 但这里有个关键问题让我一直在思考：人们经常说要&#34;为 agent 构建东西&#34;、&#34;向 agent 营销&#34;、&#34;拥有好的 API 和接口描述语言&#34;。Martin Casado 在对话中提出了一个我非常认同的反向观点：这种说法几乎完全错了。为什么？因为 agent 恰恰最擅长的就是找到正确的工具和后端系统。它们不会因为你的 API 文档写得漂亮就选择你，而是会基于成本参数、系统可靠性、数据持久性等实质性因素来做出选择。Agent 拥有的是人类使用这些平台的集体智慧。 这个观点让我恍然大悟。作为一个行业，我们太过关注界面和接口，却忽略了本质：我们需要构建更好的系统本身。Agent 会推动我们回归技术本质，而不是营销包装。过去，企业软件的采购决策往往受到销售能力、品牌影响力、甚至是商务宴请的影响。但在 agent 主导的世界里，这些因素的权重会大幅下降。Agent 会基于技术优劣做出更加理性的选择。这对那些真正专注于技术本身的公司来说，是巨大的机遇。 算法思维的门槛：不是每个人都能指挥 AI Agent 对话中有一段让我印象深刻的讨论：关于非技术人员使用 AI agent 的现实挑战。Steven Sinofsky 提出了一个尖锐的观点：算法思维对绝大多数有工作的人来说真的非常非常难。如果你让任何一个人为他们需要完成的任务画一个流程图，他们很可能会失败。 这个观察击中了要害。想象一下，在一个有 50 个营销人员的团队中，负责一条庞大产品线的营销工作，可能只有一个人真正理解并能够文档化整个工作流程。如果你把这些协作工具或 AI agent 放到普通员工面前，让他们创建自动化流程，他们解释清楚&#34;要做什么&#34;的能力其实非常有限。 Aaron Levie 对此的回应是：这只是工作向上移动了一个台阶，你需要学习一套新技能。这和历史上的每次技术变革没什么不同。他举了一个很有意思的例子：Anthropic 的增长营销人员，一个人使用 Claude Code 完成了原本需要五到十个人的工作。这个例子之所以有意义，是因为这个人本身就是系统思维者，已经足够懂技术才能做到这一点。 但问题的关键在于：如果你想象每个岗位旁边都有一个无限的工程师资源池，可以自动化这个人想要的任何工作，那这个岗位在未来会变成什么样？我觉得这是一个值得深思的问题。也许 agent 会越来越擅长引导用户朝着系统化思维的方向发展，但至少在现阶段，能够有效使用这些工具的仍然是少数人。 Steven Sinofsky 分享了一个精彩的类比。他的表姐从精英商学院毕业后，加入第一份工作时正好赶上了计算时代的开端。她在研究生院没用过电子表格，第一年工作时被告知可以雇用任意数量的实习生，于是她管理了一整个房间的&#34;agent&#34;——那些大学生来做所有的电子表格工作。但神奇的是，在接下来的几年里，她和她的同事们都变成了电子表格专家。整个抽象层向上移动了。以前那些实习生用计算器和 HP 金融计算器做的工作，现在她自己用电子表格做，而且可以做 30 次迭代而不是只有 2 次。 这个故事让我意识到，我们现在处在 AI agent 发展的类似阶段。你会觉得需要 50 个小型 agent，由一个超级聪明的人来协调它们。但很快，这些东西会相互折叠，最终变成一个技能集合——一段代码，我们称之为 agent——它懂营销。你可以问它营销相关的问题，然后下一步，让它去执行任务。 我认为关键的转折点是：现在你必须是个火箭科学家级别的人才能创建 42 个 agent 并让它们全部运转起来。但这种&#34;火箭科学&#34;的门槛很快就会消失，然后一大块领域专业知识会回归到领域专家手中。这和电子表格的演化路径几乎一模一样。 企业的恐惧：失控的集成和权限噩梦 对话中有个让我触动很深的场景。Aaron Levie 说他最近在一屋子的 CFO 和 CIO 面前表达了类似的乐观观点，结果六个人跑过来说：&#34;你疯了，你在我这里失去了所有可信度。&#34;为什么？因为他说集成问题会变得容易很多。 这些企业 IT 负责人的担忧不是没有道理。他们害怕的不仅是 agent 本身，更是人类被授权做集成这件事。当你让员工可以创建新的集成时，你基本上就是在说&#34;请来破坏我的核心系统&#34;。想象一下，有人在系统 27 和系统 38 之间创建了一个新的 API 连接，如果只是用来生成报告，那个",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "thinking",
+      "wechat",
+      "chinese"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T00:00:00"
+  },
+  {
+    "id": "rss-深思圈-95cbb11d0e22",
+    "source": "深思圈",
+    "source_type": "wechat",
+    "title": "为什么垂直AI应用正在改写游戏规则",
+    "url": "https://mp.weixin.qq.com/s?__biz=Mzg3NDc2MjQxMg==&mid=2247494167&idx=1&sn=ce7cbf466d4b39b9cb1ec8bf917f2531",
+    "original_content": "通用AI会统治一切？OpenEvidence以120亿美元估值证明：垂直AI应用才是真正赢家。他们聚合了美国50%医生，靠的不是更强大的模型，而是建立了信任、创造了\"暗物质\"、锁定了独家内容。在高专业度领域，深度护城河胜过通用能力。",
+    "raw_text": "深思圈 2026-04-09 12:49 浙江 通用AI会统治一切？OpenEvidence以120亿美元估值证明：垂直AI应用才是真正赢家。他们聚合了美国50%医生，靠的不是更强大的模型，而是建立了信任、创造了\"暗物质\"、锁定了独家内容。在高专业度领域，深度护城河胜过通用能力。 你是否也相信，OpenAI 那一万亿美元的估值意味着通用 AI 会吞噬整个经济？如果你这么想，那可能需要重新审视一下了。最近读到 Nikhil Davar 和 Byrne Hobart 的一篇深度分析，彻底改变了我对 AI 应用竞争格局的看法。他们提出了一个极具颠覆性的观点：真正能够捕获巨大经济价值的，可能不是那些试图成为&#34;万能路由器&#34;的通用 AI 平台，而是那些深耕在特定垂直领域、位于经济活动边缘的专业化 AI 应用。 而他们用来证明这个观点的案例更是让人震惊：OpenEvidence，一家医疗领域的 AI 公司，最近以 120 亿美元的估值完成融资，比去年 10 月的 60 亿美元估值翻了一倍。更惊人的是，他们的广告收入年化已经达到 1.5 亿美元，并且以每月 30% 的速度增长，毛利率高达 90%。一家成立不到几年的公司，已经聚合了美国 50% 以上的医生，每天使用时长平均 14 分钟。上一次有技术产品被医生群体如此快速采用，还是 Google 出现的时候。 这个案例让我开始深入思考一个问题：在 AI 时代，通用平台和垂直应用之间的竞争格局，到底会如何演变？为什么一个专注医疗领域的 AI 应用，能够在 OpenAI、Anthropic 和 Google 这些巨头的包围下，不仅生存下来，还能建立起几乎不可撼动的护城河？ PS：我的出海新书已经上架了，我特意申请了公众号读者专属的优惠链接，可以享受半价折扣，欢迎感兴趣的朋友购买。 同时我还特地建立了实名制的读者群，我会在群里定期解答一些问题和开展线上线下活动，欢迎购书的朋友实名制入群，大家一块交流，共同出海！ Router 的本质是什么 Davar 和 Hobart 在几个月前提出了一个非常有意思的概念框架，叫做&#34;Routers, Apps, AGI&#34;。他们的核心观点是：AI chatbot（聊天机器人）的真正价值，不在于它能回答多少问题，而在于它能把查询路由到任何可以回答这些问题的工具上——可能是另一个模型，可能是第三方服务，可能是服务提供商的结账页面，也可能是需要雇佣的顾问的联系方式。本质上，这是一个 Hayekian（哈耶克式）的愿景：最大的问题是通用的信息传输。 我对这个观点的理解是：每当世界上任何地方发生变化，都会以不可预测的方式改变人们的最优行为。你需要某种系统将这些信息传递给目标接收者，同时不会用琐碎信息淹没他们。价格机制是一种优雅的解决方案，但按需智能可以在更多维度上运作。换句话说，AGI（通用人工智能）不是数据中心里的诺贝尔奖得主，而是一种超人类的协调技术，代表着经济本身的某种高保真模拟。 想象一下，如果我们都戴着 Google Glasses，或者更进一步，拥有某种脑机接口，那么 Google 独家访问这些高保真的实时传感器，就能通过组织世界上所有高熵信息来协调大量经济活动，而且是在信息创建的那一刻就开始组织。OpenAI 大约一万亿美元的估值，就是在押注 OpenAI 能够在更大的经济份额上应用这种路由过程，或者比任何其他公司更精确地做到这一点。 但我认为这个愿景有一个关键假设：通用 router（路由器）能够获得足够的传感器数据，并且能够建立足够的信任，让用户愿意通过它来完成各种任务。而 Davar 和 Hobart 的文章恰恰指出了这个假设的问题所在：有太多经济上有价值但难以识别的&#34;暗物质&#34;，是中心化的大型实验室看不到的。而那些更专注的垂直应用，已经在看到这些经济上有价值的问题，并且会在相当长一段时间内继续这样做。 OpenEvidence 如何建立不可复制的护城河 OpenEvidence 的案例之所以引人入胜，是因为它清晰地展示了垂直 edge router（边缘路由器）如何在巨头的夹缝中不仅生存，还能茁壮成长。他们的策略可以总结为三个词：信任、独家性和复合效应。 医生可能是世界上最看重资质认证的群体之一，部分原因是他们整个成年早期都在赚取一个人为稀缺的资质。一个技术取代资质、取代人类专业知识的可识别信号、取代专家机构的世界，会让医生感到非常不舒服。Davar 和 Hobart 提到了一个很生动的建议：下次你去看医生时，问问他们关于你在 Google 或 ChatGPT 上找到的某些健康建议，观察他们的面部表情和反应。我自己也试过类似的情况，医生的反应通常是介于怀疑和不屑之间。 OpenEvidence 深刻理解了这一点，并实施了一套完整的可信度策略。他们明确地与那些在开放互联网上训练的实验室进行对比定位。那些实验室的训练数据包括健康博客、社交媒体等等——任何用&#34;医生讨厌这个奇怪技巧&#34;来营销的疗法都会出现在广泛的训练数据集中。OpenEvidence 则训练了一套专门的模型集合，完全基于 3500 万份同行评审的来源，最初是从 FDA、CDC、PubMed 等公共领域材料开始的。他们的模型在训练或推理期间与公共互联网完全没有连接。 这意味着他们早期系统的幻觉风险明显低于 o1 之前的推理范式 LLM，而且产品是免费的，所以医生开始病毒式地采用它。这里有一个非常聪明的地方：那些早期采用者中，恰好有一些人是最负盛名的医学期刊编辑委员会的高级成员。这导致了下一个关键环节：OpenEvidence 能够锁定与 JAMA、NEJM、NCCN、美国医学会、所有 11 种 JAMA 专科期刊、美国家庭医师学会、美国急诊医师学院等的独家内容合作伙伴关系。 这里有一个特别有意思的细节。OpenEvidence 的 CEO Daniel Nadler 提供了一些背景信息：一些资金雄厚的 AI 公司向 NEJM 投入了大量资金，但他们拒绝了。如果 NEJM 是一家私营公司，他们可能会同意，但他们是非营利组织，所以他们拒绝了，因为马萨诸塞州医学会作为非营利组织，更关心作为非营利组织使命的神圣性和纯洁性，而不是只想获得某种快速商业合同。事实上，是 NEJM 主动联系 OpenEvidence，而不是相反：&#34;在我们的案例中，我们没有出现在他们门口。新英格兰医学杂志编辑委员会中有很多高级人物是 OpenEvidence 的重度用户，他们希望他们的内容出现在他们正在使用的东西中。&#34; 我认为这个案例揭示了一个深刻的洞察：在某些垂直领域，资质认证和信任不仅仅是营销手段，它们是产品本身的核心组成部分。通用 AI 平台无法复制这一点，因为它们的价值主张本质上是通用性和便利性，而不是在特定领域的深度专业性和可信度。 Dark Matter 的概念：无法被发现只能被创造的价值 Davar 和 Hobart 文章中最让我震撼的部分，是关于&#34;dark matter&#34;（暗物质）的讨论。这不是物理学上的暗物质，而是指那些在经济上极具价值但难以识别的上下文信息。OpenEvidence 所",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "thinking",
+      "wechat",
+      "chinese"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T00:00:00"
+  },
+  {
+    "id": "rss-深思圈-f610842e8c9e",
+    "source": "深思圈",
+    "source_type": "wechat",
+    "title": "Agent赛道的终局不是谁最聪明，而是谁让最多人拥有Agent",
+    "url": "https://mp.weixin.qq.com/s?__biz=Mzg3NDc2MjQxMg==&mid=2247494165&idx=1&sn=bd57051d9d738fd657286c4891de4454",
+    "original_content": "你有没有发现，每次让AI做同样的工作都得重新教一遍？硅谷团队CREAO给出了不同答案：不做最强AI Agent，做最易驯化的Agent。发布当天霸榜X全球热搜5小时，Google、Meta精英做出了连OpenClaw都没做到的事。",
+    "raw_text": "深思圈 2026-04-08 10:12 浙江 你有没有发现，每次让AI做同样的工作都得重新教一遍？硅谷团队CREAO给出了不同答案：不做最强AI Agent，做最易驯化的Agent。发布当天霸榜X全球热搜5小时，Google、Meta精英做出了连OpenClaw都没做到的事。 你有没有发现一个怪事：每次让AI帮你做同样的工作，你都得重新教一遍？今天让它整理数据，明天同样的任务又得从头解释一次。AI明明越来越聪明，为什么我们还在做重复劳动？ 2026年3月30日，一家硅谷AI公司CREAO的产品发布给出了不同的答案。这个产品一经发布就在X平台连续5小时霸榜全球热搜Top 3，引发了来自北美、欧洲、东南亚、拉美等地区大量科技创作者和开发者的自发讨论。我深入研究了这个产品后发现，他们做的事情和市面上所有AI Agent产品都不一样，这支来自Google、Meta等硅谷一线大厂的中美复合型团队，找到了一条被所有人忽视的路径。 当前AI Agent的真实困境 我先要说清楚一个事实：AI Agent这个赛道在2025到2026年确实火了，OpenClaw、Claude Code、Devin，还有国内的DeepSeek，这些产品让很多人第一次真正用上了AI Agent。但用上之后，新的问题来了，而且这个问题比想象中严重得多。 我自己就遇到过这样的场景。上周我让Claude Code帮我写了一个数据抓取脚本，花了大概二十分钟来回对话，调整细节，最后跑通了。这周我想用同样的逻辑抓另一个网站的数据，理论上只需要改几个参数就行，但我发现我必须重新开一个对话窗口，重新解释一遍我的需求，重新调整细节。AI不记得上次我们是怎么配合的，它只能从零开始。这种体验让我意识到，当前AI Agent面临的核心问题不是能力不够，而是每次使用都是一次性的，用完即焚。 更让我困扰的是，这些强大的AI Agent经常会&#34;为了干活找活干&#34;。我只是想让它帮我从三个网站抓取价格数据并记录到表格里，它却开始给我分析价格趋势、生成可视化图表、甚至主动提出要帮我写一份竞品分析报告。这些功能听起来很酷，但我根本不需要。AI在展示它的能力边界，而不是专注解决我的具体问题。这种泛化能力在演示的时候很震撼，但在实际使用中却带来了巨大的心智负担——我得花时间制止它做那些我不需要的事情，反复强调我只要最简单的数据抓取。 性价比也是个大问题。当你让一个通用AI Agent去执行一个简单的重复性任务时，它每次都要重新理解你的意图，重新规划执行路径，重新调用各种工具。这个过程不仅耗时，而且如果使用的是按token计费的API，成本会快速累积。我算过一笔账，如果用Claude或GPT-4来执行一个每天定时运行的简单数据同步任务，一个月下来的API调用费用可能比我直接雇个实习生手动操作还贵。这根本不合理。 我跟一些开发者朋友聊过这个问题，大家的感受都很一致：AI Agent的能力在快速进化，但可用性却在某种程度上退化了。过去我们用Zapier或n8n这样的自动化工具，虽然配置起来麻烦，但配置好之后就能稳定运行，不需要重复投入。现在有了AI Agent，配置变简单了，但每次都得重新配置。这不是进步，这是在用一种新的复杂性替换旧的复杂性。核心矛盾在于：不是普通人用不上AI Agent，而是用不稳，留不住，无法将一次成功的对话转化为可复用的自动化系统。 CREAO的&#34;驯化&#34;哲学 当我第一次看到CREAO的产品演示时，我的第一反应是：这就是我一直在找的东西。他们给这个产品起了一个很有意思的定位：Agent Harness，中文可以理解为&#34;Agent驯化&#34;。这个词很准确地描述了他们在做什么——不是让AI变得更强，而是让AI的能力可以被固化、被驯服、被普通人掌控。 CREAO的核心体验非常直接。你用自然语言描述一个工作流程，比如&#34;每周一早上9点，扫描三个竞品网站的价格变动，记录到Google Sheets，如果波动超过10%就在Slack通知我&#34;。系统会做这样几件事：理解你的意图，自动编写执行代码，连接你需要的工具（Gmail、Google Sheets、Slack、飞书等等，他们已经集成了300多个平台），然后最关键的一步——你可以把这整个流程一键保存为一个Agent，设定定时运行的时间表，之后它就会按照你设定的时间自动执行，不再需要AI参与，完全是确定性执行。 这最后一步是整个产品的灵魂。对话结束后，系统仍在运行。这句话听起来简单，但它解决的是整个行业都在回避的问题。ChatGPT、Claude这些对话式AI产品，关了窗口就什么都没了。OpenClaw、Claude Code这些开发者工具，虽然能执行复杂任务，但需要你自己部署和维护。CREAO做到的是把AI的灵活性和传统自动化工具的确定性结合在一起，让一次成功的AI对话可以转化为一个持久运行的自动化系统。 我特别欣赏他们在技术上做的取舍。很多AI Agent产品追求的是让AI更聪明、更通用、能处理更复杂的任务。CREAO选择的路径是相反的：他们要让AI生成的工作流可以脱离AI独立运行。这意味着他们需要解决代码生成的确定性问题——AI生成的代码必须足够稳定，能够在没有AI干预的情况下持续执行。他们还需要解决多工具编排的稳定性问题——当一个工作流涉及Gmail、Sheets、Slack等多个平台时，如何确保它们之间的数据传递不会出错。这些都是传统自动化工具已经解决的问题，但在AI Agent的语境下，这些问题需要重新解决，因为工作流不再是人手动配置的，而是AI根据自然语言生成的。 我自己试用了一下，真实体验确实和其他产品不一样。我用自然语言描述了一个需求：每天下午5点自动汇总我的Gmail收件箱中标记为重要的邮件，提取发件人和主题，写入一个Google Sheets表格，如果有客户邮件就在飞书群里@我。整个配置过程不到5分钟，我可以实时看到CREAO在生成代码、测试连接、验证逻辑。配置完成后，我点了一个&#34;保存为Agent&#34;的按钮，设定了每天下午5点运行，然后就不用管了。第二天下午5点，我真的在飞书群里收到了通知，打开Google Sheets一看，数据已经按照我的要求整理好了。这种体验的关键在于，我不需要每天下午4点55分打开CREAO的对话窗口，重新描述一遍我的需求。它就像一个被驯化的助手，知道自己每天该做什么，自己去做就行了。 300多个平台的原生集成也是一个重要的产品优势。这意味着大部分常见的工作流场景，CREAO都已经准备好了连接器，用户不需要自己去找API文档、配置认证、处理数据格式转换这些底层细节。你说&#34;把数据写入Google Sheets&#34;，系统就知道怎么做。你说&#34;在Slack发消息&#34;，系统也知道怎么做。这种体验的流畅度是自己写代码或者用传统自动化工具无法比拟的。我认为这正是CREAO团队对消费级产品的理解——降低配置成本，让普通人也能快速搭建自己的自动化系统。 不做最强，做最易驯化 在研究CREAO的过程中，我一直在想一个问题：为什么其他做AI Agent的公司没有选择这条路？我后来意识到，这是两种",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "thinking",
+      "wechat",
+      "chinese"
+    ],
+    "published_date": "2026-04-11",
+    "created_at": "2026-04-11T00:00:00"
+  }
+]

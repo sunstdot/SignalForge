@@ -415,101 +415,6 @@
     "processed_at": "2026-04-03 06:57:30"
   },
   {
-    "id": "rss-paul-graham-f8b4832637ce",
-    "source": "Paul Graham",
-    "source_type": "rss",
-    "subscription_id": null,
-    "title": "Superlinear Returns",
-    "url": "http://www.paulgraham.com/superlinear.html",
-    "original_content": "",
-    "raw_text": "",
-    "relevance_score": 8.0,
-    "category": [
-      "startup",
-      "philosophy"
-    ],
-    "summary": "",
-    "insights": [],
-    "created_at": "2026-04-03T14:56:38.813977",
-    "processed_at": "2026-04-03 06:57:30"
-  },
-  {
-    "id": "rss-paul-graham-ee94d981e826",
-    "source": "Paul Graham",
-    "source_type": "rss",
-    "subscription_id": null,
-    "title": "How to Do Great Work",
-    "url": "http://www.paulgraham.com/greatwork.html",
-    "original_content": "",
-    "raw_text": "",
-    "relevance_score": 8.0,
-    "category": [
-      "startup",
-      "philosophy"
-    ],
-    "summary": "",
-    "insights": [],
-    "created_at": "2026-04-03T14:56:38.814026",
-    "processed_at": "2026-04-03 06:57:30"
-  },
-  {
-    "id": "rss-paul-graham-f564864bf8e2",
-    "source": "Paul Graham",
-    "source_type": "rss",
-    "subscription_id": null,
-    "title": "How to Get New Ideas",
-    "url": "http://www.paulgraham.com/getideas.html",
-    "original_content": "",
-    "raw_text": "",
-    "relevance_score": 8.0,
-    "category": [
-      "startup",
-      "philosophy"
-    ],
-    "summary": "",
-    "insights": [],
-    "created_at": "2026-04-03T14:56:38.814039",
-    "processed_at": "2026-04-03 06:57:30"
-  },
-  {
-    "id": "rss-paul-graham-f6b2377c9073",
-    "source": "Paul Graham",
-    "source_type": "rss",
-    "subscription_id": null,
-    "title": "The Need to Read",
-    "url": "http://www.paulgraham.com/read.html",
-    "original_content": "",
-    "raw_text": "",
-    "relevance_score": 8.0,
-    "category": [
-      "startup",
-      "philosophy"
-    ],
-    "summary": "",
-    "insights": [],
-    "created_at": "2026-04-03T14:56:38.814050",
-    "processed_at": "2026-04-03 06:57:30"
-  },
-  {
-    "id": "rss-paul-graham-6bd6fdc3ef42",
-    "source": "Paul Graham",
-    "source_type": "rss",
-    "subscription_id": null,
-    "title": "What You (Want to)* Want",
-    "url": "http://www.paulgraham.com/want.html",
-    "original_content": "",
-    "raw_text": "",
-    "relevance_score": 8.0,
-    "category": [
-      "startup",
-      "philosophy"
-    ],
-    "summary": "",
-    "insights": [],
-    "created_at": "2026-04-03T14:56:38.814060",
-    "processed_at": "2026-04-03 06:57:30"
-  },
-  {
     "id": "hf-paper-a9aecd36b86c",
     "source": "HuggingFace Papers",
     "source_type": "paper",
@@ -1637,5 +1542,233 @@
     "insights": [],
     "created_at": "2026-04-03T17:56:57.807508",
     "processed_at": "2026-04-03 09:59:40"
+  },
+  {
+    "id": "atom-simon-willison-c3863277ff92",
+    "source": "Simon Willison",
+    "source_type": "rss",
+    "title": "Vulnerability Research Is Cooked",
+    "url": "https://simonwillison.net/2026/Apr/3/vulnerability-research-is-cooked/#atom-everything",
+    "original_content": "Vulnerability Research Is Cooked Thomas Ptacek's take on the sudden and enormous impact the latest frontier models are having on the field of vulnerability research. Within the next few months, coding agents will drastically alter both the practice and the economics of exploit development. Frontier model improvement won’t be a slow burn, but rather a step function. Substantial amounts of high-impact vulnerability research (maybe even most of it) will happen simply by pointing an agent at a sourc",
+    "raw_text": "Vulnerability Research Is Cooked Thomas Ptacek's take on the sudden and enormous impact the latest frontier models are having on the field of vulnerability research. Within the next few months, coding agents will drastically alter both the practice and the economics of exploit development. Frontier model improvement won’t be a slow burn, but rather a step function. Substantial amounts of high-impact vulnerability research (maybe even most of it) will happen simply by pointing an agent at a source tree and typing “find me zero days”. Why are agents so good at this? A combination of baked-in knowledge, pattern matching ability and brute force: You can't design a better problem for an LLM agent than exploitation research. Before you feed it a single token of context, a frontier LLM already encodes supernatural amounts of correlation across vast bodies of source code. Is the Linux KVM hypervisor connected to the hrtimer subsystem, workqueue , or perf_event ? The model knows. Also baked into those model weights: the complete library of documented \"bug classes\" on which all exploit development builds: stale pointers, integer mishandling, type confusion, allocator grooming, and all the known ways of promoting a wild write to a controlled 64-bit read/write in Firefox. Vulnerabilities are found by pattern-matching bug classes and constraint-solving for reachability and exploitability. Precisely the implicit search problems that LLMs are most gifted at solving. Exploit outcomes are straightforwardly testable success/failure trials. An agent never gets bored and will search forever if you tell it to. The article was partly inspired by this episode of the Security Cryptography Whatever podcast , where David Adrian, Deirdre Connolly, and Thomas interviewed Anthropic's Nicholas Carlini for 1 hour 16 minutes. I just started a new tag here for ai-security-research - it's up to 11 posts already. Tags: security , thomas-ptacek , careers , ai , generative-ai , llms , nicholas-carlini , ai-ethics , ai-security-research",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "ai",
+      "python"
+    ],
+    "created_at": "2026-04-03T23:59:08"
+  },
+  {
+    "id": "atom-simon-willison-7c45c2298fcc",
+    "source": "Simon Willison",
+    "source_type": "rss",
+    "title": "The cognitive impact of coding agents",
+    "url": "https://simonwillison.net/2026/Apr/3/cognitive-cost/#atom-everything",
+    "original_content": "A fun thing about recording a podcast with a professional like Lenny Rachitsky is that his team know how to slice the resulting video up into TikTok-sized short form vertical videos. Here's one he shared on Twitter today which ended up attracting over 1.1m views! That was 48 seconds. Our full conversation lasted 1 hour 40 minutes. Tags: ai-ethics , coding-agents , agentic-engineering , generative-ai , podcast-appearances , ai , llms , cognitive-debt",
+    "raw_text": "A fun thing about recording a podcast with a professional like Lenny Rachitsky is that his team know how to slice the resulting video up into TikTok-sized short form vertical videos. Here's one he shared on Twitter today which ended up attracting over 1.1m views! That was 48 seconds. Our full conversation lasted 1 hour 40 minutes. Tags: ai-ethics , coding-agents , agentic-engineering , generative-ai , podcast-appearances , ai , llms , cognitive-debt",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "ai",
+      "python"
+    ],
+    "created_at": "2026-04-03T23:57:04"
+  },
+  {
+    "id": "atom-simon-willison-a23449fe0e98",
+    "source": "Simon Willison",
+    "source_type": "rss",
+    "title": "Quoting Willy Tarreau",
+    "url": "https://simonwillison.net/2026/Apr/3/willy-tarreau/#atom-everything",
+    "original_content": "On the kernel security list we've seen a huge bump of reports. We were between 2 and 3 per week maybe two years ago, then reached probably 10 a week over the last year with the only difference being only AI slop, and now since the beginning of the year we're around 5-10 per day depending on the days (fridays and tuesdays seem the worst). Now most of these reports are correct, to the point that we had to bring in more maintainers to help us. And we're now seeing on a daily basis something that ne",
+    "raw_text": "On the kernel security list we've seen a huge bump of reports. We were between 2 and 3 per week maybe two years ago, then reached probably 10 a week over the last year with the only difference being only AI slop, and now since the beginning of the year we're around 5-10 per day depending on the days (fridays and tuesdays seem the worst). Now most of these reports are correct, to the point that we had to bring in more maintainers to help us. And we're now seeing on a daily basis something that never happened before: duplicate reports, or the same bug found by two different people using (possibly slightly) different tools. &mdash; Willy Tarreau , Lead Software Developer. HAPROXY Tags: security , linux , generative-ai , ai , llms , ai-security-research",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "ai",
+      "python"
+    ],
+    "created_at": "2026-04-03T21:48:22"
+  },
+  {
+    "id": "rss-gary-marcus-c86cda8b5509",
+    "source": "Gary Marcus",
+    "source_type": "rss",
+    "title": "The two wildest stories today in tech",
+    "url": "https://garymarcus.substack.com/p/the-two-wildest-stories-today-in",
+    "original_content": "Shifting goal posts and new efforts at redefining the narrative",
+    "raw_text": "You can&#8217;t make this stuff up, and, no, I am not pulling an April Fool&#8217;s prank. First, Microsoft&#8217;s Mustafa Suleyman just tried to redefine superintelligence down from AI that is smarter than the smartest humans to something a lot more mundane: AI &#8220;models capable of delivering product value for millions of enterprises&#8221;. If I am not mistaken, I guess makes cell phones and Microsoft Word &#8230; &#8220;superintelligent&#8221;. &#167; Meanwhile, OpenAI, the company that just killed Sora and postponed &#8220;erotica&#8221; so that they could focus more, bought an eighteen-month-old podcast network called TBPN for $250 million . A bunch of employees actually thought it was an April Fool&#8217;s : If it&#8217;s not an April Fool&#8217;s what is it? I have only one guess: A quarter-billion dollar desperation move: an effort to control the narrative, to distract away from the billion or so dollars they are losing each month this year , and rumors that their stock is losing favor on the secondary market . &#167; At some level the fact that these two stories broke on the same day is not coincidence. With actual AGI nowhere in sight , redefinition and spin may be all that&#8217;s left. Subscribe now",
+    "relevance_score": 8,
+    "category": [
+      "ai",
+      "ml"
+    ],
+    "created_at": "2026-04-03T02:13:25"
+  },
+  {
+    "id": "rss-maurycy-996b8f456044",
+    "source": "Maurycy",
+    "source_type": "rss",
+    "title": "Loading... [13 kB]",
+    "url": "https://maurycyz.com/misc/13kb/",
+    "original_content": "While testing my gopher client, I noticed something interesting: All downloads froze at 13 kilobytes. Sometimes this was barely noticeable, other times it would stall for a good second or so. Networks operate on small chunks of data called packets . This allows resources to be shared between computers: Instead of waiting for someone else's download to finish before loading a website, your web traffic can be sent in between the other user's packets. There's still some waiting involved, but it's o",
+    "raw_text": "While testing my gopher client, I noticed something interesting: All downloads froze at 13 kilobytes. Sometimes this was barely noticeable, other times it would stall for a good second or so. Networks operate on small chunks of data called packets . This allows resources to be shared between computers: Instead of waiting for someone else's download to finish before loading a website, your web traffic can be sent in between the other user's packets. There's still some waiting involved, but it's on the order of milliseconds instead of hours. ... but it does create a problem if you're the one doing a big download. Because each packet is routed independently, they frequently arrive out-of-order or get lost in transit: Any large file would be hopelessly corrupted. Transmission Control Protocol : The obvious way to solve the first problem is to number each packet. Even if they arrive in the wrong order, the file can be put back together correctly. /* HTML tags, keywords, commands */ h-n {color: #F27;} /* Values */ h-v {color: #B8F;} /* CSS selectors, attribute/varable names, file names */ h-s {color: #AEE;} /* Comments */ h-c {color: #777;} h-e {color: #F6F;} For example, the string \"Hello, World!\" could be sent like this: # 1 : \" Hello \" # 2 : \" , Wor \" # 3 : \" ld! \" After a trip on the internet, it gets shuffled around: # 2 : \" , Wor \" # 3 : \" ld! \" # 1 : \" Hello \" ... but can still be reassembled: \" Hello , Wor ld! \" To deal with packet loss, the receiver responds to each data packet with an acknowledgment containing the next sequence number the computer expects. Since communication is bidirectional, I'll call the computer sending data the \"server\", and the computer receiving it the \"client\": Server sends: # 1 : \" Hello \" # 2 : \" , Wor \" # 3 : \" ld! \" ... but packet #2 never arrives: Client receives and responds: # 1 : \" Hello \" -> ACK # 2 (next please.) [ nothing ] # 3 : \" ld! \" -> ACK # 2 (got # 3 , but I still need # 2 !) Got: \" Hello ..... ld! \" ... and few milliseconds later: Server receives: ACK # 2 ACK # 2 After waiting for enough time to rule out packet reordering or jitter, the server assumes that packet #2 got lost and sends it again: Server sends: # 2 : \" , Wor \" Client receives: # 2 : \" , Wor \" -> ACK # 4 (I already have # 3 ) Got: \" Hello , Wor ld! \" Now, the client has all the data, and the server knows it can safely continue or close the connection. Modern implementations also retransmit if they see enough duplicate acknowledgment numbers, which is faster then waiting for a timeout. * Technically, these examples are wrong: TCP numbers bytes, not packets. On paper, this is a great system , but in practice, it's very dangerous. If the network gets overloaded, routers are forced to drop packets. This results in systems constantly retransmitting data, creating more congestion, causing more packet loss... To avoid breaking the internet (again, this happened in 1986) , TCP adjusts it's \"congestion window\": The number of packets are sent ahe",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "ai"
+    ],
+    "created_at": "2026-04-03T00:00:00"
+  },
+  {
+    "id": "rss-the-old-new-thing-10c62c4c3e3b",
+    "source": "The Old New Thing",
+    "source_type": "rss",
+    "title": "How can I use Read­Directory­ChangesW to know when someone is copying a file out of the directory?",
+    "url": "https://devblogs.microsoft.com/oldnewthing/20260403-00/?p=112202",
+    "original_content": "File copying is not a fundamental operation, nor is it even detectable at the file system layer. The post How can I use &lt;CODE&gt;Read&amp;shy;Directory&amp;shy;ChangesW&lt;/CODE&gt; to know when someone is copying a file out of the directory? appeared first on The Old New Thing .",
+    "raw_text": "A customer was using Read­Directory­ChangesW in the hopes of receiving a notification when a file was copied. They found that when a file was copied, they received a FILE_ NOTIFY_ CHANGE_ LAST_ ACCESS , but only once an hour . And they also got that notification even for operations unrelated to file copying. Recall that Read­Directory­ChangesW and Find­First­Change­Notification are for detecting changes to information that would appear in a directory listing . Your program can perform a Find­First­File / Find­Next­File to cache a directory listing, and then use Read­Directory­ChangesW or Find­First­Change­Notification to be notified that the directory listing has changed, and you have to invalidate your cache. But there are a lot of operations that don&#8217;t affect a directory listing. For example, a program could open a file in the directory with last access time updates suppressed. (Or the volume might have last access time updates suppressed globally.) There is no change to the directory listing, so no event is signaled. Functions like Read­Directory­ChangesW and Find­First­Change­Notification functions operate at the file system level, so the fundamental operations they see are things like &#8220;read&#8221; and &#8220;write&#8221;. They don&#8217;t know why somebody is reading or writing. All they know is that it&#8217;s happening. If you are a video rental store, you can see that somebody rented a documentary about pigs. But you don&#8217;t know why they rented that movie. Maybe they&#8217;re doing a school report. Maybe they&#8217;re trying to make illegal copies of pig movies. Or maybe they simply like pigs. If you are the file system, you see that somebody opened a file for reading and read the entire contents. Maybe they are loading the file into Notepad so they can edit it. Or maybe they are copying the file. You don&#8217;t know. Related : If you let people read a file, then they can copy it . In theory, you could check, when a file is closed, whether all the write operations collectively combine to form file contents that match a collective set of read operations from another file. Or you could hash the file to see if it matches the hash of any other file.¹ But these extra steps would get expensive very quickly. Indeed, we found during user research that a common way for users to copy files is to load them into an application, and then use Save As to save a copy somewhere else. In many cases, this &#8220;copy&#8221; is not byte-for-byte identical to the original, although it is functionally identical. (For example, it might have a different value for Total editing time .) Therefore, detecting copying by comparing file hashes is not always successful.² If your goal is to detect files being &#8220;copied&#8221; (however you choose to define it), you&#8217;ll have to operate at another level. For example, you could use various data classification technologies to attach security labels to files and let the data classification software ",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "windows",
+      "programming"
+    ],
+    "created_at": "2026-04-03T14:00:00"
+  },
+  {
+    "id": "rss-ibrahim-diallo-91b742bd1f5d",
+    "source": "Ibrahim Diallo",
+    "source_type": "rss",
+    "title": "My Zip bomb strategy is not as effective as it used to be",
+    "url": "https://idiallo.com/blog/zip-bombs-are-not-as-effective-as-they-used-to-be?src=feed",
+    "original_content": "Last year, I wrote about my server setup and how I use zipbombs to mitigate attacks from rogue bots. It was an effective method that helped my blog survive for 10 years. I usually hesitate to write these types of articles, especially since it means revealing the inner workings of my own servers. This blog runs on a basic DigitalOcean droplet, a modest setup that can handle the usual traffic spike without breaking a sweat. But lately, things have started to change. My zipbomb strategy doesn't see",
+    "raw_text": "Last year, I wrote about my server setup and how I use zipbombs to mitigate attacks from rogue bots. It was an effective method that helped my blog survive for 10 years. I usually hesitate to write these types of articles, especially since it means revealing the inner workings of my own servers. This blog runs on a basic DigitalOcean droplet, a modest setup that can handle the usual traffic spike without breaking a sweat. But lately, things have started to change. My zipbomb strategy doesn't seem to be as effective as it used to be. TLDR; What I learned... and won't tell you Here is the code I shared last year : if (ipIsBlackListed() || isMalicious()) { header(\"Content-Encoding: gzip\"); header(\"Content-Length: \". filesize(ZIP_BOMB_FILE_10G)); // 10 MB readfile(ZIP_BOMB_FILE_10G); exit; } I deliberately didn't reveal what a function like isMalicious() does in the background. But that wasn't really the secret sauce bots needed to know to avoid my trap. In fact, I mentioned it casually: One more thing, a zip bomb is not foolproof. It can be easily detected and circumvented. You could partially read the content after all. But for unsophisticated bots that are blindly crawling the web disrupting servers, this is a good enough tool for protecting your server. One way to test whether my zipbomb was working was to place an abusive IP address in my blacklist and serve it a bomb. Those bots would typically access hundreds of URLs per second. But the moment they hit my trap, all requests from that IP would cease immediately. They don't wave a white flag or signal that they'll stop the abuse. They simply disappear on my end, and I imagine they crash on theirs. For a lean server like mine, serving 10 MB per request at a rate of a couple per second is manageable. But serving 10 MB per request at a rate of hundreds per second takes a serious toll. Serving large static files had already been a pain through Apache2, which is why I moved static files to a separate nginx server to reduce the load . Now, bots that ingest my bombs, detect them, and continue requesting without ever crashing, have turned my defense into a double-edged sword. Whenever there's an attack, my server becomes unresponsive, requests are dropped, and my monthly bandwidth gets eaten up. Worst of all, I'm left with a database full of spam. Thousands of fake emails in my newsletter and an overwhelmed comment section. After combing through the logs, I found a pattern and fixed the issue. AI-driven bots, or simply bots that do more than scrape or spam, are far more sophisticated than their dumber counterparts. When a request fails, they keep trying. And in doing so, I serve multiple zipbombs, and end up effectively DDoS-ing my own server. Looking at my web server settings: I run 2 instances of Apache, each with a minimum of 25 workers and a maximum of 75. Each worker consumes around 2 MB for a regular request, so I can technically handle 150 concurrent requests before the next one is queued. That's",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "programming"
+    ],
+    "created_at": "2026-04-03T12:00:00"
+  },
+  {
+    "id": "rss-john-d.-cook-26cebda6bbe4",
+    "source": "John D. Cook",
+    "source_type": "rss",
+    "title": "Roman moon, Greek moon",
+    "url": "https://www.johndcook.com/blog/2026/04/03/roman-moon-greek-moon/",
+    "original_content": "I used the term perilune in yesterday&#8217;s post about the flight path of Artemis II. When Artemis is closest to the moon it will be furthest from earth because its closest approach to the moon, its perilune, is on the side of the moon opposite earth. Perilune is sometimes called periselene. The two terms come from [&#8230;] The post Roman moon, Greek moon first appeared on John D. Cook .",
+    "raw_text": "I used the term perilune in yesterday&#8217;s post about the flight path of Artemis II. When Artemis is closest to the moon it will be furthest from earth because its closest approach to the moon, its perilune, is on the side of the moon opposite earth. Perilune is sometimes called periselene . The two terms come from two goddesses associated with the moon, the Roman Luna and the Greek Selene. Since the peri- prefix is Greek, perhaps periselene would be preferable. But we&#8217;re far more familiar with words associated with the moon being based on Luna than Selene. The neutral terms for closest and furthest points in an orbit are periapsis and apoapsis . but there are more colorful terms that are specific to orbiting particular celestial objects. The terms perigee and apogee for orbiting earth (from the Greek Gaia) are most familiar, and the terms perihelion and aphelion (not apohelion) for orbiting the sun (from the Greek Helios) are the next most familiar. The terms perijove and apojove are unfamiliar, but you can imagine what they mean. Others like periareion and apoareion , especially the latter, are truly arcane. The post Roman moon, Greek moon first appeared on John D. Cook .",
+    "relevance_score": 8,
+    "category": [
+      "math",
+      "programming"
+    ],
+    "created_at": "2026-04-03T16:31:54"
+  },
+  {
+    "id": "rss-giles-thomas-8bb8bca7f3f7",
+    "source": "Giles Thomas",
+    "source_type": "rss",
+    "title": "Writing an LLM from scratch, part 32h -- Interventions: full fat float32",
+    "url": "https://www.gilesthomas.com/2026/04/llm-from-scratch-32h-interventions-full-fat-float32",
+    "original_content": "This is the last of the interventions I'm trying out to see if I can improve the test loss for a from-scratch GPT-2 small base model, trained on code based on Sebastian Raschka 's book \" Build a Large Language Model (from Scratch) \". Back when I did my first training run for a base model, on my local RTX 3090 , I used two optimisations: Setting the 32-bit floating point matrix multiplication precision to \"high\" rather than to \"highest\" , which means that it uses lower-precision (but still techni",
+    "raw_text": "This is the last of the interventions I'm trying out to see if I can improve the test loss for a from-scratch GPT-2 small base model, trained on code based on Sebastian Raschka 's book \" Build a Large Language Model (from Scratch) \". Back when I did my first training run for a base model, on my local RTX 3090 , I used two optimisations: Setting the 32-bit floating point matrix multiplication precision to \"high\" rather than to \"highest\" , which means that it uses lower-precision (but still technically 32-bit) TF32 for those operations rather than normal float32. Using PyTorch's Automated Mixed Precision (AMP) , which allows it to use 16-bit calculations rather than 32-bit in places where it makes sense to do so. The first of those boosted training speed from 12,599 tokens per second to 15,402 in my test harness, while AMP on its own boosted it to 19,921 tps (and also allowed me to increase the batch size from 5 to 6). Doing both appeared to hit some kind of diminishing returns -- it maxed out at 19,997 tps, only a little better than AMP on its own. But intuitively, you'd expect that might come at a cost. While I'm sure the PyTorch developers have solid understanding of where switching to 16-bit will have a minimal impact on training quality, it seems too good to be true that it would have no impact at all. Let's see what happens if we switch both of these optimisations off! I added a new flag to the train.json config file for the training harness, use_amp with a default of True 1 . The core implementation was pretty simple; where we had the call to torch.set_float32_matmul_precision , we needed to guard it: if use_amp : torch . set_float32_matmul_precision ( &quot;high&quot; ) ...and where we did the forward pass and the loss calculation, we had to not wrap it in a with torch.amp.autocast : if use_amp : with torch . amp . autocast ( device_type = device . type , dtype = torch . float16 ): logits = model ( inputs ) train_loss = calculate_loss ( logits , targets ) else : logits = model ( inputs ) train_loss = calculate_loss ( logits , targets ) We also had to avoid unscaling when clipping gradients ; I did that by just not creating a scaler when in non-AMP mode, and then: if scaler is not None : scaler . unscale_ ( optimizer ) ...and likewise, instead of using the scaler to step the optimiser, we step it directly if we don't have one: if scaler is not None : scaler . step ( optimizer ) scaler . update () else : optimizer . step () However, there was an issue: non-finite gradients. As I discovered when looking into gradient clipping , the scaler was actually doing something quite useful for us. Somewhat buried in the AMP recipes page is a comment: # ``scaler.step()`` first unscales the gradients of the optimizer&#39;s assigned parameters. # If these gradients do not contain ``inf``s or ``NaN``s, optimizer.step() is then called, # otherwise, optimizer.step() is skipped. Now, from the gradient clipping train, I'd come to the conclusion that we were occ",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "python"
+    ],
+    "created_at": "2026-04-03T23:50:00"
+  },
+  {
+    "id": "rss-terence-eden-cec9583c4e88",
+    "source": "Terence Eden",
+    "source_type": "rss",
+    "title": "Book Review: Superintelligence - Paths, Dangers, Strategies by Nick Bostrom ★★★★⯪",
+    "url": "https://shkspr.mobi/blog/2026/04/book-review-superintelligence-paths-dangers-strategies-by-nick-bostrom/",
+    "original_content": "When I finally invent time-travel, the first thing I&#039;ll do is go back in time and give everyone a copy of this book. Published in 2014, it clearly sets out the likely problems with true Artificial Intelligence (not the LLM crap we have now) and what measures need to be put in place before it is created. It opens with The Unfinished Fable of the Sparrows: Which, frankly, should be the end of …",
+    "raw_text": "When I finally invent time-travel, the first thing I'll do is go back in time and give everyone a copy of this book. Published in 2014, it clearly sets out the likely problems with true Artificial Intelligence (not the LLM crap we have now) and what measures need to be put in place before it is created. It opens with The Unfinished Fable of the Sparrows: Which, frankly, should be the end of the discussion. Oh Scronkfinkle, why didn't they listen to you? This book attempts to set out they why and the how of protecting humanity from the (inevitable?) arrival of machines which we would describe as \"superintelligent\". That is, capable of human-level reasoning and understanding, but unlimited in terms of speed, working memory, and accuracy. For example, automated trading algorithms caused a \" Flash Crash \" of the stock market in 2010. Unchecked machines very nearly destabilised the financial work. As Bostrom writes: […] while automation contributed to the incident, it also contributed to its resolution. The pre-preprogrammed stop order logic, which suspended trading when prices moved too far out of whack, was set to execute automatically because it had been correctly anticipated that the triggering events could happen on a timescale too swift for humans to respond. The need for pre-installed and automatically executing safety functionality—as opposed to reliance on runtime human supervision—again foreshadows a theme that will be important in our discussion of machine superintelligence. So where are those safety functions now? Are any of the AI providers building in guardrails to prevent atrocities? We know that some LLMs are restricted from sharing details about devastating weapons of mass destruction - but there seems little else put in place. The book is mostly accessible but veers wildly between casual language, deep philosophical tracts, pointed snark, and the occasional dive into maths and physics. For anyone with even a passing interest in the progression of any technology, it is a worthwhile read. Many of the predictions are spot on: As of 2012, the Zen series of go-playing programs has reached rank 6 dan in fast games (the level of a very strong amateur player), using Monte Carlo tree search and machine learning techniques. Go-playing programs have been improving at a rate of about 1 dan/year in recent years. If this rate of improvement continues, they might beat the human world champion in about a decade. In fact, AlphaGo achieved mastery at the end of 2016 . In the slightly longer term, the cost of acquiring additional hardware may be driven up as a growing portion of the world’s installed capacity is being used to run digital minds […] as investors bid up the price for existing computing infrastructure to match the return they expect from their investment As I wrote about in \" AI is a NAND Maximiser \" this too has come to pass. While LLMs weren't yet invented when this was written, there's an excellent prediction about how an AI could becom",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "web"
+    ],
+    "created_at": "2026-04-03T11:34:34"
+  },
+  {
+    "id": "rss-dave-farquhar-c2269a187240",
+    "source": "Dave Farquhar",
+    "source_type": "rss",
+    "title": "AMD K6 released April 2, 1997",
+    "url": "https://dfarq.homeip.net/amd-k6-released-april-2-1997/?utm_source=rss&utm_medium=rss&utm_campaign=amd-k6-released-april-2-1997",
+    "original_content": "AMD launched its K6 microprocessor on April 2, 1997. It was a competitor for Intel&#8217;s Pentium II CPU, but unlike the Pentium II, it plugged into the previous-generation Pentium socket. Being less expensive than a Pentium II and using less The post AMD K6 released April 2, 1997 appeared first on The Silicon Underground .",
+    "raw_text": "AMD launched its K6 microprocessor on April 2, 1997. It was a competitor for Intel&#8217;s Pentium II CPU, but unlike the Pentium II, it plugged into the previous-generation Pentium socket. Being less expensive than a Pentium II and using less The post AMD K6 released April 2, 1997 appeared first on The Silicon Underground .",
+    "relevance_score": 8,
+    "category": [
+      "tech"
+    ],
+    "created_at": "2026-04-03T11:00:47"
+  },
+  {
+    "id": "rss-jeff-geerling-fdb96af0798d",
+    "source": "Jeff Geerling",
+    "source_type": "rss",
+    "title": "Build your own Dial-up ISP with a Raspberry Pi",
+    "url": "https://www.jeffgeerling.com/blog/2026/build-your-own-dial-up-isp-with-a-raspberry-pi/",
+    "original_content": "Last year my aunt let me add her original Tangerine iBook G3 clamshell to my collection of old Macs 1 . It came with an AirPort card—a $99 add-on Apple made that ushered in the Wi-Fi era. The iBook G3 was the first consumer laptop with built-in Wi-Fi antennas, and by far the cheapest way to get a computer onto an 802.11 wireless network.",
+    "raw_text": "Last year my aunt let me add her original Tangerine iBook G3 clamshell to my collection of old Macs 1 . It came with an AirPort card—a $99 add-on Apple made that ushered in the Wi-Fi era. The iBook G3 was the first consumer laptop with built-in Wi-Fi antennas, and by far the cheapest way to get a computer onto an 802.11 wireless network.",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "hardware",
+      "raspberry-pi"
+    ],
+    "created_at": "2026-04-03T09:00:00"
+  },
+  {
+    "id": "atom-daring-fireball-9150cbd3e9ed",
+    "source": "Daring Fireball",
+    "source_type": "rss",
+    "title": "Apple Releases iOS 18 Security Updates for iOS 26 Holdouts",
+    "url": "https://sixcolors.com/post/2026/04/apple-releases-ios-18-security-updates-for-ios-26-holdouts/",
+    "original_content": "Jason Snell: Last December I complained that Apple was withholding iOS 18 security updates from iPhones capable of running iOS 26 , leaving users who didn’t want to upgrade to Apple’s latest OS version yet in some security peril. Well, I have good news and bad news. The good news: As of Wednesday April 1, Apple is pushing out iOS 18.7.7 to all devices running iOS 18. This update, released last month for devices that were not capable of running iOS 26, is now available even for compatible devices",
+    "raw_text": "Jason Snell: Last December I complained that Apple was withholding iOS 18 security updates from iPhones capable of running iOS 26 , leaving users who didn’t want to upgrade to Apple’s latest OS version yet in some security peril. Well, I have good news and bad news. The good news: As of Wednesday April 1, Apple is pushing out iOS 18.7.7 to all devices running iOS 18. This update, released last month for devices that were not capable of running iOS 26, is now available even for compatible devices. If you’ve got auto-update turned on but have not gone through the steps to do a full upgrade to iOS 26, this update can be automatically pushed and applied. This is good news, as those who have opted not to run iOS 26 will get to take advantage of several sets of security releases. Now the bad news: This is happening because of some really bad security breaches like DarkSword and Coruna . It feels a bit spiteful that Apple doesn’t support staying a year behind the major version of iOS like they do — thankfully — with MacOS. The vast majority of iPhone and iPad users just do what Apple encourages — they accept the default setting to auto-update when Apple pushes updates to their devices. People who update manually do so by choice, and if that choice is offered, it ought to be supported. That said, after buying an iPhone 17 Pro, I left my year-and-a-half-old iPhone 16 Pro on iOS 18, so I updated that phone to 18.7.7 the other day when this became available. I’ve kept that phone on the old OS mostly for comparing what’s changed in iOS 26. I took this opportunity to switch back to that phone, full-time, for two days. It was, to be honest, no big deal. For all the consternation over “Liquid Glass” overall, on iPhone, nothing really sticks out to me switching from iOS 26 back to iOS 18, or vice-versa. iOS 26 just feels visually tweaked, not radically changed. I like iOS 26 just fine, but I also still like iOS 18, and the differences just don’t seem that significant. For me at least, it’s nothing like switching between MacOS 15 Sequoia and 26 Tahoe. iOS 26 makes some highly opinionated choices, but it feels like it was thoughtfully designed by people who know and love the core longstanding idioms of iOS. MacOS 26 Tahoe feels like it was carelessly designed by people who’ve never used a Mac and wish it would just go away. See also: Michael Tsai’s roundup . &amp;nbsp;★&amp;nbsp;",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "apple"
+    ],
+    "created_at": "2026-04-03T19:28:36"
+  },
+  {
+    "id": "rss-where's-your-ed-at-e4456726d25c",
+    "source": "Where's Your Ed At",
+    "source_type": "rss",
+    "title": "Premium: AI Isn't Too Big To Fail",
+    "url": "https://www.wheresyoured.at/premium-ai-isnt-too-big-to-fail/",
+    "original_content": "Soundtrack &#x2014; Soundgarden &#x2014; Blow Up The Outside World A lot of people try to rationalize the AI bubble by digging up the past. Billions of dollars of waste are justified by saying &#x201C;OpenAI just like Uber&#x201D; (it isn&#x2019;t) and &#x201C;the data center buildout is",
+    "raw_text": "Soundtrack &#x2014; Soundgarden &#x2014; Blow Up The Outside World A lot of people try to rationalize the AI bubble by digging up the past. Billions of dollars of waste are justified by saying &#x201C;OpenAI just like Uber&#x201D; (it isn&#x2019;t) and &#x201C;the data center buildout is just like Amazon Web Services&#x201D; ( it isn&#x2019;t, Amazon Web Services was profitable in a decade and cost about $52 billion between 2003 and 2017, and that&#x2019;s normalized for inflation ) and, most egregiously, that AI is &#x201C;too big to fail.&#x201D;&#xA0; I think that these statements are acts of cowardice if they are not backed up by direct and obvious comparisons based on historical data and actual research. They are lazy intellectual tropes borne of at best ignorance, or at worst an intellectual weakness that makes somebody willing to take flimsy information and repeat it as if it were gospel. Nobody has any proof that AI is profitable on inference, nor is there any explanation about how it will become profitable at some point, just a cult-like drone of &#x201C;they&#x2019;ll work it out&#x201D; and &#x201C;look at the growth!&#x201D;&#xA0; And the last argument, that AI is &#x201C;too big to fail&#x201D; is the most cowardly of them all, given that said statement seldom precedes the word &#x201C;because,&#x201D; and then an explanation of why generative AI is so economically important, and why any market correction would be so catastrophic that the bubble must continue to inflate.&#xA0; Over the last few months I have worked diligently to unwind these myths. I discussed earlier in the year how the AI Bubble is much worse than the dot com bubble , and ended last year with a mythbusters (AI edition) that paired well with my free opus, How To Argue With An AI Booster .&#xA0; I don&#x2019;t see my detractors putting in anything approaching a comparable effort. Or any effort, really.&#xA0; This isn&#x2019;t a game I&#x2019;m playing or some sort of competitive situation, nor do I feel compelled to &#x201C;prove my detractors wrong&#x201D; with any specificity. I believe time will do that for me. My work is about actually finding out what&#x2019;s going on, and I believe that explaining it is key to helping people understand the world. None of the people who supposedly believe that AI is the biggest, most hugest and most special boy of all time have done anything to counter my core points around AI economics other than glance-grade misreads of years-old pieces and repeating things like &#x201C;they&#x2019;re profitable on inference!&#x201D; Failing to do thorough analysis deprives the general public of the truth, and misleads investors into making bad decisions. Cynicism and skepticism is often framed as some sort of negative process &#x2014; &#x201C;hating&#x201D; on something for the sake of being negative, or to gain some sort of cultural prestige, or as a way of performatively exhibiting one&#x2019;s personal morality &#x2014; when both require ",
+    "relevance_score": 8,
+    "category": [
+      "tech",
+      "business"
+    ],
+    "created_at": "2026-04-03T21:11:26"
+  },
+  {
+    "id": "atom-dylan-nesbitt-69250a46ed18",
+    "source": "Dylan Nesbitt",
+    "source_type": "rss",
+    "title": "Package Manager Easter Eggs",
+    "url": "https://nesbitt.io/2026/04/03/package-manager-easter-eggs.html",
+    "original_content": "It’s Easter, so here’s a tour of the easter eggs hiding inside package managers. The very first known easter egg in software dates back to 1967-68 on the PDP-6/PDP-10, where typing make love at the TOPS-10 operating system’s COMPIL program would pause and respond “not war?” before creating the file. apt and friends A cow-shaped thread runs through the history of system package managers, starting with apt-get moo : $ apt-get moo (__) (oo) /------\\/ / | || * /\\---/\\ ~~ ~~ ...\"Have you mooed today?",
+    "raw_text": "It’s Easter, so here’s a tour of the easter eggs hiding inside package managers. The very first known easter egg in software dates back to 1967-68 on the PDP-6/PDP-10, where typing make love at the TOPS-10 operating system’s COMPIL program would pause and respond “not war?” before creating the file. apt and friends A cow-shaped thread runs through the history of system package managers, starting with apt-get moo : $ apt-get moo (__) (oo) /------\\/ / | || * /\\---/\\ ~~ ~~ ...\"Have you mooed today?\"... Running apt-get help reveals the line “This APT has Super Cow Powers.” The moo subcommand has been there for decades and doesn’t need root. Aptitude’s response is more elaborate. It lies to you, then gradually caves under pressure: $ aptitude moo There are no Easter Eggs in this program. $ aptitude -v moo There really are no Easter Eggs in this program. $ aptitude -vv moo Didn't I already tell you that there are no Easter Eggs in this program? $ aptitude -vvv moo Stop it! $ aptitude -vvvv moo Okay, okay, if I give you an Easter Egg, will you go away? $ aptitude -vvvvv moo All right, you win. /----\\ -------/ \\ / \\ / | -----------------/ --------\\ ---------------------------------------------- Adding one more -v reveals the explanation: “What is it? It’s an elephant being eaten by a snake, of course.” A reference to The Little Prince by Antoine de Saint-Exupéry. And aptitude --help declares “This aptitude does not have Super Cow Powers,” which is a dirty, filthy lie . The tradition spread to openSUSE’s package manager too. zypper moo draws an ASCII hedgehog by default, and the source code invites translators to draw a different animal for their locale. Gentoo got in on it as well: emerge --moo displays ASCII art of Larry the Cow with “Have you mooed today?” pacman and Portage Adding ILoveCandy to the [options] section of Arch Linux’s /etc/pacman.conf turns the progress bar into a Pac-Man character eating pellets as it installs packages, because Pac-Man loves candy. Completely independently, Gentoo landed on the same word: adding candy to FEATURES in /etc/make.conf replaces the default emerge spinner with a livelier animation. npm npm xmas showed a Christmas-themed display. npm visnup displayed terminal art of npm contributor Visnu Pitiyanuvath, and npm substack honoured the prolific module author James Halliday. There was also a ham-it-up config option that printed “I Have the Honour to Be Your Obedient Servant” after successful commands, in a PR titled “Talk less, complete more,” both Hamilton references. All gone as of npm v9. And npm rum dev works identically to npm run dev . Turns out rum and urn are documented aliases for run-script , so it’s less of an easter egg and more of a happy accident that npm rum sounds like a pirate order. Someone going through npm’s codebase found an undocumented birthday command backed by completely obfuscated JavaScript that executed code from a separate npm package. Running it returned “Please try again in 26632152294",
+    "relevance_score": 8,
+    "category": [
+      "tech"
+    ],
+    "created_at": "2026-04-03T10:00:00"
   }
 ]
