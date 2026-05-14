@@ -10,8 +10,8 @@ from services.experiments import (
     update_experiment, delete_experiment,
     get_experiment_logs, add_experiment_log
 )
-from services.ai_client import get_ai_client
 from services.briefing_generator import get_briefing_by_date
+from services.llm_client import chat_async
 
 router = APIRouter()
 
@@ -107,14 +107,11 @@ async def generate_ideas(request: dict):
     items_to_process = papers + repos + news
     generated = []
     
-    client = get_ai_client()
-    
     for item in items_to_process:
         try:
             if not item.get("summary"):
                 continue
-            
-            # 根据内容类型选择提示词
+
             source_type = item.get("source_type", "news")
             if source_type == "arxiv":
                 prompt = _get_paper_prompt(item)
@@ -122,18 +119,11 @@ async def generate_ideas(request: dict):
                 prompt = _get_repo_prompt(item)
             else:
                 prompt = _get_news_prompt(item)
-            
-            # 调用 AI
-            response = client.chat.completions.create(
-                model="gpt-4",
-                messages=[
-                    {"role": "system", "content": "你是一个专业的实验设计助手，帮助用户从内容中提取可实践的实验想法。只输出指定格式的内容。"},
-                    {"role": "user", "content": prompt}
-                ],
-                temperature=0.7
+
+            content = await chat_async(
+                [{"role": "user", "content": prompt}],
+                system_prompt="你是一个专业的实验设计助手，帮助用户从内容中提取可实践的实验想法。只输出指定格式的内容。",
             )
-            
-            content = response.choices[0].message.content
             parsed = _parse_idea_response(content, item)
             
             if parsed:
@@ -223,19 +213,10 @@ async def generate_ideas_for_item(request: dict):
     if user_hint:
         prompt += f"\n\n用户方向提示（请优先围绕此方向生成想法，但仍需结合文章内容）:\n{user_hint}"
 
-    from services.chinese_briefer import get_wanqing_client, get_wanqing_app_id, _get_model
     import json as _json
 
-    client = get_wanqing_client()
-    model_name = _get_model()
-    app_id = get_wanqing_app_id(model_name)
-
     try:
-        completion = client.chat.completions.create(
-            model=app_id,
-            messages=[{"role": "user", "content": prompt}],
-        )
-        raw = completion.choices[0].message.content.strip()
+        raw = (await chat_async([{"role": "user", "content": prompt}])).strip()
 
         # 尝试解析 JSON
         import re
@@ -505,19 +486,11 @@ async def generate_concept_for_experiment(exp_id: str, request: dict):
 
 仅输出 Markdown 格式的报告正文，不要包含多余的客套话。"""
 
-    from services.chinese_briefer import get_wanqing_client, get_wanqing_app_id, _get_model
     from services.storage import update_experiment_by_id
     from datetime import datetime as _dt
 
-    client = get_wanqing_client()
-    app_id = get_wanqing_app_id(_get_model())
-
     try:
-        completion = client.chat.completions.create(
-            model=app_id,
-            messages=[{"role": "user", "content": prompt}],
-        )
-        markdown_result = completion.choices[0].message.content.strip()
+        markdown_result = (await chat_async([{"role": "user", "content": prompt}])).strip()
 
         # 持久化到实验记录
         update_experiment_by_id(exp_id, {

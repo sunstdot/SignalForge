@@ -1,94 +1,124 @@
-"""GitHub Trending 抓取服务 - 使用 GitHub Search API"""
+"""GitHub Trending 抓取服务 - 直接抓取 GitHub Trending 页面"""
+import re
 import aiohttp
-from datetime import datetime, timedelta
+from datetime import datetime
 from typing import List, Dict
 import hashlib
 
 
-async def fetch_github_trending(config: Dict) -> List[Dict]:
-    """抓取 GitHub 热门仓库（通过 Search API）"""
-    time_range = config.get("timeRange", "daily")
-    languages = config.get("languages", ["any"])
+TRENDING_URL = "https://github.com/trending"
 
-    # 计算时间范围
-    days_map = {"daily": 1, "weekly": 7, "monthly": 30}
-    days = days_map.get(time_range, 1)
-    since_date = (datetime.now() - timedelta(days=days)).strftime("%Y-%m-%d")
+
+async def fetch_github_trending(config: Dict) -> List[Dict]:
+    """抓取 GitHub Trending 页面（今日趋势，按 star 增速排）"""
+    time_range = config.get("timeRange", "daily")  # daily / weekly / monthly
+    since_map = {"daily": "daily", "weekly": "weekly", "monthly": "monthly"}
+    since = since_map.get(time_range, "daily")
 
     timeout = aiohttp.ClientTimeout(total=20)
     items = []
 
-    async with aiohttp.ClientSession(timeout=timeout) as session:
-        for lang in languages:
-            try:
-                lang_items = await fetch_repos_by_language(session, lang, since_date)
-                items.extend(lang_items)
-            except Exception as e:
-                print(f"  ✗ GitHub {lang} fetch failed: {e}")
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                      "AppleWebKit/537.36 (KHTML, like Gecko) "
+                      "Chrome/124.0.0.0 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml",
+        "Accept-Language": "en-US,en;q=0.9",
+    }
+
+    async with aiohttp.ClientSession(timeout=timeout, headers=headers) as session:
+        try:
+            async with session.get(
+                TRENDING_URL,
+                params={"since": since},
+            ) as response:
+                if response.status != 200:
+                    raise Exception(f"HTTP {response.status}")
+                html = await response.text()
+
+            items = parse_trending_html(html)
+        except Exception as e:
+            print(f"  ✗ GitHub Trending scrape failed: {e}")
 
     print(f"  ✓ GitHub: {len(items)} repos")
     return items
 
 
-async def fetch_repos_by_language(
-    session: aiohttp.ClientSession,
-    language: str,
-    since_date: str
-) -> List[Dict]:
-    """通过 GitHub Search API 获取热门仓库"""
-    query = f"created:>{since_date} stars:>10"
-    if language and language != "any":
-        query += f" language:{language}"
+def parse_trending_html(html: str) -> List[Dict]:
+    """从 GitHub Trending 页面 HTML 中解析仓库列表"""
+    items = []
 
-    async with session.get(
-        "https://api.github.com/search/repositories",
-        params={
-            "q": query,
-            "sort": "stars",
-            "order": "desc",
-            "per_page": 15,
-        },
-        headers={
-            "Accept": "application/vnd.github.v3+json",
-            "User-Agent": "TokenBurner/1.0",
-        }
-    ) as response:
-        if response.status == 403:
-            raise Exception("GitHub API rate limit exceeded")
-        if response.status != 200:
-            raise Exception(f"HTTP {response.status}")
-        data = await response.json()
+    # 每个仓库在 <article class="Box-row"> 里
+    articles = re.findall(r'<article[^>]*class="[^"]*Box-row[^"]*"[^>]*>(.*?)</article>', html, re.DOTALL)
 
-    repos = data.get("items", [])
-    return [parse_repo(repo) for repo in repos]
+    for article in articles:
+        try:
+            item = parse_article(article)
+            if item:
+                items.append(item)
+        except Exception:
+            continue
+
+    return items
 
 
-def parse_repo(repo: Dict) -> Dict:
-    """解析仓库数据"""
-    full_name = repo.get("full_name", "")
-    description = repo.get("description") or ""
-    stars = repo.get("stargazers_count", 0)
-    language = repo.get("language") or ""
-    topics = repo.get("topics", [])
+def parse_article(article: str) -> Dict:
+    """解析单个仓库 article 块"""
+    # full_name: <h2 ...><a href="/owner/repo"
+    name_match = re.search(r'<h2[^>]*>.*?<a[^>]+href="/([^"]+)"', article, re.DOTALL)
+    if not name_match:
+        return None
+    full_name = name_match.group(1).strip().strip('/')
+    if full_name.count('/') != 1:
+        return None
 
+    # description
+    desc_match = re.search(r'<p[^>]*class="[^"]*col-9[^"]*"[^>]*>\s*(.*?)\s*</p>', article, re.DOTALL)
+    description = ""
+    if desc_match:
+        description = re.sub(r'<[^>]+>', '', desc_match.group(1)).strip()
+
+    # stars total
+    stars = 0
+    stars_match = re.search(r'href="/' + re.escape(full_name) + r'/stargazers"[^>]*>\s*<[^>]+>\s*([\d,]+)', article)
+    if stars_match:
+        stars = int(stars_match.group(1).replace(',', ''))
+
+    # stars today / this period
+    stars_today = ""
+    today_match = re.search(r'([\d,]+)\s+stars?\s+today', article, re.IGNORECASE)
+    if today_match:
+        stars_today = today_match.group(1).replace(',', '')
+
+    # language
+    language = ""
+    lang_match = re.search(
+        r'itemprop="programmingLanguage"[^>]*>\s*(.*?)\s*<',
+        article, re.DOTALL
+    )
+    if lang_match:
+        language = lang_match.group(1).strip()
+
+    # build content
     title = full_name
     if description:
         title += f" — {description[:80]}"
 
-    content_parts = [description] if description else []
-    content_parts.append(f"⭐ {stars:,} stars")
+    content_parts = []
+    if description:
+        content_parts.append(description)
+    if stars:
+        content_parts.append(f"⭐ {stars:,} stars")
+    if stars_today:
+        content_parts.append(f"🔥 {stars_today} stars today")
     if language:
         content_parts.append(f"Language: {language}")
-    if topics:
-        content_parts.append(f"Topics: {', '.join(topics[:5])}")
 
     content = " | ".join(content_parts)
 
     category = ["开源项目"]
     if language:
         category.append(language)
-    if topics:
-        category.extend(topics[:2])
 
     item_id = f"github-{hashlib.md5(full_name.encode()).hexdigest()[:12]}"
 
@@ -97,10 +127,11 @@ def parse_repo(repo: Dict) -> Dict:
         "source": "GitHub Trending",
         "source_type": "repo",
         "title": title[:200],
-        "url": repo.get("html_url", f"https://github.com/{full_name}"),
+        "url": f"https://github.com/{full_name}",
         "original_content": content[:500],
         "raw_text": content,
         "relevance_score": 0,
         "category": category[:4],
+        "published_date": datetime.now().strftime("%Y-%m-%d"),
         "created_at": datetime.now(),
     }

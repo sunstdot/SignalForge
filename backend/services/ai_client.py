@@ -1,29 +1,11 @@
 """AI 客户端服务"""
-import os
-from openai import OpenAI
+import json
 
-_client = None
-
-
-def get_ai_client():
-    """获取 AI 客户端（单例模式）"""
-    global _client
-    if _client is None:
-        # 优先使用晚晴 API，其次 OpenRouter
-        api_key = os.getenv("WANQING_API_KEY") or os.getenv("OPENROUTER_API_KEY") or os.getenv("OPENAI_API_KEY")
-        base_url = os.getenv("WANQING_BASE_URL") or os.getenv("OPENROUTER_BASE_URL")
-        
-        if base_url:
-            _client = OpenAI(api_key=api_key, base_url=base_url)
-        else:
-            _client = OpenAI(api_key=api_key)
-    return _client
+from .llm_client import chat
 
 
 def filter_content(item: dict) -> dict:
     """AI 内容过滤"""
-    client = get_ai_client()
-    
     prompt = f"""分析以下内容的相关性和分类:
 
 标题: {item['title']}
@@ -37,17 +19,11 @@ def filter_content(item: dict) -> dict:
 }}"""
 
     try:
-        response = client.chat.completions.create(
-            model="gpt-4",
-            messages=[{"role": "user", "content": prompt}],
-            response_format={"type": "json_object"}
-        )
-        import json
-        result = json.loads(response.choices[0].message.content)
+        result = json.loads(chat([{"role": "user", "content": prompt}]))
         return {
             "score": result.get("score", 5),
             "categories": result.get("categories", ["未分类"]),
-            "reason": result.get("reason", "")
+            "reason": result.get("reason", ""),
         }
     except Exception as e:
         print(f"Filter error: {e}")
@@ -56,8 +32,6 @@ def filter_content(item: dict) -> dict:
 
 def summarize_content(item: dict) -> dict:
     """AI 内容摘要"""
-    client = get_ai_client()
-    
     prompt = f"""对以下内容生成摘要和洞察:
 
 标题: {item['title']}
@@ -70,16 +44,10 @@ def summarize_content(item: dict) -> dict:
 }}"""
 
     try:
-        response = client.chat.completions.create(
-            model="gpt-4",
-            messages=[{"role": "user", "content": prompt}],
-            response_format={"type": "json_object"}
-        )
-        import json
-        result = json.loads(response.choices[0].message.content)
+        result = json.loads(chat([{"role": "user", "content": prompt}]))
         return {
             "summary": result.get("summary", ""),
-            "insights": result.get("insights", [])
+            "insights": result.get("insights", []),
         }
     except Exception as e:
         print(f"Summarize error: {e}")

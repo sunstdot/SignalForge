@@ -1,5 +1,5 @@
 {
-  "id": "250116e7-b1c0-46d7-bbf9-4dda5269b9b2",
+  "id": "ca13b680-76de-4b27-9079-d70241229467",
   "date": "2026-04-03",
   "items": [
     {
@@ -337,6 +337,219 @@
       "created_at": "2026-04-03T14:56:38.814060"
     },
     {
+      "id": "atom-simon-willison-c3863277ff92",
+      "title": "Vulnerability Research Is Cooked",
+      "source": "Simon Willison",
+      "source_type": "rss",
+      "url": "https://simonwillison.net/2026/Apr/3/vulnerability-research-is-cooked/#atom-everything",
+      "summary": "Vulnerability Research Is Cooked Thomas Ptacek's take on the sudden and enormous impact the latest frontier models are having on the field of vulnerability research. Within the next few months, coding",
+      "category": [
+        "tech",
+        "ai",
+        "python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-03T23:59:08"
+    },
+    {
+      "id": "atom-simon-willison-7c45c2298fcc",
+      "title": "The cognitive impact of coding agents",
+      "source": "Simon Willison",
+      "source_type": "rss",
+      "url": "https://simonwillison.net/2026/Apr/3/cognitive-cost/#atom-everything",
+      "summary": "A fun thing about recording a podcast with a professional like Lenny Rachitsky is that his team know how to slice the resulting video up into TikTok-sized short form vertical videos. Here's one he sha",
+      "category": [
+        "tech",
+        "ai",
+        "python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-03T23:57:04"
+    },
+    {
+      "id": "atom-simon-willison-a23449fe0e98",
+      "title": "Quoting Willy Tarreau",
+      "source": "Simon Willison",
+      "source_type": "rss",
+      "url": "https://simonwillison.net/2026/Apr/3/willy-tarreau/#atom-everything",
+      "summary": "On the kernel security list we've seen a huge bump of reports. We were between 2 and 3 per week maybe two years ago, then reached probably 10 a week over the last year with the only difference being o",
+      "category": [
+        "tech",
+        "ai",
+        "python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-03T21:48:22"
+    },
+    {
+      "id": "rss-gary-marcus-c86cda8b5509",
+      "title": "The two wildest stories today in tech",
+      "source": "Gary Marcus",
+      "source_type": "rss",
+      "url": "https://garymarcus.substack.com/p/the-two-wildest-stories-today-in",
+      "summary": "Shifting goal posts and new efforts at redefining the narrative",
+      "category": [
+        "ai",
+        "ml"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-03T02:13:25"
+    },
+    {
+      "id": "rss-maurycy-996b8f456044",
+      "title": "Loading... [13 kB]",
+      "source": "Maurycy",
+      "source_type": "rss",
+      "url": "https://maurycyz.com/misc/13kb/",
+      "summary": "While testing my gopher client, I noticed something interesting: All downloads froze at 13 kilobytes. Sometimes this was barely noticeable, other times it would stall for a good second or so. Networks",
+      "category": [
+        "tech",
+        "ai"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-03T00:00:00"
+    },
+    {
+      "id": "rss-the-old-new-thing-10c62c4c3e3b",
+      "title": "How can I use Read­Directory­ChangesW to know when someone is copying a file out of the directory?",
+      "source": "The Old New Thing",
+      "source_type": "rss",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260403-00/?p=112202",
+      "summary": "File copying is not a fundamental operation, nor is it even detectable at the file system layer. The post How can I use &lt;CODE&gt;Read&amp;shy;Directory&amp;shy;ChangesW&lt;/CODE&gt; to know when so",
+      "category": [
+        "tech",
+        "windows",
+        "programming"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-03T14:00:00"
+    },
+    {
+      "id": "rss-ibrahim-diallo-91b742bd1f5d",
+      "title": "My Zip bomb strategy is not as effective as it used to be",
+      "source": "Ibrahim Diallo",
+      "source_type": "rss",
+      "url": "https://idiallo.com/blog/zip-bombs-are-not-as-effective-as-they-used-to-be?src=feed",
+      "summary": "Last year, I wrote about my server setup and how I use zipbombs to mitigate attacks from rogue bots. It was an effective method that helped my blog survive for 10 years. I usually hesitate to write th",
+      "category": [
+        "tech",
+        "programming"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-03T12:00:00"
+    },
+    {
+      "id": "rss-john-d.-cook-26cebda6bbe4",
+      "title": "Roman moon, Greek moon",
+      "source": "John D. Cook",
+      "source_type": "rss",
+      "url": "https://www.johndcook.com/blog/2026/04/03/roman-moon-greek-moon/",
+      "summary": "I used the term perilune in yesterday&#8217;s post about the flight path of Artemis II. When Artemis is closest to the moon it will be furthest from earth because its closest approach to the moon, its",
+      "category": [
+        "math",
+        "programming"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-03T16:31:54"
+    },
+    {
+      "id": "rss-giles-thomas-8bb8bca7f3f7",
+      "title": "Writing an LLM from scratch, part 32h -- Interventions: full fat float32",
+      "source": "Giles Thomas",
+      "source_type": "rss",
+      "url": "https://www.gilesthomas.com/2026/04/llm-from-scratch-32h-interventions-full-fat-float32",
+      "summary": "This is the last of the interventions I'm trying out to see if I can improve the test loss for a from-scratch GPT-2 small base model, trained on code based on Sebastian Raschka 's book \" Build a Large",
+      "category": [
+        "tech",
+        "python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-03T23:50:00"
+    },
+    {
+      "id": "rss-terence-eden-cec9583c4e88",
+      "title": "Book Review: Superintelligence - Paths, Dangers, Strategies by Nick Bostrom ★★★★⯪",
+      "source": "Terence Eden",
+      "source_type": "rss",
+      "url": "https://shkspr.mobi/blog/2026/04/book-review-superintelligence-paths-dangers-strategies-by-nick-bostrom/",
+      "summary": "When I finally invent time-travel, the first thing I&#039;ll do is go back in time and give everyone a copy of this book. Published in 2014, it clearly sets out the likely problems with true Artificia",
+      "category": [
+        "tech",
+        "web"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-03T11:34:34"
+    },
+    {
+      "id": "rss-dave-farquhar-c2269a187240",
+      "title": "AMD K6 released April 2, 1997",
+      "source": "Dave Farquhar",
+      "source_type": "rss",
+      "url": "https://dfarq.homeip.net/amd-k6-released-april-2-1997/?utm_source=rss&utm_medium=rss&utm_campaign=amd-k6-released-april-2-1997",
+      "summary": "AMD launched its K6 microprocessor on April 2, 1997. It was a competitor for Intel&#8217;s Pentium II CPU, but unlike the Pentium II, it plugged into the previous-generation Pentium socket. Being less",
+      "category": [
+        "tech"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-03T11:00:47"
+    },
+    {
+      "id": "rss-jeff-geerling-fdb96af0798d",
+      "title": "Build your own Dial-up ISP with a Raspberry Pi",
+      "source": "Jeff Geerling",
+      "source_type": "rss",
+      "url": "https://www.jeffgeerling.com/blog/2026/build-your-own-dial-up-isp-with-a-raspberry-pi/",
+      "summary": "Last year my aunt let me add her original Tangerine iBook G3 clamshell to my collection of old Macs 1 . It came with an AirPort card—a $99 add-on Apple made that ushered in the Wi-Fi era. The iBook G3",
+      "category": [
+        "tech",
+        "hardware",
+        "raspberry-pi"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-03T09:00:00"
+    },
+    {
+      "id": "atom-daring-fireball-9150cbd3e9ed",
+      "title": "Apple Releases iOS 18 Security Updates for iOS 26 Holdouts",
+      "source": "Daring Fireball",
+      "source_type": "rss",
+      "url": "https://sixcolors.com/post/2026/04/apple-releases-ios-18-security-updates-for-ios-26-holdouts/",
+      "summary": "Jason Snell: Last December I complained that Apple was withholding iOS 18 security updates from iPhones capable of running iOS 26 , leaving users who didn’t want to upgrade to Apple’s latest OS versio",
+      "category": [
+        "tech",
+        "apple"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-03T19:28:36"
+    },
+    {
+      "id": "rss-where's-your-ed-at-e4456726d25c",
+      "title": "Premium: AI Isn't Too Big To Fail",
+      "source": "Where's Your Ed At",
+      "source_type": "rss",
+      "url": "https://www.wheresyoured.at/premium-ai-isnt-too-big-to-fail/",
+      "summary": "Soundtrack &#x2014; Soundgarden &#x2014; Blow Up The Outside World A lot of people try to rationalize the AI bubble by digging up the past. Billions of dollars of waste are justified by saying &#x201C",
+      "category": [
+        "tech",
+        "business"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-03T21:11:26"
+    },
+    {
+      "id": "atom-dylan-nesbitt-69250a46ed18",
+      "title": "Package Manager Easter Eggs",
+      "source": "Dylan Nesbitt",
+      "source_type": "rss",
+      "url": "https://nesbitt.io/2026/04/03/package-manager-easter-eggs.html",
+      "summary": "It’s Easter, so here’s a tour of the easter eggs hiding inside package managers. The very first known easter egg in software dates back to 1967-68 on the PDP-6/PDP-10, where typing make love at the TO",
+      "category": [
+        "tech"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-03T10:00:00"
+    },
+    {
       "id": "rss-garymarcus-001",
       "title": "The Future of AI: Beyond Deep Learning",
       "source": "Gary Marcus",
@@ -596,219 +809,6 @@
       ],
       "relevance_score": 8.0,
       "created_at": "2026-04-02T18:28:54"
-    },
-    {
-      "id": "atom-daring-fireball-d7a8a99e650b",
-      "title": "Axios, Super Popular NPM Package, Was Compromised in Attack on the Module’s Maintainer",
-      "source": "Daring Fireball",
-      "source_type": "rss",
-      "url": "https://www.stepsecurity.io/blog/axios-compromised-on-npm-malicious-versions-drop-remote-access-trojan",
-      "summary": "StepSecurity: If you have installed axios@1.14.1 or axios@0.30.4, assume your system is compromised. There are zero lines of malicious code inside axios itself, and that’s exactly what makes this attack so dangerous. Both poisoned releases inject a fake dependency, plain-crypto-js@4.2.1 , a package ",
-      "category": [
-        "tech",
-        "apple"
-      ],
-      "relevance_score": 8.0,
-      "created_at": "2026-04-02T18:42:39"
-    },
-    {
-      "id": "atom-daring-fireball-1d4a9992646f",
-      "title": "OpenAI, Supposedly Tightening Its Focus on Its Core Products, Buys Tech-Industry Talk Show TBPN",
-      "source": "Daring Fireball",
-      "source_type": "rss",
-      "url": "https://www.wsj.com/cmo-today/openai-buys-tech-industry-talk-show-tbpn-484c01c5?st=RUVFWn",
-      "summary": "Katie Deighton, reporting for The Wall Street Journal (main link is a gift link; also on News+ ): OpenAI bought TBPN to encourage constructive conversation around the changes AI creates by helping the show grow, according to a memo sent by Fidji Simo, the OpenAI’s CEO of applications. TBPN will repo",
-      "category": [
-        "tech",
-        "apple"
-      ],
-      "relevance_score": 8.0,
-      "created_at": "2026-04-02T18:58:50"
-    },
-    {
-      "id": "rss-jim-nielsen-587ff94f0da7",
-      "title": "The Blandness of Systematic Rules vs. The Delight of Localized Sensitivity",
-      "source": "Jim Nielsen",
-      "source_type": "rss",
-      "url": "https://blog.jim-nielsen.com/2026/systemic-vs-localized/",
-      "summary": "Marcin Wichary brings attention to this lovely dialog in ClarisWorks from 1997: He quips: this breaks the rule of button copy being fully comprehensible without having to read the surrounding strings first, perhaps most well-known as the “avoid «click here»” rule. Never Register/​Register Later/​Reg",
-      "category": [
-        "tech",
-        "web",
-        "frontend"
-      ],
-      "relevance_score": 8.0,
-      "created_at": "2026-04-02T19:00:00"
-    },
-    {
-      "id": "atom-daring-fireball-cfe1a9dae5fb",
-      "title": "Artemis II Crew on Way to Moon",
-      "source": "Daring Fireball",
-      "source_type": "rss",
-      "url": "https://512pixels.net/2026/04/artemis-ii-crew-on-way-to-moon/",
-      "summary": "Great roundup of links from Stephen Hackett: The crew is made up of Reid Wiseman, Victor Glover, Christina Koch, and CSA (Canadian Space Agency) astronaut Jeremy Hansen. They are now on their way to the moon, set to return in 10 days. Their rocket may be the product of a hugely-flawed program , but ",
-      "category": [
-        "tech",
-        "apple"
-      ],
-      "relevance_score": 8.0,
-      "created_at": "2026-04-02T19:37:10"
-    },
-    {
-      "id": "rss-meta-engineering-8302b9d33b60",
-      "title": "KernelEvolve: How Meta’s Ranking Engineer Agent Optimizes AI Infrastructure",
-      "source": "Meta Engineering",
-      "source_type": "rss",
-      "url": "https://engineering.fb.com/2026/04/02/developer-tools/kernelevolve-how-metas-ranking-engineer-agent-optimizes-ai-infrastructure/",
-      "summary": "This is the second post in the Ranking Engineer Agent blog series exploring the autonomous AI capabilities accelerating Meta&#8217;s Ads Ranking innovation. The previous post introduced Ranking Engineer Agent&#8217;s ML exploration capability, which autonomously designs, executes, and analyzes ranki",
-      "category": [
-        "ai",
-        "meta",
-        "engineering"
-      ],
-      "relevance_score": 8.0,
-      "created_at": "2026-04-02T19:59:46"
-    },
-    {
-      "id": "atom-daring-fireball-74ba6d189ab4",
-      "title": "John Buck on the Invention of QuickTime",
-      "source": "Daring Fireball",
-      "source_type": "rss",
-      "url": "https://www.theverge.com/tech/902721/quicktime-history-apple?view_token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6IkcybHEzWGhZTVciLCJwIjoiL3RlY2gvOTAyNzIxL3F1aWNrdGltZS1oaXN0b3J5LWFwcGxlIiwiZXhwIjoxNzc1NTkyNzA0LCJpYXQiOjE3NzUxNjA3MDR9.p4nbje9XKl05Ybv3q31CyAQULuqAB-H9b8qfftSz12k",
-      "summary": "John Buck at The Verge (gift link), excerpted from his great book, Inventing the Future : Steve Perlman: Almost everyone at Apple, and definitely everywhere else, assumed that multimedia would always require specialized hardware — and be expensive. A few of us thought otherwise. One of the few was G",
-      "category": [
-        "tech",
-        "apple"
-      ],
-      "relevance_score": 8.0,
-      "created_at": "2026-04-02T20:12:07"
-    },
-    {
-      "id": "atom-simon-willison-ede5c8fe437f",
-      "title": "Highlights from my conversation about agentic engineering on Lenny's Podcast",
-      "source": "Simon Willison",
-      "source_type": "rss",
-      "url": "https://simonwillison.net/2026/Apr/2/lennys-podcast/#atom-everything",
-      "summary": "I was a guest on Lenny Rachitsky's podcast, in a new episode titled An AI state of the union: We've passed the inflection point, dark factories are coming, and automation timelines . It's available on YouTube , Spotify , and Apple Podcasts . Here are my highlights from our conversation, with relevan",
-      "category": [
-        "tech",
-        "ai",
-        "python"
-      ],
-      "relevance_score": 8.0,
-      "created_at": "2026-04-02T20:40:47"
-    },
-    {
-      "id": "rss-giles-thomas-e9d854e4fd2c",
-      "title": "Automating starting Lambda Labs instances",
-      "source": "Giles Thomas",
-      "source_type": "rss",
-      "url": "https://www.gilesthomas.com/2026/04/automating-starting-lambda-instances",
-      "summary": "I've been trying to get an 8x A100 instance on Lambda Labs to do a training run for my LLM from scratch series , but they're really busy at the moment, and it's rare to see anything. Thanks to the wonders of agentic coding, I spent an hour today getting something up and running to help, which I've c",
-      "category": [
-        "tech",
-        "python"
-      ],
-      "relevance_score": 8.0,
-      "created_at": "2026-04-02T23:30:00"
-    },
-    {
-      "id": "atom-anil-dash-1b1e0df5c764",
-      "title": "On the Vergecast, On Video",
-      "source": "Anil Dash",
-      "source_type": "rss",
-      "url": "https://anildash.com/2026/04/01/vergecast-video/",
-      "summary": "I finally got the chance to drop by one of my favorite podcasts, The Vergecast, where David Pierce had me on to talk about the recent conversation about Apple's moves around video podcasts , as well as the much broader big-picture considerations around keeping podcasts open. We started with groundin",
-      "category": [
-        "tech",
-        "culture"
-      ],
-      "relevance_score": 8.0,
-      "created_at": "2026-04-01T00:00:00"
-    },
-    {
-      "id": "rss-maurycy-6e1b561e5bc0",
-      "title": "My ramblings are available over gopher",
-      "source": "Maurycy",
-      "source_type": "rss",
-      "url": "https://maurycyz.com/misc/gopher/",
-      "summary": "It has recently come to my attention that people need a thousand lines of C code to read my website. This is unacceptable. For simpler clients, my server supports gopher: /* HTML tags, keywords, commands */ h-n {color: #F27;} /* Values */ h-v {color: #B8F;} /* CSS selectors, attribute/varable names,",
-      "category": [
-        "tech",
-        "ai"
-      ],
-      "relevance_score": 8.0,
-      "created_at": "2026-04-01T00:00:00"
-    },
-    {
-      "id": "rss-maurycy-9ac0ddee51ba",
-      "title": "GopherTree",
-      "source": "Maurycy",
-      "source_type": "rss",
-      "url": "https://maurycyz.com/projects/gopher/",
-      "summary": "While gopher is usually seen as a proto-web, it's really closer to FTP. It has no markup format, no links and no URLs. Files are arranged in a hierarchically, and can be in any format. This rigid structure allows clients to get creative with how it's displayed ... which is why I'm extremely disappoi",
-      "category": [
-        "tech",
-        "ai"
-      ],
-      "relevance_score": 8.0,
-      "created_at": "2026-04-01T00:00:00"
-    },
-    {
-      "id": "atom-tedium-b4397b3059de",
-      "title": "Wayne’s World",
-      "source": "Tedium",
-      "source_type": "rss",
-      "url": "https://feed.tedium.co/link/15204/17311236/ronald-g-wayne-apple-interview",
-      "summary": "As Apple hits its 50th anniversary this week, we got a chance to talk to its forgotten third founder: Ronald G. Wayne. Apple is honestly a footnote in his long life. Quick programming note: Starting this week, we’re doing a bit of a throwback and going back to our Tuesday/Thursday roots. And in hono",
-      "category": [
-        "tech",
-        "history"
-      ],
-      "relevance_score": 8.0,
-      "created_at": "2026-04-01T01:19:32"
-    },
-    {
-      "id": "rss-openai-blog-0f9835b177f9",
-      "title": "Gradient Labs gives every bank customer an AI account manager",
-      "source": "OpenAI Blog",
-      "source_type": "rss",
-      "url": "https://openai.com/index/gradient-labs",
-      "summary": "Gradient Labs uses GPT-4.1 and GPT-5.4 mini and nano to power AI agents that automate banking support workflows with low latency and high reliability.",
-      "category": [
-        "ai",
-        "openai",
-        "official"
-      ],
-      "relevance_score": 8.0,
-      "created_at": "2026-04-01T02:00:00"
-    },
-    {
-      "id": "rss-pluralistic-0f79e079ca3d",
-      "title": "Pluralistic: Trumpismo vs minilateralism (01 Apr 2026)",
-      "source": "Pluralistic",
-      "source_type": "rss",
-      "url": "https://pluralistic.net/2026/04/01/minilateralism/",
-      "summary": "Today's links Trumpismo vs minilateralism: The enemy gets a vote. Hey look at this: Delights to delectate. Object permanence: My new sigfile is unstoppable; TBL on the future of the web (2006); Wonder Woman sweater pattern; Unpatchable drug cabinets; 50-building mural; DRM v (the next) Netflix. Upco",
-      "category": [
-        "tech",
-        "policy"
-      ],
-      "relevance_score": 8.0,
-      "created_at": "2026-04-01T10:59:24"
-    },
-    {
-      "id": "rss-dave-farquhar-a98550cf81d4",
-      "title": "How Mark Cuban became rich",
-      "source": "Dave Farquhar",
-      "source_type": "rss",
-      "url": "https://dfarq.homeip.net/how-mark-cuban-became-rich/?utm_source=rss&utm_medium=rss&utm_campaign=how-mark-cuban-became-rich",
-      "summary": "April 1, 1999 was no April Fool&#8217;s joke for Mark Cuban. On that day, he sold his company, broadcast.com, to Yahoo for $5.7 billion and became a billionaire. The deal doesn&#8217;t make a lot of sense today, but at the The post How Mark Cuban became rich appeared first on The Silicon Underground",
-      "category": [
-        "tech"
-      ],
-      "relevance_score": 8.0,
-      "created_at": "2026-04-01T11:00:04"
     },
     {
       "id": "hf-paper-1326fa445569",
@@ -1518,5 +1518,5 @@
     }
   ],
   "summary": null,
-  "generated_at": "2026-04-03T18:21:57.437752"
+  "generated_at": "2026-04-05T17:23:50.828900"
 }

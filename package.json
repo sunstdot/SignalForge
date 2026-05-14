@@ -2,9 +2,12 @@
   "name": "token-burner",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "description": "AI 驱动的新闻简报收集和展示平台",
   "scripts": {
-    "dev": "./start.sh",
+    "dev": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts AIIntelligenceShort out/ai-intelligence-short.mp4",
+    "dev:legacy": "./start.sh",
     "dev:frontend": "cd frontend && pnpm dev",
     "dev:backend": "cd backend && source venv/bin/activate && uvicorn main:app --reload --port 8000",
     "build": "cd frontend && pnpm build",
@@ -14,5 +17,16 @@
     "briefing": "cd backend && source venv/bin/activate && python cli.py briefing",
     "stats": "cd backend && source venv/bin/activate && python cli.py stats",
     "refetch": "cd backend && source venv/bin/activate && python cli.py refetch"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.289",
+    "remotion": "^4.0.289",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "typescript": "^5.3.3"
   }
 }

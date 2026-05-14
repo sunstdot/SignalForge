@@ -1,0 +1,193 @@
+<h2>交互设计方案 — 最终确认</h2>
+<p class="subtitle">分割按钮的三种状态流</p>
+
+<style>
+.flow-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  align-items: flex-start;
+}
+.flow-step {
+  flex: 1;
+  background: #12121f;
+  border: 1px solid #2a2a3e;
+  border-radius: 10px;
+  padding: 14px;
+  font-family: -apple-system, sans-serif;
+  font-size: 12px;
+  color: #e0e0e0;
+  position: relative;
+}
+.flow-arrow {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: #505070;
+  padding-top: 36px;
+  flex-shrink: 0;
+}
+.step-label {
+  font-size: 10px;
+  color: #606080;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+.card-footer-demo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+  padding-top: 10px;
+  border-top: 1px solid #2a2a3e;
+}
+.btn { font-size: 11px; padding: 3px 8px; border-radius: 4px; border: 1px solid #444; background: transparent; color: #9090a0; }
+.btn-green { color: #22c55e; border-color: #22c55e; }
+.btn-blue { color: #60a5fa; }
+.split-btn { display: flex; border: 1px solid #444; border-radius: 4px; overflow: hidden; }
+.split-main { font-size: 11px; padding: 3px 8px; background: transparent; color: #9090a0; border: none; border-right: 1px solid #444; }
+.split-main.loading { color: #a78bfa; border-color: #5b3cde; }
+.split-arrow { font-size: 10px; padding: 3px 6px; background: transparent; color: #9090a0; border: none; }
+.split-arrow.open { background: #1e1e32; color: #a78bfa; }
+.popover-panel {
+  background: #1e1e32;
+  border: 1px solid #3a3a5e;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 8px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+.popover-title { font-size: 11px; color: #9090b0; margin-bottom: 6px; }
+.mini-textarea {
+  width: 100%;
+  padding: 6px 8px;
+  border-radius: 5px;
+  border: 1px solid #3a3a5e;
+  background: #12121f;
+  color: #e0e0e0;
+  font-size: 11px;
+  resize: none;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+.btn-row { display: flex; gap: 6px; margin-top: 6px; }
+.btn-guided { flex: 1; padding: 5px; border-radius: 4px; background: #2a1f4e; border: 1px solid #5b3cde; color: #a78bfa; font-size: 11px; text-align: center; }
+.btn-direct { flex: 1; padding: 5px; border-radius: 4px; background: transparent; border: 1px solid #444; color: #9090a0; font-size: 11px; text-align: center; }
+.done-btn { font-size: 11px; padding: 3px 8px; border-radius: 4px; border: 1px solid #22c55e; color: #22c55e; background: transparent; }
+.section-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #c0c0e0;
+  margin: 20px 0 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #2a2a3e;
+}
+.note {
+  font-size: 11px;
+  color: #606080;
+  margin-top: 6px;
+  padding: 6px 8px;
+  background: #1a1a2e;
+  border-radius: 4px;
+  border-left: 2px solid #3a3a5e;
+}
+</style>
+
+<!-- Flow 1: Direct Generate -->
+<div class="section-title">① 左侧点击 → 直接生成</div>
+<div class="flow-row">
+  <div class="flow-step">
+    <div class="step-label">初始状态</div>
+    <div class="card-footer-demo">
+      <button class="btn btn-green">⚡ 速读</button>
+      <div class="split-btn">
+        <button class="split-main">生成实验想法</button>
+        <button class="split-arrow">▲</button>
+      </div>
+      <a class="btn-blue" style="font-size:11px;text-decoration:none">阅读原文 →</a>
+    </div>
+  </div>
+  <div class="flow-arrow">→</div>
+  <div class="flow-step">
+    <div class="step-label">点击左侧后（生成中）</div>
+    <div class="card-footer-demo">
+      <button class="btn btn-green">⚡ 速读</button>
+      <div class="split-btn">
+        <button class="split-main loading">⏳ 生成中...</button>
+        <button class="split-arrow" disabled style="opacity:0.4">▲</button>
+      </div>
+      <a class="btn-blue" style="font-size:11px;text-decoration:none">阅读原文 →</a>
+    </div>
+    <div class="note">左侧文字变为「⏳ 生成中...」，右侧箭头 disabled</div>
+  </div>
+  <div class="flow-arrow">→</div>
+  <div class="flow-step">
+    <div class="step-label">生成完成（选择弹窗）</div>
+    <div class="card-footer-demo">
+      <button class="btn btn-green">⚡ 速读</button>
+      <button class="done-btn">查看想法 (3)</button>
+      <a class="btn-blue" style="font-size:11px;text-decoration:none">阅读原文 →</a>
+    </div>
+    <div class="note">进入现有的 IdeasSelectModal 选择流程，完成后显示「查看想法」</div>
+  </div>
+</div>
+
+<!-- Flow 2: Guided Generate -->
+<div class="section-title">② 右侧箭头 → 引导生成</div>
+<div class="flow-row">
+  <div class="flow-step">
+    <div class="step-label">点击右侧 ▲ 后</div>
+    <div class="card-footer-demo">
+      <button class="btn btn-green">⚡ 速读</button>
+      <div style="position:relative">
+        <div class="split-btn">
+          <button class="split-main">生成实验想法</button>
+          <button class="split-arrow open">▲</button>
+        </div>
+        <div class="popover-panel" style="position:absolute;bottom:28px;right:0;width:220px">
+          <div class="popover-title">✏️ 输入你的想法方向（可选）</div>
+          <textarea class="mini-textarea" rows="2" placeholder="例如：想探索 agent 工具调用的边界…"></textarea>
+          <div class="btn-row">
+            <div class="btn-guided">引导生成</div>
+            <div class="btn-direct">直接生成</div>
+          </div>
+        </div>
+      </div>
+      <a class="btn-blue" style="font-size:11px;text-decoration:none">阅读原文 →</a>
+    </div>
+    <div class="note">面板向上弹出；点击卡片其他区域或 ESC 关闭</div>
+  </div>
+  <div class="flow-arrow">→</div>
+  <div class="flow-step">
+    <div class="step-label">填写引导文字，点击「引导生成」</div>
+    <div class="card-footer-demo">
+      <button class="btn btn-green">⚡ 速读</button>
+      <div class="split-btn">
+        <button class="split-main loading">⏳ 生成中...</button>
+        <button class="split-arrow" style="opacity:0.4">▲</button>
+      </div>
+      <a class="btn-blue" style="font-size:11px;text-decoration:none">阅读原文 →</a>
+    </div>
+    <div class="note">引导文字附加到 prompt 中，API 请求携带 <code style="background:#1a1a2e;padding:1px 4px;border-radius:3px">user_hint</code> 字段</div>
+  </div>
+  <div class="flow-arrow">→</div>
+  <div class="flow-step">
+    <div class="step-label">完成（同直接生成）</div>
+    <div class="card-footer-demo">
+      <button class="btn btn-green">⚡ 速读</button>
+      <button class="done-btn">查看想法 (3)</button>
+      <a class="btn-blue" style="font-size:11px;text-decoration:none">阅读原文 →</a>
+    </div>
+    <div class="note">进入同样的 IdeasSelectModal 流程</div>
+  </div>
+</div>
+
+<!-- Backend change summary -->
+<div class="section-title">③ 后端变更摘要</div>
+<div style="background:#12121f;border:1px solid #2a2a3e;border-radius:8px;padding:14px;font-size:12px;color:#c0c0e0;line-height:1.8">
+  <div>• <strong>API</strong>：<code style="background:#1a1a2e;padding:1px 5px;border-radius:3px">POST /generate-ideas/item</code> 新增可选字段 <code style="background:#1a1a2e;padding:1px 5px;border-radius:3px">user_hint: str</code></div>
+  <div>• <strong>Prompt</strong>：若 <code style="background:#1a1a2e;padding:1px 5px;border-radius:3px">user_hint</code> 非空，在 prompt 末尾追加「用户方向提示」段落</div>
+  <div>• <strong>前端</strong>：<code style="background:#1a1a2e;padding:1px 5px;border-radius:3px">generateIdeas(hint?)</code> 函数接受可选 hint 参数，传入请求体</div>
+</div>
+</style>

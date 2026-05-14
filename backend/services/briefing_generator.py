@@ -7,6 +7,43 @@ import json
 import uuid
 
 
+FEED_SOURCE_TYPES = {"rss", "blog", "news", "newsletter", "smolai", "hackernews", "investor", "wechat"}
+
+
+def _parse_item_datetime(value) -> Optional[datetime]:
+    if isinstance(value, datetime):
+        dt = value
+    elif isinstance(value, str) and value:
+        raw = value.strip()
+        try:
+            if len(raw) == 10:
+                dt = datetime.strptime(raw, "%Y-%m-%d")
+            else:
+                dt = datetime.fromisoformat(raw.replace("Z", "+00:00"))
+        except ValueError:
+            return None
+    else:
+        return None
+
+    if dt.tzinfo is not None:
+        dt = dt.replace(tzinfo=None)
+    return dt
+
+
+def _is_recent_feed_item(item: Dict, fetched_at: datetime) -> bool:
+    """Feed 条目发布时间超过 7 天则不进入简报候选。"""
+    if item.get("source_type") not in FEED_SOURCE_TYPES:
+        return True
+
+    published_at = _parse_item_datetime(
+        item.get("published_at") or item.get("published_date") or item.get("created_at")
+    )
+    if published_at is None:
+        return True
+
+    return fetched_at - published_at <= timedelta(days=7)
+
+
 def get_briefing_by_date(date: str) -> Optional[Dict]:
     """获取指定日期的简报（始终从内容文件动态生成）"""
     return generate_briefing_for_date(date)
@@ -22,6 +59,7 @@ def get_latest_briefing() -> Optional[Dict]:
 
 def generate_briefing_for_date(date: str) -> Optional[Dict]:
     """为指定日期生成简报：优先当天内容，不足时向前补充最多 2 天"""
+    fetched_at = datetime.now()
     dates = get_all_dates()
     all_dates_in_range = [d for d in dates if d <= date]
 
@@ -32,7 +70,7 @@ def generate_briefing_for_date(date: str) -> Optional[Dict]:
     # 对当天缺失的 source_type，用前一天的补充（最多回溯 2 天）
     # 注意：只补充当天完全没有的类型，已有的类型不用前日内容，避免重复
     fallback_items = []
-    IMPORTANT_TYPES = {"repo", "github", "arxiv", "paper", "rss"}
+    IMPORTANT_TYPES = {"repo", "github", "arxiv", "paper", "rss", "hackernews"}
     missing_types = IMPORTANT_TYPES - today_types
 
     for extra_day in range(1, 3):
@@ -50,7 +88,10 @@ def generate_briefing_for_date(date: str) -> Optional[Dict]:
         filled = {i.get("source_type") for i in fallback_items}
         missing_types -= filled
 
-    all_items = today_items + fallback_items
+    all_items = [
+        item for item in today_items + fallback_items
+        if _is_recent_feed_item(item, fetched_at)
+    ]
 
     if not all_items:
         return None
@@ -73,10 +114,13 @@ def generate_briefing_for_date(date: str) -> Optional[Dict]:
         "blog": 20,
         "rss": 50,
         "smolai": 15,
+        "hackernews": 20,
         "newsletter": 10,
         "news": 20,
     }
     PER_SOURCE_LIMIT = 3  # 每个具体 source 最多 3 条，避免单源垄断
+    # 聚合源（每条来自不同项目/论文），不受 per-source 限制
+    NO_PER_SOURCE_LIMIT_TYPES = {"arxiv", "paper", "github", "repo", "model", "smolai", "hackernews"}
 
     by_type: Dict[str, List] = {}
     for item in unique_items:
@@ -87,13 +131,14 @@ def generate_briefing_for_date(date: str) -> Optional[Dict]:
     for t, type_items in by_type.items():
         limit = type_limits.get(t, 10)
         type_items.sort(key=lambda x: -x.get("relevance_score", 0))
-        # 先做每类 top N，再做每 source 限流
+        # 先做每类 top N，再做每 source 限流（聚合源跳过限流）
         source_counts: Dict[str, int] = {}
+        skip_per_source = t in NO_PER_SOURCE_LIMIT_TYPES
         for item in type_items:
             if len([i for i in items if i.get("source_type") == t]) >= limit:
                 break
             src = item.get("source", "")
-            if source_counts.get(src, 0) >= PER_SOURCE_LIMIT:
+            if not skip_per_source and source_counts.get(src, 0) >= PER_SOURCE_LIMIT:
                 continue
             source_counts[src] = source_counts.get(src, 0) + 1
             items.append(item)

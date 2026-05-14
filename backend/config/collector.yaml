@@ -4,10 +4,6 @@
 database:
   path: ./data/tokenburner.db
 
-# WanQing AI API 配置
-wanqing:
-  apiKey: "tdvwngr9us4yn9nk707a67z0hdj3niq0gk9a"
-
 # 数据源配置
 sources:
 
@@ -29,7 +25,7 @@ sources:
     enabled: true
     languages:
       - any
-    timeRange: weekly
+    timeRange: daily
 
   # ============================================================
   # 三、AI 模型平台（新增）
@@ -52,15 +48,6 @@ sources:
           limit: 10
         category: ["ai", "papers", "huggingface"]
 
-      - name: "CivitAI Trending"
-        type: "civitai"
-        url: "https://civitai.com/api/v1/models"
-        params:
-          sort: "Newest"
-          period: "Day"
-          limit: 10
-        category: ["ai", "models", "image-generation"]
-
   # ============================================================
   # 四、RSS 订阅源
   # ============================================================
@@ -70,16 +57,19 @@ sources:
 
       # ----------------------------------------------------------
       # 4.1 AI 公司官方博客（已验证可用的 RSS）
+      # source_type: blog → 有当日内容取当日，无则 fallback 最新3条
       # ----------------------------------------------------------
       - name: "OpenAI Blog"
         type: "direct"
-        url: "https://openai.com/blog/rss.xml"
+        source_type: "blog"
+        url: "https://openai.com/news/rss.xml"
         category: ["ai", "openai", "official"]
         fetchInterval: 1800
         priority: "high"
 
       - name: "Google DeepMind Blog"
         type: "direct"
+        source_type: "blog"
         url: "https://deepmind.google/blog/rss.xml"
         category: ["ai", "google", "deepmind"]
         fetchInterval: 3600
@@ -87,6 +77,7 @@ sources:
 
       - name: "Google AI Blog"
         type: "direct"
+        source_type: "blog"
         url: "https://blog.google/technology/ai/rss/"
         category: ["ai", "google", "official"]
         fetchInterval: 3600
@@ -94,6 +85,7 @@ sources:
 
       - name: "Meta Engineering"
         type: "direct"
+        source_type: "blog"
         url: "https://engineering.fb.com/feed/"
         category: ["ai", "meta", "engineering"]
         fetchInterval: 3600
@@ -101,44 +93,92 @@ sources:
 
       - name: "Cohere Blog"
         type: "direct"
+        source_type: "blog"
         url: "https://cohere.com/blog/rss.xml"
         category: ["ai", "cohere", "enterprise"]
         fetchInterval: 3600
         priority: "high"
+  
+      - name: "Anthropic Blog"
+        type: "direct"
+        source_type: "blog"
+        url: "https://rss.app/feeds/yQRnUTh3nySegGbE.xml"
+        category: ["ai", "anthropic", "official"]
+        fetchInterval: 3600
+        priority: "high"
 
-      # Anthropic, xAI, Stability AI, Mistral 暂无公开 RSS
-      # 可后续通过网页爬取或 RSSHub 代理
+      # xAI, Stability AI, Mistral 暂无公开 RSS
 
       # ----------------------------------------------------------
       # 4.2 AI 新闻聚合
       # ----------------------------------------------------------
-      - name: "AI News (Latent Space)"
+      - name: "Smol AI News"
         type: "direct"
-        url: "https://www.latent.space/s/ainews/rss"
+        source_type: "smolai"
+        url: "https://news.smol.ai/rss.xml"
+        category: ["ai", "news", "daily"]
+        fetchInterval: 3600
+        priority: "high"
+
+      - name: "HackerNews Daily"
+        type: "direct"
+        source_type: "hackernews"
+        url: "https://www.supertechfans.com/cn/index.xml"
+        category: ["tech", "news", "hackernews", "daily"]
+        expand_topics: true   # 每期 issue 自动拆解为多个独立情报条目
+        fetchInterval: 3600
+        priority: "high"
+
+      # ----------------------------------------------------------
+      # 4.10 投资者资讯
+      # ----------------------------------------------------------
+      - name: "All-In Podcast"
+        type: "direct"
+        source_type: "investor"
+        url: "https://feeds.simplecast.com/JGE3yC0V"
+        category: ["investor", "vc", "tech", "podcast"]
+        fetchInterval: 3600
+        priority: "high"
+
+      - name: "Investor News Feed"
+        type: "direct"
+        source_type: "investor"
+        url: "https://rss.app/feeds/c7GxaZ3TVD8cWsFs.xml"
+        category: ["investor", "vc", "tech"]
+        fetchInterval: 3600
+        priority: "high"
+
+      - name: "AI Investor News"
+        type: "direct"
+        source_type: "investor"
+        url: "https://rss.app/rss-feed?keyword=Artificial%20Intelligence&region=US&lang=en"
+        category: ["investor", "ai", "us", "news"]
+        fetchInterval: 3600
+        priority: "high"
+
+      - name: "The AI Valley"
+        type: "direct"
+        source_type: "news"
+        url: "https://kill-the-newsletter.com/feeds/sg5lm1gdqvvwgskcyk8q.xml"
+        category: ["ai", "news", "daily"]
+        fetchInterval: 3600
+        priority: "high"
+
+      - name: "Latent Space"
+        type: "direct"
+        url: "https://www.latent.space/feed"
         category: ["ai", "news", "daily"]
         fetchInterval: 3600
 
       - name: "Ben's Bites"
         type: "direct"
-        url: "https://www.bensbites.com/rss"
+        url: "https://www.bensbites.com/feed"
         category: ["ai", "tools", "weekly"]
         fetchInterval: 86400
 
       # ----------------------------------------------------------
       # 4.3 论文相关
       # ----------------------------------------------------------
-      - name: "HuggingFace Daily Papers"
-        type: "direct"
-        url: "https://huggingface.co/papers/feed"
-        category: ["ai", "papers", "daily"]
-        fetchInterval: 3600
-
-      - name: "Papers with Code"
-        type: "direct"
-        url: "https://paperswithcode.com/rss"
-        category: ["ai", "papers", "code"]
-        fetchInterval: 3600
-
       - name: "AMiner"
         type: "direct"
         url: "https://www.aminer.cn/rss"
@@ -158,6 +198,12 @@ sources:
         type: "direct"
         url: "https://garymarcus.substack.com/feed"
         category: ["ai", "ml"]
+        fetchInterval: 3600
+
+      - name: "Interconnects"
+        type: "direct"
+        url: "https://www.interconnects.ai/feed"
+        category: ["ai", "ml", "blog"]
         fetchInterval: 3600
 
       - name: "George Hotz"
@@ -265,12 +311,6 @@ sources:
         category: ["tech", "programming"]
         fetchInterval: 3600
 
-      - name: "Fabien Sanglard"
-        type: "direct"
-        url: "https://fabiensanglard.net/rss.xml"
-        category: ["tech", "graphics", "games"]
-        fetchInterval: 3600
-
       - name: "Michael Stapelberg"
         type: "direct"
         url: "https://michael.stapelberg.ch/feed.xml"
@@ -297,7 +337,7 @@ sources:
 
       - name: "mjg59"
         type: "direct"
-        url: "https://mjg59.dreamwidth.org/data/rss"
+        url: "https://codon.org.uk/~mjg59/blog/index.xml"
         category: ["tech", "linux", "security"]
         fetchInterval: 3600
 
@@ -329,12 +369,6 @@ sources:
         type: "direct"
         url: "https://www.righto.com/feeds/posts/default"
         category: ["tech", "hardware", "reverse-engineering"]
-        fetchInterval: 3600
-
-      - name: "Chris Siebenmann"
-        type: "direct"
-        url: "https://utcc.utoronto.ca/~cks/space/blog/?atom"
-        category: ["tech", "unix"]
         fetchInterval: 3600
 
       - name: "Evan Hahn"
@@ -389,6 +423,12 @@ sources:
         type: "direct"
         url: "https://terriblesoftware.org/feed/"
         category: ["tech", "career"]
+        fetchInterval: 3600
+
+      - name: "James Shore"
+        type: "direct"
+        url: "https://www.jamesshore.com/v2/feed"
+        category: ["tech", "software", "agile"]
         fetchInterval: 3600
 
       - name: "Philip Laine"
@@ -463,12 +503,6 @@ sources:
         category: ["tech"]
         fetchInterval: 3600
 
-      - name: "chadnauseam"
-        type: "direct"
-        url: "https://chadnauseam.com/rss.xml"
-        category: ["tech"]
-        fetchInterval: 3600
-
       - name: "HeyParis"
         type: "direct"
         url: "https://hey.paris/index.xml"
@@ -517,16 +551,16 @@ sources:
         category: ["tech", "graphics"]
         fetchInterval: 3600
 
+      - name: "Arpit Bhayani"
+        type: "direct"
+        url: "https://arpitbhayani.me/rss.xml"
+        category: ["tech", "programming", "systems"]
+        fetchInterval: 3600
+
       - name: "Simon Tatham"
         type: "direct"
         url: "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/feed.xml"
         category: ["tech", "puzzles"]
-        fetchInterval: 3600
-
-      - name: "computer.rip"
-        type: "direct"
-        url: "https://computer.rip/rss.xml"
-        category: ["tech", "history"]
         fetchInterval: 3600
 
       # ----------------------------------------------------------
@@ -574,11 +608,6 @@ sources:
       # ----------------------------------------------------------
       # 4.8 商业/创业
       # ----------------------------------------------------------
-      - name: "Paul Graham"
-        type: "direct"
-        url: "http://www.aaronsw.com/2002/feeds/pgessays.rss"
-        category: ["startup", "philosophy"]
-        fetchInterval: 3600
 
       - name: "Steve Blank"
         type: "direct"
@@ -595,12 +624,6 @@ sources:
       # ----------------------------------------------------------
       # 4.9 其他
       # ----------------------------------------------------------
-      - name: "Daring Fireball"
-        type: "direct"
-        url: "https://daringfireball.net/feeds/main"
-        category: ["tech", "apple"]
-        fetchInterval: 3600
-
       - name: "Pluralistic"
         type: "direct"
         url: "https://pluralistic.net/feed/"
@@ -613,11 +636,6 @@ sources:
         category: ["science", "analysis"]
         fetchInterval: 3600
 
-      - name: "Derek Thompson"
-        type: "direct"
-        url: "https://www.theatlantic.com/feed/author/derek-thompson/"
-        category: ["culture", "politics"]
-        fetchInterval: 3600
 
       - name: "Experimental History"
         type: "direct"
@@ -647,12 +665,6 @@ sources:
         type: "direct"
         url: "https://joanwestenberg.com/rss"
         category: ["tech", "culture"]
-        fetchInterval: 3600
-
-      - name: "Dwarkesh Patel"
-        type: "direct"
-        url: "https://www.dwarkeshpatel.com/feed"
-        category: ["tech", "science", "interviews"]
         fetchInterval: 3600
 
       - name: "Where's Your Ed At"
@@ -715,10 +727,98 @@ sources:
         category: ["tech"]
         fetchInterval: 3600
 
-  # Smol AI News (Web Crawler) - 备用
-  smolai:
-    enabled: false
-    maxIssues: 3
+      # ----------------------------------------------------------
+      # 微信公众号（通过第三方 RSS 转换服务）
+      # source_type: wechat → 有当日内容取当日，无则 fallback 最新3条
+      # ----------------------------------------------------------
+      - name: "APPSO"
+        type: "direct"
+        source_type: "wechat"
+        url: "https://supsub.net/feed/public/4ec69d2a/rss"
+        category: ["ai", "tech", "wechat", "chinese"]
+        fetchInterval: 3600
+
+      - name: "机器之心"
+        type: "direct"
+        source_type: "wechat"
+        url: "https://wechat2rss.bestblogs.dev/feed/8d97af31b0de9e48da74558af128a4673d78c9a3.xml"
+        category: ["ai", "research", "wechat", "chinese"]
+        fetchInterval: 3600
+        priority: "high"
+
+      - name: "量子位"
+        type: "direct"
+        source_type: "wechat"
+        url: "https://www.qbitai.com/feed"
+        category: ["ai", "tech", "wechat", "chinese"]
+        fetchInterval: 3600
+        priority: "high"
+
+      - name: "晚点 LatePost"
+        type: "direct"
+        source_type: "wechat"
+        url: "rsshub://latepost"
+        category: ["tech", "business", "wechat", "chinese"]
+        fetchInterval: 3600
+        priority: "high"
+
+      - name: "虎嗅"
+        type: "direct"
+        source_type: "wechat"
+        url: "https://rss.huxiu.com/"
+        category: ["tech", "business", "wechat", "chinese"]
+        fetchInterval: 3600
+
+      - name: "赛博禅心"
+        type: "direct"
+        source_type: "wechat"
+        url: "https://wechat2rss.bestblogs.dev/feed/752c31ca0446b837339463fc5440539e20267d2f.xml"
+        category: ["ai", "startup", "wechat", "chinese"]
+        fetchInterval: 3600
+
+      - name: "Founder Park"
+        type: "direct"
+        source_type: "wechat"
+        url: "https://wechat2rss.bestblogs.dev/feed/f940695505f2be1399d23cc98182297cadf6f90d.xml"
+        category: ["startup", "founder", "wechat", "chinese"]
+        fetchInterval: 3600
+        priority: "high"
+
+      - name: "PaperAgent"
+        type: "direct"
+        source_type: "wechat"
+        url: "https://wechat2rss.bestblogs.dev/feed/54001ca616dbc4b55d2b25d79d68a70191a0ddf4.xml"
+        category: ["ai", "papers", "agent", "wechat", "chinese"]
+        fetchInterval: 3600
+
+      - name: "InfoQ 推荐"
+        type: "direct"
+        source_type: "wechat"
+        url: "rsshub://infoq/recommend"
+        category: ["tech", "engineering", "chinese"]
+        fetchInterval: 3600
+
+      - name: "深思圈"
+        type: "direct"
+        source_type: "wechat"
+        url: "https://wechat2rss.bestblogs.dev/feed/3e6fcb56a39b2e18f1036113655d4ff8fe726b62.xml"
+        category: ["ai", "thinking", "wechat", "chinese"]
+        fetchInterval: 3600
+
+      - name: "极客公园"
+        type: "direct"
+        source_type: "wechat"
+        url: "https://www.geekpark.net/rss"
+        category: ["ai", "thinking", "wechat", "chinese"]
+        fetchInterval: 3600
+
+      - name: "腾讯科技"
+        type: "direct"
+        source_type: "wechat"
+        url: "https://plink.anyfeeder.com/weixin/qqtech"
+        category: ["ai", "thinking", "wechat", "chinese"]
+        fetchInterval: 3600
+
 
 # AI 处理流水线配置
 pipeline:

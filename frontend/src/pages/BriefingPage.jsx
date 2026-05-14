@@ -1,6 +1,7 @@
 import { useEffect, useState, useMemo, useRef, useCallback } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
+import { buildDailyBriefingPost, getTopBriefingItems } from './dailyContent'
 
 const CATEGORY_TABS = [
   { key: 'all', label: '全部', icon: '∗' },
@@ -10,7 +11,8 @@ const CATEGORY_TABS = [
   { key: 'news', label: '资讯', icon: '📰' },
   { key: 'blog', label: 'AI公司博客', icon: '🏢' },
   { key: 'wechat', label: '微信公众号', icon: '💬' },
-  { key: 'smolai', label: 'Smol资讯', icon: '⚡' }
+  { key: 'smolai', label: 'Smol资讯', icon: '⚡' },
+  { key: 'investor', label: '投资者资讯', icon: '💼' }
 ]
 
 const SOURCE_TYPE_MAP = {
@@ -26,7 +28,9 @@ const SOURCE_TYPE_MAP = {
   podcast: { label: '播客', badge: 'badge-news' },
   news: { label: '资讯', badge: 'badge-news' },
   blog: { label: '官方博客', badge: 'badge-model' },
-  wechat: { label: '公众号', badge: 'badge-news' }
+  wechat: { label: '公众号', badge: 'badge-news' },
+  hackernews: { label: 'HackerNews', badge: 'badge-smolai' },
+  investor: { label: '投资者资讯', badge: 'badge-news' }
 }
 
 
@@ -35,76 +39,54 @@ function BriefingPage() {
   const [briefing, setBriefing] = useState(null)
   const [activeCategory, setActiveCategory] = useState('all')
   const [loading, setLoading] = useState(true)
-  const [digest, setDigest] = useState(null)
-  const [digestLoading, setDigestLoading] = useState(false)
   const [opportunities, setOpportunities] = useState([])
   const [oppsLoading, setOppsLoading] = useState(false)
   const [oppsRemaining, setOppsRemaining] = useState(null) // 剩余未分析条目数
   const [searchingOpps, setSearchingOpps] = useState(false)
   const [quickReads, setQuickReads] = useState({}) // { item_id: summary }
-  const [batchGenerating, setBatchGenerating] = useState(false)
   const [rdev, setRdev] = useState(null)
   const [rdevLoading, setRdevLoading] = useState(false)
   const [rdevRemaining, setRdevRemaining] = useState(null)
   const [searchingRdev, setSearchingRdev] = useState(false)
+  const [sortOrder, setSortOrder] = useState('desc') // desc=倒序(新→旧), asc=正序(旧→新)
 
   useEffect(() => {
-    fetchData()
+    const controller = new AbortController()
+    fetchData(controller.signal)
+    return () => controller.abort()
   }, [date])
 
-  async function fetchData() {
+  async function fetchData(signal) {
     setLoading(true)
     try {
-      const res = await fetch(`/api/briefing/${date}`)
+      const res = await fetch(`/api/briefing/${date}`, { signal })
       const briefingData = await res.json()
       setBriefing(briefingData)
     } catch (error) {
-      console.error('Failed to fetch data:', error)
+      if (error.name !== 'AbortError') console.error('Failed to fetch data:', error)
+      return
     } finally {
       setLoading(false)
     }
-    fetchDigest()
-    fetchOpportunities()
-    fetchRdev()
-    // 加载已缓存的速读，然后触发后台批量生成
-    fetch(`/api/content/quick-reads/${date}`)
+    fetch(`/api/content/quick-reads/${date}`, { signal })
       .then(r => r.ok ? r.json() : {})
-      .then(data => {
-        setQuickReads(data)
-        triggerBatchAndPoll()
-      })
-      .catch(() => triggerBatchAndPoll())
+      .then(data => setQuickReads(data))
+      .catch(() => {})
   }
 
-  async function triggerBatchAndPoll() {
-    setBatchGenerating(true)
-    try {
-      const res = await fetch(`/api/briefing/${date}/batch-quick-reads`, { method: 'POST' })
-      if (!res.ok) return
-      const result = await res.json()
-      if (result.generated > 0) {
-        // 有新生成的，刷新缓存
-        const qr = await fetch(`/api/content/quick-reads/${date}`)
-        if (qr.ok) setQuickReads(await qr.json())
-      }
-    } catch (e) {
-      console.error('[batch-quick-reads]', e)
-    } finally {
-      setBatchGenerating(false)
-    }
-  }
 
-  async function fetchRdev(refresh = false) {
+
+  async function fetchRdev(refresh = false, signal) {
     setRdevLoading(true)
     try {
-      const res = await fetch(`/api/briefing/${date}/rdev-opportunities${refresh ? '?refresh=true' : ''}`)
+      const res = await fetch(`/api/briefing/${date}/rdev-opportunities${refresh ? '?refresh=true' : ''}`, { signal })
       if (res.ok) {
         const data = await res.json()
         setRdev(data)
         setRdevRemaining(data.remaining ?? null)
       }
     } catch (e) {
-      console.error('Failed to fetch rdev opportunities:', e)
+      if (e.name !== 'AbortError') console.error('Failed to fetch rdev opportunities:', e)
     } finally {
       setRdevLoading(false)
     }
@@ -126,29 +108,17 @@ function BriefingPage() {
     }
   }
 
-  async function fetchDigest(refresh = false) {
-    setDigestLoading(true)
-    try {
-      const res = await fetch(`/api/briefing/${date}/category-digest${refresh ? '?refresh=true' : ''}`)
-      if (res.ok) setDigest(await res.json())
-    } catch (e) {
-      console.error('Failed to fetch digest:', e)
-    } finally {
-      setDigestLoading(false)
-    }
-  }
-
-  async function fetchOpportunities(refresh = false) {
+  async function fetchOpportunities(refresh = false, signal) {
     setOppsLoading(true)
     try {
-      const res = await fetch(`/api/briefing/${date}/opportunities${refresh ? '?refresh=true' : ''}`)
+      const res = await fetch(`/api/briefing/${date}/opportunities${refresh ? '?refresh=true' : ''}`, { signal })
       if (res.ok) {
         const data = await res.json()
         setOpportunities(data.opportunities || [])
         setOppsRemaining(data.remaining ?? null)
       }
     } catch (e) {
-      console.error('Failed to fetch opportunities:', e)
+      if (e.name !== 'AbortError') console.error('Failed to fetch opportunities:', e)
     } finally {
       setOppsLoading(false)
     }
@@ -172,20 +142,27 @@ function BriefingPage() {
 
   const filteredItems = useMemo(() => {
     if (!briefing) return []
-    const items = briefing.items || []
-    if (activeCategory === 'all') return items
-    return items.filter(item => {
-      const type = item.source_type
-      if (activeCategory === 'paper') return type === 'arxiv' || type === 'paper'
-      if (activeCategory === 'repo') return type === 'repo' || type === 'github'
-      if (activeCategory === 'model') return type === 'model'
-      if (activeCategory === 'blog') return type === 'blog'
-      if (activeCategory === 'wechat') return type === 'wechat'
-      if (activeCategory === 'smolai') return type === 'smolai'
-      if (activeCategory === 'news') return ['rss', 'newsletter', 'tweet', 'podcast', 'news'].includes(type)
-      return true
+    let items = briefing.items || []
+    if (activeCategory !== 'all') {
+      items = items.filter(item => {
+        const type = item.source_type
+        if (activeCategory === 'paper') return type === 'arxiv' || type === 'paper'
+        if (activeCategory === 'repo') return type === 'repo' || type === 'github'
+        if (activeCategory === 'model') return type === 'model'
+        if (activeCategory === 'blog') return type === 'blog'
+        if (activeCategory === 'wechat') return type === 'wechat'
+        if (activeCategory === 'smolai') return type === 'smolai' || type === 'hackernews' || item.source === 'HackerNews Daily'
+        if (activeCategory === 'investor') return type === 'investor'
+        if (activeCategory === 'news') return ['rss', 'newsletter', 'tweet', 'podcast', 'news'].includes(type)
+        return true
+      })
+    }
+    return [...items].sort((a, b) => {
+      const ta = a.created_at || ''
+      const tb = b.created_at || ''
+      return sortOrder === 'asc' ? ta.localeCompare(tb) : tb.localeCompare(ta)
     })
-  }, [briefing, activeCategory])
+  }, [briefing, activeCategory, sortOrder])
 
   if (loading) {
     return (
@@ -234,20 +211,14 @@ function BriefingPage() {
             <span style={{ color: 'var(--text-muted)' }}>/</span>
             <span style={{ color: 'var(--accent-blue)' }}>{date}</span>
             <span style={{ color: 'var(--text-muted)' }}>/</span>
-            <span style={{ color: 'var(--text-primary)' }}>AI技术日报</span>
+            <span style={{ color: 'var(--text-primary)' }}>今日 AI 情报</span>
           </div>
-          {batchGenerating && (
-            <span className="ml-auto text-xs flex items-center gap-1" style={{ color: '#16a34a' }}>
-              <span className="loading-pulse">▌</span>
-              <span>速读生成中...</span>
-            </span>
-          )}
         </div>
       </header>
 
       {/* Category Tabs */}
       <div className="px-6 py-4 border-b" style={{ borderColor: 'var(--border)' }}>
-        <div className="flex gap-2">
+        <div className="flex items-center gap-2">
           {CATEGORY_TABS.map((tab) => (
             <button
               key={tab.key}
@@ -258,32 +229,22 @@ function BriefingPage() {
               <span>{tab.label}</span>
             </button>
           ))}
+          <button
+            onClick={() => setSortOrder(o => o === 'desc' ? 'asc' : 'desc')}
+            className="ml-auto text-xs px-3 py-1.5 rounded border font-medium transition-all flex items-center gap-1"
+            style={{
+              color: 'var(--text-secondary)',
+              borderColor: 'var(--border)',
+              backgroundColor: 'var(--bg-secondary)',
+              whiteSpace: 'nowrap',
+            }}
+          >
+            {sortOrder === 'desc' ? '↓ 倒序' : '↑ 正序'}
+          </button>
         </div>
       </div>
 
-      {/* Category Digest */}
-      <CategoryDigest digest={digest} loading={digestLoading} onRefresh={() => fetchDigest(true)} />
-
-      {/* Opportunity Radar */}
-      <OpportunityRadar
-        opportunities={opportunities}
-        loading={oppsLoading}
-        onRefresh={() => fetchOpportunities(true)}
-        onSearch={searchMoreOpportunities}
-        searching={searchingOpps}
-        remaining={oppsRemaining}
-        date={date}
-      />
-
-      {/* R&D Efficiency Insights */}
-      <RdevPanel
-        data={rdev}
-        loading={rdevLoading}
-        onRefresh={() => fetchRdev(true)}
-        onSearch={searchMoreRdev}
-        searching={searchingRdev}
-        remaining={rdevRemaining}
-      />
+      <DailyBriefingPublisher briefing={briefing} />
 
       {/* Content */}
       <div className="p-6" style={{ maxWidth: '900px' }}>
@@ -321,6 +282,56 @@ const SOURCE_TYPE_BADGE = {
   news:  { label: '资讯', color: '#f59e0b' },
 }
 
+function DailyBriefingPublisher({ briefing }) {
+  const [copied, setCopied] = useState(false)
+  const post = useMemo(() => buildDailyBriefingPost(briefing), [briefing])
+  const topItems = useMemo(() => getTopBriefingItems(briefing, 3), [briefing])
+
+  async function copyPost() {
+    await navigator.clipboard.writeText(`${post.title}\n\n${post.body}\n\n${post.tags}`)
+    setCopied(true)
+    setTimeout(() => setCopied(false), 1600)
+  }
+
+  return (
+    <section className="daily-publisher">
+      <div className="daily-publisher-main">
+        <div>
+          <span className="daily-eyebrow">今日 AI 情报</span>
+          <h1>今天 AI 圈发生了什么</h1>
+          <p>从今日情报里选出最值得看的内容，直接转成小红书可发布文案。</p>
+        </div>
+        <div className="daily-actions">
+          <Link to={`/daily-opportunities/${briefing.date}`} className="daily-action-link">
+            查看今日 AI 情报机会
+          </Link>
+          <button onClick={copyPost} className="daily-copy-btn">
+            {copied ? '已复制' : '复制小红书文案'}
+          </button>
+        </div>
+      </div>
+
+      <div className="daily-publisher-grid">
+        <div className="xhs-shot-card">
+          <span>{briefing.date}</span>
+          <h2>今日 AI 情报</h2>
+          {topItems.map((item, index) => (
+            <div key={item.id} className="xhs-shot-row">
+              <b>{index + 1}</b>
+              <p>{item.title}</p>
+            </div>
+          ))}
+        </div>
+        <div className="daily-copy-preview">
+          <strong>{post.title}</strong>
+          <pre>{post.body}</pre>
+          <small>{post.tags}</small>
+        </div>
+      </div>
+    </section>
+  )
+}
+
 function ScoreDot({ value }) {
   return (
     <div className="flex gap-0.5">
@@ -339,8 +350,6 @@ function OpportunityRadar({ opportunities, loading, onRefresh, onSearch, searchi
 
   // reset when date changes
   useEffect(() => { setCurrent(0); setSaved(new Set()); setSkipped(new Set()) }, [date])
-
-  if (!loading && opportunities.length === 0) return null
 
   const opp = opportunities[current]
   const total = opportunities.length
@@ -392,9 +401,9 @@ function OpportunityRadar({ opportunities, loading, onRefresh, onSearch, searchi
       <div className="flex items-center justify-between mb-3">
         <div className="flex items-center gap-2">
           <span className="text-xs font-semibold uppercase tracking-wider" style={{ color: 'var(--text-muted)' }}>
-            机会雷达
+            商业机会
           </span>
-          {!loading && total > 0 && (
+          {!loading && (
             <span className="text-xs font-mono px-1.5 py-0.5 rounded"
               style={{ backgroundColor: '#eff6ff', color: '#3b82f6' }}>
               {total} 个机会
@@ -407,6 +416,19 @@ function OpportunityRadar({ opportunities, loading, onRefresh, onSearch, searchi
           )}
         </div>
         <div className="flex items-center gap-3">
+          {total > 0 && (
+            <Link to={`/opportunities/${date}`}
+              className="text-xs px-3 py-1.5 rounded border font-medium transition-all"
+              style={{
+                color: '#2563eb',
+                borderColor: '#93c5fd',
+                backgroundColor: '#eff6ff',
+                textDecoration: 'none',
+                whiteSpace: 'nowrap',
+              }}>
+              全部机会
+            </Link>
+          )}
           {remaining !== 0 && (
             <button onClick={onSearch} disabled={searching || loading}
               className="text-xs px-3 py-1.5 rounded border font-medium transition-all"
@@ -596,7 +618,26 @@ function OpportunityRadar({ opportunities, loading, onRefresh, onSearch, searchi
               style={{ borderColor: 'var(--border)' }}>›</button>
           </div>
         </div>
-      ) : null}
+      ) : (
+        <div className="rounded-xl border p-5 text-center"
+          style={{ backgroundColor: 'white', borderColor: 'var(--border)' }}>
+          <p className="text-sm font-medium mb-1" style={{ color: 'var(--text-primary)' }}>
+            暂无商业机会
+          </p>
+          <p className="text-xs mb-4" style={{ color: 'var(--text-muted)' }}>
+            当前批次未分析出可落地的商业机会，可以重新获取新的机会。
+          </p>
+          <button onClick={onRefresh} disabled={loading || searching}
+            className="text-xs px-3 py-1.5 rounded border font-medium disabled:opacity-40"
+            style={{
+              color: '#2563eb',
+              borderColor: '#93c5fd',
+              backgroundColor: '#eff6ff',
+            }}>
+            {loading ? '分析中...' : '↺ 重新获取机会'}
+          </button>
+        </div>
+      )}
 
       {/* Progress dots */}
       {total > 0 && (
@@ -613,68 +654,6 @@ function OpportunityRadar({ opportunities, loading, onRefresh, onSearch, searchi
           ))}
         </div>
       )}
-    </div>
-  )
-}
-
-const DIGEST_CATEGORIES = [
-  { key: 'paper', icon: '📄', label: '论文', accent: '#6366f1', bg: '#eef2ff' },
-  { key: 'repo',  icon: '🛠️', label: '仓库', accent: '#0ea5e9', bg: '#e0f2fe' },
-  { key: 'model', icon: '🤖', label: '模型', accent: '#10b981', bg: '#d1fae5' },
-  { key: 'news',  icon: '📰', label: '资讯', accent: '#f59e0b', bg: '#fef3c7' },
-]
-
-function CategoryDigest({ digest, loading, onRefresh }) {
-  // 有缓存或正在加载才展示区块
-  if (!loading && !digest) return null
-
-  return (
-    <div className="px-6 py-4 border-b" style={{ borderColor: 'var(--border)' }}>
-      <div className="flex items-center justify-between mb-3">
-        <span className="text-xs font-semibold uppercase tracking-wider" style={{ color: 'var(--text-muted)' }}>
-          今日速览
-        </span>
-        <button
-          onClick={onRefresh}
-          disabled={loading}
-          className="text-xs disabled:opacity-40"
-          style={{ color: 'var(--text-muted)' }}
-        >
-          {loading ? '生成中...' : '↺ 重新生成'}
-        </button>
-      </div>
-
-      <div className="grid grid-cols-4 gap-3">
-        {DIGEST_CATEGORIES.map(({ key, icon, label, accent, bg }) => {
-          const data = digest?.categories?.[key]
-          return (
-            <div
-              key={key}
-              className="rounded-xl p-3 border"
-              style={{ backgroundColor: bg, borderColor: accent + '40' }}
-            >
-              <div className="flex items-center gap-1.5 mb-2">
-                <span style={{ fontSize: '14px' }}>{icon}</span>
-                <span className="text-xs font-semibold" style={{ color: accent }}>{label}</span>
-                {data?.count != null && (
-                  <span className="text-xs ml-auto font-mono" style={{ color: accent + 'bb' }}>
-                    {data.count} 条
-                  </span>
-                )}
-              </div>
-              {loading && !data ? (
-                <div className="text-xs" style={{ color: accent + '99' }}>生成中...</div>
-              ) : data?.summary ? (
-                <p className="text-xs leading-relaxed" style={{ color: '#374151' }}>
-                  {data.summary}
-                </p>
-              ) : (
-                <p className="text-xs" style={{ color: accent + '88' }}>今日暂无内容</p>
-              )}
-            </div>
-          )
-        })}
-      </div>
     </div>
   )
 }
@@ -1225,7 +1204,7 @@ function RdevPanel({ data, loading, onRefresh, onSearch, searching, remaining })
           <span className="text-xs font-semibold uppercase tracking-wider" style={{ color: 'var(--text-muted)' }}>
             研发效能洞察
           </span>
-          {!loading && total > 0 && (
+          {!loading && (
             <span className="text-xs font-mono px-1.5 py-0.5 rounded"
               style={{ backgroundColor: '#fef3c7', color: '#d97706' }}>
               {total} 个方案
@@ -1432,7 +1411,26 @@ function RdevPanel({ data, loading, onRefresh, onSearch, searching, remaining })
               style={{ borderColor: 'var(--border)' }}>›</button>
           </div>
         </div>
-      ) : null}
+      ) : (
+        <div className="rounded-xl border p-5 text-center"
+          style={{ backgroundColor: 'white', borderColor: 'var(--border)' }}>
+          <p className="text-sm font-medium mb-1" style={{ color: 'var(--text-primary)' }}>
+            暂无研发效能洞察
+          </p>
+          <p className="text-xs mb-4" style={{ color: 'var(--text-muted)' }}>
+            当前批次未分析出可执行的研发效能方案，可以重新获取新的机会。
+          </p>
+          <button onClick={onRefresh} disabled={loading || searching}
+            className="text-xs px-3 py-1.5 rounded border font-medium disabled:opacity-40"
+            style={{
+              color: '#d97706',
+              borderColor: '#f59e0b',
+              backgroundColor: '#fffbeb',
+            }}>
+            {loading ? '分析中...' : '↺ 重新获取机会'}
+          </button>
+        </div>
+      )}
 
       {/* Progress dots */}
       {total > 0 && (

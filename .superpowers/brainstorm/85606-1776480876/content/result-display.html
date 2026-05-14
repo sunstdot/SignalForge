@@ -1,0 +1,67 @@
+<h2>生成完成后，展示什么？</h2>
+<p class="subtitle">点击"发小红书"后，内容生成完成时的反馈方式</p>
+
+<div class="cards">
+
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:16px;background:#f9fafb;border-bottom:1px solid #e5e7eb;min-height:140px">
+      <!-- Toast notification -->
+      <div style="position:relative;min-height:110px">
+        <div style="position:absolute;top:0;right:0;background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:10px 14px;box-shadow:0 4px 12px rgba(0,0,0,0.1);width:220px">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px">
+            <span style="color:#16a34a;font-size:14px">✓</span>
+            <span style="font-size:12px;font-weight:600;color:#111">小红书内容已生成</span>
+          </div>
+          <p style="font-size:11px;color:#6b7280;margin:0">已保存至 data/social_posts/xiaohongshu/2026-04-18.json</p>
+        </div>
+        <div style="position:absolute;bottom:0;left:0;font-size:11px;color:#9ca3af">页面继续正常使用...</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A. Toast 通知</h3>
+      <p>轻量提示"已保存路径"，页面不打断。适合你不需要在这里预览内容、直接去文件里查看的场景。</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:16px;background:#f9fafb;border-bottom:1px solid #e5e7eb;min-height:140px">
+      <!-- Modal preview -->
+      <div style="background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:12px;box-shadow:0 4px 20px rgba(0,0,0,0.12)">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+          <span style="font-size:12px;font-weight:700;color:#111">📕 小红书内容预览</span>
+          <span style="font-size:11px;color:#9ca3af;cursor:pointer">✕</span>
+        </div>
+        <div style="display:flex;gap:6px;margin-bottom:8px">
+          <div style="width:44px;height:60px;background:linear-gradient(135deg,#ff2442,#ff6b6b);border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+            <span style="font-size:8px;color:white;text-align:center;font-weight:600;padding:2px">封面图文案</span>
+          </div>
+          <div style="width:44px;height:60px;background:#fff0f2;border:1px solid #fecdd3;border-radius:6px;display:flex;align-items:center;justify-content:center">
+            <span style="font-size:8px;color:#9ca3af;text-align:center">痛点市场</span>
+          </div>
+          <div style="width:44px;height:60px;background:#fff0f2;border:1px solid #fecdd3;border-radius:6px;display:flex;align-items:center;justify-content:center">
+            <span style="font-size:8px;color:#9ca3af;text-align:center">MVP功能</span>
+          </div>
+          <div style="width:44px;height:60px;background:#fff0f2;border:1px solid #fecdd3;border-radius:6px;display:flex;align-items:center;justify-content:center">
+            <span style="font-size:8px;color:#9ca3af;text-align:center">TL点评</span>
+          </div>
+          <div style="width:44px;height:60px;background:#fff0f2;border:1px solid #fecdd3;border-radius:6px;display:flex;align-items:center;justify-content:center">
+            <span style="font-size:8px;color:#9ca3af;text-align:center">引流钩子</span>
+          </div>
+        </div>
+        <div style="background:#f9fafb;border-radius:6px;padding:8px;font-size:11px;color:#374151;line-height:1.5">
+          <b>封面标题：</b>今天 AI 帮我挖到了 1 个搞钱盲区 💰<br>
+          <b>副标题：</b>基于 VoxCPM2 的中文语音合成工具
+        </div>
+        <div style="margin-top:8px;display:flex;justify-content:flex-end;gap:6px">
+          <button style="font-size:11px;padding:4px 10px;border-radius:6px;border:1px solid #e5e7eb;color:#6b7280;background:#fff">复制文案</button>
+          <button style="font-size:11px;padding:4px 10px;border-radius:6px;border:1px solid #ff2442;color:#ff2442;background:#fff5f6">关闭</button>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B. 预览 Modal</h3>
+      <p>弹出模态框展示 5 张图的文案内容（5 个色块代表封面/图2/.../图5），可以一眼审核文案质量、复制，再去真正的小红书发布。</p>
+    </div>
+  </div>
+
+</div>

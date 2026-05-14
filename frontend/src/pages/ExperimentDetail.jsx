@@ -1,16 +1,19 @@
 import { useEffect, useState } from 'react'
 import { useParams, Link, useNavigate } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 
 function ExperimentDetail() {
   const { id } = useParams()
   const navigate = useNavigate()
   const [experiment, setExperiment] = useState(null)
   const [logs, setLogs] = useState([])
-  const [ideas, setIdeas] = useState('')
+  const [idea, setIdea] = useState(null)
+  const [productConcept, setProductConcept] = useState(null) // { content, generated_at }
   const [newLog, setNewLog] = useState('')
   const [loading, setLoading] = useState(true)
   const [generating, setGenerating] = useState(false)
+  const [copied, setCopied] = useState(false)
 
   useEffect(() => {
     fetchExperiment()
@@ -27,6 +30,17 @@ function ExperimentDetail() {
       .then(data => {
         setExperiment(data)
         setLoading(false)
+        // 恢复已缓存的产品思路
+        if (data.product_concept?.content) {
+          setProductConcept(data.product_concept)
+        }
+        // Load linked idea for product concept context
+        if (data.idea_id) {
+          fetch(`/api/experiments/ideas/${data.idea_id}`)
+            .then(r => r.ok ? r.json() : null)
+            .then(ideaData => { if (ideaData) setIdea(ideaData) })
+            .catch(() => { })
+        }
       })
       .catch(() => {
         setLoading(false)
@@ -51,7 +65,7 @@ function ExperimentDetail() {
 
   const deleteExperiment = () => {
     if (!confirm('确定要删除这个实验吗？')) return
-    
+
     fetch(`/api/experiments/${id}`, { method: 'DELETE' })
       .then(() => navigate('/experiments'))
   }
@@ -59,7 +73,7 @@ function ExperimentDetail() {
   const addLog = (e) => {
     e.preventDefault()
     if (!newLog.trim()) return
-    
+
     fetch(`/api/experiments/${id}/logs`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -71,6 +85,34 @@ function ExperimentDetail() {
       })
   }
 
+  const copyVibeCodingPrompt = () => {
+    const prompt = `# Vibe Coding 启动指令
+
+## 项目：${experiment.title}
+
+${experiment.description ? `## 背景\n${experiment.description}\n` : ''}
+## 产品方案
+
+${productConcept.content}
+
+---
+
+## 开始实现
+
+请基于以上产品方案开始实现这个项目。建议步骤：
+1. 确认技术栈和项目结构
+2. 搭建基础框架
+3. 逐步实现核心功能（按产品方案中的优先级）
+4. 每完成一个里程碑，告知进展
+
+请从第一步开始。`
+
+    navigator.clipboard.writeText(prompt).then(() => {
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2000)
+    })
+  }
+
   const generateIdeas = () => {
     setGenerating(true)
     fetch(`/api/experiments/${id}/ideas`, {
@@ -80,7 +122,7 @@ function ExperimentDetail() {
     })
       .then(res => res.json())
       .then(data => {
-        setIdeas(data.ideas)
+        setProductConcept({ content: data.ideas, generated_at: new Date().toISOString() })
         setGenerating(false)
       })
       .catch(() => setGenerating(false))
@@ -132,118 +174,40 @@ function ExperimentDetail() {
   const statusStyle = getStatusColor(experiment.status)
 
   return (
-    <div className="min-h-screen flex">
-      {/* Left Sidebar */}
-      <aside 
-        className="w-64 flex-shrink-0 fixed left-0 top-0 bottom-0 overflow-y-auto"
-        style={{ 
-          borderRight: '1px solid var(--border)',
-          backgroundColor: 'var(--bg-secondary)'
-        }}
+    <>
+      {/* Top Bar */}
+      <header
+        className="sticky top-0 z-20 border-b px-4 py-3"
+        style={{ backgroundColor: 'var(--bg-primary)', borderColor: 'var(--border)' }}
       >
-        {/* Header */}
-        <div 
-          className="p-4 border-b"
-          style={{ 
-            borderColor: 'var(--border)',
-            backgroundColor: 'var(--bg-primary)'
-          }}
-        >
-          <Link to="/" className="flex items-center gap-2 mb-3">
-            <span style={{ color: 'var(--accent-blue)' }}>◈</span>
-            <span className="font-semibold" style={{ color: 'var(--text-primary)' }}>TokenBurner</span>
-          </Link>
-          <div className="text-xs" style={{ color: 'var(--text-muted)' }}>
-            Experiments Lab
-          </div>
-        </div>
-
-        {/* Navigation */}
-        <div className="p-3">
-          <div 
-            className="text-xs font-medium uppercase tracking-wider mb-2 px-2"
-            style={{ color: 'var(--text-muted)' }}
-          >
-            Navigation
-          </div>
-          <nav className="space-y-1">
-            <Link to="/experiments" className="date-nav-item">
-              <span>←</span>
-              <span>返回列表</span>
-            </Link>
-          </nav>
-        </div>
-
-        {/* Info Panel */}
-        <div className="p-3">
-          <div 
-            className="text-xs font-medium uppercase tracking-wider mb-2 px-2"
-            style={{ color: 'var(--text-muted)' }}
-          >
-            Info
-          </div>
-          <div 
-            className="p-3 rounded-lg border"
-            style={{ 
-              backgroundColor: 'var(--bg-primary)',
-              borderColor: 'var(--border)'
-            }}
-          >
-            <div className="space-y-2 text-xs">
-              <div className="flex justify-between">
-                <span style={{ color: 'var(--text-muted)' }}>ID:</span>
-                <span style={{ color: 'var(--text-secondary)' }}>{experiment.id.slice(0, 8)}...</span>
-              </div>
-              <div className="flex justify-between">
-                <span style={{ color: 'var(--text-muted)' }}>Status:</span>
-                <span 
-                  className="px-1.5 py-0.5 rounded text-[10px]"
-                  style={{ backgroundColor: statusStyle.bg, color: statusStyle.text }}
-                >
-                  {getStatusText(experiment.status)}
-                </span>
-              </div>
-              <div className="flex justify-between">
-                <span style={{ color: 'var(--text-muted)' }}>Created:</span>
-                <span style={{ color: 'var(--text-secondary)' }}>
-                  {new Date(experiment.created_at).toLocaleDateString()}
-                </span>
-              </div>
-              <div className="flex justify-between">
-                <span style={{ color: 'var(--text-muted)' }}>Logs:</span>
-                <span style={{ color: 'var(--text-secondary)' }}>{logs.length}</span>
-              </div>
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-4">
+            <div className="window-dots">
+              <span className="window-dot window-dot-red" />
+              <span className="window-dot window-dot-yellow" />
+              <span className="window-dot window-dot-green" />
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <Link to="/" style={{ color: 'var(--text-muted)' }}>TokenBurner</Link>
+              <span style={{ color: 'var(--text-muted)' }}>/</span>
+              <Link to="/experiments/live" style={{ color: 'var(--text-muted)' }}>实验直播场</Link>
+              <span style={{ color: 'var(--text-muted)' }}>/</span>
+              <span style={{ color: 'var(--accent-blue)' }} className="font-medium">
+                {experiment.title}
+              </span>
             </div>
           </div>
-        </div>
-      </aside>
-
-      {/* Main Content */}
-      <main className="flex-1 ml-64">
-        {/* Top Bar */}
-        <header 
-          className="sticky top-0 z-20 border-b px-4 py-3"
-          style={{ 
-            backgroundColor: 'var(--bg-primary)',
-            borderColor: 'var(--border)'
-          }}
-        >
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-4">
-              <div className="window-dots">
-                <span className="window-dot window-dot-red" />
-                <span className="window-dot window-dot-yellow" />
-                <span className="window-dot window-dot-green" />
-              </div>
-              <div className="flex items-center gap-2 text-sm">
-                <Link to="/" style={{ color: 'var(--text-muted)' }}>TokenBurner</Link>
-                <span style={{ color: 'var(--text-muted)' }}>/</span>
-                <Link to="/experiments" style={{ color: 'var(--text-muted)' }}>Experiments</Link>
-                <span style={{ color: 'var(--text-muted)' }}>/</span>
-                <span style={{ color: 'var(--accent-blue)' }} className="font-medium">
-                  {experiment.title}
-                </span>
-              </div>
+          <div className="flex items-center gap-4">
+            <div className="flex items-center gap-3 text-xs" style={{ color: 'var(--text-muted)' }}>
+              <span>ID: {experiment.id.slice(0, 8)}...</span>
+              <span
+                className="px-1.5 py-0.5 rounded"
+                style={{ backgroundColor: statusStyle.bg, color: statusStyle.text }}
+              >
+                {getStatusText(experiment.status)}
+              </span>
+              <span>创建: {new Date(experiment.created_at).toLocaleDateString()}</span>
+              <span>日志: {logs.length}</span>
             </div>
             <button
               onClick={deleteExperiment}
@@ -253,10 +217,11 @@ function ExperimentDetail() {
               删除
             </button>
           </div>
-        </header>
+        </div>
+      </header>
 
-        {/* Content */}
-        <div className="p-6 max-w-4xl">
+      {/* Content */}
+      <div className="p-6 max-w-4xl">
           {/* Title & Status */}
           <div className="mb-6">
             <h1 className="text-2xl font-bold mb-2" style={{ color: 'var(--text-primary)' }}>
@@ -268,7 +233,7 @@ function ExperimentDetail() {
           </div>
 
           {/* Status Actions */}
-          <div 
+          <div
             className="flex flex-wrap gap-2 mb-6 p-3 rounded-lg border"
             style={{ backgroundColor: 'var(--bg-secondary)', borderColor: 'var(--border)' }}
           >
@@ -303,53 +268,150 @@ function ExperimentDetail() {
 
           {/* Description */}
           {experiment.description && (
-            <div 
+            <div
               className="mb-6 p-4 rounded-lg border"
               style={{ backgroundColor: 'white', borderColor: 'var(--border)' }}
             >
               <h2 className="font-semibold mb-2" style={{ color: 'var(--text-primary)' }}>实验描述</h2>
-              <p className="text-sm whitespace-pre-wrap" style={{ color: 'var(--text-secondary)' }}>
-                {experiment.description}
-              </p>
+              <div className="text-sm markdown-content" style={{ color: 'var(--text-secondary)' }}>
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>{experiment.description}</ReactMarkdown>
+              </div>
             </div>
           )}
 
-          {/* AI Ideas */}
-          <div 
-            className="mb-6 p-4 rounded-lg border"
-            style={{ backgroundColor: 'white', borderColor: 'var(--border)' }}
+          {/* Linked Idea Product Concept */}
+          {idea && (
+            <div className="mb-6 rounded-xl border overflow-hidden"
+              style={{ borderColor: 'var(--border)' }}>
+              <div className="px-4 py-3 border-b flex items-center justify-between"
+                style={{ backgroundColor: 'var(--bg-secondary)', borderColor: 'var(--border)' }}>
+                <span className="text-sm font-semibold" style={{ color: 'var(--text-primary)' }}>
+                  🚀 产品思路参考
+                </span>
+                {idea.source_url && (
+                  <a href={idea.source_url} target="_blank" rel="noopener noreferrer"
+                    className="text-xs" style={{ color: 'var(--accent-blue)' }}>
+                    📰 {idea.source_title || '查看来源文章'} →
+                  </a>
+                )}
+              </div>
+              <div className="p-4 space-y-3 text-xs" style={{ color: 'var(--text-secondary)' }}>
+                {idea.inspiration && (
+                  <div className="p-3 rounded-lg border-l-2"
+                    style={{ backgroundColor: '#fefce8', borderLeftColor: '#fbbf24', color: '#92400e' }}>
+                    <span className="font-semibold">✨ 灵感来源: </span>{idea.inspiration}
+                  </div>
+                )}
+                {idea.product_concept?.core_features?.length > 0 && (
+                  <div>
+                    <div className="font-semibold mb-1" style={{ color: 'var(--text-muted)' }}>⚙️ 核心功能</div>
+                    <ul className="space-y-1">
+                      {idea.product_concept.core_features.map((f, i) => (
+                        <li key={i} className="flex items-start gap-1">
+                          <span style={{ color: 'var(--accent-blue)' }}>▸</span>{f}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+                {idea.product_concept?.roadmap?.length > 0 && (
+                  <div>
+                    <div className="font-semibold mb-2" style={{ color: 'var(--text-muted)' }}>🗺️ 实施路径</div>
+                    <div className="flex flex-wrap gap-1 items-center">
+                      {idea.product_concept.roadmap.map((step, i) => (
+                        <span key={i} className="flex items-center gap-1">
+                          <span className="w-4 h-4 rounded-full text-[9px] font-bold flex items-center justify-center flex-shrink-0"
+                            style={{ backgroundColor: 'var(--accent-blue)', color: 'white' }}>{i + 1}</span>
+                          <span>{step}</span>
+                          {i < idea.product_concept.roadmap.length - 1 && (
+                            <span style={{ color: 'var(--text-muted)' }}>→</span>
+                          )}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )}
+                {idea.source_context && (
+                  <div className="p-2 rounded" style={{ backgroundColor: 'var(--bg-secondary)', color: 'var(--text-muted)' }}>
+                    <span className="font-medium">文章摘要: </span>
+                    {idea.source_context.slice(0, 300)}{idea.source_context.length > 300 ? '...' : ''}
+                  </div>
+                )}
+              </div>
+            </div>
+          )}
+
+          {/* Product Concept */}
+          <div
+            className="mb-6 rounded-xl border overflow-hidden"
+            style={{ borderColor: productConcept ? '#c4b5fd' : 'var(--border)' }}
           >
-            <div className="flex justify-between items-center mb-4">
-              <h2 className="font-semibold" style={{ color: 'var(--text-primary)' }}>💡 AI 实验想法</h2>
+            <div className="px-4 py-3 border-b flex items-center justify-between"
+              style={{ backgroundColor: productConcept ? '#faf5ff' : 'var(--bg-secondary)', borderColor: productConcept ? '#e9d5ff' : 'var(--border)' }}>
+              <div className="flex items-center gap-2">
+                <span className="text-sm font-semibold" style={{ color: 'var(--text-primary)' }}>💡 产品思路</span>
+                {productConcept?.generated_at && (
+                  <span className="text-xs" style={{ color: 'var(--text-muted)' }}>
+                    生成于 {new Date(productConcept.generated_at).toLocaleString()}
+                  </span>
+                )}
+              </div>
               <button
                 onClick={generateIdeas}
                 disabled={generating}
                 className="px-3 py-1.5 text-xs rounded font-medium transition-colors disabled:opacity-50"
-                style={{ backgroundColor: 'var(--accent-blue)', color: 'white' }}
+                style={{ backgroundColor: generating ? 'var(--border)' : 'var(--accent-blue)', color: 'white' }}
               >
-                {generating ? '生成中...' : '生成想法'}
+                {generating ? '生成中...' : productConcept ? '重新生成' : '生成产品思路'}
               </button>
             </div>
-            
-            {ideas && (
-              <div 
-                className="p-3 rounded text-sm prose prose-sm max-w-none"
-                style={{ backgroundColor: 'var(--bg-secondary)' }}
-              >
-                <ReactMarkdown>{ideas}</ReactMarkdown>
+
+            {generating && !productConcept && (
+              <div className="flex items-center gap-2 py-8 justify-center text-sm" style={{ color: 'var(--text-muted)' }}>
+                <span className="loading-pulse">▌</span>
+                <span>AI 正在生成产品思路，约需 20-40 秒...</span>
               </div>
             )}
+
+            {productConcept?.content ? (
+              <div style={{ backgroundColor: 'white' }}>
+                <div className="p-5 markdown-content text-sm" style={{ lineHeight: 1.8 }}>
+                  <ReactMarkdown remarkPlugins={[remarkGfm]}>{productConcept.content}</ReactMarkdown>
+                </div>
+                <div className="px-5 pb-5 pt-2 border-t flex items-center justify-between"
+                  style={{ borderColor: '#e9d5ff' }}>
+                  <span className="text-xs" style={{ color: 'var(--text-muted)' }}>
+                    复制为 Vibe Coding 启动 Prompt，粘贴到 Claude Code / Cursor 开始实现
+                  </span>
+                  <button
+                    onClick={copyVibeCodingPrompt}
+                    className="px-4 py-2 text-xs rounded-lg font-medium transition-all"
+                    style={{
+                      backgroundColor: copied ? '#dcfce7' : '#f3e8ff',
+                      color: copied ? '#16a34a' : '#7c3aed',
+                      border: `1px solid ${copied ? '#86efac' : '#c4b5fd'}`
+                    }}
+                  >
+                    {copied ? '✓ 已复制！' : '⚡ 复制启动 Prompt'}
+                  </button>
+                </div>
+              </div>
+            ) : !generating ? (
+              <div className="py-8 text-center text-sm" style={{ color: 'var(--text-muted)' }}>
+                点击"生成产品思路"，AI 将为你生成完整的产品方案和 Vibe Coding 启动提示词
+              </div>
+            ) : null}
           </div>
 
           {/* Logs */}
-          <div 
+          <div
             className="mb-6 p-4 rounded-lg border"
             style={{ backgroundColor: 'white', borderColor: 'var(--border)' }}
           >
             <h2 className="font-semibold mb-4" style={{ color: 'var(--text-primary)' }}>
               📝 实验日志 ({logs.length})
             </h2>
-            
+
             {/* Add Log */}
             <form onSubmit={addLog} className="mb-4">
               <textarea
@@ -357,7 +419,7 @@ function ExperimentDetail() {
                 value={newLog}
                 onChange={e => setNewLog(e.target.value)}
                 className="w-full px-3 py-2 text-sm rounded border focus:outline-none focus:ring-2"
-                style={{ 
+                style={{
                   borderColor: 'var(--border)',
                   backgroundColor: 'var(--bg-primary)'
                 }}
@@ -378,8 +440,8 @@ function ExperimentDetail() {
                 <p className="text-sm text-center py-4" style={{ color: 'var(--text-muted)' }}>暂无日志</p>
               ) : (
                 logs.map(log => (
-                  <div 
-                    key={log.id} 
+                  <div
+                    key={log.id}
                     className="p-3 rounded border"
                     style={{ backgroundColor: 'var(--bg-secondary)', borderColor: 'var(--border-light)' }}
                   >
@@ -395,8 +457,7 @@ function ExperimentDetail() {
             </div>
           </div>
         </div>
-      </main>
-    </div>
+    </>
   )
 }
 

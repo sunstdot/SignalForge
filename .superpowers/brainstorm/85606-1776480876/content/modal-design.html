@@ -1,0 +1,95 @@
+<h2>小红书预览 Modal — 文案可复制</h2>
+<p class="subtitle">生成完成后弹出，展示 top-3 中第 1 个机会的 5 张图文案。Tab 切换不同机会。</p>
+
+<div class="mockup">
+  <div class="mockup-header">预览效果（模拟 Modal）</div>
+  <div class="mockup-body" style="padding:0;background:#00000066;border-radius:0 0 8px 8px">
+    <div style="margin:24px auto;max-width:600px;background:#fff;border-radius:16px;box-shadow:0 20px 60px rgba(0,0,0,0.3);overflow:hidden">
+
+      <!-- Modal header -->
+      <div style="padding:16px 20px;border-bottom:1px solid #f3f4f6;display:flex;align-items:center;justify-content:space-between">
+        <div style="display:flex;align-items:center;gap:10px">
+          <span style="font-size:16px">📕</span>
+          <span style="font-size:14px;font-weight:700;color:#111">小红书内容</span>
+          <span style="font-size:11px;background:#fff0f2;color:#ff2442;padding:2px 8px;border-radius:20px;border:1px solid #fecdd3">Top 3 机会</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px">
+          <button style="font-size:11px;padding:5px 12px;border-radius:8px;border:1px solid #e5e7eb;color:#374151;background:#f9fafb;cursor:pointer">复制全部文案</button>
+          <span style="color:#9ca3af;cursor:pointer;font-size:16px">✕</span>
+        </div>
+      </div>
+
+      <!-- Tabs: top3 opportunities -->
+      <div style="display:flex;border-bottom:1px solid #f3f4f6;padding:0 20px">
+        <div style="padding:10px 14px;font-size:12px;font-weight:600;color:#ff2442;border-bottom:2px solid #ff2442;margin-bottom:-1px">① 中文AI语音合成</div>
+        <div style="padding:10px 14px;font-size:12px;color:#9ca3af">② 智能代码审查平台</div>
+        <div style="padding:10px 14px;font-size:12px;color:#9ca3af">③ 本地LLM部署助手</div>
+      </div>
+
+      <!-- Slides list -->
+      <div style="padding:16px 20px;max-height:380px;overflow-y:auto">
+
+        <!-- Slide 1: 封面图 -->
+        <div style="border:1px solid #fecdd3;border-radius:10px;margin-bottom:10px;overflow:hidden">
+          <div style="background:linear-gradient(135deg,#ff2442,#ff6b6b);padding:8px 14px;display:flex;align-items:center;justify-content:space-between">
+            <span style="font-size:11px;font-weight:700;color:white">图 1 · 封面图</span>
+            <button onclick="this.textContent='✓ 已复制';setTimeout(()=>this.textContent='复制',1500)" style="font-size:10px;padding:2px 8px;border-radius:4px;border:1px solid rgba(255,255,255,0.5);color:white;background:transparent;cursor:pointer">复制</button>
+          </div>
+          <div style="padding:10px 14px;background:#fff">
+            <div style="margin-bottom:4px"><span style="font-size:10px;color:#9ca3af;text-transform:uppercase;letter-spacing:.05em">大标题</span></div>
+            <p style="font-size:13px;font-weight:600;color:#111;margin:0 0 8px">今天 AI 帮我挖到了 1 个搞钱盲区 💰</p>
+            <div style="margin-bottom:4px"><span style="font-size:10px;color:#9ca3af;text-transform:uppercase;letter-spacing:.05em">副标题</span></div>
+            <p style="font-size:12px;color:#374151;margin:0">基于 VoxCPM2 的中文语音合成内容工具</p>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div style="border:1px solid #e5e7eb;border-radius:10px;margin-bottom:10px;overflow:hidden">
+          <div style="background:#f9fafb;padding:8px 14px;display:flex;align-items:center;justify-content:space-between">
+            <span style="font-size:11px;font-weight:600;color:#374151">图 2 · 痛点与市场</span>
+            <button onclick="this.textContent='✓ 已复制';setTimeout(()=>this.textContent='复制',1500)" style="font-size:10px;padding:2px 8px;border-radius:4px;border:1px solid #e5e7eb;color:#6b7280;background:#fff;cursor:pointer">复制</button>
+          </div>
+          <div style="padding:10px 14px;background:#fff">
+            <p style="font-size:12px;color:#374151;margin:0;line-height:1.6">🎯 目标用户：短视频创作者、有声书作者、播客制作人<br>😩 核心痛点：中文 TTS 音色少、多音字处理差、批量生成贵<br>📊 市场规模：中文内容创作者超 5000 万，付费意愿强</p>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div style="border:1px solid #e5e7eb;border-radius:10px;margin-bottom:10px;overflow:hidden">
+          <div style="background:#f9fafb;padding:8px 14px;display:flex;align-items:center;justify-content:space-between">
+            <span style="font-size:11px;font-weight:600;color:#374151">图 3 · MVP功能与竞争壁垒</span>
+            <button onclick="this.textContent='✓ 已复制';setTimeout(()=>this.textContent='复制',1500)" style="font-size:10px;padding:2px 8px;border-radius:4px;border:1px solid #e5e7eb;color:#6b7280;background:#fff;cursor:pointer">复制</button>
+          </div>
+          <div style="padding:10px 14px;background:#fff">
+            <p style="font-size:12px;color:#374151;margin:0;line-height:1.6">🛠 核心功能：多音色选择（10+种）· 语速音调调节 · 批量生成 API<br>💰 商业模式：免费 3 分钟 / 会员 59元/月含 100 分钟<br>🏰 壁垒：中文多音字处理优势 + 丰富音色库</p>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div style="border:1px solid #e5e7eb;border-radius:10px;margin-bottom:10px;overflow:hidden">
+          <div style="background:#f9fafb;padding:8px 14px;display:flex;align-items:center;justify-content:space-between">
+            <span style="font-size:11px;font-weight:600;color:#374151">图 4 · TL 私房话</span>
+            <button onclick="this.textContent='✓ 已复制';setTimeout(()=>this.textContent='复制',1500)" style="font-size:10px;padding:2px 8px;border-radius:4px;border:1px solid #e5e7eb;color:#6b7280;background:#fff;cursor:pointer">复制</button>
+          </div>
+          <div style="padding:10px 14px;background:#fff">
+            <p style="font-size:12px;color:#374151;margin:0;line-height:1.6">作为前端开发，我觉得这个点子技术实现难度极低（预计只需 3 天），很适合独立开发者周末练手。VoxCPM2 已经开源，直接调用就行，不需要自己训练模型。</p>
+          </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div style="border:1px solid #e5e7eb;border-radius:10px;margin-bottom:4px;overflow:hidden">
+          <div style="background:#f9fafb;padding:8px 14px;display:flex;align-items:center;justify-content:space-between">
+            <span style="font-size:11px;font-weight:600;color:#374151">图 5 · 引流钩子</span>
+            <button onclick="this.textContent='✓ 已复制';setTimeout(()=>this.textContent='复制',1500)" style="font-size:10px;padding:2px 8px;border-radius:4px;border:1px solid #e5e7eb;color:#6b7280;background:#fff;cursor:pointer">复制</button>
+          </div>
+          <div style="padding:10px 14px;background:#fff">
+            <p style="font-size:12px;color:#374151;margin:0;line-height:1.6">以上内容由我的自研 AI 情报系统全自动生成。想看今天剩下的 19 个商业洞察？在评论区回复【洞察】，后台发给你完整版文档 / 邀请你进内测群。</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<p class="subtitle" style="margin-top:16px">每张图单独可复制，右上角也可"复制全部文案"一次性拷走所有内容</p>

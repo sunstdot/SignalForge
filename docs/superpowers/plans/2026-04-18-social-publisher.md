@@ -101,9 +101,7 @@ from typing import Dict, List
 
 def _generate_xiaohongshu(date: str, top3_opps: List[Dict]) -> Dict:
     """为 top-3 商业机会生成小红书图集文案（5张图/机会）"""
-    from services.chinese_briefer import get_wanqing_client, get_wanqing_app_id, _get_model
-    client = get_wanqing_client()
-    app_id = get_wanqing_app_id(_get_model())
+    from services.llm_client import chat_async
 
     results = []
     for opp in top3_opps:

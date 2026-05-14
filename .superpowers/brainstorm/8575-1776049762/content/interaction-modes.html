@@ -1,0 +1,240 @@
+<h2>「生成实验想法」交互模式设计</h2>
+<p class="subtitle">三种方案对比 — 选择你偏好的交互方式</p>
+
+<style>
+.card-demo {
+  background: #1a1a2e;
+  border: 1px solid #2a2a3e;
+  border-radius: 10px;
+  padding: 16px;
+  font-family: -apple-system, sans-serif;
+  color: #e0e0e0;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  padding-top: 12px;
+  border-top: 1px solid #2a2a3e;
+}
+.btn {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  background: transparent;
+  color: #9090a0;
+  cursor: pointer;
+}
+.btn-green { color: #22c55e; border-color: #22c55e; }
+.btn-blue { color: #60a5fa; border-color: #60a5fa; }
+.btn-accent { color: #a78bfa; border-color: #a78bfa; }
+.inline-input {
+  width: 100%;
+  margin-top: 10px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #3a3a5e;
+  background: #12121f;
+  color: #e0e0e0;
+  font-size: 12px;
+  resize: none;
+  box-sizing: border-box;
+}
+.input-row {
+  display: flex;
+  gap: 6px;
+  margin-top: 6px;
+  align-items: center;
+}
+.hint {
+  font-size: 11px;
+  color: #606080;
+}
+.tag-row {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+.tag {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: #2a2a3e;
+  color: #8080a0;
+}
+.article-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #e0e0e0;
+  margin-bottom: 10px;
+}
+.split-btn {
+  display: flex;
+  border: 1px solid #444;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.split-main {
+  font-size: 12px;
+  padding: 4px 10px;
+  background: transparent;
+  color: #9090a0;
+  cursor: pointer;
+  border: none;
+  border-right: 1px solid #444;
+}
+.split-arrow {
+  font-size: 11px;
+  padding: 4px 7px;
+  background: transparent;
+  color: #9090a0;
+  cursor: pointer;
+  border: none;
+}
+.popover {
+  position: relative;
+  display: inline-block;
+}
+.popover-panel {
+  position: absolute;
+  bottom: 32px;
+  right: 0;
+  width: 240px;
+  background: #1e1e32;
+  border: 1px solid #3a3a5e;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  z-index: 10;
+}
+.popover-title {
+  font-size: 12px;
+  color: #9090b0;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+.generate-btn {
+  width: 100%;
+  padding: 6px;
+  border-radius: 5px;
+  background: #2a1f4e;
+  border: 1px solid #5b3cde;
+  color: #a78bfa;
+  font-size: 12px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+.or-divider {
+  text-align: center;
+  font-size: 11px;
+  color: #505060;
+  margin: 8px 0;
+}
+.quick-gen-btn {
+  width: 100%;
+  padding: 6px;
+  border-radius: 5px;
+  background: transparent;
+  border: 1px solid #444;
+  color: #9090a0;
+  font-size: 12px;
+  cursor: pointer;
+}
+</style>
+
+<div class="options">
+
+  <!-- Option A -->
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>点击展开内联输入</h3>
+      <p>点击按钮后，卡片内就地展开一个可选的引导输入框。留空即直接生成；填写想法后按「生成」。</p>
+      <div class="card-demo">
+        <div class="tag-row"><span class="tag">ai</span><span class="tag">agents</span></div>
+        <div class="article-title">Open Models, Coding Agents...</div>
+        <div style="background:#12121f;border-radius:6px;padding:8px;margin-bottom:8px;">
+          <textarea class="inline-input" rows="2" placeholder="可选：输入你的想法方向，AI 会顺着你的思路发散…（留空则直接生成）" onclick="event.stopPropagation()" style="margin-top:0"></textarea>
+          <div class="input-row">
+            <span class="hint">留空 = 直接生成</span>
+            <div style="flex:1"></div>
+            <button class="btn" onclick="event.stopPropagation()">取消</button>
+            <button class="btn btn-accent" onclick="event.stopPropagation()">生成 →</button>
+          </div>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-green" onclick="event.stopPropagation()">⚡ 速读</button>
+          <a style="font-size:12px;color:#60a5fa;text-decoration:none" onclick="event.stopPropagation()">阅读原文 →</a>
+        </div>
+      </div>
+      <div class="pros-cons">
+        <div class="pros"><h4>优点</h4><ul><li>交互步骤最少</li><li>两种模式合一，不需要选择</li></ul></div>
+        <div class="cons"><h4>缺点</h4><ul><li>卡片会临时"变高"影响布局</li></ul></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Option B -->
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>分割按钮 + 向上弹出面板</h3>
+      <p>按钮分为左右两部分：左侧直接生成（保持现状），右侧箭头展开向上弹出的小面板供输入引导想法。</p>
+      <div class="card-demo">
+        <div class="tag-row"><span class="tag">ai</span><span class="tag">agents</span></div>
+        <div class="article-title">Open Models, Coding Agents...</div>
+        <div class="card-footer">
+          <button class="btn btn-green" onclick="event.stopPropagation()">⚡ 速读</button>
+          <div class="popover" onclick="event.stopPropagation()">
+            <div class="split-btn">
+              <button class="split-main">生成实验想法</button>
+              <button class="split-arrow">▲</button>
+            </div>
+            <div class="popover-panel">
+              <div class="popover-title">✏️ 引导 AI 生成方向（可选）</div>
+              <textarea class="inline-input" rows="2" placeholder="例如：关注 agent 协作框架方向…" style="margin-top:0"></textarea>
+              <button class="generate-btn">引导生成 →</button>
+              <div class="or-divider">— 或 —</div>
+              <button class="quick-gen-btn">直接生成（无引导）</button>
+            </div>
+          </div>
+          <a style="font-size:12px;color:#60a5fa;text-decoration:none" onclick="event.stopPropagation()">阅读原文 →</a>
+        </div>
+      </div>
+      <div class="pros-cons">
+        <div class="pros"><h4>优点</h4><ul><li>不影响卡片主体布局</li><li>两种模式意图清晰</li></ul></div>
+        <div class="cons"><h4>缺点</h4><ul><li>分割按钮点击区域小</li><li>弹出层可能被遮挡</li></ul></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Option C -->
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>长按 / 右键 = 引导模式，单击 = 直接生成</h3>
+      <p>保持现有按钮外观，单击行为不变（直接生成）。长按或右键唤起引导输入面板，高级用户发现此功能。</p>
+      <div class="card-demo">
+        <div class="tag-row"><span class="tag">ai</span><span class="tag">agents</span></div>
+        <div class="article-title">Open Models, Coding Agents...</div>
+        <div class="card-footer">
+          <button class="btn btn-green" onclick="event.stopPropagation()">⚡ 速读</button>
+          <button class="btn" onclick="event.stopPropagation()" title="单击直接生成 · 长按引导生成">生成实验想法</button>
+          <a style="font-size:12px;color:#60a5fa;text-decoration:none" onclick="event.stopPropagation()">阅读原文 →</a>
+        </div>
+        <div style="text-align:right;margin-top:6px">
+          <span class="hint">💡 长按按钮可输入想法引导 AI</span>
+        </div>
+      </div>
+      <div class="pros-cons">
+        <div class="pros"><h4>优点</h4><ul><li>界面最简洁，不改变现状</li><li>高频操作（直接生成）零额外成本</li></ul></div>
+        <div class="cons"><h4>缺点</h4><ul><li>引导模式隐藏，不易发现</li><li>移动端体验差</li></ul></div>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -142,6 +142,82 @@ def get_latest_briefing_date() -> Optional[str]:
     return dates[0] if dates else None
 
 
+# ───────────────────────── 机会雷达缓存 ─────────────────────────
+
+OPPORTUNITIES_DIR = DATA_DIR / "opportunities"
+OPPORTUNITIES_DIR.mkdir(parents=True, exist_ok=True)
+
+
+def load_opportunities(date: str) -> Optional[Dict]:
+    path = OPPORTUNITIES_DIR / f"{date}.json"
+    if path.exists():
+        return json.loads(path.read_text(encoding="utf-8"))
+    return None
+
+
+def save_opportunities(date: str, data: Dict):
+    path = OPPORTUNITIES_DIR / f"{date}.json"
+    path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+# ───────────────────────── 速读缓存 ─────────────────────────
+
+QUICK_READS_DIR = DATA_DIR / "quick_reads"
+QUICK_READS_DIR.mkdir(parents=True, exist_ok=True)
+
+
+def load_quick_reads(date: str) -> Dict:
+    """加载某日期所有速读缓存 {item_id: summary}"""
+    path = QUICK_READS_DIR / f"{date}.json"
+    if path.exists():
+        return json.loads(path.read_text(encoding="utf-8"))
+    return {}
+
+
+def save_quick_read(date: str, item_id: str, summary: str):
+    """保存单条速读缓存"""
+    data = load_quick_reads(date)
+    data[item_id] = summary
+    path = QUICK_READS_DIR / f"{date}.json"
+    path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+# ───────────────────────── 分类摘要缓存 ─────────────────────────
+
+DIGESTS_DIR = DATA_DIR / "digests"
+DIGESTS_DIR.mkdir(parents=True, exist_ok=True)
+
+
+def load_category_digest(date: str) -> Optional[Dict]:
+    path = DIGESTS_DIR / f"{date}.json"
+    if path.exists():
+        return json.loads(path.read_text(encoding="utf-8"))
+    return None
+
+
+def save_category_digest(date: str, digest: Dict):
+    path = DIGESTS_DIR / f"{date}.json"
+    path.write_text(json.dumps(digest, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+# ───────────────────────── 研发效能洞察缓存 ─────────────────────────
+
+RDEV_DIR = DATA_DIR / "rdev_opportunities"
+RDEV_DIR.mkdir(parents=True, exist_ok=True)
+
+
+def load_rdev_opportunities(date: str) -> Optional[Dict]:
+    path = RDEV_DIR / f"{date}.json"
+    if path.exists():
+        return json.loads(path.read_text(encoding="utf-8"))
+    return None
+
+
+def save_rdev_opportunities(date: str, data: Dict):
+    path = RDEV_DIR / f"{date}.json"
+    path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
 # ───────────────────────── 实验想法 ─────────────────────────
 
 def _load_ideas() -> List[Dict]:
@@ -186,11 +262,16 @@ def create_idea(data: Dict) -> Dict:
         "source_type": data.get("source_type", ""),
         "source_title": data.get("source_title", ""),
         "source_url": data.get("source_url", ""),
+        # 产品思路相关字段
+        "inspiration": data.get("inspiration", ""),
+        "product_concept": data.get("product_concept", {}),
+        "source_context": data.get("source_context", ""),
         "created_at": datetime.now().isoformat(),
     }
     ideas.append(idea)
     _save_ideas(ideas)
     return idea
+
 
 
 def update_idea_status_by_id(idea_id: str, status: str) -> Optional[Dict]:
@@ -278,7 +359,7 @@ def update_experiment_by_id(exp_id: str, data: Dict) -> Optional[Dict]:
     exps = _load_experiments()
     for exp in exps:
         if exp["id"] == exp_id:
-            for key in ("title", "description", "status", "target_days"):
+            for key in ("title", "description", "status", "target_days", "product_concept"):
                 if key in data:
                     exp[key] = data[key]
             _save_experiments(exps)

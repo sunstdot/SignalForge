@@ -42,15 +42,15 @@ fi
 cd ..
 
 # 启动后端（在 backend 目录下运行以正确加载配置文件）
-echo -e "${GREEN}📦 启动后端服务 (http://localhost:8000)...${NC}"
-(cd backend && source venv/bin/activate && uvicorn main:app --reload --port 8000 --host 0.0.0.0) &
+echo -e "${GREEN}📦 启动后端服务 (http://localhost:8001)...${NC}"
+(cd backend && source venv/bin/activate && uvicorn main:app --reload --port 8001 --host 0.0.0.0) &
 BACKEND_PID=$!
 
 echo -e "${GREEN}✓ 后端服务已启动 (PID: $BACKEND_PID)${NC}"
 
 # 等待后端启动并验证
 sleep 3
-if ! curl -s http://localhost:8000/api/health > /dev/null 2>&1; then
+if ! curl -s http://localhost:8001/api/health > /dev/null 2>&1; then
     echo -e "${YELLOW}⏳ 等待后端服务就绪...${NC}"
     sleep 2
 fi
@@ -77,7 +77,7 @@ if [ "frontend/package.json" -nt "frontend/node_modules" ]; then
 fi
 
 # 启动前端
-echo -e "${GREEN}🎨 启动前端服务 (http://localhost:5173)...${NC}"
+echo -e "${GREEN}🎨 启动前端服务 (http://localhost:5174)...${NC}"
 cd frontend
 if command -v pnpm &> /dev/null; then
     pnpm dev &
@@ -98,9 +98,9 @@ echo ""
 echo "=========================================="
 echo -e "${GREEN}🎉 所有服务已启动！${NC}"
 echo ""
-echo -e "  前端: ${BLUE}http://localhost:5173${NC}"
-echo -e "  后端: ${BLUE}http://localhost:8000${NC}"
-echo -e "  API 文档: ${BLUE}http://localhost:8000/docs${NC}"
+echo -e "  前端: ${BLUE}http://localhost:5174${NC}"
+echo -e "  后端: ${BLUE}http://localhost:8001${NC}"
+echo -e "  API 文档: ${BLUE}http://localhost:8001/docs${NC}"
 echo ""
 echo -e "常用命令:"
 echo -e "  ${YELLOW}./start.sh${NC}          - 启动所有服务"

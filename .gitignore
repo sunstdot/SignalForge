@@ -9,6 +9,7 @@ dist/
 .env
 .env.local
 .env.*.local
+secret/
 
 # Database
 *.db
@@ -36,3 +37,5 @@ __pycache__/
 venv/
 .venv/
 *.egg-info/
+
+/data

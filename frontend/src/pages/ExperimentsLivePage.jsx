@@ -30,96 +30,49 @@ function ExperimentsLivePage() {
   }
 
   return (
-    <div className="min-h-screen flex">
-      {/* Left Sidebar */}
-      <aside 
-        className="w-64 flex-shrink-0 fixed left-0 top-0 bottom-0 overflow-y-auto"
-        style={{ 
-          borderRight: '1px solid var(--border)',
-          backgroundColor: 'var(--bg-secondary)'
-        }}
+    <>
+      <header
+        className="sticky top-0 z-20 px-6 py-4 border-b"
+        style={{ backgroundColor: 'var(--bg-primary)', borderColor: 'var(--border)' }}
       >
-        {/* Header */}
-        <div className="p-5">
-          <h1 className="text-xl font-bold mb-1" style={{ color: 'var(--text-primary)' }}>TokenBurner</h1>
-          <p className="text-sm" style={{ color: 'var(--text-muted)' }}>AI Intelligence Hub</p>
-        </div>
-
-        {/* Menu */}
-        <div className="px-3 pb-3">
-          <div 
-            className="text-xs font-semibold uppercase tracking-wider mb-2 px-3"
-            style={{ color: 'var(--text-muted)' }}
-          >
-            Menu
+        <div className="flex items-center gap-4 mb-4">
+          <div className="window-dots">
+            <span className="window-dot window-dot-red" />
+            <span className="window-dot window-dot-yellow" />
+            <span className="window-dot window-dot-green" />
           </div>
-          <Link to="/" className="menu-item">
-            <span>📊</span>
-            <span>情报总览</span>
-          </Link>
-          <Link to="/experiments/live" className="menu-item active">
-            <span>🔬</span>
-            <span>实验直播场</span>
-          </Link>
-          <Link to="/experiments/ideas" className="menu-item">
-            <span>💡</span>
-            <span>实验想法池</span>
-          </Link>
-        </div>
-      </aside>
-
-      {/* Main Content */}
-      <main className="flex-1 ml-64">
-        {/* Header */}
-        <header 
-          className="sticky top-0 z-20 px-6 py-4 border-b"
-          style={{ 
-            backgroundColor: 'var(--bg-primary)',
-            borderColor: 'var(--border)'
-          }}
-        >
-          <div className="flex items-center gap-4 mb-4">
-            <div className="window-dots">
-              <span className="window-dot window-dot-red" />
-              <span className="window-dot window-dot-yellow" />
-              <span className="window-dot window-dot-green" />
-            </div>
-            <div className="flex items-center gap-2 text-sm">
-              <Link to="/" style={{ color: 'var(--text-primary)' }}>TokenBurner</Link>
-              <span style={{ color: 'var(--text-muted)' }}>/</span>
-              <span style={{ color: 'var(--accent-blue)' }}>实验直播场</span>
-            </div>
+          <div className="flex items-center gap-2 text-sm">
+            <Link to="/" style={{ color: 'var(--text-primary)' }}>TokenBurner</Link>
+            <span style={{ color: 'var(--text-muted)' }}>/</span>
+            <span style={{ color: 'var(--accent-blue)' }}>实验直播场</span>
           </div>
-          
-          <p className="text-sm" style={{ color: 'var(--text-muted)' }}>
-            正在进行的实验项目
-          </p>
-        </header>
-
-        <div className="p-6">
-          {loading ? (
-            <div className="text-center py-12">
-              <span className="loading-pulse">▌</span>
-              <span className="text-sm ml-2" style={{ color: 'var(--text-muted)' }}>加载中...</span>
-            </div>
-          ) : experiments.length === 0 ? (
-            <div className="text-center py-12">
-              <span className="text-3xl block mb-2">∅</span>
-              <p style={{ color: 'var(--text-muted)' }}>暂无实验</p>
-              <p className="text-sm mt-2" style={{ color: 'var(--text-muted)' }}>
-                从<a href="/experiments/ideas" style={{ color: 'var(--accent-blue)' }}>实验想法池</a>选择一个想法开始
-              </p>
-            </div>
-          ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {experiments.map((exp) => (
-                <ExperimentCard key={exp.id} experiment={exp} />
-              ))}
-            </div>
-          )}
         </div>
-      </main>
-    </div>
+        <p className="text-sm" style={{ color: 'var(--text-muted)' }}>正在进行的实验项目</p>
+      </header>
+
+      <div className="p-6">
+        {loading ? (
+          <div className="text-center py-12">
+            <span className="loading-pulse">▌</span>
+            <span className="text-sm ml-2" style={{ color: 'var(--text-muted)' }}>加载中...</span>
+          </div>
+        ) : experiments.length === 0 ? (
+          <div className="text-center py-12">
+            <span className="text-3xl block mb-2">∅</span>
+            <p style={{ color: 'var(--text-muted)' }}>暂无实验</p>
+            <p className="text-sm mt-2" style={{ color: 'var(--text-muted)' }}>
+              从<a href="/experiments/ideas" style={{ color: 'var(--accent-blue)' }}>实验想法池</a>选择一个想法开始
+            </p>
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {experiments.map((exp) => (
+              <ExperimentCard key={exp.id} experiment={exp} />
+            ))}
+          </div>
+        )}
+      </div>
+    </>
   )
 }
 

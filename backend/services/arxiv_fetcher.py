@@ -1,7 +1,7 @@
 """arXiv 论文抓取服务"""
 import aiohttp
 import xml.etree.ElementTree as ET
-from datetime import datetime, timedelta
+from datetime import datetime
 from typing import List, Dict
 
 
@@ -10,19 +10,15 @@ async def fetch_arxiv_papers(config: Dict) -> List[Dict]:
     items = []
     categories = config.get("categories", ["cs.AI", "cs.CL", "cs.LG"])
     max_results = config.get("maxResults", 20)
-    
-    # 构建查询
+
+    # 构建分类查询，直接取最新论文（按提交日期降序）
     cat_query = " OR ".join([f"cat:{cat}" for cat in categories])
-    
-    # 获取最近 3 天的论文
-    three_days_ago = (datetime.now() - timedelta(days=3)).strftime("%Y%m%d")
-    
+
     url = (
-        "http://export.arxiv.org/api/query?"
-        f"search_query=submittedDate:[{three_days_ago}0000 TO NOW] AND ({cat_query})"
+        "https://export.arxiv.org/api/query?"
+        f"search_query={cat_query}"
         f"&start=0&max_results={max_results}&sortBy=submittedDate&sortOrder=descending"
     )
-    
     timeout = aiohttp.ClientTimeout(total=30)
     
     async with aiohttp.ClientSession(timeout=timeout) as session:

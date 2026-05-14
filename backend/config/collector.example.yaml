@@ -1,0 +1,245 @@
+# SignalForge Collector Configuration
+#
+# Copy this file to backend/config/collector.yaml and customize it locally.
+# Keep private feeds, paid newsletter mirrors, and personal source lists out of
+# this example file. Put those in secret/collector.yaml or another ignored file.
+
+# Database configuration
+database:
+  path: ./data/tokenburner.db
+
+# Source configuration
+sources:
+  # Academic papers
+  arxiv:
+    enabled: true
+    categories:
+      - cs.CL
+      - cs.AI
+      - cs.LG
+    maxResults: 20
+
+  # GitHub Trending
+  github:
+    enabled: true
+    languages:
+      - any
+    timeRange: daily
+
+  # AI model platforms
+  models:
+    enabled: true
+    platforms:
+      - name: "HuggingFace Trending"
+        type: "huggingface"
+        url: "https://huggingface.co/api/models"
+        params:
+          limit: 10
+        category: ["ai", "models", "huggingface"]
+
+      - name: "HuggingFace Daily Papers"
+        type: "huggingface_papers"
+        url: "https://huggingface.co/api/daily_papers"
+        params:
+          limit: 10
+        category: ["ai", "papers", "huggingface"]
+
+  # Public RSS subscriptions.
+  #
+  # Supported fields:
+  # - name: Display name shown in collected items.
+  # - type: Currently "direct" for normal RSS/Atom URLs.
+  # - source_type: Optional grouping key, e.g. blog, news, smolai, wechat.
+  # - url: Public RSS/Atom URL.
+  # - category: Tags used by downstream briefing logic.
+  # - fetchInterval: Suggested refresh interval in seconds.
+  # - priority: Optional priority label.
+  # - expand_topics: Optional, used by digest-style feeds.
+  rss:
+    enabled: true
+    subscriptions:
+      # AI company and lab blogs
+      - name: "OpenAI Blog"
+        type: "direct"
+        source_type: "blog"
+        url: "https://openai.com/news/rss.xml"
+        category: ["ai", "openai", "official"]
+        fetchInterval: 3600
+        priority: "high"
+
+      - name: "Google DeepMind Blog"
+        type: "direct"
+        source_type: "blog"
+        url: "https://deepmind.google/blog/rss.xml"
+        category: ["ai", "google", "deepmind"]
+        fetchInterval: 3600
+        priority: "high"
+
+      - name: "Google AI Blog"
+        type: "direct"
+        source_type: "blog"
+        url: "https://blog.google/technology/ai/rss/"
+        category: ["ai", "google", "official"]
+        fetchInterval: 3600
+        priority: "high"
+
+      - name: "Meta Engineering"
+        type: "direct"
+        source_type: "blog"
+        url: "https://engineering.fb.com/feed/"
+        category: ["ai", "meta", "engineering"]
+        fetchInterval: 3600
+
+      - name: "Cohere Blog"
+        type: "direct"
+        source_type: "blog"
+        url: "https://cohere.com/blog/rss.xml"
+        category: ["ai", "cohere", "official"]
+        fetchInterval: 3600
+
+      - name: "Latent Space"
+        type: "direct"
+        source_type: "blog"
+        url: "https://www.latent.space/feed"
+        category: ["ai", "agents", "newsletter"]
+        fetchInterval: 3600
+
+      - name: "Simon Willison"
+        type: "direct"
+        source_type: "blog"
+        url: "https://simonwillison.net/atom/everything/"
+        category: ["tech", "ai", "python"]
+        fetchInterval: 3600
+
+      - name: "Interconnects"
+        type: "direct"
+        source_type: "blog"
+        url: "https://www.interconnects.ai/feed"
+        category: ["ai", "ml", "blog"]
+        fetchInterval: 3600
+
+      - name: "Overreacted"
+        type: "direct"
+        source_type: "blog"
+        url: "https://overreacted.io/rss.xml"
+        category: ["tech", "react", "frontend"]
+        fetchInterval: 3600
+
+      - name: "Hacker News Front Page"
+        type: "direct"
+        source_type: "hackernews"
+        url: "https://hnrss.org/frontpage"
+        category: ["tech", "news", "hackernews"]
+        fetchInterval: 3600
+
+      # Chinese public feeds
+      - name: "QbitAI"
+        type: "direct"
+        source_type: "wechat"
+        url: "https://www.qbitai.com/feed"
+        category: ["ai", "tech", "chinese"]
+        fetchInterval: 3600
+
+      - name: "Huxiu"
+        type: "direct"
+        source_type: "wechat"
+        url: "https://rss.huxiu.com/"
+        category: ["tech", "business", "chinese"]
+        fetchInterval: 3600
+
+      - name: "GeekPark"
+        type: "direct"
+        source_type: "wechat"
+        url: "https://www.geekpark.net/rss"
+        category: ["ai", "startup", "chinese"]
+        fetchInterval: 3600
+      - name: "Miguel Grinberg"
+        type: "direct"
+        url: "https://blog.miguelgrinberg.com/feed"
+        category: ["tech", "python", "flask"]
+        fetchInterval: 3600
+
+      - name: "Eli Bendersky"
+        type: "direct"
+        url: "https://eli.thegreenplace.net/feeds/all.atom.xml"
+        category: ["tech", "programming"]
+        fetchInterval: 3600
+
+      - name: "Michael Stapelberg"
+        type: "direct"
+        url: "https://michael.stapelberg.ch/feed.xml"
+        category: ["tech", "linux", "go"]
+        fetchInterval: 3600
+
+      - name: "Beej"
+        type: "direct"
+        url: "https://beej.us/blog/rss.xml"
+        category: ["tech", "programming", "c"]
+        fetchInterval: 3600
+
+      - name: "Rachel by the Bay"
+        type: "direct"
+        url: "https://rachelbythebay.com/w/atom.xml"
+        category: ["tech", "programming"]
+        fetchInterval: 3600
+
+      # ----------------------------------------------------------
+      # 4.10 投资者资讯
+      # ----------------------------------------------------------
+      - name: "All-In Podcast"
+        type: "direct"
+        source_type: "investor"
+        url: "https://feeds.simplecast.com/JGE3yC0V"
+        category: ["investor", "vc", "tech", "podcast"]
+        fetchInterval: 3600
+        priority: "high"
+
+      - name: "Investor News Feed"
+        type: "direct"
+        source_type: "investor"
+        url: "https://rss.app/feeds/c7GxaZ3TVD8cWsFs.xml"
+        category: ["investor", "vc", "tech"]
+        fetchInterval: 3600
+        priority: "high"
+
+      - name: "The Verticalist"
+        type: "direct"
+        source_type: "investor"
+        url: "https://insights.euclid.vc/feed"
+        category: ["investor", "vc", "tech"]
+        fetchInterval: 3600
+        priority: "high"
+
+      - name: "AI Investor News"
+        type: "direct"
+        source_type: "investor"
+        url: "https://rss.app/rss-feed?keyword=Artificial%20Intelligence&region=US&lang=en"
+        category: ["investor", "ai", "us", "news"]
+        fetchInterval: 3600
+        priority: "high"
+
+      - name: "The AI Valley"
+        type: "direct"
+        source_type: "news"
+        url: "https://kill-the-newsletter.com/feeds/sg5lm1gdqvvwgskcyk8q.xml"
+        category: ["ai", "news", "daily"]
+        fetchInterval: 3600
+        priority: "high"
+      # Example placeholder for a private/local-only feed.
+      # Do not commit real private feed URLs or generated feed IDs.
+      # - name: "Private Newsletter"
+      #   type: "direct"
+      #   source_type: "newsletter"
+      #   url: "https://example.com/private-feed.xml"
+      #   category: ["private"]
+      #   fetchInterval: 3600
+
+# AI processing pipeline configuration
+pipeline:
+  relevanceThreshold: 6
+  maxDailyItems: 20
+
+# Optional scheduling configuration
+# scheduling:
+#   fetchCron: "0 */4 * * *"
+#   briefingCron: "0 9 * * *"

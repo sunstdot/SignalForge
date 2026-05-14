@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "date": "2026-05-06",
+    "title": "AI 情报短视频生成器",
+    "durationSeconds": 60,
+    "source": "data/opportunities/2026-05-06.json"
+  },
+  "opening": {
+    "hook": "今天最值得盯住的 3 个 AI 机会",
+    "subtitle": "从技术信号里，找到可以马上做的产品切口"
+  },
+  "items": [
+    {
+      "title": "Chrome AI 下载管理器",
+      "summary": "浏览器本地 AI 模型正在悄悄进入普通用户设备。",
+      "whyImportant": "用户很难知道模型何时下载、占用多少流量，以及本地数据会如何被处理。",
+      "opportunity": "做一个监控、清理、阻止 Chrome 本地 AI 模型下载的隐私与流量管理工具。",
+      "tags": ["隐私", "浏览器", "本地 AI"],
+      "visualHint": "Chrome window, local model files, privacy shield, neon network"
+    },
+    {
+      "title": "本地 AI 学术研究助手",
+      "summary": "本地研究代理开始同时覆盖私有文档、arXiv 和 PubMed 搜索。",
+      "whyImportant": "科研场景既需要深度问答，也需要隐私保护，本地推理正在降低落地门槛。",
+      "opportunity": "面向研究人员和企业 R&D，提供私有 PDF 索引、学术检索和深度报告生成。",
+      "tags": ["科研", "本地模型", "RAG"],
+      "visualHint": "research papers, local GPU, knowledge graph, dark lab interface"
+    },
+    {
+      "title": "无代码表格 AI 分析工具",
+      "summary": "表格基础模型让 CSV/Excel 的预测分析从数小时缩短到几秒。",
+      "whyImportant": "业务人员不再必须懂特征工程，也能快速完成销售预测、流失预警等决策分析。",
+      "opportunity": "做一个上传表格即建模、可视化结果并一键生成报告的零代码分析工具。",
+      "tags": ["表格分析", "零代码", "预测建模"],
+      "visualHint": "spreadsheet grid, prediction chart, AI dashboard, glowing data lines"
+    }
+  ],
+  "ending": {
+    "insight": "共同信号：AI 机会正在从大模型本身，转向本地控制、专业工作流和低门槛工具。",
+    "cta": "关注我，每天拆解一个可以落地的 AI 产品机会"
+  }
+}

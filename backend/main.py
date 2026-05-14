@@ -3,10 +3,24 @@ TokenBurner Backend API
 FastAPI 后端服务，提供数据抓取、处理和 API 接口
 """
 
+import asyncio
+import logging
 import os
 from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+
+
+class _SuppressCancelledError(logging.Filter):
+    """屏蔽 uvicorn lifespan 关闭时的 CancelledError 日志噪音"""
+    def filter(self, record: logging.LogRecord) -> bool:
+        return not (
+            record.exc_info
+            and record.exc_info[0] is asyncio.CancelledError
+        )
+
+
+logging.getLogger("uvicorn.error").addFilter(_SuppressCancelledError())
 
 from routers import briefing, dates, experiments, content
 from routers.experiments import router as experiments_router
@@ -35,9 +49,9 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:5173",
+        "http://localhost:5174",
         "http://localhost:3000",
-        "http://127.0.0.1:5173"
+        "http://127.0.0.1:5174"
     ],
     allow_credentials=True,
     allow_methods=["*"],
@@ -73,4 +87,4 @@ async def root():
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8001)

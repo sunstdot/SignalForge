@@ -1,0 +1,80 @@
+<h2>小红书按钮放在哪里？</h2>
+<p class="subtitle">以下是三种放置方案。当前"机会雷达"头部区域有两个按钮：⊕ 搜索机会 和 ↺ 重新分析</p>
+
+<div class="cards">
+
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:16px;background:#f9fafb;border-bottom:1px solid #e5e7eb">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
+        <div style="display:flex;align-items:center;gap:8px">
+          <span style="font-size:11px;font-weight:600;color:#6b7280;text-transform:uppercase;letter-spacing:.05em">机会雷达</span>
+          <span style="font-size:11px;background:#eff6ff;color:#3b82f6;padding:2px 6px;border-radius:4px">20 个机会</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px">
+          <button style="font-size:11px;padding:4px 10px;border-radius:6px;border:1px solid #22c55e;color:#16a34a;background:#f0fdf4">⊕ 搜索机会</button>
+          <button style="font-size:11px;padding:4px 10px;border-radius:6px;border:1px solid #e5e7eb;color:#6b7280;background:#fff">↺ 重新分析</button>
+          <button style="font-size:11px;padding:4px 10px;border-radius:6px;border:1px solid #ff2442;color:#ff2442;background:#fff5f6;font-weight:600">📕 发小红书</button>
+        </div>
+      </div>
+      <div style="height:60px;background:#fff;border-radius:8px;border:1px solid #e5e7eb;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:12px">机会卡片内容区域...</div>
+    </div>
+    <div class="card-body">
+      <h3>A. 头部工具栏</h3>
+      <p>与"搜索机会"、"重新分析"并排，属于章节级操作。点击即触发 top-3 内容生成。最易发现，逻辑上是"看完机会 → 一键发布"。</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:16px;background:#f9fafb;border-bottom:1px solid #e5e7eb">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
+        <div style="display:flex;align-items:center;gap:8px">
+          <span style="font-size:11px;font-weight:600;color:#6b7280;text-transform:uppercase;letter-spacing:.05em">机会雷达</span>
+          <span style="font-size:11px;background:#eff6ff;color:#3b82f6;padding:2px 6px;border-radius:4px">20 个机会</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px">
+          <button style="font-size:11px;padding:4px 10px;border-radius:6px;border:1px solid #22c55e;color:#16a34a;background:#f0fdf4">⊕ 搜索机会</button>
+          <button style="font-size:11px;padding:4px 10px;border-radius:6px;border:1px solid #e5e7eb;color:#6b7280;background:#fff">↺ 重新分析</button>
+        </div>
+      </div>
+      <div style="height:90px;background:#fff;border-radius:8px;border:1px solid #e5e7eb;padding:12px">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <span style="font-size:12px;color:#374151">💡 中文AI语音合成平台</span>
+          <div style="display:flex;gap:6px">
+            <button style="font-size:11px;padding:4px 10px;border-radius:6px;border:1px solid #e5e7eb;color:#6b7280;background:#fff">跳过</button>
+            <button style="font-size:11px;padding:4px 10px;border-radius:6px;border:1px solid #3b82f6;color:#3b82f6;background:#eff6ff">✦ 存想法</button>
+            <button style="font-size:11px;padding:4px 10px;border-radius:6px;border:1px solid #ff2442;color:#ff2442;background:#fff5f6;font-weight:600">📕 发</button>
+          </div>
+        </div>
+        <div style="font-size:11px;color:#9ca3af;margin-top:8px">仅发布当前这条机会...</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B. 单卡片操作</h3>
+      <p>在每张机会卡片的操作区域加"发"按钮。发布单条（当前看的这一个），而不是 top-3。更细粒度，但改变了"自动选 top-3"的逻辑。</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:16px;background:#f9fafb;border-bottom:1px solid #e5e7eb">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
+        <div style="display:flex;align-items:center;gap:8px">
+          <span style="font-size:11px;font-weight:600;color:#6b7280;text-transform:uppercase;letter-spacing:.05em">机会雷达</span>
+          <span style="font-size:11px;background:#eff6ff;color:#3b82f6;padding:2px 6px;border-radius:4px">20 个机会</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px">
+          <button style="font-size:11px;padding:4px 10px;border-radius:6px;border:1px solid #22c55e;color:#16a34a;background:#f0fdf4">⊕ 搜索机会</button>
+          <button style="font-size:11px;padding:4px 10px;border-radius:6px;border:1px solid #e5e7eb;color:#6b7280;background:#fff">↺ 重新分析</button>
+        </div>
+      </div>
+      <div style="height:60px;background:#fff;border-radius:8px;border:1px solid #e5e7eb;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:12px;margin-bottom:8px">机会卡片内容区域...</div>
+      <div style="border-top:1px dashed #e5e7eb;padding-top:10px;display:flex;justify-content:flex-end">
+        <button style="font-size:12px;padding:6px 16px;border-radius:8px;border:1.5px solid #ff2442;color:#ff2442;background:linear-gradient(135deg,#fff5f6,#fff);font-weight:600">📕 生成小红书内容（Top 3）</button>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C. 底部独立行</h3>
+      <p>机会列表底部单独一行，全宽按钮。视觉上更突出，明确传达"这是基于所有机会的总结操作"。适合未来多平台扩展（再加即刻、Twitter 按钮）。</p>
+    </div>
+  </div>
+
+</div>

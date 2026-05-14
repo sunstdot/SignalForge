@@ -4,6 +4,7 @@ from fastapi import APIRouter, HTTPException, Query
 from pydantic import BaseModel
 
 from services.briefing_generator import get_briefing_by_date, get_latest_briefing, get_briefing_markdown
+from services.llm_client import chat, chat_async
 from services.storage import (
     load_category_digest, save_category_digest,
     load_opportunities, save_opportunities,
@@ -13,8 +14,8 @@ from services.storage import (
 router = APIRouter()
 
 
-def _analyze_items_for_opportunities(items, date, client, app_id):
-    """对给定 items 批量调用 AI 分析商业机会，返回有机会的条目列表"""
+async def _analyze_items_for_opportunities(items, date):
+    """对给定 items 批量调用 AI 分析商业机会，返回有机会的条目列表（使用 DeepSeek）"""
     import re, json as _json
 
     BATCH_SIZE = 10
@@ -32,88 +33,90 @@ def _analyze_items_for_opportunities(items, date, client, app_id):
                 f"    内容: {content}\n"
             )
 
-        prompt = f"""# 角色设定
-你是一位顶尖的 AI 产品经理、风险投资分析师和连续创业者。你深谙大语言模型 (LLM)、AI Agent 的技术边界，同时拥有极强的商业嗅觉。你极其重视产品的用户体验（前端/客户端交互）和商业化落地能力。你的任务是从每天繁杂的 AI 资讯、论文、开源仓库中，像淘金一样挖掘出**立即可执行、具有商业潜力的 AI 应用层产品想法**。
+        prompt = f"""你是一位经验丰富的 AI 产品经理和连续创业者，擅长从技术情报中发现真实可落地的商业机会。
 
-# 你的任务
-基于以下今日AI情报内容，进行系统性的商业机会挖掘与分析。
-你需要像一个连续创业者一样思考：**哪些技术突破可以用来解决真实存在的痛点，并在6-12个月内做成一个可以卖钱的产品？**
-
-# 输入情报
-<my_constraints>
-- 我是独立开发者，没有团队
+# 开发者背景
+- 独立开发者，无团队
 - 技术栈：Python / Next.js
-- 目标市场：中文用户为主
-</my_constraints>
+- 可接受面向全球或中文市场的产品，无需强行本地化
 
-以下是 {date} 的 {len(batch)} 条 AI 情报，请逐条分析：
+# 今日情报（{date}，共 {len(batch)} 条）
 <ai_intelligence>
 {items_text}
 </ai_intelligence>
 
-# 分析框架
+# 分析规则
 
-请按以下步骤进行分析：
-
-## STEP 1：情报扫描与信号提取
-
+## 什么情况下有商业机会（has_opportunities: true）
+满足以下任一条件：
+- 情报中有**具体的技术能力突破**（速度、精度、成本、新能力），能直接支撑一个产品想法
+- 某个开源工具/模型的**特定功能**，可以被包装成面向非开发者的付费产品
+- **成本骤降**使得此前不可行的商业模式变得可行
 快速浏览所有情报，识别以下几类关键信号：
-- **技术跃迁信号**：某项能力出现了质的飞跃（速度、精度、成本、可用性）
-- **能力空白信号**：新模型/工具解锁了此前无法实现的某类功能，在当前市场上，这项技术可以解决哪些行业（如效率工具、开发者工具、内容创作、电商营销等）的痛点？
-- **成本骤降信号**：某类AI能力的使用成本大幅下降，原本不可行的商业模式变得可行
-- **巨头盲区信号**：大公司发布的工具主要服务开发者/企业，但普通用户/中小企业仍未被满足
-- **组合创新信号**：多项技术叠加后，可以创造此前不存在的产品体验
-- **技术降维映射**：这项新技术/新模型/新项目，能大幅降低哪类任务的成本？或者能创造什么以前做不到的交互体验？
-- **聚焦应用层与体验**：摒弃大厂在拼的底层算力和基础模型，将视角聚焦在”应用层”。思考如何通过优秀的前端/客户端 UI 设计、结合 AI Agent 工作流，将这项技术包装成一个用户愿意付费的完整产品。
+-- **技术跃迁信号**：某项能力出现了质的飞跃（速度、精度、成本、可用性）
+-- **能力空白信号**：新模型/工具解锁了此前无法实现的某类功能，在当前市场上，这项技术可以解决哪些行业（如
+    -效率工具、开发者工具、内容创作、电商营销等）的痛点？
+-- **成本骤降信号**：某类AI能力的使用成本大幅下降，原本不可行的商业模式变得可行
+-- **巨头盲区信号**：大公司发布的工具主要服务开发者/企业，但普通用户/中小企业仍未被满足
+-- **组合创新信号**：多项技术叠加后，可以创造此前不存在的产品体验
+-- **技术降维映射**：这项新技术/新模型/新项目，能大幅降低哪类任务的成本？或者能创造什么以前做不到的交互
+    -体验？
+-- **聚焦应用层与体验**：摒弃大厂在拼的底层算力和基础模型，将视角聚焦在”应用层”。思考如何通过优秀的前端/
+    -客户端 UI 设计、结合 AI Agent 工作流，将这项技术包装成一个用户愿意付费的完整产品。
 
-## STEP 2：商业机会生成
+## 什么情况下没有商业机会（has_opportunities: false）
+以下情况直接标记为 false，不要强行生成 idea：
+- 纯商业新闻（融资、收购、人事变动）
+- 只是某个工具的新版本发布，无实质能力提升
+- 学术论文，缺乏工程化路径
+- 情报内容过于笼统，找不到**可以直接使用的具体技术**
 
-针对上述信号，每一条情报生成 **1-3 个**具体的商业机会想法。
+## 溯源要求（最重要）
+**每个 idea 必须能回答：「情报中的哪句话/哪个具体能力，让这个产品现在可行？」**
+- 禁止从情报标题联想出与内容无关的产品
+- 禁止因为约束里有”中文用户”就强行加上”中文版”
+- 如果找不到清晰的技术→产品因果链，设 has_opportunities: false
 
 # 输出格式（严格遵守）
 
-**只输出一个 JSON 数组，不要任何解释文字、不要 markdown 代码块、不要 ```json 包装。**
+只输出一个 JSON 数组，不要任何解释文字、不要 markdown 代码块。
 所有字符串字段必须是单行字符串，不得包含换行符。
 
 [
   {{
-    “idx”: 1,
-    “has_opportunities”: true,
-    “ideas”: [
+    "idx": 1,
+    "has_opportunities": true,
+    "ideas": [
       {{
-        “title”: “产品名称方向（15字以内）”,
-        “core_insight”: “为什么这个技术突破让这个产品现在可行，而6个月前不行（2句话以内，单行）”,
-        “product_form”: “帮助[目标用户]解决[具体问题]的[产品类型]（单行）”,
-        “target_users”: “精确用户画像：职业、场景、痛点、付费意愿（50字以内，单行）”,
-        “mvp_features”: [“核心功能1”, “核心功能2”, “核心功能3”],
-        “business_model”: “如何赚钱及定价策略（40字以内，单行）”,
-        “competitive_barrier”: “护城河是什么（30字以内，单行）”,
-        “risks”: “最大风险（30字以内，单行）”,
-        “scores”: {{
-          “pain_point”: 4,
-          “market_size”: 3,
-          “tech_timing”: 5,
-          “buildability”: 4
+        "title": "产品方向名称（30字以内）",
+        "trigger": "情报中触发此想法的具体能力或数据点（原文引用或紧密改写，30字以内）",
+        "core_insight": "这个技术能力如何直接支撑这个产品，之前为何不可行（60字以内，单行）",
+        "product_form": "帮助[目标用户]解决[具体问题]的[产品类型]（单行）",
+        "target_users": "用户画像：职业/场景/痛点/付费意愿（40字以内，单行）",
+        "mvp_features": ["核心功能1", "核心功能2", "核心功能3"],
+        "business_model": "盈利方式及定价（30字以内，单行）",
+        "risks": "最大风险（40字以内，单行）",
+        "scores": {{
+          "pain_point": 4,
+          "market_size": 3,
+          "tech_timing": 5,
+          "buildability": 4
         }}
       }}
     ]
   }}
 ]
 
-评分标准（1-5 的整数）：
-- pain_point（痛点清晰度）：用户痛苦程度和明确性
-- market_size（市场规模）：潜在付费用户规模
-- tech_timing（技术窗口）：技术刚成熟、竞争窗口期
-- buildability（可实现性）：独立开发者 1 个月内能做出 MVP
+评分标准（1-5 整数）：
+- pain_point：痛点真实程度和用户痛苦程度
+- market_size：潜在付费用户规模
+- tech_timing：技术窗口期，现在做是否是最佳时机
+- buildability：独立开发者能否在 1 个月内做出 MVP
 
-没有商业机会的条目：has_opportunities 设为 false，ideas 输出为空数组 []。"""
+没有商业机会的条目：has_opportunities 为 false，ideas 为空数组 []。"""
 
         try:
-            completion = client.chat.completions.create(
-                model=app_id,
-                messages=[{"role": "user", "content": prompt}],
-            )
-            raw = completion.choices[0].message.content.strip()
+            raw = (await chat_async([{"role": "user", "content": prompt}], provider="deepseek")).strip()
             raw = re.sub(r'^```[a-z]*\n?', '', raw).rstrip('`').strip()
             match = re.search(r'\[.*\]', raw, re.DOTALL)
             batch_result = _json.loads(match.group(0) if match else raw)
@@ -185,7 +188,7 @@ async def get_briefing(date: str):
 
 @router.get("/{date}/opportunities")
 async def get_opportunities(date: str, refresh: bool = False):
-    """获取机会雷达 top20（命中缓存直接返回，否则批量 AI 分析）"""
+    """获取机会雷达（命中缓存直接返回，否则循环分析直到产出 20 个机会）"""
     import re, json as _json
     if not re.match(r'^\d{4}-\d{2}-\d{2}$', date):
         raise HTTPException(status_code=400, detail="Invalid date format")
@@ -193,22 +196,34 @@ async def get_opportunities(date: str, refresh: bool = False):
     if not refresh:
         cached = load_opportunities(date)
         if cached:
+            # 动态计算 remaining，避免老缓存 remaining=0 导致按钮消失
+            briefing_for_remaining = get_briefing_by_date(date)
+            if briefing_for_remaining:
+                analyzed_ids_set = set(cached.get("analyzed_item_ids", []))
+                cached["remaining"] = len([i for i in briefing_for_remaining["items"] if i["id"] not in analyzed_ids_set])
             return cached
 
     briefing = get_briefing_by_date(date)
     if not briefing or not briefing.get("items"):
         raise HTTPException(status_code=404, detail="Briefing not found")
 
-    # 取相关度最高的 40 条
-    all_items = sorted(briefing["items"], key=lambda x: -x.get("relevance_score", 0))
-    items = all_items[:40]
-    analyzed_ids = [i["id"] for i in items]
+    MIN_OPPS = 20
+    BATCH_ITEMS = 20   # 每轮分析 20 条（2 次 AI 调用）
+    MAX_ITEMS = 120    # 安全上限，防止超时
 
-    from services.chinese_briefer import get_wanqing_client, get_wanqing_app_id, _get_model
-    client = get_wanqing_client()
-    app_id = get_wanqing_app_id(_get_model())
+    all_items = briefing["items"]
+    items_sorted = sorted(all_items, key=lambda x: -x.get("relevance_score", 0))
 
-    all_opps = _analyze_items_for_opportunities(items, date, client, app_id)
+    all_opps: list = []
+    analyzed_items: list = []
+    offset = 0
+
+    while len(all_opps) < MIN_OPPS and offset < len(items_sorted) and offset < MAX_ITEMS:
+        batch = items_sorted[offset:offset + BATCH_ITEMS]
+        batch_opps = await _analyze_items_for_opportunities(batch, date)
+        all_opps.extend(batch_opps)
+        analyzed_items.extend(batch)
+        offset += len(batch)
 
     # 去重（以 source_url + opportunity_title 为主键）并按总分排序
     seen_keys: set = set()
@@ -219,14 +234,16 @@ async def get_opportunities(date: str, refresh: bool = False):
             seen_keys.add(key)
             deduped.append(opp)
 
-    result = {"date": date, "opportunities": deduped[:20], "analyzed_item_ids": analyzed_ids}
+    analyzed_ids = [i["id"] for i in analyzed_items]
+    remaining_count = len(all_items) - len(analyzed_items)
+    result = {"date": date, "opportunities": deduped, "analyzed_item_ids": analyzed_ids, "remaining": remaining_count}
     save_opportunities(date, result)
     return result
 
 
 @router.post("/{date}/opportunities/search")
 async def search_more_opportunities(date: str):
-    """从未分析过的情报中搜索新机会，合并到已有缓存"""
+    """从未分析过的情报中搜索新机会，循环直到产出 10 个新机会，合并追加到已有缓存"""
     import re, json as _json
     if not re.match(r'^\d{4}-\d{2}-\d{2}$', date):
         raise HTTPException(status_code=400, detail="Invalid date format")
@@ -238,22 +255,29 @@ async def search_more_opportunities(date: str):
     cached = load_opportunities(date) or {"date": date, "opportunities": [], "analyzed_item_ids": []}
     analyzed_ids = set(cached.get("analyzed_item_ids", []))
 
-    # 取未分析过的条目（按相关度排序，每次最多 40 条）
-    remaining = [i for i in briefing["items"] if i["id"] not in analyzed_ids]
-    remaining.sort(key=lambda x: -x.get("relevance_score", 0))
-    to_analyze = remaining[:40]
+    unanalyzed = [i for i in briefing["items"] if i["id"] not in analyzed_ids]
+    if not unanalyzed:
+        return {**cached, "searched": 0, "remaining": 0, "message": "所有情报均已分析完毕"}
 
-    if not to_analyze:
-        return {**cached, "searched": 0, "message": "所有情报均已分析完毕"}
+    MIN_NEW_OPPS = 10
+    BATCH_ITEMS = 20   # 每轮分析 20 条
+    MAX_ITEMS = 80     # 安全上限
 
-    from services.chinese_briefer import get_wanqing_client, get_wanqing_app_id, _get_model
-    client = get_wanqing_client()
-    app_id = get_wanqing_app_id(_get_model())
+    unanalyzed.sort(key=lambda x: -x.get("relevance_score", 0))
 
-    new_opps = _analyze_items_for_opportunities(to_analyze, date, client, app_id)
+    new_opps: list = []
+    newly_analyzed: list = []
+    offset = 0
+
+    while len(new_opps) < MIN_NEW_OPPS and offset < len(unanalyzed) and offset < MAX_ITEMS:
+        batch = unanalyzed[offset:offset + BATCH_ITEMS]
+        batch_opps = await _analyze_items_for_opportunities(batch, date)
+        new_opps.extend(batch_opps)
+        newly_analyzed.extend(batch)
+        offset += len(batch)
 
     # 合并 + 去重（以 source_url + opportunity_title 为主键）
-    seen_keys = set()
+    seen_keys: set = set()
     deduped = []
     for opp in cached["opportunities"] + new_opps:
         key = (opp.get("source_url", ""), opp.get("opportunity_title", ""))
@@ -264,12 +288,13 @@ async def search_more_opportunities(date: str):
 
     deduped.sort(key=lambda x: -x["total_score"])
 
-    new_analyzed_ids = list(analyzed_ids) + [i["id"] for i in to_analyze]
+    new_analyzed_ids = list(analyzed_ids) + [i["id"] for i in newly_analyzed]
+    remaining_count = len(briefing["items"]) - len(new_analyzed_ids)
     result = {
         "date": date,
-        "opportunities": deduped[:30],
+        "opportunities": deduped,
         "analyzed_item_ids": new_analyzed_ids,
-        "remaining": len(remaining) - len(to_analyze),
+        "remaining": remaining_count,
     }
     save_opportunities(date, result)
     return result
@@ -316,12 +341,6 @@ async def get_category_digest(date: str, refresh: bool = False):
         "news": "资讯",
     }
 
-    from services.chinese_briefer import get_wanqing_client, get_wanqing_app_id, _get_model
-
-    client = get_wanqing_client()
-    model_name = _get_model()
-    app_id = get_wanqing_app_id(model_name)
-
     result = {"date": date, "categories": {}}
 
     for cat, cat_items in groups.items():
@@ -341,11 +360,7 @@ async def get_category_digest(date: str, refresh: bool = False):
         )
 
         try:
-            completion = client.chat.completions.create(
-                model=app_id,
-                messages=[{"role": "user", "content": prompt}],
-            )
-            summary = completion.choices[0].message.content.strip()
+            summary = (await chat_async([{"role": "user", "content": prompt}])).strip()
         except Exception as e:
             summary = None
             print(f"[category-digest] {cat} failed: {e}")
@@ -382,10 +397,6 @@ async def batch_quick_reads(date: str):
     if not to_process:
         return {"generated": 0, "skipped": len(cached), "message": "all cached"}
 
-    from services.chinese_briefer import get_wanqing_client, get_wanqing_app_id, _get_model
-    client = get_wanqing_client()
-    app_id = get_wanqing_app_id(_get_model())
-
     BATCH_SIZE = 15
     generated = 0
 
@@ -414,11 +425,7 @@ async def batch_quick_reads(date: str):
 要求：中文输出，core 和 insight 为单行字符串，points 为字符串数组（3-5条）。"""
 
         try:
-            completion = client.chat.completions.create(
-                model=app_id,
-                messages=[{"role": "user", "content": prompt}],
-            )
-            raw = completion.choices[0].message.content.strip()
+            raw = (await chat_async([{"role": "user", "content": prompt}])).strip()
             # 去掉可能的 markdown 代码块包装
             raw = _re.sub(r'^```[a-z]*\n?', '', raw).rstrip('`').strip()
             match = _re.search(r'\[.*\]', raw, _re.DOTALL)
@@ -439,7 +446,7 @@ async def batch_quick_reads(date: str):
     return {"generated": generated, "total": len(to_process), "skipped": len(cached)}
 
 
-def _analyze_items_for_rdev(items, date, client, app_id):
+async def _analyze_items_for_rdev(items, date):
     """对情报列表进行研发效能机会分析，返回附带 source 信息的 solutions 扁平列表"""
     import re, json as _json
 
@@ -479,7 +486,7 @@ def _analyze_items_for_rdev(items, date, client, app_id):
 - ⚡ **开发提速信号**：能让前端切图、组件生成、API 联调、代码 Review 更快的技术。
 - 🔍 **认知增强信号**：帮助程序员秒懂复杂系统、历史遗留代码、晦涩技术文档的能力。
 - 🤖 **流程自动化信号**：可替代研发链路（如 CI/CD、自动化测试、甚至 PRD 转代码）某环节的 Agent 方案。
-- 📈 **业务赋能信号**：能提升商业化产品端侧体验（如动态 UI、智能导购）、或让产品/运营自助生成物料的技术。
+- 📈 **业务赋能信号**：能提升商业化产品端侧体验（如动态 UI、智能导购、提升信息流广告CVR、CTR）、或让产品/运营自助生成物料的技术。
 - 🧱 **基础设施信号**：降低大模型接入门槛、或提升端侧/浏览器端推理性能的新工具。
 
 ## STEP 2：落地机会深度解析
@@ -492,26 +499,26 @@ def _analyze_items_for_rdev(items, date, client, app_id):
 
 [
   {{
-    “idx”: 1,
-    “has_solutions”: true,
-    “solutions”: [
+    "idx": 1,
+    "has_solutions": true,
+    "solutions": [
       {{
-        “type”: “研发提效”,
-        “source_item_title”: “触发此机会的情报标题（原文照抄，单行）”,
-        “title”: “一句话方案名称（20字以内，单行）”,
-        “trigger”: “哪条情报触发了这个机会（30字以内，单行）”,
-        “scenario”: “在[具体场景]中，目前做法是[现有做法]，核心痛点在于[问题所在]（80字以内，单行）”,
-        “ai_solution”: “新技术如何重构这个场景，能力边界在哪里（80字以内，单行）”,
+        "type": "研发提效",
+        "source_item_title": "触发此机会的情报标题（原文照抄，单行）",
+        "title": "一句话方案名称（20字以内，单行）",
+        "trigger": "哪条情报触发了这个机会（30字以内，单行）",
+        "scenario": "在[具体场景]中，目前做法是[现有做法]，核心痛点在于[问题所在]（80字以内，单行）",
+        "ai_solution": "新技术如何重构这个场景，能力边界在哪里（80字以内，单行）",
         "implementation": "具体集成形态，如VS Code插件/GitLab Webhook/飞书机器人等（60字以内，单行）",
         "audience": ["大前端", "客户端"],
-        "impact": "量化预期收益（50字以内，单行）"，
-        "difficulty": "低"，
-        "resistance": "在公司内推进的主要阻力（40字以内，单行）"，
+        "impact": "量化预期收益（50字以内，单行）",
+        "difficulty": "低",
+        "resistance": "在公司内推进的主要阻力（40字以内，单行）",
         "scores": {{
           "efficiency": 8,
           "feasibility": 7,
-          “business_impact”: 6,
-          “overall”: 8
+          "business_impact": 6,
+          "overall": 8
         }}
       }}
     ]
@@ -533,11 +540,7 @@ def _analyze_items_for_rdev(items, date, client, app_id):
 - 宁可评分低也要输出，不要遗漏任何有技术含量的情报"""
 
         try:
-            completion = client.chat.completions.create(
-                model=app_id,
-                messages=[{"role": "user", "content": prompt}],
-            )
-            raw = completion.choices[0].message.content.strip()
+            raw = (await chat_async([{"role": "user", "content": prompt}], provider="deepseek")).strip()
             raw = re.sub(r'^```[a-z]*\n?', '', raw).rstrip('`').strip()
             match = re.search(r'\[.*\]', raw, re.DOTALL)
             batch_result = _json.loads(match.group(0) if match else raw)
@@ -598,14 +601,11 @@ async def get_rdev_opportunities(date: str, refresh: bool = False):
     if not briefing or not briefing.get("items"):
         raise HTTPException(status_code=404, detail="Briefing not found")
 
-    # 取相关度最高的 60 条作为输入（确保首次能生成足够多的机会）
-    items = sorted(briefing["items"], key=lambda x: -x.get("relevance_score", 0))[:60]
+    # 随机取 40 条，每次覆盖不同内容
+    import random as _random
+    items = _random.sample(briefing["items"], min(40, len(briefing["items"])))
 
-    from services.chinese_briefer import get_wanqing_client, get_wanqing_app_id, _get_model
-    client = get_wanqing_client()
-    app_id = get_wanqing_app_id(_get_model())
-
-    all_solutions = _analyze_items_for_rdev(items, date, client, app_id)
+    all_solutions = await _analyze_items_for_rdev(items, date)
 
     # 按综合分排序，去重（以 title 为主键）
     seen_titles: set = set()
@@ -657,11 +657,7 @@ async def search_more_rdev_opportunities(date: str):
     if not to_analyze:
         return {**cached, "remaining": 0}
 
-    from services.chinese_briefer import get_wanqing_client, get_wanqing_app_id, _get_model
-    client = get_wanqing_client()
-    app_id = get_wanqing_app_id(_get_model())
-
-    new_solutions = _analyze_items_for_rdev(to_analyze, date, client, app_id)
+    new_solutions = await _analyze_items_for_rdev(to_analyze, date)
 
     # 合并 + 去重（以 title 为主键）
     seen_titles: set = set()
