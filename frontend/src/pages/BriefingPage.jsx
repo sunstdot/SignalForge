@@ -2,6 +2,7 @@ import { useEffect, useState, useMemo, useRef, useCallback } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import { buildDailyBriefingPost, getTopBriefingItems } from './dailyContent'
+import { useShareSelection, ShareSelectionBar } from './useShareSelection'
 
 const CATEGORY_TABS = [
   { key: 'all', label: '全部', icon: '∗' },
@@ -36,6 +37,7 @@ const SOURCE_TYPE_MAP = {
 
 function BriefingPage() {
   const { date } = useParams()
+  const { signalIds, opportunityIds, toggleSignal, clearAll, generating, generate } = useShareSelection(date)
   const [briefing, setBriefing] = useState(null)
   const [activeCategory, setActiveCategory] = useState('all')
   const [loading, setLoading] = useState(true)
@@ -214,6 +216,13 @@ function BriefingPage() {
             <span style={{ color: 'var(--text-primary)' }}>今日 AI 情报</span>
           </div>
         </div>
+        <ShareSelectionBar
+          signalIds={signalIds}
+          opportunityIds={opportunityIds}
+          generating={generating}
+          onClear={clearAll}
+          onGenerate={generate}
+        />
       </header>
 
       {/* Category Tabs */}
@@ -264,6 +273,8 @@ function BriefingPage() {
               cachedSummary={quickReads[item.id]}
               date={date}
               onQuickRead={(id, summary) => setQuickReads(prev => ({ ...prev, [id]: summary }))}
+              selected={signalIds.includes(item.id)}
+              onToggle={() => toggleSignal(item.id)}
             />
           ))}
         </section>
@@ -722,7 +733,7 @@ function GuidedIdeaPopover({ onGenerate, onClose }) {
   )
 }
 
-function ContentCard({ item, index, cachedSummary, date, onQuickRead }) {
+function ContentCard({ item, index, cachedSummary, date, onQuickRead, selected = false, onToggle }) {
   const typeInfo = SOURCE_TYPE_MAP[item.source_type] || { label: '资讯', badge: 'badge-news' }
   const [genState, setGenState] = useState('idle') // idle | loading | done | error
   const [genError, setGenError] = useState('')
@@ -826,8 +837,23 @@ function ContentCard({ item, index, cachedSummary, date, onQuickRead }) {
   }
 
   return (
-    <article className="content-card">
+    <article className="content-card" style={selected ? { outline: '1px solid #2563eb', outlineOffset: '-1px' } : {}}>
       <div className="card-header">
+        <button
+          onClick={e => { e.stopPropagation(); if (cachedSummary) onToggle?.() }}
+          title={!cachedSummary ? '暂无速读，无法加入分享页' : (selected ? '取消选择' : '加入分享页')}
+          style={{
+            width: 16, height: 16, borderRadius: 3, flexShrink: 0,
+            border: `1.5px solid ${selected ? '#2563eb' : cachedSummary ? '#4b5563' : '#1f2937'}`,
+            background: selected ? '#2563eb' : 'transparent',
+            color: 'white', fontSize: 9,
+            cursor: cachedSummary ? 'pointer' : 'default',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            padding: 0,
+          }}
+        >
+          {selected && '✓'}
+        </button>
         <span className="text-sm" style={{ color: 'var(--text-muted)' }}>#{index}</span>
         <span className={`badge ${typeInfo.badge}`}>{typeInfo.label}</span>
         <span className="text-sm" style={{ color: 'var(--text-secondary)' }}>
