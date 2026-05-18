@@ -70,10 +70,10 @@ class TestGenerateEndpoint(unittest.TestCase):
                         "signal_ids": ["s1"],
                         "opportunity_ids": ["o1"],
                     })
-        self.assertEqual(resp.status_code, 200)
-        self.assertEqual(resp.json()["url"], "/api/share-pages/2026-05-18.html")
-        html = (tmp_path / "2026-05-18.html").read_text()
-        self.assertIn("Opp One", html)
-        self.assertNotIn("Opp Two", html)
-        self.assertIn("Signal One", html)
-        self.assertNotIn("Signal Two", html)
+                    self.assertEqual(resp.status_code, 200)
+                    self.assertEqual(resp.json()["url"], "/api/share-pages/2026-05-18.html")
+                    html = (tmp_path / "2026-05-18.html").read_text()
+                    self.assertIn("Opp One", html)
+                    self.assertNotIn("Opp Two", html)
+                    self.assertIn("Signal One", html)
+                    self.assertNotIn("Signal Two", html)

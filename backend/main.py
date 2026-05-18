@@ -7,8 +7,10 @@ import asyncio
 import logging
 import os
 from contextlib import asynccontextmanager
+from pathlib import Path
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
 
 class _SuppressCancelledError(logging.Filter):
@@ -24,6 +26,7 @@ logging.getLogger("uvicorn.error").addFilter(_SuppressCancelledError())
 
 from routers import briefing, dates, experiments, content
 from routers.experiments import router as experiments_router
+from routers.share_pages import router as share_pages_router
 
 
 @asynccontextmanager
@@ -63,6 +66,12 @@ app.include_router(briefing.router, prefix="/api/briefing", tags=["briefing"])
 app.include_router(dates.router, prefix="/api/dates", tags=["dates"])
 app.include_router(experiments.router, prefix="/api/experiments", tags=["experiments"])
 app.include_router(content.router, prefix="/api/content", tags=["content"])
+app.include_router(share_pages_router, prefix="/api/share-pages", tags=["share-pages"])
+
+# 挂载静态分享页目录（必须在路由注册之后）
+share_pages_dir = Path(__file__).parent / "docs" / "share-pages"
+if share_pages_dir.exists():
+    app.mount("/api/share-pages", StaticFiles(directory=str(share_pages_dir)), name="share-pages")
 
 
 @app.get("/api/health")
