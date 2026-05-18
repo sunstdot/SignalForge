@@ -2,7 +2,7 @@ from pathlib import Path
 from typing import List
 
 from fastapi import APIRouter, HTTPException
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 from services.share_page import (
     _load_share_sources,
@@ -16,7 +16,7 @@ SHARE_PAGES_DIR = Path(__file__).parent.parent / "docs" / "share-pages"
 
 
 class GenerateRequest(BaseModel):
-    date: str
+    date: str = Field(..., pattern=r'^\d{4}-\d{2}-\d{2}$')
     signal_ids: List[str]
     opportunity_ids: List[str]
 
