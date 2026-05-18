@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
+import { useShareSelection, ShareSelectionBar } from './useShareSelection'
 
 const TYPE_STYLES = {
   business: { label: '商业机会', color: '#16a34a', bg: '#f0fdf4' },
@@ -26,6 +27,7 @@ const SCORE_LABELS = {
 function normalizeBusiness(item) {
   return {
     id: `business-${item.item_id || item.opportunity_title}`,
+    rawId: item.item_id || item.opportunity_title,
     kind: 'business',
     type: 'business',
     title: item.opportunity_title,
@@ -71,6 +73,7 @@ function normalizeRdev(item) {
 
 function OpportunityDashboard() {
   const { date } = useParams()
+  const { signalIds, opportunityIds, toggleOpportunity, clearAll, generating, generate } = useShareSelection(date)
   const [business, setBusiness] = useState([])
   const [rdev, setRdev] = useState([])
   const [loading, setLoading] = useState(true)
@@ -138,6 +141,13 @@ function OpportunityDashboard() {
           </div>
         </div>
         <p className="text-sm" style={{ color: 'var(--text-muted)' }}>商业机会与研发提效机会合并看板</p>
+          <ShareSelectionBar
+            signalIds={signalIds}
+            opportunityIds={opportunityIds}
+            generating={generating}
+            onClear={clearAll}
+            onGenerate={generate}
+          />
       </header>
 
       <main className="opportunity-page">
@@ -176,7 +186,15 @@ function OpportunityDashboard() {
         ) : (
           <section className="opportunity-grid">
             {filteredItems.map(item => (
-              <OpportunityCard key={item.id} item={item} onOpen={() => setSelected(item)} />
+              <OpportunityCard
+                key={item.id}
+                item={item}
+                onOpen={() => setSelected(item)}
+                selected={item.kind === 'business' && opportunityIds.includes(item.rawId)}
+                onToggle={item.kind === 'business'
+                  ? (e) => { e.stopPropagation(); toggleOpportunity(item.rawId) }
+                  : null}
+              />
             ))}
           </section>
         )}
@@ -196,13 +214,34 @@ function Stat({ label, value, color }) {
   )
 }
 
-function OpportunityCard({ item, onOpen }) {
+function OpportunityCard({ item, onOpen, selected = false, onToggle }) {
   const style = TYPE_STYLES[item.type] || TYPE_STYLES.default
   const labels = SCORE_LABELS[item.kind === 'business' ? 'business' : 'rdev']
 
   return (
-    <article className="opportunity-card" onClick={onOpen}>
+  <article
+    className="opportunity-card"
+    onClick={onOpen}
+    style={selected ? { outline: '1px solid #16a34a', outlineOffset: '-1px' } : {}}
+  >
       <div className="opportunity-card-top">
+        {onToggle && (
+          <button
+            onClick={onToggle}
+            title={selected ? '取消选择' : '加入分享页'}
+            style={{
+              width: 16, height: 16, borderRadius: 3, flexShrink: 0,
+              border: `1.5px solid ${selected ? '#16a34a' : '#4b5563'}`,
+              background: selected ? '#16a34a' : 'transparent',
+              color: 'white', fontSize: 9,
+              cursor: 'pointer',
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              padding: 0,
+            }}
+          >
+            {selected && '✓'}
+          </button>
+        )}
         <span className="opportunity-type" style={{ color: style.color, backgroundColor: style.bg }}>{style.label}</span>
         <span className="opportunity-score">{item.totalScore}/{item.scoreMax}</span>
       </div>
