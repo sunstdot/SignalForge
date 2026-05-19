@@ -146,3 +146,27 @@ def test_create_and_list_and_delete(client, monkeypatch):
 
     resp = client.get("/api/manual-intel")
     assert resp.json() == {"items": []}
+
+
+def test_reanalyze_item(client, monkeypatch):
+    import routers.manual_intel as mi
+    async def fake_fetch(url):
+        return "Title", "Snippet"
+    async def fake_analysis(item_id):
+        pass
+    monkeypatch.setattr(mi, "_fetch_url_content", fake_fetch)
+    monkeypatch.setattr(mi, "_run_ai_analysis", fake_analysis)
+
+    # Create an item
+    resp = client.post("/api/manual-intel", json={"url": "https://example.com"})
+    assert resp.status_code == 201
+    item_id = resp.json()["id"]
+
+    # Reanalyze
+    resp = client.post(f"/api/manual-intel/{item_id}/reanalyze")
+    assert resp.status_code == 200
+    assert resp.json()["ok"] is True
+
+    # Reanalyze non-existent item
+    resp = client.post("/api/manual-intel/does-not-exist/reanalyze")
+    assert resp.status_code == 404

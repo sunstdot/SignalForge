@@ -1,8 +1,11 @@
 """手动情报录入 API"""
 import asyncio
+import json
 import re
 from typing import Optional
+from urllib.parse import urlparse
 from fastapi import APIRouter, HTTPException
+from pydantic import BaseModel
 
 from services.storage import (
     get_manual_intel_items,
@@ -14,6 +17,22 @@ from services.storage import (
 from services.llm_client import chat_async
 
 router = APIRouter()
+
+_background_tasks: set = set()
+
+
+def _is_safe_url(url: str) -> bool:
+    try:
+        parsed = urlparse(url)
+        return parsed.scheme in ("http", "https") and bool(parsed.netloc)
+    except Exception:
+        return False
+
+
+class CreateManualIntelRequest(BaseModel):
+    url: str
+    source_platform: str = "other"
+    user_note: str = ""
 
 
 async def _fetch_url_content(url: str) -> tuple[str, str]:
@@ -107,11 +126,10 @@ async def _run_ai_analysis(item_id: str):
 ]"""
 
     try:
-        import json as _json
         raw = (await chat_async([{"role": "user", "content": biz_prompt}], provider="deepseek")).strip()
         raw = re.sub(r'^```[a-z]*\n?', '', raw).rstrip('`').strip()
         match = re.search(r'\[.*\]', raw, re.DOTALL)
-        business_opps = _json.loads(match.group(0) if match else raw)
+        business_opps = json.loads(match.group(0) if match else raw)
         if not isinstance(business_opps, list):
             business_opps = []
         update_manual_intel_item(item_id, {"business_opps": business_opps})
@@ -154,11 +172,10 @@ async def _run_ai_analysis(item_id: str):
 type 只能是"研发提效"或"业务赋能"。difficulty 只能是"低"、"中"、"高"。"""
 
     try:
-        import json as _json
         raw = (await chat_async([{"role": "user", "content": rdev_prompt}], provider="deepseek")).strip()
         raw = re.sub(r'^```[a-z]*\n?', '', raw).rstrip('`').strip()
         match = re.search(r'\[.*\]', raw, re.DOTALL)
-        rdev_opps = _json.loads(match.group(0) if match else raw)
+        rdev_opps = json.loads(match.group(0) if match else raw)
         if not isinstance(rdev_opps, list):
             rdev_opps = []
         update_manual_intel_item(item_id, {"rdev_opps": rdev_opps})
@@ -182,10 +199,12 @@ async def get_item(item_id: str):
 
 
 @router.post("", status_code=201)
-async def create_item(body: dict):
-    url = body.get("url", "").strip()
+async def create_item(body: CreateManualIntelRequest):
+    url = body.url.strip()
     if not url:
         raise HTTPException(status_code=400, detail="url required")
+    if not _is_safe_url(url):
+        raise HTTPException(status_code=400, detail="url must be a valid http or https URL")
 
     title, content_snippet = await _fetch_url_content(url)
     if not title:
@@ -194,12 +213,14 @@ async def create_item(body: dict):
     item = create_manual_intel_item({
         "url": url,
         "title": title,
-        "source_platform": body.get("source_platform", "other"),
-        "user_note": body.get("user_note", ""),
+        "source_platform": body.source_platform,
+        "user_note": body.user_note,
         "content_snippet": content_snippet,
     })
 
-    asyncio.create_task(_run_ai_analysis(item["id"]))
+    task = asyncio.create_task(_run_ai_analysis(item["id"]))
+    _background_tasks.add(task)
+    task.add_done_callback(_background_tasks.discard)
     return item
 
 
@@ -217,5 +238,7 @@ async def reanalyze_item(item_id: str):
     if not item:
         raise HTTPException(status_code=404, detail="Item not found")
     update_manual_intel_item(item_id, {"quick_read": "", "business_opps": [], "rdev_opps": []})
-    asyncio.create_task(_run_ai_analysis(item_id))
+    task = asyncio.create_task(_run_ai_analysis(item_id))
+    _background_tasks.add(task)
+    task.add_done_callback(_background_tasks.discard)
     return {"ok": True, "message": "Re-analysis started"}
