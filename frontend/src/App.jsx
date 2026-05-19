@@ -10,6 +10,7 @@ import ExperimentsLivePage from './pages/ExperimentsLivePage'
 import ExperimentDetail from './pages/ExperimentDetail'
 import OpportunityDashboard from './pages/OpportunityDashboard'
 import DailyOpportunityPage from './pages/DailyOpportunityPage'
+import ManualIntelPage from './pages/ManualIntelPage'
 import NotFound from './pages/NotFound'
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/experiments/live" element={<ExperimentsLivePage />} />
           <Route path="/experiments/:id" element={<ExperimentDetail />} />
           <Route path="/opportunities/:date" element={<OpportunityDashboard />} />
+          <Route path="/manual-intel" element={<ManualIntelPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>

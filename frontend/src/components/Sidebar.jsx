@@ -58,6 +58,10 @@ function Sidebar() {
         <Link to="/experiments/ideas" className={`menu-item ${isActive('/experiments/ideas') ? 'active' : ''}`}>
           <span>💡</span><span>实验想法池</span>
         </Link>
+        <div style={{ height: '1px', background: 'var(--border)', margin: '6px 8px' }} />
+        <Link to="/manual-intel" className={`menu-item ${isActive('/manual-intel') ? 'active' : ''}`}>
+          <span>📌</span><span>我的情报收藏</span>
+        </Link>
       </div>
 
       {/* Archives */}
