@@ -72,3 +72,77 @@ def test_delete_item():
 def test_delete_nonexistent_returns_false():
     from services.storage import delete_manual_intel_item
     assert delete_manual_intel_item("nonexistent-id") is False
+
+
+from fastapi.testclient import TestClient
+
+
+@pytest.fixture
+def client(isolated_storage, monkeypatch):
+    import sys
+    # Re-import app fresh so routers are reloaded with correct module references
+    for mod in list(sys.modules.keys()):
+        if mod.startswith("routers") or mod.startswith("services") or mod == "main":
+            del sys.modules[mod]
+    from main import app
+    # Re-apply storage isolation to the freshly imported services.storage
+    import services.storage as s
+    monkeypatch.setattr(s, "MANUAL_INTEL_DIR", isolated_storage)
+    return TestClient(app)
+
+
+def test_get_items_empty(client):
+    resp = client.get("/api/manual-intel")
+    assert resp.status_code == 200
+    assert resp.json() == {"items": []}
+
+
+def test_get_item_not_found(client):
+    resp = client.get("/api/manual-intel/does-not-exist")
+    assert resp.status_code == 404
+
+
+def test_delete_item_not_found(client):
+    resp = client.delete("/api/manual-intel/does-not-exist")
+    assert resp.status_code == 404
+
+
+def test_create_and_list_and_delete(client, monkeypatch):
+    # Monkeypatch the URL fetch so we don't make real HTTP calls
+    async def fake_fetch(url):
+        return "Fake Title", "Fake content snippet"
+
+    import routers.manual_intel as mi
+    monkeypatch.setattr(mi, "_fetch_url_content", fake_fetch)
+
+    # Also patch the AI analysis so it doesn't run
+    async def fake_analysis(item_id):
+        pass
+    monkeypatch.setattr(mi, "_run_ai_analysis", fake_analysis)
+
+    resp = client.post("/api/manual-intel", json={
+        "url": "https://example.com/article",
+        "source_platform": "Blog",
+        "user_note": "great read",
+    })
+    assert resp.status_code == 201
+    item = resp.json()
+    assert item["title"] == "Fake Title"
+    assert item["user_note"] == "great read"
+    item_id = item["id"]
+
+    # List
+    resp = client.get("/api/manual-intel")
+    assert resp.status_code == 200
+    assert len(resp.json()["items"]) == 1
+
+    # Get single
+    resp = client.get(f"/api/manual-intel/{item_id}")
+    assert resp.status_code == 200
+
+    # Delete
+    resp = client.delete(f"/api/manual-intel/{item_id}")
+    assert resp.status_code == 200
+
+    resp = client.get("/api/manual-intel")
+    assert resp.json() == {"items": []}
