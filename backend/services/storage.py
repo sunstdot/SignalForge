@@ -462,11 +462,15 @@ def create_manual_intel_item(data: Dict) -> Dict:
     return item
 
 
+_UPDATABLE_FIELDS = {"quick_read", "business_opps", "rdev_opps", "title", "user_note", "content_snippet", "source_platform"}
+
 def update_manual_intel_item(item_id: str, updates: Dict) -> Optional[Dict]:
     items = _load_manual_intel()
     for item in items:
         if item["id"] == item_id:
-            item.update(updates)
+            for key, value in updates.items():
+                if key in _UPDATABLE_FIELDS:
+                    item[key] = value
             _save_manual_intel(items)
             return item
     return None
