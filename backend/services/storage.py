@@ -406,3 +406,76 @@ def add_log(exp_id: str, content: str) -> Dict:
     logs.append(log)
     _save_logs(logs)
     return log
+
+
+# ───────────────────────── 手动情报 ─────────────────────────
+
+MANUAL_INTEL_DIR = DATA_DIR / "manual_intel"
+MANUAL_INTEL_DIR.mkdir(parents=True, exist_ok=True)
+
+
+def _load_manual_intel() -> List[Dict]:
+    f = MANUAL_INTEL_DIR / "items.json"
+    if f.exists():
+        return json.loads(f.read_text(encoding="utf-8"))
+    return []
+
+
+def _save_manual_intel(items: List[Dict]):
+    f = MANUAL_INTEL_DIR / "items.json"
+    f.write_text(
+        json.dumps(items, ensure_ascii=False, indent=2, default=str),
+        encoding="utf-8",
+    )
+
+
+def get_manual_intel_items(source_platform: Optional[str] = None) -> List[Dict]:
+    items = _load_manual_intel()
+    if source_platform:
+        items = [i for i in items if i.get("source_platform") == source_platform]
+    return sorted(items, key=lambda x: x.get("added_at", ""), reverse=True)
+
+
+def get_manual_intel_item_by_id(item_id: str) -> Optional[Dict]:
+    for item in _load_manual_intel():
+        if item["id"] == item_id:
+            return item
+    return None
+
+
+def create_manual_intel_item(data: Dict) -> Dict:
+    items = _load_manual_intel()
+    item = {
+        "id": str(uuid.uuid4()),
+        "url": data.get("url", ""),
+        "title": data.get("title", ""),
+        "source_platform": data.get("source_platform", "other"),
+        "user_note": data.get("user_note", ""),
+        "added_at": datetime.now().isoformat(),
+        "content_snippet": data.get("content_snippet", ""),
+        "quick_read": "",
+        "business_opps": [],
+        "rdev_opps": [],
+    }
+    items.append(item)
+    _save_manual_intel(items)
+    return item
+
+
+def update_manual_intel_item(item_id: str, updates: Dict) -> Optional[Dict]:
+    items = _load_manual_intel()
+    for item in items:
+        if item["id"] == item_id:
+            item.update(updates)
+            _save_manual_intel(items)
+            return item
+    return None
+
+
+def delete_manual_intel_item(item_id: str) -> bool:
+    items = _load_manual_intel()
+    new_items = [i for i in items if i["id"] != item_id]
+    if len(new_items) == len(items):
+        return False
+    _save_manual_intel(new_items)
+    return True
