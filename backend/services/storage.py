@@ -483,3 +483,105 @@ def delete_manual_intel_item(item_id: str) -> bool:
         return False
     _save_manual_intel(new_items)
     return True
+
+
+# ───────────────────────── Wiki ─────────────────────────
+
+WIKI_DIR = DATA_DIR / "wiki"
+WIKI_DIR.mkdir(parents=True, exist_ok=True)
+
+
+def _load_wiki_concepts() -> List[Dict]:
+    f = WIKI_DIR / "concepts.json"
+    return json.loads(f.read_text(encoding="utf-8")) if f.exists() else []
+
+
+def _save_wiki_concepts(concepts: List[Dict]):
+    (WIKI_DIR / "concepts.json").write_text(
+        json.dumps(concepts, ensure_ascii=False, indent=2, default=str), encoding="utf-8"
+    )
+
+
+def _load_wiki_article_nodes() -> List[Dict]:
+    f = WIKI_DIR / "article_nodes.json"
+    return json.loads(f.read_text(encoding="utf-8")) if f.exists() else []
+
+
+def _save_wiki_article_nodes(nodes: List[Dict]):
+    (WIKI_DIR / "article_nodes.json").write_text(
+        json.dumps(nodes, ensure_ascii=False, indent=2, default=str), encoding="utf-8"
+    )
+
+
+def get_wiki_concepts() -> List[Dict]:
+    return _load_wiki_concepts()
+
+
+def get_wiki_article_nodes() -> List[Dict]:
+    return _load_wiki_article_nodes()
+
+
+def get_wiki_article_node(item_id: str) -> Optional[Dict]:
+    for node in _load_wiki_article_nodes():
+        if node["item_id"] == item_id:
+            return node
+    return None
+
+
+def upsert_wiki_concept(name: str, slug: str, description: str, article_id: str) -> Dict:
+    concepts = _load_wiki_concepts()
+    now = datetime.now().isoformat()
+    for c in concepts:
+        if c["slug"] == slug:
+            if article_id not in c["article_ids"]:
+                c["article_ids"].append(article_id)
+            c["updated_at"] = now
+            _save_wiki_concepts(concepts)
+            return c
+    new_concept = {
+        "name": name,
+        "slug": slug,
+        "description": description,
+        "article_ids": [article_id],
+        "created_at": now,
+        "updated_at": now,
+    }
+    concepts.append(new_concept)
+    _save_wiki_concepts(concepts)
+    return new_concept
+
+
+def delete_wiki_concept(slug: str) -> bool:
+    concepts = _load_wiki_concepts()
+    new_concepts = [c for c in concepts if c["slug"] != slug]
+    if len(new_concepts) == len(concepts):
+        return False
+    _save_wiki_concepts(new_concepts)
+    return True
+
+
+def upsert_wiki_article_node(
+    item_id: str, slug: str, concepts: List[str], related_articles: List[Dict]
+) -> Dict:
+    nodes = _load_wiki_article_nodes()
+    now = datetime.now().isoformat()
+    for node in nodes:
+        if node["item_id"] == item_id:
+            node.update({
+                "slug": slug,
+                "concepts": concepts,
+                "related_articles": related_articles,
+                "wiki_synced_at": now,
+            })
+            _save_wiki_article_nodes(nodes)
+            return node
+    new_node = {
+        "item_id": item_id,
+        "slug": slug,
+        "concepts": concepts,
+        "related_articles": related_articles,
+        "wiki_synced_at": now,
+    }
+    nodes.append(new_node)
+    _save_wiki_article_nodes(nodes)
+    return new_node
