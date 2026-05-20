@@ -73,12 +73,13 @@ def test_upsert_and_get_article_node():
 def test_upsert_article_node_updates_existing():
     from services.storage import upsert_wiki_article_node, get_wiki_article_node
 
-    upsert_wiki_article_node("item-1", "slug-v1", ["RAG"], [])
-    upsert_wiki_article_node("item-1", "slug-v2", ["RAG", "LLM"], [])
+    first = upsert_wiki_article_node("item-1", "slug-v1", ["RAG"], [])
+    second = upsert_wiki_article_node("item-1", "slug-v2", ["RAG", "LLM"], [])
 
     node = get_wiki_article_node("item-1")
     assert node["slug"] == "slug-v2"
     assert node["concepts"] == ["RAG", "LLM"]
+    assert node["wiki_synced_at"] >= first["wiki_synced_at"]
 
     from services.storage import get_wiki_article_nodes
     assert len(get_wiki_article_nodes()) == 1

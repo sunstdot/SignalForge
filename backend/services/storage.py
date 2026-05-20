@@ -535,6 +535,7 @@ def upsert_wiki_concept(name: str, slug: str, description: str, article_id: str)
         if c["slug"] == slug:
             if article_id not in c["article_ids"]:
                 c["article_ids"].append(article_id)
+            c["description"] = description
             c["updated_at"] = now
             _save_wiki_concepts(concepts)
             return c
