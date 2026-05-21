@@ -91,10 +91,15 @@ async def _run_quick_read(item_id: str):
     try:
         quick_read = (await chat_async([{"role": "user", "content": prompt}])).strip()
         update_manual_intel_item(item_id, {"quick_read": quick_read})
-        from services.wiki_builder import process_article
-        await process_article(item_id)
     except Exception as e:
         print(f"[manual-intel] quick_read failed for {item_id}: {e}")
+        return
+
+    try:
+        import services.wiki_builder as _wiki
+        await _wiki.process_article(item_id)
+    except Exception as e:
+        print(f"[manual-intel] wiki pipeline failed for {item_id}: {e}")
 
 
 async def _generate_business_opps(item: dict) -> list:

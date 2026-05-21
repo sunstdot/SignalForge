@@ -108,17 +108,15 @@ def test_delete_item_not_found(client):
 
 
 def test_create_and_list_and_delete(client, monkeypatch):
-    # Monkeypatch the URL fetch so we don't make real HTTP calls
     async def fake_fetch(url):
         return "Fake Title", "Fake content snippet"
 
     import routers.manual_intel as mi
     monkeypatch.setattr(mi, "_fetch_url_content", fake_fetch)
 
-    # Also patch the AI analysis so it doesn't run
-    async def fake_analysis(item_id):
+    async def fake_quick_read(item_id):
         pass
-    monkeypatch.setattr(mi, "_run_ai_analysis", fake_analysis)
+    monkeypatch.setattr(mi, "_run_quick_read", fake_quick_read)
 
     resp = client.post("/api/manual-intel", json={
         "url": "https://example.com/article",
@@ -150,19 +148,22 @@ def test_create_and_list_and_delete(client, monkeypatch):
 
 def test_reanalyze_item(client, monkeypatch):
     import routers.manual_intel as mi
+
     async def fake_fetch(url):
         return "Title", "Snippet"
-    async def fake_analysis(item_id):
+
+    async def fake_quick_read(item_id):
         pass
+
     monkeypatch.setattr(mi, "_fetch_url_content", fake_fetch)
-    monkeypatch.setattr(mi, "_run_ai_analysis", fake_analysis)
+    monkeypatch.setattr(mi, "_run_quick_read", fake_quick_read)
 
     # Create an item
     resp = client.post("/api/manual-intel", json={"url": "https://example.com"})
     assert resp.status_code == 201
     item_id = resp.json()["id"]
 
-    # Reanalyze
+    # Reanalyze — only resets quick_read, leaves business/rdev intact
     resp = client.post(f"/api/manual-intel/{item_id}/reanalyze")
     assert resp.status_code == 200
     assert resp.json()["ok"] is True
@@ -170,3 +171,111 @@ def test_reanalyze_item(client, monkeypatch):
     # Reanalyze non-existent item
     resp = client.post("/api/manual-intel/does-not-exist/reanalyze")
     assert resp.status_code == 404
+
+
+def test_generate_business_and_rdev(client, monkeypatch):
+    import routers.manual_intel as mi
+
+    async def fake_fetch(url):
+        return "Title", "Snippet"
+
+    async def fake_quick_read(item_id):
+        pass
+
+    async def fake_generate_business(item):
+        return [{"opportunity_title": "Test Biz", "core_insight": "insight"}]
+
+    async def fake_generate_rdev(item):
+        return [{"type": "研发提效", "title": "Test Rdev"}]
+
+    monkeypatch.setattr(mi, "_fetch_url_content", fake_fetch)
+    monkeypatch.setattr(mi, "_run_quick_read", fake_quick_read)
+    monkeypatch.setattr(mi, "_generate_business_opps", fake_generate_business)
+    monkeypatch.setattr(mi, "_generate_rdev_opps", fake_generate_rdev)
+
+    resp = client.post("/api/manual-intel", json={"url": "https://example.com"})
+    assert resp.status_code == 201
+    item_id = resp.json()["id"]
+
+    # Generate business
+    resp = client.post(f"/api/manual-intel/{item_id}/generate-business")
+    assert resp.status_code == 200
+    data = resp.json()
+    assert len(data["business_opps"]) == 1
+    assert data["business_opps"][0]["opportunity_title"] == "Test Biz"
+
+    # Generate rdev
+    resp = client.post(f"/api/manual-intel/{item_id}/generate-rdev")
+    assert resp.status_code == 200
+    data = resp.json()
+    assert len(data["rdev_opps"]) == 1
+    assert data["rdev_opps"][0]["title"] == "Test Rdev"
+
+    # 404 for non-existent
+    resp = client.post("/api/manual-intel/does-not-exist/generate-business")
+    assert resp.status_code == 404
+    resp = client.post("/api/manual-intel/does-not-exist/generate-rdev")
+    assert resp.status_code == 404
+
+
+@pytest.mark.asyncio
+async def test_run_quick_read_triggers_wiki(monkeypatch, isolated_storage):
+    """wiki process_article is called after quick_read succeeds, and wiki failure does not affect quick_read save."""
+    from services.storage import create_manual_intel_item, get_manual_intel_item_by_id
+    import routers.manual_intel as mi
+
+    item = create_manual_intel_item({
+        "url": "https://example.com",
+        "title": "Test Article",
+        "content_snippet": "some content",
+    })
+
+    wiki_called = []
+
+    async def mock_chat(messages, provider=None):
+        return "summary text"
+
+    async def mock_process(item_id):
+        wiki_called.append(item_id)
+
+    monkeypatch.setattr(mi, "chat_async", mock_chat)
+    import services.wiki_builder as wb
+    monkeypatch.setattr(wb, "process_article", mock_process)
+
+    await mi._run_quick_read(item["id"])
+
+    # quick_read should be saved
+    updated = get_manual_intel_item_by_id(item["id"])
+    assert updated["quick_read"] == "summary text"
+    # wiki should have been called
+    assert item["id"] in wiki_called
+
+
+@pytest.mark.asyncio
+async def test_run_quick_read_wiki_failure_does_not_affect_quick_read(monkeypatch, isolated_storage):
+    """A wiki failure after quick_read should not prevent quick_read from being saved."""
+    from services.storage import create_manual_intel_item, get_manual_intel_item_by_id
+    import routers.manual_intel as mi
+
+    item = create_manual_intel_item({
+        "url": "https://example.com",
+        "title": "Test Article",
+        "content_snippet": "some content",
+    })
+
+    async def mock_chat(messages, provider=None):
+        return "summary text"
+
+    async def mock_process_fail(item_id):
+        raise RuntimeError("wiki failed")
+
+    monkeypatch.setattr(mi, "chat_async", mock_chat)
+    import services.wiki_builder as wb
+    monkeypatch.setattr(wb, "process_article", mock_process_fail)
+
+    # Should not raise
+    await mi._run_quick_read(item["id"])
+
+    # quick_read should still be saved despite wiki failure
+    updated = get_manual_intel_item_by_id(item["id"])
+    assert updated["quick_read"] == "summary text"
