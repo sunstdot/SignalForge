@@ -52,7 +52,7 @@ async def _extract_concepts(title: str, content_snippet: str) -> list:
 - 每个概念附一句话定义
 
 文章标题：{title}
-文章内容：{content_snippet}
+文章内容：{content_snippet[:6000]}
 
 输出严格 JSON，不要 markdown 代码块：
 [{{"name": "...", "description": "..."}}]"""
@@ -90,7 +90,7 @@ async def _analyze_connections(new_item: dict, candidates: list) -> dict:
     )
     prompt = f"""你是一个知识图谱构建助手。
 
-新文章：{new_item['title']}
+新文章：{new_item.get('title', '')}
 新文章内容：{new_item.get('content_snippet', '')[:3000]}
 
 候选关联文章：
@@ -133,7 +133,7 @@ def _write_article_note(
     concept_names = ", ".join(c["name"] for c in concepts)
 
     content = f"""---
-title: {item['title']}
+title: "{item['title'].replace('"', "'")}"
 url: {item['url']}
 platform: {item.get('source_platform', 'other')}
 added: {item.get('added_at', '')[:10]}
@@ -177,6 +177,11 @@ async def _maybe_generate_synthesis(vault_path: Path, concept: dict, threshold: 
     if len(article_ids) < threshold:
         return
 
+    synthesis_dir = vault_path / "synthesis"
+    synthesis_file = synthesis_dir / f"{concept['slug']}-synthesis.md"
+    if synthesis_file.exists():
+        return
+
     articles = [a for aid in article_ids if (a := get_manual_intel_item_by_id(aid))]
     articles_text = "\n\n".join(
         f"[{a['title']}]\n{a.get('content_snippet', '')[:2000]}" for a in articles
@@ -199,7 +204,6 @@ async def _maybe_generate_synthesis(vault_path: Path, concept: dict, threshold: 
         print(f"[wiki] synthesis failed for {concept['name']}: {e}")
         return
 
-    synthesis_dir = vault_path / "synthesis"
     synthesis_dir.mkdir(parents=True, exist_ok=True)
 
     article_refs = "\n".join(f"- [[{_slugify(a['title'])}]]" for a in articles)
@@ -266,7 +270,7 @@ async def process_article(item_id: str):
     slug = _slugify(item.get("title") or item["url"])
 
     # Step 1: Extract concepts
-    concepts = await _extract_concepts(item["title"], item.get("content_snippet", ""))
+    concepts = await _extract_concepts(item.get("title", ""), item.get("content_snippet", ""))
     if not concepts:
         print(f"[wiki] no concepts extracted for {item_id}")
         return
