@@ -23,7 +23,7 @@ async def sync_article(item_id: str):
 
 @router.post("/rebuild")
 async def rebuild_wiki():
-    items = get_manual_intel_items()
+    items = [i for i in get_manual_intel_items() if i.get("quick_read")]
 
     async def _rebuild():
         for item in items:

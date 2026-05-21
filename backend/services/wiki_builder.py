@@ -130,7 +130,7 @@ def _write_article_note(
     related_section = f"\n## 关联文章\n{related_links}" if related_articles else ""
     user_note = item.get("user_note", "")
     note_section = f"\n## 我的点评\n{user_note}" if user_note else ""
-    concept_names = ", ".join(c["name"] for c in concepts)
+    concept_names = ", ".join(f'"{c["name"].replace(chr(34), chr(39))}"' for c in concepts)
 
     content = f"""---
 title: "{item['title'].replace('"', "'")}"
