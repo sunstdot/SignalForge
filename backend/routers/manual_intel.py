@@ -40,18 +40,47 @@ class CreateManualIntelRequest(BaseModel):
     user_note: str = ""
 
 
+_BROWSER_UA = (
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/124.0.0.0 Safari/537.36"
+)
+
+
+def _is_weixin_url(url: str) -> bool:
+    return "mp.weixin.qq.com" in url
+
+
 async def _fetch_url_content(url: str) -> tuple[str, str]:
     """Fetch a URL and return (title, content_snippet). Never raises — returns empty strings on failure."""
     try:
         import httpx
         from bs4 import BeautifulSoup
-        async with httpx.AsyncClient(timeout=15, follow_redirects=True,
-                                     headers={"User-Agent": "Mozilla/5.0 TokenBurner/1.0"}) as client:
+        headers = {"User-Agent": _BROWSER_UA, "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8"}
+        async with httpx.AsyncClient(timeout=15, follow_redirects=True, headers=headers) as client:
             resp = await client.get(url)
             if resp.status_code != 200:
                 return "", ""
             soup = BeautifulSoup(resp.text, "html.parser")
-            title = soup.title.string.strip() if soup.title else ""
+
+            if _is_weixin_url(url):
+                # WeChat article: dedicated title and content nodes
+                title_tag = (
+                    soup.find(id="activity-name")
+                    or soup.find(class_="rich_media_title")
+                    or soup.title
+                )
+                title = title_tag.get_text(strip=True) if title_tag else ""
+                content_tag = soup.find(id="js_content") or soup.find(class_="rich_media_content")
+                if content_tag:
+                    for tag in content_tag(["script", "style"]):
+                        tag.decompose()
+                    snippet = content_tag.get_text(separator=" ", strip=True)[:6000]
+                else:
+                    snippet = ""
+                return title, snippet
+
+            title = soup.title.get_text(strip=True) if soup.title else ""
             for tag in soup(["script", "style", "nav", "footer", "header", "aside"]):
                 tag.decompose()
             snippet = soup.get_text(separator=" ", strip=True)[:6000]
