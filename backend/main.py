@@ -28,6 +28,7 @@ from routers import briefing, dates, experiments, content
 from routers.experiments import router as experiments_router
 from routers.share_pages import router as share_pages_router
 from routers.manual_intel import router as manual_intel_router
+from routers.wiki import router as wiki_router
 
 
 @asynccontextmanager
@@ -69,6 +70,7 @@ app.include_router(experiments.router, prefix="/api/experiments", tags=["experim
 app.include_router(content.router, prefix="/api/content", tags=["content"])
 app.include_router(share_pages_router, prefix="/api/share-pages", tags=["share-pages"])
 app.include_router(manual_intel_router, prefix="/api/manual-intel", tags=["manual-intel"])
+app.include_router(wiki_router, prefix="/api/wiki", tags=["wiki"])
 
 # 挂载静态分享页目录（必须在路由注册之后）
 share_pages_dir = Path(__file__).parent / "docs" / "share-pages"
