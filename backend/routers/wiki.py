@@ -39,7 +39,8 @@ async def rebuild_wiki():
 async def get_status():
     concepts = get_wiki_concepts()
     nodes = get_wiki_article_nodes()
-    last_sync = max((n.get("wiki_synced_at", "") for n in nodes), default=None) if nodes else None
+    raw = max((n.get("wiki_synced_at", "") for n in nodes), default="") if nodes else ""
+    last_sync = raw or None
     return {
         "concept_count": len(concepts),
         "article_count": len(nodes),

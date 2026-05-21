@@ -77,6 +77,10 @@ def test_sync_returns_ok(client, monkeypatch):
     resp = client.post("/api/wiki/sync/item-123")
     assert resp.status_code == 200
     assert resp.json()["ok"] is True
+    # Give the background task time to run
+    import asyncio, time
+    time.sleep(0.1)
+    assert "item-123" in called
 
 
 def test_rebuild_returns_ok(client, monkeypatch):
