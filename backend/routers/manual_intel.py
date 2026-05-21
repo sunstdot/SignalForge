@@ -2,10 +2,15 @@
 import asyncio
 import json
 import re
-from typing import Optional
+import time
+from html import escape
+from pathlib import Path
+from typing import List, Optional
 from urllib.parse import urlparse
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
+
+_SHARE_PAGES_DIR = Path(__file__).parent.parent / "docs" / "share-pages"
 
 from services.storage import (
     get_manual_intel_items,
@@ -56,8 +61,8 @@ async def _fetch_url_content(url: str) -> tuple[str, str]:
         return "", ""
 
 
-async def _run_ai_analysis(item_id: str):
-    """Run quick_read, business_opps, rdev_opps in sequence and persist each result."""
+async def _run_quick_read(item_id: str):
+    """Auto-run quick_read analysis and persist result."""
     item = get_manual_intel_item_by_id(item_id)
     if not item:
         return
@@ -65,8 +70,7 @@ async def _run_ai_analysis(item_id: str):
     title = item.get("title", "")
     snippet = item.get("content_snippet", "")
 
-    # -- Quick read --
-    quick_read_prompt = f"""请对以下文章进行速读总结，帮助读者快速了解核心内容。
+    prompt = f"""请对以下文章进行速读总结，帮助读者快速了解核心内容。
 
 文章标题：{title}
 原文内容（节选）：
@@ -85,13 +89,20 @@ async def _run_ai_analysis(item_id: str):
 直接输出内容，不要重复标题。"""
 
     try:
-        quick_read = (await chat_async([{"role": "user", "content": quick_read_prompt}])).strip()
+        quick_read = (await chat_async([{"role": "user", "content": prompt}])).strip()
         update_manual_intel_item(item_id, {"quick_read": quick_read})
+        from services.wiki_builder import process_article
+        await process_article(item_id)
     except Exception as e:
         print(f"[manual-intel] quick_read failed for {item_id}: {e}")
 
-    # -- Business opportunities --
-    biz_prompt = f"""你是一位经验丰富的 AI 产品经理和连续创业者，擅长从技术内容中发现真实可落地的商业机会。
+
+async def _generate_business_opps(item: dict) -> list:
+    """Run business opportunity analysis for an item. Returns list (empty on failure)."""
+    title = item.get("title", "")
+    snippet = item.get("content_snippet", "")
+
+    prompt = f"""你是一位经验丰富的 AI 产品经理和连续创业者，擅长从技术内容中发现真实可落地的商业机会。
 
 # 开发者背景
 - 独立开发者，无团队
@@ -126,19 +137,22 @@ async def _run_ai_analysis(item_id: str):
 ]"""
 
     try:
-        raw = (await chat_async([{"role": "user", "content": biz_prompt}], provider="deepseek")).strip()
+        raw = (await chat_async([{"role": "user", "content": prompt}], provider="deepseek")).strip()
         raw = re.sub(r'^```[a-z]*\n?', '', raw).rstrip('`').strip()
         match = re.search(r'\[.*\]', raw, re.DOTALL)
-        business_opps = json.loads(match.group(0) if match else raw)
-        if not isinstance(business_opps, list):
-            business_opps = []
-        update_manual_intel_item(item_id, {"business_opps": business_opps})
+        result = json.loads(match.group(0) if match else raw)
+        return result if isinstance(result, list) else []
     except Exception as e:
-        print(f"[manual-intel] business_opps failed for {item_id}: {e}")
-        update_manual_intel_item(item_id, {"business_opps": []})
+        print(f"[manual-intel] business_opps failed for {item.get('id')}: {e}")
+        return []
 
-    # -- R&D opportunities --
-    rdev_prompt = f"""你是一位深度嵌入顶级互联网大厂的 AI 架构师兼技术顾问，深知研发团队的真实痛点。
+
+async def _generate_rdev_opps(item: dict) -> list:
+    """Run R&D opportunity analysis for an item. Returns list (empty on failure)."""
+    title = item.get("title", "")
+    snippet = item.get("content_snippet", "")
+
+    prompt = f"""你是一位深度嵌入顶级互联网大厂的 AI 架构师兼技术顾问，深知研发团队的真实痛点。
 
 # 文章信息
 标题：{title}
@@ -172,16 +186,14 @@ async def _run_ai_analysis(item_id: str):
 type 只能是"研发提效"或"业务赋能"。difficulty 只能是"低"、"中"、"高"。"""
 
     try:
-        raw = (await chat_async([{"role": "user", "content": rdev_prompt}], provider="deepseek")).strip()
+        raw = (await chat_async([{"role": "user", "content": prompt}], provider="deepseek")).strip()
         raw = re.sub(r'^```[a-z]*\n?', '', raw).rstrip('`').strip()
         match = re.search(r'\[.*\]', raw, re.DOTALL)
-        rdev_opps = json.loads(match.group(0) if match else raw)
-        if not isinstance(rdev_opps, list):
-            rdev_opps = []
-        update_manual_intel_item(item_id, {"rdev_opps": rdev_opps})
+        result = json.loads(match.group(0) if match else raw)
+        return result if isinstance(result, list) else []
     except Exception as e:
-        print(f"[manual-intel] rdev_opps failed for {item_id}: {e}")
-        update_manual_intel_item(item_id, {"rdev_opps": []})
+        print(f"[manual-intel] rdev_opps failed for {item.get('id')}: {e}")
+        return []
 
 
 @router.get("")
@@ -198,6 +210,26 @@ async def get_item(item_id: str):
     return item
 
 
+class GenerateSharePageRequest(BaseModel):
+    item_ids: List[str]
+
+
+@router.post("/generate-share-page")
+async def generate_share_page(req: GenerateSharePageRequest):
+    all_items = [get_manual_intel_item_by_id(iid) for iid in req.item_ids]
+    items = [i for i in all_items if i is not None and i.get("quick_read")]
+    if not items:
+        raise HTTPException(status_code=400, detail="No items with quick read found")
+
+    slug = f"manual-intel-{int(time.time())}"
+    html = _render_manual_intel_html(items, slug)
+
+    _SHARE_PAGES_DIR.mkdir(parents=True, exist_ok=True)
+    (_SHARE_PAGES_DIR / f"{slug}.html").write_text(html, encoding="utf-8")
+
+    return {"url": f"/api/share-pages/{slug}.html"}
+
+
 @router.post("", status_code=201)
 async def create_item(body: CreateManualIntelRequest):
     url = body.url.strip()
@@ -208,7 +240,7 @@ async def create_item(body: CreateManualIntelRequest):
 
     title, content_snippet = await _fetch_url_content(url)
     if not title:
-        title = url  # fallback: use URL as title if fetch failed
+        title = url
 
     item = create_manual_intel_item({
         "url": url,
@@ -218,7 +250,7 @@ async def create_item(body: CreateManualIntelRequest):
         "content_snippet": content_snippet,
     })
 
-    task = asyncio.create_task(_run_ai_analysis(item["id"]))
+    task = asyncio.create_task(_run_quick_read(item["id"]))
     _background_tasks.add(task)
     task.add_done_callback(_background_tasks.discard)
     return item
@@ -237,8 +269,130 @@ async def reanalyze_item(item_id: str):
     item = get_manual_intel_item_by_id(item_id)
     if not item:
         raise HTTPException(status_code=404, detail="Item not found")
-    update_manual_intel_item(item_id, {"quick_read": "", "business_opps": [], "rdev_opps": []})
-    task = asyncio.create_task(_run_ai_analysis(item_id))
+    update_manual_intel_item(item_id, {"quick_read": ""})
+    task = asyncio.create_task(_run_quick_read(item_id))
     _background_tasks.add(task)
     task.add_done_callback(_background_tasks.discard)
-    return {"ok": True, "message": "Re-analysis started"}
+    return {"ok": True, "message": "Quick read re-analysis started"}
+
+
+@router.post("/{item_id}/generate-business")
+async def generate_business(item_id: str):
+    item = get_manual_intel_item_by_id(item_id)
+    if not item:
+        raise HTTPException(status_code=404, detail="Item not found")
+    business_opps = await _generate_business_opps(item)
+    update_manual_intel_item(item_id, {"business_opps": business_opps})
+    return {"business_opps": business_opps}
+
+
+@router.post("/{item_id}/generate-rdev")
+async def generate_rdev(item_id: str):
+    item = get_manual_intel_item_by_id(item_id)
+    if not item:
+        raise HTTPException(status_code=404, detail="Item not found")
+    rdev_opps = await _generate_rdev_opps(item)
+    update_manual_intel_item(item_id, {"rdev_opps": rdev_opps})
+    return {"rdev_opps": rdev_opps}
+
+
+_PLATFORM_LABELS = {
+    "X": "𝕏", "Reddit": "Reddit", "Blog": "Blog",
+    "HackerNews": "HN", "other": "其他",
+}
+
+_MANUAL_INTEL_CSS = """
+body{margin:0;padding:32px;background:#f5f4f1;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}
+.xhs-stage{display:grid;grid-template-columns:repeat(3,360px);gap:20px}
+.xhs-page{aspect-ratio:3/4;background:#fbfaf7;border:1px solid #eadfce;border-radius:18px;padding:22px;display:flex;flex-direction:column;overflow:hidden}
+.xhs-kicker{font-size:12px;font-weight:700;letter-spacing:.08em;color:#9a3412}
+h1{font-size:22px;line-height:1.12;margin:8px 0 12px}
+.xhs-list{display:flex;flex-direction:column;gap:10px;overflow:hidden}
+.xhs-item{background:white;border:1px solid #eadfce;border-radius:12px;padding:12px;overflow:hidden}
+.xhs-headline{display:grid;grid-template-columns:22px 1fr;gap:8px;align-items:flex-start;margin-bottom:6px}
+.xhs-rank{width:22px;height:22px;border-radius:999px;background:#111827;color:white;display:grid;place-items:center;font-size:12px;flex-shrink:0}
+h4{font-size:13px;line-height:1.35;margin:0;color:#111827;font-weight:700}
+p,li{font-size:11px;line-height:1.55;color:#374151}
+.quick-copy p{margin:0 0 4px}
+.quick-copy ul{margin:4px 0 4px 14px;padding:0}
+.note{font-style:italic;color:#6b7280;font-size:11px;margin:0 0 4px}
+footer{margin-top:auto;padding-top:12px;display:flex;justify-content:space-between;color:#6b7280;font-size:11px}
+"""
+
+
+def _md_to_html(text: str) -> str:
+    parts = []
+    list_open = False
+    for line in text.splitlines():
+        s = line.strip()
+        if not s:
+            if list_open:
+                parts.append("</ul>")
+                list_open = False
+            continue
+        if s.startswith("- ") or s.startswith("• "):
+            if not list_open:
+                parts.append("<ul>")
+                list_open = True
+            content = s[2:].strip()
+            content = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', escape(content))
+            parts.append(f"<li>{content}</li>")
+        else:
+            if list_open:
+                parts.append("</ul>")
+                list_open = False
+            content = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', escape(s))
+            parts.append(f"<p>{content}</p>")
+    if list_open:
+        parts.append("</ul>")
+    return "".join(parts)
+
+
+def _render_manual_intel_html(items: list, slug: str) -> str:
+    date_str = items[0].get("added_at", "")[:10] if items else ""
+
+    ITEMS_PER_PAGE = 3
+    pages = [items[i:i + ITEMS_PER_PAGE] for i in range(0, len(items), ITEMS_PER_PAGE)]
+
+    page_htmls = []
+    for page_idx, page_items in enumerate(pages):
+        item_cards = []
+        for rank, item in enumerate(page_items, 1):
+            title = escape(item.get("title") or item.get("url", ""))
+            note = item.get("user_note", "")
+            note_html = f'<p class="note">💬 {escape(note)}</p>' if note else ""
+            quick_html = _md_to_html(item.get("quick_read", ""))
+            item_cards.append(f"""
+        <article class="xhs-item">
+          <div class="xhs-headline">
+            <span class="xhs-rank">{rank}</span>
+            <h4>{title}</h4>
+          </div>
+          {note_html}
+          <div class="quick-copy">{quick_html}</div>
+        </article>""")
+
+        page_no = page_idx + 1
+        total = len(pages)
+        page_htmls.append(f"""
+    <section class="xhs-page">
+      <div class="xhs-kicker">📌 我的情报精选 · {page_no}/{total}</div>
+      <h1>精选情报速读</h1>
+      <div class="xhs-list">{"".join(item_cards)}</div>
+      <footer><span>SignalForge 手动情报</span><span>{escape(date_str)}</span></footer>
+    </section>""")
+
+    return f"""<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>我的情报收藏精选</title>
+  <style>{_MANUAL_INTEL_CSS}</style>
+</head>
+<body>
+  <main class="xhs-stage">
+    {"".join(page_htmls)}
+  </main>
+</body>
+</html>"""
