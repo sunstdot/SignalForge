@@ -1,28 +1,21 @@
 import pytest
 
 
-@pytest.fixture(autouse=True)
-def isolated_wiki(monkeypatch, tmp_path):
+@pytest.fixture
+def client(monkeypatch, tmp_path):
+    import sys
+    for mod in list(sys.modules.keys()):
+        if mod.startswith("routers") or mod.startswith("services") or mod == "main":
+            del sys.modules[mod]
+
     import services.storage as s
     wiki_dir = tmp_path / "wiki"
     wiki_dir.mkdir()
-    monkeypatch.setattr(s, "WIKI_DIR", wiki_dir)
-
-
-@pytest.fixture(autouse=True)
-def isolated_manual_intel(monkeypatch, tmp_path):
-    import services.storage as s
     mi_dir = tmp_path / "manual_intel"
     mi_dir.mkdir()
+    monkeypatch.setattr(s, "WIKI_DIR", wiki_dir)
     monkeypatch.setattr(s, "MANUAL_INTEL_DIR", mi_dir)
 
-
-@pytest.fixture
-def client():
-    import importlib, sys
-    for mod in list(sys.modules.keys()):
-        if mod.startswith("routers") or mod.startswith("services"):
-            del sys.modules[mod]
     from main import app
     from fastapi.testclient import TestClient
     return TestClient(app)
