@@ -53,6 +53,15 @@ class ParseTest(unittest.TestCase):
         self.assertEqual(hn["source"], "Hacker News")
         self.assertEqual(hn["relevance_score"], 5)  # min(10, round(30/6))
 
+    def test_date_unknown_falls_back_to_range_end(self):
+        md = SAMPLE.replace(
+            "   - 2026-06-10 | @DataScienceDojo | [54likes, 9rt] | score:58",
+            "   - date unknown [date:low] | meta | score:58",
+        )
+        items = parse_last30days_markdown(md)
+        self.assertEqual(items[0]["date"], "2026-06-12")
+        self.assertEqual(items[0]["created_at"], "2026-06-12")
+
 
 if __name__ == "__main__":
     unittest.main()

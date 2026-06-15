@@ -18,7 +18,7 @@ _TOPIC_RE = re.compile(r"^#\s+last30days[^:]*:\s*(.+?)\s*$")
 _RANGE_RE = re.compile(r"Date range:\s*\S+\s+to\s+(\d{4}-\d{2}-\d{2})")
 _CLUSTER_RE = re.compile(r"^###\s+\d+\.\s*(.+?)\s*\(score\s+(\d+),")
 _ITEM_RE = re.compile(r"^\d+\.\s*\[(\w+)\]\s*(.+?)\s*$")
-_DATE_RE = re.compile(r"(\d{4}-\d{2}-\d{2})")
+_META_DATE_RE = re.compile(r"^\s*-\s*(\d{4}-\d{2}-\d{2})\b.*\|\s*score:")
 _URL_RE = re.compile(r"^\s*-\s*URL:\s*(\S+)")
 _EVIDENCE_RE = re.compile(r"^\s*-\s*Evidence:\s*(.+?)\s*$")
 
@@ -46,6 +46,7 @@ def parse_last30days_markdown(text: str) -> List[Dict]:
             cur["platform"], ("social", cur["platform"])
         )
         date = cur.get("date") or fallback_date
+        # cluster 分约 0–60，归一到 0–10
         score = min(10, round(cluster_score / 6))
         items.append({
             "id": _make_id(platform_key, cur.get("url", ""), cur["title"]),
@@ -78,10 +79,13 @@ def parse_last30days_markdown(text: str) -> List[Dict]:
         if m:
             fallback_date = m.group(1)
             continue
-        m = _CLUSTER_RE.match(line)
-        if m:
+        if line.startswith("###"):
             flush()
-            cluster_title, cluster_score = m.group(1), int(m.group(2))
+            m = _CLUSTER_RE.match(line)
+            if m:
+                cluster_title, cluster_score = m.group(1), int(m.group(2))
+            else:
+                cluster_title, cluster_score = "", 0
             continue
         m = _ITEM_RE.match(line)
         if m:
@@ -98,10 +102,10 @@ def parse_last30days_markdown(text: str) -> List[Dict]:
         if m:
             cur["evidence"] = m.group(1)
             continue
-        if "| score:" in line and "date" not in cur:
-            dm = _DATE_RE.search(line)
-            if dm:
-                cur["date"] = dm.group(1)
+        m = _META_DATE_RE.match(line)
+        if m and "date" not in cur:
+            cur["date"] = m.group(1)
+            continue
 
     flush()
     return items
