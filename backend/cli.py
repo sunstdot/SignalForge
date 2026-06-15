@@ -337,6 +337,45 @@ def cmd_chinese(args):
         traceback.print_exc()
 
 
+def cmd_share_page(args):
+    from pathlib import Path
+    import subprocess
+    from services.share_page import generate_share_page, load_share_payload
+    from services.social_cover import generate_xiaohongshu_cover
+
+    date = args.date or datetime.now().strftime("%Y-%m-%d")
+    output_dir = Path(__file__).parent / "docs" / "share-pages"
+    output_path = generate_share_page(date, output_dir / f"{date}.html")
+    print(f"✓ Share page saved to {output_path}")
+    try:
+        cover_path = generate_xiaohongshu_cover(
+            load_share_payload(date),
+            output_dir / f"{date}-cover.png",
+        )
+    except (FileNotFoundError, subprocess.CalledProcessError) as exc:
+        print(f"⚠ Xiaohongshu cover failed: {exc}")
+        return
+    print(f"✓ Xiaohongshu cover saved to {cover_path}")
+
+
+def cmd_import_last30days(args):
+    """导入 last30days 报告为可搜索情报"""
+    from services.last30days_importer import (
+        import_last30days_dir,
+        import_last30days_file,
+        run_last30days_via_wingsbot,
+    )
+    if args.topic:
+        n = run_last30days_via_wingsbot(args.topic)
+        print(f"✅ 话题「{args.topic}」导入 {n} 条情报")
+    elif args.file:
+        n = import_last30days_file(args.file)
+        print(f"✅ 从 {args.file} 导入 {n} 条情报")
+    else:
+        n = import_last30days_dir(args.dir)
+        print(f"✅ 批量导入 {n} 条情报")
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="TokenBurner CLI - AI 情报收集工具",
@@ -385,6 +424,17 @@ def main():
     chinese_parser.add_argument("--limit", type=int, help="最多处理几条资讯 (默认全部)")
     chinese_parser.add_argument("--preview", action="store_true", help="显示预览")
     chinese_parser.set_defaults(func=cmd_chinese)
+
+    share_parser = subparsers.add_parser("share-page", help="生成小红书分享页 HTML")
+    share_parser.add_argument("--date", help="Date (YYYY-MM-DD), default today")
+    share_parser.set_defaults(func=cmd_share_page)
+
+    # import-last30days：把 last30days 报告转为可搜索情报
+    l30_parser = subparsers.add_parser("import-last30days", help="导入 last30days 报告为可搜索情报")
+    l30_parser.add_argument("--topic", help="话题：通过 wingsbot 触发 last30days 后导入")
+    l30_parser.add_argument("--file", help="解析单个 raw v3 markdown 文件")
+    l30_parser.add_argument("--dir", help="批量解析目录（默认 ~/Documents/Last30Days）")
+    l30_parser.set_defaults(func=cmd_import_last30days)
 
     args = parser.parse_args()
     if not args.command:
