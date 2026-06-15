@@ -64,38 +64,97 @@ export default function SearchPage() {
   const [loading, setLoading] = useState(false)
   const [searched, setSearched] = useState(false)
   const [total, setTotal] = useState(0)
+  const [researching, setResearching] = useState(false)
+  const [researchTopic, setResearchTopic] = useState('')
+  const [researchError, setResearchError] = useState('')
   const inputRef = useRef(null)
+  // 递增 token：新搜索会让上一次轮询自动失效
+  const searchTokenRef = useRef(0)
 
   useEffect(() => {
     inputRef.current?.focus()
   }, [])
 
+  // 只查本地 /api/content 并按关键词过滤，返回命中列表
+  const fetchLocal = useCallback(async (q, st) => {
+    const params = new URLSearchParams({ limit: 500 })
+    if (st) params.set('source_type', st)
+    const res = await fetch(`/api/content?${params}`)
+    const data = await res.json()
+    const items = data.items || []
+    const keyword = q.trim().toLowerCase()
+    return keyword
+      ? items.filter(item => {
+          const text = [item.title, item.summary, item.tags?.join(' ')].filter(Boolean).join(' ').toLowerCase()
+          return text.includes(keyword)
+        })
+      : items
+  }, [])
+
+  // 本地无结果时，触发 wingsbot 跑 last30days，轮询完成后再展示
+  const runResearch = useCallback(async (topic, st, token) => {
+    setResearching(true)
+    setResearchTopic(topic)
+    setResearchError('')
+    try {
+      const start = await fetch('/api/last30days/research', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ topic }),
+      }).then(r => r.json())
+      const jobId = start.job_id
+      // 轮询，最多约 10 分钟（200 × 3s）
+      for (let i = 0; i < 200; i++) {
+        await new Promise(r => setTimeout(r, 3000))
+        if (searchTokenRef.current !== token) return // 已被新搜索取代
+        const job = await fetch(`/api/last30days/research/${jobId}`).then(r => r.json())
+        if (job.status === 'done') {
+          const filtered = await fetchLocal(topic, st)
+          if (searchTokenRef.current !== token) return
+          setTotal(filtered.length)
+          setResults(filtered.slice(0, 100))
+          return
+        }
+        if (job.status === 'error') {
+          setResearchError(job.error || '研究失败')
+          return
+        }
+      }
+      setResearchError('研究超时，请稍后重试')
+    } catch (e) {
+      setResearchError(String(e))
+    } finally {
+      if (searchTokenRef.current === token) setResearching(false)
+    }
+  }, [fetchLocal])
+
   const doSearch = useCallback(async (q, st) => {
     if (!q.trim() && !st) return
+    const token = ++searchTokenRef.current
     setLoading(true)
     setSearched(true)
+    setResearchError('')
+    setResearching(false)
     try {
-      const params = new URLSearchParams({ limit: 500 })
-      if (st) params.set('source_type', st)
-      const res = await fetch(`/api/content?${params}`)
-      const data = await res.json()
-      const items = data.items || []
-      const keyword = q.trim().toLowerCase()
-      const filtered = keyword
-        ? items.filter(item => {
-            const text = [item.title, item.summary, item.tags?.join(' ')].filter(Boolean).join(' ').toLowerCase()
-            return text.includes(keyword)
-          })
-        : items
+      const filtered = await fetchLocal(q, st)
+      if (searchTokenRef.current !== token) return
+      // 关键词非空但本地 0 结果 → 实时拓
+      if (filtered.length === 0 && q.trim()) {
+        setResults([])
+        setTotal(0)
+        setLoading(false)
+        await runResearch(q.trim(), st, token)
+        return
+      }
       setTotal(filtered.length)
       setResults(filtered.slice(0, 100))
     } catch (e) {
       setResults([])
       setTotal(0)
     } finally {
-      setLoading(false)
+      if (searchTokenRef.current === token) setLoading(false)
     }
-  }, [])
+  }, [fetchLocal, runResearch])
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -195,14 +254,45 @@ export default function SearchPage() {
         </div>
       )}
 
-      {!loading && searched && (
+      {/* 本地无结果，正在实时研究 */}
+      {researching && (
+        <div style={{
+          textAlign: 'center', padding: '56px 0',
+          color: 'var(--text-muted)', fontSize: 15,
+        }}>
+          <div style={{ fontSize: 36, marginBottom: 12 }}>🔭</div>
+          <div>
+            本地暂无「<strong style={{ color: 'var(--text-primary)' }}>{researchTopic}</strong>」，
+            正在实时研究全网最近 30 天…
+          </div>
+          <div style={{ fontSize: 13, marginTop: 8 }}>
+            会从 Reddit / X / Hacker News / YouTube / TikTok / Instagram 聚合，可能需要几分钟，请稍候
+          </div>
+        </div>
+      )}
+
+      {/* 研究失败 */}
+      {!researching && researchError && (
+        <div style={{
+          textAlign: 'center', padding: '56px 0',
+          color: 'var(--text-muted)', fontSize: 15,
+        }}>
+          <div style={{ fontSize: 36, marginBottom: 12 }}>⚠️</div>
+          <div>实时研究失败</div>
+          <div style={{ fontSize: 13, marginTop: 8, color: '#b91c1c', maxWidth: 520, margin: '8px auto 0' }}>
+            {researchError}
+          </div>
+        </div>
+      )}
+
+      {!loading && !researching && !researchError && searched && (
         <div style={{ marginBottom: 12, fontSize: 13, color: 'var(--text-muted)' }}>
           共找到 <strong style={{ color: 'var(--text-primary)' }}>{total}</strong> 条情报
           {total > 100 && '，显示前 100 条'}
         </div>
       )}
 
-      {!loading && searched && results.length === 0 && (
+      {!loading && !researching && !researchError && searched && results.length === 0 && (
         <div style={{
           textAlign: 'center', padding: '64px 0',
           color: 'var(--text-muted)', fontSize: 15,

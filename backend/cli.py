@@ -359,16 +359,12 @@ def cmd_share_page(args):
 
 
 def cmd_import_last30days(args):
-    """导入 last30days 报告为可搜索情报"""
+    """离线导入 last30days 报告为可搜索情报（实时触发请走搜索页 /api/last30days/research）"""
     from services.last30days_importer import (
         import_last30days_dir,
         import_last30days_file,
-        run_last30days_via_wingsbot,
     )
-    if args.topic:
-        n = run_last30days_via_wingsbot(args.topic)
-        print(f"✅ 话题「{args.topic}」导入 {n} 条情报")
-    elif args.file:
+    if args.file:
         n = import_last30days_file(args.file)
         print(f"✅ 从 {args.file} 导入 {n} 条情报")
     else:
@@ -430,8 +426,7 @@ def main():
     share_parser.set_defaults(func=cmd_share_page)
 
     # import-last30days：把 last30days 报告转为可搜索情报
-    l30_parser = subparsers.add_parser("import-last30days", help="导入 last30days 报告为可搜索情报")
-    l30_parser.add_argument("--topic", help="话题：通过 wingsbot 触发 last30days 后导入")
+    l30_parser = subparsers.add_parser("import-last30days", help="离线导入 last30days 报告为可搜索情报")
     l30_parser.add_argument("--file", help="解析单个 raw v3 markdown 文件")
     l30_parser.add_argument("--dir", help="批量解析目录（默认 ~/Documents/Last30Days）")
     l30_parser.set_defaults(func=cmd_import_last30days)

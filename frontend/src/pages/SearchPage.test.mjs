@@ -12,3 +12,13 @@ test('SearchPage exposes last30days social source types', () => {
     assert.match(source, new RegExp(key))
   }
 })
+
+test('SearchPage triggers last30days research when local search is empty', () => {
+  // calls the research API
+  assert.match(source, /\/api\/last30days\/research/)
+  // only triggers when local has no results but a keyword is present
+  assert.match(source, /filtered\.length === 0 && q\.trim\(\)/)
+  // polls job status and surfaces a researching state
+  assert.match(source, /setResearching\(true\)/)
+  assert.match(source, /researchError/)
+})

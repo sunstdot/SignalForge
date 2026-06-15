@@ -8,7 +8,10 @@ import logging
 import os
 from contextlib import asynccontextmanager
 from pathlib import Path
+from dotenv import load_dotenv
 from fastapi import FastAPI
+
+load_dotenv(Path(__file__).parent.parent / ".env")
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
@@ -29,6 +32,7 @@ from routers.experiments import router as experiments_router
 from routers.share_pages import router as share_pages_router
 from routers.manual_intel import router as manual_intel_router
 from routers.wiki import router as wiki_router
+from routers.last30days import router as last30days_router
 
 
 @asynccontextmanager
@@ -71,6 +75,7 @@ app.include_router(content.router, prefix="/api/content", tags=["content"])
 app.include_router(share_pages_router, prefix="/api/share-pages", tags=["share-pages"])
 app.include_router(manual_intel_router, prefix="/api/manual-intel", tags=["manual-intel"])
 app.include_router(wiki_router, prefix="/api/wiki", tags=["wiki"])
+app.include_router(last30days_router, prefix="/api/last30days", tags=["last30days"])
 
 # 挂载静态分享页目录（必须在路由注册之后）
 share_pages_dir = Path(__file__).parent / "docs" / "share-pages"
