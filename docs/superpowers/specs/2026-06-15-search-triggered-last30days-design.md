@@ -12,12 +12,19 @@
 
 ## 已确认决策
 
-1. **触发策略：先本地，空才实时拓**。只有关键词非空且本地 0 结果时才触发 last30days。
+> 更新（2026-06-15 二次调整）：触发策略由「先本地、空才拓」改为「**每次搜索直接调
+> last30days，不查本地情报**」；只展示该话题的 last30days 结果；展示沿用 SearchPage 卡片列表；
+> 平台筛选 chip 限定 6 个社交来源。
+
+1. **触发策略：直接调 last30days**。点搜索即对关键词跑 last30days，不查本地 AI 情报。
 2. **异步：后台任务 + 轮询**。研究在后台线程跑（`run_last30days_via_wingsbot` 内部用
    `asyncio.run`，不能在 FastAPI 事件循环里直接调），API 立即返回 `job_id`，前端轮询。
 3. **任务态文件持久化**：存到 `data/last30days/jobs.json`（进程内内存 + 文件，单机自用足够）。
 4. **CLI 调整**：移除 `import-last30days --topic`（实时触发唯一入口 = 研究 API）；
    CLI 仅保留 `--file`/`--dir` 离线导入。
+5. **展示**：沿用 `SearchPage.jsx` 卡片列表（来源徽标 + 日期 + 标题 + 摘要 + 标签），
+   只渲染 `metadata.origin === "last30days"` 且匹配话题的条目；平台 chip 限
+   `reddit/x/hn/youtube/tiktok/instagram`，切换时本地重过滤不重复触发研究。
 
 ## 后端
 
@@ -43,15 +50,15 @@
 
 ## 前端 `frontend/src/pages/SearchPage.jsx`
 
-- 抽出 `fetchLocal(q, st) -> filtered`（拉 `/api/content` + 关键词过滤）。
-- `doSearch`：调 `fetchLocal`；若 `filtered.length===0 && q.trim()` → 进入研究流程
-  （不直接展示空态）；否则正常展示。
-- `runResearch(topic, st)`：POST `/research` 拿 job_id，每 3s 轮询 `/research/{job_id}`，
-  最多约 10 分钟；`done` → 再 `fetchLocal` 展示；`error` → 显示错误。用 ref token 保证
-  新搜索会取消上一次轮询。
-- 新增状态 `researching`、`researchError`。渲染优先级：loading → researching 面板
-  （「本地没有『topic』，正在实时研究全网最近 30 天…（可能几分钟）」）→ researchError 面板
-  → 正常结果/空态。
+- `fetchTopicResults(topic, st) -> items`：拉 `/api/content`（可带 `source_type`），
+  过滤到 `metadata.origin==='last30days'` 且话题匹配（title/summary/tags/metadata.topic）。
+- `doSearch(q, st)`：关键词非空才执行，直接 `runResearch`（不查本地、不先展示）。
+- `runResearch(topic, st, token)`：POST `/research` 拿 job_id，每 3s 轮询，最多约 10 分钟；
+  `done` → `fetchTopicResults` 展示；`error` → 显示错误。ref token 保证新搜索取消旧轮询。
+- `handleTypeChange`：平台 chip 切换时对 `lastTopicRef` 的话题本地重过滤，不重复触发研究。
+- 平台 chip 仅渲染 `L30_TYPES = [reddit, x, hn, youtube, tiktok, instagram]`。
+- 状态 `researching`、`researchTopic`、`researchError`。渲染：researching 面板
+  （「正在实时研究『topic』最近 30 天的讨论…」）→ researchError 面板 → 结果卡片列表/空态。
 
 ## 测试
 

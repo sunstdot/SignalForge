@@ -30,6 +30,9 @@ const SOURCE_TYPE_COLORS = {
   instagram: { bg: '#fdf2f8', color: '#be185d' },
 }
 
+// 情报搜索只展示 last30days 的社交来源，平台筛选 chip 限定这 6 个
+const L30_TYPES = ['reddit', 'x', 'hn', 'youtube', 'tiktok', 'instagram']
+
 function SourceBadge({ type }) {
   const label = SOURCE_TYPE_LABELS[type] || type
   const style = SOURCE_TYPE_COLORS[type] || { bg: '#f3f4f6', color: '#6b7280' }
@@ -61,7 +64,6 @@ export default function SearchPage() {
   const [query, setQuery] = useState('')
   const [sourceType, setSourceType] = useState('')
   const [results, setResults] = useState([])
-  const [loading, setLoading] = useState(false)
   const [searched, setSearched] = useState(false)
   const [total, setTotal] = useState(0)
   const [researching, setResearching] = useState(false)
@@ -70,28 +72,31 @@ export default function SearchPage() {
   const inputRef = useRef(null)
   // 递增 token：新搜索会让上一次轮询自动失效
   const searchTokenRef = useRef(0)
+  // 记住已研究的话题，供平台 chip 切换时本地重过滤（不重复触发研究）
+  const lastTopicRef = useRef('')
 
   useEffect(() => {
     inputRef.current?.focus()
   }, [])
 
-  // 只查本地 /api/content 并按关键词过滤，返回命中列表
-  const fetchLocal = useCallback(async (q, st) => {
+  // 拉取该话题已导入的 last30days 条目（仅 last30days 来源，可选按平台筛选）
+  const fetchTopicResults = useCallback(async (topic, st) => {
     const params = new URLSearchParams({ limit: 500 })
     if (st) params.set('source_type', st)
     const res = await fetch(`/api/content?${params}`)
     const data = await res.json()
     const items = data.items || []
-    const keyword = q.trim().toLowerCase()
-    return keyword
-      ? items.filter(item => {
-          const text = [item.title, item.summary, item.tags?.join(' ')].filter(Boolean).join(' ').toLowerCase()
-          return text.includes(keyword)
-        })
-      : items
+    const keyword = topic.trim().toLowerCase()
+    return items.filter(item => {
+      if (item.metadata?.origin !== 'last30days') return false
+      if (!keyword) return true
+      const text = [item.title, item.summary, item.tags?.join(' '), item.metadata?.topic]
+        .filter(Boolean).join(' ').toLowerCase()
+      return text.includes(keyword)
+    })
   }, [])
 
-  // 本地无结果时，触发 wingsbot 跑 last30days，轮询完成后再展示
+  // 直接触发 wingsbot 跑 last30days，轮询完成后展示该话题结果
   const runResearch = useCallback(async (topic, st, token) => {
     setResearching(true)
     setResearchTopic(topic)
@@ -109,7 +114,7 @@ export default function SearchPage() {
         if (searchTokenRef.current !== token) return // 已被新搜索取代
         const job = await fetch(`/api/last30days/research/${jobId}`).then(r => r.json())
         if (job.status === 'done') {
-          const filtered = await fetchLocal(topic, st)
+          const filtered = await fetchTopicResults(topic, st)
           if (searchTokenRef.current !== token) return
           setTotal(filtered.length)
           setResults(filtered.slice(0, 100))
@@ -126,46 +131,35 @@ export default function SearchPage() {
     } finally {
       if (searchTokenRef.current === token) setResearching(false)
     }
-  }, [fetchLocal])
+  }, [fetchTopicResults])
 
+  // 情报搜索 = 直接对关键词跑 last30days（不查本地情报）
   const doSearch = useCallback(async (q, st) => {
-    if (!q.trim() && !st) return
+    const topic = q.trim()
+    if (!topic) return
     const token = ++searchTokenRef.current
-    setLoading(true)
+    lastTopicRef.current = topic
     setSearched(true)
     setResearchError('')
-    setResearching(false)
-    try {
-      const filtered = await fetchLocal(q, st)
-      if (searchTokenRef.current !== token) return
-      // 关键词非空但本地 0 结果 → 实时拓
-      if (filtered.length === 0 && q.trim()) {
-        setResults([])
-        setTotal(0)
-        setLoading(false)
-        await runResearch(q.trim(), st, token)
-        return
-      }
-      setTotal(filtered.length)
-      setResults(filtered.slice(0, 100))
-    } catch (e) {
-      setResults([])
-      setTotal(0)
-    } finally {
-      if (searchTokenRef.current === token) setLoading(false)
-    }
-  }, [fetchLocal, runResearch])
+    setResults([])
+    setTotal(0)
+    await runResearch(topic, st, token)
+  }, [runResearch])
 
   const handleSubmit = (e) => {
     e.preventDefault()
     doSearch(query, sourceType)
   }
 
-  const handleTypeChange = (type) => {
+  // 平台 chip：对已研究的话题本地重过滤，不重复触发 last30days
+  const handleTypeChange = async (type) => {
     const next = sourceType === type ? '' : type
     setSourceType(next)
-    if (searched || query.trim()) {
-      doSearch(query, next)
+    const topic = lastTopicRef.current
+    if (topic && !researching) {
+      const filtered = await fetchTopicResults(topic, next)
+      setTotal(filtered.length)
+      setResults(filtered.slice(0, 100))
     }
   }
 
@@ -177,7 +171,7 @@ export default function SearchPage() {
           🔍 情报搜索
         </h1>
         <p style={{ fontSize: 14, color: 'var(--text-muted)' }}>
-          搜索所有收录的 AI 情报，包括论文、仓库、模型、资讯等
+          输入话题，实时聚合 Reddit / X / Hacker News / YouTube / TikTok / Instagram 最近 30 天的讨论
         </p>
       </div>
 
@@ -189,7 +183,7 @@ export default function SearchPage() {
             type="text"
             value={query}
             onChange={e => setQuery(e.target.value)}
-            placeholder="输入关键词搜索情报..."
+            placeholder="输入话题，实时研究全网最近 30 天..."
             style={{
               flex: 1, padding: '10px 14px', borderRadius: 8, fontSize: 15,
               border: '1px solid var(--border)', background: 'var(--bg-primary)',
@@ -213,7 +207,8 @@ export default function SearchPage() {
 
       {/* Type filters */}
       <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 24 }}>
-        {Object.entries(SOURCE_TYPE_LABELS).map(([type, label]) => {
+        {L30_TYPES.map((type) => {
+          const label = SOURCE_TYPE_LABELS[type] || type
           const active = sourceType === type
           const style = SOURCE_TYPE_COLORS[type] || {}
           return (
@@ -248,13 +243,7 @@ export default function SearchPage() {
       </div>
 
       {/* Results */}
-      {loading && (
-        <div style={{ textAlign: 'center', padding: '48px 0', color: 'var(--text-muted)', fontSize: 14 }}>
-          搜索中...
-        </div>
-      )}
-
-      {/* 本地无结果，正在实时研究 */}
+      {/* 正在实时研究 */}
       {researching && (
         <div style={{
           textAlign: 'center', padding: '56px 0',
@@ -262,8 +251,7 @@ export default function SearchPage() {
         }}>
           <div style={{ fontSize: 36, marginBottom: 12 }}>🔭</div>
           <div>
-            本地暂无「<strong style={{ color: 'var(--text-primary)' }}>{researchTopic}</strong>」，
-            正在实时研究全网最近 30 天…
+            正在实时研究「<strong style={{ color: 'var(--text-primary)' }}>{researchTopic}</strong>」最近 30 天的讨论…
           </div>
           <div style={{ fontSize: 13, marginTop: 8 }}>
             会从 Reddit / X / Hacker News / YouTube / TikTok / Instagram 聚合，可能需要几分钟，请稍候
@@ -285,25 +273,25 @@ export default function SearchPage() {
         </div>
       )}
 
-      {!loading && !researching && !researchError && searched && (
+      {!researching && !researchError && searched && (
         <div style={{ marginBottom: 12, fontSize: 13, color: 'var(--text-muted)' }}>
           共找到 <strong style={{ color: 'var(--text-primary)' }}>{total}</strong> 条情报
           {total > 100 && '，显示前 100 条'}
         </div>
       )}
 
-      {!loading && !researching && !researchError && searched && results.length === 0 && (
+      {!researching && !researchError && searched && results.length === 0 && (
         <div style={{
           textAlign: 'center', padding: '64px 0',
           color: 'var(--text-muted)', fontSize: 15,
         }}>
           <div style={{ fontSize: 36, marginBottom: 12 }}>🔎</div>
-          <div>没有找到相关情报</div>
-          <div style={{ fontSize: 13, marginTop: 6 }}>换个关键词试试？</div>
+          <div>没有找到「{researchTopic}」的相关讨论</div>
+          <div style={{ fontSize: 13, marginTop: 6 }}>换个话题试试？</div>
         </div>
       )}
 
-      {!loading && results.length > 0 && (
+      {!researching && results.length > 0 && (
         <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
           {results.map((item, idx) => (
             <div
@@ -373,7 +361,7 @@ export default function SearchPage() {
           color: 'var(--text-muted)', fontSize: 14,
         }}>
           <div style={{ fontSize: 40, marginBottom: 12 }}>📡</div>
-          <div>输入关键词开始搜索，或选择分类浏览</div>
+          <div>输入话题，实时研究全网最近 30 天的讨论</div>
         </div>
       )}
     </div>

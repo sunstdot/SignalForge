@@ -13,12 +13,22 @@ test('SearchPage exposes last30days social source types', () => {
   }
 })
 
-test('SearchPage triggers last30days research when local search is empty', () => {
+test('SearchPage triggers last30days research directly on every search', () => {
   // calls the research API
   assert.match(source, /\/api\/last30days\/research/)
-  // only triggers when local has no results but a keyword is present
-  assert.match(source, /filtered\.length === 0 && q\.trim\(\)/)
+  // search goes straight to research (no local-first gating)
+  assert.doesNotMatch(source, /filtered\.length === 0 && q\.trim\(\)/)
+  // doSearch runs research for the keyword directly
+  assert.match(source, /runResearch\(topic, st, token\)/)
   // polls job status and surfaces a researching state
   assert.match(source, /setResearching\(true\)/)
   assert.match(source, /researchError/)
+})
+
+test('SearchPage only shows last30days-origin results', () => {
+  assert.match(source, /metadata\?\.origin !== 'last30days'/)
+})
+
+test('SearchPage limits filter chips to the six social platforms', () => {
+  assert.match(source, /const L30_TYPES = \['reddit', 'x', 'hn', 'youtube', 'tiktok', 'instagram'\]/)
 })
