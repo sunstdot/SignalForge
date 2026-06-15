@@ -23,6 +23,7 @@ _RANGE_RE = re.compile(r"Date range:\s*\S+\s+to\s+(\d{4}-\d{2}-\d{2})")
 _CLUSTER_RE = re.compile(r"^###\s+\d+\.\s*(.+?)\s*\(score\s+(\d+),")
 _ITEM_RE = re.compile(r"^\d+\.\s*\[(\w+)\]\s*(.+?)\s*$")
 _META_DATE_RE = re.compile(r"^\s*-\s*(\d{4}-\d{2}-\d{2})\b.*\|\s*score:")
+_ITEM_SCORE_RE = re.compile(r"\|\s*score:\s*(\d+)")
 _URL_RE = re.compile(r"^\s*-\s*URL:\s*(\S+)")
 _EVIDENCE_RE = re.compile(r"^\s*-\s*Evidence:\s*(.+?)\s*$")
 
@@ -50,8 +51,9 @@ def parse_last30days_markdown(text: str) -> List[Dict]:
             cur["platform"], ("social", cur["platform"])
         )
         date = cur.get("date") or fallback_date
-        # cluster 分约 0–60，归一到 0–10
-        score = min(10, round(cluster_score / 6))
+        # 优先用条目自身 score（每条 meta 行都有 | score:N），回退 cluster 分；约 0–60 → 0–10
+        raw_score = cur.get("score", cluster_score)
+        score = min(10, round(raw_score / 6))
         items.append({
             "id": _make_id(platform_key, cur.get("url", ""), cur["title"]),
             "source": source_name,
@@ -106,9 +108,15 @@ def parse_last30days_markdown(text: str) -> List[Dict]:
         if m:
             cur["evidence"] = m.group(1)
             continue
-        m = _META_DATE_RE.match(line)
-        if m and "date" not in cur:
-            cur["date"] = m.group(1)
+        if "| score:" in line:
+            if "date" not in cur:
+                dm = _META_DATE_RE.match(line)
+                if dm:
+                    cur["date"] = dm.group(1)
+            if "score" not in cur:
+                sm = _ITEM_SCORE_RE.search(line)
+                if sm:
+                    cur["score"] = int(sm.group(1))
             continue
 
     flush()

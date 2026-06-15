@@ -64,6 +64,26 @@ class ParseTest(unittest.TestCase):
         self.assertEqual(items[0]["date"], "2026-06-12")
         self.assertEqual(items[0]["created_at"], "2026-06-12")
 
+    def test_multiline_cluster_uses_item_score(self):
+        md = """# last30days v3.3.2: Loop Engineering
+- Date range: 2026-05-13 to 2026-06-12
+## Ranked Evidence Clusters
+### 3. "Stop prompting coding agents. Start designing loops."
+
+Most devs are still stuck in:
+
+Prompt -> Wait -> Review (score 56, 1 item, sources: X)
+- Uncertainty: single-source
+1. [x] Stop prompting coding agents
+   - 2026-06-11 | @_princegupta13 | [1likes] | score:56
+   - URL: https://x.com/_princegupta13/status/2065181758254203283
+   - Evidence: Loop engineering is the main quest.
+"""
+        items = parse_last30days_markdown(md)
+        self.assertEqual(len(items), 1)
+        self.assertEqual(items[0]["relevance_score"], 9)  # min(10, round(56/6))
+        self.assertEqual(items[0]["date"], "2026-06-11")
+
 
 class ImportFileTest(unittest.TestCase):
     def test_file_parses_and_stores(self):
