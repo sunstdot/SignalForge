@@ -89,5 +89,32 @@ class ImportFileTest(unittest.TestCase):
         self.assertEqual(n, 6)
 
 
+class WingsbotTriggerTest(unittest.TestCase):
+    def test_run_imports_newest_report(self):
+        # 不真正联网：打桩 _trigger_wingsbot 返回一个临时报告文件
+        from services import last30days_importer as mod
+        with tempfile.NamedTemporaryFile("w", suffix=".md", delete=False, encoding="utf-8") as f:
+            f.write(SAMPLE)
+            path = Path(f.name)
+        with patch.object(mod, "_trigger_wingsbot", return_value=path):
+            with patch("services.last30days_importer.store_content_items",
+                       side_effect=lambda items: len(items)):
+                n = mod.run_last30days_via_wingsbot("Loop Engineering")
+        self.assertEqual(n, 3)
+
+    def test_newest_report_since_picks_latest(self):
+        from services import last30days_importer as mod
+        import time
+        with tempfile.TemporaryDirectory() as d:
+            old = Path(d) / "old.md"; old.write_text("x", encoding="utf-8")
+            time.sleep(0.01)
+            start = time.time()
+            time.sleep(0.01)
+            new = Path(d) / "new.md"; new.write_text("y", encoding="utf-8")
+            with patch.object(mod, "L30_OUTPUT_DIR", Path(d)):
+                picked = mod._newest_report_since(start)
+        self.assertEqual(picked.name, "new.md")
+
+
 if __name__ == "__main__":
     unittest.main()

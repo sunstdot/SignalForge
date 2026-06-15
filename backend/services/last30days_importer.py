@@ -1,6 +1,8 @@
 """last30days raw v3 markdown → SignalForge content items."""
+import asyncio
 import hashlib
 import re
+import time
 from pathlib import Path
 from typing import Dict, List, Optional
 
@@ -129,3 +131,74 @@ def import_last30days_dir(directory=None) -> int:
     for p in sorted(directory.glob("*.md")):
         total += import_last30days_file(p)
     return total
+
+
+L30_OUTPUT_DIR = DEFAULT_L30_DIR
+
+_WINGSBOT_PATH = "/Users/shitaosun/Project/AI-opensource/wingsbot"
+
+
+def run_last30days_via_wingsbot(topic: str) -> int:
+    """通过 wingsbot 触发 last30days，再导入产出的最新报告，返回新增条数。"""
+    md_path = _trigger_wingsbot(topic)
+    return import_last30days_file(md_path)
+
+
+def _newest_report_since(start: float):
+    if not L30_OUTPUT_DIR.exists():
+        return None
+    cands = [p for p in L30_OUTPUT_DIR.glob("*.md") if p.stat().st_mtime >= start - 1]
+    return max(cands, key=lambda p: p.stat().st_mtime) if cands else None
+
+
+def _trigger_wingsbot(topic: str) -> Path:
+    try:
+        from wingsbot.config.loader import load_config, get_data_dir
+        from wingsbot.bus.queue import MessageBus
+        from wingsbot.cron.service import CronService
+        from wingsbot.agent.loop import AgentLoop
+        from wingsbot.cli.commands import _make_provider
+    except ImportError as e:
+        raise RuntimeError(
+            "wingsbot 不可导入。请在 SignalForge venv 执行 "
+            f"`pip install -e {_WINGSBOT_PATH}`，或改用 --file/--dir 离线导入。"
+        ) from e
+
+    start = time.time()
+    config = load_config()
+    d = config.agents.defaults
+    agent_loop = AgentLoop(
+        bus=MessageBus(),
+        provider=_make_provider(config),
+        workspace=config.workspace_path,
+        model=d.model,
+        temperature=d.temperature,
+        max_tokens=d.max_tokens,
+        max_iterations=d.max_tool_iterations,
+        memory_window=d.memory_window,
+        disabled_skills=d.disabled_skills,
+        brave_api_key=config.tools.web.search.api_key or None,
+        exec_config=config.tools.exec,
+        cron_service=CronService(get_data_dir() / "cron" / "jobs.json"),
+        restrict_to_workspace=config.tools.restrict_to_workspace,
+        mcp_servers=config.tools.mcp_servers,
+    )
+    prompt = (
+        f"使用 last30days 技能研究话题：{topic}。"
+        f"完成后把原始结果（raw v3 markdown）保存到 {L30_OUTPUT_DIR}/。"
+    )
+
+    async def _run():
+        try:
+            return await agent_loop.process_direct(prompt, session_id="signalforge:last30days")
+        finally:
+            await agent_loop.close_mcp()
+
+    response = asyncio.run(_run())
+    md_path = _newest_report_since(start)
+    if md_path is None:
+        raise RuntimeError(
+            "wingsbot 未产出 last30days 报告文件。agent 返回（节选）：\n"
+            + (response or "")[:500]
+        )
+    return md_path
