@@ -270,7 +270,13 @@ async def process_article(item_id: str):
     slug = _slugify(item.get("title") or item["url"])
 
     # Step 1: Extract concepts
-    concepts = await _extract_concepts(item.get("title", ""), item.get("content_snippet", ""))
+    # 用 quick_read（AI 摘要，必定存在）+ content_snippet 作为输入：X/推文等无法服务端抓取的
+    # 来源 content_snippet 往往只剩署名行，仅靠它会提取不到概念。quick_read 在前，保证核心内容
+    # 不会被 prompt 的长度截断丢掉。
+    concept_source = "\n\n".join(
+        part for part in [item.get("quick_read", ""), item.get("content_snippet", "")] if part
+    )
+    concepts = await _extract_concepts(item.get("title", ""), concept_source)
     if not concepts:
         print(f"[wiki] no concepts extracted for {item_id}")
         return

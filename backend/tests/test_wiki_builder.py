@@ -228,6 +228,42 @@ async def test_process_article_full_pipeline(monkeypatch, vault_path):
 
 
 @pytest.mark.asyncio
+async def test_process_article_uses_quick_read_when_snippet_empty(monkeypatch, vault_path):
+    """X/Twitter posts can't be scraped server-side, so content_snippet is near-empty;
+    concept extraction must use the quick_read summary instead of returning no concepts."""
+    import services.storage as s
+    import services.wiki_builder as wb
+    from services.wiki_builder import process_article
+
+    item = {
+        "id": "item-x",
+        "title": "Satya Nadella 的推文",
+        "url": "https://x.com/satyanadella/status/2066182223213293753",
+        "source_platform": "other",
+        "added_at": "2026-06-15T10:00:00",
+        "quick_read": "企业知识循环将员工经验私有化为封闭 AI 系统，导致信息孤岛与系统战争。",
+        "user_note": "",
+        "content_snippet": "— Satya Nadella (@satyanadella)",
+        "business_opps": [],
+        "rdev_opps": [],
+    }
+    monkeypatch.setattr(s, "get_manual_intel_item_by_id", lambda iid: item if iid == "item-x" else None)
+
+    captured = {}
+
+    async def fake_extract(title, content):
+        captured["content"] = content
+        return []  # short-circuit; we only assert what content reached extraction
+
+    monkeypatch.setattr(wb, "_extract_concepts", fake_extract)
+
+    await process_article("item-x")
+
+    assert "content" in captured, "_extract_concepts was not called"
+    assert "企业知识循环" in captured["content"], "quick_read content must reach concept extraction"
+
+
+@pytest.mark.asyncio
 async def test_process_article_skips_if_no_quick_read(monkeypatch):
     import services.storage as s
     from services.wiki_builder import process_article
