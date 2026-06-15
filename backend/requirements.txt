@@ -1,19 +1,22 @@
 # Web Framework
-fastapi==0.109.0
-uvicorn[standard]==0.27.0
+# Bumped to align with wingsbot (used as an in-process library): its mcp/sse-starlette
+# deps require starlette>=0.49, which needs fastapi>=0.110 (0.109 + starlette 1.x crashes).
+fastapi==0.136.3
+uvicorn[standard]==0.49.0
 
 # HTTP Client
-aiohttp==3.9.0
+aiohttp==3.14.1
 requests==2.31.0
-httpx==0.26.0
+httpx==0.28.1
 
 # AI/OpenAI
-openai==1.10.0
+# Bumped to 2.x to satisfy litellm (wingsbot dep); SignalForge's OpenAI() + chat.completions usage is unchanged.
+openai==2.41.1
 
 # Config & Utils
 pyyaml==6.0.1
 python-dotenv==1.0.0
-pydantic==2.5.0
+pydantic==2.13.4
 
 # Async
 asyncio==3.4.3
@@ -26,3 +29,6 @@ beautifulsoup4==4.14.3
 
 # Testing
 pytest-asyncio>=0.23.0
+
+# wingsbot 为本地可编辑安装，触发 last30days 用：
+# pip install -e /Users/shitaosun/Project/AI-opensource/wingsbot
