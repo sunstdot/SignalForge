@@ -1,10 +1,12 @@
 import sys
 import unittest
+import tempfile
 from pathlib import Path
+from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from services.last30days_importer import parse_last30days_markdown
+from services.last30days_importer import parse_last30days_markdown, import_last30days_file, import_last30days_dir
 
 SAMPLE = """# last30days v3.3.2: Loop Engineering
 - Date range: 2026-05-13 to 2026-06-12
@@ -61,6 +63,30 @@ class ParseTest(unittest.TestCase):
         items = parse_last30days_markdown(md)
         self.assertEqual(items[0]["date"], "2026-06-12")
         self.assertEqual(items[0]["created_at"], "2026-06-12")
+
+
+class ImportFileTest(unittest.TestCase):
+    def test_file_parses_and_stores(self):
+        with tempfile.NamedTemporaryFile("w", suffix=".md", delete=False, encoding="utf-8") as f:
+            f.write(SAMPLE)
+            path = f.name
+        captured = {}
+        def fake_store(items):
+            captured["items"] = items
+            return len(items)
+        with patch("services.last30days_importer.store_content_items", side_effect=fake_store):
+            n = import_last30days_file(path)
+        self.assertEqual(n, 3)
+        self.assertEqual(len(captured["items"]), 3)
+
+    def test_dir_imports_all_md(self):
+        with tempfile.TemporaryDirectory() as d:
+            (Path(d) / "a.md").write_text(SAMPLE, encoding="utf-8")
+            (Path(d) / "b.md").write_text(SAMPLE, encoding="utf-8")
+            with patch("services.last30days_importer.store_content_items",
+                       side_effect=lambda items: len(items)):
+                n = import_last30days_dir(d)
+        self.assertEqual(n, 6)
 
 
 if __name__ == "__main__":

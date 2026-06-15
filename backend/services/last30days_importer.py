@@ -4,6 +4,8 @@ import re
 from pathlib import Path
 from typing import Dict, List, Optional
 
+from services.storage import store_content_items
+
 # raw 平台标记 -> (source_type, 显示名)
 PLATFORM_MAP = {
     "reddit": ("reddit", "Reddit"),
@@ -109,3 +111,21 @@ def parse_last30days_markdown(text: str) -> List[Dict]:
 
     flush()
     return items
+
+
+DEFAULT_L30_DIR = Path.home() / "Documents" / "Last30Days"
+
+
+def import_last30days_file(path) -> int:
+    """解析单个 raw v3 markdown 文件并入库，返回新增条数。"""
+    text = Path(path).read_text(encoding="utf-8")
+    return store_content_items(parse_last30days_markdown(text))
+
+
+def import_last30days_dir(directory=None) -> int:
+    """批量导入目录下所有 .md（默认 ~/Documents/Last30Days），返回新增条数。"""
+    directory = Path(directory) if directory else DEFAULT_L30_DIR
+    total = 0
+    for p in sorted(directory.glob("*.md")):
+        total += import_last30days_file(p)
+    return total
