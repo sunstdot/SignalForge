@@ -198,7 +198,7 @@ def _trigger_wingsbot(topic: str) -> Path:
 
     async def _run():
         try:
-            return await agent_loop.process_direct(prompt, session_id="signalforge:last30days")
+            return await agent_loop.process_direct(prompt, session_key="signalforge:last30days")
         finally:
             await agent_loop.close_mcp()
 
