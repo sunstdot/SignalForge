@@ -37,8 +37,11 @@ class SearchBriefRouterTest(unittest.TestCase):
 
     def test_brief_job_runs_to_done(self):
         fake_brief = {"topic": "Loop Engineering", "meta": {"total": 3}, "timeline": []}
+        # build_brief returns the brief; the job stores only a slug, and the GET
+        # loads the brief from its file (load_brief patched to return it).
         with patch("routers.search.run_last30days_via_wingsbot", return_value=3), \
-             patch("routers.search.build_brief", return_value=fake_brief):
+             patch("routers.search.build_brief", return_value=fake_brief), \
+             patch("routers.search.load_brief", return_value=fake_brief):
             body = self.client.post("/api/search/brief", json={"topic": "Loop Engineering"}).json()
             self.assertEqual(body["status"], "running")
             jid = body["job_id"]
@@ -48,7 +51,20 @@ class SearchBriefRouterTest(unittest.TestCase):
                     break
                 time.sleep(0.05)
             self.assertEqual(job["status"], "done")
-            self.assertEqual(job["brief"]["meta"]["total"], 3)
+            self.assertEqual(job["brief_slug"], "loop-engineering")  # job carries slug ref only
+            self.assertEqual(job["brief"]["meta"]["total"], 3)       # brief loaded from file
+
+    def test_cached_brief_by_topic(self):
+        fake_brief = {"topic": "X", "meta": {"total": 1}}
+        with patch("routers.search.load_brief", return_value=fake_brief):
+            r = self.client.get("/api/search/brief", params={"topic": "X"})
+        self.assertEqual(r.status_code, 200)
+        self.assertEqual(r.json()["meta"]["total"], 1)
+
+    def test_cached_brief_missing_404(self):
+        with patch("routers.search.load_brief", return_value=None):
+            r = self.client.get("/api/search/brief", params={"topic": "nope"})
+        self.assertEqual(r.status_code, 404)
 
     def test_brief_job_error(self):
         with patch("routers.search.run_last30days_via_wingsbot", side_effect=RuntimeError("boom")):

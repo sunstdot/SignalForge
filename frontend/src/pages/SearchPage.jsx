@@ -53,8 +53,8 @@ export default function SearchPage() {
         if (job.status === 'done') {
           if (tokenRef.current !== token) return
           setBrief(job.brief); setStatus('done')
+          // 只在浏览器留一个 topic 字符串；brief 实体在服务端 data/last30days 文件里
           try {
-            sessionStorage.setItem('sf_brief', JSON.stringify(job.brief))
             sessionStorage.setItem('sf_topic', t)
             sessionStorage.removeItem('sf_job')
           } catch { /* ignore quota */ }
@@ -79,7 +79,7 @@ export default function SearchPage() {
     const token = ++tokenRef.current
     setStatus('running'); setError(''); setBrief(null); setTopic(t)
     setPlat('all'); setFeatOnly(false); setOpen({}); setAnswered({})
-    try { sessionStorage.removeItem('sf_brief') } catch { /* ignore */ }
+    try { sessionStorage.removeItem('sf_topic') } catch { /* ignore */ }
     let start
     try {
       start = await fetch('/api/search/brief', {
@@ -91,23 +91,27 @@ export default function SearchPage() {
     pollJob(start.job_id, token, t)
   }, [query, pollJob])
 
-  // 刷新/重新挂载后恢复：优先用已完成的 brief，否则续上未完成的 job 继续轮询
+  // 刷新/重新挂载后恢复：未完成的 job 续上轮询；否则从服务端文件取回上次话题的 brief
   useEffect(() => {
-    try {
-      const savedBrief = sessionStorage.getItem('sf_brief')
-      if (savedBrief) {
-        const t = sessionStorage.getItem('sf_topic') || ''
-        setBrief(JSON.parse(savedBrief)); setTopic(t); setQuery(t); setStatus('done')
-        return
-      }
-      const savedJob = sessionStorage.getItem('sf_job')
-      if (savedJob) {
-        const { jid, topic: t } = JSON.parse(savedJob)
-        const token = ++tokenRef.current
-        setTopic(t); setQuery(t); setStatus('running')
-        pollJob(jid, token, t)
-      }
-    } catch { /* ignore */ }
+    (async () => {
+      try {
+        const savedJob = sessionStorage.getItem('sf_job')
+        if (savedJob) {
+          const { jid, topic: t } = JSON.parse(savedJob)
+          const token = ++tokenRef.current
+          setTopic(t); setQuery(t); setStatus('running')
+          pollJob(jid, token, t)
+          return
+        }
+        const t = sessionStorage.getItem('sf_topic')
+        if (t) {
+          const token = ++tokenRef.current
+          const r = await fetch(`/api/search/brief?topic=${encodeURIComponent(t)}`)
+          if (tokenRef.current !== token) return
+          if (r.ok) { setBrief(await r.json()); setTopic(t); setQuery(t); setStatus('done') }
+        }
+      } catch { /* ignore */ }
+    })()
   }, [pollJob])
 
   const toggleDeep = useCallback((k) => {

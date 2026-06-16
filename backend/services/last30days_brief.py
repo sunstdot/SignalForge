@@ -34,6 +34,18 @@ def _slug(s: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", (s or "topic").lower()).strip("-") or "topic"
 
 
+def brief_slug(topic: str) -> str:
+    return _slug(topic)
+
+
+def load_brief(slug: str):
+    """从 data/last30days/briefs/<slug>.json 读取已缓存的 brief；不存在返回 None。"""
+    p = BRIEFS_DIR / f"{slug}.json"
+    if p.exists():
+        return json.loads(p.read_text(encoding="utf-8"))
+    return None
+
+
 def aggregate_brief(items: List[Dict], topic: str, took: str = "—") -> Dict:
     """机械聚合：meta / dashboard / voices / caveat / timeline（叙事字段留默认，待合成覆盖）。"""
     total = len(items)

@@ -35,7 +35,7 @@ def create_job(topic: str) -> str:
             "status": "running",
             "count": None,
             "error": None,
-            "brief": None,
+            "brief_slug": None,
             "started_at": datetime.now().isoformat(timespec="seconds"),
             "finished_at": None,
         }
@@ -44,8 +44,12 @@ def create_job(topic: str) -> str:
 
 
 def finish_job(job_id: str, *, count: Optional[int] = None, error: Optional[str] = None,
-               brief: Optional[Dict] = None) -> None:
-    """标记任务结束：error 非空 → status=error，否则 status=done。"""
+               brief_slug: Optional[str] = None) -> None:
+    """标记任务结束：error 非空 → status=error，否则 status=done。
+
+    brief 本身落在 data/last30days/briefs/<slug>.json，这里只存 slug 引用，
+    避免把整份 brief 塞进 jobs.json（保持 job 表精简）。
+    """
     with _LOCK:
         jobs = _load()
         job = jobs.get(job_id)
@@ -54,8 +58,8 @@ def finish_job(job_id: str, *, count: Optional[int] = None, error: Optional[str]
         job["status"] = "error" if error else "done"
         job["count"] = count
         job["error"] = error
-        if brief is not None:
-            job["brief"] = brief
+        if brief_slug is not None:
+            job["brief_slug"] = brief_slug
         job["finished_at"] = datetime.now().isoformat(timespec="seconds")
         _save(jobs)
 

@@ -24,14 +24,19 @@ test('SearchPage renders the brief dashboard sections when done', () => {
   }
 })
 
-test('SearchPage persists and restores brief/job across remounts', () => {
-  // saves brief + in-flight job to sessionStorage
-  assert.match(source, /sessionStorage\.setItem\('sf_brief'/)
+test('SearchPage keeps only the topic in the browser, brief lives server-side', () => {
+  // browser stores just the topic string + the in-flight job ref — never the brief blob
+  assert.match(source, /sessionStorage\.setItem\('sf_topic'/)
   assert.match(source, /sessionStorage\.setItem\('sf_job'/)
-  // restores on mount via useEffect, and resumes polling for an unfinished job
+  assert.doesNotMatch(source, /sessionStorage\.setItem\('sf_brief'/)
+})
+
+test('SearchPage restores on mount: resume job or refetch cached brief from server', () => {
   assert.match(source, /useEffect/)
-  assert.match(source, /sessionStorage\.getItem\('sf_brief'\)/)
   assert.match(source, /sessionStorage\.getItem\('sf_job'\)/)
+  assert.match(source, /sessionStorage\.getItem\('sf_topic'\)/)
+  // refetch cached brief file from the backend by topic
+  assert.match(source, /\/api\/search\/brief\?topic=/)
   assert.match(source, /pollJob\(jid, token, t\)/)
 })
 

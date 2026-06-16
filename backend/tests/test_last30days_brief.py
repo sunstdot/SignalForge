@@ -110,5 +110,25 @@ class BuildBriefTest(unittest.TestCase):
         self.assertEqual(t1["reason"], "key reason")
 
 
+class BriefFileTest(unittest.TestCase):
+    def test_build_persists_file_and_load_reads_it(self):
+        import tempfile
+        import services.last30days_brief as mod
+        from services.last30days_brief import brief_slug, load_brief
+        with tempfile.TemporaryDirectory() as d:
+            with patch.object(mod, "BRIEFS_DIR", Path(d)):
+                with patch.object(mod, "_load_topic_items", return_value=ITEMS):
+                    with patch.object(mod, "synthesize_narrative", return_value={}):
+                        mod.build_brief("Loop Engineering")  # persist=True default
+                slug = brief_slug("Loop Engineering")
+                self.assertEqual(slug, "loop-engineering")
+                self.assertTrue((Path(d) / "loop-engineering.json").exists())
+                loaded = load_brief(slug)
+                self.assertEqual(loaded["meta"]["total"], 3)
+        # missing slug → None
+        with patch.object(mod, "BRIEFS_DIR", Path(d)):
+            self.assertIsNone(load_brief("loop-engineering"))
+
+
 if __name__ == "__main__":
     unittest.main()
