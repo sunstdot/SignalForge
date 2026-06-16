@@ -33,6 +33,7 @@ from routers.share_pages import router as share_pages_router
 from routers.manual_intel import router as manual_intel_router
 from routers.wiki import router as wiki_router
 from routers.last30days import router as last30days_router
+from routers.search import router as search_router
 
 
 @asynccontextmanager
@@ -76,6 +77,7 @@ app.include_router(share_pages_router, prefix="/api/share-pages", tags=["share-p
 app.include_router(manual_intel_router, prefix="/api/manual-intel", tags=["manual-intel"])
 app.include_router(wiki_router, prefix="/api/wiki", tags=["wiki"])
 app.include_router(last30days_router, prefix="/api/last30days", tags=["last30days"])
+app.include_router(search_router, prefix="/api/search", tags=["search"])
 
 # 挂载静态分享页目录（必须在路由注册之后）
 share_pages_dir = Path(__file__).parent / "docs" / "share-pages"

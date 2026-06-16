@@ -35,6 +35,7 @@ def create_job(topic: str) -> str:
             "status": "running",
             "count": None,
             "error": None,
+            "brief": None,
             "started_at": datetime.now().isoformat(timespec="seconds"),
             "finished_at": None,
         }
@@ -42,7 +43,8 @@ def create_job(topic: str) -> str:
     return job_id
 
 
-def finish_job(job_id: str, *, count: Optional[int] = None, error: Optional[str] = None) -> None:
+def finish_job(job_id: str, *, count: Optional[int] = None, error: Optional[str] = None,
+               brief: Optional[Dict] = None) -> None:
     """标记任务结束：error 非空 → status=error，否则 status=done。"""
     with _LOCK:
         jobs = _load()
@@ -52,6 +54,8 @@ def finish_job(job_id: str, *, count: Optional[int] = None, error: Optional[str]
         job["status"] = "error" if error else "done"
         job["count"] = count
         job["error"] = error
+        if brief is not None:
+            job["brief"] = brief
         job["finished_at"] = datetime.now().isoformat(timespec="seconds")
         _save(jobs)
 
