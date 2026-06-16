@@ -3,32 +3,31 @@ import { readFileSync } from 'node:fs'
 import test from 'node:test'
 
 const source = readFileSync(new URL('./SearchPage.jsx', import.meta.url), 'utf8')
+const briefData = readFileSync(new URL('./searchBriefData.js', import.meta.url), 'utf8')
 
-test('SearchPage exposes last30days social source types', () => {
-  for (const label of ['Reddit', 'YouTube', 'TikTok', 'Instagram', 'Hacker News']) {
-    assert.match(source, new RegExp(label))
+test('SearchPage renders the synthesized intelligence brief', () => {
+  assert.match(source, /import \{ SAMPLE_BRIEF \} from '\.\/searchBriefData'/)
+  // the four numbered sections of the brief dashboard
+  for (const sec of ['综合简报', '关键模式', '让我深入', '情报时间线']) {
+    assert.match(source, new RegExp(sec))
   }
-  for (const key of ['reddit:', 'youtube:', 'tiktok:', 'instagram:', 'hn:']) {
-    assert.match(source, new RegExp(key))
+})
+
+test('SearchPage renders the right-rail panels', () => {
+  for (const panel of ['概览', '平台分布', 'Top Voices', '数据缺口说明']) {
+    assert.match(source, new RegExp(panel))
   }
 })
 
-test('SearchPage triggers last30days research directly on every search', () => {
-  // calls the research API
-  assert.match(source, /\/api\/last30days\/research/)
-  // search goes straight to research (no local-first gating)
-  assert.doesNotMatch(source, /filtered\.length === 0 && q\.trim\(\)/)
-  // doSearch runs research for the keyword directly
-  assert.match(source, /runResearch\(topic, st, token\)/)
-  // polls job status and surfaces a researching state
-  assert.match(source, /setResearching\(true\)/)
-  assert.match(source, /researchError/)
+test('SearchPage has timeline platform filters and featured toggle', () => {
+  assert.match(source, /setPlat/)
+  assert.match(source, /featOnly/)
+  assert.match(source, /仅看精选/)
 })
 
-test('SearchPage only shows last30days-origin results', () => {
-  assert.match(source, /metadata\?\.origin !== 'last30days'/)
-})
-
-test('SearchPage limits filter chips to the six social platforms', () => {
-  assert.match(source, /const L30_TYPES = \['reddit', 'x', 'hn', 'youtube', 'tiktok', 'instagram'\]/)
+test('searchBriefData exposes the brief shape', () => {
+  assert.match(briefData, /export const SAMPLE_BRIEF/)
+  for (const key of ['themes', 'patterns', 'deepDive', 'dashboard', 'voices', 'timeline']) {
+    assert.match(briefData, new RegExp(`${key}:`))
+  }
 })
