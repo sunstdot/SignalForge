@@ -55,6 +55,31 @@ class ParseTest(unittest.TestCase):
         self.assertEqual(hn["source"], "Hacker News")
         self.assertEqual(hn["relevance_score"], 5)  # min(10, round(30/6))
 
+    def test_captures_author_engagement_volume(self):
+        items = parse_last30days_markdown(SAMPLE)
+        x, reddit, hn = items
+        self.assertEqual(x["metadata"]["author"], "@DataScienceDojo")
+        self.assertEqual(x["metadata"]["engagement"], "54likes, 9rt")
+        self.assertEqual(x["metadata"]["volume"], 63)  # 54 + 9
+        self.assertEqual(reddit["metadata"]["author"], "r/singularity")
+        self.assertEqual(reddit["metadata"]["volume"], 396)
+        self.assertEqual(hn["metadata"]["author"], "dang")
+        self.assertEqual(hn["metadata"]["volume"], 120)
+
+    def test_youtube_author_from_dict_and_views_volume(self):
+        md = """# last30days v3.3.2: Loop Engineering
+- Date range: 2026-05-13 to 2026-06-12
+## Ranked Evidence Clusters
+### 1. Clip (score 40, 1 item, sources: Youtube)
+1. [youtube] How OpenClaw's creator runs his life
+   - 2026-06-02 | {'id': 'UC1', 'title': 'Peter Yang', 'handle': 'PeterYangYT'} | [155,769views, 3,260likes, 106cmt] | score:40
+   - URL: https://youtube.com/watch?v=abc
+   - Evidence: clip
+"""
+        it = parse_last30days_markdown(md)[0]
+        self.assertEqual(it["metadata"]["author"], "@PeterYangYT")
+        self.assertEqual(it["metadata"]["volume"], 159135)  # 155769 + 3260 + 106
+
     def test_date_unknown_falls_back_to_range_end(self):
         md = SAMPLE.replace(
             "   - 2026-06-10 | @DataScienceDojo | [54likes, 9rt] | score:58",

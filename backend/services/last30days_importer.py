@@ -34,6 +34,61 @@ def _make_id(platform_key: str, url: str, title: str) -> str:
     return f"l30-{platform_key}-{hashlib.md5(basis.encode('utf-8')).hexdigest()[:12]}"
 
 
+def _clean_author(a: str) -> str:
+    """作者段：youtube 是 dict（取 handle / title），其余原样。"""
+    a = a.strip()
+    if a.startswith("{"):
+        m = re.search(r"'handle':\s*'([^']*)'", a)
+        if m and m.group(1):
+            return "@" + m.group(1)
+        m = re.search(r"'title':\s*'([^']*)'", a)
+        return m.group(1) if m else ""
+    return a
+
+
+def _parse_meta_line(line: str) -> Dict:
+    """解析 meta 行：'- <date> | <author> | [<engagement>] | score:N'。"""
+    body = line.strip()
+    if body.startswith("-"):
+        body = body[1:].strip()
+    segs = [s.strip() for s in body.split("|")]
+
+    date = None
+    if segs:
+        dm = re.match(r"(\d{4}-\d{2}-\d{2})", segs[0])
+        if dm:
+            date = dm.group(1)
+
+    score = None
+    sm = _ITEM_SCORE_RE.search(line)
+    if sm:
+        score = int(sm.group(1))
+
+    engagement = ""
+    for s in segs:
+        mb = re.fullmatch(r"\[(.+)\]", s)
+        if mb and not mb.group(1).lower().startswith("date:"):
+            engagement = mb.group(1)
+            break
+
+    author = ""
+    for s in segs[1:]:
+        if not s or s.startswith("[") or s.lower().startswith("score:"):
+            continue
+        author = s
+        break
+    author = _clean_author(author)
+
+    volume = 0
+    for n in re.findall(r"[\d,]+", engagement):
+        try:
+            volume += int(n.replace(",", ""))
+        except ValueError:
+            pass
+
+    return {"date": date, "author": author, "engagement": engagement, "volume": volume, "score": score}
+
+
 def parse_last30days_markdown(text: str) -> List[Dict]:
     """把 raw v3 markdown 解析成 content item 列表。"""
     topic = ""
@@ -73,6 +128,9 @@ def parse_last30days_markdown(text: str) -> List[Dict]:
                 "cluster_title": cluster_title,
                 "cluster_score": cluster_score,
                 "origin": "last30days",
+                "author": cur.get("author", ""),
+                "engagement": cur.get("engagement", ""),
+                "volume": cur.get("volume", 0),
             },
         })
         cur = None
@@ -110,14 +168,16 @@ def parse_last30days_markdown(text: str) -> List[Dict]:
             cur["evidence"] = m.group(1)
             continue
         if "| score:" in line:
-            if "date" not in cur:
-                dm = _META_DATE_RE.match(line)
-                if dm:
-                    cur["date"] = dm.group(1)
-            if "score" not in cur:
-                sm = _ITEM_SCORE_RE.search(line)
-                if sm:
-                    cur["score"] = int(sm.group(1))
+            meta = _parse_meta_line(line)
+            if "date" not in cur and meta["date"]:
+                cur["date"] = meta["date"]
+            if "score" not in cur and meta["score"] is not None:
+                cur["score"] = meta["score"]
+            if "author" not in cur and meta["author"]:
+                cur["author"] = meta["author"]
+            if "engagement" not in cur and meta["engagement"]:
+                cur["engagement"] = meta["engagement"]
+                cur["volume"] = meta["volume"]
             continue
 
     flush()
