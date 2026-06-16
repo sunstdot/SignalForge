@@ -148,7 +148,10 @@ def synthesize_narrative(items: List[Dict], topic: str) -> Dict:
         raw = chat([{"role": "user", "content": prompt}]).strip()
         raw = re.sub(r"^```[a-z]*\n?", "", raw).rstrip("`").strip()
         m = re.search(r"\{.*\}", raw, re.DOTALL)
-        data = json.loads(m.group(0) if m else raw)
+        text = m.group(0) if m else raw
+        # 容忍 LLM 常见的非严格 JSON：去掉对象/数组结尾多余的逗号
+        text = re.sub(r",(\s*[}\]])", r"\1", text)
+        data = json.loads(text)
         return data if isinstance(data, dict) else {}
     except Exception as e:  # noqa: BLE001
         print(f"[brief] synthesize failed: {e}")

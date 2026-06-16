@@ -80,6 +80,13 @@ class SynthesizeTest(unittest.TestCase):
             n = synthesize_narrative(ITEMS, "Loop Engineering")
         self.assertEqual(n, {})
 
+    def test_tolerates_trailing_commas(self):
+        payload = '{"headline":"H","themes":[{"n":"01","title":"t","html":"h"},],}'
+        with patch("services.last30days_brief.chat", return_value=payload):
+            n = synthesize_narrative(ITEMS, "Loop Engineering")
+        self.assertEqual(n["headline"], "H")
+        self.assertEqual(len(n["themes"]), 1)
+
 
 class BuildBriefTest(unittest.TestCase):
     def test_build_merges_aggregate_and_narrative(self):

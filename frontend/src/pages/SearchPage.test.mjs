@@ -24,6 +24,17 @@ test('SearchPage renders the brief dashboard sections when done', () => {
   }
 })
 
+test('SearchPage persists and restores brief/job across remounts', () => {
+  // saves brief + in-flight job to sessionStorage
+  assert.match(source, /sessionStorage\.setItem\('sf_brief'/)
+  assert.match(source, /sessionStorage\.setItem\('sf_job'/)
+  // restores on mount via useEffect, and resumes polling for an unfinished job
+  assert.match(source, /useEffect/)
+  assert.match(source, /sessionStorage\.getItem\('sf_brief'\)/)
+  assert.match(source, /sessionStorage\.getItem\('sf_job'\)/)
+  assert.match(source, /pollJob\(jid, token, t\)/)
+})
+
 test('SearchPage supports all six platforms and guards unknown ones', () => {
   for (const p of ['reddit', 'youtube', 'tiktok', 'instagram']) {
     assert.match(source, new RegExp(`${p}:`))

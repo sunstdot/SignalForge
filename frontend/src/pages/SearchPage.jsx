@@ -1,4 +1,4 @@
-import { useState, useRef, useCallback } from 'react'
+import { useState, useRef, useCallback, useEffect } from 'react'
 
 /* ------------------------------------------------------------------ *
  * 情报搜索 · 输入 topic → 实时跑 last30days → 渲染综合简报 + 情报时间线
@@ -44,33 +44,71 @@ export default function SearchPage() {
   const inputRef = useRef(null)
   const tokenRef = useRef(0)
 
+  // 轮询某个 job 直到 done/error；done 时把 brief 存入 sessionStorage 以便刷新后恢复
+  const pollJob = useCallback(async (jid, token, t) => {
+    try {
+      for (let i = 0; i < 400; i++) {        // 先查再睡，最多约 20 分钟
+        if (tokenRef.current !== token) return
+        const job = await fetch(`/api/search/brief/${jid}`).then(r => r.json())
+        if (job.status === 'done') {
+          if (tokenRef.current !== token) return
+          setBrief(job.brief); setStatus('done')
+          try {
+            sessionStorage.setItem('sf_brief', JSON.stringify(job.brief))
+            sessionStorage.setItem('sf_topic', t)
+            sessionStorage.removeItem('sf_job')
+          } catch { /* ignore quota */ }
+          return
+        }
+        if (job.status === 'error') {
+          setError(job.error || '生成失败'); setStatus('error')
+          try { sessionStorage.removeItem('sf_job') } catch { /* ignore */ }
+          return
+        }
+        await sleep(3000)
+      }
+      setError('生成超时，请稍后重试'); setStatus('error')
+    } catch (e) {
+      setError(String(e)); setStatus('error')
+    }
+  }, [])
+
   const doSearch = useCallback(async () => {
     const t = query.trim()
     if (!t) return
     const token = ++tokenRef.current
     setStatus('running'); setError(''); setBrief(null); setTopic(t)
     setPlat('all'); setFeatOnly(false); setOpen({}); setAnswered({})
+    try { sessionStorage.removeItem('sf_brief') } catch { /* ignore */ }
+    let start
     try {
-      const start = await fetch('/api/search/brief', {
+      start = await fetch('/api/search/brief', {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ topic: t }),
       }).then(r => r.json())
-      const jid = start.job_id
-      for (let i = 0; i < 200; i++) {        // 轮询，最多约 10 分钟
-        await sleep(3000)
-        if (tokenRef.current !== token) return
-        const job = await fetch(`/api/search/brief/${jid}`).then(r => r.json())
-        if (job.status === 'done') {
-          if (tokenRef.current !== token) return
-          setBrief(job.brief); setStatus('done'); return
-        }
-        if (job.status === 'error') { setError(job.error || '生成失败'); setStatus('error'); return }
+    } catch (e) { setError(String(e)); setStatus('error'); return }
+    try { sessionStorage.setItem('sf_job', JSON.stringify({ jid: start.job_id, topic: t })) } catch { /* ignore */ }
+    pollJob(start.job_id, token, t)
+  }, [query, pollJob])
+
+  // 刷新/重新挂载后恢复：优先用已完成的 brief，否则续上未完成的 job 继续轮询
+  useEffect(() => {
+    try {
+      const savedBrief = sessionStorage.getItem('sf_brief')
+      if (savedBrief) {
+        const t = sessionStorage.getItem('sf_topic') || ''
+        setBrief(JSON.parse(savedBrief)); setTopic(t); setQuery(t); setStatus('done')
+        return
       }
-      setError('生成超时，请稍后重试'); setStatus('error')
-    } catch (e) {
-      setError(String(e)); setStatus('error')
-    }
-  }, [query])
+      const savedJob = sessionStorage.getItem('sf_job')
+      if (savedJob) {
+        const { jid, topic: t } = JSON.parse(savedJob)
+        const token = ++tokenRef.current
+        setTopic(t); setQuery(t); setStatus('running')
+        pollJob(jid, token, t)
+      }
+    } catch { /* ignore */ }
+  }, [pollJob])
 
   const toggleDeep = useCallback((k) => {
     setOpen(o => ({ ...o, [k]: !o[k] }))
