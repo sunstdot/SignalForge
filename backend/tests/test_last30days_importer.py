@@ -161,22 +161,31 @@ class WingsbotTriggerTest(unittest.TestCase):
         self.assertEqual(picked.name, "new.md")
 
 
-class RunAsyncCleanTest(unittest.TestCase):
+class RunAsyncTest(unittest.TestCase):
     def test_returns_value(self):
-        import asyncio
-        from services.last30days_importer import _run_async_clean
+        from services.last30days_importer import _run_async
 
         async def c():
             return 7
 
-        self.assertEqual(_run_async_clean(c()), 7)
+        self.assertEqual(_run_async(c()), 7)
 
-    def test_subprocess_no_event_loop_closed_noise(self):
-        """跑一个会 spawn 子进程的协程，确认 loop 关闭前 transport 已被终结，
-        不再出现 'Event loop is closed' 的 __del__ 噪音。"""
+    def test_reuses_persistent_open_loop(self):
+        """常驻 loop 跨调用复用且永不关闭——litellm 全局态才不会绑死到死 loop。"""
         import asyncio
-        import gc
-        from services.last30days_importer import _run_async_clean
+        from services import last30days_importer as mod
+
+        async def get_loop():
+            return asyncio.get_running_loop()
+
+        l1 = mod._run_async(get_loop())
+        l2 = mod._run_async(get_loop())
+        self.assertIs(l1, l2)
+        self.assertFalse(l1.is_closed())
+
+    def test_runs_subprocess_coro(self):
+        import asyncio
+        from services.last30days_importer import _run_async
 
         async def c():
             proc = await asyncio.create_subprocess_exec(
@@ -187,22 +196,7 @@ class RunAsyncCleanTest(unittest.TestCase):
             await proc.wait()
             return "done"
 
-        unraisable = []
-        old_hook = sys.unraisablehook
-        sys.unraisablehook = lambda arg: unraisable.append(arg)
-        try:
-            result = _run_async_clean(c())
-            gc.collect()  # 若有 transport 漏到 loop 关闭后，这里会触发噪音
-        finally:
-            sys.unraisablehook = old_hook
-
-        self.assertEqual(result, "done")
-        leaked = [
-            u for u in unraisable
-            if isinstance(getattr(u, "exc_value", None), RuntimeError)
-            and "Event loop is closed" in str(u.exc_value)
-        ]
-        self.assertEqual(leaked, [], f"event-loop-closed noise leaked: {leaked}")
+        self.assertEqual(_run_async(c()), "done")
 
 
 if __name__ == "__main__":

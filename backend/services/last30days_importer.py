@@ -1,8 +1,8 @@
 """last30days raw v3 markdown → SignalForge content items."""
 import asyncio
-import gc
 import hashlib
 import re
+import threading
 import time
 from pathlib import Path
 from typing import Dict, List, Optional
@@ -220,25 +220,31 @@ def _newest_report_since(start: float):
     return max(cands, key=lambda p: p.stat().st_mtime) if cands else None
 
 
-def _run_async_clean(coro):
-    """在专用事件循环上跑协程，关闭前先终结子进程 transport，避免其 __del__
-    命中已关闭的 loop 抛出 'RuntimeError: Event loop is closed' 噪音。"""
-    loop = asyncio.new_event_loop()
-    asyncio.set_event_loop(loop)
-    try:
-        return loop.run_until_complete(coro)
-    finally:
-        try:
-            loop.run_until_complete(loop.shutdown_asyncgens())
-            # loop 仍打开时强制回收：让子进程 transport 的终结器在活的 loop 上执行，
-            gc.collect()
-            # 再跑一拍，flush 终结器里 call_soon 排进来的 connection_lost 回调
-            loop.run_until_complete(asyncio.sleep(0.1))
-        except Exception:
-            pass
-        finally:
-            asyncio.set_event_loop(None)
-            loop.close()
+_loop = None
+_loop_lock = threading.Lock()
+
+
+def _persistent_loop():
+    """进程级常驻事件循环（独立线程）。
+
+    wingsbot 走 litellm 调 LLM；litellm 会在事件循环上注册全局后台任务
+    （LoggingWorker）和 httpx/aiohttp 连接池。若每次新建并关闭一个临时 loop，
+    这些全局对象会绑死在已关闭的 loop 上，触发 'Event loop is closed' /
+    'Task was destroyed but it is pending' / 'aclose(): asynchronous generator
+    is already running' 等噪音。用一个永不关闭的常驻 loop 即可根治。
+    """
+    global _loop
+    with _loop_lock:
+        if _loop is None or _loop.is_closed():
+            _loop = asyncio.new_event_loop()
+            threading.Thread(target=_loop.run_forever, daemon=True,
+                             name="last30days-loop").start()
+    return _loop
+
+
+def _run_async(coro):
+    """把协程提交到常驻事件循环并同步等待结果。"""
+    return asyncio.run_coroutine_threadsafe(coro, _persistent_loop()).result()
 
 
 def _trigger_wingsbot(topic: str) -> Path:
@@ -261,8 +267,6 @@ def _trigger_wingsbot(topic: str) -> Path:
         f"完成后把原始结果（raw v3 markdown）保存到 {L30_OUTPUT_DIR}/。"
     )
 
-    # AgentLoop 在协程内构建：协程结束后其引用（连同子进程 transport）即可被回收，
-    # 这样 _run_async_clean 的 gc.collect() 能在 loop 关闭前终结它们。
     async def _run():
         d = config.agents.defaults
         agent_loop = AgentLoop(
@@ -286,7 +290,7 @@ def _trigger_wingsbot(topic: str) -> Path:
         finally:
             await agent_loop.close_mcp()
 
-    response = _run_async_clean(_run())
+    response = _run_async(_run())
     md_path = _newest_report_since(start)
     if md_path is None:
         raise RuntimeError(
