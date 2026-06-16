@@ -1,5 +1,6 @@
 """last30days raw v3 markdown → SignalForge content items."""
 import asyncio
+import gc
 import hashlib
 import re
 import time
@@ -159,6 +160,27 @@ def _newest_report_since(start: float):
     return max(cands, key=lambda p: p.stat().st_mtime) if cands else None
 
 
+def _run_async_clean(coro):
+    """在专用事件循环上跑协程，关闭前先终结子进程 transport，避免其 __del__
+    命中已关闭的 loop 抛出 'RuntimeError: Event loop is closed' 噪音。"""
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+    try:
+        return loop.run_until_complete(coro)
+    finally:
+        try:
+            loop.run_until_complete(loop.shutdown_asyncgens())
+            # loop 仍打开时强制回收：让子进程 transport 的终结器在活的 loop 上执行，
+            gc.collect()
+            # 再跑一拍，flush 终结器里 call_soon 排进来的 connection_lost 回调
+            loop.run_until_complete(asyncio.sleep(0.1))
+        except Exception:
+            pass
+        finally:
+            asyncio.set_event_loop(None)
+            loop.close()
+
+
 def _trigger_wingsbot(topic: str) -> Path:
     try:
         from wingsbot.config.loader import load_config, get_data_dir
@@ -174,35 +196,37 @@ def _trigger_wingsbot(topic: str) -> Path:
 
     start = time.time()
     config = load_config()
-    d = config.agents.defaults
-    agent_loop = AgentLoop(
-        bus=MessageBus(),
-        provider=_make_provider(config),
-        workspace=config.workspace_path,
-        model=d.model,
-        temperature=d.temperature,
-        max_tokens=d.max_tokens,
-        max_iterations=d.max_tool_iterations,
-        memory_window=d.memory_window,
-        disabled_skills=d.disabled_skills,
-        brave_api_key=config.tools.web.search.api_key or None,
-        exec_config=config.tools.exec,
-        cron_service=CronService(get_data_dir() / "cron" / "jobs.json"),
-        restrict_to_workspace=config.tools.restrict_to_workspace,
-        mcp_servers=config.tools.mcp_servers,
-    )
     prompt = (
         f"使用 last30days 技能研究话题：{topic}。"
         f"完成后把原始结果（raw v3 markdown）保存到 {L30_OUTPUT_DIR}/。"
     )
 
+    # AgentLoop 在协程内构建：协程结束后其引用（连同子进程 transport）即可被回收，
+    # 这样 _run_async_clean 的 gc.collect() 能在 loop 关闭前终结它们。
     async def _run():
+        d = config.agents.defaults
+        agent_loop = AgentLoop(
+            bus=MessageBus(),
+            provider=_make_provider(config),
+            workspace=config.workspace_path,
+            model=d.model,
+            temperature=d.temperature,
+            max_tokens=d.max_tokens,
+            max_iterations=d.max_tool_iterations,
+            memory_window=d.memory_window,
+            disabled_skills=d.disabled_skills,
+            brave_api_key=config.tools.web.search.api_key or None,
+            exec_config=config.tools.exec,
+            cron_service=CronService(get_data_dir() / "cron" / "jobs.json"),
+            restrict_to_workspace=config.tools.restrict_to_workspace,
+            mcp_servers=config.tools.mcp_servers,
+        )
         try:
             return await agent_loop.process_direct(prompt, session_key="signalforge:last30days")
         finally:
             await agent_loop.close_mcp()
 
-    response = asyncio.run(_run())
+    response = _run_async_clean(_run())
     md_path = _newest_report_since(start)
     if md_path is None:
         raise RuntimeError(

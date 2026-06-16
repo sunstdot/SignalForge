@@ -136,5 +136,49 @@ class WingsbotTriggerTest(unittest.TestCase):
         self.assertEqual(picked.name, "new.md")
 
 
+class RunAsyncCleanTest(unittest.TestCase):
+    def test_returns_value(self):
+        import asyncio
+        from services.last30days_importer import _run_async_clean
+
+        async def c():
+            return 7
+
+        self.assertEqual(_run_async_clean(c()), 7)
+
+    def test_subprocess_no_event_loop_closed_noise(self):
+        """跑一个会 spawn 子进程的协程，确认 loop 关闭前 transport 已被终结，
+        不再出现 'Event loop is closed' 的 __del__ 噪音。"""
+        import asyncio
+        import gc
+        from services.last30days_importer import _run_async_clean
+
+        async def c():
+            proc = await asyncio.create_subprocess_exec(
+                sys.executable, "-c", "pass",
+                stdout=asyncio.subprocess.DEVNULL,
+                stderr=asyncio.subprocess.DEVNULL,
+            )
+            await proc.wait()
+            return "done"
+
+        unraisable = []
+        old_hook = sys.unraisablehook
+        sys.unraisablehook = lambda arg: unraisable.append(arg)
+        try:
+            result = _run_async_clean(c())
+            gc.collect()  # 若有 transport 漏到 loop 关闭后，这里会触发噪音
+        finally:
+            sys.unraisablehook = old_hook
+
+        self.assertEqual(result, "done")
+        leaked = [
+            u for u in unraisable
+            if isinstance(getattr(u, "exc_value", None), RuntimeError)
+            and "Event loop is closed" in str(u.exc_value)
+        ]
+        self.assertEqual(leaked, [], f"event-loop-closed noise leaked: {leaked}")
+
+
 if __name__ == "__main__":
     unittest.main()
