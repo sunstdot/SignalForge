@@ -31,6 +31,15 @@ const RH = (s) => <span dangerouslySetInnerHTML={{ __html: richHtml(s) }} />
 
 const sleep = (ms) => new Promise(r => setTimeout(r, ms))
 
+// 静态部署模式：用 VITE_STATIC_DATA=1 构建时，前端直接读 data/search_cache 下的缓存文件，
+// 不请求后端接口（这样可以只部署前端就看到已缓存的情报）。
+const STATIC = import.meta.env.VITE_STATIC_DATA === '1'
+const slugify = (s) => (s || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'topic'
+const briefUrl = (topic, slug) =>
+  STATIC
+    ? `/data/search_cache/briefs/${slug || slugify(topic)}.json`
+    : `/api/search/brief?topic=${encodeURIComponent(topic)}`
+
 export default function SearchPage() {
   const [query, setQuery] = useState('')
   const [brief, setBrief] = useState(null)
@@ -47,9 +56,20 @@ export default function SearchPage() {
 
   const loadHistory = useCallback(async () => {
     try {
-      const r = await fetch('/api/search/history')
-      if (r.ok) setHistory((await r.json()).history || [])
+      if (STATIC) {
+        const r = await fetch('/data/search_cache/history.json')
+        setHistory(r.ok ? await r.json() : [])
+      } else {
+        const r = await fetch('/api/search/history')
+        if (r.ok) setHistory((await r.json()).history || [])
+      }
     } catch { /* ignore */ }
+  }, [])
+
+  // 读取某话题已缓存的 brief（静态模式读 data 文件，否则走后端）
+  const fetchCachedBrief = useCallback(async (topic, slug) => {
+    const r = await fetch(briefUrl(topic, slug))
+    return r.ok ? await r.json() : null
   }, [])
 
   // 轮询某个 job 直到 done/error；done 时把 brief 存入 sessionStorage 以便刷新后恢复
@@ -82,22 +102,23 @@ export default function SearchPage() {
     }
   }, [loadHistory])
 
-  // 点搜索记录：直接读服务端缓存的 brief 文件，不重新抓取
-  const openCached = useCallback(async (t) => {
+  // 点搜索记录：直接读缓存，不重新抓取
+  const openCached = useCallback(async (entry) => {
+    const t = entry.topic
     const token = ++tokenRef.current
     setQuery(t); setTopic(t); setError(''); setBrief(null); setStatus('running')
     setPlat('all'); setFeatOnly(false); setOpen({}); setAnswered({})
     try {
-      const r = await fetch(`/api/search/brief?topic=${encodeURIComponent(t)}`)
+      const b = await fetchCachedBrief(t, entry.slug)
       if (tokenRef.current !== token) return
-      if (r.ok) {
-        setBrief(await r.json()); setStatus('done')
+      if (b) {
+        setBrief(b); setStatus('done')
         try { sessionStorage.setItem('sf_topic', t); sessionStorage.removeItem('sf_job') } catch { /* ignore */ }
       } else {
         setError('该记录的缓存已不存在，请重新搜索'); setStatus('error')
       }
     } catch (e) { setError(String(e)); setStatus('error') }
-  }, [])
+  }, [fetchCachedBrief])
 
   // 回到首页（显示搜索记录）
   const goHome = useCallback(() => {
@@ -114,6 +135,20 @@ export default function SearchPage() {
     setStatus('running'); setError(''); setBrief(null); setTopic(t)
     setPlat('all'); setFeatOnly(false); setOpen({}); setAnswered({})
     try { sessionStorage.removeItem('sf_topic') } catch { /* ignore */ }
+    // 静态部署模式：不发起实时研究，只尝试读该话题的缓存
+    if (STATIC) {
+      try {
+        const b = await fetchCachedBrief(t)
+        if (tokenRef.current !== token) return
+        if (b) {
+          setBrief(b); setStatus('done')
+          try { sessionStorage.setItem('sf_topic', t) } catch { /* ignore */ }
+        } else {
+          setError('静态部署模式：没有该话题的缓存，请从下方搜索记录选择'); setStatus('error')
+        }
+      } catch (e) { setError(String(e)); setStatus('error') }
+      return
+    }
     let start
     try {
       start = await fetch('/api/search/brief', {
@@ -123,7 +158,7 @@ export default function SearchPage() {
     } catch (e) { setError(String(e)); setStatus('error'); return }
     try { sessionStorage.setItem('sf_job', JSON.stringify({ jid: start.job_id, topic: t })) } catch { /* ignore */ }
     pollJob(start.job_id, token, t)
-  }, [query, pollJob])
+  }, [query, pollJob, fetchCachedBrief])
 
   // 刷新/重新挂载后恢复：未完成的 job 续上轮询；否则从服务端文件取回上次话题的 brief
   useEffect(() => {
@@ -131,7 +166,7 @@ export default function SearchPage() {
     ;(async () => {
       try {
         const savedJob = sessionStorage.getItem('sf_job')
-        if (savedJob) {
+        if (!STATIC && savedJob) {           // 静态模式没有进行中的 job
           const { jid, topic: t } = JSON.parse(savedJob)
           const token = ++tokenRef.current
           setTopic(t); setQuery(t); setStatus('running')
@@ -141,13 +176,13 @@ export default function SearchPage() {
         const t = sessionStorage.getItem('sf_topic')
         if (t) {
           const token = ++tokenRef.current
-          const r = await fetch(`/api/search/brief?topic=${encodeURIComponent(t)}`)
+          const b = await fetchCachedBrief(t)
           if (tokenRef.current !== token) return
-          if (r.ok) { setBrief(await r.json()); setTopic(t); setQuery(t); setStatus('done') }
+          if (b) { setBrief(b); setTopic(t); setQuery(t); setStatus('done') }
         }
       } catch { /* ignore */ }
     })()
-  }, [pollJob, loadHistory])
+  }, [pollJob, loadHistory, fetchCachedBrief])
 
   const toggleDeep = useCallback((k) => {
     setOpen(o => ({ ...o, [k]: !o[k] }))
@@ -186,7 +221,7 @@ export default function SearchPage() {
                 <div className="hh"><h3>搜索记录</h3><span className="meta">{history.length} 条 · 点击查看缓存</span></div>
                 <div className="hlist">
                   {history.map(h => (
-                    <button className="hrow" key={h.slug} onClick={() => openCached(h.topic)}>
+                    <button className="hrow" key={h.slug} onClick={() => openCached(h)}>
                       <span className="ht">{h.topic}</span>
                       <span className="hn">{h.total} 信源</span>
                       <span className="hd">{(h.updated_at || '').slice(0, 10)}</span>

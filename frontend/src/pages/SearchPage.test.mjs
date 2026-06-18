@@ -50,6 +50,16 @@ test('SearchPage shows search history and opens a cached record', () => {
   assert.match(source, /goHome/)
 })
 
+test('SearchPage has a static (backend-free) data mode', () => {
+  // build flag gate
+  assert.match(source, /import\.meta\.env\.VITE_STATIC_DATA/)
+  // static mode reads cached JSON files under /data/search_cache instead of /api
+  assert.match(source, /\/data\/search_cache\/history\.json/)
+  assert.match(source, /\/data\/search_cache\/briefs\//)
+  // slugify so a topic maps to its cached brief file
+  assert.match(source, /slugify/)
+})
+
 test('SearchPage supports all six platforms and guards unknown ones', () => {
   for (const p of ['reddit', 'youtube', 'tiktok', 'instagram']) {
     assert.match(source, new RegExp(`${p}:`))
