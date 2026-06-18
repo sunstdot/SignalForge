@@ -41,8 +41,16 @@ export default function SearchPage() {
   const [featOnly, setFeatOnly] = useState(false)
   const [open, setOpen] = useState({})
   const [answered, setAnswered] = useState({})
+  const [history, setHistory] = useState([])
   const inputRef = useRef(null)
   const tokenRef = useRef(0)
+
+  const loadHistory = useCallback(async () => {
+    try {
+      const r = await fetch('/api/search/history')
+      if (r.ok) setHistory((await r.json()).history || [])
+    } catch { /* ignore */ }
+  }, [])
 
   // 轮询某个 job 直到 done/error；done 时把 brief 存入 sessionStorage 以便刷新后恢复
   const pollJob = useCallback(async (jid, token, t) => {
@@ -58,6 +66,7 @@ export default function SearchPage() {
             sessionStorage.setItem('sf_topic', t)
             sessionStorage.removeItem('sf_job')
           } catch { /* ignore quota */ }
+          loadHistory()
           return
         }
         if (job.status === 'error') {
@@ -71,7 +80,32 @@ export default function SearchPage() {
     } catch (e) {
       setError(String(e)); setStatus('error')
     }
+  }, [loadHistory])
+
+  // 点搜索记录：直接读服务端缓存的 brief 文件，不重新抓取
+  const openCached = useCallback(async (t) => {
+    const token = ++tokenRef.current
+    setQuery(t); setTopic(t); setError(''); setBrief(null); setStatus('running')
+    setPlat('all'); setFeatOnly(false); setOpen({}); setAnswered({})
+    try {
+      const r = await fetch(`/api/search/brief?topic=${encodeURIComponent(t)}`)
+      if (tokenRef.current !== token) return
+      if (r.ok) {
+        setBrief(await r.json()); setStatus('done')
+        try { sessionStorage.setItem('sf_topic', t); sessionStorage.removeItem('sf_job') } catch { /* ignore */ }
+      } else {
+        setError('该记录的缓存已不存在，请重新搜索'); setStatus('error')
+      }
+    } catch (e) { setError(String(e)); setStatus('error') }
   }, [])
+
+  // 回到首页（显示搜索记录）
+  const goHome = useCallback(() => {
+    ++tokenRef.current
+    setStatus('idle'); setBrief(null); setError('')
+    try { sessionStorage.removeItem('sf_topic'); sessionStorage.removeItem('sf_job') } catch { /* ignore */ }
+    loadHistory()
+  }, [loadHistory])
 
   const doSearch = useCallback(async () => {
     const t = query.trim()
@@ -93,7 +127,8 @@ export default function SearchPage() {
 
   // 刷新/重新挂载后恢复：未完成的 job 续上轮询；否则从服务端文件取回上次话题的 brief
   useEffect(() => {
-    (async () => {
+    loadHistory()
+    ;(async () => {
       try {
         const savedJob = sessionStorage.getItem('sf_job')
         if (savedJob) {
@@ -112,7 +147,7 @@ export default function SearchPage() {
         }
       } catch { /* ignore */ }
     })()
-  }, [pollJob])
+  }, [pollJob, loadHistory])
 
   const toggleDeep = useCallback((k) => {
     setOpen(o => ({ ...o, [k]: !o[k] }))
@@ -124,7 +159,9 @@ export default function SearchPage() {
       <style>{STYLES}</style>
 
       <header className="sf-appbar">
-        <div className="sf-ab-brand"><span className="m">🔍</span>情报搜索</div>
+        <div className="sf-ab-brand" onClick={goHome} style={{ cursor: 'pointer' }} title="返回搜索记录">
+          <span className="m">🔍</span>情报搜索
+        </div>
         <form className="sf-ab-search" onSubmit={(e) => { e.preventDefault(); doSearch() }}>
           <span className="si">🔍</span>
           <input ref={inputRef} value={query} onChange={(e) => setQuery(e.target.value)}
@@ -138,10 +175,27 @@ export default function SearchPage() {
 
       <div className="sf-content">
         {status === 'idle' && (
-          <div className="sf-empty">
-            <div className="ic">📡</div>
-            <div className="t1">输入一个话题，开始实时情报研究</div>
-            <div className="t2">从 Reddit / X / Hacker News / YouTube / TikTok / Instagram 聚合最近 30 天的讨论，合成综合简报与情报时间线</div>
+          <div className="sf-home">
+            <div className="sf-empty">
+              <div className="ic">📡</div>
+              <div className="t1">输入一个话题，开始实时情报研究</div>
+              <div className="t2">从 Reddit / X / Hacker News / YouTube / TikTok / Instagram 聚合最近 30 天的讨论，合成综合简报与情报时间线</div>
+            </div>
+            {history.length > 0 && (
+              <div className="sf-history">
+                <div className="hh"><h3>搜索记录</h3><span className="meta">{history.length} 条 · 点击查看缓存</span></div>
+                <div className="hlist">
+                  {history.map(h => (
+                    <button className="hrow" key={h.slug} onClick={() => openCached(h.topic)}>
+                      <span className="ht">{h.topic}</span>
+                      <span className="hn">{h.total} 信源</span>
+                      <span className="hd">{(h.updated_at || '').slice(0, 10)}</span>
+                      <span className="hgo">→</span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         )}
 
@@ -415,6 +469,23 @@ const STYLES = `
 .sf-load{ display:flex; gap:6px; justify-content:center; margin-top:22px; }
 .sf-load span{ width:8px; height:8px; border-radius:50%; background:var(--accent-blue); animation:sfBlink 1.2s infinite; }
 .sf-load span:nth-child(2){ animation-delay:.2s; } .sf-load span:nth-child(3){ animation-delay:.4s; }
+
+/* search history */
+.sf-home{ max-width:680px; margin:0 auto; }
+.sf-home .sf-empty{ padding:64px 0 28px; }
+.sf-history{ margin-top:6px; }
+.sf-history .hh{ display:flex; align-items:baseline; justify-content:space-between; margin:0 0 12px; }
+.sf-history .hh h3{ font-size:13px; font-weight:700; color:var(--text-primary); margin:0; letter-spacing:.02em; }
+.sf-history .hh .meta{ font-size:11px; color:var(--text-muted); }
+.sf-history .hlist{ display:flex; flex-direction:column; gap:8px; }
+.sf-history .hrow{ display:flex; align-items:center; gap:12px; width:100%; text-align:left; cursor:pointer;
+  background:#fff; border:1px solid var(--border); border-radius:12px; padding:13px 16px; transition:all .12s; }
+.sf-history .hrow:hover{ border-color:#cdd9f2; box-shadow:0 4px 14px rgba(37,99,235,.07); transform:translateY(-1px); }
+.sf-history .hrow .ht{ font-size:14.5px; font-weight:600; color:var(--text-primary); flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.sf-history .hrow .hn{ font-size:11.5px; color:var(--text-secondary); background:var(--bg-secondary); border:1px solid var(--border); border-radius:6px; padding:2px 8px; flex:0 0 auto; }
+.sf-history .hrow .hd{ font-size:11.5px; color:var(--text-muted); flex:0 0 auto; font-variant-numeric:tabular-nums; }
+.sf-history .hrow .hgo{ color:var(--text-muted); flex:0 0 auto; }
+.sf-history .hrow:hover .hgo{ color:#1d4fd7; }
 
 /* result bar */
 .sf-resultbar{ display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:30px; font-size:12.5px; color:var(--text-muted); }

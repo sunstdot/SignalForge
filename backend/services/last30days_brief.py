@@ -1,6 +1,7 @@
 """把 last30days 条目聚合 + LLM 合成成前端用的 brief（叙事仪表盘）对象。"""
 import json
 import re
+import threading
 from collections import Counter, defaultdict
 from datetime import datetime
 from pathlib import Path
@@ -10,6 +11,8 @@ from services.storage import DATA_DIR, get_content_items
 from services.llm_client import chat
 
 BRIEFS_DIR = DATA_DIR / "last30days" / "briefs"
+HISTORY_FILE = DATA_DIR / "last30days" / "history.json"
+_HISTORY_LOCK = threading.Lock()
 
 FEATURED_THRESHOLD = 8  # relevance_score >= 此值算「精选」
 
@@ -44,6 +47,30 @@ def load_brief(slug: str):
     if p.exists():
         return json.loads(p.read_text(encoding="utf-8"))
     return None
+
+
+def load_history() -> List[Dict]:
+    """搜索记录（最近在前）：[{slug, topic, total, updated_at}]。"""
+    if HISTORY_FILE.exists():
+        try:
+            return json.loads(HISTORY_FILE.read_text(encoding="utf-8"))
+        except Exception:  # noqa: BLE001
+            return []
+    return []
+
+
+def record_history(topic: str, slug: str, total: int) -> None:
+    """把一次搜索写进记录：按 slug 去重、最近置顶、最多保留 50 条。"""
+    with _HISTORY_LOCK:
+        hist = load_history()
+        hist = [h for h in hist if h.get("slug") != slug]
+        hist.insert(0, {
+            "slug": slug, "topic": topic, "total": total,
+            "updated_at": datetime.now().isoformat(timespec="seconds"),
+        })
+        hist = hist[:50]
+        HISTORY_FILE.parent.mkdir(parents=True, exist_ok=True)
+        HISTORY_FILE.write_text(json.dumps(hist, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
 def aggregate_brief(items: List[Dict], topic: str, took: str = "—") -> Dict:
@@ -203,7 +230,9 @@ def build_brief(topic: str, persist: bool = True) -> Dict:
             it["reason"] = reasons.get(it.get("id"), it.get("reason", ""))
 
     if persist:
+        slug = _slug(topic)
         BRIEFS_DIR.mkdir(parents=True, exist_ok=True)
-        (BRIEFS_DIR / f"{_slug(topic)}.json").write_text(
+        (BRIEFS_DIR / f"{slug}.json").write_text(
             json.dumps(brief, ensure_ascii=False, indent=2), encoding="utf-8")
+        record_history(topic, slug, brief["meta"]["total"])
     return brief

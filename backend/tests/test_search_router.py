@@ -66,6 +66,13 @@ class SearchBriefRouterTest(unittest.TestCase):
             r = self.client.get("/api/search/brief", params={"topic": "nope"})
         self.assertEqual(r.status_code, 404)
 
+    def test_history_endpoint(self):
+        hist = [{"slug": "x", "topic": "X", "total": 5, "updated_at": "2026-06-16T10:00:00"}]
+        with patch("routers.search.load_history", return_value=hist):
+            r = self.client.get("/api/search/history")
+        self.assertEqual(r.status_code, 200)
+        self.assertEqual(r.json()["history"][0]["topic"], "X")
+
     def test_brief_job_error(self):
         with patch("routers.search.run_last30days_via_wingsbot", side_effect=RuntimeError("boom")):
             jid = self.client.post("/api/search/brief", json={"topic": "x"}).json()["job_id"]

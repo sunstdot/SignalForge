@@ -8,7 +8,7 @@ from fastapi import APIRouter, HTTPException
 
 from services.last30days_jobs import create_job, finish_job, get_job
 from services.last30days_importer import run_last30days_via_wingsbot
-from services.last30days_brief import build_brief, brief_slug, load_brief
+from services.last30days_brief import build_brief, brief_slug, load_brief, load_history
 
 router = APIRouter()
 
@@ -31,6 +31,12 @@ async def start_brief(request: dict):
     job_id = create_job(topic)
     threading.Thread(target=_run_brief, args=(job_id, topic), daemon=True).start()
     return {"job_id": job_id, "status": "running", "topic": topic}
+
+
+@router.get("/history")
+async def search_history():
+    """返回搜索记录（最近在前），点击可读取对应的缓存 brief。"""
+    return {"history": load_history()}
 
 
 @router.get("/brief")

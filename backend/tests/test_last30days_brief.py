@@ -110,6 +110,27 @@ class BuildBriefTest(unittest.TestCase):
         self.assertEqual(t1["reason"], "key reason")
 
 
+class HistoryTest(unittest.TestCase):
+    def test_record_dedups_and_orders_newest_first(self):
+        import tempfile
+        import services.last30days_brief as mod
+        with tempfile.TemporaryDirectory() as d:
+            with patch.object(mod, "HISTORY_FILE", Path(d) / "history.json"):
+                mod.record_history("Loop Engineering", "loop-engineering", 5)
+                mod.record_history("Agents", "agents", 3)
+                mod.record_history("Loop Engineering", "loop-engineering", 7)  # re-search
+                hist = mod.load_history()
+        self.assertEqual([h["slug"] for h in hist], ["loop-engineering", "agents"])
+        self.assertEqual(hist[0]["total"], 7)  # updated count, deduped
+
+    def test_load_history_empty_when_missing(self):
+        import tempfile
+        import services.last30days_brief as mod
+        with tempfile.TemporaryDirectory() as d:
+            with patch.object(mod, "HISTORY_FILE", Path(d) / "nope.json"):
+                self.assertEqual(mod.load_history(), [])
+
+
 class BriefFileTest(unittest.TestCase):
     def test_build_persists_file_and_load_reads_it(self):
         import tempfile

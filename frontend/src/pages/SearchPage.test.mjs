@@ -40,6 +40,16 @@ test('SearchPage restores on mount: resume job or refetch cached brief from serv
   assert.match(source, /pollJob\(jid, token, t\)/)
 })
 
+test('SearchPage shows search history and opens a cached record', () => {
+  assert.match(source, /\/api\/search\/history/)
+  assert.match(source, /搜索记录/)
+  // clicking a record reads the cached brief file (no re-run)
+  assert.match(source, /openCached/)
+  assert.match(source, /\/api\/search\/brief\?topic=/)
+  // title returns to the history home
+  assert.match(source, /goHome/)
+})
+
 test('SearchPage supports all six platforms and guards unknown ones', () => {
   for (const p of ['reddit', 'youtube', 'tiktok', 'instagram']) {
     assert.match(source, new RegExp(`${p}:`))
