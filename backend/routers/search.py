@@ -35,8 +35,9 @@ async def start_brief(request: dict):
 
 @router.get("/history")
 async def search_history():
-    """返回搜索记录（最近在前），点击可读取对应的缓存 brief。"""
-    return {"history": load_history()}
+    """返回搜索记录（最近在前），只保留 brief 文件仍存在的记录。"""
+    hist = [h for h in load_history() if load_brief(h.get("slug", ""))]
+    return {"history": hist}
 
 
 @router.get("/brief")

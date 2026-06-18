@@ -137,10 +137,11 @@ class BriefFileTest(unittest.TestCase):
         import services.last30days_brief as mod
         from services.last30days_brief import brief_slug, load_brief
         with tempfile.TemporaryDirectory() as d:
-            with patch.object(mod, "BRIEFS_DIR", Path(d)):
-                with patch.object(mod, "_load_topic_items", return_value=ITEMS):
-                    with patch.object(mod, "synthesize_narrative", return_value={}):
-                        mod.build_brief("Loop Engineering")  # persist=True default
+            with patch.object(mod, "BRIEFS_DIR", Path(d)), \
+                 patch.object(mod, "HISTORY_FILE", Path(d) / "history.json"), \
+                 patch.object(mod, "_load_topic_items", return_value=ITEMS), \
+                 patch.object(mod, "synthesize_narrative", return_value={}):
+                mod.build_brief("Loop Engineering")  # persist=True default
                 slug = brief_slug("Loop Engineering")
                 self.assertEqual(slug, "loop-engineering")
                 self.assertTrue((Path(d) / "loop-engineering.json").exists())

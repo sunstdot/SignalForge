@@ -10,8 +10,10 @@ from typing import Dict, List
 from services.storage import DATA_DIR, get_content_items
 from services.llm_client import chat
 
-BRIEFS_DIR = DATA_DIR / "last30days" / "briefs"
-HISTORY_FILE = DATA_DIR / "last30days" / "history.json"
+# 情报搜索专用缓存目录（独立于其它功能的 data 子目录）
+SEARCH_CACHE_DIR = DATA_DIR / "search_cache"
+BRIEFS_DIR = SEARCH_CACHE_DIR / "briefs"
+HISTORY_FILE = SEARCH_CACHE_DIR / "history.json"
 _HISTORY_LOCK = threading.Lock()
 
 FEATURED_THRESHOLD = 8  # relevance_score >= 此值算「精选」

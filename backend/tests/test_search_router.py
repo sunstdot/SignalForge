@@ -66,12 +66,20 @@ class SearchBriefRouterTest(unittest.TestCase):
             r = self.client.get("/api/search/brief", params={"topic": "nope"})
         self.assertEqual(r.status_code, 404)
 
-    def test_history_endpoint(self):
+    def test_history_endpoint_keeps_entries_with_existing_brief(self):
         hist = [{"slug": "x", "topic": "X", "total": 5, "updated_at": "2026-06-16T10:00:00"}]
-        with patch("routers.search.load_history", return_value=hist):
+        with patch("routers.search.load_history", return_value=hist), \
+             patch("routers.search.load_brief", return_value={"meta": {"total": 5}}):
             r = self.client.get("/api/search/history")
         self.assertEqual(r.status_code, 200)
         self.assertEqual(r.json()["history"][0]["topic"], "X")
+
+    def test_history_endpoint_drops_stale_entries(self):
+        hist = [{"slug": "gone", "topic": "Gone", "total": 5}]
+        with patch("routers.search.load_history", return_value=hist), \
+             patch("routers.search.load_brief", return_value=None):  # brief file missing
+            r = self.client.get("/api/search/history")
+        self.assertEqual(r.json()["history"], [])
 
     def test_brief_job_error(self):
         with patch("routers.search.run_last30days_via_wingsbot", side_effect=RuntimeError("boom")):

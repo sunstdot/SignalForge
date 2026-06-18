@@ -7,7 +7,8 @@ from typing import Dict, Optional
 
 from services.storage import DATA_DIR
 
-JOBS_DIR = DATA_DIR / "last30days"
+# 情报搜索专用缓存目录（独立于其它功能的 data 子目录）
+JOBS_DIR = DATA_DIR / "search_cache"
 JOBS_FILE = JOBS_DIR / "jobs.json"
 
 _LOCK = threading.Lock()
