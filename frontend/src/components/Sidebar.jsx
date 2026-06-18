@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
+// 静态部署模式：只有「情报搜索」可脱离后端工作，侧栏只展示它，并跳过 /api 请求
+const STATIC = import.meta.env.VITE_STATIC_DATA === '1'
+
 function formatDate(dateStr) {
   const date = new Date(dateStr)
   const days = ['周日', '周一', '周二', '周三', '周四', '周五', '周六']
@@ -17,6 +20,7 @@ function Sidebar() {
   const latestDate = dates[0]?.date
 
   useEffect(() => {
+    if (STATIC) return
     fetch('/api/dates')
       .then(res => res.json())
       .then(data => {
@@ -43,24 +47,31 @@ function Sidebar() {
         <div className="text-xs font-semibold uppercase tracking-wider mb-2 px-3" style={{ color: 'var(--text-muted)' }}>
           Menu
         </div>
-        <Link to={latestDate ? `/briefing/${latestDate}` : '/'} className={`menu-item ${briefingMatch || location.pathname === '/' ? 'active' : ''}`}>
-          <span>📊</span><span>今日 AI 情报</span>
-        </Link>
-        <Link to={latestDate ? `/daily-opportunities/${latestDate}` : '/'} className={`menu-item ${opportunityMatch ? 'active' : ''}`}>
-          <span>🎯</span><span>今日 AI 情报机会</span>
-        </Link>
-        <Link to={latestDate ? `/opportunities/${latestDate}` : '/'} className={`menu-item ${isActive('/opportunities') ? 'active' : ''}`}>
-          <span>🧭</span><span>机会看板</span>
-        </Link>
-        <Link to="/experiments/live" className={`menu-item ${isActive('/experiments/live') ? 'active' : ''}`}>
-          <span>🔬</span><span>实验直播场</span>
-        </Link>
-        <Link to="/experiments/ideas" className={`menu-item ${isActive('/experiments/ideas') ? 'active' : ''}`}>
-          <span>💡</span><span>实验想法池</span>
-        </Link>
-        <div style={{ height: '1px', background: 'var(--border)', margin: '6px 8px' }} />
-        <Link to="/manual-intel" className={`menu-item ${isActive('/manual-intel') ? 'active' : ''}`}>
-          <span>📌</span><span>我的情报收藏</span>
+        {!STATIC && (
+          <>
+            <Link to={latestDate ? `/briefing/${latestDate}` : '/'} className={`menu-item ${briefingMatch || location.pathname === '/' ? 'active' : ''}`}>
+              <span>📊</span><span>今日 AI 情报</span>
+            </Link>
+            <Link to={latestDate ? `/daily-opportunities/${latestDate}` : '/'} className={`menu-item ${opportunityMatch ? 'active' : ''}`}>
+              <span>🎯</span><span>今日 AI 情报机会</span>
+            </Link>
+            <Link to={latestDate ? `/opportunities/${latestDate}` : '/'} className={`menu-item ${isActive('/opportunities') ? 'active' : ''}`}>
+              <span>🧭</span><span>机会看板</span>
+            </Link>
+            <Link to="/experiments/live" className={`menu-item ${isActive('/experiments/live') ? 'active' : ''}`}>
+              <span>🔬</span><span>实验直播场</span>
+            </Link>
+            <Link to="/experiments/ideas" className={`menu-item ${isActive('/experiments/ideas') ? 'active' : ''}`}>
+              <span>💡</span><span>实验想法池</span>
+            </Link>
+            <div style={{ height: '1px', background: 'var(--border)', margin: '6px 8px' }} />
+            <Link to="/manual-intel" className={`menu-item ${isActive('/manual-intel') ? 'active' : ''}`}>
+              <span>📌</span><span>我的情报收藏</span>
+            </Link>
+          </>
+        )}
+        <Link to={STATIC ? '/' : '/search'} className={`menu-item ${isActive('/search') || (STATIC && location.pathname === '/') ? 'active' : ''}`}>
+          <span>🔍</span><span>情报搜索</span>
         </Link>
       </div>
 
