@@ -1,7 +1,10 @@
 import { useState, useRef, useCallback, useEffect } from 'react'
+import { buildSourceMap, richHtml } from './searchRichHtml'
+import { slugify } from './searchSlug'
+import { withBasePath } from '../basePath'
 
 /* ------------------------------------------------------------------ *
- * 情报搜索 · 输入 topic → 实时跑 last30days → 渲染综合简报 + 情报时间线
+ * 情报搜索 · 输入 topic → 实时跑 last30days → 渲染综合研究报告
  * 数据来自 POST /api/search/brief（异步 job + 轮询）。
  * ------------------------------------------------------------------ */
 
@@ -17,27 +20,15 @@ const PF = (p) => PLATFORM[p] || { c: '#888', label: p || '?', ava: (p || '?').s
 const TEAL = '#0f7a52'
 const GOLD = '#a66a00'
 
-function richHtml(s) {
-  if (!s) return ''
-  return s
-    .replace(/\{b\}/g, '<b>').replace(/\{\/b\}/g, '</b>')
-    .replace(/<src>/g, '<span class="sf-src">').replace(/<\/src>/g, '</span>')
-    .replace(/<q>/g, '<span class="sf-q">').replace(/<\/q>/g, '</span>')
-    .replace(/<hl>/g, '<span class="sf-hl">').replace(/<\/hl>/g, '</span>')
-    .replace(/<num>/g, '<span class="sf-num">').replace(/<\/num>/g, '</span>')
-    .replace(/<c>/g, '<span class="sf-mono">').replace(/<\/c>/g, '</span>')
-}
-const RH = (s) => <span dangerouslySetInnerHTML={{ __html: richHtml(s) }} />
-
 const sleep = (ms) => new Promise(r => setTimeout(r, ms))
 
 // 静态部署模式：用 VITE_STATIC_DATA=1 构建时，前端直接读 data/search_cache 下的缓存文件，
 // 不请求后端接口（这样可以只部署前端就看到已缓存的情报）。
 const STATIC = import.meta.env.VITE_STATIC_DATA === '1'
-const slugify = (s) => (s || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'topic'
+const BASE_URL = import.meta.env.BASE_URL
 const briefUrl = (topic, slug) =>
   STATIC
-    ? `/data/search_cache/briefs/${slug || slugify(topic)}.json`
+    ? withBasePath(BASE_URL, `data/search_cache/briefs/${slug || slugify(topic)}.json`)
     : `/api/search/brief?topic=${encodeURIComponent(topic)}`
 
 export default function SearchPage() {
@@ -46,8 +37,6 @@ export default function SearchPage() {
   const [status, setStatus] = useState('idle')   // idle | running | done | error
   const [error, setError] = useState('')
   const [topic, setTopic] = useState('')
-  const [plat, setPlat] = useState('all')
-  const [featOnly, setFeatOnly] = useState(false)
   const [open, setOpen] = useState({})
   const [answered, setAnswered] = useState({})
   const [history, setHistory] = useState([])
@@ -57,7 +46,7 @@ export default function SearchPage() {
   const loadHistory = useCallback(async () => {
     try {
       if (STATIC) {
-        const r = await fetch('/data/search_cache/history.json')
+        const r = await fetch(withBasePath(BASE_URL, 'data/search_cache/history.json'))
         setHistory(r.ok ? await r.json() : [])
       } else {
         const r = await fetch('/api/search/history')
@@ -107,7 +96,7 @@ export default function SearchPage() {
     const t = entry.topic
     const token = ++tokenRef.current
     setQuery(t); setTopic(t); setError(''); setBrief(null); setStatus('running')
-    setPlat('all'); setFeatOnly(false); setOpen({}); setAnswered({})
+    setOpen({}); setAnswered({})
     try {
       const b = await fetchCachedBrief(t, entry.slug)
       if (tokenRef.current !== token) return
@@ -133,7 +122,7 @@ export default function SearchPage() {
     if (!t) return
     const token = ++tokenRef.current
     setStatus('running'); setError(''); setBrief(null); setTopic(t)
-    setPlat('all'); setFeatOnly(false); setOpen({}); setAnswered({})
+    setOpen({}); setAnswered({})
     try { sessionStorage.removeItem('sf_topic') } catch { /* ignore */ }
     // 静态部署模式：不发起实时研究，只尝试读该话题的缓存
     if (STATIC) {
@@ -214,7 +203,7 @@ export default function SearchPage() {
             <div className="sf-empty">
               <div className="ic">📡</div>
               <div className="t1">输入一个话题，开始实时情报研究</div>
-              <div className="t2">从 Reddit / X / Hacker News / YouTube / TikTok / Instagram 聚合最近 30 天的讨论，合成综合简报与情报时间线</div>
+              <div className="t2">从 Reddit / X / Hacker News / YouTube / TikTok / Instagram 聚合最近 30 天的讨论，合成研究摘要、来源覆盖和可继续深挖的问题</div>
             </div>
             {history.length > 0 && (
               <div className="sf-history">
@@ -251,19 +240,17 @@ export default function SearchPage() {
           </div>
         )}
 
-        {status === 'done' && brief && <Brief brief={brief} plat={plat} setPlat={setPlat}
-          featOnly={featOnly} setFeatOnly={setFeatOnly} open={open} answered={answered} toggleDeep={toggleDeep} />}
+        {status === 'done' && brief && <Brief brief={brief} open={open} answered={answered} toggleDeep={toggleDeep} />}
       </div>
     </div>
   )
 }
 
-function Brief({ brief, plat, setPlat, featOnly, setFeatOnly, open, answered, toggleDeep }) {
+function Brief({ brief, open, answered, toggleDeep }) {
   const m = brief.meta
-  const flatItems = brief.timeline.flatMap(g => g.items)
+  const sourceMap = buildSourceMap(brief)
+  const RH = (s) => <span dangerouslySetInnerHTML={{ __html: richHtml(s, sourceMap) }} />
   const presentPlats = Object.entries(m.platforms || {}).filter(([, n]) => n > 0)
-  const matchItem = (it) => (plat === 'all' || it.p === plat) && (!featOnly || it.feat)
-  const shownCount = flatItems.filter(matchItem).length
   const has = (a) => Array.isArray(a) && a.length > 0
 
   return (
@@ -349,7 +336,7 @@ function Brief({ brief, plat, setPlat, featOnly, setFeatOnly, open, answered, to
                       <div className="danswer-inner">
                         {!answered[d.k]
                           ? <span className="typing"><span className="dot" /><span className="dot" /><span className="dot" /> 正在深入分析…</span>
-                          : <span dangerouslySetInnerHTML={{ __html: richHtml(d.a) }} />}
+                          : <span dangerouslySetInnerHTML={{ __html: richHtml(d.a, sourceMap) }} />}
                       </div>
                     </div>
                   </div>
@@ -358,60 +345,12 @@ function Brief({ brief, plat, setPlat, featOnly, setFeatOnly, open, answered, to
             </section>
           )}
 
-          {/* TIMELINE */}
-          <section className="sf-sec">
-            <SecHead n="04" title="情报时间线" k="Timeline" />
-            <div className="sf-tl-controls">
-              <button className={`sf-tlchip${plat === 'all' ? ' on' : ''}`} onClick={() => setPlat('all')}>全部 {m.total}</button>
-              {presentPlats.map(([p, n]) => (
-                <button key={p} className={`sf-tlchip${plat === p ? ' on' : ''}`} onClick={() => setPlat(p)}>
-                  <span className="c" style={{ background: PF(p).c }} />{PF(p).label} {n}
-                </button>
-              ))}
-              <button className={`sf-tlchip feat${featOnly ? ' on' : ''}`} onClick={() => setFeatOnly(f => !f)}>✦ 仅看精选</button>
-              <span className="sf-tl-count">显示 {shownCount} / {featOnly ? '精选' : m.total}</span>
-            </div>
-
-            <div className="sf-timeline">
-              {brief.timeline.map(group => {
-                const visible = group.items.filter(matchItem)
-                if (!visible.length) return null
-                return (
-                  <div className="sf-tl-group" key={group.day}>
-                    <div className="sf-tl-day"><span className="d">{group.day}</span><span className="dn">{group.dayNote}</span><span className="dln" /></div>
-                    {visible.map((it, i) => (
-                      <div className={`sf-tl-item${it.feat ? ' feat' : ''}`} key={i}>
-                        <div className="sf-tl-side"><div className="t">{it.time || '—'}</div><div className="ago">{it.ago}</div></div>
-                        <div className="sf-tl-dot" />
-                        <div className="sf-tl-card">
-                          <div className="top">
-                            <span className="ava" style={{ background: PF(it.p).c }}>{PF(it.p).ava}</span>
-                            <span className="who">{it.who}</span>
-                            <span className="handle">{it.handle}</span>
-                            <span className="right">
-                              {it.feat && <span className="feat-badge">✦ 精选</span>}
-                              <span className="score"><span className="sl">热度</span>{it.score}</span>
-                            </span>
-                          </div>
-                          {it.url
-                            ? <a className="ttl" href={it.url} target="_blank" rel="noopener noreferrer">{it.title}</a>
-                            : <div className="ttl">{it.title}</div>}
-                          <div className="sum">{it.sum}</div>
-                          <div className="tags">
-                            {(it.tags || []).map(tg => <span className="tag" key={tg}>{tg}</span>)}
-                            {it.stat && <span className="stat">{it.stat}</span>}
-                          </div>
-                          {it.reason && <div className="reason"><span className="rl">推荐理由</span><p>{it.reason}</p></div>}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                )
-              })}
-            </div>
-
-            {brief.rawNote && <div className="sf-tl-end"><span className="raw">📎 {brief.rawNote}</span></div>}
-          </section>
+          {brief.rawNote && (
+            <section className="sf-sec">
+              <SecHead n="04" title="原始报告" k="Raw Report" />
+              <div className="sf-rawnote">{brief.rawNote}</div>
+            </section>
+          )}
         </div>
 
         {/* RIGHT RAIL */}
@@ -443,7 +382,7 @@ function Brief({ brief, plat, setPlat, featOnly, setFeatOnly, open, answered, to
                 <div className="lrow" key={v.p}><span className="ld" style={{ background: PF(v.p).c }} /><span className="ln">{v.name}</span><span className="pct">{v.pct}%</span><span className="raw">{v.raw}</span></div>
               ))}
             </div>
-            {brief.dashboard.insight && <div className="insight" dangerouslySetInnerHTML={{ __html: richHtml(brief.dashboard.insight) }} />}
+            {brief.dashboard.insight && <div className="insight" dangerouslySetInnerHTML={{ __html: richHtml(brief.dashboard.insight, sourceMap) }} />}
           </div>
 
           {has(brief.voices) && (
@@ -456,7 +395,7 @@ function Brief({ brief, plat, setPlat, featOnly, setFeatOnly, open, answered, to
           {brief.caveat && (
             <div className="sf-caveat">
               <div className="ct">⚠️ 数据缺口说明</div>
-              <p dangerouslySetInnerHTML={{ __html: richHtml(brief.caveat) }} />
+              <p dangerouslySetInnerHTML={{ __html: richHtml(brief.caveat, sourceMap) }} />
             </div>
           )}
         </aside>
@@ -542,6 +481,8 @@ const STYLES = `
 .sf-sechead .ln{ flex:1; height:1px; background:var(--border); align-self:center; }
 
 .sf-src{ color:#1d4fd7; font-weight:500; }
+.sf-src-link{ color:inherit; text-decoration:none; border-bottom:1px solid rgba(29,79,215,.35); cursor:pointer; }
+.sf-src-link:hover{ border-bottom-color:currentColor; }
 .sf-hl{ color:#1d4fd7; font-weight:600; }
 .sf-q{ color:var(--text-primary); font-weight:500; border-bottom:1.5px solid #e6dfcb; padding-bottom:1px; }
 .sf-num{ font-weight:700; color:var(--text-primary); }
@@ -605,48 +546,7 @@ const STYLES = `
 .sf-ditem .typing .dot:nth-child(3){ animation-delay:.4s; }
 @keyframes sfBlink{ 0%,60%,100%{opacity:.25;} 30%{opacity:1;} }
 
-.sf-tl-controls{ display:flex; align-items:center; gap:8px; margin:0 0 26px; flex-wrap:wrap; }
-.sf-tlchip{ font-size:12px; padding:7px 13px; border-radius:9px; border:1px solid var(--border); background:#fff; color:var(--text-secondary); cursor:pointer; display:flex; align-items:center; gap:7px; white-space:nowrap; transition:all .12s; }
-.sf-tlchip:hover{ border-color:#cfcabd; }
-.sf-tlchip.on{ background:var(--text-primary); color:#fff; border-color:var(--text-primary); }
-.sf-tlchip .c{ width:7px; height:7px; border-radius:2px; }
-.sf-tlchip.feat.on{ background:var(--gold-soft); color:var(--gold); border-color:var(--gold-line); }
-.sf-tl-count{ font-size:12px; color:var(--text-muted); margin-left:auto; white-space:nowrap; }
-.sf-timeline{ position:relative; }
-.sf-tl-group{ position:relative; }
-.sf-tl-group::before{ content:""; position:absolute; left:74px; top:50px; bottom:6px; width:2px; background:var(--border); }
-.sf-tl-group:last-child::before{ bottom:18px; }
-.sf-tl-day{ display:flex; align-items:center; gap:11px; margin:4px 0 18px; }
-.sf-tl-day .d{ font-weight:700; font-size:14px; color:var(--text-primary); }
-.sf-tl-day .dn{ font-size:11.5px; color:var(--text-muted); }
-.sf-tl-day .dln{ flex:1; height:1px; background:var(--border-light); }
-.sf-tl-item{ display:flex; position:relative; padding-bottom:22px; }
-.sf-tl-side{ flex:0 0 74px; width:74px; text-align:right; padding-right:26px; padding-top:17px; }
-.sf-tl-side .t{ font-weight:700; font-size:14px; color:var(--text-primary); letter-spacing:-.02em; }
-.sf-tl-side .ago{ font-size:10.5px; color:var(--text-muted); margin-top:3px; }
-.sf-tl-dot{ position:absolute; left:74px; top:23px; width:11px; height:11px; border-radius:50%; background:#fff; border:2.5px solid var(--text-muted); transform:translateX(-50%); z-index:1; }
-.sf-tl-item.feat .sf-tl-dot{ border-color:var(--accent-blue); background:var(--accent-blue); box-shadow:0 0 0 4px var(--accent-blue-light); }
-.sf-tl-card{ flex:1; min-width:0; margin-left:30px; background:#fff; border:1px solid var(--border); border-radius:14px; padding:18px 20px; box-shadow:0 1px 3px rgba(40,35,20,.035); transition:border-color .14s, box-shadow .14s; }
-.sf-tl-card:hover{ border-color:#cdd9f2; box-shadow:0 8px 24px rgba(37,99,235,.08); }
-.sf-tl-card .top{ display:flex; align-items:center; gap:10px; margin-bottom:12px; }
-.sf-tl-card .ava{ width:27px; height:27px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:700; color:#fff; flex:0 0 auto; letter-spacing:-.02em; }
-.sf-tl-card .who{ font-size:13.5px; font-weight:600; color:var(--text-primary); }
-.sf-tl-card .handle{ font-size:12px; color:var(--text-muted); }
-.sf-tl-card .right{ margin-left:auto; display:flex; align-items:center; gap:8px; flex:0 0 auto; }
-.sf-tl-card .feat-badge{ display:inline-flex; align-items:center; gap:5px; font-size:11px; font-weight:700; color:var(--gold); background:var(--gold-soft); border:1px solid var(--gold-line); border-radius:7px; padding:4px 9px; }
-.sf-tl-card .score{ font-size:12px; font-weight:700; color:#1d4fd7; background:var(--accent-blue-light); border:1px solid #dce7fb; border-radius:7px; padding:4px 10px; min-width:34px; text-align:center; }
-.sf-tl-card .score .sl{ font-size:9px; font-weight:500; color:var(--text-muted); margin-right:3px; }
-.sf-tl-card .ttl{ display:block; font-size:16.5px; font-weight:700; letter-spacing:-.01em; line-height:1.4; margin-bottom:8px; color:var(--text-primary); text-wrap:pretty; text-decoration:none; }
-.sf-tl-card a.ttl:hover{ color:#1d4fd7; }
-.sf-tl-card .sum{ font-size:14px; line-height:1.68; color:var(--text-secondary); text-wrap:pretty; }
-.sf-tl-card .tags{ display:flex; gap:7px; margin-top:14px; flex-wrap:wrap; align-items:center; }
-.sf-tl-card .tags .tag{ font-size:11.5px; color:var(--text-secondary); background:var(--bg-secondary); border:1px solid var(--border); border-radius:6px; padding:3px 10px; }
-.sf-tl-card .tags .stat{ font-size:11.5px; color:var(--text-muted); margin-left:auto; }
-.sf-tl-card .reason{ margin-top:14px; display:flex; gap:11px; align-items:flex-start; background:var(--teal-soft); border:1px solid var(--teal-line); border-left:3px solid var(--teal); border-radius:9px; padding:12px 14px; }
-.sf-tl-card .reason .rl{ font-size:11px; font-weight:700; color:var(--teal); flex:0 0 auto; letter-spacing:.03em; padding-top:2px; }
-.sf-tl-card .reason p{ margin:0; font-size:13.4px; line-height:1.62; color:#2c5544; text-wrap:pretty; }
-.sf-tl-end{ display:flex; align-items:center; gap:11px; margin-top:6px; padding-left:104px; }
-.sf-tl-end .raw{ font-size:11.5px; color:var(--text-muted); }
+.sf-rawnote{ background:#fff; border:1px solid var(--border); border-radius:12px; padding:16px 18px; font-size:13px; line-height:1.65; color:var(--text-secondary); }
 
 .sf-rail{ position:sticky; top:78px; display:flex; flex-direction:column; gap:18px; }
 @media (max-width:1180px){ .sf-rail{ position:static; } }
@@ -690,9 +590,5 @@ const STYLES = `
   .sf-appbar{ padding:12px 18px; gap:12px; }
   .sf-content{ padding:24px 18px 70px; }
   .sf-hero h1{ font-size:29px; }
-  .sf-tl-side{ flex:0 0 58px; width:58px; padding-right:16px; }
-  .sf-tl-group::before, .sf-tl-dot{ left:58px; }
-  .sf-tl-card{ margin-left:22px; }
-  .sf-tl-end{ padding-left:0; flex-wrap:wrap; }
 }
 `

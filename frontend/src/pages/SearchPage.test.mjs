@@ -16,9 +16,12 @@ test('SearchPage starts empty and searches via the brief endpoint', () => {
 
 test('SearchPage renders the brief dashboard sections when done', () => {
   assert.match(source, /status === 'done' && brief/)
-  for (const sec of ['综合简报', '关键模式', '让我深入', '情报时间线']) {
+  for (const sec of ['综合简报', '关键模式', '让我深入']) {
     assert.match(source, new RegExp(sec))
   }
+  assert.doesNotMatch(source, /情报时间线/)
+  assert.doesNotMatch(source, /Timeline/)
+  assert.doesNotMatch(source, /sf-timeline/)
   for (const panel of ['概览', '平台分布', 'Top Voices', '数据缺口说明']) {
     assert.match(source, new RegExp(panel))
   }
@@ -53,9 +56,11 @@ test('SearchPage shows search history and opens a cached record', () => {
 test('SearchPage has a static (backend-free) data mode', () => {
   // build flag gate
   assert.match(source, /import\.meta\.env\.VITE_STATIC_DATA/)
-  // static mode reads cached JSON files under /data/search_cache instead of /api
-  assert.match(source, /\/data\/search_cache\/history\.json/)
-  assert.match(source, /\/data\/search_cache\/briefs\//)
+  assert.match(source, /import\s+\{\s*withBasePath\s*\}\s+from\s+'\.\.\/basePath'/)
+  assert.match(source, /const BASE_URL = import\.meta\.env\.BASE_URL/)
+  // static mode reads cached JSON files via withBasePath instead of hard-coded root paths
+  assert.match(source, /withBasePath\(BASE_URL, `data\/search_cache\/briefs\/\$\{slug \|\| slugify\(topic\)\}\.json`\)/)
+  assert.match(source, /withBasePath\(BASE_URL, 'data\/search_cache\/history\.json'\)/)
   // slugify so a topic maps to its cached brief file
   assert.match(source, /slugify/)
 })
