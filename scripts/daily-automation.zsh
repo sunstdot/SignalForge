@@ -50,18 +50,20 @@ echo_to_log "✓ 静态站点构建完成"
 
 # ─── Step 3: 部署到 staging ────────────────────────────────────────
 log "Step 3: deploy to staging"
+cd "$FRONTEND_DIR"
 /usr/local/bin/jinx dist -e staging >> "$LOG_FILE" 2>&1
 echo_to_log "✓ 部署到 staging 完成"
 
 # ─── Step 4: 构建 GitHub Pages 版本 ────────────────────────────────
 log "Step 4: build GitHub Pages static site"
+cd "$FRONTEND_DIR"
 rm -rf dist
 npm run build:pages >> "$LOG_FILE" 2>&1
 echo_to_log "✓ GitHub Pages 静态站点构建完成"
 
 # ─── Step 5: 发布到 GitHub Pages ──────────────────────────────────
 log "Step 5: deploy to GitHub Pages"
-"$PROJECT_ROOT/scripts/deploy-github-pages.zsh" >> "$LOG_FILE" 2>&1
+/bin/zsh "$PROJECT_ROOT/scripts/deploy-github-pages.zsh" >> "$LOG_FILE" 2>&1
 echo_to_log "✓ GitHub Pages 发布完成"
 
 log "全部步骤成功 ✅"
