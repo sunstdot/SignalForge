@@ -20,7 +20,7 @@ test('pages build refreshes snapshots, enables static data, sets base path, and 
   assert.equal(typeof script, 'string')
   assert.match(script, /python3 \.\.\/backend\/snapshot_static\.py/)
   assert.match(script, /VITE_STATIC_DATA=1/)
-  assert.match(script, /VITE_BASE_PATH=\/token-burn\//)
+  assert.match(script, /VITE_BASE_PATH=\/SignalForge\//)
   assert.match(script, /vite build/)
   assert.ok(script.indexOf('snapshot_static.py') < script.indexOf('vite build'))
 })

@@ -5,7 +5,7 @@ SCRIPT_DIR=$(cd -- "$(dirname -- "$0")" && pwd)
 PROJECT_ROOT_INPUT="${PROJECT_ROOT_OVERRIDE:-$SCRIPT_DIR/..}"
 PROJECT_ROOT=$(cd -- "$PROJECT_ROOT_INPUT" && pwd)
 DIST_DIR="$PROJECT_ROOT/frontend/dist"
-REMOTE="${GITHUB_PAGES_REMOTE:-git@github.com:sunstdot/token-burn.git}"
+REMOTE="${GITHUB_PAGES_REMOTE:-git@github.com:sunstdot/SignalForge.git}"
 BRANCH="${GITHUB_PAGES_BRANCH:-gh-pages}"
 
 if ! command -v git >/dev/null 2>&1; then

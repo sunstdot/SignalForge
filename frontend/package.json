@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "vite build",
     "build:static": "python3 ../backend/snapshot_static.py && VITE_STATIC_DATA=1 vite build",
-    "build:pages": "python3 ../backend/snapshot_static.py && VITE_STATIC_DATA=1 VITE_BASE_PATH=/token-burn/ vite build",
+    "build:pages": "python3 ../backend/snapshot_static.py && VITE_STATIC_DATA=1 VITE_BASE_PATH=/SignalForge/ vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
   },

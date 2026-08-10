@@ -5,6 +5,9 @@ SCRIPT_DIR=$(cd -- "$(dirname -- "$0")" && pwd)
 REAL_PROJECT_ROOT=$(cd -- "$SCRIPT_DIR/.." && pwd)
 DEPLOY_SCRIPT="$REAL_PROJECT_ROOT/scripts/deploy-github-pages.zsh"
 
+DEPLOY_SCRIPT_SOURCE=$(cat -- "$DEPLOY_SCRIPT")
+[[ "$DEPLOY_SCRIPT_SOURCE" == *'git@github.com:sunstdot/SignalForge.git'* ]]
+
 TMP_ROOT=$(mktemp -d "${TMPDIR:-/tmp}/signalforge-gh-pages-test.XXXXXX")
 cleanup() {
   rm -rf -- "$TMP_ROOT"

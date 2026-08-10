@@ -2,9 +2,9 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** 在保留 staging 发布的同时，每日把包含本机缓存的 Pages 专用静态构建推送到 `sunstdot/token-burn` 的 `gh-pages` 分支，并支持 `/token-burn/` 普通路径与深链接刷新。
+**Goal:** 在保留 staging 发布的同时，每日把包含本机缓存的 Pages 专用静态构建推送到 `sunstdot/SignalForge` 的 `gh-pages` 分支，并支持 `/SignalForge/` 普通路径与深链接刷新。
 
-**Architecture:** Vite 通过 `VITE_BASE_PATH` 生成根路径或 `/token-burn/` 子路径构建；一个纯函数模块统一生成 Router basename 和静态文件 URL。独立 zsh 脚本在临时 Git 仓库中封装 `dist`、SPA 404 回退和 `.nojekyll`，再覆盖推送 `gh-pages`，每日脚本在原 staging 发布后调用 Pages 构建与发布。
+**Architecture:** Vite 通过 `VITE_BASE_PATH` 生成根路径或 `/SignalForge/` 子路径构建；一个纯函数模块统一生成 Router basename 和静态文件 URL。独立 zsh 脚本在临时 Git 仓库中封装 `dist`、SPA 404 回退和 `.nojekyll`，再覆盖推送 `gh-pages`，每日脚本在原 staging 发布后调用 Pages 构建与发布。
 
 **Tech Stack:** Vite 5、React Router 6、Node.js built-in test runner、zsh、Git、GitHub Pages
 
@@ -180,7 +180,7 @@ const app = readFileSync(new URL('./App.jsx', import.meta.url), 'utf8')
 test('pages build sets the GitHub project base path', () => {
   const script = pkg.scripts['build:pages']
   assert.match(script, /VITE_STATIC_DATA=1/)
-  assert.match(script, /VITE_BASE_PATH=\/token-burn\//)
+  assert.match(script, /VITE_BASE_PATH=\/SignalForge\//)
   assert.match(script, /vite build/)
   assert.match(viteConfig, /process\.env\.VITE_BASE_PATH/)
   assert.match(viteConfig, /base:/)
@@ -219,7 +219,7 @@ base: BASE_PATH,
 在 `frontend/package.json` scripts 中增加：
 
 ```json
-"build:pages": "python3 ../backend/snapshot_static.py && VITE_STATIC_DATA=1 VITE_BASE_PATH=/token-burn/ vite build"
+"build:pages": "python3 ../backend/snapshot_static.py && VITE_STATIC_DATA=1 VITE_BASE_PATH=/SignalForge/ vite build"
 ```
 
 修改 `App.jsx`：
@@ -244,7 +244,7 @@ cd frontend && node --test src/staticBuild.test.mjs src/basePath.test.mjs
 npm run build:static
 grep -E 'src="/assets/|href="/assets/' dist/index.html
 npm run build:pages
-grep -E 'src="/token-burn/assets/|href="/token-burn/assets/' dist/index.html
+grep -E 'src="/SignalForge/assets/|href="/SignalForge/assets/' dist/index.html
 ```
 
 Expected:
@@ -252,7 +252,7 @@ Expected:
 - Node tests PASS。
 - 两次 Vite build 成功。
 - 默认构建匹配 `/assets/`。
-- Pages 构建匹配 `/token-burn/assets/`。
+- Pages 构建匹配 `/SignalForge/assets/`。
 
 - [ ] **Step 5: 提交构建与 Router 改动**
 
@@ -329,7 +329,7 @@ set -euo pipefail
 
 PROJECT_ROOT="${PROJECT_ROOT_OVERRIDE:-$(cd "$(dirname "$0")/.." && pwd)}"
 DIST_DIR="$PROJECT_ROOT/frontend/dist"
-REMOTE="${GITHUB_PAGES_REMOTE:-git@github.com:sunstdot/token-burn.git}"
+REMOTE="${GITHUB_PAGES_REMOTE:-git@github.com:sunstdot/SignalForge.git}"
 BRANCH="${GITHUB_PAGES_BRANCH:-gh-pages}"
 
 command -v git >/dev/null 2>&1 || {
@@ -478,7 +478,7 @@ zsh scripts/daily-automation.test.zsh
 zsh scripts/deploy-github-pages.test.zsh
 cd frontend && node --test src/**/*.test.mjs src/*.test.mjs
 npm run build:pages
-grep -E 'src="/token-burn/assets/|href="/token-burn/assets/' dist/index.html
+grep -E 'src="/SignalForge/assets/|href="/SignalForge/assets/' dist/index.html
 ```
 
 Expected:
@@ -486,7 +486,7 @@ Expected:
 - 所有 zsh 语法检查退出码 0。
 - 两个 shell 测试输出 PASS。
 - 所有前端 Node tests PASS。
-- Pages 构建成功且 HTML 资源 URL 带 `/token-burn/`。
+- Pages 构建成功且 HTML 资源 URL 带 `/SignalForge/`。
 
 - [ ] **Step 5: 验证发布封装内容但不触碰真实远端**
 
@@ -515,4 +515,4 @@ cd frontend && npm run build:pages
 cd .. && zsh scripts/deploy-github-pages.zsh
 ```
 
-授权后预期：远端出现 `gh-pages` 分支；随后在 GitHub Pages 设置中选择该分支根目录并验证 `https://sunstdot.github.io/token-burn/` 与一个深链接。
+授权后预期：远端出现 `gh-pages` 分支；随后在 GitHub Pages 设置中选择该分支根目录并验证 `https://sunstdot.github.io/SignalForge/` 与一个深链接。
