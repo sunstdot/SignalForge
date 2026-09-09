@@ -1,0 +1,587 @@
+{
+  "id": "8609e624-fc01-4a38-abe5-573d123aaed3",
+  "date": "2026-07-16",
+  "items": [
+    {
+      "id": "arxiv-2607.11883v1",
+      "title": "Requential Coding: Pushing the Limits of Model Compression with Self-Generated Training Data",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.11883v1",
+      "summary": "Compression is fundamental to intelligence. A model that can represent its training data as a short code has discovered regularities that enable generalization. Large neural networks may learn functio",
+      "category": [
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-14"
+    },
+    {
+      "id": "arxiv-2607.11881v1",
+      "title": "Metacognition in LLMs: Foundations, Progress, and Opportunities",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.11881v1",
+      "summary": "Metacognition is a foundational component of intelligence critical to effective learning, problem solving, decision-making, communication, and more. In recent years, it has become increasingly recogni",
+      "category": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-14"
+    },
+    {
+      "id": "arxiv-2607.11875v1",
+      "title": "Invariant Learning Dynamics of Transformers in Inductive Reasoning Tasks",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.11875v1",
+      "summary": "We present a theoretical framework to explain the emergence of inductive reasoning abilities in Transformer language models. While previous works on Transformer learning dynamics have so far been most",
+      "category": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-14"
+    },
+    {
+      "id": "arxiv-2607.11874v1",
+      "title": "A Minimalist Retargeting-Guided Reinforcement Learning Recipe for Dexterous Manipulation",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.11874v1",
+      "summary": "Recent work in humanoid whole-body control has found success with a simple recipe: retarget human motion to robot kinematic references, then train policies via reinforcement learning (RL) to track the",
+      "category": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-14"
+    },
+    {
+      "id": "arxiv-2607.11873v1",
+      "title": "A Durability and Cross-Language Transfer Benchmark for a Validated Teaching-Feedback Classification Protocol",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.11873v1",
+      "summary": "Institutions collect far more open-ended teaching-evaluation feedback than they read. A prior study introduced a validated protocol for classifying such comments by thematic category and sentiment, bu",
+      "category": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-14"
+    },
+    {
+      "id": "arxiv-2607.11871v1",
+      "title": "Inside the Unfair Judge: A Mechanistic Interpretability Account of LLM-as-Judge Bias",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.11871v1",
+      "summary": "Existing studies of LLM-as-judge scoring bias work predominantly at the input-output level: they perturb inputs, measure score deltas, and propose prompt-level mitigations. We argue that the same bias",
+      "category": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-14"
+    },
+    {
+      "id": "arxiv-2607.11862v1",
+      "title": "Evidence-Backed Video Question Answering",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.11862v1",
+      "summary": "Current Video Large Language Models (Video LLMs) excel in question answering (QA) but largely operate as black boxes, providing textual answers without verifiable visual grounding. Existing explainabi",
+      "category": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-14"
+    },
+    {
+      "id": "arxiv-2607.11849v1",
+      "title": "AdvancedMathBench: A Benchmark Suite for Advanced Mathematical Proof Generation and Verification",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.11849v1",
+      "summary": "Large language models (LLMs) have achieved remarkable performance on high-school and olympiad-style mathematics, yet their capabilities on advanced mathematics remain poorly understood. Existing bench",
+      "category": [
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-14"
+    },
+    {
+      "id": "arxiv-2607.11843v1",
+      "title": "Input-Aware Dynamic Backdoor Attack Against Quantum Neural Networks",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.11843v1",
+      "summary": "Quantum Neural Networks (QNNs) are a promising framework for quantum machine learning on near-term quantum devices, but their security risks remain insufficiently understood. Studies have shown that Q",
+      "category": [
+        "quant-ph",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-14"
+    },
+    {
+      "id": "arxiv-2607.11839v1",
+      "title": "LoRA-Based Cascaded Multimodal Fusion for Action Recognition in Medical Training Environments",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.11839v1",
+      "summary": "This paper presents a cascaded Low-Rank Adaptation (LoRA)-based multimodal fusion framework for action and activity recognition in healthcare-oriented training environments. The proposed architecture ",
+      "category": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-14"
+    },
+    {
+      "id": "arxiv-2607.11826v1",
+      "title": "Transformer-Guided Swarm Intelligence for Frugal Neural Architecture Search",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.11826v1",
+      "summary": "Neural Architecture Search (NAS) has automated the design of deep learning models but traditionally requires massive computational resources, often measured in thousands of GPU-days. In this paper, we",
+      "category": [
+        "cs.LG",
+        "cs.AI",
+        "cs.NE"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-14"
+    },
+    {
+      "id": "arxiv-2607.11818v1",
+      "title": "MM-ToolSandBox: A Unified Framework for Evaluating Visual Tool-Calling Agents",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.11818v1",
+      "summary": "We introduce MM-ToolSandBox, a benchmark and evaluation framework for visually grounded tool-calling agents. The framework provides a stateful execution environment spanning 500+ tools across 16 appli",
+      "category": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-14"
+    },
+    {
+      "id": "arxiv-2607.11816v1",
+      "title": "Relaxing Faithfulness with Intervention-Only Causal Discovery",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.11816v1",
+      "summary": "Causal discovery algorithms learn a network that describes the causal dependencies among random variables. A common workflow involves first utilizing conditional independence properties on observation",
+      "category": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-14"
+    },
+    {
+      "id": "arxiv-2607.11808v1",
+      "title": "Introducing Human-Centeredness in AI-Assisted Lexicography",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.11808v1",
+      "summary": "This paper proposes a human-centered artificial intelligence (HCAI) framework for AI-assisted lexicography. While generative AI offers significant opportunities to enhance lexicographic work, it also ",
+      "category": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-14"
+    },
+    {
+      "id": "arxiv-2607.11801v1",
+      "title": "Encoder-Side Neuron Identification and Amplification for Acoustic Perception in Large Audio-Language Models",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.11801v1",
+      "summary": "Large audio-language models (LALMs) often underperform on fine-grained, non-semantic attributes of speech, such as a speaker's emotion, despite strong performance on speech content. Improving this wit",
+      "category": [
+        "cs.SD",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-14"
+    },
+    {
+      "id": "github-960b39ed6ae8",
+      "title": "OpenCut-app/OpenCut — The open-source CapCut alternative",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/OpenCut-app/OpenCut",
+      "summary": "The open-source CapCut alternative | 🔥 1229 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-14"
+    },
+    {
+      "id": "github-c9c155f566f0",
+      "title": "HKUDS/Vibe-Trading — \"Vibe-Trading: Your Personal Trading Agent\"",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/HKUDS/Vibe-Trading",
+      "summary": "\"Vibe-Trading: Your Personal Trading Agent\" | 🔥 1153 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-14"
+    },
+    {
+      "id": "github-277709719970",
+      "title": "moeru-ai/airi — 💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber l",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/moeru-ai/airi",
+      "summary": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraf",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-14"
+    },
+    {
+      "id": "github-85aa9a8ce0af",
+      "title": "Shubhamsaboo/awesome-llm-apps — 100+ AI Agent &amp; RAG apps you can actually run — clone, customize, ship.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "summary": "100+ AI Agent &amp; RAG apps you can actually run — clone, customize, ship. | 🔥 996 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-14"
+    },
+    {
+      "id": "github-ccb705d6253a",
+      "title": "Nutlope/hallmark — Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Nutlope/hallmark",
+      "summary": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex. | 🔥 794 stars today | Language: CSS",
+      "category": [
+        "开源项目",
+        "CSS"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-14"
+    },
+    {
+      "id": "github-7bc9388a9725",
+      "title": "Raphire/Win11Debloat — A simple, lightweight PowerShell script that allows you to remove pre-installed ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Raphire/Win11Debloat",
+      "summary": "A simple, lightweight PowerShell script that allows you to remove pre-installed apps, disable telemetry, as well as perform various other changes to declutter and customize your Windows experience. Wi",
+      "category": [
+        "开源项目",
+        "PowerShell"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-14"
+    },
+    {
+      "id": "github-9f990a99fa1a",
+      "title": "Graphify-Labs/graphify — AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Graphify-Labs/graphify",
+      "summary": "AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-14"
+    },
+    {
+      "id": "github-7972d62ae9e5",
+      "title": "hasaneyldrm/exercises-dataset — 1,324-exercise fitness dataset — animation GIFs, 180×180 thumbnails, muscle-grou",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/hasaneyldrm/exercises-dataset",
+      "summary": "1,324-exercise fitness dataset — animation GIFs, 180×180 thumbnails, muscle-group &amp; equipment data, and step-by-step instructions in 6 languages. The exercise data layer behind the LogPress app. |",
+      "category": [
+        "开源项目",
+        "HTML"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-14"
+    },
+    {
+      "id": "github-8ecb815d1d90",
+      "title": "github/spec-kit — 💫 Toolkit to help you get started with Spec-Driven Development",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/github/spec-kit",
+      "summary": "💫 Toolkit to help you get started with Spec-Driven Development | 🔥 543 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-14"
+    },
+    {
+      "id": "github-ae892d846393",
+      "title": "coreyhaines31/marketingskills — Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/coreyhaines31/marketingskills",
+      "summary": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering. | 🔥 299 stars today | Language: JavaScript",
+      "category": [
+        "开源项目",
+        "JavaScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-14"
+    },
+    {
+      "id": "hf-paper-955f253b3e52",
+      "title": "Motion4Motion: Motion Transfer Across Subjects at Inference",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2607.11644",
+      "summary": "This work explores the motion transfer from one video to another, which is crucial in animation for diverse characters. Previously, video motion transfer has been largely explored between human and hu",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-14"
+    },
+    {
+      "id": "hf-paper-f2573e36d4e1",
+      "title": "LATO.2: Factorized 3D Mesh Generation with Vertex and Topology Flow",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2607.10623",
+      "summary": "Flow matching over carefully designed latent representations has recently emerged as a powerful paradigm for topology-aware mesh generation. Existing approaches, however, model vertices and connectivi",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-14"
+    },
+    {
+      "id": "hf-paper-61057c72be97",
+      "title": "Weak-to-Strong Generalization via Direct On-Policy Distillation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2607.05394",
+      "summary": "Reinforcement learning with verifiable rewards (RLVR) is a powerful recipe for improving language-model reasoning, but it is expensive to repeat on every new strong model because the target model must",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-14"
+    },
+    {
+      "id": "hf-paper-12fa5fce47e8",
+      "title": "ABot-AgentOS: A General Robotic Agent OS with Lifelong Multi-modal Memory",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2607.10350",
+      "summary": "Recent VLM and VLA systems have improved robotic perception and action prediction, yet long-horizon embodied agents still require a general runtime layer for reasoning, memory, tool use, verification,",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-14"
+    },
+    {
+      "id": "hf-paper-e5faadc03732",
+      "title": "AdvancedMathBench: A Benchmark Suite for Advanced Mathematical Proof Generation and Verification",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2607.11849",
+      "summary": "Large language models (LLMs) have achieved remarkable performance on high-school and olympiad-style mathematics, yet their capabilities on advanced mathematics remain poorly understood. Existing bench",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-14"
+    },
+    {
+      "id": "hf-paper-762d48d171fb",
+      "title": "LightMem-Ego: Your AI Memory for Everyday Life",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2607.11487",
+      "summary": "Personal AI assistants on mobile and wearable devices continuously perceive users' daily lives through visual and audio streams. However, answering queries about past experiences requires lightweight ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-14"
+    },
+    {
+      "id": "hf-paper-1521984e0762",
+      "title": "NeuroCogMap Reveals Cognitive Organization of Large Language Models",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2607.00397",
+      "summary": "Understanding how complex cognitive functions are organized within artificial systems is central to interpreting large language models (LLMs) and relating them to biological cognition. Yet although LL",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-14"
+    },
+    {
+      "id": "hf-paper-a70d9ebc5254",
+      "title": "ABot-N1: Toward a General Visual Language Navigation Foundation Model",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2607.10383",
+      "summary": "Visual Language Navigation foundation models aim to unify deep reasoning for grounded spatial decisions with broad versatility for diverse embodied tasks. Current approaches typically achieve this int",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-14"
+    },
+    {
+      "id": "hf-paper-e21414fca013",
+      "title": "MedPMC: A Systematic Framework for Scaling High-Fidelity Medical Multimodal Data for Foundation Models",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2607.07673",
+      "summary": "Medicine is inherently multimodal, requiring clinicians to synthesize information across diverse data streams. Yet the development of multimodal foundation models is constrained by limited access to l",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-14"
+    },
+    {
+      "id": "hf-paper-74092b801323",
+      "title": "Flow-ERD: Agent-type Aware Flow Matching with Entropy-Regularized Distillation for Diverse Traffic Simulation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2607.06957",
+      "summary": "Realistic and diverse traffic simulation is essential to autonomous driving development. Yet prevailing benchmarks predominantly reward realism, and recent methods have optimized accordingly, leaving ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-14"
+    },
+    {
+      "id": "vpr-funding-2cc7a73b7e4f",
+      "title": "Databricks Funding round (undisclosed series) funding",
+      "source": "Venture Product Radar",
+      "source_type": "funding",
+      "url": "https://techcrunch.com/2026/07/17/databricks-hits-188b-valuation-extending-its-run-as-ais-favorite-second-act",
+      "summary": "$3B (reported by WSJ) - Funding round (undisclosed series) - Not disclosed",
+      "category": [
+        "融资"
+      ],
+      "relevance_score": 5,
+      "created_at": "2026-07-16"
+    },
+    {
+      "id": "vpr-funding-67baf1c9233c",
+      "title": "General Compute Debt Financing funding",
+      "source": "Venture Product Radar",
+      "source_type": "funding",
+      "url": "https://siliconangle.com/2026/07/17/inference-cloud-operator-general-compute-raises-400m-debt-financing",
+      "summary": "$400M (debt financing, $100M initial) - Debt Financing - Upper90",
+      "category": [
+        "融资"
+      ],
+      "relevance_score": 5,
+      "created_at": "2026-07-16"
+    },
+    {
+      "id": "vpr-funding-f9fd7a91ab57",
+      "title": "Syntetica Early-stage funding funding",
+      "source": "Venture Product Radar",
+      "source_type": "funding",
+      "url": "https://siliconangle.com/2026/07/17/syntetica-raises-30m-scale-nylon-recycling-solutions",
+      "summary": "$30M - Early-stage funding - Ecotechnologies 2 fund",
+      "category": [
+        "融资"
+      ],
+      "relevance_score": 5,
+      "created_at": "2026-07-16"
+    },
+    {
+      "id": "vpr-product-7bbad20e727a",
+      "title": "BlockscopeChat",
+      "source": "Venture Product Radar",
+      "source_type": "product",
+      "url": "https://www.producthunt.com/products/blockscopechat",
+      "summary": "<p>\n            AI Crypto Investigations/Research Agents\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/blockscopechat?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1199302?app_id=339\">Link</a>\n          </p>",
+      "category": [
+        "AI venture funding product launches startup signals"
+      ],
+      "relevance_score": 3,
+      "created_at": "2026-07-16"
+    },
+    {
+      "id": "vpr-product-19eb9454448b",
+      "title": "LnkFlow",
+      "source": "Venture Product Radar",
+      "source_type": "product",
+      "url": "https://www.producthunt.com/products/lnkflow",
+      "summary": "<p>\n            Agentic click tracking that shows what grows your business\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/lnkflow?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1199443?app_id=339\">Link</a>\n          </p>",
+      "category": [
+        "AI venture funding product launches startup signals"
+      ],
+      "relevance_score": 3,
+      "created_at": "2026-07-16"
+    },
+    {
+      "id": "vpr-product-d11e40138605",
+      "title": "Deck",
+      "source": "Venture Product Radar",
+      "source_type": "product",
+      "url": "https://www.producthunt.com/products/deck-9",
+      "summary": "<p>\n            The most capable AI assistant with its own inbox\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/deck-9?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1199241?app_id=339\">Link</a>\n          </p>",
+      "category": [
+        "AI venture funding product launches startup signals"
+      ],
+      "relevance_score": 3,
+      "created_at": "2026-07-16"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-08-10T14:49:14.079272"
+}

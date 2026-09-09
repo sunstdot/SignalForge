@@ -1,0 +1,763 @@
+{
+  "id": "cb89e693-0619-44a9-ad22-3ef47a9f8f43",
+  "date": "2026-04-16",
+  "items": [
+    {
+      "id": "arxiv-2604.15309v1",
+      "title": "MM-WebAgent: A Hierarchical Multimodal Web Agent for Webpage Generation",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.15309v1",
+      "summary": "The rapid progress of Artificial Intelligence Generated Content (AIGC) tools enables images, videos, and visualizations to be created on demand for webpage design, offering a flexible and increasingly",
+      "category": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T17:59:49+00:00"
+    },
+    {
+      "id": "arxiv-2604.15306v1",
+      "title": "Generalization in LLM Problem Solving: The Case of the Shortest Path",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.15306v1",
+      "summary": "Whether language models can systematically generalize remains actively debated. Yet empirical performance is jointly shaped by multiple factors such as training data, training paradigms, and inference",
+      "category": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T17:59:43+00:00"
+    },
+    {
+      "id": "arxiv-2604.15302v1",
+      "title": "Diagnosing LLM Judge Reliability: Conformal Prediction Sets and Transitivity Violations",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.15302v1",
+      "summary": "LLM-as-judge frameworks are increasingly used for automatic NLG evaluation, yet their per-instance reliability remains poorly understood. We present a two-pronged diagnostic toolkit applied to SummEva",
+      "category": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T17:58:21+00:00"
+    },
+    {
+      "id": "arxiv-2604.15297v1",
+      "title": "Benchmarking Optimizers for MLPs in Tabular Deep Learning",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.15297v1",
+      "summary": "MLP is a heavily used backbone in modern deep learning (DL) architectures for supervised learning on tabular data, and AdamW is the go-to optimizer used to train tabular DL models. Unlike architecture",
+      "category": [
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T17:57:02+00:00"
+    },
+    {
+      "id": "arxiv-2604.15294v1",
+      "title": "How Do LLMs and VLMs Understand Viewpoint Rotation Without Vision? An Interpretability Study",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.15294v1",
+      "summary": "Over the past year, spatial intelligence has drawn increasing attention. Many prior works study it from the perspective of visual-spatial intelligence, where models have access to visuospatial informa",
+      "category": [
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T17:55:19+00:00"
+    },
+    {
+      "id": "arxiv-2604.15291v1",
+      "title": "AD4AD: Benchmarking Visual Anomaly Detection Models for Safer Autonomous Driving",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.15291v1",
+      "summary": "The reliability of a machine vision system for autonomous driving depends heavily on its training data distribution. When a vehicle encounters significantly different conditions, such as atypical obst",
+      "category": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T17:54:53+00:00"
+    },
+    {
+      "id": "arxiv-2604.15285v1",
+      "title": "Structural interpretability in SVMs with truncated orthogonal polynomial kernels",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.15285v1",
+      "summary": "We study post-training interpretability for Support Vector Machines (SVMs) built from truncated orthogonal polynomial kernels. Since the associated reproducing kernel Hilbert space is finite-dimension",
+      "category": [
+        "stat.ML",
+        "cs.LG",
+        "math.ST"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T17:52:08+00:00"
+    },
+    {
+      "id": "arxiv-2604.15280v1",
+      "title": "Why Do Vision Language Models Struggle To Recognize Human Emotions?",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.15280v1",
+      "summary": "Understanding emotions is a fundamental ability for intelligent systems to be able to interact with humans. Vision-language models (VLMs) have made tremendous progress in the last few years for many v",
+      "category": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T17:49:58+00:00"
+    },
+    {
+      "id": "arxiv-2604.15273v1",
+      "title": "How Embeddings Shape Graph Neural Networks: Classical vs Quantum-Oriented Node Representations",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.15273v1",
+      "summary": "Node embeddings act as the information interface for graph neural networks, yet their empirical impact is often reported under mismatched backbones, splits, and training budgets. This paper provides a",
+      "category": [
+        "cs.LG",
+        "quant-ph"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T17:45:24+00:00"
+    },
+    {
+      "id": "arxiv-2604.15272v1",
+      "title": "Prism: Symbolic Superoptimization of Tensor Programs",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.15272v1",
+      "summary": "This paper presents Prism, the first symbolic superoptimizer for tensor programs. The key idea is sGraph, a symbolic, hierarchical representation that compactly encodes large classes of tensor program",
+      "category": [
+        "cs.PL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T17:43:31+00:00"
+    },
+    {
+      "id": "arxiv-2604.15271v1",
+      "title": "SegWithU: Uncertainty as Perturbation Energy for Single-Forward-Pass Risk-Aware Medical Image Segmentation",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.15271v1",
+      "summary": "Reliable uncertainty estimation is critical for medical image segmentation, where automated contours feed downstream quantification and clinical decision support. Many strong uncertainty methods requi",
+      "category": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T17:42:42+00:00"
+    },
+    {
+      "id": "arxiv-2604.15269v1",
+      "title": "Cloning is as Hard as Learning for Stabilizer States",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.15269v1",
+      "summary": "The impossibility of simultaneously cloning non-orthogonal states lies at the foundations of quantum theory. Even when allowing for approximation errors, cloning an arbitrary unknown pure state requir",
+      "category": [
+        "quant-ph",
+        "cs.LG",
+        "math.ST"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T17:41:16+00:00"
+    },
+    {
+      "id": "arxiv-2604.15267v1",
+      "title": "CoopEval: Benchmarking Cooperation-Sustaining Mechanisms and LLM Agents in Social Dilemmas",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.15267v1",
+      "summary": "It is increasingly important that LLM agents interact effectively and safely with other goal-pursuing agents, yet, recent works report the opposite trend: LLMs with stronger reasoning capabilities beh",
+      "category": [
+        "cs.GT",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T17:40:30+00:00"
+    },
+    {
+      "id": "arxiv-2604.15259v1",
+      "title": "Stability and Generalization in Looped Transformers",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.15259v1",
+      "summary": "Looped transformers promise test-time compute scaling by spending more iterations on harder problems, but it remains unclear which architectural choices let them extrapolate to harder problems at test",
+      "category": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T17:35:49+00:00"
+    },
+    {
+      "id": "arxiv-2604.15244v1",
+      "title": "From Tokens to Steps: Verification-Aware Speculative Decoding for Efficient Multi-Step Reasoning",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.15244v1",
+      "summary": "Speculative decoding (SD) accelerates large language model inference by allowing a lightweight draft model to propose outputs that a stronger target model verifies. However, its token-centric nature a",
+      "category": [
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T17:20:13+00:00"
+    },
+    {
+      "id": "civitai-2546450",
+      "title": "🎨 Hips slider (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2546450",
+      "summary": "Type: LORA | Downloads: 0 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T10:06:23.004876"
+    },
+    {
+      "id": "civitai-2545575",
+      "title": "🎨 Yahagi (矢矧) - KanColle: Kantai Collection (艦隊これくしょん -艦これ-) - COMMISSION (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2545575",
+      "summary": "Type: LORA | Downloads: 7 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T10:06:23.004872"
+    },
+    {
+      "id": "civitai-2546420",
+      "title": "🎨 大洗女子学園 制服 (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2546420",
+      "summary": "Type: LORA | Downloads: 5 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T10:06:23.004865"
+    },
+    {
+      "id": "civitai-2546425",
+      "title": "🎨 Honey IL (Fixed) (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2546425",
+      "summary": "Type: LORA | Downloads: 0 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T10:06:23.004849"
+    },
+    {
+      "id": "hf-model-73a346378827",
+      "title": "🤗 baidu/ERNIE-Image-Turbo",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/baidu/ERNIE-Image-Turbo",
+      "summary": "Task: text-to-image | Downloads: 419 | Likes: 218",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T10:06:21.651572"
+    },
+    {
+      "id": "hf-model-b1cd45c4732d",
+      "title": "🤗 LilaRest/gemma-4-31B-it-NVFP4-turbo",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/LilaRest/gemma-4-31B-it-NVFP4-turbo",
+      "summary": "Task: text-generation | Downloads: 51,148 | Likes: 223",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T10:06:21.651569"
+    },
+    {
+      "id": "hf-model-9f1c55c6cd4c",
+      "title": "🤗 baidu/ERNIE-Image",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/baidu/ERNIE-Image",
+      "summary": "Task: text-to-image | Downloads: 445 | Likes: 294",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T10:06:21.651566"
+    },
+    {
+      "id": "hf-model-7799d1d27bd5",
+      "title": "🤗 Jiunsong/supergemma4-26b-uncensored-gguf-v2",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Jiunsong/supergemma4-26b-uncensored-gguf-v2",
+      "summary": "Task: text-generation | Downloads: 26,673 | Likes: 297",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T10:06:21.651563"
+    },
+    {
+      "id": "hf-model-a3e36e1accc3",
+      "title": "🤗 dealignai/Gemma-4-31B-JANG_4M-CRACK",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/dealignai/Gemma-4-31B-JANG_4M-CRACK",
+      "summary": "Task: image-text-to-text | Downloads: 134,547 | Likes: 1,133",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T10:06:21.651560"
+    },
+    {
+      "id": "hf-model-b2cd1173ff38",
+      "title": "🤗 openbmb/VoxCPM2",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/openbmb/VoxCPM2",
+      "summary": "Task: text-to-speech | Downloads: 12,827 | Likes: 919",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T10:06:21.651557"
+    },
+    {
+      "id": "hf-model-2d0f16bac7e1",
+      "title": "🤗 google/gemma-4-31B-it",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/google/gemma-4-31B-it",
+      "summary": "Task: image-text-to-text | Downloads: 2,894,077 | Likes: 1,936",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T10:06:21.651554"
+    },
+    {
+      "id": "hf-model-2f79a3598954",
+      "title": "🤗 zai-org/GLM-5.1",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/zai-org/GLM-5.1",
+      "summary": "Task: text-generation | Downloads: 91,474 | Likes: 1,243",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T10:06:21.651549"
+    },
+    {
+      "id": "hf-model-f7a19edc802a",
+      "title": "🤗 tencent/HY-Embodied-0.5",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/tencent/HY-Embodied-0.5",
+      "summary": "Task: image-text-to-text | Downloads: 818 | Likes: 679",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T10:06:21.651545"
+    },
+    {
+      "id": "hf-model-3e19acb863ad",
+      "title": "🤗 MiniMaxAI/MiniMax-M2.7",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-M2.7",
+      "summary": "Task: text-generation | Downloads: 85,549 | Likes: 796",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T10:06:21.651531"
+    },
+    {
+      "id": "github-e7a886008a80",
+      "title": "Donchitos/Claude-Code-Game-Studios — Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills,",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+      "summary": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy. | 🔥 612 stars today | Language: Shell",
+      "category": [
+        "开源项目",
+        "Shell"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T10:06:22.675565"
+    },
+    {
+      "id": "github-6b7d140c7b2a",
+      "title": "google/magika — Fast and accurate AI powered file content types detection",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/google/magika",
+      "summary": "Fast and accurate AI powered file content types detection | 🔥 768 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T10:06:22.674699"
+    },
+    {
+      "id": "github-3479977d2cc8",
+      "title": "lsdefine/GenericAgent — Self-evolving agent: grows skill tree from 3.3K-line seed, achieving full system",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/lsdefine/GenericAgent",
+      "summary": "Self-evolving agent: grows skill tree from 3.3K-line seed, achieving full system control with 6x less token consumption | 🔥 446 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T10:06:22.673856"
+    },
+    {
+      "id": "github-e7ad6c23f068",
+      "title": "vercel-labs/open-agents — An open source template for building cloud agents.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/vercel-labs/open-agents",
+      "summary": "An open source template for building cloud agents. | 🔥 915 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T10:06:22.672921"
+    },
+    {
+      "id": "github-d2b1af007926",
+      "title": "public-apis/public-apis — A collective list of free APIs",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/public-apis/public-apis",
+      "summary": "A collective list of free APIs | 🔥 950 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T10:06:22.671901"
+    },
+    {
+      "id": "github-2267c9689012",
+      "title": "jamiepine/voicebox — The open-source voice synthesis studio",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/jamiepine/voicebox",
+      "summary": "The open-source voice synthesis studio | 🔥 1062 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T10:06:22.670873"
+    },
+    {
+      "id": "github-ecb7de9cc8a0",
+      "title": "obra/superpowers — An agentic skills framework &amp; software development methodology that works.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/obra/superpowers",
+      "summary": "An agentic skills framework &amp; software development methodology that works. | 🔥 2055 stars today | Language: Shell",
+      "category": [
+        "开源项目",
+        "Shell"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T10:06:22.669840"
+    },
+    {
+      "id": "github-903275be124a",
+      "title": "chrislgarry/Apollo-11 — Original Apollo 11 Guidance Computer (AGC) source code for the command and lunar",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/chrislgarry/Apollo-11",
+      "summary": "Original Apollo 11 Guidance Computer (AGC) source code for the command and lunar modules. | 🔥 606 stars today | Language: Assembly",
+      "category": [
+        "开源项目",
+        "Assembly"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T10:06:22.668650"
+    },
+    {
+      "id": "github-90a874f93a44",
+      "title": "virattt/ai-hedge-fund — An AI Hedge Fund Team",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/virattt/ai-hedge-fund",
+      "summary": "An AI Hedge Fund Team | 🔥 1058 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T10:06:22.667419"
+    },
+    {
+      "id": "github-2b6d106c7083",
+      "title": "Lordog/dive-into-llms — 《动手学大模型Dive into LLMs》系列编程实践教程",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Lordog/dive-into-llms",
+      "summary": "《动手学大模型Dive into LLMs》系列编程实践教程 | 🔥 941 stars today | Language: Jupyter Notebook",
+      "category": [
+        "开源项目",
+        "Jupyter Notebook"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T10:06:22.666147"
+    },
+    {
+      "id": "github-555c3517c1da",
+      "title": "thedotmack/claude-mem — A Claude Code plugin that automatically captures everything Claude does during y",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "summary": "A Claude Code plugin that automatically captures everything Claude does during your coding sessions, compresses it with AI (using Claude's agent-sdk), and injects relevant context back into future ses",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T10:06:22.664907"
+    },
+    {
+      "id": "github-ec9987c48f87",
+      "title": "pascalorg/editor — Create and share 3D architectural projects.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/pascalorg/editor",
+      "summary": "Create and share 3D architectural projects. | 🔥 1391 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T10:06:22.663923"
+    },
+    {
+      "id": "github-41a9464d5efe",
+      "title": "forrestchang/andrej-karpathy-skills — A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Kar",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/forrestchang/andrej-karpathy-skills",
+      "summary": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls. | 🔥 9646 stars today",
+      "category": [
+        "开源项目"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T10:06:22.663022"
+    },
+    {
+      "id": "hf-paper-baccfebfc32a",
+      "title": "Feed-Forward 3D Scene Modeling: A Problem-Driven Perspective",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.14025",
+      "summary": "Reconstructing 3D representations from 2D inputs is a fundamental task in computer vision and graphics, serving as a cornerstone for understanding and interacting with the physical world. While tradit",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T10:06:22.019808"
+    },
+    {
+      "id": "hf-paper-b3b845486bc8",
+      "title": "Grid2Matrix: Revealing Digital Agnosia in Vision-Language Models",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.09687",
+      "summary": "Vision-Language Models (VLMs) excel on many multimodal reasoning benchmarks, but these evaluations often do not require an exhaustive readout of the image and can therefore obscure failures in faithfu",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T10:06:22.019805"
+    },
+    {
+      "id": "hf-paper-7f0a26b58db4",
+      "title": "Spec Kit Agents: Context-Grounded Agentic Workflows",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.05278",
+      "summary": "Spec-driven development (SDD) with AI coding agents provides a structured workflow, but agents often remain \"context blind\" in large, evolving repositories, leading to hallucinated APIs and architectu",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T10:06:22.019803"
+    },
+    {
+      "id": "hf-paper-2f9b9fb282fa",
+      "title": "TREX: Automating LLM Fine-tuning via Agent-Driven Tree-based Exploration",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.14116",
+      "summary": "While Large Language Models (LLMs) have empowered AI research agents to perform isolated scientific tasks, automating complex, real-world workflows, such as LLM training, remains a significant challen",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T10:06:22.019801"
+    },
+    {
+      "id": "hf-paper-89900b79412b",
+      "title": "Seedance 2.0: Advancing Video Generation for World Complexity",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.14148",
+      "summary": "Seedance 2.0 is a new native multi-modal audio-video generation model, officially released in China in early February 2026. Compared with its predecessors, Seedance 1.0 and 1.5 Pro, Seedance 2.0 adopt",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T10:06:22.019799"
+    },
+    {
+      "id": "hf-paper-694fd323af68",
+      "title": "OccuBench: Evaluating AI Agents on Real-World Professional Tasks via Language World Models",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.10866",
+      "summary": "AI agents are expected to perform professional work across hundreds of occupational domains (from emergency department triage to nuclear reactor safety monitoring to customs import processing), yet ex",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T10:06:22.019797"
+    },
+    {
+      "id": "hf-paper-0d79ac4675ba",
+      "title": "InfiniteScienceGym: An Unbounded, Procedurally-Generated Benchmark for Scientific Analysis",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.13201",
+      "summary": "Large language models are emerging as scientific assistants, but evaluating their ability to reason from empirical data remains challenging. Benchmarks derived from published studies and human annotat",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T10:06:22.019794"
+    },
+    {
+      "id": "hf-paper-af1ccc15741a",
+      "title": "ROSE: Retrieval-Oriented Segmentation Enhancement",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.14147",
+      "summary": "Existing segmentation models based on multimodal large language models (MLLMs), such as LISA, often struggle with novel or emerging entities due to their inability to incorporate up-to-date knowledge.",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T10:06:22.019791"
+    },
+    {
+      "id": "hf-paper-0694ac51bca0",
+      "title": "UI-Zoomer: Uncertainty-Driven Adaptive Zoom-In for GUI Grounding",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.14113",
+      "summary": "GUI grounding, which localizes interface elements from screenshots given natural language queries, remains challenging for small icons and dense layouts. Test-time zoom-in methods improve localization",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T10:06:22.019788"
+    },
+    {
+      "id": "hf-paper-5fc69304e829",
+      "title": "SpatialEvo: Self-Evolving Spatial Intelligence via Deterministic Geometric Environments",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.14144",
+      "summary": "Spatial reasoning over three-dimensional scenes is a core capability for embodied intelligence, yet continuous model improvement remains bottlenecked by the cost of geometric annotation. The self-evol",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-16T10:06:22.019776"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-09-09T12:07:29.819996"
+}

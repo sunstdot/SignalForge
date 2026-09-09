@@ -1,0 +1,1031 @@
+{
+  "id": "b42b3cba-dfd6-4a75-b860-f2895ef6b563",
+  "date": "2026-04-14",
+  "items": [
+    {
+      "id": "arxiv-2604.13035v1",
+      "title": "SceneCritic: A Symbolic Evaluator for 3D Indoor Scene Synthesis",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.13035v1",
+      "summary": "Large Language Models (LLMs) and Vision-Language Models (VLMs) increasingly generate indoor scenes through intermediate structures such as layouts and scene graphs, yet evaluation still relies on LLM ",
+      "category": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T17:59:26+00:00"
+    },
+    {
+      "id": "arxiv-2604.13029v1",
+      "title": "Visual Preference Optimization with Rubric Rewards",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.13029v1",
+      "summary": "The effectiveness of Direct Preference Optimization (DPO) depends on preference data that reflect the quality differences that matter in multimodal tasks. Existing pipelines often rely on off-policy p",
+      "category": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T17:58:22+00:00"
+    },
+    {
+      "id": "arxiv-2604.13024v1",
+      "title": "CLAD: Efficient Log Anomaly Detection Directly on Compressed Representations",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.13024v1",
+      "summary": "The explosive growth of system logs makes streaming compression essential, yet existing log anomaly detection (LAD) methods incur severe pre-processing overhead by requiring full decompression and par",
+      "category": [
+        "cs.LG",
+        "cs.DB"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T17:57:01+00:00"
+    },
+    {
+      "id": "arxiv-2604.13022v1",
+      "title": "Classical and Quantum Speedups for Non-Convex Optimization via Energy Conserving Descent",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.13022v1",
+      "summary": "The Energy Conserving Descent (ECD) algorithm was recently proposed (De Luca & Silverstein, 2022) as a global non-convex optimization method. Unlike gradient descent, appropriately configured ECD dyna",
+      "category": [
+        "quant-ph",
+        "cs.LG",
+        "math.OC"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T17:56:33+00:00"
+    },
+    {
+      "id": "arxiv-2604.13021v1",
+      "title": "Representation geometry shapes task performance in vision-language modeling for CT enterography",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.13021v1",
+      "summary": "Computed tomography (CT) enterography is a primary imaging modality for assessing inflammatory bowel disease (IBD), yet the representational choices that best support automated analysis of this modali",
+      "category": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T17:56:23+00:00"
+    },
+    {
+      "id": "arxiv-2604.13018v1",
+      "title": "Toward Autonomous Long-Horizon Engineering for ML Research",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.13018v1",
+      "summary": "Autonomous AI research has advanced rapidly, but long-horizon ML research engineering remains difficult: agents must sustain coherent progress across task comprehension, environment setup, implementat",
+      "category": [
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T17:55:16+00:00"
+    },
+    {
+      "id": "arxiv-2604.13017v1",
+      "title": "PAL: Personal Adaptive Learner",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.13017v1",
+      "summary": "AI-driven education platforms have made some progress in personalisation, yet most remain constrained to static adaptation--predefined quizzes, uniform pacing, or generic feedback--limiting their abil",
+      "category": [
+        "cs.AI",
+        "cs.HC"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T17:54:37+00:00"
+    },
+    {
+      "id": "arxiv-2604.13016v1",
+      "title": "Rethinking On-Policy Distillation of Large Language Models: Phenomenology, Mechanism, and Recipe",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.13016v1",
+      "summary": "On-policy distillation (OPD) has become a core technique in the post-training of large language models, yet its training dynamics remain poorly understood. This paper provides a systematic investigati",
+      "category": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T17:54:28+00:00"
+    },
+    {
+      "id": "arxiv-2604.13013v1",
+      "title": "Bilevel Late Acceptance Hill Climbing for the Electric Capacitated Vehicle Routing Problem",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.13013v1",
+      "summary": "This paper tackles the Electric Capacitated Vehicle Routing Problem (E-CVRP) through a bilevel optimization framework that handles routing and charging decisions separately or jointly depending on the",
+      "category": [
+        "cs.AI",
+        "math.OC"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T17:47:12+00:00"
+    },
+    {
+      "id": "arxiv-2604.13010v1",
+      "title": "Lightning OPD: Efficient Post-Training for Large Reasoning Models with Offline On-Policy Distillation",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.13010v1",
+      "summary": "On-policy distillation (OPD) has emerged as an efficient post-training paradigm for large language models. However, standard OPD requires a live teacher inference server throughout training, resulting",
+      "category": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T17:44:50+00:00"
+    },
+    {
+      "id": "arxiv-2604.13006v1",
+      "title": "One Token Away from Collapse: The Fragility of Instruction-Tuned Helpfulness",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.13006v1",
+      "summary": "Instruction-tuned large language models produce helpful, structured responses, but how robust is this helpfulness when trivially constrained? We show that simple lexical constraints (banning a single ",
+      "category": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T17:40:01+00:00"
+    },
+    {
+      "id": "arxiv-2604.12995v1",
+      "title": "PolicyLLM: Towards Excellent Comprehension of Public Policy for Large Language Models",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.12995v1",
+      "summary": "Large Language Models (LLMs) are increasingly integrated into real-world decision-making, including in the domain of public policy. Yet, their ability to comprehend and reason about policy-related con",
+      "category": [
+        "cs.CL",
+        "cs.CY"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T17:27:50+00:00"
+    },
+    {
+      "id": "arxiv-2604.12994v1",
+      "title": "LogicEval: A Systematic Framework for Evaluating Automated Repair Techniques for Logical Vulnerabilities in Real-World Software",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.12994v1",
+      "summary": "Logical vulnerabilities in software stem from flaws in program logic rather than memory safety, which can lead to critical security failures. Although existing automated program repair techniques prim",
+      "category": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T17:26:07+00:00"
+    },
+    {
+      "id": "arxiv-2604.12992v1",
+      "title": "Causal Diffusion Models for Counterfactual Outcome Distributions in Longitudinal Data",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.12992v1",
+      "summary": "Predicting counterfactual outcomes in longitudinal data, where sequential treatment decisions heavily depend on evolving patient states, is critical yet notoriously challenging due to complex time-dep",
+      "category": [
+        "stat.ML",
+        "cs.LG",
+        "econ.EM"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T17:25:53+00:00"
+    },
+    {
+      "id": "arxiv-2604.12989v1",
+      "title": "Accelerating Speculative Decoding with Block Diffusion Draft Trees",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.12989v1",
+      "summary": "Speculative decoding accelerates autoregressive language models by using a lightweight drafter to propose multiple future tokens, which the target model then verifies in parallel. DFlash shows that a ",
+      "category": [
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T17:23:14+00:00"
+    },
+    {
+      "id": "github-27c37036f35e",
+      "title": "TapXWorld/ChinaTextbook — 所有小初高、大学PDF教材。",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/TapXWorld/ChinaTextbook",
+      "summary": "所有小初高、大学PDF教材。 | 🔥 703 stars today | Language: Roff",
+      "category": [
+        "开源项目",
+        "Roff"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:55:14.528137"
+    },
+    {
+      "id": "github-ae9931beb9ca",
+      "title": "gsd-build/get-shit-done — A light-weight and powerful meta-prompting, context engineering and spec-driven ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/gsd-build/get-shit-done",
+      "summary": "A light-weight and powerful meta-prompting, context engineering and spec-driven development system for Claude Code by TÂCHES. | 🔥 655 stars today | Language: JavaScript",
+      "category": [
+        "开源项目",
+        "JavaScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:55:14.527797"
+    },
+    {
+      "id": "github-c63a4a80f9d0",
+      "title": "hacksider/Deep-Live-Cam — real time face swap and one-click video deepfake with only a single image",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/hacksider/Deep-Live-Cam",
+      "summary": "real time face swap and one-click video deepfake with only a single image | 🔥 217 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:55:14.527391"
+    },
+    {
+      "id": "github-4341bbe66d16",
+      "title": "ahujasid/blender-mcp",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/ahujasid/blender-mcp",
+      "summary": "🔥 339 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:55:14.526945"
+    },
+    {
+      "id": "github-2267c9689012",
+      "title": "jamiepine/voicebox — The open-source voice synthesis studio",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/jamiepine/voicebox",
+      "summary": "The open-source voice synthesis studio | 🔥 512 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:55:14.526491"
+    },
+    {
+      "id": "github-ad5992dffaf0",
+      "title": "shanraisshan/claude-code-best-practice — practice made claude perfect",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/shanraisshan/claude-code-best-practice",
+      "summary": "practice made claude perfect | 🔥 2461 stars today | Language: HTML",
+      "category": [
+        "开源项目",
+        "HTML"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:55:14.526065"
+    },
+    {
+      "id": "github-c43d9b688406",
+      "title": "anthropics/claude-cookbooks — A collection of notebooks/recipes showcasing some fun and effective ways of usin",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/anthropics/claude-cookbooks",
+      "summary": "A collection of notebooks/recipes showcasing some fun and effective ways of using Claude. | 🔥 1012 stars today | Language: Jupyter Notebook",
+      "category": [
+        "开源项目",
+        "Jupyter Notebook"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:55:14.525607"
+    },
+    {
+      "id": "github-90a874f93a44",
+      "title": "virattt/ai-hedge-fund — An AI Hedge Fund Team",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/virattt/ai-hedge-fund",
+      "summary": "An AI Hedge Fund Team | 🔥 783 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:55:14.524957"
+    },
+    {
+      "id": "github-6f3a354333d0",
+      "title": "snarktank/ralph — Ralph is an autonomous AI agent loop that runs repeatedly until all PRD items ar",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/snarktank/ralph",
+      "summary": "Ralph is an autonomous AI agent loop that runs repeatedly until all PRD items are complete. | 🔥 691 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:55:14.524563"
+    },
+    {
+      "id": "github-4ea0762a99d3",
+      "title": "coleam00/Archon — The first open-source harness builder for AI coding. Make AI coding deterministi",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/coleam00/Archon",
+      "summary": "The first open-source harness builder for AI coding. Make AI coding deterministic and repeatable. | 🔥 677 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:55:14.524159"
+    },
+    {
+      "id": "github-f5b316d2b7cf",
+      "title": "multica-ai/multica — The open-source managed agents platform. Turn coding agents into real teammates ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/multica-ai/multica",
+      "summary": "The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills. | 🔥 1715 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:55:14.523762"
+    },
+    {
+      "id": "github-e4b7ba63c2bd",
+      "title": "microsoft/markitdown — Python tool for converting files and office documents to Markdown.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/microsoft/markitdown",
+      "summary": "Python tool for converting files and office documents to Markdown. | 🔥 2808 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:55:14.523303"
+    },
+    {
+      "id": "github-555c3517c1da",
+      "title": "thedotmack/claude-mem — A Claude Code plugin that automatically captures everything Claude does during y",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "summary": "A Claude Code plugin that automatically captures everything Claude does during your coding sessions, compresses it with AI (using Claude's agent-sdk), and injects relevant context back into future ses",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:55:14.522879"
+    },
+    {
+      "id": "github-332aef856035",
+      "title": "shiyu-coder/Kronos — Kronos: A Foundation Model for the Language of Financial Markets",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/shiyu-coder/Kronos",
+      "summary": "Kronos: A Foundation Model for the Language of Financial Markets | 🔥 1554 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:55:14.522388"
+    },
+    {
+      "id": "github-3c19e4a80a3d",
+      "title": "NousResearch/hermes-agent — The agent that grows with you",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "summary": "The agent that grows with you | 🔥 11289 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:55:14.521956"
+    },
+    {
+      "id": "github-41a9464d5efe",
+      "title": "forrestchang/andrej-karpathy-skills — A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Kar",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/forrestchang/andrej-karpathy-skills",
+      "summary": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls. | 🔥 5733 stars today",
+      "category": [
+        "开源项目"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:55:14.521481"
+    },
+    {
+      "id": "github-94d874828b53",
+      "title": "langchain-ai/langchain — The agent engineering platform",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/langchain-ai/langchain",
+      "summary": "The agent engineering platform | ⭐ 133,457 stars | Language: Python | Topics: agents, ai, ai-agents, anthropic, chatgpt",
+      "category": [
+        "开源项目",
+        "Python",
+        "agents",
+        "ai"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:16:13.978611"
+    },
+    {
+      "id": "github-daa46fec3651",
+      "title": "golang/go — The Go programming language",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/golang/go",
+      "summary": "The Go programming language | ⭐ 133,458 stars | Language: Go | Topics: go, golang, language, programming-language",
+      "category": [
+        "开源项目",
+        "Go",
+        "go",
+        "golang"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:16:13.978599"
+    },
+    {
+      "id": "github-b28368545e77",
+      "title": "langgenius/dify — Production-ready platform for agentic workflow development.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/langgenius/dify",
+      "summary": "Production-ready platform for agentic workflow development. | ⭐ 137,632 stars | Language: TypeScript | Topics: agent, agentic-ai, agentic-framework, agentic-workflow, ai",
+      "category": [
+        "开源项目",
+        "TypeScript",
+        "agent",
+        "agentic-ai"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:16:13.978588"
+    },
+    {
+      "id": "github-3693080cafad",
+      "title": "vercel/next.js — The React Framework",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/vercel/next.js",
+      "summary": "The React Framework | ⭐ 138,898 stars | Language: JavaScript | Topics: blog, browser, compiler, components, hybrid",
+      "category": [
+        "开源项目",
+        "JavaScript",
+        "blog",
+        "browser"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:16:13.978576"
+    },
+    {
+      "id": "civitai-2541453",
+      "title": "🎨 Pluey / Cat Mike | Deltarune (Illustrious/Noob) (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2541453",
+      "summary": "Type: LORA | Downloads: 3 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:55:14.350021"
+    },
+    {
+      "id": "civitai-2541132",
+      "title": "🎨 Akane Isshiki (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2541132",
+      "summary": "Type: LORA | Downloads: 3 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:55:14.350018"
+    },
+    {
+      "id": "civitai-2534398",
+      "title": "🎨 Real Skin (Less Synthetic) (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2534398",
+      "summary": "Type: LORA | Downloads: 417 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:55:14.350016"
+    },
+    {
+      "id": "civitai-2541466",
+      "title": "🎨 The King of Fighters - Chris and Bao (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2541466",
+      "summary": "Type: LORA | Downloads: 2 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:55:14.350013"
+    },
+    {
+      "id": "civitai-2541477",
+      "title": "🎨 Eughfish Style (LoCon)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2541477",
+      "summary": "Type: LoCon | Downloads: 2 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:55:14.350007"
+    },
+    {
+      "id": "civitai-2541429",
+      "title": "🎨 ryougi shiki (simple anime style) (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2541429",
+      "summary": "Type: LORA | Downloads: 2 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:32:30.985909"
+    },
+    {
+      "id": "civitai-2541437",
+      "title": "🎨 Artelsia Style (LoCon)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2541437",
+      "summary": "Type: LoCon | Downloads: 2 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:32:30.985901"
+    },
+    {
+      "id": "civitai-2429565",
+      "title": "🎨 Cinematic / Chiaroscuro Lighting Style (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2429565",
+      "summary": "Type: LORA | Downloads: 812 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:32:30.985891"
+    },
+    {
+      "id": "civitai-2541111",
+      "title": "🎨 Yaegashi Nan (八重樫南) Style - Illustrious (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2541111",
+      "summary": "Type: LORA | Downloads: 0 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:32:30.985875"
+    },
+    {
+      "id": "civitai-2541333",
+      "title": "🎨 Daniil (Modern Character) LoRA – SDXL (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2541333",
+      "summary": "Type: LORA | Downloads: 0 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:32:30.985837"
+    },
+    {
+      "id": "civitai-2537500",
+      "title": "🎨 [PONY / Illustrious] オトハ / Otoha | ステラソラ / Stella Sora (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2537500",
+      "summary": "Type: LORA | Downloads: 37 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:16:14.224902"
+    },
+    {
+      "id": "civitai-1960588",
+      "title": "🎨 #WATW - 🇦🇹 Austria (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/1960588",
+      "summary": "Type: LORA | Downloads: 739 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:16:14.224899"
+    },
+    {
+      "id": "civitai-2541395",
+      "title": "🎨 152025 (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2541395",
+      "summary": "Type: LORA | Downloads: 2 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:16:14.224896"
+    },
+    {
+      "id": "civitai-2536595",
+      "title": "🎨 The Secret of Kells - Brendan and Aisling (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2536595",
+      "summary": "Type: LORA | Downloads: 3 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:16:14.224893"
+    },
+    {
+      "id": "civitai-1307858",
+      "title": "🎨 Dataset Tools for Imaging and Captioning - v0.5 (Other)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/1307858",
+      "summary": "Type: Other | Downloads: 140 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:16:14.224881"
+    },
+    {
+      "id": "hf-model-b1cd45c4732d",
+      "title": "🤗 LilaRest/gemma-4-31B-it-NVFP4-turbo",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/LilaRest/gemma-4-31B-it-NVFP4-turbo",
+      "summary": "Task: text-generation | Downloads: 28,829 | Likes: 196",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:16:13.072436"
+    },
+    {
+      "id": "hf-model-73665a6e3a2f",
+      "title": "🤗 google/gemma-4-E4B-it",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/google/gemma-4-E4B-it",
+      "summary": "Task: any-to-any | Downloads: 1,394,523 | Likes: 631",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:16:13.072430"
+    },
+    {
+      "id": "hf-model-5a5b20cc1da7",
+      "title": "🤗 Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled",
+      "summary": "Task: image-text-to-text | Downloads: 585,351 | Likes: 2,621",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:16:13.072424"
+    },
+    {
+      "id": "hf-model-b0310e0acf74",
+      "title": "🤗 k2-fsa/OmniVoice",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/k2-fsa/OmniVoice",
+      "summary": "Task: text-to-speech | Downloads: 460,224 | Likes: 545",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:16:13.072417"
+    },
+    {
+      "id": "hf-model-b88ea472e3ac",
+      "title": "🤗 netflix/void-model",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/netflix/void-model",
+      "summary": "Task: video-to-video | Likes: 795",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:16:13.072410"
+    },
+    {
+      "id": "hf-paper-85257914da06",
+      "title": "ClawGUI: A Unified Framework for Training, Evaluating, and Deploying GUI Agents",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.11784",
+      "summary": "GUI agents drive applications through their visual interfaces instead of programmatic APIs, interacting with arbitrary software via taps, swipes, and keystrokes, reaching a long tail of applications t",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:55:13.934534"
+    },
+    {
+      "id": "hf-paper-3e85a6039823",
+      "title": "SciPredict: Can LLMs Predict the Outcomes of Scientific Experiments in Natural Sciences?",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.10718",
+      "summary": "Accelerating scientific discovery requires the identification of which experiments would yield the best outcomes before committing resources to costly physical validation. While existing benchmarks ev",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:55:13.934528"
+    },
+    {
+      "id": "hf-paper-1118d6b79fda",
+      "title": "Audio Flamingo Next: Next-Generation Open Audio-Language Models for Speech, Sound, and Music",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.10905",
+      "summary": "We present Audio Flamingo Next (AF-Next), the next-generation and most capable large audio-language model in the Audio Flamingo series, designed to advance understanding and reasoning over speech, env",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:55:13.934521"
+    },
+    {
+      "id": "hf-paper-d11f9644d724",
+      "title": "Introspective Diffusion Language Models",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.11035",
+      "summary": "Diffusion language models promise parallel generation, yet still lag behind autoregressive (AR) models in quality. We stem this gap to a failure of introspective consistency: AR models agree with thei",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:55:13.934512"
+    },
+    {
+      "id": "hf-paper-e2fd9eeab18a",
+      "title": "Tracing the Roots: A Multi-Agent Framework for Uncovering Data Lineage in Post-Training LLMs",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.10480",
+      "summary": "Post-training data plays a pivotal role in shaping the capabilities of Large Language Models (LLMs), yet datasets are often treated as isolated artifacts, overlooking the systemic connections that und",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:55:13.934491"
+    },
+    {
+      "id": "hf-paper-c40e18ad1dec",
+      "title": "Eliciting Medical Reasoning with Knowledge-enhanced Data Synthesis: A Semi-Supervised Reinforcement Learning Approach",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.11547",
+      "summary": "While large language models hold promise for complex medical applications, their development is hindered by the scarcity of high-quality reasoning data. To address this issue, existing approaches typi",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:32:30.018000"
+    },
+    {
+      "id": "hf-paper-c1482611142f",
+      "title": "CocoaBench: Evaluating Unified Digital Agents in the Wild",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.11201",
+      "summary": "LLM agents now perform strongly in software engineering, deep research, GUI automation, and various other applications, while recent agent scaffolds and models are increasingly integrating these capab",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:32:30.017997"
+    },
+    {
+      "id": "hf-paper-1c64f06bdefe",
+      "title": "Solving Physics Olympiad via Reinforcement Learning on Physics Simulators",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.11805",
+      "summary": "We have witnessed remarkable advances in LLM reasoning capabilities with the advent of DeepSeek-R1. However, much of this progress has been fueled by the abundance of internet question-answer (QA) pai",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:32:30.017985"
+    },
+    {
+      "id": "hf-paper-cde96075272d",
+      "title": "Strips as Tokens: Artist Mesh Generation with Native UV Segmentation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.09132",
+      "summary": "Recent advancements in autoregressive transformers have demonstrated remarkable potential for generating artist-quality meshes. However, the token ordering strategies employed by existing methods typi",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:16:13.511091"
+    },
+    {
+      "id": "hf-paper-d8ad52a9394b",
+      "title": "ADD for Multi-Bit Image Watermarking",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.11491",
+      "summary": "As generative models enable rapid creation of high-fidelity images, societal concerns about misinformation and authenticity have intensified. A promising remedy is multi-bit image watermarking, which ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:16:13.511089"
+    },
+    {
+      "id": "hf-paper-d7e7922d3c33",
+      "title": "OmniShow: Unifying Multimodal Conditions for Human-Object Interaction Video Generation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.11804",
+      "summary": "In this work, we study Human-Object Interaction Video Generation (HOIVG), which aims to synthesize high-quality human-object interaction videos conditioned on text, reference images, audio, and pose. ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:16:13.511087"
+    },
+    {
+      "id": "hf-paper-b4b9d89ee0aa",
+      "title": "TAIHRI: Task-Aware 3D Human Keypoints Localization for Close-Range Human-Robot Interaction",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.08921",
+      "summary": "Accurate 3D human keypoints localization is a critical technology enabling robots to achieve natural and safe physical interaction with users. Conventional 3D human keypoints estimation methods primar",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:16:13.511083"
+    },
+    {
+      "id": "hf-paper-3639bc4680c9",
+      "title": "CodeTracer: Towards Traceable Agent States",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.11641",
+      "summary": "Code agents are advancing rapidly, but debugging them is becoming increasingly difficult. As frameworks orchestrate parallel tool calls and multi-stage workflows over complex tasks, making the agent's",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:16:13.511081"
+    },
+    {
+      "id": "hf-paper-d77b29e8de45",
+      "title": "From Reasoning to Agentic: Credit Assignment in Reinforcement Learning for Large Language Models",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.09459",
+      "summary": "Reinforcement learning (RL) for large language models (LLMs) increasingly relies on sparse, outcome-level rewards -- yet determining which actions within a long trajectory caused the outcome remains d",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:16:13.511077"
+    },
+    {
+      "id": "hf-paper-1b1a005f69d7",
+      "title": "Low-rank Optimization Trajectories Modeling for LLM RLVR Acceleration",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.11446",
+      "summary": "Recently, scaling reinforcement learning with verifiable rewards (RLVR) for large language models (LLMs) has emerged as an effective training paradigm for significantly improving model capabilities, w",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-14T11:16:13.511075"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-09-09T12:07:30.109271"
+}

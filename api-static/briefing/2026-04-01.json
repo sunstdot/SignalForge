@@ -1,0 +1,281 @@
+{
+  "id": "b6f1ecd3-2e12-4603-882a-dd67783744b2",
+  "date": "2026-04-01",
+  "items": [
+    {
+      "id": "arxiv-2604.00997v1",
+      "title": "Uncertainty-Aware Variational Reward Factorization via Probabilistic Preference Bases for LLM Personalization",
+      "source": "arXiv",
+      "source_type": "paper",
+      "url": "https://arxiv.org/abs/2604.00997v1",
+      "summary": "Reward factorization personalizes large language models (LLMs) by decomposing rewards into shared basis functions and user-specific weights. Yet, existing methods estimate user weights from scarce dat...",
+      "category": [
+        "AI研究",
+        "大语言模型",
+        "前端技术"
+      ],
+      "relevance_score": 9.0,
+      "created_at": "2026-04-01T14:58:51.000Z"
+    },
+    {
+      "id": "arxiv-2604.00931v1",
+      "title": "PsychAgent: An Experience-Driven Lifelong Learning Agent for Self-Evolving Psychological Counselor",
+      "source": "arXiv",
+      "source_type": "paper",
+      "url": "https://arxiv.org/abs/2604.00931v1",
+      "summary": "本文提出了PsychAgent，一个用于心理咨询的经验驱动型终身学习智能体。该系统通过三个核心引擎（记忆增强规划引擎、技能进化引擎和强化内化引擎）实现持续自我进化，模仿人类心理咨询师通过临床实践不断提升专业能力的过程。实验表明，PsychAgent在多维度评估中优于GPT-4和Gemini等通用大模型以及领域专用基线模型。\n\n#",
+      "category": [
+        "AI研究",
+        "大语言模型",
+        "开发者工具"
+      ],
+      "relevance_score": 9.0,
+      "created_at": "2026-04-01T14:08:49.000Z"
+    },
+    {
+      "id": "arxiv-2604.00923v1",
+      "title": "Positional Cognitive Specialization: Where Do LLMs Learn To Comprehend and Speak Your Language?",
+      "source": "arXiv",
+      "source_type": "paper",
+      "url": "https://arxiv.org/abs/2604.00923v1",
+      "summary": "Adapting large language models (LLMs) to new languages is an expensive and opaque process. Understanding how language models acquire new languages and multilingual abilities is key to achieve efficien...",
+      "category": [
+        "AI研究",
+        "大语言模型",
+        "机器学习应用"
+      ],
+      "relevance_score": 9.0,
+      "created_at": "2026-04-01T14:03:51.000Z"
+    },
+    {
+      "id": "arxiv-2604.00920v1",
+      "title": "GPT-NL Public Corpus: A Permissively Licensed, Dutch-First Dataset for LLM Pre-training",
+      "source": "arXiv",
+      "source_type": "paper",
+      "url": "https://arxiv.org/abs/2604.00920v1",
+      "summary": "GPT-NL Public Corpus 是目前最大的荷兰语开放许可语料库，专为大语言模型预训练设计。该语料库包含 36B 个独特的荷兰语 token，以及超过 487B 个其他语言（英语、代码、德语/丹麦语）的 token，所有数据均来自具有宽松许可的数据集，并以 CC-BY 许可证重新发布在 Hugging Face Hub 上。",
+      "category": [
+        "AI研究",
+        "大语言模型",
+        "数据集"
+      ],
+      "relevance_score": 9.0,
+      "created_at": "2026-04-01T14:00:53.000Z"
+    },
+    {
+      "id": "arxiv-2604.00917v1",
+      "title": "Investigating Autonomous Agent Contributions in the Wild: Activity Patterns and Code Change over Time",
+      "source": "arXiv",
+      "source_type": "paper",
+      "url": "https://arxiv.org/abs/2604.00917v1",
+      "summary": "本研究构建了一个包含约11万个开源pull requests的新数据集，系统性地比较了五种主流AI编码代理（OpenAI Codex、Claude Code、GitHub Copilot、Google Jules和Devin）在实际软件开发中的贡献模式。研究不仅分析了这些AI代理的合并频率、编辑文件类型和开发者交互等即时指标，还特别关注了代码的长期可维护性，发现AI生成的代码虽然在开源项目中使用日益增加，但相比人类编写的代码呈现出更高的代码流失率（churn rate）。\n\n#",
+      "category": [
+        "AI研究",
+        "开发者工具"
+      ],
+      "relevance_score": 9.0,
+      "created_at": "2026-04-01T13:58:30.000Z"
+    },
+    {
+      "id": "github-1197029054",
+      "title": "sanbuphy/learn-coding-agent: Research on Coding Agents",
+      "source": "GitHub",
+      "source_type": "repo",
+      "url": "https://github.com/sanbuphy/learn-coding-agent",
+      "summary": "这是一个关于编码代理（Coding Agents）的研究项目。该项目专注于探索和研究能够自动化编程任务的AI代理系统，旨在理解和开发能够辅助或自动完成代码编写、调试和优化等任务的智能系统。",
+      "category": [
+        "AI研究",
+        "开发者工具",
+        "前端技术"
+      ],
+      "relevance_score": 9.0,
+      "created_at": "2026-03-31T09:07:08.000Z"
+    },
+    {
+      "id": "arxiv-2604.00979v1",
+      "title": "Dual Optimal: Make Your LLM Peer-like with Dignity",
+      "source": "arXiv",
+      "source_type": "paper",
+      "url": "https://arxiv.org/abs/2604.00979v1",
+      "summary": "Current aligned language models exhibit a dual failure mode we term the Evasive Servant: they sycophantically validate flawed user beliefs while deflecting responsibility with boilerplate disclaimers....",
+      "category": [
+        "AI研究",
+        "大语言模型",
+        "开发者工具"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-01T14:48:44.000Z"
+    },
+    {
+      "id": "arxiv-2604.00938v1",
+      "title": "WARP: Guaranteed Inner-Layer Repair of NLP Transformers",
+      "source": "arXiv",
+      "source_type": "paper",
+      "url": "https://arxiv.org/abs/2604.00938v1",
+      "summary": "Transformer-based NLP models remain vulnerable to adversarial perturbations, yet existing repair methods face a fundamental trade-off: gradient-based approaches offer flexibility but lack verifiabilit",
+      "category": [
+        "AI研究",
+        "机器学习",
+        "开发者工具"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-04-01T14:12:49.000Z"
+    },
+    {
+      "id": "github-1197124958",
+      "title": "ultrmgns/claude-private: Claude Code without any telemetry - the perfect cli to combo with CCR",
+      "source": "GitHub",
+      "source_type": "repo",
+      "url": "https://github.com/ultrmgns/claude-private",
+      "summary": "这是一个名为 claude-private 的开源项目，提供了一个无遥测数据收集的 Claude Code 命令行工具。该项目旨在为用户提供一个注重隐私保护的 Claude CLI 版本，特别适合与 CCR (Claude Code Runner) 配合使用，让开发者可以在本地环境中使用 Claude AI 能力而不用担心数据被收集。",
+      "category": [
+        "前端技术",
+        "开发者工具"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-03-31T10:50:44.000Z"
+    },
+    {
+      "id": "arxiv-2604.00987v1",
+      "title": "Bridging Structured Knowledge and Data: A Unified Framework with Finance Applications",
+      "source": "arXiv",
+      "source_type": "paper",
+      "url": "https://arxiv.org/abs/2604.00987v1",
+      "summary": "We develop Structured-Knowledge-Informed Neural Networks (SKINNs), a unified estimation framework that embeds theoretical, simulated, previously learned, or cross-domain insights as differentiable con",
+      "category": [
+        "AI研究",
+        "机器学习应用",
+        "金融技术"
+      ],
+      "relevance_score": 7.0,
+      "created_at": "2026-04-01T14:51:08.000Z"
+    },
+    {
+      "id": "arxiv-2604.00942v1",
+      "title": "Differentially Private Manifold Denoising",
+      "source": "arXiv",
+      "source_type": "paper",
+      "url": "https://arxiv.org/abs/2604.00942v1",
+      "summary": "We introduce a differentially private manifold denoising framework that allows users to exploit sensitive reference datasets to correct noisy, non-private query points without compromising privacy. Th",
+      "category": [
+        "AI研究",
+        "前端技术"
+      ],
+      "relevance_score": 5.0,
+      "created_at": "2026-04-01T14:13:59.000Z"
+    },
+    {
+      "id": "arxiv-2604.00994v1",
+      "title": "Multimodal Analysis of State-Funded News Coverage of the Israel-Hamas War on YouTube Shorts",
+      "source": "arXiv",
+      "source_type": "paper",
+      "url": "https://arxiv.org/abs/2604.00994v1",
+      "summary": "YouTube Shorts have become central to news consumption on the platform, yet research on how geopolitical events are represented in this format remains limited. To address this gap, we present a multim",
+      "category": [
+        "AI研究",
+        "机器学习"
+      ],
+      "relevance_score": 4.0,
+      "created_at": "2026-04-01T14:55:58.000Z"
+    },
+    {
+      "id": "arxiv-2604.00986v1",
+      "title": "Do Phone-Use Agents Respect Your Privacy?",
+      "source": "arXiv",
+      "source_type": "paper",
+      "url": "https://arxiv.org/abs/2604.00986v1",
+      "summary": "We study whether phone-use agents respect privacy while completing benign mobile tasks. This question has remained hard to answer because privacy-compliant behavior is not operationalized for phone-us",
+      "category": [
+        "AI研究",
+        "开发者工具"
+      ],
+      "relevance_score": 4.0,
+      "created_at": "2026-04-01T14:50:50.000Z"
+    },
+    {
+      "id": "github-1197732991",
+      "title": "Rangizingo/cc-cache-fix: No description",
+      "source": "GitHub",
+      "source_type": "repo",
+      "url": "https://github.com/Rangizingo/cc-cache-fix",
+      "summary": "⭐ 384 stars | No description",
+      "category": [
+        "前端技术",
+        "AI研究"
+      ],
+      "relevance_score": 4.0,
+      "created_at": "2026-03-31T20:48:54.000Z"
+    },
+    {
+      "id": "arxiv-2604.00947v1",
+      "title": "Phase transition on a context-sensitive random language model with short range interactions",
+      "source": "arXiv",
+      "source_type": "paper",
+      "url": "https://arxiv.org/abs/2604.00947v1",
+      "summary": "Since the random language model was proposed by E. DeGiuli [Phys. Rev. Lett. 122, 128301], language models have been investigated intensively from the viewpoint of statistical mechanics. Recently, the",
+      "category": [
+        "AI研究"
+      ],
+      "relevance_score": 3.0,
+      "created_at": "2026-04-01T14:19:11.000Z"
+    },
+    {
+      "id": "arxiv-2604.00927v1",
+      "title": "Learning Quantised Structure-Preserving Motion Representations for Dance Fingerprinting",
+      "source": "arXiv",
+      "source_type": "paper",
+      "url": "https://arxiv.org/abs/2604.00927v1",
+      "summary": "We present DANCEMATCH, an end-to-end framework for motion-based dance retrieval, the task of identifying semantically similar choreographies directly from raw video, defined as DANCE FINGERPRINTING. W",
+      "category": [
+        "AI研究",
+        "机器学习应用"
+      ],
+      "relevance_score": 3.0,
+      "created_at": "2026-04-01T14:06:59.000Z"
+    },
+    {
+      "id": "arxiv-2604.00921v1",
+      "title": "Representation Selection via Cross-Model Agreement using Canonical Correlation Analysis",
+      "source": "arXiv",
+      "source_type": "paper",
+      "url": "https://arxiv.org/abs/2604.00921v1",
+      "summary": "Modern vision pipelines increasingly rely on pretrained image encoders whose representations are reused across tasks and models, yet these representations are often overcomplete and model-specific. We",
+      "category": [
+        "AI研究",
+        "机器学习"
+      ],
+      "relevance_score": 3.0,
+      "created_at": "2026-04-01T14:01:41.000Z"
+    },
+    {
+      "id": "arxiv-2604.00918v1",
+      "title": "Generalization Bounds for Spectral GNNs via Fourier Domain Analysis",
+      "source": "arXiv",
+      "source_type": "paper",
+      "url": "https://arxiv.org/abs/2604.00918v1",
+      "summary": "Spectral graph neural networks learn graph filters, but their behavior with increasing depth and polynomial order is not well understood. We analyze these models in the graph Fourier domain, where eac",
+      "category": [
+        "AI研究",
+        "机器学习"
+      ],
+      "relevance_score": 3.0,
+      "created_at": "2026-04-01T13:58:50.000Z"
+    },
+    {
+      "id": "github-1197287945",
+      "title": "leookun/cursor-byok-server: Cursor 公益自定义 API，公益 Tab，无 Pro 自定义 API 服务端",
+      "source": "GitHub",
+      "source_type": "repo",
+      "url": "https://github.com/leookun/cursor-byok-server",
+      "summary": "⭐ 43 stars | Cursor 公益自定义 API，公益 Tab，无 Pro 自定义 API 服务端",
+      "category": [
+        "go",
+        "github"
+      ],
+      "relevance_score": 0,
+      "created_at": "2026-03-31T13:18:13.000Z"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-09-09T12:07:31.881672"
+}

@@ -1,0 +1,688 @@
+{
+  "id": "1e90ed33-7867-48ec-84d9-3ed1fbab7755",
+  "date": "2026-05-08",
+  "items": [
+    {
+      "id": "hf-paper-72a5f13f0c7e",
+      "title": "Can RL Teach Long-Horizon Reasoning to LLMs? Expressiveness Is Key",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.06638",
+      "summary": "Reinforcement learning (RL) has been applied to improve large language model (LLM) reasoning, yet the systematic study of how training scales with task difficulty has been hampered by the lack of cont",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-08T10:52:09.146101"
+    },
+    {
+      "id": "hf-paper-17c18a1e07b3",
+      "title": "AI Co-Mathematician: Accelerating Mathematicians with Agentic AI",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.06651",
+      "summary": "We introduce the AI co-mathematician, a workbench for mathematicians to interactively leverage AI agents to pursue open-ended research. The AI co-mathematician is optimized to provide holistic support",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-08T10:52:09.146083"
+    },
+    {
+      "id": "hf-paper-1e433e812099",
+      "title": "Skill1: Unified Evolution of Skill-Augmented Agents via Reinforcement Learning",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.06130",
+      "summary": "A persistent skill library allows language model agents to reuse successful strategies across tasks. Maintaining such a library requires three coupled capabilities. The agent selects a relevant skill,",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-08T10:52:09.146065"
+    },
+    {
+      "id": "hf-paper-42405b3c3950",
+      "title": "SkillOS: Learning Skill Curation for Self-Evolving Agents",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.06614",
+      "summary": "LLM-based agents are increasingly deployed to handle streaming tasks, yet they often remain one-off problem solvers that fail to learn from past interactions. Reusable skills distilled from experience",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-08T10:52:09.146046"
+    },
+    {
+      "id": "hf-paper-7cefd8bc2d3d",
+      "title": "Continuous Latent Diffusion Language Model",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.06548",
+      "summary": "Large language models have achieved remarkable success under the autoregressive paradigm, yet high-quality text generation need not be tied to a fixed left-to-right order. Existing alternatives still ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-08T10:52:09.146031"
+    },
+    {
+      "id": "hf-paper-f852038ee788",
+      "title": "UniPool: A Globally Shared Expert Pool for Mixture-of-Experts",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.06665",
+      "summary": "Modern Mixture-of-Experts (MoE) architectures allocate expert capacity through a rigid per-layer rule: each transformer layer owns a separate expert set. This convention couples depth scaling with lin",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-08T10:52:09.146011"
+    },
+    {
+      "id": "hf-paper-5295f9bae981",
+      "title": "Think, then Score: Decoupled Reasoning and Scoring for Video Reward Modeling",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.05922",
+      "summary": "Recent advances in generative video models are increasingly driven by post-training and test-time scaling, both of which critically depend on the quality of video reward models (RMs). An ideal reward ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-08T10:52:09.145972"
+    },
+    {
+      "id": "hf-paper-f0a70a147b2c",
+      "title": "ReflectDrive-2: Reinforcement-Learning-Aligned Self-Editing for Discrete Diffusion Driving",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.04647",
+      "summary": "We introduce ReflectDrive-2, a masked discrete diffusion planner with separate action expert for autonomous driving that represents plans as discrete trajectory tokens and generates them through paral",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-08T10:52:09.145950"
+    },
+    {
+      "id": "hf-paper-841d70557d76",
+      "title": "MiA-Signature: Approximating Global Activation for Long-Context Understanding",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.06416",
+      "summary": "A growing body of work in cognitive science suggests that reportable conscious access is associated with global ignition over distributed memory systems, while such activation is only partially access",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-08T10:52:09.145929"
+    },
+    {
+      "id": "hf-paper-50b47c9cb356",
+      "title": "Nonsense Helps: Prompt Space Perturbation Broadens Reasoning Exploration",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.05566",
+      "summary": "Reinforcement learning with verifiable rewards, particularly Group Relative Policy Optimization (GRPO), has significantly advanced the reasoning capabilities of Large Language Models (LLMs). However, ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-08T10:52:09.145880"
+    },
+    {
+      "id": "hf-model-286abd089b4e",
+      "title": "🤗 mistralai/Mistral-Medium-3.5-128B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B",
+      "summary": "Downloads: 18,272 | Likes: 295",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-08T10:52:08.771229"
+    },
+    {
+      "id": "hf-model-4481c76e29d1",
+      "title": "🤗 Qwen/Qwen3.6-27B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-27B",
+      "summary": "Task: image-text-to-text | Downloads: 1,771,851 | Likes: 1,176",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-08T10:52:08.771219"
+    },
+    {
+      "id": "hf-model-4fd7535cd23e",
+      "title": "🤗 XiaomiMiMo/MiMo-V2.5-Pro",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro",
+      "summary": "Task: text-generation | Downloads: 20,905 | Likes: 472",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-08T10:52:08.771208"
+    },
+    {
+      "id": "hf-model-667efcd6957b",
+      "title": "🤗 google/gemma-4-31B-it-assistant",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/google/gemma-4-31B-it-assistant",
+      "summary": "Task: any-to-any | Downloads: 19,908 | Likes: 141",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-08T10:52:08.771191"
+    },
+    {
+      "id": "hf-model-79856f8f8d86",
+      "title": "🤗 TenStrip/LTX2.3-10Eros",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/TenStrip/LTX2.3-10Eros",
+      "summary": "Task: image-to-video | Downloads: 28,215 | Likes: 153",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-08T10:52:08.771178"
+    },
+    {
+      "id": "hf-model-f3fc7d86e6c4",
+      "title": "🤗 SeeSee21/Z-Anime",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/SeeSee21/Z-Anime",
+      "summary": "Task: text-to-image | Downloads: 4,460 | Likes: 221",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-08T10:52:08.771160"
+    },
+    {
+      "id": "hf-model-b6a7c38191ac",
+      "title": "🤗 openai/privacy-filter",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/openai/privacy-filter",
+      "summary": "Task: token-classification | Downloads: 165,240 | Likes: 1,345",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-08T10:52:08.771149"
+    },
+    {
+      "id": "hf-model-d6be4a0dd0b2",
+      "title": "🤗 Zyphra/ZAYA1-8B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Zyphra/ZAYA1-8B",
+      "summary": "Downloads: 539 | Likes: 201",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-08T10:52:08.771137"
+    },
+    {
+      "id": "hf-model-fe96e83596e6",
+      "title": "🤗 deepseek-ai/DeepSeek-V4-Pro",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+      "summary": "Task: text-generation | Downloads: 946,264 | Likes: 3,726",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-08T10:52:08.771123"
+    },
+    {
+      "id": "hf-model-967b88027b16",
+      "title": "🤗 SulphurAI/Sulphur-2-base",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/SulphurAI/Sulphur-2-base",
+      "summary": "Task: text-to-video | Downloads: 71,149 | Likes: 386",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-08T10:52:08.771084"
+    },
+    {
+      "id": "github-d9356d794b3f",
+      "title": "aaif-goose/goose — an open source, extensible AI agent that goes beyond code suggestions - install,",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/aaif-goose/goose",
+      "summary": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM | 🔥 390 stars today | Language: Rust",
+      "category": [
+        "开源项目",
+        "Rust"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-08T10:52:08.397009"
+    },
+    {
+      "id": "github-005d5badcbcf",
+      "title": "PriorLabs/TabPFN — ⚡ TabPFN: Foundation Model for Tabular Data ⚡",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/PriorLabs/TabPFN",
+      "summary": "⚡ TabPFN: Foundation Model for Tabular Data ⚡ | 🔥 230 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-08T10:52:08.396046"
+    },
+    {
+      "id": "github-6a861e785610",
+      "title": "decolua/9router — 🇻🇳 Unlimited FREE AI coding. Connect Claude Code, Codex, Cursor, Cline, Copilot,",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/decolua/9router",
+      "summary": "🇻🇳 Unlimited FREE AI coding. Connect Claude Code, Codex, Cursor, Cline, Copilot, Antigravity to FREE Claude/GPT/Gemini via 40+ providers. Auto-fallback, RTK -40% tokens, never hit limits. | 🔥 149 star",
+      "category": [
+        "开源项目",
+        "JavaScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-08T10:52:08.395012"
+    },
+    {
+      "id": "github-fefd490b2ead",
+      "title": "docusealco/docuseal — Open source DocuSign alternative. Create, fill, and sign digital documents ✍️",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/docusealco/docuseal",
+      "summary": "Open source DocuSign alternative. Create, fill, and sign digital documents ✍️ | 🔥 900 stars today | Language: Ruby",
+      "category": [
+        "开源项目",
+        "Ruby"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-08T10:52:08.393987"
+    },
+    {
+      "id": "github-e7ad6c23f068",
+      "title": "vercel-labs/open-agents — An open source template for building cloud agents.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/vercel-labs/open-agents",
+      "summary": "An open source template for building cloud agents. | 🔥 131 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-08T10:52:08.392887"
+    },
+    {
+      "id": "github-ef25311fa824",
+      "title": "VectifyAI/PageIndex — 📑 PageIndex: Document Index for Vectorless, Reasoning-based RAG",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/VectifyAI/PageIndex",
+      "summary": "📑 PageIndex: Document Index for Vectorless, Reasoning-based RAG | 🔥 943 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-08T10:52:08.391989"
+    },
+    {
+      "id": "github-0508d109f745",
+      "title": "addyosmani/agent-skills — Production-grade engineering skills for AI coding agents.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "summary": "Production-grade engineering skills for AI coding agents. | 🔥 3062 stars today | Language: Shell",
+      "category": [
+        "开源项目",
+        "Shell"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-08T10:52:08.390313"
+    },
+    {
+      "id": "github-d92c846f430f",
+      "title": "LearningCircuit/local-deep-research — ~95% on SimpleQA (e.g. Qwen3.6-27B on a 3090). Supports all local and cloud LLMs",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/LearningCircuit/local-deep-research",
+      "summary": "~95% on SimpleQA (e.g. Qwen3.6-27B on a 3090). Supports all local and cloud LLMs (llama.cpp, Ollama, Google, ...). 10+ search engines - arXiv, PubMed, your private documents. Everything Local &amp; En",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-08T10:52:08.389359"
+    },
+    {
+      "id": "github-d1c2a71cbb54",
+      "title": "InsForge/InsForge — InsForge is a Postgres-based backend with auth, storage, compute, hosting, and A",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/InsForge/InsForge",
+      "summary": "InsForge is a Postgres-based backend with auth, storage, compute, hosting, and AI gateway. Built for coding agents. | 🔥 460 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-08T10:52:08.388216"
+    },
+    {
+      "id": "github-e67737a1407f",
+      "title": "z-lab/dflash — DFlash: Block Diffusion for Flash Speculative Decoding",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/z-lab/dflash",
+      "summary": "DFlash: Block Diffusion for Flash Speculative Decoding | 🔥 671 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-08T10:52:08.386813"
+    },
+    {
+      "id": "github-b70ec62815a2",
+      "title": "Hmbown/DeepSeek-TUI — Coding agent for DeepSeek models that runs in your terminal",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Hmbown/DeepSeek-TUI",
+      "summary": "Coding agent for DeepSeek models that runs in your terminal | 🔥 5799 stars today | Language: Rust",
+      "category": [
+        "开源项目",
+        "Rust"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-08T10:52:08.385738"
+    },
+    {
+      "id": "github-b318f7d6d63c",
+      "title": "anthropics/financial-services",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/anthropics/financial-services",
+      "summary": "🔥 1343 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-08T10:52:08.384778"
+    },
+    {
+      "id": "arxiv-2605.06667v1",
+      "title": "ActCam: Zero-Shot Joint Camera and 3D Motion Control for Video Generation",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.06667v1",
+      "summary": "For artistic applications, video generation requires fine-grained control over both performance and cinematography, i.e., the actor's motion and the camera trajectory. We present ActCam, a zero-shot m",
+      "category": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-07T17:59:58+00:00"
+    },
+    {
+      "id": "arxiv-2605.06665v1",
+      "title": "UniPool: A Globally Shared Expert Pool for Mixture-of-Experts",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.06665v1",
+      "summary": "Modern Mixture-of-Experts (MoE) architectures allocate expert capacity through a rigid per-layer rule: each transformer layer owns a separate expert set. This convention couples depth scaling with lin",
+      "category": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-07T17:59:44+00:00"
+    },
+    {
+      "id": "arxiv-2605.06664v1",
+      "title": "BAMI: Training-Free Bias Mitigation in GUI Grounding",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.06664v1",
+      "summary": "GUI grounding is a critical capability for enabling GUI agents to execute tasks such as clicking and dragging. However, in complex scenarios like the ScreenSpot-Pro benchmark, existing models often su",
+      "category": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-07T17:59:31+00:00"
+    },
+    {
+      "id": "arxiv-2605.06663v1",
+      "title": "EMO: Pretraining Mixture of Experts for Emergent Modularity",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.06663v1",
+      "summary": "Large language models are typically deployed as monolithic systems, requiring the full model even when applications need only a narrow subset of capabilities, e.g., code, math, or domain-specific know",
+      "category": [
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-07T17:59:20+00:00"
+    },
+    {
+      "id": "arxiv-2605.06660v1",
+      "title": "Verifier-Backed Hard Problem Generation for Mathematical Reasoning",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.06660v1",
+      "summary": "Large Language Models (LLMs) demonstrate strong capabilities for solving scientific and mathematical problems, yet they struggle to produce valid, challenging, and novel problems - an essential compon",
+      "category": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-07T17:58:32+00:00"
+    },
+    {
+      "id": "arxiv-2605.06656v1",
+      "title": "Why Global LLM Leaderboards Are Misleading: Small Portfolios for Heterogeneous Supervised ML",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.06656v1",
+      "summary": "Ranking LLMs via pairwise human feedback underpins current leaderboards for open-ended tasks, such as creative writing and problem-solving. We analyze ~89K comparisons in 116 languages from 52 LLMs fr",
+      "category": [
+        "cs.LG",
+        "cs.DM",
+        "cs.ET"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-07T17:57:58+00:00"
+    },
+    {
+      "id": "arxiv-2605.06654v1",
+      "title": "Optimizer-Model Consistency: Full Finetuning with the Same Optimizer as Pretraining Forgets Less",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.06654v1",
+      "summary": "Optimizers play an important role in both pretraining and finetuning stages when training large language models (LLMs). In this paper, we present an observation that full finetuning with the same opti",
+      "category": [
+        "cs.LG",
+        "cs.AI",
+        "math.OC"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-07T17:57:02+00:00"
+    },
+    {
+      "id": "arxiv-2605.06652v1",
+      "title": "When No Benchmark Exists: Validating Comparative LLM Safety Scoring Without Ground-Truth Labels",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.06652v1",
+      "summary": "Many deployments must compare candidate language models for safety before a labeled benchmark exists for the relevant language, sector, or regulatory regime. We formalize this setting as benchmarkless",
+      "category": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-07T17:56:41+00:00"
+    },
+    {
+      "id": "arxiv-2605.06651v1",
+      "title": "AI Co-Mathematician: Accelerating Mathematicians with Agentic AI",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.06651v1",
+      "summary": "We introduce the AI co-mathematician, a workbench for mathematicians to interactively leverage AI agents to pursue open-ended research. The AI co-mathematician is optimized to provide holistic support",
+      "category": [
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-07T17:56:32+00:00"
+    },
+    {
+      "id": "arxiv-2605.06650v1",
+      "title": "Beyond Negative Rollouts: Positive-Only Policy Optimization with Implicit Negative Gradients",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.06650v1",
+      "summary": "Reinforcement learning with verifiable rewards (RLVR), due to the deterministic verification, becomes a dominant paradigm for enhancing the reasoning ability of large language models (LLMs). The commu",
+      "category": [
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-07T17:55:21+00:00"
+    },
+    {
+      "id": "arxiv-2605.06647v1",
+      "title": "Superintelligent Retrieval Agent: The Next Frontier of Information Retrieval",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.06647v1",
+      "summary": "Retrieval-augmented agents are increasingly the interface to large organizational knowledge bases, yet most still treat retrieval as a black box: they issue exploratory queries, inspect returned snipp",
+      "category": [
+        "cs.IR",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-07T17:54:29+00:00"
+    },
+    {
+      "id": "arxiv-2605.06646v1",
+      "title": "Inductive Venn-Abers and related regressors",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.06646v1",
+      "summary": "Venn-Abers predictors are probabilistic predictors that enjoy appealing properties of validity, but their major limitation is that they are applicable only to the case of binary classification, with a",
+      "category": [
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-07T17:52:08+00:00"
+    },
+    {
+      "id": "arxiv-2605.06644v1",
+      "title": "Edge-specific signal propagation on mature chromophore-region 3D mechanism graphs for fluorescent protein quantum-yield prediction",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.06644v1",
+      "summary": "Fluorescent protein quantum yield (QY) is governed by the mature chromophore and its three-dimensional microenvironment rather than sequence identity alone. Protein language models and emission-band a",
+      "category": [
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-07T17:51:41+00:00"
+    },
+    {
+      "id": "arxiv-2605.06643v1",
+      "title": "Are We Making Progress in Multimodal Domain Generalization? A Comprehensive Benchmark Study",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.06643v1",
+      "summary": "Despite the growing popularity of Multimodal Domain Generalization (MMDG) for enhancing model robustness, it remains unclear whether reported performance gains reflect genuine algorithmic progress or ",
+      "category": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-07T17:51:16+00:00"
+    },
+    {
+      "id": "arxiv-2605.06642v1",
+      "title": "StraTA: Incentivizing Agentic Reinforcement Learning with Strategic Trajectory Abstraction",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.06642v1",
+      "summary": "Large language models (LLMs) are increasingly used as interactive agents, but optimizing them for long-horizon decision making remains difficult because current methods are largely purely reactive, wh",
+      "category": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-07T17:51:16+00:00"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-09-09T12:07:27.591824"
+}

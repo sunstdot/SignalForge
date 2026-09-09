@@ -1,0 +1,544 @@
+{
+  "date": "2026-04-23",
+  "solutions": [
+    {
+      "type": "研发提效",
+      "title": "Codex编程助手深度集成",
+      "trigger": "GPT-5.5通过Codex API可用",
+      "scenario": "在日常代码编写和调试场景中，目前做法是IDE插件辅助+人工Review，核心痛点在于代码生成质量不稳、复杂逻辑理解差",
+      "ai_solution": "利用GPT-5.5更强推理能力，通过Codex API深度集成到IDE，实现复杂代码生成、多文件联动修改、自动化Bug修复",
+      "implementation": "VS Code/IDEA插件，对接Codex API实现深度编程辅助",
+      "audience": [
+        "大前端",
+        "客户端",
+        "后端"
+      ],
+      "impact": "代码编写效率提升50%，复杂逻辑一次通过率提升30%",
+      "difficulty": "低",
+      "resistance": "API调用成本控制，模型响应速度待观察",
+      "scores": {
+        "efficiency": 9,
+        "feasibility": 8,
+        "business_impact": 7,
+        "overall": 9
+      },
+      "total_score": 9,
+      "source_title": "A pelican for GPT-5.5 via the semi-official Codex backdoor API",
+      "source": "Simon Willison",
+      "source_type": "rss",
+      "source_url": "https://simonwillison.net/2026/Apr/23/gpt-5-5/#atom-everything",
+      "item_id": "atom-simon-willison-aae0ce63fd7f"
+    },
+    {
+      "type": "研发提效",
+      "title": "LLM推理早停加速",
+      "trigger": " Early Exit通过KV共享减少推理延迟",
+      "scenario": "在实时对话类业务中，LLM推理延迟高导致用户体验差，服务器成本高",
+      "ai_solution": "引入Early Exit机制，对简单 query 提前退出，复杂 query 完整计算，降低P99延迟",
+      "implementation": "在AI网关层集成River-LLM，根据输出置信度动态决定是否提前退出",
+      "audience": [
+        "后端",
+        "大前端"
+      ],
+      "impact": "推理延迟降低30%-50%，提升用户体验，降低推理成本",
+      "difficulty": "中",
+      "resistance": "需评估对输出质量的影响，模型适配有门槛",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 7,
+        "business_impact": 8,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "River-LLM: Large Language Model Seamless Exit Based on KV Share",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "source_url": "https://huggingface.co/papers/2604.18396",
+      "item_id": "hf-paper-cd70bf6d8f7e"
+    },
+    {
+      "type": "研发提效",
+      "title": "浏览器端PDF解析",
+      "trigger": " LiteParse可在浏览器直接提取PDF文本",
+      "scenario": "前端处理PDF文档时需上传后端解析，流程长、体验差、隐私风险",
+      "ai_solution": "浏览器端直接解析PDF为文本，减少服务端调用，支持离线场景",
+      "implementation": "集成LiteParse为前端SDK，文档类应用可直接在端侧提取内容",
+      "audience": [
+        "大前端",
+        "客户端"
+      ],
+      "impact": "减少PDF解析服务端成本，提升文档处理效率与隐私合规",
+      "difficulty": "低",
+      "resistance": "大型PDF性能可能受限，需评估",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 9,
+        "business_impact": 6,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "Extract PDF text in your browser with LiteParse for the web",
+      "source": "Simon Willison",
+      "source_type": "rss",
+      "source_url": "https://simonwillison.net/2026/Apr/23/liteparse-for-the-web/#atom-everything",
+      "item_id": "atom-simon-willison-b3dd4452cf8e"
+    },
+    {
+      "type": "研发提效",
+      "title": "AI编码助手技能库集成",
+      "trigger": " 1000+代理技能兼容Cursor、Claude Code等工具",
+      "scenario": "团队AI编码助手使用碎片化，缺乏统一技能管理，重复配置成本高",
+      "ai_solution": "基于技能库统一管理团队AI编码能力，批量导入最佳实践，一键配置到开发工具",
+      "implementation": "搭建内部技能市场，集成到VS Code/Cursor，供团队成员快速获取",
+      "audience": [
+        "大前端",
+        "客户端",
+        "后端"
+      ],
+      "impact": "团队AI辅助编码效率提升30%，降低工具配置成本",
+      "difficulty": "低",
+      "resistance": "需筛选适合团队的技术栈技能",
+      "scores": {
+        "efficiency": 9,
+        "feasibility": 9,
+        "business_impact": 5,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "VoltAgent/awesome-agent-skills — A curated collection of 1000+ agent skills from official dev teams and the commu",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/VoltAgent/awesome-agent-skills",
+      "item_id": "github-8046ba8a1763"
+    },
+    {
+      "type": "业务赋能",
+      "title": "AI舆情监控接入",
+      "trigger": " AI舆情监控支持多平台聚合与智能分析",
+      "scenario": "运营团队手动追踪竞品动态和社会热点，效率低、易遗漏、汇总耗时",
+      "ai_solution": "接入TrendRadar实现多平台热点自动聚合、AI智能筛选、简报自动生成",
+      "implementation": "部署为内部服务，接入飞书/钉钉机器人推送热点简报",
+      "audience": [
+        "产品运营",
+        "技术TL"
+      ],
+      "impact": "舆情响应时间从天级降至小时级，运营人效提升50%",
+      "difficulty": "低",
+      "resistance": "需适配中文社交平台数据源",
+      "scores": {
+        "efficiency": 7,
+        "feasibility": 8,
+        "business_impact": 8,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "sansan0/TrendRadar — ⭐AI-driven public opinion &amp; trend monitor with multi-platform aggregation, R",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/sansan0/TrendRadar",
+      "item_id": "github-596c2ed91867"
+    },
+    {
+      "type": "研发提效",
+      "title": "代码库智能问答助手",
+      "trigger": "RAG-Anything提供全链路RAG框架",
+      "scenario": "在代码审查和新成员 onboarding 场景中，目前做法是人工阅读文档、搜索代码、询问同事，核心痛点在于文档分散、搜索不精准、等待时间长",
+      "ai_solution": "基于RAG框架构建代码库知识库，支持自然语言提问即可检索相关代码、文档、PR描述，秒级获取上下文",
+      "implementation": "VS Code插件+本地部署embedding模型，快速接入团队内部代码文档",
+      "audience": [
+        "大前端",
+        "客户端",
+        "后端"
+      ],
+      "impact": "代码检索时间从平均10分钟降至10秒，新成员融入速度提升40%",
+      "difficulty": "中",
+      "resistance": "代码embedding效果受制于代码质量，初期需人工标注",
+      "scores": {
+        "efficiency": 9,
+        "feasibility": 7,
+        "business_impact": 6,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "HKUDS/RAG-Anything — \"RAG-Anything: All-in-One RAG Framework\"",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/HKUDS/RAG-Anything",
+      "item_id": "github-5fc7747b6543"
+    },
+    {
+      "type": "研发提效",
+      "title": "视觉语言模型幻觉检测",
+      "trigger": " LVLMs存在prompt诱导的幻觉问题",
+      "scenario": "多模态AI应用（如智能客服、图像问答）中，模型可能生成与图片不符的内容，影响可靠性",
+      "ai_solution": "增加prompt约束层与输出校验，检测并过滤视觉不一致的内容",
+      "implementation": "在多模态AI服务层接入幻觉检测模块，输出前增加一致性校验",
+      "audience": [
+        "大前端",
+        "算法"
+      ],
+      "impact": "提升多模态产品可信度，减少用户投诉与负面体验",
+      "difficulty": "中",
+      "resistance": "检测准确性待验证，可能影响响应速度",
+      "scores": {
+        "efficiency": 6,
+        "feasibility": 7,
+        "business_impact": 7,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "When Prompts Override Vision: Prompt-Induced Hallucinations in LVLMs",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "source_url": "https://arxiv.org/abs/2604.21911v1",
+      "item_id": "arxiv-2604.21911v1"
+    },
+    {
+      "type": "研发提效",
+      "title": "Agent工作流自动化编排",
+      "trigger": "Agent Labs关注无监督学习和跨潜空间技术",
+      "scenario": "在复杂业务需求评审和任务拆解中，目前做法是人工拆解需求、分配任务、协调资源，核心痛点在于跨团队沟通成本高、任务依赖关系梳理繁琐",
+      "ai_solution": "利用Agent技术自动分析需求文档、拆解任务、生成代码实现方案，甚至自动完成部分代码编写，减少人工介入",
+      "implementation": "集成到需求管理平台或CI/CD流水线，作为需求到代码的自动化编排层",
+      "audience": [
+        "技术TL",
+        "大前端",
+        "后端"
+      ],
+      "impact": "需求到代码的转化周期缩短30%，减少跨团队沟通会议50%",
+      "difficulty": "高",
+      "resistance": "需要重构需求管理流程，团队接受度未知",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 5,
+        "business_impact": 7,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "AIE Europe Debrief + Agent Labs Thesis: Unsupervised Learning x Latent Space Crossover Special (2026)",
+      "source": "Latent Space",
+      "source_type": "rss",
+      "source_url": "https://www.latent.space/p/unsupervised-learning-2026",
+      "item_id": "rss-latent-space-466b625a302a"
+    },
+    {
+      "type": "业务赋能",
+      "title": "无接触式手势交互方案",
+      "trigger": "WiFi信号转人体姿态估计技术",
+      "scenario": "在智能硬件和交互设计场景中，目前做法是用摄像头或专用传感器实现手势控制，核心痛点在于硬件成本高、隐私顾虑、部署复杂",
+      "ai_solution": "利用WiFi信号实现无接触手势识别和人体存在检测，可嵌入任意WiFi设备，无需额外传感器即可实现智能交互",
+      "implementation": "SDK集成到智能家居APP或IoT设备端，实现无接触控制",
+      "audience": [
+        "客户端",
+        "产品运营"
+      ],
+      "impact": "交互设备成本降低60%，用户隐私感知提升，差异化产品竞争力增强",
+      "difficulty": "高",
+      "resistance": "算法精度待优化，需与硬件团队深度协作",
+      "scores": {
+        "efficiency": 6,
+        "feasibility": 5,
+        "business_impact": 8,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "ruvnet/RuView — π RuView: WiFi DensePose turns commodity WiFi signals into real-time human pose ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/ruvnet/RuView",
+      "item_id": "github-30b4721fb285"
+    },
+    {
+      "type": "研发提效",
+      "title": "企业级AI模型网关",
+      "trigger": "Thunderbolt提供模型选择和数据自主权",
+      "scenario": "在大模型接入场景中，目前做法是直接调用OpenAI等闭源API，核心痛点在于数据安全、供应商锁定、成本不可控",
+      "ai_solution": "构建统一模型网关，支持私有化部署和模型切换，数据全程自主可控，可根据场景灵活选择最优模型",
+      "implementation": "内部AI平台组件，支持多模型接入和统一计费",
+      "audience": [
+        "后端",
+        "技术TL"
+      ],
+      "impact": "AI调用成本降低30%，数据安全合规风险消除",
+      "difficulty": "中",
+      "resistance": "需要运维私有化模型，对接成本较高",
+      "scores": {
+        "efficiency": 7,
+        "feasibility": 7,
+        "business_impact": 7,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "thunderbird/thunderbolt — AI You Control: Choose your models. Own your data. Eliminate vendor lock-in.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/thunderbird/thunderbolt",
+      "item_id": "github-301d56a38655"
+    },
+    {
+      "type": "研发提效",
+      "title": "下一代模型能力评估与接入",
+      "trigger": "OpenAI发布SPUD和GPT-5.5",
+      "scenario": "在技术选型和模型接入场景中，目前做法是沿用成熟模型如GPT-4，核心痛点在于对新模型能力边界不了解，不知如何平滑迁移",
+      "ai_solution": "提前评估SPUD和GPT-5.5在代码生成、多轮对话、推理能力的提升，制定渐进式接入计划",
+      "implementation": "技术调研组输出评估报告，小范围灰度接入验证",
+      "audience": [
+        "技术TL",
+        "后端"
+      ],
+      "impact": "第一时间获取最新模型能力，保持技术领先性",
+      "difficulty": "低",
+      "resistance": "新模型稳定性待验证，成本可能较高",
+      "scores": {
+        "efficiency": 6,
+        "feasibility": 8,
+        "business_impact": 6,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "OpenAI teases SPUD, GPT-5.5",
+      "source": "The AI Valley",
+      "source_type": "news",
+      "source_url": "https://kill-the-newsletter.com/feeds/sg5lm1gdqvvwgskcyk8q/entries/9c5dnoj73l2znybmqr4n.html",
+      "item_id": "atom-the-ai-valley-edc17ad5c56f"
+    },
+    {
+      "type": "业务赋能",
+      "title": "端侧视频质量实时增强",
+      "trigger": "时空联合超分辨率扩散模型",
+      "scenario": "在短视频和直播场景中，目前做法是服务端转码压制，核心痛点在于低带宽下画质差、用户端无法自适应调节",
+      "ai_solution": "端侧部署轻量级超分模型，根据网络状况实时增强视频画质，在低带宽场景下可提升清晰度2-4倍",
+      "implementation": "移动端SDK集成，支持实时推理",
+      "audience": [
+        "客户端",
+        "产品运营"
+      ],
+      "impact": "低带宽用户视频消费时长提升25%，卡顿率下降50%",
+      "difficulty": "高",
+      "resistance": "端侧算力要求高，模型压缩和推理优化难度大",
+      "scores": {
+        "efficiency": 6,
+        "feasibility": 5,
+        "business_impact": 8,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "A Scale-Adaptive Framework for Joint Spatiotemporal Super-Resolution with Diffusion Models",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "source_url": "https://arxiv.org/abs/2604.21903v1",
+      "item_id": "arxiv-2604.21903v1"
+    },
+    {
+      "type": "业务赋能",
+      "title": "保险业务地理风险特征挖掘",
+      "trigger": "地理和环境特征在保险风险模型中的应用",
+      "scenario": "在保险定价和风控场景中，目前做法是依赖有限的位置信息，核心痛点在于地理数据利用不充分、风险评估粗放",
+      "ai_solution": "引入卫星影像、街道视觉特征等多元化地理数据，构建细粒度区域风险模型，提升定价精度和反欺诈能力",
+      "implementation": "数据团队接入地理信息API，训练区域风险特征模型",
+      "audience": [
+        "后端",
+        "产品运营"
+      ],
+      "impact": "保险产品定价准确度提升15%，欺诈损失降低20%",
+      "difficulty": "中",
+      "resistance": "地理数据获取和标注成本高，模型解释性要求高",
+      "scores": {
+        "efficiency": 5,
+        "feasibility": 6,
+        "business_impact": 8,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "Revealing Geography-Driven Signals in Zone-Level Claim Frequency Models: An Empirical Study using Environmental and Visual Predictors",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "source_url": "https://arxiv.org/abs/2604.21893v1",
+      "item_id": "arxiv-2604.21893v1"
+    },
+    {
+      "type": "业务赋能",
+      "title": "模型置信度校准提升",
+      "trigger": " OPD提升模型能力但导致校准失效",
+      "scenario": "在LLM输出关键业务决策建议时，模型过度自信导致误判，影响商业化推荐系统准确性",
+      "ai_solution": "对模型进行校准微调，使输出置信度与实际准确率对齐，提升商业决策可靠性",
+      "implementation": "在模型服务层接入校准模块，输出时附带校准后置信度",
+      "audience": [
+        "后端",
+        "算法"
+      ],
+      "impact": "提升商业推荐置信度可信度，减少因过度自信导致的业务误判",
+      "difficulty": "中",
+      "resistance": "需算法团队配合重新训练或微调模型",
+      "scores": {
+        "efficiency": 5,
+        "feasibility": 6,
+        "business_impact": 7,
+        "overall": 6
+      },
+      "total_score": 6,
+      "source_title": "The Illusion of Certainty: Decoupling Capability and Calibration in On-Policy Distillation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "source_url": "https://huggingface.co/papers/2604.16830",
+      "item_id": "hf-paper-33d0f3e4e207"
+    },
+    {
+      "type": "研发提效",
+      "title": "SQLAlchemy最佳实践复用",
+      "trigger": " 官方实践教程提供页面分析解决方案",
+      "scenario": "业务团队自研数据分析查询时，SQL编写质量参差不齐，性能问题频发",
+      "ai_solution": "将书中最佳实践封装为内部查询模板库，供业务线直接复用，减少重复造轮子",
+      "implementation": "搭建内部SQLAlchemy最佳实践文档站，集成到数据平台",
+      "audience": [
+        "后端",
+        "测试"
+      ],
+      "impact": "数据查询开发效率提升，数据访问层代码质量标准化",
+      "difficulty": "中",
+      "resistance": "需持续维护与团队推广",
+      "scores": {
+        "efficiency": 6,
+        "feasibility": 7,
+        "business_impact": 5,
+        "overall": 6
+      },
+      "total_score": 6,
+      "source_title": "SQLAlchemy 2 In Practice - Chapter 6: A Page Analytics Solution",
+      "source": "Miguel Grinberg",
+      "source_type": "rss",
+      "source_url": "https://blog.miguelgrinberg.com/post/sqlalchemy-2-in-practice---chapter-6-a-page-analytics-solution",
+      "item_id": "rss-miguel-grinberg-1731e3e73858"
+    },
+    {
+      "type": "业务赋能",
+      "title": "ASR语义评估提升",
+      "trigger": " 基于嵌入的语义指标优于传统WER",
+      "scenario": "语音识别模型评估仅依赖WER，无法捕获语义差异，影响语音交互产品体验优化",
+      "ai_solution": "引入语义评估指标，更精准识别语音交互中的理解偏差，指导模型迭代",
+      "implementation": "在ASR评估流水线中集成语义embedding相似度计算",
+      "audience": [
+        "算法",
+        "后端"
+      ],
+      "impact": "语音识别模型评估更全面，产品体验优化方向更精准",
+      "difficulty": "中",
+      "resistance": "需标注语义评估数据，模型选型待定",
+      "scores": {
+        "efficiency": 5,
+        "feasi bility": 6,
+        "business_impact": 7,
+        "overall": 6
+      },
+      "total_score": 6,
+      "source_title": "Evaluation of Automatic Speech Recognition Using Generative Large Language Models",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "source_url": "https://arxiv.org/abs/2604.21928v1",
+      "item_id": "arxiv-2604.21928v1"
+    },
+    {
+      "type": "研发提效",
+      "title": "模型持续学习策略优化",
+      "trigger": " 不同微调方式对应不同持续学习问题",
+      "scenario": "业务模型需持续迭代更新，但存在灾难性遗忘问题，线上效果波动",
+      "ai_solution": "根据任务类型选择合适的持续学习策略，减少知识遗忘，保持模型稳定性",
+      "implementation": "在模型迭代流水线中引入分类器，自动识别任务类型并匹配最佳微调策略",
+      "audience": [
+        "算法",
+        "后端"
+      ],
+      "impact": "模型迭代更稳定，线上效果波动降低，人工微调成本减少",
+      "difficulty": "高",
+      "resistance": "需深入理解不同策略的适用场景，落地复杂度高",
+      "scores": {
+        "efficiency": 6,
+        "feasibility": 5,
+        "business_impact": 7,
+        "overall": 6
+      },
+      "total_score": 6,
+      "source_title": "Fine-Tuning Regimes Define Distinct Continual Learning Problems",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "source_url": "https://arxiv.org/abs/2604.21927v1",
+      "item_id": "arxiv-2604.21927v1"
+    },
+    {
+      "type": "业务赋能",
+      "title": "推荐系统多维度公平性优化",
+      "trigger": "多校准样本复杂度理论研究",
+      "scenario": "在推荐系统和广告排序场景中，目前做法是优化单一指标如CTR/CVR，核心痛点在于模型对不同用户群体的公平性难以保证",
+      "ai_solution": "引入多校准技术，对不同用户群体进行公平性约束训练，确保各群体推荐质量均衡，提升长期用户留存",
+      "implementation": "模型训练阶段集成多校准约束，作为AB测试上线",
+      "audience": [
+        "后端",
+        "算法"
+      ],
+      "impact": "用户群公平性指标提升20%，长尾用户活跃度提升",
+      "difficulty": "高",
+      "resistance": "需重新训练模型，短期指标可能波动",
+      "scores": {
+        "efficiency": 5,
+        "feasibility": 5,
+        "business_impact": 7,
+        "overall": 6
+      },
+      "total_score": 6,
+      "source_title": "The Sample Complexity of Multicalibration",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "source_url": "https://arxiv.org/abs/2604.21923v1",
+      "item_id": "arxiv-2604.21923v1"
+    }
+  ],
+  "top_pick": {
+    "title": "Codex编程助手深度集成",
+    "why_now": "GPT-5.5通过Codex API可用",
+    "mvp_path": "VS Code/IDEA插件，对接Codex API实现深度编程辅助",
+    "strategy": "自下而上：先找2-3个极客同学验证，再整理ROI数据推广"
+  },
+  "analyzed_count": 40,
+  "analyzed_item_ids": [
+    "hf-paper-33d0f3e4e207",
+    "rss-john-d.-cook-db90ef197fa6",
+    "hf-paper-cd70bf6d8f7e",
+    "atom-simon-willison-b3dd4452cf8e",
+    "github-8046ba8a1763",
+    "github-596c2ed91867",
+    "rss-miguel-grinberg-1731e3e73858",
+    "arxiv-2604.21928v1",
+    "arxiv-2604.21911v1",
+    "arxiv-2604.21927v1",
+    "rss-latent-space-466b625a302a",
+    "github-5fc7747b6543",
+    "github-30b4721fb285",
+    "arxiv-2604.21923v1",
+    "rss-construction-physics-8ae3bcf55fe8",
+    "github-301d56a38655",
+    "atom-simon-willison-aae0ce63fd7f",
+    "atom-the-ai-valley-edc17ad5c56f",
+    "arxiv-2604.21903v1",
+    "arxiv-2604.21893v1",
+    "hf-paper-a89814d9c83b",
+    "rss-john-d.-cook-26f8f89ae29b",
+    "github-09ee239f52b6",
+    "arxiv-2604.21916v1",
+    "hf-paper-ea18991d54d6",
+    "hf-paper-e6e507b9dd52",
+    "arxiv-2604.21931v1",
+    "hf-paper-896796eed12b",
+    "rss-pluralistic-e68e07a46c92",
+    "rss-the-old-new-thing-0d89c9949140",
+    "hf-paper-c84f8f755380",
+    "github-09c9fc023168",
+    "hf-paper-a5e49199bdce",
+    "arxiv-2604.21901v1",
+    "arxiv-2604.21896v1",
+    "hf-paper-a1813eb3b1ff",
+    "rss-hackernews-daily-9ddff5d3806e",
+    "arxiv-2604.21905v1",
+    "arxiv-2604.21891v1",
+    "github-dd7e626bcf43"
+  ]
+}

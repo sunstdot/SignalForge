@@ -1,0 +1,706 @@
+{
+  "id": "b31e2fdb-c0b1-42fe-819b-cdc00ea43384",
+  "date": "2026-04-29",
+  "items": [
+    {
+      "id": "github-d3c282f93d7e",
+      "title": "iamgio/quarkdown — 🪐 Markdown with superpowers: from ideas to papers, presentations, websites, book",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/iamgio/quarkdown",
+      "summary": "🪐 Markdown with superpowers: from ideas to papers, presentations, websites, books, and knowledge bases. | 🔥 699 stars today | Language: Kotlin",
+      "category": [
+        "开源项目",
+        "Kotlin"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-29T16:10:33.741121"
+    },
+    {
+      "id": "github-e75149cb3ea3",
+      "title": "EbookFoundation/free-programming-books — 📚 Freely available programming books",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/EbookFoundation/free-programming-books",
+      "summary": "📚 Freely available programming books | 🔥 147 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-29T16:10:33.740712"
+    },
+    {
+      "id": "github-72b054de57de",
+      "title": "donnemartin/system-design-primer — Learn how to design large-scale systems. Prep for the system design interview. I",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/donnemartin/system-design-primer",
+      "summary": "Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards. | 🔥 744 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-29T16:10:33.740287"
+    },
+    {
+      "id": "github-35b401b2d43a",
+      "title": "Alishahryar1/free-claude-code — Use claude-code for free in the terminal, VSCode extension or discord like openc",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Alishahryar1/free-claude-code",
+      "summary": "Use claude-code for free in the terminal, VSCode extension or discord like openclaw | 🔥 1741 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-29T16:10:33.739930"
+    },
+    {
+      "id": "github-d3592c021d17",
+      "title": "CJackHwang/ds2api — Deepseek to API: A lightweight, high-performance full-stack middleware convertin",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/CJackHwang/ds2api",
+      "summary": "Deepseek to API: A lightweight, high-performance full-stack middleware converting client protocols to universal APIs. Supports multi-account rotation, compiled binaries, Vercel Serverless, and Docker.",
+      "category": [
+        "开源项目",
+        "Go"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-29T16:10:33.739551"
+    },
+    {
+      "id": "github-d2b1af007926",
+      "title": "public-apis/public-apis — A collective list of free APIs",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/public-apis/public-apis",
+      "summary": "A collective list of free APIs | 🔥 644 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-29T16:10:33.739168"
+    },
+    {
+      "id": "github-e85410b8031d",
+      "title": "fspecii/ace-step-ui — 🎵 The Ultimate Open Source Suno Alternative - Professional UI for ACE-Step 1.5 A",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/fspecii/ace-step-ui",
+      "summary": "🎵 The Ultimate Open Source Suno Alternative - Professional UI for ACE-Step 1.5 AI Music Generation. Free, local, unlimited. Stop paying for Suno! | 🔥 162 stars today | Language: JavaScript",
+      "category": [
+        "开源项目",
+        "JavaScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-29T16:10:33.738782"
+    },
+    {
+      "id": "github-28144e4357eb",
+      "title": "HunxByts/GhostTrack — Useful tool to track location or mobile number",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/HunxByts/GhostTrack",
+      "summary": "Useful tool to track location or mobile number | 🔥 967 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-29T16:10:33.738412"
+    },
+    {
+      "id": "github-cc05f022e145",
+      "title": "davila7/claude-code-templates — CLI tool for configuring and monitoring Claude Code",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/davila7/claude-code-templates",
+      "summary": "CLI tool for configuring and monitoring Claude Code | 🔥 346 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-29T16:10:33.738086"
+    },
+    {
+      "id": "github-cd26432a8d91",
+      "title": "microsoft/VibeVoice — Open-Source Frontier Voice AI",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/microsoft/VibeVoice",
+      "summary": "Open-Source Frontier Voice AI | 🔥 1483 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-29T16:10:33.737701"
+    },
+    {
+      "id": "github-ae9769f0c456",
+      "title": "ComposioHQ/awesome-codex-skills — A curated list of practical Codex skills for automating workflows across the Cod",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/ComposioHQ/awesome-codex-skills",
+      "summary": "A curated list of practical Codex skills for automating workflows across the Codex CLI and API. | 🔥 953 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-29T16:10:33.737333"
+    },
+    {
+      "id": "github-5ebc64061b87",
+      "title": "abhigyanpatwari/GitNexus — GitNexus: The Zero-Server Code Intelligence Engine - GitNexus is a client-side k",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/abhigyanpatwari/GitNexus",
+      "summary": "GitNexus: The Zero-Server Code Intelligence Engine - GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a GitHub repo or ZIP file, and get an interactive kno",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-29T16:10:33.736966"
+    },
+    {
+      "id": "github-06e6a3ccccc3",
+      "title": "mattpocock/skills — Skills for Real Engineers. Straight from my .claude directory.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/mattpocock/skills",
+      "summary": "Skills for Real Engineers. Straight from my .claude directory. | 🔥 7321 stars today | Language: Shell",
+      "category": [
+        "开源项目",
+        "Shell"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-29T16:10:33.736539"
+    },
+    {
+      "id": "hf-paper-d4c4b2fc5bbe",
+      "title": "Co-Director: Agentic Generative Video Storytelling",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.24842",
+      "summary": "While diffusion models generate high-fidelity video clips, transforming them into coherent storytelling engines remains challenging. Current agentic pipelines automate this via chained modules but suf",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-29T16:10:33.009269"
+    },
+    {
+      "id": "hf-paper-df9b3b4b8b76",
+      "title": "BARRED: Synthetic Training of Custom Policy Guardrails via Asymmetric Debate",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.25203",
+      "summary": "Deploying guardrails for custom policies remains challenging, as generic safety models fail to capture task-specific requirements, while prompting LLMs suffers from inconsistent boundary-case performa",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-29T16:10:33.009265"
+    },
+    {
+      "id": "hf-paper-b6034381dcb3",
+      "title": "AutoGUI-v2: A Comprehensive Multi-Modal GUI Functionality Understanding Benchmark",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.24441",
+      "summary": "Autonomous agents capable of navigating Graphical User Interfaces (GUIs) hold the potential to revolutionize digital productivity. However, achieving true digital autonomy extends beyond reactive elem",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-29T16:10:33.009259"
+    },
+    {
+      "id": "hf-paper-ba921171bbc4",
+      "title": "GoClick: Lightweight Element Grounding Model for Autonomous GUI Interaction",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.23941",
+      "summary": "Graphical User Interface (GUI) element grounding (precisely locating elements on screenshots based on natural language instructions) is fundamental for agents interacting with GUIs. Deploying this cap",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-29T16:10:33.009255"
+    },
+    {
+      "id": "hf-paper-b1676b09d0a5",
+      "title": "TCOD: Exploring Temporal Curriculum in On-Policy Distillation for Multi-turn Autonomous Agents",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.24005",
+      "summary": "On-policy distillation (OPD) has shown strong potential for transferring reasoning ability from frontier or domain-specific models to smaller students. While effective on static single-turn tasks, its",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-29T16:10:33.009251"
+    },
+    {
+      "id": "hf-paper-fe7479a928bb",
+      "title": "Seeing Isn't Believing: Uncovering Blind Spots in Evaluator Vision-Language Models",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.21523",
+      "summary": "Large Vision-Language Models (VLMs) are increasingly used to evaluate outputs of other models, for image-to-text (I2T) tasks such as visual question answering, and text-to-image (T2I) generation tasks",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-29T16:10:33.009247"
+    },
+    {
+      "id": "hf-paper-d4636acefaa7",
+      "title": "Preferences of a Voice-First Nation: Large-Scale Pairwise Evaluation and Preference Analysis for TTS in Indian Languages",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.21481",
+      "summary": "Crowdsourced pairwise evaluation has emerged as a scalable approach for assessing foundation models. However, applying it to Text to Speech(TTS) introduces high variance due to linguistic diversity an",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-29T16:10:33.009243"
+    },
+    {
+      "id": "hf-paper-a2e395ae781b",
+      "title": "AutoResearchBench: Benchmarking AI Agents on Complex Scientific Literature Discovery",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.25256",
+      "summary": "Autonomous scientific research is significantly advanced thanks to the development of AI agents. One key step in this process is finding the right scientific literature, whether to explore existing kn",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-29T16:10:33.009239"
+    },
+    {
+      "id": "hf-paper-3b7f9767a17d",
+      "title": "MAIC-UI: Making Interactive Courseware with Generative UI",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.25806",
+      "summary": "Creating interactive STEM courseware traditionally requires HTML/CSS/JavaScript expertise, leaving barriers for educators. While generative AI can produce HTML codes, existing tools generate static pr",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-29T16:10:33.009233"
+    },
+    {
+      "id": "hf-paper-2f825ffdcc6e",
+      "title": "Step-Audio-R1.5 Technical Report",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.25719",
+      "summary": "Recent advancements in large audio language models have extended Chain-of-Thought (CoT) reasoning into the auditory domain, enabling models to tackle increasingly complex acoustic and spoken tasks. To",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-29T16:10:33.009217"
+    },
+    {
+      "id": "hf-model-9266925659f2",
+      "title": "🤗 inclusionAI/LLaDA2.0-Uni",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/inclusionAI/LLaDA2.0-Uni",
+      "summary": "Task: any-to-any | Downloads: 506 | Likes: 225",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-29T16:10:32.626846"
+    },
+    {
+      "id": "hf-model-cde77b95ee88",
+      "title": "🤗 deepseek-ai/DeepSeek-V4-Pro-Base",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-Base",
+      "summary": "Downloads: 1,532 | Likes: 235",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-29T16:10:32.626832"
+    },
+    {
+      "id": "hf-model-4fd7535cd23e",
+      "title": "🤗 XiaomiMiMo/MiMo-V2.5-Pro",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro",
+      "summary": "Task: text-generation | Downloads: 396 | Likes: 265",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-29T16:10:32.626821"
+    },
+    {
+      "id": "hf-model-70b0f02555a8",
+      "title": "🤗 Qwen/Qwen3.6-35B-A3B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
+      "summary": "Task: image-text-to-text | Downloads: 1,510,129 | Likes: 1,495",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-29T16:10:32.626810"
+    },
+    {
+      "id": "hf-model-94e13c00ef04",
+      "title": "🤗 moonshotai/Kimi-K2.6",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6",
+      "summary": "Task: image-text-to-text | Downloads: 489,001 | Likes: 1,137",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-29T16:10:32.626797"
+    },
+    {
+      "id": "hf-model-729c57a23346",
+      "title": "🤗 unsloth/Qwen3.6-27B-GGUF",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/unsloth/Qwen3.6-27B-GGUF",
+      "summary": "Task: image-text-to-text | Downloads: 702,161 | Likes: 482",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-29T16:10:32.626784"
+    },
+    {
+      "id": "hf-model-aa304de47ee4",
+      "title": "🤗 deepseek-ai/DeepSeek-V4-Flash",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+      "summary": "Task: text-generation | Downloads: 96,948 | Likes: 833",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-29T16:10:32.626746"
+    },
+    {
+      "id": "hf-model-4481c76e29d1",
+      "title": "🤗 Qwen/Qwen3.6-27B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-27B",
+      "summary": "Task: image-text-to-text | Downloads: 508,728 | Likes: 976",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-29T16:10:32.626733"
+    },
+    {
+      "id": "hf-model-b6a7c38191ac",
+      "title": "🤗 openai/privacy-filter",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/openai/privacy-filter",
+      "summary": "Task: token-classification | Downloads: 57,743 | Likes: 1,049",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-29T16:10:32.626716"
+    },
+    {
+      "id": "hf-model-fe96e83596e6",
+      "title": "🤗 deepseek-ai/DeepSeek-V4-Pro",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+      "summary": "Task: text-generation | Downloads: 174,402 | Likes: 3,180",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-29T16:10:32.626660"
+    },
+    {
+      "id": "arxiv-2604.25917v1",
+      "title": "Recursive Multi-Agent Systems",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.25917v1",
+      "summary": "Recursive or looped language models have recently emerged as a new scaling axis by iteratively refining the same model computation over latent states to deepen reasoning. We extend such scaling princi",
+      "category": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-28T17:59:34+00:00"
+    },
+    {
+      "id": "arxiv-2604.25914v1",
+      "title": "DV-World: Benchmarking Data Visualization Agents in Real-World Scenarios",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.25914v1",
+      "summary": "Real-world data visualization (DV) requires native environmental grounding, cross-platform evolution, and proactive intent alignment. Yet, existing benchmarks often suffer from code-sandbox confinemen",
+      "category": [
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-28T17:58:21+00:00"
+    },
+    {
+      "id": "arxiv-2604.25907v1",
+      "title": "How Fast Should a Model Commit to Supervision? Training Reasoning Models on the Tsallis Loss Continuum",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.25907v1",
+      "summary": "Adapting reasoning models to new tasks during post-training with only output-level supervision stalls under reinforcement learning from verifiable rewards (RLVR) when the initial success probability $",
+      "category": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-28T17:52:38+00:00"
+    },
+    {
+      "id": "arxiv-2604.25905v1",
+      "title": "A paradox of AI fluency",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.25905v1",
+      "summary": "How much does a user's skill with AI shape what AI actually delivers for them? This question is critical for users, AI product builders, and society at large, but it remains underexplored. Using a ric",
+      "category": [
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-28T17:51:13+00:00"
+    },
+    {
+      "id": "arxiv-2604.25904v1",
+      "title": "Teacher Forcing as Generalized Bayes: Optimization Geometry Mismatch in Switching Surrogates for Chaotic Dynamics",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.25904v1",
+      "summary": "Identity teacher forcing (ITF) enables stable training of deterministic recurrent surrogates for chaotic dynamical systems and has been highly effective for dynamical systems reconstruction (DSR) with",
+      "category": [
+        "cs.LG",
+        "math.DS",
+        "stat.ML"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-28T17:50:37+00:00"
+    },
+    {
+      "id": "arxiv-2604.25903v1",
+      "title": "Carbon-Taxed Transformers: A Green Compression Pipeline for Overgrown Language Models",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.25903v1",
+      "summary": "The accelerating adoption of Large Language Models (LLMs) in software engineering (SE) has brought with it a silent crisis: unsustainable computational cost. While these models demonstrate remarkable ",
+      "category": [
+        "cs.SE",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-28T17:48:16+00:00"
+    },
+    {
+      "id": "arxiv-2604.25902v1",
+      "title": "Toward a Functional Geometric Algebra for Natural Language Semantics",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.25902v1",
+      "summary": "Distributional and neural approaches to natural language semantics have been built almost exclusively on conventional linear algebra: vectors, matrices, tensors, and the operations that accompany them",
+      "category": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-28T17:47:46+00:00"
+    },
+    {
+      "id": "arxiv-2604.25898v1",
+      "title": "TSN-Affinity: Similarity-Driven Parameter Reuse for Continual Offline Reinforcement Learning",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.25898v1",
+      "summary": "Continual offline reinforcement learning (CORL) aims to learn a sequence of tasks from datasets collected over time while preserving performance on previously learned tasks. This setting corresponds t",
+      "category": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-28T17:41:04+00:00"
+    },
+    {
+      "id": "arxiv-2604.25897v1",
+      "title": "Variational Neural Belief Parameterizations for Robust Dexterous Grasping under Multimodal Uncertainty",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.25897v1",
+      "summary": "Contact variability, sensing uncertainty, and external disturbances make grasp execution stochastic. Expected-quality objectives ignore tail outcomes and often select grasps that fail under adverse co",
+      "category": [
+        "cs.RO",
+        "cs.LG",
+        "eess.SY"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-28T17:40:49+00:00"
+    },
+    {
+      "id": "arxiv-2604.25895v1",
+      "title": "Three Models of RLHF Annotation: Extension, Evidence, and Authority",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.25895v1",
+      "summary": "Preference-based alignment methods, most prominently Reinforcement Learning with Human Feedback (RLHF), use the judgments of human annotators to shape large language model behaviour. However, the norm",
+      "category": [
+        "cs.CY",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-28T17:39:14+00:00"
+    },
+    {
+      "id": "arxiv-2604.25891v1",
+      "title": "Conditional misalignment: common interventions can hide emergent misalignment behind contextual triggers",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.25891v1",
+      "summary": "Finetuning a language model can lead to emergent misalignment (EM) [Betley et al., 2025b]. Models trained on a narrow distribution of misaligned behavior generalize to more egregious behaviors when te",
+      "category": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CR"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-28T17:36:06+00:00"
+    },
+    {
+      "id": "arxiv-2604.25887v1",
+      "title": "No Pedestrian Left Behind: Real-Time Detection and Tracking of Vulnerable Road Users for Adaptive Traffic Signal Control",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.25887v1",
+      "summary": "Current pedestrian crossing signals operate on fixed timing without adjustment to pedestrian behavior, which can leave vulnerable road users (VRUs) such as the elderly, disabled, or distracted pedestr",
+      "category": [
+        "cs.CV",
+        "cs.AI",
+        "cs.RO"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-28T17:29:23+00:00"
+    },
+    {
+      "id": "arxiv-2604.25885v1",
+      "title": "Explainable AI for Jet Tagging: A Comparative Study of GNNExplainer, GNNShap, and GradCAM for Jet Tagging in the Lund Jet Plane",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.25885v1",
+      "summary": "Graph neural networks such as ParticleNet and transformer based networks on point clouds such as ParticleTransformer achieve state-of-the-art performance on jet tagging benchmarks at the Large Hadron ",
+      "category": [
+        "hep-ph",
+        "cs.LG",
+        "hep-ex"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-28T17:28:41+00:00"
+    },
+    {
+      "id": "arxiv-2604.25872v1",
+      "title": "When Errors Can Be Beneficial: A Categorization of Imperfect Rewards for Policy Gradient",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.25872v1",
+      "summary": "Training language models via reinforcement learning often relies on imperfect proxy rewards, since ground truth rewards that precisely define the intended behavior are rarely available. Standard metri",
+      "category": [
+        "cs.LG",
+        "cs.AI",
+        "stat.ML"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-28T17:10:15+00:00"
+    },
+    {
+      "id": "arxiv-2604.25866v1",
+      "title": "From Syntax to Emotion: A Mechanistic Analysis of Emotion Inference in LLMs",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.25866v1",
+      "summary": "Large language models (LLMs) are increasingly used in emotionally sensitive human-AI applications, yet little is known about how emotion recognition is internally represented. In this work, we investi",
+      "category": [
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-28T17:03:16+00:00"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-09-09T12:07:28.116251"
+}

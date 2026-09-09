@@ -1,0 +1,673 @@
+{
+  "id": "e02c6311-f0a6-4ebf-986d-a28a436ce537",
+  "date": "2026-04-08",
+  "items": [
+    {
+      "id": "civitai-2481312",
+      "title": "🎨 Flame the Dragon (Spyro) (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2481312",
+      "summary": "这是一款基于经典游戏《Spyro》系列中Flame the Dragon角色制作的LORA微调模型，由CivitAI用户发布。该模型是作者首次尝试制作的角色LORA，体现了对童年经典游戏角色的情怀与AI技术应用的结合。由于Flame这一角色在官方和社区中较少受到关注，作者希望通过AI生成技术为这个冷门角色赋予新的生命力。该模型目前下载量为4次，评分0.0分。",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:59.503169"
+    },
+    {
+      "id": "civitai-2521042",
+      "title": "🎨 Anthro Kinkajou for Illustrious (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2521042",
+      "summary": "这是一款专门为Illustrious AI绘图模型设计的LORA扩展模块，用于添加拟人化蜜熊（Kinkajou）角色形象。该模型可生成具有棕褐色皮毛、圆耳朵和卷曲尾巴等特征的蜜熊角色。模型标注了负面标签 cat 和 feline 以避免与猫科动物混淆。目前下载量19次，评分0.0。",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:59.503167"
+    },
+    {
+      "id": "civitai-1940001",
+      "title": "🎨 魔王2099 マキナ＝ソレージュ  Machina Soleige (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/1940001",
+      "summary": "这是一个基于CivitAI平台发布的LoRA模型，名为「魔王2099 马基纳·索莱吉」（Machina Soleige）。该模型专门用于AI图像生成，旨在生成具有特定角色风格的图像作品。目前模型下载量为136次，暂无用户评分。作为LoRA（低秩适应）模型，它能够以较低的算力需求对基础Stable Diffusion模型进行特定风格的微调定制。",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:59.503165"
+    },
+    {
+      "id": "civitai-2169381",
+      "title": "🎨 Donut-Z Image Turbo-workflow (upscale+face detailer+nsfw fix) (Workflows)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2169381",
+      "summary": "Donut-Z Image Turbo是CivitAI平台上发布的一款ComfyUI图像处理工作流，专注于图像质量优化。该工作流集成了三大核心功能：upscale（图像超分辨率放大）、face detailer（面部细节增强）以及nsfw fix（不当内容自动修复）。通过整合这些功能，用户可以在单一工作流中实现从图像放大到面部细节优化的一站式处理，特别适合需要快速处理大量AI生成图像的场景。目前该工作流已获得8,532次下载，表明其在AI图像处理社区中具有一定的实用价值和关注度。",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:59.503163"
+    },
+    {
+      "id": "civitai-2526817",
+      "title": "🎨 Vysache (Shangri La Frontier) (Illustrious) (AD) (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2526817",
+      "summary": "这是一款基于Illustrious平台的LORA模型，专注于生成动漫《香格里拉边境》中的角色Vysache。该模型支持权重范围1-1.5，采样步数15-35步，CFG Scale建议设置在3.5-7.5之间。使用提示词「Vysache, muscular, bunny」可较好地触发角色特征，适用于大多数主流模型。",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:59.503160"
+    },
+    {
+      "id": "civitai-630241",
+      "title": "🎨 Dupleix デュプレクス (Azur Lane,アズールレーン)XL (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/630241",
+      "summary": "这是一款针对Stable Diffusion XL（SDXL）优化的二次元角色LoRA模型，专注于还原游戏《碧蓝航线》（アズールレーン）中的角色Dupleix（杜普雷克斯/重樱）。该模型发布于CivitAI平台，目前下载量达1,018次。作为舰娘主题的AI绘画资源，该LoRA可帮助用户生成具有特定角色特征的动漫风格图像，属于二次元AI绘画领域的细分模型资源。",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:59.503136"
+    },
+    {
+      "id": "civitai-2510690",
+      "title": "🎨 Lyn (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2510690",
+      "summary": "这是一款专门为原创角色Lyn训练的LoRA模型，基于SDXL Pony底模开发，专注于捕捉风格化3D艺术风格和高品质渲染效果。该模型能够精确保留面部微细节，如雀斑、唇彩及服装纹理，同时保持解剖结构的一致性和视觉愉悦感。模型具有极高的生成灵活性，可在不同姿态、服装和场景中稳定生成角色形象，完整保留原始3D风格的核心特征，适用于创意设计和角色可视化领域。",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:59.503131"
+    },
+    {
+      "id": "civitai-2526850",
+      "title": "🎨 Yan Zhenqing（顔真卿） (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2526850",
+      "summary": "该资源是CivitAI平台上发布的颜真卿LORA微调模型，用于Stable Diffusion XL (SDXL) AI图像生成。颜真卿（709-784）是中国唐代著名书法家与政治家，以楷书成就著称。模型基于30张图像训练，30个epochs，共计960步。提供SDXL专属触发词（sdxl-yan-zhenqing），可生成具有唐代官员特征的男性形象，包括白发、胡须、浓眉等面部特征，以及汉服（唐制圆领袍）、黑色帽子等传统服饰元素。",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:59.503098"
+    },
+    {
+      "id": "civitai-2474055",
+      "title": "🎨 Tom Nook - Krunch (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2474055",
+      "summary": "这是一款发布于CivitAI平台的高质量LORA微调模型，专门用于AI图像生成。该模型主要用于创建拟人化的男性毛茸茸角色（furry/anthro），特别是以狸猫（tanuki）为原型的橙色皮毛角色。模型作者欢迎用户使用并分享创作成果，同时接受定制请求，与社区保持积极互动。目前该模型已有65次下载量。",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:59.503081"
+    },
+    {
+      "id": "civitai-771773",
+      "title": "🎨 Shindara Taishou (Namu Amida Butsu! Rendai UTENA) | 真達羅大将 (なむあみだ仏っ！-蓮台 UTENA-) (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/771773",
+      "summary": "这是一款发布于CivitAI平台的动漫角色LoRA模型，专注于生成「真達羅大将」这一角色形象。该模型来源于日本动画作品「なむあみだ仏っ！-蓮台 UTENA-」，目前下载量为36次，尚未有用户评分。具体提示词信息可在模型卡片中查看。LoRA（Low-Rank Adaptation）是一种高效的模型微调技术，能够在保持原始模型性能的同时，以较低的计算成本实现特定角色或风格的定制化生成。",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:59.503062"
+    },
+    {
+      "id": "hf-model-b0310e0acf74",
+      "title": "🤗 k2-fsa/OmniVoice",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/k2-fsa/OmniVoice",
+      "summary": "OmniVoice 是由 k2-fsa 团队开发的文本转语音(TTS)模型，已在 HuggingFace 平台上线。该模型支持将文本转换为自然语音，已获得超过10万次下载和356个点赞，受到社区的广泛认可。k2-fsa 项目由语音技术专家 Daniel Povey 主导，长期专注于开源语音识别与合成技术的研发，OmniVoice 的推出进一步丰富了其语音AI产品矩阵，为开发者和研究人员提供了高质量的语音合成解决方案。",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:57.946479"
+    },
+    {
+      "id": "hf-model-fcfacb051911",
+      "title": "🤗 baidu/Qianfan-OCR",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/baidu/Qianfan-OCR",
+      "summary": "百度千帆OCR是百度在HuggingFace平台开源的光学字符识别模型，专注于图像到文本（image-text-to-text）的转换任务。该模型依托百度在人工智能领域的技术积累，主打中文字符识别能力。截至目前，该模型已获得近4万次下载和超过1000个点赞，反映出开发社区对高效、准确OCR解决方案的强烈需求。作为百度千帆大模型平台的重要组成部分，该OCR模型为开发者提供了便捷的集成方式，推动了AI技术的开源生态发展。",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:57.946476"
+    },
+    {
+      "id": "hf-model-2f79a3598954",
+      "title": "🤗 zai-org/GLM-5.1",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/zai-org/GLM-5.1",
+      "summary": "GLM-5.1是智谱AI（Zhipu AI）开发的新一代大语言模型，部署于HuggingFace平台。该模型专注于文本生成任务（text-generation），截至目前已获得389次下载和399次点赞。GLM系列是国产大模型的代表之作，5.1版本在性能、功能和易用性方面进行了升级优化，为开发者提供了强大的自然语言处理能力。",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:57.946474"
+    },
+    {
+      "id": "hf-model-d014c1247631",
+      "title": "🤗 prism-ml/Bonsai-8B-gguf",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/prism-ml/Bonsai-8B-gguf",
+      "summary": "Bonsai-8B-gguf是由prism-ml组织开发的80亿参数文本生成模型，采用GGUF量化格式发布在HuggingFace平台上。该模型专注于文本生成任务，已获得52,632次下载和504个点赞。GGUF格式是一种高效的模型量化方案，能够在保持较好性能的同时显著降低内存占用和推理资源需求，适合在消费级硬件上进行本地部署和推理。",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:57.946471"
+    },
+    {
+      "id": "hf-model-73665a6e3a2f",
+      "title": "🤗 google/gemma-4-E4B-it",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/google/gemma-4-E4B-it",
+      "summary": "Google推出的Gemma-4系列指令微调模型，型号为E4B-it，部署于HuggingFace平台。该模型支持any-to-any（任意到任意）任务类型，展现了强大的多模态和通用任务处理能力。上线后获得社区积极响应，下载量已达473,605次，收获474个点赞，体现了用户对Google开源大语言模型的高度认可。",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:57.946468"
+    },
+    {
+      "id": "hf-model-0ea922f56cb4",
+      "title": "🤗 google/gemma-4-26B-A4B-it",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+      "summary": "Gemma-4-26B-A4B-it是Google推出的多模态大语言模型，采用260亿参数规模，支持图像-文本到文本任务（image-text-to-text）。该模型能够同时处理图像和文本输入，并生成相应的文本输出。作为Gemma系列的最新版本，它展现了Google在多模态AI领域的技术实力。该模型已在HuggingFace平台发布，获得超过65万次下载和505次点赞，显示其在开源社区的高度受欢迎程度。",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:57.946465"
+    },
+    {
+      "id": "hf-model-5a5b20cc1da7",
+      "title": "🤗 Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled",
+      "summary": "这是一个基于Qwen3.5-27B架构的推理蒸馏模型，从Claude 4.6 Opus蒸馏而来，专注于图像-文本到文本任务。该模型获得了超过55万次下载和2454个点赞，表明其在社区中具有很高的认可度和实用价值。蒸馏技术使得大型语言模型的推理能力得以压缩到更小的模型中，降低了部署成本同时保持了较强的推理性能。",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:57.946462"
+    },
+    {
+      "id": "hf-model-b88ea472e3ac",
+      "title": "🤗 netflix/void-model",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/netflix/void-model",
+      "summary": "Void-Model是由Netflix在HuggingFace平台上发布的视频转视频（video-to-video）深度学习模型。该模型获得了570个点赞，表明其在技术社区具有一定的关注度。作为Netflix在AI视频处理领域的重要开源贡献，Void-Model旨在实现高质量的视频风格转换、视频增强或视频编辑功能。该模型的发布展示了Netflix在流媒体内容处理和AI技术应用方面的持续投入，为开发者和研究者提供了视频生成与转换的工具选择。",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:57.946458"
+    },
+    {
+      "id": "hf-model-a3e36e1accc3",
+      "title": "🤗 dealignai/Gemma-4-31B-JANG_4M-CRACK",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/dealignai/Gemma-4-31B-JANG_4M-CRACK",
+      "summary": "这是一个基于Google Gemma-4-31B参数模型微调的文本生成任务模型，由dealignai组织发布。该模型针对特定应用场景进行了优化微调，在HuggingFace平台获得了近3万次下载和700个点赞，表明其在开发者社区中具有一定的关注度和实用价值。模型名称中的\"JANG_4M-CRACK\"可能表示使用了特定数据集（4M样本量）进行训练微调。",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:57.946454"
+    },
+    {
+      "id": "hf-model-2d0f16bac7e1",
+      "title": "🤗 google/gemma-4-31B-it",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/google/gemma-4-31B-it",
+      "summary": "Google在HuggingFace平台发布了Gemma-4-31B-it模型，这是一款支持图像-文本到文本任务的多模态指令微调模型。该模型拥有310亿参数，在HuggingFace上已获得超过88万次下载和1,345个点赞。作为Gemma系列最新版本，该模型延续了Google开源轻量级大语言模型的策略，为开发者提供了强大的多模态AI能力。",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:57.946443"
+    },
+    {
+      "id": "hf-paper-078ba3a1bac6",
+      "title": "ACES: Who Tests the Tests? Leave-One-Out AUC Consistency for Code Generation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.03922",
+      "summary": "本研究针对大语言模型生成代码候选的筛选问题，提出使用大语言模型生成的测试进行评估时测试本身可能不可靠的挑战。作者提出关键洞察：测试的目的不是简单计数通过数量，而是区分正确与错误代码的能力。通过留一法评估方案：保留一个测试，用其余测试的聚合分数对代码排序，检验保留测试的通过/失败模式是否与该排序一致。研究者将这种一致性形式化为留一法AUC（LOO-AUC），并证明其期望值与每个测试区分正确代码的能力成正比，从而打破了测试正确性与代码正确性之间的循环依赖。",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:58.464601"
+    },
+    {
+      "id": "hf-paper-22cd7fc6b354",
+      "title": "Demystifying When Pruning Works via Representation Hierarchies",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2603.24652",
+      "summary": "网络剪枝是提升模型效率的常用技术，但其在不同语言任务中表现差异显著——非生成性任务表现良好，生成性任务却频繁失效。本研究从表示层级视角分析这一现象，将语言模型内部计算分解为嵌入空间、logit空间和概率空间三个顺序空间。研究发现嵌入层和logit层对剪枝扰动具有较强鲁棒性，然而logit到概率的非线性变换会放大这些偏差，且偏差随时间步累积，最终导致生成任务显著性能下降。",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:58.464597"
+    },
+    {
+      "id": "hf-paper-d85850b9bd97",
+      "title": "Claw-Eval: Toward Trustworthy Evaluation of Autonomous Agents",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.06132",
+      "summary": "本文针对大型语言模型作为自主代理在真实软件环境中执行多步骤工作流程的场景,指出现有代理基准测试存在的三大关键限制：仅检查最终输出的不透明轨迹评分、缺乏安全性和鲁棒性评估、以及模态覆盖和交互范式狭窄。为此,团队推出Claw-Eval端到端评估套件,包含300个人类验证任务,涵盖9个类别、三个组别(通用服务编排、多模态感知与生成、多轮专业对话)。该套件通过执行跟踪、审计日志和环境快照三个独立证据通道记录每个代理动作,实现了基于2,159个细粒度评分项的轨迹感知评分,并从完成度、安全性和鲁棒性三个维度进行评估。",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:58.464592"
+    },
+    {
+      "id": "hf-paper-f15e8218f82e",
+      "title": "Learning to Retrieve from Agent Trajectories",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.04949",
+      "summary": "本文提出了一个关于信息检索（IR）系统的新视角。传统检索系统专为人类用户设计，学习排序方法依赖于点击、停留时间等大规模人类交互日志。随着大型语言模型（LLM）驱动的搜索智能体快速发展，检索越来越多地被智能体而非人类使用，并嵌入到多轮推理和行动循环中。在此背景下，基于人类中心假设训练的检索模型与智能体发出查询和消费结果的方式存在根本性ismatch。本文主张应该直接从智能体交互数据训练检索模型，并提出从智能体轨迹学习检索这一新训练范式，其监督信号来源于多步智能体交互。通过对搜索智能体轨迹的系统分析，本文识别出揭示文档相关性的关键行为信号。",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:58.464588"
+    },
+    {
+      "id": "hf-paper-641855a51a18",
+      "title": "MMEmb-R1: Reasoning-Enhanced Multimodal Embedding with Pair-Aware Selection and Adaptive Control",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.06156",
+      "summary": "本论文提出MMEmb-R1框架，解决多模态大语言模型(MLLMs)在嵌入任务中推理能力未被充分利用的问题。研究发现直接将链式思维推理融入嵌入学习存在两大挑战：实例级推理与成对对比监督之间的结构错位可能导致捷径学习；推理并非对所有情况都有益，强制推理会增加计算开销并可能掩盖简单案例的语义信号。该框架将推理建模为潜在变量，通过成对感知推理选择利用反事实干预识别对查询-目标对齐有益的推理路径，实现自适应的推理控制。",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:58.464583"
+    },
+    {
+      "id": "hf-paper-402228019c82",
+      "title": "In-Place Test-Time Training",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.06169",
+      "summary": "原位测试时训练(In-Place TTT)是一种使大语言模型能够在推理时动态适应新信息的框架。该方法将MLP块的最终投影矩阵作为可适配的快速权重，实现“即插即用“的增强效果，无需从头重新训练。它解决了传统测试时训练面临的架构兼容性、计算效率和目标函数对齐等关键障碍，为LLM在真实场景中的持续适应提供了新思路。",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:58.464578"
+    },
+    {
+      "id": "hf-paper-2c4c084ab71c",
+      "title": "Scientific Graphics Program Synthesis via Dual Self-Consistency Reinforcement Learning",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.06079",
+      "summary": "本文提出了一种用于科学图形程序合成的闭环框架。图形程序合成可将静态视觉图像逆向工程为可编辑的TikZ代码，对于科学图表的解读与编辑具有重要价值。研究指出当前多模态大语言模型在TikZ生成方面面临两大挑战：数据质量缺口（现有图像-TikZ语料库缺乏严格的可执行性和可靠的视觉对齐）和评估缺口（缺乏结构和视觉保真度的基准测试）。为此，研究团队构建了SciTikZ-230K大规模高质量数据集（涵盖11个科学学科）和SciTikZ-Bench多维基准测试（从基础几何构造到复杂层次 Schematic），用于评估视觉保真度和结构逻辑。",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:58.464572"
+    },
+    {
+      "id": "hf-paper-0e678f995ed1",
+      "title": "Action Images: End-to-End Policy Learning via Multiview Video Generation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.06168",
+      "summary": "世界动作模型(WAM)是机器人策略学习的有前景方向，但现有方法依赖分离的动作模块或非像素级动作表示，难以充分利用预训练视频模型知识。本文提出「动作图像」统一世界动作模型，将7自由度机器人动作转化为多视角动作视频，通过像素级动作表示使视频骨干网络本身可作为零样本策略，无需单独策略头或动作模块。该统一模型同时支持视频-动作联合生成。",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:58.464551"
+    },
+    {
+      "id": "hf-paper-cc096e7b63fe",
+      "title": "MedGemma 1.5 Technical Report",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.05081",
+      "summary": "MedGemma 1.5 4B 是 MedGemma 系列的最新迭代模型，该版本在上一代基础上实现了重大扩展。新增能力包括：高维医学影像处理（CT/MRI 三维体积数据和病理全切片图像）、通过边界框进行解剖定位、多时间点胸部 X 光分析，以及改进的医学文档理解（实验室报告和电子健康记录）。为实现这些多模态功能，团队引入了创新的训练策略，包括长上下文三维体积切片技术和全切片病理采样方法。性能方面，MedGemma 1.5 4B 相比前代在三维 MRI 条件分类上提升 11% 准确率，三维 CT 分类提升 3%，全切片病理成像实现 47% 的宏 F1 增益，解剖定位的交并比提升 35%。",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:58.464544"
+    },
+    {
+      "id": "hf-paper-23812bac3741",
+      "title": "Vanast: Virtual Try-On with Human Image Animation via Synthetic Triplet Supervision",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.04934",
+      "summary": "Vanast是一个统一的虚拟试穿动画框架，能够直接从单个人体图像、服装图像和姿态引导视频生成服装转移的人体动画视频。传统两阶段流程将虚拟试穿与姿态驱动动画分开处理，常导致身份漂移、服装扭曲和前后不一致问题。Vanast通过单步统一处理实现连贯合成，并构建大规模三元组监督数据进行训练，包括保身份换装人体图像生成、完整上下服装三元组采集及多样化野外三元组组装。该研究还提出了用于视频扩散transformer的双模块架构。",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:58.464524"
+    },
+    {
+      "id": "github-b759fcbff766",
+      "title": "fikrikarim/parlor — On-device, real-time multimodal AI. Have natural voice and vision conversations ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/fikrikarim/parlor",
+      "summary": "parlor是一个创新的开源项目,实现完全在本地设备上运行的实时多模态AI对话系统。用户可以通过自然语音和视觉与AI进行交互,所有计算均在本地机器完成,无需依赖云端服务。该项目由Gemma 4 E2B和Kokoro驱动,针对Apple Silicon进行了专门优化,支持litert-lm和本地大语言模型部署,兼顾隐私安全与低延迟体验。目前已在GitHub获得912星标关注。",
+      "category": [
+        "开源项目",
+        "HTML",
+        "apple-silicon",
+        "gemma"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:58.168453"
+    },
+    {
+      "id": "github-f1aa082a6499",
+      "title": "hotcoffeeshake/tong-jincheng-skill — 童锦程视角 Skill — 用深情祖师爷的思维框架分析人际关系",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/hotcoffeeshake/tong-jincheng-skill",
+      "summary": "这是一个GitHub开源项目，提供了基于童锦程视角的人际关系分析思维框架。该项目通过「深情祖师爷」的思维模式，帮助用户理解和处理人际关系的复杂性。项目获得925个Star，表明其在社交技巧和情感分析领域受到一定关注。该技能包可能以提示词（Prompt）或模板形式呈现，供AI对话系统使用，旨在提供独特的人际关系分析视角。",
+      "category": [
+        "开源项目"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:58.168446"
+    },
+    {
+      "id": "github-edaa5547747f",
+      "title": "KKKKhazix/khazix-skills — 数字生命卡兹克开源的 AI Skills 合集",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/KKKKhazix/khazix-skills",
+      "summary": "这是一个由开发者「数字生命卡兹克」开源的AI技能集合项目，已在GitHub上获得985个star的关注度。该项目作为GitHub Trending热门项目，展示了AI技能模板、提示工程示例或实用工具的合集，旨在帮助开发者快速掌握AI应用开发技能，降低AI技术使用门槛，推动AI技术的普及与应用创新。",
+      "category": [
+        "开源项目"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:58.168442"
+    },
+    {
+      "id": "github-d690eb9a7334",
+      "title": "luyao618/Claude-Code-Source-Study — 深入Claude Code源码，学习目前最好的agent实现",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/luyao618/Claude-Code-Source-Study",
+      "summary": "该项目是对Claude Code进行深度源码分析的开源学习资料，旨在帮助开发者理解目前最优秀的agent（智能体）实现方案。项目已获得1019个star的关注，提供了对Claude Code内部工作机制和架构的详细解读，涵盖了智能体设计模式、工具调用机制、上下文管理等核心内容。对于想要深入了解现代AI Agent架构和实现技巧的开发者而言，这是宝贵的学习资源。",
+      "category": [
+        "开源项目"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:58.168433"
+    },
+    {
+      "id": "github-a4b838b5b33e",
+      "title": "afar1/fieldtheory-cli — Sync and locally store all of your X/Twitter bookmarks. Free and open source CLI",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/afar1/fieldtheory-cli",
+      "summary": "这是一个免费的Mac命令行界面(CLI)工具,用于同步并本地存储用户的所有X/Twitter书签。项目使用TypeScript开发,已获得1,141颗GitHub星标,表明其在开发者社区中具有较高的关注度。该工具帮助用户实现社交媒体书签的跨设备访问与本地备份,提供了数据主权和隐私保护的价值。",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:58.168406"
+    },
+    {
+      "id": "github-79f8f4c4b535",
+      "title": "GitFrog1111/badclaude",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/GitFrog1111/badclaude",
+      "summary": "BadClaude是一个在GitHub Trending上获得1196颗星的项目,主要使用HTML语言开发。该项目通过概念验证(PoC)的形式,展示了Claude AI助手可能存在的安全问题和漏洞,包括prompt injection攻击、 jailbreak技术以及AI安全限制被绕过的场景。该项目引起了AI安全研究社区的广泛关注,为大语言模型安全研究提供了重要的参考案例,同时也对AI开发者提出了关于模型安全性的重要思考。",
+      "category": [
+        "开源项目",
+        "HTML"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:58.168401"
+    },
+    {
+      "id": "github-4baddea991b5",
+      "title": "leilei926524-tech/anti-distill — 反蒸馏 Skill：清洗你被迫写的 Skill 文件，看起来完整，核心知识留给自己。Anti-distillation for employee Skills.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/leilei926524-tech/anti-distill",
+      "summary": "该项目是一款针对员工技能文档的反蒸馏工具，帮助员工在被迫编写技能(Skill)文件时，能够“清洗”文档内容，使文档表面看起来完整专业，但实际上将核心知识和专有技术保留在自己手中，防止核心业务知识因文档外泄而被竞争对手获取或被公司过度依赖。",
+      "category": [
+        "开源项目"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:58.168394"
+    },
+    {
+      "id": "github-4bd77bd22a2f",
+      "title": "sooryathejas/METATRON — AI-powered penetration testing assistant using local LLM on linux (Parrot OS)",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/sooryathejas/METATRON",
+      "summary": "METATRON是一个开源的AI驱动渗透测试助手项目，专注于在Linux（特别是Parrot OS）系统上运行本地大语言模型。该项目利用Python开发，旨在为渗透测试人员提供智能化的辅助工具，通过本地部署LLM来增强安全测试能力，同时保护敏感数据隐私。项目已获得1,743个GitHub星标，表明其在网络安全社区中获得了显著关注。",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:58.168351"
+    },
+    {
+      "id": "github-625dbf2069d9",
+      "title": "alchaincyf/nuwa-skill — 你想蒸馏的下一个员工，何必是同事。蒸馏任何人的思维方式——心智模型、决策启发式、表达DNA。Distill how anyone thinks.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/alchaincyf/nuwa-skill",
+      "summary": "nuwa-skill是一个GitHub上的思维蒸馏开源项目（2,679 stars），旨在将任何人的思维方式进行结构化提取。项目名称来源于中国神话中的造人女神\"女娲\"，象征着\"创造人\"的能力。该工具能够提取三种核心思维元素：心智模型（Mental Models）、决策启发式（Decision Heuristics）和表达DNA（Expression DNA），帮助用户复制特定人物的思维方式和表达风格。",
+      "category": [
+        "开源项目"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:58.168341"
+    },
+    {
+      "id": "github-875374a50f02",
+      "title": "kevinrgu/autoagent — autonomous harness engineering",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/kevinrgu/autoagent",
+      "summary": "autoagent 是一个基于 Python 的开源项目，专注于自主测试工程（autonomous harness engineering）。该项目在 GitHub 上获得了 3,809 颗星，展示了在自动化测试框架领域的技术创新。该项目旨在构建能够自主运行、自我优化的测试脚手架，减少人工干预，提升测试效率与覆盖率。作为 Python 项目，它便于集成到现有开发流程中，为 DevOps 和持续集成提供了灵活的自动化测试解决方案。",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:58.168332"
+    },
+    {
+      "id": "github-9671d97e8d57",
+      "title": "JuliusBrussee/caveman — 🪨 why use many token when few token do trick — Claude Code skill that cuts 65% o",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/JuliusBrussee/caveman",
+      "summary": "caveman是一个创新的Claude Code提示工程技能，由开发者JuliusBrussee创建。该项目通过采用简洁的\"穴居人\"语言风格进行AI对话，可以在保持沟通效果的同时，将Token消耗大幅降低65%。这一技巧展示了在AI应用中使用简洁语言表达的重要性，为开发者提供了一种高效降低API调用成本的方法。该项目已获得超过6,000颗星，证明了其在开发者社区中的高人气和实用价值。",
+      "category": [
+        "开源项目",
+        "Python",
+        "ai",
+        "anthropic"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:58.168314"
+    },
+    {
+      "id": "github-d53b1aebbbbc",
+      "title": "ultraworkers/claw-code-parity — Join Discord: https://discord.gg/5TUQKqFWd /  claw-code Rust port parity work - ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/ultraworkers/claw-code-parity",
+      "summary": "claw-code-parity 是一个将 claw-code 项目移植到 Rust 的临时性工作,旨在保持代码兼容性。该项目在 claw-code 仓库进行迁移期间进行,目前已获得 6,600 颗星,显示出开发者社区对 Rust 版本的高度关注。此移植工作对于维护跨语言兼容性和项目平稳过渡具有重要意义。",
+      "category": [
+        "开源项目",
+        "Rust"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:58.168256"
+    },
+    {
+      "id": "github-9aa0b457af7c",
+      "title": "safishamsi/graphify — AI coding assistant skill (Claude Code, Codex, OpenCode, OpenClaw, Factory Droid",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/safishamsi/graphify",
+      "summary": "graphify是一个创新的AI编程助手技能项目，能够将任意代码文件夹、文档、论文或图像转换为可查询的知识图谱。该项目基于Python开发，在GitHub上获得了7,420颗星标。它支持多种主流AI编程助手，包括Claude Code、Codex、OpenCode、OpenClaw和Factory Droid。通过将代码和文档结构化存储为知识图谱，用户可以更高效地进行代码检索、知识问答和语义搜索。该项目是GraphRAG技术在编程辅助领域的重要应用。",
+      "category": [
+        "开源项目",
+        "Python",
+        "claude-code",
+        "codex"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:58.168252"
+    },
+    {
+      "id": "github-324dca1fa921",
+      "title": "milla-jovovich/mempalace — The highest-scoring AI memory system ever benchmarked. And it's free.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/milla-jovovich/mempalace",
+      "summary": "Mempalace是由milla-jovovich开发的AI记忆系统，在各项基准测试中取得了最高评分，目前已在GitHub获得超过18,000颗星。该系统基于Python开发，集成了chromadb向量数据库、LLM（大语言模型）和MCP协议，能够为AI应用提供高效的记忆存储和检索能力。最重要的是该项目完全免费开源，降低了开发者构建AI记忆功能的门槛。",
+      "category": [
+        "开源项目",
+        "Python",
+        "ai",
+        "chromadb"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:58.168243"
+    },
+    {
+      "id": "github-f8d79b4ea321",
+      "title": "santifer/career-ops — AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard,",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/santifer/career-ops",
+      "summary": "career-ops是一个利用Claude Code构建的AI-powered求职系统,提供14种技能模式以满足不同求职需求。该项目配备Go语言开发的Dashboard界面,支持PDF简历生成和批量处理功能,帮助用户自动化求职流程。截至目前已获得18,885颗星标,充分展现了其在AI求职工具领域的受欢迎程度和技术价值。",
+      "category": [
+        "开源项目",
+        "JavaScript",
+        "ai-agent",
+        "anthropic"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-08T10:56:58.168186"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-09-09T12:07:30.929193"
+}

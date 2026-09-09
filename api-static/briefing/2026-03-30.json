@@ -1,0 +1,22 @@
+{
+  "id": "ac20cb89-0a5e-4ef9-8f05-37a02744bf9f",
+  "date": "2026-03-30",
+  "items": [
+    {
+      "id": "github-1196321162",
+      "title": "openai/codex-plugin-cc: Use Codex from Claude Code to review code or delegate tasks.",
+      "source": "GitHub",
+      "source_type": "repo",
+      "url": "https://github.com/openai/codex-plugin-cc",
+      "summary": "这是一个 OpenAI 的 Codex 插件项目，允许用户在 Claude Code 环境中调用 Codex 来执行代码审查或委托任务。该工具实现了将 Anthropic 的 Claude 与 OpenAI 的 Codex 能力集成的功能，为开发者提供了跨平台 AI 辅助编程的解决方案。",
+      "category": [
+        "AI驱动的开发者工具",
+        "前端开发与 AI 集成"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-03-30T15:29:52.000Z"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-09-09T12:07:32.139841"
+}

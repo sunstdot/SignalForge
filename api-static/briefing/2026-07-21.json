@@ -1,0 +1,86 @@
+{
+  "id": "287ba50b-44a1-4d7b-9c8d-e5e25dc6b17d",
+  "date": "2026-07-21",
+  "items": [
+    {
+      "id": "vpr-signal-34327b5f2462",
+      "title": "Natural raises $30M to reinvent payments for AI agents — and take on Stripe",
+      "source": "Venture Product Radar",
+      "source_type": "venture_signal",
+      "url": "https://techcrunch.com/2026/07/20/natural-raises-30m-to-reinvent-payments-for-ai-agents-and-take-on-stripe",
+      "summary": "The one-year-old startup aims to reinvent financial architecture for autonomous AI transactions.",
+      "category": [
+        "AI venture funding product launches startup signals"
+      ],
+      "relevance_score": 5,
+      "created_at": "2026-07-21"
+    },
+    {
+      "id": "vpr-signal-2ac41aa4890b",
+      "title": "GitHub activity: Infrasity-Labs/awesome-tech-newsletter",
+      "source": "Venture Product Radar",
+      "source_type": "venture_signal",
+      "url": "https://github.com/Infrasity-Labs/awesome-tech-newsletter",
+      "summary": "A curated, community-driven list of the best tech, software engineering, and developer marketing newsletters. Stay up-to-date with top-tier insights across AI, DevOps, Frontend, and more.",
+      "category": [
+        "AI venture funding product launches startup signals"
+      ],
+      "relevance_score": 5,
+      "created_at": "2026-07-21"
+    },
+    {
+      "id": "vpr-signal-23be7ef7e54b",
+      "title": "GitHub activity: Infrasity-Labs/awesome-developer-podcasts",
+      "source": "Venture Product Radar",
+      "source_type": "venture_signal",
+      "url": "https://github.com/Infrasity-Labs/awesome-developer-podcasts",
+      "summary": "A curated directory of developer podcasts for software engineering teams. It is an open-source collection of podcasts that covers system architecture, cloud-native, DevOps, B2B SaaS, AI/ML, and engineering leadership.",
+      "category": [
+        "AI venture funding product launches startup signals"
+      ],
+      "relevance_score": 5,
+      "created_at": "2026-07-21"
+    },
+    {
+      "id": "vpr-product-2ac41aa4890b",
+      "title": "Infrasity-Labs/awesome-tech-newsletter",
+      "source": "Venture Product Radar",
+      "source_type": "product",
+      "url": "https://github.com/Infrasity-Labs/awesome-tech-newsletter",
+      "summary": "A curated, community-driven list of the best tech, software engineering, and developer marketing newsletters. Stay up-to-date with top-tier insights across AI, DevOps, Frontend, and more.",
+      "category": [
+        "AI venture funding product launches startup signals"
+      ],
+      "relevance_score": 3,
+      "created_at": "2026-07-21"
+    },
+    {
+      "id": "vpr-product-23be7ef7e54b",
+      "title": "Infrasity-Labs/awesome-developer-podcasts",
+      "source": "Venture Product Radar",
+      "source_type": "product",
+      "url": "https://github.com/Infrasity-Labs/awesome-developer-podcasts",
+      "summary": "A curated directory of developer podcasts for software engineering teams. It is an open-source collection of podcasts that covers system architecture, cloud-native, DevOps, B2B SaaS, AI/ML, and engineering leadership.",
+      "category": [
+        "AI venture funding product launches startup signals"
+      ],
+      "relevance_score": 3,
+      "created_at": "2026-07-21"
+    },
+    {
+      "id": "vpr-product-9378133bd9f6",
+      "title": "anomixer/openclaw-news",
+      "source": "Venture Product Radar",
+      "source_type": "product",
+      "url": "https://github.com/anomixer/openclaw-news",
+      "summary": "OpenClaw Daily News (with Ollama + Telegram Quick Setup Guide) | 每日新聞兼快速安裝指南",
+      "category": [
+        "AI venture funding product launches startup signals"
+      ],
+      "relevance_score": 3,
+      "created_at": "2026-07-21"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-08-10T14:49:13.522429"
+}

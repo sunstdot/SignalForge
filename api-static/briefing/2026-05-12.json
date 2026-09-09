@@ -1,0 +1,490 @@
+{
+  "id": "371a068b-d446-4ab7-a648-dea774cf9793",
+  "date": "2026-05-12",
+  "items": [
+    {
+      "id": "hf-paper-fe5d895c38d7",
+      "title": "Q-RAG: Long Context Multi-step Retrieval via Value-based Embedder Training",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2511.07328",
+      "summary": "Retrieval-Augmented Generation (RAG) methods enhance LLM performance by efficiently filtering relevant context for LLMs, reducing hallucinations and inference cost. However, most existing RAG methods ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-12T09:59:07.375154"
+    },
+    {
+      "id": "hf-paper-64b9583fc31f",
+      "title": "ModelLens: Finding the Best for Your Task from Myriads of Models",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.07075",
+      "summary": "The open-source model ecosystem now contains hundreds of thousands of pretrained models, yet picking the best model for a new dataset is increasingly infeasible: new models and unbenchmarked datasets ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-12T09:59:07.375150"
+    },
+    {
+      "id": "hf-paper-13a11b8489ff",
+      "title": "Rubric-based On-policy Distillation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.07396",
+      "summary": "On-policy distillation (OPD) is a powerful paradigm for model alignment, yet its reliance on teacher logits restricts its application to white-box scenarios. We contend that structured semantic rubric",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-12T09:59:07.375148"
+    },
+    {
+      "id": "hf-paper-983419b85af1",
+      "title": "BalCapRL: A Balanced Framework for RL-Based MLLM Image Captioning",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.07394",
+      "summary": "Image captioning is one of the most fundamental tasks in computer vision. Owing to its open-ended nature, it has received significant attention in the era of multimodal large language models (MLLMs). ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-12T09:59:07.375145"
+    },
+    {
+      "id": "hf-paper-d9cbf433a7ed",
+      "title": "PACEvolve++: Improving Test-time Learning for Evolutionary Search Agents",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.07039",
+      "summary": "Large language models have become drivers of evolutionary search, but most systems rely on a fixed, prompt-elicited policy to sample next candidates. This limits adaptation in practical engineering an",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-12T09:59:07.375142"
+    },
+    {
+      "id": "hf-paper-1424edb5c524",
+      "title": "From Holo Pockets to Electron Density: GPT-style Drug Design with Density",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.08767",
+      "summary": "Recent advances in generative modeling have enabled significant progress in structure-based drug design (SBDD). Existing methods typically condition molecule generation on empty binding pockets from h",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-12T09:59:07.375139"
+    },
+    {
+      "id": "hf-paper-cec3c754bcbe",
+      "title": "DiffRetriever: Parallel Representative Tokens for Retrieval with Diffusion Language Models",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.07210",
+      "summary": "PromptReps showed that an autoregressive language model can be used directly as a retriever by prompting it to generate dense and sparse representations of a query or passage. Extending this to multip",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-12T09:59:07.375136"
+    },
+    {
+      "id": "hf-paper-31290480ca5f",
+      "title": "MLS-Bench: A Holistic and Rigorous Assessment of AI Systems on Building Better AI",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.08678",
+      "summary": "Modern AI progress has been driven by ML methods that are generalizable across settings and scalable to larger regimes. As large language models demonstrate advanced capabilities in reasoning, coding,",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-12T09:59:07.375132"
+    },
+    {
+      "id": "hf-paper-01bf069cf247",
+      "title": "Soohak: A Mathematician-Curated Benchmark for Evaluating Research-level Math Capabilities of LLMs",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.09063",
+      "summary": "Following the recent achievement of gold-medal performance on the IMO by frontier LLMs, the community is searching for the next meaningful and challenging target for measuring LLM reasoning. Whereas o",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-12T09:59:07.375128"
+    },
+    {
+      "id": "hf-paper-c58eb44bf61c",
+      "title": "Uncovering Entity Identity Confusion in Multimodal Knowledge Editing",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.06096",
+      "summary": "Multimodal knowledge editing (MKE) aims to correct the internal knowledge of large vision-language models after deployment, yet the behavioral patterns of post-edit models remain underexplored. In thi",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-12T09:59:07.375115"
+    },
+    {
+      "id": "github-8c0e793b57fc",
+      "title": "rohitg00/agentmemory — #1 Persistent memory for AI coding agents based on real-world benchmarks",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/rohitg00/agentmemory",
+      "summary": "#1 Persistent memory for AI coding agents based on real-world benchmarks | 🔥 430 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-12T09:59:07.364794"
+    },
+    {
+      "id": "github-3c19e4a80a3d",
+      "title": "NousResearch/hermes-agent — The agent that grows with you",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "summary": "The agent that grows with you | 🔥 2065 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-12T09:59:07.364063"
+    },
+    {
+      "id": "github-8a39575133bf",
+      "title": "rasbt/LLMs-from-scratch — Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "summary": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step | 🔥 337 stars today | Language: Jupyter Notebook",
+      "category": [
+        "开源项目",
+        "Jupyter Notebook"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-12T09:59:07.363401"
+    },
+    {
+      "id": "github-9ba1a11b4da5",
+      "title": "AUTOMATIC1111/stable-diffusion-webui — Stable Diffusion web UI",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+      "summary": "Stable Diffusion web UI | 🔥 39 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-12T09:59:07.362735"
+    },
+    {
+      "id": "github-2b6d106c7083",
+      "title": "Lordog/dive-into-llms — 《动手学大模型Dive into LLMs》系列编程实践教程",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Lordog/dive-into-llms",
+      "summary": "《动手学大模型Dive into LLMs》系列编程实践教程 | 🔥 422 stars today | Language: Jupyter Notebook",
+      "category": [
+        "开源项目",
+        "Jupyter Notebook"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-12T09:59:07.362026"
+    },
+    {
+      "id": "github-4f0cca454833",
+      "title": "millionco/react-doctor — Your agent writes bad React. This catches it",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/millionco/react-doctor",
+      "summary": "Your agent writes bad React. This catches it | 🔥 212 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-12T09:59:07.361248"
+    },
+    {
+      "id": "github-3b31abe37078",
+      "title": "tinyhumansai/openhuman — Your Personal AI super intelligence. Private, Simple and extremely powerful.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/tinyhumansai/openhuman",
+      "summary": "Your Personal AI super intelligence. Private, Simple and extremely powerful. | 🔥 366 stars today | Language: Rust",
+      "category": [
+        "开源项目",
+        "Rust"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-12T09:59:07.360395"
+    },
+    {
+      "id": "github-6a861e785610",
+      "title": "decolua/9router — Unlimited FREE AI coding. Connect Claude Code, Codex, Cursor, Cline, Copilot, An",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/decolua/9router",
+      "summary": "Unlimited FREE AI coding. Connect Claude Code, Codex, Cursor, Cline, Copilot, Antigravity to FREE Claude/GPT/Gemini via 40+ providers. Auto-fallback, RTK -40% tokens, never hit limits. | 🔥 941 stars t",
+      "category": [
+        "开源项目",
+        "JavaScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-12T09:59:07.359527"
+    },
+    {
+      "id": "github-e00b02d7c0ac",
+      "title": "datawhalechina/easy-vibe — 💻 vibe coding 2026 | Your first modern Coding course for beginners to master ste",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/datawhalechina/easy-vibe",
+      "summary": "💻 vibe coding 2026 | Your first modern Coding course for beginners to master step by step. | 🔥 812 stars today | Language: JavaScript",
+      "category": [
+        "开源项目",
+        "JavaScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-12T09:59:07.358768"
+    },
+    {
+      "id": "github-4062f864fd38",
+      "title": "playcanvas/supersplat — 3D Gaussian Splat Editor",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/playcanvas/supersplat",
+      "summary": "3D Gaussian Splat Editor | 🔥 531 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-12T09:59:07.357998"
+    },
+    {
+      "id": "github-9b9d31207248",
+      "title": "yikart/AiToEarn — Let's use AI to Earn!",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/yikart/AiToEarn",
+      "summary": "Let's use AI to Earn! | 🔥 427 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-12T09:59:07.357251"
+    },
+    {
+      "id": "github-9e3b2f422063",
+      "title": "CloakHQ/CloakBrowser — Stealth Chromium that passes every bot detection test. Drop-in Playwright replac",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/CloakHQ/CloakBrowser",
+      "summary": "Stealth Chromium that passes every bot detection test. Drop-in Playwright replacement with source-level fingerprint patches. 30/30 tests passed. | 🔥 1320 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-12T09:59:07.356498"
+    },
+    {
+      "id": "github-8c3e92502432",
+      "title": "bytedance/UI-TARS-desktop — The Open-Source Multimodal AI Agent Stack: Connecting Cutting-Edge AI Models and",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/bytedance/UI-TARS-desktop",
+      "summary": "The Open-Source Multimodal AI Agent Stack: Connecting Cutting-Edge AI Models and Agent Infra | 🔥 956 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-12T09:59:07.355717"
+    },
+    {
+      "id": "hf-model-4481c76e29d1",
+      "title": "🤗 Qwen/Qwen3.6-27B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-27B",
+      "summary": "Task: image-text-to-text | Downloads: 2,446,478 | Likes: 1,239",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-12T09:59:06.841431"
+    },
+    {
+      "id": "hf-model-79856f8f8d86",
+      "title": "🤗 TenStrip/LTX2.3-10Eros",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/TenStrip/LTX2.3-10Eros",
+      "summary": "Task: image-to-video | Downloads: 64,008 | Likes: 223",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-12T09:59:06.841422"
+    },
+    {
+      "id": "hf-model-b6a7c38191ac",
+      "title": "🤗 openai/privacy-filter",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/openai/privacy-filter",
+      "summary": "Task: token-classification | Downloads: 190,993 | Likes: 1,410",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-12T09:59:06.841387"
+    },
+    {
+      "id": "hf-model-f3fc7d86e6c4",
+      "title": "🤗 SeeSee21/Z-Anime",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/SeeSee21/Z-Anime",
+      "summary": "Task: text-to-image | Downloads: 9,477 | Likes: 308",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-12T09:59:06.841379"
+    },
+    {
+      "id": "hf-model-b3847c8d781e",
+      "title": "🤗 openbmb/MiniCPM-V-4.6",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.6",
+      "summary": "Task: image-text-to-text | Likes: 216",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-12T09:59:06.841371"
+    },
+    {
+      "id": "hf-model-667efcd6957b",
+      "title": "🤗 google/gemma-4-31B-it-assistant",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/google/gemma-4-31B-it-assistant",
+      "summary": "Task: any-to-any | Downloads: 66,561 | Likes: 210",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-12T09:59:06.841362"
+    },
+    {
+      "id": "hf-model-fd141927797a",
+      "title": "🤗 HiDream-ai/HiDream-O1-Image",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/HiDream-ai/HiDream-O1-Image",
+      "summary": "Task: image-text-to-image | Downloads: 3,418 | Likes: 241",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-12T09:59:06.841350"
+    },
+    {
+      "id": "hf-model-fe96e83596e6",
+      "title": "🤗 deepseek-ai/DeepSeek-V4-Pro",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+      "summary": "Task: text-generation | Downloads: 2,017,835 | Likes: 3,857",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-12T09:59:06.841318"
+    },
+    {
+      "id": "hf-model-d6be4a0dd0b2",
+      "title": "🤗 Zyphra/ZAYA1-8B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Zyphra/ZAYA1-8B",
+      "summary": "Downloads: 66,119 | Likes: 422",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-12T09:59:06.841297"
+    },
+    {
+      "id": "hf-model-967b88027b16",
+      "title": "🤗 SulphurAI/Sulphur-2-base",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/SulphurAI/Sulphur-2-base",
+      "summary": "Task: text-to-video | Downloads: 157,648 | Likes: 636",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-12T09:59:06.841248"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-09-09T12:07:27.072512"
+}

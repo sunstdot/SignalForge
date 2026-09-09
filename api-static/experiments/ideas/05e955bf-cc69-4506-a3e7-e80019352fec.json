@@ -1,0 +1,19 @@
+{
+  "id": "05e955bf-cc69-4506-a3e7-e80019352fec",
+  "content_id": "",
+  "title": "MiniMax中文写作助手",
+  "description": "**核心洞察**\nMiniMax-M2.7中文生成能力强，专门针对中文场景优化\n\n**产品形态**\n帮助文案工作者快速生成小红书/公众号文案的效率工具\n\n**目标用户**\n小红书博主、公众号运营，痛点：日更压力大，创意枯竭\n\n**核心功能（MVP）**\n- 关键词生成爆款标题\n- 一键生成正文\n- emoji和标签优化\n- 多风格语气切换\n\n**商业模式**\n免费100条/天，付费29元/月无限量\n\n**竞争壁垒**\n小红书平台特化调优\n\n**潜在风险**\n大厂免费入场",
+  "difficulty": "medium",
+  "estimated_days": 7,
+  "tags": [],
+  "status": "pending",
+  "priority": 19.0,
+  "briefing_date": "",
+  "source_type": "model",
+  "source_title": "🤗 MiniMaxAI/MiniMax-M2.7",
+  "source_url": "https://huggingface.co/MiniMaxAI/MiniMax-M2.7",
+  "inspiration": "",
+  "product_concept": {},
+  "source_context": "",
+  "created_at": "2026-04-15T10:51:56.279936"
+}

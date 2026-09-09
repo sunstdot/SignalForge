@@ -1,0 +1,578 @@
+{
+  "date": "2026-04-16",
+  "opportunities": [
+    {
+      "opportunity_title": "中文AI语音合成平台",
+      "core_insight": "VoxCPM2是中文开源TTS模型，中文语音合成市场需求大但供给少",
+      "product_form": "帮助创作者、企业生成自然中文语音的内容工具",
+      "target_users": "短视频创作者、有声书作者、播客制作者、需要语音输出的企业",
+      "mvp_features": [
+        "多音色选择(10+种)",
+        "语速/音调调节",
+        "批量生成API",
+        "音效增强"
+      ],
+      "business_model": "免费生成3分钟，会员59元/月含100分钟，超出1元/分钟",
+      "competitive_barrier": "中文多音字处理优势 + 丰富的音色库",
+      "risks": "大厂TTS服务降价",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 5,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 20,
+      "source_title": "🤗 openbmb/VoxCPM2",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/openbmb/VoxCPM2",
+      "item_id": "hf-model-b2cd1173ff38"
+    },
+    {
+      "opportunity_title": "企业AI客服Agent搭建平台",
+      "core_insight": "基于开源Agent框架，提供低代码企业客服Agent搭建服务，6个月前企业Agent还需大量定制开发",
+      "product_form": "帮助企业零代码搭建智能客服Agent的SaaS平台",
+      "target_users": "中小电商、在线教育、服务行业，需要智能客服降低人力成本",
+      "mvp_features": [
+        "知识库一键导入",
+        "多渠道接入(微信/网站/App)",
+        "意图识别优化",
+        "对话数据分析"
+      ],
+      "business_model": "按坐席数收费(50元/坐席/月)",
+      "competitive_barrier": "行业知识库模板+部署便捷性",
+      "risks": "大厂客服AI竞争，数据安全顾虑",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 5,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 19,
+      "source_title": "vercel-labs/open-agents — An open source template for building cloud agents.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/vercel-labs/open-agents",
+      "item_id": "github-e7ad6c23f068"
+    },
+    {
+      "opportunity_title": "AI语音合成工作室",
+      "core_insight": "voicebox开源使语音合成技术民主化，6个月前高质量语音合成仍是高门槛技术，现在可快速构建应用",
+      "product_form": "帮助内容创作者、企业快速生成专业级AI语音的产品",
+      "target_users": "短视频创作者、播客主、有声书制作者、企业宣传部门",
+      "mvp_features": [
+        "文字转语音多音色",
+        "情感/风格控制",
+        "批量生成",
+        "多语言支持"
+      ],
+      "business_model": "免费生成+会员订阅(29元/月)",
+      "competitive_barrier": "中文音色库+情感控制模型",
+      "risks": "同质化产品多，版权/配音员权益争议",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 5,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 19,
+      "source_title": "jamiepine/voicebox — The open-source voice synthesis studio",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/jamiepine/voicebox",
+      "item_id": "github-2267c9689012"
+    },
+    {
+      "opportunity_title": "LLM中文实战学院",
+      "core_insight": "国内LLM学习需求旺盛，但缺乏高质量、系统化的中文实战教程",
+      "product_form": "面向中文开发者的LLM实战在线教育平台",
+      "target_users": "想学习LLM应用开发的工程师，付费意愿强，偏好实战项目",
+      "mvp_features": [
+        "手把手项目实战",
+        "GPU实验环境",
+        "企业认证训练营"
+      ],
+      "business_model": "会员月卡99元、年卡699元，企业培训按人收费",
+      "competitive_barrier": "高质量项目案例库、口碑传播",
+      "risks": "大厂免费课程冲击",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 19,
+      "source_title": "Lordog/dive-into-llms — 《动手学大模型Dive into LLMs》系列编程实践教程",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/Lordog/dive-into-llms",
+      "item_id": "github-2b6d106c7083"
+    },
+    {
+      "opportunity_title": "Vercel云Agent模板中文化",
+      "core_insight": "vercel-labs/open-agents提供云Agent构建模板但面向海外市场，中文开发者需要本地化、易部署的Agent框架",
+      "product_form": "帮助中国开发者快速部署企业级AI Agent的云平台",
+      "target_users": "中国中小企业开发者，需快速搭建客服、自动化业务流程",
+      "mvp_features": [
+        "中文Agent模板市场",
+        "一键部署到国内云",
+        "工作流可视化编排",
+        "监控与日志"
+      ],
+      "business_model": "免费层+云服务订阅(99元/月起)",
+      "competitive_barrier": "中文Agent模板生态+国内云集成",
+      "risks": "大厂Agent平台竞争",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 18,
+      "source_title": "vercel-labs/open-agents — An open source template for building cloud agents.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/vercel-labs/open-agents",
+      "item_id": "github-e7ad6c23f068"
+    },
+    {
+      "opportunity_title": "Agent开发工作台",
+      "core_insight": "Superpowers框架验证了Agent技能编排方法论的可行性，中文开发者缺乏系统化的Agent开发工具",
+      "product_form": "帮助全栈工程师快速构建AI Agent的工作台SaaS",
+      "target_users": "中国中小企业的技术负责人、獨立開發者，目標是6個月內用AI Agent替代部分人力客服/運營",
+      "mvp_features": [
+        "可視化技能節點編排",
+        "預置電商、客服場景模板",
+        "一鍵部署到微信/釘釘"
+      ],
+      "business_model": "免費版功能有限，專業版每月99元，企業版客製化報價",
+      "competitive_barrier": "預置場景模板的深度最佳化 中文優化",
+      "risks": "大廠可能推出類似工具",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 18,
+      "source_title": "obra/superpowers — An agentic skills framework &amp; software development methodology that works.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/obra/superpowers",
+      "item_id": "github-ecb7de9cc8a0"
+    },
+    {
+      "opportunity_title": "AI室内设计助手",
+      "core_insight": "3D创作工具普及但AI辅助设计仍是蓝海，中国消费者有强烈装修需求",
+      "product_form": "面向普通用户的AI室内设计工具，小程序+网页端",
+      "target_users": "准备装修的业主、软装设计师，付费意愿高但缺乏专业工具",
+      "mvp_features": [
+        "拍照识别户型",
+        "AI生成3套设计方案",
+        "材料预算估算"
+      ],
+      "business_model": "免费看1套方案，全套19.9元，设计师版99元/月",
+      "competitive_barrier": "中国户型数据库、装修材料价格实时更新",
+      "risks": "渲染质量不够逼真",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 5,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 18,
+      "source_title": "pascalorg/editor — Create and share 3D architectural projects.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/pascalorg/editor",
+      "item_id": "github-ec9987c48f87"
+    },
+    {
+      "opportunity_title": "无审查AI聊天应用",
+      "core_insight": "supergemma4-26b-uncensored下载量26k说明市场存在对自由对话AI的强需求",
+      "product_form": "帮助用户绕过内容限制进行自由对话的AI聊天工具",
+      "target_users": "需要创作自由的内容创作者、研究人员、追求开放对话体验的用户",
+      "mvp_features": [
+        "无审查的对话界面",
+        "角色扮演模板",
+        "长对话记忆"
+      ],
+      "business_model": "免费版有次数限制，VIP 49元/月无限对话",
+      "competitive_barrier": "持续提供更新模型、差异化角色库",
+      "risks": "政策监管风险、内容合规风险",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 17,
+      "source_title": "🤗 Jiunsong/supergemma4-26b-uncensored-gguf-v2",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/Jiunsong/supergemma4-26b-uncensored-gguf-v2",
+      "item_id": "hf-model-7799d1d27bd5"
+    },
+    {
+      "opportunity_title": "多模态AI图文创作助手",
+      "core_insight": "gemma-4-31B-it多模态模型开源且性能强劲，可实现文本图像双向理解，中文互联网内容创作需求旺盛但工具链薄弱",
+      "product_form": "帮助内容创作者快速生成配图文案的多模态创作工具",
+      "target_users": "自媒体博主、小红书/抖音创作者、公众号运营者，需频繁配图但缺乏设计能力，付费意愿中等",
+      "mvp_features": [
+        "上传图片自动生成适配文案",
+        "文字描述生成配图",
+        "批量生成多平台适配内容",
+        "中文语境优化"
+      ],
+      "business_model": "免费基础功能+会员订阅(19元/月高级功能)",
+      "competitive_barrier": "中文语境调优和最佳实践Prompt库",
+      "risks": "大厂同类产品竞争，模型版权风险",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 17,
+      "source_title": "🤗 google/gemma-4-31B-it",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/google/gemma-4-31B-it",
+      "item_id": "hf-model-2d0f16bac7e1"
+    },
+    {
+      "opportunity_title": "AI文件类型检测CLI工具",
+      "core_insight": "Google magika实现AI驱动的高精度文件类型检测，文件扩展名欺骗是常见安全问题，企业级文件安全审计需求大",
+      "product_form": "帮助企业/开发者自动检测文件真实类型的CLI/API工具",
+      "target_users": "安全工程师、运维、开发者，需处理大量无法信任的文件",
+      "mvp_features": [
+        "CLI批量检测",
+        "API集成",
+        "支持500+文件类型",
+        "伪装文件识别告警"
+      ],
+      "business_model": "免费CLI+企业API订阅(199元/月)",
+      "competitive_barrier": "文件类型特征库深度积累",
+      "risks": "大厂安全产品覆盖，误判法律风险",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 17,
+      "source_title": "google/magika — Fast and accurate AI powered file content types detection",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/google/magika",
+      "item_id": "github-6b7d140c7b2a"
+    },
+    {
+      "opportunity_title": "Agent开发培训营",
+      "core_insight": "中文市场缺乏系统化的LLM Agent开发培训，市场需求旺盛",
+      "product_form": "面向中文开发者的Agent开发实战训练营",
+      "target_users": "1-3年经验的Python开发者，想转型AI开发，付费意愿强",
+      "mvp_features": [
+        "5个企业级Agent项目实战",
+        "1v1代码审阅",
+        "毕业项目辅导"
+      ],
+      "business_model": "线上训练营1999元/人，VIP班5999元",
+      "competitive_barrier": "行业资深讲师资源、真实企业案例",
+      "risks": "内容同质化严重",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 17,
+      "source_title": "obra/superpowers — An agentic skills framework &amp; software development methodology that works.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/obra/superpowers",
+      "item_id": "github-ecb7de9cc8a0"
+    },
+    {
+      "opportunity_title": "AI编码最佳实践库",
+      "core_insight": "Karpathy的LLM编码pitfalls揭示了巨大的prompt优化空间，可产品化",
+      "product_form": "面向开发者的AI编码提示词优化工具/知识库",
+      "target_users": "使用Cursor、Claude Code的国内开发者，想提升编码效率",
+      "mvp_features": [
+        "最佳实践提示词库",
+        "代码审查建议",
+        "自动生成CLAUDE.md"
+      ],
+      "business_model": "免费基础库，高级提示库39元/年",
+      "competitive_barrier": "持续更新的最佳实践库、社区口碑",
+      "risks": "大模型自带能力增强",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 17,
+      "source_title": "forrestchang/andrej-karpathy-skills — A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Kar",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/forrestchang/andrej-karpathy-skills",
+      "item_id": "github-41a9464d5efe"
+    },
+    {
+      "opportunity_title": "中文短视频生成工具",
+      "core_insight": "Seedance2.0代表国产视频生成能力成熟，可填补中文创作者对本地化视频生成工具的刚需",
+      "product_form": "帮助中文自媒体快速生成营销视频的在线工具",
+      "target_users": "抖音/快手/视频号创作者，电商商家，需大量短视频但制作成本高",
+      "mvp_features": [
+        "文字描述生成视频",
+        "模板化营销视频",
+        "多语言配音",
+        "一键多平台分发"
+      ],
+      "business_model": "免费生成短视频水印版，付费去水印29-99元/条，商家版月费299元",
+      "competitive_barrier": "中文语义理解和本土平台对接",
+      "risks": "视频质量与版权风险",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 5,
+        "tech_timing": 4,
+        "buildability": 3
+      },
+      "total_score": 17,
+      "source_title": "Seedance 2.0: Advancing Video Generation for World Complexity",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "source_url": "https://huggingface.co/papers/2604.14148",
+      "item_id": "hf-paper-89900b79412b"
+    },
+    {
+      "opportunity_title": "AI职业替代评估工具",
+      "core_insight": "OccuBench揭示了AI可替代数百种职业，这为个人职业规划和企业人力资源决策提供依据",
+      "product_form": "帮助个人了解AI对自己职业的替代风险并提供转型建议",
+      "target_users": "职场人士关注职业发展，大学生选专业，企业HR评估团队风险",
+      "mvp_features": [
+        "职业AI替代风险评估",
+        "技能差距分析",
+        "转型建议和课程推荐",
+        "企业团队AI渗透率报告"
+      ],
+      "business_model": "个人版19.9元/次，企业版99元/部门",
+      "competitive_barrier": "评估模型准确度和行业数据",
+      "risks": "预测准确性质疑",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 17,
+      "source_title": "OccuBench: Evaluating AI Agents on Real-World Professional Tasks via Language World Models",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "source_url": "https://huggingface.co/papers/2604.10866",
+      "item_id": "hf-paper-694fd323af68"
+    },
+    {
+      "opportunity_title": "中文AI图生文工具",
+      "core_insight": "百度ERNIE-Image下载量高且轻量，适合集成到Next.js为中文用户提供本地化图像理解API服务",
+      "product_form": "帮助中文开发者快速接入图像理解能力的API中间件",
+      "target_users": "中国中小企业开发者、无算法团队的创业公司、需要快速集成AI图像能力的团队",
+      "mvp_features": [
+        "ERNIE-Image图像理解API封装",
+        "中文Prompt模板库",
+        "按调用量计费的计费系统"
+      ],
+      "business_model": "API调用按次收费(0.1元/次)，月活开发者500+即可盈亏平衡",
+      "competitive_barrier": "百度官方API文档复杂，我们提供中文优化的一站式SDK",
+      "risks": "百度API政策变化导致服务中断",
+      "scores": {
+        "pain_point": 3,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 5
+      },
+      "total_score": 16,
+      "source_title": "🤗 baidu/ERNIE-Image-Turbo",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/baidu/ERNIE-Image-Turbo",
+      "item_id": "hf-model-73a346378827"
+    },
+    {
+      "opportunity_title": "中文AI生图工作流",
+      "core_insight": "ERNIE-Image模型已经可以文生图，且中文理解能力强于国际竞品",
+      "product_form": "帮助中文用户通过自然语言快速生成图片的工具",
+      "target_users": "需要快速生成配图的自媒体作者、电商运营、小红书博主",
+      "mvp_features": [
+        "中文prompt优化界面",
+        "风格模板选择",
+        "高清图下载"
+      ],
+      "business_model": "免费版10次/天，会员版29元/月无限生成",
+      "competitive_barrier": "中文语义理解优势 + 百度算力背书",
+      "risks": "大厂免费工具竞争",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "🤗 baidu/ERNIE-Image-Turbo",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/baidu/ERNIE-Image-Turbo",
+      "item_id": "hf-model-73a346378827"
+    },
+    {
+      "opportunity_title": "Gemma本地AI助手",
+      "core_insight": "Gemma-4-31B下载量51k说明开源模型已足够强大，可在消费级GPU运行",
+      "product_form": "帮助中文用户部署本地私有AI助手的桌面客户端",
+      "target_users": "注重隐私的商务人士、需要本地处理敏感文档的用户、开发者",
+      "mvp_features": [
+        "一键本地部署Gemma模型",
+        "文档QA功能",
+        "离线语音输入输出"
+      ],
+      "business_model": "免费版基础功能，专业版99元解锁全部功能",
+      "competitive_barrier": "无需联网保护隐私，技术门槛低但体验门槛高",
+      "risks": "模型性能 vs 在线大模型的差距逐渐缩小",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "🤗 LilaRest/gemma-4-31B-it-NVFP4-turbo",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/LilaRest/gemma-4-31B-it-NVFP4-turbo",
+      "item_id": "hf-model-b1cd45c4732d"
+    },
+    {
+      "opportunity_title": "Gemma视觉推理API服务",
+      "core_insight": "Gemma-4-31B-it具备强大的图像理解能力，可对外提供图片分析、视觉问答API，中文开发者调用海外模型门槛高",
+      "product_form": "面向中国开发者的视觉理解API服务",
+      "target_users": "中国中小型开发者、企业，需要快速集成视觉AI能力但无力对接海外API",
+      "mvp_features": [
+        "图片内容描述API",
+        "视觉问答接口",
+        "批量图片分析",
+        "中文优化"
+      ],
+      "business_model": "按调用次数收费(0.1元/次基础套餐)",
+      "competitive_barrier": "中文开发者本地化服务+合规稳定的API",
+      "risks": "大厂视觉API降价竞争，模型使用限制",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "🤗 google/gemma-4-31B-it",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/google/gemma-4-31B-it",
+      "item_id": "hf-model-2d0f16bac7e1"
+    },
+    {
+      "opportunity_title": "MiniMax中文长文写作助手",
+      "core_insight": "MiniMax-M2.7是国产优质文本模型，长文本处理能力强，适合长文创作场景，国内长文写作工具仍存在空白",
+      "product_form": "帮助用户完成长篇小说、论文、商业报告的AI写作助手",
+      "target_users": "网络小说作者、学生、办公人群，需长文写作辅助，付费意愿较强",
+      "mvp_features": [
+        "大纲智能生成",
+        "章节续写与润色",
+        "多风格文风调整",
+        "查重检测集成"
+      ],
+      "business_model": "免费体验+按字数付费(0.5元/千字)",
+      "competitive_barrier": "中文写作风格调优+长文本上下文记忆优化",
+      "risks": "内容安全审核压力，竞品功能完善",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "🤗 MiniMaxAI/MiniMax-M2.7",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/MiniMaxAI/MiniMax-M2.7",
+      "item_id": "hf-model-3e19acb863ad"
+    },
+    {
+      "opportunity_title": "个人AI理财助手",
+      "core_insight": "AI Agent团队协作模式可应用于个人投资决策，降低散户获取专业分析的成本",
+      "product_form": "面向中国个人投资者的AI投资顾问小程序",
+      "target_users": "30-50岁有闲置资金的中产散户，渴望获得机构级分析但付费能力有限",
+      "mvp_features": [
+        "AI分析研报摘要",
+        "组合风险提醒",
+        "个股/基金智能问答"
+      ],
+      "business_model": "基础功能免费，会员版19.9元/月含深度分析",
+      "competitive_barrier": "中文金融语料库深度优化、合规牌照",
+      "risks": "金融合规风险、投资建议资质",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "virattt/ai-hedge-fund — An AI Hedge Fund Team",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/virattt/ai-hedge-fund",
+      "item_id": "github-90a874f93a44"
+    }
+  ],
+  "analyzed_item_ids": [
+    "civitai-2546450",
+    "civitai-2545575",
+    "civitai-2546420",
+    "civitai-2546425",
+    "hf-model-73a346378827",
+    "hf-model-b1cd45c4732d",
+    "hf-model-9f1c55c6cd4c",
+    "hf-model-7799d1d27bd5",
+    "hf-model-a3e36e1accc3",
+    "hf-model-b2cd1173ff38",
+    "hf-model-2d0f16bac7e1",
+    "hf-model-2f79a3598954",
+    "hf-model-f7a19edc802a",
+    "hf-model-3e19acb863ad",
+    "github-e7a886008a80",
+    "github-6b7d140c7b2a",
+    "github-3479977d2cc8",
+    "github-e7ad6c23f068",
+    "github-d2b1af007926",
+    "github-2267c9689012",
+    "github-ecb7de9cc8a0",
+    "github-903275be124a",
+    "github-90a874f93a44",
+    "github-2b6d106c7083",
+    "github-555c3517c1da",
+    "github-ec9987c48f87",
+    "github-41a9464d5efe",
+    "hf-paper-baccfebfc32a",
+    "hf-paper-b3b845486bc8",
+    "hf-paper-7f0a26b58db4",
+    "hf-paper-2f9b9fb282fa",
+    "hf-paper-89900b79412b",
+    "hf-paper-694fd323af68",
+    "hf-paper-0d79ac4675ba",
+    "hf-paper-af1ccc15741a",
+    "hf-paper-0694ac51bca0",
+    "hf-paper-5fc69304e829",
+    "rss-hackernews-daily-90acc08160ae",
+    "atom-simon-willison-52ac47e5af6e",
+    "rss-latent-space-e4e09087d7a0"
+  ],
+  "remaining": 15
+}

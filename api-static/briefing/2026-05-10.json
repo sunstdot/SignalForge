@@ -1,0 +1,546 @@
+{
+  "id": "dfdbaa4e-3b02-4fe6-ab50-2ea4d9e45d38",
+  "date": "2026-05-10",
+  "items": [
+    {
+      "id": "arxiv-2605.09204v1",
+      "title": "LBI: Parallel Scan Backpropagation via Latent Bounded Interfaces",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.09204v1",
+      "summary": "Backpropagation is inherently sequential across depth, creating an $O(K)$-deep dependency chain that bottlenecks parallel training. While parallel-scan formulations theoretically reduce this depth to ",
+      "category": [
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-09T22:46:46+00:00"
+    },
+    {
+      "id": "arxiv-2605.09200v1",
+      "title": "On Characterizing Learnability for Adversarial Noisy Bandits",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.09200v1",
+      "summary": "We study adversarial noisy bandits given a known function class $\\mathcal{F}$. In each round, the adversary selects a function $f \\in \\mathcal{F}$, the learner chooses an arm, and then observes a nois",
+      "category": [
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-09T22:40:40+00:00"
+    },
+    {
+      "id": "arxiv-2605.09196v1",
+      "title": "RigidFormer: Learning Rigid Dynamics using Transformers",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.09196v1",
+      "summary": "Learning-based simulation of multi-object rigid-body dynamics remains difficult because contact is discontinuous and errors compound over long horizons. Most existing methods remain tied to mesh conne",
+      "category": [
+        "cs.CV",
+        "cs.AI",
+        "cs.GR"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-09T22:31:09+00:00"
+    },
+    {
+      "id": "arxiv-2605.09195v1",
+      "title": "The Geometry of Forgetting: Temporal Knowledge Drift as an Independent Axis in LLM Representations",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.09195v1",
+      "summary": "Large language models confidently produce outdated answers, and no existing method can detect them. We show this is not an engineering failure but a structural one: temporal drift, whether a stored fa",
+      "category": [
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-09T22:27:31+00:00"
+    },
+    {
+      "id": "arxiv-2605.09192v1",
+      "title": "Evidence Over Plans: Online Trajectory Verification for Skill Distillation",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.09192v1",
+      "summary": "Agent skills can remarkably improve task success rates by using human-written procedural documents, but their quality is difficult to assess without environment-grounded verification. Existing skill g",
+      "category": [
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-09T22:15:13+00:00"
+    },
+    {
+      "id": "arxiv-2605.09189v1",
+      "title": "Practical Scaling Laws: Converting Compute into Performance in a Data-Constrained World",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.09189v1",
+      "summary": "The scaling laws guiding modern model training were calibrated for a single regime: data-rich, single-epoch pretraining. The dominant such scaling law form, Chinchilla's $L = E + A/N^α+ B/D^β$, has th",
+      "category": [
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-09T22:07:01+00:00"
+    },
+    {
+      "id": "arxiv-2605.09188v1",
+      "title": "DARE: Difficulty-Adaptive Reinforcement Learning with Co-Evolved Difficulty Estimation",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.09188v1",
+      "summary": "Reinforcement learning improves the reasoning ability of large language models but remains costly and sample-inefficient, as many rollouts provide weak learning signals. Difficulty-aware data selectio",
+      "category": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-09T22:05:59+00:00"
+    },
+    {
+      "id": "arxiv-2605.09187v1",
+      "title": "Emergent Semantic Role Understanding in Language Models",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.09187v1",
+      "summary": "Understanding how linguistic structure emerges in language models is central to interpreting what these systems learn from data and how much supervision they truly require. In particular, semantic rol",
+      "category": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-09T22:01:36+00:00"
+    },
+    {
+      "id": "arxiv-2605.09186v1",
+      "title": "Agentic MIP Research: Accelerated Constraint Handler Generation",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.09186v1",
+      "summary": "Mixed-integer programming (MIP) research is both mathematically sophisticated and engineering-intensive: testing an algorithmic hypothesis within a branch-and-cut solver requires substantial implement",
+      "category": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-09T21:53:28+00:00"
+    },
+    {
+      "id": "arxiv-2605.09184v1",
+      "title": "Open Ontologies: Tool-Augmented Ontology Engineering with Stable Matching Alignment",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.09184v1",
+      "summary": "We present Open Ontologies, an open-source ontology engineering system implemented in Rust that integrates LLM-driven construction with formal OWL reasoning and ontology alignment via the Model Contex",
+      "category": [
+        "cs.AI",
+        "cs.CL",
+        "cs.DB"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-09T21:49:21+00:00"
+    },
+    {
+      "id": "arxiv-2605.09183v1",
+      "title": "Learning When to Stop: Selective Imitation Learning Under Arbitrary Dynamics Shift",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.09183v1",
+      "summary": "Behavior cloning provides strong imitation learning guarantees when training and test environments share the same dynamics. However, in many deployment settings the test environment's transitions diff",
+      "category": [
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-09T21:48:04+00:00"
+    },
+    {
+      "id": "arxiv-2605.09176v1",
+      "title": "Navigating LLM Valley: From AdamW to Memory-Efficient and Matrix-Based Optimizers",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.09176v1",
+      "summary": "Training large language models requires optimization algorithms that are not only statistically effective, but also computationally and memory efficient at extreme scale. Although Adam remains the dom",
+      "category": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-09T21:34:28+00:00"
+    },
+    {
+      "id": "arxiv-2605.09173v1",
+      "title": "WavesFM: Hierarchical Representation Learning for Longitudinal Wearable Sensor Waveforms",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.09173v1",
+      "summary": "Wearable sensors enable the continuous acquisition of high-resolution physiological waveforms, such as photoplethysmography and accelerometry, under free-living conditions. However, inferring health-r",
+      "category": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-09T21:22:02+00:00"
+    },
+    {
+      "id": "arxiv-2605.09169v1",
+      "title": "Prediction Bottlenecks Don't Discover Causal Structure (But Here's What They Actually Do)",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.09169v1",
+      "summary": "A Mamba state-space model trained only for next-step prediction appears to recover Granger-causal structure through a simple readout $S = |W_{out} W_{in}|$, with early experiments suggesting the pheno",
+      "category": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-09T21:12:55+00:00"
+    },
+    {
+      "id": "arxiv-2605.09168v1",
+      "title": "CIVeX: Causal Intervention Verification for Language Agents",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.09168v1",
+      "summary": "A valid tool call is not necessarily a valid intervention. Tool-using language agents are guarded by schema validators, policy filters, provenance checks, state predictors, and self-verification, yet ",
+      "category": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-09T21:06:15+00:00"
+    },
+    {
+      "id": "hf-paper-a5f373c244bd",
+      "title": "The Scaling Properties of Implicit Deductive Reasoning in Transformers",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.04330",
+      "summary": "We investigate the scaling properties of implicit deductive reasoning over Horn clauses in depth-bounded Transformers. By systematically decorrelating provability from spurious features and enforcing ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-09T10:25:01.847356"
+    },
+    {
+      "id": "hf-paper-cddb9fc2bc64",
+      "title": "BioTool: A Comprehensive Tool-Calling Dataset for Enhancing Biomedical Capabilities of Large Language Models",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.05758",
+      "summary": "Despite the success of large language models (LLMs) on general-purpose tasks, their performance in highly specialized domains such as biomedicine remains unsatisfactory. A key limitation is the inabil",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-09T10:25:01.847349"
+    },
+    {
+      "id": "hf-paper-ab70ec583e39",
+      "title": "Audio-Visual Intelligence in Large Foundation Models",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.04045",
+      "summary": "Audio-Visual Intelligence (AVI) has emerged as a central frontier in artificial intelligence, bridging auditory and visual modalities to enable machines that can perceive, generate, and interact in th",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-09T10:25:01.847342"
+    },
+    {
+      "id": "hf-paper-99653a9f6610",
+      "title": "Beyond Semantic Similarity: Rethinking Retrieval for Agentic Search via Direct Corpus Interaction",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.05242",
+      "summary": "Modern retrieval systems, whether lexical or semantic, expose a corpus through a fixed similarity interface that compresses access into a single top-k retrieval step before reasoning. This abstraction",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-09T10:25:01.847334"
+    },
+    {
+      "id": "hf-paper-3bccfc0197f8",
+      "title": "Generative Quantum-inspired Kolmogorov-Arnold Eigensolver",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.04604",
+      "summary": "High-performance computing (HPC) is increasingly important for scalable quantum chemistry workflows that couple classical generative models, quantum circuit simulation, and selected configuration inte",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-09T10:25:01.847322"
+    },
+    {
+      "id": "hf-paper-86e38306b950",
+      "title": "Prescriptive Scaling Laws for Data Constrained Training",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.01640",
+      "summary": "Training compute is increasingly outpacing the availability of high-quality data. This shifts the central challenge from optimal compute allocation to extracting maximum value from limited data. The w",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-09T10:25:01.847314"
+    },
+    {
+      "id": "hf-paper-51b105466e13",
+      "title": "GeoStack: A Framework for Quasi-Abelian Knowledge Composition in VLMs",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.06477",
+      "summary": "We address the challenge of knowledge composition in Vision-Language Models (VLMs), where accumulating expertise across multiple domains or tasks typically leads to catastrophic forgetting. We introdu",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-09T10:25:01.847304"
+    },
+    {
+      "id": "hf-paper-6e974c35e33e",
+      "title": "StraTA: Incentivizing Agentic Reinforcement Learning with Strategic Trajectory Abstraction",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.06642",
+      "summary": "Large language models (LLMs) are increasingly used as interactive agents, but optimizing them for long-horizon decision making remains difficult because current methods are largely purely reactive, wh",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-09T10:25:01.847295"
+    },
+    {
+      "id": "hf-paper-b3828e65e074",
+      "title": "PianoCoRe: Combined and Refined Piano MIDI Dataset",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.06627",
+      "summary": "Symbolic music datasets with matched scores and performances are essential for many music information retrieval (MIR) tasks. Yet, existing resources often cover a narrow range of composers, lack perfo",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-09T10:25:01.847283"
+    },
+    {
+      "id": "hf-paper-d5d1daf92510",
+      "title": "EMO: Pretraining Mixture of Experts for Emergent Modularity",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.06663",
+      "summary": "Large language models are typically deployed as monolithic systems, requiring the full model even when applications need only a narrow subset of capabilities, e.g., code, math, or domain-specific know",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-09T10:25:01.847258"
+    },
+    {
+      "id": "github-cefb5bf0cd64",
+      "title": "flutter/skills",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/flutter/skills",
+      "summary": "🔥 118 stars today | Language: Dart",
+      "category": [
+        "开源项目",
+        "Dart"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-09T10:25:01.699735"
+    },
+    {
+      "id": "github-917ab9b9ed6e",
+      "title": "datawhalechina/hello-agents — 📚 《从零开始构建智能体》——从零开始的智能体原理与实践教程",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/datawhalechina/hello-agents",
+      "summary": "📚 《从零开始构建智能体》——从零开始的智能体原理与实践教程 | 🔥 667 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-09T10:25:01.698857"
+    },
+    {
+      "id": "github-9a7da15f35bf",
+      "title": "lobehub/lobehub — The ultimate space for work and life — to find, build, and collaborate with agen",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/lobehub/lobehub",
+      "summary": "The ultimate space for work and life — to find, build, and collaborate with agent teammates that grow with you. We are taking agent harness to the next level — enabling multi-agent collaboration, effo",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-09T10:25:01.697859"
+    },
+    {
+      "id": "github-d92c846f430f",
+      "title": "LearningCircuit/local-deep-research — ~95% on SimpleQA (e.g. Qwen3.6-27B on a 3090). Supports all local and cloud LLMs",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/LearningCircuit/local-deep-research",
+      "summary": "~95% on SimpleQA (e.g. Qwen3.6-27B on a 3090). Supports all local and cloud LLMs (llama.cpp, Ollama, Google, ...). 10+ search engines - arXiv, PubMed, your private documents. Everything Local &amp; En",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-09T10:25:01.695118"
+    },
+    {
+      "id": "github-8b40834d069a",
+      "title": "HKUDS/AI-Trader — \"AI-Trader: 100% Fully-Automated Agent-Native Trading\"",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/HKUDS/AI-Trader",
+      "summary": "\"AI-Trader: 100% Fully-Automated Agent-Native Trading\" | 🔥 202 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-09T10:25:01.693907"
+    },
+    {
+      "id": "github-ae415068c1d2",
+      "title": "awslabs/aidlc-workflows — AI-Driven Life Cycle (AI-DLC) adaptive workflow steering rules for AI coding age",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/awslabs/aidlc-workflows",
+      "summary": "AI-Driven Life Cycle (AI-DLC) adaptive workflow steering rules for AI coding agents | 🔥 58 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-09T10:25:01.692868"
+    },
+    {
+      "id": "github-9e3b2f422063",
+      "title": "CloakHQ/CloakBrowser — Stealth Chromium that passes every bot detection test. Drop-in Playwright replac",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/CloakHQ/CloakBrowser",
+      "summary": "Stealth Chromium that passes every bot detection test. Drop-in Playwright replacement with source-level fingerprint patches. 30/30 tests passed. | 🔥 526 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-09T10:25:01.691810"
+    },
+    {
+      "id": "github-6a861e785610",
+      "title": "decolua/9router — Unlimited FREE AI coding. Connect Claude Code, Codex, Cursor, Cline, Copilot, An",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/decolua/9router",
+      "summary": "Unlimited FREE AI coding. Connect Claude Code, Codex, Cursor, Cline, Copilot, Antigravity to FREE Claude/GPT/Gemini via 40+ providers. Auto-fallback, RTK -40% tokens, never hit limits. | 🔥 1052 stars ",
+      "category": [
+        "开源项目",
+        "JavaScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-09T10:25:01.690730"
+    },
+    {
+      "id": "github-e67737a1407f",
+      "title": "z-lab/dflash — DFlash: Block Diffusion for Flash Speculative Decoding",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/z-lab/dflash",
+      "summary": "DFlash: Block Diffusion for Flash Speculative Decoding | 🔥 379 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-09T10:25:01.689530"
+    },
+    {
+      "id": "github-b70ec62815a2",
+      "title": "Hmbown/DeepSeek-TUI — Coding agent for DeepSeek models that runs in your terminal",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Hmbown/DeepSeek-TUI",
+      "summary": "Coding agent for DeepSeek models that runs in your terminal | 🔥 3731 stars today | Language: Rust",
+      "category": [
+        "开源项目",
+        "Rust"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-09T10:25:01.688497"
+    },
+    {
+      "id": "github-0508d109f745",
+      "title": "addyosmani/agent-skills — Production-grade engineering skills for AI coding agents.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "summary": "Production-grade engineering skills for AI coding agents. | 🔥 1893 stars today | Language: Shell",
+      "category": [
+        "开源项目",
+        "Shell"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-09T10:25:01.687567"
+    },
+    {
+      "id": "github-b318f7d6d63c",
+      "title": "anthropics/financial-services",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/anthropics/financial-services",
+      "summary": "🔥 3660 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-09T10:25:01.686558"
+    },
+    {
+      "id": "l30-reddit-9feb372a2412",
+      "title": "Peter Steinberger (OpenClaw creator) just shipped a massive suite of CLI tools with Codex – upgrading his \"lobster army\" of AI agents with Sonos, WhatsApp, X archives, and more",
+      "source": "Reddit",
+      "source_type": "reddit",
+      "url": "https://www.reddit.com/r/FindCrosspost/comments/1t91bc7/peter_steinberger_openclaw_creator_just_shipped_a/",
+      "summary": "I am bot! This action was performed automatically. Contact DEVELOPER for any help. I am bot! This action was performed automatically. Contact DEVELOPER for any help. I am bot! This action was performed automatically. Contact DEVELOPER for any help.",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 4,
+      "created_at": "2026-05-10"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-09-09T12:07:27.337872"
+}

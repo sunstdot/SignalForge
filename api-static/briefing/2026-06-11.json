@@ -1,0 +1,86 @@
+{
+  "id": "4717ccbc-01ed-4248-adeb-400b1f673677",
+  "date": "2026-06-11",
+  "items": [
+    {
+      "id": "l30-x-bcf9a54a8716",
+      "title": "\"Loop engineering\" has been everywhere this past week.",
+      "source": "X",
+      "source_type": "x",
+      "url": "https://x.com/free_ai_guides/status/2065011148894969902",
+      "summary": "\"Loop engineering\" has been everywhere this past week. The short version: you stop prompting AI agents by hand and start designing systems that prompt them for you. It started with two people. Boris Cherny, the head of Claude Code at Anthropic, said this at an event on June 2: \"I don't prompt Claude anymore. I have loops running. They're the ones promptin...",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 9,
+      "created_at": "2026-06-11"
+    },
+    {
+      "id": "l30-x-7b64ea90e449",
+      "title": "\"Stop prompting coding agents. Start designing loops.\" - Peter Steinberger",
+      "source": "X",
+      "source_type": "x",
+      "url": "https://x.com/_princegupta13/status/2065181758254203283",
+      "summary": "\"Stop prompting coding agents. Start designing loops.\" - Peter Steinberger Most devs are still stuck in: Prompt → Wait → Review → Repeat Meanwhile the cracked builders are creating loops that: • Find tasks • Prompt agents automatically • Run tests • Store state • Decide what's next Prompt engineering was the tutorial level. Loop engineering is the main qu...",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 9,
+      "created_at": "2026-06-11"
+    },
+    {
+      "id": "l30-x-955da4784d0c",
+      "title": "Peter Steinberger just handed you the autonomous dev loop most teams are still paying engineers to do manually.",
+      "source": "X",
+      "source_type": "x",
+      "url": "https://x.com/humzaakhalid/status/2065033820018266268",
+      "summary": "Peter Steinberger just handed you the autonomous dev loop most teams are still paying engineers to do manually. this is one of the best workflows I've seen in a long time he explains exactly how to run a self-sustaining repo loop with Codex and agents: – tell codex to maintain your repos on a 5-minute wake cycle – direct work to threads, not to yourself –...",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 6,
+      "created_at": "2026-06-11"
+    },
+    {
+      "id": "l30-reddit-2c85d0a92661",
+      "title": "Coding with Agents",
+      "source": "Reddit",
+      "source_type": "reddit",
+      "url": "https://www.reddit.com/r/singularity/comments/1u2oref/coding_with_agents/",
+      "summary": "Coding with Agents",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 0,
+      "created_at": "2026-06-11"
+    },
+    {
+      "id": "l30-reddit-dd65b5b60631",
+      "title": "Know the Claude Rules",
+      "source": "Reddit",
+      "source_type": "reddit",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1u2qvrn/know_the_claude_rules/",
+      "summary": "Know the Claude Rules",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 0,
+      "created_at": "2026-06-11"
+    },
+    {
+      "id": "l30-reddit-74d62c7b1611",
+      "title": "know the Claude rules",
+      "source": "Reddit",
+      "source_type": "reddit",
+      "url": "https://www.reddit.com/r/singularity/comments/1u2oof2/know_the_claude_rules/",
+      "summary": "know the Claude rules",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 0,
+      "created_at": "2026-06-11"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-06-19T10:22:35.384001"
+}

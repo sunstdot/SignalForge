@@ -1,0 +1,678 @@
+{
+  "id": "c2c6a89b-a4e7-4c46-9e9d-fea075b1b926",
+  "date": "2026-04-09",
+  "items": [
+    {
+      "id": "civitai-2528161",
+      "title": "🎨 Motoko-Tsutsumi (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2528161",
+      "summary": "Type: LORA | Downloads: 5 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:18.522937"
+    },
+    {
+      "id": "civitai-2511405",
+      "title": "🎨 Mewgenics Alley mini-bosses (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2511405",
+      "summary": "Type: LORA | Downloads: 4 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:18.522935"
+    },
+    {
+      "id": "civitai-2529116",
+      "title": "🎨 LTX2.3韩立 凡人修仙传 (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2529116",
+      "summary": "Type: LORA | Downloads: 4 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:18.522933"
+    },
+    {
+      "id": "civitai-2529155",
+      "title": "🎨 AURA | FARMER my2_style | all | anynoob diff setteing (LoCon)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2529155",
+      "summary": "Type: LoCon | Downloads: 1 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:18.522931"
+    },
+    {
+      "id": "civitai-2529170",
+      "title": "🎨 陆雪琪Zbase (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2529170",
+      "summary": "Type: LORA | Downloads: 5 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:18.522928"
+    },
+    {
+      "id": "civitai-2507914",
+      "title": "🎨 Jinx Goblin (League Of Legends) (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2507914",
+      "summary": "Type: LORA | Downloads: 89 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:18.522925"
+    },
+    {
+      "id": "civitai-2529114",
+      "title": "🎨 手绘质感增强/Hand-drawn feel (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2529114",
+      "summary": "Type: LORA | Downloads: 9 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:18.522921"
+    },
+    {
+      "id": "civitai-2529182",
+      "title": "🎨 SwaySway (breadwinners) (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2529182",
+      "summary": "Type: LORA | Downloads: 1 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:18.522834"
+    },
+    {
+      "id": "civitai-2514299",
+      "title": "🎨 Goblin Mavis Dracula (Hotel Transylvania) (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2514299",
+      "summary": "Type: LORA | Downloads: 57 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:18.522796"
+    },
+    {
+      "id": "civitai-2529185",
+      "title": "🎨 ENSEMBLE GIRLS!! KUMASAWA HIMENO ／ あんさんぶるガールズ!! 熊沢ひめの (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2529185",
+      "summary": "Type: LORA | Downloads: 0 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:18.522677"
+    },
+    {
+      "id": "hf-model-8d54c269e777",
+      "title": "🤗 google/gemma-4-E2B-it",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/google/gemma-4-E2B-it",
+      "summary": "Task: any-to-any | Downloads: 411,499 | Likes: 362",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:17.449707"
+    },
+    {
+      "id": "hf-model-b0310e0acf74",
+      "title": "🤗 k2-fsa/OmniVoice",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/k2-fsa/OmniVoice",
+      "summary": "Task: text-to-speech | Downloads: 144,864 | Likes: 400",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:17.449632"
+    },
+    {
+      "id": "hf-model-b2cd1173ff38",
+      "title": "🤗 openbmb/VoxCPM2",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/openbmb/VoxCPM2",
+      "summary": "Task: text-to-speech | Downloads: 605 | Likes: 465",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:17.449630"
+    },
+    {
+      "id": "hf-model-5a5b20cc1da7",
+      "title": "🤗 Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled",
+      "summary": "Task: image-text-to-text | Downloads: 560,798 | Likes: 2,509",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:17.449627"
+    },
+    {
+      "id": "hf-model-73665a6e3a2f",
+      "title": "🤗 google/gemma-4-E4B-it",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/google/gemma-4-E4B-it",
+      "summary": "Task: any-to-any | Downloads: 622,963 | Likes: 510",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:17.449623"
+    },
+    {
+      "id": "hf-model-0ea922f56cb4",
+      "title": "🤗 google/gemma-4-26B-A4B-it",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+      "summary": "Task: image-text-to-text | Downloads: 835,825 | Likes: 543",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:17.449619"
+    },
+    {
+      "id": "hf-model-b88ea472e3ac",
+      "title": "🤗 netflix/void-model",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/netflix/void-model",
+      "summary": "Task: video-to-video | Likes: 647",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:17.449614"
+    },
+    {
+      "id": "hf-model-2f79a3598954",
+      "title": "🤗 zai-org/GLM-5.1",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/zai-org/GLM-5.1",
+      "summary": "Task: text-generation | Downloads: 1,300 | Likes: 749",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:17.449606"
+    },
+    {
+      "id": "hf-model-a3e36e1accc3",
+      "title": "🤗 dealignai/Gemma-4-31B-JANG_4M-CRACK",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/dealignai/Gemma-4-31B-JANG_4M-CRACK",
+      "summary": "Task: text-generation | Downloads: 44,246 | Likes: 794",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:17.449581"
+    },
+    {
+      "id": "hf-model-2d0f16bac7e1",
+      "title": "🤗 google/gemma-4-31B-it",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/google/gemma-4-31B-it",
+      "summary": "Task: image-text-to-text | Downloads: 1,106,883 | Likes: 1,470",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:17.449515"
+    },
+    {
+      "id": "hf-paper-5c57f5156d07",
+      "title": "REAM: Merging Improves Pruning of Experts in LLMs",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.04356",
+      "summary": "Mixture-of-Experts (MoE) large language models (LLMs) are among the top-performing architectures. The largest models, often with hundreds of billions of parameters, pose significant memory challenges ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:17.834948"
+    },
+    {
+      "id": "hf-paper-8de5ebc5d3c2",
+      "title": "MoRight: Motion Control Done Right",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.07348",
+      "summary": "Generating motion-controlled videos--where user-specified actions drive physically plausible scene dynamics under freely chosen viewpoints--demands two capabilities: (1) disentangled motion control, a",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:17.834945"
+    },
+    {
+      "id": "hf-paper-4842a3094dba",
+      "title": "Personalized RewardBench: Evaluating Reward Models with Human Aligned Personalization",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.07343",
+      "summary": "Pluralistic alignment has emerged as a critical frontier in the development of Large Language Models (LLMs), with reward models (RMs) serving as a central mechanism for capturing diverse human values.",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:17.834942"
+    },
+    {
+      "id": "hf-paper-f4b0ab0a0b89",
+      "title": "MARS: Enabling Autoregressive Models Multi-Token Generation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.07023",
+      "summary": "Autoregressive (AR) language models generate text one token at a time, even when consecutive tokens are highly predictable given earlier context. We introduce MARS (Mask AutoRegreSsion), a lightweight",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:17.834940"
+    },
+    {
+      "id": "hf-paper-2a51b220e3a9",
+      "title": "Neural Computers",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.06425",
+      "summary": "We propose a new frontier: Neural Computers (NCs) -- an emerging machine form that unifies computation, memory, and I/O in a learned runtime state. Unlike conventional computers, which execute explici",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:17.834938"
+    },
+    {
+      "id": "hf-paper-fed8ef684246",
+      "title": "FP4 Explore, BF16 Train: Diffusion Reinforcement Learning via Efficient Rollout Scaling",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.06916",
+      "summary": "Reinforcement-Learning-based post-training has recently emerged as a promising paradigm for aligning text-to-image diffusion models with human preferences. In recent studies, increasing the rollout gr",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:17.834936"
+    },
+    {
+      "id": "hf-paper-ea2efc813948",
+      "title": "VenusBench-Mobile: A Challenging and User-Centric Benchmark for Mobile GUI Agents with Capability Diagnostics",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.06182",
+      "summary": "Existing online benchmarks for mobile GUI agents remain largely app-centric and task-homogeneous, failing to reflect the diversity and instability of real-world mobile usage. To this end, we introduce",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:17.834933"
+    },
+    {
+      "id": "hf-paper-a5a1b76a8e78",
+      "title": "INSPATIO-WORLD: A Real-Time 4D World Simulator via Spatiotemporal Autoregressive Modeling",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.07209",
+      "summary": "Building world models with spatial consistency and real-time interactivity remains a fundamental challenge in computer vision. Current video generation paradigms often struggle with a lack of spatial ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:17.834930"
+    },
+    {
+      "id": "hf-paper-8f9e3b8e35f6",
+      "title": "RAGEN-2: Reasoning Collapse in Agentic RL",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.06268",
+      "summary": "RL training of multi-turn LLM agents is inherently unstable, and reasoning quality directly determines task performance. Entropy is widely used to track reasoning stability. However, entropy only meas",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:17.834925"
+    },
+    {
+      "id": "hf-paper-0018fb69302e",
+      "title": "Improving Semantic Proximity in Information Retrieval through Cross-Lingual Alignment",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.05684",
+      "summary": "With the increasing accessibility and utilization of multilingual documents, Cross-Lingual Information Retrieval (CLIR) has emerged as an important research area. Conventionally, CLIR tasks have been ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:17.834839"
+    },
+    {
+      "id": "github-9b5409465f26",
+      "title": "hilash/cabinet — AI-first knowledge base and startup OS",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/hilash/cabinet",
+      "summary": "AI-first knowledge base and startup OS | ⭐ 681 stars | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:17.674278"
+    },
+    {
+      "id": "github-700fa1c35bfa",
+      "title": "PrathamLearnsToCode/paper2code — Agent skill to turn any arxiv paper into a working implementation",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/PrathamLearnsToCode/paper2code",
+      "summary": "Agent skill to turn any arxiv paper into a working implementation | ⭐ 749 stars | Language: Python | Topics: agent, claude-code, skills",
+      "category": [
+        "开源项目",
+        "Python",
+        "agent",
+        "claude-code"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:17.674273"
+    },
+    {
+      "id": "github-dac1face2a1c",
+      "title": "mattmireles/gemma-tuner-multimodal — Fine-tune Gemma 4 and 3n with audio, images and text on Apple Silicon, using PyT",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/mattmireles/gemma-tuner-multimodal",
+      "summary": "Fine-tune Gemma 4 and 3n with audio, images and text on Apple Silicon, using PyTorch and Metal Performance Shaders. | ⭐ 753 stars | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:17.674230"
+    },
+    {
+      "id": "github-b759fcbff766",
+      "title": "fikrikarim/parlor — On-device, real-time multimodal AI. Have natural voice and vision conversations ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/fikrikarim/parlor",
+      "summary": "On-device, real-time multimodal AI. Have natural voice and vision conversations with an AI that runs entirely on your machine. Powered by Gemma 4 E2B and Kokoro. | ⭐ 1,151 stars | Language: HTML | Top",
+      "category": [
+        "开源项目",
+        "HTML",
+        "apple-silicon",
+        "gemma"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:17.674225"
+    },
+    {
+      "id": "github-edaa5547747f",
+      "title": "KKKKhazix/khazix-skills — 数字生命卡兹克开源的 AI Skills 合集",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/KKKKhazix/khazix-skills",
+      "summary": "数字生命卡兹克开源的 AI Skills 合集 | ⭐ 1,181 stars",
+      "category": [
+        "开源项目"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:17.674219"
+    },
+    {
+      "id": "github-f1aa082a6499",
+      "title": "hotcoffeeshake/tong-jincheng-skill — 童锦程视角 Skill — 用深情祖师爷的思维框架分析人际关系",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/hotcoffeeshake/tong-jincheng-skill",
+      "summary": "童锦程视角 Skill — 用深情祖师爷的思维框架分析人际关系 | ⭐ 1,185 stars",
+      "category": [
+        "开源项目"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:17.674212"
+    },
+    {
+      "id": "github-a4b838b5b33e",
+      "title": "afar1/fieldtheory-cli — Sync and locally store all of your X/Twitter bookmarks. Free and open source CLI",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/afar1/fieldtheory-cli",
+      "summary": "Sync and locally store all of your X/Twitter bookmarks. Free and open source CLI for Mac. | ⭐ 1,258 stars | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:17.674168"
+    },
+    {
+      "id": "github-f68fc10d8ba4",
+      "title": "LaurieWired/tailslayer — Library for reducing tail latency in RAM reads",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/LaurieWired/tailslayer",
+      "summary": "Library for reducing tail latency in RAM reads | ⭐ 1,396 stars | Language: C++",
+      "category": [
+        "开源项目",
+        "C++"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:17.674164"
+    },
+    {
+      "id": "github-79f8f4c4b535",
+      "title": "GitFrog1111/badclaude",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/GitFrog1111/badclaude",
+      "summary": "⭐ 1,521 stars | Language: HTML",
+      "category": [
+        "开源项目",
+        "HTML"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:17.674157"
+    },
+    {
+      "id": "github-db76cfda3b02",
+      "title": "farzaa/clicky",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/farzaa/clicky",
+      "summary": "⭐ 2,270 stars | Language: Swift",
+      "category": [
+        "开源项目",
+        "Swift"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:17.674122"
+    },
+    {
+      "id": "github-625dbf2069d9",
+      "title": "alchaincyf/nuwa-skill — 你想蒸馏的下一个员工，何必是同事。蒸馏任何人的思维方式——心智模型、决策启发式、表达DNA。Distill how anyone thinks.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/alchaincyf/nuwa-skill",
+      "summary": "你想蒸馏的下一个员工，何必是同事。蒸馏任何人的思维方式——心智模型、决策启发式、表达DNA。Distill how anyone thinks. | ⭐ 4,034 stars | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:17.674102"
+    },
+    {
+      "id": "github-9671d97e8d57",
+      "title": "JuliusBrussee/caveman — 🪨 why use many token when few token do trick — Claude Code skill that cuts 65% o",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/JuliusBrussee/caveman",
+      "summary": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman | ⭐ 7,586 stars | Language: Python | Topics: ai, anthropic, caveman, claude, claude-cod",
+      "category": [
+        "开源项目",
+        "Python",
+        "ai",
+        "anthropic"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:17.674097"
+    },
+    {
+      "id": "github-9aa0b457af7c",
+      "title": "safishamsi/graphify — AI coding assistant skill (Claude Code, Codex, OpenCode, OpenClaw, Factory Droid",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/safishamsi/graphify",
+      "summary": "AI coding assistant skill (Claude Code, Codex, OpenCode, OpenClaw, Factory Droid, Trae). Turn any folder of code, docs, papers, or images into a queryable knowledge graph | ⭐ 13,160 stars | Language: ",
+      "category": [
+        "开源项目",
+        "Python",
+        "claude-code",
+        "codex"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:17.674092"
+    },
+    {
+      "id": "github-f8d79b4ea321",
+      "title": "santifer/career-ops — AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard,",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/santifer/career-ops",
+      "summary": "AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard, PDF generation, batch processing. | ⭐ 24,807 stars | Language: JavaScript | Topics: ai-agent, anthropic, automation, ca",
+      "category": [
+        "开源项目",
+        "JavaScript",
+        "ai-agent",
+        "anthropic"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:17.674086"
+    },
+    {
+      "id": "github-324dca1fa921",
+      "title": "milla-jovovich/mempalace — The highest-scoring AI memory system ever benchmarked. And it's free.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/milla-jovovich/mempalace",
+      "summary": "The highest-scoring AI memory system ever benchmarked. And it's free. | ⭐ 27,990 stars | Language: Python | Topics: ai, chromadb, llm, mcp, memory",
+      "category": [
+        "开源项目",
+        "Python",
+        "ai",
+        "chromadb"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-09T10:37:17.674073"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-09-09T12:07:30.791093"
+}

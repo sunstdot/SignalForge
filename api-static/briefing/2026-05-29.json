@@ -1,0 +1,34 @@
+{
+  "id": "9ae3abff-2f99-46a1-b631-5635ac26a6bb",
+  "date": "2026-05-29",
+  "items": [
+    {
+      "id": "l30-hn-a0ea2adfcace",
+      "title": "Why Peter Thiel Is Decamping to Argentina",
+      "source": "Hacker News",
+      "source_type": "hn",
+      "url": "https://www.nytimes.com/2026/05/28/world/americas/peter-thiel-argentina.html",
+      "summary": "Tech Billionaire Peter Thiel Finds a New Escape: Argentina",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 0,
+      "created_at": "2026-05-29"
+    },
+    {
+      "id": "l30-hn-6ff4055a2781",
+      "title": "Is Peter Thiel the Target of Pope Leo's Gandalf Quote? An Investigation",
+      "source": "Hacker News",
+      "source_type": "hn",
+      "url": "https://arstechnica.com/tech-policy/2026/05/is-peter-thiel-the-target-of-pope-leos-gandalf-quote-an-investigation/",
+      "summary": "Is Peter Thiel the Target of Pope Leo's Gandalf Quote? An Investigation",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 0,
+      "created_at": "2026-05-29"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-06-19T10:22:35.633989"
+}

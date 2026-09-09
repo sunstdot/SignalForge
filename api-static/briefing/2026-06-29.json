@@ -1,0 +1,900 @@
+{
+  "id": "88e4ed03-6967-4ba6-b5a1-842c39ac9cd7",
+  "date": "2026-06-29",
+  "items": [
+    {
+      "id": "arxiv-2606.28287v1",
+      "title": "Bridging Ab Initio Symmetries and Global Nuclear Masses with Interpretable Neural Networks",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.28287v1",
+      "summary": "Ab initio modeling has established Wigner's SU(4) and Elliott's SU(3) as dominant symmetries of the nuclear force in light and intermediate-mass nuclei. We ask whether they also govern nuclear binding",
+      "category": [
+        "nucl-th",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "arxiv-2606.28281v1",
+      "title": "PAC-Bayesian Certificates for Quadratic Closed-Loop Control",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.28281v1",
+      "summary": "PAC-Bayesian bounds provide finite-sample guarantees for data-dependent randomized predictors, but applying them to learning-based control is difficult because the natural objective is a quadratic tra",
+      "category": [
+        "eess.SY",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "arxiv-2606.28279v1",
+      "title": "Agentic Hardware Design as Repository-Level Code Evolution",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.28279v1",
+      "summary": "We present HORIZON, a self-evolving agent framework that treats hardware design as repository-level code evolution. A Markdown harness is compiled into a project pack containing domain knowledge, an e",
+      "category": [
+        "cs.AR",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "arxiv-2606.28277v1",
+      "title": "Towards Automating Scientific Review with Google's Paper Assistant Tool",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.28277v1",
+      "summary": "Artificial intelligence is driving a revolution in scientific discovery, accelerating everything from hypothesis generation to mathematical theorem proving. However, this rapid acceleration is creatin",
+      "category": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "arxiv-2606.28274v1",
+      "title": "Parameter Efficient Hybrid Transformer (PEHT) for Network Traffic Prediction via Dynamic Urban Congestion Integration",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.28274v1",
+      "summary": "Accurate network traffic prediction is a critical element for efficient resource allocation in dynamic urban cellular networks. However, prediction remains challenging because network demand is influe",
+      "category": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "arxiv-2606.28273v1",
+      "title": "Vision-Default, Prior-Override: Causal Mechanisms of Perception-Knowledge Conflict in Vision-Language Models",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.28273v1",
+      "summary": "Vision-language models must reconcile visual evidence with memorized world knowledge when the two conflict. How they resolve this conflict shapes the reliability of multimodal systems, yet prior work ",
+      "category": [
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "arxiv-2606.28270v1",
+      "title": "Agent-Native Immune System: Architecture, Taxonomy, and Engineering",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.28270v1",
+      "summary": "The transition from static chat bots to autonomous agents--equipped with persistent memory, tool-use protocols, and multi-agent collaboration--has fundamentally expanded the AI threat landscape. Curre",
+      "category": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "arxiv-2606.28268v1",
+      "title": "Learning Topology-Aware Representations via Test-Time Adaptation for Anomaly Segmentation",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.28268v1",
+      "summary": "Test-time adaptation (TTA) has emerged as a promising paradigm for mitigating distribution shifts in deep models. However, existing TTA approaches for anomaly segmentation remain limited by their reli",
+      "category": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "arxiv-2606.28252v1",
+      "title": "Parameter-Efficient Continuous-Variable Photonic Quantum Neural Networks for Edge Quantum AI: Demonstration in Oral Cancer Detection",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.28252v1",
+      "summary": "Early detection of oral cancer markedly improves clinical outcomes, yet specialized diagnostic tools remain scarce in low-resource settings. Smartphone-based screening is a scalable alternative but ne",
+      "category": [
+        "quant-ph",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "arxiv-2606.28249v1",
+      "title": "HPRO: Hierarchical Progressive Reward Optimization via Preference Extraction for Emotional Text-to-Speech",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.28249v1",
+      "summary": "Recently, Large Language Model (LLM)-based Text-to-Speech (TTS) models have achieved remarkable naturalness. However, the standard Supervised Fine-Tuning paradigm often converges to statistically aver",
+      "category": [
+        "eess.AS",
+        "cs.CL",
+        "cs.SD"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "arxiv-2606.28242v1",
+      "title": "How Width and Data Shape Generalization Scaling Laws in Quadratic Neural Networks",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.28242v1",
+      "summary": "Understanding how performance scales jointly with model size and data is a central problem in modern machine learning. Existing theoretical works on scaling laws typically describe generalization as a",
+      "category": [
+        "cs.LG",
+        "cond-mat.dis-nn",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "arxiv-2606.28235v1",
+      "title": "Govern the Repository, Not the Agent: Measuring Ecosystem-Level Risk in AI-Native Software",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.28235v1",
+      "summary": "Autonomous coding agents now open and merge pull requests in shared repositories at scale, and the field evaluates them the way it has always evaluated components, one agent at a time, on isolated ben",
+      "category": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "arxiv-2606.28228v1",
+      "title": "Disentangling Continuous-Time Latent Dynamics: Identifiability of Latent SDEs via Diffusion Shifts",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.28228v1",
+      "summary": "Causal representation learning for time series has developed strong identifiability results in discrete-time latent causal models, but identifiability in continuous-time latent stochastic differential",
+      "category": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "arxiv-2606.28226v1",
+      "title": "Exposure Bias Can Alleviate Itself via Directional and Frequency Rectification in Flow Matching",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.28226v1",
+      "summary": "Flow Matching (FM) has achieved remarkable generative performance, yet it suffers from exposure bias due to discrepancies between training and inference. Existing mitigation strategies typically rely ",
+      "category": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "arxiv-2606.28225v1",
+      "title": "Estimation--Prediction Tradeoff in Causal Probabilistic Temporal Graphs",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.28225v1",
+      "summary": "Temporal link prediction is usually evaluated by predictive performance on unseen edges, but in probabilistic temporal graphs this criterion can conflate model error with irreducible uncertainty. We s",
+      "category": [
+        "cs.LG",
+        "cs.IT",
+        "cs.MA"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "github-da9f52c29d3e",
+      "title": "simplex-chat/simplex-chat — SimpleX - the first messaging network operating without user identifiers of any ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/simplex-chat/simplex-chat",
+      "summary": "SimpleX - the first messaging network operating without user identifiers of any kind - 100% private by design! iOS, Android and desktop apps 📱! | 🔥 1180 stars today | Language: Haskell",
+      "category": [
+        "开源项目",
+        "Haskell"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "github-102f3932966c",
+      "title": "ripienaar/free-for-dev — A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devo",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/ripienaar/free-for-dev",
+      "summary": "A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev | 🔥 495 stars today | Language: HTML",
+      "category": [
+        "开源项目",
+        "HTML"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "github-08fc62545e01",
+      "title": "commaai/openpilot — openpilot is an operating system for robotics. Currently, it upgrades the driver",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/commaai/openpilot",
+      "summary": "openpilot is an operating system for robotics. Currently, it upgrades the driver assistance system on 300+ supported cars. | 🔥 266 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "github-7ce0ed1300f4",
+      "title": "xbtlin/ai-berkshire — AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| A",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/xbtlin/ai-berkshire",
+      "summary": "AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built for Claude Code / Codex. 4 masters' methodologies + multi-ag",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "github-8e4f4c5e1d38",
+      "title": "Robbyant/lingbot-map — A feed-forward 3D foundation model for reconstructing scenes from streaming data",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Robbyant/lingbot-map",
+      "summary": "A feed-forward 3D foundation model for reconstructing scenes from streaming data | 🔥 372 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "github-43e2422355ff",
+      "title": "DeusData/codebase-memory-mcp — High-performance code intelligence MCP server. Indexes codebases into a persiste",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "summary": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary",
+      "category": [
+        "开源项目",
+        "C"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "github-040f7c9f0832",
+      "title": "cupy/cupy — NumPy &amp; SciPy for GPU",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/cupy/cupy",
+      "summary": "NumPy &amp; SciPy for GPU | 🔥 174 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "github-653412628cb0",
+      "title": "altic-dev/FluidVoice — FluidVoice - Fastest macOS Offline Dictation app - Voice to Text fully Local. On",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/altic-dev/FluidVoice",
+      "summary": "FluidVoice - Fastest macOS Offline Dictation app - Voice to Text fully Local. One ⭐ takes us a long way :)) | 🔥 365 stars today | Language: Swift",
+      "category": [
+        "开源项目",
+        "Swift"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "github-33bcf7cefff3",
+      "title": "opendatalab/MinerU — Transforms complex documents like PDFs and Office docs into LLM-ready markdown/J",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/opendatalab/MinerU",
+      "summary": "Transforms complex documents like PDFs and Office docs into LLM-ready markdown/JSON for your Agentic workflows. | 🔥 380 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "github-c9c155f566f0",
+      "title": "HKUDS/Vibe-Trading — \"Vibe-Trading: Your Personal Trading Agent\"",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/HKUDS/Vibe-Trading",
+      "summary": "\"Vibe-Trading: Your Personal Trading Agent\" | 🔥 492 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "github-8a89398f60d1",
+      "title": "ByteByteGoHq/system-design-101 — Explain complex systems using visuals and simple terms. Help you prepare for sys",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/ByteByteGoHq/system-design-101",
+      "summary": "Explain complex systems using visuals and simple terms. Help you prepare for system design interviews. | 🔥 250 stars today",
+      "category": [
+        "开源项目"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "github-21df337a2d20",
+      "title": "usestrix/strix — Open-source AI hackers to find and fix your app’s vulnerabilities.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/usestrix/strix",
+      "summary": "Open-source AI hackers to find and fix your app’s vulnerabilities. | 🔥 122 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "github-76b64a130e81",
+      "title": "browser-use/video-use — Edit videos with coding agents",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/browser-use/video-use",
+      "summary": "Edit videos with coding agents | 🔥 196 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "github-caa3d5839c9e",
+      "title": "msitarzewski/agency-agents — A complete AI agency at your fingertips - From frontend wizards to Reddit commun",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/msitarzewski/agency-agents",
+      "summary": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, a",
+      "category": [
+        "开源项目",
+        "Shell"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "github-d6ebbba6e890",
+      "title": "soxoj/maigret — 🕵️‍♂️ Collect a dossier on a person by username from 3000+ sites",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/soxoj/maigret",
+      "summary": "🕵️‍♂️ Collect a dossier on a person by username from 3000+ sites | 🔥 191 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "github-e4b819f55f84",
+      "title": "logto-io/logto — 🧑‍🚀 Authentication and authorization infrastructure for SaaS and AI apps, built ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/logto-io/logto",
+      "summary": "🧑‍🚀 Authentication and authorization infrastructure for SaaS and AI apps, built on OIDC and OAuth 2.1 with multi-tenancy, SSO, and RBAC. | 🔥 77 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "github-911da39d5bd7",
+      "title": "Unclecheng-li/VulnClaw — 基于 AI Agent + MCP 工具链 + 渗透 Skill 编排， 配合大语言模型， 自然语言输入 → 自动完成「信息收集 → 漏洞发现 → 漏洞利用 →",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Unclecheng-li/VulnClaw",
+      "summary": "基于 AI Agent + MCP 工具链 + 渗透 Skill 编排， 配合大语言模型， 自然语言输入 → 自动完成「信息收集 → 漏洞发现 → 漏洞利用 → 报告生成」全流程。 | 🔥 105 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "github-e92b91a640f8",
+      "title": "refactoringhq/tolaria — Desktop app to manage markdown knowledge bases",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/refactoringhq/tolaria",
+      "summary": "Desktop app to manage markdown knowledge bases | 🔥 249 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "github-e0343dbed17b",
+      "title": "veracrypt/VeraCrypt — Disk encryption with strong security based on TrueCrypt",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/veracrypt/VeraCrypt",
+      "summary": "Disk encryption with strong security based on TrueCrypt | 🔥 114 stars today | Language: C",
+      "category": [
+        "开源项目",
+        "C"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "hf-model-e66836d0026b",
+      "title": "🤗 baidu/Unlimited-OCR",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/baidu/Unlimited-OCR",
+      "summary": "Task: image-text-to-text | Downloads: 295,064 | Likes: 1,245",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "hf-model-46ba0cfe1884",
+      "title": "🤗 zai-org/GLM-5.2",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/zai-org/GLM-5.2",
+      "summary": "Task: text-generation | Downloads: 118,651 | Likes: 2,823",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "hf-model-caa021b2a0eb",
+      "title": "🤗 empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
+      "summary": "Task: image-text-to-text | Downloads: 831,529 | Likes: 806",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "hf-model-72339137e72c",
+      "title": "🤗 yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
+      "summary": "Task: text-generation | Downloads: 225,822 | Likes: 799",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "hf-model-d85ec644568f",
+      "title": "🤗 empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
+      "summary": "Task: text-generation | Downloads: 52,492 | Likes: 526",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "hf-model-f57230398a66",
+      "title": "🤗 deepreinforce-ai/Ornith-1.0-35B-GGUF",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/deepreinforce-ai/Ornith-1.0-35B-GGUF",
+      "summary": "Task: text-generation | Downloads: 79,630 | Likes: 416",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "hf-model-9ba0a3d6e09d",
+      "title": "🤗 Qwen/Qwen-AgentWorld-35B-A3B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B",
+      "summary": "Task: text-generation | Downloads: 23,697 | Likes: 401",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "hf-model-5ec433f73bf6",
+      "title": "🤗 krea/Krea-2-Turbo",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/krea/Krea-2-Turbo",
+      "summary": "Task: text-to-image | Downloads: 27,631 | Likes: 355",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "hf-model-ff55a456952e",
+      "title": "🤗 yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
+      "summary": "Task: text-generation | Downloads: 549,926 | Likes: 2,475",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "hf-model-817b96c8fba7",
+      "title": "🤗 deepreinforce-ai/Ornith-1.0-9B-GGUF",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/deepreinforce-ai/Ornith-1.0-9B-GGUF",
+      "summary": "Task: text-generation | Downloads: 36,846 | Likes: 276",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "hf-paper-19e575bdb5e8",
+      "title": "Ko-WideSearch: A Korean Breadth-Search Benchmark for Exhaustive Set Enumeration by Web Agents",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.27595",
+      "summary": "Web-agent benchmarks overwhelmingly measure depth -- pinning one obscure answer behind a chain of constraints -- while breadth, exhaustively enumerating a closed set and filling each item's attributes",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "hf-paper-198e2b2107df",
+      "title": "NormGuard: Reward-Preserving Norm Constraints in Flow-Matching Reinforcement Learning",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.27771",
+      "summary": "Reinforcement learning (RL) post-training improves the reward alignment of flow-based generators, but often degrades perceptual quality in ways that are not captured by the reward proxy. We identify a",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "hf-paper-bfc840fa2be7",
+      "title": "SingGuard: A Policy-Adaptive Multimodal LLM Guardrail with Dynamic Reasoning",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.22873",
+      "summary": "Vision-language models (VLMs) are increasingly deployed in consumer, medical, financial, and enterprise applications. This broad deployment expands the safety surface: risks can arise from multimodal ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "hf-paper-6a2631e18691",
+      "title": "Qwen-Image-2.0-RL Technical Report",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.27608",
+      "summary": "We present Qwen-Image-2.0-RL, a post-training pipeline that applies reinforcement learning from human feedback (RLHF) and on-policy distillation (OPD) to improve both the visual quality and instructio",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "hf-paper-c0c6f3d9ca33",
+      "title": "Formalizing Latent Thoughts: Four Axioms of Thought Representation in LLMs",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.27378",
+      "summary": "We introduce an axiomatic evaluation framework for latent thought representations in LLMs, comprising metrics that are independent of downstream benchmark scores and reveal representational failures t",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "hf-paper-52ad828b5dda",
+      "title": "Towards Automating Scientific Review with Google's Paper Assistant Tool",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.28277",
+      "summary": "Artificial intelligence is driving a revolution in scientific discovery, accelerating everything from hypothesis generation to mathematical theorem proving. However, this rapid acceleration is creatin",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "hf-paper-29715dfefaa3",
+      "title": "SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.28276",
+      "summary": "Training and evaluating robot policies in the real world is costly and difficult to scale. We introduce SimFoundry, a modular and automated system for zero-shot real-to-sim scene construction from a v",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "hf-paper-39c17fdadf42",
+      "title": "PhysisForcing: Physics Reinforced World Simulator for Robotic Manipulation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.28128",
+      "summary": "Video generation models have emerged as a promising paradigm for embodied world simulation. However, both general-domain video generators and robot-specific data fine-tuned models can still produce ph",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "hf-paper-5d1f3c8128e3",
+      "title": "ABACUS: Adapting Unified Foundation Model for Bridging Image Count Understanding and Generation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.23835",
+      "summary": "ABACUS is a unified vision-language model that handles object counting, crowd counting, referring-expression counting, and count-faithful image generation without any benchmark-specific training requi",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "hf-paper-46ec7bd18968",
+      "title": "Neglected Free Lunch from Post-training: Progress Advantage for LLM Agents",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.26080",
+      "summary": "Process reward models enable fine-grained, step-level evaluation of LLMs, yet building them for agentic settings remains prohibitively difficult: long-horizon interactions, irreversible actions, and s",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "hf-paper-23b112f39fd4",
+      "title": "Cluster, Route, Escalate: Cascaded Framework for Cost-Aware LLM Serving",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.27457",
+      "summary": "Efficient deployment of large language models (LLMs) in production forces a trade-off between accuracy and cost. Operators often default to a single model that is either expensive for easy queries or ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "hf-paper-55c88d332653",
+      "title": "MultiHashFormer: Hash-based Generative Language Models",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.28057",
+      "summary": "Language models (LMs) represent tokens using embedding matrices that scale linearly with the vocabulary size. To constrain the parameter footprint, prior work proposes hashing many tokens into a singl",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "hf-paper-dd4843b74644",
+      "title": "The Tatoxa System for Text Detoxification in Low-Resource Languages: The Case of Tatar",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.26015",
+      "summary": "Text detoxification, the automated detection and mitigation of abusive and harmful content, is essential for ensuring the safety of online communities and protecting users. However, low resource langu",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "hf-paper-bd9586746a69",
+      "title": "Thinking While Speaking: Inference-Time Knowledge Transfer for Responsive and Intelligent Conversational Voice Agents",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2511.07397",
+      "summary": "Voice agents face a fundamental tension: the reasoning, retrieval, and tool use that make foundation models capable are iterative and slow, while conversational interaction demands responses on a mill",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "hf-paper-df158c26d796",
+      "title": "GBC: Gradient-Based Connections for Optimizing Multi-Agent Systems",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.28187",
+      "summary": "Multi-agent systems (MAS) built on large language models (LLMs) provide a promising framework for solving complex tasks through role specialization and structured interaction. However, their performan",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "l30-x-89b96969a700",
+      "title": "阶跃在多模态+windows上我觉得是国内有不少竞争优势的\n\n今天我看唐杰老师发的推文\n下面大家要的最多的就是vision\n\n没vision就跟瞎了眼的人一样\n对上下文的利用少了很多空间",
+      "source": "X",
+      "source_type": "x",
+      "url": "https://x.com/yangyi/status/2071613340544348200",
+      "summary": "阶跃在多模态+windows上我觉得是国内有不少竞争优势的 今天我看唐杰老师发的推文 下面大家要的最多的就是vision 没vision就跟瞎了眼的人一样 对上下文的利用少了很多空间",
+      "category": [
+        "唐杰"
+      ],
+      "relevance_score": 7,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "l30-x-581bc8f484d2",
+      "title": "🇺🇸 杰西·沃特斯（Jesse Watters）：\n“如果民主党赢得期中选举，川普会不会再次遭到弹劾？”🇺🇸 万斯（JD Vance）：\n“我相信他们会再次发起弹劾。”“说到底，他们没有任何真正可以拿来竞选或施政的政纲。他们全部的注意力、近乎执念般的焦点，就是憎恨唐纳德·川普。”",
+      "source": "X",
+      "source_type": "x",
+      "url": "https://x.com/Anpo_Star/status/2071573762420711658",
+      "summary": "🇺🇸 杰西·沃特斯（Jesse Watters）： “如果民主党赢得期中选举，川普会不会再次遭到弹劾？”🇺🇸 万斯（JD Vance）： “我相信他们会再次发起弹劾。”“说到底，他们没有任何真正可以拿来竞选或施政的政纲。他们全部的注意力、近乎执念般的焦点，就是憎恨唐纳德·川普。” https://t.co/07aQmp57Te",
+      "category": [
+        "唐杰"
+      ],
+      "relevance_score": 0,
+      "created_at": "2026-06-29"
+    },
+    {
+      "id": "l30-x-7c96f8ee23f6",
+      "title": "3X Long Labubu × Frank Trading：躺赚时间结束！七月怎么交易？存储涨价潮、美元与亚洲股市的多空剧本",
+      "source": "X",
+      "source_type": "x",
+      "url": "https://x.com/168X_Fortune/status/2071481702472712213",
+      "summary": "3X Long Labubu × Frank Trading：躺赚时间结束！七月怎么交易？存储涨价潮、美元与亚洲股市的多空剧本",
+      "category": [
+        "唐杰"
+      ],
+      "relevance_score": 0,
+      "created_at": "2026-06-29"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-09-09T12:07:25.834634"
+}

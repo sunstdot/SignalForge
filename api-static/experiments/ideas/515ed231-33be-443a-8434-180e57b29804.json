@@ -1,0 +1,23 @@
+{
+  "id": "515ed231-33be-443a-8434-180e57b29804",
+  "content_id": "github-d690eb9a7334",
+  "title": "构建最小化Agent框架",
+  "description": "**为什么产生这个想法**\n文章系统性地解析了Claude Code的架构设计，包括智能体设计模式、工具调用、上下文管理等核心组件\n\n**价值**\n通过实践可深入理解现代AI Agent的架构思想，为自研Agent系统奠定基础\n\n**具体帮助**\n可作为团队内部培训项目，快速提升成员对Agent架构的认知",
+  "difficulty": "medium",
+  "estimated_days": 6,
+  "tags": [
+    "Agent框架",
+    "架构学习",
+    "源码实践"
+  ],
+  "status": "pending",
+  "priority": 8.0,
+  "briefing_date": "",
+  "source_type": "repo",
+  "source_title": "luyao618/Claude-Code-Source-Study — 深入Claude Code源码，学习目前最好的agent实现",
+  "source_url": "https://github.com/luyao618/Claude-Code-Source-Study",
+  "inspiration": "",
+  "product_concept": {},
+  "source_context": "",
+  "created_at": "2026-04-08T16:31:15.842392"
+}

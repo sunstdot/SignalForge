@@ -1,0 +1,65 @@
+{
+  "id": "93c229c7-ad61-471d-93c2-0849b60675fc",
+  "date": "2026-03-31",
+  "items": [
+    {
+      "id": "github-1197029054",
+      "title": "sanbuphy/learn-coding-agent: Research on Coding Agents",
+      "source": "GitHub",
+      "source_type": "repo",
+      "url": "https://github.com/sanbuphy/learn-coding-agent",
+      "summary": "这是一个关于编码代理（Coding Agents）的研究项目。该项目专注于探索和研究能够自动化编程任务的AI代理系统，旨在理解和开发能够辅助或自动完成代码编写、调试和优化等任务的智能系统。",
+      "category": [
+        "AI研究",
+        "开发者工具",
+        "前端技术"
+      ],
+      "relevance_score": 9.0,
+      "created_at": "2026-03-31T09:07:08.000Z"
+    },
+    {
+      "id": "github-1197124958",
+      "title": "ultrmgns/claude-private: Claude Code without any telemetry - the perfect cli to combo with CCR",
+      "source": "GitHub",
+      "source_type": "repo",
+      "url": "https://github.com/ultrmgns/claude-private",
+      "summary": "这是一个名为 claude-private 的开源项目，提供了一个无遥测数据收集的 Claude Code 命令行工具。该项目旨在为用户提供一个注重隐私保护的 Claude CLI 版本，特别适合与 CCR (Claude Code Runner) 配合使用，让开发者可以在本地环境中使用 Claude AI 能力而不用担心数据被收集。",
+      "category": [
+        "前端技术",
+        "开发者工具"
+      ],
+      "relevance_score": 8.0,
+      "created_at": "2026-03-31T10:50:44.000Z"
+    },
+    {
+      "id": "github-1197732991",
+      "title": "Rangizingo/cc-cache-fix: No description",
+      "source": "GitHub",
+      "source_type": "repo",
+      "url": "https://github.com/Rangizingo/cc-cache-fix",
+      "summary": "⭐ 384 stars | No description",
+      "category": [
+        "前端技术",
+        "AI研究"
+      ],
+      "relevance_score": 4.0,
+      "created_at": "2026-03-31T20:48:54.000Z"
+    },
+    {
+      "id": "github-1197287945",
+      "title": "leookun/cursor-byok-server: Cursor 公益自定义 API，公益 Tab，无 Pro 自定义 API 服务端",
+      "source": "GitHub",
+      "source_type": "repo",
+      "url": "https://github.com/leookun/cursor-byok-server",
+      "summary": "⭐ 43 stars | Cursor 公益自定义 API，公益 Tab，无 Pro 自定义 API 服务端",
+      "category": [
+        "go",
+        "github"
+      ],
+      "relevance_score": 0,
+      "created_at": "2026-03-31T13:18:13.000Z"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-09-09T12:07:32.014058"
+}

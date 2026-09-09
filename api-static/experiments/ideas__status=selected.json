@@ -1,0 +1,173 @@
+{
+  "ideas": [
+    {
+      "id": "5e137739-6347-463e-9cff-76a169b05b0c",
+      "content_id": "",
+      "title": "AI数学竞赛教练：高精度推理辅导平台",
+      "description": "**核心洞察**\n模型在竞赛数学推理上达到顶尖水平，长上下文可承载持续辅导对话，使个性化竞赛训练产品达到可用门槛\n\n**应用场景**\n帮助高中生和竞赛选手攻克高难度数学题的AI互动辅导与错题分析平台\n\n**商业模式**\n月度会员$20，含基础题量；高级套餐$35不限量\n\n**MVP 功能**\n- 题目拍摄/输入后逐步解析与讲解\n- 256K上下文记忆的个性化学习路径\n- 错题本与弱项诊断报告\n\n**潜在风险**\n模型API可用性与调用成本，教育类产品需要确保解题准确性和内容安全",
+      "difficulty": "medium",
+      "estimated_days": 7,
+      "tags": [
+        "商业机会",
+        "准备AIME/高考压轴题的学生与家长，数学爱好者，愿为提升成绩按月订阅"
+      ],
+      "status": "selected",
+      "priority": 18.0,
+      "briefing_date": "2026-06-04",
+      "source_type": "opportunity",
+      "source_title": "Microsoft Build: MAI-Thinking-1 and MAI Family models, Surface RTX Spark Dev Box, and OpenClaw in Windows",
+      "source_url": "https://news.smol.ai/issues/26-06-02-msft-mai-2/",
+      "inspiration": "",
+      "product_concept": {},
+      "source_context": "",
+      "created_at": "2026-06-12T19:26:54.851520"
+    },
+    {
+      "id": "c0c73769-dc87-4593-a4ee-4783c0514514",
+      "content_id": "github-ad5992dffaf0",
+      "title": "团队内部AI CLI工具定制",
+      "description": "**为什么产生这个想法**\n文章强调'practice makes claude perfect'，提倡从vibe coding到agentic engineering的转变，可以通过定制CLI工具让团队成员更好地实践AI辅助编码\n\n**价值**\n为团队定制专属的AI CLI工具，整合代码规范检查、自动化任务和智能提示，可显著提升开发效率和代码一致性\n\n**具体帮助**\n可以让我们团队在日常开发中更便捷地使用AI能力，统一工作流程和代码规范",
+      "difficulty": "medium",
+      "estimated_days": 7,
+      "tags": [
+        "CLI工具",
+        "团队协作",
+        "效率提升"
+      ],
+      "status": "selected",
+      "priority": 8.0,
+      "briefing_date": "",
+      "source_type": "repo",
+      "source_title": "shanraisshan/claude-code-best-practice — from vibe coding to agentic engineering - practice makes claude perfect",
+      "source_url": "https://github.com/shanraisshan/claude-code-best-practice",
+      "inspiration": "",
+      "product_concept": {},
+      "source_context": "",
+      "created_at": "2026-04-15T11:32:22.999085"
+    },
+    {
+      "id": "c209ada0-a3b8-4e9c-8d91-e8c44a1c629d",
+      "content_id": "",
+      "title": "AI简历优化助手",
+      "description": "**核心洞察**\ncareer-ops展示基于Claude Code的求职系统已获验证，国内缺乏类似的中文求职AI工具\n\n**产品形态**\n帮助国内求职者解决简历不会写、投递效率低、面试准备不足的AI求职教练\n\n**目标用户**\n跳槽工程师、应届生、海归求职群体；对高薪职位有强需求，愿付费300-800元\n\n**核心功能（MVP）**\n- 一键解析JD生成简历关键词匹配报告\n- 基于中文招聘市场的简历智能优化建议\n- 模拟面试官提问并给出答题思路\n- 投递记录管理和跟进提醒\n\n**商业模式**\n按次付费（简历优化50元/次，模拟面试99元/次）+年卡会员\n\n**竞争壁垒**\n对国内主流招聘平台（BOSS、拉勾、猎聘）职位要求的深度理解\n\n**潜在风险**\n大厂可能推出类似功能",
+      "difficulty": "medium",
+      "estimated_days": 7,
+      "tags": [],
+      "status": "selected",
+      "priority": 18.0,
+      "briefing_date": "",
+      "source_type": "repo",
+      "source_title": "santifer/career-ops — AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard,",
+      "source_url": "https://github.com/santifer/career-ops",
+      "inspiration": "",
+      "product_concept": {},
+      "source_context": "",
+      "created_at": "2026-04-13T14:48:50.720636"
+    },
+    {
+      "id": "4836a219-f3b2-43aa-ba5a-23af3548c028",
+      "content_id": "github-f8d79b4ea321",
+      "title": "构建技能匹配AI代理",
+      "description": "**为什么产生这个想法**\n该项目有14种技能模式，可用于自动匹配求职者和岗位要求。结合Claude Code的AI能力，可以实现智能技能识别和匹配。\n\n**价值**\n通过实验可以掌握AI代理开发技能，理解如何将自然语言处理应用于人力资源场景，提升简历筛选效率。\n\n**具体帮助**\n可作为团队自动化招聘流程的原型，降低人工筛选简历的时间成本。",
+      "difficulty": "medium",
+      "estimated_days": 5,
+      "tags": [
+        "ai-agent",
+        "anthropic",
+        "automation"
+      ],
+      "status": "selected",
+      "priority": 8.0,
+      "briefing_date": "",
+      "source_type": "repo",
+      "source_title": "santifer/career-ops — AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard,",
+      "source_url": "https://github.com/santifer/career-ops",
+      "inspiration": "",
+      "product_concept": {},
+      "source_context": "",
+      "created_at": "2026-04-09T12:32:06.751084"
+    },
+    {
+      "id": "6fff873d-421d-4a0c-98bc-b652842a8daf",
+      "content_id": "github-b759fcbff766",
+      "title": "本地离线语音助手开发",
+      "description": "**为什么产生这个想法**\n基于Parlor的完全本地运行和语音交互特性，可以开发不依赖云端的隐私安全语音助手，文章强调的本地部署和低延迟特点使其成为可能。\n\n**价值**\n满足隐私敏感场景需求，无需网络即可使用，降低延迟提升体验，可应用于智能家居、个人助理等离线场景。\n\n**具体帮助**\n团队可快速验证本地AI助手的可行性，为产品增加离线语音交互能力，降低对云服务的依赖。",
+      "difficulty": "medium",
+      "estimated_days": 5,
+      "tags": [
+        "语音识别",
+        "本地部署",
+        "隐私保护"
+      ],
+      "status": "selected",
+      "priority": 8.0,
+      "briefing_date": "",
+      "source_type": "repo",
+      "source_title": "fikrikarim/parlor — On-device, real-time multimodal AI. Have natural voice and vision conversations ",
+      "source_url": "https://github.com/fikrikarim/parlor",
+      "inspiration": "",
+      "product_concept": {},
+      "source_context": "",
+      "created_at": "2026-04-08T20:58:55.860644"
+    },
+    {
+      "id": "585fad6d-d6fa-447f-8fa2-060307915718",
+      "content_id": "",
+      "title": "智能LLM路由网关实验",
+      "description": "文章介绍LLM库提供对数百种不同LLM的统一抽象层，可以利用这一特性构建智能路由系统，根据成本、延迟和质量指标动态选择最优供应商。\n\n**价值:** 通过实时比较不同供应商的性价比，可显著降低API调用成本，同时避免单一供应商锁定，提高系统灵活性和谈判筹码。\n\n**帮助:** 帮助团队在保证服务质量的前提下节省30-50%的LLM调用成本，并为高可用架构提供基础。",
+      "difficulty": "medium",
+      "estimated_days": 7,
+      "tags": [
+        "llm",
+        "api-gateway",
+        "cost-optimization"
+      ],
+      "status": "selected",
+      "priority": 0,
+      "briefing_date": "",
+      "source_type": "rss",
+      "source_title": "research-llm-apis 2026-04-04",
+      "source_url": "https://simonwillison.net/2026/Apr/5/research-llm-apis/#atom-everything",
+      "created_at": "2026-04-05T11:48:40.793086"
+    },
+    {
+      "id": "idea-1775138163175-6rtj249cl",
+      "content_id": "github-1197029054",
+      "title": "** 实现支持需求澄清的交互式编码代理\n\n**",
+      "description": "**\n\n### 基于原文\n> \"Research on Coding Agents\" - 该项目专注于探索和研究能够自动化编程任务的AI代理系统\n> \"learn-coding-agent\" - 强调学习和改进能力的编码代理系统\n> 应用场景包括：代码补全、bug修复、代码重构等\n\n### 实验目标\n基于原项目对编码代理的研究思路，构建一个**能够主动澄清需求**的交互式代理系统。不同于传统的一次性代码生成，该系统能够：\n1. 识别用户需求中的模糊点\n2. 通过多轮对话收集必要信息\n3. 最终生成符合真实需求的代码\n\n核心突破点：让代理具备\"提问能力\"而非直接猜测用户意图。\n\n### 具体任务\n1. **设计对话状态机**\n   - 定义需求分析阶段（识别缺失信息）\n   - 设计提问策略（何时问、问什么）\n   - 实现上下文记忆机制\n\n2. **实现需求澄清模块**\n   - 使用 LangChain 构建多轮对话流程\n   - 设计 prompt 模板识别需求中的关键缺失项（如：数据结构、边界条件、性能要求）\n   - 实现动态问题生成器\n\n3. **代码生成与验证**\n   - 基于完整需求生成代码\n   - 集成单元测试自动生成\n   - 对比\"直接生成\"vs\"澄清后生成\"的代码质量\n\n4. **构建评估数据集**\n   - 收集 10 个模糊需求案例（如\"写个排序函数\"）\n   - 标注每个案例的关键缺失信息\n   - 记录人工澄清后的完整需求\n\n### 预期产出\n- **可运行代码**：完整的交互式编码代理系统（Python + LangChain）\n- **对比实验报告**：\n  - 直接生成 vs 澄清后生成的代码正确率\n  - 平均对话轮次与代码质量的关系\n  - 典型案例分析（含对话记录）\n- **技术博客**：《如何让 Coding Agent 学会\"提问\"》\n\n### 学习价值\n- **多轮对话系统设计**：掌握状态管理、上下文追踪技术\n- **Prompt Engineering**：学习如何设计\"元认知\"提示词（让模型反思自己缺少什么信息）\n- **LLM 应用架构**：理解 Agent 的规划-执行-反馈循环\n- **需求工程思维**：从 AI 角度理解需求分析的本质\n\n**",
+      "difficulty": "medium",
+      "estimated_days": 7,
+      "tags": [
+        "** `LangChain` `Multi-turn Dialogue` `Prompt Engineering` `Code Generation`"
+      ],
+      "status": "selected",
+      "priority": 9.0,
+      "briefing_date": "2026-04-02",
+      "source_type": "repo",
+      "source_title": "sanbuphy/learn-coding-agent: Research on Coding Agents",
+      "source_url": "https://github.com/sanbuphy/learn-coding-agent",
+      "created_at": "2026-04-02T13:56:03.175Z"
+    },
+    {
+      "id": "idea-1775126575614-8ihji6ylz",
+      "content_id": "github-1197029054",
+      "title": "** 构建迷你编码代理：从需求到代码的端到端实现\n\n**",
+      "description": "**\n- **实验目标**: 深入理解编码代理的核心机制，通过实现一个简化版的编码代理系统，掌握从自然语言需求到可执行代码的转换流程\n- **具体任务**: \n  1. 研读项目源码，梳理编码代理的核心组件（需求理解、代码生成、验证测试）\n  2. 使用OpenAI API或开源LLM，实现一个能处理简单Python函数需求的代理（如数据处理、算法实现）\n  3. 添加代码验证机制：自动运行单元测试，根据测试结果迭代优化代码\n  4. 对比分析：你的实现 vs 原项目方法，记录关键差异和改进点\n- **预期产出**: \n  - 可运行的迷你编码代理代码（200-300行）\n  - 5-8个测试用例及成功率统计\n  - 技术博客文章（含架构图、流程图、实验数据）\n- **学习价值**: 掌握LLM应用开发、Prompt工程、代码生成与验证的完整链路，理解编码代理的局限性与优化方向\n\n**",
+      "difficulty": "medium",
+      "estimated_days": 7,
+      "tags": [
+        "** LLM应用开发",
+        "代码生成",
+        "Prompt工程",
+        "自动化测试"
+      ],
+      "status": "selected",
+      "priority": 9.0,
+      "briefing_date": "2026-04-02",
+      "source_type": "repo",
+      "source_title": "sanbuphy/learn-coding-agent: Research on Coding Agents",
+      "source_url": "https://github.com/sanbuphy/learn-coding-agent",
+      "created_at": "2026-04-02T10:42:55.614Z"
+    }
+  ]
+}

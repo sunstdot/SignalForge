@@ -1,0 +1,726 @@
+{
+  "id": "d7b91b36-91d8-470d-993d-73bf32fc582d",
+  "date": "2026-05-06",
+  "items": [
+    {
+      "id": "github-2c69330ad020",
+      "title": "D4Vinci/Scrapling — 🕷️ An adaptive Web Scraping framework that handles everything from a single requ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/D4Vinci/Scrapling",
+      "summary": "🕷️ An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl! | 🔥 914 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-06T19:48:00.965940"
+    },
+    {
+      "id": "github-3d9a6ebdd114",
+      "title": "bytedance/deer-flow — An open-source long-horizon SuperAgent harness that researches, codes, and creat",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/bytedance/deer-flow",
+      "summary": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of ta",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-06T19:48:00.965152"
+    },
+    {
+      "id": "github-763dab5ecb5c",
+      "title": "bwya77/vscode-dark-islands — VSCode theme based off the easemate IDE and Jetbrains islands theme",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/bwya77/vscode-dark-islands",
+      "summary": "VSCode theme based off the easemate IDE and Jetbrains islands theme | 🔥 321 stars today | Language: PowerShell",
+      "category": [
+        "开源项目",
+        "PowerShell"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-06T19:48:00.963883"
+    },
+    {
+      "id": "github-332aef856035",
+      "title": "shiyu-coder/Kronos — Kronos: A Foundation Model for the Language of Financial Markets",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/shiyu-coder/Kronos",
+      "summary": "Kronos: A Foundation Model for the Language of Financial Markets | 🔥 241 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-06T19:48:00.962874"
+    },
+    {
+      "id": "github-99fd18364cea",
+      "title": "cheahjs/free-llm-api-resources — A list of free LLM inference resources accessible via API.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/cheahjs/free-llm-api-resources",
+      "summary": "A list of free LLM inference resources accessible via API. | 🔥 344 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-06T19:48:00.962028"
+    },
+    {
+      "id": "github-9fc98e1af0aa",
+      "title": "ruvnet/ruflo — 🌊 The leading agent orchestration platform for Claude. Deploy intelligent multi-",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/ruvnet/ruflo",
+      "summary": "🌊 The leading agent orchestration platform for Claude. Deploy intelligent multi-agent swarms, coordinate autonomous workflows, and build conversational AI systems. Features enterprise-grade architectu",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-06T19:48:00.961178"
+    },
+    {
+      "id": "github-b318f7d6d63c",
+      "title": "anthropics/financial-services",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/anthropics/financial-services",
+      "summary": "🔥 540 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-06T19:48:00.960188"
+    },
+    {
+      "id": "github-30c58f4f1f31",
+      "title": "virattt/dexter — An autonomous agent for deep financial research",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/virattt/dexter",
+      "summary": "An autonomous agent for deep financial research | 🔥 659 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-06T19:48:00.959091"
+    },
+    {
+      "id": "github-d1c2a71cbb54",
+      "title": "InsForge/InsForge — InsForge is a Postgres-based backend with auth, storage, compute, hosting, and A",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/InsForge/InsForge",
+      "summary": "InsForge is a Postgres-based backend with auth, storage, compute, hosting, and AI gateway. Built for coding agents. | 🔥 213 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-06T19:48:00.958114"
+    },
+    {
+      "id": "github-0f102ccedd61",
+      "title": "LadybirdBrowser/ladybird — Truly independent web browser",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/LadybirdBrowser/ladybird",
+      "summary": "Truly independent web browser | 🔥 87 stars today | Language: C++",
+      "category": [
+        "开源项目",
+        "C++"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-06T19:48:00.957092"
+    },
+    {
+      "id": "github-d92c846f430f",
+      "title": "LearningCircuit/local-deep-research — ~95% on SimpleQA (e.g. Qwen3.6-27B on a 3090). Supports all local and cloud LLMs",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/LearningCircuit/local-deep-research",
+      "summary": "~95% on SimpleQA (e.g. Qwen3.6-27B on a 3090). Supports all local and cloud LLMs (llama.cpp, Ollama, Google, ...). 10+ search engines - arXiv, PubMed, your private documents. Everything Local &amp; En",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-06T19:48:00.956028"
+    },
+    {
+      "id": "github-fefd490b2ead",
+      "title": "docusealco/docuseal — Open source DocuSign alternative. Create, fill, and sign digital documents ✍️",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/docusealco/docuseal",
+      "summary": "Open source DocuSign alternative. Create, fill, and sign digital documents ✍️ | 🔥 927 stars today | Language: Ruby",
+      "category": [
+        "开源项目",
+        "Ruby"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-06T19:48:00.954783"
+    },
+    {
+      "id": "github-005d5badcbcf",
+      "title": "PriorLabs/TabPFN — ⚡ TabPFN: Foundation Model for Tabular Data ⚡",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/PriorLabs/TabPFN",
+      "summary": "⚡ TabPFN: Foundation Model for Tabular Data ⚡ | 🔥 57 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-06T19:48:00.953661"
+    },
+    {
+      "id": "github-0508d109f745",
+      "title": "addyosmani/agent-skills — Production-grade engineering skills for AI coding agents.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "summary": "Production-grade engineering skills for AI coding agents. | 🔥 629 stars today | Language: Shell",
+      "category": [
+        "开源项目",
+        "Shell"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-06T19:48:00.951842"
+    },
+    {
+      "id": "github-b70ec62815a2",
+      "title": "Hmbown/DeepSeek-TUI — Coding agent for DeepSeek models that runs in your terminal",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Hmbown/DeepSeek-TUI",
+      "summary": "Coding agent for DeepSeek models that runs in your terminal | 🔥 2434 stars today | Language: Rust",
+      "category": [
+        "开源项目",
+        "Rust"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-06T19:48:00.950344"
+    },
+    {
+      "id": "hf-paper-f4e38f8c056e",
+      "title": "PatRe: A Full-Stage Office Action and Rebuttal Generation Benchmark for Patent Examination",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.03571",
+      "summary": "Patent examination is a complex, multi-stage process requiring both technical expertise and legal reasoning, increasingly challenged by rising application volumes. Prior benchmarks predominantly view ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-06T19:47:59.787323"
+    },
+    {
+      "id": "hf-paper-188c87fc57ca",
+      "title": "Chain of Evidence: Pixel-Level Visual Attribution for Iterative Retrieval-Augmented Generation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.01284",
+      "summary": "Iterative Retrieval-Augmented Generation (iRAG) has emerged as a powerful paradigm for answering complex multi-hop questions by progressively retrieving and reasoning over external documents. However,",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-06T19:47:59.787314"
+    },
+    {
+      "id": "hf-paper-9b0297affda5",
+      "title": "TCDA: Thread-Constrained Discourse-Aware Modeling for Conversational Sentiment Quadruple Analysis",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.01717",
+      "summary": "Conversational Aspect-based Sentiment Quadruple Analysis (DiaASQ) needs to capture the complex interrelationships in multiple rounds of dialogues. Existing methods usually employ simple Graph Convolut",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-06T19:47:59.787304"
+    },
+    {
+      "id": "hf-paper-a9f8ee63bcfd",
+      "title": "StateSMix: Online Lossless Compression via Mamba State Space Models and Sparse N-gram Context Mixing",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.02904",
+      "summary": "We present StateSMix, a fully self-contained lossless compressor that couples an online-trained Mamba-style State Space Model (SSM) with sparse n-gram context mixing and arithmetic coding. The model i",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-06T19:47:59.787287"
+    },
+    {
+      "id": "hf-paper-10dc3c7ffd8f",
+      "title": "ESARBench: A Benchmark for Agentic UAV Embodied Search and Rescue",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.01371",
+      "summary": "The rapid advancement of Multimodal Large Language Models (MLLMs) has empowered Unmanned Aerial Vehicle (UAV) with exceptional capabilities in spatial reasoning, semantic understanding, and complex de",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-06T19:47:59.787279"
+    },
+    {
+      "id": "hf-paper-b2443eedd184",
+      "title": "The TTS-STT Flywheel: Synthetic Entity-Dense Audio Closes the Indic ASR Gap Where Commercial and Open-Source Systems Fail",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.03073",
+      "summary": "Niche-domain Indic ASR -- digit strings, currency amounts, addresses, brand names, English/Indic codemix -- is under-served by both open-source SOTA and commercial systems. On a synthesised entity-den",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-06T19:47:59.787271"
+    },
+    {
+      "id": "hf-paper-18846f06110c",
+      "title": "X2SAM: Any Segmentation in Images and Videos",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.00891",
+      "summary": "Multimodal Large Language Models (MLLMs) have demonstrated strong image-level visual understanding and reasoning, yet their pixel-level perception across both images and videos remains limited. Founda",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-06T19:47:59.787262"
+    },
+    {
+      "id": "hf-paper-8a2ef4c3824d",
+      "title": "Skills-Coach: A Self-Evolving Skill Optimizer via Training-Free GRPO",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.27488",
+      "summary": "We introduce Skills-Coach, a novel automated framework designed to significantly enhance the self-evolution of skills within Large Language Model (LLM)-based agents. Addressing the current fragmentati",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-06T19:47:59.787252"
+    },
+    {
+      "id": "hf-paper-76600a213315",
+      "title": "ARIS: Autonomous Research via Adversarial Multi-Agent Collaboration",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.03042",
+      "summary": "This report describes ARIS (Auto-Research-in-sleep), an open-source research harness for autonomous research, including its architecture, assurance mechanisms, and early deployment experience. The per",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-06T19:47:59.787238"
+    },
+    {
+      "id": "hf-paper-744ebd030d11",
+      "title": "Video Generation with Predictive Latents",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.02134",
+      "summary": "Video Variational Autoencoder (VAE) enables latent video generative modeling by mapping the visual world into compact spatiotemporal latent spaces, improving training efficiency and stability. While e",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-06T19:47:59.787171"
+    },
+    {
+      "id": "hf-model-0ffb50283e16",
+      "title": "🤗 poolside/Laguna-XS.2",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/poolside/Laguna-XS.2",
+      "summary": "Task: text-generation | Downloads: 14,457 | Likes: 225",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-06T19:47:59.487830"
+    },
+    {
+      "id": "hf-model-70b0f02555a8",
+      "title": "🤗 Qwen/Qwen3.6-35B-A3B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
+      "summary": "Task: image-text-to-text | Downloads: 3,030,186 | Likes: 1,636",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-06T19:47:59.487825"
+    },
+    {
+      "id": "hf-model-f82c3833c93b",
+      "title": "🤗 nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
+      "summary": "Task: any-to-any | Downloads: 53,121 | Likes: 248",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-06T19:47:59.487819"
+    },
+    {
+      "id": "hf-model-4481c76e29d1",
+      "title": "🤗 Qwen/Qwen3.6-27B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-27B",
+      "summary": "Task: image-text-to-text | Downloads: 1,613,364 | Likes: 1,141",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-06T19:47:59.487814"
+    },
+    {
+      "id": "hf-model-f3fc7d86e6c4",
+      "title": "🤗 SeeSee21/Z-Anime",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/SeeSee21/Z-Anime",
+      "summary": "Task: text-to-image | Downloads: 3,819 | Likes: 175",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-06T19:47:59.487808"
+    },
+    {
+      "id": "hf-model-4fd7535cd23e",
+      "title": "🤗 XiaomiMiMo/MiMo-V2.5-Pro",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro",
+      "summary": "Task: text-generation | Downloads: 16,030 | Likes: 448",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-06T19:47:59.487802"
+    },
+    {
+      "id": "hf-model-b6a7c38191ac",
+      "title": "🤗 openai/privacy-filter",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/openai/privacy-filter",
+      "summary": "Task: token-classification | Downloads: 155,476 | Likes: 1,310",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-06T19:47:59.487796"
+    },
+    {
+      "id": "hf-model-967b88027b16",
+      "title": "🤗 SulphurAI/Sulphur-2-base",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/SulphurAI/Sulphur-2-base",
+      "summary": "Task: text-to-video | Downloads: 55,461 | Likes: 270",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-06T19:47:59.487790"
+    },
+    {
+      "id": "hf-model-286abd089b4e",
+      "title": "🤗 mistralai/Mistral-Medium-3.5-128B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B",
+      "summary": "Downloads: 16,576 | Likes: 279",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-06T19:47:59.487782"
+    },
+    {
+      "id": "hf-model-fe96e83596e6",
+      "title": "🤗 deepseek-ai/DeepSeek-V4-Pro",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+      "summary": "Task: text-generation | Downloads: 786,631 | Likes: 3,615",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-06T19:47:59.487752"
+    },
+    {
+      "id": "arxiv-2605.04046v1",
+      "title": "A Closed-Form Adaptive-Landmark Kernel for Certified Point-Cloud and Graph Classification",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.04046v1",
+      "summary": "We introduce PALACE (Persistence Adaptive-Landmark Analytic Classification Engine), the data-adaptive companion to PLACE, paying a small cross-validation tier on three knobs (budget, radii, bandwidth;",
+      "category": [
+        "cs.LG",
+        "math.AT"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-05T17:59:18+00:00"
+    },
+    {
+      "id": "arxiv-2605.04039v1",
+      "title": "Safety and accuracy follow different scaling laws in clinical large language models",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.04039v1",
+      "summary": "Clinical LLMs are often scaled by increasing model size, context length, retrieval complexity, or inference-time compute, with the implicit expectation that higher accuracy implies safer behavior. Thi",
+      "category": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-05T17:57:19+00:00"
+    },
+    {
+      "id": "arxiv-2605.04036v1",
+      "title": "OpenSeeker-v2: Pushing the Limits of Search Agents with Informative and High-Difficulty Trajectories",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.04036v1",
+      "summary": "Deep search capabilities have become an indispensable competency for frontier Large Language Model (LLM) agents, yet their development remains dominated by industrial giants. The typical industry reci",
+      "category": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-05T17:55:25+00:00"
+    },
+    {
+      "id": "arxiv-2605.04035v1",
+      "title": "Large-Scale High-Quality 3D Gaussian Head Reconstruction from Multi-View Captures",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.04035v1",
+      "summary": "We propose HeadsUp, a scalable feed-forward method for reconstructing high-quality 3D Gaussian heads from large-scale multi-camera setups. Our method employs an efficient encoder-decoder architecture ",
+      "category": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-05T17:55:01+00:00"
+    },
+    {
+      "id": "arxiv-2605.04019v1",
+      "title": "Redefining AI Red Teaming in the Agentic Era: From Weeks to Hours",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.04019v1",
+      "summary": "AI systems are entering critical domains like healthcare, finance, and defense, yet remain vulnerable to adversarial attacks. While AI red teaming is a primary defense, current approaches force operat",
+      "category": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-05T17:43:52+00:00"
+    },
+    {
+      "id": "arxiv-2605.04018v1",
+      "title": "Rethinking Reasoning-Intensive Retrieval: Evaluating and Advancing Retrievers in Agentic Search Systems",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.04018v1",
+      "summary": "Reasoning-intensive retrieval aims to surface evidence that supports downstream reasoning rather than merely matching topical similarity. This capability is increasingly important for agentic search s",
+      "category": [
+        "cs.CL",
+        "cs.IR"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-05T17:42:50+00:00"
+    },
+    {
+      "id": "arxiv-2605.04013v1",
+      "title": "Conditional Diffusion Sampling",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.04013v1",
+      "summary": "Sampling from unnormalized multimodal distributions with limited density evaluations remains a fundamental challenge in machine learning and natural sciences. Successful approaches construct a bridge ",
+      "category": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-05T17:36:29+00:00"
+    },
+    {
+      "id": "arxiv-2605.04012v1",
+      "title": "SymptomAI: Towards a Conversational AI Agent for Everyday Symptom Assessment",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.04012v1",
+      "summary": "Language models excel at diagnostic assessments on currated medical case-studies and vignettes, performing on par with, or better than, clinical professionals. However, existing studies focus on compl",
+      "category": [
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-05T17:36:12+00:00"
+    },
+    {
+      "id": "arxiv-2605.04008v1",
+      "title": "Enhanced 3D Brain Tumor Segmentation Using Assorted Precision Training",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.04008v1",
+      "summary": "A brain tumor is a medical disorder faced by individuals of all demographics. Medically, it is described as the spread of non-essential cells close to or throughout the brain. Symptoms of this ailment",
+      "category": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-05T17:30:17+00:00"
+    },
+    {
+      "id": "arxiv-2605.04003v1",
+      "title": "Physics-Grounded Multi-Agent Architecture for Traceable, Risk-Aware Human-AI Decision Support in Manufacturing",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.04003v1",
+      "summary": "High-precision CNC machining of free-form aerospace components requires bounded compensations informed by inspection, simulation, and process knowledge. Off-the-shelf large language model (LLM) assist",
+      "category": [
+        "cs.MA",
+        "cs.AI",
+        "cs.IR"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-05T17:24:53+00:00"
+    },
+    {
+      "id": "arxiv-2605.03998v1",
+      "title": "EQUITRIAGE: A Fairness Audit of Gender Bias in LLM-Based Emergency Department Triage",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.03998v1",
+      "summary": "Emergency department triage assigns patients an acuity score that determines treatment priority, and clinical evidence documents persistent gender disparities in human acuity assessment. As hospitals ",
+      "category": [
+        "cs.CL",
+        "cs.CY"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-05T17:20:55+00:00"
+    },
+    {
+      "id": "arxiv-2605.03989v1",
+      "title": "An Agent-Oriented Pluggable Experience-RAG Skill for Experience-Driven Retrieval Strategy Orchestration",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.03989v1",
+      "summary": "Retrieval-augmented generation systems often assume that one fixed retrieval pipeline is sufficient across heterogeneous tasks, yet factoid question answering, multi-hop reasoning, and scientific veri",
+      "category": [
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-05T17:10:25+00:00"
+    },
+    {
+      "id": "arxiv-2605.03986v1",
+      "title": "From Intent to Execution: Composing Agentic Workflows with Agent Recommendation",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.03986v1",
+      "summary": "Multi-Agent Systems (MAS) built using AI agents fulfill a variety of user intents that may be used to design and build a family of related applications. However, the creation of such MAS currently inv",
+      "category": [
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-05T17:08:26+00:00"
+    },
+    {
+      "id": "arxiv-2605.03984v1",
+      "title": "Flow Sampling: Learning to Sample from Unnormalized Densities via Denoising Conditional Processes",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.03984v1",
+      "summary": "Sampling from unnormalized densities is analogous to the generative modeling problem, but the target distribution is defined by a known energy function instead of data samples. Because evaluating the ",
+      "category": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-05T17:07:37+00:00"
+    },
+    {
+      "id": "arxiv-2605.03971v1",
+      "title": "Logical Consistency as a Bridge: Improving LLM Hallucination Detection via Label Constraint Modeling between Responses and Self-Judgments",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.03971v1",
+      "summary": "Large Language Models (LLMs) are prone to factual hallucinations, risking their reliability in real-world applications. Existing hallucination detectors mainly extract micro-level intrinsic patterns f",
+      "category": [
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-05T16:53:20+00:00"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-09-09T12:07:27.845953"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "e9325c90-f250-4aba-b80d-80dd6b3c580c",
+  "date": "2026-01-15",
+  "items": [
+    {
+      "id": "vpr-funding-ca731494b194",
+      "title": "Listen Labs Funding funding",
+      "source": "Venture Product Radar",
+      "source_type": "funding",
+      "url": "https://venturebeat.com/technology/listen-labs-raises-usd69m-after-viral-billboard-hiring-stunt-to-scale-ai",
+      "summary": "$69M - Funding",
+      "category": [
+        "AI venture funding product launches startup signals"
+      ],
+      "relevance_score": 3,
+      "created_at": "2026-01-15"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-08-10T14:49:27.398123"
+}

@@ -1,0 +1,216 @@
+{
+  "id": "514383dd-8b81-42b6-8914-9be185fede1d",
+  "date": "2026-05-05",
+  "items": [
+    {
+      "id": "arxiv-2605.04046v1",
+      "title": "A Closed-Form Adaptive-Landmark Kernel for Certified Point-Cloud and Graph Classification",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.04046v1",
+      "summary": "We introduce PALACE (Persistence Adaptive-Landmark Analytic Classification Engine), the data-adaptive companion to PLACE, paying a small cross-validation tier on three knobs (budget, radii, bandwidth;",
+      "category": [
+        "cs.LG",
+        "math.AT"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-05T17:59:18+00:00"
+    },
+    {
+      "id": "arxiv-2605.04039v1",
+      "title": "Safety and accuracy follow different scaling laws in clinical large language models",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.04039v1",
+      "summary": "Clinical LLMs are often scaled by increasing model size, context length, retrieval complexity, or inference-time compute, with the implicit expectation that higher accuracy implies safer behavior. Thi",
+      "category": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-05T17:57:19+00:00"
+    },
+    {
+      "id": "arxiv-2605.04036v1",
+      "title": "OpenSeeker-v2: Pushing the Limits of Search Agents with Informative and High-Difficulty Trajectories",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.04036v1",
+      "summary": "Deep search capabilities have become an indispensable competency for frontier Large Language Model (LLM) agents, yet their development remains dominated by industrial giants. The typical industry reci",
+      "category": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-05T17:55:25+00:00"
+    },
+    {
+      "id": "arxiv-2605.04035v1",
+      "title": "Large-Scale High-Quality 3D Gaussian Head Reconstruction from Multi-View Captures",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.04035v1",
+      "summary": "We propose HeadsUp, a scalable feed-forward method for reconstructing high-quality 3D Gaussian heads from large-scale multi-camera setups. Our method employs an efficient encoder-decoder architecture ",
+      "category": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-05T17:55:01+00:00"
+    },
+    {
+      "id": "arxiv-2605.04019v1",
+      "title": "Redefining AI Red Teaming in the Agentic Era: From Weeks to Hours",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.04019v1",
+      "summary": "AI systems are entering critical domains like healthcare, finance, and defense, yet remain vulnerable to adversarial attacks. While AI red teaming is a primary defense, current approaches force operat",
+      "category": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-05T17:43:52+00:00"
+    },
+    {
+      "id": "arxiv-2605.04018v1",
+      "title": "Rethinking Reasoning-Intensive Retrieval: Evaluating and Advancing Retrievers in Agentic Search Systems",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.04018v1",
+      "summary": "Reasoning-intensive retrieval aims to surface evidence that supports downstream reasoning rather than merely matching topical similarity. This capability is increasingly important for agentic search s",
+      "category": [
+        "cs.CL",
+        "cs.IR"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-05T17:42:50+00:00"
+    },
+    {
+      "id": "arxiv-2605.04013v1",
+      "title": "Conditional Diffusion Sampling",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.04013v1",
+      "summary": "Sampling from unnormalized multimodal distributions with limited density evaluations remains a fundamental challenge in machine learning and natural sciences. Successful approaches construct a bridge ",
+      "category": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-05T17:36:29+00:00"
+    },
+    {
+      "id": "arxiv-2605.04012v1",
+      "title": "SymptomAI: Towards a Conversational AI Agent for Everyday Symptom Assessment",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.04012v1",
+      "summary": "Language models excel at diagnostic assessments on currated medical case-studies and vignettes, performing on par with, or better than, clinical professionals. However, existing studies focus on compl",
+      "category": [
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-05T17:36:12+00:00"
+    },
+    {
+      "id": "arxiv-2605.04008v1",
+      "title": "Enhanced 3D Brain Tumor Segmentation Using Assorted Precision Training",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.04008v1",
+      "summary": "A brain tumor is a medical disorder faced by individuals of all demographics. Medically, it is described as the spread of non-essential cells close to or throughout the brain. Symptoms of this ailment",
+      "category": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-05T17:30:17+00:00"
+    },
+    {
+      "id": "arxiv-2605.04003v1",
+      "title": "Physics-Grounded Multi-Agent Architecture for Traceable, Risk-Aware Human-AI Decision Support in Manufacturing",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.04003v1",
+      "summary": "High-precision CNC machining of free-form aerospace components requires bounded compensations informed by inspection, simulation, and process knowledge. Off-the-shelf large language model (LLM) assist",
+      "category": [
+        "cs.MA",
+        "cs.AI",
+        "cs.IR"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-05T17:24:53+00:00"
+    },
+    {
+      "id": "arxiv-2605.03998v1",
+      "title": "EQUITRIAGE: A Fairness Audit of Gender Bias in LLM-Based Emergency Department Triage",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.03998v1",
+      "summary": "Emergency department triage assigns patients an acuity score that determines treatment priority, and clinical evidence documents persistent gender disparities in human acuity assessment. As hospitals ",
+      "category": [
+        "cs.CL",
+        "cs.CY"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-05T17:20:55+00:00"
+    },
+    {
+      "id": "arxiv-2605.03989v1",
+      "title": "An Agent-Oriented Pluggable Experience-RAG Skill for Experience-Driven Retrieval Strategy Orchestration",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.03989v1",
+      "summary": "Retrieval-augmented generation systems often assume that one fixed retrieval pipeline is sufficient across heterogeneous tasks, yet factoid question answering, multi-hop reasoning, and scientific veri",
+      "category": [
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-05T17:10:25+00:00"
+    },
+    {
+      "id": "arxiv-2605.03986v1",
+      "title": "From Intent to Execution: Composing Agentic Workflows with Agent Recommendation",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.03986v1",
+      "summary": "Multi-Agent Systems (MAS) built using AI agents fulfill a variety of user intents that may be used to design and build a family of related applications. However, the creation of such MAS currently inv",
+      "category": [
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-05T17:08:26+00:00"
+    },
+    {
+      "id": "arxiv-2605.03984v1",
+      "title": "Flow Sampling: Learning to Sample from Unnormalized Densities via Denoising Conditional Processes",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.03984v1",
+      "summary": "Sampling from unnormalized densities is analogous to the generative modeling problem, but the target distribution is defined by a known energy function instead of data samples. Because evaluating the ",
+      "category": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-05T17:07:37+00:00"
+    },
+    {
+      "id": "arxiv-2605.03971v1",
+      "title": "Logical Consistency as a Bridge: Improving LLM Hallucination Detection via Label Constraint Modeling between Responses and Self-Judgments",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.03971v1",
+      "summary": "Large Language Models (LLMs) are prone to factual hallucinations, risking their reliability in real-world applications. Existing hallucination detectors mainly extract micro-level intrinsic patterns f",
+      "category": [
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-05T16:53:20+00:00"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-09-09T12:07:27.981081"
+}

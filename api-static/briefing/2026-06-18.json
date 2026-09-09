@@ -1,0 +1,800 @@
+{
+  "id": "e5382963-49b8-41d2-8e06-55420517fd56",
+  "date": "2026-06-18",
+  "items": [
+    {
+      "id": "arxiv-2606.19341v1",
+      "title": "Native Active Perception as Reasoning for Omni-Modal Understanding",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.19341v1",
+      "summary": "Passive models for long video understanding typically rely on a \"watch-it-all\" paradigm, processing frames uniformly regardless of query difficulty, causing computational cost to grow with video durat",
+      "category": [
+        "cs.CV",
+        "cs.CL",
+        "cs.SD"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "arxiv-2606.19336v1",
+      "title": "Learning User Simulators with Turing Rewards",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.19336v1",
+      "summary": "Learning to simulate human users in interactive settings could advance the training of agent assistants, evaluation of personalization systems, research in the social sciences, and more. Existing appr",
+      "category": [
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "arxiv-2606.19334v1",
+      "title": "Freeing the Law with LOCUS: A Local Ordinance Corpus for the United States",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.19334v1",
+      "summary": "Progress in legal AI increasingly depends on access to authoritative legal text at scale. Yet one of the most consequential layers of American law remains largely absent from existing machine-readable",
+      "category": [
+        "cs.CL",
+        "cs.CY",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "arxiv-2606.19329v1",
+      "title": "The Chandra-Gaia Catalog of Counterparts: Resolving ambiguous Gaia matches to X-ray sources in the Chandra Source Catalog using Machine Learning",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.19329v1",
+      "summary": "We present a framework to cross-match sources from the Chandra Source Catalog (CSC v2.1) with optical sources from Gaia Data Release 3. Unlike purely spatial approaches, we use source properties such ",
+      "category": [
+        "astro-ph.IM",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "arxiv-2606.19328v1",
+      "title": "UBP2: Uncertainty-Balanced Preference Planning for Efficient Preference-based Reinforcement Learning",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.19328v1",
+      "summary": "Preference-based RL provides an approach to learning reward models from pairwise comparisons of behaviors, bypassing the need for explicit reward design. However, existing methods typically rely on pa",
+      "category": [
+        "cs.LG",
+        "cs.AI",
+        "cs.RO"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "arxiv-2606.19327v1",
+      "title": "Rethinking Reward Supervision: Rubric-Conditioned Self-Distillation",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.19327v1",
+      "summary": "Post-training of reasoning language models is commonly driven by supervised distillation and reinforcement learning with verifiable rewards. Distillation often relies on chain-of-thought annotations t",
+      "category": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "arxiv-2606.19325v1",
+      "title": "Reference-Driven Multi-Speaker Audio Scene Generation from In-the-Wild Priors",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.19325v1",
+      "summary": "Existing multi-speaker dialogue systems bind speakers to utterances through structured supervision: per-turn tags, multi-stream transcriptions, or learnable speaker embeddings. These systems operate w",
+      "category": [
+        "cs.SD",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "arxiv-2606.19319v1",
+      "title": "Data Intelligence Agents: Interpreting, Modeling, and Querying Enterprise Data via Autonomous Coding Agents",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.19319v1",
+      "summary": "Production data integration is bottlenecked by repeated, lossy handoffs between data owners, engineers, and analysts who must collaboratively discover, structure, and query enterprise data. We present",
+      "category": [
+        "cs.MA",
+        "cs.AI",
+        "cs.DB"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "arxiv-2606.19317v1",
+      "title": "Explaining Attention with Program Synthesis",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.19317v1",
+      "summary": "A longstanding goal of research on interpretable deep learning is to replace opaque neural computations with human-meaningful symbolic descriptions. In this paper, we propose an approach for approxima",
+      "category": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "arxiv-2606.19315v1",
+      "title": "Diffusion-Proof: Recipe for Formal Theorem Proving Beyond Auto-Regressive Generation",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.19315v1",
+      "summary": "Enhancing the formal math reasoning capabilities of Large Language Models (LLMs) has become a key focus in both mathematical and computer science communities in recent years. While significant progres",
+      "category": [
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "arxiv-2606.19308v1",
+      "title": "Enhancing Decision-Making with Large Language Models through Multi-Agent Fictitious Play",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.19308v1",
+      "summary": "Large language model (LLM)-based multi-agent systems (MAS) have demonstrated great potential in solving tasks with execution complexity, by distributing subtasks across cooperative agents. However, th",
+      "category": [
+        "cs.CL",
+        "cs.MA"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "arxiv-2606.19303v1",
+      "title": "P-K-GCN: Physics-augmented Koopman-enhanced Graph Convolutional Network for Deep Spatiotemporal Super-resolution",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.19303v1",
+      "summary": "High-fidelity simulation of spatiotemporal dynamics is computationally prohibitive, necessitating efficient super-resolution techniques to reconstruct high-resolution data from coarse-grained inputs. ",
+      "category": [
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "arxiv-2606.19302v1",
+      "title": "Optimal scenario design for climate emulation",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.19302v1",
+      "summary": "As deep learning for physical systems continues to grow in popularity, efforts to improve generalizability have primarily focused on designing architectures that embed physical constraints. However, f",
+      "category": [
+        "physics.ao-ph",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "arxiv-2606.19300v1",
+      "title": "Confidence is Not Reliability: Rethinking MC Dropout in Brain Tumour Segmentation",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.19300v1",
+      "summary": "Glioma segmentation in multiparametric MRI is a critical component of treatment planning. A segmentation model that fails silently on treatment-critical sub-regions represents a patient safety risk th",
+      "category": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "arxiv-2606.19297v1",
+      "title": "Does VLA Even Know the Basics? Measuring Commonsense and World Knowledge Retention in Vision-Language-Action Models",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.19297v1",
+      "summary": "Embodied Vision-Language-Action (VLA) models are typically obtained by fine-tuning powerful pretrained VLMs on robotics data, yet it is unclear how much commonsense and factual knowledge they retain a",
+      "category": [
+        "cs.LG",
+        "cs.RO"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "github-43e2422355ff",
+      "title": "DeusData/codebase-memory-mcp — High-performance code intelligence MCP server. Indexes codebases into a persiste",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "summary": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary",
+      "category": [
+        "开源项目",
+        "C"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "github-981f59f2564d",
+      "title": "n0-computer/iroh — IP addresses break, dial keys instead. Modular networking stack in Rust.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/n0-computer/iroh",
+      "summary": "IP addresses break, dial keys instead. Modular networking stack in Rust. | 🔥 421 stars today | Language: Rust",
+      "category": [
+        "开源项目",
+        "Rust"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "github-9153cb7357d4",
+      "title": "Panniantong/Agent-Reach — Give your AI agent eyes to see the entire internet. Read &amp; search Twitter, R",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "summary": "Give your AI agent eyes to see the entire internet. Read &amp; search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees. | 🔥 1161 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "github-1e2dfee4ddb2",
+      "title": "meshery/meshery — Meshery, the cloud native manager",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/meshery/meshery",
+      "summary": "Meshery, the cloud native manager | 🔥 196 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "github-ecb7de9cc8a0",
+      "title": "obra/superpowers — An agentic skills framework &amp; software development methodology that works.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/obra/superpowers",
+      "summary": "An agentic skills framework &amp; software development methodology that works. | 🔥 1129 stars today | Language: Shell",
+      "category": [
+        "开源项目",
+        "Shell"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "github-251760ccc581",
+      "title": "google-research/timesfm — TimesFM (Time Series Foundation Model) is a pretrained time-series foundation mo",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/google-research/timesfm",
+      "summary": "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting. | 🔥 606 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "github-ce381767fecf",
+      "title": "RocketChat/Rocket.Chat — The Secure CommsOS™ for mission-critical operations",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/RocketChat/Rocket.Chat",
+      "summary": "The Secure CommsOS™ for mission-critical operations | 🔥 22 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "github-961a3306d59e",
+      "title": "continuedev/continue — open-source coding agent",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/continuedev/continue",
+      "summary": "open-source coding agent | 🔥 49 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "github-139b2eb1ae5d",
+      "title": "penpot/penpot — Penpot: The open-source design tool for design and code collaboration",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/penpot/penpot",
+      "summary": "Penpot: The open-source design tool for design and code collaboration | 🔥 70 stars today | Language: Clojure",
+      "category": [
+        "开源项目",
+        "Clojure"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "github-f9c90ecc5788",
+      "title": "krahets/hello-algo — 《Hello 算法》：动画图解、一键运行的数据结构与算法教程。支持简中、繁中、English、日本語，提供 Python, Java, C++, C, C#, ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/krahets/hello-algo",
+      "summary": "《Hello 算法》：动画图解、一键运行的数据结构与算法教程。支持简中、繁中、English、日本語，提供 Python, Java, C++, C, C#, JS, Go, Swift, Rust, Ruby, Kotlin, TS, Dart 等代码实现 | 🔥 96 stars today | Language: Java",
+      "category": [
+        "开源项目",
+        "Java"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "github-284cd5d8ea68",
+      "title": "Universal-Debloater-Alliance/universal-android-debloater-next-generation — Cross-platform GUI written in Rust using ADB to debloat non-rooted Android devic",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation",
+      "summary": "Cross-platform GUI written in Rust using ADB to debloat non-rooted Android devices. Improve your privacy, the security and battery life of your device. | 🔥 457 stars today | Language: Rust",
+      "category": [
+        "开源项目",
+        "Rust"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "github-06e6a3ccccc3",
+      "title": "mattpocock/skills — Skills for Real Engineers. Straight from my .claude directory.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/mattpocock/skills",
+      "summary": "Skills for Real Engineers. Straight from my .claude directory. | 🔥 1523 stars today | Language: Shell",
+      "category": [
+        "开源项目",
+        "Shell"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "github-42125a492779",
+      "title": "yairm210/Unciv — Open-source Android/Desktop remake of Civ V",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/yairm210/Unciv",
+      "summary": "Open-source Android/Desktop remake of Civ V | 🔥 24 stars today | Language: Kotlin",
+      "category": [
+        "开源项目",
+        "Kotlin"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "github-eba900591972",
+      "title": "freeCodeCamp/freeCodeCamp — freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming,",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+      "summary": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | 🔥 757 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "github-8c3e92502432",
+      "title": "bytedance/UI-TARS-desktop — The Open-Source Multimodal AI Agent Stack: Connecting Cutting-Edge AI Models and",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/bytedance/UI-TARS-desktop",
+      "summary": "The Open-Source Multimodal AI Agent Stack: Connecting Cutting-Edge AI Models and Agent Infra | 🔥 150 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "github-7a019024ad6f",
+      "title": "nautechsystems/nautilus_trader — Production-grade Rust-native trading engine with deterministic event-driven arch",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/nautechsystems/nautilus_trader",
+      "summary": "Production-grade Rust-native trading engine with deterministic event-driven architecture | 🔥 98 stars today | Language: Rust",
+      "category": [
+        "开源项目",
+        "Rust"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "github-98661d582404",
+      "title": "chatwoot/chatwoot — Open-source live-chat, email support, omni-channel desk. An alternative to Inter",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/chatwoot/chatwoot",
+      "summary": "Open-source live-chat, email support, omni-channel desk. An alternative to Intercom, Zendesk, Salesforce Service Cloud etc. 🔥💬 | 🔥 264 stars today | Language: Ruby",
+      "category": [
+        "开源项目",
+        "Ruby"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "github-7ce4a54dcf0f",
+      "title": "calesthio/OpenMontage — World's first open-source, agentic video production system. 12 pipelines, 52 too",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "summary": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio. | 🔥 98 stars today | Language:",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "github-92046ddc10a8",
+      "title": "alexzhang13/rlm — General plug-and-play inference library for Recursive Language Models (RLMs), su",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/alexzhang13/rlm",
+      "summary": "General plug-and-play inference library for Recursive Language Models (RLMs), supporting various sandboxes. | 🔥 43 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "github-5b61a1c05509",
+      "title": "makeplane/plane — 🔥🔥🔥 Open-source Jira, Linear, Monday, and ClickUp alternative. Plane is a modern",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/makeplane/plane",
+      "summary": "🔥🔥🔥 Open-source Jira, Linear, Monday, and ClickUp alternative. Plane is a modern project management platform to manage tasks, sprints, docs, and triage. | 🔥 89 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "hf-model-ff55a456952e",
+      "title": "🤗 yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
+      "summary": "Task: text-generation | Downloads: 146,784 | Likes: 1,549",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "hf-model-46ba0cfe1884",
+      "title": "🤗 zai-org/GLM-5.2",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/zai-org/GLM-5.2",
+      "summary": "Task: text-generation | Downloads: 666 | Likes: 1,125",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "hf-model-e4de536b137f",
+      "title": "🤗 MiniMaxAI/MiniMax-M3",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3",
+      "summary": "Task: image-text-to-text | Downloads: 42,198 | Likes: 1,074",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "hf-model-65e75002aad5",
+      "title": "🤗 moonshotai/Kimi-K2.7-Code",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
+      "summary": "Task: image-text-to-text | Downloads: 172,727 | Likes: 855",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "hf-model-f2745a99996e",
+      "title": "🤗 google/diffusiongemma-26B-A4B-it",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/google/diffusiongemma-26B-A4B-it",
+      "summary": "Task: image-text-to-text | Downloads: 460,173 | Likes: 984",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "hf-model-7d9ab165315b",
+      "title": "🤗 WeiboAI/VibeThinker-3B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/WeiboAI/VibeThinker-3B",
+      "summary": "Task: text-generation | Downloads: 1,950 | Likes: 340",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "hf-model-727051673f23",
+      "title": "🤗 prefeitura-rio/Rio-3.5-Open-397B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/prefeitura-rio/Rio-3.5-Open-397B",
+      "summary": "Task: image-text-to-text | Downloads: 189,986 | Likes: 320",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "hf-model-7dc946291cd1",
+      "title": "🤗 nvidia/LocateAnything-3B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/nvidia/LocateAnything-3B",
+      "summary": "Task: image-text-to-text | Downloads: 130,389 | Likes: 2,142",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "hf-model-e085f544959c",
+      "title": "🤗 Jackrong/Qwopus3.6-27B-Coder-MTP-GGUF",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Jackrong/Qwopus3.6-27B-Coder-MTP-GGUF",
+      "summary": "Task: image-text-to-text | Downloads: 99,909 | Likes: 239",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "hf-model-1464fa38faac",
+      "title": "🤗 HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+      "summary": "Task: image-text-to-text | Downloads: 2,876,624 | Likes: 1,945",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "hf-paper-700f55ca6783",
+      "title": "SciOrch: Learning to Orchestrate Expert LLMs for Solving Frontier Multimodal Scientific Reasoning Tasks",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.15872",
+      "summary": "Frontier scientific reasoning remains a major challenge for large language models (LLMs), where even the strongest commercial systems fall short of expert-level performance. A closer look at model beh",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "hf-paper-293fc2dc4647",
+      "title": "Native Active Perception as Reasoning for Omni-Modal Understanding",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.19341",
+      "summary": "Passive models for long video understanding typically rely on a \"watch-it-all\" paradigm, processing frames uniformly regardless of query difficulty, causing computational cost to grow with video durat",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "hf-paper-bc740dc0ba28",
+      "title": "Reinforcing Dual-Path Reasoning in Spatial Vision Language Models",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.17539",
+      "summary": "Spatial VLMs have made substantial progress in geometric perception, yet complex spatial reasoning requiring multi-step inference over depth, distance, and scene relations remains challenging. Moreove",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "hf-paper-e7a7182b2c76",
+      "title": "SAE Interventions are Unreliable: Post-Intervention Recovery of Suppressed Behavior",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.18322",
+      "summary": "Sparse Autoencoders (SAEs) decompose residual-stream activations into interpretable features. Recent latent-space defenses increasingly rely on these decompositions, assuming that identified \"unsafe\" ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "hf-paper-586c3c8d3056",
+      "title": "Trust the Right Teacher: Quality-Aware Self-Distillation for GUI Grounding",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.18101",
+      "summary": "Graphical user interface (GUI) grounding requires vision-language models (VLMs) to identify small target elements in high-resolution screenshots and predict precise screen coordinates. On-policy self-",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "hf-paper-cd8a6ba14bcf",
+      "title": "Sumi: Open Uniform Diffusion Language Model from Scratch",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.19005",
+      "summary": "Diffusion models have become a promising alternative to autoregressive models. Among these, uniform diffusion language models (UDLMs) permit any token to be updated at any step, in principle enabling ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "hf-paper-7ad02d506606",
+      "title": "IndustryBench-MIPU: Benchmarking Multi-Image Attribute Value Extraction for Industrial Products",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.14383",
+      "summary": "Industrial products such as valves and circuit breakers are defined by dense technical specifications that govern procurement, compatibility, and safety across supply chains. These specifications are ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "hf-paper-f1137c1f86d4",
+      "title": "Kairos: A Native World Model Stack for Physical AI",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.16533",
+      "summary": "World models are transitioning from passive visual generators to foundational, operational infrastructure for Physical AI: they must natively acquire world knowledge from heterogeneous experience, mai",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "hf-paper-28c6a778b9a3",
+      "title": "Learning User Simulators with Turing Rewards",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.19336",
+      "summary": "Learning to simulate human users in interactive settings could advance the training of agent assistants, evaluation of personalization systems, research in the social sciences, and more. Existing appr",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "hf-paper-da8819510404",
+      "title": "PAIWorld: A 3D-Consistent World Foundation Model for Robotic Manipulation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.18375",
+      "summary": "World foundation models (WFMs) are powerful simulators, yet they predominantly operate in a single-view setting and lack the multi-view 3D consistency required for robotic manipulation. While robotic ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-18"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-09-09T12:07:26.251185"
+}

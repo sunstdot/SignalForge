@@ -1,0 +1,730 @@
+{
+  "id": "ff803815-31d4-40c8-a8c8-0d7d55dce15d",
+  "date": "2026-04-19",
+  "items": [
+    {
+      "id": "github-4c39342c85e4",
+      "title": "tractorjuice/arc-kit — Enterprise Architecture Governance &amp; Vendor Procurement Toolkit",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/tractorjuice/arc-kit",
+      "summary": "Enterprise Architecture Governance &amp; Vendor Procurement Toolkit | 🔥 135 stars today | Language: HTML",
+      "category": [
+        "开源项目",
+        "HTML"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-19T10:20:35.171275"
+    },
+    {
+      "id": "github-7f52a9b27938",
+      "title": "SimoneAvogadro/android-reverse-engineering-skill — Claude Code skill to support Android app's reverse engineering",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/SimoneAvogadro/android-reverse-engineering-skill",
+      "summary": "Claude Code skill to support Android app's reverse engineering | 🔥 403 stars today | Language: Shell",
+      "category": [
+        "开源项目",
+        "Shell"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-19T10:20:35.170478"
+    },
+    {
+      "id": "github-cf2dde3d4581",
+      "title": "rustdesk/rustdesk — An open-source remote desktop application designed for self-hosting, as an alter",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/rustdesk/rustdesk",
+      "summary": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer. | 🔥 393 stars today | Language: Rust",
+      "category": [
+        "开源项目",
+        "Rust"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-19T10:20:35.169712"
+    },
+    {
+      "id": "github-98483fa04632",
+      "title": "aaddrick/claude-desktop-debian — Claude Desktop for Debian-based Linux distributions",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/aaddrick/claude-desktop-debian",
+      "summary": "Claude Desktop for Debian-based Linux distributions | 🔥 44 stars today | Language: Shell",
+      "category": [
+        "开源项目",
+        "Shell"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-19T10:20:35.168694"
+    },
+    {
+      "id": "github-2b6d106c7083",
+      "title": "Lordog/dive-into-llms — 《动手学大模型Dive into LLMs》系列编程实践教程",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Lordog/dive-into-llms",
+      "summary": "《动手学大模型Dive into LLMs》系列编程实践教程 | 🔥 547 stars today | Language: Jupyter Notebook",
+      "category": [
+        "开源项目",
+        "Jupyter Notebook"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-19T10:20:35.167507"
+    },
+    {
+      "id": "github-e73ad05611a2",
+      "title": "deepseek-ai/DeepGEMM — DeepGEMM: clean and efficient FP8 GEMM kernels with fine-grained scaling",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/deepseek-ai/DeepGEMM",
+      "summary": "DeepGEMM: clean and efficient FP8 GEMM kernels with fine-grained scaling | 🔥 31 stars today | Language: Cuda",
+      "category": [
+        "开源项目",
+        "Cuda"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-19T10:20:35.165748"
+    },
+    {
+      "id": "github-42c084c2a327",
+      "title": "EvoMap/evolver — The GEP-Powered Self-Evolution Engine for AI Agents. Genome Evolution Protocol. ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/EvoMap/evolver",
+      "summary": "The GEP-Powered Self-Evolution Engine for AI Agents. Genome Evolution Protocol. | evomap.ai | 🔥 1131 stars today | Language: JavaScript",
+      "category": [
+        "开源项目",
+        "JavaScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-19T10:20:35.164828"
+    },
+    {
+      "id": "github-5b9121e1a69a",
+      "title": "openai/openai-agents-python — A lightweight, powerful framework for multi-agent workflows",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/openai/openai-agents-python",
+      "summary": "A lightweight, powerful framework for multi-agent workflows | 🔥 470 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-19T10:20:35.163877"
+    },
+    {
+      "id": "github-60745dde834b",
+      "title": "BasedHardware/omi — AI that sees your screen, listens to your conversations and tells you what to do",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/BasedHardware/omi",
+      "summary": "AI that sees your screen, listens to your conversations and tells you what to do | 🔥 609 stars today | Language: Dart",
+      "category": [
+        "开源项目",
+        "Dart"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-19T10:20:35.162785"
+    },
+    {
+      "id": "github-301d56a38655",
+      "title": "thunderbird/thunderbolt — AI You Control: Choose your models. Own your data. Eliminate vendor lock-in.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/thunderbird/thunderbolt",
+      "summary": "AI You Control: Choose your models. Own your data. Eliminate vendor lock-in. | 🔥 447 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-19T10:20:35.161524"
+    },
+    {
+      "id": "civitai-2555146",
+      "title": "🎨 Castcuraga Style (LoCon)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2555146",
+      "summary": "Type: LoCon | Downloads: 4 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-19T10:20:35.000033"
+    },
+    {
+      "id": "civitai-2555159",
+      "title": "🎨 Gahagahay526 Style (LoCon)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2555159",
+      "summary": "Type: LoCon | Downloads: 4 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-19T10:20:35.000025"
+    },
+    {
+      "id": "civitai-2555092",
+      "title": "🎨 VAE vs No VAE test (Checkpoint)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2555092",
+      "summary": "Type: Checkpoint | Downloads: 6 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-19T10:20:35.000015"
+    },
+    {
+      "id": "civitai-2239017",
+      "title": "🎨 盛情绽放 Attentive Flourish Collection - Illustrious (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2239017",
+      "summary": "Type: LORA | Downloads: 1,264 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-19T10:20:35.000003"
+    },
+    {
+      "id": "civitai-2453175",
+      "title": "🎨 Barghest / Fairy Knight Gawain | fate grand order / fgo (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2453175",
+      "summary": "Type: LORA | Downloads: 492 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-19T10:20:34.999968"
+    },
+    {
+      "id": "hf-model-b2cd1173ff38",
+      "title": "🤗 openbmb/VoxCPM2",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/openbmb/VoxCPM2",
+      "summary": "Task: text-to-speech | Downloads: 35,870 | Likes: 1,108",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-19T10:20:34.094748"
+    },
+    {
+      "id": "hf-model-2d0f16bac7e1",
+      "title": "🤗 google/gemma-4-31B-it",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/google/gemma-4-31B-it",
+      "summary": "Task: image-text-to-text | Downloads: 3,778,070 | Likes: 2,156",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-19T10:20:34.094734"
+    },
+    {
+      "id": "hf-model-7799d1d27bd5",
+      "title": "🤗 Jiunsong/supergemma4-26b-uncensored-gguf-v2",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Jiunsong/supergemma4-26b-uncensored-gguf-v2",
+      "summary": "Task: text-generation | Downloads: 66,552 | Likes: 398",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-19T10:20:34.094720"
+    },
+    {
+      "id": "hf-model-2f79a3598954",
+      "title": "🤗 zai-org/GLM-5.1",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/zai-org/GLM-5.1",
+      "summary": "Task: text-generation | Downloads: 103,847 | Likes: 1,399",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-19T10:20:34.094706"
+    },
+    {
+      "id": "hf-model-0e8e19c370dc",
+      "title": "🤗 tencent/HY-World-2.0",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/tencent/HY-World-2.0",
+      "summary": "Task: image-to-3d | Likes: 368",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-19T10:20:34.094692"
+    },
+    {
+      "id": "hf-model-406aad550c1f",
+      "title": "🤗 unsloth/Qwen3.6-35B-A3B-GGUF",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/unsloth/Qwen3.6-35B-A3B-GGUF",
+      "summary": "Task: image-text-to-text | Downloads: 442,900 | Likes: 452",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-19T10:20:34.094679"
+    },
+    {
+      "id": "hf-model-9f1c55c6cd4c",
+      "title": "🤗 baidu/ERNIE-Image",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/baidu/ERNIE-Image",
+      "summary": "Task: text-to-image | Downloads: 3,116 | Likes: 453",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-19T10:20:34.094664"
+    },
+    {
+      "id": "hf-model-f7a19edc802a",
+      "title": "🤗 tencent/HY-Embodied-0.5",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/tencent/HY-Embodied-0.5",
+      "summary": "Task: image-text-to-text | Downloads: 1,454 | Likes: 864",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-19T10:20:34.094644"
+    },
+    {
+      "id": "hf-model-70b0f02555a8",
+      "title": "🤗 Qwen/Qwen3.6-35B-A3B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
+      "summary": "Task: image-text-to-text | Downloads: 82,000 | Likes: 836",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-19T10:20:34.094625"
+    },
+    {
+      "id": "hf-model-3e19acb863ad",
+      "title": "🤗 MiniMaxAI/MiniMax-M2.7",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-M2.7",
+      "summary": "Task: text-generation | Downloads: 258,064 | Likes: 958",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-19T10:20:34.094581"
+    },
+    {
+      "id": "hf-paper-1a83552505a8",
+      "title": "TRACER: Trace-Based Adaptive Cost-Efficient Routing for LLM Classification",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.14531",
+      "summary": "Every call to an LLM classification endpoint produces a labeled input-output pair already retained in production logs. These pairs constitute a free, growing training set: a lightweight surrogate trai",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-19T10:20:34.441439"
+    },
+    {
+      "id": "hf-paper-4e62c4bfb05a",
+      "title": "Switch-KD: Visual-Switch Knowledge Distillation for Vision-Language Models",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.14629",
+      "summary": "Vision-Language Models (VLMs) have shown remarkable capabilities in joint vision-language understanding, but their large scale poses significant challenges for deployment in resource-constrained scena",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-19T10:20:34.441435"
+    },
+    {
+      "id": "hf-paper-6dd200622725",
+      "title": "Representations Before Pixels: Semantics-Guided Hierarchical Video Prediction",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.11707",
+      "summary": "Accurate future video prediction requires both high visual fidelity and consistent scene semantics, particularly in complex dynamic environments such as autonomous driving. We present Re2Pix, a hierar",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-19T10:20:34.441433"
+    },
+    {
+      "id": "hf-paper-91c7b16d9e25",
+      "title": "Don't Retrieve, Navigate: Distilling Enterprise Knowledge into Navigable Agent Skills for QA and RAG",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.14572",
+      "summary": "Retrieval-Augmented Generation (RAG) grounds LLM responses in external evidence but treats the model as a passive consumer of search results: it never sees how the corpus is organized or what it has n",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-19T10:20:34.441431"
+    },
+    {
+      "id": "hf-paper-b61f2009f3de",
+      "title": "RadAgent: A tool-using AI agent for stepwise interpretation of chest computed tomography",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.15231",
+      "summary": "Vision-language models (VLM) have markedly advanced AI-driven interpretation and reporting of complex medical imaging, such as computed tomography (CT). Yet, existing methods largely relegate clinicia",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-19T10:20:34.441429"
+    },
+    {
+      "id": "hf-paper-c84ff27c0997",
+      "title": "Boosting Visual Instruction Tuning with Self-Supervised Guidance",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.12966",
+      "summary": "Multimodal large language models (MLLMs) perform well on many vision-language tasks but often struggle with vision-centric problems that require fine-grained visual reasoning. Recent evidence suggests",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-19T10:20:34.441427"
+    },
+    {
+      "id": "hf-paper-3cda83d7fb4e",
+      "title": "An Optimal Transport-driven Approach for Cultivating Latent Space in Online Incremental Learning",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2211.16780",
+      "summary": "In online incremental learning, data continuously arrives with substantial distributional shifts, creating a significant challenge because previous samples have limited replay value when learning a ne",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-19T10:20:34.441424"
+    },
+    {
+      "id": "hf-paper-06569bfa9b6e",
+      "title": "Three-Phase Transformer",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.14430",
+      "summary": "We present Three-Phase Transformer (3PT), a residual-stream structural prior for decoder-only Transformers on a standard SwiGLU + RMSNorm + RoPE + GQA backbone. The hidden vector is partitioned into N",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-19T10:20:34.441422"
+    },
+    {
+      "id": "hf-paper-1982a830e6f9",
+      "title": "Beyond Prompts: Unconditional 3D Inversion for Out-of-Distribution Shapes",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.14914",
+      "summary": "Text-driven inversion of generative models is a core paradigm for manipulating 2D or 3D content, unlocking numerous applications such as text-based editing, style transfer, or inverse problems. Howeve",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-19T10:20:34.441419"
+    },
+    {
+      "id": "hf-paper-069fc81deabc",
+      "title": "Reinforcement Learning via Value Gradient Flow",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.14265",
+      "summary": "We study behavior-regularized reinforcement learning (RL), where regularization toward a reference distribution (the dataset in offline RL or the base model in LLM RL finetuning) is essential to preve",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-19T10:20:34.441408"
+    },
+    {
+      "id": "arxiv-2604.16286v1",
+      "title": "ASMR-Bench: Auditing for Sabotage in ML Research",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.16286v1",
+      "summary": "As AI systems are increasingly used to conduct research autonomously, misaligned systems could introduce subtle flaws that produce misleading results while evading detection. We introduce ASMR-Bench (",
+      "category": [
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-17T17:47:32+00:00"
+    },
+    {
+      "id": "arxiv-2604.16282v1",
+      "title": "Geometric regularization of autoencoders via observed stochastic dynamics",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.16282v1",
+      "summary": "Stochastic dynamical systems with slow or metastable behavior evolve, on long time scales, on an unknown low-dimensional manifold in high-dimensional ambient space. Building a reduced simulator from s",
+      "category": [
+        "cs.LG",
+        "math.DS",
+        "math.PR"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-17T17:44:02+00:00"
+    },
+    {
+      "id": "arxiv-2604.16280v1",
+      "title": "Using Large Language Models and Knowledge Graphs to Improve the Interpretability of Machine Learning Models in Manufacturing",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.16280v1",
+      "summary": "Explaining Machine Learning (ML) results in a transparent and user-friendly manner remains a challenging task of Explainable Artificial Intelligence (XAI). In this paper, we present a method to enhanc",
+      "category": [
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-17T17:41:17+00:00"
+    },
+    {
+      "id": "arxiv-2604.16279v1",
+      "title": "Evaluating the Progression of Large Language Model Capabilities for Small-Molecule Drug Design",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.16279v1",
+      "summary": "Large Language Models (LLMs) have the potential to accelerate small molecule drug design due to their ability to reason about information from diverse sources and formats. However, their practical uti",
+      "category": [
+        "cs.LG",
+        "physics.chem-ph"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-17T17:40:26+00:00"
+    },
+    {
+      "id": "arxiv-2604.16278v1",
+      "title": "Learning to Reason with Insight for Informal Theorem Proving",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.16278v1",
+      "summary": "Although most of the automated theorem-proving approaches depend on formal proof systems, informal theorem proving can align better with large language models' (LLMs) strength in natural language proc",
+      "category": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-17T17:36:21+00:00"
+    },
+    {
+      "id": "arxiv-2604.16275v1",
+      "title": "No Universal Courtesy: A Cross-Linguistic, Multi-Model Study of Politeness Effects on LLMs Using the PLUM Corpus",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.16275v1",
+      "summary": "This paper explores the response of Large Language Models (LLMs) to user prompts with different degrees of politeness and impoliteness. The Politeness Theory by Brown and Levinson and the Impoliteness",
+      "category": [
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-17T17:33:48+00:00"
+    },
+    {
+      "id": "arxiv-2604.16272v1",
+      "title": "VEFX-Bench: A Holistic Benchmark for Generic Video Editing and Visual Effects",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.16272v1",
+      "summary": "As AI-assisted video creation becomes increasingly practical, instruction-guided video editing has become essential for refining generated or captured footage to meet professional requirements. Yet th",
+      "category": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-17T17:28:24+00:00"
+    },
+    {
+      "id": "arxiv-2604.16270v1",
+      "title": "From Benchmarking to Reasoning: A Dual-Aspect, Large-Scale Evaluation of LLMs on Vietnamese Legal Text",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.16270v1",
+      "summary": "The complexity of Vietnam's legal texts presents a significant barrier to public access to justice. While Large Language Models offer a promising solution for legal text simplification, evaluating the",
+      "category": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-17T17:28:23+00:00"
+    },
+    {
+      "id": "arxiv-2604.16265v1",
+      "title": "FL-MHSM: Spatially-adaptive Fusion and Ensemble Learning for Flood-Landslide Multi-Hazard Susceptibility Mapping at Regional Scale",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.16265v1",
+      "summary": "Existing multi-hazard susceptibility mapping (MHSM) studies often rely on spatially uniform models, treat hazards independently, and provide limited representation of cross-hazard dependence and uncer",
+      "category": [
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-17T17:23:55+00:00"
+    },
+    {
+      "id": "arxiv-2604.16264v1",
+      "title": "Information Router for Mitigating Modality Dominance in Vision-Language Models",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.16264v1",
+      "summary": "Vision Language models (VLMs) have demonstrated strong performance across a wide range of benchmarks, yet they often suffer from modality dominance, where predictions rely disproportionately on a sing",
+      "category": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-17T17:20:42+00:00"
+    },
+    {
+      "id": "arxiv-2604.16262v1",
+      "title": "SwanNLP at SemEval-2026 Task 5: An LLM-based Framework for Plausibility Scoring in Narrative Word Sense Disambiguation",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.16262v1",
+      "summary": "Recent advances in language models have substantially improved Natural Language Understanding (NLU). Although widely used benchmarks suggest that Large Language Models (LLMs) can effectively disambigu",
+      "category": [
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-17T17:18:51+00:00"
+    },
+    {
+      "id": "arxiv-2604.16259v1",
+      "title": "Beyond Distribution Sharpening: The Importance of Task Rewards",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.16259v1",
+      "summary": "Frontier models have demonstrated exceptional capabilities following the integration of task-reward-based reinforcement learning (RL) into their training pipelines, enabling systems to evolve from pur",
+      "category": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-17T17:17:55+00:00"
+    },
+    {
+      "id": "arxiv-2604.16258v1",
+      "title": "Characterising LLM-Generated Competency Questions: a Cross-Domain Empirical Study using Open and Closed Models",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.16258v1",
+      "summary": "Competency Questions (CQs) are a cornerstone of requirement elicitation in ontology engineering. CQs represent requirements as a set of natural language questions that an ontology should satisfy; they",
+      "category": [
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-17T17:16:32+00:00"
+    },
+    {
+      "id": "arxiv-2604.16256v1",
+      "title": "Do Vision-Language Models Truly Perform Vision Reasoning? A Rigorous Study of the Modality Gap",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.16256v1",
+      "summary": "Reasoning in vision-language models (VLMs) has recently attracted significant attention due to its broad applicability across diverse downstream tasks. However, it remains unclear whether the superior",
+      "category": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-17T17:15:18+00:00"
+    },
+    {
+      "id": "arxiv-2604.16247v1",
+      "title": "Joint-Centric Dual Contrastive Alignment with Structure-Preserving and Information-Balanced Regularization",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.16247v1",
+      "summary": "We propose HILBERT (HIerarchical Long-sequence Balanced Embedding with Reciprocal contrastive Training), a cross-attentive multimodal framework for learning document-level audio-text representations f",
+      "category": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-17T17:07:35+00:00"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-09-09T12:07:29.362612"
+}

@@ -1,0 +1,350 @@
+{
+  "items": [
+    {
+      "id": "a6461576-bef0-4ddd-a775-213a93cb4bbc",
+      "url": "https://lilianweng.github.io/posts/2026-06-24-scaling-laws/",
+      "title": "Scaling Laws, Carefully | Lil'Log",
+      "source_platform": "other",
+      "user_note": "这篇文章的核心观点可以总结为：在关注模型大小时，必须更加谨慎、精细地看待大语言模型（LLM）的缩放定律（Scaling Laws），因为现实中的算力分配、数据限制以及拟合方法都比早期简单化、理想化的幂律曲线要复杂得多。具体而言，文章从以下三个核心维度展开了论述：1. 经典缩放定律的权衡与修正（Kaplan vs Chinchilla）早期观点（Kaplan et al.）： 认为算力增加时，模型规模（$N$）的增长速度应该远快于数据量（$D$）的增长速度，甚至主张可以训练一个极大的模型并在其完全收敛前停止。Chinchilla 的修正（Hoffmann et al.）： 修正了这一结论，指出 Kaplan 等人低估了数据的重要性。在计算资源有限的条件下，模型参数量与训练 Token 数量应该以同等比例放大（即 $N_{opt} \\propto C^{0.5}$）。在此之前的许多主流大模型实际上都处于严重“训练不足”（Undertrained）的状态。2. 数据受限区域（Data-Limited Region）的现实挑战早期的缩放定律都建立在“拥有无限且不重复的高质量数据”的理想假设下，但现实中人类正面临“数据墙”的缩放瓶颈：重复数据的价值衰减： 随着高质量数据耗尽，多轮次（Multi-epoch）训练不可避免。文章引用了 Muennighoff 等人的研究，指出重复 Token 的价值呈指数级衰减并趋近于一个上限。过拟合惩罚： 较大规模的模型对数据重复表现得更为敏感。Lovelace 等人的最新研究通过显式引入基于“模型容量/唯一数据量比率”的过拟合惩罚项，更准确地反映了数据受限条件下的损失变化。3. 现实中拟合缩放定律的“陷阱”与复杂性在实际操作中，通过小规模实验外推预测大规模模型的表现极其敏感，极易受到各种程序选择的影响：看似微不足道的细节——例如损失值的精度舍入、代码中优化器（如 L-BFGS）对损失求平均还是求和、是否计入嵌入层参数等，都会放大外推误差，导致完全不同的缩放定律结论。核心总结： > 缩放定律绝非一条简单的、可以盲目外推的直线性对数曲线。真正有效的模型扩张，必须在数据无限和数据受限的不同区间内，精密微调模型参数、唯一数据量、重复轮次以及优化器配置之间的共生关系。",
+      "added_at": "2026-07-09T11:35:59.096750",
+      "content_snippet": "Scaling Laws, Carefully | Lil'Log Table of Contents Early days: ML loss predictability Scaling Laws in Data-Infinite Region Kaplan et al.’s Scaling Laws Chinchilla Scaling Laws Method 1: Fix model sizes, vary the token budget Method 2: IsoFLOP profiles Method 3: Parametric fit Reconciling Kaplan and Chinchilla Why power law? Scaling Laws in Data-Limited Region Trickiness of Fitting Scaling Laws in Reality Toy simulation Citation References Scaling laws are one of the most critical empirical findings in deep learning. The observation is simple in form: the training loss $L$ decreases predictably as we scale up model size $N$, dataset size $D$, and compute $C$, following a power-law curve, which appears as a straight line on a log-log plot. We can view scaling laws as a framework for describing the relationship between compute, loss, model size and data; at its core, it is about how to allocate precious compute optimally between $N$ and $D$. This predictability makes scaling laws highly valuable in practice. A common workflow is to fit scaling laws on a handful of small runs and then extrapolate to estimate the token and compute requirements for larger models. Symbol Note $N$ Model size, measured in parameter count. $D$ Training dataset size, usually measured in token count. $C$ Training compute in FLOPs. As a useful approximation, $C \\approx 6ND$ ( Kaplan et al. 2020 ), where $2ND$ accounts for the forward pass and $4ND$ for backpropagation. $E$ Irreducible loss $L, \\hat{L}(.)$ Test loss / test loss prediction function; can also refer to training loss, since they are strongly correlated. $\\epsilon$ Generalization error. Early days: ML loss predictability # The predictability of generalization error with scale had already been investigated before scaling laws became a mainstream concept. Amari et al. (1992) derived four types of learning curves using a Bayesian approach and the annealed approximation. Deterministic learning algorithm, noiseless data, one unique solution: $\\epsilon \\sim c \\cdot D^{-1}$, where $c$ is some constant. Deterministic learning algorithm, noiseless data, multiple equivalent solutions: $\\epsilon \\sim c \\cdot D^{-2}$; the learning is faster with each new data point, because the model only learns the optimal manifold of parameters, instead of finding the single solution point. Deterministic learning algorithm, noisy data: $\\epsilon \\sim c \\cdot D^{-1/2}$; noises in data make learning harder. Stochastic learning algorithm, noisy data: $\\epsilon \\sim c \\cdot D^{-1} + E$; here the irreducible loss $E$ is the residual error that a stochastic learner cannot reduce further, for example when the model runs out of capacity on large data.\nAll four types of learning curves follow a power law: $$\n\\epsilon \\sim c \\cdot D^\\alpha + E\n$$ where $E$ can be 0 and $\\alpha = -2, -1, -1/2$. Although their theoretical setup is based on a simplified binary classification task, it points in a useful direction for building empirical ML loss prediction models. One of the earliest empirical studies by Hestness et al. (2017) explained the relationship between generalization error, model size and data. For a given training data size, they identified the best-fit model size via grid search and then plotted loss against training dataset size. Across four different domains in deep learning (neural machine translation, image classification, language modeling, and speech recognition), a recurring pattern was observed where: Generalization error scales as a power law across a set of factors (e.g. data size). Model improvements shift the error curve but do not seem to affect the power-law exponent. Interestingly, architecture changes the offset ($E$) of the power-law fit but does not change the exponent ($\\alpha$). The slope of the power law appears to be a property of the problem domain rather than the model architecture. The number of model parameters $N$ needed to fit a dataset of size $D$ also scales as a power law. Learning curves for (Left) Deep-Speech-2 (DS2) and attention speech model and for (Right) DS2 models of various sizes. The losses of small models plateau when training data becomes large. (Image source: Hestness et al. 2017) A conceptual illustration breaks the learning curve into three stages. In the small-data region, when there are not enough learning signals, the model performs only slightly better than random guessing. In the middle (“power-law region”), we observe a power-law relationship between loss, data, and model size. The final irreducible-error region can be attributed to factors such as noise in the data. Illustration of power-law learning curve phases. (Image source: Hestness et al. 2017) Rosenfeld et al. (2020) pushed this further by trying to model error as a joint function of both model size $N$ and data size $D$, across a diverse set of architectures (ResNet, WRN, LSTM, Transformer) and optimizers (Adam, SGD variants). Empirically they observed that, holding one axis fixed, the error decays as a power law in the other: $$\n\\hat{L}(D,N) \\approx \\frac{A}{N^{\\alpha}} + E_N,\\quad \n\\hat{L}(D,N) \\approx \\frac{B}{D^{\\beta}} + E_D\n$$ which can be combined into a joint form: $$\n\\hat{L}(D, N) \\approx \\frac{A}{N^{\\alpha}} + \\frac{B}{D^{\\beta}} + E\n$$ where $A > 0, B > 0, \\alpha \\geq 0, \\beta \\geq 0$ are scalar constants and $E$ is not dependent on either $N$ or $D$. A 3D contour plot of data size, model size and generalization error in log-log-log scale. Blue dots are derived from empirical experiments and the surface is a linear interpolation between blue dots. (Image source: Rosenfeld et al. 2020) Thus, they can build a prediction model in the form of a simple parametric function with $\\boldsymbol{\\theta} = \\langle A, B, E, \\alpha, \\beta \\rangle$ to predict the expected loss for $(D, N)$ > certain thresholds by only training on a set of smaller training configs, $(D, N)$ < certain thresholds. Fitting the parametric error model on small-scale configurations and extrapolating to l",
+      "quick_read": "**核心内容**：文章系统梳理了深度学习中的伸缩法则（Scaling Laws），即模型性能（损失）随模型参数量、数据量和计算量按幂律关系可预测地下降。核心问题是如何在给定计算预算下，在模型规模与数据量之间进行最优分配，并比较了Kaplan与Chinchilla两种经典法则的差异与调和方式。文章还探讨了数据充足与数据受限两种场景下的伸缩规律，以及实际拟合时面临的挑战。\n\n**关键信息**：\n- 伸缩法则的核心是损失 $L$ 与模型大小 $N$、数据量 $D$、计算量 $C$ 之间的幂律关系，常用近似 $C \\approx 6ND$ 来关联三者。\n- 早期工作（Hestness等）发现泛化误差随数据量呈幂律下降，且指数更多取决于问题领域而非模型架构；Rosenfeld等将误差建模为 $N$ 和 $D$ 的联合幂律函数 $\\hat{L}(D,N) \\approx A/N^\\alpha + B/D^\\beta + E$。\n- Kaplan等人的伸缩法则适用于“数据无限”区域，而Chinchilla法则强调在固定计算预算下需同步扩增模型与数据，两者可通过参数化拟合等方式调和。\n- 伸缩法则在“数据受限”区域及现实拟合中存在诸多陷阱，例如幂律假设的局限性和外推不确定性。\n\n**值得关注**：伸缩法则的幂律指数更多由问题域决定而非模型架构，这意味着在特定领域投入资源前，可通过小规模实验拟合出相对稳定的指数，从而指导大模型的资源分配。",
+      "business_opps": [],
+      "rdev_opps": []
+    },
+    {
+      "id": "a283bdc1-bc31-4b56-9d7f-c4b3ff5fe8f6",
+      "url": "https://x.com/dotey/status/2071961238528012358",
+      "title": "宝玉 的推文",
+      "source_platform": "other",
+      "user_note": "主要探讨了在微服务架构下，如何让 AI Agent 顺畅地进行系统设计和编码。\n针对“多个微服务协作、Agent 难以厘清职责边界”的问题，作者给出了一个核心公式：高质量的上下文 + 验证的闭环。",
+      "added_at": "2026-07-01T10:28:49.060487",
+      "content_snippet": "Q：我们公司有十几个微服务，现在想让开发用 AI Agent 来做系统设计和编码。问题是一个 user story 经常需要多个微服务协作，Agent 必须了解每个服务的职责边界和业务概念才能做出合理的设计。我们打算把所有微服务放到一个 workspace 下，每个服务配上自己的文档，让 AI… — 宝玉 (@dotey)",
+      "quick_read": "**核心内容**：作者探讨了在包含十几个微服务的项目中引入 AI Agent 进行系统设计与编码的挑战，核心难点是用户故事常涉及多服务协作，Agent 必须准确理解各服务的职责边界与业务概念。提出的思路是将所有微服务放入同一工作区，并为每个服务配备说明文档，以此让 Agent 获得足够的上下文。\n\n**关键信息**：\n- 一个 user story 往往需要跨多个微服务协作，AI Agent 必须掌握每个服务的职责和业务概念才能做出合理设计\n- 若 Agent 对服务边界不了解，产出的设计与代码可能会出错或耦合不当\n- 计划将所有微服务集中到一个 workspace，并为每个服务配置文档，以此向 AI 提供全局知识\n- 该方法试图通过文档化的上下文，让 Agent 自主理解服务间关系，减少人工解释成本\n\n**值得关注**：真正决定 AI Agent 在微服务项目中落地的不是模型能力，而是能否用结构化的文档为 Agent 注入“系统边界感”。",
+      "business_opps": [],
+      "rdev_opps": []
+    },
+    {
+      "id": "7cced506-f8aa-4d8e-9a58-fd90cae75bb8",
+      "url": "https://x.com/sairahul1/status/2069351848742629693",
+      "title": "Rahul 的推文",
+      "source_platform": "other",
+      "user_note": "万变不离其宗的智能体概念，不比太过于关注框架是什么，而是说对于你的任务来说，你需要哪些能力？ 是自己实现成本低还是找个开源的工具产品低，在做的过程中逐步去找到平衡",
+      "added_at": "2026-06-25T12:07:24.961471",
+      "content_snippet": "— Rahul (@sairahul1)",
+      "quick_read": "**核心内容**：关于智能体（Agent）的构建，核心不在于追逐某个特定框架，而在于清晰定义任务所需的能力，并权衡自研与采用开源工具的成本。在实践中逐步找到平衡点才是关键。\n\n**关键信息**：\n- 智能体概念的本质是不变的，不必被各种框架所局限。\n- 应从任务需求出发，先明确需要哪些能力。\n- 比较自己实现与使用开源工具产品的成本。\n- 在构建过程中动态调整，寻找最佳平衡。\n\n**值得关注**：强调以“任务能力需求”和“成本权衡”为出发点，而非以框架为中心，是避免过早绑定技术选型、降低试错成本的核心思路。",
+      "business_opps": [],
+      "rdev_opps": []
+    },
+    {
+      "id": "84685507-6164-4bca-9b60-f121efec96a8",
+      "url": "https://x.com/heynavtoor/status/2067194761446920264",
+      "title": "Nav Toor 的推文",
+      "source_platform": "other",
+      "user_note": "",
+      "added_at": "2026-06-18T19:22:08.343210",
+      "content_snippet": "— Nav Toor (@heynavtoor)",
+      "quick_read": "",
+      "business_opps": [],
+      "rdev_opps": []
+    },
+    {
+      "id": "5fa5a893-eb4f-4a7b-8743-3b15b8c4ad3b",
+      "url": "https://x.com/jxnlco/status/2057153744630890620",
+      "title": "jason 的推文",
+      "source_platform": "other",
+      "user_note": "Codex开发者分享的一篇Codex最佳实践",
+      "added_at": "2026-06-16T17:42:08.676413",
+      "content_snippet": "— jason (@jxnlco)",
+      "quick_read": "**核心内容**：OpenAI Codex 的开发者亲自分享了一套高效使用 Codex 的实践指南，强调通过清晰的指令设计、上下文管理和迭代式调试，能大幅提升代码生成质量与开发效率。文章面向希望将 Codex 融入工作流的工程师，提供了可直接落地的方法论，而非泛泛而谈的技巧。\n\n**关键信息**：\n- 要把复杂的编码任务拆解成小而明确的步骤，并给 Codex 提供精确、结构化的提示，而非一次性让它写完整个程序。\n- 充分利用代码上下文，将相关文件、函数签名或示例贴在提示中，模型才能理解项目约定并输出连贯的代码。\n- 采用“对话式调试”迭代修正输出：让 Codex 解释其生成的代码，然后据此修改提示或约束，直到获得满意结果。\n- 设置清晰的输出边界，例如指定语言版本、禁止使用的库或必须遵循的风格，避免生成虽能运行但不合规范的代码。\n- 在安全与质量上，开发者应始终人工审查 Codex 的输出，尤其是涉及敏感操作或关键业务逻辑的部分。\n\n**值得关注**：最有价值的洞察是──把 Codex 当作一个可随时追问和纠正的“结对编程伙伴”，而不是一次性代码生成器，这种心智转变能成倍提升产出可靠性。",
+      "business_opps": [],
+      "rdev_opps": []
+    },
+    {
+      "id": "dbdad656-26eb-466e-96ed-2bed618dfe69",
+      "url": "https://x.com/satyanadella/status/2066182223213293753",
+      "title": "Satya Nadella 的推文",
+      "source_platform": "other",
+      "user_note": "文章揭露萨提亚·纳德拉所描绘的企业知识循环愿景，实质是一种将个人与组织经验私有化为封闭AI系统的模式。它并非开放创\n新，而是导致知识被锁死在企业壁垒内，全球情报分裂为相互竞争的信息孤岛，最终可能引发企业AI之间的“系统战争”。关键信息**微软将“企业知识循\n环”包装成文明福祉，实则是把员工经验和组织记忆转化为公司独家控制的知识产权。该模式下每家公司的AI都在内部闭环学习，形成封闭的“组织思维”，全球知识",
+      "added_at": "2026-06-15T20:08:28.458693",
+      "content_snippet": "— Satya Nadella (@satyanadella)",
+      "quick_read": "**核心内容**：文章批评微软CEO Satya Nadella提出的“企业知识循环”实质上是一种将组织经验私有化、封闭化的AI模式。它并非促进开放创新，而是将员工智慧转化为公司独占的知识产权，导致全球知识分裂为互相竞争的信息孤岛，甚至可能引发企业AI间的系统级对抗。\n\n**关键信息**：\n- 纳德拉所描述的“企业知识循环”被包装成文明福祉，实际是把个人与组织经验锁入微软封闭AI系统。\n- 每家公司的AI在内部闭环学习，形成孤立的“组织思维”，知识无法跨企业流动。\n- 该模式使全球情报分裂为相互竞争的封闭信息库，阻碍开放创新。\n- 长期后果可能催生企业AI之间的“系统战争”，知识壁垒替代协作。\n\n**值得关注**：文章直接点出企业AI私有化潮流的黑暗面，即把员工集体智慧转化成厂商锁定的知识产权，这可能重新定义未来竞争格局的底层逻辑。",
+      "business_opps": [],
+      "rdev_opps": []
+    },
+    {
+      "id": "d9e2d152-c64a-4d70-8a4a-6f5bb36e4360",
+      "url": "https://www.zhihu.com/question/358755951/answer/2040804314298460030",
+      "title": "https://www.zhihu.com/question/358755951/answer/2040804314298460030",
+      "source_platform": "other",
+      "user_note": "作者是数学博士，把数学、物理、人文、哲学容纳到一篇文章中去结构维度降低带来的关系的破碎。\n\n是啊，用科学的视角结构人文社科",
+      "added_at": "2026-06-10T19:47:44.841851",
+      "content_snippet": "",
+      "quick_read": "**核心内容**：作者以数学和物理中的“降维”为透镜，剖析人类在认知、社会关系和文明演进中因简化维度而导致的信息折叠与意义破碎。文章尝试打通数理逻辑与人文哲思，揭示我们习以为常的线性叙事、二元对立和社会标签，本质上都是高维复杂系统被强制投影到低维空间后产生的扭曲与断裂。\n\n**关键信息**：\n- 降维不是抽象的数理游戏，而是日常认知的基本操作：我们用有限的语言、标签和模型去描述无限丰富的人和事，必然造成信息的丢失与关系的变形。\n- 社会关系中的“破碎感”往往源于将多维度的人（情感、经历、矛盾、成长）压缩到单一身份或道德标签下进行判断和互动。\n- 线性思维和二元对立（善/恶、成功/失败、理性/感性）是典型的降维工具，它们牺牲精度换取速度，却让复杂系统被误读为简单因果链条。\n- 科学方法和人文沉思可以同构：数学中的维度理论恰好为人文学科提供了一套可操作的框架，用以诊断当代语境下的意义丧失和身份焦虑。\n\n**值得关注**：本文最有价值的洞察在于，将“维度灾难”反向理解为“降维灾难”，指出文明进步的关键不是继续堆砌信息，而是恢复对高维关系的感知能力和容纳矛盾的认知弹性。",
+      "business_opps": [],
+      "rdev_opps": []
+    },
+    {
+      "id": "abc03e1d-9b25-4088-a150-e1ea1e5b03bc",
+      "url": "https://qgallouedec-tito.hf.space/#train-on-the-models-own-tokens",
+      "title": "Agentic RL: Token-In, Token-Out Done Right",
+      "source_platform": "other",
+      "user_note": "主要探讨了在多轮智能体强化学习（Agentic RL）训练中，如何正确处理“Token输入与Token输出（TITO）”以避免梯度计算出错的问题。以下是文章的核心内容总结：1. 核心问题：传统训练循环中的“Token漂移”在单轮强化学习中，训练过程非常直接：模型生成Token $\\rightarrow$ 计算奖励 $\\rightarrow$ 针对这些Token进行反向传播。但在多轮对话（如模型调用外部工具）中，开发者通常习惯以下流程：模型生成工具调用指令。将生成的 Token 解码（Decode）成文本，解析并执行工具。将工具结果追加到对话历史中。重新编码（Re-encode）整段对话，继续下一轮。",
+      "added_at": "2026-06-02T15:49:05.235046",
+      "content_snippet": "Agentic RL: Token-In, Token-Out Done Right Agentic RL: Token-In, Token-Out Done Right hover to disturb Never re-encode what you decoded: the whole trick to correct multi-turn RL. You’re training an LLM with RL. Single-turn looks great: clean curves, sane rewards, things converge. But modern models are enhanced with tools, and that’s exactly what you want: to train an agent . So you upgrade your training loop to allow the model to call a tool mid-rollout. You start with an easy task, and the curves get weird. Loss occasionally spikes for no obvious reason. And eventually it fails with a shape mismatch error. What’s almost certainly going on: your rollout loop is silently violating the Token-In, Token-Out (TITO) invariant. You parsed the model’s response to detect tool calls, then re-tokenized the updated conversation for the next turn. Usually that round-trip gives back the same tokens. Sometimes it doesn’t, and the gradient ends up on a sequence the model never sampled. The code doesn’t crash, but the math is silently broken and the gradient signal becomes completely unreliable. Two ways to fix it. The first is to abstract the chat template behind a per-model interface. For every family you train on, you hand-code a renderer that knows how to format messages, parse completions, and bridge between turns without re-rendering. It’s tricky to get right. The renderers library does this. It works, and it covers the major open-weights families today. The cost is structural: every new model needs a new hand-coded renderer, and changes to any template propagate as ongoing maintenance. The second is to design the training around one rule: never re-encode tokens you’ve decoded. Follow it, and the tricky edge cases vanish. You’re left with a single property to check on the chat template: it must be prefix-preserving for tool messages (we’ll explain). Turns out the vast majority of templates in the wild already satisfy it. This is Token-In, Token-Out done right, and that’s what this post is about. Train on the model’s own tokens tl;dr RL updates the model on the exact tokens it sampled, and nothing else. Simple now, load-bearing later. Reinforcement learning, in one breath: you sample a prompt, the model generates a completion, you score the completion, you backprop the gradient through the model’s generated tokens. Single-turn RL loop. sample prompt [{\"role\": \"user\", \"content\": \"What's 2+2?\"}] tokenize prompt 10 23 42 17 99 \"<user>What's 2+2?</user><eos>\" generate completion 4 7 99 \"4.<eos>\" compute reward +1 backprop on assistant tokens ∇ on 4 7 99 One detail matters more than it looks. The gradient is computed on the tokens the model generated. That sounds obvious. What else would you train on? It is obvious. Remember it anyway, because you’re going to break it sooner than you think. Multi-turn doesn’t change much. The model is allowed to call a tool mid-rollout: it emits a tool call, something on the outside runs the tool, the result is appended back into the conversation, and the model picks up from there. The rollout is just longer now: a few model turns, a few tool turns, a final answer. Multi-turn RL loop, with a tool call. sample prompt [{\"role\": \"user\", \"content\": \"What's 2+2?\"}] tokenize prompt 10 23 42 17 99 \"<user>What's 2+2?</user><eos>\" generate completion 50 71 13 99 \"<tool_call>calc(2+2)</tool_call><eos>\" execute tool and append result 60 4 61 99 \"<result>4</result><eos>\" generate completion 4 7 99 \"4.<eos>\" compute reward +1 backprop on assistant tokens ∇ on 50 71 13 99 + 4 7 99 The rule carries over: backprop on the tokens the model produced. Not the tool’s response (those didn’t come from the policy). The takeaway is small and very specific: in RL, you optimize on the exact tokens the model produced. Right now it reads like a definition. Later in the post, it’s the thing that breaks. Decoding doesn’t undo encoding tl;dr Tokenization isn’t reversible: decode a sequence, re-encode the text, and you can land on different tokens. Going from messages to tokens is mechanical: a chat template renders the messages into a string, then the tokenizer chops that string into integer IDs. >>> from transformers import AutoTokenizer >>> tokenizer = AutoTokenizer.from_pretrained( \"Qwen/Qwen2.5-0.5B-Instruct\" ) >>> messages = [ ... { \"role\" : \"user\" , \"content\" : \"What's 2+2?\" }, ... { \"role\" : \"assistant\" , \"content\" : \"4.\" } ... ] >>> tokenizer.apply_chat_template(messages, return_dict = False ) [ 151644 , 8948 , 198 , 2610 , 525 , 1207 , 16948 , 11 , 3465 , 553 , 54364 , 14817 , 13 , 1446 , 525 , 264 , 10950 , 17847 , 13 , 151645 , 198 , 151644 , 872 , 198 , 3838 , 594 , 220 , 17 , 10 , 17 , 30 , 151645 , 198 , 151644 , 77091 , 198 , 19 , 13 , 151645 , 198 ] Most of the time you don’t think about it. You feed messages, you get tokens, the model does its thing. Multi-turn is where it starts to matter. When the assistant emits tokens, you don’t know whether it’s about to call a tool until you look. So you decode the generated IDs back into text, parse out the structure, dispatch the call. The pipeline runs backwards , conceptually. The model can generate a response without calling a tool: >>> output_ids = [ 19 , 13 , 151645 ] # what the model just generated >>> tokenizer.parse_response(output_ids) { \"role\" : \"assistant\" , \"content\" : \"4.\" } or it can call a tool: >>> output_ids = [ 151657 , 198 , 4913 , 606 , 788 , 330 , 88821 , 497 , 330 , 16370 , 788 , 5212 , 9413 , 788 , 330 , 17 , 10 , 17 , 95642 , 151658 , 151645 ] >>> tokenizer.parse_response(output_ids) { 'role' : 'assistant' , 'content' : '' , 'tool_calls' : [{ 'type' : 'function' , 'function' : { 'name' : 'calculator' , 'arguments' : { 'expr' : '2+2' }}}]} Here’s the catch. Decoding isn’t injective. Multiple distinct token sequences can decode to the same string. Which means: take some tokens, decode them, encode the result back, and you may land on a different sequence than the one you started with. Decode-then-re-encode lands on a diffe",
+      "quick_read": "**核心内容**：文章指出了在多轮对话的强化学习训练中，一个极易被忽视的致命缺陷：对模型生成的 token 进行“解码-再编码”会破坏训练信号。作者提出“Token-In, Token-Out (TITO)”原则，即永远不要重新编码已经解码的 token，这是保证梯度可靠、训练不崩溃的关键。通过遵循这一原则，并确保聊天模板对工具消息“前缀保持”，就可以避免大部分奇特的训练错误。\n\n**关键信息**：\n- 单轮 RL 训练正常，但加入工具调用后出现损失激增、形状不匹配错误，根本原因是 rollout 循环中解析模型响应后重新进行词元化（decode 后 encode），破坏了模型生成时的原始 token 序列。\n- 词元化并非一一对应：不同 token 序列可能解码为相同文本，再编码后得到的 token 可能与最初生成的不同，导致梯度计算的序列并非模型实际采样的序列，从而训练信号无声失效。\n- 解决方案有两条路：一是为每个模型族手写渲染器（如 renderers 库），精确控制消息格式与解析，成本高且维护繁重；二是严格遵守“永不重新编码已解码 token”的规则，并检查聊天模板是否对工具消息“前缀保持”，大多数现有模板恰好满足这一性质。\n- 文章强调在 RL 中，梯度应仅施加于模型自身生成的 token，工具返回的内容不参与策略更新，这一定义在多轮对话中极易被打破。\n\n**值得关注**：哪怕代码不报错、一切看起来正常，只要对工具消息进行了重新词元化，梯度就可能在数学上完全错误，这种无声的崩溃比直接报错更危险，因为它会让整轮训练白费。",
+      "business_opps": [],
+      "rdev_opps": []
+    },
+    {
+      "id": "5293886e-ed54-4917-87b2-361b9617db19",
+      "url": "https://thoughts.hmmz.org/2026-05-31.html",
+      "title": "the solution might be cancelling my AI subscription",
+      "source_platform": "other",
+      "user_note": "看的一篇文章 AI降低摩擦力，但是摩擦力==专注力，会让我们丧失专注和思考，最终产出一堆垃圾。但是这种摩擦力极小的工具虽然产生的价值不高，但是让人很难放弃。\n为什么呢？ 如果你无法放弃，你是否能做到比不用AI的人做的更好？ 如何是、那是如何做的？ 如果否，那AI就有价值。",
+      "added_at": "2026-06-02T15:45:06.841317",
+      "content_snippet": "the solution might be cancelling my AI subscription the solution might be cancelling my AI subscription I am trying to think of a list of all the wonderful things I've built with AI: a speech recognition system in rust an email archive rendering + quote collapsing tool a jellyfin desktop clone with gstreamer and qt quick an invidious clone in python + yt-dlp a faithful Windows 95 notepad.exe clone in fltk ported from the Wine\nsources a machine vision thing to count traffic flows from public street cameras in\nopencv a claude ui clone in python or rust i think, i don't even remember a regional news site i never meant to build that is actually getting traffic, python/flask a 3d car game built on the protocol for an existing multiplayer game in\nthree.js an investment backtester in python a html clone of the lightroom ui, marvelled at the result then never made\nthe backend a markdown viewer in qt or gtk or something else i can't even remember a replacement world clock widget for my laptop desktop environment in gtk\nand C a javascript network synchronised audio playback thing a rust client for a chinese IP camera reversed from its Android app a sizeable SaaS in rust maybe 50 other projects i've already deleted Except for the SaaS, almost none of this is useful and I don't want to maintain\nany of it. I accidentally run a news outlet which is surely a liability. Sure,\nit has helped me \"learn AI tooling\" and I use many of these tools, but I didn't\nneed them. I can't afford to maintain any of them, not in terms of time,\ncommitment, belief, attention or willingness to spend on tokens. I didn't mean to build most of these things. Usually the Claude session started\nwith something like write a quick script for X , and one hour later the\nresult is not a quick script for X , nor in the usual case is my\nproblem solved, whatever the original itch happened to be. attention is all you need On that last point, this technology is horrific for attention.\nIt's a thermonuclear ADHD amplifier and I have seen the same effect in every\nsingle one of my adult friends. Folk running 3 screens simultaneously working\non totally unrelated \"projects\" they have little hope of maintaining, and such\nlittle commitment to the outcome that the time is obviously wasted. In recent times, at least once per month someone sends a screenshot for an\nawesome tool they are working on. I'm like whoa, that's really something and the sender is obviously proud and enthusiastic. I try not to ask, but am\nalways thinking and where will you market it? , because when the question\nis asked of an engineer, the answer is unchanged since before LLMs existed. I recently interviewed and when the topic of AI usage came up, the host\nanswered something like oh we're quite light on it, everyone has up to 5\nrooms where they manage their agents and I immediately felt a tightness in\nmy stomach. I had a vague sense of the effect a few months into using Claude. Later I\nreduced my subscription to Pro in the belief a quota restriction would mitigate\nexcessive use. Then Claude went through a bad service period and I moved to\nCodex. Codex's CLI is much nicer than Claude's and noticeably faster. And usage\nstarted creeping back up. The technology, when honed, is genuinely amazing. Ask it to zero shot a parser\nfor an esoteric grammar implemented in an esoteric language with full tests and\nit's done. The tooling as it exists today promotes absolutely nothing like the\nfocus required to apply it judiciously. Almost every vendor and every tool intends to do exactly the opposite: more\nusage, more tokens, more output. Ask a simple yes/no question of ChatGPT and\nyou can clearly see that it is hard-wired to include a relevant follow-up\nquestion to promote excessive interaction. Slopping out a 10,000 LOC untested Python/JS mess in 5 minutes helps nobody.\nThe thought of this happening in every commercial environment simultaneously is\nhorrifying. friction = focus, focus = product One of my early AI experiments, exploring AI as a lens in Marshall\nMcLuhan-like thinking, was to connect speech recognition to a pipeline that\ngenerated blog posts on the other side, in the belief it would encourage me to\ncapture my thoughts. All I needed was to press the voice note button in a\nTelegram channel, and out pops an Opus-formatted post. The output was unbridled garbage. Because the effort was removed, so was the\ncommitment, and with the commitment the focus, and with the focus any\nmeaningful product at all. Quality writing is not conversational English simply\ncast through a lens: conversational English is low-bit rate noise, quality\nwriting attempts to capture high bit rate information with better formed\nconcepts, and this should have been obvious before I began. I looked at repurposing the pipeline to capture private notes, but I have no\nneed for private notes. It subverts the natural process of noise being\nforgotten. It is just more excess tool use. Following from this, for as long as quality matters, I believe handwriting\ncan never be obsolete. It feels like we're heading towards crisis, and I doubt the answer is \"better\nmodels\" or \"better tooling\". Cal Newport relates\nthis to pseudo-productivity: The speaker argues that digital productivity tools, including AI and email, often create a “digital productivity paradox”: they make individual tasks faster or easier, but they can leave knowledge workers busier, more distracted, and less productive overall. He cites research showing that AI users spent much more time in email, messaging, chat, and business-management tools, while spending less time in focused, uninterrupted work. His central claim is that tools designed to reduce friction often increase the volume of shallow tasks and context switching, which weakens deep work and high-value output. He explains that this happens because knowledge work often relies on “pseudo productivity,” where visible busyness is treated as a proxy for real value. Digital tools reinforce this by making people",
+      "quick_read": "**核心内容**：作者通过自身大量用 AI 快速生成大量无用项目、注意力严重分散的经历，指出当前 AI 工具刻意消除摩擦反而放大了 ADHD、制造伪生产力，使知识工作者更忙却产出更低，并质疑“更好模型/工具”能解决这一危机。\n\n**关键信息**：\n- 作者列举了自己用 AI 快速构建的数十个工具/项目，绝大多数毫无用处且无力维护，甚至意外运营起一个可能带来责任的新闻站点。\n- 每次使用 AI 的出发点是小脚本，一小时后却变成庞大未完成品，原问题反而没解决；这种模式是“热核级 ADHD 放大器”，在周围工程师中普遍出现。\n- AI 厂商和工具设计本身鼓励更多 token 消耗与互动（如 ChatGPT 强制给出后续问题），导致浅层任务量暴增，深度工作减少。\n- 作者早期实验表明，消除摩擦同时也消除了专注与承诺，产出变成垃圾；核心矛盾是“摩擦 = 专注，专注 = 产品”。\n- 引用 Cal Newport 的观点，数字生产力工具（含 AI）制造“数字生产力悖论”：个体任务变快，但整体更忙、更分心、高价值产出下降，根源在于以“可见忙碌”作为生产力的代理。\n\n**值得关注**：最深刻的洞察是 AI 工具去摩擦机制实际上破坏了高质量的思考与产出所需要的必要阻力，提醒我们并非所有效率提升都导向真正的生产力。",
+      "business_opps": [],
+      "rdev_opps": []
+    },
+    {
+      "id": "07d1caed-96d6-4fdf-b07f-d64108508296",
+      "url": "https://huggingface.co/blog/agent-glossary#harness",
+      "title": "Harness, Scaffold, and the AI Agent Terms Worth Getting Right",
+      "source_platform": "Blog",
+      "user_note": "AI Agent 领域的术语正在快速膨胀，许多词在不同团队之间被混用或赋予不同含义。这篇来自 Hugging Face 的词汇表，针对 Model、Scaffolding、Harness、Agent、Context Engineering、Policy、Tool Use、Skill、Sub-agent 等常见但解释不一致的概念，给出了清晰实用的区分。不追求覆盖所有术语，聚焦于那些最容易被混淆的。建立共享心智模型是构建可维护 Agent 系统的基础。配合今天精讲一关于 Harness Engineering 的内容一起读，很有价值。",
+      "added_at": "2026-05-27T10:41:59.766329",
+      "content_snippet": "Harness, Scaffold, and the AI Agent Terms Worth Getting Right Back to Articles Harness, Scaffold, and the AI Agent Terms Worth Getting Right Published\n\t\t\t\tMay 25, 2026 Update on GitHub Upvote 50 +44 Sergio Paniego sergiopaniego Follow Aritra Roy Gosthipaty ariG23498 Follow When a field evolves quickly, its vocabulary often evolves faster than its shared understanding. Terms start to blur, get reused in different contexts, or become shorthand for ideas that are never fully explained. We are currently seeing this happen in the field of AI Agents, where concepts are getting mixed together, some are renamed, and others are widely used for a few months before quietly disappearing. This can be overwhelming for newcomers, and even for practitioners trying to keep up with the latest developments. After ICLR 2026, one of us ( @ariG23498 ) posted a question that captured this confusion well: \"What do you mean by the terms 'harness' and 'scaffold' in the context of agents? I have heard a lot of explanations while I was at ICLR, but I could not understand why they did not converge to a single explanation.\" This glossary is our attempt to ground the terms that keep coming up without clear, consistent explanations. It is not meant to be a comprehensive dictionary of every term in the field. Instead, we focus on the concepts that are often mixed up, reused in different ways, or assumed to be obvious when they are not. Most of these terms come up whether you're building an agent, deploying one, or just using tools like Claude Code, Codex, or Hermes Agent. The last section covers concepts specific to training models, which is more relevant if you work on that side of things. Many of these terms don't have universally accepted definitions yet, and different frameworks use the same word differently. The goal here is not to enforce one correct vocabulary, but to provide a practical mental model that makes discussions easier to follow. Let's get started. Table of Contents Model Scaffolding Harness Agent Context Engineering Policy Tool Use Skills Sub-agents Training RL Environment Trainer Rollout Reward Learn More Model The model is the LLM: it takes text in and produces text out (e.g., Claude, Qwen, GPT, Kimi, DeepSeek…). On its own, it has no memory between calls, and no loop. The model can express the intent to call a tool, but it needs a harness to actually execute it. It answers one prompt and stops. Wrap it in scaffolding and a harness and it becomes an agent. Scaffolding The behavior-defining layer around the model: system prompt, tool descriptions, how the model's responses get parsed, what it remembers across steps (context management). It shapes how the model sees the world and acts in it, whether during training or at inference. Products like Claude Code, Codex, and Antigravity CLI call the whole thing a harness. Claude Code's own docs say it directly: \"Claude Code serves as the agentic harness around Claude.\" That's the broad use: harness means everything that isn't the model. The scaffold/harness distinction matters most when you need to reason about them separately, as in a training pipeline. You'll also hear \"scaffold\" used more broadly to cover any infrastructure the harness relies on: hooks, runtime configuration, even directory structure. Some products like Claude Code and Codex are tightly coupled to their provider's models. Others like Antigravity CLI and Hermes Agent let you plug in any model. Harness The execution layer inside the agent: it calls the model, handles its tool calls, decides when to stop. The harness is what makes the agent run. Scaffolding, defined above, is what the model works from: its instructions, its tools, its format. Harness engineering is the discipline of designing this layer well: deciding when the agent should stop, how errors get handled, and what guardrails keep it on track. It applies at both training and inference. Addy Osmani's piece and OpenAI's account of building with Codex both cover this from the inference side. At evaluation time, the same pattern shows up as an eval harness : instead of collecting training data, it runs a fixed set of scenarios at a model checkpoint and records metrics rather than updating weights. Some frameworks use orchestrator for a higher-level controller that coordinates work across multiple agents. Unlike a harness, which drives a model through its execution loop, an orchestrator manages agents as units, each running their own harness (see Sub-agents below). Agent The term comes from reinforcement learning, where an agent is simply a function that takes an observation and returns an action. The environment takes that action and returns a new observation, and the loop repeats. That loop is still at the core of how LLM agents work. In the LLM world, the term has expanded. An agent is a model plus everything around it that lets it act, not just respond. It turns raw text generation into something that can act in a loop: taking in information, deciding what to do, and acting on the results. Take a coding agent as a concrete example. The system prompt, tool descriptions, and the output format the model follows form the scaffolding. The loop that calls the model, handles its tool calls, and decides when to stop is the harness. At training time, the harness also runs many of these loops in parallel and feeds the results back to update the model. In the community, it's usually put as Agent = Model + Harness ( @Vtrivedy10 and Will Brown's tweet for reference). If you're not the model, you're the harness. The subtle distinction between harness and scaffold that creates most of the confusion is what the two sections above address. When people talk about products like Claude Code, Codex, or Cursor, they're referring to a specific harness built on top of a specific model, designed and optimized together. Two products using the same underlying model can feel completely different because their harnesses make different choices. And swapping ",
+      "quick_read": "**核心内容**：  \n文章厘清了AI Agent领域快速演变中极易混淆的核心术语，重点区分了模型（LLM）、脚手架（Scaffold）和驾驭层（Harness）三个概念。作者明确指出，代理本质上是“模型 + 驾驭层”，其中脚手架定义行为规则，驾驭层负责执行循环，而不同产品间的体验差异正源于驾驭层的不同设计。\n\n**关键信息**：\n- 模型是仅能单次文本输入输出的LLM，自身无记忆和循环，必须被脚手架和驾驭层包裹才能变成可行动的代理。\n- 脚手架是行为定义层，包括系统提示、工具描述与输出格式，塑造了模型所见的“世界”；驾驭层是执行层，负责调用模型、处理工具调用及决定终止条件。\n- 通用理解“Agent = Model + Harness”，产品如Claude Code常将整个非模型部分统称为驾驭层，但在训练管道中需区分脚手架与驾驭层以分别优化。\n- 评估驾驭层（eval harness）和协调器（orchestrator）是相关变体：前者运行固定场景评测模型，后者将代理作为单元进行更高层调度。\n- 相同基础模型因驾驭层差异可呈现完全不同的行为，这正是不同产品体验分化的关键技术原因。\n\n**值得关注**：将Agent理解为“模型+驾驭层”，并清晰分离脚手架（定义做什么）与驾驭层（负责怎么做），是穿透当前代理讨论迷思并有效构建系统的关键心智模型。",
+      "business_opps": [],
+      "rdev_opps": []
+    },
+    {
+      "id": "4c5bc1e1-5d1b-4c86-af05-92eb7608ec84",
+      "url": "https://x.com/dotey/status/2058421725256171718",
+      "title": "宝玉 的推文",
+      "source_platform": "X",
+      "user_note": "讲述了DeepSeek公司的野望，回顾了他们的技术发展历史，做了哪些创新，主要讲的是如何压榨硬件性能生成页面",
+      "added_at": "2026-05-25T15:58:44.510001",
+      "content_snippet": "— 宝玉 (@dotey)",
+      "quick_read": "**核心内容**：文章剖析了DeepSeek公司的宏大愿景与技术路线，通过回顾其发展历程，重点阐释他们如何通过一系列工程创新极限压榨硬件性能，实现高效生成和渲染页面。本质上是在算力约束下追求极致效能的实践复盘。\n\n**关键信息**：\n- DeepSeek的野心不止于模型能力，而是端到端重构AI应用交付的性价比，从训练延伸至推理和页面生成。\n- 技术发展史呈现出明确的“榨干硬件”主线，包括自定义算子、显存优化、推理加速等软硬协同设计。\n- 创新聚焦在绕过通用框架开销，通过算子融合、动态批处理和极简运行时，把GPU利用率推至新高。\n- 生成页面的能力不是简单的模板填充，而是将模型推理与前端渲染流水线紧耦合，减少数据传输和序列化损耗。\n- 这套方法论验证了：在给定硬件下，软件层的激进重构能释放超过一个数量级的吞吐潜力。\n\n**值得关注**：DeepSeek证明了当前AI应用的主要瓶颈并非硬件绝对供给，而是中间层对算力的浪费，这也是他们能靠“小团队、低预算”持续保持竞争强势的根本原因。",
+      "business_opps": [],
+      "rdev_opps": []
+    },
+    {
+      "id": "3938759e-5bcd-49f9-826d-2fc4f1fd14e6",
+      "url": "https://mp.weixin.qq.com/s/lvZ1kpAJwutRFGMyks7DyQ",
+      "title": "https://mp.weixin.qq.com/s/lvZ1kpAJwutRFGMyks7DyQ",
+      "source_platform": "other",
+      "user_note": "对于Token是否是同向AGI的路径，现在业内有了新的讨论，“人类语言是进化设计的有损压缩协议，它是跨脑传输的工程妥协。“这句话的背后是维特根斯坦说的”我语言的局限，即意味着我世界的局限。“语音不一定能表达出所有的内容，更有可能是大脑后备运作的一种有损表达。",
+      "added_at": "2026-05-25T15:55:32.038969",
+      "content_snippet": "",
+      "quick_read": "**核心内容**：文章探讨了“Token 路径能否达到 AGI”这一根本问题，指出人类语言本质上是跨脑传输的有损压缩协议，受限于维特根斯坦所言的语言边界。这意味着仅靠预测下一个 Token 可能永远无法还原思维全貌，因模型只能学习语言这一有损表达，而无法直接捕捉大脑后台的完整认知过程。\n\n**关键信息**：\n- 人类语言被重新定义为进化设计的有损压缩协议，是为跨脑传输在工程上做出的妥协，并非思维的完整映射。\n- 维特根斯坦“我语言的局限即意味着我世界的局限”被引用来支撑语言无法表达所有内容的观点，即便大脑全知，言语也只能给出有损片段。\n- 现有大模型基于 Token 预测的学习目标，实际上是拟合这种有损表达，可能无法超越语言表层统计规律而触及深层认知与真实世界模型。\n- 讨论引发对“走向 AGI 是否需要超越纯语言 Token，引入多模态、具身或世界模型”的重新审视。\n- 这一视角将 AGI 瓶颈从算力和规模部分转移到了语言介质本身的根本局限上。\n\n**值得关注**：最有价值的洞察在于将语言从“思维的忠实载体”重新定义为“进化妥协的有损压缩协议”，这直接动摇了“语言 Scaling 即通往 AGI”的假设，提示需要寻找语言之外的信息通道。",
+      "business_opps": [],
+      "rdev_opps": []
+    },
+    {
+      "id": "22ee96a7-2ff9-4085-bdf8-f70eabd30103",
+      "url": "https://mp.weixin.qq.com/s/zym_I_eKESP6CnalBfxPMA",
+      "title": "ab测试、因果关系及科学思维",
+      "source_platform": "other",
+      "user_note": "科学以两个伟大的成就为基础：1 希腊哲学家发明的形式逻辑体系（在欧几里得几何中）2 文艺复兴时发现通过系统的实验可能找出因果关系。在我看来，中国的贤哲没有走上这两步，那是用不着惊奇的，做出这些才是令人惊奇的——爱因斯坦",
+      "added_at": "2026-05-21T15:52:10.176580",
+      "content_snippet": "科学以两个伟大的成就为基础：1 希腊哲学家发明的形式逻辑体系（在欧几里得几何中）2 文艺复兴时发现通过系统的实验可能找出因果关系。在我看来，中国的贤哲没有走上这两步，那是用不着惊奇的，做出这些才是令人惊奇的——爱因斯坦 爱因斯坦这段话是回答李约瑟难题，李约瑟是一个英国人，他研究了中国历史，发现中国古代技术极为发达，比如四大发明都起源于中国，于是他产生了一个问题： 为什么中国古代技术发达但没产生科学？ 爱因斯坦认为这个问题问错了，不应该问中国为什么没产生科学，而应该问西方为什么产生了科学？科学的产生是一种意外，大部分文明都没产生科学，中国古代没产生也是正常的，真正令人惊奇的是西方居然产生了科学 爱因斯坦认为科学的核心是两个点： 希腊哲学家发明的形式逻辑体系（在欧几里得几何中） 文艺复兴时发现通过系统的实验可能找出因果关系 形式逻辑体系我们回头另外讨论，这篇文章重点聊下： 通过系统的实验找出因果关系 总结因果关系是大脑的本能： 马车动了，因为马在拉车 水开了，因为火烧了水 天亮了，因为太阳出来了 秋天收获了，因为春天播种了…… 这些直观的因果关系，我们总结的很快，而且经常是对的，更复杂的事物，我们总结的因果关系就不一定对了： 东西越重，落地速度越快，比如铁球比羽毛落地速度快 王朝灭亡了，是因为皇帝被女人耽误了，看看商纣王唐玄宗 打雷是因为有个雷公负责打雷 地震是因为大地被一个大海龟托着，这个海龟乱动就会有地震…… 在漫长的历史中，人类对因果关系的总结都是随意的，巫术和迷信就是一大堆的因果关系，而且注意， 在古人看来，巫术和迷信就是现实 ，是现实的一部分。 弗雷泽名著《金枝》，对人类的各种巫术做了考察，基本上巫术就是相似律和接触律： 马达加斯加的士兵被禁食刺猬肉、公牛膝、死于争斗的公鸡及其他被刺死的动物。依据顺势原则，这样做可以避免沾染那些特殊食物所代表的危险：刺猬一遇到危险就缩成一团，吃刺猬肉会使士兵胆小；不吃公牛膝，是为了避免士兵像公牛一样膝盖变软而无法行军；吃死于争斗的公鸡，意味着自己有可能死在战场上；吃任何被刺死的动物，预示着自己可能会被刺死 你可以在所有文明发现类似的巫术和禁忌，比如中国不让孕妇吃螃蟹，因为螃蟹有锋利的爪子，所以认为会导致孕妇流产 在古代，每个文明都总结了一大堆这样的因果关系，各不相同，各有特色，基本就是按相似律和接触律来总结——大家都在随意总结，总结出来传播开了就有足够多人相信，成为传统、习俗和文化 直到文艺复兴时期，西方出现了一帮思想家，他们觉得这么总结因果关系是草率的、粗糙的、证据不足的，他们开始提倡系统实验，然后一个一个真正的规律被总结出来，现代科学的大门被打开了 物理实验大家都很熟悉了，比如伽利略把两个重量不一样的铁球从比萨斜塔扔下来，看哪个先落地（这个实验伽利略可能根本没做过，因为他通过逻辑推理就得出了更重的铁球不会速度更快的结论 [1] ） 但生物学的ab测试，大部分人是不熟悉的 什么是ab测试？ 举一个历史上比较有名的ab测试： 大航海时代，出海时间久，很多海员会得坏血病， 早期症状包括虚弱、感觉疲劳及手脚疼 。若不即时进行治疗，可能会造成贫血、牙龈疾病、头发产生变异以及皮肤出血 。随着坏血病持续恶化，会出现 不容易愈合，性情大变甚至因为感染或出血而死亡 英国皇家海军 外科医生詹姆斯·林德 1747年在船上做了实验：出现坏血病的船员，大家都吃完全相同的食物，然后开始分组，有些人同时吃当时传说可以治疗坏血病的药方，有些病人每天吃两个橘子和一个柠檬，其他的人喝苹果酒、稀硫酸、醋、海水。实验的结论是吃柑橘水果的两人好转，其它人病情依然，后来林德在1753年出版《坏血病大全》之中发表了他的实验 现在我们知道坏血病是因为缺乏维生素C，柑橘水果的维生素C含量高，所以可以治疗坏血病，这也是ab测试的一个特点：它可以帮你找到导致变化的关键因素，但原理并不确定 ab测试相比物理实验，对思维方式的颠覆其实更大，是每个人都应该了解的思维方式，现实世界很少有物理实验室那种干净的条件，我们日常面临的问题都是复杂的，实验对象本身也在变化，此时最常见最有效的方法就是ab测试 我们不自觉的会把日常生活中流传已广的说法、传统、习俗当成确定无疑的前提，然后进行决策——但这些说法、传统、习俗如果没有经过ab测试的验证，很可能是不正确的，有些事无伤大雅当真无所谓，有些事当真后果会非常严重 比如乔布斯得癌症，不想手术，研究各种替代疗法，想吃草药治癌症，结果拖延9个月错过了手术最佳时间——他选择的替代疗法和草药，就没有经过ab测试的验证，只是有人声称有效而已 现代药物的研发，最后一步都要做ab测试： 比如找1000个病人，随机分组，一半真的用药，一半用的是假药，病人和医生都不知道谁用了真药，谁用了假药，过一段时间后，真正用药的那组病人的病情必须「显著」比没用药的好转的更多，才能说明你这个药物是「真的有效」——这就是所谓的随机双盲对照实验，比当年 詹姆斯·林德做的ab测试更为严谨了 有人声称自己的药物足够有效，因此不必做ab测试，这里有一个思维误区，是大家通常想象不到的： 一件事A先发生，另一件事B然后发生，并不能证明A是B的原因 举个例子，出水痘，然后有人说他的某个草药能治水痘，吃了之后，过十天，水痘果然好了，而且100个出水痘的人，吃了之后，99个十天后都好了——这能证明这个药物对水痘有效吗？ 不能。 因为水痘是病毒引起的，经过十天时间，大部分人的免疫系统会自动搞定水痘病毒，都会好 所以你需要一个ab测试，把100个人分成两组，50个人用药，50个人不用，观察一周，你会惊讶的发现： 没用药的那50个人，十天后也绝大部分都好了 但如果你用一些抗病毒药物，再做ab测试，你可能会观察到： 用抗病毒药的那组病人，平均5天就好了，而且症状更轻，但没用抗病毒药的那组病人，还是要十天后才会好 而且在这个实验过程中，医生会记录真正用药的那组病人都有什么副作用， 这就是为什么你看现代药物说明书，不良反应可以写很长很长的原因——如果你的药物没做过ab测试，会有什么副作用你甚至都不知道 最著名的就是龙胆泻肝丸，长期服用可以导致肾衰竭，但古代没有人知道吃龙胆泻肝丸可以导致肾衰竭，因为要长期吃才会这样，而长期吃药的人，往往本来就有病，人真的死了，大家也很难联想到是吃这个药吃死的，会觉得是病死的，但其实是被药毒死的 还有古代求长生的皇帝，如果大量吃丹药，都会中毒而死，秦始皇和唐太宗，以及雍正皇帝，都是吃丹药求长生的爱好者，都比较年轻去世，都是因为吃丹药中毒 乾隆皇帝即位后，把给雍正皇帝炼丹的道士全部赶走，一辈子不吃这些东西。乾隆是中国古代寿命最长的皇帝，和不吃丹药甚至中药都很少吃有很大关系，乾隆太聪明了，乾隆时期的大臣对乾隆有这么一句评价： 「自古人主患不明，惟皇上患明之太过。自古人主患不断，惟皇上患断之太速」 自古皇帝就怕不够聪明，咱们皇帝是太过于聪明了，自古皇帝就怕没决断力，咱们皇帝是决断太过于迅速了 乾隆对装神弄鬼骗人的伎俩几乎全都是一眼看穿，在北京的藏传佛教寺庙雍和宫，有一个乾隆立的碑，说藏传佛教是在胡扯，他说你们的活佛转世，只在几个大家族之间转来转去， 作弊不要太明显， 而且转世本身就不符合佛教教义： 「盖佛本无生，岂有转世，但使今无转世之呼土克图，则数万番僧无所皈依，不得不如此耳」 然后乾隆定了一个制度，从此以后转世需要中央批准，还要随机抽签 「兹予制一金瓶送往西藏」 这就是金瓶掣签中央确认的转世制度，此后的活佛转世，包括现在，都沿用了这个制度 互联网的ab测试 接着聊ab测试，除了医学，另一个大量做ab测试的领域是互联网： 扎克伯格：在很多情况下，建立一家公司也像遵从科研方法一样，要不断的尝试大量的假设推论，如果你的实验设计构建的足够好，你就会学到下一步该怎么做。我觉得这是一个很重要的哲学方法。我们投资搭建的是这个巨大的实验结构。在每时每刻，世界上都不只有一个版本的Facebook，世界上可能有成百上千个版本在运行，因为工程师们有权利尝试不同的点子，并且让也许1万或10万的用户去尝试 美国谷歌Facebook等互联网公司都会做大量的ab测试来改进产品，中国做ab测试最多的则是字节跳动。为什么互联网公司会大量做ab测试？因为他们想找到对用户体验对数据真正有效的原因，而互联网产品的两个特征让他们做ab测试特别合适： 海量用户，分组方便 软件，数据记录观察极为方便 举个互联网产品ab测试的例子： 假设有一个让用户发照片的app，上线了一个新功能：把拍照按钮从蓝色改为红色。然后功能上线后，发现每人每日拍照数量增长了211%，产品经理开心去汇报说我们这个功能把数据提升了211%——在很多公司，可能老板就很开心，然后发奖金，但在更先进的公司，老板不会这么做的，因为在你功能上线之前和上线之后，有很多因素都变了：怎么能证明拍照数量增长211%是你新功能导致的？或者有多少是你新功能导致的？ 先进的公司，会开个ab测试： 把用户随机分为两组（一定要随机，不能某一组女生特别多，也不能某一组大城市的特别多，也不能某一组学生特别多） 一组拍照按钮保持蓝色，另一组拍照按钮改为红色 然后对比「相同时间段相同条件下」两组用户每日拍照数量 ab测试结果： 按钮改为红色的每人每日拍照数量增长了 222% 按钮保持蓝色的每人每日拍照数量增长了 200% 整体数据增长了211% 进一步分析发现： 每人每日拍照数量增长的 真正原因是新功能上线后，全国恰好迎来了长达一周的大晴天， 天气特别好，大家出去玩的多了，拍照显著增加 所以无论你按钮是否从蓝色改为红色，拍照数量都会增加 但通过ab测试，我们可以把多了22%的数据增长归因到按钮改为红色 很多人对ab测试有误解，其中最常见的误解就是把新旧版本对比当成了ab测试，比如上面这个测试，很多公司可能会这么做： 把新功能上线后的数据和历史数据对比一下，认为这就是ab测试 这不是ab测试，ab测试的关键点： 要控制变量，如果把新功能上线后数据和历史数据对比，变量太多了，时间不一样，很多东西都变了，不能这么比，要保证你不同分组之间「其它所有条件都尽可能一模一样」，变化的只有你新上线的新功能——这样如果数据有变化，才能认为变化和新功能有关 分组要随机（其实也是为了控制变量） 显著性，P值 ab测试的另一个要点是显著性 以上面的实验为例，红色按钮比蓝色按钮的数据高出了22%，这里就会有个问题： 这个22%，是显著的吗？还是只是一个随机的波动，如果并不显著，只是随机波动，你再做一次ab测试，可能蓝色按钮反过来会比红色的高出22% 为了解决这个问题，数学家登场了，数学家引入了一个概念：P值 P值的思路就是假设你的变量是无效的，你的第一组结果纯属巧合而出现的概率是多少？比如P值＜0.05，意思就是你这个数据纯属巧合的概率低于5% 一般来说，科学界的论文，对P值的要求是0.05，关于这个数值，有两个有意思的事： 0.05不是逻辑推导出来的结果，是数学家罗纳德费希尔当时随手定的，然后被大家沿用了。如果你希望你的实验有更高的显著性，其实可以自己把P值定的更低，比如0.005，只要你有海量数据，这么定也是可以达到的 因为P被定在0.05，不然论文就发表不了，有科学家就推测：现在发表的科学论文，很可能有人为了凑数据，让P值恰好符合0.05，他们统计了这些年发表的经济学、心理学、生物学论文，确实有这个现象：很多论文的P值都卡在了0.05——肯定有人凑数据了 ab测试给我们的启发 先后发生的事情，未必有因果关系 总结因果关系是大脑的本能，但对越重要的事，越要警惕随意的总结 有时候是你自己随意总结的，比如你有一天晚上吃花生和红枣，然后睡的很好，于是总结： 晚上吃花生红枣，有助于睡眠 有时候是你的祖先和整个社会总结的，比如天冷时流感增多，于是总结： 受冻着凉会导致流感 这两个总结其实都证据不足，如果有条件，都应该开个ab测试来验证一下到底是不是这样 花生红枣是否有助于睡眠，没人做过测试。但对受冻是否导致流感，有人已经做过测试了，结论是： 如果没有流感病毒，单纯受冻并不会导致流感 违反直觉，但这就是科学，经常违反直觉，因为我们直觉经常是不准确的，我们的直觉就像大模型：迅速给出结果，没有推理，有时候很准确，经常幻觉 区分观点和理论 我们的大脑会总结无数因果关系，有些是证据充分的，可验证的，这些可以称之为理论： 比如太阳下山天会黑、纸遇火会着、万有引力、相对论、进化论…… 另一些其实比较随意，证据不充分，这些只能称之为观点：比如每年1月份出生水瓶座人的性格就像水流一般非常善变，有时活泼风趣且迷人，有时却又抑郁又懒散…… 当你做重要决策的时候，如果你有科学思维，应该学会一种思考方式： 我用来做决策的前提，到底是观点，还是理论？如果只是观点，就非常值得警惕，逻辑上来说，你根据错误的前提推出的决策，是靠不住的，经常堪忧 下次当有人告诉你应该多喝热水，不喝凉水的时候，你可以这么反驳：这只是一个观点，并不是一个理论，缺乏证据，你开过ab测试吗？然后点一杯冰水，给对方来一个不严谨的对照测试 迷信的本质是对缺乏证据的观点轻信 很多人有一种特别神奇的倾向： 科学理论，是我们当前掌握的信息下，被无数聪明人探索和验证的最深入最准确的认知，但很多人会说：万一呢？万一达尔文错了呢？进化论就不可能错吗？科学家就不可能错吗？ 巫术和迷信，是人们（这些人中很多还很蠢，智力不高）对因果关系随意的总结，证据极弱，很多人会倾向于：太灵了，我要花钱请大神给我算一卦 这个思维的奇怪在于： 对证据更强的理论大胆怀疑，对证据极弱的观点轻易笃信 科学给出的理论，有更强的证据，科学理论本身确实会迭代改进，但这个过程： 一定也是按科学方法迭代的，新的理论有更强的证据，更深入广泛的解释力，比如爱因斯坦的引力理论，从提出到实验验证，整个过程接受了最严苛的审视和批判，被证明是比牛顿引力理论更深入更准确的 新的科学理论常常不是彻底否定了旧的理论，爱因斯坦的引力理论其实不是说牛顿是错的，而是说牛顿的理论不够深入细致，在日常情况下，用牛顿理论计算都已经足够精确了，但要做更精准的计算，就需要广义相对论了 科学接受挑战和否定，但你需要更强的证据才能否定旧的，而不是简单的一句话：科学就不可能错吗？——这句话是没有意义的，这个理论有很多证据支持，要否定需要拿出新证据，而不是一句话 巫术和迷信提出的观点是随意的、缺乏证据的，「xx就不可能错吗？」——这个问句更应该给巫术和迷信，刘大仙说这俩人八字不合",
+      "quick_read": "**核心内容**：文章围绕爱因斯坦对科学本质的论断，重点阐述了“通过系统实验找出因果关系”的核心方法，特别是 ab 测试在医学、互联网等领域的应用，强调未经严格对照验证的因果关系只是观点而非可靠理论，用这种思维可以避开迷信和错误决策。\n\n**关键信息**：\n- 爱因斯坦认为科学需两根基石：形式逻辑体系与系统实验找因果关系；中国古代技术发达但未产生科学，因为科学诞生是意外，多数文明都未走出这一步。\n- 人类总结因果关系常凭直觉和随意联想（如巫术、习俗），直到文艺复兴才提倡系统实验，伽利略的物理实验和詹姆斯·林德的坏血病实验代表了从物理到生物学的 ab 测试突破。\n- ab 测试的核心是控制变量与随机分组，新功能上线后只看新旧历史对比不是 ab 测试；显著性用 P 值判断，P<0.05 是常见门槛，但存在凑数据的现象。\n- 先后发生不等于因果，例如出水痘后吃草药10天痊愈，不排除自愈；药物必须经随机双盲对照才能确认有效性和副作用，龙胆泻肝丸、丹药的毒性都因缺乏此类验证而被忽视。\n- 科学思维要求区分“理论”（证据充分可验证）与“观点”（随意总结证据不足），做重要决策时警惕以观点为前提，避免对迷信轻易笃信而对科学大胆怀疑。\n\n**值得关注**：文章揭示了一个普遍的认知陷阱——人们更倾向于质疑证据充分的科学理论，却对证据极弱的巫术和迷信深信不疑，这会直接导致决策灾难。",
+      "business_opps": [
+        {
+          "opportunity_title": "个人健康N-of-1实验助手",
+          "core_insight": "文章揭示大众盲目信偏方因缺乏AB测试验证。现在可穿戴设备+数据追踪普及，但无工具帮个人设计自身对照实验并分析因果。",
+          "product_form": "帮助关注健康的普通人和慢性病患者用科学AB测试验证饮食/补剂/习惯对自己真实效果的Web+移动应用",
+          "target_users": "量化自我爱好者、慢性病患者、健身人群；对健康偏方将信将疑，愿付费避免无效伤害",
+          "mvp_features": [
+            "实验设计向导（自身交叉对照、基线记录、洗脱期提醒）",
+            "症状/指标每日追踪与可视化",
+            "内置简易统计检验（如贝叶斯因子）自动判断效果显著性"
+          ],
+          "business_model": "免费基础版+高级分析报告订阅9.9美元/月",
+          "risks": "用户实验依从性低导致数据无效，结论被误解引发健康纠纷",
+          "scores": {
+            "pain_point": 4,
+            "market_size": 3,
+            "tech_timing": 5,
+            "buildability": 4
+          },
+          "total_score": 16
+        },
+        {
+          "opportunity_title": "生活偏方众包验证社区",
+          "core_insight": "文章指出大量传统、习俗未经验证就被当作事实传播。利用群体智慧降维执行小规模AB测试，将传闻转化为可验证假设。",
+          "product_form": "帮助普通网民验证或粉碎日常生活偏方（健康、育儿、效率等）的众包实验社区平台",
+          "target_users": "爱较真的科学思维人群、被谣言困扰的家长和患者；痛点：信息混沌、试错成本高；通过会员或打赏付费",
+          "mvp_features": [
+            "偏方验证任务拆解与标准化实验模板",
+            "参与者数据提交与群体统计分析看板",
+            "基于证据可信度的偏方评级标签（已验证/待验证/已否定）"
+          ],
+          "business_model": "会员订阅（可发起验证）加机构合作辟谣报告收费",
+          "risks": "实验质量参差不齐，虚假结论传播引发法律名誉风险",
+          "scores": {
+            "pain_point": 3,
+            "market_size": 4,
+            "tech_timing": 4,
+            "buildability": 4
+          },
+          "total_score": 15
+        }
+      ],
+      "rdev_opps": []
+    },
+    {
+      "id": "fae83ee0-3e36-4e3c-90ee-ca040b2d7541",
+      "url": "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f",
+      "title": "llm-wiki · GitHub",
+      "source_platform": "other",
+      "user_note": "Andrej Kapathy大神构想的LLM Wiki，去年我也有类似的想法，但是没有整理成很好的方案",
+      "added_at": "2026-05-20T19:41:56.963709",
+      "content_snippet": "llm-wiki · GitHub Skip to content Search Gists Search Gists Sign in Sign up You signed in with another tab or window. Reload to refresh your session. You signed out in another tab or window. Reload to refresh your session. You switched accounts on another tab or window. Reload to refresh your session. Dismiss alert Instantly share code, notes, and snippets. karpathy / llm-wiki.md Created April 4, 2026 16:25 Show Gist options Download ZIP Star 5,000+ ( 5,000+ ) You must be signed in to star a gist Fork 5,000+ ( 5,000+ ) You must be signed in to fork a gist Embed Select an option Embed Embed this gist in your website. Share Copy sharable link for this gist. Clone via HTTPS Clone using the web URL. No results found Learn more about clone URLs Clone this repository at &lt;script src=&quot;https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f.js&quot;&gt;&lt;/script&gt; Save karpathy/442a6bf555914893e9891c11519de94f to your computer and use it in GitHub Desktop. Embed Select an option Embed Embed this gist in your website. Share Copy sharable link for this gist. Clone via HTTPS Clone using the web URL. No results found Learn more about clone URLs Clone this repository at &lt;script src=&quot;https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f.js&quot;&gt;&lt;/script&gt; Save karpathy/442a6bf555914893e9891c11519de94f to your computer and use it in GitHub Desktop. Download ZIP llm-wiki Raw llm-wiki.md LLM Wiki A pattern for building personal knowledge bases using LLMs. This is an idea file, it is designed to be copy pasted to your own LLM Agent (e.g. OpenAI Codex, Claude Code, OpenCode / Pi, or etc.). Its goal is to communicate the high level idea, but your agent will build out the specifics in collaboration with you. The core idea Most people's experience with LLMs and documents looks like RAG: you upload a collection of files, the LLM retrieves relevant chunks at query time, and generates an answer. This works, but the LLM is rediscovering knowledge from scratch on every question. There's no accumulation. Ask a subtle question that requires synthesizing five documents, and the LLM has to find and piece together the relevant fragments every time. Nothing is built up. NotebookLM, ChatGPT file uploads, and most RAG systems work this way. The idea here is different. Instead of just retrieving from raw documents at query time, the LLM incrementally builds and maintains a persistent wiki — a structured, interlinked collection of markdown files that sits between you and the raw sources. When you add a new source, the LLM doesn't just index it for later retrieval. It reads it, extracts the key information, and integrates it into the existing wiki — updating entity pages, revising topic summaries, noting where new data contradicts old claims, strengthening or challenging the evolving synthesis. The knowledge is compiled once and then kept current , not re-derived on every query. This is the key difference: the wiki is a persistent, compounding artifact. The cross-references are already there. The contradictions have already been flagged. The synthesis already reflects everything you've read. The wiki keeps getting richer with every source you add and every question you ask. You never (or rarely) write the wiki yourself — the LLM writes and maintains all of it. You're in charge of sourcing, exploration, and asking the right questions. The LLM does all the grunt work — the summarizing, cross-referencing, filing, and bookkeeping that makes a knowledge base actually useful over time. In practice, I have the LLM agent open on one side and Obsidian open on the other. The LLM makes edits based on our conversation, and I browse the results in real time — following links, checking the graph view, reading the updated pages. Obsidian is the IDE; the LLM is the programmer; the wiki is the codebase. This can apply to a lot of different contexts. A few examples: Personal : tracking your own goals, health, psychology, self-improvement — filing journal entries, articles, podcast notes, and building up a structured picture of yourself over time. Research : going deep on a topic over weeks or months — reading papers, articles, reports, and incrementally building a comprehensive wiki with an evolving thesis. Reading a book : filing each chapter as you go, building out pages for characters, themes, plot threads, and how they connect. By the end you have a rich companion wiki. Think of fan wikis like Tolkien Gateway — thousands of interlinked pages covering characters, places, events, languages, built by a community of volunteers over years. You could build something like that personally as you read, with the LLM doing all the cross-referencing and maintenance. Business/team : an internal wiki maintained by LLMs, fed by Slack threads, meeting transcripts, project documents, customer calls. Possibly with humans in the loop reviewing updates. The wiki stays current because the LLM does the maintenance that no one on the team wants to do. Competitive analysis, due diligence, trip planning, course notes, hobby deep-dives — anything where you're accumulating knowledge over time and want it organized rather than scattered. Architecture There are three layers: Raw sources — your curated collection of source documents. Articles, papers, images, data files. These are immutable — the LLM reads from them but never modifies them. This is your source of truth. The wiki — a directory of LLM-generated markdown files. Summaries, entity pages, concept pages, comparisons, an overview, a synthesis. The LLM owns this layer entirely. It creates pages, updates them when new sources arrive, maintains cross-references, and keeps everything consistent. You read it; the LLM writes it. The schema — a document (e.g. CLAUDE.md for Claude Code or AGENTS.md for Codex) that tells the LLM how the wiki is structured, what the conventions are, and what workflows to follow when ingesting sources, answering questions, or maintaining",
+      "quick_read": "**核心内容**：这篇文章提出了一种用 LLM 持续构建个人或团队知识库的新范式——不是每次查询时临时检索原始文档（RAG），而是让 LLM 提前将原始资料编译成结构化、相互链接的 Markdown 维基，并长期维护与更新。用户不写 wiki，只提供资料和问题，LLM 做所有提取、总结、交叉引用和一致性维护，从而让知识随着每次添加和对话不断积累深化。\n\n**关键信息**：\n- 与传统 RAG（检索增强生成）仅在查询时检索片段不同，LLM Wiki 是在文档摄入时就提取关键信息并整合到已有知识结构中，形成持久化、可迭代的复合产物。\n- 系统分为三层：不可修改的原始资料层、LLM 完全维护的 Markdown 维基层、以及定义结构和工作流规范的 schema 文档（如 CLAUDE.md）。\n- 实践方式：LLM 代理在一侧编辑，用户在 Obsidian 等工具中实时浏览结果，维基作为“代码库”，LLM 是“程序员”。\n- 应用场景广泛：个人提升（目标/健康/心理追踪）、深度研究、书籍阅读整理（类似粉丝维基）、团队内部知识库（从会议、Slack、项目文档自动维护）等。\n\n**值得关注**：把 LLM 从一个按需回答的检索器，转变为一个持续“编译”知识并维护状态的知识库构建代理，这种从“即用即扔”到“积累资产”的思维切换，是让 LLM 输出真正随时间增值的关键。",
+      "business_opps": [
+        {
+          "opportunity_title": "LLM 驱动个人维基自动生成器",
+          "core_insight": "LLM 可持续从笔记、文章里提取实体与关系，持久化为结构化维基，摆脱每次查询重新检索的低效。",
+          "product_form": "帮助终身学习者和研究者将碎片化信息自动整理成相互链接、持续更新的个人知识维基的 SaaS 工具",
+          "target_users": "研究员、写作者、重度笔记用户；面临资料堆积、难综合的痛点；愿按月度订阅付费",
+          "mvp_features": [
+            "拖拽上传多格式文档，自动抽取关键实体与主题",
+            "自动生成并持续更新 Markdown 维基页面，含交叉链接与矛盾标记",
+            "可视化知识图谱浏览与自然语言查询"
+          ],
+          "business_model": "免费版有限存储，Pro 版按月收费 (9-19美元) 或按调用量计费",
+          "risks": "LLM 处理成本高、生成内容质量不稳定，用户信任建立难",
+          "scores": {
+            "pain_point": 4,
+            "market_size": 3,
+            "tech_timing": 5,
+            "buildability": 4
+          },
+          "total_score": 16
+        },
+        {
+          "opportunity_title": "自治团队维基：让内部知识保鲜进化",
+          "core_insight": "用 LLM 监听项目文档与讨论，自动整合与更新团队 Wiki，避免信息过期和碎片化。",
+          "product_form": "帮助中小团队解决文档过时、信息孤岛问题的持续进化型团队知识管理平台",
+          "target_users": "初创团队、远程项目组；文档分散、难维护；有团队协作工具预算，接受按席位付费",
+          "mvp_features": [
+            "接入 Slack、Notion、Google Docs 等信息源",
+            "自动创建/修订维基页面，标注最新更新与冲突点",
+            "差异摘要推送与手动审核工作流"
+          ],
+          "business_model": "按团队席位数按月订阅 (如每席位 15 美元/月)",
+          "risks": "数据隐私顾虑与多重集成复杂度高，冷启动时价值展示慢",
+          "scores": {
+            "pain_point": 5,
+            "market_size": 4,
+            "tech_timing": 5,
+            "buildability": 3
+          },
+          "total_score": 17
+        }
+      ],
+      "rdev_opps": []
+    },
+    {
+      "id": "45d99f00-c701-437f-aeb6-1434765e1c73",
+      "url": "https://trinkle23897.github.io/learning-beyond-gradients/#zh-section-5",
+      "title": "Learning Beyond Gradients",
+      "source_platform": "Blog",
+      "user_note": "一种新的范式,在AIcoding能力越来越强的今天，维护规则的成本变得更低。",
+      "added_at": "2026-05-19T17:01:18.516114",
+      "content_snippet": "Learning Beyond Gradients English 中文 Dark Learning Beyond Gradients Jiayi Weng Continual Learning has remained hard largely because of catastrophic forgetting in neural networks: learn something new, and old capabilities can get overwritten. But what if we do not put all of our attention on neural network weights? Is there another way to make progress? As LLM agents get stronger, coding gets faster and better. But the phenomenon I find more interesting is different: a coding agent can keep reading failures, editing code, adding tests, and watching replays, and a program system can improve without training a new network or updating weights. That made me rethink heuristics: hand-written rules and programmatic policies. Many heuristics were not useless; they were simply too expensive to maintain. Coding agents change that maintenance curve. Rules that used to be one-off patches may start to become code worth owning for the long term. Anything that can be iterated on continuously starts to become more solvable. That is also what Continual Learning has always wanted. Could this become the next paradigm after pretraining, RLHF, and large-scale RL/RLVR? # The Anomaly While maintaining EnvPool in my spare time, I wanted a cheaper way to test whether game environments were behaving correctly. Running a neural network every time was too expensive for CI. The initial question was: Can we write cheap, reproducible heuristics that are much stronger than a random policy,\nand use them to drive environments into informative states? I tried using Codex ( gpt-5.4 ) to write a rule-based version, with no neural network at all. After a few rounds, the results were far more surprising than I expected: In Atari Breakout, a programmatic policy went from 387 -> 507 -> 839 -> 864 , eventually reaching the theoretical maximum score. In MuJoCo Ant, a pure Python policy first learned a rhythmic gait, then added short-horizon model planning, and finally reached 6000+ , in the range of common Deep RL results. In MuJoCo HalfCheetah, interpretable gait/posture rules plus online planning reached a five-episode evaluation mean of 11836.7 , also in the range of common Deep RL results. In VizDoom, a first-person visual-control task, cv2/NumPy screen CV without neural-network training reached mean=557.0 and min=440.0 over 10 seeds on D3 Battle. Across Atari57, I ran 57 games x 2 observation modes x 3 repeats = 342 coding-agent search trajectories. The results were uneven, but under a fixed environment-step budget, median HNS around 1M environment steps was already far above PPO-style Deep RL baselines at the same step count. The raw scores were surprising enough. But the more interesting part was: Codex was not training a neural network. It was maintaining a software system that could keep growing. Breakout policy was far beyond \"move left when the ball is on the left.\" The policy had grown action probes, state readers, ball and paddle detectors, landing prediction, stuck-loop detection, regression tests, video replays, and experiment logs. Ant policy was more than a gait formula too: it had rhythmic control, posture feedback, contact signals, and short-horizon model rollouts. That is when I felt a new concept was needed. The thing being updated was no longer just a policy function. It was a software system with memory, feedback channels, and regression mechanisms. # Heuristic Learning After more iteration with Codex, I started calling this process Heuristic Learning (HL) : HL is built out of program code. Like Deep RL as commonly practiced today, it has a loop of state, action, feedback, and update; unlike that setup, the object being updated is software structure rather than neural-network parameters. Its feedback is consumed by a coding agent, and can come from environment reward, test cases, logs, videos, replays, or human feedback. Its updates do not use backpropagation. The coding agent directly edits policies, state detectors, tests, configuration, or memory. HL is the learning and update process. The object maintained by HL over time can be called a Heuristic System (HS) . An HS is more than an isolated policy.py . It contains at least a programmatic policy, state representation, feedback channels, experiment records, replays or tests, memory, and an update mechanism executed by a coding agent. A single rule is not enough. Rules, feedback, history, and the next update path all need to connect before it becomes an HS. As a table: Axis Deep RL HL Policy Neural network parameters Code: rules, state machines, controllers, MPC, macro-actions State Usually explicit observations Usually explicit variables, detectors, caches, and other readable representations Action Produced by a neural network forward pass Produced by executing code logic Feedback Mainly fixed reward Provided through coding-agent context: tests, environment feedback, logs, and replays all count Update Gradient-based updates to neural-network parameters in a Deep RL algorithm Direct code edits by a coding agent Memory On-policy methods basically have none; off-policy methods have replay buffers Can explicitly store trials, summaries, failure reasons, replays, and version diffs Heuristic Learning has several useful properties compared with Deep RL: Explainability: neural networks are hard to explain, while HL policies can often be translated into plain language. Sample Efficiency: one effective code update can jump directly to a new policy, rather than slowly climbing through learning-rate tuning. Regression-testability: old capabilities can become tests, replays, or golden cases. Overfitting can be constrained: code heuristics can still overfit to seeds, environment details, or test loopholes, but simplification, regression checks, and multi-seed evaluation provide an engineering form of regularization. It can avoid part of catastrophic forgetting: old capabilities do not have to live only inside model weights; they can be written into rule sets and tests.",
+      "quick_read": "**核心内容**：文章提出了一种超越梯度下降的新学习范式“启发式学习”，核心是用编程式策略替代神经网络权重更新，借助编码代理持续迭代一个包含规则、测试、记忆与反馈的软件系统，从而大幅提升样本效率、可解释性与抗遗忘能力。\n\n**关键信息**：\n- 作者在维护环境池时意外发现，用编码代理迭代生成的纯代码策略，在雅达利、MuJoCo等环境中达到或超越了常见深度强化学习结果，部分甚至触及理论上限。\n- 这种新范式被定义为“启发式学习”，它更新的是软件结构而非神经网络参数；其反馈可来自奖励、测试、日志、回放或人工输入，更新方式是直接编辑代码。\n- 启发式学习所维护的对象称为“启发式系统”，它不仅包含策略代码，还整合了状态检测、反馈通道、实验记录、回归测试与显式记忆等模块。\n- 相比深度强化学习，启发式学习具有可解释性强、样本效率高、支持回归测试、可通过工程手段约束过拟合，并能将旧能力固化为规则和测试以缓解灾难性遗忘。\n\n**值得关注**：编码代理改变了维护成本曲线，让过去难以长期持有的手工规则可以持续迭代，这可能成为预训练、RLHF和大规模RL之后的下一轮范式转折点。",
+      "business_opps": [
+        {
+          "opportunity_title": "LLM驱动的启发式策略持续迭代平台",
+          "core_insight": "LLM编码代理可自动阅读失败、编辑代码并运行测试，把高昂的规则维护成本降至近乎零，使纯规则策略媲美深度RL。",
+          "product_form": "帮助游戏/机器人开发者在CI中自动生成并持续优化可解释行为测试规则的SaaS工具。",
+          "target_users": "游戏开发团队、机器人仿真工程师，痛点是RL测试成本高且不可解释，愿为提升迭代效率付费。",
+          "mvp_features": [
+            "接入环境API持续采集失败状态",
+            "LLM代理自动修改规则代码并回测",
+            "可解释的策略版本与性能报告面板"
+          ],
+          "business_model": "按测试运行时长或代理调用次数计费，个人免费层+团队订阅。",
+          "risks": "LLM生成代码的稳定性与正确性不足，依赖外部模型API的延迟和成本。",
+          "scores": {
+            "pain_point": 5,
+            "market_size": 3,
+            "tech_timing": 5,
+            "buildability": 4
+          },
+          "total_score": 17
+        },
+        {
+          "opportunity_title": "业务规则自演进引擎（Rules-as-Code持续学习）",
+          "core_insight": "编码代理能让陈旧的手写业务规则像软件一样持续迭代，解决金融、电商等领域规则维护昂贵且滞后的问题。",
+          "product_form": "帮助金融/电商/物流企业将硬编码规则转化为可自动监控、测试和优化代码块的API与仪表板产品。",
+          "target_users": "金融风控、电商推荐、物流调度团队的技术负责人，痛点规则失效快、人工调整慢。",
+          "mvp_features": [
+            "导入现有规则代码并接入业务指标",
+            "LLM代理根据指标波动生成改进脚本",
+            "沙盒回测对比新旧规则效果并一键发布"
+          ],
+          "business_model": "按规则数量与迭代频次的企业年订阅，提供私有部署增值服务。",
+          "risks": "业务逻辑高度敏感，代码注入与合规风险大，客户信任建立周期长。",
+          "scores": {
+            "pain_point": 5,
+            "market_size": 4,
+            "tech_timing": 4,
+            "buildability": 3
+          },
+          "total_score": 16
+        }
+      ],
+      "rdev_opps": [
+        {
+          "type": "研发提效",
+          "title": "AI代理自动迭代CI测试策略",
+          "trigger": "编程代理通过失败日志与回放持续编写优化启发式规则，无需训练网络",
+          "scenario": "在CI/CD流水线中，目前依靠人工编写或模型驱动的环境测试，核心痛点在于测试脚本维护成本高、覆盖不足且集成测试运行慢",
+          "ai_solution": "利用LLM代理分析CI失败日志、环境状态与代码变更，自动生成轻量级启发式测试脚本并不断优化，替代昂贵神经网络推理",
+          "implementation": "在GitLab CI中集成代理服务，每次构建失败触发分析并自动提交优化后的测试脚本PR",
+          "audience": [
+            "后端",
+            "测试开发"
+          ],
+          "impact": "测试脚本维护人力减少50%，环境异常检出率提升30%",
+          "difficulty": "中",
+          "scores": {
+            "efficiency": 8,
+            "feasibility": 7,
+            "business_impact": 6,
+            "overall": 8
+          },
+          "total_score": 8
+        },
+        {
+          "type": "业务赋能",
+          "title": "可进化的游戏/仿真策略服务",
+          "trigger": "纯规则策略通过编码代理迭代达到Atari Breakout理论最高分，超越深度RL基线",
+          "scenario": "在游戏AI或机器人仿真中，目前多采用强化学习训练模型，痛点在于训练周期长、推理成本高且策略不可解释",
+          "ai_solution": "提供编码代理平台，根据环境反馈持续编写与优化“规则+在线规划”的程序化策略，替代或辅助神经网络模型，实现低资源进化",
+          "implementation": "提供SDK嵌入引擎，云端代理分析对局数据，自动更新策略代码并下发，实现AI策略持续进化",
+          "audience": [
+            "游戏开发",
+            "机器人仿真"
+          ],
+          "impact": "AI策略开发周期从天级缩短至小时级，推理计算成本降低90%",
+          "difficulty": "中",
+          "scores": {
+            "efficiency": 9,
+            "feasibility": 7,
+            "business_impact": 8,
+            "overall": 8
+          },
+          "total_score": 8
+        }
+      ]
+    }
+  ]
+}

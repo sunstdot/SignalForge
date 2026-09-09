@@ -1,0 +1,701 @@
+{
+  "id": "52b5ebd5-4010-4a8c-8494-2f0c33d71c86",
+  "date": "2026-08-07",
+  "items": [
+    {
+      "id": "arxiv-2608.06377v1",
+      "title": "Learning When to Trust via Selective Context Preference Optimization",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2608.06377v1",
+      "summary": "Language models increasingly condition their answers on external signals, and a single misleading one can turn a correct answer wrong. The obvious remedy, training models to resist such signals, hides",
+      "category": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "arxiv-2608.06370v1",
+      "title": "The Bitter Lesson of Tool Calling",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2608.06370v1",
+      "summary": "Tool use transforms LLMs into agents that act beyond their training data, and for code-capable models, programmatic tool calling extends this further by replacing rigid JSON calls with scripts that ch",
+      "category": [
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "arxiv-2608.06366v1",
+      "title": "Tracing the Heart: An Evidence-Linked Pipeline for Heart-Failure Feature Engineering",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2608.06366v1",
+      "summary": "Electronic health record (EHR) feature engineering is a major bottleneck in clinical research and AI, accounting for 39-45% of data scientists' workload. This is especially pronounced in heart failure",
+      "category": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "arxiv-2608.06364v1",
+      "title": "Investigating Artificial Intelligence Digital Sovereignty in Mobile Shopping Apps: A Case Study of Nigeria",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2608.06364v1",
+      "summary": "The use of e-commerce mobile applications is expanding in Nigeria, creating both opportunities and risks, including fraud and reduced user control over digital technologies, raising concerns about dig",
+      "category": [
+        "cs.CY",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "arxiv-2608.06363v1",
+      "title": "An Optimal Agnostic PAC Algorithm",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2608.06363v1",
+      "summary": "Let $H\\subseteq\\{-1,+1\\}^X$ be a class of finite VC dimension $d\\ge1$. Writing $L$ for the binary risk and $L^*=\\min_{h\\in H}L(h)$, we construct a learner achieving the statistically optimal risk boun",
+      "category": [
+        "cs.LG",
+        "cs.AI",
+        "cs.DS"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "arxiv-2608.06362v1",
+      "title": "AV-AIVAT: 74x Cheaper Agent Evaluation with Certified Anytime-Valid Stopping in Imperfect-Information Games",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2608.06362v1",
+      "summary": "Deciding which of two agents is stronger means playing games until skill outweighs luck, and every game costs money, model inference, or expert time. Since the number of games needed is unknown, fixed",
+      "category": [
+        "cs.GT",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "arxiv-2608.06361v1",
+      "title": "The Low Frequency Trap: Video Language Models Fail at Simple Event Bookkeeping",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2608.06361v1",
+      "summary": "Real-world video benchmarks provide broad coverage, but their fixed clips entangle event count, rate, duration, and visual complexity, making failure modes hard to isolate. While existing programmatic",
+      "category": [
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "arxiv-2608.06353v1",
+      "title": "Resourced Authority A Mechanism-Design Model for Participatory Governance of Deployed AI Agents",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2608.06353v1",
+      "summary": "We give a formal mechanism design model for the continuous participatory governance of a deployed AI agent. The mechanism is built on the principle that governance should control an AI agent through r",
+      "category": [
+        "cs.GT",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "arxiv-2608.06352v1",
+      "title": "CalibForge: Adversarial Solver Calibration for Scaling Learnable Terminal Tasks",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2608.06352v1",
+      "summary": "Training terminal agents requires executable and verifiable tasks that are not merely solvable, but appropriately challenging for learning. Executable validation establishes feasibility, yet does not ",
+      "category": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "arxiv-2608.06351v1",
+      "title": "Challenges in Evaluating Explanation Methods for Static and Evolving Data",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2608.06351v1",
+      "summary": "This paper addresses the limitations of Explainable Artificial Intelligence (XAI) with respect to insufficient evaluation. They are illustrated through the DetoxAI image recognition system for bias de",
+      "category": [
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "arxiv-2608.06347v1",
+      "title": "RP-OPSD: Reasoning-Pivot-Guided On-Policy Self-Distillation for Multilingual Reasoning Transfer",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2608.06347v1",
+      "summary": "Multilingual reasoning transfer is crucial for extending reasoning capabilities of large language models (LLMs) beyond high-resource languages. On-policy self-distillation (OPSD) and its variants have",
+      "category": [
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "arxiv-2608.06346v1",
+      "title": "TRAJDEBUG: Tracing Error Lifecycle to Identify Critical Failures in Long-Horizon Agent Trajectories",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2608.06346v1",
+      "summary": "LLM-based agentic systems have shown remarkable capabilities in complex domains, while suffering from cascading errors and difficulty in debugging. Critical error detection aims to locate the earliest",
+      "category": [
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "arxiv-2608.06340v1",
+      "title": "Scalable estimation of VARMA models",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2608.06340v1",
+      "summary": "Vector autoregressive moving-average (VARMA) models have long been considered impractical beyond moderate dimensions: the likelihood is non-convex, the parametrization is identified only up to equival",
+      "category": [
+        "stat.ML",
+        "cs.LG",
+        "math.ST"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "arxiv-2608.06337v1",
+      "title": "Optimal Rates for Learning with Monotone Adversaries",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2608.06337v1",
+      "summary": "A monotone adversary observes an i.i.d. labeled sample and appends a finite number of further examples of its choice, every one of them labeled correctly by the target hypothesis. The learner sees a u",
+      "category": [
+        "stat.ML",
+        "cs.DS",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "arxiv-2608.06331v1",
+      "title": "Tytan: Interactive Neurosymbolic Construction of Analytic Semantic Schemas from Relational Data",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2608.06331v1",
+      "summary": "From natural-language query interfaces to automated report generation, data analysis tools need a description of the data: the real-world entities it contains, which columns function as measures or id",
+      "category": [
+        "cs.DB",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "github-c83fca2020a5",
+      "title": "TencentCloud/TencentDB-Agent-Memory — TencentDB Agent Memory is a team-level memory hub for AI Agents — turning conver",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+      "summary": "TencentDB Agent Memory is a team-level memory hub for AI Agents — turning conversations, docs, and code into four reusable memory assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) that are governed, s",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "github-0508d109f745",
+      "title": "addyosmani/agent-skills — Production-grade engineering skills for AI coding agents.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "summary": "Production-grade engineering skills for AI coding agents. | 🔥 593 stars today | Language: JavaScript",
+      "category": [
+        "开源项目",
+        "JavaScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "github-89a332dc8303",
+      "title": "cloudflare/computer — Give your agent a computer 👾",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/cloudflare/computer",
+      "summary": "Give your agent a computer 👾 | 🔥 2802 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "github-06e6a3ccccc3",
+      "title": "mattpocock/skills — Skills for Real Engineers. Straight from my .agents directory.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/mattpocock/skills",
+      "summary": "Skills for Real Engineers. Straight from my .agents directory. | 🔥 1873 stars today | Language: Shell",
+      "category": [
+        "开源项目",
+        "Shell"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "github-cd6d233d6e75",
+      "title": "goauthentik/authentik — The authentication glue you need.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/goauthentik/authentik",
+      "summary": "The authentication glue you need. | 🔥 138 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "github-44cced6cc365",
+      "title": "huangruiteng/loopx — Lightweight loop engineering state kernel for long-running AI agent teams. Agent",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/huangruiteng/loopx",
+      "summary": "Lightweight loop engineering state kernel for long-running AI agent teams. Agent-loop agnostic across Codex, Claude Code, and other coding agents, with durable goals, quota-aware auto-wake, executable",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "github-2f179647bda6",
+      "title": "google/guava — Google core libraries for Java",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/google/guava",
+      "summary": "Google core libraries for Java | 🔥 13 stars today | Language: Java",
+      "category": [
+        "开源项目",
+        "Java"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "github-27c37036f35e",
+      "title": "TapXWorld/ChinaTextbook — 所有小初高、大学PDF教材。",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/TapXWorld/ChinaTextbook",
+      "summary": "所有小初高、大学PDF教材。 | 🔥 134 stars today | Language: Roff",
+      "category": [
+        "开源项目",
+        "Roff"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "github-68e04ce84248",
+      "title": "Significant-Gravitas/AutoGPT — AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "summary": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters. | 🔥 37 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "github-aec244e5e2b0",
+      "title": "tirth8205/code-review-graph — Local-first code intelligence graph for MCP and CLI. Builds a persistent map of ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/tirth8205/code-review-graph",
+      "summary": "Local-first code intelligence graph for MCP and CLI. Builds a persistent map of your codebase so AI coding tools read only what matters, with benchmarked context reductions on reviews and large-repo w",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "github-a2a61e8261ff",
+      "title": "esengine/DeepSeek-Reasonix — DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cach",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/esengine/DeepSeek-Reasonix",
+      "summary": "DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability — leave it running. | 🔥 888 stars today | Language: Go",
+      "category": [
+        "开源项目",
+        "Go"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "github-ecb7de9cc8a0",
+      "title": "obra/superpowers — An agentic skills framework &amp; software development methodology that works.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/obra/superpowers",
+      "summary": "An agentic skills framework &amp; software development methodology that works. | 🔥 858 stars today | Language: Shell",
+      "category": [
+        "开源项目",
+        "Shell"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "github-7c784d837298",
+      "title": "firecrawl/pdf-inspector — Fast Rust library for PDF inspection, classification, and text extraction. Intel",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/firecrawl/pdf-inspector",
+      "summary": "Fast Rust library for PDF inspection, classification, and text extraction. Intelligently detects scanned vs text-based PDFs to enable smart routing decisions. | 🔥 1190 stars today | Language: Rust",
+      "category": [
+        "开源项目",
+        "Rust"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "hf-model-7accbea85440",
+      "title": "🤗 MiniMaxAI/MiniMax-H3",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+      "summary": "Task: image-text-to-video | Downloads: 12,102 | Likes: 2,822",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "hf-model-b32b4f855284",
+      "title": "🤗 deepseek-ai/DeepSeek-V4-Flash-0731",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+      "summary": "Task: text-generation | Downloads: 617,900 | Likes: 2,685",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "hf-model-855573ebdc9c",
+      "title": "🤗 moonshotai/Kimi-K3",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3",
+      "summary": "Task: image-text-to-text | Downloads: 1,258,043 | Likes: 10,230",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "hf-model-5984818d906d",
+      "title": "🤗 Comfy-Org/MiniMax-H3",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3",
+      "summary": "Downloads: 2,295,377 | Likes: 874",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "hf-model-2a4ddd4190b3",
+      "title": "🤗 unsloth/DeepSeek-V4-Flash-0731-GGUF",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/unsloth/DeepSeek-V4-Flash-0731-GGUF",
+      "summary": "Downloads: 145,105 | Likes: 564",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "hf-model-943949c382c2",
+      "title": "🤗 DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
+      "summary": "Task: image-text-to-text | Downloads: 2,087,189 | Likes: 1,665",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "hf-model-03faa1fa5302",
+      "title": "🤗 ethanfel/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/ethanfel/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot",
+      "summary": "Task: image-text-to-text | Likes: 353",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "hf-model-6fcb72d656e3",
+      "title": "🤗 LiquidAI/LFM2.5-2.6B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B",
+      "summary": "Task: text-generation | Downloads: 73,573 | Likes: 343",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "hf-model-c5d9fa10a81a",
+      "title": "🤗 larryvrh/MiniMax-H3-Turbo-Lora",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora",
+      "summary": "Task: text-to-video | Likes: 341",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "hf-model-e66836d0026b",
+      "title": "🤗 baidu/Unlimited-OCR",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/baidu/Unlimited-OCR",
+      "summary": "Task: image-text-to-text | Downloads: 2,791,862 | Likes: 3,937",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "hf-paper-e8e8077ac4a2",
+      "title": "From Economic Agents to Agentic Economies: A Systems Blueprint for Economic World Models",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2608.06020",
+      "summary": "Economic World Models (EWMs) are generative economic models that simulate how economies evolve from within by modeling heterogeneous agents, their beliefs and actions, and the market and institutional",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "hf-paper-f421888a5b44",
+      "title": "MASS: Multiplayer World Models with Authoritative Shared State",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2608.06257",
+      "summary": "Current video world models struggle in multiplayer environments because they entangle world state with view-dependent visual latents, leading to redundant compute, view inconsistencies, and poor scala",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "hf-paper-437b658455ff",
+      "title": "ContextMaster: Interactive Multi-Shot Video Creation via Fixed-Budget Sparse Context Routing",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2608.04956",
+      "summary": "Recent video models increasingly support generation, reference conditioning, and editing within a single model, yet typically expose them as separate operations over fixed inputs. Practical creation u",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "hf-paper-2a791e4f4ccf",
+      "title": "EffectLearner: World-Aware Object-Effect Reasoning for Real-World Video Object Removal",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2608.05565",
+      "summary": "Video object removal must eliminate not only the target object but also its induced effects while maintaining high-fidelity and spatiotemporally coherent restoration. Existing methods mainly learn obj",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "hf-paper-9a907a32afc1",
+      "title": "Invisible Shortcuts: Why Vision Encoders Know Your Camera",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2608.05424",
+      "summary": "Deep vision models exploit shortcuts, relying on cues that correlate with supervision signals. Prior work has focused on visible biases, such as object-background or texture correlations. We identify ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "hf-paper-6c8c6ee593aa",
+      "title": "OSReward: Instituting Standardized Evaluation for Cross-Platform Computer-Use Reward Models",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2607.28609",
+      "summary": "Computer-using agents (CUAs) are advancing rapidly across the digital world. A CUA trajectory records the agent's actions, states, and reasoning. Verifying whether it fulfilled the task instruction is",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "hf-paper-ee63215e1d35",
+      "title": "PaDoc: Layout-Grounded Parallel Decoding for Document Parsing",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2608.06146",
+      "summary": "End-to-end document parsers provide a unified interface, but serialize page layouts and regional contents into one autoregressive sequence. This formulation forces independent regions onto a decoding ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "hf-paper-f5580a709eb0",
+      "title": "World-to-Wrist: Task-Conditioned Future Wrist Modeling for Fine-Grained Robot Manipulation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2608.05369",
+      "summary": "Vision-language-action (VLA) models often treat main-view and wrist-view observations as parallel visual inputs, overlooking their distinct roles in robot manipulation. Fine-grained manipulation, howe",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "hf-paper-ce079c960a64",
+      "title": "EnvACE: Internalizing Environment Dynamics via World Rehearsal for Agentic Reinforcement Learning",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2608.06197",
+      "summary": "Training large language model agents for long-horizon tool use typically relies on interactions with real or synthesized executable environments, whose construction and verification are costly, or on ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    },
+    {
+      "id": "hf-paper-e244f92852f0",
+      "title": "SmartMage: Dynamic Modality Orchestration for 3D Scene Understanding",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2608.05137",
+      "summary": "Understanding 3D scenes is fundamental to embodied intelligence, requiring joint reasoning over heterogeneous information from multiple modalities, including visual and geometric cues. However, the re",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-07"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-09-09T12:07:24.884456"
+}

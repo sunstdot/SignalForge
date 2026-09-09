@@ -1,0 +1,19 @@
+{
+  "id": "77b9b8bc-b2d1-4f2a-83c4-b9c44a214461",
+  "content_id": "",
+  "title": "社交书签本地管理工具",
+  "description": "**机会点**\n将X/Twitter书签同步并本地存储的CLI工具，解决信息过载和内容沉淀问题\n\n**推导依据**\nfieldtheory-cli获1,258星，针对社交媒体内容管理这一高频刚需\n\n**为什么现在**\n信息爆炸时代，本地知识管理需求上升；AI使内容二次利用成为可能",
+  "difficulty": "medium",
+  "estimated_days": 7,
+  "tags": [],
+  "status": "pending",
+  "priority": 16.0,
+  "briefing_date": "",
+  "source_type": "repo",
+  "source_title": "afar1/fieldtheory-cli — Sync and locally store all of your X/Twitter bookmarks. Free and open source CLI",
+  "source_url": "https://github.com/afar1/fieldtheory-cli",
+  "inspiration": "",
+  "product_concept": {},
+  "source_context": "",
+  "created_at": "2026-04-09T12:23:11.971859"
+}

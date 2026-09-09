@@ -1,0 +1,863 @@
+{
+  "id": "646d1902-de7d-418a-9a98-7d591e9ebeaa",
+  "date": "2026-09-03",
+  "items": [
+    {
+      "id": "arxiv-2609.02624v1",
+      "title": "Automated Vulnerability Injection in Smart Contracts Using Large Language Models",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2609.02624v1",
+      "summary": "Assessing vulnerability detection tools for smart contracts requires datasets with known ground truth, yet such datasets are scarce and difficult to build by hand. We propose an approach that uses Lar",
+      "category": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CR"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "arxiv-2609.02623v1",
+      "title": "Scalable Direction-Following TTS via Voice Impression-Guided Pseudo Triplet Construction",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2609.02623v1",
+      "summary": "Voice actors often re-read the same script while modifying their delivery in response to performance directions. We study this setting as direction-following TTS, where a system generates a new uttera",
+      "category": [
+        "cs.SD",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "arxiv-2609.02622v1",
+      "title": "Source Distribution Estimation by Posterior Averaging",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2609.02622v1",
+      "summary": "Simulation-based science often requires a distribution over simulator parameters whose push-forward reproduces a set of real observations: this is the source distribution estimation (SDE) problem. Exi",
+      "category": [
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "arxiv-2609.02620v1",
+      "title": "Collective creativity in hybrid societies",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2609.02620v1",
+      "summary": "Generative AI is changing how cultural artifacts are created and circulated, and with it our understanding of creativity itself. Researchers disagree about whether these tools enrich or impoverish cul",
+      "category": [
+        "cs.AI",
+        "cs.CY",
+        "cs.MA"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "arxiv-2609.02606v1",
+      "title": "Predictors of Loneliness in Older Adults Using Multimodal Analysis of Speech and Language",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2609.02606v1",
+      "summary": "Loneliness is a critical public health issue among older adults, linked to higher risks of depression, cognitive decline, and mortality. Scalable, objective methods for its detection remain limited, p",
+      "category": [
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "arxiv-2609.02580v1",
+      "title": "Competitive Market Behavior of LLMs",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2609.02580v1",
+      "summary": "Large language models (LLMs) are increasingly deployed as economic agents, yet there is little evidence whether LLM agents are suited for participating in market mechanisms designed for humans, and wh",
+      "category": [
+        "cs.MA",
+        "cs.AI",
+        "econ.GN"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "arxiv-2609.02568v1",
+      "title": "Learning-Based Reconstruction Attacks on Coordinate-Obfuscated Point Clouds",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2609.02568v1",
+      "summary": "Volumetric video based on point cloud representations enables immersive virtual and augmented reality applications but introduces significant challenges for efficient and secure content delivery. Prio",
+      "category": [
+        "cs.CR",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "arxiv-2609.02566v1",
+      "title": "Online Reinforcement Learning in the Met Office Unified Model through Distributed Model-Agent Coupling",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2609.02566v1",
+      "summary": "Machine-learnt corrections can complement numerical weather prediction only if they adapt to the evolving model state while preserving dynamical consistency and numerical stability. To test this withi",
+      "category": [
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "arxiv-2609.02549v1",
+      "title": "ProbeMatchDTI: Probe-Driven Multi-Scale Biochemical Pattern Matching for Drug-Target Interaction Prediction",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2609.02549v1",
+      "summary": "Drug-target interaction (DTI) prediction is an important task in AI-driven drug discovery. Although recent biochemical representation learning methods have improved DTI prediction, their passive featu",
+      "category": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "arxiv-2609.02548v1",
+      "title": "Learn from Whoever Is Right: Answer-Verified Multi-Teacher Distillation for Multi-Domain LLMs",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2609.02548v1",
+      "summary": "Modern large language models (LLMs) rely on reinforcement learning to build strong capabilities in individual domains, but integrating those capabilities into a single deployable model remains challen",
+      "category": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "arxiv-2609.02540v1",
+      "title": "TrajMind: Chaining Role-Specialized LoRAs for Fast-and-Slow Collective Trajectory Anomaly Diagnosis",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2609.02540v1",
+      "summary": "Diagnosing collective anomalies from urban trajectories is increasingly important for traffic governance, as it reveals what happened, who was involved, and where and when the event occurred. Existing",
+      "category": [
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "arxiv-2609.02538v1",
+      "title": "A Comparative Study of Graph Representations for GNN-Based Power Grid Control in L2RPN",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2609.02538v1",
+      "summary": "Graph construction is a critical but underexamined design choice in deep reinforcement learning for power grid control. We present a controlled experimental comparison of different graph representatio",
+      "category": [
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "arxiv-2609.02529v1",
+      "title": "Fine-Grained Anomaly Perception in Wild UGC-Enhanced Images: A Comprehensive Dataset and Difference-Fusion Framework",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2609.02529v1",
+      "summary": "Image enhancement and restoration have become standard back-end operations on short-video and social media platforms to boost UGC visual experience. Yet these processes inevitably introduce visual ano",
+      "category": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "arxiv-2609.02526v1",
+      "title": "When Persona Attributes Improve Population Alignment in Large Language Models",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2609.02526v1",
+      "summary": "Large Language Models (LLMs) are increasingly used to predict the responses of human participants in survey panels. Towards that goal, persona prompting has recently emerged as a technique to inform a",
+      "category": [
+        "cs.CL",
+        "cs.CY"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "arxiv-2609.02519v1",
+      "title": "Spectral Initialization and Scheduled Graph Smoothness for Uncertain Knowledge Graph Completion",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2609.02519v1",
+      "summary": "Uncertain knowledge graphs (UKGs) extend knowledge graphs by assigning each triple a continuous confidence score. Since most possible triples lack observed confidences, recent methods rely on semi-sup",
+      "category": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "github-bece10e813a2",
+      "title": "fmtlib/fmt — A modern formatting library",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/fmtlib/fmt",
+      "summary": "A modern formatting library | 🔥 14 stars today | Language: C++",
+      "category": [
+        "开源项目",
+        "C++"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "github-251760ccc581",
+      "title": "google-research/timesfm — TimesFM (Time Series Foundation Model) is a pretrained time-series foundation mo",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/google-research/timesfm",
+      "summary": "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting. | 🔥 343 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "github-f93f47da99e7",
+      "title": "DietrichGebert/ponytail — Makes your AI agent think like the laziest senior dev in the room. The best code",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "summary": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote. | 🔥 1354 stars today | Language: JavaScript",
+      "category": [
+        "开源项目",
+        "JavaScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "github-6a2270c8df1e",
+      "title": "debpalash/VoiceStudio — VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloni",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "summary": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription &amp; audiobook creation in 646 languages. | 🔥 832 stars today",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "github-12dae5b619ec",
+      "title": "sngyai/Sequoia-X — A股自动选股系统 — 多种技术形态自动扫描，收盘后自动运行并推送飞书",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/sngyai/Sequoia-X",
+      "summary": "A股自动选股系统 — 多种技术形态自动扫描，收盘后自动运行并推送飞书 | 🔥 63 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "github-ab44b38b4120",
+      "title": "ChromeDevTools/chrome-devtools-mcp — Chrome DevTools for coding agents",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "summary": "Chrome DevTools for coding agents | 🔥 148 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "github-3c19e4a80a3d",
+      "title": "NousResearch/hermes-agent — The agent that grows with you",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "summary": "The agent that grows with you | 🔥 533 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "github-13a07b548fe0",
+      "title": "superlinked/sie — Open-source inference server and production cluster for all the models your agen",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/superlinked/sie",
+      "summary": "Open-source inference server and production cluster for all the models your agent needs. | 🔥 60 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "github-67e652b69e35",
+      "title": "pacifio/atlas — Source control for agents. Use multiple coding agents, track their changes and q",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/pacifio/atlas",
+      "summary": "Source control for agents. Use multiple coding agents, track their changes and query them in one place | 🔥 888 stars today | Language: Rust",
+      "category": [
+        "开源项目",
+        "Rust"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "github-ef5f7071e2b9",
+      "title": "zyronon/TypeWords — Practice English, one strike, one step forward; 练习英语，一次敲击，一点进步；",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/zyronon/TypeWords",
+      "summary": "Practice English, one strike, one step forward; 练习英语，一次敲击，一点进步； | 🔥 21 stars today | Language: Vue",
+      "category": [
+        "开源项目",
+        "Vue"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "github-bdfeea019558",
+      "title": "Imbad0202/academic-research-skills — Academic Research Skills for Claude Code: research → write → review → revise → f",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Imbad0202/academic-research-skills",
+      "summary": "Academic Research Skills for Claude Code: research → write → review → revise → finalize | 🔥 799 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "github-a92276b56a34",
+      "title": "affaan-m/ECC — The agent harness performance optimization system. Skills, instincts, memory, se",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/affaan-m/ECC",
+      "summary": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond. | 🔥 516 stars today | Langua",
+      "category": [
+        "开源项目",
+        "JavaScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "github-135f4fa5c891",
+      "title": "protocolbuffers/protobuf — Protocol Buffers - Google's data interchange format",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/protocolbuffers/protobuf",
+      "summary": "Protocol Buffers - Google's data interchange format | 🔥 18 stars today | Language: C++",
+      "category": [
+        "开源项目",
+        "C++"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "github-a563830f54ca",
+      "title": "vercel-labs/portless — Replace port numbers with stable, named local URLs. For humans and agents.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/vercel-labs/portless",
+      "summary": "Replace port numbers with stable, named local URLs. For humans and agents. | 🔥 73 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "github-d708c1c74ed1",
+      "title": "blader/humanizer — Agent skill that removes signs of AI-generated writing from text",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/blader/humanizer",
+      "summary": "Agent skill that removes signs of AI-generated writing from text | 🔥 374 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "github-9671d97e8d57",
+      "title": "JuliusBrussee/caveman — 🪨 why use many token when few token do trick — Claude Code skill that cuts 65% o",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/JuliusBrussee/caveman",
+      "summary": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman | 🔥 238 stars today | Language: Go",
+      "category": [
+        "开源项目",
+        "Go"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "github-06e6a3ccccc3",
+      "title": "mattpocock/skills — Skills for Real Engineers. Straight from my .agents directory.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/mattpocock/skills",
+      "summary": "Skills for Real Engineers. Straight from my .agents directory. | 🔥 1166 stars today | Language: Shell",
+      "category": [
+        "开源项目",
+        "Shell"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "github-f6682f4efbb6",
+      "title": "Gitlawb/openclaude — runs anywhere. uses anything",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Gitlawb/openclaude",
+      "summary": "runs anywhere. uses anything | 🔥 775 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "github-7c784d837298",
+      "title": "firecrawl/pdf-inspector — Fast Rust library for PDF inspection, classification, and text extraction. Intel",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/firecrawl/pdf-inspector",
+      "summary": "Fast Rust library for PDF inspection, classification, and text extraction. Intelligently detects scanned vs text-based PDFs to enable smart routing decisions. | 🔥 586 stars today | Language: Rust",
+      "category": [
+        "开源项目",
+        "Rust"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "hf-model-92df0cfe7470",
+      "title": "🤗 zai-org/GLM-5.3",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/zai-org/GLM-5.3",
+      "summary": "Task: text-generation | Downloads: 94,403 | Likes: 1,518",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "hf-model-f9ef0c50f53f",
+      "title": "🤗 zai-org/GLM-5.3-Flash",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+      "summary": "Task: image-text-to-text | Downloads: 441,348 | Likes: 1,968",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "hf-model-40dbb02e3218",
+      "title": "🤗 Qwen/Qwen3.8-Flash-Next",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "summary": "Task: image-text-to-text | Downloads: 207,941 | Likes: 4,740",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "hf-model-11403ace832c",
+      "title": "🤗 Qwen/Qwen3.8-27B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "summary": "Task: image-text-to-text | Downloads: 4,960,483 | Likes: 13,693",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "hf-model-e01ed061937e",
+      "title": "🤗 deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+      "summary": "Task: image-text-to-text | Downloads: 17,893 | Likes: 506",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "hf-model-8688caa6e3c0",
+      "title": "🤗 tencent/Hy4-preview",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/tencent/Hy4-preview",
+      "summary": "Task: text-generation | Downloads: 3,516 | Likes: 400",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "hf-model-834c288aad30",
+      "title": "🤗 unsloth/Qwen3.8-Flash-Next-GGUF",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF",
+      "summary": "Task: image-text-to-text | Downloads: 431,339 | Likes: 727",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "hf-model-eaf280aff552",
+      "title": "🤗 Lightricks/LTX-2.5",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "summary": "Task: image-to-video | Downloads: 1,232,274 | Likes: 2,575",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "hf-model-db5ef72cf723",
+      "title": "🤗 unsloth/Qwen3.8-27B-GGUF",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+      "summary": "Downloads: 9,354,057 | Likes: 3,392",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "hf-model-1907db91068f",
+      "title": "🤗 google/timesfm-3.0-pytorch",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/google/timesfm-3.0-pytorch",
+      "summary": "Task: time-series-forecasting | Likes: 297",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "hf-paper-1ab7f31bbd37",
+      "title": "RealSWE: A Compositional Evaluation of Coding Agents under Realistic User Requests",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2608.27831",
+      "summary": "Coding agents are now commonly evaluated on the SWE-bench family of benchmarks, whose tasks are built from curated GitHub issues: long, structured, and information-rich. Real user requests, however, a",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "hf-paper-a815cd7367f1",
+      "title": "Agent Memory Is a Surface for Endogenous Authorization Laundering",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2609.01836",
+      "summary": "Long-running LLM agents rely on persistent memory to carry state across interactions, including permissions, restrictions, and revocations. When memory misrepresents this evolving authorization state,",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "hf-paper-52380b848530",
+      "title": "Does Imitation Learning Preserve Temporal Robustness in Dexterous Manipulation? An Expert-Learner Comparison Across Task Execution Speeds",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2609.01453",
+      "summary": "Dexterous manipulation policies learned by imitation are typically evaluated for robustness to variation in scenes, objects, or instructions, but their performance across task execution speeds is less",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "hf-paper-51dc9a949741",
+      "title": "Knowledge Distillation During Mid-Training Favors Reasoning over Factual Recall",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2609.01532",
+      "summary": "Logit-based knowledge distillation (KD) is used to train smaller language models (LMs) via supervision from stronger teachers, but whether its benefits are consistent across training stages remains un",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "hf-paper-65a8584553ca",
+      "title": "AgentJudgeBench: A Multi-Difficulty Benchmark for Evaluating LLM Judges on Agentic Tool-Calling",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2608.26623",
+      "summary": "LLM judges are widely used to evaluate agentic tool-calling systems, yet their reliability on structured, dependency-driven workflows remains largely unexamined. We present AgentJudgeBench, the first ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "hf-paper-c574fed04b25",
+      "title": "Token-Efficient Data Reasoning Agents via Adaptive Structuring of Unstructured Data",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2608.31082",
+      "summary": "Valuable data remains embedded in unstructured sources: web pages, reports, contracts, filings, earnings calls, and PDFs. The big bet in enterprise AI is deploying LLM agents that reason over this dat",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "hf-paper-dd01d18a4b1d",
+      "title": "Adapting Without Gradients: Affine Statistics Transport and What Its Certificate Can Tell You",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2609.00374",
+      "summary": "Test-time adaptation (TTA) typically assumes that model parameters can be updated at inference time. This assumption is restrictive for inference-only accelerators, frozen or third-party models, and m",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "hf-paper-588809adf184",
+      "title": "DramaChain Bench: An End-to-End Benchmark for Short-Drama Generation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2609.00646",
+      "summary": "Commercial short-drama production follows a multi-stage chain: script, storyboard, keyframe imagery, shot-level video, and the finished short drama. Most existing benchmarks evaluate solely the video-",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "hf-paper-d23aab2e2aaa",
+      "title": "Learning Where Outcomes Change:Credit-Addressable Reasoning for Multimodal Geometry",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2608.30457",
+      "summary": "Multimodal geometry reasoning requires VLMs to extract precise visual relations and preserve them through multi-step deduction. Existing free-form traces obscure the decisions that determine the answe",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "hf-paper-7c4246e58a2b",
+      "title": "From Production Traffic to Post-Training: Building a Self-Hosted LLM That Covers the Corporate Request Mix",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2609.01572",
+      "summary": "Data-residency constraints force enterprises to self-host LLMs, but continuous adoption of newer models without decommissioning their predecessors expands the serving fleet, fragmenting a finite GPU p",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "smolai-c7423a9438e9",
+      "title": "关键点：",
+      "source": "HackerNews Daily",
+      "source_type": "smolai",
+      "url": "https://supertechfans.com/cn/post/2026-09-03-HackerNews/",
+      "summary": "用户默认可能被纳入训练，但有权随时选择退出。 退出方式因平台而异： Vibe（网页版） ：在管理员面板的“隐私”设置中，关闭“允许使用您的交互来训练我们的模型”开关。 Vibe（移动应用） ：在“设置”>“账户”>“数据与账户控制”中，取消勾选“启用数据共享”。 Mistral Studio 和 API ：在管理员面板的“隐私”菜单中，关闭“匿名改进数据”开关。",
+      "category": [
+        "tech",
+        "news",
+        "hackernews",
+        "daily"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "rss-虎嗅-60fffcc9c4c2",
+      "title": "刚刚，Gemini3.8 Flash 来了，结果惨遭对手嘲讽",
+      "source": "虎嗅",
+      "source_type": "wechat",
+      "url": "https://www.huxiu.com/article/4888142.html?f=rss",
+      "summary": "本文来自微信公众号： APPSO ，作者：发布明日产品的，原文标题：《刚刚，Gemini 3.8 Flash 来了，结果惨遭对手嘲讽》 好好好，谷歌也开始按月更大模型了。 就在刚刚，距离Gemini 3.7 Flash发布仅仅过去三周，Google Gemini 3.8 Flash和专攻网络安全的Gemini 3.8 Flash Cyber同时登场。 算下来，短短6个星期，Gemini Flash",
+      "category": [
+        "tech",
+        "business",
+        "wechat",
+        "chinese"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "rss-虎嗅-1f44fc5f78fb",
+      "title": "总部楼下，互联网公司开始做实体商业",
+      "source": "虎嗅",
+      "source_type": "wechat",
+      "url": "https://www.huxiu.com/article/4888147.html?f=rss",
+      "summary": "本文来自微信公众号： RQ商业观察室 ，编辑：锐裘，作者：RQ 从深圳到上海，互联网公司正开启一场从线上平台走向真实城市的线下实验。 2026年，几家互联网科技公司的新总部，正在深圳与上海同时进入落成倒计时。 深圳后海，腾讯体系开发持有的M80预计年底建成。除了办公楼，项目还包含艺术中心、酒店与开放式商业，商业部分则交给天目里团队操盘。 上海杨浦滨江，字节、美团与B站的三个总部项目也将在今年集中兑",
+      "category": [
+        "tech",
+        "business",
+        "wechat",
+        "chinese"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "rss-虎嗅-55fec4770381",
+      "title": "该反思了！大批网红店倒闭，“脏水”都泼向了情绪",
+      "source": "虎嗅",
+      "source_type": "wechat",
+      "url": "https://www.huxiu.com/article/4888143.html?f=rss",
+      "summary": "本文来自微信公众号： 贺大亿 ，作者：贺大亿，原文标题：《该反思了！大批网红店倒闭，“脏水”都泼向了情绪》 这两年一提网红店倒闭，几乎所有人都会说同一句话：情绪消费不靠谱，年轻人新鲜劲一过，店就凉了。 这句话是说得很解气，还带着一股\"我早就看透了\"的洞察感。 但它是错的。而且错得挺离谱。 情绪从来没有那么大的本事。它既没本事撑起一家店，也没本事搞垮一家店。一家店活得好不好，跟情绪的关系，比大多数人",
+      "category": [
+        "tech",
+        "business",
+        "wechat",
+        "chinese"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    },
+    {
+      "id": "rss-极客公园-76b89ffa991f",
+      "title": "马斯克：火箭再炸一次，SpaceX 就没了；小米「阔折叠」全球首秀；豆包工作支持多 Agent 和屏幕操作 | 极客早知道",
+      "source": "极客公园",
+      "source_type": "wechat",
+      "url": "http://www.geekpark.net/news/369745",
+      "summary": "谷歌 Gemini 3.8 Flash 模型上线，适用软件工程、智能体任务等场景 9 月 2 日消息，谷歌在 Google DeepMind 网站低调上线了 Gemini 3.8 Flash 模型。其基于 Gemini 3.7 Flash，拥有在软件工程和智能体知识工作流方面的性能提升，并持续支持可定制的努力水平，以控制质量、成本和延迟的组合。 Gemini 3.8 Flash 基于 Gemini",
+      "category": [
+        "ai",
+        "thinking",
+        "wechat",
+        "chinese"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-03"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-09-09T12:07:24.343916"
+}

@@ -1,0 +1,565 @@
+{
+  "id": "d4e4e8ba-40d5-408e-bf63-ffa758d96a54",
+  "date": "2026-04-27",
+  "items": [
+    {
+      "id": "github-ae9769f0c456",
+      "title": "ComposioHQ/awesome-codex-skills — A curated list of practical Codex skills for automating workflows across the Cod",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/ComposioHQ/awesome-codex-skills",
+      "summary": "A curated list of practical Codex skills for automating workflows across the Codex CLI and API. | 🔥 517 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-27T10:00:16.328331"
+    },
+    {
+      "id": "github-4a23d6cdd831",
+      "title": "openclaw/openclaw — Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/openclaw/openclaw",
+      "summary": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 | 🔥 627 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-27T10:00:16.327108"
+    },
+    {
+      "id": "github-62077d8b2783",
+      "title": "codecrafters-io/build-your-own-x — Master programming by recreating your favorite technologies from scratch.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/codecrafters-io/build-your-own-x",
+      "summary": "Master programming by recreating your favorite technologies from scratch. | 🔥 1075 stars today | Language: Markdown",
+      "category": [
+        "开源项目",
+        "Markdown"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-27T10:00:16.326077"
+    },
+    {
+      "id": "github-4f6bb72880e4",
+      "title": "home-assistant/core — 🏡 Open source home automation that puts local control and privacy first.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/home-assistant/core",
+      "summary": "🏡 Open source home automation that puts local control and privacy first. | 🔥 73 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-27T10:00:16.325164"
+    },
+    {
+      "id": "github-fc838db88f18",
+      "title": "curl/curl — A command line tool and library for transferring data with URL syntax, supportin",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/curl/curl",
+      "summary": "A command line tool and library for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, GOPHER, GOPHERS, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT, MQTTS, POP3, POP3S, RTMP, RTMPS, ",
+      "category": [
+        "开源项目",
+        "C"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-27T10:00:16.324228"
+    },
+    {
+      "id": "github-971ef5a2c11d",
+      "title": "gastownhall/beads — Beads - A memory upgrade for your coding agent",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/gastownhall/beads",
+      "summary": "Beads - A memory upgrade for your coding agent | 🔥 152 stars today | Language: Go",
+      "category": [
+        "开源项目",
+        "Go"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-27T10:00:16.323106"
+    },
+    {
+      "id": "github-41a3a6df42c5",
+      "title": "trycua/cua — Open-source infrastructure for Computer-Use Agents. Sandboxes, SDKs, and benchma",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/trycua/cua",
+      "summary": "Open-source infrastructure for Computer-Use Agents. Sandboxes, SDKs, and benchmarks to train and evaluate AI agents that can control full desktops (macOS, Linux, Windows). | 🔥 182 stars today | Langua",
+      "category": [
+        "开源项目",
+        "HTML"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-27T10:00:16.322086"
+    },
+    {
+      "id": "github-cd0427e27abd",
+      "title": "microsoft/typescript-go — Staging repo for development of native port of TypeScript",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/microsoft/typescript-go",
+      "summary": "Staging repo for development of native port of TypeScript | 🔥 23 stars today | Language: Go",
+      "category": [
+        "开源项目",
+        "Go"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-27T10:00:16.320874"
+    },
+    {
+      "id": "github-0ced67e5ceee",
+      "title": "PostHog/posthog — 🦔 PostHog is an all-in-one developer platform for building successful products. ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/PostHog/posthog",
+      "summary": "🦔 PostHog is an all-in-one developer platform for building successful products. We offer product analytics, web analytics, session replay, error tracking, feature flags, experimentation, surveys, data",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-27T10:00:16.319751"
+    },
+    {
+      "id": "github-5ebc64061b87",
+      "title": "abhigyanpatwari/GitNexus — GitNexus: The Zero-Server Code Intelligence Engine - GitNexus is a client-side k",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/abhigyanpatwari/GitNexus",
+      "summary": "GitNexus: The Zero-Server Code Intelligence Engine - GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a GitHub repo or ZIP file, and get an interactive kno",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-27T10:00:16.318551"
+    },
+    {
+      "id": "github-71e34f1c57d9",
+      "title": "Z4nzu/hackingtool — ALL IN ONE Hacking Tool For Hackers",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Z4nzu/hackingtool",
+      "summary": "ALL IN ONE Hacking Tool For Hackers | 🔥 1720 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-27T10:00:16.317185"
+    },
+    {
+      "id": "github-35b401b2d43a",
+      "title": "Alishahryar1/free-claude-code — Use claude-code for free in the terminal, VSCode extension or via discord like o",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Alishahryar1/free-claude-code",
+      "summary": "Use claude-code for free in the terminal, VSCode extension or via discord like openclaw | 🔥 1701 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-27T10:00:16.316088"
+    },
+    {
+      "id": "github-06e6a3ccccc3",
+      "title": "mattpocock/skills — Agent Skills for real engineers. Straight from my .claude directory.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/mattpocock/skills",
+      "summary": "Agent Skills for real engineers. Straight from my .claude directory. | 🔥 2519 stars today | Language: Shell",
+      "category": [
+        "开源项目",
+        "Shell"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-27T10:00:16.314611"
+    },
+    {
+      "id": "civitai-2576693",
+      "title": "🎨 Mabel Pines  (Ponpu) (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2576693",
+      "summary": "Type: LORA | Downloads: 0 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-27T10:00:16.062007"
+    },
+    {
+      "id": "civitai-2547146",
+      "title": "🎨 GRAMIA BY STX (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2547146",
+      "summary": "Type: LORA | Downloads: 89 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-27T10:00:16.061990"
+    },
+    {
+      "id": "civitai-2577012",
+      "title": "🎨 xh9k2_sd_lora_test (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2577012",
+      "summary": "Type: LORA | Downloads: 0 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-27T10:00:16.061969"
+    },
+    {
+      "id": "civitai-2578535",
+      "title": "🎨 Dead of the Brain (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2578535",
+      "summary": "Type: LORA | Downloads: 0 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-27T10:00:16.061946"
+    },
+    {
+      "id": "civitai-2210045",
+      "title": "🎨 Tabisumika - Artist Style (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2210045",
+      "summary": "Type: LORA | Downloads: 46 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-27T10:00:16.061899"
+    },
+    {
+      "id": "hf-model-1464fa38faac",
+      "title": "🤗 HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+      "summary": "Task: image-text-to-text | Downloads: 460,832 | Likes: 458",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-27T10:00:15.159536"
+    },
+    {
+      "id": "hf-model-cde77b95ee88",
+      "title": "🤗 deepseek-ai/DeepSeek-V4-Pro-Base",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-Base",
+      "summary": "Downloads: 1,182 | Likes: 220",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-27T10:00:15.159515"
+    },
+    {
+      "id": "hf-model-406aad550c1f",
+      "title": "🤗 unsloth/Qwen3.6-35B-A3B-GGUF",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/unsloth/Qwen3.6-35B-A3B-GGUF",
+      "summary": "Task: image-text-to-text | Downloads: 1,574,581 | Likes: 799",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-27T10:00:15.159495"
+    },
+    {
+      "id": "hf-model-729c57a23346",
+      "title": "🤗 unsloth/Qwen3.6-27B-GGUF",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/unsloth/Qwen3.6-27B-GGUF",
+      "summary": "Task: image-text-to-text | Downloads: 553,179 | Likes: 429",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-27T10:00:15.159476"
+    },
+    {
+      "id": "hf-model-70b0f02555a8",
+      "title": "🤗 Qwen/Qwen3.6-35B-A3B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
+      "summary": "Task: image-text-to-text | Downloads: 1,181,968 | Likes: 1,432",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-27T10:00:15.159456"
+    },
+    {
+      "id": "hf-model-aa304de47ee4",
+      "title": "🤗 deepseek-ai/DeepSeek-V4-Flash",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+      "summary": "Task: text-generation | Downloads: 45,986 | Likes: 738",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-27T10:00:15.159434"
+    },
+    {
+      "id": "hf-model-b6a7c38191ac",
+      "title": "🤗 openai/privacy-filter",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/openai/privacy-filter",
+      "summary": "Task: token-classification | Downloads: 35,807 | Likes: 853",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-27T10:00:15.159413"
+    },
+    {
+      "id": "hf-model-4481c76e29d1",
+      "title": "🤗 Qwen/Qwen3.6-27B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-27B",
+      "summary": "Task: image-text-to-text | Downloads: 329,571 | Likes: 856",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-27T10:00:15.159391"
+    },
+    {
+      "id": "hf-model-94e13c00ef04",
+      "title": "🤗 moonshotai/Kimi-K2.6",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6",
+      "summary": "Task: image-text-to-text | Downloads: 376,485 | Likes: 1,061",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-27T10:00:15.159363"
+    },
+    {
+      "id": "hf-model-fe96e83596e6",
+      "title": "🤗 deepseek-ai/DeepSeek-V4-Pro",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+      "summary": "Task: text-generation | Downloads: 123,431 | Likes: 2,856",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-27T10:00:15.159287"
+    },
+    {
+      "id": "hf-paper-d162571bbf62",
+      "title": "LLaTiSA: Towards Difficulty-Stratified Time Series Reasoning from Visual Perception to Semantics",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.17295",
+      "summary": "Comprehensive understanding of time series remains a significant challenge for Large Language Models (LLMs). Current research is hindered by fragmented task definitions and benchmarks with inherent am",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-27T10:00:15.515576"
+    },
+    {
+      "id": "hf-paper-b861793fc028",
+      "title": "Vista4D: Video Reshooting with 4D Point Clouds",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.21915",
+      "summary": "We present Vista4D, a robust and flexible video reshooting framework that grounds the input video and target cameras in a 4D point cloud. Specifically, given an input video, our method re-synthesizes ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-27T10:00:15.515559"
+    },
+    {
+      "id": "hf-paper-c016eb0f3584",
+      "title": "Coevolving Representations in Joint Image-Feature Diffusion",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.17492",
+      "summary": "Joint image-feature generative modeling has recently emerged as an effective strategy for improving diffusion training by coupling low-level VAE latents with high-level semantic features extracted fro",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-27T10:00:15.515543"
+    },
+    {
+      "id": "hf-paper-446ad5fc3cdc",
+      "title": "3D-VCD: Hallucination Mitigation in 3D-LLM Embodied Agents through Visual Contrastive Decoding",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.08645",
+      "summary": "Large multimodal models are increasingly used as the reasoning core of embodied agents operating in 3D environments, yet they remain prone to hallucinations that can produce unsafe and ungrounded deci",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-27T10:00:15.515511"
+    },
+    {
+      "id": "hf-paper-a6e2a07df4ba",
+      "title": "Temporally Extended Mixture-of-Experts Models",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.20156",
+      "summary": "Mixture-of-Experts models, now popular for scaling capacity at fixed inference speed, switch experts at nearly every token. Once a model outgrows available GPU memory, this churn can render optimizati",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-27T10:00:15.515495"
+    },
+    {
+      "id": "hf-paper-816565812503",
+      "title": "Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.22748",
+      "summary": "As AI systems move from generating text to accomplishing goals through sustained interaction, the ability to model environment dynamics becomes a central bottleneck. Agents that manipulate objects, na",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-27T10:00:15.515479"
+    },
+    {
+      "id": "hf-paper-95d7ce8ac535",
+      "title": "Learning Evidence Highlighting for Frozen LLMs",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.22565",
+      "summary": "Large Language Models (LLMs) can reason well, yet often miss decisive evidence when it is buried in long, noisy contexts. We introduce HiLight, an Evidence Emphasis framework that decouples evidence s",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-27T10:00:15.515462"
+    },
+    {
+      "id": "hf-paper-ebbb5339b426",
+      "title": "AgentSearchBench: A Benchmark for AI Agent Search in the Wild",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.22436",
+      "summary": "The rapid growth of AI agent ecosystems is transforming how complex tasks are delegated and executed, creating a new challenge of identifying suitable agents for a given task. Unlike traditional tools",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-27T10:00:15.515444"
+    },
+    {
+      "id": "hf-paper-9f7ec6631abc",
+      "title": "LLM Safety From Within: Detecting Harmful Content with Internal Representations",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.18519",
+      "summary": "Guard models are widely used to detect harmful content in user prompts and LLM responses. However, state-of-the-art guard models rely solely on terminal-layer representations and overlook the rich saf",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-27T10:00:15.515419"
+    },
+    {
+      "id": "hf-paper-906865c75ebe",
+      "title": "dWorldEval: Scalable Robotic Policy Evaluation via Discrete Diffusion World Model",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.22152",
+      "summary": "Evaluating robotics policies across thousands of environments and thousands of tasks is infeasible with existing approaches. This motivates the need for a new methodology for scalable robotics policy ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-27T10:00:15.515342"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-09-09T12:07:28.388529"
+}

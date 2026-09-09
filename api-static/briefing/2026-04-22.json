@@ -1,0 +1,508 @@
+{
+  "id": "073d9565-09ec-4448-99fe-f68cc3f24588",
+  "date": "2026-04-22",
+  "items": [
+    {
+      "id": "civitai-2563293",
+      "title": "🎨 Chample  チャンプル - Samurai Shodown サムライスピリッツ (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2563293",
+      "summary": "Type: LORA | Downloads: 0 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-22T10:05:03.669958"
+    },
+    {
+      "id": "civitai-498018",
+      "title": "🎨 学生服/serafuku (LoCon)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/498018",
+      "summary": "Type: LoCon | Downloads: 12,903 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-22T10:05:03.669954"
+    },
+    {
+      "id": "civitai-2563394",
+      "title": "🎨 LTX 2.3 - Cinematic Post-Apocalyptic (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2563394",
+      "summary": "Type: LORA | Downloads: 0 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-22T10:05:03.669948"
+    },
+    {
+      "id": "civitai-2332793",
+      "title": "🎨 Ishikei (Modern) Style - Illustrious (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2332793",
+      "summary": "Type: LORA | Downloads: 144 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-22T10:05:03.669941"
+    },
+    {
+      "id": "civitai-2563415",
+      "title": "🎨 ernie turbo FP8 (Checkpoint)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2563415",
+      "summary": "Type: Checkpoint | Downloads: 0 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-22T10:05:03.669931"
+    },
+    {
+      "id": "hf-model-3e19acb863ad",
+      "title": "🤗 MiniMaxAI/MiniMax-M2.7",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-M2.7",
+      "summary": "Task: text-generation | Downloads: 358,255 | Likes: 1,024",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-22T10:05:02.730056"
+    },
+    {
+      "id": "hf-model-73a346378827",
+      "title": "🤗 baidu/ERNIE-Image-Turbo",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/baidu/ERNIE-Image-Turbo",
+      "summary": "Task: text-to-image | Downloads: 5,952 | Likes: 342",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-22T10:05:02.730045"
+    },
+    {
+      "id": "hf-model-1464fa38faac",
+      "title": "🤗 HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+      "summary": "Task: image-text-to-text | Downloads: 261,086 | Likes: 339",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-22T10:05:02.730035"
+    },
+    {
+      "id": "hf-model-f7a19edc802a",
+      "title": "🤗 tencent/HY-Embodied-0.5",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/tencent/HY-Embodied-0.5",
+      "summary": "Task: image-text-to-text | Downloads: 2,035 | Likes: 896",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-22T10:05:02.730024"
+    },
+    {
+      "id": "hf-model-6260d6146b44",
+      "title": "🤗 OBLITERATUS/gemma-4-E4B-it-OBLITERATED",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/OBLITERATUS/gemma-4-E4B-it-OBLITERATED",
+      "summary": "Task: text-generation | Downloads: 63,995 | Likes: 430",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-22T10:05:02.730013"
+    },
+    {
+      "id": "hf-model-9f1c55c6cd4c",
+      "title": "🤗 baidu/ERNIE-Image",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/baidu/ERNIE-Image",
+      "summary": "Task: text-to-image | Downloads: 4,523 | Likes: 512",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-22T10:05:02.730002"
+    },
+    {
+      "id": "hf-model-0e8e19c370dc",
+      "title": "🤗 tencent/HY-World-2.0",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/tencent/HY-World-2.0",
+      "summary": "Task: image-to-3d | Likes: 523",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-22T10:05:02.729991"
+    },
+    {
+      "id": "hf-model-406aad550c1f",
+      "title": "🤗 unsloth/Qwen3.6-35B-A3B-GGUF",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/unsloth/Qwen3.6-35B-A3B-GGUF",
+      "summary": "Task: image-text-to-text | Downloads: 967,317 | Likes: 621",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-22T10:05:02.729981"
+    },
+    {
+      "id": "hf-model-94e13c00ef04",
+      "title": "🤗 moonshotai/Kimi-K2.6",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.6",
+      "summary": "Task: image-text-to-text | Downloads: 8,241 | Likes: 711",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-22T10:05:02.729966"
+    },
+    {
+      "id": "hf-model-70b0f02555a8",
+      "title": "🤗 Qwen/Qwen3.6-35B-A3B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
+      "summary": "Task: image-text-to-text | Downloads: 458,436 | Likes: 1,139",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-22T10:05:02.729934"
+    },
+    {
+      "id": "github-8046ba8a1763",
+      "title": "VoltAgent/awesome-agent-skills — A curated collection of 1000+ agent skills from official dev teams and the commu",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/VoltAgent/awesome-agent-skills",
+      "summary": "A curated collection of 1000+ agent skills from official dev teams and the community, compatible with Claude Code, Codex, Gemini CLI, Cursor, and more. | 🔥 139 stars today",
+      "category": [
+        "开源项目"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-22T10:05:03.668367"
+    },
+    {
+      "id": "github-596c2ed91867",
+      "title": "sansan0/TrendRadar — ⭐AI-driven public opinion &amp; trend monitor with multi-platform aggregation, R",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/sansan0/TrendRadar",
+      "summary": "⭐AI-driven public opinion &amp; trend monitor with multi-platform aggregation, RSS, and smart alerts.🎯 告别信息过载，你的 AI 舆情监控助手与热点筛选工具！聚合多平台热点 + RSS 订阅，支持关键词精准筛选。AI 智能筛选新闻 + AI 翻译 + AI 分析简报直推手机，也支持接入 MCP 架",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-22T10:05:03.667439"
+    },
+    {
+      "id": "github-5fc7747b6543",
+      "title": "HKUDS/RAG-Anything — \"RAG-Anything: All-in-One RAG Framework\"",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/HKUDS/RAG-Anything",
+      "summary": "\"RAG-Anything: All-in-One RAG Framework\" | 🔥 162 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-22T10:05:03.666563"
+    },
+    {
+      "id": "github-cfd890e44d96",
+      "title": "dayanch96/YTLite — A flexible enhancer for YouTube on iOS",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/dayanch96/YTLite",
+      "summary": "A flexible enhancer for YouTube on iOS | 🔥 55 stars today | Language: Logos",
+      "category": [
+        "开源项目",
+        "Logos"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-22T10:05:03.665723"
+    },
+    {
+      "id": "github-09c9fc023168",
+      "title": "microsoft/ai-agents-for-beginners — 12 Lessons to Get Started Building AI Agents",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/microsoft/ai-agents-for-beginners",
+      "summary": "12 Lessons to Get Started Building AI Agents | 🔥 200 stars today | Language: Jupyter Notebook",
+      "category": [
+        "开源项目",
+        "Jupyter Notebook"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-22T10:05:03.664734"
+    },
+    {
+      "id": "github-30b4721fb285",
+      "title": "ruvnet/RuView — π RuView: WiFi DensePose turns commodity WiFi signals into real-time human pose ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/ruvnet/RuView",
+      "summary": "π RuView: WiFi DensePose turns commodity WiFi signals into real-time human pose estimation, vital sign monitoring, and presence detection — all without a single pixel of video. | 🔥 824 stars today | L",
+      "category": [
+        "开源项目",
+        "Rust"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-22T10:05:03.663819"
+    },
+    {
+      "id": "github-dd7e626bcf43",
+      "title": "zilliztech/claude-context — Code search MCP for Claude Code. Make entire codebase the context for any coding",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/zilliztech/claude-context",
+      "summary": "Code search MCP for Claude Code. Make entire codebase the context for any coding agent. | 🔥 169 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-22T10:05:03.662827"
+    },
+    {
+      "id": "github-301d56a38655",
+      "title": "thunderbird/thunderbolt — AI You Control: Choose your models. Own your data. Eliminate vendor lock-in.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/thunderbird/thunderbolt",
+      "summary": "AI You Control: Choose your models. Own your data. Eliminate vendor lock-in. | 🔥 596 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-22T10:05:03.661772"
+    },
+    {
+      "id": "github-09ee239f52b6",
+      "title": "Fincept-Corporation/FinceptTerminal — FinceptTerminal is a modern finance application offering advanced market analyti",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Fincept-Corporation/FinceptTerminal",
+      "summary": "FinceptTerminal is a modern finance application offering advanced market analytics, investment research, and economic data tools, designed for interactive exploration and data-driven decision-making i",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-22T10:05:03.660553"
+    },
+    {
+      "id": "hf-paper-c84f8f755380",
+      "title": "Forge-UGC: FX optimization and register-graph engine for universal graph compiler",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.16498",
+      "summary": "We present Forge-UGC (FX Optimization and Register-Graph Engine for Universal Graph Compilation), a four-phase compiler for transformer deployment on heterogeneous accelerator hardware, validated on I",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-22T10:05:03.094479"
+    },
+    {
+      "id": "hf-paper-a89814d9c83b",
+      "title": "Protecting Language Models Against Unauthorized Distillation through Trace Rewriting",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2602.15143",
+      "summary": "Knowledge distillation is a widely adopted technique for transferring capabilities from LLMs to smaller, more efficient student models. However, unauthorized use of knowledge distillation takes unfair",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-22T10:05:03.094475"
+    },
+    {
+      "id": "hf-paper-33d0f3e4e207",
+      "title": "The Illusion of Certainty: Decoupling Capability and Calibration in On-Policy Distillation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.16830",
+      "summary": "On-policy distillation (OPD) is an increasingly important paradigm for post-training language models. However, we identify a pervasive Scaling Law of Miscalibration: while OPD effectively improves tas",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-22T10:05:03.094469"
+    },
+    {
+      "id": "hf-paper-1d15b136d8eb",
+      "title": "On the Reliability of Computer Use Agents",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.17849",
+      "summary": "Computer-use agents have rapidly improved on real-world tasks such as web navigation, desktop automation, and software interaction, in some cases surpassing human performance. Yet even when the task a",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-22T10:05:03.094461"
+    },
+    {
+      "id": "hf-paper-896796eed12b",
+      "title": "Symbolic Guardrails for Domain-Specific Agents: Stronger Safety and Security Guarantees Without Sacrificing Utility",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.15579",
+      "summary": "AI agents that interact with their environments through tools enable powerful applications, but in high-stakes business settings, unintended actions can cause unacceptable harm, such as privacy breach",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-22T10:05:03.094456"
+    },
+    {
+      "id": "hf-paper-a1813eb3b1ff",
+      "title": "MARCO: Navigating the Unseen Space of Semantic Correspondence",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.18267",
+      "summary": "Recent advances in semantic correspondence rely on dual-encoder architectures, combining DINOv2 with diffusion backbones. While accurate, these billion-parameter models generalize poorly beyond traini",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-22T10:05:03.094448"
+    },
+    {
+      "id": "hf-paper-a5e49199bdce",
+      "title": "When Background Matters: Breaking Medical Vision Language Models by Transferable Attack",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.17318",
+      "summary": "Vision-Language Models (VLMs) are increasingly used in clinical diagnostics, yet their robustness to adversarial attacks remains largely unexplored, posing serious risks. Existing medical attacks focu",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-22T10:05:03.094443"
+    },
+    {
+      "id": "hf-paper-cd70bf6d8f7e",
+      "title": "River-LLM: Large Language Model Seamless Exit Based on KV Share",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.18396",
+      "summary": "Large Language Models (LLMs) have demonstrated exceptional performance across diverse domains but are increasingly constrained by high inference latency. Early Exit has emerged as a promising solution",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-22T10:05:03.094430"
+    },
+    {
+      "id": "hf-paper-e6e507b9dd52",
+      "title": "Terminal Wrench: A Dataset of 331 Reward-Hackable Environments and 3,632 Exploit Trajectories",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.17596",
+      "summary": "We release Terminal Wrench, a subset of 331 terminal-agent benchmark environments, copied from the popular open benchmarks that are demonstrably reward-hackable. The data set includes 3,632 hack traje",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-22T10:05:03.094423"
+    },
+    {
+      "id": "hf-paper-ea18991d54d6",
+      "title": "KWBench: Measuring Unprompted Problem Recognition in Knowledge Work",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.15760",
+      "summary": "We introduce the first version of KWBench (Knowledge Work Bench), a benchmark for unprompted problem recognition in large language models: can an LLM identify a professional scenario before attempting",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-22T10:05:03.094398"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-09-09T12:07:28.942453"
+}

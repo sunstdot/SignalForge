@@ -1,0 +1,684 @@
+{
+  "id": "d0babb69-9830-4e92-b32a-46d591a813d5",
+  "date": "2026-08-19",
+  "items": [
+    {
+      "id": "arxiv-2608.18076v1",
+      "title": "From Corpora to Co-Evolving Capabilities: Capability-Centric Data Design for Generalist Image Generation",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2608.18076v1",
+      "summary": "Large-scale image generation has benefited from advances in data scale, quality, rebalancing, and recaptioning, yet conventional pipelines typically optimize task-specific datasets in isolation. A cen",
+      "category": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "arxiv-2608.18072v1",
+      "title": "Multi-Agent AI System for Radiology Report Structuring and Quality Assurance with Independent Radiologist Evaluation",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2608.18072v1",
+      "summary": "Purpose: To develop and evaluate a locally deployed multi-agent AI system for radiology report structuring and quality assurance. Materials and Methods: This retrospective study included 638 radiology",
+      "category": [
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "arxiv-2608.18066v1",
+      "title": "On the Fragility of Self-Improving Agents: Variance, Task Order, and Underspecification",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2608.18066v1",
+      "summary": "Memory-based self-improving agents--those that learn from an online stream of tasks and improve over time by maintaining a textual memory bank--have shown great promise in recent literature. However, ",
+      "category": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "arxiv-2608.18062v1",
+      "title": "TokEval: A Tokenizer Evaluation Suite",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2608.18062v1",
+      "summary": "Language model tokenizers are typically selected with minimal evaluation, despite the fact that their design choices directly impact model capabilities. This can be partly attributed to a limited unde",
+      "category": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "arxiv-2608.18061v1",
+      "title": "The concentration game: Bayesian updating, regret, and information",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2608.18061v1",
+      "summary": "We give a two-player zero-sum repeated game between a learner and nature whose value identity generates Bayesian updating and an exact accounting of exponential-weights regret at once, and supplies th",
+      "category": [
+        "cs.LG",
+        "cs.GT",
+        "math.PR"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "arxiv-2608.18058v1",
+      "title": "Delegation Asymmetry in Agentic Recommender Systems: Measuring Two-Sided Receptivity in Online Dating",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2608.18058v1",
+      "summary": "Autonomous LLM agents that converse on a user's behalf are an emerging design pattern in matching platforms, yet their viability depends on a condition rarely examined: users must accept not only dele",
+      "category": [
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "arxiv-2608.18056v1",
+      "title": "HLSR: Hybrid Live Forecast Selective Dynamic Vehicle Rerouting for Real-Time Congestion Avoidance",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2608.18056v1",
+      "summary": "Urban traffic congestion reduces productivity and increases travel cost and emissions. Network-wide live travel-time shortest-path rerouting can be highly effective in simulation, but assumes that ess",
+      "category": [
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "arxiv-2608.18055v1",
+      "title": "Primitive Representation Learning for Unsupervised Dynamic Contrast Enhanced MRI Reconstruction",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2608.18055v1",
+      "summary": "Reliable quantitative analysis of dynamic contrast-enhanced MRI requires high-quality spatiotemporal reconstructions at high undersampling rates. Scan-specific reconstructions using Gaussian and Gabor",
+      "category": [
+        "eess.IV",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "arxiv-2608.18050v1",
+      "title": "StagedWorkspace: A Versioned Workspace for Knowledge-Work Agents",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2608.18050v1",
+      "summary": "AI agents increasingly perform knowledge work (i.e., produce and modify persistent digital artifacts such as code repositories, documents, spreadsheets, slides, reports), yet the parsed views they sea",
+      "category": [
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "arxiv-2608.18041v1",
+      "title": "Language Has Two Parameters: Narrative-Induced Semantic Plasticity and Phase-Sensitive Interpretation",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2608.18041v1",
+      "summary": "Language has two parameters. Count how often words occur together and you estimate amplitude, the strength of association. Word embeddings and attention weights refine that count, which sums every wri",
+      "category": [
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "arxiv-2608.18040v1",
+      "title": "Optimize Your Sampling: Tuned Diffusion Sampling with Bayesian Optimization",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2608.18040v1",
+      "summary": "Sampling from a diffusion model typically requires many forward passes through a large neural network, making generation computationally expensive. While much work has focused on efficient solvers and",
+      "category": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "arxiv-2608.18036v1",
+      "title": "Harnessing Magnitude-Only and Complex Measurements for Improved Dynamic MRI Reconstruction with Learned Priors",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2608.18036v1",
+      "summary": "MRI reconstruction methods for undersampled k-space data naturally utilize complex-valued measurements. Parallel developments in sparse phase retrieval have shown that magnitude-only measurements may ",
+      "category": [
+        "eess.IV",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "arxiv-2608.18033v1",
+      "title": "Where A Small Language Model Helps in Invoice Categorisation, Understood Through Embedding Geometry",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2608.18033v1",
+      "summary": "Categorising invoices into the correct General Ledger (GL) code underpins financial reporting and tax compliance. This is a skilled accounting judgement rather than a routine task: the correct categor",
+      "category": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "arxiv-2608.18027v1",
+      "title": "Chain-of-Experience for Continual LLM Improvement",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2608.18027v1",
+      "summary": "Humans continuously learn from experience, whereas conventional large language model (LLM) evaluations ignore the models' ability to improve through inference-time interaction. In this paper, we study",
+      "category": [
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "arxiv-2608.18026v1",
+      "title": "TabNSM: Neural Sparse Mixer for Tabular Regression",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2608.18026v1",
+      "summary": "Large-scale, high-dimensional tabular regression remains challenging: tree-based models are robust but lack end-to-end representation learning, while deep models enable flexible feature learning but o",
+      "category": [
+        "cs.LG",
+        "cs.CE"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "github-d7fa42b7f3f5",
+      "title": "harry0703/MoneyPrinterTurbo — 利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyw",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "summary": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow. | 🔥 2304 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "github-9f9524705b83",
+      "title": "chaitanyagiri/munder-difflin — local multi-agent harness",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/chaitanyagiri/munder-difflin",
+      "summary": "local multi-agent harness | 🔥 306 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "github-1a4bf49f2844",
+      "title": "akitaonrails/ai-memory — Solution for long term memory for agent coding CLIs and to facilitate handoff be",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/akitaonrails/ai-memory",
+      "summary": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors | 🔥 648 stars today | Language: Rust",
+      "category": [
+        "开源项目",
+        "Rust"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "github-32fb0821d5f9",
+      "title": "volcengine/OpenViking — Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/volcengine/OpenViking",
+      "summary": "Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills. | 🔥 213 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "github-7c7aa2756d1d",
+      "title": "mukul975/Anthropic-Cybersecurity-Skills — 817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITR",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+      "summary": "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&amp;CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF &amp; MITRE F3 (Fight Fraud) · agentskills.io standard · Wo",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "github-d2b1af007926",
+      "title": "public-apis/public-apis — A collective list of free APIs",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/public-apis/public-apis",
+      "summary": "A collective list of free APIs | 🔥 1005 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "github-fa7f2d9224bf",
+      "title": "basecamp/omarchy — Beautiful, Modern &amp; Opinionated Linux",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/basecamp/omarchy",
+      "summary": "Beautiful, Modern &amp; Opinionated Linux | 🔥 356 stars today | Language: Shell",
+      "category": [
+        "开源项目",
+        "Shell"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "github-79667a1daab8",
+      "title": "agalwood/Motrix — A full-featured download manager.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/agalwood/Motrix",
+      "summary": "A full-featured download manager. | 🔥 609 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "github-4f0d03957d3a",
+      "title": "NawfalMotii79/PLFM_RADAR — Open-source, low-cost 10.5 GHz PLFM phased array RADAR system",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/NawfalMotii79/PLFM_RADAR",
+      "summary": "Open-source, low-cost 10.5 GHz PLFM phased array RADAR system | 🔥 192 stars today | Language: PLSQL",
+      "category": [
+        "开源项目",
+        "PLSQL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "github-092a29c4919a",
+      "title": "jundot/omlx — LLM inference server with continuous batching &amp; SSD caching for Apple Silico",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/jundot/omlx",
+      "summary": "LLM inference server with continuous batching &amp; SSD caching for Apple Silicon — managed from the macOS menu bar | 🔥 370 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "github-f3c9db49985d",
+      "title": "genlayerlabs/genlayer-project-boilerplate",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/genlayerlabs/genlayer-project-boilerplate",
+      "summary": "🔥 535 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "github-960b39ed6ae8",
+      "title": "OpenCut-app/OpenCut — The open-source CapCut alternative",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/OpenCut-app/OpenCut",
+      "summary": "The open-source CapCut alternative | 🔥 192 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "hf-model-11403ace832c",
+      "title": "🤗 Qwen/Qwen3.8-27B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "summary": "Task: image-text-to-text | Downloads: 665,513 | Likes: 11,167",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "hf-model-db5ef72cf723",
+      "title": "🤗 unsloth/Qwen3.8-27B-GGUF",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+      "summary": "Downloads: 3,561,466 | Likes: 1,835",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "hf-model-3f6ff6f1a3f1",
+      "title": "🤗 Qwen/Qwen3.8-2.4T-A95B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+      "summary": "Task: text-generation | Downloads: 11,212 | Likes: 1,069",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "hf-model-13422d9188be",
+      "title": "🤗 MiniMaxAI/MiniMax-Music3",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3",
+      "summary": "Task: text-to-audio | Downloads: 11,745 | Likes: 970",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "hf-model-eaf280aff552",
+      "title": "🤗 Lightricks/LTX-2.5",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "summary": "Task: image-to-video | Downloads: 503,632 | Likes: 1,230",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "hf-model-fd1309c4b8af",
+      "title": "🤗 deepseek-ai/DeepSeek-V4-Pro-0813",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813",
+      "summary": "Task: text-generation | Downloads: 30,985 | Likes: 606",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "hf-model-c2d9306bd830",
+      "title": "🤗 Qwen/Qwen3.8-27B-FP8",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8",
+      "summary": "Task: image-text-to-text | Downloads: 741,011 | Likes: 566",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "hf-model-b791efed638e",
+      "title": "🤗 meta-models/Muse-Glimmer-30B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "summary": "Task: image-text-to-text | Downloads: 384,097 | Likes: 1,683",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "hf-model-7accbea85440",
+      "title": "🤗 MiniMaxAI/MiniMax-H3",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+      "summary": "Task: image-text-to-video | Downloads: 2,855,539 | Likes: 4,148",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "hf-model-dacdcf0b4b6d",
+      "title": "🤗 orcarouter/Qwen3.8-27B-Uncensored-FP8",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8",
+      "summary": "Task: image-text-to-text | Downloads: 45,465 | Likes: 540",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "hf-paper-66119957e6f6",
+      "title": "GS-Voxel: Fitting-Free Structured Latents for Large-Scale 3DGS Generation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2608.17988",
+      "summary": "Many scalable latent 3D generators operate on structured tensors, whereas pre-optimized 3D Gaussian Splatting (3DGS) reconstructions are unordered, spatially irregular, and vary widely in primitive co",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "hf-paper-d155528426eb",
+      "title": "Security Assessment of DeepSeek Harness with A.I.G: Evaluating Resistance to Indirect Prompt Injection",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2608.16393",
+      "summary": "We assess indirect prompt injection in DeepSeek Harness (DSH), using AI-Infra-Guard (A.I.G) to construct tests, deliver controlled taint, execute DSH, collect traces, and judge outcomes. The study cov",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "hf-paper-d09574e7d7a8",
+      "title": "AVA-Encoder: Towards Agent-Native Video Representation Learning",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2608.12313",
+      "summary": "Creative agents still lack an effective way to learn from high-quality human films, limiting their ability to produce cinematic-grade videos. A key challenge is the absence of a structured video repre",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "hf-paper-4dfacf91b253",
+      "title": "ASI-Bench: At the Dawn of Artificial Superintelligence",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2608.17271",
+      "summary": "Artificial superintelligence (ASI) requires AI to move beyond mastering existing knowledge toward exploring the unknown, creating new knowledge, and turning new ideas into verifiable results. However,",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "hf-paper-29d8606fa6dd",
+      "title": "Abra: Scaling Diffusion Image Training",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2608.17286",
+      "summary": "Compute-optimal scaling laws guide the training of frontier language models yet remain largely unexplored for visual generation. We present a systematic scaling law study for text-to-image diffusion m",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "hf-paper-bc96cdca06f0",
+      "title": "StartupBench: Benchmarking General-Purpose Agents on Market-Validated End-to-End Workflows",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2608.17800",
+      "summary": "Recent advances in Large Language Models(LLMs) and agents have substantially improved the ability of AI systems to execute complex tasks. Yet existing benchmarks largely rely on researcher-selected ta",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "hf-paper-d628f02be653",
+      "title": "aDSL: Agentic 3D Creation via Joint Agent-Program Design",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2608.17975",
+      "summary": "Programmatic representations provide a compelling paradigm for 3D content creation, enabling fine-grained edits, interpretability, and explicit structural control. Yet, agentic workflows that rely on ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "hf-paper-5abdb237be38",
+      "title": "From Sequence to Structure: Relational Uncertainty Propagation for LLM Agents",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2608.16002",
+      "summary": "Reliable uncertainty quantification (UQ) is essential for deploying large language model (LLM) agents in complex interactive environments. Existing UQ methods largely rely on local signals, such as to",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "hf-paper-cdcc7d75eba1",
+      "title": "Agentic ESOpt: Fine-Tuning Long-Horizon LLM Agents with Minimal GPU Requirements",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2608.17310",
+      "summary": "Reinforcement Learning (RL) has been promising in single-turn LLM fine-tuning. However, long-horizon agentic reasoning introduces increasingly branching interactions and sparse rewards, exposing sever",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    },
+    {
+      "id": "hf-paper-ae08764bd4cf",
+      "title": "Dynamic Multi-Byte Prediction With Hierarchical Language Models",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2608.15454",
+      "summary": "Byte-level hierarchical language models (LMs) have recently emerged as a robust alternative to their popular counterparts that use subword tokenization. However, generating one byte at a time remains ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-08-19"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-09-09T12:07:24.606795"
+}

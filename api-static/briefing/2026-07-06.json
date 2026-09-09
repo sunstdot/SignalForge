@@ -1,0 +1,588 @@
+{
+  "id": "9de8271d-a93d-4a22-9193-cb44f0df6012",
+  "date": "2026-07-06",
+  "items": [
+    {
+      "id": "github-905910eab080",
+      "title": "Zackriya-Solutions/meetily — Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcr",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Zackriya-Solutions/meetily",
+      "summary": "Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcription, speaker diarization, and Ollama summarization built on Rust. 100% local processing. no cloud required. Meetily (",
+      "category": [
+        "开源项目",
+        "Rust"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-06"
+    },
+    {
+      "id": "github-c8b1f28170a6",
+      "title": "openai/codex-plugin-cc — Use Codex from Claude Code to review code or delegate tasks.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/openai/codex-plugin-cc",
+      "summary": "Use Codex from Claude Code to review code or delegate tasks. | 🔥 1532 stars today | Language: JavaScript",
+      "category": [
+        "开源项目",
+        "JavaScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-06"
+    },
+    {
+      "id": "github-787a47d3135e",
+      "title": "asgeirtj/system_prompts_leaks — Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code,",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/asgeirtj/system_prompts_leaks",
+      "summary": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT 5.5 Thinking, GPT 5.5 Instant, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. ",
+      "category": [
+        "开源项目",
+        "JavaScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-06"
+    },
+    {
+      "id": "github-69f0c8289567",
+      "title": "Leonxlnx/taste-skill — Taste-Skill - gives your AI good taste. stops the AI from generating boring, gen",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Leonxlnx/taste-skill",
+      "summary": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop | 🔥 863 stars today | Language: JavaScript",
+      "category": [
+        "开源项目",
+        "JavaScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-06"
+    },
+    {
+      "id": "github-01a3d0dd835c",
+      "title": "alirezarezvani/claude-skills — 337 Claude Code skills &amp; agent skills &amp; plugins (30+ Agents, 70+ custom ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/alirezarezvani/claude-skills",
+      "summary": "337 Claude Code skills &amp; agent skills &amp; plugins (30+ Agents, 70+ custom commands, 330+ skills, customizable references, scripts)for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding ag",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-06"
+    },
+    {
+      "id": "github-f7a3a8be5f62",
+      "title": "rommapp/romm — A beautiful, powerful, self-hosted rom manager and player.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/rommapp/romm",
+      "summary": "A beautiful, powerful, self-hosted rom manager and player. | 🔥 410 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-06"
+    },
+    {
+      "id": "github-abb8951d297b",
+      "title": "ogulcancelik/herdr — agent multiplexer that lives in your terminal.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/ogulcancelik/herdr",
+      "summary": "agent multiplexer that lives in your terminal. | 🔥 651 stars today | Language: Rust",
+      "category": [
+        "开源项目",
+        "Rust"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-06"
+    },
+    {
+      "id": "github-37881c2a0de6",
+      "title": "alibaba/page-agent — JavaScript in-page GUI agent. Control web interfaces with natural language.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/alibaba/page-agent",
+      "summary": "JavaScript in-page GUI agent. Control web interfaces with natural language. | 🔥 805 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-06"
+    },
+    {
+      "id": "github-a6a25d4f23cf",
+      "title": "harvard-edge/cs249r_book — Machine Learning Systems",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/harvard-edge/cs249r_book",
+      "summary": "Machine Learning Systems | 🔥 329 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-06"
+    },
+    {
+      "id": "github-21df337a2d20",
+      "title": "usestrix/strix — Open-source AI penetration testing tool to find and fix your app’s vulnerabiliti",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/usestrix/strix",
+      "summary": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities. | 🔥 1114 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-06"
+    },
+    {
+      "id": "github-438d28ba396d",
+      "title": "hesreallyhim/awesome-claude-code — A hand-picked collection of the finest of resources for the most awesome of agen",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/hesreallyhim/awesome-claude-code",
+      "summary": "A hand-picked collection of the finest of resources for the most awesome of agents, Claude Code, the undisputed champion of coding companions, from the unstoppable team at Anthropic PBC. A delectable ",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-06"
+    },
+    {
+      "id": "github-ae892d846393",
+      "title": "coreyhaines31/marketingskills — Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/coreyhaines31/marketingskills",
+      "summary": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering. | 🔥 145 stars today | Language: JavaScript",
+      "category": [
+        "开源项目",
+        "JavaScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-06"
+    },
+    {
+      "id": "github-9671d97e8d57",
+      "title": "JuliusBrussee/caveman — 🪨 why use many token when few token do trick — Claude Code skill that cuts 65% o",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/JuliusBrussee/caveman",
+      "summary": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman | 🔥 1052 stars today | Language: JavaScript",
+      "category": [
+        "开源项目",
+        "JavaScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-06"
+    },
+    {
+      "id": "github-9c51671fa143",
+      "title": "CoplayDev/unity-mcp — Unity MCP acts as a bridge between AI assistants and your Unity Editor. Give you",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/CoplayDev/unity-mcp",
+      "summary": "Unity MCP acts as a bridge between AI assistants and your Unity Editor. Give your LLM tools to manage assets, control scenes, edit scripts, and automate tasks within Unity. | 🔥 414 stars today | Langu",
+      "category": [
+        "开源项目",
+        "C#"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-06"
+    },
+    {
+      "id": "github-a84f48edf91c",
+      "title": "facebook/astryx — An open source design system that's fully customizable and agent ready",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/facebook/astryx",
+      "summary": "An open source design system that's fully customizable and agent ready | 🔥 522 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-06"
+    },
+    {
+      "id": "github-c79f688b7770",
+      "title": "immich-app/immich — High performance self-hosted photo and video management solution.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/immich-app/immich",
+      "summary": "High performance self-hosted photo and video management solution. | 🔥 470 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-06"
+    },
+    {
+      "id": "github-30b4721fb285",
+      "title": "ruvnet/RuView — π RuView turns commodity WiFi signals into real-time spatial intelligence, vital",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/ruvnet/RuView",
+      "summary": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video. | 🔥 161 stars today | Language: Rust",
+      "category": [
+        "开源项目",
+        "Rust"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-06"
+    },
+    {
+      "id": "github-117764d010b1",
+      "title": "gastownhall/gastown — Gas Town - multi-agent workspace manager",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/gastownhall/gastown",
+      "summary": "Gas Town - multi-agent workspace manager | 🔥 51 stars today | Language: Go",
+      "category": [
+        "开源项目",
+        "Go"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-06"
+    },
+    {
+      "id": "github-119fd7632609",
+      "title": "dotnet/skills — Repository for skills to assist AI coding agents with .NET and C#",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/dotnet/skills",
+      "summary": "Repository for skills to assist AI coding agents with .NET and C# | 🔥 246 stars today | Language: C#",
+      "category": [
+        "开源项目",
+        "C#"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-06"
+    },
+    {
+      "id": "github-ddeab962a4ca",
+      "title": "OthmanAdi/planning-with-files — Persistent file-based planning for AI coding agents and long-running agentic tas",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/OthmanAdi/planning-with-files",
+      "summary": "Persistent file-based planning for AI coding agents and long-running agentic tasks. Crash-proof markdown plans that survive context loss and /clear, plus a deterministic completion gate and multi-agen",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-06"
+    },
+    {
+      "id": "hf-model-caa021b2a0eb",
+      "title": "🤗 empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
+      "summary": "Task: image-text-to-text | Downloads: 1,533,844 | Likes: 1,561",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-06"
+    },
+    {
+      "id": "hf-model-46ba0cfe1884",
+      "title": "🤗 zai-org/GLM-5.2",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/zai-org/GLM-5.2",
+      "summary": "Task: text-generation | Downloads: 220,379 | Likes: 3,470",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-06"
+    },
+    {
+      "id": "hf-model-e66836d0026b",
+      "title": "🤗 baidu/Unlimited-OCR",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/baidu/Unlimited-OCR",
+      "summary": "Task: image-text-to-text | Downloads: 1,044,217 | Likes: 1,750",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-06"
+    },
+    {
+      "id": "hf-model-f57230398a66",
+      "title": "🤗 deepreinforce-ai/Ornith-1.0-35B-GGUF",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/deepreinforce-ai/Ornith-1.0-35B-GGUF",
+      "summary": "Task: text-generation | Downloads: 394,164 | Likes: 731",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-06"
+    },
+    {
+      "id": "hf-model-602ecaa7fd20",
+      "title": "🤗 InternScience/Agents-A1",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/InternScience/Agents-A1",
+      "summary": "Task: text-generation | Downloads: 7,010 | Likes: 290",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-06"
+    },
+    {
+      "id": "hf-model-6d563eab9ecf",
+      "title": "🤗 nvidia/Qwen3.6-27B-NVFP4",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/nvidia/Qwen3.6-27B-NVFP4",
+      "summary": "Task: text-generation | Downloads: 297,130 | Likes: 274",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-06"
+    },
+    {
+      "id": "hf-model-6401c94bb516",
+      "title": "🤗 google/tabfm-1.0.0-pytorch",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/google/tabfm-1.0.0-pytorch",
+      "summary": "Task: tabular-classification | Downloads: 2,670 | Likes: 226",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-06"
+    },
+    {
+      "id": "hf-model-72339137e72c",
+      "title": "🤗 yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
+      "summary": "Task: text-generation | Downloads: 355,871 | Likes: 1,029",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-06"
+    },
+    {
+      "id": "hf-model-c19ba93b1a84",
+      "title": "🤗 deepseek-ai/DeepSeek-V4-Pro-DSpark",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-DSpark",
+      "summary": "Task: text-generation | Downloads: 12,580 | Likes: 391",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-06"
+    },
+    {
+      "id": "hf-model-7dc946291cd1",
+      "title": "🤗 nvidia/LocateAnything-3B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/nvidia/LocateAnything-3B",
+      "summary": "Task: image-text-to-text | Downloads: 1,247,265 | Likes: 2,618",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-06"
+    },
+    {
+      "id": "hf-paper-8df6178dd3dd",
+      "title": "Scaling Laws for Grid-Based Approximate Nearest Neighbor Search in High Dimensions",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2607.01283",
+      "summary": "Grid-based approaches to approximate nearest neighbor (ANN) search have been absent from modern scaling analyses. We present a systematic characterization of a multiprobe grid algorithm with respect t",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-06"
+    },
+    {
+      "id": "hf-paper-7e374bdcf828",
+      "title": "Parameter-Efficient Quantum-Inspired Fast Weight Programmers for Traffic-Matrix Forecasting",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.27821",
+      "summary": "Traffic matrices (TMs) capture network-wide origin-destination demand and are central to traffic engineering, yet accurate whole-matrix forecasting remains challenging when prediction must be performe",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-06"
+    },
+    {
+      "id": "hf-paper-8cde69b9b6b8",
+      "title": "WARP: Weight-Space Analysis for Recovering Training Data Portfolios",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2607.01686",
+      "summary": "Foundation models are routinely released to the public, yet the data recipes used to train them -- such as domain mixture weights that determine how different sources are sampled -- are rarely disclos",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-06"
+    },
+    {
+      "id": "hf-paper-b8d6460116d3",
+      "title": "AutoMem: Automated Learning of Memory as a Cognitive Skill",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2607.01224",
+      "summary": "Memory expertise is a learned skill: knowing what to encode, when to retrieve, and how to organize knowledge--a capacity known in cognitive science as metamemory. We bring this perspective to LLMs by ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-06"
+    },
+    {
+      "id": "hf-paper-9786eb1e355a",
+      "title": "DuoMem: Towards Capable On-Device Memory Agents via Dual-Space Distillation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.29961",
+      "summary": "Large Language Model (LLM)-based agents can solve complex procedural tasks by interacting with environments over multiple turns, but this ability typically depends on large models, long contexts, and ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-06"
+    },
+    {
+      "id": "hf-paper-2d161eedd58a",
+      "title": "Logit-Contribution Scoring Identifies Non-Literal Retrieval Heads",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2607.01002",
+      "summary": "In long-context use, large language models frequently synthesize answers from the meaning of a relevant context span rather than literally copy-pasting them. Identifying which attention heads perform ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-06"
+    },
+    {
+      "id": "hf-paper-6eb59d302eab",
+      "title": "AGVBench: A Reliability-Oriented Benchmark of Data Augmentation for Vein Recognition",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2607.02271",
+      "summary": "Vein recognition is a secure biometric technology often constrained by limited annotated data and imaging variations. While data augmentation mitigates this, strategies designed for natural images may",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-06"
+    },
+    {
+      "id": "hf-paper-c1a65c010ff6",
+      "title": "Transferability for General Reasoning: An Automated Curriculum for Multi-Domain RLVR",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.25178",
+      "summary": "Reinforcement learning with verifiable rewards (RLVR) has been extended from single-domain training to multi-domain reasoning suites spanning mathematics, programming, and science. However, the traini",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-06"
+    },
+    {
+      "id": "hf-paper-4d39a790caf3",
+      "title": "InstanceControl: Controllable Complex Image Generation without Instance Labeling",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.31924",
+      "summary": "Controllable image generation methods, such as ControlNet, have demonstrated a remarkable capacity to introduce visual conditions(e.g., depth maps) to guide image generation. However, these methods of",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-06"
+    },
+    {
+      "id": "hf-paper-98e98f4db96f",
+      "title": "Breaking Failure Cascades: Step-Aware Reinforcement Learning for Medical Multimodal Reasoning",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.31825",
+      "summary": "Recent multimodal large language models have shown great promise in clinical image reasoning, but existing post-training pipelines remain predominantly outcome-centric, relying on final answer correct",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-06"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-09-09T12:07:25.557488"
+}

@@ -1,0 +1,774 @@
+{
+  "id": "2d2c604d-6ae9-4305-bd3d-a1c32a2421a2",
+  "date": "2026-06-24",
+  "items": [
+    {
+      "id": "arxiv-2606.24884v1",
+      "title": "InSight: Self-Guided Skill Acquisition via Steerable VLAs",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.24884v1",
+      "summary": "Vision-language-action (VLA) models can learn manipulation skills from demonstrations, but their capabilities are bounded by the skills in the training data. We present InSight, a framework that unloc",
+      "category": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "arxiv-2606.24879v1",
+      "title": "New Bounds for the Last Iterate of the Stochastic subGradient Method",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.24879v1",
+      "summary": "We study the last iterate of the stochastic subgradient method for one-dimensional convex Lipschitz objectives. For a fixed horizon $n$, we consider the standard fixed stepsizes $η=Θ(1/\\sqrt n)$. We p",
+      "category": [
+        "math.OC",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "arxiv-2606.24874v1",
+      "title": "FLUX3D: High-Fidelity 3D Gaussian Generation with Diffusion-Aligned Sparse Representation",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.24874v1",
+      "summary": "Sparse voxel representation has emerged as a scalable foundation for image-to-3D Gaussian Splatting (3DGS) generation, yet current methods struggle to preserve high-frequency visual details of input i",
+      "category": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "arxiv-2606.24855v1",
+      "title": "OpenThoughts-Agent: Data Recipes for Agentic Models",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.24855v1",
+      "summary": "Agentic language models dramatically expand the applications of AI yet little is publicly known about how to curate training data for broadly capable agents. Existing open efforts such as SWE-Smith, S",
+      "category": [
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "arxiv-2606.24854v1",
+      "title": "It's Complicated: On the Design and Evaluation of AI-Powered AAC Interfaces",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.24854v1",
+      "summary": "Artificial intelligence (AI) can enhance what people who use augmentative and alternative communication (AAC) are able to do with their systems. However, evaluating AI-powered AAC interfaces can be di",
+      "category": [
+        "cs.HC",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "arxiv-2606.24851v1",
+      "title": "Real vs. Complex Spectral Bases for Neural Operators: The Role of Green's Function Alignment",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.24851v1",
+      "summary": "Fourier Neural Operators (FNO) learn solution operators of partial differential equations by parameterizing global convolutions in the complex Fourier domain. For real-valued PDE solutions, the comple",
+      "category": [
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "arxiv-2606.24849v1",
+      "title": "IV-CoT: Implicit Visual Chain-of-Thought for Structure-Aware Text-to-Image Generation",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.24849v1",
+      "summary": "Unified multi-modal large language models (MLLMs) have achieved strong text-to-image generation quality, but still struggle with structure-aware prompt following, where object counts, spatial relation",
+      "category": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "arxiv-2606.24842v1",
+      "title": "World Models in Pieces: Structural Certification for General Agents",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.24842v1",
+      "summary": "In the big-world regime, agents cannot be universally capable and their ability is inevitably specialized across a world model in pieces. Consequently, standard uniform guarantees fail to distinguish ",
+      "category": [
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "arxiv-2606.24841v1",
+      "title": "Matching Tasks to Objectives: Fine-Tuning and Prompt-Tuning Strategies for Encoder-Decoder Pre-trained Language Models",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.24841v1",
+      "summary": "Prompt-based learning has emerged as a dominant paradigm in natural language processing. This study explores the impact of diverse pre-training objectives on the performance of encoder-decoder pre-tra",
+      "category": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "arxiv-2606.24839v1",
+      "title": "Grading the Grader: Lessons from Evaluating an Agentic Data Analysis System",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.24839v1",
+      "summary": "Agentic data analysis systems produce rich outputs, including code, numerical results, and verbal diagnostics. This makes them more challenging to evaluate than single-turn LLM responses. It is theref",
+      "category": [
+        "cs.AI",
+        "stat.AP"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "arxiv-2606.24834v1",
+      "title": "Accuracy and Satisfaction in Multi-Turn LLM Dialogues for NFR Assessment",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.24834v1",
+      "summary": "LLM-based dialogue assistants have become mainstream tools for software developers, yet current evaluation benchmarks focus exclusively on functional correctness. This leaves a critical gap in assessi",
+      "category": [
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "arxiv-2606.24832v1",
+      "title": "Difference-Making without Making a Difference",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.24832v1",
+      "summary": "Over a series of seven papers, Andreas & Günther have introduced seven definitions of actual causation and have classified them as belonging to three different, competing, types of accounts: factual d",
+      "category": [
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "arxiv-2606.24828v1",
+      "title": "Less is More: Quality-Aware Training Data Selection for Scientific Summarization",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.24828v1",
+      "summary": "Scientific long-document summarization datasets commonly treat author-written abstracts as gold reference summaries, although their quality and alignment with the source article vary. At the same time",
+      "category": [
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "arxiv-2606.24825v1",
+      "title": "L3Cube-MahaPOS: A Marathi Part-of-Speech Tagging Dataset and BERT Models",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.24825v1",
+      "summary": "Part-of-Speech (POS) tagging is a foundational NLP task underpinning machine translation, information extraction, and syntactic parsing. Despite Marathi being spoken by over 83 million people and rank",
+      "category": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "arxiv-2606.24824v1",
+      "title": "Solving Inverse Problems of Chaotic Systems with Bidirectional Conditional Flow Matching",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.24824v1",
+      "summary": "Modeling chaotic systems is crucial yet challenging. Inverse problems in chaotic dynamics, namely inferring initial conditions from final states, remain largely unsolved because of ill-posedness, non-",
+      "category": [
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "github-7ce4a54dcf0f",
+      "title": "calesthio/OpenMontage — World's first open-source, agentic video production system. 12 pipelines, 52 too",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "summary": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio. | 🔥 3592 stars today | Languag",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "github-c40e892699f1",
+      "title": "ZhuLinsen/daily_stock_analysis — LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "summary": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-fr",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "github-7c7aa2756d1d",
+      "title": "mukul975/Anthropic-Cybersecurity-Skills — 817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITR",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+      "summary": "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&amp;CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF &amp; MITRE F3 (Fight Fraud) · agentskills.io standard · Wo",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "github-33fa2f582c33",
+      "title": "garrytan/gstack — Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO,",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/garrytan/gstack",
+      "summary": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA | 🔥 1011 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "github-3d9a6ebdd114",
+      "title": "bytedance/deer-flow — An open-source long-horizon SuperAgent harness that researches, codes, and creat",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/bytedance/deer-flow",
+      "summary": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of ta",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "github-95fd42017b1c",
+      "title": "koala73/worldmonitor — Real-time global intelligence dashboard. AI-powered news aggregation, geopolitic",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/koala73/worldmonitor",
+      "summary": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface | 🔥 294 stars today | Language: ",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "github-f539c460ea5f",
+      "title": "palmier-io/palmier-pro — macOS video editor built for AI",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/palmier-io/palmier-pro",
+      "summary": "macOS video editor built for AI | 🔥 1630 stars today | Language: Swift",
+      "category": [
+        "开源项目",
+        "Swift"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "github-45962e8cb66e",
+      "title": "anthropics/claude-plugins-official — Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "summary": "Official, Anthropic-managed directory of high quality Claude Code Plugins. | 🔥 77 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "github-ad5992dffaf0",
+      "title": "shanraisshan/claude-code-best-practice — from vibe coding to agentic engineering - practice makes claude perfect",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/shanraisshan/claude-code-best-practice",
+      "summary": "from vibe coding to agentic engineering - practice makes claude perfect | 🔥 344 stars today | Language: HTML",
+      "category": [
+        "开源项目",
+        "HTML"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "github-d390cae184b6",
+      "title": "revfactory/harness — A meta-skill that designs domain-specific agent teams, defines specialized agent",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/revfactory/harness",
+      "summary": "A meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use. | 🔥 128 stars today | Language: HTML",
+      "category": [
+        "开源项目",
+        "HTML"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "github-2267c9689012",
+      "title": "jamiepine/voicebox — The open-source AI voice studio. Clone, dictate, create.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/jamiepine/voicebox",
+      "summary": "The open-source AI voice studio. Clone, dictate, create. | 🔥 1045 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "github-b692d5bf7ede",
+      "title": "JCodesMore/ai-website-cloner-template — Clone any website with one command using AI coding agents",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/JCodesMore/ai-website-cloner-template",
+      "summary": "Clone any website with one command using AI coding agents | 🔥 826 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "github-341f3a671438",
+      "title": "byoungd/English-level-up-tips — An advanced guide to learn English which might benefit you a lot 🎉 . 人生进阶指南 离谱的人",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/byoungd/English-level-up-tips",
+      "summary": "An advanced guide to learn English which might benefit you a lot 🎉 . 人生进阶指南 离谱的人生 离谱的英语学习指南/英语学习教程/英语学习/学英语 | 🔥 125 stars today",
+      "category": [
+        "开源项目"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "github-43e2422355ff",
+      "title": "DeusData/codebase-memory-mcp — High-performance code intelligence MCP server. Indexes codebases into a persiste",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "summary": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary",
+      "category": [
+        "开源项目",
+        "C"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "github-3c19e4a80a3d",
+      "title": "NousResearch/hermes-agent — The agent that grows with you",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "summary": "The agent that grows with you | 🔥 936 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "github-a92276b56a34",
+      "title": "affaan-m/ECC — The agent harness performance optimization system. Skills, instincts, memory, se",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/affaan-m/ECC",
+      "summary": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond. | 🔥 593 stars today | Langua",
+      "category": [
+        "开源项目",
+        "JavaScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "hf-model-46ba0cfe1884",
+      "title": "🤗 zai-org/GLM-5.2",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/zai-org/GLM-5.2",
+      "summary": "Task: text-generation | Downloads: 40,127 | Likes: 2,256",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "hf-model-ff55a456952e",
+      "title": "🤗 yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
+      "summary": "Task: text-generation | Downloads: 456,117 | Likes: 2,258",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "hf-model-e66836d0026b",
+      "title": "🤗 baidu/Unlimited-OCR",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/baidu/Unlimited-OCR",
+      "summary": "Task: image-text-to-text | Downloads: 8,396 | Likes: 577",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "hf-model-7d9ab165315b",
+      "title": "🤗 WeiboAI/VibeThinker-3B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/WeiboAI/VibeThinker-3B",
+      "summary": "Task: text-generation | Downloads: 41,170 | Likes: 674",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "hf-model-72339137e72c",
+      "title": "🤗 yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
+      "summary": "Task: text-generation | Downloads: 96,459 | Likes: 470",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "hf-model-c48b45a35ba4",
+      "title": "🤗 unsloth/GLM-5.2-GGUF",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/unsloth/GLM-5.2-GGUF",
+      "summary": "Task: text-generation | Downloads: 55,820 | Likes: 315",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "hf-model-d85ec644568f",
+      "title": "🤗 empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
+      "summary": "Task: text-generation | Downloads: 1,856 | Likes: 242",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "hf-model-caa021b2a0eb",
+      "title": "🤗 empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
+      "summary": "Task: text-generation | Downloads: 27,218 | Likes: 208",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "hf-model-1464fa38faac",
+      "title": "🤗 HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+      "summary": "Task: image-text-to-text | Downloads: 3,955,016 | Likes: 2,175",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "hf-model-7dc946291cd1",
+      "title": "🤗 nvidia/LocateAnything-3B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/nvidia/LocateAnything-3B",
+      "summary": "Task: image-text-to-text | Downloads: 274,025 | Likes: 2,329",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "hf-paper-a696238f3858",
+      "title": "QG-MIL: A Gated Transformer Aggregator for Domain-Agnostic Multiple Instance Learning in Medical Imaging",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.20027",
+      "summary": "Attention-based Multiple Instance Learning aggregators in medical imaging are prone to attention concentration, producing overconfident and unstable predictions. We introduce QG-MIL, a gated transform",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "hf-paper-1e33cbaa87da",
+      "title": "EventVLA: Event-Driven Visual Evidence Memory for Long-Horizon Vision-Language-Action Policies",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.20092",
+      "summary": "Memory remains a critical bottleneck for long-horizon robotic manipulation, as standard Vision-Language-Action (VLA) policies often fail when task-relevant cues become occluded or unobservable over ti",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "hf-paper-2fdee854afb7",
+      "title": "LingxiDiagBench: A Multi-Agent Framework for Benchmarking LLMs in Chinese Psychiatric Consultation and Diagnosis",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2602.09379",
+      "summary": "Mental disorders are highly prevalent worldwide, but the shortage of psychiatrists and the inherent subjectivity of interview-based diagnosis create substantial barriers to timely and consistent menta",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "hf-paper-2cbda5f2aecd",
+      "title": "FLAT: Feedforward Latent Triangle Splatting for Geometrically Accurate Scene Generation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.24876",
+      "summary": "Generating explorable 3D scenes from a single image requires strong generative priors and accurate geometric representations suitable for downstream use. Current video diffusion models offer high-qual",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "hf-paper-5b8d5c4ed2d5",
+      "title": "AOHP: An Open-Source OS-Level Agent Harness for Personalized, Efficient and Secure Interaction",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.23449",
+      "summary": "AI agents are driving a new software paradigm, with the ability to autonomously call tools, extract information, manage memory, and complete tasks that span applications and data sources. Most existin",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "hf-paper-1b104b924f8d",
+      "title": "Escaping the Self-Confirmation Trap: An Execute-Distill-Verify Paradigm for Agentic Experience Learning",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.24428",
+      "summary": "Experience-driven self-evolution is critical for large language model (LLM) agents to improve through open-world interaction. However, existing experience learning methods mostly rely on single-agent ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "hf-paper-5c93bd3064d6",
+      "title": "FlowR2A: Learning Reward-to-Action Distribution for Multimodal Driving Planning",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.24231",
+      "summary": "Multimodal driving planning faces a long-standing tension between two paradigms: scoring-based methods benefit from dense reward supervision but are confined to a fixed action vocabulary, while anchor",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "hf-paper-a80b7d0f893f",
+      "title": "An Efficient Method for the Optimal Control of Microgrids Under Uncertainties using Local Reduction",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.12345",
+      "summary": "The problem of optimal sizing and power scheduling in microgrids subject to uncertainties is well known to the control community. Commonly, the optimal control problem is cast as a mixed-integer progr",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "hf-paper-50b99e39083e",
+      "title": "NatureBench: Can Coding Agents Match the Published SOTA of Nature-Family Papers?",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.24530",
+      "summary": "We introduce NatureBench, a cross-discipline benchmark of 90 tasks distilled from peer-reviewed Nature-family publications, designed to evaluate whether AI coding agents can move beyond reproduction t",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "hf-paper-1f6684fcb6f4",
+      "title": "DREAM: Dense Retrieval Embeddings via Autoregressive Modeling",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.24667",
+      "summary": "Dense retrieval embedding models are a fundamental component of modern retrieval-based AI systems. Most dense retrievers are trained with contrastive objectives, which require labeled positive and neg",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "l30-x-31533f92b481",
+      "title": "SpaceX has had a rough few days. After reports of a planned $20 billion fundraising round, $SPCX dropped more than 30% from last week’s high",
+      "source": "X",
+      "source_type": "x",
+      "url": "https://x.com/Defi_princex/status/2069868445504594240",
+      "summary": "SpaceX has had a rough few days. After reports of a planned $20 billion fundraising round, $SPCX dropped more than 30% from last week’s high. Despite the pullback, some investors are treating it as a chance to increase their positions. ARK Invest has continued adding exposure, while Elon Musk remains focused on advancing AI and next-generation space techn...",
+      "category": [
+        "SpaceX"
+      ],
+      "relevance_score": 7,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "l30-x-6311b160e0ed",
+      "title": "New BATMAN Trailer! SUPERGIRL Premiere Reactions! - DCU Daily #538",
+      "source": "X",
+      "source_type": "x",
+      "url": "https://x.com/oso_curious/status/2069627419829342654",
+      "summary": "New BATMAN Trailer! SUPERGIRL Premiere Reactions! - DCU Daily #538 WATCH: https://t.co/n4f4dyjD4r - Why Amazon Dropped Sam Altman OpenAI Biopic - Bob Iger Reveals #Apple Almost Bought #Disney - #BatmanKnightfall Trailer Reaction - #Supergirl Premiere Screening Reactions Plus, we answer your questions, comments and fan theories! See John talking DC on his...",
+      "category": [
+        "OpenAI"
+      ],
+      "relevance_score": 6,
+      "created_at": "2026-06-24"
+    },
+    {
+      "id": "l30-x-b277ee1244ae",
+      "title": "We’ve designed and built our first AI chip: Jalapeño.",
+      "source": "X",
+      "source_type": "x",
+      "url": "https://x.com/OpenAI/status/2069770172802773292",
+      "summary": "We’ve designed and built our first AI chip: Jalapeño. Designed from the ground up by OpenAI and brought to production with @Broadcom, Jalapeño is purpose-built for the LLM workloads powering ChatGPT, Codex, the API, and future agentic products. Chips are foundational to the AI economy. Building our own expands our full-stack platform from products to mode...",
+      "category": [
+        "OpenAI"
+      ],
+      "relevance_score": 6,
+      "created_at": "2026-06-24"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-09-09T12:07:26.117833"
+}

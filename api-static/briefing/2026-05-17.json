@@ -1,0 +1,472 @@
+{
+  "id": "6a951f84-e90b-45b1-8bc5-caeb7308a97f",
+  "date": "2026-05-17",
+  "items": [
+    {
+      "id": "github-ea2813c4428d",
+      "title": "oven-sh/bun — Incredibly fast JavaScript runtime, bundler, test runner, and package manager – ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/oven-sh/bun",
+      "summary": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one | 🔥 397 stars today | Language: Rust",
+      "category": [
+        "开源项目",
+        "Rust"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "github-c6876fab784a",
+      "title": "K-Dense-AI/scientific-agent-skills — A set of ready to use Agent Skills for research, science, engineering, analysis,",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "summary": "A set of ready to use Agent Skills for research, science, engineering, analysis, finance and writing. | 🔥 673 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "github-ecb7de9cc8a0",
+      "title": "obra/superpowers — An agentic skills framework &amp; software development methodology that works.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/obra/superpowers",
+      "summary": "An agentic skills framework &amp; software development methodology that works. | 🔥 1305 stars today | Language: Shell",
+      "category": [
+        "开源项目",
+        "Shell"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "github-f8eddf5eef1e",
+      "title": "Anil-matcha/Open-Generative-AI — Open-source alternative to AI video platforms — Free AI image &amp; video genera",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Anil-matcha/Open-Generative-AI",
+      "summary": "Open-source alternative to AI video platforms — Free AI image &amp; video generation studio with 200+ models (Flux, Midjourney, Kling, Sora, Veo). No content filters. Self-hosted, MIT licensed. | 🔥 31",
+      "category": [
+        "开源项目",
+        "JavaScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "github-0c632f3bd507",
+      "title": "supertone-inc/supertonic — Lightning-Fast, On-Device, Multilingual TTS — running natively via ONNX.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/supertone-inc/supertonic",
+      "summary": "Lightning-Fast, On-Device, Multilingual TTS — running natively via ONNX. | 🔥 749 stars today | Language: Swift",
+      "category": [
+        "开源项目",
+        "Swift"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "github-3b31abe37078",
+      "title": "tinyhumansai/openhuman — Your Personal AI super intelligence. Private, Simple and extremely powerful.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/tinyhumansai/openhuman",
+      "summary": "Your Personal AI super intelligence. Private, Simple and extremely powerful. | 🔥 1549 stars today | Language: Rust",
+      "category": [
+        "开源项目",
+        "Rust"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "github-30b4721fb285",
+      "title": "ruvnet/RuView — π RuView turns commodity WiFi signals into real-time spatial intelligence, vital",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/ruvnet/RuView",
+      "summary": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video. | 🔥 1010 stars today | Language: Rust",
+      "category": [
+        "开源项目",
+        "Rust"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "github-f4834b6c3db9",
+      "title": "colbymchenry/codegraph — Pre-indexed code knowledge graph for Claude Code — fewer tokens, fewer tool call",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/colbymchenry/codegraph",
+      "summary": "Pre-indexed code knowledge graph for Claude Code — fewer tokens, fewer tool calls, 100% local | 🔥 416 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "hf-model-b3847c8d781e",
+      "title": "🤗 openbmb/MiniCPM-V-4.6",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.6",
+      "summary": "Task: image-text-to-text | Downloads: 28,627 | Likes: 651",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "hf-model-967b88027b16",
+      "title": "🤗 SulphurAI/Sulphur-2-base",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/SulphurAI/Sulphur-2-base",
+      "summary": "Task: text-to-video | Downloads: 875,370 | Likes: 1,035",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "hf-model-4810f52a1891",
+      "title": "🤗 Supertone/supertonic-3",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Supertone/supertonic-3",
+      "summary": "Task: text-to-speech | Downloads: 16,496 | Likes: 315",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "hf-model-fd141927797a",
+      "title": "🤗 HiDream-ai/HiDream-O1-Image",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/HiDream-ai/HiDream-O1-Image",
+      "summary": "Task: image-text-to-image | Downloads: 13,587 | Likes: 364",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "hf-model-fd92262662d1",
+      "title": "🤗 unsloth/Qwen3.6-27B-MTP-GGUF",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/unsloth/Qwen3.6-27B-MTP-GGUF",
+      "summary": "Task: image-text-to-text | Downloads: 133,815 | Likes: 205",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "hf-model-d6be4a0dd0b2",
+      "title": "🤗 Zyphra/ZAYA1-8B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Zyphra/ZAYA1-8B",
+      "summary": "Downloads: 143,806 | Likes: 514",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "hf-model-f9cff17fe4ac",
+      "title": "🤗 unsloth/Qwen3.6-35B-A3B-MTP-GGUF",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/unsloth/Qwen3.6-35B-A3B-MTP-GGUF",
+      "summary": "Task: image-text-to-text | Downloads: 124,082 | Likes: 187",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "hf-model-fe96e83596e6",
+      "title": "🤗 deepseek-ai/DeepSeek-V4-Pro",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+      "summary": "Task: text-generation | Downloads: 2,967,518 | Likes: 3,997",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "hf-model-3f03dd6c5ee8",
+      "title": "🤗 circlestone-labs/Anima",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/circlestone-labs/Anima",
+      "summary": "Downloads: 501,808 | Likes: 1,360",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "hf-model-e4baa4f464f4",
+      "title": "🤗 froggeric/Qwen-Fixed-Chat-Templates",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/froggeric/Qwen-Fixed-Chat-Templates",
+      "summary": "Likes: 246",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "hf-paper-621413283416",
+      "title": "Aligning Latent Geometry for Spherical Flow Matching in Image Generation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.15193",
+      "summary": "Latent flow matching for image generation usually transports Gaussian noise to variational autoencoder latents along linear paths. Both endpoints, however, concentrate in thin spherical shells, and a ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "hf-paper-f4f052608f81",
+      "title": "WildTableBench: Benchmarking Multimodal Foundation Models on Table Understanding In the Wild",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.01018",
+      "summary": "Using multimodal foundation models to analyze table images is a high-value yet challenging application in consumer and enterprise scenarios. Despite its importance, current evaluations rely largely on",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "hf-paper-5675af190cd3",
+      "title": "Long Context Pre-Training with Lighthouse Attention",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.06554",
+      "summary": "Training causal transformers at extreme sequence lengths is bottlenecked by the quadratic time and memory of scaled dot-product attention (SDPA). In this work, we propose Lighthouse Attention, a train",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "hf-paper-c46c2a80156f",
+      "title": "Boosting Reinforcement Learning with Verifiable Rewards via Randomly Selected Few-Shot Guidance",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.15012",
+      "summary": "Reinforcement Learning with Verifiable Rewards (RLVR) has achieved great success in developing Large Language Models (LLMs) with chain-of-thought rollouts for many tasks such as math and coding. Never",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "hf-paper-f1cdb3ee0216",
+      "title": "PreScam: A Benchmark for Predicting Scam Progression from Early Conversations",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.12243",
+      "summary": "Conversational scams, such as romance and investment scams, are emerging as a major form of online fraud. Unlike one-shot scam lures such as fake lottery or unpaid toll messages, they unfold through m",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "hf-paper-5a8bcc3c0569",
+      "title": "Sat3DGen: Comprehensive Street-Level 3D Scene Generation from Single Satellite Image",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.14984",
+      "summary": "Generating a street-level 3D scene from a single satellite image is a crucial yet challenging task. Current methods present a stark trade-off: geometry-colorization models achieve high geometric fidel",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "hf-paper-806ae40b0688",
+      "title": "Learning to Communicate Locally for Large-Scale Multi-Agent Pathfinding",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.07637",
+      "summary": "Multi-agent pathfinding (MAPF) is a widely used abstraction for multi-robot trajectory planning problems, where multiple homogeneous agents move simultaneously within a shared environment. Although so",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "hf-paper-1a0a1db7514b",
+      "title": "ViMU: Benchmarking Video Metaphorical Understanding",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.14607",
+      "summary": "Any new medium, once it emerges, is used for more than the transmission of overt content alone. The information it carries typically operates on two levels: one is the content directly presented, whil",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "hf-paper-e5db503b324d",
+      "title": "Boosting Omni-Modal Language Models: Staged Post-Training with Visually Debiased Evaluation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.12034",
+      "summary": "Omni-modal language models are intended to jointly understand audio, visual inputs, and language, but benchmark gains can be inflated when visual evidence alone is enough to answer a query. We study w",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "hf-paper-4781c9635333",
+      "title": "BEAM: Binary Expert Activation Masking for Dynamic Routing in MoE",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.14438",
+      "summary": "Mixture-of-Experts (MoE) architectures enhance the efficiency of large language models by activating only a subset of experts per token. However, standard MoE employs a fixed Top-K routing strategy, l",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "l30-tiktok-9d1965acc7d5",
+      "title": "Peter Steinberger describes how aggressively China is embracing AI agents and OpenClaw. In China, installing OpenClaw is nicknamed “raising",
+      "source": "TikTok",
+      "source_type": "tiktok",
+      "url": "https://www.tiktok.com/@thetechitout/video/7640952398743211277",
+      "summary": "Peter Steinberger describes how aggressively China is embracing AI agents and OpenClaw. In China, installing OpenClaw is nicknamed “raising lobsters,” and thousands reportedly lined up outside Tencent offices in Shenzhen to install it. Shenzhen has even offered subsidies to businesses using OpenClaw workflows. Meanwhile, in other parts of the world, insta...",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 6,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "l30-hn-31a7d25f564b",
+      "title": "Fwd: [multicians] Peter Neumann has died",
+      "source": "Hacker News",
+      "source_type": "hn",
+      "url": "https://lwn.net/ml/all/CAEoi9W7rpLzdJzYJ3-F0KVJo-wQXa7UawUYtUoUUYy36m5e_3Q@mail.gmail.com/",
+      "summary": "Fwd: [multicians] Peter Neumann has died",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 0,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "l30-hn-f5e7117b7001",
+      "title": "Microsoft is 1.84 Peters, Google is 0.66. What's the Peter unit?",
+      "source": "Hacker News",
+      "source_type": "hn",
+      "url": "https://github.com/zozo123/peter-gt-your-org",
+      "summary": "Microsoft is 1.84 Peters, Google is 0.66. What's the Peter unit?",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 0,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "l30-hn-60847cd79746",
+      "title": "Peter G. Neumann, Who Warned of Computer Security Risks, Dies at 93",
+      "source": "Hacker News",
+      "source_type": "hn",
+      "url": "https://www.nytimes.com/2026/05/17/obituaries/peter-g-neumann-dead.html",
+      "summary": "Peter G. Neumann, Who Warned of Computer Security Risks, Dies at 93",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 0,
+      "created_at": "2026-05-17"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-09-09T12:07:26.791115"
+}

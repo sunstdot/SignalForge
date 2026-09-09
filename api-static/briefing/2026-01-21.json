@@ -1,0 +1,21 @@
+{
+  "id": "02267b54-4d55-4933-a077-96e85984bbc6",
+  "date": "2026-01-21",
+  "items": [
+    {
+      "id": "vpr-funding-e670024b9a32",
+      "title": "Railway Series B funding",
+      "source": "Venture Product Radar",
+      "source_type": "funding",
+      "url": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
+      "summary": "$100M - Series B - TQ Ventures (lead), FPV Ventures, Redpoint, Unusual Ventures",
+      "category": [
+        "融资"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-01-21"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-08-10T14:49:27.254080"
+}

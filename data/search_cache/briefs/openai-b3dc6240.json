@@ -1,0 +1,435 @@
+{
+  "query": "openAI相关的信息",
+  "topic": "openAI相关的信息",
+  "headline": "OpenAI首款自研芯片Jalapeño问世，全栈硬件布局引发行业震荡",
+  "kicker": "综合简报 · 芯片与算力周",
+  "lede": "{b}OpenAI推出首款自研AI推理芯片Jalapeño{/b}，联合Broadcom量产，正式切入底层硬件。同时，{b}Stargate项目持续推进{/b}，微软、软银等巨头围绕算力基建与股权博弈，人才争夺战亦愈演愈烈。",
+  "consensus": {
+    "left": 68,
+    "right": 32,
+    "leftLabel": "自研芯片战略",
+    "leftSub": "降低对NVIDIA依赖，定制推理负载",
+    "rightLabel": "扩张风险与竞争",
+    "rightSub": "数据中心过热、人才流失、安全隐忧"
+  },
+  "meta": {
+    "total": 16,
+    "platforms": {
+      "x": 16,
+      "reddit": 0,
+      "hn": 0
+    },
+    "took": "—",
+    "window": "近 30 天",
+    "featured": 0
+  },
+  "themes": [
+    {
+      "n": "01",
+      "title": "Jalapeño芯片发布：从模型到硅的全栈闭环",
+      "html": "OpenAI正式宣布<q>设计并制造了首款AI芯片Jalapeño</q>，专为ChatGPT、Codex及Agent产品的LLM推理负载定制，由Broadcom负责生产。<src>@OpenAI</src> <src>@FinanceYF5</src> 此举被解读为对NVIDIA的替代战略启动，<num>2026</num>年有望初步降低外部依赖。<hl>OpenAI正从纯模型公司转向“模型+芯片”双轮驱动</hl>。"
+    },
+    {
+      "n": "02",
+      "title": "Stargate项目：阿根廷遇阻与全球数据中心狂潮",
+      "html": "Stargate阿根廷项目在众议院获得初步批准，但参议院前景未明。<src>@maxifirtman</src> 与此同时，软银与OpenAI仍在全球范围内激进扩建数据中心，有评论指出<q>我们建设的数据中心仍然不够</q>，尽管AI基础设施已呈泡沫化趋势。<src>@kimmonismus</src> <num>1000亿</num>美元级别投资背后，能源与环境争议升温。"
+    },
+    {
+      "n": "03",
+      "title": "人才磁吸与暗战：Anthropic再获谷歌大牛",
+      "html": "就在OpenAI自研芯片之际，主要对手Anthropic从谷歌Gemini团队吸纳了两名核心研究员<q>Jonas Adler与Alex</q>。<src>@robot2trade1</src> 同时，微软凭借约<num>25%</num>的OpenAI股权，在AI竞赛中同时坐拥应用与基础设施双重收益，资本博弈日趋复杂。<src>@TheNarrenschiff</src>"
+    },
+    {
+      "n": "04",
+      "title": "数据安全与生态震荡：爬虫宕机与内容争议",
+      "html": "OpenAI近期因搜索爬虫导致网站宕机而被迫暂停部分抓取，凸显数据收集与网络健康的冲突。<src>@stochasticarrot</src> 部分用户反映账号异常，社区内不满情绪有所上升。<src>@0xfaheng</src> 此外，Amazon放弃Sam Altman传记片的消息引发对AI叙事控制权的猜测。<src>@oso_curious</src>"
+    }
+  ],
+  "patterns": [
+    {
+      "n": 1,
+      "text": "OpenAI通过自研芯片正式向硬件层渗透，全栈化路径对标苹果与特斯拉模式",
+      "src": "@OpenAI, @FinanceYF5",
+      "lead": true
+    },
+    {
+      "n": 2,
+      "text": "数据中心军备竞赛已超越单一公司，成为国家与超级财团间的角力",
+      "src": "@kimmonismus, @maxifirtman",
+      "lead": false
+    },
+    {
+      "n": 3,
+      "text": "顶级AI人才在OpenAI、Anthropic、Google之间高频流动，薪资与算力资源成关键筹码",
+      "src": "@robot2trade1, @TheNarrenschiff",
+      "lead": false
+    },
+    {
+      "n": 4,
+      "text": "AI训练的数据获取方式正面临更严格的公共审查与伦理挑战",
+      "src": "@stochasticarrot, @0xfaheng",
+      "lead": false
+    },
+    {
+      "n": 5,
+      "text": "免费AI教育资源泛滥，巨头争相通过课程绑定开发者生态",
+      "src": "@RamSingh_369",
+      "lead": false
+    }
+  ],
+  "deepDive": [
+    {
+      "k": "A",
+      "q": "OpenAI自研芯片Jalapeño的主要定位和战略意图是什么？",
+      "a": "Jalapeño专为<b>LLM推理</b>设计，用于ChatGPT、Codex等自家产品的运行环节，而非训练。这能<b>针对性优化成本和延迟</b>，逐步摆脱对NVIDIA高性能GPU的依赖，同时增强供应链话语权。其模式类似亚马逊的Graviton和谷歌的TPU，但更聚焦在推理侧。<br>关键在于，OpenAI正在构建从模型训练到底层硬件的<b>垂直集成能力</b>，以支撑未来的Agent产品与规模化部署。"
+    },
+    {
+      "k": "B",
+      "q": "Stargate项目的当前进展与面临的主要障碍有哪些？",
+      "a": "Stargate是OpenAI与软银等合作的<b>超大规模数据中心计划</b>，预计投入金额达上千亿美元。阿根廷分支已过众议院，正向参议院推进，但面临<b>地方环保、能源供应及政治博弈</b>的阻力。全球范围内，建设速度仍被高管认为不足，反映出AI算力饥渴远未满足。同时，巨额资本支出也让市场担忧其<b>投资回报率和泡沫风险</b>。"
+    },
+    {
+      "k": "C",
+      "q": "从近期人才流动看AI竞争格局的变化趋势？",
+      "a": "谷歌核心研究员跳槽至Anthropic，表明<b>安全主义的吸引力</b>仍在增强，Anthropic在顶级人才市场对OpenAI和谷歌形成强劲挑战。微软凭借对OpenAI的投资，在博弈中占据特殊地位，既能影响决策又避免直接控制，可能导致后续<b>治理结构的冲突</b>。整体上，人才流向正从单纯的高薪向“<b>技术理念+资源匹配</b>”双维度迁移。"
+    }
+  ],
+  "dashboard": {
+    "tiles": [
+      {
+        "p": "x",
+        "label": "X",
+        "n": 16,
+        "sub": "25,052 ♥"
+      }
+    ],
+    "volumeTotal": "25,052",
+    "volume": [
+      {
+        "p": "x",
+        "name": "X",
+        "pct": 100.0,
+        "raw": "25,052"
+      }
+    ],
+    "insight": "讨论密集集中在<b>X平台</b>，芯片和人才话题由官方及财经账号引爆，但缺乏技术深度分析；风险叙事多来自观察者与边缘账号。"
+  },
+  "voices": [
+    "@OpenAI",
+    "@kimmonismus",
+    "@RamSingh_369",
+    "@RobertH56219940",
+    "@FinanceYF5",
+    "@Saanjana_Nikita"
+  ],
+  "caveat": "YouTube / TikTok / Instagram 本次返回 0 条 —— 视频侧数据缺失。",
+  "rawNote": "",
+  "timeline": [
+    {
+      "day": "6月25日",
+      "dayNote": "周四",
+      "items": [
+        {
+          "id": "l30-x-2643ce48e0f4",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "@FinanceYF5",
+          "handle": "@FinanceYF5",
+          "score": 6,
+          "title": "OpenAI 造芯片了 🔥",
+          "sum": "OpenAI 造芯片了 🔥 第一块自研 AI 芯片「Jalapeño」正式官宣，联合 Broadcom 量产，专为 ChatGPT、Codex 和 Agent 产品的 LLM 推理负载定制。 从模型到产品，再到底层芯片——OpenAI 在补全全栈。 对 NVIDIA 的依赖，要开始松动了？ https://t.co/JoUzrMa8Ss",
+          "tags": [
+            "OpenAI"
+          ],
+          "stat": "1likes, 1re",
+          "reason": "",
+          "url": "https://x.com/FinanceYF5/status/2069972531537428494"
+        },
+        {
+          "id": "l30-x-71919463aa0a",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "@TheNarrenschiff",
+          "handle": "@TheNarrenschiff",
+          "score": 6,
+          "title": "@viggy_krishnan The funny part about that is you look at NVDA market cap, you look at MSFT market cap, then you remember MSFT owns ~25% of O",
+          "sum": "@viggy_krishnan The funny part about that is you look at NVDA market cap, you look at MSFT market cap, then you remember MSFT owns ~25% of OpenAI",
+          "tags": [
+            "OpenAI"
+          ],
+          "stat": "1likes",
+          "reason": "",
+          "url": "https://x.com/TheNarrenschiff/status/2069973383836557653"
+        },
+        {
+          "id": "l30-x-b4bde5157dc5",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "@maxifirtman",
+          "handle": "@maxifirtman",
+          "score": 6,
+          "title": "Logró media sanción en Diputados el RIGINI, alias Súper RIGI. Si logra aprobación en el Senado, ¿veremos finalmente arrancar al proyecto de",
+          "sum": "Logró media sanción en Diputados el RIGINI, alias Súper RIGI. Si logra aprobación en el Senado, ¿veremos finalmente arrancar al proyecto de Stargate Argentina con el auspicio de OpenAI? 🤔",
+          "tags": [
+            "OpenAI"
+          ],
+          "stat": "1likes",
+          "reason": "",
+          "url": "https://x.com/maxifirtman/status/2069972827902460047"
+        },
+        {
+          "id": "l30-x-94d42a38fcbb",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "@robot2trade1",
+          "handle": "@robot2trade1",
+          "score": 6,
+          "title": "Major Google Brain Drain to Anthropic – June 2026Breaking: Two senior AI researchers central to Google’s Gemini — Jonas Adler (key to AI cod",
+          "sum": "Major Google Brain Drain to Anthropic – June 2026Breaking: Two senior AI researchers central to Google’s Gemini — Jonas Adler (key to AI coding efforts) and Alexander Pritzel (AI training systems) — a",
+          "tags": [
+            "OpenAI"
+          ],
+          "stat": "",
+          "reason": "",
+          "url": "https://x.com/robot2trade1/status/2069972638428991719"
+        },
+        {
+          "id": "l30-x-9b7ede527efd",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "@0xfaheng",
+          "handle": "@0xfaheng",
+          "score": 6,
+          "title": "@xpple196 @OpenAI 看来类似情况的人还不少呢",
+          "sum": "@xpple196 @OpenAI 看来类似情况的人还不少呢",
+          "tags": [
+            "OpenAI"
+          ],
+          "stat": "",
+          "reason": "",
+          "url": "https://x.com/0xfaheng/status/2069974139994341673"
+        },
+        {
+          "id": "l30-x-54807819f49e",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "@RobertH56219940",
+          "handle": "@RobertH56219940",
+          "score": 6,
+          "title": "推特蓝V代开",
+          "sum": "推特蓝V代开 OpenAi账号 电报号出售 电脑 登陆电报显示收费怎么办 纸飞飞机账号",
+          "tags": [
+            "OpenAI"
+          ],
+          "stat": "1likes, 1rt, 1re",
+          "reason": "",
+          "url": "https://x.com/RobertH56219940/status/2069973570844033202"
+        },
+        {
+          "id": "l30-x-531b7059f8d9",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "@0xfaheng",
+          "handle": "@0xfaheng",
+          "score": 6,
+          "title": "@justlookaro1 @xpple196 @OpenAI 我也是这样的",
+          "sum": "@justlookaro1 @xpple196 @OpenAI 我也是这样的",
+          "tags": [
+            "OpenAI"
+          ],
+          "stat": "",
+          "reason": "",
+          "url": "https://x.com/0xfaheng/status/2069974164509974711"
+        },
+        {
+          "id": "l30-x-038b8883a93e",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "@Saanjana_Nikita",
+          "handle": "@Saanjana_Nikita",
+          "score": 6,
+          "title": "@TaponRoy741950 @OpenAI yeah, it’s putting powerful creative tools in more hands",
+          "sum": "@TaponRoy741950 @OpenAI yeah, it’s putting powerful creative tools in more hands",
+          "tags": [
+            "OpenAI"
+          ],
+          "stat": "1likes, 1re",
+          "reason": "",
+          "url": "https://x.com/Saanjana_Nikita/status/2070120228244328638"
+        },
+        {
+          "id": "l30-x-d5e44b2ce278",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "@kimmonismus",
+          "handle": "@kimmonismus",
+          "score": 6,
+          "title": "We are still not building enough data centers.",
+          "sum": "We are still not building enough data centers. That sounds almost absurd, given the scale of the current AI infrastructure boom. OpenAI and SoftBank’s Stargate campus in Texas alone is expected to cos",
+          "tags": [
+            "OpenAI"
+          ],
+          "stat": "6likes, 2re",
+          "reason": "",
+          "url": "https://x.com/kimmonismus/status/2070120644050657317"
+        },
+        {
+          "id": "l30-x-ed1015218f4a",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "@RamSingh_369",
+          "handle": "@RamSingh_369",
+          "score": 6,
+          "title": "Learn AI for free directly from top companies.",
+          "sum": "Learn AI for free directly from top companies. 1 - Anthropic: https://t.co/Q2Z6GQ4FLG 2 - Google: https://t.co/dfcoYu9F5t 3 - Meta: https://t.co/KehbL6SMqe 4 - NVIDIA: https://t.co/yJJeBybAiq 5 - Micr",
+          "tags": [
+            "OpenAI"
+          ],
+          "stat": "3likes, 1rt",
+          "reason": "",
+          "url": "https://x.com/RamSingh_369/status/2070120395743838564"
+        },
+        {
+          "id": "l30-x-24248263ef73",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "@RamSingh_369",
+          "handle": "@RamSingh_369",
+          "score": 6,
+          "title": "15 AI founders you should follow on Twitter:",
+          "sum": "15 AI founders you should follow on Twitter: @sama = founded OpenAI @AravSrinivas = founded Perplexity AI @karpathy = ex-founding member at OpenAI @darioamodei = founded Anthropic @demishassabis = fou",
+          "tags": [
+            "OpenAI"
+          ],
+          "stat": "74likes, 28rt, 6re",
+          "reason": "",
+          "url": "https://x.com/RamSingh_369/status/2070020765932814467"
+        },
+        {
+          "id": "l30-x-0c7cc4e3bb6a",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "@stochasticarrot",
+          "handle": "@stochasticarrot",
+          "score": 6,
+          "title": "@lucas_builds For all its AI generated voice, still sounds much better than most products in the market. You can also try the OpenAI voice a",
+          "sum": "@lucas_builds For all its AI generated voice, still sounds much better than most products in the market. You can also try the OpenAI voice as well. They are doing a decent job.",
+          "tags": [
+            "OpenAI"
+          ],
+          "stat": "",
+          "reason": "",
+          "url": "https://x.com/stochasticarrot/status/2070120372914303487"
+        }
+      ]
+    },
+    {
+      "day": "6月24日",
+      "dayNote": "周三",
+      "items": [
+        {
+          "id": "l30-x-6311b160e0ed",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "@oso_curious",
+          "handle": "@oso_curious",
+          "score": 6,
+          "title": "New BATMAN Trailer! SUPERGIRL Premiere Reactions! - DCU Daily #538",
+          "sum": "New BATMAN Trailer! SUPERGIRL Premiere Reactions! - DCU Daily #538 WATCH: https://t.co/n4f4dyjD4r - Why Amazon Dropped Sam Altman OpenAI Biopic - Bob Iger Reveals #Apple Almost Bought #Disney - #Batma",
+          "tags": [
+            "OpenAI"
+          ],
+          "stat": "",
+          "reason": "",
+          "url": "https://x.com/oso_curious/status/2069627419829342654"
+        },
+        {
+          "id": "l30-x-b277ee1244ae",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "@OpenAI",
+          "handle": "@OpenAI",
+          "score": 6,
+          "title": "We’ve designed and built our first AI chip: Jalapeño.",
+          "sum": "We’ve designed and built our first AI chip: Jalapeño. Designed from the ground up by OpenAI and brought to production with @Broadcom, Jalapeño is purpose-built for the LLM workloads powering ChatGPT, ",
+          "tags": [
+            "OpenAI"
+          ],
+          "stat": "20,585likes, 2,162rt, 1,267re",
+          "reason": "",
+          "url": "https://x.com/OpenAI/status/2069770172802773292"
+        },
+        {
+          "id": "l30-x-b8870eff2ff8",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "@kimmonismus",
+          "handle": "@kimmonismus",
+          "score": 6,
+          "title": "Holy, Intercept aims to prevent both the common cold and the flu. Its eventual aim is to get rid of respiratory viruses altogether.",
+          "sum": "Holy, Intercept aims to prevent both the common cold and the flu. Its eventual aim is to get rid of respiratory viruses altogether. Backed by OpenAI, Anthropic and Bill Gates fund. love it",
+          "tags": [
+            "OpenAI"
+          ],
+          "stat": "528likes, 25rt, 35re",
+          "reason": "",
+          "url": "https://x.com/kimmonismus/status/2069809077136339120"
+        }
+      ]
+    },
+    {
+      "day": "6月22日",
+      "dayNote": "周一",
+      "items": [
+        {
+          "id": "l30-x-86da9010cb84",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "@RamSingh_369",
+          "handle": "@RamSingh_369",
+          "score": 6,
+          "title": "Learn AI for free directly from top companies.",
+          "sum": "Learn AI for free directly from top companies. 1 - Anthropic: https://t.co/Q2Z6GQ4FLG 2 - Google: https://t.co/dfcoYu9F5t 3 - Meta: https://t.co/KehbL6SMqe 4 - NVIDIA: https://t.co/yJJeBybAiq 5 - Micr",
+          "tags": [
+            "OpenAI"
+          ],
+          "stat": "235likes, 66rt, 20re",
+          "reason": "",
+          "url": "https://x.com/RamSingh_369/status/2069088734193373357"
+        }
+      ]
+    }
+  ]
+}

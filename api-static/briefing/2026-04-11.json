@@ -1,0 +1,670 @@
+{
+  "id": "0fdb99ed-fba4-4e1e-9962-f24fc1fc90b7",
+  "date": "2026-04-11",
+  "items": [
+    {
+      "id": "civitai-2530144",
+      "title": "🎨 Ivan_Jaxenway_ZIT (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2530144",
+      "summary": "Type: LORA | Downloads: 8 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:49.974304"
+    },
+    {
+      "id": "civitai-2490823",
+      "title": "🎨 Clio Aite for Anima [Phase Connect] (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2490823",
+      "summary": "Type: LORA | Downloads: 54 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:49.974299"
+    },
+    {
+      "id": "civitai-1890171",
+      "title": "🎨 Kyhu artist style - k-y-h-u (old pen name of iafhy) [ANIMA/IL/ZIT] (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/1890171",
+      "summary": "Type: LORA | Downloads: 394 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:49.974293"
+    },
+    {
+      "id": "civitai-2490999",
+      "title": "🎨 Any≽^•⩊•^≼Gurim [illustrious] (Checkpoint)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2490999",
+      "summary": "Type: Checkpoint | Downloads: 197 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:49.974285"
+    },
+    {
+      "id": "civitai-2511814",
+      "title": "🎨 Gargoyles & Grotesques [F1D,K9B,Chrm,Illu,ZImg] (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2511814",
+      "summary": "Type: LORA | Downloads: 87 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:49.974279"
+    },
+    {
+      "id": "civitai-2532409",
+      "title": "🎨 Tessia Eralith | テシア・エラリス | The Beginning After the End (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2532409",
+      "summary": "Type: LORA | Downloads: 3 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:49.974270"
+    },
+    {
+      "id": "civitai-2533801",
+      "title": "🎨 K-Pop Demon Hunters - Mira (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2533801",
+      "summary": "Type: LORA | Downloads: 3 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:49.974260"
+    },
+    {
+      "id": "civitai-2532529",
+      "title": "🎨 [IL CHARACTER 187] Star Detective Precure Cure Answer (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2532529",
+      "summary": "Type: LORA | Downloads: 4 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:49.974256"
+    },
+    {
+      "id": "civitai-2533807",
+      "title": "🎨 William Hogarth Style XL Nr. 1 (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2533807",
+      "summary": "Type: LORA | Downloads: 0 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:49.974248"
+    },
+    {
+      "id": "civitai-978260",
+      "title": "🎨 Ivory style (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/978260",
+      "summary": "Type: LORA | Downloads: 319 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:49.974185"
+    },
+    {
+      "id": "hf-model-fcfacb051911",
+      "title": "🤗 baidu/Qianfan-OCR",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/baidu/Qianfan-OCR",
+      "summary": "Task: image-text-to-text | Downloads: 43,619 | Likes: 1,133",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:48.578194"
+    },
+    {
+      "id": "hf-model-0ea922f56cb4",
+      "title": "🤗 google/gemma-4-26B-A4B-it",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+      "summary": "Task: image-text-to-text | Downloads: 1,269,031 | Likes: 589",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:48.578188"
+    },
+    {
+      "id": "hf-model-73665a6e3a2f",
+      "title": "🤗 google/gemma-4-E4B-it",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/google/gemma-4-E4B-it",
+      "summary": "Task: any-to-any | Downloads: 961,135 | Likes: 564",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:48.578182"
+    },
+    {
+      "id": "hf-model-b0310e0acf74",
+      "title": "🤗 k2-fsa/OmniVoice",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/k2-fsa/OmniVoice",
+      "summary": "Task: text-to-speech | Downloads: 269,789 | Likes: 473",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:48.578176"
+    },
+    {
+      "id": "hf-model-5a5b20cc1da7",
+      "title": "🤗 Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled",
+      "summary": "Task: image-text-to-text | Downloads: 567,166 | Likes: 2,566",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:48.578171"
+    },
+    {
+      "id": "hf-model-b88ea472e3ac",
+      "title": "🤗 netflix/void-model",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/netflix/void-model",
+      "summary": "Task: video-to-video | Likes: 739",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:48.578164"
+    },
+    {
+      "id": "hf-model-b2cd1173ff38",
+      "title": "🤗 openbmb/VoxCPM2",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/openbmb/VoxCPM2",
+      "summary": "Task: text-to-speech | Downloads: 3,765 | Likes: 669",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:48.578158"
+    },
+    {
+      "id": "hf-model-a3e36e1accc3",
+      "title": "🤗 dealignai/Gemma-4-31B-JANG_4M-CRACK",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/dealignai/Gemma-4-31B-JANG_4M-CRACK",
+      "summary": "Task: image-text-to-text | Downloads: 75,426 | Likes: 900",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:48.578152"
+    },
+    {
+      "id": "hf-model-2f79a3598954",
+      "title": "🤗 zai-org/GLM-5.1",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/zai-org/GLM-5.1",
+      "summary": "Task: text-generation | Downloads: 15,930 | Likes: 935",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:48.578142"
+    },
+    {
+      "id": "hf-model-2d0f16bac7e1",
+      "title": "🤗 google/gemma-4-31B-it",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/google/gemma-4-31B-it",
+      "summary": "Task: image-text-to-text | Downloads: 1,589,761 | Likes: 1,675",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:48.578120"
+    },
+    {
+      "id": "github-148364bdecff",
+      "title": "adamlyttleapps/claude-skill-app-onboarding-questionnaire —  A Claude Code skill that designs and builds high-converting questionnaire-style",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/adamlyttleapps/claude-skill-app-onboarding-questionnaire",
+      "summary": " A Claude Code skill that designs and builds high-converting questionnaire-style app onboarding flows — modelled    on proven conversion patterns from top subscription apps like Mob, Headspace and Noo",
+      "category": [
+        "开源项目"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:49.112972"
+    },
+    {
+      "id": "github-c3e4804770e0",
+      "title": "wxtsky/CodeIsland",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/wxtsky/CodeIsland",
+      "summary": "⭐ 799 stars | Language: Swift",
+      "category": [
+        "开源项目",
+        "Swift"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:49.112966"
+    },
+    {
+      "id": "github-2554f73f6b8a",
+      "title": "phuryn/claude-usage — A local dashboard for tracking your Claude Code token usage, costs, and session ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/phuryn/claude-usage",
+      "summary": "A local dashboard for tracking your Claude Code token usage, costs, and session history. Pro and Max subscribers get a progress bar. This gives you the full picture. | ⭐ 816 stars | Language: Python |",
+      "category": [
+        "开源项目",
+        "Python",
+        "claude-code"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:49.112961"
+    },
+    {
+      "id": "github-dac1face2a1c",
+      "title": "mattmireles/gemma-tuner-multimodal — Fine-tune Gemma 4 and 3n with audio, images and text on Apple Silicon, using PyT",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/mattmireles/gemma-tuner-multimodal",
+      "summary": "Fine-tune Gemma 4 and 3n with audio, images and text on Apple Silicon, using PyTorch and Metal Performance Shaders. | ⭐ 1,154 stars | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:49.112953"
+    },
+    {
+      "id": "github-b759fcbff766",
+      "title": "fikrikarim/parlor — On-device, real-time multimodal AI. Have natural voice and vision conversations ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/fikrikarim/parlor",
+      "summary": "On-device, real-time multimodal AI. Have natural voice and vision conversations with an AI that runs entirely on your machine. Powered by Gemma 4 E2B and Kokoro. | ⭐ 1,318 stars | Language: HTML | Top",
+      "category": [
+        "开源项目",
+        "HTML",
+        "apple-silicon",
+        "gemma"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:49.112947"
+    },
+    {
+      "id": "github-edaa5547747f",
+      "title": "KKKKhazix/khazix-skills — 数字生命卡兹克开源的 AI Skills 合集",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/KKKKhazix/khazix-skills",
+      "summary": "数字生命卡兹克开源的 AI Skills 合集 | ⭐ 1,431 stars",
+      "category": [
+        "开源项目"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:49.112938"
+    },
+    {
+      "id": "github-13c2191b859c",
+      "title": "alchaincyf/hermes-agent-orange-book — Hermes Agent 从入门到精通 · 橙皮书系列 · Nous Research 开源 AI Agent 框架实战指南",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/alchaincyf/hermes-agent-orange-book",
+      "summary": "Hermes Agent 从入门到精通 · 橙皮书系列 · Nous Research 开源 AI Agent 框架实战指南 | ⭐ 1,520 stars",
+      "category": [
+        "开源项目"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:49.112928"
+    },
+    {
+      "id": "github-f1aa082a6499",
+      "title": "hotcoffeeshake/tong-jincheng-skill — 童锦程视角 Skill — 用深情祖师爷的思维框架分析人际关系",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/hotcoffeeshake/tong-jincheng-skill",
+      "summary": "童锦程视角 Skill — 用深情祖师爷的思维框架分析人际关系 | ⭐ 1,521 stars",
+      "category": [
+        "开源项目"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:49.112913"
+    },
+    {
+      "id": "github-f68fc10d8ba4",
+      "title": "LaurieWired/tailslayer — Library for reducing tail latency in RAM reads",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/LaurieWired/tailslayer",
+      "summary": "Library for reducing tail latency in RAM reads | ⭐ 1,916 stars | Language: C++",
+      "category": [
+        "开源项目",
+        "C++"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:49.112898"
+    },
+    {
+      "id": "github-382ad2d4cbfd",
+      "title": "garrytan/gbrain — Garry's Opinionated OpenClaw/Hermes Agent Brain",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/garrytan/gbrain",
+      "summary": "Garry's Opinionated OpenClaw/Hermes Agent Brain | ⭐ 2,619 stars | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:49.112879"
+    },
+    {
+      "id": "github-c37765835b8d",
+      "title": "xixu-me/awesome-persona-distill-skills — 同事.skill, 女娲.skill, 前任.skill… Curated list of Agent Skills centered on people, r",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/xixu-me/awesome-persona-distill-skills",
+      "summary": "同事.skill, 女娲.skill, 前任.skill… Curated list of Agent Skills centered on people, relationships, commemorative scenes, and methodological perspectives | ⭐ 2,866 stars | Language: JavaScript | Topics: age",
+      "category": [
+        "开源项目",
+        "JavaScript",
+        "agent-skills",
+        "awesome"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:49.112862"
+    },
+    {
+      "id": "github-15e11757994b",
+      "title": "alchaincyf/zhangxuefeng-skill — 张雪峰.skill — 张雪峰的认知操作系统。高考志愿/考研/职业规划的实战思维框架。由女娲.skill生成。",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/alchaincyf/zhangxuefeng-skill",
+      "summary": "张雪峰.skill — 张雪峰的认知操作系统。高考志愿/考研/职业规划的实战思维框架。由女娲.skill生成。 | ⭐ 3,115 stars",
+      "category": [
+        "开源项目"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:49.112837"
+    },
+    {
+      "id": "github-db76cfda3b02",
+      "title": "farzaa/clicky",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/farzaa/clicky",
+      "summary": "⭐ 3,567 stars | Language: Swift",
+      "category": [
+        "开源项目",
+        "Swift"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:49.112819"
+    },
+    {
+      "id": "github-625dbf2069d9",
+      "title": "alchaincyf/nuwa-skill — 你想蒸馏的下一个员工，何必是同事。蒸馏任何人的思维方式——心智模型、决策启发式、表达DNA。Distill how anyone thinks.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/alchaincyf/nuwa-skill",
+      "summary": "你想蒸馏的下一个员工，何必是同事。蒸馏任何人的思维方式——心智模型、决策启发式、表达DNA。Distill how anyone thinks. | ⭐ 6,633 stars | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:49.112795"
+    },
+    {
+      "id": "github-324dca1fa921",
+      "title": "milla-jovovich/mempalace — The highest-scoring AI memory system ever benchmarked. And it's free.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/milla-jovovich/mempalace",
+      "summary": "The highest-scoring AI memory system ever benchmarked. And it's free. | ⭐ 40,138 stars | Language: Python | Topics: ai, chromadb, llm, mcp, memory",
+      "category": [
+        "开源项目",
+        "Python",
+        "ai",
+        "chromadb"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:49.112737"
+    },
+    {
+      "id": "hf-paper-7d3a678bd26e",
+      "title": "On the Global Photometric Alignment for Low-Level Vision",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.08172",
+      "summary": "Supervised low-level vision models rely on pixel-wise losses against paired references, yet paired training sets exhibit per-pair photometric inconsistency, say, different image pairs demand different",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:48.933649"
+    },
+    {
+      "id": "hf-paper-9bda52824fc8",
+      "title": "AnomalyVFM -- Transforming Vision Foundation Models into Zero-Shot Anomaly Detectors",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2601.20524",
+      "summary": "Zero-shot anomaly detection aims to detect and localise abnormal regions in the image without access to any in-domain training images. While recent approaches leverage vision-language models (VLMs), s",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:48.933645"
+    },
+    {
+      "id": "hf-paper-4f1c610f9a1c",
+      "title": "Faithful GRPO: Improving Visual Spatial Reasoning in Multimodal Language Models via Constrained Policy Optimization",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.08476",
+      "summary": "Multimodal reasoning models (MRMs) trained with reinforcement learning with verifiable rewards (RLVR) show improved accuracy on visual reasoning benchmarks. However, we observe that accuracy gains oft",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:48.933640"
+    },
+    {
+      "id": "hf-paper-52b896f9bed6",
+      "title": "Small Vision-Language Models are Smart Compressors for Long Video Understanding",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.08120",
+      "summary": "Adapting Multimodal Large Language Models (MLLMs) for hour-long videos is bottlenecked by context limits. Dense visual streams saturate token budgets and exacerbate the lost-in-the-middle phenomenon. ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:48.933634"
+    },
+    {
+      "id": "hf-paper-27b86404ba33",
+      "title": "ClawBench: Can AI Agents Complete Everyday Online Tasks?",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.08523",
+      "summary": "AI agents may be able to automate your inbox, but can they automate other routine aspects of your life? Everyday online tasks offer a realistic yet unsolved testbed for evaluating the next generation ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:48.933629"
+    },
+    {
+      "id": "hf-paper-f8ee84fc6d3b",
+      "title": "CylinderDepth: Cylindrical Spatial Attention for Multi-View Consistent Self-Supervised Surround Depth Estimation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2511.16428",
+      "summary": "Self-supervised surround-view depth estimation enables dense, low-cost 3D perception with a 360° field of view from multiple minimally overlapping images. Yet, most existing methods suffer from depth ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:48.933620"
+    },
+    {
+      "id": "hf-paper-473df9e5c31e",
+      "title": "Training a Student Expert via Semi-Supervised Foundation Model Distillation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.03841",
+      "summary": "Foundation models deliver strong perception but are often too computationally heavy to deploy, and adapting them typically requires costly annotations. We introduce a semi-supervised knowledge distill",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:48.933615"
+    },
+    {
+      "id": "hf-paper-fbccc4a4c757",
+      "title": "The Master Key Hypothesis: Unlocking Cross-Model Capability Transfer via Linear Subspace Alignment",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.06377",
+      "summary": "We investigate whether post-trained capabilities can be transferred across models without retraining, with a focus on transfer across different model scales. We propose the Master Key Hypothesis, whic",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:48.933610"
+    },
+    {
+      "id": "hf-paper-8be9fdf444ff",
+      "title": "QEIL v2: Heterogeneous Computing for Edge Intelligence via Roofline-Derived Pareto-Optimal Energy Modeling and Multi-Objective Orchestration",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2602.06057",
+      "summary": "Deploying large language models (LLMs) on heterogeneous edge devices demands frameworks that jointly optimize energy efficiency, inference quality, and reliability. Our prior QEIL v1 (Kumar & Jha, 202",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:48.933604"
+    },
+    {
+      "id": "hf-paper-f8198b3ee953",
+      "title": "Appear2Meaning: A Cross-Cultural Benchmark for Structured Cultural Metadata Inference from Images",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.07338",
+      "summary": "Recent advances in vision-language models (VLMs) have improved image captioning for cultural heritage. However, inferring structured cultural metadata (e.g., creator, origin, period) from visual input",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-11T10:09:48.933586"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-09-09T12:07:30.516742"
+}

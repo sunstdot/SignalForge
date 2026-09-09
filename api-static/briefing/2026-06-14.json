@@ -1,0 +1,47 @@
+{
+  "id": "fed14e7e-79df-4450-ac9a-34f6bb361379",
+  "date": "2026-06-14",
+  "items": [
+    {
+      "id": "l30-x-1fddd235dec5",
+      "title": "In January 2026, one developer pushed a weekend side-project to GitHub.",
+      "source": "X",
+      "source_type": "x",
+      "url": "https://x.com/sabir_huss50540/status/2066023151373554130",
+      "summary": "In January 2026, one developer pushed a weekend side-project to GitHub. 90 days later it had more stars than almost any open-source project in history. Then its creator was hired by OpenAI. This is the story of OpenClaw. It started as a private experiment by Peter Steinberger an Austrian developer who had already built PSPDFKit, the PDF engine quietly run...",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-14"
+    },
+    {
+      "id": "l30-x-64c6030091de",
+      "title": "https://t.co/5AsrH5nkeG 这期讲了一个正在发酵的概念，叫 Loopcraft，堆叠循环的艺术",
+      "source": "X",
+      "source_type": "x",
+      "url": "https://x.com/GoSailGlobal/status/2065998416623153250",
+      "summary": "https://t.co/5AsrH5nkeG 这期讲了一个正在发酵的概念，叫 Loopcraft，堆叠循环的艺术 最近三个人几乎说了同一句话： Peter Steinberger：别再 prompt coding agent 了，去设计那个「替你 prompt agent 的循环」 Boris Cherny（Claude Code 作者）：我不再 prompt Claude 了，我写循环，循环替我干活 Karpathy 说得最透： 把你自己从瓶颈里移出去 你不能守在那儿 prompt 下一步 要把事情安排成完全自主，最大化 token 吞吐，别待在 loop 里 我不想当那个守在 loop 里盯结果的研究员，那是我在拖系统后腿 剩下的问题只有一个：怎么重构抽象，让我安排一次，然后按下开始 https:/...",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 7,
+      "created_at": "2026-06-14"
+    },
+    {
+      "id": "l30-x-a6d8410041da",
+      "title": "🚨الذكاء الاصطناعي صار قادر يشتري عبر خدمة PayPal… وصاحب الحساب ظن أن حسابه تعرّض للاختراق‼️",
+      "source": "X",
+      "source_type": "x",
+      "url": "https://x.com/cryp2_/status/2066146932280430703",
+      "summary": "🚨الذكاء الاصطناعي صار قادر يشتري عبر خدمة PayPal… وصاحب الحساب ظن أن حسابه تعرّض للاختراق‼️ المطور Peter Steinberger يختبر وكيل الذكاء الاصطناعي Codex ومنحه تعليمات عامة لإكمال مهمة اختبار بأي طريقة ممكنة. 👀 النتيجة كانت مفاجئة و قام الوكيل بالتسجيل في خدمة على الإنترنت واستخدم حساب PayPal الخاص به لإتمام الدفع تلقائياً.",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 7,
+      "created_at": "2026-06-14"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-06-19T10:22:35.371005"
+}

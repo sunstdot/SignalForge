@@ -1,0 +1,503 @@
+{
+  "id": "1be22538-4ebf-48db-8f1e-b00b298af127",
+  "date": "2026-09-02",
+  "items": [
+    {
+      "id": "github-f6682f4efbb6",
+      "title": "Gitlawb/openclaude — runs anywhere. uses anything",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Gitlawb/openclaude",
+      "summary": "runs anywhere. uses anything | 🔥 80 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-02"
+    },
+    {
+      "id": "github-bdfeea019558",
+      "title": "Imbad0202/academic-research-skills — Academic Research Skills for Claude Code: research → write → review → revise → f",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Imbad0202/academic-research-skills",
+      "summary": "Academic Research Skills for Claude Code: research → write → review → revise → finalize | 🔥 193 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-02"
+    },
+    {
+      "id": "github-6826cd5614eb",
+      "title": "THU-MAIC/OpenMAIC — Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/THU-MAIC/OpenMAIC",
+      "summary": "Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click | 🔥 3128 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-02"
+    },
+    {
+      "id": "github-076b4ce0707d",
+      "title": "iv-org/invidious — Invidious is an alternative front-end to YouTube",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/iv-org/invidious",
+      "summary": "Invidious is an alternative front-end to YouTube | 🔥 577 stars today | Language: Crystal",
+      "category": [
+        "开源项目",
+        "Crystal"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-02"
+    },
+    {
+      "id": "github-ddcd47b55158",
+      "title": "jingyaogong/minimind — 🧠 Train a 64M-parameter LLM from scratch in just 2h!",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/jingyaogong/minimind",
+      "summary": "🧠 Train a 64M-parameter LLM from scratch in just 2h! | 🔥 1005 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-02"
+    },
+    {
+      "id": "github-c297bc5e7dfa",
+      "title": "3b1b/manim — Animation engine for explanatory math videos",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/3b1b/manim",
+      "summary": "Animation engine for explanatory math videos | 🔥 86 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-02"
+    },
+    {
+      "id": "github-7c784d837298",
+      "title": "firecrawl/pdf-inspector — Fast Rust library for PDF inspection, classification, and text extraction. Intel",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/firecrawl/pdf-inspector",
+      "summary": "Fast Rust library for PDF inspection, classification, and text extraction. Intelligently detects scanned vs text-based PDFs to enable smart routing decisions. | 🔥 541 stars today | Language: Rust",
+      "category": [
+        "开源项目",
+        "Rust"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-02"
+    },
+    {
+      "id": "github-76b64a130e81",
+      "title": "browser-use/video-use — Edit videos with coding agents",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/browser-use/video-use",
+      "summary": "Edit videos with coding agents | 🔥 472 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-02"
+    },
+    {
+      "id": "github-c6876fab784a",
+      "title": "K-Dense-AI/scientific-agent-skills — Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science,",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "summary": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 190,000+ scientists worldwide. 165 ready-to-use validated skills plus 100+ scientific databases covering biolog",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-02"
+    },
+    {
+      "id": "github-26c0cf9d7d4b",
+      "title": "handsomestWei/patent-disclosure-skill — 中国专利.skill：专利点挖掘与交底书（发明/实用/外观）编写，通俗解读专利，嗅探政策动向，辅助审查答复。",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/handsomestWei/patent-disclosure-skill",
+      "summary": "中国专利.skill：专利点挖掘与交底书（发明/实用/外观）编写，通俗解读专利，嗅探政策动向，辅助审查答复。 | 🔥 501 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-02"
+    },
+    {
+      "id": "github-30e7d17a9cd2",
+      "title": "VoltAgent/awesome-design-md — A collection of DESIGN.md files analysis by popular brand design systems. Drop o",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/VoltAgent/awesome-design-md",
+      "summary": "A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI. | 🔥 323 stars today",
+      "category": [
+        "开源项目"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-02"
+    },
+    {
+      "id": "github-3b8791b00081",
+      "title": "averygan/reclip — Download videos from almost any website. Lightweight, self-hosted media download",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/averygan/reclip",
+      "summary": "Download videos from almost any website. Lightweight, self-hosted media downloader with a clean web UI. | 🔥 56 stars today | Language: HTML",
+      "category": [
+        "开源项目",
+        "HTML"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-02"
+    },
+    {
+      "id": "github-a92276b56a34",
+      "title": "affaan-m/ECC — The agent harness performance optimization system. Skills, instincts, memory, se",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/affaan-m/ECC",
+      "summary": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond. | 🔥 623 stars today | Langua",
+      "category": [
+        "开源项目",
+        "JavaScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-02"
+    },
+    {
+      "id": "github-ac823d5a54fc",
+      "title": "unclecode/crawl4ai — 🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler &amp; Scraper. Don't be shy, j",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/unclecode/crawl4ai",
+      "summary": "🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler &amp; Scraper. Don't be shy, join here: https://discord.gg/jP8KfhDhyN | 🔥 145 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-02"
+    },
+    {
+      "id": "hf-model-40dbb02e3218",
+      "title": "🤗 Qwen/Qwen3.8-Flash-Next",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "summary": "Task: image-text-to-text | Downloads: 207,941 | Likes: 4,653",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-02"
+    },
+    {
+      "id": "hf-model-f9ef0c50f53f",
+      "title": "🤗 zai-org/GLM-5.3-Flash",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+      "summary": "Task: image-text-to-text | Downloads: 441,348 | Likes: 1,888",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-02"
+    },
+    {
+      "id": "hf-model-92df0cfe7470",
+      "title": "🤗 zai-org/GLM-5.3",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/zai-org/GLM-5.3",
+      "summary": "Task: text-generation | Downloads: 94,403 | Likes: 1,470",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-02"
+    },
+    {
+      "id": "hf-model-834c288aad30",
+      "title": "🤗 unsloth/Qwen3.8-Flash-Next-GGUF",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF",
+      "summary": "Task: image-text-to-text | Downloads: 431,339 | Likes: 675",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-02"
+    },
+    {
+      "id": "hf-model-11403ace832c",
+      "title": "🤗 Qwen/Qwen3.8-27B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "summary": "Task: image-text-to-text | Downloads: 4,960,483 | Likes: 13,590",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-02"
+    },
+    {
+      "id": "hf-model-e01ed061937e",
+      "title": "🤗 deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+      "summary": "Task: image-text-to-text | Downloads: 17,893 | Likes: 454",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-02"
+    },
+    {
+      "id": "hf-model-8688caa6e3c0",
+      "title": "🤗 tencent/Hy4-preview",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/tencent/Hy4-preview",
+      "summary": "Task: text-generation | Downloads: 3,516 | Likes: 386",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-02"
+    },
+    {
+      "id": "hf-model-db5ef72cf723",
+      "title": "🤗 unsloth/Qwen3.8-27B-GGUF",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+      "summary": "Downloads: 9,354,057 | Likes: 3,341",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-02"
+    },
+    {
+      "id": "hf-model-eaf280aff552",
+      "title": "🤗 Lightricks/LTX-2.5",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "summary": "Task: image-to-video | Downloads: 1,232,274 | Likes: 2,469",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-02"
+    },
+    {
+      "id": "hf-model-3635002acd90",
+      "title": "🤗 unsloth/GLM-5.3-Flash-GGUF",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF",
+      "summary": "Task: text-generation | Downloads: 63,718 | Likes: 326",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-02"
+    },
+    {
+      "id": "hf-paper-8930903ce95c",
+      "title": "Harness-of-Harness: Multi-Day Autonomous Software Development with Continual Improvement",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2609.01481",
+      "summary": "This paper studies autonomous software development, in which LLM-based coding agents transform high-level requirements into complete, functional, and usable software systems without human intervention",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-02"
+    },
+    {
+      "id": "hf-paper-320210e27637",
+      "title": "UI-Venus-2 Technical Report",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2609.00028",
+      "summary": "Multimodal GUI agents have emerged as a promising paradigm for digital task automation, yet transitioning from benchmark-oriented models to dependable real-world applications remains challenging due t",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-02"
+    },
+    {
+      "id": "hf-paper-55eff2da32f1",
+      "title": "Qwen-Drive-1.0: An Initial Step towards a Vision-Language Foundation Model for Autonomous Driving",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2609.00111",
+      "summary": "We present Qwen-Drive-1.0, an initial step towards a vision-language foundation model for autonomous driving. Qwen-Drive-1.0 retains the architecture of the pretrained vision-language model (VLM) and ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-02"
+    },
+    {
+      "id": "hf-paper-ff18235ce8b4",
+      "title": "ZimaBlue: Evolving Generalizable World Action Models through Scalable Video Pre-training",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2609.00188",
+      "summary": "Robotic manipulation faces a fundamental scaling challenge: robust generalization demands broad physical experience, yet action-labeled robot trajectories are expensive to collect and inherently limit",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-02"
+    },
+    {
+      "id": "hf-paper-f49942eb494f",
+      "title": "E-Commerce Bench: Evaluating LLM Agents on Long-Horizon Autonomous Business Operation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2608.30730",
+      "summary": "Long-horizon agentic tasks go beyond chaining short tasks over more interaction turns. Their evolving dynamic environments and long-range dependencies require Large Language Models (LLMs) to continual",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-02"
+    },
+    {
+      "id": "hf-paper-1db54091c8e9",
+      "title": "H3-World: Turning Language Understanding into World Control",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2609.01560",
+      "summary": "We present H3-World, an efficient framework that turns the 33B MiniMax-H3 video generator into an interactive world model. Our key finding is that, as large video generators become more capable, langu",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-02"
+    },
+    {
+      "id": "hf-paper-58b7ee65a67e",
+      "title": "StudentSim: Training LLM-based Student Simulators",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2609.01591",
+      "summary": "AI tutors are most useful when they adapt to each student's strengths, weaknesses, and preferred guidance, but evidence about which guidance works for which student is sparse, slow, and costly to coll",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-02"
+    },
+    {
+      "id": "hf-paper-6ce6455091af",
+      "title": "Evaluating Multimodal LLMs as Generalist Vision-Language-Action Agents for Drone Control: Commanding, Approaching, Tracking and Searching",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2609.01404",
+      "summary": "Multimodal Large Language Models (MLLMs) are strong perceivers of images and video. We ask how far that reach extends into acting: dropping an MLLM directly into a drone's control loop, with its entir",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-02"
+    },
+    {
+      "id": "hf-paper-7fd27e340e5f",
+      "title": "Control-Data Flow Separation: Stable Prompt Optimization in Multi-Agent LLMs",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2609.00621",
+      "summary": "Prompt optimization can improve multi-agent LLM systems, but the prompts being optimized often serve two entangled roles: generating task-relevant content and specifying execution-critical protocols, ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-02"
+    },
+    {
+      "id": "hf-paper-fbe8563f8902",
+      "title": "Uncovering Understanding-Generation Synergy in Native Unified Multimodal Models: From Representation, Task to System",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2609.01607",
+      "summary": "While unified multimodal models (UMMs) jointly perform visual understanding and generation within a single model, functional unification does not guarantee learning synergy: the two objectives may rei",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-02"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-09-09T12:07:24.476431"
+}

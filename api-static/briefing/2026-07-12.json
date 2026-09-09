@@ -1,0 +1,591 @@
+{
+  "id": "8587c44c-99b1-4859-a865-412a8cb0bfa7",
+  "date": "2026-07-12",
+  "items": [
+    {
+      "id": "arxiv-2607.08768v1",
+      "title": "UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.08768v1",
+      "summary": "The rapid development of large language models and multimodal large language models has accelerated the emergence of proactive agents capable of operating everyday tools and assisting users in real-wo",
+      "category": [
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-10"
+    },
+    {
+      "id": "arxiv-2607.08763v1",
+      "title": "OpenCoF: Learning to Reason Through Video Generation",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.08763v1",
+      "summary": "Reasoning has become a core capability for large models, especially when reliable decisions require understanding logical consequences. Recent video generation models offer a reasoning path distinct f",
+      "category": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-10"
+    },
+    {
+      "id": "arxiv-2607.08758v1",
+      "title": "Ideas Have Genomes: Benchmarking Scientific Lineage Reasoning and Lineage-Grounded Idea Generation",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.08758v1",
+      "summary": "Scientific ideas rarely start from a blank page. They inherit mechanisms, repair known limitations, and recombine pieces of earlier work, much like biological genomes. Current benchmarks still say lit",
+      "category": [
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-10"
+    },
+    {
+      "id": "arxiv-2607.08757v1",
+      "title": "Score Accuracy Along the Forward Diffusion Does Not Certify Numerical Stability in Diffusion Sampling",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.08757v1",
+      "summary": "Score matching controls average error under the forward marginals, but a discretized reverse-time sampler evaluates the learned score along its own trajectory. We show that small forward-marginal erro",
+      "category": [
+        "stat.ML",
+        "cs.LG",
+        "math.NA"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-10"
+    },
+    {
+      "id": "arxiv-2607.08756v1",
+      "title": "MulTTiPop: A Multitrack Transcription Dataset for Pop Music",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.08756v1",
+      "summary": "We present MulTTiPop, a dataset of pop music segments and their associated multitrack MIDI recordings for the evaluation of automatic music transcription models. MulTTiPop contains 572 segments of pop",
+      "category": [
+        "cs.SD",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-10"
+    },
+    {
+      "id": "arxiv-2607.08754v1",
+      "title": "SLORR: Simple and Efficient In-Training Low-Rank Regularization",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.08754v1",
+      "summary": "Low-rank factorization is widely used to compress neural networks, but modern models are often not naturally amenable to aggressive factorization without significant accuracy loss. Existing training-t",
+      "category": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-10"
+    },
+    {
+      "id": "arxiv-2607.08748v1",
+      "title": "Using AI-based Learning Assistants in Higher Education: A Large-Scale Descriptive Analysis",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.08748v1",
+      "summary": "In this study, we present a large-scale descriptive analysis of the use of an AI-based learning assistant (Syntea) in higher education. Based on objective log data from 77,543 students enrolled in dis",
+      "category": [
+        "cs.AI",
+        "cs.HC"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-10"
+    },
+    {
+      "id": "arxiv-2607.08746v1",
+      "title": "Dimensionality Reduction Meets Network Science: Sensemaking on UMAP's kNN Graph",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.08746v1",
+      "summary": "While UMAP is widely used for exploring high-dimensional data, typical workflows focus on its lower-dimensional embedding, largely overlooking the rich k-nearest-neighbor (kNN) graph that UMAP constru",
+      "category": [
+        "cs.LG",
+        "cs.AI",
+        "cs.DS"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-10"
+    },
+    {
+      "id": "arxiv-2607.08745v1",
+      "title": "AUTOPILOT VQA: Benchmarking Vision-Language Models for Incident-Centric Dashcam Understanding",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.08745v1",
+      "summary": "Recent advances in Vision-Language Models, Large Language Models, and Multimodal Large Language Models have improved autonomous driving tasks such as scene understanding, decision making, trajectory p",
+      "category": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-10"
+    },
+    {
+      "id": "arxiv-2607.08741v1",
+      "title": "ARDY: Autoregressive Diffusion with Hybrid Representation for Interactive Human Motion Generation",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.08741v1",
+      "summary": "Generating realistic 3D human motions in real-time within interactive applications is key for animation, simulation, and humanoid robotics. While recent offline motion generation approaches offer prec",
+      "category": [
+        "cs.GR",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-10"
+    },
+    {
+      "id": "arxiv-2607.08740v1",
+      "title": "Workflow as Knowledge: Semantic Persistence for LLM-Mediated Workflows",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.08740v1",
+      "summary": "Large language model (LLM) applications increasingly use explicit workflows for tool use, retrieval, branching, checkpointing, and human approval. Existing workflow systems already address many execut",
+      "category": [
+        "cs.AI",
+        "cs.PL",
+        "cs.SE"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-10"
+    },
+    {
+      "id": "arxiv-2607.08734v1",
+      "title": "The Illusion of Equivalency: Statistical Characterization of Quantization Effects in LLMs",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.08734v1",
+      "summary": "Post-training quantization is widely used to deploy large language models in resource-constrained settings, yet its evaluation relies almost exclusively on accuracy and perplexity. We show that these ",
+      "category": [
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-10"
+    },
+    {
+      "id": "arxiv-2607.08733v1",
+      "title": "Super Weights in LLMs and the Failure of Selective Training",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.08733v1",
+      "summary": "Recent work identified Super Weights, individual parameters whose removal degrades model performance by orders of magnitude. We show that this degradation due to pruning Super Weights does not univers",
+      "category": [
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-10"
+    },
+    {
+      "id": "arxiv-2607.08731v1",
+      "title": "Validity of LLMs as data annotators: AMALIA on authority",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.08731v1",
+      "summary": "A national language model offers a linguistic community its own instrument for measuring what its citizens say and value. Portugal's AMALIA, a publicly funded 9B-parameter model for European Portugues",
+      "category": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CY"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-10"
+    },
+    {
+      "id": "arxiv-2607.08725v1",
+      "title": "Pose-to-Biomechanics: Bridging 3D Human Pose Estimation and Biomechanical Attribute Prediction",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.08725v1",
+      "summary": "Recent progress in 3D human pose estimation has made markerless recovery of skeletal motion increasingly accurate and scalable. However, most pose estimators remain optimized for geometric keypoint ac",
+      "category": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-10"
+    },
+    {
+      "id": "github-71337312e4a0",
+      "title": "MadsLorentzen/ai-job-search — AI-powered job application framework built on Claude Code. Fork it, fill in your",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/MadsLorentzen/ai-job-search",
+      "summary": "AI-powered job application framework built on Claude Code. Fork it, fill in your profile, and let Claude evaluate jobs, tailor CVs, write cover letters, and prepare you for interviews. | 🔥 3716 stars ",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-10"
+    },
+    {
+      "id": "github-3ac2257c597e",
+      "title": "SmartlyDressedGames/U3-SDK — Source code for Unturned, a free open-world zombie survival sandbox game.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/SmartlyDressedGames/U3-SDK",
+      "summary": "Source code for Unturned, a free open-world zombie survival sandbox game. | 🔥 524 stars today | Language: C#",
+      "category": [
+        "开源项目",
+        "C#"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-10"
+    },
+    {
+      "id": "github-0508d109f745",
+      "title": "addyosmani/agent-skills — Production-grade engineering skills for AI coding agents.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "summary": "Production-grade engineering skills for AI coding agents. | 🔥 2554 stars today | Language: JavaScript",
+      "category": [
+        "开源项目",
+        "JavaScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-10"
+    },
+    {
+      "id": "github-30e7d17a9cd2",
+      "title": "VoltAgent/awesome-design-md — A collection of DESIGN.md files analysis by popular brand design systems. Drop o",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/VoltAgent/awesome-design-md",
+      "summary": "A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI. | 🔥 1391 stars today",
+      "category": [
+        "开源项目"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-10"
+    },
+    {
+      "id": "github-858949c86c7e",
+      "title": "iOfficeAI/OfficeCLI — OfficeCLI is the first and best Office suite purpose-built for AI agents to read",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/iOfficeAI/OfficeCLI",
+      "summary": "OfficeCLI is the first and best Office suite purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Free, open-source, single binary, no Office installation require",
+      "category": [
+        "开源项目",
+        "C#"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-10"
+    },
+    {
+      "id": "github-7ac80ddf126b",
+      "title": "wonderwhy-er/DesktopCommanderMCP — This is MCP server for Claude that gives it terminal control, file system search",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
+      "summary": "This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities | 🔥 185 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-10"
+    },
+    {
+      "id": "github-c43d9b688406",
+      "title": "anthropics/claude-cookbooks — A collection of notebooks/recipes showcasing some fun and effective ways of usin",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/anthropics/claude-cookbooks",
+      "summary": "A collection of notebooks/recipes showcasing some fun and effective ways of using Claude. | 🔥 194 stars today | Language: Jupyter Notebook",
+      "category": [
+        "开源项目",
+        "Jupyter Notebook"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-10"
+    },
+    {
+      "id": "github-1a9fab750a8b",
+      "title": "vxcontrol/pentagi — Fully autonomous AI Agents system capable of performing complex penetration test",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/vxcontrol/pentagi",
+      "summary": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks | 🔥 535 stars today | Language: Go",
+      "category": [
+        "开源项目",
+        "Go"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-10"
+    },
+    {
+      "id": "github-ac823d5a54fc",
+      "title": "unclecode/crawl4ai — 🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler &amp; Scraper. Don't be shy, j",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/unclecode/crawl4ai",
+      "summary": "🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler &amp; Scraper. Don't be shy, join here: https://discord.gg/jP8KfhDhyN | 🔥 215 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-10"
+    },
+    {
+      "id": "github-b1e504c026ad",
+      "title": "imthenachoman/How-To-Secure-A-Linux-Server — An evolving how-to guide for securing a Linux server.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/imthenachoman/How-To-Secure-A-Linux-Server",
+      "summary": "An evolving how-to guide for securing a Linux server. | 🔥 243 stars today",
+      "category": [
+        "开源项目"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-10"
+    },
+    {
+      "id": "github-a6b8a26d8483",
+      "title": "huxingyi/autoremesher — Automatic quad remeshing tool",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/huxingyi/autoremesher",
+      "summary": "Automatic quad remeshing tool | 🔥 403 stars today | Language: C++",
+      "category": [
+        "开源项目",
+        "C++"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-10"
+    },
+    {
+      "id": "github-edbabd017217",
+      "title": "bradautomates/claude-video — Give Claude the ability to watch any video. /watch downloads, extracts frames, t",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/bradautomates/claude-video",
+      "summary": "Give Claude the ability to watch any video. /watch downloads, extracts frames, transcribes, hands it all to Claude. | 🔥 718 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-10"
+    },
+    {
+      "id": "github-2b429bb70b4d",
+      "title": "prisma/prisma — Next-generation ORM for Node.js &amp; TypeScript | PostgreSQL, MySQL, MariaDB, S",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/prisma/prisma",
+      "summary": "Next-generation ORM for Node.js &amp; TypeScript | PostgreSQL, MySQL, MariaDB, SQL Server, SQLite, MongoDB and CockroachDB | 🔥 376 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-10"
+    },
+    {
+      "id": "github-b94a86e31c4c",
+      "title": "kyutai-labs/pocket-tts — A TTS that fits in your CPU (and pocket)",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/kyutai-labs/pocket-tts",
+      "summary": "A TTS that fits in your CPU (and pocket) | 🔥 235 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-10"
+    },
+    {
+      "id": "github-787a47d3135e",
+      "title": "asgeirtj/system_prompts_leaks — Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code,",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/asgeirtj/system_prompts_leaks",
+      "summary": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT 5.5 Thinking, GPT 5.5 Instant, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. ",
+      "category": [
+        "开源项目",
+        "JavaScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-10"
+    },
+    {
+      "id": "hf-paper-b8535eceb20c",
+      "title": "CausalDS: Benchmarking Causal Reasoning in Data-Science Agents",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2607.08093",
+      "summary": "Large language models (LLMs) increasingly act as integrated data-science agents, combining abstract reasoning with advanced tool use. Yet the relevant benchmark landscape largely divides into symbolic",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-10"
+    },
+    {
+      "id": "hf-paper-eecafbdf1bd0",
+      "title": "UP: Unbounded Positive Asymmetric Optimization for Breaking the Exploration-Stability Dilemma",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2607.06987",
+      "summary": "Reinforcement learning (RL) has become the standard paradigm for enhancing the complex reasoning capabilities of large language models (LLMs). To achieve sample efficiency, modern RL frameworks rely o",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-10"
+    },
+    {
+      "id": "hf-paper-aad3320c5b90",
+      "title": "Vidu S1: A Real-Time Interactive Video Generation Model",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2607.03118",
+      "summary": "We introduce Vidu S1, a real-time interactive video generation model supporting voice control of digital characters. Users can control video generation content at any moment through voice instructions",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-10"
+    },
+    {
+      "id": "hf-paper-e7278691bfbc",
+      "title": "Flash-BoN: Instant Drafts for Inference-Time Scaling in Diffusion Models",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2607.04461",
+      "summary": "Inference-time scaling for text-to-image generation has progressed from simple Best-of-N (BoN) sampling to guided search methods that verify and steer candidate trajectories at intermediate denoising ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-10"
+    },
+    {
+      "id": "hf-paper-9668a777cd04",
+      "title": "ARDY: Autoregressive Diffusion with Hybrid Representation for Interactive Human Motion Generation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2607.08741",
+      "summary": "Generating realistic 3D human motions in real-time within interactive applications is key for animation, simulation, and humanoid robotics. While recent offline motion generation approaches offer prec",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-10"
+    },
+    {
+      "id": "hf-paper-dd8d4a45101d",
+      "title": "Jet-Long: Efficient Long-Context Extension with Dynamic Bifocal RoPE",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2607.07740",
+      "summary": "Modern LLMs are increasingly deployed in long-context applications such as retrieval-augmented generation, repository-level coding, and agentic workflows whose accumulated reasoning and tool traces ro",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-10"
+    },
+    {
+      "id": "hf-paper-0df950ccd98f",
+      "title": "Ideas Have Genomes: Benchmarking Scientific Lineage Reasoning and Lineage-Grounded Idea Generation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2607.08758",
+      "summary": "Scientific ideas rarely start from a blank page. They inherit mechanisms, repair known limitations, and recombine pieces of earlier work, much like biological genomes. Current benchmarks still say lit",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-10"
+    },
+    {
+      "id": "hf-paper-05c6c3d973ca",
+      "title": "OpenCoF: Learning to Reason Through Video Generation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2607.08763",
+      "summary": "Reasoning has become a core capability for large models, especially when reliable decisions require understanding logical consequences. Recent video generation models offer a reasoning path distinct f",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-10"
+    },
+    {
+      "id": "hf-paper-0db32a3af860",
+      "title": "OPSD-V: On-Policy Self-Distillation for Post-Training Few-Step Autoregressive Video Generators",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2607.08766",
+      "summary": "We propose OPSD-V, an on-policy self-distillation paradigm for post-training few-step autoregressive (AR) video diffusion models. Existing few-step AR video generators can produce long videos with low",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-10"
+    },
+    {
+      "id": "hf-paper-a8a532d2617a",
+      "title": "RoboTALES: Learning Reasoning-Guided Robot Policies via Task-Aligned Simulated Futures",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2607.06018",
+      "summary": "Pretrained video generative models are promising backbones for visuomotor control, but their imagined futures often drift from task intent and are not reliably action-conditional. As a result, these m",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-10"
+    },
+    {
+      "id": "vpr-product-3b9858286e70",
+      "title": "Nautis",
+      "source": "Venture Product Radar",
+      "source_type": "product",
+      "url": "https://www.producthunt.com/products/nautis",
+      "summary": "<p>\n            The AI-native Operating System for founders.\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/nautis?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1194885?app_id=339\">Link</a>\n          </p>",
+      "category": [
+        "AI venture funding product launches startup signals"
+      ],
+      "relevance_score": 3,
+      "created_at": "2026-07-12"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-08-10T14:49:14.490626"
+}

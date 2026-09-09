@@ -1,0 +1,164 @@
+{
+  "id": "ab539a4f-878a-46cb-9d61-45235e3de4f7",
+  "date": "2026-07-20",
+  "items": [
+    {
+      "id": "vpr-company-5205c935b513",
+      "title": "Railway",
+      "source": "Venture Product Radar",
+      "source_type": "vc_company",
+      "url": "",
+      "summary": "San Francisco-based AI-native cloud platform. Has amassed 2 million developers with zero marketing spend. Processes 10M+ deployments monthly and 1T+ requests through edge network.",
+      "category": [
+        "融资"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-20"
+    },
+    {
+      "id": "vpr-company-deaa9e3b983a",
+      "title": "Netflix / InterPositive (Ben Affleck's AI filmmaking startup)",
+      "source": "Venture Product Radar",
+      "source_type": "vc_company",
+      "url": "",
+      "summary": "Netflix acquired InterPositive, an AI filmmaking startup co-founded by Ben Affleck, for $587M in cash.",
+      "category": [
+        "融资"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-20"
+    },
+    {
+      "id": "vpr-company-c5d1832652c9",
+      "title": "Moonshot AI (北京月之暗面科技有限公司)",
+      "source": "Venture Product Radar",
+      "source_type": "vc_company",
+      "url": "",
+      "summary": "Moonshot AI is a Chinese artificial intelligence company founded in March 2023 by Yang Zhilin (former researcher at Google Brain and Carnegie Mellon PhD), Zhou Xinyu, and Wu Yuxin. The company is best known for its flagship AI chatbot Kimi, named after Yang's English nickname. Moonshot has rapidly emerged as one of China's leading AI startups, competing with Baidu's Ernie Bot and other domestic LLM players. The company has pursued an open-source strategy with its K-series models (K2, K2 Thinking, K3), releasing weights under modified MIT licenses.",
+      "category": [
+        "kimi"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-20"
+    },
+    {
+      "id": "vpr-signal-f30e83854e0c",
+      "title": "AI Infrastructure Spending Outpacing Visibility (Compute Gap)",
+      "source": "Venture Product Radar",
+      "source_type": "venture_signal",
+      "url": "https://venturebeat.com/2026/07/17/enterprise-ai-infrastructure-compute-gap-report/",
+      "summary": "VentureBeat Pulse Research across 107 enterprises found: only 21% run AI in production at scale; 83% report GPU utilization at 50% or less; fewer than half (44%) can track AI compute costs; 64% plan to switch/add infrastructure provider within 12 months; 45% plan to evaluate AI-specialized clouds (a category almost none use today).",
+      "category": [
+        "融资"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-20"
+    },
+    {
+      "id": "vpr-signal-f96a274873e8",
+      "title": "AI Agent Security Incidents Becoming Common",
+      "source": "Venture Product Radar",
+      "source_type": "venture_signal",
+      "url": "https://venturebeat.com/2026/07/17/ai-agent-security-incidents/",
+      "summary": "VentureBeat Pulse Research: More than half of enterprises have had a confirmed AI agent security incident or near-miss; only about a third give every agent appropriate access controls.",
+      "category": [
+        "融资"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-20"
+    },
+    {
+      "id": "vpr-signal-d176ed246bfe",
+      "title": "Google Retiring Traditional Search Interface",
+      "source": "Venture Product Radar",
+      "source_type": "venture_signal",
+      "url": "https://venturebeat.com/2026/07/17/google-retiring-search-box-ai/",
+      "summary": "Google will formally retire the classic search box interface, replacing it with AI-powered search experiences.",
+      "category": [
+        "融资"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-20"
+    },
+    {
+      "id": "vpr-product-009896a11f72",
+      "title": "Kimi (chatbot)",
+      "source": "Venture Product Radar",
+      "source_type": "product",
+      "url": "https://en.wikipedia.org/wiki/Moonshot_AI",
+      "summary": "Moonshot's flagship AI chatbot, launched October 2023. By 2024, the FT described Kimi as one of the leading domestic rivals to Baidu's Ernie Bot. In March 2024, Kimi could handle 2 million Chinese characters per conversation (up from 200K). As of August 2024, ranked 3rd in active monthly users in China; dropped to 7th by June 2025. Has six tiers of plans from 5.2 yuan for 4 days to 399 yuan for a year of priority use.",
+      "category": [
+        "kimi"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-20"
+    },
+    {
+      "id": "vpr-funding-b8be2231b2f3",
+      "title": "Moonshot AI Funding funding",
+      "source": "Venture Product Radar",
+      "source_type": "funding",
+      "url": "https://www.bloomberg.com/news/articles/2024-02-27/alibaba-leads-record-deal-to-create-2-5-billion-china-ai-player",
+      "summary": "Funding - Alibaba Group (lead, acquired 36% stake, invested $800M)",
+      "category": [
+        "kimi"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-20"
+    },
+    {
+      "id": "vpr-funding-8bef3c2ff1b7",
+      "title": "Moonshot AI Funding funding",
+      "source": "Venture Product Radar",
+      "source_type": "funding",
+      "url": "https://www.bloomberg.com/news/articles/2024-08-05/tencent-joins-300-million-financing-for-china-s-ai-unicorn",
+      "summary": "Funding - Tencent, Gaorong Capital",
+      "category": [
+        "kimi"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-20"
+    },
+    {
+      "id": "vpr-funding-009896a11f72",
+      "title": "Moonshot AI Funding funding",
+      "source": "Venture Product Radar",
+      "source_type": "funding",
+      "url": "https://en.wikipedia.org/wiki/Moonshot_AI",
+      "summary": "Funding",
+      "category": [
+        "kimi"
+      ],
+      "relevance_score": 5,
+      "created_at": "2026-07-20"
+    },
+    {
+      "id": "vpr-product-2e079f54f2ab",
+      "title": "donadams1969/donadams1969",
+      "source": "Venture Product Radar",
+      "source_type": "product",
+      "url": "https://github.com/donadams1969/donadams1969",
+      "summary": "Config files for my GitHub profile.",
+      "category": [
+        "AI venture funding product launches startup signals"
+      ],
+      "relevance_score": 3,
+      "created_at": "2026-07-20"
+    },
+    {
+      "id": "vpr-product-f24c4ac5f151",
+      "title": "tornikebolokadze1-cyber/awesome-ai-pulse-georgia",
+      "source": "Venture Product Radar",
+      "source_type": "product",
+      "url": "https://github.com/tornikebolokadze1-cyber/awesome-ai-pulse-georgia",
+      "summary": "A curated collection of cutting-edge AI agent frameworks, developer tools, and automation resources — by AI Pulse Georgia",
+      "category": [
+        "AI venture funding product launches startup signals"
+      ],
+      "relevance_score": 3,
+      "created_at": "2026-07-20"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-08-10T14:49:13.665041"
+}

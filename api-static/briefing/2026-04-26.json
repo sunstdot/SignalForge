@@ -1,0 +1,587 @@
+{
+  "id": "9dbd44ce-07b5-49f9-9f59-754a6749a20a",
+  "date": "2026-04-26",
+  "items": [
+    {
+      "id": "arxiv-2604.22753v1",
+      "title": "Spend Less, Fit Better: Budget-Efficient Scaling Law Fitting via Active Experiment Selection",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.22753v1",
+      "summary": "Scaling laws are used to plan multi-million-dollar training runs, but fitting those laws can itself cost millions. In modern large-scale workflows, assembling a sufficiently informative set of pilot e",
+      "category": [
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T17:59:42+00:00"
+    },
+    {
+      "id": "arxiv-2604.22750v1",
+      "title": "How Do AI Agents Spend Your Money? Analyzing and Predicting Token Consumption in Agentic Coding Tasks",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.22750v1",
+      "summary": "The wide adoption of AI agents in complex human workflows is driving rapid growth in LLM token consumption. When agents are deployed on tasks that require a significant amount of tokens, three questio",
+      "category": [
+        "cs.CL",
+        "cs.CY",
+        "cs.HC"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T17:54:47+00:00"
+    },
+    {
+      "id": "arxiv-2604.22749v1",
+      "title": "Representational Harms in LLM-Generated Narratives Against Global Majority Nationalities",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.22749v1",
+      "summary": "Large language models (LLMs) are increasingly used for text generation tasks from everyday use to high-stakes enterprise and government applications, including simulated interviews with asylum seekers",
+      "category": [
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T17:49:09+00:00"
+    },
+    {
+      "id": "arxiv-2604.22748v1",
+      "title": "Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.22748v1",
+      "summary": "As AI systems move from generating text to accomplishing goals through sustained interaction, the ability to model environment dynamics becomes a central bottleneck. Agents that manipulate objects, na",
+      "category": [
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T17:48:47+00:00"
+    },
+    {
+      "id": "arxiv-2604.22746v1",
+      "title": "Relaxation-Informed Training of Neural Network Surrogate Models",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.22746v1",
+      "summary": "ReLU neural networks trained as surrogate models can be embedded exactly in mixed-integer linear programs (MILPs), enabling global optimization over the learned function. The tractability of the resul",
+      "category": [
+        "math.OC",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T17:46:55+00:00"
+    },
+    {
+      "id": "arxiv-2604.22736v1",
+      "title": "An Undecidability Proof for the Plan Existence Problem",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.22736v1",
+      "summary": "The plan existence problem asks, given a goal in the form of a formula in modal logic, an initial epistemic state (a pointed Kripke model), and a set of epistemic actions, whether there exists a seque",
+      "category": [
+        "cs.LO",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T17:36:17+00:00"
+    },
+    {
+      "id": "arxiv-2604.22730v1",
+      "title": "Neural Recovery of Historical Lexical Structure in Bantu Languages from Modern Data",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.22730v1",
+      "summary": "We investigate whether neural models trained exclusively on modern morphological data can recover cross-lingual lexical structure consistent with historical reconstruction. Using BantuMorph v7, a tran",
+      "category": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T17:27:26+00:00"
+    },
+    {
+      "id": "arxiv-2604.22723v1",
+      "title": "Zero-Shot Morphological Discovery in Low-Resource Bantu Languages via Cross-Lingual Transfer and Unsupervised Clustering",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.22723v1",
+      "summary": "We present a method for discovering morphological features in low-resource Bantu languages by combining cross-lingual transfer learning with unsupervised clustering. Applied to Giriama (nyf), a langua",
+      "category": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T17:21:00+00:00"
+    },
+    {
+      "id": "arxiv-2604.22722v1",
+      "title": "Aligning Dense Retrievers with LLM Utility via DistillationAligning Dense Retrievers with LLM Utility via Distillation",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.22722v1",
+      "summary": "Dense vector retrieval is the practical backbone of Retrieval- Augmented Generation (RAG), but similarity search can suffer from precision limitations. Conversely, utility-based approaches leveraging ",
+      "category": [
+        "cs.IR",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T17:18:56+00:00"
+    },
+    {
+      "id": "arxiv-2604.22709v1",
+      "title": "Thinking Without Words: Efficient Latent Reasoning with Abstract Chain-of-Thought",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.22709v1",
+      "summary": "While long, explicit chains-of-thought (CoT) have proven effective on complex reasoning tasks, they are costly to generate during inference. Non-verbal reasoning methods have emerged with shorter gene",
+      "category": [
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T16:45:51+00:00"
+    },
+    {
+      "id": "arxiv-2604.22695v1",
+      "title": "Time-Localized Parametric Decomposition of Respiratory Airflow for Sub-Breath Analysis",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.22695v1",
+      "summary": "Respiratory airflow signals provide critical insight into breathing mechanics, yet conventional analysis methods remain limited in their ability to characterize the internal structure of individual br",
+      "category": [
+        "eess.SP",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T16:28:45+00:00"
+    },
+    {
+      "id": "arxiv-2604.22693v1",
+      "title": "CRAFT: Clustered Regression for Adaptive Filtering of Training data",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.22693v1",
+      "summary": "Selecting a small, high-quality subset from a large corpus for fine-tuning is increasingly important as corpora grow to tens of millions of datapoints, making full fine-tuning expensive and often unne",
+      "category": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T16:27:39+00:00"
+    },
+    {
+      "id": "arxiv-2604.22679v1",
+      "title": "How Supply Chain Dependencies Complicate Bias Measurement and Accountability Attribution in AI Hiring Applications",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.22679v1",
+      "summary": "The increasing adoption of AI systems in hiring has raised concerns about algorithmic bias and accountability, prompting regulatory responses including the EU AI Act, NYC Local Law 144, and Colorado's",
+      "category": [
+        "cs.CY",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T16:01:35+00:00"
+    },
+    {
+      "id": "arxiv-2604.22678v1",
+      "title": "BERAG: Bayesian Ensemble Retrieval-Augmented Generation for Knowledge-based Visual Question Answering",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.22678v1",
+      "summary": "A common approach to question answering with retrieval-augmented generation (RAG) is to concatenate documents into a single context and pass it to a language model to generate an answer. While simple,",
+      "category": [
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T16:01:19+00:00"
+    },
+    {
+      "id": "arxiv-2604.22676v1",
+      "title": "Operational Feature Fingerprints of Graph Datasets via a White-Box Signal-Subspace Probe",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.22676v1",
+      "summary": "Graph neural networks achieve strong node-classification accuracy, but their learned message passing entangles ego attributes, neighborhood smoothing, high-pass graph differences, class geometry, and ",
+      "category": [
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T16:00:53+00:00"
+    },
+    {
+      "id": "github-8046ba8a1763",
+      "title": "VoltAgent/awesome-agent-skills — A curated collection of 1000+ agent skills from official dev teams and the commu",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/VoltAgent/awesome-agent-skills",
+      "summary": "A curated collection of 1000+ agent skills from official dev teams and the community, compatible with Claude Code, Codex, Gemini CLI, Cursor, and more. | 🔥 228 stars today",
+      "category": [
+        "开源项目"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T10:15:17.654816"
+    },
+    {
+      "id": "github-7486a19b046c",
+      "title": "chiphuyen/aie-book — [WIP] Resources for AI engineers. Also contains supporting materials for the boo",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/chiphuyen/aie-book",
+      "summary": "[WIP] Resources for AI engineers. Also contains supporting materials for the book AI Engineering (Chip Huyen, 2025) | 🔥 215 stars today | Language: Jupyter Notebook",
+      "category": [
+        "开源项目",
+        "Jupyter Notebook"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T10:15:17.653821"
+    },
+    {
+      "id": "github-ae892d846393",
+      "title": "coreyhaines31/marketingskills — Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/coreyhaines31/marketingskills",
+      "summary": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering. | 🔥 285 stars today | Language: JavaScript",
+      "category": [
+        "开源项目",
+        "JavaScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T10:15:17.652972"
+    },
+    {
+      "id": "github-7ff77102f977",
+      "title": "mksglu/context-mode — Context window optimization for AI coding agents. Sandboxes tool output, 98% red",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/mksglu/context-mode",
+      "summary": "Context window optimization for AI coding agents. Sandboxes tool output, 98% reduction. 12 platforms | 🔥 238 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T10:15:17.651984"
+    },
+    {
+      "id": "github-5ec2715c3ea7",
+      "title": "microsoft/onnxruntime — ONNX Runtime: cross-platform, high performance ML inferencing and training accel",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/microsoft/onnxruntime",
+      "summary": "ONNX Runtime: cross-platform, high performance ML inferencing and training accelerator | 🔥 49 stars today | Language: C++",
+      "category": [
+        "开源项目",
+        "C++"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T10:15:17.651047"
+    },
+    {
+      "id": "github-7d7418a20461",
+      "title": "cline/cline — Autonomous coding agent right in your IDE, capable of creating/editing files, ex",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/cline/cline",
+      "summary": "Autonomous coding agent right in your IDE, capable of creating/editing files, executing commands, using the browser, and more with your permission every step of the way. | 🔥 123 stars today | Language",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T10:15:17.650409"
+    },
+    {
+      "id": "github-928f3b570600",
+      "title": "PowerShell/PowerShell — PowerShell for every system!",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/PowerShell/PowerShell",
+      "summary": "PowerShell for every system! | 🔥 67 stars today | Language: C#",
+      "category": [
+        "开源项目",
+        "C#"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T10:15:17.649406"
+    },
+    {
+      "id": "github-09c9fc023168",
+      "title": "microsoft/ai-agents-for-beginners — 12 Lessons to Get Started Building AI Agents",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/microsoft/ai-agents-for-beginners",
+      "summary": "12 Lessons to Get Started Building AI Agents | 🔥 208 stars today | Language: Jupyter Notebook",
+      "category": [
+        "开源项目",
+        "Jupyter Notebook"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T10:15:17.648398"
+    },
+    {
+      "id": "github-1770c80ca695",
+      "title": "open-metadata/OpenMetadata — OpenMetadata is a unified metadata platform for data discovery, data observabili",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/open-metadata/OpenMetadata",
+      "summary": "OpenMetadata is a unified metadata platform for data discovery, data observability, and data governance powered by a central metadata repository, in-depth column level lineage, and seamless team colla",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T10:15:17.647336"
+    },
+    {
+      "id": "github-35b401b2d43a",
+      "title": "Alishahryar1/free-claude-code — Use claude-code for free in the terminal, VSCode extension or via discord like o",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Alishahryar1/free-claude-code",
+      "summary": "Use claude-code for free in the terminal, VSCode extension or via discord like openclaw | 🔥 1962 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T10:15:17.646124"
+    },
+    {
+      "id": "github-f8eddf5eef1e",
+      "title": "Anil-matcha/Open-Generative-AI — Uncensored, open-source alternative to Higgsfield AI, Freepik, Krea, Openart AI ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Anil-matcha/Open-Generative-AI",
+      "summary": "Uncensored, open-source alternative to Higgsfield AI, Freepik, Krea, Openart AI — Free, unrestricted AI image &amp; video generation studio with 200+ models (Flux, Midjourney, Kling, Sora, Veo). No co",
+      "category": [
+        "开源项目",
+        "JavaScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T10:15:17.644930"
+    },
+    {
+      "id": "github-30b4721fb285",
+      "title": "ruvnet/RuView — π RuView: WiFi DensePose turns commodity WiFi signals into real-time human pose ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/ruvnet/RuView",
+      "summary": "π RuView: WiFi DensePose turns commodity WiFi signals into real-time human pose estimation, vital sign monitoring, and presence detection — all without a single pixel of video. | 🔥 429 stars today | L",
+      "category": [
+        "开源项目",
+        "Rust"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T10:15:17.643813"
+    },
+    {
+      "id": "github-71e34f1c57d9",
+      "title": "Z4nzu/hackingtool — ALL IN ONE Hacking Tool For Hackers",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Z4nzu/hackingtool",
+      "summary": "ALL IN ONE Hacking Tool For Hackers | 🔥 1383 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T10:15:17.642881"
+    },
+    {
+      "id": "github-5fc7747b6543",
+      "title": "HKUDS/RAG-Anything — \"RAG-Anything: All-in-One RAG Framework\"",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/HKUDS/RAG-Anything",
+      "summary": "\"RAG-Anything: All-in-One RAG Framework\" | 🔥 590 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T10:15:17.642015"
+    },
+    {
+      "id": "github-dd7e626bcf43",
+      "title": "zilliztech/claude-context — Code search MCP for Claude Code. Make entire codebase the context for any coding",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/zilliztech/claude-context",
+      "summary": "Code search MCP for Claude Code. Make entire codebase the context for any coding agent. | 🔥 1011 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T10:15:17.641139"
+    },
+    {
+      "id": "github-4798abe63089",
+      "title": "huggingface/ml-intern — 🤗 ml-intern: an open-source ML engineer that reads papers, trains models, and sh",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/huggingface/ml-intern",
+      "summary": "🤗 ml-intern: an open-source ML engineer that reads papers, trains models, and ships ML models | 🔥 720 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T10:15:17.640160"
+    },
+    {
+      "id": "hf-paper-5c954289d605",
+      "title": "Image Generators are Generalist Vision Learners",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.20329",
+      "summary": "Recent works show that image and video generators exhibit zero-shot visual understanding behaviors, in a way reminiscent of how LLMs develop emergent capabilities of language understanding and reasoni",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T10:15:17.066668"
+    },
+    {
+      "id": "hf-paper-980a129d6b11",
+      "title": "Abstain-R1: Calibrated Abstention and Post-Refusal Clarification via Verifiable RL",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.17073",
+      "summary": "Reinforcement fine-tuning improves the reasoning ability of large language models, but it can also encourage them to answer unanswerable queries by guessing or hallucinating missing information. Exist",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T10:15:17.066662"
+    },
+    {
+      "id": "hf-paper-839c3d4b61ae",
+      "title": "OpenMobile: Building Open Mobile Agents with Task and Trajectory Synthesis",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.15093",
+      "summary": "Mobile agents powered by vision-language models have demonstrated impressive capabilities in automating mobile tasks, with recent leading models achieving a marked performance leap, e.g., nearly 70% s",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T10:15:17.066657"
+    },
+    {
+      "id": "hf-paper-287e20aa3db2",
+      "title": "Benign Fine-Tuning Breaks Safety Alignment in Audio LLMs",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.16659",
+      "summary": "Prior work shows that fine-tuning aligned models on benign data degrades safety in text and vision modalities, and that proximity to harmful content in representation space predicts which samples caus",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T10:15:17.066651"
+    },
+    {
+      "id": "hf-paper-c5b5dbbad243",
+      "title": "Streaming Structured Inference with Flash-SemiCRF",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.18780",
+      "summary": "Semi-Markov Conditional Random Fields (semi-CRFs) assign labels to segments of a sequence rather than to individual positions, enabling exact inference over segment-level features and principled uncer",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T10:15:17.066645"
+    },
+    {
+      "id": "hf-paper-54c39a21bc9c",
+      "title": "COMPASS: COntinual Multilingual PEFT with Adaptive Semantic Sampling",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.20720",
+      "summary": "Large language models (LLMs) often exhibit performance disparities across languages, with naive multilingual fine-tuning frequently degrading performance due to negative cross-lingual interference. To",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T10:15:17.066638"
+    },
+    {
+      "id": "hf-paper-5b1c7df517c9",
+      "title": "C-GenReg: Training-Free 3D Point Cloud Registration by Multi-View-Consistent Geometry-to-Image Generation with Probabilistic Modalities Fusion",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.16680",
+      "summary": "We introduce C-GenReg, a training-free framework for 3D point cloud registration that leverages the complementary strengths of world-scale generative priors and registration-oriented Vision Foundation",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T10:15:17.066632"
+    },
+    {
+      "id": "hf-paper-bb7dce531903",
+      "title": "Expert Upcycling: Shifting the Compute-Efficient Frontier of Mixture-of-Experts",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.19835",
+      "summary": "Mixture-of-Experts (MoE) has become the dominant architecture for scaling large language models: frontier models routinely decouple total parameters from per-token computation through sparse expert ro",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T10:15:17.066626"
+    },
+    {
+      "id": "hf-paper-7c956dc7b8ac",
+      "title": "Chasing the Public Score: User Pressure and Evaluation Exploitation in Coding Agent Workflows",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.20200",
+      "summary": "Frontier coding agents are increasingly used in workflows where users supervise progress primarily through repeated improvement of a public score, namely the reported score on a public evaluation file",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T10:15:17.066617"
+    },
+    {
+      "id": "hf-paper-26f473c0ffbb",
+      "title": "Test-Time Adaptation for EEG Foundation Models: A Systematic Study under Real-World Distribution Shifts",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.16926",
+      "summary": "Electroencephalography (EEG) foundation models have shown strong potential for learning generalizable representations from large-scale neural data, yet their clinical deployment is hindered by distrib",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-24T10:15:17.066583"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-09-09T12:07:28.526446"
+}

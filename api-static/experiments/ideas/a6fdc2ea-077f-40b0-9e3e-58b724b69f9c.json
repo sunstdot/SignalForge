@@ -1,0 +1,19 @@
+{
+  "id": "a6fdc2ea-077f-40b0-9e3e-58b724b69f9c",
+  "content_id": "",
+  "title": "模型智能推荐平台",
+  "description": "**核心洞察**\n模型数量爆炸导致选择困难，自动评估与推荐将降低AI应用门槛，过去需人工逐个测试，现在可自动化\n\n**产品形态**\n帮助非AI技术团队根据自有数据自动匹配并部署最佳开源模型的SaaS工具\n\n**目标用户**\n中小企业技术负责人、无AI专家团队的创业者，手上有数据但不知如何选模型，愿为节省时间付费\n\n**核心功能（MVP）**\n- 上传数据集或描述任务\n- 自动在HuggingFace模型库中测评推荐Top3模型\n- 一键部署API或下载模型使用\n\n**商业模式**\n按月订阅，按评测任务次数计费，基础版免费\n\n**潜在风险**\n模型更新速度远超维护能力，初期推荐质量可能不稳定",
+  "difficulty": "medium",
+  "estimated_days": 7,
+  "tags": [],
+  "status": "pending",
+  "priority": 16.0,
+  "briefing_date": "",
+  "source_type": "paper",
+  "source_title": "ModelLens: Finding the Best for Your Task from Myriads of Models",
+  "source_url": "https://huggingface.co/papers/2605.07075",
+  "inspiration": "",
+  "product_concept": {},
+  "source_context": "",
+  "created_at": "2026-05-12T15:18:49.882434"
+}

@@ -1,0 +1,751 @@
+{
+  "id": "ea8a04c2-42e7-45bc-8924-02592ce5a14a",
+  "date": "2026-04-07",
+  "items": [
+    {
+      "id": "civitai-2525160",
+      "title": "🎨 Shinjiro/shnjr2626/shnjr4545 信じろ Style - Anima P (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2525160",
+      "summary": "Type: LORA | Downloads: 16 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T17:28:49.656962"
+    },
+    {
+      "id": "civitai-2525173",
+      "title": "🎨 天河　あゆみ（てんかわ　あゆみ） / 放課後 濡れた制服 (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2525173",
+      "summary": "Type: LORA | Downloads: 11 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T17:28:49.656863"
+    },
+    {
+      "id": "civitai-2525072",
+      "title": "🎨 Mileena MK1 (Pony) (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2525072",
+      "summary": "Type: LORA | Downloads: 4 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T17:28:49.656834"
+    },
+    {
+      "id": "civitai-2517952",
+      "title": "🎨 Amira Melker (Pony) (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2517952",
+      "summary": "Type: LORA | Downloads: 4 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T17:28:49.656832"
+    },
+    {
+      "id": "civitai-2520564",
+      "title": "🎨 Christina Pipopovic Fumie (Meitantei Precure!) / クリスティーナ・ピポポヴィッチ・文江 (名探偵プリキュア！) (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2520564",
+      "summary": "Type: LORA | Downloads: 14 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T17:28:49.656829"
+    },
+    {
+      "id": "civitai-2525170",
+      "title": "🎨 Urban Japan shot by Bessa R2M 35mm F2 Ultron (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2525170",
+      "summary": "Type: LORA | Downloads: 4 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T17:28:49.656826"
+    },
+    {
+      "id": "civitai-2144543",
+      "title": "🎨 FasciumQWEN (Checkpoint)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2144543",
+      "summary": "Type: Checkpoint | Downloads: 3,072 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T17:28:49.656823"
+    },
+    {
+      "id": "civitai-2525197",
+      "title": "🎨 Cameraman IC-LoRA for LTX2.3 22B (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2525197",
+      "summary": "Type: LORA | Downloads: 5 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T17:28:49.656813"
+    },
+    {
+      "id": "civitai-2525133",
+      "title": "🎨 Wacan Backlight Dark Tone (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2525133",
+      "summary": "Type: LORA | Downloads: 8 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T16:56:25.268443"
+    },
+    {
+      "id": "civitai-2506110",
+      "title": "🎨 Steampunk Fantasy Western !!! - ZIT (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2506110",
+      "summary": "Type: LORA | Downloads: 126 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T16:56:25.268424"
+    },
+    {
+      "id": "civitai-2520243",
+      "title": "🎨 Sarah サラ | Shining Force II シャイニング・フォースII 古えの封印 (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2520243",
+      "summary": "Type: LORA | Downloads: 79 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T16:56:25.268409"
+    },
+    {
+      "id": "civitai-2525141",
+      "title": "🎨 Rural Japan shot on Bessa R2M 35mm F2 Ultron (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2525141",
+      "summary": "Type: LORA | Downloads: 3 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T16:56:25.268351"
+    },
+    {
+      "id": "civitai-2522114",
+      "title": "🎨 [IL] Kazumi Kishida - Ariel Visual & Deluxe OVA [Commission] (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2522114",
+      "summary": "Type: LORA | Downloads: 4 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T16:23:36.294737"
+    },
+    {
+      "id": "civitai-2487279",
+      "title": "🎨 Shelby American SS-R (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2487279",
+      "summary": "Type: LORA | Downloads: 59 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T16:23:36.294733"
+    },
+    {
+      "id": "civitai-2525064",
+      "title": "🎨 koizumi kyouko (20th century boys) / 小泉 響子 (20世紀少年) (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2525064",
+      "summary": "Type: LORA | Downloads: 9 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T16:23:36.294704"
+    },
+    {
+      "id": "civitai-2525103",
+      "title": "🎨 Tofu Thunder Style (LoCon)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2525103",
+      "summary": "Type: LoCon | Downloads: 6 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T16:23:36.294701"
+    },
+    {
+      "id": "civitai-2522676",
+      "title": "🎨 Sci-fi Android for Illustrious (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2522676",
+      "summary": "Type: LORA | Downloads: 5 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T16:23:36.294698"
+    },
+    {
+      "id": "civitai-2456725",
+      "title": "🎨 Mizukane Style - Illustrious (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2456725",
+      "summary": "Type: LORA | Downloads: 70 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T16:23:36.294688"
+    },
+    {
+      "id": "civitai-2525085",
+      "title": "🎨 転生貴族の異世界冒険録 〜自重を知らない神々の使徒〜 | Chronicles of an Aristocrat Reborn in Another World | Charactors 10 in 1 | Illustrious (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2525085",
+      "summary": "Type: LORA | Downloads: 5 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T16:23:36.294620"
+    },
+    {
+      "id": "civitai-2525122",
+      "title": "🎨 Totoshion Style (LoCon)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "url": "https://civitai.com/models/2525122",
+      "summary": "Type: LoCon | Downloads: 3 | Rating: 0.0",
+      "category": [
+        "ai",
+        "models",
+        "image-generation"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T16:23:36.294616"
+    },
+    {
+      "id": "hf-paper-dc03d56f35dc",
+      "title": "SciLT: Long-Tailed Classification in Scientific Image Domains",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.03687",
+      "summary": "Long-tailed recognition has benefited from foundation models and fine-tuning paradigms, yet existing studies and benchmarks are mainly confined to natural image domains, where pre-training and fine-tu",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T17:28:48.644399"
+    },
+    {
+      "id": "hf-paper-04c17dd34fce",
+      "title": "PLUME: Latent Reasoning Based Universal Multimodal Embedding",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.02073",
+      "summary": "Universal multimodal embedding (UME) maps heterogeneous inputs into a shared retrieval space with a single model. Recent approaches improve UME by generating explicit chain-of-thought (CoT) rationales",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T17:28:48.644396"
+    },
+    {
+      "id": "hf-paper-be123d078076",
+      "title": "CLEAR: Unlocking Generative Potential for Degraded Image Understanding in Unified Multimodal Models",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.04780",
+      "summary": "Image degradation from blur, noise, compression, and poor illumination severely undermines multimodal understanding in real-world settings. Unified multimodal models that combine understanding and gen",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T17:28:48.644390"
+    },
+    {
+      "id": "hf-paper-b91dc2f42f61",
+      "title": "Adam's Law: Textual Frequency Law on Large Language Models",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.02176",
+      "summary": "While textual frequency has been validated as relevant to human cognition in reading speed, its relatedness to Large Language Models (LLMs) is seldom studied. We propose a novel research direction in ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T17:28:48.644321"
+    },
+    {
+      "id": "hf-paper-b95cbdc69947",
+      "title": "Learning to Learn-at-Test-Time: Language Agents with Learnable Adaptation Policies",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.00830",
+      "summary": "Test-Time Learning (TTL) enables language agents to iteratively refine their performance through repeated interactions with the environment at inference time. At the core of TTL is an adaptation polic",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T16:56:24.197773"
+    },
+    {
+      "id": "hf-paper-22056a1450da",
+      "title": "LIBERO-Para: A Diagnostic Benchmark and Metrics for Paraphrase Robustness in VLA Models",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2603.28301",
+      "summary": "Vision-Language-Action (VLA) models achieve strong performance in robotic manipulation by leveraging pre-trained vision-language backbones. However, in downstream robotic settings, they are typically ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T16:56:24.197757"
+    },
+    {
+      "id": "hf-paper-54786c6d0982",
+      "title": "Unifying Group-Relative and Self-Distillation Policy Optimization via Sample Routing",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.02288",
+      "summary": "Reinforcement learning with verifiable rewards (RLVR) has become a standard paradigm for post-training large language models. While Group Relative Policy Optimization (GRPO) is widely adopted, its coa",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T16:56:24.197748"
+    },
+    {
+      "id": "hf-paper-3ab37a6d70d9",
+      "title": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.04771",
+      "summary": "Current document parsing methods compete primarily on model architecture innovation, while systematic engineering of training data remains underexplored. Yet SOTA models of different architectures and",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T16:23:35.446759"
+    },
+    {
+      "id": "hf-paper-62ae0eb9c358",
+      "title": "TriAttention: Efficient Long Reasoning with Trigonometric KV Compression",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.04921",
+      "summary": "Extended reasoning in large language models (LLMs) creates severe KV cache memory bottlenecks. Leading KV cache compression methods estimate KV importance using attention scores from recent post-RoPE ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T16:23:35.446732"
+    },
+    {
+      "id": "hf-paper-cc8732711580",
+      "title": "LightThinker++: From Reasoning Compression to Memory Management",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.03679",
+      "summary": "Large language models (LLMs) excel at complex reasoning, yet their efficiency is limited by the surging cognitive overhead of long thought traces. In this paper, we propose LightThinker, a method that",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T16:23:35.446729"
+    },
+    {
+      "id": "hf-paper-021f636e075a",
+      "title": "FileGram: Grounding Agent Personalization in File-System Behavioral Traces",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.04901",
+      "summary": "Coworking AI agents operating within local file systems are rapidly emerging as a paradigm in human-AI interaction; however, effective personalization remains limited by severe data constraints, as st",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T16:23:35.446718"
+    },
+    {
+      "id": "hf-paper-f938582151ab",
+      "title": "OpenWorldLib: A Unified Codebase and Definition of Advanced World Models",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.04707",
+      "summary": "World models have garnered significant attention as a promising research direction in artificial intelligence, yet a clear and unified definition remains lacking. In this paper, we introduce OpenWorld",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T16:23:35.446707"
+    },
+    {
+      "id": "hf-paper-db4894521626",
+      "title": "HDP: A Lightweight Cryptographic Protocol for Human Delegation Provenance in Agentic AI Systems",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.04522",
+      "summary": "Agentic AI systems increasingly execute consequential actions on behalf of human principals, delegating tasks through multi-step chains of autonomous agents. No existing standard addresses a fundament",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T16:23:35.446705"
+    },
+    {
+      "id": "hf-paper-644f2ed43d94",
+      "title": "Can LLMs Learn to Reason Robustly under Noisy Supervision?",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.03993",
+      "summary": "Reinforcement Learning with Verifiable Rewards (RLVR) effectively trains reasoning models that rely on abundant perfect labels, but its vulnerability to unavoidable noisy labels due to expert scarcity",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T16:23:35.446703"
+    },
+    {
+      "id": "hf-paper-2f588ffbb32c",
+      "title": "AvatarPointillist: AutoRegressive 4D Gaussian Avatarization",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2604.04787",
+      "summary": "We introduce AvatarPointillist, a novel framework for generating dynamic 4D Gaussian avatars from a single portrait image. At the core of our method is a decoder-only Transformer that autoregressively",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T16:23:35.446700"
+    },
+    {
+      "id": "github-29cc77e0069d",
+      "title": "wquguru/harness-books",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/wquguru/harness-books",
+      "summary": "⭐ 1,198 stars | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T16:23:34.500575"
+    },
+    {
+      "id": "github-4d01594b67e5",
+      "title": "dominikmartn/nothing-design-skill — A Claude Code skill for generating UI in the Nothing design language. Monochrome",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/dominikmartn/nothing-design-skill",
+      "summary": "A Claude Code skill for generating UI in the Nothing design language. Monochrome, typographic, industrial. | ⭐ 1,351 stars",
+      "category": [
+        "开源项目"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T16:23:34.500524"
+    },
+    {
+      "id": "github-4bd77bd22a2f",
+      "title": "sooryathejas/METATRON — AI-powered penetration testing assistant using local LLM on linux (Parrot OS)",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/sooryathejas/METATRON",
+      "summary": "AI-powered penetration testing assistant using local LLM on linux (Parrot OS) | ⭐ 1,432 stars | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T16:23:34.500515"
+    },
+    {
+      "id": "github-0be4ee1653fc",
+      "title": "maaslalani/sheets — Terminal based spreadsheet tool",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/maaslalani/sheets",
+      "summary": "Terminal based spreadsheet tool | ⭐ 1,476 stars | Language: Go",
+      "category": [
+        "开源项目",
+        "Go"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T16:23:34.500510"
+    },
+    {
+      "id": "github-625dbf2069d9",
+      "title": "alchaincyf/nuwa-skill — 你想蒸馏的下一个员工，何必是同事。蒸馏任何人的思维方式——心智模型、决策启发式、表达DNA。Distill how anyone thinks.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/alchaincyf/nuwa-skill",
+      "summary": "你想蒸馏的下一个员工，何必是同事。蒸馏任何人的思维方式——心智模型、决策启发式、表达DNA。Distill how anyone thinks. | ⭐ 2,046 stars",
+      "category": [
+        "开源项目"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T16:23:34.500501"
+    },
+    {
+      "id": "github-324dca1fa921",
+      "title": "milla-jovovich/mempalace — The highest-scoring AI memory system ever benchmarked. And it's free.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/milla-jovovich/mempalace",
+      "summary": "The highest-scoring AI memory system ever benchmarked. And it's free. | ⭐ 2,628 stars | Language: Python | Topics: ai, chromadb, llm, mcp, memory",
+      "category": [
+        "开源项目",
+        "Python",
+        "ai",
+        "chromadb"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T16:23:34.500333"
+    },
+    {
+      "id": "github-fb1b17545a51",
+      "title": "0xGF/boneyard — Auto generated skeleton loading framework",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/0xGF/boneyard",
+      "summary": "Auto generated skeleton loading framework | ⭐ 3,223 stars | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T16:23:34.500238"
+    },
+    {
+      "id": "github-9aa0b457af7c",
+      "title": "safishamsi/graphify — AI coding assistant skill (Claude Code, Codex, OpenCode, OpenClaw). Turn any fol",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/safishamsi/graphify",
+      "summary": "AI coding assistant skill (Claude Code, Codex, OpenCode, OpenClaw). Turn any folder of code, docs, papers, or images into a queryable knowledge graph | ⭐ 3,574 stars | Language: Python | Topics: claud",
+      "category": [
+        "开源项目",
+        "Python",
+        "claude-code",
+        "codex"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T16:23:34.500233"
+    },
+    {
+      "id": "github-875374a50f02",
+      "title": "kevinrgu/autoagent — autonomous harness engineering",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/kevinrgu/autoagent",
+      "summary": "autonomous harness engineering | ⭐ 3,661 stars | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T16:23:34.500229"
+    },
+    {
+      "id": "github-9671d97e8d57",
+      "title": "JuliusBrussee/caveman — 🪨 why use many token when few token do trick — Claude Code skill that cuts 65% o",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/JuliusBrussee/caveman",
+      "summary": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman | ⭐ 4,677 stars | Language: Python | Topics: ai, anthropic, caveman, claude, claude-cod",
+      "category": [
+        "开源项目",
+        "Python",
+        "ai",
+        "anthropic"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T16:23:34.500224"
+    },
+    {
+      "id": "github-d53b1aebbbbc",
+      "title": "ultraworkers/claw-code-parity — Join Discord: https://discord.gg/5TUQKqFWd /  claw-code Rust port parity work - ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/ultraworkers/claw-code-parity",
+      "summary": "Join Discord: https://discord.gg/5TUQKqFWd /  claw-code Rust port parity work - it is temporary work while claw-code repo is doing migration | ⭐ 6,570 stars | Language: Rust",
+      "category": [
+        "开源项目",
+        "Rust"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T16:23:34.500144"
+    },
+    {
+      "id": "github-076552cf0cf4",
+      "title": "HKUDS/OpenHarness — \"OpenHarness: Open Agent Harness\"",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/HKUDS/OpenHarness",
+      "summary": "\"OpenHarness: Open Agent Harness\" | ⭐ 6,707 stars | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T16:23:34.500136"
+    },
+    {
+      "id": "github-3821ff6915a2",
+      "title": "emdash-cms/emdash — EmDash is a full-stack TypeScript CMS based on Astro; the spiritual successor to",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/emdash-cms/emdash",
+      "summary": "EmDash is a full-stack TypeScript CMS based on Astro; the spiritual successor to WordPress | ⭐ 7,927 stars | Language: TypeScript | Topics: astro, cms, emdash, typescript",
+      "category": [
+        "开源项目",
+        "TypeScript",
+        "astro",
+        "cms"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T16:23:34.500132"
+    },
+    {
+      "id": "github-f8d79b4ea321",
+      "title": "santifer/career-ops — AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard,",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/santifer/career-ops",
+      "summary": "AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard, PDF generation, batch processing. | ⭐ 12,974 stars | Language: Go | Topics: ai-agent, anthropic, automation, career, cl",
+      "category": [
+        "开源项目",
+        "Go",
+        "ai-agent",
+        "anthropic"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T16:23:34.500117"
+    },
+    {
+      "id": "github-f6682f4efbb6",
+      "title": "Gitlawb/openclaude — Open Claude Is Open-source coding-agent CLI for OpenAI, Gemini, DeepSeek, Ollama",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Gitlawb/openclaude",
+      "summary": "Open Claude Is Open-source coding-agent CLI for OpenAI, Gemini, DeepSeek, Ollama, Codex, GitHub Models, and 200+ models via OpenAI-compatible APIs. | ⭐ 18,336 stars | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-04-07T16:23:34.500034"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-09-09T12:07:31.079504"
+}
