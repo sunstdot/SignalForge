@@ -1,0 +1,22 @@
+{
+  "id": "5e137739-6347-463e-9cff-76a169b05b0c",
+  "content_id": "",
+  "title": "AI数学竞赛教练：高精度推理辅导平台",
+  "description": "**核心洞察**\n模型在竞赛数学推理上达到顶尖水平，长上下文可承载持续辅导对话，使个性化竞赛训练产品达到可用门槛\n\n**应用场景**\n帮助高中生和竞赛选手攻克高难度数学题的AI互动辅导与错题分析平台\n\n**商业模式**\n月度会员$20，含基础题量；高级套餐$35不限量\n\n**MVP 功能**\n- 题目拍摄/输入后逐步解析与讲解\n- 256K上下文记忆的个性化学习路径\n- 错题本与弱项诊断报告\n\n**潜在风险**\n模型API可用性与调用成本，教育类产品需要确保解题准确性和内容安全",
+  "difficulty": "medium",
+  "estimated_days": 7,
+  "tags": [
+    "商业机会",
+    "准备AIME/高考压轴题的学生与家长，数学爱好者，愿为提升成绩按月订阅"
+  ],
+  "status": "selected",
+  "priority": 18.0,
+  "briefing_date": "2026-06-04",
+  "source_type": "opportunity",
+  "source_title": "Microsoft Build: MAI-Thinking-1 and MAI Family models, Surface RTX Spark Dev Box, and OpenClaw in Windows",
+  "source_url": "https://news.smol.ai/issues/26-06-02-msft-mai-2/",
+  "inspiration": "",
+  "product_concept": {},
+  "source_context": "",
+  "created_at": "2026-06-12T19:26:54.851520"
+}

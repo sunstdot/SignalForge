@@ -1,0 +1,641 @@
+{
+  "date": "2026-04-09",
+  "solutions": [
+    {
+      "type": "研发提效",
+      "title": "代码知识图谱助手",
+      "trigger": "graphify将任意代码文件夹转为可查询知识图谱",
+      "scenario": "在大型前端/客户端项目中，理解遗留代码依赖、追踪API调用链路依赖人工逐文件阅读，效率极低",
+      "ai_solution": "利用知识图谱技术将代码结构、函数调用、文档关系可视化，支持自然语言查询代码逻辑，边界在于图谱构建的实时性",
+      "implementation": "作为VS Code插件或CLI工具嵌入开发流程，支持团队知识库索引",
+      "audience": [
+        "大前端",
+        "客户端",
+        "后端"
+      ],
+      "impact": "新成员上手时间缩短50%，复杂bug定位效率提升30%",
+      "difficulty": "中",
+      "resistance": "需要持续同步代码变更，图谱维护成本",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 7,
+        "business_impact": 6,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "milla-jovovich/mempalace — The highest-scoring AI memory system ever benchmarked. And it's free.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/milla-jovovich/mempalace",
+      "item_id": "github-324dca1fa921"
+    },
+    {
+      "type": "研发提效",
+      "title": "Token成本优化助手",
+      "trigger": "caveman技能通过语言风格转换减少65% tokens",
+      "scenario": "在代码审查、API文档生成、小型代码补全场景中，Claude API调用成本高，响应慢",
+      "ai_solution": "通过精简prompt模板、压缩上下文表达、结果后处理优化，将单次请求token消耗降低40-65%，边界在于复杂逻辑场景可能损失表达精度",
+      "implementation": "封装为内部API网关中间件，或作为CI流水线中的lint工具",
+      "audience": [
+        "大前端",
+        "客户端",
+        "后端",
+        "测试"
+      ],
+      "impact": "大模型调用成本降低50%以上，等效算力可处理双倍请求",
+      "difficulty": "低",
+      "resistance": "需评估对不同任务类型的效果差异",
+      "scores": {
+        "efficiency": 7,
+        "feasibility": 9,
+        "business_impact": 7,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "santifer/career-ops — AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard,",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/santifer/career-ops",
+      "item_id": "github-f8d79b4ea321"
+    },
+    {
+      "type": "研发提效",
+      "title": "论文代码原型快速生成",
+      "trigger": "paper2code将arxiv论文转为可运行代码",
+      "scenario": "在技术调研场景中，研发需花大量时间复现论文，效果不确定",
+      "ai_solution": "输入论文链接自动生成可运行代码原型，加速技术可行性验证",
+      "implementation": "集成到内部技术调研工具链，输出代码仓库草稿",
+      "audience": [
+        "后端",
+        "算法",
+        "技术TL"
+      ],
+      "impact": "技术调研周期从2周缩短至3天",
+      "difficulty": "低",
+      "resistance": "生成的代码需人工校验正确性",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 8,
+        "business_impact": 6,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "PrathamLearnsToCode/paper2code — Agent skill to turn any arxiv paper into a working implementation",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/PrathamLearnsToCode/paper2code",
+      "item_id": "github-700fa1c35bfa"
+    },
+    {
+      "type": "研发提效",
+      "title": "LLM Token成本优化",
+      "trigger": "caveman技能实现65%token削减",
+      "scenario": "在代码Review、调试等高频场景中，与LLM交互产生大量token消耗，成本居高不下",
+      "ai_solution": "通过Prompt压缩技术，将对话token消耗降低65%，保持核心信息传递同时大幅降低成本",
+      "implementation": "封装为内部LLM交互中间件，对所有LLM调用做预处理",
+      "audience": [
+        "大前端",
+        "客户端",
+        "后端"
+      ],
+      "impact": "LLM API成本降低65%，同等预算下调用次数提升3倍",
+      "difficulty": "低",
+      "resistance": "需要验证压缩后回答质量是否满足要求",
+      "scores": {
+        "efficiency": 9,
+        "feasibility": 9,
+        "business_impact": 7,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "milla-jovovich/mempalace — The highest-scoring AI memory system ever benchmarked. And it's free.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/milla-jovovich/mempalace",
+      "item_id": "github-324dca1fa921"
+    },
+    {
+      "type": "研发提效",
+      "title": "AI Skills快捷指令集",
+      "trigger": "khazix-skills开源AI Skills合集",
+      "scenario": "在日常开发中，程序员频繁需要执行重复性命令操作，如代码生成、Git操作、API调试，目前做法是手动复制粘贴或记忆复杂命令",
+      "ai_solution": "将常见开发操作封装为标准化AI Skills，支持上下文理解和自然语言触发，一键执行复杂命令序列",
+      "implementation": "VS Code插件/CLI工具，集成到团队私有Skill库",
+      "audience": [
+        "大前端",
+        "客户端",
+        "后端"
+      ],
+      "impact": "单次操作从分钟级缩短至秒级，团队人效提升15-20%",
+      "difficulty": "低",
+      "resistance": "需要统一维护团队Skill库，更新迭代成本",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 9,
+        "business_impact": 6,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "KKKKhazix/khazix-skills — 数字生命卡兹克开源的 AI Skills 合集",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/KKKKhazix/khazix-skills",
+      "item_id": "github-edaa5547747f"
+    },
+    {
+      "type": "研发提效",
+      "title": "自动化测试脚手架",
+      "trigger": "autoagent自主测试工程",
+      "scenario": "在回归测试场景中，测试用例维护依赖人工编写，覆盖率难以提升，CI流程耗时长，程序员常因等待测试而阻塞开发",
+      "ai_solution": "Agent自动生成测试用例、自我优化测试覆盖、主动识别回归风险，减少人工编写单测工作量",
+      "implementation": "CI/CD流水线集成，GitLab Webhook触发自动测试生成",
+      "audience": [
+        "测试",
+        "大前端",
+        "客户端",
+        "后端"
+      ],
+      "impact": "测试覆盖率提升20-30%，回归测试时间减少40%",
+      "difficulty": "中",
+      "resistance": "测试用例质量需人工兜底；与现有测试框架集成复杂度",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 7,
+        "business_impact": 7,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "kevinrgu/autoagent — autonomous harness engineering",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/kevinrgu/autoagent",
+      "item_id": "github-875374a50f02"
+    },
+    {
+      "type": "业务赋能",
+      "title": "员工思维模型蒸馏",
+      "trigger": "nuwa-skill蒸馏任何人思维方式为可复用技能",
+      "scenario": "在客服、销售、运营等需要经验沉淀的岗位，新人培训周期长，资深员工经验难复制",
+      "ai_solution": "将销冠、资深运营的决策思路、沟通话术、问题处理流程蒸馏为可复用的AI Skill，赋能新人快速上手",
+      "implementation": "作为企业内部知识管理平台的插件，集成到IM工具或培训系统",
+      "audience": [
+        "产品运营",
+        "技术TL"
+      ],
+      "impact": "新人上手周期缩短40%，客服首次解决率提升",
+      "difficulty": "中",
+      "resistance": "需资深员工配合提取思维模式，数据隐私顾虑",
+      "scores": {
+        "efficiency": 6,
+        "feasibility": 7,
+        "business_impact": 8,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "safishamsi/graphify — AI coding assistant skill (Claude Code, Codex, OpenCode, OpenClaw, Factory Droid",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/safishamsi/graphify",
+      "item_id": "github-9aa0b457af7c"
+    },
+    {
+      "type": "业务赋能",
+      "title": "端侧多模态智能助手",
+      "trigger": "parlor实现本地运行的实时语音视觉对话",
+      "scenario": "在客服、导购等业务场景中，目前依赖云端API响应，延迟高且成本贵",
+      "ai_solution": "利用端侧轻量模型实现低延迟语音交互，可处理简单咨询降低云端成本",
+      "implementation": "集成到App/小程序作为智能客服入口，支持离线基础问答",
+      "audience": [
+        "客户端",
+        "产品运营"
+      ],
+      "impact": "客服成本降低30%，响应时效从秒级降至毫秒级",
+      "difficulty": "中",
+      "resistance": "端侧模型效果需达到业务可用阈值",
+      "scores": {
+        "efficiency": 6,
+        "feasibility": 6,
+        "business_impact": 8,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "fikrikarim/parlor — On-device, real-time multimodal AI. Have natural voice and vision conversations ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/fikrikarim/parlor",
+      "item_id": "github-b759fcbff766"
+    },
+    {
+      "type": "研发提效",
+      "title": "本地模型微调工作流",
+      "trigger": "在Apple Silicon上微调Gemma多模态模型",
+      "scenario": "在模型定制场景中，目前需依赖云端训练资源，排期慢且数据安全风险高",
+      "ai_solution": "利用Mac本地算力微调领域模型，数据不出本地，适合敏感业务场景",
+      "implementation": "团队共享Mac工作站搭建推理集群，作为模型微调基础设施",
+      "audience": [
+        "后端",
+        "算法"
+      ],
+      "impact": "模型迭代周期从天级降至小时级，数据安全合规",
+      "difficulty": "中",
+      "resistance": "需配置开发机资源，团队算法能力要求",
+      "scores": {
+        "efficiency": 7,
+        "feasibility": 7,
+        "business_impact": 6,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "mattmireles/gemma-tuner-multimodal — Fine-tune Gemma 4 and 3n with audio, images and text on Apple Silicon, using PyT",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/mattmireles/gemma-tuner-multimodal",
+      "item_id": "github-dac1face2a1c"
+    },
+    {
+      "type": "研发提效",
+      "title": "AI驱动的团队知识库",
+      "trigger": "cabinet提供AI优先的知识管理和协作OS",
+      "scenario": "在知识传承场景中，团队文档散落各处，新人上手慢，搜索效率低",
+      "ai_solution": "统一知识库平台，智能检索+自动整理会议纪要、需求文档",
+      "implementation": "部署为内部Wiki，接入飞书/钉钉作为知识入口",
+      "audience": [
+        "大前端",
+        "客户端",
+        "后端",
+        "技术TL"
+      ],
+      "impact": "新人上手周期缩短50%，知识复用率提升",
+      "difficulty": "低",
+      "resistance": "需团队持续贡献高质量文档",
+      "scores": {
+        "efficiency": 7,
+        "feasibility": 8,
+        "business_impact": 5,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "hilash/cabinet — AI-first knowledge base and startup OS",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/hilash/cabinet",
+      "item_id": "github-9b5409465f26"
+    },
+    {
+      "type": "研发提效",
+      "title": "自动化测试脚本生成",
+      "trigger": "autoagent实现自主测试工程自动化",
+      "scenario": "在回归测试场景中，测试用例维护成本高，覆盖率提升困难",
+      "ai_solution": "AI自动生成测试用例脚本，减少人工编写单测工作量",
+      "implementation": "集成到CI/CD流水线，辅助生成单元测试和集成测试",
+      "audience": [
+        "测试",
+        "后端"
+      ],
+      "impact": "单测覆盖率提升20%，人力投入减少30%",
+      "difficulty": "中",
+      "resistance": "生成的测试用例质量需人工review",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 7,
+        "business_impact": 6,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "kevinrgu/autoagent — autonomous harness engineering",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/kevinrgu/autoagent",
+      "item_id": "github-875374a50f02"
+    },
+    {
+      "type": "研发提效",
+      "title": "UI截图自动化验收",
+      "trigger": "Gemma-4多模态模型支持image-text-to-text任务",
+      "scenario": "在客户端/前端UI自动化测试中，目前做法是人工截图比对或写复杂定位器，核心痛点在于维护成本高、跨平台适配难",
+      "ai_solution": "利用多模态模型直接理解UI截图，生成语义化测试断言，识别视觉回归问题，边界在复杂交互和动态内容识别",
+      "implementation": "集成到现有测试框架（如Appium/Playwright）作为断言层，支持CI/CD流水线调用",
+      "audience": [
+        "大前端",
+        "客户端",
+        "测试"
+      ],
+      "impact": "减少60% UI测试维护工时，提升回归测试覆盖率",
+      "difficulty": "中",
+      "resistance": "需要积累标注数据，模型推理延迟需优化",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 7,
+        "business_impact": 6,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "🤗 google/gemma-4-31B-it",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/google/gemma-4-31B-it",
+      "item_id": "hf-model-2d0f16bac7e1"
+    },
+    {
+      "type": "研发提效",
+      "title": "截图知识库智能问答",
+      "trigger": "Gemma-4具备端侧部署能力的多模态理解",
+      "scenario": "在复杂系统排查和历史需求梳理中，目前做法是翻wiki查文档搜Slack，核心痛点在于信息碎片化、搜索不精准",
+      "ai_solution": "构建基于截图/截屏的多模态知识库，直接用截图提问检索相关技术文档和业务背景，边界在私有数据安全",
+      "implementation": "部署为内部知识库工具，支持VS Code插件或飞书机器人调用",
+      "audience": [
+        "大前端",
+        "客户端",
+        "后端",
+        "技术TL"
+      ],
+      "impact": "技术调研时间减少50%，减少因信息不对称导致的重复开发",
+      "difficulty": "低",
+      "resistance": "需整理历史文档和截图数据",
+      "scores": {
+        "efficiency": 7,
+        "feasibility": 8,
+        "business_impact": 6,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "🤗 google/gemma-4-31B-it",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/google/gemma-4-31B-it",
+      "item_id": "hf-model-2d0f16bac7e1"
+    },
+    {
+      "type": "研发提效",
+      "title": "中文代码辅助生成",
+      "trigger": "GLM-5.1是国产大模型支持中文场景",
+      "scenario": "在业务需求快速开发中，目前做法是程序员手动编写重复性代码（如CRUD、DTO转换），核心痛点在于无聊编码占用核心逻辑开发时间",
+      "ai_solution": "基于GLM-5.1构建内部代码补全助手，针对业务代码模式微调，边界在复杂业务逻辑理解",
+      "implementation": "集成到IDE（如IDEA/VS Code）作为插件，读取业务代码上下文",
+      "audience": [
+        "大前端",
+        "客户端",
+        "后端"
+      ],
+      "impact": "日常业务代码编写效率提升30%",
+      "difficulty": "低",
+      "resistance": "需收集高质量业务代码数据进行微调",
+      "scores": {
+        "efficiency": 7,
+        "feasibility": 8,
+        "business_impact": 5,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "🤗 zai-org/GLM-5.1",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/zai-org/GLM-5.1",
+      "item_id": "hf-model-2f79a3598954"
+    },
+    {
+      "type": "业务赋能",
+      "title": "端侧商品图理解",
+      "trigger": "Gemma-4-26B轻量版支持端侧部署",
+      "scenario": "在电商/导购场景中，目前做法是人工标注商品图属性或依赖服务端识别，核心痛点在于响应慢、影响转化率",
+      "ai_solution": "在客户端集成轻量多模态模型，实时理解商品图片内容（材质、款式、场景），辅助用户决策，边界在模型精度和功耗",
+      "implementation": "SDK形式集成到导购App，支持离线场景",
+      "audience": [
+        "客户端",
+        "产品运营"
+      ],
+      "impact": "商品详情页停留时长提升15%，转化率提升5%",
+      "difficulty": "中",
+      "resistance": "端侧模型大小和性能平衡需优化",
+      "scores": {
+        "efficiency": 6,
+        "feasibility": 6,
+        "business_impact": 8,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "🤗 google/gemma-4-26B-A4B-it",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+      "item_id": "hf-model-0ea922f56cb4"
+    },
+    {
+      "type": "研发提效",
+      "title": "代码知识图谱接入",
+      "trigger": "graphify将代码转可查询知识图谱",
+      "scenario": "在大型前端/客户端项目中，历史代码复杂度高，新人上手难，代码审查和重构时需要花费大量时间理解代码关系和依赖",
+      "ai_solution": "利用graphify将整个代码仓库转为知识图谱，支持自然语言查询代码关系、函数调用链、业务逻辑，辅助代码理解和审查",
+      "implementation": "作为VS Code插件或CLI工具集成到开发流程，支持团队共享图谱",
+      "audience": [
+        "大前端",
+        "客户端",
+        "后端"
+      ],
+      "impact": "新人上手周期缩短50%，代码审查效率提升30%",
+      "difficulty": "中",
+      "resistance": "大仓库图谱构建耗时，团队需要统一使用",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 7,
+        "business_impact": 6,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "milla-jovovich/mempalace — The highest-scoring AI memory system ever benchmarked. And it's free.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/milla-jovovich/mempalace",
+      "item_id": "github-324dca1fa921"
+    },
+    {
+      "type": "研发提效",
+      "title": "论文算法快速落地工具",
+      "trigger": "paper2code将arxiv论文转为实现",
+      "scenario": "在算法预研和业务落地场景中，程序员需要复现论文中的算法，目前做法是花数周阅读论文并手动实现",
+      "ai_solution": "Agent自动解析论文核心算法逻辑，生成可运行代码框架，减少从0到1的实现时间",
+      "implementation": "内部算法验证平台，集成Claude/GPT能力作为预处理层",
+      "audience": [
+        "后端",
+        "算法"
+      ],
+      "impact": "算法原型验证周期从2-3周缩短至3-5天",
+      "difficulty": "中",
+      "resistance": "复杂论文解析准确率有限，需要人工校验修正；算力成本",
+      "scores": {
+        "efficiency": 9,
+        "feasibility": 6,
+        "business_impact": 7,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "PrathamLearnsToCode/paper2code — Agent skill to turn any arxiv paper into a working implementation",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/PrathamLearnsToCode/paper2code",
+      "item_id": "github-700fa1c35bfa"
+    },
+    {
+      "type": "研发提效",
+      "title": "团队AI知识库系统",
+      "trigger": "cabinet开源AI-first知识库",
+      "scenario": "在技术文档管理场景中，团队沉淀的PRD、设计稿、接口文档散落各处，新人上手困难，检索效率低",
+      "ai_solution": "基于LLM构建智能知识库，支持自然语言提问直接定位相关文档，自动化归类整理",
+      "implementation": "内部Wiki/文档平台集成，LLM+RAG架构",
+      "audience": [
+        "大前端",
+        "客户端",
+        "后端",
+        "技术TL"
+      ],
+      "impact": "文档检索时间减少60%，新人上手周期缩短30%",
+      "difficulty": "低",
+      "resistance": "需要团队持续维护文档质量，历史文档迁移工作量大",
+      "scores": {
+        "efficiency": 7,
+        "feasibility": 8,
+        "business_impact": 6,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "hilash/cabinet — AI-first knowledge base and startup OS",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/hilash/cabinet",
+      "item_id": "github-9b5409465f26"
+    },
+    {
+      "type": "研发提效",
+      "title": "项目级AI记忆系统",
+      "trigger": "mempalace最高分AI记忆系统 benchmark",
+      "scenario": "在多轮AI辅助编程中，AI缺乏项目上下文记忆能力，每轮需重复输入背景信息",
+      "ai_solution": "构建项目级持久化记忆层，自动记录代码决策、设计权衡、已知bug，形成可检索的项目知识库",
+      "implementation": "作为IDE插件+向量数据库组合，集成到团队开发环境",
+      "audience": [
+        "大前端",
+        "客户端",
+        "后端"
+      ],
+      "impact": "AI辅助编码上下文连贯性提升，减少重复解释成本",
+      "difficulty": "中",
+      "resistance": "需解决多用户记忆隔离、敏感信息存储问题",
+      "scores": {
+        "efficiency": 7,
+        "feasibility": 6,
+        "business_impact": 5,
+        "overall": 6
+      },
+      "total_score": 6,
+      "source_title": "JuliusBrussee/caveman — 🪨 why use many token when few token do trick — Claude Code skill that cuts 65% o",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/JuliusBrussee/caveman",
+      "item_id": "github-9671d97e8d57"
+    },
+    {
+      "type": "研发提效",
+      "title": "Agent架构学习与实践",
+      "trigger": "Claude Code源码深度分析",
+      "scenario": "在AI Agent落地中，团队缺乏成熟的工程实践经验",
+      "ai_solution": "通过源码学习掌握Agent设计模式，快速应用到内部工具开发",
+      "implementation": "作为内部培训教材，指导自研Agent类工具开发",
+      "audience": [
+        "大前端",
+        "后端",
+        "技术TL"
+      ],
+      "impact": "Agent类工具开发周期缩短，工程质量提升",
+      "difficulty": "低",
+      "resistance": "学习曲线较陡，需投入时间",
+      "scores": {
+        "efficiency": 6,
+        "feasibility": 8,
+        "business_impact": 5,
+        "overall": 6
+      },
+      "total_score": 6,
+      "source_title": "luyao618/Claude-Code-Source-Study — 深入Claude Code源码，学习目前最好的agent实现",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/luyao618/Claude-Code-Source-Study",
+      "item_id": "github-d690eb9a7334"
+    },
+    {
+      "type": "研发提效",
+      "title": "低延迟推理优化",
+      "trigger": "tailslayer降低RAM读取尾延迟",
+      "scenario": "在客户端实时推理、推荐系统响应等对延迟敏感的场景中，尾延迟影响用户体验",
+      "ai_solution": "引入tailslayer库优化内存读取，降低P99延迟，提升端侧推理响应速度",
+      "implementation": "作为客户端SDK或后端服务的基础库集成",
+      "audience": [
+        "客户端",
+        "后端"
+      ],
+      "impact": "端侧推理延迟降低30%，用户体验明显提升",
+      "difficulty": "高",
+      "resistance": "需要深度绑定现有技术栈，改造成本大",
+      "scores": {
+        "efficiency": 6,
+        "feasibility": 4,
+        "business_impact": 7,
+        "overall": 6
+      },
+      "total_score": 6,
+      "source_title": "JuliusBrussee/caveman — 🪨 why use many token when few token do trick — Claude Code skill that cuts 65% o",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/JuliusBrussee/caveman",
+      "item_id": "github-9671d97e8d57"
+    }
+  ],
+  "top_pick": {
+    "title": "Token成本优化助手",
+    "why_now": "caveman技能通过语言风格转换减少65% tokens",
+    "mvp_path": "封装为内部API网关中间件，或作为CI流水线中的lint工具",
+    "strategy": "自下而上：先找2-3个极客同学验证，再整理ROI数据推广"
+  },
+  "analyzed_count": 40,
+  "analyzed_item_ids": [
+    "github-324dca1fa921",
+    "github-f8d79b4ea321",
+    "github-9aa0b457af7c",
+    "github-9671d97e8d57",
+    "github-625dbf2069d9",
+    "github-db76cfda3b02",
+    "github-79f8f4c4b535",
+    "github-f68fc10d8ba4",
+    "github-a4b838b5b33e",
+    "github-f1aa082a6499",
+    "github-edaa5547747f",
+    "github-b759fcbff766",
+    "github-dac1face2a1c",
+    "github-700fa1c35bfa",
+    "github-9b5409465f26",
+    "github-d53b1aebbbbc",
+    "github-875374a50f02",
+    "github-4bd77bd22a2f",
+    "github-4baddea991b5",
+    "github-d690eb9a7334",
+    "hf-model-2d0f16bac7e1",
+    "hf-model-a3e36e1accc3",
+    "hf-model-2f79a3598954",
+    "hf-model-b88ea472e3ac",
+    "hf-model-0ea922f56cb4",
+    "hf-model-73665a6e3a2f",
+    "hf-model-5a5b20cc1da7",
+    "hf-model-b2cd1173ff38",
+    "hf-model-b0310e0acf74",
+    "hf-model-8d54c269e777",
+    "civitai-2529185",
+    "civitai-2514299",
+    "civitai-2529182",
+    "civitai-2529114",
+    "civitai-2507914",
+    "civitai-2529170",
+    "civitai-2529155",
+    "civitai-2529116",
+    "civitai-2511405",
+    "civitai-2528161"
+  ],
+  "remaining": 78
+}

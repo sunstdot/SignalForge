@@ -1,0 +1,19 @@
+{
+  "id": "9c4ae887-82ba-439f-a030-41d06cc88617",
+  "content_id": "",
+  "title": "AI提示词工坊",
+  "description": "**核心洞察**\n多语言提示词生成和元数据编辑功能的结合，首次让中文用户能直接生成适合中文语境的AI绘画提示词\n\n**产品形态**\n帮助中文AI绘画新手快速生成高质量提示词的效率工具\n\n**目标用户**\n中文AI绘画爱好者、小红书/B站创作者、约稿画师，痛点：不会写英文提示词、生成效果不稳定，愿付9.9-29.9元/月\n\n**核心功能（MVP）**\n- 中文自然语言转英文提示词\n- 热门风格模板库\n- 参数智能推荐\n- 历史记录云同步\n\n**商业模式**\n免费基础功能+付费高级模板库，定价9.9元/月或49元/年\n\n**竞争壁垒**\n中文提示词优化经验和热门风格调校数据积累\n\n**潜在风险**\n大厂免费工具竞争，需快速积累用户形成网络效应",
+  "difficulty": "medium",
+  "estimated_days": 7,
+  "tags": [],
+  "status": "pending",
+  "priority": 19.0,
+  "briefing_date": "",
+  "source_type": "model",
+  "source_title": "🎨 Prompt Generator Pro | Image & Video Metadata Editor | Multilanguage | AI Chat and More~ (Other)",
+  "source_url": "https://civitai.com/models/2209261",
+  "inspiration": "",
+  "product_concept": {},
+  "source_context": "",
+  "created_at": "2026-04-13T14:47:16.568926"
+}

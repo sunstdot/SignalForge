@@ -1,0 +1,628 @@
+{
+  "date": "2026-04-08",
+  "opportunities": [
+    {
+      "opportunity_title": "Token成本优化服务",
+      "opportunity_point": "面向开发者的AI API成本优化工具，提供提示词压缩和响应精简的SaaS服务",
+      "reasoning": "caveman展示简洁语言可降低65%Token消耗，开发者对API成本敏感这是真实痛点",
+      "why_now": "LLM API调用成本高居不下，企业急需降低token消耗的实用方案",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 18,
+      "source_title": "JuliusBrussee/caveman — 🪨 why use many token when few token do trick — Claude Code skill that cuts 65% o",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/JuliusBrussee/caveman",
+      "item_id": "github-9671d97e8d57"
+    },
+    {
+      "opportunity_title": "本地推理优化方案",
+      "opportunity_point": "为中小企业提供蒸馏小模型部署服务，降低70%推理成本",
+      "reasoning": "Qwen3.5-27B通过Claude蒸馏保留强推理能力，获55万下载证明高性能小模型是开发者痛点",
+      "why_now": "企业部署大模型成本高，蒸馏技术让小模型也能具备强推理能力，适合商业化落地",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 18,
+      "source_title": "🤗 Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled",
+      "item_id": "hf-model-5a5b20cc1da7"
+    },
+    {
+      "opportunity_title": "中文OCR API服务",
+      "opportunity_point": "基于百度Qianfan-OCR封装面向中小企业的中文文档识别API",
+      "reasoning": "百度OCR获4万下载和1000+点赞，说明中文OCR是强刚需，且百度技术背书可靠",
+      "why_now": "国内企业数字化转型，大量纸质文档需电子化，现有商业OCR价格较高",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 5,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 18,
+      "source_title": "🤗 baidu/Qianfan-OCR",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/baidu/Qianfan-OCR",
+      "item_id": "hf-model-fcfacb051911"
+    },
+    {
+      "opportunity_title": "AI语音合成服务",
+      "opportunity_point": "基于OmniVoice开发多语言AI配音服务，面向短视频创作者",
+      "reasoning": "OmniVoice获10万+下载量，说明语音合成需求旺盛，且Daniel Povey团队技术实力强",
+      "why_now": "短视频时代，AI配音需求爆发，但现有方案要么贵要么质量差",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 18,
+      "source_title": "🤗 k2-fsa/OmniVoice",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/k2-fsa/OmniVoice",
+      "item_id": "hf-model-b0310e0acf74"
+    },
+    {
+      "opportunity_title": "AI图像处理工作流",
+      "opportunity_point": "将Donut-Z工作流产品化，提供在线AI图像优化SaaS服务",
+      "reasoning": "Donut-Z工作流集成超分、人脸修复、NSFW修复三大功能，获8532次下载证明实用价值",
+      "why_now": "AI生成图像质量参差不齐，创作者需要批量优化工具，现有方案分散且操作复杂",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 18,
+      "source_title": "🎨 Donut-Z Image Turbo-workflow (upscale+face detailer+nsfw fix) (Workflows)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "source_url": "https://civitai.com/models/2169381",
+      "item_id": "civitai-2169381"
+    },
+    {
+      "opportunity_title": "人才思维复制平台",
+      "opportunity_point": "为企业提供专家思维提取和员工培训数字化的服务，批量复制销冠/专家能力",
+      "reasoning": "nuwa-skill提取心智模型、决策启发式、表达DNA，企业人才培养和知识传承是持久痛点",
+      "why_now": "人才流动频繁，企业需要将资深员工经验结构化，防止知识流失",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 5,
+        "tech_timing": 4,
+        "buildability": 3
+      },
+      "total_score": 17,
+      "source_title": "alchaincyf/nuwa-skill — 你想蒸馏的下一个员工，何必是同事。蒸馏任何人的思维方式——心智模型、决策启发式、表达DNA。Distill how anyone thinks.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/alchaincyf/nuwa-skill",
+      "item_id": "github-625dbf2069d9"
+    },
+    {
+      "opportunity_title": "消费级AI部署工具",
+      "opportunity_point": "基于Bonsai-8B-gguf开发面向普通用户的本地AI聊天应用",
+      "reasoning": "GGUF量化格式使8B模型可在消费级显卡运行，下载量5.2万证明本地AI需求真实存在",
+      "why_now": "用户隐私意识觉醒，本地AI需求增长，但配置复杂是主要痛点，需要简化方案",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 17,
+      "source_title": "🤗 prism-ml/Bonsai-8B-gguf",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/prism-ml/Bonsai-8B-gguf",
+      "item_id": "hf-model-d014c1247631"
+    },
+    {
+      "opportunity_title": "电商虚拟试穿动画SaaS",
+      "opportunity_point": "基于Vanast统一框架的虚拟试穿+动画一体化服务，解决电商直播、服装展示的实时换装需求",
+      "reasoning": "Vanast实现单步统一处理，解决传统两阶段流程的ID漂移和服装扭曲问题，可生成连贯的换装动画视频",
+      "why_now": "直播电商爆发，服装类目对实时试穿需求强烈，但现有方案效果差；该技术首次实现端到端统一",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 5,
+        "tech_timing": 4,
+        "buildability": 3
+      },
+      "total_score": 17,
+      "source_title": "Vanast: Virtual Try-On with Human Image Animation via Synthetic Triplet Supervision",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "source_url": "https://huggingface.co/papers/2604.04934",
+      "item_id": "hf-paper-23812bac3741"
+    },
+    {
+      "opportunity_title": "代码执行模拟教育平台",
+      "opportunity_point": "基于自执行模拟技术，构建LLM代码生成的自我验证和调试辅助工具，提升代码正确率",
+      "reasoning": "解决LLM无法正确估计程序执行结果的问题，通过模拟执行提升代码生成的可靠性",
+      "why_now": "LLM代码生成错误率高是痛点，self-execution可显著提升正确性，市场需求明确",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 5,
+        "tech_timing": 3,
+        "buildability": 4
+      },
+      "total_score": 17,
+      "source_title": "Self-Execution Simulation Improves Coding Models",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "source_url": "https://huggingface.co/papers/2604.03253",
+      "item_id": "hf-paper-089904e79416"
+    },
+    {
+      "opportunity_title": "发票自动化催收工具",
+      "opportunity_point": "面向中小企业的发票逾期自动提醒和催收管理工具，降低人工催收成本",
+      "reasoning": "Troy Hunt提及客户发票追讨困难，企业应收账款管理是普遍痛点",
+      "why_now": "中小企业缺乏专业催收能力，自动化工具市场空白",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 5
+      },
+      "total_score": 17,
+      "source_title": "Weekly Update 498",
+      "source": "Troy Hunt",
+      "source_type": "rss",
+      "source_url": "https://www.troyhunt.com/weekly-update-498/",
+      "item_id": "rss-troy-hunt-02e7e74afd12"
+    },
+    {
+      "opportunity_title": "多模态AI开发平台",
+      "opportunity_point": "基于Gemma-4-31B-it多模态能力，开发面向中小企业的图像理解与内容分析SaaS服务",
+      "reasoning": "Google开源310亿参数多模态模型，支持图像-文本处理，已有88万下载量，说明开发者对多模态AI能力有强烈需求",
+      "why_now": "多模态大模型正处于技术成熟期，传统企业缺乏低成本图像分析解决方案，市场存在明显空白",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 3
+      },
+      "total_score": 16,
+      "source_title": "🤗 google/gemma-4-31B-it",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/google/gemma-4-31B-it",
+      "item_id": "hf-model-2d0f16bac7e1"
+    },
+    {
+      "opportunity_title": "垂直领域模型微调服务",
+      "opportunity_point": "为特定行业（如法律、医疗）提供基于Gemma-4的微调模型定制服务",
+      "reasoning": "JANG_4M-CRACK模型使用4M样本微调，表明垂直场景微调是真实需求，获3万下载证明市场存在",
+      "why_now": "通用模型难以满足专业领域需求，而微调技术已成熟，正是切入垂直SaaS的好时机",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "🤗 dealignai/Gemma-4-31B-JANG_4M-CRACK",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/dealignai/Gemma-4-31B-JANG_4M-CRACK",
+      "item_id": "hf-model-a3e36e1accc3"
+    },
+    {
+      "opportunity_title": "二次元角色生成平台",
+      "opportunity_point": "整合《碧蓝航线》等热门IP的LoRA模型，提供一站式AI绘画订阅服务",
+      "reasoning": "Dupleix LoRA获1018次下载，二次元AI绘画需求真实存在，且有IP粉丝基础",
+      "why_now": "二次元内容消费市场大，粉丝愿为角色生成付费，但目前缺乏整合平台",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 5
+      },
+      "total_score": 16,
+      "source_title": "🎨 Dupleix デュプレクス (Azur Lane,アズールレーン)XL (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "source_url": "https://civitai.com/models/630241",
+      "item_id": "civitai-630241"
+    },
+    {
+      "opportunity_title": "LLM推理时适配中间件",
+      "opportunity_point": "基于In-Place TTT技术，为大语言模型提供即插即用的推理时动态适应能力，无需重新训练",
+      "reasoning": "将MLP投影矩阵作为快速权重实现即插即用增强，解决传统测试时训练的架构兼容性和效率问题",
+      "why_now": "企业使用LLM时难以动态适应新场景，该技术提供轻量级实时适配方案",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "In-Place Test-Time Training",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "source_url": "https://huggingface.co/papers/2604.06169",
+      "item_id": "hf-paper-402228019c82"
+    },
+    {
+      "opportunity_title": "AI Agent评估平台",
+      "opportunity_point": "基于Claw-Eval构建的Agent端到端评估套件，提供300个验证任务的完成度、安全性、鲁棒性评估",
+      "reasoning": "首次实现基于执行跟踪、审计日志、环境快照的多通道轨迹感知评分，解决现有基准测试的不透明性问题",
+      "why_now": "AI Agent开发火热，但缺乏可靠评估工具；该套件填补市场空白",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 3
+      },
+      "total_score": 16,
+      "source_title": "Claw-Eval: Toward Trustworthy Evaluation of Autonomous Agents",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "source_url": "https://huggingface.co/papers/2604.06132",
+      "item_id": "hf-paper-d85850b9bd97"
+    },
+    {
+      "opportunity_title": "AI代码质量评估工具",
+      "opportunity_point": "基于LOO-AUC方法的代码测试评估工具，解决LLM生成代码的筛选和可靠性评估问题",
+      "reasoning": "提出留一法AUC一致性评估，验证测试区分正确与错误代码的能力，打破测试与代码正确性的循环依赖",
+      "why_now": "LLM代码生成质量参差不齐，测试可靠性难以验证；该方法提供科学评估方案",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "ACES: Who Tests the Tests? Leave-One-Out AUC Consistency for Code Generation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "source_url": "https://huggingface.co/papers/2604.03922",
+      "item_id": "hf-paper-078ba3a1bac6"
+    },
+    {
+      "opportunity_title": "Systemd会话检测工具",
+      "opportunity_point": "开发自动化诊断工具，检测Systemd v258+中user-light会话导致的用户服务失效问题",
+      "reasoning": "Systemd v258引入user-light会话，UID<999账户受影响，升级后音频/D-Bus服务失效，原因隐蔽",
+      "why_now": "Fedora 43已升级，用户陆续遇到问题，但缺乏简单诊断工具，窗口期明确",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 5
+      },
+      "total_score": 16,
+      "source_title": "Users and session classes in Systemd v258 and later (and a gotcha)",
+      "source": "Chris Siebenmann",
+      "source_type": "rss",
+      "source_url": "https://utcc.utoronto.ca/~cks/space/blog/linux/Systemd258UsersAndSessions",
+      "item_id": "atom-chris-siebenmann-e992d1d373dc"
+    },
+    {
+      "opportunity_title": "企业级AI记忆服务",
+      "opportunity_point": "基于Mempalace开源架构，为企业提供商业级的AI应用记忆存储和检索SaaS服务",
+      "reasoning": "Mempalace在基准测试中得分最高且完全免费，企业需要更稳定、支持、定制化的商业版本",
+      "why_now": "企业AI应用爆发，但记忆系统仍是技术难点，市场缺乏成熟的商业解决方案",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 3
+      },
+      "total_score": 15,
+      "source_title": "milla-jovovich/mempalace — The highest-scoring AI memory system ever benchmarked. And it's free.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/milla-jovovich/mempalace",
+      "item_id": "github-324dca1fa921"
+    },
+    {
+      "opportunity_title": "AI视频处理工具",
+      "opportunity_point": "基于Void-Model开发面向内容创作者的AI视频风格迁移与增强工具",
+      "reasoning": "Netflix发布的video-to-video模型填补了开源视频生成领域空白，获570点赞显示社区关注",
+      "why_now": "视频内容爆发增长，但专业视频处理工具昂贵，个人创作者缺乏低成本方案",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 3
+      },
+      "total_score": 15,
+      "source_title": "🤗 netflix/void-model",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/netflix/void-model",
+      "item_id": "hf-model-b88ea472e3ac"
+    },
+    {
+      "opportunity_title": "医学影像AI诊断助手",
+      "opportunity_point": "基于MedGemma 1.5构建三维CT/MRI辅助诊断系统，支持病灶定位和多时间点对比分析",
+      "reasoning": "MedGemma 1.5支持三维体积数据处理、解剖定位、47%病理F1提升，技术指标达到临床辅助门槛",
+      "why_now": "医疗影像AI需求大，但三维影像处理是难点；该模型填补了开源方案空白",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 2
+      },
+      "total_score": 15,
+      "source_title": "MedGemma 1.5 Technical Report",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "source_url": "https://huggingface.co/papers/2604.05081",
+      "item_id": "hf-paper-cc096e7b63fe"
+    },
+    {
+      "opportunity_title": "个人AI Agent安全审计服务",
+      "opportunity_point": "针对OpenClaw等本地AI Agent的安全分析服务，评估其对Gmail、Stripe、文件系统等敏感资源的访问安全性",
+      "reasoning": "OpenClaw是2026年最广泛部署的个人AI Agent，具有全本地系统访问和敏感服务集成，安全风险突出",
+      "why_now": "个人AI Agent普及带来安全隐患，但安全审计工具缺乏；该领域处于早期",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 3
+      },
+      "total_score": 15,
+      "source_title": "Your Agent, Their Asset: A Real-World Safety Analysis of OpenClaw",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "source_url": "https://huggingface.co/papers/2604.04759",
+      "item_id": "hf-paper-f2aa2540df0e"
+    },
+    {
+      "opportunity_title": "代码知识图谱搜索",
+      "opportunity_point": "面向中大型开发团队的代码语义检索和知识问答工具，提升代码复用效率",
+      "reasoning": "Graphify将代码转为知识图谱获7k+星，大型代码库检索是真实痛点，技术方案已验证",
+      "why_now": "代码资产价值提升，团队需要高效的知识管理工具，GitHubCopilot等仅做代码补全",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 3
+      },
+      "total_score": 14,
+      "source_title": "safishamsi/graphify — AI coding assistant skill (Claude Code, Codex, OpenCode, OpenClaw, Factory Droid",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/safishamsi/graphify",
+      "item_id": "github-9aa0b457af7c"
+    },
+    {
+      "opportunity_title": "AI测试自动化平台",
+      "opportunity_point": "为AI Agent应用提供自主测试和质量保障的平台，解决Agent行为不稳定问题",
+      "reasoning": "autoagent专注自主测试工程获3.8k星，AI Agent的测试和监控是新兴需求",
+      "why_now": "Agent应用爆发但测试工具缺乏，LLM输出不确定性需要系统性测试方案",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 3
+      },
+      "total_score": 14,
+      "source_title": "kevinrgu/autoagent — autonomous harness engineering",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/kevinrgu/autoagent",
+      "item_id": "github-875374a50f02"
+    },
+    {
+      "opportunity_title": "本地隐私AI助手",
+      "opportunity_point": "面向隐私敏感用户的本地部署AI对话和助手服务，可在无网络环境下使用",
+      "reasoning": "parlor实现完全本地运行获900+星，针对Apple Silicon优化，隐私保护是长期趋势",
+      "why_now": "数据隐私监管趋严，用户对本地AI需求增长，但现有方案多为云端",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 3
+      },
+      "total_score": 14,
+      "source_title": "fikrikarim/parlor — On-device, real-time multimodal AI. Have natural voice and vision conversations ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/fikrikarim/parlor",
+      "item_id": "github-b759fcbff766"
+    },
+    {
+      "opportunity_title": "科研图表AI生成服务",
+      "opportunity_point": "基于SciTikZ数据集和基准测试，构建从图像逆向生成可编辑TikZ代码的服务，用于科研图表自动生成",
+      "reasoning": "首次构建SciTikZ-230K高质量数据集和SciTikZ-Bench基准，解决科学图形程序合成的数据和质量评估缺口",
+      "why_now": "科研人员对图表编辑需求大，但TikZ学习成本高；该技术可实现图表自动生成和编辑",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 3
+      },
+      "total_score": 14,
+      "source_title": "Scientific Graphics Program Synthesis via Dual Self-Consistency Reinforcement Learning",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "source_url": "https://huggingface.co/papers/2604.06079",
+      "item_id": "hf-paper-2c4c084ab71c"
+    },
+    {
+      "opportunity_title": "自适应多模态检索引擎",
+      "opportunity_point": "基于MMEmb-R1框架的多模态检索系统，实现推理能力自适应开关，提升检索效率",
+      "reasoning": "通过成对感知推理选择识别有益路径，实现自适应的推理控制，避免过度推理开销",
+      "why_now": "多模态检索需求增长，但推理成本高；该技术实现性能和效率平衡",
+      "scores": {
+        "pain_point": 3,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 3
+      },
+      "total_score": 14,
+      "source_title": "MMEmb-R1: Reasoning-Enhanced Multimodal Embedding with Pair-Aware Selection and Adaptive Control",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "source_url": "https://huggingface.co/papers/2604.06156",
+      "item_id": "hf-paper-641855a51a18"
+    },
+    {
+      "opportunity_title": "AI Agent检索系统",
+      "opportunity_point": "",
+      "reasoning": "首次提出从Agent交互数据训练检索模型，识别Agent行为信号作为监督信号，解决人机 mismatch",
+      "why_now": "AI Agent快速发展，但检索系统仍是瓶颈；该范式为Agent原生检索指明方向",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 3,
+        "buildability": 3
+      },
+      "total_score": 14,
+      "source_title": "Learning to Retrieve from Agent Trajectories",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "source_url": "https://huggingface.co/papers/2604.04949",
+      "item_id": "hf-paper-f15e8218f82e"
+    },
+    {
+      "opportunity_title": "单图4D虚拟形象服务",
+      "opportunity_point": "基于AvatarPointillist从单张肖像照生成动态4D虚拟形象，用于远程会议、游戏、社交",
+      "reasoning": "首个基于自回归Transformer的4D高斯虚拟形象框架，从单图生成动态avatar",
+      "why_now": "远程办公和虚拟社交需求增长，但现有方案需多照片或深度摄像头；单图方案大幅降低门槛",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 3,
+        "buildability": 3
+      },
+      "total_score": 14,
+      "source_title": "AvatarPointillist: AutoRegressive 4D Gaussian Avatarization",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "source_url": "https://huggingface.co/papers/2604.04787",
+      "item_id": "hf-paper-2f588ffbb32c"
+    },
+    {
+      "opportunity_title": "噪声鲁棒推理训练服务",
+      "opportunity_point": "针对RLVR在噪声标签下推理能力脆弱的问题，提供噪声鲁棒推理模型的训练和数据方案",
+      "reasoning": "RLVR依赖完美标签，但专家稀缺导致噪声标签不可避免；该研究解决噪声下的鲁棒推理训练",
+      "why_now": "推理模型训练数据成本高，噪声标签是普遍问题；该技术可降低数据标注成本",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 3
+      },
+      "total_score": 14,
+      "source_title": "Can LLMs Learn to Reason Robustly under Noisy Supervision?",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "source_url": "https://huggingface.co/papers/2604.03993",
+      "item_id": "hf-paper-644f2ed43d94"
+    },
+    {
+      "opportunity_title": "机器人零样本策略平台",
+      "opportunity_point": "基于动作图像技术的机器人控制平台，使视频模型直接作为零样本策略，无需额外训练",
+      "reasoning": "将7自由度动作转为视频，通过像素级动作表示实现视频骨干网络即策略，降低机器人应用门槛",
+      "why_now": "机器人应用场景扩张，但传统方法需大量训练数据；该技术实现零样本部署",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 3,
+        "buildability": 2
+      },
+      "total_score": 13,
+      "source_title": "Action Images: End-to-End Policy Learning via Multiview Video Generation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "source_url": "https://huggingface.co/papers/2604.06168",
+      "item_id": "hf-paper-0e678f995ed1"
+    }
+  ],
+  "analyzed_item_ids": [
+    "github-fb1b17545a51",
+    "github-79f8f4c4b535",
+    "github-4bd77bd22a2f",
+    "civitai-2169381",
+    "civitai-771773",
+    "github-625dbf2069d9",
+    "github-076552cf0cf4",
+    "civitai-2526850",
+    "civitai-630241",
+    "github-f1aa082a6499",
+    "civitai-2481312",
+    "civitai-2526817",
+    "civitai-2521042",
+    "hf-model-73665a6e3a2f",
+    "github-b759fcbff766",
+    "civitai-2510690",
+    "github-3821ff6915a2",
+    "github-324dca1fa921",
+    "hf-model-fcfacb051911",
+    "hf-model-b88ea472e3ac",
+    "civitai-1940001",
+    "github-d690eb9a7334",
+    "hf-model-2d0f16bac7e1",
+    "github-9aa0b457af7c",
+    "hf-model-0ea922f56cb4",
+    "github-d53b1aebbbbc",
+    "civitai-2474055",
+    "github-f8d79b4ea321",
+    "hf-model-b0310e0acf74",
+    "github-4baddea991b5",
+    "github-875374a50f02",
+    "github-edaa5547747f",
+    "hf-model-5a5b20cc1da7",
+    "github-9671d97e8d57",
+    "hf-model-a3e36e1accc3",
+    "github-a4b838b5b33e",
+    "github-f6682f4efbb6",
+    "github-0be4ee1653fc",
+    "hf-model-2f79a3598954",
+    "hf-model-d014c1247631",
+    "hf-paper-23812bac3741",
+    "hf-paper-cc096e7b63fe",
+    "hf-paper-0e678f995ed1",
+    "hf-paper-2c4c084ab71c",
+    "hf-paper-402228019c82",
+    "hf-paper-641855a51a18",
+    "hf-paper-f15e8218f82e",
+    "hf-paper-d85850b9bd97",
+    "hf-paper-22cd7fc6b354",
+    "hf-paper-078ba3a1bac6",
+    "hf-paper-f2aa2540df0e",
+    "hf-paper-089904e79416",
+    "hf-paper-2f588ffbb32c",
+    "hf-paper-644f2ed43d94",
+    "hf-paper-db4894521626",
+    "rss-fabien-sanglard-f11357828acf",
+    "rss-fabien-sanglard-48293b23be2b",
+    "rss-fabien-sanglard-a7eea6d072e1",
+    "rss-fabien-sanglard-8f21dfbaefd5",
+    "rss-fabien-sanglard-6340e4051f36",
+    "atom-chris-siebenmann-e992d1d373dc",
+    "rss-chadnauseam-6a55a37f903d",
+    "rss-chadnauseam-4ead0c742a9a",
+    "rss-chadnauseam-5b40ff298396",
+    "rss-chadnauseam-f22843a4ddb6",
+    "rss-chadnauseam-35bdaa9a7e87",
+    "rss-computer.rip-19cdda02548b",
+    "rss-computer.rip-335750ef2ec1",
+    "rss-computer.rip-f5c926035383",
+    "rss-computer.rip-6c5198b8fb32",
+    "rss-computer.rip-5dabdb24fc4b",
+    "rss-paul-graham-f8b4832637ce",
+    "rss-paul-graham-ee94d981e826",
+    "rss-paul-graham-f564864bf8e2",
+    "rss-paul-graham-f6b2377c9073",
+    "rss-paul-graham-6bd6fdc3ef42",
+    "atom-chris-siebenmann-070ce1236a40",
+    "rss-john-d.-cook-a34baf8a1223",
+    "rss-troy-hunt-02e7e74afd12",
+    "rss-pluralistic-b7e0b11f8364"
+  ],
+  "remaining": 0
+}

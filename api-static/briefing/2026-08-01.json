@@ -1,0 +1,607 @@
+{
+  "id": "9e0d9772-5f14-496a-a7df-8c2c45378f1a",
+  "date": "2026-08-01",
+  "items": [
+    {
+      "id": "arxiv-2607.28628v1",
+      "title": "Learning to Trace Seiberg Dualities",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.28628v1",
+      "summary": "Dualities play an important role in establishing both microscopic and emergent phenomena in a wide range of physical systems. In practice, though, it can often be computationally challenging to establ",
+      "category": [
+        "hep-th",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-31"
+    },
+    {
+      "id": "arxiv-2607.28627v1",
+      "title": "ReToken: One Token to Improve Vision-Language Models for Visual Retrieval",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.28627v1",
+      "summary": "Long visual context poses a challenge for vision-language models: performance degrades as the number of distractors grows, and processing all tokens at once is computationally infeasible under GPU mem",
+      "category": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-31"
+    },
+    {
+      "id": "arxiv-2607.28623v1",
+      "title": "PAC-MAN: Perception-Aware CBF-RL for Whole-Body Safety in Humanoid Dodgeball",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.28623v1",
+      "summary": "We present PAC-MAN, a perception-aware CBF-RL framework that couples control-barrier safety with deployment-realistic onboard sensing for whole-body humanoid dodgeball. The deployed policy sees the ba",
+      "category": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-31"
+    },
+    {
+      "id": "arxiv-2607.28618v1",
+      "title": "AskChem: Claim-Centered Infrastructure for Chemistry Literature Synthesis",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.28618v1",
+      "summary": "Chemistry literature synthesis often requires assembling specific findings scattered across many publications, yet existing literature-search systems primarily return ranked document lists. As a resul",
+      "category": [
+        "cs.CL",
+        "cs.AI",
+        "cs.IR"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-31"
+    },
+    {
+      "id": "arxiv-2607.28617v1",
+      "title": "AISPA: User-Centric System Prompt Auditing for Large Language Model Applications",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.28617v1",
+      "summary": "System prompts are instructions configured by developers to govern the behaviors of foundation models in AI applications. They are used throughout commercial AI products, but are rarely disclosed to t",
+      "category": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CY"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-31"
+    },
+    {
+      "id": "arxiv-2607.28609v1",
+      "title": "OSReward: Instituting Standardized Evaluation for Cross-Platform Computer-Use Reward Models",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.28609v1",
+      "summary": "Computer-using agents (CUAs) are advancing rapidly across the digital world. A CUA trajectory records the agent's actions, states, and reasoning. Verifying whether it fulfilled the task instruction is",
+      "category": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-31"
+    },
+    {
+      "id": "arxiv-2607.28608v1",
+      "title": "KAISEN: Reproducible Subgroup Fairness Auditing for Clinical Risk Models",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.28608v1",
+      "summary": "Clinical risk models routinely achieve strong aggregate performance while producing materially different error rates across patient subgroups. Audit pipelines have been proposed to catch this, but the",
+      "category": [
+        "cs.LG",
+        "q-bio.QM"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-31"
+    },
+    {
+      "id": "arxiv-2607.28607v1",
+      "title": "Inducing language models to assert their own consciousness restores human beliefs and values",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.28607v1",
+      "summary": "Aligning large language models to prevent them attributing consciousness to themselves inadvertently alters their representations of mindedness in other entities alongside human beliefs and values. We",
+      "category": [
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-31"
+    },
+    {
+      "id": "arxiv-2607.28591v1",
+      "title": "Change2Task: From Repository Changes to Executable Coding Agent Tasks and Environments",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.28591v1",
+      "summary": "Scaling coding agents requires a continuing supply of executable data for training, benchmarking, and continuous evaluation. Each task must couple a realistic software state with a specification, deve",
+      "category": [
+        "cs.SE",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-31"
+    },
+    {
+      "id": "arxiv-2607.28590v1",
+      "title": "VAD: Attributing Visual Evidence for Target Reconstruction in Multimodal On-Policy Distillation",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.28590v1",
+      "summary": "Multimodal on-policy distillation (OPD) transfers fine-grained visual knowledge by supervising student-generated trajectories with a privileged-view teacher. Yet its next-token corrections are source-",
+      "category": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-31"
+    },
+    {
+      "id": "arxiv-2607.28589v1",
+      "title": "MixFrag: Fragility-Guided Mixed-Precision Post-Training Quantization for Vision Transformers",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.28589v1",
+      "summary": "Post-training quantization (PTQ) has emerged as an effective solution for deploying Vision Transformers (ViTs) on resource-constrained devices. However, existing PTQ methods typically employ uniform b",
+      "category": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-31"
+    },
+    {
+      "id": "arxiv-2607.28587v1",
+      "title": "PAIChecker: Uncovering and Checking PR-Issue Misalignment in SWE-Bench-Like Benchmarks",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.28587v1",
+      "summary": "SWE-bench-like benchmarks are widely used for evaluating LLM's issue resolution capability. They typically follow a common construction pipeline: each PR (Pull Request) is paired with its linked issue",
+      "category": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-31"
+    },
+    {
+      "id": "arxiv-2607.28582v1",
+      "title": "$β$-OPSD: Deriving with Policy Optimization, Training with Self-Distillation",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.28582v1",
+      "summary": "On-policy self-distillation (OPSD) is a promising approach to improve reasoning language models, but it remains brittle in practice: making it work reliably often requires substantial engineering effo",
+      "category": [
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-31"
+    },
+    {
+      "id": "arxiv-2607.28580v1",
+      "title": "DualG-MRAG: Decoupling Macro-Reasoning and Micro-Matching for Multimodal Retrieval-Augmented Generation",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.28580v1",
+      "summary": "While Multimodal Retrieval-Augmented Generation (MM-RAG) has shown promising results, it still struggles with complex multi-hop reasoning tasks. Existing methods primarily focus on independent instanc",
+      "category": [
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-31"
+    },
+    {
+      "id": "arxiv-2607.28576v1",
+      "title": "Sample More, Reflect Less: Self-Refine and Reflexion Lose to Repeated Sampling at Equal Token Cost, from 1.5B to 7B",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.28576v1",
+      "summary": "Methods that make a language model plan, criticise and rewrite its own answer, reflect on mistakes, pick the best of several attempts, or debate with copies of itself nearly all make it generate far m",
+      "category": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-31"
+    },
+    {
+      "id": "github-94fff867e31a",
+      "title": "huggingface/speech-to-speech — Build local voice agents with open-source models",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/huggingface/speech-to-speech",
+      "summary": "Build local voice agents with open-source models | 🔥 628 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-31"
+    },
+    {
+      "id": "github-86b492042944",
+      "title": "microsoft/AI-For-Beginners — 12 Weeks, 24 Lessons, AI for All!",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/microsoft/AI-For-Beginners",
+      "summary": "12 Weeks, 24 Lessons, AI for All! | 🔥 155 stars today | Language: Jupyter Notebook",
+      "category": [
+        "开源项目",
+        "Jupyter Notebook"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-31"
+    },
+    {
+      "id": "github-e3b7a5899095",
+      "title": "paperswithbacktest/awesome-systematic-trading — A curated list of awesome libraries, packages, strategies, books, blogs, tutoria",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/paperswithbacktest/awesome-systematic-trading",
+      "summary": "A curated list of awesome libraries, packages, strategies, books, blogs, tutorials for systematic trading. | 🔥 621 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-31"
+    },
+    {
+      "id": "github-78e2c1f30c94",
+      "title": "different-ai/openwork — The open-source alternative to Claude Cowork (powered by opencode)",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/different-ai/openwork",
+      "summary": "The open-source alternative to Claude Cowork (powered by opencode) | 🔥 915 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-31"
+    },
+    {
+      "id": "github-d74aaf02c8dd",
+      "title": "WhiskeySockets/Baileys — Socket-based TS/JavaScript API for WhatsApp Web",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/WhiskeySockets/Baileys",
+      "summary": "Socket-based TS/JavaScript API for WhatsApp Web | 🔥 19 stars today | Language: JavaScript",
+      "category": [
+        "开源项目",
+        "JavaScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-31"
+    },
+    {
+      "id": "github-ec9987c48f87",
+      "title": "pascalorg/editor — Create and share 3D architectural projects.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/pascalorg/editor",
+      "summary": "Create and share 3D architectural projects. | 🔥 625 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-31"
+    },
+    {
+      "id": "github-6b324b734c83",
+      "title": "mvanhorn/last30days-skill — AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymark",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "summary": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary | 🔥 378 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-31"
+    },
+    {
+      "id": "github-a1bfdd0735e1",
+      "title": "dotnet/aspnetcore — ASP.NET Core is a cross-platform .NET framework for building modern cloud-based ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/dotnet/aspnetcore",
+      "summary": "ASP.NET Core is a cross-platform .NET framework for building modern cloud-based web applications on Windows, Mac, or Linux. | 🔥 7 stars today | Language: C#",
+      "category": [
+        "开源项目",
+        "C#"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-31"
+    },
+    {
+      "id": "github-7dc2a22fa113",
+      "title": "microsoft/PowerToys — Microsoft PowerToys is a collection of utilities that supercharge productivity a",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/microsoft/PowerToys",
+      "summary": "Microsoft PowerToys is a collection of utilities that supercharge productivity and customization on Windows | 🔥 70 stars today | Language: C",
+      "category": [
+        "开源项目",
+        "C"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-31"
+    },
+    {
+      "id": "github-5d6ab0159105",
+      "title": "ansible/ansible — Ansible is a radically simple IT automation platform that makes your application",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/ansible/ansible",
+      "summary": "Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Automate everything from code deployment to network configuration to cloud ",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-31"
+    },
+    {
+      "id": "github-ab44b38b4120",
+      "title": "ChromeDevTools/chrome-devtools-mcp — Chrome DevTools for coding agents",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "summary": "Chrome DevTools for coding agents | 🔥 80 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-31"
+    },
+    {
+      "id": "github-120be5173fe3",
+      "title": "jenkinsci/jenkins — Jenkins automation server",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/jenkinsci/jenkins",
+      "summary": "Jenkins automation server | 🔥 25 stars today | Language: Java",
+      "category": [
+        "开源项目",
+        "Java"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-31"
+    },
+    {
+      "id": "github-3234d02c9aaf",
+      "title": "agavra/tuicr — a code review TUI with vim keybindings",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/agavra/tuicr",
+      "summary": "a code review TUI with vim keybindings | 🔥 190 stars today | Language: Rust",
+      "category": [
+        "开源项目",
+        "Rust"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-31"
+    },
+    {
+      "id": "github-a92276b56a34",
+      "title": "affaan-m/ECC — The agent harness performance optimization system. Skills, instincts, memory, se",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/affaan-m/ECC",
+      "summary": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond. | 🔥 804 stars today | Langua",
+      "category": [
+        "开源项目",
+        "JavaScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-31"
+    },
+    {
+      "id": "hf-paper-efa327673e0d",
+      "title": "Can Large Language Models Execute Parent Orders?",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2607.28410",
+      "summary": "Parent-order execution is a core problem in algorithmic trading, where the goal is to split a large order into smaller orders while reducing execution costs. Existing approaches either rely on pre-spe",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-31"
+    },
+    {
+      "id": "hf-paper-6dcded0a0454",
+      "title": "Memory Decoder at Scale: A Pretrained, Parametric Long-Term Memory",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2607.27919",
+      "summary": "Decoder-only language models entangle long-term memory and reasoning in a single parameter set, making it difficult to scale memory capacity independently. Memory Decoder introduces a parametric long-",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-31"
+    },
+    {
+      "id": "hf-paper-87d38cfe12ce",
+      "title": "Qwen-UI-Agent Technical Report: Toward Next-Generation Real-World Centric Foundation GUI Agents",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2607.28227",
+      "summary": "GUI agents have the potential to become a general purpose executor over existing digital devices. To advance them toward real-world use, we envision agents that operate reliably on real devices, execu",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-31"
+    },
+    {
+      "id": "hf-paper-926f673864a1",
+      "title": "RefCaptioner: Multi-Reference Image-Grounded Video Captioning",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2607.28509",
+      "summary": "Existing video captioning models generate natural descriptions of video content but cannot explicitly ground local visual elements to multiple reference images. We introduce multi-reference image-grou",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-31"
+    },
+    {
+      "id": "hf-paper-272889f467cd",
+      "title": "Beacon: Knowing When and How to Perform Agentic Visual Reasoning",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2607.28595",
+      "summary": "The fundamental goal of agentic visual reasoning is to improve the success rate of multimodal large language models (MLLMs) on complex tasks, rather than merely equipping them with a sophisticated yet",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-31"
+    },
+    {
+      "id": "hf-paper-bc27a1391e7a",
+      "title": "BM25 Wins at Scale: A Scaling Study of Retrieval-Augmented Generation Paradigms",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2607.26497",
+      "summary": "Retrieval-augmented generation (RAG) spans lexical and dense retrieval, graph-based indexing, and agentic search, but these paradigms are usually evaluated on different benchmarks at one corpus size, ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-31"
+    },
+    {
+      "id": "hf-paper-e3822973166e",
+      "title": "Flux-OPD: On-Policy Distillation with Evolving Contexts",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2607.28022",
+      "summary": "Large language model training in open-ended domains lacks verifiable rewards, making task preferences difficult to formalize as effective supervision. Contexts can convey such preferences, yet provide",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-31"
+    },
+    {
+      "id": "hf-paper-7e41cd8dcc42",
+      "title": "Harness-G: A Graph-Structured Harness for Search Agents",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2607.27652",
+      "summary": "Reinforcement learning (RL) search agents commonly model retrieval as free-form natural-language query generation and optimize multi-turn interactions using final-answer rewards. Current studies mainl",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-31"
+    },
+    {
+      "id": "hf-paper-eacc6e73b037",
+      "title": "Echoverse: Deep, Evolving Environments for Training Computer-Use Agents at Scale",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2607.28074",
+      "summary": "Computer-use agents learn from what their actions change, so training one needs applications it can act on, break and reset. The applications that matter most are login-gated and stateful, so syntheti",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-31"
+    },
+    {
+      "id": "hf-paper-6c170666124a",
+      "title": "AskChem: Claim-Centered Infrastructure for Chemistry Literature Synthesis",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2607.28618",
+      "summary": "Chemistry literature synthesis often requires assembling specific findings scattered across many publications, yet existing literature-search systems primarily return ranked document lists. As a resul",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-31"
+    },
+    {
+      "id": "vpr-product-062f7413307e",
+      "title": "Open Minis",
+      "source": "Venture Product Radar",
+      "source_type": "product",
+      "url": "https://www.producthunt.com/products/open-minis",
+      "summary": "<p>\n            An on-device AI Agent that runs on your phone, open & secure\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/open-minis?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1213036?app_id=339\">Link</a>\n          </p>",
+      "category": [
+        "AI venture funding product launches startup signals"
+      ],
+      "relevance_score": 3,
+      "created_at": "2026-08-01"
+    },
+    {
+      "id": "vpr-product-61f1bffbae0a",
+      "title": "Murmell",
+      "source": "Venture Product Radar",
+      "source_type": "product",
+      "url": "https://www.producthunt.com/products/murmell",
+      "summary": "<p>\n            Cloud canvas where your team and AI agents works together\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/murmell?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1213367?app_id=339\">Link</a>\n          </p>",
+      "category": [
+        "AI venture funding product launches startup signals"
+      ],
+      "relevance_score": 3,
+      "created_at": "2026-08-01"
+    },
+    {
+      "id": "vpr-product-a66f272f4861",
+      "title": "Snapdown",
+      "source": "Venture Product Radar",
+      "source_type": "product",
+      "url": "https://www.producthunt.com/products/snapdown-2",
+      "summary": "<p>\n            Turn anything on your Mac screen into clean Markdown\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/snapdown-2?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1212818?app_id=339\">Link</a>\n          </p>",
+      "category": [
+        "AI venture funding product launches startup signals"
+      ],
+      "relevance_score": 3,
+      "created_at": "2026-08-01"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-08-10T14:49:12.679640"
+}

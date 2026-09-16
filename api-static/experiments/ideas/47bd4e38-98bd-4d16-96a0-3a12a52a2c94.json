@@ -1,0 +1,23 @@
+{
+  "id": "47bd4e38-98bd-4d16-96a0-3a12a52a2c94",
+  "content_id": "rss-chadnauseam-f22843a4ddb6",
+  "title": "代码库for循环重构实验",
+  "description": "**为什么产生这个想法**\n文章指出for循环存在索引管理复杂性和副作用风险，而map/filter/reduce等函数式方法能提升可读性，重构现有代码可验证这一观点。\n\n**价值**\n通过将项目中的for循环替换为函数式方法，可降低代码维护成本，减少因索引错误导致的bug，提升团队协作效率。\n\n**具体帮助**\n可选择项目中一个模块进行重构，对比重构前后的代码行数、修改难度和bug率，积累实践经验。",
+  "difficulty": "medium",
+  "estimated_days": 5,
+  "tags": [
+    "代码重构",
+    "函数式编程",
+    "JavaScript"
+  ],
+  "status": "pending",
+  "priority": 8.0,
+  "briefing_date": "",
+  "source_type": "rss",
+  "source_title": "whats-wrong-with-a-for-loop",
+  "source_url": "https://chadnauseam.com/coding/tips/whats-wrong-with-a-for-loop",
+  "inspiration": "",
+  "product_concept": {},
+  "source_context": "",
+  "created_at": "2026-04-08T12:03:35.719965"
+}

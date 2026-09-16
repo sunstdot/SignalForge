@@ -1,0 +1,21 @@
+{
+  "id": "idea-1775126485069-va870pawu",
+  "content_id": "arxiv-2604.01195v1",
+  "title": "** 低成本合成数据质量验证实验\n\n**",
+  "description": "**\n- **核心思路**: 复现ORBIT的四阶段数据生成框架中的\"自我验证+外部验证\"模块，对比验证质量与成本的权衡关系。使用开源小模型生成100-200个问答对，测试不同验证策略（仅自我验证 vs 双重验证）对数据质量的影响。\n\n- **实现步骤**:\n  1. 选择2-3个特定领域（如科技、历史），使用开源LLM（如Qwen或Llama）生成50-100个多步推理问题\n  2. 实现自我验证模块：让模型对自己生成的答案进行一致性检查和逻辑验证\n  3. 实现简化版外部验证：使用维基百科API或搜索API验证关键事实点\n  4. 对比三组数据质量：无验证、仅自我验证、双重验证，在小规模QA测试集上评估准确率\n\n- **成功标准**: \n  - 成功生成至少100个经过验证的问答对\n  - 双重验证数据的准确率比无验证提升≥15%\n  - 记录每个验证阶段的成本（API调用次数、时间消耗）\n  - 输出验证框架的可复用代码模块\n\n- **可能挑战**: \n  - 外部验证API的调用限制和成本控制\n  - 自我验证的评判标准设计（如何判断\"验证通过\"）\n  - 小样本下统计显著性可能不足\n\n**",
+  "difficulty": "medium",
+  "estimated_days": 7,
+  "tags": [
+    "** synthetic-data",
+    "data-quality",
+    "verification",
+    "open-source-llm"
+  ],
+  "status": "pending",
+  "priority": 9.0,
+  "briefing_date": "2026-04-02",
+  "source_type": "paper",
+  "source_title": "ORBIT: Scalable and Verifiable Data Generation for Search Agents on a Tight Budget",
+  "source_url": "https://arxiv.org/abs/2604.01195v1",
+  "created_at": "2026-04-02T10:41:25.069Z"
+}

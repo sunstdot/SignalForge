@@ -1,0 +1,39 @@
+{
+  "query": "openAI相关的信息",
+  "topic": "openAI相关的信息",
+  "headline": "openAI相关的信息",
+  "kicker": "综合简报 · last30days · 社交独家热点",
+  "lede": "",
+  "consensus": {
+    "left": 50,
+    "right": 50,
+    "leftLabel": "",
+    "leftSub": "",
+    "rightLabel": "",
+    "rightSub": ""
+  },
+  "meta": {
+    "total": 0,
+    "platforms": {
+      "x": 0,
+      "reddit": 0,
+      "hn": 0
+    },
+    "took": "—",
+    "window": "近 30 天",
+    "featured": 0
+  },
+  "themes": [],
+  "patterns": [],
+  "deepDive": [],
+  "dashboard": {
+    "tiles": [],
+    "volumeTotal": "0",
+    "volume": [],
+    "insight": ""
+  },
+  "voices": [],
+  "caveat": "YouTube / TikTok / Instagram 本次返回 0 条 —— 视频侧数据缺失。",
+  "rawNote": "",
+  "timeline": []
+}

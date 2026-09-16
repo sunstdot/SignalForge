@@ -1,0 +1,21 @@
+{
+  "id": "19f9b5af-e13f-495c-8530-a29c3e78087e",
+  "date": "2025-01-20",
+  "items": [
+    {
+      "id": "vpr-product-009896a11f72",
+      "title": "Kimi K1.5",
+      "source": "Venture Product Radar",
+      "source_type": "product",
+      "url": "https://en.wikipedia.org/wiki/Moonshot_AI",
+      "summary": "Released 20 January 2025. Moonshot claimed it matched the performance of OpenAI o1 in mathematics, coding, and multimodal reasoning capabilities.",
+      "category": [
+        "kimi"
+      ],
+      "relevance_score": 5,
+      "created_at": "2025-01-20"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-08-10T14:49:27.690478"
+}

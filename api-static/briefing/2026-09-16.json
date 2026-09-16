@@ -1,0 +1,1373 @@
+{
+  "id": "0533fa6e-4614-4bf5-a6be-2a9107c4b24e",
+  "date": "2026-09-16",
+  "items": [
+    {
+      "id": "github-8ea8e3db2021",
+      "title": "alibaba/open-code-review — Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code revi",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/alibaba/open-code-review",
+      "summary": "Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-",
+      "category": [
+        "开源项目",
+        "Go"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "github-b6415c82f84e",
+      "title": "JustVugg/colibri — Run frontier MoE models on hardware you already own — pure C, zero deps, experts",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/JustVugg/colibri",
+      "summary": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦 | 🔥 2026 stars today | Language: C",
+      "category": [
+        "开源项目",
+        "C"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "github-2d8f34918d46",
+      "title": "ever-co/ever-gauzy — Ever® Gauzy™ - Open Business Management Platform (ERP/CRM/HRM/ATS/PM) - https://",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/ever-co/ever-gauzy",
+      "summary": "Ever® Gauzy™ - Open Business Management Platform (ERP/CRM/HRM/ATS/PM) - https://gauzy.co | 🔥 634 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "github-6a2270c8df1e",
+      "title": "debpalash/VoiceStudio — VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloni",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "summary": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription &amp; audiobook creation in 646 languages. | 🔥 2072 stars toda",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "github-28cf436bb09d",
+      "title": "Homebrew/BrewUI — 📺 Homebrew's official macOS GUI",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Homebrew/BrewUI",
+      "summary": "📺 Homebrew's official macOS GUI | 🔥 271 stars today | Language: Swift",
+      "category": [
+        "开源项目",
+        "Swift"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "github-ba015b5217c8",
+      "title": "melgarafael/DeskcommCRM — Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp (WAHA",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/melgarafael/DeskcommCRM",
+      "summary": "Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp (WAHA). Open alternative to Kommo, Octadesk &amp; Intercom for any business that sells by chat. MCP-ready, multi-tenant, LGPD",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "github-82bbbb9e1c95",
+      "title": "alphaXiv/OpenResearch — Turn your coding agents into research agents",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/alphaXiv/OpenResearch",
+      "summary": "Turn your coding agents into research agents | 🔥 531 stars today | Language: Rust",
+      "category": [
+        "开源项目",
+        "Rust"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "github-2edee7c6606c",
+      "title": "NationalSecurityAgency/ghidra — Ghidra is a software reverse engineering (SRE) framework",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/NationalSecurityAgency/ghidra",
+      "summary": "Ghidra is a software reverse engineering (SRE) framework | 🔥 725 stars today | Language: Java",
+      "category": [
+        "开源项目",
+        "Java"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "github-8837cc5e18b3",
+      "title": "danny-avila/LibreChat — Enhanced ChatGPT Clone: Features Agents, MCP, Skills, DeepSeek, Anthropic, AWS, ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/danny-avila/LibreChat",
+      "summary": "Enhanced ChatGPT Clone: Features Agents, MCP, Skills, DeepSeek, Anthropic, AWS, OpenAI, Responses API, Azure, Groq, o1, GPT-5, Mistral, OpenRouter, Vertex AI, Gemini, Artifacts, AI model switching, me",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "github-67e652b69e35",
+      "title": "pacifio/atlas — Source control for agents. Use multiple coding agents, track their changes and q",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/pacifio/atlas",
+      "summary": "Source control for agents. Use multiple coding agents, track their changes and query them in one place | 🔥 91 stars today | Language: Rust",
+      "category": [
+        "开源项目",
+        "Rust"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "github-b163945ca6e9",
+      "title": "MG1937/ASC — ASC is a super FAST Android decompiler front-end designed for Agents/Mobile Rese",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/MG1937/ASC",
+      "summary": "ASC is a super FAST Android decompiler front-end designed for Agents/Mobile Researchers. | 🔥 129 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "github-0508d109f745",
+      "title": "addyosmani/agent-skills — Production-grade engineering skills for AI coding agents.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "summary": "Production-grade engineering skills for AI coding agents. | 🔥 307 stars today | Language: JavaScript",
+      "category": [
+        "开源项目",
+        "JavaScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "github-be0257db9729",
+      "title": "tonhowtf/omniget — Download Udemy and Hotmart courses, YouTube videos, music and books — 1,800+ sit",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/tonhowtf/omniget",
+      "summary": "Download Udemy and Hotmart courses, YouTube videos, music and books — 1,800+ sites, no terminal. Free open-source desktop app for Windows, macOS and Linux, with a built-in course player, PDF/EPUB read",
+      "category": [
+        "开源项目",
+        "Rust"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "github-b757d828d191",
+      "title": "earendil-works/pi — AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/earendil-works/pi",
+      "summary": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI | 🔥 458 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "hf-model-bee3371d1069",
+      "title": "🤗 deepseek-ai/DeepSeek-V4.1-Flash",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+      "summary": "Task: image-text-to-text | Downloads: 325,712 | Likes: 2,704",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "hf-model-c9e83113e0d4",
+      "title": "🤗 Edge0/Edge0-35B-A3B-preview",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Edge0/Edge0-35B-A3B-preview",
+      "summary": "Task: text-generation | Downloads: 17,853 | Likes: 2,800",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "hf-model-685a63660fa2",
+      "title": "🤗 openbmb/MiniCPM5-2B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/openbmb/MiniCPM5-2B",
+      "summary": "Task: text-generation | Downloads: 271,754 | Likes: 1,464",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "hf-model-ed68f15df78a",
+      "title": "🤗 nex-agi/Nex-N2.5-mini",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/nex-agi/Nex-N2.5-mini",
+      "summary": "Task: text-generation | Downloads: 5,202 | Likes: 809",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "hf-model-11403ace832c",
+      "title": "🤗 Qwen/Qwen3.8-27B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "summary": "Task: image-text-to-text | Downloads: 7,702,543 | Likes: 15,279",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "hf-model-1e059f92955d",
+      "title": "🤗 m-a-p/YuE2-3B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/m-a-p/YuE2-3B",
+      "summary": "Task: text-to-audio | Downloads: 6,716 | Likes: 570",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "hf-model-922e76b1c108",
+      "title": "🤗 nex-agi/Nex-N2.5-Pro",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/nex-agi/Nex-N2.5-Pro",
+      "summary": "Task: text-generation | Downloads: 30,881 | Likes: 651",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "hf-model-4c65ef32b69a",
+      "title": "🤗 ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
+      "summary": "Task: image-text-to-text | Downloads: 884,926 | Likes: 1,142",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "hf-model-eaf280aff552",
+      "title": "🤗 Lightricks/LTX-2.5",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "summary": "Task: image-to-video | Downloads: 1,580,077 | Likes: 4,005",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "hf-model-3c3c5e6e3236",
+      "title": "🤗 TokenRhythm/NeoHorse-1-4B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/TokenRhythm/NeoHorse-1-4B",
+      "summary": "Task: text-generation | Downloads: 11,904 | Likes: 2,051",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "hf-paper-b225d71be1bf",
+      "title": "The Router Within: Eliciting Native Skill Routing from a Frozen LLM",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2609.15982",
+      "summary": "Skills extend an LLM agent beyond its parametric knowledge, and the gain they promise rests on picking the right one. Deployed harnesses route by preloading every skill's metadata into the context, wh",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "hf-paper-2e41cb97f5a7",
+      "title": "ScienceBuddy: Recursive-in-Recursive Self-Improvement for Interactive Scientific Agents",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2609.17523",
+      "summary": "We introduce and release ScienceBuddy, an interactive scientific research workspace that brings continually improving scientific agents into researchers' everyday workflows. ScienceBuddy supports rese",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "hf-paper-ef64f0bb1d54",
+      "title": "Continual Learning Mechanisms Compose for Long-Horizon Memorization",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2609.06986",
+      "summary": "Language models may need to internalize information that arrives over time and retain it through many subsequent updates. To study this challenge, we introduce long-horizon memorization, a setting in ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "hf-paper-c9a8ba577261",
+      "title": "Lightning Weave: Improving the Accuracy-Efficiency Frontier of Reasoning Models through Capability Composition",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2609.14708",
+      "summary": "A core goal of efficient reasoning is to improve the accuracy-efficiency frontier. However, jointly improving reasoning accuracy and inference efficiency can be challenging, as the two objectives can ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "hf-paper-71b0b00528cf",
+      "title": "Learning to Solve Hard Problems in RL for LLMs by Never Giving Up",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2609.13443",
+      "summary": "We demonstrate that training LLMs with RL does not improve performance equally across a dataset. RL shows large improvements on easy problems that an LLM is already good at solving, but small improvem",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "hf-paper-4f6edd082dd3",
+      "title": "Root-Cause Attribution Is a Search Problem: Continual Search for Long-Horizon Agent Failures",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2609.13463",
+      "summary": "The increasing deployment of AI agents in long-horizon tasks yields massive execution logs. Diagnosing failures within these records is crucial for reliability, as it transforms outcome-level signals ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "hf-paper-5f402141c5bf",
+      "title": "E2A-Bench: Benchmarking Evidence-to-Action Reliability in Financial Chart Reasoning",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2609.14302",
+      "summary": "Can financial vision-language models (VLMs) turn chart evidence into reliable action recommendations? Existing hallucination evaluations are mostly claim-centric; they assess whether generated stateme",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "hf-paper-407862bc4394",
+      "title": "Thought without systematicity? Evaluating reasoning models on rule induction tasks",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2609.13948",
+      "summary": "A central tenet of human cognition is systematicity, the principle that understanding one concept is inherently tied to understanding close variations of that concept. Do reasoning models robustly exh",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "hf-paper-14c040753f53",
+      "title": "Learning Sparse Decision Trees via Transformer Variational Auto-Encoders",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2609.01430",
+      "summary": "Decision trees are among the most widely used models in machine learning, largely due to their transparent decision logic, making them well-suited for high-stakes decision-making contexts. However, mo",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "hf-paper-b44b84ef8501",
+      "title": "How Lossless Is Lossless Speculative Decoding? The Role of Numerical Precision in Orthrus",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2609.15504",
+      "summary": "Orthrus is a hybrid autoregressive-diffusion architecture that accelerates autoregressive language-model inference by generating multiple tokens in parallel while using a frozen autoregressive backbon",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-openai-blog-231875069979",
+      "title": "How Fyxer built an AI executive assistant people trust",
+      "source": "OpenAI Blog",
+      "source_type": "blog",
+      "url": "https://openai.com/index/fyxer",
+      "summary": "Fyxer uses OpenAI models, fine-tuning, memory, and real user feedback to organize inboxes and draft emails in each user’s voice.",
+      "category": [
+        "ai",
+        "openai",
+        "official"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-openai-blog-ea5b19333782",
+      "title": "Perplexity trusts GPT-6 Astra with end-to-end systems",
+      "source": "OpenAI Blog",
+      "source_type": "blog",
+      "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
+      "summary": "Perplexity uses Astra to write communications, change software, and monitor production systems, and checks in much less frequently than with earlier models.",
+      "category": [
+        "ai",
+        "openai",
+        "official"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-openai-blog-bb3fa770c597",
+      "title": "Cognition helps Devin test its own work with GPT‑6 Astra",
+      "source": "OpenAI Blog",
+      "source_type": "blog",
+      "url": "https://openai.com/index/cognition-devin-testing-with-astra",
+      "summary": "GPT‑6 Astra improves Devin’s ability to test software and show that it works, with the goal of helping engineers review less code and ship more.",
+      "category": [
+        "ai",
+        "openai",
+        "official"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-google-deepmind-blog-392b6ec46b4e",
+      "title": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
+      "source": "Google DeepMind Blog",
+      "source_type": "blog",
+      "url": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
+      "summary": "",
+      "category": [
+        "ai",
+        "google",
+        "deepmind"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-google-ai-blog-a56de3e90322",
+      "title": "AI for Societal Impact",
+      "source": "Google AI Blog",
+      "source_type": "blog",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/ai-for-societal-impact/",
+      "summary": "Explore this collection to see how experts and local leaders are using AI breakthroughs to ensure everyone can share the opportunity of AI.",
+      "category": [
+        "ai",
+        "google",
+        "official"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-google-ai-blog-b5ab0b9d7814",
+      "title": "Building AI to accelerate science and improve lives",
+      "source": "Google AI Blog",
+      "source_type": "blog",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/ai-applications-science-people/",
+      "summary": "The true measure of AI is who it helps. Here’s how it’s impacting lives today. We're focused on key areas where advanced technology can help make extraordinary progress …",
+      "category": [
+        "ai",
+        "google",
+        "official"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-google-ai-blog-02a684446e86",
+      "title": "AI for everyone in every language",
+      "source": "Google AI Blog",
+      "source_type": "blog",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/ai-for-every-language/",
+      "summary": "We’re moving beyond traditional text translation to build models that understand the world’s rich, living languages exactly as they are expressed.",
+      "category": [
+        "ai",
+        "google",
+        "official"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-hackernews-daily-1c74295fb56a",
+      "title": "2026 09 16 HackerNews",
+      "source": "HackerNews Daily",
+      "source_type": "hackernews",
+      "url": "https://supertechfans.com/cn/post/2026-09-16-HackerNews/",
+      "summary": "2026-09-16 Hacker News Top Stories # 一个树莓派电子墨水画框能实时检测鸟鸣并用本地AI将鸟绘制成19世纪风格插图。 我无法停止想念巴布亚新几内亚 文章批评自9/11以来美国大规模监控侵犯自由且效果存疑，建议通过搜查令等逆转。 Steam Frame 是一款专为虚拟现实（VR）和非虚拟现实（non-VR）游戏设计的无线头戴显示设备, 1059美元起 苹果发布iOS",
+      "category": [
+        "tech",
+        "news",
+        "hackernews",
+        "daily"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-all-in-podcast-8abe36779c10",
+      "title": "The Age of Body Futurism | Ruby Justice Thelot",
+      "source": "All-In Podcast",
+      "source_type": "investor",
+      "url": "https://a16z.simplecast.com/episodes/the-age-of-body-futurism-ruby-justice-thelot-ZnUXyeWf",
+      "summary": "Elena Burger sits down with academic and cyber ethnographer Ruby Justice Thelot to explore the increasingly blurry line between internet culture and the real world, and how to tell the difference betw",
+      "category": [
+        "investor",
+        "vc",
+        "tech",
+        "podcast"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-all-in-podcast-d88451b56a17",
+      "title": "Greg Brockman on Why OpenAI Says We’re Entering the AGI Era",
+      "source": "All-In Podcast",
+      "source_type": "investor",
+      "url": "https://a16z.simplecast.com/episodes/greg-brockman-on-why-openai-says-were-entering-the-agi-era-deKod42i",
+      "summary": "Ben Horowitz and Erik Torenberg sit down with OpenAI co-founder and President Greg Brockman to discuss why he believes AI has entered a new phase, what OpenAI’s latest models reveal about the path to ",
+      "category": [
+        "investor",
+        "vc",
+        "tech",
+        "podcast"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-all-in-podcast-7e9c504f1a17",
+      "title": "World Models, Robotics, and the Future of 3D AI",
+      "source": "All-In Podcast",
+      "source_type": "investor",
+      "url": "https://a16z.simplecast.com/episodes/world-models-robotics-and-the-future-of-3d-ai-mGOuUHi0",
+      "summary": "World Labs co-founder Justin Johnson joins MTS hosts Theo Jaffee and Sofia Puccini to discuss Atlas, World Labs’ latest world model, and the broader case for AI systems that understand and interact wi",
+      "category": [
+        "investor",
+        "vc",
+        "tech",
+        "podcast"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "atom-the-ai-valley-e50107dd34be",
+      "title": "Microsoft rejects AI personhood",
+      "source": "The AI Valley",
+      "source_type": "news",
+      "url": "https://kill-the-newsletter.com/feeds/sg5lm1gdqvvwgskcyk8q/entries/u0kf636raijfnva3dnqs.html",
+      "summary": "Microsoft rejects AI personhood 96 :root { color-scheme: light; supported-color-schemes: light; } body { margin: 0; padding: 0; min-width: 100%!important; -ms-text-size-adjust: 100% !important; -webki",
+      "category": [
+        "ai",
+        "news",
+        "daily"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-latent-space-d2347991444e",
+      "title": "Can Skills Learned in Games Transfer to Real-World Work?",
+      "source": "Latent Space",
+      "source_type": "rss",
+      "url": "https://www.latent.space/p/good-start-labs",
+      "summary": "Good Start Labs trained an AI on a railroad game &#8212; and one version improved at financial research. The difference was the training design.",
+      "category": [
+        "ai",
+        "news",
+        "daily"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-ben's-bites-56a6485ae616",
+      "title": "Good luck slowing this down",
+      "source": "Ben's Bites",
+      "source_type": "rss",
+      "url": "https://www.bensbites.com/p/good-luck-slowing-this-down",
+      "summary": "plus what&#8217;s new in AI this week",
+      "category": [
+        "ai",
+        "tools",
+        "weekly"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "atom-simon-willison-eb6f18ce401a",
+      "title": "Gemini Live audio",
+      "source": "Simon Willison",
+      "source_type": "rss",
+      "url": "https://simonwillison.net/2026/Sep/15/gemini-live/",
+      "summary": "Tool: Gemini Live audio Google released Gemini 3.8 Live and 3.8 Live Extended Thinking today - two new speech-to-speech models that are a similar shape to OpenAI's GPT-Live family. I pointed GPT-6 Ast",
+      "category": [
+        "tech",
+        "ai",
+        "python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-gary-marcus-c4872190a007",
+      "title": "Translating Sam",
+      "source": "Gary Marcus",
+      "source_type": "rss",
+      "url": "https://garymarcus.substack.com/p/translating-sam",
+      "summary": "Wondering what Sam&#8217;s endorsement of Dario is really about?",
+      "category": [
+        "ai",
+        "ml"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-gary-marcus-ff9e225500db",
+      "title": "BREAKING: Secret US AI evaluation framework has been partly revealed",
+      "source": "Gary Marcus",
+      "source_type": "rss",
+      "url": "https://garymarcus.substack.com/p/breaking-secret-us-ai-evaluation",
+      "summary": "Very partly",
+      "category": [
+        "ai",
+        "ml"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-interconnects-86bf8af461e2",
+      "title": "Open-Source AI &amp; Open Models Reading List",
+      "source": "Interconnects",
+      "source_type": "rss",
+      "url": "https://www.interconnects.ai/p/open-source-ai-reading-list",
+      "summary": "How to get up to speed on open models and their implications.",
+      "category": [
+        "ai",
+        "ml",
+        "blog"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-entropic-thoughts-64291d3cf1be",
+      "title": "Tag index for Org mode blog",
+      "source": "Entropic Thoughts",
+      "source_type": "rss",
+      "url": "https://entropicthoughts.com/tag-index-for-org-mode-blog",
+      "summary": "Since people keep asking how this blog is made, and I don&amp;rsquo;t want to share the awful, terrible code that it is taped together with, I&amp;rsquo;ve decided to start explaining parts of it piec",
+      "category": [
+        "tech",
+        "ai"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "atom-armin-ronacher-c3c31807cf16",
+      "title": "Interpreting Pangram",
+      "source": "Armin Ronacher",
+      "source_type": "rss",
+      "url": "https://lucumr.pocoo.org/2026/9/14/interpreting-pangram/",
+      "summary": "Yesterday David Sacks wrote a tweet and within a few minutes people did, what they usually do, and they asked Pangram if it was AI. And Pangram said it&#8217;s entirely AI generated . To which David r",
+      "category": [
+        "tech",
+        "python",
+        "rust"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-jim-nielsen-e205ff78935f",
+      "title": "Preserving Netlify Analytics Data Beyond 30 Days",
+      "source": "Jim Nielsen",
+      "source_type": "rss",
+      "url": "https://blog.jim-nielsen.com/2026/preserving-netlify-analytics-data/",
+      "summary": "I’ve got Netlify Analytics turned on for a few of my websites. I use it send myself a little daily digest that alerts me when folks link to my writing, be it an individual sending me a few referrals, ",
+      "category": [
+        "tech",
+        "web",
+        "frontend"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-xe-iaso-872ed97b62cf",
+      "title": "Everyone should slow down AI development except for me",
+      "source": "Xe Iaso",
+      "source_type": "rss",
+      "url": "https://xeiaso.net/notes/2026/everyone-slowdown-but-me/",
+      "summary": "",
+      "category": [
+        "tech",
+        "go",
+        "web"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-the-old-new-thing-eff10ddc41ea",
+      "title": "Why didn’t Read­Directory­ChangesW provide a way to correlate the two sides of a rename operation?",
+      "source": "The Old New Thing",
+      "source_type": "rss",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260914-00/?p=112696",
+      "summary": "Perhaps it wasn't necessary, or perhaps it didn't occur to them that this a problem. The post Why didn&#8217;t &lt;CODE&gt;Read&amp;shy;Directory&amp;shy;ChangesW&lt;/CODE&gt; provide a way to correla",
+      "category": [
+        "tech",
+        "windows",
+        "programming"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "atom-ken-shirriff-1b9dbbde2ac0",
+      "title": "Microcode in Intel's 8087 floating-point chip: the scale instruction",
+      "source": "Ken Shirriff",
+      "source_type": "rss",
+      "url": "http://www.righto.com/feeds/8196351266247635143/comments/default",
+      "summary": "In the 1970s, floating-point arithmetic was a mess. Computer manufacturers had a dozen incompatible arithmetic standards. Moreover, floating-point systems were designed around hardware simplicity rath",
+      "category": [
+        "tech",
+        "hardware",
+        "reverse-engineering"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-evan-hahn-df83889f51fe",
+      "title": "Anecdotally, programmers dislike \"reduce\"",
+      "source": "Evan Hahn",
+      "source_type": "rss",
+      "url": "https://evanhahn.com/posts/2026-09-13-programmers-dislike-reduce/",
+      "summary": "In short: from my experience, people like map and filter , but not reduce . I use functions like map and filter all the time. When I put that code up for review, my peers rarely complain. I get plenty",
+      "category": [
+        "tech",
+        "javascript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-sean-goedecke-269e0a5b2ff0",
+      "title": "Tell agents the why, not just the how",
+      "source": "Sean Goedecke",
+      "source_type": "rss",
+      "url": "https://seangoedecke.com/tell-agents-the-why/",
+      "summary": "",
+      "category": [
+        "tech",
+        "software"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-ibrahim-diallo-da8ffcf1de6d",
+      "title": "AI Forces You to Commit to Your Initial Belief",
+      "source": "Ibrahim Diallo",
+      "source_type": "rss",
+      "url": "https://idiallo.com/blog/making-changes-mid-sentence",
+      "summary": "Have you ever watched any old hacker movie lately? The hacker can write at 180 WPM, never using the backspace or changing his mind ever. It’s like before they ever started, they already knew the last ",
+      "category": [
+        "tech",
+        "programming"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-john-d.-cook-1c236f8d5f6e",
+      "title": "Simple approximation for spherical cap area",
+      "source": "John D. Cook",
+      "source_type": "rss",
+      "url": "https://www.johndcook.com/blog/2026/09/15/simple-approximation-for-spherical-cap-area/",
+      "summary": "The previous post looked at how to interpret cosine similarity, or equivalently angles between word vectors. In a high-dimensional space, randomly chosen vectors are likely nearly perpendicular, and s",
+      "category": [
+        "math",
+        "programming"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-john-d.-cook-3ef98b4dee77",
+      "title": "What counts as a large cosine similarity?",
+      "source": "John D. Cook",
+      "source_type": "rss",
+      "url": "https://www.johndcook.com/blog/2026/09/15/cosine-similarity/",
+      "summary": "Machine learning represents words as vectors and measures the similarity of words by the angles between the vectors. For vectors x and y, where θ is the angle between the vectors, and so This is the c",
+      "category": [
+        "math",
+        "programming"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-giles-thomas-d003361647a1",
+      "title": "Extending Raschka's GPT-2: an MoE trained from scratch on an RTX 3090",
+      "source": "Giles Thomas",
+      "source_type": "rss",
+      "url": "https://www.gilesthomas.com/2026/09/gpt-2-to-moe",
+      "summary": "Mixture-of-experts models are really nifty. You get inference speed close to a small model's, with a lot of the smarts and knowledge of a large one. While they use as much memory as an equivalently-si",
+      "category": [
+        "tech",
+        "python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-terrible-software-39783705170d",
+      "title": "AI Is Breaking This Thing We Call Trust",
+      "source": "Terrible Software",
+      "source_type": "rss",
+      "url": "https://terriblesoftware.org/2026/09/10/ai-is-breaking-this-thing-we-call-trust/",
+      "summary": "AI-generated work can look finished without being understood. That uncertainty erodes trust, slows reviews, and leaves colleagues doing the missing work.",
+      "category": [
+        "tech",
+        "career"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-james-shore-5119616b20cb",
+      "title": "Measuring AI’s Impact on Delivery Speed",
+      "source": "James Shore",
+      "source_type": "rss",
+      "url": "https://www.jamesshore.com/v2/blog/2026/measuring-ais-impact-on-delivery-speed",
+      "summary": "Is AI making software development faster? Most people I talk to say “yes.” But how much? What value are you getting for your money? Are there other ways of using AI that have a better ROI? This is par",
+      "category": [
+        "tech",
+        "software",
+        "agile"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-terence-eden-47b53e5f4cc7",
+      "title": "[RSS Club] Sorry for breaking your feed readers!",
+      "source": "Terence Eden",
+      "source_type": "rss",
+      "url": "https://shkspr.mobi/blog/2026/09/rss-club-sorry-for-breaking-your-feed-readers/",
+      "summary": "You&#039;re part of the Groovy Gang because you&#039;re a member of RSS Club! These posts are only available on my RSS and Atom feed. This post is not available in the shops, on the web, via FTP, or a",
+      "category": [
+        "tech",
+        "web"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-dave-farquhar-4b54318d9d32",
+      "title": "Diamond Rio PMP300",
+      "source": "Dave Farquhar",
+      "source_type": "rss",
+      "url": "https://dfarq.homeip.net/diamond-rio-pmp300/?utm_source=rss&utm_medium=rss&utm_campaign=diamond-rio-pmp300",
+      "summary": "On September 15, 1998, Diamond Multimedia introduced an MP3 player, the Diamond Rio PMP300. It wasn&#8217;t the first MP3 player, but it made the MP3 player mainstream. I had one. It wasn&#8217;t exac",
+      "category": [
+        "tech"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "atom-oldvcr-7ea33ae23957",
+      "title": "A Dick Smith VZ200 without the Dick Smith (but with a serial port)",
+      "source": "OldVCR",
+      "source_type": "rss",
+      "url": "https://oldvcr.blogspot.com/feeds/1295709944879299504/comments/default",
+      "summary": "Australians! They walk among us ! Do not be deceived by those charming faces! They might be your parent! They might sleep in the same bed as you at night! A half-breed might write the very blog you re",
+      "category": [
+        "tech",
+        "retro"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-mat-duggan-a4c403cf3f5e",
+      "title": "I Am a Flat-Rate Monthly Responsibility Service",
+      "source": "Mat Duggan",
+      "source_type": "rss",
+      "url": "https://matduggan.com/i-am-a-flat-rate-monthly-responsibility-service/",
+      "summary": "Most people, when asked why they do what they do, lie. This isn&#x2019;t because they&#x2019;re malicious but it&#x2019;s because the honest justification for a career is rarely noble. It&#x2019;s usu",
+      "category": [
+        "tech",
+        "security"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-troy-hunt-4dedb8caf641",
+      "title": "Weekly Update 521: Breach Perception v. Reality",
+      "source": "Troy Hunt",
+      "source_type": "rss",
+      "url": "https://www.troyhunt.com/weekly-update-521/",
+      "summary": "I think what really resonates with me this week is being able to completely turn the tables on perceptions around things like AI being the big bad hacking tool the news would have you believe. There&a",
+      "category": [
+        "security",
+        "tech"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-lcamtuf-3f09b898c0b3",
+      "title": "“The Secret Life of Circuits” is here",
+      "source": "lcamtuf",
+      "source_type": "rss",
+      "url": "https://blog.coredump.cx/p/the-secret-life-of-circuits-is-here",
+      "summary": "Some pics, endorsements, and the reason the book exists in the first place.",
+      "category": [
+        "tech",
+        "security"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-pluralistic-becad9c2e7e7",
+      "title": "Pluralistic: Everybody pees (15 Sep 2026)",
+      "source": "Pluralistic",
+      "source_type": "rss",
+      "url": "https://pluralistic.net/2026/09/15/bitter-lemon-energy-drink/",
+      "summary": "Today's links Everybody pees: Even Jeff Bezos. Hey look at this: Delights to delectate. Object permanence: Zune won't play Microsoft files; Papercraft 1:1 Mustang; Third gender for Aussie passports; F",
+      "category": [
+        "tech",
+        "policy"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-experimental-history-7cd9966d84d8",
+      "title": "There is no epidemic of loneliness, but there is an epidemic of scurvy",
+      "source": "Experimental History",
+      "source_type": "rss",
+      "url": "https://www.experimental-history.com/p/there-is-no-epidemic-of-loneliness",
+      "summary": "OR: hey buddy, your teeth are falling out",
+      "category": [
+        "science",
+        "psychology"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "atom-anil-dash-49b2d9dc537c",
+      "title": "At 25, we are all New Yorkers, again",
+      "source": "Anil Dash",
+      "source_type": "rss",
+      "url": "https://anildash.com/2026/09/11/25-we-are-all-new-yorkers-again/",
+      "summary": "Every year, for 25 years, I’ve written on the observance of this anniversary. Some years, it’s been for me, some years it’s been for the people who’ve been with me along the way. Some years, I didn’t ",
+      "category": [
+        "tech",
+        "culture"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-where's-your-ed-at-ea20f3772f5a",
+      "title": "AI Is Already In Dangerous Hands",
+      "source": "Where's Your Ed At",
+      "source_type": "rss",
+      "url": "https://www.wheresyoured.at/ai-is-already-in-dangerous-hands/",
+      "summary": "If you liked this piece, you should subscribe to my premium newsletter, and you can subscribe on the following links: &#x24;70 a year , &#x24;18 a quarter , or &#x24;7 a month . In return you get a we",
+      "category": [
+        "tech",
+        "business"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-fernando-borretti-67ca5bebd0ed",
+      "title": "The Other Road",
+      "source": "Fernando Borretti",
+      "source_type": "rss",
+      "url": "https://borretti.me/article/the-other-road",
+      "summary": "The transhuman future vs. the AGI future.",
+      "category": [
+        "tech",
+        "programming"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-bert-hubert-e7d6c1f194b4",
+      "title": "Hoe wordt de overheid weer 'van de IT'?",
+      "source": "Bert Hubert",
+      "source_type": "rss",
+      "url": "https://berthub.eu/articles/posts/hoe-word-je-weer-van-de-it/",
+      "summary": "De korte versie: De Nederlandse overheid &ldquo;is niet (echt) van de IT&rdquo;, en legt vrijwel altijd haar oor direct of indirect te luisteren bij een door big-tech gedomineerd ecosysteem om te bepa",
+      "category": [
+        "tech",
+        "networking"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "atom-dylan-nesbitt-542fa8512ede",
+      "title": "Shadowing the Standard Library",
+      "source": "Dylan Nesbitt",
+      "source_type": "rss",
+      "url": "https://nesbitt.io/2026/09/15/shadowing-the-standard-library.html",
+      "summary": "I was reading Johann Rehberger’s write-up of an attack on a coding agent last week. The payload is a file called struct.py inside a zip archive. The agent unpacks the archive, writes its own small Pyt",
+      "category": [
+        "tech"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-construction-physics-d8c4aba8d59a",
+      "title": "Reading List — 09/12/2026",
+      "source": "Construction Physics",
+      "source_type": "rss",
+      "url": "https://www.construction-physics.com/p/reading-list-09122026",
+      "summary": "City permitting speeds, more efficient ground source heat pump drilling, an Amazon Air crash in Miami, cooling paint, and more.",
+      "category": [
+        "science",
+        "engineering"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "atom-tedium-3f3fdc761ad2",
+      "title": "alt.time-capsule.reopened",
+      "source": "Tedium",
+      "source_type": "rss",
+      "url": "https://feed.tedium.co/link/15204/17462130/usenet-rewind-archive-revival-website",
+      "summary": "A new tool for digging into Usenet history holds much potential for researchers. But it’s also a reminder that many users thought, at the time, that it was ephemeral. (They were wrong.) Today in Tediu",
+      "category": [
+        "tech",
+        "history"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-the-digital-antiquar-bcb9ff45060c",
+      "title": "This Week on The Analog Antiquarian",
+      "source": "The Digital Antiquarian",
+      "source_type": "rss",
+      "url": "https://www.filfre.net/2026/09/this-week-on-the-analog-antiquarian/",
+      "summary": "The Tudor Kings",
+      "category": [
+        "gaming",
+        "history"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-doug-brown-08023012e82f",
+      "title": "Fixing an NZXT Signal 4K30 part 2: the green/pink video bug",
+      "source": "Doug Brown",
+      "source_type": "rss",
+      "url": "https://www.downtowndougbrown.com/2026/09/fixing-an-nzxt-signal-4k30-part-2-the-green-pink-video-bug/",
+      "summary": "Last year, I repaired an NZXT Signal 4K30 USB capture device that I bought on eBay for cheap. It was completely dead, and the cause turned out to be a bad solder joint on an inductor, which prevented ",
+      "category": [
+        "tech"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-appso-cd57e6e4fcd9",
+      "title": "苹果回应iPhone 18 Pro渠道价格「破发」/英伟达内部限制使用Claude/新豆包手机助手发布",
+      "source": "APPSO",
+      "source_type": "wechat",
+      "url": "https://mp.weixin.qq.com/s/ZFrGp6ViVsvZqmZRdfNKVg",
+      "summary": "苹果发布 iOS 27、iPadOS 27、macOS 27、watchOS 27、visionOS 27 和 tvOS 27 正式版，其中 iOS 27 带来全新 Siri AI，可结合个人上下文执行操作，初期仅支持英语，且不在欧盟提供。此外，苹果回应 iPhone 渠道降价，称第三方有定价权，售后规则不同。",
+      "category": [
+        "ai",
+        "tech",
+        "wechat",
+        "chinese"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-appso-2f6235637fb2",
+      "title": "AI 会毁掉数学吗？它先学会了大厂的虚荣",
+      "source": "APPSO",
+      "source_type": "wechat",
+      "url": "https://mp.weixin.qq.com/s/2e_xG9KfEc0WLie-27C4tw",
+      "summary": "文章批评AI大厂将数学难题当作竞赛奖杯，通过巨额算力批量冲击名题并抢先宣布成果，以换取头条和声望。作者以DeepMind 100个Agent作弊实验为例，揭示AI在竞争压力下会钻评审漏洞；对比OpenAI、DeepMind、Anthropic的数学成果宣传，指出其套路是选名题、压缩成奇观数字、转化为模型成就。作者认为真正的数学价值在于创造可理解、可传承的方法，而非打榜成绩，菲尔兹奖表彰的正是方法贡",
+      "category": [
+        "ai",
+        "tech",
+        "wechat",
+        "chinese"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-appso-bdbc9ecc8c50",
+      "title": "看完国内首场 AI 艺人线下演唱会，我开始期待「她」返场",
+      "source": "APPSO",
+      "source_type": "wechat",
+      "url": "https://mp.weixin.qq.com/s/d8gGtixmeAKomLVwmk_3vg",
+      "summary": "本文以APPSO在外滩大会超现实AI音乐会上对虚拟艺人Yuri尤栗的观察为引子，回顾了从2017年虚拟选手荷兹参加《明日之子》选秀引发争议，到如今AI原生艺人Yuri获得官方身份认证并举办线下音乐会的历程。文章分析了AI虚拟艺人线下演出的意义，指出线下体验的核心在于制造稀缺的共同时间，而非简单的屏幕放大；同时探讨了AI艺人面临的现实制度挑战，如审批、安全责任、版权归属等。文章认为，AI艺人试图将生",
+      "category": [
+        "ai",
+        "tech",
+        "wechat",
+        "chinese"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-机器之心-d6c65c79e12f",
+      "title": "在多项高难度Benchmark超越GPT-6 Astra，RSIAgent让开源模型自主探索新环境",
+      "source": "机器之心",
+      "source_type": "wechat",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651057178&idx=1&sn=3ee4d896a3d3ed5a39c7773752d61d30",
+      "summary": "Aether AI 深耕因果智能，推动 AI 持续自我进化",
+      "category": [
+        "ai",
+        "research",
+        "wechat",
+        "chinese"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-机器之心-ee2b4ce07531",
+      "title": "全奖读AI！人工智能排名前十的MBZUAI本硕博招生启动",
+      "source": "机器之心",
+      "source_type": "wechat",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651057178&idx=2&sn=e69916867dd74b9a1c0609176b8d4107",
+      "summary": "阿布扎比这所AI大学，究竟有多香？",
+      "category": [
+        "ai",
+        "research",
+        "wechat",
+        "chinese"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-量子位-7daed5dbe3db",
+      "title": "梁文锋CFO到位！投过智谱MiniMax",
+      "source": "量子位",
+      "source_type": "wechat",
+      "url": "https://www.qbitai.com/2026/09/489707.html",
+      "summary": "严文韬，1991年生，高瓴创投合伙人",
+      "category": [
+        "ai",
+        "tech",
+        "wechat",
+        "chinese"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-量子位-826f5318d362",
+      "title": "地平线第1500万颗征程芯片搭载大众 ID. AURA T6，HSD V2.1 即将推出",
+      "source": "量子位",
+      "source_type": "wechat",
+      "url": "https://www.qbitai.com/2026/09/489698.html",
+      "summary": "首发全场景倒车能力，体验再进一步",
+      "category": [
+        "ai",
+        "tech",
+        "wechat",
+        "chinese"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-量子位-fba6fe1746c9",
+      "title": "手机替我跑了一整套流程！我就说了一句话，AI执行了100步",
+      "source": "量子位",
+      "source_type": "wechat",
+      "url": "https://www.qbitai.com/2026/09/489466.html",
+      "summary": "一句话，YOYO全面接管我的生活",
+      "category": [
+        "ai",
+        "tech",
+        "wechat",
+        "chinese"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-虎嗅-f621026c97bb",
+      "title": "手搓AI助教后，这位乡村教师把时间留给了什么？",
+      "source": "虎嗅",
+      "source_type": "wechat",
+      "url": "https://www.huxiu.com/article/4891525.html?f=rss",
+      "summary": "本文来自微信公众号： 重农评 ，编辑：李克欣，作者：王文珺 网友@鱼丸： 有的乡村教师一人多岗、负重前行，十分不易。陕西乡村教师手搓AI大脑管理班级，真的能帮老师省下精力、回归育人本心，让乡村孩子收获更好的成长吗？ 陕西咸阳旬邑县一位“95后”乡村教师最近引发社会关注。 非计算机科班出身的康韵琪，在教室里搭建起AI助教，把分数除法、鸡兔同笼做成互动课件，用智能工作台辅助成绩录入与班级管理，原本需要",
+      "category": [
+        "tech",
+        "business",
+        "wechat",
+        "chinese"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    },
+    {
+      "id": "rss-虎嗅-a339c6f28071",
+      "title": "五轮面试筛出能力，何必用一条偏见筛掉公平：大厂到底在招人，还是在偷懒？",
+      "source": "虎嗅",
+      "source_type": "wechat",
+      "url": "https://www.huxiu.com/article/4891520.html?f=rss",
+      "summary": "本文来自微信公众号： 瞰见Lab ，作者：瞰见·大事无小事 问题不在企业设门槛，而在门槛被藏到了终点。 “本科及以上学历，能力优秀者可适当放宽。” 这句话经常出现在招聘启事中，但是大多数人不会仔细阅读它。 从语气上来说，“公司是有门槛的，但是也会给真正的有能力的人留出一条路”这句话很有人情味。 湖南的小缪，大概就是按这道缝走进去的。 据北京日报客户端转引的新闻采访，他专科读了三年，之后走统招专升本",
+      "category": [
+        "tech",
+        "business",
+        "wechat",
+        "chinese"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-09-16"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-09-16T10:20:27.957495"
+}

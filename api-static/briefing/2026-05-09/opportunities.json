@@ -1,0 +1,700 @@
+{
+  "date": "2026-05-09",
+  "opportunities": [
+    {
+      "opportunity_title": "文本隐私一键脱敏 API 服务",
+      "core_insight": "OpenAI 开源隐私检测模型，可直接嵌入服务识别并替换 PII，中小企业无需自研合规工具",
+      "product_form": "帮助处理用户文本的企业自动识别并脱敏姓名、邮箱等隐私信息的 API 服务",
+      "target_users": "客服平台/医疗记录系统/小型金融科技，需满足GDPR/CCPA，愿按调用量付费",
+      "mvp_features": [
+        "REST API 输入文本返回脱敏结果",
+        "支持自定义脱敏策略",
+        "审计日志与合规报告"
+      ],
+      "business_model": "免费 1000 次调用/月，$0.002/次定价",
+      "competitive_barrier": "",
+      "risks": "大厂可能直接集成类似服务，竞争加剧",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 5,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 20,
+      "source_title": "🤗 openai/privacy-filter",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/openai/privacy-filter",
+      "item_id": "hf-model-b6a7c38191ac"
+    },
+    {
+      "opportunity_title": "隐形浏览器抓取API服务",
+      "core_insight": "完全通过所有反机器人检测的浏览器，可替代Playwright进行高成功率数据采集，此前抓取工具频繁被屏蔽。",
+      "product_form": "帮助数据工程师与电商监控者解决网站抓取被屏蔽问题的隐形浏览器API平台。",
+      "target_users": "竞品监控公司、SEO工具商、市场研究团队，迫切需要稳定采集，按月付费。",
+      "mvp_features": [
+        "REST API接收URL和操作脚本返回网页内容",
+        "内置自动代理轮换与验证码处理",
+        "抓取状态与日志面板"
+      ],
+      "business_model": "按万次请求计费，或月费$99起含固定额度。",
+      "competitive_barrier": "",
+      "risks": "可能违反目标网站服务条款，引发法律风险。",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 18,
+      "source_title": "CloakHQ/CloakBrowser — Stealth Chromium that passes every bot detection test. Drop-in Playwright replac",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/CloakHQ/CloakBrowser",
+      "item_id": "github-9e3b2f422063"
+    },
+    {
+      "opportunity_title": "模块化极低成本AI专项API",
+      "core_insight": "模块化MoE使特定任务推理仅需原模型极小部分参数，成本骤降90%以上，此前垂直AI因全模型加载成本高无法作为廉价API",
+      "product_form": "帮助独立开发者以低于传统API 10%的价格获得代码审查/数学解题等专项AI的按量付费平台",
+      "target_users": "个人开发者、小型SaaS团队，需要高性价比专业AI集成，对成本敏感，按次付费",
+      "mvp_features": [
+        "选择专家模块（代码/数学/法律）并获取API密钥",
+        "极低延迟专用推理端点",
+        "用量看板与自动扣费"
+      ],
+      "business_model": "按1K token计费$0.0005起，或免费社区版+高级模块订阅",
+      "competitive_barrier": "",
+      "risks": "开源EMO模型实际部署稳定性未知，大厂可能迅速推出低成本同类服务",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 17,
+      "source_title": "EMO: Pretraining Mixture of Experts for Emergent Modularity",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "source_url": "https://huggingface.co/papers/2605.06663",
+      "item_id": "hf-paper-d5d1daf92510"
+    },
+    {
+      "opportunity_title": "电商商品图一键生成卖点文案工具",
+      "core_insight": "多模态小模型在消费级 GPU 上运行，实现零成本批量图片理解，此前高质量图片描述依赖昂贵 API",
+      "product_form": "帮助电商卖家上传产品图片后自动生成标题、卖点与描述的 SaaS 工具",
+      "target_users": "中小电商卖家/独立站运营，需大量上架商品但缺乏文案能力，愿为效率月付",
+      "mvp_features": [
+        "批量上传商品图片",
+        "单图/多图 AI 描述生成",
+        "导出符合平台格式的 CSV"
+      ],
+      "business_model": "免费试用 50 次，按月订阅 $9.9 不限量",
+      "competitive_barrier": "",
+      "risks": "模型精度依赖场景，复杂产品可能描述不准",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 17,
+      "source_title": "🤗 Qwen/Qwen3.6-35B-A3B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
+      "item_id": "hf-model-70b0f02555a8"
+    },
+    {
+      "opportunity_title": "产品图秒变营销短视频工具",
+      "core_insight": "高质量图生视频模型开源，可提供廉价视频生成，以前需要付费高昂的 Runway 等平台",
+      "product_form": "帮助电商/社媒运营将静态产品图自动生成 15 秒营销短视频的 SaaS",
+      "target_users": "电商运营/社媒小编，需大量短视频素材但缺乏剪辑能力，愿月付 $15",
+      "mvp_features": [
+        "上传产品图+选择动作模板",
+        "AI 生成带音乐视频",
+        "一键导出至 TikTok 尺寸"
+      ],
+      "business_model": "月费 $15 生成 50 条视频，额外按条付费",
+      "competitive_barrier": "",
+      "risks": "开源模型生成质量与商用视频平台可能存差距",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 17,
+      "source_title": "🤗 TenStrip/LTX2.3-10Eros",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/TenStrip/LTX2.3-10Eros",
+      "item_id": "hf-model-79856f8f8d86"
+    },
+    {
+      "opportunity_title": "Lok AI：完全离线、隐私优先的桌面智能助手",
+      "core_insight": "全新推理引擎将DeepSeek V4的门槛降至消费级Mac，实现无网络、零延迟的AI，消除隐私顾虑，解锁了律师、财务顾问等敏感职业的AI应用",
+      "product_form": "帮助注重隐私的专业人士在Mac上安全处理文档与会议的本地AI助手桌面应用",
+      "target_users": "律师、财务顾问、企业高管、医疗记录处理者，痛点：数据严禁出设备，付费意愿高",
+      "mvp_features": [
+        "完全的离线聊天与问答",
+        "本地文档导入与向量化问询",
+        "会议录音转写并生成本地摘要"
+      ],
+      "business_model": "一次性买断$149，含一年更新，或企业年订阅$99/席",
+      "competitive_barrier": "",
+      "risks": "模型版权与分发许可风险，推理引擎稳定性和模型量化质量可能达不到可用水平",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 3
+      },
+      "total_score": 17,
+      "source_title": "Redis之父下场，给DeepSeek V4单独造了一台推理引擎",
+      "source": "量子位",
+      "source_type": "wechat",
+      "source_url": "https://www.qbitai.com/2026/05/414316.html",
+      "item_id": "rss-量子位-5c9a8bb6de51"
+    },
+    {
+      "opportunity_title": "数学好题自动出题器",
+      "core_insight": "基于验证器的难题生成解决了LLM出题常出错或无挑战性的问题，让个性化题库自动生成成为可信赖的服务。",
+      "product_form": "帮助数学教师和培训机构批量生成高质量、带验证的原创习题与测试的SaaS平台",
+      "target_users": "K12及大学数学教师、教育培训机构内容研发，痛点是无充足时间出新颖题目且需保证答案正确，付费意愿较高",
+      "mvp_features": [
+        "输入知识点与难度自动出题并附带详细解答步骤",
+        "题目新颖性评分与自动去重",
+        "导出为PDF/Word/LaTeX及直接嵌入学习管理系统"
+      ],
+      "business_model": "按生成题目试卷数量收费或学校年付费",
+      "competitive_barrier": "",
+      "risks": "题目质量需持续人工审核，初期信任建立难",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 17,
+      "source_title": "Verifier-Backed Hard Problem Generation for Mathematical Reasoning",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "source_url": "https://arxiv.org/abs/2605.06660v1",
+      "item_id": "arxiv-2605.06660v1"
+    },
+    {
+      "opportunity_title": "本地隐私深度研究桌面应用",
+      "core_insight": "3090显卡即可本地运行顶尖精度的深度研究，且完全离线保证数据隐私，此前本地研究精度不足或资源过高。",
+      "product_form": "帮助学术研究者、律师、分析师解决需要高精度调研但担心数据泄漏的本地桌面研究工具。",
+      "target_users": "学术研究者、咨询师、法律从业者，注重隐私与成果质量，一次付费意愿强。",
+      "mvp_features": [
+        "一键安装本地推理环境",
+        "多搜索引擎整合（arXiv、PubMed、私有文档）",
+        "自动生成附带来源的研报"
+      ],
+      "business_model": "一次性买断$99起，高级版含私域文档支持。",
+      "competitive_barrier": "",
+      "risks": "硬件要求（3090级显卡）限制初期用户群，可后续适配低配模型。",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "LearningCircuit/local-deep-research — ~95% on SimpleQA (e.g. Qwen3.6-27B on a 3090). Supports all local and cloud LLMs",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/LearningCircuit/local-deep-research",
+      "item_id": "github-d92c846f430f"
+    },
+    {
+      "opportunity_title": "JunkBot: 从电子烟回收免费MCU的极简调试器套件",
+      "core_insight": "利用廉价RISC-V芯片实现CMSIS-DAP调试器，结合电子垃圾中的ARM MCU，将嵌入式开发硬件成本趋近于零",
+      "product_form": "帮助嵌入式初学者和创客用几美元获得完整开发环境的开源硬件调试器与教育套件",
+      "target_users": "电子爱好者、STEM学生、环保技术社群，难以承受$100+调试器，愿为极简工具付费",
+      "mvp_features": [
+        "预烧录固件的RISC-V调试器板(USB-C)",
+        "10页图文回收指南与10个创意项目",
+        "一键式OpenOCD配置与社区论坛"
+      ],
+      "business_model": "硬件销售$9.99/个，含回收工具包$14.99；教程与社区免费",
+      "competitive_barrier": "",
+      "risks": "克隆速度极快，需通过持续内容与社区黏性建立壁垒",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "World's Cheapest ARM Debugger is Actually RISC-V",
+      "source": "Bogdan The Geek",
+      "source_type": "rss",
+      "source_url": "https://bogdanthegeek.github.io/blog/projects/v003-dap/",
+      "item_id": "rss-bogdan-the-geek-70b5ee4e23bb"
+    },
+    {
+      "opportunity_title": "Vibe Coding 智能调试助手",
+      "core_insight": "GPT-5.5的代码推理能力已能精准定位并修复AI生成代码的隐性bug，填补vibe coding从构建到交付的关键缺口",
+      "product_form": "帮助独立开发者/非专业程序员自动检测并修复AI生成代码错误的IDE插件与Web服务",
+      "target_users": "使用AI辅助编码的独立开发者、产品经理、创业者，痛点是AI生成代码的隐性缺陷导致的上线延迟，付费意愿强烈",
+      "mvp_features": [
+        "一键扫描项目，标记潜在AI典型错误（幻觉API、逻辑死锁等）",
+        "基于GPT-5.5的自动修复建议与补丁生成",
+        "VS Code/JetBrains集成，本地运行直连模型API"
+      ],
+      "business_model": "免费版每日5次修复，Pro版$9.9/月无限次，团队版按席位定价",
+      "competitive_barrier": "",
+      "risks": "GPT-5.5 API调用成本高，需要优化缓存或用开源模型降本",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "Capacity Efficiency at Meta: How Unified AI Agents Optimize Performance at Hyperscale",
+      "source": "Meta Engineering",
+      "source_type": "blog",
+      "source_url": "https://engineering.fb.com/2026/04/16/developer-tools/capacity-efficiency-at-meta-how-unified-ai-agents-optimize-performance-at-hyperscale/",
+      "item_id": "rss-meta-engineering-44b3259ff1d6"
+    },
+    {
+      "opportunity_title": "TACO-CLI：自带记忆清理的智能终端助手",
+      "core_insight": "TACO解决终端Agent因历史输出过长而失效的顽疾，使得在本地运行的长任务执行代理首次达到可用水平",
+      "product_form": "帮助开发者解决终端长任务中断与上下文混乱问题的AI终端助手App",
+      "target_users": "后端/全栈/运维开发者，多人协同调试，痛点：长日志下命令丢失上下文，付费意愿中等",
+      "mvp_features": [
+        "集成TACO的智能上下文压缩引擎",
+        "多LLM终端对话与命令执行",
+        "常用开发任务模板与错误自动修复建议"
+      ],
+      "business_model": "基础版免费，高级版订阅$9/月或买断$59",
+      "competitive_barrier": "",
+      "risks": "Warp、Fig等竞品快速跟进整合TACO，独立工具生存空间有限",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "TACO: 让 CLI Agent 在自主迭代中学会丢掉无用上下文",
+      "source": "机器之心",
+      "source_type": "wechat",
+      "source_url": "https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651031726&idx=3&sn=43bc79f6487a4bbfb12e9b76ada48d52",
+      "item_id": "rss-机器之心-2d8b9898a9c7"
+    },
+    {
+      "opportunity_title": "No-Code多Agent电商运营工作台",
+      "core_insight": "多Agent协作能力让非技术用户也能搭建由多个AI角色组成的自动化运营流，之前多Agent编排复杂且难以落地。",
+      "product_form": "帮助中小电商卖家解决客服、营销、选品等多角色自动化协作的No-Code多Agent平台。",
+      "target_users": "跨境电商/独立站卖家，日常手动处理多任务，人力成本高，愿意为自动化付费。",
+      "mvp_features": [
+        "可视化Agent编排画布",
+        "预置电商Agent模板（客服、营销文案、库存分析）",
+        "一键接入Shopify/微信等渠道"
+      ],
+      "business_model": "月度订阅，基础版$29/月起，按Agent数量计费。",
+      "competitive_barrier": "",
+      "risks": "依赖LobeHub开源项目，核心功能受上游更新影响。",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 15,
+      "source_title": "lobehub/lobehub — The ultimate space for work and life — to find, build, and collaborate with agen",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/lobehub/lobehub",
+      "item_id": "github-9a7da15f35bf"
+    },
+    {
+      "opportunity_title": "本地隐私AI编码桌面应用",
+      "core_insight": "DeepSeek模型配合终端编码Agent提供高质量离线代码辅助，吸引了大量开发者，可封装为更友好的桌面IDE插件。",
+      "product_form": "帮助注重代码隐私的开发者使用本地AI模型进行高效编码的IDE插件与独立桌面应用。",
+      "target_users": "企业开发者、自由职业者，担心代码外泄，愿意为离线AI编码助手付费。",
+      "mvp_features": [
+        "VS Code/JetBrains插件调用本地DeepSeek模型",
+        "项目上下文感知的代码补全与聊天",
+        "一键部署本地模型环境"
+      ],
+      "business_model": "基础版免费，高级特性（多模型、私域知识库）月费$9.9。",
+      "competitive_barrier": "",
+      "risks": "免费Copilot和大量开源替代竞争激烈，用户付费意愿受考验。",
+      "scores": {
+        "pain_point": 3,
+        "market_size": 5,
+        "tech_timing": 4,
+        "buildability": 3
+      },
+      "total_score": 15,
+      "source_title": "Hmbown/DeepSeek-TUI — Coding agent for DeepSeek models that runs in your terminal",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/Hmbown/DeepSeek-TUI",
+      "item_id": "github-b70ec62815a2"
+    },
+    {
+      "opportunity_title": "截图即懂的智能图表解读助手",
+      "core_insight": "27B 多模态模型可精准解读复杂图表/仪表盘并提取结构化数据，以前需要人工分析",
+      "product_form": "帮助分析师/学生上传图表截图后即时获得解读、数据表格和分析建议的 Web 工具",
+      "target_users": "数据分析师/研究生/金融从业者，快速从图表中获取洞察，愿为省时月付",
+      "mvp_features": [
+        "图表截图拖拽上传",
+        "AI 自然语言解读+结构化表格输出",
+        "历史记录与收藏"
+      ],
+      "business_model": "免费 10 次/月，个人版 $8/月无限使用",
+      "competitive_barrier": "",
+      "risks": "高并发时自部署 27B 模型可能成本较高",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 15,
+      "source_title": "🤗 Qwen/Qwen3.6-27B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.6-27B",
+      "item_id": "hf-model-4481c76e29d1"
+    },
+    {
+      "opportunity_title": "全模态万能文档转换器",
+      "core_insight": "一个模型实现图转文、文转语音、文件转结构化等，可替代 5+ 个独立工具的集成工作流",
+      "product_form": "帮助知识工作者将 PDF/图片/音频在任意格式间转换并保持上下文的在线工具箱",
+      "target_users": "咨询师/律师/编辑，频繁处理多格式文档，需要统一转换入口，愿按用量付费",
+      "mvp_features": [
+        "上传任意文件（图片/PDF/音频）",
+        "目标格式选择与 AI 转写",
+        "批量处理与下载"
+      ],
+      "business_model": "免费 5 次，高级版 $12/月 100 次转换",
+      "competitive_barrier": "",
+      "risks": "模型至 31B 部署成本高，初期可能需依赖 HuggingFace 推理端点",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 3
+      },
+      "total_score": 15,
+      "source_title": "🤗 google/gemma-4-31B-it-assistant",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/google/gemma-4-31B-it-assistant",
+      "item_id": "hf-model-667efcd6957b"
+    },
+    {
+      "opportunity_title": "AI视频导演：零样本相机与动作控制生成",
+      "core_insight": "ActCam实现了零样本的相机轨迹和演员3D动作联合控制，让视频生成从抽象描述变为可精细导演，之前工具缺乏此类可控性。",
+      "product_form": "帮助视频创作者和广告制作人通过文本指令精确控制相机运动和角色动作的AI视频生成SaaS工具",
+      "target_users": "短视频创作者、独立电影人、广告创意者，需要低成本快速生成带有特定镜头语言的产品演示或故事板，付费意愿中等",
+      "mvp_features": [
+        "文本描述生成视频并指定相机路径（推拉摇移等）",
+        "3D角色动作预设与自定义动作描述",
+        "多相机轨迹切换与输出无压缩片段"
+      ],
+      "business_model": "按生成视频时长计费，月订阅享折扣",
+      "competitive_barrier": "",
+      "risks": "生成质量不稳定可能导致专业用户嫌弃，且计算成本高",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 3
+      },
+      "total_score": 15,
+      "source_title": "ActCam: Zero-Shot Joint Camera and 3D Motion Control for Video Generation",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "source_url": "https://arxiv.org/abs/2605.06667v1",
+      "item_id": "arxiv-2605.06667v1"
+    },
+    {
+      "opportunity_title": "二次元角色定制生成器",
+      "core_insight": "专注于动漫风格的模型可提供稳定二次元输出，之前通用模型难以保持风格一致性",
+      "product_form": "帮助二次元画师/粉丝用文字描述快速生成高质量动漫角色立绘的在线工具",
+      "target_users": "独立游戏开发者/同人画师/角色爱好者，需快速迭代角色设计，愿按套系付费",
+      "mvp_features": [
+        "文字描述与特征标签选择",
+        "同一角色多姿势生成",
+        "按插画集导出"
+      ],
+      "business_model": "免费 3 次/天，$5.99 月费解锁每日 50 次",
+      "competitive_barrier": "",
+      "risks": "用户群体较窄，付费规模有限",
+      "scores": {
+        "pain_point": 3,
+        "market_size": 2,
+        "tech_timing": 4,
+        "buildability": 5
+      },
+      "total_score": 14,
+      "source_title": "🤗 SeeSee21/Z-Anime",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/SeeSee21/Z-Anime",
+      "item_id": "hf-model-f3fc7d86e6c4"
+    },
+    {
+      "opportunity_title": "自纠正GUI自动化代理插件",
+      "core_insight": "无训练偏差缓解可直接提升现有视觉模型的GUI元素定位准确度，使零代码录制回放和自然语言驱动网页操作变得足够可靠。",
+      "product_form": "帮助QA与运营人员执行跨应用浏览器自动化任务的Chrome扩展，支持自然语言指令与自动误触纠正",
+      "target_users": "QA工程师、电商运营、数据录入员，痛点是被复杂界面频繁误点需人工干预，愿为稳定自动化付费",
+      "mvp_features": [
+        "自然语言描述任务（如'点搜索框输入'）即生成操作步骤",
+        "智能偏差校正：当按钮移位时自动重定位",
+        "操作录制回放与异常截图报告"
+      ],
+      "business_model": "免费基础功能+Pro版按月订阅解锁高级站点适配与批量运行",
+      "competitive_barrier": "",
+      "risks": "依赖底层视觉模型能力，模型升级可能覆盖此功能",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 3
+      },
+      "total_score": 14,
+      "source_title": "BAMI: Training-Free Bias Mitigation in GUI Grounding",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "source_url": "https://arxiv.org/abs/2605.06664v1",
+      "item_id": "arxiv-2605.06664v1"
+    },
+    {
+      "opportunity_title": "散户AI全自动交易助手",
+      "core_insight": "AI代理能完全自主执行策略和下单，将机构级自动交易能力带给普通投资者，此前量化交易需要手动编码策略。",
+      "product_form": "帮助股票/加密货币散户实现7×24全自动策略交易的个人交易助手SaaS。",
+      "target_users": "忙碌的散户投资者，希望自动执行交易策略，愿意为盈利分成付费。",
+      "mvp_features": [
+        "直连Binance/Alpaca等主流交易API",
+        "预置AI交易策略并支持自定义提示词",
+        "风险控制仪表盘与回测记录"
+      ],
+      "business_model": "盈利后收取5%~10%利润分成，或月度订阅$19.9。",
+      "competitive_barrier": "",
+      "risks": "金融合规、交易亏损导致的用户信任和法律纠纷。",
+      "scores": {
+        "pain_point": 3,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 2
+      },
+      "total_score": 13,
+      "source_title": "HKUDS/AI-Trader — \"AI-Trader: 100% Fully-Automated Agent-Native Trading\"",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/HKUDS/AI-Trader",
+      "item_id": "github-8b40834d069a"
+    },
+    {
+      "opportunity_title": "AI钢琴伴奏生成器",
+      "core_insight": "新数据集覆盖更广作曲家与演奏细节，可微调音乐生成模型产出高质量钢琴曲，此前数据稀缺导致生成质量平庸",
+      "product_form": "帮助视频创作者/播客主按情绪和时长生成免版税钢琴背景音乐的SaaS工具",
+      "target_users": "YouTube创作者、播客制作者、短视频运营，需快速获取不侵权的背景音乐，愿为商业使用权付费",
+      "mvp_features": [
+        "输入情绪/节奏/时长生成钢琴片段",
+        "下载WAV/MIDI文件",
+        "风格预设（古典、极简、爵士）"
+      ],
+      "business_model": "按曲付费或订阅制（$12/月无限生成商用许可证）",
+      "competitive_barrier": "",
+      "risks": "生成质量依赖微调效果，数据集不直接解决端到端生成管线",
+      "scores": {
+        "pain_point": 3,
+        "market_size": 3,
+        "tech_timing": 3,
+        "buildability": 3
+      },
+      "total_score": 12,
+      "source_title": "PianoCoRe: Combined and Refined Piano MIDI Dataset",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "source_url": "https://huggingface.co/papers/2605.06627",
+      "item_id": "hf-paper-b3828e65e074"
+    },
+    {
+      "opportunity_title": "数学家AI协作工作台",
+      "core_insight": "预集成多个数学代理（证明搜索、文献、计算）的开放式研究界面，将分散的AI工具转变成流畅的数学研究伙伴。",
+      "product_form": "帮助数学研究者和研究生进行猜想、证明辅助和文献探索的桌面端AI代理工作台",
+      "target_users": "高校数学系研究者、硕士博士生，痛点是在不同工具间切换效率低，愿意为提升研究产出付费但金额有限",
+      "mvp_features": [
+        "自然语言描述数学问题并自动调用符号计算、定理证明器",
+        "联网搜索并归纳相关论文与定理",
+        "交互式证明树可视化与猜想记录"
+      ],
+      "business_model": "免费版提供基础功能，学术机构版按seat年付费",
+      "competitive_barrier": "",
+      "risks": "用户群体小且单价低，难规模化",
+      "scores": {
+        "pain_point": 3,
+        "market_size": 2,
+        "tech_timing": 4,
+        "buildability": 3
+      },
+      "total_score": 12,
+      "source_title": "AI Co-Mathematician: Accelerating Mathematicians with Agentic AI",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "source_url": "https://arxiv.org/abs/2605.06651v1",
+      "item_id": "arxiv-2605.06651v1"
+    },
+    {
+      "opportunity_title": "无标签LLM安全对比审计服务",
+      "core_insight": "方法使无标注数据下也能量化比较模型安全性，解决了企业在新领域或新语言部署LLM时缺乏安全基准的痛点。",
+      "product_form": "帮助企业在无基准情况下安全评估和对比候选LLM的自动化审计SaaS报告工具",
+      "target_users": "金融、医疗、政务等强监管行业AI合规负责人，痛点是无现成安全标签时无法选型，愿为合规付费",
+      "mvp_features": [
+        "上传模型响应样本自动生成安全维度评分",
+        "多模型并列对比与风险领域雷达图",
+        "根据行业术语库定制审查策略"
+      ],
+      "business_model": "按评估模型数收费，或提供年度安全审计订阅",
+      "competitive_barrier": "",
+      "risks": "市场教育成本高，因合规通常需人工背书",
+      "scores": {
+        "pain_point": 3,
+        "market_size": 2,
+        "tech_timing": 4,
+        "buildability": 2
+      },
+      "total_score": 11,
+      "source_title": "When No Benchmark Exists: Validating Comparative LLM Safety Scoring Without Ground-Truth Labels",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "source_url": "https://arxiv.org/abs/2605.06652v1",
+      "item_id": "arxiv-2605.06652v1"
+    }
+  ],
+  "analyzed_item_ids": [
+    "hf-paper-a5f373c244bd",
+    "hf-paper-cddb9fc2bc64",
+    "hf-paper-ab70ec583e39",
+    "hf-paper-99653a9f6610",
+    "hf-paper-3bccfc0197f8",
+    "hf-paper-86e38306b950",
+    "hf-paper-51b105466e13",
+    "hf-paper-6e974c35e33e",
+    "hf-paper-b3828e65e074",
+    "hf-paper-d5d1daf92510",
+    "github-cefb5bf0cd64",
+    "github-917ab9b9ed6e",
+    "github-9a7da15f35bf",
+    "github-d92c846f430f",
+    "github-8b40834d069a",
+    "github-ae415068c1d2",
+    "github-9e3b2f422063",
+    "github-6a861e785610",
+    "github-e67737a1407f",
+    "github-b70ec62815a2",
+    "github-0508d109f745",
+    "github-b318f7d6d63c",
+    "hf-model-70b0f02555a8",
+    "hf-model-4fd7535cd23e",
+    "hf-model-4481c76e29d1",
+    "hf-model-667efcd6957b",
+    "hf-model-79856f8f8d86",
+    "hf-model-f3fc7d86e6c4",
+    "hf-model-b6a7c38191ac",
+    "hf-model-d6be4a0dd0b2",
+    "hf-model-fe96e83596e6",
+    "hf-model-967b88027b16",
+    "rss-hackernews-daily-69a7a00a21f2",
+    "rss-latent-space-77dd036b336a",
+    "atom-simon-willison-642b0f398744",
+    "rss-ben's-bites-ce132ec98468",
+    "rss-interconnects-1676b241ad34",
+    "atom-george-hotz-3d6cc46d30d2",
+    "rss-max-woolf-1e287d7aaa37",
+    "rss-entropic-thoughts-fd924e8ad15f",
+    "rss-daniel-delaney-8b7216a7609f",
+    "rss-grant-slatton-ed0d2efe187e",
+    "rss-simone-417310cdabaf",
+    "rss-gwern-a01af67dcafc",
+    "rss-maurycy-3a2892c494d1",
+    "rss-antirez-c4f0151cdfbe",
+    "atom-matklad-0c396db9c6dd",
+    "atom-armin-ronacher-ebab17f3b4d1",
+    "rss-overreacted-f8483a3b9cee",
+    "rss-mitchell-hashimoto-89eae6eebb45",
+    "rss-jim-nielsen-6e122b546ef0",
+    "rss-xe-iaso-537c535d47ad",
+    "rss-miguel-grinberg-071ae6d95fec",
+    "atom-eli-bendersky-b5271e46254d",
+    "atom-michael-stapelberg-74a089c846a7",
+    "rss-beej-bd53a0b5e435",
+    "atom-rachel-by-the-bay-36a38cb9a81f",
+    "rss-dragas-913864d355b7",
+    "atom-hugo-tunius-d11997e3da01",
+    "rss-max-bernstein-3750563b286f",
+    "atom-ken-shirriff-599dc29eafda",
+    "rss-evan-hahn-eba88065deb1",
+    "rss-tim-schinkel-d507827d97a3",
+    "rss-sean-goedecke-e25ee659b3a2",
+    "rss-skyfall-639a77c2a876",
+    "rss-giles-thomas-89f5510cdb3e",
+    "atom-susam-284ffba891d1",
+    "rss-terrible-software-56b09ae0fcd8",
+    "rss-philip-laine-70fd39087f95",
+    "rss-refactoring-english-fdbc8a9f08fb",
+    "rss-works-on-my-machine-6b6ff75159b6",
+    "rss-hillel-wayne-7cd6d7c2c7e6",
+    "rss-terence-eden-1da419630268",
+    "atom-jay-d-d58463f35780",
+    "rss-dave-farquhar-97e178aae020",
+    "atom-jyn-f23f513617d4",
+    "rss-brutecat-04035f9f6535",
+    "rss-abort-retry-fail-df93fdd82251",
+    "atom-oldvcr-99604ff20410",
+    "rss-bogdan-the-geek-70b5ee4e23bb",
+    "rss-heyparis-c57846771966",
+    "rss-daniel-wirtz-f625c684d5f8",
+    "rss-mat-duggan-a57674e0e61f",
+    "rss-openai-blog-09a84312cc4b",
+    "rss-google-deepmind-blog-c122dcde12a0",
+    "rss-google-deepmind-blog-b59858efc780",
+    "rss-google-deepmind-blog-86d148703bef",
+    "rss-google-ai-blog-70615ef3544f",
+    "rss-meta-engineering-7ae07aecb513",
+    "rss-meta-engineering-9dfe3b4eb3b0",
+    "rss-meta-engineering-44b3259ff1d6",
+    "smolai-925c9ba19aac",
+    "smolai-3835ec2d4caf",
+    "smolai-6ae8f252a117",
+    "smolai-d9b040097d99",
+    "smolai-b2da45641b1b",
+    "smolai-9ab3f2316d84",
+    "smolai-3cf17a1081de",
+    "smolai-a9830aa76078",
+    "smolai-4ea1d2dd8820",
+    "rss-all-in-podcast-2730c34d9eef",
+    "rss-appso-15768f2213a5",
+    "rss-appso-0bcadc70e7c0",
+    "rss-appso-ac660ea4de94",
+    "rss-机器之心-bfeb58090425",
+    "rss-机器之心-35879d5576ef",
+    "rss-机器之心-2d8b9898a9c7",
+    "rss-量子位-5991a8eb5397",
+    "rss-量子位-5c9a8bb6de51",
+    "rss-量子位-c5881cf94855",
+    "rss-虎嗅-7fe452bef9fe",
+    "arxiv-2605.06667v1",
+    "arxiv-2605.06665v1",
+    "arxiv-2605.06664v1",
+    "arxiv-2605.06663v1",
+    "arxiv-2605.06660v1",
+    "arxiv-2605.06656v1",
+    "arxiv-2605.06654v1",
+    "arxiv-2605.06652v1",
+    "arxiv-2605.06651v1"
+  ],
+  "remaining": 15
+}

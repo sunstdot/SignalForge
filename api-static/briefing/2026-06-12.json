@@ -1,0 +1,73 @@
+{
+  "id": "e65fd9bc-09c8-4428-84dc-50bcfa2cbebc",
+  "date": "2026-06-12",
+  "items": [
+    {
+      "id": "l30-x-447213a170c3",
+      "title": "A TWEET WITH 6.5 MILLION VIEWS JUST KILLED THE PROMPT ENGINEER JOB TITLE",
+      "source": "X",
+      "source_type": "x",
+      "url": "https://x.com/humzaakhalid/status/2065365984899391862",
+      "summary": "A TWEET WITH 6.5 MILLION VIEWS JUST KILLED THE PROMPT ENGINEER JOB TITLE Peter Steinberger wrote 8 words that changed how builders think about AI: \"you should be designing loops that prompt your agents.\" this is one of the best engineering frameworks i've seen in a long time. in this cheatsheet I broke down exactly how loop engineering works: → layer 1 wa...",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 9,
+      "created_at": "2026-06-12"
+    },
+    {
+      "id": "l30-x-e4ce82cdf43a",
+      "title": "Je ne prompte presque plus mes coding agents.",
+      "source": "X",
+      "source_type": "x",
+      "url": "https://x.com/JordBastin/status/2065307572555657679",
+      "summary": "Je ne prompte presque plus mes coding agents. Ce sont des boucles qui le font à ma place. Pendant des mois, mon workflow c'était : ouvrir un terminal, lancer un prompt, surveiller l'agent, reviewer, merger. Efficace, mais j'étais présent à chaque étape. Et mon backlog d'issues, lui, ne bougeait pas. Puis j'ai compris un truc en écoutant Boris (Claude Code...",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 7,
+      "created_at": "2026-06-12"
+    },
+    {
+      "id": "l30-x-28dabf43ab50",
+      "title": "10 GITHUB REPOS THAT DEFINED 2026 SO FAR AND MOST DEVELOPERS HAVE ONLY HEARD OF THREE OF THEM.",
+      "source": "X",
+      "source_type": "x",
+      "url": "https://x.com/cyrilXBT/status/2065293013287395786",
+      "summary": "10 GITHUB REPOS THAT DEFINED 2026 SO FAR AND MOST DEVELOPERS HAVE ONLY HEARD OF THREE OF THEM. Save this list before you scroll past it. OpenClaw — Peter Steinberger built a personal AI that runs entirely on your devices. 9,000 to 300,000 stars in months. He joined OpenAI shortly after. https://t.co/xDsw30VOjB anthropics/skills — The internal patterns Ant...",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 6,
+      "created_at": "2026-06-12"
+    },
+    {
+      "id": "l30-reddit-2020c63bb19b",
+      "title": "I vibe coded the first MMORPG with Fable 5",
+      "source": "Reddit",
+      "source_type": "reddit",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1u3m6a8/i_vibe_coded_the_first_mmorpg_with_fable_5/",
+      "summary": "I vibe coded the first MMORPG with Fable 5",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 0,
+      "created_at": "2026-06-12"
+    },
+    {
+      "id": "l30-reddit-82815b1d16f7",
+      "title": "Huawei Released openPangu 2.0 (Will open source on June 30)",
+      "source": "Reddit",
+      "source_type": "reddit",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u3q1j9/huawei_released_openpangu_20_will_open_source_on/",
+      "summary": "Huawei Released openPangu 2.0 (Will open source on June 30)",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 0,
+      "created_at": "2026-06-12"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-06-19T10:22:35.377176"
+}

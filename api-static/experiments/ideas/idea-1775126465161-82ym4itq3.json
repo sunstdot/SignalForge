@@ -1,0 +1,21 @@
+{
+  "id": "idea-1775126465161-82ym4itq3",
+  "content_id": "arxiv-2604.01202v1",
+  "title": "** 决策探针：验证LLM在推理前的决策编码\n\n**",
+  "description": "**\n- **核心思路**: 在开源推理模型（如Qwen2.5或Llama3）上复现论文的核心发现——训练线性探针从早期激活层解码决策信息，验证\"决策先于推理\"假设。\n\n- **实现步骤**:\n  1. 选择1-2个简单的工具调用数据集（如数学计算、API调用决策），收集500-1000个样本\n  2. 在模型生成chain-of-thought的前几层提取激活值，训练线性分类器预测最终决策（二分类：调用/不调用工具）\n  3. 对比不同层的探针准确率，绘制\"决策信息随层数的演化曲线\"\n  4. 在测试集上验证：探针能否在生成第一个推理token前就达到>80%准确率\n\n- **成功标准**: \n  - 早期层（前30%层）的探针准确率达到75%+\n  - 准确率曲线显示决策信息在推理生成前已基本形成\n  - 可视化至少10个案例的激活热图，展示决策编码位置\n\n- **可能挑战**: \n  - 开源模型的推理能力可能弱于论文中的模型，导致效果不明显\n  - 需要仔细设计数据集，确保任务有明确的\"正确决策\"\n  - 线性探针可能过拟合，需要交叉验证和正则化\n\n**",
+  "difficulty": "medium",
+  "estimated_days": 7,
+  "tags": [
+    "** interpretability",
+    "linear-probing",
+    "reasoning",
+    "mechanistic-analysis"
+  ],
+  "status": "pending",
+  "priority": 9.0,
+  "briefing_date": "2026-04-02",
+  "source_type": "paper",
+  "source_title": "Therefore I am. I Think",
+  "source_url": "https://arxiv.org/abs/2604.01202v1",
+  "created_at": "2026-04-02T10:41:05.161Z"
+}

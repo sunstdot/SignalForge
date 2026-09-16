@@ -1,0 +1,21 @@
+{
+  "id": "idea-1775126561815-2wnzk4n9s",
+  "content_id": "arxiv-2604.01195v1",
+  "title": "** 轻量级问答验证器的构建与评估\n\n**",
+  "description": "**\n- **核心思路:** 复现ORBIT的自我验证+外部验证双重机制，构建一个能够自动评估问答对质量的轻量级验证器，验证该方法是否能有效过滤低质量数据。\n\n- **实现步骤:**\n  1. 使用开源小模型(如Qwen2-1.5B)实现自我验证模块，让模型判断生成的答案是否与问题匹配\n  2. 集成免费搜索API(如DuckDuckGo/SerpAPI免费额度)实现外部验证，抓取top-5搜索结果进行事实核查\n  3. 在公开QA数据集(如Natural Questions子集500条)上测试验证器，人工标注100条作为ground truth\n  4. 对比单一验证vs双重验证的准确率、召回率，分析验证器在不同领域/难度问题上的表现\n\n- **成功标准:** \n  - 双重验证机制的F1分数达到0.75以上\n  - 能够识别出至少60%的事实性错误\n  - 验证单条问答对的时间控制在5秒内\n\n- **可能挑战:**\n  - 小模型的自我验证能力可能不足，需要设计有效的prompt工程\n  - 免费搜索API的调用限制，可能需要实现请求队列和缓存机制\n  - 不同领域的验证标准差异大，需要设计通用的评分规则\n\n**",
+  "difficulty": "medium",
+  "estimated_days": 7,
+  "tags": [
+    "** data-quality",
+    "fact-verification",
+    "small-language-models",
+    "search-augmentation"
+  ],
+  "status": "pending",
+  "priority": 9.0,
+  "briefing_date": "2026-04-02",
+  "source_type": "paper",
+  "source_title": "ORBIT: Scalable and Verifiable Data Generation for Search Agents on a Tight Budget",
+  "source_url": "https://arxiv.org/abs/2604.01195v1",
+  "created_at": "2026-04-02T10:42:41.815Z"
+}

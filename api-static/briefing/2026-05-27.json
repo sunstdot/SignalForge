@@ -1,0 +1,394 @@
+{
+  "id": "0bcd800d-5da6-4602-af5a-170b74fb2584",
+  "date": "2026-05-27",
+  "items": [
+    {
+      "id": "github-2e1d81dcb402",
+      "title": "Lum1104/Understand-Anything — Graphs that teach &gt; graphs that impress. Turn any code into an interactive kn",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Lum1104/Understand-Anything",
+      "summary": "Graphs that teach &gt; graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini C",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-25"
+    },
+    {
+      "id": "github-b45d1f22a611",
+      "title": "rohitg00/ai-engineering-from-scratch — Learn it. Build it. Ship it for others.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "summary": "Learn it. Build it. Ship it for others. | 🔥 1853 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-25"
+    },
+    {
+      "id": "github-45962e8cb66e",
+      "title": "anthropics/claude-plugins-official — Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "summary": "Official, Anthropic-managed directory of high quality Claude Code Plugins. | 🔥 1173 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-25"
+    },
+    {
+      "id": "github-022c9970da1a",
+      "title": "anthropics/knowledge-work-plugins — Open source repository of plugins primarily intended for knowledge workers to us",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "summary": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork | 🔥 550 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-25"
+    },
+    {
+      "id": "github-da5bc715cf36",
+      "title": "multica-ai/andrej-karpathy-skills — A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Kar",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "summary": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls. | 🔥 2551 stars today",
+      "category": [
+        "开源项目"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-25"
+    },
+    {
+      "id": "github-b757d828d191",
+      "title": "earendil-works/pi — AI agent toolkit: coding agent CLI, unified LLM API, TUI &amp; web UI libraries,",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/earendil-works/pi",
+      "summary": "AI agent toolkit: coding agent CLI, unified LLM API, TUI &amp; web UI libraries, Slack bot, vLLM pods | 🔥 456 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-25"
+    },
+    {
+      "id": "github-35b401b2d43a",
+      "title": "Alishahryar1/free-claude-code — Use claude-code for free in the terminal, VSCode extension or discord like OpenC",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Alishahryar1/free-claude-code",
+      "summary": "Use claude-code for free in the terminal, VSCode extension or discord like OpenClaw (voice supported) | 🔥 553 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-25"
+    },
+    {
+      "id": "github-f4834b6c3db9",
+      "title": "colbymchenry/codegraph — Pre-indexed code knowledge graph for Claude Code, Codex, Cursor, OpenCode, and H",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/colbymchenry/codegraph",
+      "summary": "Pre-indexed code knowledge graph for Claude Code, Codex, Cursor, OpenCode, and Hermes Agent — fewer tokens, fewer tool calls, 100% local | 🔥 3003 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-25"
+    },
+    {
+      "id": "github-f5b316d2b7cf",
+      "title": "multica-ai/multica — The open-source managed agents platform. Turn coding agents into real teammates ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/multica-ai/multica",
+      "summary": "The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills. | 🔥 585 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-25"
+    },
+    {
+      "id": "github-332aef856035",
+      "title": "shiyu-coder/Kronos — Kronos: A Foundation Model for the Language of Financial Markets",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/shiyu-coder/Kronos",
+      "summary": "Kronos: A Foundation Model for the Language of Financial Markets | 🔥 106 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-25"
+    },
+    {
+      "id": "github-2fcea6741f14",
+      "title": "manaflow-ai/cmux — Ghostty-based macOS terminal with vertical tabs and notifications for AI coding ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/manaflow-ai/cmux",
+      "summary": "Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents | 🔥 696 stars today | Language: Swift",
+      "category": [
+        "开源项目",
+        "Swift"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-25"
+    },
+    {
+      "id": "github-b855c9f7f218",
+      "title": "666ghj/MiroFish — A Simple and Universal Swarm Intelligence Engine, Predicting Anything. 简洁通用的群体智能",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/666ghj/MiroFish",
+      "summary": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. 简洁通用的群体智能引擎，预测万物 | 🔥 197 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-25"
+    },
+    {
+      "id": "github-62077d8b2783",
+      "title": "codecrafters-io/build-your-own-x — Master programming by recreating your favorite technologies from scratch.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/codecrafters-io/build-your-own-x",
+      "summary": "Master programming by recreating your favorite technologies from scratch. | 🔥 550 stars today | Language: Markdown",
+      "category": [
+        "开源项目",
+        "Markdown"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-25"
+    },
+    {
+      "id": "github-119fd7632609",
+      "title": "dotnet/skills — Repository for skills to assist AI coding agents with .NET and C#",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/dotnet/skills",
+      "summary": "Repository for skills to assist AI coding agents with .NET and C# | 🔥 183 stars today | Language: C#",
+      "category": [
+        "开源项目",
+        "C#"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-25"
+    },
+    {
+      "id": "github-051a34a777a7",
+      "title": "blakeblackshear/frigate — NVR with realtime local object detection for IP cameras",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/blakeblackshear/frigate",
+      "summary": "NVR with realtime local object detection for IP cameras | 🔥 181 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-25"
+    },
+    {
+      "id": "github-7c7aa2756d1d",
+      "title": "mukul975/Anthropic-Cybersecurity-Skills — 754 structured cybersecurity skills for AI agents · Mapped to 5 frameworks: MITR",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+      "summary": "754 structured cybersecurity skills for AI agents · Mapped to 5 frameworks: MITRE ATT&amp;CK, NIST CSF 2.0, MITRE ATLAS, D3FEND &amp; NIST AI RMF · agentskills.io standard · Works with Claude Code, Gi",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-25"
+    },
+    {
+      "id": "hf-paper-f60e0fad67ac",
+      "title": "LoREnc: Low-Rank Encryption for Securing Foundation Models and LoRA Adapters",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.13163",
+      "summary": "Foundation models and low-rank adapters enable efficient on-device generative AI but raise risks such as intellectual property leakage and model recovery attacks. Existing defenses are often impractic",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-25"
+    },
+    {
+      "id": "hf-paper-8c7d2015657b",
+      "title": "AutoRubric-T2I: Robust Rule-Based Reward Model for Text-to-Image Alignment",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.17602",
+      "summary": "Aligning Text-to-Image (T2I) generation models with human preferences increasingly relies on image reward models that score or rank generated images according to prompt alignment and perceptual qualit",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-25"
+    },
+    {
+      "id": "hf-paper-0a16050d65b6",
+      "title": "Live Music Diffusion Models: Efficient Fine-Tuning and Post-Training of Interactive Diffusion Music Generators",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.22717",
+      "summary": "Interactive streaming music generation promises the use of generative models for live performance and co-creation that is impossible with offline models. However, SOTA models exist in the discrete-AR ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-25"
+    },
+    {
+      "id": "hf-paper-5dc753fa544b",
+      "title": "Rule2DRC: Benchmarking LLM Agents for DRC Script Synthesis with Execution-Guided Test Generation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.15669",
+      "summary": "Manufacturable chip layouts must satisfy thousands of geometry-based design rules, and design rule checking (DRC) enforces them by running executable DRC scripts on layouts. Translating natural langua",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-25"
+    },
+    {
+      "id": "hf-paper-41924c3a49a0",
+      "title": "Forecasting Scientific Progress with Artificial Intelligence",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.22681",
+      "summary": "Artificial intelligence (AI) is increasingly embedded in scientific discovery, yet whether it can anticipate scientific progress remains unclear. To study this question, we introduce a temporally grou",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-25"
+    },
+    {
+      "id": "hf-paper-1bec4edd8309",
+      "title": "SAM 3D Animal: Promptable Animal 3D Reconstruction from Images in the Wild",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.07604",
+      "summary": "3D animal reconstruction in the wild remains challenging due to large species variation, frequent occlusions, and the prevalence of multi-animal scenes, while existing methods predominantly focus on s",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-25"
+    },
+    {
+      "id": "hf-paper-3ab7d1ea64bd",
+      "title": "Efficient Agentic Reasoning Through Self-Regulated Simulative Planning",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.22138",
+      "summary": "How should an agent decide when and how to plan? A dominant approach builds agents as reactive policies with adaptive computation (e.g., chain-of-thought), trained end-to-end expecting planning to eme",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-25"
+    },
+    {
+      "id": "hf-paper-1ab65111cadb",
+      "title": "Platonic Representations in the Human Brain: Unsupervised Recovery of Universal Geometry",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.20496",
+      "summary": "The Strong Platonic Representation Hypothesis suggests that representational convergence in artificial neural networks can be harnessed constructively: embeddings can be translated across models throu",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-25"
+    },
+    {
+      "id": "hf-paper-4e4430de071d",
+      "title": "AnyMo: Geometry-Aware Setup-Agnostic Modeling of Human Motion in the Wild",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.22715",
+      "summary": "As wearable and mobile devices become increasingly embedded in daily life, they offer a practical way to continuously sense human motion in the wild. But inertial signals are highly dependent on the s",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-25"
+    },
+    {
+      "id": "hf-paper-05a9cab9a398",
+      "title": "Disentangling Sampling from Training Budget in Class-Imbalanced CT Body Composition Segmentation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.20405",
+      "summary": "Class imbalance is a fundamental challenge in medical image segmentation, where frequent classes typically dominate training at the expense of rare classes. Loss-based approaches mitigate imbalance by",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-25"
+    },
+    {
+      "id": "l30-hn-dcd1e5ec9984",
+      "title": "Taking Naval Options Away from China –| Peter Zeihan [video][4m53s]",
+      "source": "Hacker News",
+      "source_type": "hn",
+      "url": "https://www.youtube.com/watch?v=NRkZprxYOzQ",
+      "summary": "Taking Naval Options Away from China –| Peter Zeihan [video][4m53s]",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 0,
+      "created_at": "2026-05-27"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-06-19T10:22:35.649413"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "idea-1775121951734-yphu0b2lt",
+  "content_id": "arxiv-2604.01193v1",
+  "title": "复现: Embarrassingly Simple Self-Distillation Improves C",
+  "description": "基于论文「Embarrassingly Simple Self-Distillation Improves Code Generation」的核心方法进行复现实验。\n\n本文提出了一种极简的自蒸馏方法（SSD），仅使用大语言模型自身的输出就能提升代码生成能力，无需验证器、教师模型或强化学习。该方法通过特定温度和截断配置采样模型输出，然后用标准监督微调进行训练，在LiveCodeBench v6上将Qwen3-30B-Instruct的pass@1从42.4%提升至55.3%，并在多个模型规模上验证了有效性。研究揭示了该方法通过重塑token分布来解决LLM解码中的...",
+  "difficulty": "hard",
+  "estimated_days": 14,
+  "tags": [
+    "大语言模型",
+    "AI驱动的开发者工具"
+  ],
+  "status": "pending",
+  "priority": 9.0,
+  "briefing_date": "2026-04-02",
+  "source_type": "paper",
+  "source_title": "Embarrassingly Simple Self-Distillation Improves Code Generation",
+  "source_url": "https://arxiv.org/abs/2604.01193v1",
+  "created_at": "2026-04-02T09:25:51.734Z"
+}

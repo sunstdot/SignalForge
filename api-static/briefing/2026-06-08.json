@@ -1,0 +1,47 @@
+{
+  "id": "966b9b8d-01b9-4ca7-8f5b-a074e9a49875",
+  "date": "2026-06-08",
+  "items": [
+    {
+      "id": "l30-tiktok-708a18327f1f",
+      "title": "The AI agent that went viral — Peter Steinberger explains how 🔥 Building in public changed everything. #AIAgents #OpenClaw #LexFridman #Make",
+      "source": "TikTok",
+      "source_type": "tiktok",
+      "url": "https://www.tiktok.com/@stay.ahead.of.ai/video/7648807665392504078",
+      "summary": "The AI agent that went viral — Peter Steinberger explains how 🔥 Building in public changed everything. #AIAgents #OpenClaw #LexFridman #MakeMoneyWithAI #BuildInPublic",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 7,
+      "created_at": "2026-06-08"
+    },
+    {
+      "id": "l30-reddit-9d3eb297041f",
+      "title": "So is “loop engineering” the next AI dev buzzword? What does it actually mean?",
+      "source": "Reddit",
+      "source_type": "reddit",
+      "url": "https://www.reddit.com/r/myclaw/comments/1u047p8/so_is_loop_engineering_the_next_ai_dev_buzzword/",
+      "summary": "Yes its nonsense buzzwords. All they're saying is you create a list of tasks, write a generic prompt to get it started saying do the tasks. That's it. It's just prompting with less supervision and mor It's a buzzword designed to burn more and more tokens when billing is shifting to token usage. That's all it is. Yeah from a guy who is still token Maxing t...",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 0,
+      "created_at": "2026-06-08"
+    },
+    {
+      "id": "l30-hn-fd0955f17580",
+      "title": "3D Virtual Reconstruction of the Constantinian Basilica of St. Peter (2022)",
+      "source": "Hacker News",
+      "source_type": "hn",
+      "url": "https://parpatrimonio.com/en/proyecto/3d-virtual-reconstruction-of-the-constantinian-basilica-of-st-peter-in-the-vatican-4th-century/",
+      "summary": "3D Virtual Reconstruction of the Constantinian Basilica of St. Peter (2022)",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 0,
+      "created_at": "2026-06-08"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-06-19T10:22:35.397978"
+}

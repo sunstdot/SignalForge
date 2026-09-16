@@ -1,0 +1,597 @@
+{
+  "date": "2026-08-19",
+  "opportunities": [
+    {
+      "opportunity_title": "AI短视频一键生成SaaS",
+      "core_insight": "开源工具已验证自动化视频生成流程，非开发者无法部署使用，包装为SaaS可降低内容创作门槛",
+      "product_form": "帮助内容创作者和电商营销人员快速生成营销短视频的在线平台",
+      "target_users": "短视频运营/电商卖家/自媒体，需批量产出视频但缺乏剪辑技能，付费意愿强",
+      "mvp_features": [
+        "输入关键词生成视频",
+        "模板库与批量生成",
+        "多平台尺寸适配"
+      ],
+      "business_model": "订阅制，按视频数量或月费，$19-$99/月",
+      "competitive_barrier": "",
+      "risks": "视频质量与版权风险，依赖第三方AI模型成本",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 5,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 18,
+      "source_title": "harry0703/MoneyPrinterTurbo — 利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyw",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "item_id": "github-d7fa42b7f3f5"
+    },
+    {
+      "opportunity_title": "AI Agent 版本化工作区",
+      "core_insight": "AI智能体频繁修改代码、文档等持久工件，但缺乏版本追踪与回滚，现可通过工作区层解决",
+      "product_form": "帮助使用AI智能体进行知识工作的开发者/团队管理文件变更与协作的API+Web界面",
+      "target_users": "用AI agent自动化代码、文档、表格生成的开发者与团队，需审计和回滚能力",
+      "mvp_features": [
+        "文件操作自动版本快照",
+        "支持分支、回滚与差异对比",
+        "通过MCP协议接入主流AI agent"
+      ],
+      "business_model": "开源核心+托管云服务，按团队席位订阅",
+      "competitive_barrier": "",
+      "risks": "大厂可能内置类似功能，需快速积累生态",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 17,
+      "source_title": "StagedWorkspace: A Versioned Workspace for Knowledge-Work Agents",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.18050v1",
+      "item_id": "arxiv-2608.18050v1"
+    },
+    {
+      "opportunity_title": "AI营销短视频自动生成平台",
+      "core_insight": "高质量的图像文本到视频模型开源，使得自动生成营销短视频的成本大幅降低",
+      "product_form": "帮助品牌和营销团队从产品图和文案一键生成短视频广告的SaaS平台",
+      "target_users": "品牌营销人员、广告代理商、内容营销团队，需快速产出大量短视频素材，付费意愿高",
+      "mvp_features": [
+        "输入产品图和营销文案生成视频",
+        "多镜头/转场预设",
+        "品牌模板定制"
+      ],
+      "business_model": "按生成视频数量收费，$29/月起",
+      "competitive_barrier": "",
+      "risks": "视频生成质量与一致性控制难，模型推理成本高",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 5,
+        "tech_timing": 5,
+        "buildability": 3
+      },
+      "total_score": 17,
+      "source_title": "🤗 MiniMaxAI/MiniMax-H3",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+      "item_id": "hf-model-7accbea85440"
+    },
+    {
+      "opportunity_title": "AI内容真实性检测浏览器插件",
+      "core_insight": "读者对AI生成内容信任度骤降，浏览器插件可实时检测并标注AI生成概率，之前因检测API成本高且不够普及不可行",
+      "product_form": "帮助内容消费者识别网络信息真实性的浏览器插件",
+      "target_users": "编辑、记者、研究者、学生，需要快速判断内容来源可靠性，有付费意愿",
+      "mvp_features": [
+        "一键检测AI生成概率",
+        "页面可信度评分",
+        "AI内容来源追溯标注"
+      ],
+      "business_model": "免费基础版+Pro订阅（$5/月无限检测）",
+      "competitive_barrier": "",
+      "risks": "AI检测准确率有限可能误判引发纠纷",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 5
+      },
+      "total_score": 17,
+      "source_title": "2026 08 19 HackerNews",
+      "source": "HackerNews Daily",
+      "source_type": "hackernews",
+      "source_url": "https://supertechfans.com/cn/post/2026-08-19-HackerNews/",
+      "item_id": "rss-hackernews-daily-71d53a748d6a"
+    },
+    {
+      "opportunity_title": "AI成本审计与Token浪费检测SaaS",
+      "core_insight": "AI应用激增使token成本失控，通过API调用日志分析可精准定位浪费并自动建议降本方案",
+      "product_form": "帮助使用多LLM API的团队自动审计token支出并优化模型选型的SaaS工具",
+      "target_users": "使用多个LLM API的中小开发团队和独立开发者，面临AI成本不可控痛点",
+      "mvp_features": [
+        "接入OpenAI/Anthropic等API的用量日志自动分析",
+        "识别低效模型、冗余调用和可迁移到开放权重模型的工作负载",
+        "生成可视化成本报告与降本建议"
+      ],
+      "business_model": "按月订阅，按审计的API调用量分层定价",
+      "competitive_barrier": "",
+      "risks": "API日志获取依赖用户手动授权，大型厂商可能自研内建",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 17,
+      "source_title": "How I think about reducing AI costs",
+      "source": "Martin Alderson",
+      "source_type": "rss",
+      "source_url": "https://martinalderson.com/posts/how-i-think-about-reducing-ai-costs/?utm_source=rss&utm_medium=rss&utm_campaign=feed",
+      "item_id": "rss-martin-alderson-b34c39d877da"
+    },
+    {
+      "opportunity_title": "Coding Agent 项目长期记忆托管服务",
+      "core_insight": "MemoraX Code 提供持久化项目上下文，可封装成 MCP 服务，让 Cursor/Claude Code 跨会话读取记忆；此前无低门槛项目记忆方案。",
+      "product_form": "帮助使用 Cursor/Claude Code 的开发者自动保存并注入项目长期记忆的 CLI/云端服务",
+      "target_users": "独立开发者/小团队，重度使用 AI coding agent，每次新会话需重复交代项目背景，愿为提效付费",
+      "mvp_features": [
+        "通过 MCP server 自动抓取并存储项目架构、代码规范和关键决策",
+        "提供命令行或网页面板，支持开发者手动补充、编辑记忆条目",
+        "在 Claude Code/Cursor 会话启动时自动注入项目记忆摘要"
+      ],
+      "business_model": "Freemium：1 个项目免费，Pro $8/月无限项目与团队共享",
+      "competitive_barrier": "",
+      "risks": "IDE 或 Cursor 可能原生集成长期记忆；MemoraX 开源可自托管影响订阅",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 17,
+      "source_title": "让 Coding Agent 开始「记住过去」：MemoraX Code 的长期记忆系统",
+      "source": "机器之心",
+      "source_type": "wechat",
+      "source_url": "https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651050939&idx=1&sn=048d1d6f8e05e0ae4bd944928e5d2171",
+      "item_id": "rss-机器之心-8c4f0c12ea8f"
+    },
+    {
+      "opportunity_title": "AI Agent上下文数据库托管平台",
+      "core_insight": "开源项目统一了agent记忆、RAG和技能，托管为后端即服务可大幅降低agent开发复杂度",
+      "product_form": "帮助AI agent开发者快速构建带持久记忆和知识库的agent的BaaS平台",
+      "target_users": "开发AI agent的初创团队/企业，痛点是记忆和RAG集成耗时，付费意愿中高",
+      "mvp_features": [
+        "托管上下文数据库",
+        "记忆+RAG统一API",
+        "自进化知识更新"
+      ],
+      "business_model": "按API调用量或存储量订阅，$29/月起",
+      "competitive_barrier": "",
+      "risks": "与向量数据库和LLM框架竞争，需差异化",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 3
+      },
+      "total_score": 16,
+      "source_title": "volcengine/OpenViking — Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/volcengine/OpenViking",
+      "item_id": "github-32fb0821d5f9"
+    },
+    {
+      "opportunity_title": "多模态商品图片分析工具",
+      "core_insight": "该模型能直接从图片生成描述、标签、提取文字，之前开源多模态模型精度不足，现在可商用。",
+      "product_form": "帮助电商卖家自动生成商品描述、属性、SEO标签的SaaS工具",
+      "target_users": "电商卖家、内容营销人员，痛点：手动编写商品信息耗时，付费意愿高",
+      "mvp_features": [
+        "上传图片自动生成描述",
+        "批量处理产品图片",
+        "导出到电商平台格式"
+      ],
+      "business_model": "按量付费$0.01/张或月订阅$29",
+      "competitive_barrier": "",
+      "risks": "云端部署成本高，需优化模型推理",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 3
+      },
+      "total_score": 16,
+      "source_title": "🤗 Qwen/Qwen3.8-27B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "item_id": "hf-model-11403ace832c"
+    },
+    {
+      "opportunity_title": "AI定制背景音乐生成平台",
+      "core_insight": "开源文本到音频模型可低成本生成高质量音乐，让非音乐人按需生成定制背景音乐",
+      "product_form": "帮助短视频创作者/播客/独立游戏开发者解决无版权音乐需求问题的AI音乐生成SaaS工具",
+      "target_users": "短视频创作者、播客主播、独立游戏开发者，需快速获取无版权背景音乐，付费意愿中等",
+      "mvp_features": [
+        "输入文本描述生成音乐",
+        "选择风格/情绪/时长",
+        "下载或API调用"
+      ],
+      "business_model": "订阅制，按生成分钟数收费，$9/月起",
+      "competitive_barrier": "",
+      "risks": "音乐生成质量不稳定，市场竞争激烈（Suno/Udio）",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "🤗 MiniMaxAI/MiniMax-Music3",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3",
+      "item_id": "hf-model-13422d9188be"
+    },
+    {
+      "opportunity_title": "电商产品图转视频工具",
+      "core_insight": "图像到视频模型可将静态产品图转为动态展示视频，提升电商转化率，之前需专业视频制作",
+      "product_form": "帮助电商卖家将产品图片快速生成营销短视频的在线工具",
+      "target_users": "电商卖家、独立站运营、社交媒体营销人员，需要低成本制作产品视频，付费意愿强",
+      "mvp_features": [
+        "上传产品图生成视频",
+        "选择视频模板/风格",
+        "批量生成和下载"
+      ],
+      "business_model": "按视频生成次数收费，或月度订阅，$19/月",
+      "competitive_barrier": "",
+      "risks": "视频生成速度慢、成本高，用户留存难",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 5,
+        "tech_timing": 4,
+        "buildability": 3
+      },
+      "total_score": 16,
+      "source_title": "🤗 Lightricks/LTX-2.5",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "item_id": "hf-model-eaf280aff552"
+    },
+    {
+      "opportunity_title": "跨Agent记忆同步服务",
+      "core_insight": "多个AI编码agent并存导致记忆碎片化，此工具提供统一记忆层，解决切换工具时上下文丢失",
+      "product_form": "帮助使用AI编码agent的开发者团队统一管理跨agent长期记忆的云端服务",
+      "target_users": "用Claude Code/Cursor等AI编码工具的开发者/团队，痛点：切换工具丢失上下文",
+      "mvp_features": [
+        "统一记忆API",
+        "跨agent会话恢复",
+        "记忆可视化与编辑"
+      ],
+      "business_model": "按席位订阅，$10/月/开发者",
+      "competitive_barrier": "",
+      "risks": "agent厂商可能内建此功能，需快速迭代",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 15,
+      "source_title": "akitaonrails/ai-memory — Solution for long term memory for agent coding CLIs and to facilitate handoff be",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/akitaonrails/ai-memory",
+      "item_id": "github-1a4bf49f2844"
+    },
+    {
+      "opportunity_title": "本地AI助手（Mac菜单栏）",
+      "core_insight": "连续批处理和SSD缓存使Apple Silicon上运行大模型速度提升，菜单栏管理降低使用门槛，之前本地推理慢且难用。",
+      "product_form": "帮助注重隐私的Mac用户解决本地运行AI助手需求的一键式菜单栏应用",
+      "target_users": "Mac用户，尤其商务人士、隐私敏感者，痛点：云端AI数据泄露风险，付费意愿中等",
+      "mvp_features": [
+        "菜单栏快捷聊天界面",
+        "本地模型一键下载与切换",
+        "本地文档问答"
+      ],
+      "business_model": "订阅制$9.9/月或买断$99",
+      "competitive_barrier": "",
+      "risks": "本地模型占用资源，用户硬件要求高（至少16GB内存）",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 15,
+      "source_title": "jundot/omlx — LLM inference server with continuous batching &amp; SSD caching for Apple Silico",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/jundot/omlx",
+      "item_id": "github-092a29c4919a"
+    },
+    {
+      "opportunity_title": "亚马逊品牌词竞价防御工具",
+      "core_insight": "商家被迫为自有品牌词付费推高成本，监控竞品竞价并自动生成应对策略可节省广告预算，此痛点随广告成本上升而加剧",
+      "product_form": "帮助亚马逊品牌卖家监控品牌词被竞品劫持并降低广告成本的SaaS工具",
+      "target_users": "亚马逊品牌卖家，广告ACoS过高，品牌词被竞品竞价，付费意愿强",
+      "mvp_features": [
+        "品牌词竞品竞价实时监控",
+        "违规竞价自动举报",
+        "最优出价策略建议"
+      ],
+      "business_model": "月费订阅（$29-99/月按店铺数）",
+      "competitive_barrier": "",
+      "risks": "亚马逊API开放度不确定，政策变化风险",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 15,
+      "source_title": "2026 08 19 HackerNews",
+      "source": "HackerNews Daily",
+      "source_type": "hackernews",
+      "source_url": "https://supertechfans.com/cn/post/2026-08-19-HackerNews/",
+      "item_id": "rss-hackernews-daily-71d53a748d6a"
+    },
+    {
+      "opportunity_title": "多模型智能路由API网关",
+      "core_insight": "顶级模型成本骤降50%叠加多模型竞争，自动路由选择性价比最优模型可帮开发者大幅降低API成本，此前模型价格高且路由技术不成熟",
+      "product_form": "帮助AI应用开发者自动选择最低成本可用模型的智能API网关",
+      "target_users": "AI应用开发者、独立开发者、AI初创公司，API成本占比高，对降本敏感",
+      "mvp_features": [
+        "多模型价格实时对比",
+        "按任务类型自动路由最低价模型",
+        "API成本监控面板"
+      ],
+      "business_model": "按API调用量抽成5%或月费$19起",
+      "competitive_barrier": "",
+      "risks": "OpenRouter已有类似服务，需差异化功能",
+      "scores": {
+        "pain_point": 3,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 15,
+      "source_title": "2026 08 19 HackerNews",
+      "source": "HackerNews Daily",
+      "source_type": "hackernews",
+      "source_url": "https://supertechfans.com/cn/post/2026-08-19-HackerNews/",
+      "item_id": "rss-hackernews-daily-71d53a748d6a"
+    },
+    {
+      "opportunity_title": "放射报告多智能体结构化与质控工具",
+      "core_insight": "多智能体协作可将自由文本放射报告自动结构化并交叉质控，替代人工逐份审核的低效流程",
+      "product_form": "帮助放射科和影像中心自动化生成结构化报告并进行质量控制的私有化部署Web应用",
+      "target_users": "放射科医生、影像中心质控员，报告书写繁琐易错，愿为合规与效率付费",
+      "mvp_features": [
+        "自由文本放射报告自动解析为结构化字段",
+        "多智能体交叉检查报告完整性与一致性",
+        "本地部署模型，支持报告修改留痕与统计"
+      ],
+      "business_model": "按影像中心年订阅制或按报告量计费",
+      "competitive_barrier": "",
+      "risks": "医疗合规认证周期长，模型误判需承担医疗责任",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 3
+      },
+      "total_score": 14,
+      "source_title": "Multi-Agent AI System for Radiology Report Structuring and Quality Assurance with Independent Radiologist Evaluation",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "source_url": "https://arxiv.org/abs/2608.18072v1",
+      "item_id": "arxiv-2608.18072v1"
+    },
+    {
+      "opportunity_title": "AI安全运营技能库平台",
+      "core_insight": "大量结构化安全技能可直接赋能安全agent，填补AI安全自动化技能空白",
+      "product_form": "帮助安全团队和MSSP快速部署具备合规框架技能的安全AI agent的技能库订阅服务",
+      "target_users": "安全运营中心/安全服务商，需自动化威胁响应，但缺乏结构化技能，付费意愿强",
+      "mvp_features": [
+        "技能库API",
+        "框架映射与合规报告",
+        "与主流agent框架集成"
+      ],
+      "business_model": "年度订阅，$99/月起，按团队规模",
+      "competitive_barrier": "",
+      "risks": "需持续更新技能库，安全领域专业性强",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 3
+      },
+      "total_score": 14,
+      "source_title": "mukul975/Anthropic-Cybersecurity-Skills — 817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITR",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+      "item_id": "github-7c7aa2756d1d"
+    },
+    {
+      "opportunity_title": "桌面活动感知AI助手",
+      "core_insight": "记录用户桌面完整操作历史，让AI助手拥有工作上下文记忆，从通用助手升级为个性化自动化执行者，此前缺乏低成本桌面记录方案",
+      "product_form": "帮助知识工作者自动化重复操作的AI桌面助手",
+      "target_users": "设计师、开发者、运营人员，日常重复性桌面操作多，需要AI理解其工作流",
+      "mvp_features": [
+        "桌面活动自动记录与索引",
+        "AI对话查询历史操作",
+        "基于上下文的自动化建议"
+      ],
+      "business_model": "免费基础版+Pro订阅（$8/月）",
+      "competitive_barrier": "",
+      "risks": "隐私安全敏感，用户信任建立困难",
+      "scores": {
+        "pain_point": 3,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 14,
+      "source_title": "Do you use a personal agent?",
+      "source": "Ben's Bites",
+      "source_type": "rss",
+      "source_url": "https://www.bensbites.com/p/do-you-use-a-personal-agent",
+      "item_id": "rss-ben's-bites-2177e8a96adc"
+    },
+    {
+      "opportunity_title": "网站追踪器可视化浏览器扩展",
+      "core_insight": "广告与数据追踪信息已半公开但分散难读，聚合呈现可满足隐私意识用户的知情需求",
+      "product_form": "帮助普通用户识别网站广告追踪方和数据流向的浏览器扩展",
+      "target_users": "注重隐私的普通网民、记者与安全研究人员，愿意为隐私报告付费",
+      "mvp_features": [
+        "一键扫描当前网页的所有第三方追踪器",
+        "展示追踪方公司名称、数据流向及隐私风险等级",
+        "生成个人追踪历史汇总报告"
+      ],
+      "business_model": "免费增值，高级隐私报告按月订阅",
+      "competitive_barrier": "",
+      "risks": "追踪数据变化频繁维护成本高，用户对付费意愿可能不足",
+      "scores": {
+        "pain_point": 3,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 14,
+      "source_title": "Who’s Tracking You? Use This New Service to Find Out",
+      "source": "Krebs on Security",
+      "source_type": "rss",
+      "source_url": "https://krebsonsecurity.com/2026/08/whos-tracking-you-use-this-new-service-to-find-out/",
+      "item_id": "rss-krebs-on-security-2df50888726f"
+    },
+    {
+      "opportunity_title": "中小企业AI模型路由降本平台",
+      "core_insight": "开源模型性能提升使替代闭源模型成为可能，路由系统自动将简单任务分配给便宜开源模型，企业AI成本可降50%以上",
+      "product_form": "帮助中小企业自动选择开源或低价模型降低AI运营成本的SaaS平台",
+      "target_users": "使用多个AI模型的中小企业技术负责人，AI月支出超$500，有降本需求",
+      "mvp_features": [
+        "开源模型性能评估对比",
+        "任务自动路由到低价模型",
+        "成本节省报告"
+      ],
+      "business_model": "按节省成本抽成20%或月费$99起",
+      "competitive_barrier": "",
+      "risks": "企业级方案需较高信任度，Glean等大厂已有布局",
+      "scores": {
+        "pain_point": 3,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 3
+      },
+      "total_score": 13,
+      "source_title": "Frontier Model Cost and Open-Weights Popularity is Driving Demand for Model Routing",
+      "source": "Latent Space",
+      "source_type": "rss",
+      "source_url": "https://www.latent.space/p/glean-model-routing",
+      "item_id": "rss-latent-space-22fb05a6c46d"
+    }
+  ],
+  "analyzed_item_ids": [
+    "arxiv-2608.18076v1",
+    "arxiv-2608.18072v1",
+    "arxiv-2608.18066v1",
+    "arxiv-2608.18062v1",
+    "arxiv-2608.18061v1",
+    "arxiv-2608.18058v1",
+    "arxiv-2608.18056v1",
+    "arxiv-2608.18055v1",
+    "arxiv-2608.18050v1",
+    "arxiv-2608.18041v1",
+    "arxiv-2608.18040v1",
+    "arxiv-2608.18036v1",
+    "arxiv-2608.18033v1",
+    "arxiv-2608.18027v1",
+    "arxiv-2608.18026v1",
+    "github-d7fa42b7f3f5",
+    "github-9f9524705b83",
+    "github-1a4bf49f2844",
+    "github-32fb0821d5f9",
+    "github-7c7aa2756d1d",
+    "github-d2b1af007926",
+    "github-fa7f2d9224bf",
+    "github-79667a1daab8",
+    "github-4f0d03957d3a",
+    "github-092a29c4919a",
+    "github-f3c9db49985d",
+    "github-960b39ed6ae8",
+    "hf-model-11403ace832c",
+    "hf-model-db5ef72cf723",
+    "hf-model-3f6ff6f1a3f1",
+    "hf-model-13422d9188be",
+    "hf-model-eaf280aff552",
+    "hf-model-fd1309c4b8af",
+    "hf-model-c2d9306bd830",
+    "hf-model-b791efed638e",
+    "hf-model-7accbea85440",
+    "hf-model-dacdcf0b4b6d",
+    "hf-paper-66119957e6f6",
+    "hf-paper-d155528426eb",
+    "hf-paper-d09574e7d7a8",
+    "hf-paper-4dfacf91b253",
+    "hf-paper-29d8606fa6dd",
+    "hf-paper-bc96cdca06f0",
+    "hf-paper-d628f02be653",
+    "hf-paper-5abdb237be38",
+    "hf-paper-cdcc7d75eba1",
+    "hf-paper-ae08764bd4cf",
+    "rss-openai-blog-da3edf87cdb7",
+    "rss-google-ai-blog-4b1422325725",
+    "rss-smol-ai-news-92887f413df4",
+    "rss-hackernews-daily-71d53a748d6a",
+    "rss-all-in-podcast-e5580242138a",
+    "rss-all-in-podcast-80d6142cf105",
+    "rss-all-in-podcast-9b39410e9a6c",
+    "atom-the-ai-valley-f5bff437e914",
+    "rss-latent-space-22fb05a6c46d",
+    "rss-ben's-bites-2177e8a96adc",
+    "atom-simon-willison-0577418ec143",
+    "rss-gary-marcus-72e491b0b1de",
+    "rss-gary-marcus-d32c2cddf737",
+    "rss-interconnects-e6b57a67aa4c",
+    "rss-entropic-thoughts-72fd06bf583e",
+    "atom-matklad-d10bb4d41a6a",
+    "rss-jim-nielsen-e3ac955f09de",
+    "rss-xe-iaso-cc90ba6b95bc",
+    "atom-eli-bendersky-378d51eaa92a",
+    "rss-the-old-new-thing-3822e710a964",
+    "rss-sean-goedecke-fe527599d504",
+    "rss-john-d.-cook-2774d06e8223",
+    "rss-john-d.-cook-6efc7dee8e48",
+    "rss-john-d.-cook-d5b084ec5ea9",
+    "rss-hillel-wayne-b01f5a59e902",
+    "rss-terence-eden-d10b6cef56d1",
+    "rss-dave-farquhar-836f6af612cc",
+    "rss-pixel-melt-dbec950efaa6",
+    "rss-martin-alderson-b34c39d877da",
+    "rss-krebs-on-security-2df50888726f",
+    "rss-troy-hunt-67fd7cc7310c",
+    "rss-pluralistic-694168908b21",
+    "rss-experimental-history-1cfdf74a597a",
+    "rss-where's-your-ed-at-1adc5b3a6ee6",
+    "rss-fernando-borretti-037728c7a9df",
+    "atom-dylan-nesbitt-2ea4260bc18f",
+    "rss-construction-physics-b64f16570eed",
+    "rss-the-digital-antiquar-3f7336d80ef8",
+    "rss-appso-9d75babac57e",
+    "rss-机器之心-8c4f0c12ea8f",
+    "rss-机器之心-1a9e7347e4b9",
+    "rss-机器之心-bda8b7ea6c66",
+    "rss-量子位-50d62d069863",
+    "rss-虎嗅-8382057bce0e",
+    "rss-虎嗅-4dd333efb599",
+    "rss-虎嗅-413824e5568a",
+    "rss-赛博禅心-a7a0f4f4c8a2",
+    "rss-赛博禅心-4b6ec718167c"
+  ],
+  "remaining": 0
+}
