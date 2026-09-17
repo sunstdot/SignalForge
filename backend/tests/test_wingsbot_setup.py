@@ -67,7 +67,6 @@ def test_setup_uses_selected_interpreter_and_prepares_editable_wingsbot(tmp_path
     )
     assert recorded[0].endswith(f" {source}")
     assert recorded[1:] == [
-        "-m pip uninstall -y wingsbot-ai ks-wingsbot",
         f"-m pip install --no-build-isolation -e {source}",
         "-",
     ]
@@ -86,7 +85,7 @@ def test_setup_script_has_valid_zsh_syntax():
     assert completed.returncode == 0, completed.stderr
 
 
-def test_setup_does_not_uninstall_when_editable_install_preparation_fails(tmp_path):
+def test_setup_does_not_uninstall_when_editable_install_fails(tmp_path):
     project = tmp_path / "signalforge"
     scripts = project / "scripts"
     scripts.mkdir(parents=True)
@@ -100,7 +99,8 @@ def test_setup_does_not_uninstall_when_editable_install_preparation_fails(tmp_pa
         "#!/bin/sh\n"
         "printf '%s\\n' \"$*\" >> \"$FAKE_PYTHON_CALLS\"\n"
         "case \"$*\" in\n"
-        "  *pip\\ wheel*) exit 1 ;;\n"
+        "  *pip\\ wheel*) exit 0 ;;\n"
+        "  *pip\\ install*) exit 1 ;;\n"
         "  *pip\\ uninstall*) exit 99 ;;\n"
         "esac\n"
         "exit 0\n",
@@ -126,4 +126,5 @@ def test_setup_does_not_uninstall_when_editable_install_preparation_fails(tmp_pa
     recorded = calls.read_text(encoding="utf-8")
     assert completed.returncode != 0
     assert "pip wheel" in recorded
+    assert "pip install --no-build-isolation -e" in recorded
     assert "pip uninstall" not in recorded

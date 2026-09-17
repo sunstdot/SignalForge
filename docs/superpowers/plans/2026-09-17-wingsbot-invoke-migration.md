@@ -242,7 +242,7 @@ git commit -m "fix: close shared Wingsbot client on shutdown"
 
 - [ ] **Step 1: Write a setup-script contract test**
 
-Create `backend/tests/test_wingsbot_setup.py`. Read the script as text and assert that it uses `python -m pip`, uninstalls both historical distribution names, installs `WINGSBOT_SOURCE`, creates `.wingsbot/workspace`, and imports `WingsbotClient` from `wingsbot.invoke`. Run `zsh -n` from the test to verify shell syntax without mutating either environment.
+Create `backend/tests/test_wingsbot_setup.py`. Exercise the script with a fake interpreter and assert that it uses `python -m pip`, installs `WINGSBOT_SOURCE` without an explicit uninstall, creates `.wingsbot/workspace`, and imports `WingsbotClient` from `wingsbot.invoke`. Simulate editable-install failure and verify no uninstall command occurs. Run `zsh -n` from the test to verify shell syntax without mutating either environment.
 
 - [ ] **Step 2: Run the setup check and verify failure**
 
@@ -257,8 +257,7 @@ The script must:
 ```zsh
 PYTHON_BIN="${SIGNALFORGE_PYTHON:-$PROJECT_ROOT/backend/venv/bin/python}"
 WINGSBOT_SOURCE="${WINGSBOT_SOURCE:-/Users/shitaosun/Project/AI-Personal/wingsbot}"
-"$PYTHON_BIN" -m pip uninstall -y wingsbot-ai ks-wingsbot || true
-"$PYTHON_BIN" -m pip install -e "$WINGSBOT_SOURCE"
+"$PYTHON_BIN" -m pip install --no-build-isolation -e "$WINGSBOT_SOURCE"
 mkdir -p "$PROJECT_ROOT/.wingsbot/workspace"
 ```
 

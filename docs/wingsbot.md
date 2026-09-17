@@ -10,7 +10,7 @@ From the SignalForge project root, run:
 scripts/setup-wingsbot.zsh
 ```
 
-The script uses `backend/venv/bin/python`, removes both historical package names, installs the local Wingsbot checkout in editable mode, and creates `.wingsbot/workspace`. Override either path when needed:
+The script uses `backend/venv/bin/python`, installs the local Wingsbot checkout in editable mode (letting pip replace the installed project directly), and creates `.wingsbot/workspace`. It does not uninstall an existing distribution first, so a failed editable install leaves the current package intact. Override either path when needed:
 
 ```zsh
 SIGNALFORGE_PYTHON=/path/to/python \

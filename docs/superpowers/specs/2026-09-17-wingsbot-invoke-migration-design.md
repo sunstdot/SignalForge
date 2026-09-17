@@ -46,7 +46,7 @@ SignalForge will accept only a successful `DirectResult` with a real artifact pa
 
 ### Installation and initialization
 
-The setup script will target the Python interpreter used by SignalForge, uninstall stale Wingsbot distributions from that interpreter, install `/Users/shitaosun/Project/AI-Personal/wingsbot` in editable mode, and verify that both the package and `wingsbot.invoke` resolve to that source tree.
+The setup script will target the Python interpreter used by SignalForge, install `/Users/shitaosun/Project/AI-Personal/wingsbot` in editable mode without explicitly uninstalling an existing distribution, and verify that both the package and `wingsbot.invoke` resolve to that source tree. Pip performs the project replacement directly, preserving the current installation if editable installation fails.
 
 Initialization will create the project workspace and its standard template files without overwriting existing user configuration or secrets. Provider credentials and the default model remain in `~/.wingsbot/config.json`. The setup flow will report a clear error if no usable provider is configured.
 
