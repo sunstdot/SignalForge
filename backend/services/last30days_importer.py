@@ -1,15 +1,20 @@
-"""last30days raw v3 markdown → SignalForge content items."""
-import asyncio
+"""last30days raw v3 JSON → SignalForge content items.
+
+直接读取 last30days skill 通过 `--emit=json` 产出的 raw v3 JSON 报告，
+按 schema.Report 结构解析成 content item 列表入库。
+"""
 import hashlib
+import json
 import re
-import threading
 import time
 from pathlib import Path
 from typing import Dict, List, Optional
 
 from services.storage import store_content_items
+from services.wingsbot_client import invoke_wingsbot, require_artifact
 
 # raw 平台标记 -> (source_type, 显示名)
+# 注意：JSON 里 source 字段用的是 "hackernews"（不是 "hn"），这里做一层归一化
 PLATFORM_MAP = {
     "reddit": ("reddit", "Reddit"),
     "x": ("x", "X"),
@@ -19,14 +24,8 @@ PLATFORM_MAP = {
     "instagram": ("instagram", "Instagram"),
 }
 
-_TOPIC_RE = re.compile(r"^#\s+last30days[^:]*:\s*(.+?)\s*$")
-_RANGE_RE = re.compile(r"Date range:\s*\S+\s+to\s+(\d{4}-\d{2}-\d{2})")
-_CLUSTER_RE = re.compile(r"^###\s+\d+\.\s*(.+?)\s*\(score\s+(\d+),")
-_ITEM_RE = re.compile(r"^\d+\.\s*\[(\w+)\]\s*(.+?)\s*$")
-_META_DATE_RE = re.compile(r"^\s*-\s*(\d{4}-\d{2}-\d{2})\b.*\|\s*score:")
-_ITEM_SCORE_RE = re.compile(r"\|\s*score:\s*(\d+)")
-_URL_RE = re.compile(r"^\s*-\s*URL:\s*(\S+)")
-_EVIDENCE_RE = re.compile(r"^\s*-\s*Evidence:\s*(.+?)\s*$")
+# final_score 实测头部约 40-50，归一化到 0-10 用 /5（FEATURED_THRESHOLD=8 对应 final_score>=40）
+_SCORE_SCALE = 5.0
 
 
 def _make_id(platform_key: str, url: str, title: str) -> str:
@@ -34,90 +33,153 @@ def _make_id(platform_key: str, url: str, title: str) -> str:
     return f"l30-{platform_key}-{hashlib.md5(basis.encode('utf-8')).hexdigest()[:12]}"
 
 
-def _clean_author(a: str) -> str:
-    """作者段：youtube 是 dict（取 handle / title），其余原样。"""
-    a = a.strip()
-    if a.startswith("{"):
-        m = re.search(r"'handle':\s*'([^']*)'", a)
-        if m and m.group(1):
-            return "@" + m.group(1)
-        m = re.search(r"'title':\s*'([^']*)'", a)
-        return m.group(1) if m else ""
-    return a
+def _normalize_score(value) -> int:
+    """把 last30days 的 final_score（实测头部 40-50）归一化到 0-10。"""
+    try:
+        v = float(value or 0)
+    except (TypeError, ValueError):
+        v = 0.0
+    return max(0, min(10, round(v / _SCORE_SCALE)))
 
 
-def _parse_meta_line(line: str) -> Dict:
-    """解析 meta 行：'- <date> | <author> | [<engagement>] | score:N'。"""
-    body = line.strip()
-    if body.startswith("-"):
-        body = body[1:].strip()
-    segs = [s.strip() for s in body.split("|")]
+def _format_engagement(engagement) -> str:
+    """把 engagement dict（{likes, replies, reposts, ...}）格式化成展示字符串。
 
-    date = None
-    if segs:
-        dm = re.match(r"(\d{4}-\d{2}-\d{2})", segs[0])
-        if dm:
-            date = dm.group(1)
+    例：{"likes": 54, "replies": 9, "reposts": 0} -> "54 likes, 9 replies, 0 reposts"
+    如果传入的是字符串（兼容旧格式），原样返回。
+    """
+    if not engagement:
+        return ""
+    if isinstance(engagement, str):
+        return engagement
+    if isinstance(engagement, dict):
+        parts = []
+        # 按常见字段顺序输出，未识别字段追加在后面
+        ordered_keys = ["likes", "replies", "reposts", "upvotes", "points", "views", "comments"]
+        seen = set()
+        for k in ordered_keys:
+            if k in engagement and engagement[k] is not None:
+                parts.append(f"{engagement[k]} {k}")
+                seen.add(k)
+        for k, v in engagement.items():
+            if k in seen or v is None:
+                continue
+            parts.append(f"{v} {k}")
+        return ", ".join(parts)
+    return str(engagement)
 
-    score = None
-    sm = _ITEM_SCORE_RE.search(line)
-    if sm:
-        score = int(sm.group(1))
 
-    engagement = ""
-    for s in segs:
-        mb = re.fullmatch(r"\[(.+)\]", s)
-        if mb and not mb.group(1).lower().startswith("date:"):
-            engagement = mb.group(1)
-            break
-
-    author = ""
-    for s in segs[1:]:
-        if not s or s.startswith("[") or s.lower().startswith("score:"):
-            continue
-        author = s
-        break
-    author = _clean_author(author)
-
-    volume = 0
-    for n in re.findall(r"[\d,]+", engagement):
+def _sum_engagement(engagement) -> int:
+    """把 engagement dict 里所有数值加起来得到 volume。"""
+    if not engagement:
+        return 0
+    if isinstance(engagement, (int, float)):
+        return int(engagement)
+    if isinstance(engagement, dict):
+        total = 0
+        for v in engagement.values():
+            try:
+                total += int(v or 0)
+            except (TypeError, ValueError):
+                pass
+        return total
+    # 字符串格式：抽取里面的数字相加
+    total = 0
+    for n in re.findall(r"[\d,]+", str(engagement)):
         try:
-            volume += int(n.replace(",", ""))
+            total += int(n.replace(",", ""))
         except ValueError:
             pass
+    return total
 
-    return {"date": date, "author": author, "engagement": engagement, "volume": volume, "score": score}
+
+def _pick_primary_source_item(candidate: Dict) -> Dict:
+    """从 candidate.source_items 里挑一个最能代表该 candidate 的 source item。
+
+    优先选 source 与 candidate.source 一致的；否则取第一个；都没有返回空 dict。
+    """
+    items = candidate.get("source_items") or []
+    if not items:
+        return {}
+    cand_source = candidate.get("source", "")
+    for it in items:
+        if it.get("source") == cand_source:
+            return it
+    return items[0]
 
 
-def parse_last30days_markdown(text: str) -> List[Dict]:
-    """把 raw v3 markdown 解析成 content item 列表。"""
-    topic = ""
-    fallback_date: Optional[str] = None
-    cluster_title = ""
-    cluster_score = 0
-    cur: Optional[Dict] = None
+def _parse_date(s: Optional[str]) -> str:
+    """把 published_at（可能是 ISO 字符串或 'YYYY-MM-DD'）规整成 'YYYY-MM-DD'。"""
+    if not s:
+        return ""
+    s = str(s).strip()
+    # 取前 10 位 'YYYY-MM-DD' 部分
+    if len(s) >= 10 and s[4] == "-" and s[7] == "-":
+        return s[:10]
+    # 兜底：找 YYYY-MM-DD 模式
+    m = re.search(r"(\d{4}-\d{2}-\d{2})", s)
+    return m.group(1) if m else ""
+
+
+def parse_last30days_json(text: str) -> List[Dict]:
+    """把 last30days skill 的 raw v3 JSON 报告解析成 content item 列表。
+
+    输入是 `last30days.py --emit=json` 产出的 Report JSON 文本，
+    schema 对应 .agents/skills/last30days/scripts/lib/schema.py:Report。
+    """
+    try:
+        report = json.loads(text)
+    except json.JSONDecodeError as e:
+        raise ValueError(f"invalid last30days JSON: {e}") from e
+
+    if not isinstance(report, dict):
+        raise ValueError("last30days JSON 顶层不是 object")
+
+    topic = report.get("topic", "") or ""
+    fallback_date = _parse_date(report.get("range_to")) or _parse_date(report.get("range_from"))
+
+    # 用 cluster_id -> (title, score) 建索引，给每个 candidate 补 cluster 元信息
+    clusters = report.get("clusters") or []
+    cluster_index: Dict[str, Dict] = {c.get("cluster_id", ""): c for c in clusters if isinstance(c, dict)}
+
     items: List[Dict] = []
+    for cand in report.get("ranked_candidates") or []:
+        if not isinstance(cand, dict):
+            continue
+        title = cand.get("title", "") or ""
+        url = cand.get("url", "") or ""
+        if not title and not url:
+            continue
 
-    def flush() -> None:
-        nonlocal cur
-        if not cur or (not cur.get("url") and not cur.get("title")):
-            cur = None
-            return
-        platform_key, source_name = PLATFORM_MAP.get(
-            cur["platform"], ("social", cur["platform"])
-        )
-        date = cur.get("date") or fallback_date
-        # 优先用条目自身 score（每条 meta 行都有 | score:N），回退 cluster 分；约 0–60 → 0–10
-        raw_score = cur.get("score", cluster_score)
-        score = min(10, round(raw_score / 6))
+        raw_source = (cand.get("source") or "").lower()
+        platform_key, source_name = PLATFORM_MAP.get(raw_source, ("social", raw_source or "unknown"))
+
+        primary = _pick_primary_source_item(cand)
+        author = primary.get("author", "") or ""
+        engagement = primary.get("engagement") or cand.get("engagement") or {}
+        date = _parse_date(primary.get("published_at")) or fallback_date
+
+        cluster = cluster_index.get(cand.get("cluster_id", "")) or {}
+        cluster_title = cluster.get("title", "") or ""
+        cluster_score_raw = cluster.get("score", 0) or 0
+        try:
+            cluster_score = int(round(float(cluster_score_raw)))
+        except (TypeError, ValueError):
+            cluster_score = 0
+
+        score = _normalize_score(cand.get("final_score") or cand.get("rerank_score"))
+
+        snippet = cand.get("snippet", "") or primary.get("body", "") or ""
+        body = primary.get("body") or snippet
+
         items.append({
-            "id": _make_id(platform_key, cur.get("url", ""), cur["title"]),
+            "id": _make_id(platform_key, url, title),
             "source": source_name,
             "source_type": platform_key,
-            "title": cur["title"],
-            "url": cur.get("url", ""),
-            "summary": cur.get("evidence", ""),
-            "original_content": cur.get("evidence", ""),
+            "title": title,
+            "url": url,
+            "summary": snippet,
+            "original_content": body,
             "relevance_score": score,
             "tags": [topic] if topic else [],
             "category": [topic] if topic else [],
@@ -125,62 +187,20 @@ def parse_last30days_markdown(text: str) -> List[Dict]:
             "created_at": date,
             "metadata": {
                 "topic": topic,
+                "cluster_id": cand.get("cluster_id", ""),
                 "cluster_title": cluster_title,
                 "cluster_score": cluster_score,
                 "origin": "last30days",
-                "author": cur.get("author", ""),
-                "engagement": cur.get("engagement", ""),
-                "volume": cur.get("volume", 0),
+                "author": author,
+                "engagement": _format_engagement(engagement),
+                "volume": _sum_engagement(engagement),
+                "final_score": cand.get("final_score"),
+                "rerank_score": cand.get("rerank_score"),
+                "candidate_id": cand.get("candidate_id", ""),
+                "explanation": cand.get("explanation", ""),
             },
         })
-        cur = None
 
-    for line in text.splitlines():
-        m = _TOPIC_RE.match(line)
-        if m:
-            topic = m.group(1)
-            continue
-        m = _RANGE_RE.search(line)
-        if m:
-            fallback_date = m.group(1)
-            continue
-        if line.startswith("###"):
-            flush()
-            m = _CLUSTER_RE.match(line)
-            if m:
-                cluster_title, cluster_score = m.group(1), int(m.group(2))
-            else:
-                cluster_title, cluster_score = "", 0
-            continue
-        m = _ITEM_RE.match(line)
-        if m:
-            flush()
-            cur = {"platform": m.group(1).lower(), "title": m.group(2)}
-            continue
-        if cur is None:
-            continue
-        m = _URL_RE.match(line)
-        if m:
-            cur["url"] = m.group(1)
-            continue
-        m = _EVIDENCE_RE.match(line)
-        if m:
-            cur["evidence"] = m.group(1)
-            continue
-        if "| score:" in line:
-            meta = _parse_meta_line(line)
-            if "date" not in cur and meta["date"]:
-                cur["date"] = meta["date"]
-            if "score" not in cur and meta["score"] is not None:
-                cur["score"] = meta["score"]
-            if "author" not in cur and meta["author"]:
-                cur["author"] = meta["author"]
-            if "engagement" not in cur and meta["engagement"]:
-                cur["engagement"] = meta["engagement"]
-                cur["volume"] = meta["volume"]
-            continue
-
-    flush()
     return items
 
 
@@ -188,113 +208,63 @@ DEFAULT_L30_DIR = Path.home() / "Documents" / "Last30Days"
 
 
 def import_last30days_file(path) -> int:
-    """解析单个 raw v3 markdown 文件并入库，返回新增条数。"""
+    """解析单个 raw v3 JSON 报告并入库，返回新增条数。"""
     text = Path(path).read_text(encoding="utf-8")
-    return store_content_items(parse_last30days_markdown(text))
+    return store_content_items(parse_last30days_json(text))
 
 
 def import_last30days_dir(directory=None) -> int:
-    """批量导入目录下所有 .md（默认 ~/Documents/Last30Days），返回新增条数。"""
+    """批量导入目录下所有 .json（默认 ~/Documents/Last30Days），返回新增条数。"""
     directory = Path(directory) if directory else DEFAULT_L30_DIR
     total = 0
-    for p in sorted(directory.glob("*.md")):
+    for p in sorted(directory.glob("*.json")):
         total += import_last30days_file(p)
     return total
 
 
 L30_OUTPUT_DIR = DEFAULT_L30_DIR
 
-_WINGSBOT_PATH = "/Users/shitaosun/Project/AI-opensource/wingsbot"
-
-
 def run_last30days_via_wingsbot(topic: str) -> int:
-    """通过 wingsbot 触发 last30days，再导入产出的最新报告，返回新增条数。"""
-    md_path = _trigger_wingsbot(topic)
-    return import_last30days_file(md_path)
+    """通过 wingsbot 触发 last30days，再导入产出的最新 JSON 报告，返回新增条数。"""
+    json_path = _trigger_wingsbot(topic)
+    return import_last30days_file(json_path)
 
 
-def _newest_report_since(start: float):
-    if not L30_OUTPUT_DIR.exists():
-        return None
-    cands = [p for p in L30_OUTPUT_DIR.glob("*.md") if p.stat().st_mtime >= start - 1]
-    return max(cands, key=lambda p: p.stat().st_mtime) if cands else None
+def _build_wingsbot_prompt(topic: str) -> str:
+    """构造给 wingsbot agent 的 prompt。
 
-
-_loop = None
-_loop_lock = threading.Lock()
-
-
-def _persistent_loop():
-    """进程级常驻事件循环（独立线程）。
-
-    wingsbot 走 litellm 调 LLM；litellm 会在事件循环上注册全局后台任务
-    （LoggingWorker）和 httpx/aiohttp 连接池。若每次新建并关闭一个临时 loop，
-    这些全局对象会绑死在已关闭的 loop 上，触发 'Event loop is closed' /
-    'Task was destroyed but it is pending' / 'aclose(): asynchronous generator
-    is already running' 等噪音。用一个永不关闭的常驻 loop 即可根治。
+    关键约束：
+    - 必须真正调用 last30days skill 工具（Bash 执行 scripts/last30days.py），
+      不能凭记忆/常识编一段话回复。
+    - last30days skill 默认用 --emit=compact 写 .md 文件；我们要 JSON，
+      所以显式要求 --emit=json，skill 会写到 --save-dir 指定目录。
+    - SKILL.md 禁止 --emit=md 作为主流程，但 json 是允许的输出格式之一。
     """
-    global _loop
-    with _loop_lock:
-        if _loop is None or _loop.is_closed():
-            _loop = asyncio.new_event_loop()
-            threading.Thread(target=_loop.run_forever, daemon=True,
-                             name="last30days-loop").start()
-    return _loop
-
-
-def _run_async(coro):
-    """把协程提交到常驻事件循环并同步等待结果。"""
-    return asyncio.run_coroutine_threadsafe(coro, _persistent_loop()).result()
+    return (
+        f"请调用 last30days 技能研究话题「{topic}」，我需要拿到结构化数据而不是文字总结。\n\n"
+        "执行要求：\n"
+        "1. 必须真正执行 last30days 脚本（通过 Bash 工具调用 scripts/last30days.py），"
+        "不要凭记忆编造结果。如果工具不可用就明确报错，不要伪造「已保存」的回复。\n"
+        "2. 多源检索：从 Reddit、X、Hacker News、Web grounding 都要查，"
+        "不要只查 X handle。如果话题有人名/品牌/产品名，可以追加 --x-handle，"
+        "但 Reddit / Hacker News / Web 不能跳过。\n"
+        f"3. 输出格式：用 `--emit=json` 让脚本输出 JSON 报告，用 "
+        f"`--save-dir={L30_OUTPUT_DIR}` 把文件写到这个目录。\n"
+        "4. 如果某个来源不可用或返回 0 条，在最终回复里写明原因。\n"
+        "5. 完成后在回复里给出完整 .json 文件绝对路径。"
+    )
 
 
 def _trigger_wingsbot(topic: str) -> Path:
-    try:
-        from wingsbot.config.loader import load_config, get_data_dir
-        from wingsbot.bus.queue import MessageBus
-        from wingsbot.cron.service import CronService
-        from wingsbot.agent.loop import AgentLoop
-        from wingsbot.cli.commands import _make_provider
-    except ImportError as e:
-        raise RuntimeError(
-            "wingsbot 不可导入。请在 SignalForge venv 执行 "
-            f"`pip install -e {_WINGSBOT_PATH}`，或改用 --file/--dir 离线导入。"
-        ) from e
-
     start = time.time()
-    config = load_config()
-    prompt = (
-        f"使用 last30days 技能研究话题：{topic}。"
-        f"完成后把原始结果（raw v3 markdown）保存到 {L30_OUTPUT_DIR}/。"
+    prompt = _build_wingsbot_prompt(topic)
+    result = invoke_wingsbot(
+        prompt,
+        session_key=f"signalforge:last30days:{topic}",
+        structured=True,
+        required_skill="last30days",
+        required_tools=["load_skill", "exec"],
+        required_artifact_glob=str(L30_OUTPUT_DIR / "*.json"),
+        artifact_mtime_after=start,
     )
-
-    async def _run():
-        d = config.agents.defaults
-        agent_loop = AgentLoop(
-            bus=MessageBus(),
-            provider=_make_provider(config),
-            workspace=config.workspace_path,
-            model=d.model,
-            temperature=d.temperature,
-            max_tokens=d.max_tokens,
-            max_iterations=d.max_tool_iterations,
-            memory_window=d.memory_window,
-            disabled_skills=d.disabled_skills,
-            brave_api_key=config.tools.web.search.api_key or None,
-            exec_config=config.tools.exec,
-            cron_service=CronService(get_data_dir() / "cron" / "jobs.json"),
-            restrict_to_workspace=config.tools.restrict_to_workspace,
-            mcp_servers=config.tools.mcp_servers,
-        )
-        try:
-            return await agent_loop.process_direct(prompt, session_key="signalforge:last30days")
-        finally:
-            await agent_loop.close_mcp()
-
-    response = _run_async(_run())
-    md_path = _newest_report_since(start)
-    if md_path is None:
-        raise RuntimeError(
-            "wingsbot 未产出 last30days 报告文件。agent 返回（节选）：\n"
-            + (response or "")[:500]
-        )
-    return md_path
+    return require_artifact(result, L30_OUTPUT_DIR)
