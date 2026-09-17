@@ -68,7 +68,7 @@ def test_setup_uses_selected_interpreter_and_prepares_editable_wingsbot(tmp_path
     assert recorded[0].endswith(f" {source}")
     assert recorded[1:] == [
         "-m pip uninstall -y wingsbot-ai ks-wingsbot",
-        f"-m pip install -e {source}",
+        f"-m pip install --no-build-isolation -e {source}",
         "-",
     ]
     assert (project / ".wingsbot" / "workspace").is_dir()

@@ -337,6 +337,60 @@ class WingsbotTriggerTest(unittest.TestCase):
                 n = mod.run_last30days_via_wingsbot("Loop Engineering")
         self.assertEqual(n, 3)
 
+    def test_run_removes_owned_invocation_directory_after_successful_import(self):
+        mod = importer
+        with tempfile.TemporaryDirectory() as tmp:
+            output_root = Path(tmp)
+            invocation_dir = output_root / "signalforge-invoke-success"
+            invocation_dir.mkdir()
+            artifact = invocation_dir / "report.json"
+            artifact.write_text(_report_to_text(SAMPLE_REPORT), encoding="utf-8")
+            with patch.object(mod, "L30_OUTPUT_DIR", output_root), \
+                    patch.object(mod, "_trigger_wingsbot", return_value=artifact), \
+                    patch.object(mod, "store_content_items", side_effect=lambda items: len(items)):
+                result = mod.run_last30days_via_wingsbot("OpenAI")
+
+            self.assertEqual(result, 3)
+            self.assertFalse(invocation_dir.exists())
+            self.assertTrue(output_root.exists())
+
+    def test_trigger_removes_owned_invocation_directory_when_invocation_fails(self):
+        mod = importer
+        with tempfile.TemporaryDirectory() as tmp:
+            output_root = Path(tmp)
+            with patch.object(mod, "L30_OUTPUT_DIR", output_root), \
+                    patch.object(mod, "invoke_wingsbot", side_effect=RuntimeError("failed")):
+                with self.assertRaisesRegex(RuntimeError, "failed"):
+                    mod._trigger_wingsbot("OpenAI")
+
+            self.assertEqual(list(output_root.iterdir()), [])
+
+    def test_run_removes_owned_invocation_directory_when_import_fails(self):
+        mod = importer
+        with tempfile.TemporaryDirectory() as tmp:
+            output_root = Path(tmp)
+            invocation_dir = output_root / "signalforge-invoke-import-failure"
+            invocation_dir.mkdir()
+            artifact = invocation_dir / "report.json"
+            artifact.write_text("not json", encoding="utf-8")
+            with patch.object(mod, "L30_OUTPUT_DIR", output_root), \
+                    patch.object(mod, "_trigger_wingsbot", return_value=artifact):
+                with self.assertRaises(ValueError):
+                    mod.run_last30days_via_wingsbot("OpenAI")
+
+            self.assertFalse(invocation_dir.exists())
+
+    def test_cleanup_refuses_non_owned_directory(self):
+        mod = importer
+        with tempfile.TemporaryDirectory() as tmp:
+            output_root = Path(tmp)
+            foreign_dir = output_root / "foreign"
+            foreign_dir.mkdir()
+            with patch.object(mod, "L30_OUTPUT_DIR", output_root):
+                mod._cleanup_invocation_dir(foreign_dir)
+
+            self.assertTrue(foreign_dir.exists())
+
     def test_trigger_invokes_structured_wingsbot_and_returns_validated_artifact(self):
         mod = importer
 
@@ -390,7 +444,7 @@ class WingsbotTriggerTest(unittest.TestCase):
                     artifacts = list(pool.map(mod._trigger_wingsbot, ["OpenAI", "Anthropic"]))
 
         self.assertEqual(len(set(artifacts)), 2)
-        self.assertTrue(all(path.parent != output_root for path in artifacts))
+        self.assertTrue(all(path.parent.name.startswith("signalforge-invoke-") for path in artifacts))
 
     def test_wingsbot_prompt_requires_json_emit(self):
         mod = importer

@@ -10,7 +10,7 @@ PREPARED_WHEEL_DIR=$(mktemp -d "${TMPDIR:-/tmp}/signalforge-wingsbot-wheel.XXXXX
 trap 'rm -rf "$PREPARED_WHEEL_DIR"' EXIT
 "$PYTHON_BIN" -m pip wheel --no-build-isolation --no-deps --wheel-dir "$PREPARED_WHEEL_DIR" "$WINGSBOT_SOURCE"
 "$PYTHON_BIN" -m pip uninstall -y wingsbot-ai ks-wingsbot || true
-"$PYTHON_BIN" -m pip install -e "$WINGSBOT_SOURCE"
+"$PYTHON_BIN" -m pip install --no-build-isolation -e "$WINGSBOT_SOURCE"
 mkdir -p "$PROJECT_ROOT/.wingsbot/workspace"
 
 WINGSBOT_SOURCE="$WINGSBOT_SOURCE" "$PYTHON_BIN" - <<'PY'

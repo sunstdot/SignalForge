@@ -2,6 +2,7 @@
 import hashlib
 import json
 import re
+import shutil
 import subprocess
 import sys
 import time
@@ -16,6 +17,7 @@ from services.wingsbot_client import invoke_wingsbot, require_artifact
 
 DEFAULT_VPR_DIR = Path.home() / "Documents" / "VentureProductRadar"
 VPR_OUTPUT_DIR = DEFAULT_VPR_DIR
+_INVOCATION_DIR_PREFIX = "signalforge-invoke-"
 VPR_SKILL_DIR = Path("/Users/shitaosun/Project/AI-Personal/wingsbot/wingsbot/skills/venture-product-radar")
 DEFAULT_WEEKLY_TOPIC = "AI venture funding product launches startup signals"
 MODE_COMMANDS = {
@@ -290,14 +292,25 @@ def import_venture_product_radar_file(path) -> Dict:
     return import_venture_radar_report(path)
 
 
+def _cleanup_invocation_dir(path: Path) -> None:
+    path = Path(path)
+    base = VPR_OUTPUT_DIR.resolve()
+    resolved = path.resolve()
+    if resolved.parent == base and resolved.name.startswith(_INVOCATION_DIR_PREFIX):
+        shutil.rmtree(resolved, ignore_errors=True)
+
+
 def run_venture_product_radar_via_wingsbot(
     topic: str,
     sources: Optional[List[str]] = None,
     mode: str = "radar",
 ) -> int:
     json_path = _trigger_wingsbot(topic, sources=sources, mode=mode)
-    import_venture_product_radar_file(json_path)
-    return 1
+    try:
+        import_venture_product_radar_file(json_path)
+        return 1
+    finally:
+        _cleanup_invocation_dir(json_path.parent)
 
 
 def build_direct_venture_radar_command(
@@ -432,18 +445,22 @@ def _build_wingsbot_prompt(
 def _trigger_wingsbot(topic: str, sources: Optional[List[str]] = None, mode: str = "radar") -> Path:
     start = time.time()
     selected_mode = _normalize_mode(mode)
-    invocation_dir = VPR_OUTPUT_DIR / uuid.uuid4().hex
+    invocation_dir = VPR_OUTPUT_DIR / f"{_INVOCATION_DIR_PREFIX}{uuid.uuid4().hex}"
     invocation_dir.mkdir(parents=True, exist_ok=False)
-    prompt = _build_wingsbot_prompt(
-        topic, sources=sources, mode=mode, output_dir=invocation_dir
-    )
-    result = invoke_wingsbot(
-        prompt,
-        session_key=f"signalforge:venture-product-radar:{selected_mode}:{topic}",
-        structured=True,
-        required_skill="venture-product-radar",
-        required_tools=["load_skill", "exec"],
-        required_artifact_glob=str(invocation_dir / "*.json"),
-        artifact_mtime_after=start,
-    )
-    return require_artifact(result, invocation_dir)
+    try:
+        prompt = _build_wingsbot_prompt(
+            topic, sources=sources, mode=mode, output_dir=invocation_dir
+        )
+        result = invoke_wingsbot(
+            prompt,
+            session_key=f"signalforge:venture-product-radar:{selected_mode}:{topic}",
+            structured=True,
+            required_skill="venture-product-radar",
+            required_tools=["load_skill", "exec"],
+            required_artifact_glob=str(invocation_dir / "*.json"),
+            artifact_mtime_after=start,
+        )
+        return require_artifact(result, invocation_dir)
+    except Exception:
+        _cleanup_invocation_dir(invocation_dir)
+        raise

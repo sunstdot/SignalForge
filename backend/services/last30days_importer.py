@@ -6,6 +6,7 @@
 import hashlib
 import json
 import re
+import shutil
 import time
 import uuid
 from pathlib import Path
@@ -224,11 +225,23 @@ def import_last30days_dir(directory=None) -> int:
 
 
 L30_OUTPUT_DIR = DEFAULT_L30_DIR
+_INVOCATION_DIR_PREFIX = "signalforge-invoke-"
+
+
+def _cleanup_invocation_dir(path: Path) -> None:
+    path = Path(path)
+    base = L30_OUTPUT_DIR.resolve()
+    resolved = path.resolve()
+    if resolved.parent == base and resolved.name.startswith(_INVOCATION_DIR_PREFIX):
+        shutil.rmtree(resolved, ignore_errors=True)
 
 def run_last30days_via_wingsbot(topic: str) -> int:
     """通过 wingsbot 触发 last30days，再导入产出的最新 JSON 报告，返回新增条数。"""
     json_path = _trigger_wingsbot(topic)
-    return import_last30days_file(json_path)
+    try:
+        return import_last30days_file(json_path)
+    finally:
+        _cleanup_invocation_dir(json_path.parent)
 
 
 def _build_wingsbot_prompt(topic: str, output_dir: Optional[Path] = None) -> str:
@@ -259,16 +272,20 @@ def _build_wingsbot_prompt(topic: str, output_dir: Optional[Path] = None) -> str
 
 def _trigger_wingsbot(topic: str) -> Path:
     start = time.time()
-    invocation_dir = L30_OUTPUT_DIR / uuid.uuid4().hex
+    invocation_dir = L30_OUTPUT_DIR / f"{_INVOCATION_DIR_PREFIX}{uuid.uuid4().hex}"
     invocation_dir.mkdir(parents=True, exist_ok=False)
-    prompt = _build_wingsbot_prompt(topic, output_dir=invocation_dir)
-    result = invoke_wingsbot(
-        prompt,
-        session_key=f"signalforge:last30days:{topic}",
-        structured=True,
-        required_skill="last30days",
-        required_tools=["load_skill", "exec"],
-        required_artifact_glob=str(invocation_dir / "*.json"),
-        artifact_mtime_after=start,
-    )
-    return require_artifact(result, invocation_dir)
+    try:
+        prompt = _build_wingsbot_prompt(topic, output_dir=invocation_dir)
+        result = invoke_wingsbot(
+            prompt,
+            session_key=f"signalforge:last30days:{topic}",
+            structured=True,
+            required_skill="last30days",
+            required_tools=["load_skill", "exec"],
+            required_artifact_glob=str(invocation_dir / "*.json"),
+            artifact_mtime_after=start,
+        )
+        return require_artifact(result, invocation_dir)
+    except Exception:
+        _cleanup_invocation_dir(invocation_dir)
+        raise

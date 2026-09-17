@@ -330,7 +330,20 @@ class WingsbotPromptTest(unittest.TestCase):
                     artifacts = list(pool.map(importer._trigger_wingsbot, ["OpenAI", "Anthropic"]))
 
         self.assertEqual(len(set(artifacts)), 2)
-        self.assertTrue(all(path.parent != output_root for path in artifacts))
+        self.assertTrue(all(path.parent.name.startswith("signalforge-invoke-") for path in artifacts))
+
+    def test_trigger_removes_owned_invocation_directory_when_validation_fails(self):
+        from services import venture_product_radar_importer as importer
+
+        with tempfile.TemporaryDirectory() as tmp:
+            output_root = Path(tmp)
+            with patch.object(importer, "VPR_OUTPUT_DIR", output_root), \
+                    patch.object(importer, "invoke_wingsbot", return_value=Mock()), \
+                    patch.object(importer, "require_artifact", side_effect=ValueError("invalid")):
+                with self.assertRaisesRegex(ValueError, "invalid"):
+                    importer._trigger_wingsbot("OpenAI")
+
+            self.assertEqual(list(output_root.iterdir()), [])
 
     def test_prompt_includes_mode_and_command_contract(self):
         prompt = _build_wingsbot_prompt("AI coding agents", mode="product", sources=["web", "producthunt"])
@@ -364,6 +377,42 @@ class WingsbotPromptTest(unittest.TestCase):
 
         self.assertEqual(n, 1)
         archive_import.assert_called_once_with(Path(path))
+
+    def test_run_removes_owned_invocation_directory_after_archive_failure(self):
+        from services import venture_product_radar_importer as importer
+
+        with tempfile.TemporaryDirectory() as tmp:
+            output_root = Path(tmp)
+            invocation_dir = output_root / "signalforge-invoke-failure"
+            invocation_dir.mkdir()
+            artifact = invocation_dir / "report.json"
+            artifact.write_text("{}", encoding="utf-8")
+            with patch.object(importer, "VPR_OUTPUT_DIR", output_root), \
+                    patch.object(importer, "_trigger_wingsbot", return_value=artifact), \
+                    patch.object(importer, "import_venture_product_radar_file", side_effect=RuntimeError("archive failed")):
+                with self.assertRaisesRegex(RuntimeError, "archive failed"):
+                    importer.run_venture_product_radar_via_wingsbot("OpenAI")
+
+            self.assertFalse(invocation_dir.exists())
+            self.assertTrue(output_root.exists())
+
+    def test_run_removes_owned_invocation_directory_after_successful_archive(self):
+        from services import venture_product_radar_importer as importer
+
+        with tempfile.TemporaryDirectory() as tmp:
+            output_root = Path(tmp)
+            invocation_dir = output_root / "signalforge-invoke-success"
+            invocation_dir.mkdir()
+            artifact = invocation_dir / "report.json"
+            artifact.write_text("{}", encoding="utf-8")
+            with patch.object(importer, "VPR_OUTPUT_DIR", output_root), \
+                    patch.object(importer, "_trigger_wingsbot", return_value=artifact), \
+                    patch.object(importer, "import_venture_product_radar_file", return_value={"id": "report"}):
+                result = importer.run_venture_product_radar_via_wingsbot("OpenAI")
+
+            self.assertEqual(result, 1)
+            self.assertFalse(invocation_dir.exists())
+            self.assertTrue(output_root.exists())
 
 
 class DirectVentureRadarCommandTest(unittest.TestCase):
