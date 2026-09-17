@@ -1,4 +1,5 @@
 import sys
+import importlib
 import json
 import unittest
 import tempfile
@@ -9,24 +10,27 @@ from unittest.mock import ANY, patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-# The public client dependency is replaced at its package boundary so these
-# importer unit tests do not require a locally installed Wingsbot distribution.
-invoke_module = types.ModuleType("wingsbot.invoke")
-invoke_module.WingsbotClient = type("PlaceholderClient", (), {})
-wingsbot_package = types.ModuleType("wingsbot")
-wingsbot_package.__path__ = []
-sys.modules.setdefault("wingsbot", wingsbot_package)
-sys.modules.setdefault("wingsbot.invoke", invoke_module)
+# Replace only the client boundary while importing the unit under test. This
+# keeps collection working without installing Wingsbot and cannot leak a fake
+# top-level ``wingsbot`` package into other tests.
+client_module = types.ModuleType("services.wingsbot_client")
+client_module.invoke_wingsbot = lambda *args, **kwargs: None
+client_module.require_artifact = lambda *args, **kwargs: None
+with patch.dict(
+    sys.modules,
+    {"services.wingsbot_client": client_module},
+):
+    importer = importlib.import_module("services.last30days_importer")
 
-from services.last30days_importer import (
-    parse_last30days_json,
-    import_last30days_file,
-    import_last30days_dir,
-    _format_engagement,
-    _sum_engagement,
-    _normalize_score,
-    _parse_date,
-)
+sys.modules["services.last30days_importer"] = importer
+
+parse_last30days_json = importer.parse_last30days_json
+import_last30days_file = importer.import_last30days_file
+import_last30days_dir = importer.import_last30days_dir
+_format_engagement = importer._format_engagement
+_sum_engagement = importer._sum_engagement
+_normalize_score = importer._normalize_score
+_parse_date = importer._parse_date
 
 # 真实结构的精简样例（对应 schema.Report）
 SAMPLE_REPORT = {
@@ -273,19 +277,21 @@ class ImportFileTest(unittest.TestCase):
 
 
 class WingsbotTriggerTest(unittest.TestCase):
+    def test_import_does_not_leave_fake_wingsbot_modules_installed(self):
+        self.assertNotIn("wingsbot.invoke", sys.modules)
+
     def test_run_imports_newest_report(self):
-        from services import last30days_importer as mod
+        mod = importer
         with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False, encoding="utf-8") as f:
             f.write(_report_to_text(SAMPLE_REPORT))
             path = Path(f.name)
         with patch.object(mod, "_trigger_wingsbot", return_value=path):
-            with patch("services.last30days_importer.store_content_items",
-                       side_effect=lambda items: len(items)):
+            with patch.object(mod, "store_content_items", side_effect=lambda items: len(items)):
                 n = mod.run_last30days_via_wingsbot("Loop Engineering")
         self.assertEqual(n, 3)
 
     def test_trigger_invokes_structured_wingsbot_and_returns_validated_artifact(self):
-        from services import last30days_importer as mod
+        mod = importer
 
         artifact = Path("/tmp/last30days/openai.json")
         result = SimpleNamespace(ok=True, artifacts=[artifact], content="done", error=None)
@@ -307,7 +313,7 @@ class WingsbotTriggerTest(unittest.TestCase):
         self.assertEqual(actual, artifact)
 
     def test_wingsbot_prompt_requires_json_emit(self):
-        from services import last30days_importer as mod
+        mod = importer
 
         prompt = mod._build_wingsbot_prompt("OpenAI")
 
