@@ -107,19 +107,20 @@ A live paid/model invocation will run only if the existing local Wingsbot config
 
 ## Usage Contract
 
-New SignalForge code should import the project adapter rather than Wingsbot internals. Direct use outside the adapter should follow Wingsbot's public lifecycle:
+SignalForge creates one process-level `WingsbotClient`, shares it across business modules, and closes it during application shutdown. Business code imports the project adapter rather than constructing a client for every call:
 
 ```python
-from wingsbot.invoke import WingsbotClient
+from services.wingsbot_client import invoke_wingsbot
 
-with WingsbotClient(
-    workspace="/path/to/SignalForge/.wingsbot/workspace",
-) as client:
-    result = client.invoke(
-        "Perform the task",
-        session_key="signalforge:feature:subject",
-        structured=True,
-    )
+result = invoke_wingsbot(
+    "Perform the task",
+    session_key="signalforge:feature:subject",
+    structured=True,
+)
 ```
 
-Async hosts should use `async with WingsbotClient(...)` and `await client.ainvoke(...)`. A client must always be closed; long-running services should reuse one client instead of creating one per request.
+The adapter lazily initializes the shared client on first use. SignalForge's FastAPI lifespan closes it once when the process shuts down. The CLI uses the same adapter and registers equivalent process-exit cleanup.
+
+Different features should use distinct namespaced `session_key` values. Calls sharing a session key are serialized and retain that session's conversation history; calls using different session keys may run concurrently.
+
+The `with WingsbotClient(...)` and `async with WingsbotClient(...)` forms remain appropriate only for standalone, one-shot scripts. Long-running SignalForge code must reuse the shared adapter-managed client.
