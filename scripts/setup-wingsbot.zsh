@@ -6,6 +6,9 @@ PROJECT_ROOT=${SCRIPT_DIR:h}
 PYTHON_BIN="${SIGNALFORGE_PYTHON:-$PROJECT_ROOT/backend/venv/bin/python}"
 WINGSBOT_SOURCE="${WINGSBOT_SOURCE:-/Users/shitaosun/Project/AI-Personal/wingsbot}"
 
+PREPARED_WHEEL_DIR=$(mktemp -d "${TMPDIR:-/tmp}/signalforge-wingsbot-wheel.XXXXXX")
+trap 'rm -rf "$PREPARED_WHEEL_DIR"' EXIT
+"$PYTHON_BIN" -m pip wheel --no-build-isolation --no-deps --wheel-dir "$PREPARED_WHEEL_DIR" "$WINGSBOT_SOURCE"
 "$PYTHON_BIN" -m pip uninstall -y wingsbot-ai ks-wingsbot || true
 "$PYTHON_BIN" -m pip install -e "$WINGSBOT_SOURCE"
 mkdir -p "$PROJECT_ROOT/.wingsbot/workspace"

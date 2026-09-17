@@ -4,6 +4,7 @@ import json
 import unittest
 import tempfile
 import types
+from concurrent.futures import ThreadPoolExecutor
 from contextlib import contextmanager
 from pathlib import Path
 from types import SimpleNamespace
@@ -339,24 +340,57 @@ class WingsbotTriggerTest(unittest.TestCase):
     def test_trigger_invokes_structured_wingsbot_and_returns_validated_artifact(self):
         mod = importer
 
-        artifact = Path("/tmp/last30days/openai.json")
-        result = SimpleNamespace(ok=True, artifacts=[artifact], content="done", error=None)
-        with patch.object(mod, "invoke_wingsbot", return_value=result) as invoke:
-            with patch.object(mod, "require_artifact", return_value=artifact) as require:
+        with tempfile.TemporaryDirectory() as tmp:
+            output_root = Path(tmp)
+            artifact = output_root / "openai.json"
+            result = SimpleNamespace(ok=True, artifacts=[artifact], content="done", error=None)
+            with patch.object(mod, "L30_OUTPUT_DIR", output_root), \
+                    patch.object(mod, "invoke_wingsbot", return_value=result) as invoke, \
+                    patch.object(mod, "require_artifact", return_value=artifact) as require:
                 actual = mod._trigger_wingsbot("OpenAI")
 
-        prompt = mod._build_wingsbot_prompt("OpenAI")
-        invoke.assert_called_once_with(
-            prompt,
-            session_key="signalforge:last30days:OpenAI",
-            structured=True,
-            required_skill="last30days",
-            required_tools=["load_skill", "exec"],
-            required_artifact_glob=str(mod.L30_OUTPUT_DIR / "*.json"),
-            artifact_mtime_after=ANY,
-        )
-        require.assert_called_once_with(result, mod.L30_OUTPUT_DIR)
+        call = invoke.call_args
+        invocation_dir = Path(call.kwargs["required_artifact_glob"]).parent
+        self.assertEqual(invocation_dir.parent, output_root)
+        self.assertIn(f"--save-dir={invocation_dir}", call.args[0])
+        self.assertEqual(call.kwargs["session_key"], "signalforge:last30days:OpenAI")
+        self.assertTrue(call.kwargs["structured"])
+        self.assertEqual(call.kwargs["required_skill"], "last30days")
+        self.assertEqual(call.kwargs["required_tools"], ["load_skill", "exec"])
+        self.assertEqual(call.kwargs["artifact_mtime_after"], ANY)
+        require.assert_called_once_with(result, invocation_dir)
         self.assertEqual(actual, artifact)
+
+    def test_concurrent_triggers_cannot_select_each_others_artifacts(self):
+        mod = importer
+
+        with tempfile.TemporaryDirectory() as tmp:
+            output_root = Path(tmp)
+
+            def fake_invoke(_prompt, **kwargs):
+                invocation_dir = Path(kwargs["required_artifact_glob"]).parent
+                artifact = invocation_dir / f"{invocation_dir.name}.json"
+                artifact.parent.mkdir(parents=True, exist_ok=True)
+                artifact.write_text("{}", encoding="utf-8")
+                other_artifacts = list(output_root.glob("*/*.json"))
+                return SimpleNamespace(
+                    ok=True,
+                    artifacts=other_artifacts + [artifact],
+                    content="done",
+                    error=None,
+                )
+
+            def select_first_artifact(result, expected_dir):
+                return next(path for path in result.artifacts if path.parent == expected_dir)
+
+            with patch.object(mod, "L30_OUTPUT_DIR", output_root), \
+                    patch.object(mod, "invoke_wingsbot", side_effect=fake_invoke), \
+                    patch.object(mod, "require_artifact", side_effect=select_first_artifact):
+                with ThreadPoolExecutor(max_workers=2) as pool:
+                    artifacts = list(pool.map(mod._trigger_wingsbot, ["OpenAI", "Anthropic"]))
+
+        self.assertEqual(len(set(artifacts)), 2)
+        self.assertTrue(all(path.parent != output_root for path in artifacts))
 
     def test_wingsbot_prompt_requires_json_emit(self):
         mod = importer

@@ -7,6 +7,7 @@ import hashlib
 import json
 import re
 import time
+import uuid
 from pathlib import Path
 from typing import Dict, List, Optional
 
@@ -230,7 +231,7 @@ def run_last30days_via_wingsbot(topic: str) -> int:
     return import_last30days_file(json_path)
 
 
-def _build_wingsbot_prompt(topic: str) -> str:
+def _build_wingsbot_prompt(topic: str, output_dir: Optional[Path] = None) -> str:
     """构造给 wingsbot agent 的 prompt。
 
     关键约束：
@@ -240,6 +241,7 @@ def _build_wingsbot_prompt(topic: str) -> str:
       所以显式要求 --emit=json，skill 会写到 --save-dir 指定目录。
     - SKILL.md 禁止 --emit=md 作为主流程，但 json 是允许的输出格式之一。
     """
+    output_dir = output_dir or L30_OUTPUT_DIR
     return (
         f"请调用 last30days 技能研究话题「{topic}」，我需要拿到结构化数据而不是文字总结。\n\n"
         "执行要求：\n"
@@ -249,7 +251,7 @@ def _build_wingsbot_prompt(topic: str) -> str:
         "不要只查 X handle。如果话题有人名/品牌/产品名，可以追加 --x-handle，"
         "但 Reddit / Hacker News / Web 不能跳过。\n"
         f"3. 输出格式：用 `--emit=json` 让脚本输出 JSON 报告，用 "
-        f"`--save-dir={L30_OUTPUT_DIR}` 把文件写到这个目录。\n"
+        f"`--save-dir={output_dir}` 把文件写到这个目录。\n"
         "4. 如果某个来源不可用或返回 0 条，在最终回复里写明原因。\n"
         "5. 完成后在回复里给出完整 .json 文件绝对路径。"
     )
@@ -257,14 +259,16 @@ def _build_wingsbot_prompt(topic: str) -> str:
 
 def _trigger_wingsbot(topic: str) -> Path:
     start = time.time()
-    prompt = _build_wingsbot_prompt(topic)
+    invocation_dir = L30_OUTPUT_DIR / uuid.uuid4().hex
+    invocation_dir.mkdir(parents=True, exist_ok=False)
+    prompt = _build_wingsbot_prompt(topic, output_dir=invocation_dir)
     result = invoke_wingsbot(
         prompt,
         session_key=f"signalforge:last30days:{topic}",
         structured=True,
         required_skill="last30days",
         required_tools=["load_skill", "exec"],
-        required_artifact_glob=str(L30_OUTPUT_DIR / "*.json"),
+        required_artifact_glob=str(invocation_dir / "*.json"),
         artifact_mtime_after=start,
     )
-    return require_artifact(result, L30_OUTPUT_DIR)
+    return require_artifact(result, invocation_dir)

@@ -5,6 +5,7 @@ import re
 import subprocess
 import sys
 import time
+import uuid
 from pathlib import Path
 from typing import Dict, List, Optional
 
@@ -385,11 +386,13 @@ def _build_wingsbot_prompt(
     topic: str,
     sources: Optional[List[str]] = None,
     mode: str = "radar",
+    output_dir: Optional[Path] = None,
 ) -> str:
     selected_mode = _normalize_mode(mode)
     selected = _normalize_sources(sources, selected_mode)
     command = MODE_COMMANDS[selected_mode]
     source_arg = ",".join(selected)
+    output_dir = output_dir or VPR_OUTPUT_DIR
     script_path = VPR_SKILL_DIR / "scripts" / "venture_product_radar.py"
     return (
         f"请调用 venture-product-radar 技能，以 /{command} 模式研究话题「{topic}」，"
@@ -399,7 +402,7 @@ def _build_wingsbot_prompt(
         "`load_skill(\"venture-product-radar\")`。\n"
         "2. 先按该 command 的 scout 维度执行 WebSearch，收集可验证来源；不要凭记忆编造公司、产品或融资信息。\n"
         f"3. 再通过 Bash 执行脚本生成 scaffold：`python3 {script_path} --mode {selected_mode} --topic \"{topic}\" "
-        f"--sources {source_arg} --emit json --output-dir {VPR_OUTPUT_DIR}`。\n"
+        f"--sources {source_arg} --emit json --output-dir {output_dir}`。\n"
         "4. 根据 WebSearch 证据改写 scaffold JSON 并保存为新的最终 JSON；"
         "不要只返回只有 research_plan 的空 scaffold，除非搜索后确实没有可验证结果。\n"
         "5. JSON 中每条公司、产品、融资或信号都要尽量包含 why_it_matters、"
@@ -429,14 +432,18 @@ def _build_wingsbot_prompt(
 def _trigger_wingsbot(topic: str, sources: Optional[List[str]] = None, mode: str = "radar") -> Path:
     start = time.time()
     selected_mode = _normalize_mode(mode)
-    prompt = _build_wingsbot_prompt(topic, sources=sources, mode=mode)
+    invocation_dir = VPR_OUTPUT_DIR / uuid.uuid4().hex
+    invocation_dir.mkdir(parents=True, exist_ok=False)
+    prompt = _build_wingsbot_prompt(
+        topic, sources=sources, mode=mode, output_dir=invocation_dir
+    )
     result = invoke_wingsbot(
         prompt,
         session_key=f"signalforge:venture-product-radar:{selected_mode}:{topic}",
         structured=True,
         required_skill="venture-product-radar",
         required_tools=["load_skill", "exec"],
-        required_artifact_glob=str(VPR_OUTPUT_DIR / "*.json"),
+        required_artifact_glob=str(invocation_dir / "*.json"),
         artifact_mtime_after=start,
     )
-    return require_artifact(result, VPR_OUTPUT_DIR)
+    return require_artifact(result, invocation_dir)
