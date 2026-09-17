@@ -22,8 +22,6 @@ with patch.dict(
 ):
     importer = importlib.import_module("services.last30days_importer")
 
-sys.modules["services.last30days_importer"] = importer
-
 parse_last30days_json = importer.parse_last30days_json
 import_last30days_file = importer.import_last30days_file
 import_last30days_dir = importer.import_last30days_dir
@@ -31,6 +29,7 @@ _format_engagement = importer._format_engagement
 _sum_engagement = importer._sum_engagement
 _normalize_score = importer._normalize_score
 _parse_date = importer._parse_date
+sys.modules.pop("services.last30days_importer", None)
 
 # 真实结构的精简样例（对应 schema.Report）
 SAMPLE_REPORT = {
@@ -259,7 +258,7 @@ class ImportFileTest(unittest.TestCase):
             captured["items"] = items
             return len(items)
 
-        with patch("services.last30days_importer.store_content_items", side_effect=fake_store):
+        with patch.object(importer, "store_content_items", side_effect=fake_store):
             n = import_last30days_file(path)
         self.assertEqual(n, 3)
         self.assertEqual(len(captured["items"]), 3)
@@ -270,15 +269,15 @@ class ImportFileTest(unittest.TestCase):
             (Path(d) / "b.json").write_text(_report_to_text(SAMPLE_REPORT), encoding="utf-8")
             # 非 json 文件应该被忽略
             (Path(d) / "c.md").write_text("should be ignored", encoding="utf-8")
-            with patch("services.last30days_importer.store_content_items",
-                       side_effect=lambda items: len(items)):
+            with patch.object(importer, "store_content_items", side_effect=lambda items: len(items)):
                 n = import_last30days_dir(d)
         self.assertEqual(n, 6)
 
 
 class WingsbotTriggerTest(unittest.TestCase):
-    def test_import_does_not_leave_fake_wingsbot_modules_installed(self):
+    def test_import_does_not_leave_fake_wingsbot_or_importer_modules_installed(self):
         self.assertNotIn("wingsbot.invoke", sys.modules)
+        self.assertNotIn("services.last30days_importer", sys.modules)
 
     def test_run_imports_newest_report(self):
         mod = importer
