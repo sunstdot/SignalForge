@@ -10,6 +10,14 @@ from unittest.mock import ANY, patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
+_MISSING = object()
+_TOUCHED_MODULE_KEYS = (
+    "services.wingsbot_client",
+    "services.last30days_importer",
+    "wingsbot.invoke",
+)
+_prior_modules = {key: sys.modules.get(key, _MISSING) for key in _TOUCHED_MODULE_KEYS}
+
 # Replace only the client boundary while importing the unit under test. This
 # keeps collection working without installing Wingsbot and cannot leak a fake
 # top-level ``wingsbot`` package into other tests.
@@ -29,7 +37,11 @@ _format_engagement = importer._format_engagement
 _sum_engagement = importer._sum_engagement
 _normalize_score = importer._normalize_score
 _parse_date = importer._parse_date
-sys.modules.pop("services.last30days_importer", None)
+for key, prior in _prior_modules.items():
+    if prior is _MISSING:
+        sys.modules.pop(key, None)
+    else:
+        sys.modules[key] = prior
 
 # 真实结构的精简样例（对应 schema.Report）
 SAMPLE_REPORT = {
@@ -275,9 +287,12 @@ class ImportFileTest(unittest.TestCase):
 
 
 class WingsbotTriggerTest(unittest.TestCase):
-    def test_import_does_not_leave_fake_wingsbot_or_importer_modules_installed(self):
-        self.assertNotIn("wingsbot.invoke", sys.modules)
-        self.assertNotIn("services.last30days_importer", sys.modules)
+    def test_import_restores_all_touched_module_cache_entries_by_identity(self):
+        for key, prior in _prior_modules.items():
+            if prior is _MISSING:
+                self.assertNotIn(key, sys.modules)
+            else:
+                self.assertIs(sys.modules.get(key), prior)
 
     def test_run_imports_newest_report(self):
         mod = importer
