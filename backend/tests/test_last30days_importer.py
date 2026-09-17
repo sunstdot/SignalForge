@@ -4,6 +4,7 @@ import json
 import unittest
 import tempfile
 import types
+from contextlib import contextmanager
 from pathlib import Path
 from types import SimpleNamespace
 from unittest.mock import ANY, patch
@@ -16,19 +17,31 @@ _TOUCHED_MODULE_KEYS = (
     "services.last30days_importer",
     "wingsbot.invoke",
 )
-_prior_modules = {key: sys.modules.get(key, _MISSING) for key in _TOUCHED_MODULE_KEYS}
 
-# Replace only the client boundary while importing the unit under test. This
-# keeps collection working without installing Wingsbot and cannot leak a fake
-# top-level ``wingsbot`` package into other tests.
-client_module = types.ModuleType("services.wingsbot_client")
-client_module.invoke_wingsbot = lambda *args, **kwargs: None
-client_module.require_artifact = lambda *args, **kwargs: None
-with patch.dict(
-    sys.modules,
-    {"services.wingsbot_client": client_module},
-):
-    importer = importlib.import_module("services.last30days_importer")
+@contextmanager
+def _import_with_fake_wingsbot_client():
+    prior_modules = {
+        key: sys.modules.get(key, _MISSING) for key in _TOUCHED_MODULE_KEYS
+    }
+    client_module = types.ModuleType("services.wingsbot_client")
+    client_module.invoke_wingsbot = lambda *args, **kwargs: None
+    client_module.require_artifact = lambda *args, **kwargs: None
+    try:
+        sys.modules["services.wingsbot_client"] = client_module
+        sys.modules.pop("services.last30days_importer", None)
+        yield importlib.import_module("services.last30days_importer")
+    finally:
+        for key, prior in prior_modules.items():
+            if prior is _MISSING:
+                sys.modules.pop(key, None)
+            else:
+                sys.modules[key] = prior
+
+
+# Keep collection working when Wingsbot is not installed, while restoring the
+# exact module cache state immediately after importing the unit under test.
+with _import_with_fake_wingsbot_client() as importer:
+    pass
 
 parse_last30days_json = importer.parse_last30days_json
 import_last30days_file = importer.import_last30days_file
@@ -37,11 +50,6 @@ _format_engagement = importer._format_engagement
 _sum_engagement = importer._sum_engagement
 _normalize_score = importer._normalize_score
 _parse_date = importer._parse_date
-for key, prior in _prior_modules.items():
-    if prior is _MISSING:
-        sys.modules.pop(key, None)
-    else:
-        sys.modules[key] = prior
 
 # 真实结构的精简样例（对应 schema.Report）
 SAMPLE_REPORT = {
@@ -288,7 +296,14 @@ class ImportFileTest(unittest.TestCase):
 
 class WingsbotTriggerTest(unittest.TestCase):
     def test_import_restores_all_touched_module_cache_entries_by_identity(self):
-        for key, prior in _prior_modules.items():
+        prior_modules = {
+            key: sys.modules.get(key, _MISSING) for key in _TOUCHED_MODULE_KEYS
+        }
+
+        with _import_with_fake_wingsbot_client():
+            pass
+
+        for key, prior in prior_modules.items():
             if prior is _MISSING:
                 self.assertNotIn(key, sys.modules)
             else:
