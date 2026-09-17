@@ -39,3 +39,4 @@ venv/
 *.egg-info/
 
 /data
+.wingsbot/

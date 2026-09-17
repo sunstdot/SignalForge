@@ -30,5 +30,5 @@ beautifulsoup4==4.14.3
 # Testing
 pytest-asyncio>=0.23.0
 
-# wingsbot 为本地可编辑安装，触发 last30days 用：
-# pip install -e /Users/shitaosun/Project/AI-opensource/wingsbot
+# Wingsbot is installed as an editable local dependency; run from the project root:
+# scripts/setup-wingsbot.zsh
