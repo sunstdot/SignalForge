@@ -34,6 +34,7 @@ from routers.manual_intel import router as manual_intel_router
 from routers.wiki import router as wiki_router
 from routers.last30days import router as last30days_router
 from routers.search import router as search_router
+from services import wingsbot_client
 
 
 @asynccontextmanager
@@ -43,9 +44,11 @@ async def lifespan(app: FastAPI):
     from services.storage import DATA_DIR
     print(f"✓ File storage at {DATA_DIR}")
 
-    yield
-
-    print("👋 TokenBurner Backend shutting down...")
+    try:
+        yield
+    finally:
+        wingsbot_client.close_wingsbot_client()
+        print("👋 TokenBurner Backend shutting down...")
 
 
 app = FastAPI(
