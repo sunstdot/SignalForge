@@ -23,6 +23,10 @@ def _import_with_fake_wingsbot_client():
     prior_modules = {
         key: sys.modules.get(key, _MISSING) for key in _TOUCHED_MODULE_KEYS
     }
+    services_package = importlib.import_module("services")
+    prior_importer_attribute = getattr(
+        services_package, "last30days_importer", _MISSING
+    )
     client_module = types.ModuleType("services.wingsbot_client")
     client_module.invoke_wingsbot = lambda *args, **kwargs: None
     client_module.require_artifact = lambda *args, **kwargs: None
@@ -36,6 +40,11 @@ def _import_with_fake_wingsbot_client():
                 sys.modules.pop(key, None)
             else:
                 sys.modules[key] = prior
+        if prior_importer_attribute is _MISSING:
+            if hasattr(services_package, "last30days_importer"):
+                delattr(services_package, "last30days_importer")
+        else:
+            services_package.last30days_importer = prior_importer_attribute
 
 
 # Keep collection working when Wingsbot is not installed, while restoring the
@@ -299,6 +308,10 @@ class WingsbotTriggerTest(unittest.TestCase):
         prior_modules = {
             key: sys.modules.get(key, _MISSING) for key in _TOUCHED_MODULE_KEYS
         }
+        services_package = sys.modules["services"]
+        prior_importer_attribute = getattr(
+            services_package, "last30days_importer", _MISSING
+        )
 
         with _import_with_fake_wingsbot_client():
             pass
@@ -308,6 +321,10 @@ class WingsbotTriggerTest(unittest.TestCase):
                 self.assertNotIn(key, sys.modules)
             else:
                 self.assertIs(sys.modules.get(key), prior)
+        self.assertIs(
+            getattr(services_package, "last30days_importer", _MISSING),
+            prior_importer_attribute,
+        )
 
     def test_run_imports_newest_report(self):
         mod = importer
