@@ -3,22 +3,20 @@ import pytest
 
 @pytest.fixture
 def client(monkeypatch, tmp_path):
-    import sys
-    for mod in list(sys.modules.keys()):
-        if mod.startswith("routers") or mod.startswith("services") or mod == "main":
-            del sys.modules[mod]
+    from tests.module_isolation import isolated_app_modules
 
-    import services.storage as s
-    wiki_dir = tmp_path / "wiki"
-    wiki_dir.mkdir()
-    mi_dir = tmp_path / "manual_intel"
-    mi_dir.mkdir()
-    monkeypatch.setattr(s, "WIKI_DIR", wiki_dir)
-    monkeypatch.setattr(s, "MANUAL_INTEL_DIR", mi_dir)
+    with isolated_app_modules():
+        import services.storage as s
+        wiki_dir = tmp_path / "wiki"
+        wiki_dir.mkdir()
+        mi_dir = tmp_path / "manual_intel"
+        mi_dir.mkdir()
+        monkeypatch.setattr(s, "WIKI_DIR", wiki_dir)
+        monkeypatch.setattr(s, "MANUAL_INTEL_DIR", mi_dir)
 
-    from main import app
-    from fastapi.testclient import TestClient
-    return TestClient(app)
+        from main import app
+        from fastapi.testclient import TestClient
+        yield TestClient(app)
 
 
 def test_get_status_empty(client):

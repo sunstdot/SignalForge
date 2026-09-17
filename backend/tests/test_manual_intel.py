@@ -1,6 +1,44 @@
 import pytest
 
 
+def test_isolated_app_modules_restores_module_and_parent_package_identities():
+    import sys
+    import routers.manual_intel as manual_router
+    import services.storage as storage
+    import services.venture_product_radar_importer as importer
+    import services.venture_radar_reports as reports
+    from tests.module_isolation import isolated_app_modules
+
+    prior_modules = {
+        "routers.manual_intel": manual_router,
+        "services.storage": storage,
+        "services.venture_product_radar_importer": importer,
+        "services.venture_radar_reports": reports,
+    }
+    assert manual_router.get_manual_intel_item_by_id is storage.get_manual_intel_item_by_id
+
+    with isolated_app_modules():
+        import routers.manual_intel as fresh_manual_router
+        import services.storage as fresh_storage
+        import services.venture_product_radar_importer as fresh_importer
+        import services.venture_radar_reports as fresh_reports
+
+        assert fresh_manual_router is not manual_router
+        assert fresh_storage is not storage
+        assert fresh_importer is not importer
+        assert fresh_reports is not reports
+
+    import routers
+    import services
+    for name, prior in prior_modules.items():
+        assert sys.modules[name] is prior
+    assert routers.manual_intel is manual_router
+    assert services.storage is storage
+    assert services.venture_product_radar_importer is importer
+    assert services.venture_radar_reports is reports
+    assert manual_router.get_manual_intel_item_by_id is storage.get_manual_intel_item_by_id
+
+
 @pytest.fixture(autouse=True)
 def isolated_storage(monkeypatch, tmp_path):
     """Redirect MANUAL_INTEL_DIR to a temp directory for each test."""
@@ -79,16 +117,14 @@ from fastapi.testclient import TestClient
 
 @pytest.fixture
 def client(isolated_storage, monkeypatch):
-    import sys
-    # Re-import app fresh so routers are reloaded with correct module references
-    for mod in list(sys.modules.keys()):
-        if mod.startswith("routers") or mod.startswith("services") or mod == "main":
-            del sys.modules[mod]
-    from main import app
-    # Re-apply storage isolation to the freshly imported services.storage
-    import services.storage as s
-    monkeypatch.setattr(s, "MANUAL_INTEL_DIR", isolated_storage)
-    return TestClient(app)
+    from tests.module_isolation import isolated_app_modules
+
+    with isolated_app_modules():
+        from main import app
+        # Re-apply storage isolation to the freshly imported services.storage
+        import services.storage as s
+        monkeypatch.setattr(s, "MANUAL_INTEL_DIR", isolated_storage)
+        yield TestClient(app)
 
 
 def test_get_items_empty(client):
@@ -227,7 +263,7 @@ async def test_run_quick_read_triggers_wiki(monkeypatch, isolated_storage):
     item = create_manual_intel_item({
         "url": "https://example.com",
         "title": "Test Article",
-        "content_snippet": "some content",
+        "content_snippet": "Detailed article content long enough to trigger quick-read analysis in this test.",
     })
 
     wiki_called = []
@@ -260,7 +296,7 @@ async def test_run_quick_read_wiki_failure_does_not_affect_quick_read(monkeypatc
     item = create_manual_intel_item({
         "url": "https://example.com",
         "title": "Test Article",
-        "content_snippet": "some content",
+        "content_snippet": "Detailed article content long enough to trigger quick-read analysis in this test.",
     })
 
     async def mock_chat(messages, provider=None):
