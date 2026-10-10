@@ -1,0 +1,52 @@
+<h2>小红书分享页，先选承载形式</h2>
+<p class="subtitle">同样放 3-5 个商业机会 + 3-5 条 AI 情报，不同结构适合不同发布方式。</p>
+
+<div class="cards">
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="aspect-ratio:3/4;background:#fff7ed;padding:14px;display:flex;flex-direction:column;gap:10px">
+        <div style="font-size:22px;font-weight:700">今日 AI 情报机会</div>
+        <div style="font-size:12px;color:#9a3412">5 月 14 日精选</div>
+        <div style="background:white;padding:10px;border-radius:8px">商业机会 TOP 3</div>
+        <div style="background:white;padding:10px;border-radius:8px">AI 情报 TOP 3</div>
+        <div style="margin-top:auto;font-size:12px;color:#7c2d12">一张长图看完</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A. 单页长图</h3>
+      <p>最像“海报”。适合一次看完、直接导出 PNG。</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="aspect-ratio:3/4;background:#eff6ff;padding:14px;display:grid;grid-template-rows:auto 1fr 1fr;gap:10px">
+        <div style="font-size:22px;font-weight:700">今日 AI 情报机会</div>
+        <div style="background:white;padding:10px;border-radius:8px">第 1 页：商业机会</div>
+        <div style="background:white;padding:10px;border-radius:8px">第 2 页：AI 情报</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B. 双页轮播</h3>
+      <p>最平衡。第一页讲机会，第二页讲情报。</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="aspect-ratio:3/4;background:#f0fdf4;padding:14px;display:flex;flex-direction:column;gap:10px">
+        <div style="font-size:22px;font-weight:700">AI 情报日更</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;flex:1">
+          <div style="background:white;padding:10px;border-radius:8px">机会 1</div>
+          <div style="background:white;padding:10px;border-radius:8px">机会 2</div>
+          <div style="background:white;padding:10px;border-radius:8px">情报 1</div>
+          <div style="background:white;padding:10px;border-radius:8px">情报 2</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C. 卡片矩阵</h3>
+      <p>信息密度高。更像周报封面或知识卡合集。</p>
+    </div>
+  </div>
+</div>

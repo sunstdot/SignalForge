@@ -3,7 +3,7 @@ Date: 2026-05-18
 
 ## 问题与目标
 
-当前 `share-page` 命令自动选取评分最高的 3 个商业机会和 5 条 AI 情报，用户无法干预内容质量。目标是在 AI情报页和全部机会页加入多选机制，让用户手工挑选内容后一键生成分享页，覆盖原有的 `{date}.html`。
+当前 `share-page` 命令自动选取评分最高的 n 个商业机会和 n 条 AI 情报，用户无法干预内容质量。目标是在 AI情报页和全部机会页加入多选机制，让用户手工挑选内容后一键生成分享页，覆盖原有的 `{date}.html`。
 
 ---
 
@@ -33,7 +33,7 @@ BriefingPage           OpportunityDashboard
 
 ### 1. `useShareSelection(date)` hook — 新文件
 
-**路径：** `frontend/src/pages/useShareSelection.js`
+**路径：** `frontend/src/pages/useShareSelection.jsx`
 
 - 读写 `localStorage` key `sf-selection-{date}`
 - 初始值：`{ signal_ids: [], opportunity_ids: [] }`
@@ -140,7 +140,7 @@ app.include_router(share_pages_router, prefix="/api/share-pages", tags=["share-p
 
 | 文件 | 操作 |
 |---|---|
-| `frontend/src/pages/useShareSelection.js` | 新建 |
+| `frontend/src/pages/useShareSelection.jsx` | 新建 |
 | `frontend/src/pages/BriefingPage.jsx` | 修改：加 hook、操作栏、复选框 |
 | `frontend/src/pages/OpportunityDashboard.jsx` | 修改：加 hook、操作栏、复选框、rawId |
 | `backend/routers/share_pages.py` | 新建 |

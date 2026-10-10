@@ -51,11 +51,71 @@ def _is_weixin_url(url: str) -> bool:
     return "mp.weixin.qq.com" in url
 
 
+def _is_x_url(url: str) -> bool:
+    return "x.com/" in url or "twitter.com/" in url
+
+
+async def _expand_tco_url(short_url: str) -> str:
+    """Follow t.co redirect and return the final URL."""
+    import httpx
+    try:
+        async with httpx.AsyncClient(timeout=10, follow_redirects=True) as client:
+            resp = await client.head(short_url)
+            return str(resp.url)
+    except Exception:
+        return short_url
+
+
+async def _fetch_x_content(url: str) -> tuple[str, str]:
+    """Fetch X/Twitter post via oEmbed API (free, no auth required).
+    If the tweet body is only a t.co link, expands it and fetches the linked article."""
+    import httpx
+    from bs4 import BeautifulSoup
+    oembed_url = f"https://publish.twitter.com/oembed?url={url}&omit_script=true"
+    async with httpx.AsyncClient(timeout=15, follow_redirects=True) as client:
+        resp = await client.get(oembed_url)
+        if resp.status_code != 200:
+            return "", ""
+        data = resp.json()
+        author = data.get("author_name", "")
+        html = data.get("html", "")
+        soup = BeautifulSoup(html, "html.parser")
+
+        # Collect t.co links before stripping them
+        tco_links = [a["href"] for a in soup.find_all("a", href=True) if "t.co/" in a.get("href", "")]
+
+        for a in soup.find_all("a"):
+            a.decompose()
+        tweet_text = soup.get_text(separator=" ", strip=True)
+
+        # If the tweet has meaningful text, use it directly
+        if len(tweet_text) > 20:
+            title = f"{author} 的推文" if author else "X 推文"
+            return title, tweet_text[:6000]
+
+        # Tweet is just a link — expand t.co and fetch the real article
+        if tco_links:
+            expanded = await _expand_tco_url(tco_links[0])
+            print(f"[manual-intel] X tweet is link-only, fetching expanded URL: {expanded}")
+            # x.com/i/article/ are X long-form articles — JS-rendered, cannot fetch
+            if expanded and not _is_x_url(expanded):
+                art_title, art_snippet = await _fetch_url_content(expanded)
+                if art_snippet:
+                    prefix = f"（来自 {author} 的推文分享）\n\n" if author else ""
+                    return art_title or f"{author} 分享的文章", prefix + art_snippet
+
+        return (f"{author} 的推文" if author else "X 推文"), tweet_text
+
+
 async def _fetch_url_content(url: str) -> tuple[str, str]:
     """Fetch a URL and return (title, content_snippet). Never raises — returns empty strings on failure."""
     try:
         import httpx
         from bs4 import BeautifulSoup
+
+        if _is_x_url(url):
+            return await _fetch_x_content(url)
+
         headers = {"User-Agent": _BROWSER_UA, "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8"}
         async with httpx.AsyncClient(timeout=15, follow_redirects=True, headers=headers) as client:
             resp = await client.get(url)
@@ -98,12 +158,19 @@ async def _run_quick_read(item_id: str):
 
     title = item.get("title", "")
     snippet = item.get("content_snippet", "")
+    user_note = item.get("user_note", "")
+
+    # When content can't be fetched (JS-heavy pages), fall back to user note
+    meaningful_snippet = snippet.strip() if len(snippet.strip()) > 50 else ""
+    if not meaningful_snippet and not user_note.strip():
+        return
+    content_source = meaningful_snippet or f"（原文无法自动获取，以下为用户笔记）\n{user_note.strip()}"
 
     prompt = f"""请对以下文章进行速读总结，帮助读者快速了解核心内容。
 
 文章标题：{title}
 原文内容（节选）：
-{snippet}
+{content_source}
 
 请用中文输出，严格使用以下 Markdown 格式：
 **核心内容**：用 2-3 句话说清楚文章讲了什么（面向技术/创业读者）

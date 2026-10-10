@@ -11,6 +11,7 @@ from .rss_fetcher import fetch_rss_feeds
 from .arxiv_fetcher import fetch_arxiv_papers
 from .github_fetcher import fetch_github_trending
 from .models_fetcher import fetch_model_platforms
+from .anthropic_blog_fetcher import fetch_anthropic_technical_articles, normalize_url
 from .chinese_briefer import generate_chinese_brief
 from .llm_client import chat
 
@@ -236,12 +237,15 @@ async def fetch_all_sources(config: Dict, target_date: str = None) -> List[Dict]
     if sources_config.get("rss", {}).get("enabled"):
         tasks.append(("RSS", fetch_rss_feeds(sources_config["rss"], target_date=target_date)))
 
+    tasks.append(("Anthropic Blog", fetch_anthropic_technical_articles(target_date=target_date)))
+
     all_items = []
     results = await asyncio.gather(
         *[coro for _, coro in tasks],
         return_exceptions=True
     )
 
+    seen_urls = set()
     for (name, _), result in zip(tasks, results):
         if isinstance(result, Exception):
             print(f"  ✗ {name} failed: {result}")
@@ -250,10 +254,16 @@ async def fetch_all_sources(config: Dict, target_date: str = None) -> List[Dict]
             for item in result:
                 if item.get("relevance_score", 0) == 0:
                     item["relevance_score"] = 8
-            all_items.extend(result)
-            if name == 'Anthropic Blog':
-                print(f"  ✓ {name}: {result}")
-            print(f"  ✓ {name}: {len(result)} items")
+            accepted = []
+            for item in result:
+                normalized_url = normalize_url(str(item.get("url", "")))
+                if name == "Anthropic Blog" and normalized_url in seen_urls:
+                    continue
+                if normalized_url:
+                    seen_urls.add(normalized_url)
+                accepted.append(item)
+            all_items.extend(accepted)
+            print(f"  ✓ {name}: {len(accepted)} items")
         else:
             print(f"  ✗ {name}: unexpected result")
 

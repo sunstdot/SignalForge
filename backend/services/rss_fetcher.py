@@ -203,7 +203,11 @@ def parse_rss_feed(xml: str, subscription: Dict, target_date: str = None) -> Lis
             created = created.replace(tzinfo=None)
         item["created_at"] = created
 
-    # 发布时间超过 7 天的 feed 条目不再进入后续窗口和 fallback。
+    # 保留 7 天过滤前的完整条目，供「兜底 fallback」使用：
+    # 即使博客很久没更新，也至少补 1 条最近的文章，确保 feed 不为空。
+    all_items = list(items)
+
+    # 发布时间超过 7 天的 feed 条目不再进入后续窗口和常规 fallback。
     # 这里必须在 fallback 前过滤，否则低频博客会把很旧的文章补进当天内容。
     seven_days_ago = datetime.now() - timedelta(days=7)
     items = [
@@ -247,10 +251,15 @@ def parse_rss_feed(xml: str, subscription: Dict, target_date: str = None) -> Lis
                 item["created_at"] = stamp
         return result
 
-    # 无任何命中时的通用 fallback：取最新 1 条
+    # 无任何命中时的通用 fallback：取 7 天内最新 N 条
     if not filtered_items and items:
         fallback_n = 3 if is_blog else (1 if expand_topics else 1)
         filtered_items = _apply_fallback(items, fallback_n)
+
+    # 兜底 fallback：7 天内也没有任何条目（低频博客长期未更新），
+    # 则忽略 7 天限制，取整个 feed 里最近更新的 1 条，保证至少返回 1 项。
+    if not filtered_items and all_items:
+        filtered_items = _apply_fallback(all_items, 1)
 
     # blog/investor/wechat：无论是否经过 fallback，都把 created_at 统一覆盖为
     # target_date，确保当天运行的内容存入当天文件而非原始发布日期

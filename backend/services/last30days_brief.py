@@ -36,7 +36,16 @@ def _fmt_day(date_str: str):
 
 
 def _slug(s: str) -> str:
-    return re.sub(r"[^a-z0-9]+", "-", (s or "topic").lower()).strip("-") or "topic"
+    raw = (s or "topic").strip().lower() or "topic"
+    prefix = re.sub(r"[^a-z0-9]+", "-", raw).strip("-") or "topic"
+    h = 5381
+    for ch in raw:
+        h = ((h * 33) + ord(ch)) & 0xFFFFFFFF
+    return f"{prefix}-{h:08x}"
+
+
+def legacy_brief_slug(topic: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", (topic or "topic").lower()).strip("-") or "topic"
 
 
 def brief_slug(topic: str) -> str:
@@ -65,7 +74,7 @@ def record_history(topic: str, slug: str, total: int) -> None:
     """把一次搜索写进记录：按 slug 去重、最近置顶、最多保留 50 条。"""
     with _HISTORY_LOCK:
         hist = load_history()
-        hist = [h for h in hist if h.get("slug") != slug]
+        hist = [h for h in hist if h.get("slug") != slug and h.get("topic") != topic]
         hist.insert(0, {
             "slug": slug, "topic": topic, "total": total,
             "updated_at": datetime.now().isoformat(timespec="seconds"),
@@ -110,9 +119,19 @@ def aggregate_brief(items: List[Dict], topic: str, took: str = "—") -> Dict:
             author_vol[md["author"]] += md.get("volume", 0)
     voices = [a for a, _ in sorted(author_vol.items(), key=lambda kv: -kv[1])[:6]]
 
-    zero = [PLATFORM_LABELS[p] for p in ("youtube", "tiktok", "instagram") if counts.get(p, 0) == 0]
-    caveat = (f"{' / '.join(zero)} 本次返回 0 条 —— 视频侧数据缺失。" if zero
-              else "本次各平台均有返回。")
+    zero_core = [PLATFORM_LABELS[p] for p in ("reddit", "x", "hn") if counts.get(p, 0) == 0]
+    zero_video = [PLATFORM_LABELS[p] for p in ("youtube", "tiktok", "instagram") if counts.get(p, 0) == 0]
+    if total == 0:
+        caveat = "本次没有导入可展示信源。请查看 wingsbot trace 中各来源的 provider 错误或限流信息。"
+    elif zero_core:
+        caveat = (
+            f"{' / '.join(zero_core)} 本次返回 0 条 —— 可能是该话题近 30 天讨论少、"
+            "provider 未启用，或检索被平台限流。"
+        )
+    elif zero_video:
+        caveat = f"{' / '.join(zero_video)} 本次返回 0 条 —— 视频侧数据缺失。"
+    else:
+        caveat = "本次各平台均有返回。"
 
     by_day: Dict[str, List[Dict]] = defaultdict(list)
     for i in items:
@@ -201,16 +220,19 @@ def synthesize_narrative(items: List[Dict], topic: str) -> Dict:
 
 def _load_topic_items(topic: str) -> List[Dict]:
     """从内容库取该 topic 的 last30days 条目。"""
-    items = get_content_items(limit=500)
+    items = get_content_items(limit=10000)
     t = (topic or "").strip().lower()
+    tokens = [x for x in re.findall(r"[a-z0-9][a-z0-9._-]*", t) if len(x) >= 2]
     out = []
     for i in items:
         md = i.get("metadata") or {}
         if md.get("origin") != "last30days":
             continue
+        identity_hay = " ".join(filter(None, [md.get("topic", ""),
+                                              " ".join(i.get("tags") or [])])).lower()
         hay = " ".join(filter(None, [md.get("topic", ""), i.get("title", ""),
                                      " ".join(i.get("tags") or [])])).lower()
-        if not t or t in hay or t in (md.get("topic", "") or "").lower():
+        if not t or t in hay or t in (md.get("topic", "") or "").lower() or any(tok in identity_hay for tok in tokens):
             out.append(i)
     return out
 

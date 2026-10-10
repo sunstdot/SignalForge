@@ -16,13 +16,15 @@
     "collect": "cd backend && source venv/bin/activate && python cli.py collect",
     "briefing": "cd backend && source venv/bin/activate && python cli.py briefing",
     "stats": "cd backend && source venv/bin/activate && python cli.py stats",
-    "refetch": "cd backend && source venv/bin/activate && python cli.py refetch"
+    "refetch": "cd backend && source venv/bin/activate && python cli.py refetch",
+    "venture-radar": "cd backend && source venv/bin/activate && python cli.py venture-radar"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.289",
-    "remotion": "^4.0.289",
+    "playwright": "^1.60.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "remotion": "^4.0.289"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

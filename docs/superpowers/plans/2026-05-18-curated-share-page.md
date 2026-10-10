@@ -17,7 +17,7 @@
 | `backend/routers/share_pages.py` | 新建 — POST endpoint + 两个过滤函数 |
 | `backend/tests/test_share_pages_router.py` | 新建 — 过滤逻辑 + endpoint 集成测试 |
 | `backend/main.py` | 修改 — 在 StaticFiles mount 之前注册新路由 |
-| `frontend/src/pages/useShareSelection.js` | 新建 — hook + ShareSelectionBar 组件 |
+| `frontend/src/pages/useShareSelection.jsx` | 新建 — hook + ShareSelectionBar 组件 |
 | `frontend/src/pages/BriefingPage.jsx` | 修改 — 加 hook、操作栏、ContentCard 复选框 |
 | `frontend/src/pages/OpportunityDashboard.jsx` | 修改 — 加 rawId、hook、操作栏、OpportunityCard 复选框 |
 
@@ -280,11 +280,11 @@ git commit -m "feat: register share_pages router before StaticFiles mount"
 ### Task 3: useShareSelection hook + ShareSelectionBar 组件
 
 **Files:**
-- Create: `frontend/src/pages/useShareSelection.js`
+- Create: `frontend/src/pages/useShareSelection.jsx`
 
 - [ ] **Step 1: 新建文件**
 
-`frontend/src/pages/useShareSelection.js`:
+`frontend/src/pages/useShareSelection.jsx`:
 
 ```js
 import { useState, useEffect, useCallback } from 'react'
@@ -427,7 +427,7 @@ export function ShareSelectionBar({ signalIds, opportunityIds, generating, onCle
 - [ ] **Step 2: 确认文件存在**
 
 ```bash
-test -f frontend/src/pages/useShareSelection.js && echo "OK" || echo "MISSING"
+test -f frontend/src/pages/useShareSelection.jsx && echo "OK" || echo "MISSING"
 ```
 
 期望：`OK`
@@ -435,7 +435,7 @@ test -f frontend/src/pages/useShareSelection.js && echo "OK" || echo "MISSING"
 - [ ] **Step 3: Commit**
 
 ```bash
-git add frontend/src/pages/useShareSelection.js
+git add frontend/src/pages/useShareSelection.jsx
 git commit -m "feat: add useShareSelection hook and ShareSelectionBar component"
 ```
 

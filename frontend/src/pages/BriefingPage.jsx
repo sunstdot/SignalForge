@@ -1,7 +1,7 @@
 import { useEffect, useState, useMemo, useRef, useCallback } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
-import { buildDailyBriefingPost, getTopBriefingItems } from './dailyContent'
+import PaperQuickRead from '../components/PaperQuickRead'
 import { useShareSelection, ShareSelectionBar } from './useShareSelection'
 
 const CATEGORY_TABS = [
@@ -253,8 +253,6 @@ function BriefingPage() {
         </div>
       </div>
 
-      <DailyBriefingPublisher briefing={briefing} />
-
       {/* Content */}
       <div className="p-6" style={{ maxWidth: '900px' }}>
         {briefing.summary && (
@@ -291,56 +289,6 @@ const SOURCE_TYPE_BADGE = {
   model: { label: '模型', color: '#10b981' },
   rss:   { label: '资讯', color: '#f59e0b' },
   news:  { label: '资讯', color: '#f59e0b' },
-}
-
-function DailyBriefingPublisher({ briefing }) {
-  const [copied, setCopied] = useState(false)
-  const post = useMemo(() => buildDailyBriefingPost(briefing), [briefing])
-  const topItems = useMemo(() => getTopBriefingItems(briefing, 3), [briefing])
-
-  async function copyPost() {
-    await navigator.clipboard.writeText(`${post.title}\n\n${post.body}\n\n${post.tags}`)
-    setCopied(true)
-    setTimeout(() => setCopied(false), 1600)
-  }
-
-  return (
-    <section className="daily-publisher">
-      <div className="daily-publisher-main">
-        <div>
-          <span className="daily-eyebrow">今日 AI 情报</span>
-          <h1>今天 AI 圈发生了什么</h1>
-          <p>从今日情报里选出最值得看的内容，直接转成小红书可发布文案。</p>
-        </div>
-        <div className="daily-actions">
-          <Link to={`/daily-opportunities/${briefing.date}`} className="daily-action-link">
-            查看今日 AI 情报机会
-          </Link>
-          <button onClick={copyPost} className="daily-copy-btn">
-            {copied ? '已复制' : '复制小红书文案'}
-          </button>
-        </div>
-      </div>
-
-      <div className="daily-publisher-grid">
-        <div className="xhs-shot-card">
-          <span>{briefing.date}</span>
-          <h2>今日 AI 情报</h2>
-          {topItems.map((item, index) => (
-            <div key={item.id} className="xhs-shot-row">
-              <b>{index + 1}</b>
-              <p>{item.title}</p>
-            </div>
-          ))}
-        </div>
-        <div className="daily-copy-preview">
-          <strong>{post.title}</strong>
-          <pre>{post.body}</pre>
-          <small>{post.tags}</small>
-        </div>
-      </div>
-    </section>
-  )
 }
 
 function ScoreDot({ value }) {
@@ -902,13 +850,13 @@ function ContentCard({ item, index, cachedSummary, date, onQuickRead, selected =
         )}
 
         {/* Footer */}
-        <div className="flex items-center justify-between pt-4 border-t" style={{ borderColor: 'var(--border-light)' }}>
+        <div className="flex flex-wrap items-center justify-between gap-3 pt-4 border-t" style={{ borderColor: 'var(--border-light)' }}>
           <div className="flex flex-wrap gap-2">
             {(item.category || []).slice(0, 4).map((cat) => (
               <span key={cat} className="tag">{cat}</span>
             ))}
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2">
             {/* 速读按钮 */}
             <button
               onClick={handleQuickRead}
@@ -925,6 +873,8 @@ function ContentCard({ item, index, cachedSummary, date, onQuickRead, selected =
                 : quickState === 'error' ? '速读失败（重试）'
                 : '⚡ 速读'}
             </button>
+
+            {['paper', 'arxiv'].includes(item.source_type) && <PaperQuickRead item={item} />}
 
             {/* 生成实验想法 */}
             {genState === 'done' ? (

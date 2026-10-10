@@ -1,4 +1,5 @@
 """简报相关 API"""
+import asyncio
 from typing import Optional
 from fastapi import APIRouter, HTTPException, Query
 from pydantic import BaseModel
@@ -14,33 +15,86 @@ from services.storage import (
 router = APIRouter()
 
 
-async def _analyze_items_for_opportunities(items, date):
-    """对给定 items 批量调用 AI 分析商业机会，返回有机会的条目列表（使用 DeepSeek）"""
+# 并发调用 LLM 的上限（每条 DeepSeek 请求约 40-90s，串行会累加成分钟级延迟）
+LLM_CONCURRENCY = 6
+
+
+async def _analyze_opp_batch(batch, date, sem):
+    """分析单个批次（≤10 条）的商业机会，返回扁平的 opp 列表。批次间相互独立、可并发。"""
     import re, json as _json
 
-    BATCH_SIZE = 10
+    items_text = ""
+    for idx, item in enumerate(batch, 1):
+        content = (item.get("summary") or item.get("original_content") or "")[:500]
+        items_text += (
+            f"\n[{idx}] 标题: {item['title']}\n"
+            f"    来源: {item['source']} ({item.get('source_type', '')})\n"
+            f"    内容: {content}\n"
+        )
+
+    prompt = _build_opp_prompt(items_text, date, len(batch))
+
     all_opps = []
+    async with sem:
+        try:
+            raw = (await chat_async([{"role": "user", "content": prompt}], provider="deepseek")).strip()
+            raw = re.sub(r'^```[a-z]*\n?', '', raw).rstrip('`').strip()
+            match = re.search(r'\[.*\]', raw, re.DOTALL)
+            batch_result = _json.loads(match.group(0) if match else raw)
 
-    for batch_start in range(0, len(items), BATCH_SIZE):
-        batch = items[batch_start:batch_start + BATCH_SIZE]
+            for entry in batch_result:
+                if not entry.get("has_opportunities") or not entry.get("ideas"):
+                    continue
+                bi = entry.get("idx", 0) - 1
+                if bi < 0 or bi >= len(batch):
+                    continue
+                source_item = batch[bi]
+                for idea in entry["ideas"]:
+                    scores = idea.get("scores", {})
+                    total = sum(scores.values())
+                    all_opps.append({
+                        "opportunity_title": idea.get("title", ""),
+                        "core_insight": idea.get("core_insight", ""),
+                        "product_form": idea.get("product_form", ""),
+                        "target_users": idea.get("target_users", ""),
+                        "mvp_features": idea.get("mvp_features", []),
+                        "business_model": idea.get("business_model", ""),
+                        "competitive_barrier": idea.get("competitive_barrier", ""),
+                        "risks": idea.get("risks", ""),
+                        "scores": scores,
+                        "total_score": total,
+                        "source_title": source_item["title"],
+                        "source": source_item["source"],
+                        "source_type": source_item.get("source_type", ""),
+                        "source_url": source_item["url"],
+                        "item_id": source_item["id"],
+                    })
+        except Exception as e:
+            print(f"[opportunities] batch failed: {e}")
+    return all_opps
 
-        items_text = ""
-        for idx, item in enumerate(batch, 1):
-            content = (item.get("summary") or item.get("original_content") or "")[:500]
-            items_text += (
-                f"\n[{idx}] 标题: {item['title']}\n"
-                f"    来源: {item['source']} ({item.get('source_type', '')})\n"
-                f"    内容: {content}\n"
-            )
 
-        prompt = f"""你是一位经验丰富的 AI 产品经理和连续创业者，擅长从技术情报中发现真实可落地的商业机会。
+async def _analyze_items_for_opportunities(items, date):
+    """对给定 items 批量调用 AI 分析商业机会，返回有机会的条目列表（使用 DeepSeek）。
+
+    每 10 条为一个批次，批次间并发执行（受 LLM_CONCURRENCY 限流），避免串行累加延迟。
+    """
+    BATCH_SIZE = 10
+    sem = asyncio.Semaphore(LLM_CONCURRENCY)
+    batches = [items[i:i + BATCH_SIZE] for i in range(0, len(items), BATCH_SIZE)]
+    results = await asyncio.gather(*[_analyze_opp_batch(b, date, sem) for b in batches])
+    return [opp for batch_opps in results for opp in batch_opps]
+
+
+def _build_opp_prompt(items_text, date, batch_len):
+    prompt = f"""你是一位经验丰富的 AI 产品经理和连续创业者，擅长从技术情报中发现真实可落地的商业机会。
 
 # 开发者背景
 - 独立开发者，无团队
 - 技术栈：Python / Next.js
 - 可接受面向全球或中文市场的产品，无需强行本地化
 
-# 今日情报（{date}，共 {len(batch)} 条）
+# 今日情报（{date}，共 {batch_len} 条）
 <ai_intelligence>
 {items_text}
 </ai_intelligence>
@@ -114,44 +168,7 @@ async def _analyze_items_for_opportunities(items, date):
 - buildability：独立开发者能否在 1 个月内做出 MVP
 
 没有商业机会的条目：has_opportunities 为 false，ideas 为空数组 []。"""
-
-        try:
-            raw = (await chat_async([{"role": "user", "content": prompt}], provider="deepseek")).strip()
-            raw = re.sub(r'^```[a-z]*\n?', '', raw).rstrip('`').strip()
-            match = re.search(r'\[.*\]', raw, re.DOTALL)
-            batch_result = _json.loads(match.group(0) if match else raw)
-
-            for entry in batch_result:
-                if not entry.get("has_opportunities") or not entry.get("ideas"):
-                    continue
-                real_idx = batch_start + entry["idx"] - 1
-                if real_idx >= len(items):
-                    continue
-                source_item = items[real_idx]
-                for idea in entry["ideas"]:
-                    scores = idea.get("scores", {})
-                    total = sum(scores.values())
-                    all_opps.append({
-                        "opportunity_title": idea.get("title", ""),
-                        "core_insight": idea.get("core_insight", ""),
-                        "product_form": idea.get("product_form", ""),
-                        "target_users": idea.get("target_users", ""),
-                        "mvp_features": idea.get("mvp_features", []),
-                        "business_model": idea.get("business_model", ""),
-                        "competitive_barrier": idea.get("competitive_barrier", ""),
-                        "risks": idea.get("risks", ""),
-                        "scores": scores,
-                        "total_score": total,
-                        "source_title": source_item["title"],
-                        "source": source_item["source"],
-                        "source_type": source_item.get("source_type", ""),
-                        "source_url": source_item["url"],
-                        "item_id": source_item["id"],
-                    })  
-        except Exception as e:
-            print(f"[opportunities] batch {batch_start} failed: {e}")
-
-    return all_opps
+    return prompt
 
 
 class BriefingResponse(BaseModel):
@@ -208,7 +225,7 @@ async def get_opportunities(date: str, refresh: bool = False):
         raise HTTPException(status_code=404, detail="Briefing not found")
 
     MIN_OPPS = 20
-    BATCH_ITEMS = 20   # 每轮分析 20 条（2 次 AI 调用）
+    BATCH_ITEMS = 40   # 每轮分析 40 条（批次内 4 次 AI 调用并发执行）
     MAX_ITEMS = 120    # 安全上限，防止超时
 
     all_items = briefing["items"]
@@ -260,7 +277,7 @@ async def search_more_opportunities(date: str):
         return {**cached, "searched": 0, "remaining": 0, "message": "所有情报均已分析完毕"}
 
     MIN_NEW_OPPS = 10
-    BATCH_ITEMS = 20   # 每轮分析 20 条
+    BATCH_ITEMS = 40   # 每轮分析 40 条（批次内 4 次 AI 调用并发执行）
     MAX_ITEMS = 80     # 安全上限
 
     unanalyzed.sort(key=lambda x: -x.get("relevance_score", 0))
@@ -447,15 +464,23 @@ async def batch_quick_reads(date: str):
 
 
 async def _analyze_items_for_rdev(items, date):
-    """对情报列表进行研发效能机会分析，返回附带 source 信息的 solutions 扁平列表"""
+    """对情报列表进行研发效能机会分析，返回附带 source 信息的 solutions 扁平列表。
+
+    每 10 条为一个批次，批次间并发执行（受 LLM_CONCURRENCY 限流）。
+    """
+    BATCH_SIZE = 10
+    sem = asyncio.Semaphore(LLM_CONCURRENCY)
+    batches = [items[i:i + BATCH_SIZE] for i in range(0, len(items), BATCH_SIZE)]
+    results = await asyncio.gather(*[_analyze_rdev_batch(b, date, sem) for b in batches])
+    return [sol for batch_sols in results for sol in batch_sols]
+
+
+async def _analyze_rdev_batch(batch, date, sem):
+    """分析单个批次（≤10 条）的研发效能机会，返回扁平 solution 列表。批次间相互独立、可并发。"""
     import re, json as _json
 
-    BATCH_SIZE = 10
     all_solutions = []
-
-    for batch_start in range(0, len(items), BATCH_SIZE):
-        batch = items[batch_start:batch_start + BATCH_SIZE]
-
+    async with sem:
         items_text = ""
         for idx, item in enumerate(batch, 1):
             content = (item.get("summary") or item.get("original_content") or "")[:400]
@@ -546,15 +571,15 @@ async def _analyze_items_for_rdev(items, date):
             batch_result = _json.loads(match.group(0) if match else raw)
 
             # 建立标题→item 的查找表，用于按标题纠正 source 归属
-            title_to_item = {item["title"]: item for item in items}
+            title_to_item = {item["title"]: item for item in batch}
 
             for entry in batch_result:
                 if not entry.get("has_solutions") or not entry.get("solutions"):
                     continue
-                real_idx = batch_start + entry["idx"] - 1
-                if real_idx >= len(items):
+                bi = entry.get("idx", 0) - 1
+                if bi < 0 or bi >= len(batch):
                     continue
-                fallback_item = items[real_idx]
+                fallback_item = batch[bi]
                 for sol in entry["solutions"]:
                     # 优先用 AI 返回的 source_item_title 精确匹配，避免 idx 错位
                     sit = sol.get("source_item_title", "")
@@ -579,8 +604,8 @@ async def _analyze_items_for_rdev(items, date):
                         "source_url": source_item["url"],
                         "item_id": source_item["id"],
                     })
-        except Exception as e:  
-            print(f"[rdev-opportunities] batch {batch_start} failed: {e}")
+        except Exception as e:
+            print(f"[rdev-opportunities] batch failed: {e}")
 
     return all_solutions
 

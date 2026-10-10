@@ -85,7 +85,7 @@ curl -X POST http://localhost:8000/api/experiments/generate-ideas/item \
 - [ ] **Step 4: Commit**
 
 ```bash
-cd /Users/shitaosun/Project/AI-Anything/token-burn
+cd /Users/shitaosun/Project/AI-Personal/token-burn
 git add backend/routers/experiments.py
 git commit -m "feat: add user_hint support to generate-ideas/item endpoint"
 ```
@@ -312,7 +312,7 @@ import { useState, useEffect, useRef, useCallback } from 'react'
 - [ ] **Step 6: 启动前端，验证交互**
 
 ```bash
-cd /Users/shitaosun/Project/AI-Anything/token-burn/frontend
+cd /Users/shitaosun/Project/AI-Personal/token-burn/frontend
 pnpm dev
 ```
 
@@ -328,7 +328,7 @@ pnpm dev
 - [ ] **Step 7: Commit**
 
 ```bash
-cd /Users/shitaosun/Project/AI-Anything/token-burn
+cd /Users/shitaosun/Project/AI-Personal/token-burn
 git add frontend/src/pages/BriefingPage.jsx
 git commit -m "feat: add guided idea generation with split button and popover"
 ```

@@ -1,6 +1,6 @@
 """日期相关 API"""
 from fastapi import APIRouter
-from services.storage import get_all_dates
+from services.storage import get_all_dates, get_opportunity_dates
 
 router = APIRouter()
 
@@ -10,6 +10,12 @@ async def get_dates():
     """获取所有有数据的日期列表"""
     dates = get_all_dates()
     return {"dates": dates}
+
+
+@router.get("/opportunities")
+async def get_dates_with_opportunities():
+    """获取至少有一类机会缓存数据的日期列表。"""
+    return {"dates": get_opportunity_dates()}
 
 
 @router.get("/adjacent/{date}")

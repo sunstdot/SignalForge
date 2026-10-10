@@ -89,6 +89,14 @@ function DailyOpportunityPage() {
             </div>
             <div className="daily-actions">
               <Link to={`/opportunities/${date}`} className="daily-action-link">查看完整机会看板</Link>
+              <a
+                href={`/api/share-pages/${date}.html`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="daily-action-link"
+              >
+                html-Anything小红书
+              </a>
               <button onClick={copyPost} className="daily-copy-btn">
                 {copied ? '已复制' : '复制小红书文案'}
               </button>

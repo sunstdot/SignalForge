@@ -1,0 +1,105 @@
+<style>
+  .xhs-stage{display:grid;grid-template-columns:repeat(2,minmax(360px,440px));gap:24px;align-items:start}
+  .xhs-page{aspect-ratio:3/4;background:#fbfaf7;border:1px solid #eadfce;border-radius:18px;padding:24px;display:flex;flex-direction:column;box-shadow:0 18px 40px rgba(70,50,20,.10)}
+  .xhs-kicker{font-size:12px;color:#9a3412;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+  .xhs-title{font-size:28px;line-height:1.1;font-weight:800;margin:8px 0 6px;color:#1f2937}
+  .xhs-sub{font-size:13px;line-height:1.5;color:#6b7280;margin-bottom:16px}
+  .xhs-list{display:flex;flex-direction:column;gap:10px}
+  .xhs-item{background:white;border:1px solid #eadfce;border-radius:12px;padding:12px}
+  .xhs-headline{display:grid;grid-template-columns:22px 1fr auto;gap:10px;align-items:center;margin-bottom:7px}
+  .xhs-rank{width:22px;height:22px;border-radius:999px;background:#111827;color:white;display:grid;place-items:center;font-size:12px;font-weight:700}
+  .xhs-score{font-size:11px;font-weight:700;color:#b45309;white-space:nowrap}
+  .xhs-item h4{font-size:15px;line-height:1.3;margin:0;color:#111827}
+  .xhs-item p{font-size:12px;line-height:1.55;margin:0;color:#4b5563}
+  .xhs-meta{display:flex;align-items:center;gap:8px;margin-top:8px}
+  .xhs-tag{display:inline-block;font-size:11px;color:#2563eb;background:#eff6ff;border-radius:999px;padding:3px 8px}
+  .xhs-footer{margin-top:auto;padding-top:16px;font-size:12px;color:#6b7280;display:flex;justify-content:space-between}
+  .accent-blue .xhs-kicker{color:#1d4ed8}
+  .accent-blue .xhs-score{color:#2563eb}
+  .accent-blue .xhs-rank{background:#1d4ed8}
+  .quick-card{padding:10px}
+  .quick-card h4{font-size:14px}
+  .quick-copy{font-size:11px;line-height:1.45;color:#374151}
+  .quick-copy b{color:#111827}
+  .quick-copy ul{margin:5px 0 5px 18px;padding:0}
+  .quick-copy li{margin:2px 0}
+  @media(max-width:980px){.xhs-stage{grid-template-columns:1fr}}
+</style>
+
+<h2>双页小红书样稿 v3</h2>
+<p class="subtitle">第二页已改为直接展示现有速读。先看“5 条全量速读”在图片里的真实效果。</p>
+
+<div class="xhs-stage">
+  <section class="xhs-page">
+    <div class="xhs-kicker">Page 1 / Business</div>
+    <div class="xhs-title">今天最值得看的 3 个 AI 商业机会</div>
+    <div class="xhs-sub">从 18 个候选里先挑分数最高、最容易讲清楚的 3 个。</div>
+    <div class="xhs-list">
+      <article class="xhs-item">
+        <div class="xhs-headline"><span class="xhs-rank">1</span><h4>AI 编程助手的超级记忆平台</h4><span class="xhs-score">16 / 20</span></div>
+        <p>解决代理遗忘上下文、重复解释项目背景的问题，适合做记忆层 SaaS。</p>
+        <div class="xhs-meta"><span class="xhs-tag">开发者工具</span></div>
+      </article>
+      <article class="xhs-item">
+        <div class="xhs-headline"><span class="xhs-rank">2</span><h4>闪电离线多语言配音桌面工具</h4><span class="xhs-score">16 / 20</span></div>
+        <p>抓住端侧 TTS 的速度和隐私优势，面向视频创作者做一次性付费产品。</p>
+        <div class="xhs-meta"><span class="xhs-tag">内容生产</span></div>
+      </article>
+      <article class="xhs-item">
+        <div class="xhs-headline"><span class="xhs-rank">3</span><h4>一键生成电商产品 3D 模型</h4><span class="xhs-score">16 / 20</span></div>
+        <p>把 3D 重建门槛从专业设备降到普通照片输入，适合包装成 Web 服务。</p>
+        <div class="xhs-meta"><span class="xhs-tag">电商 SaaS</span></div>
+      </article>
+    </div>
+    <div class="xhs-footer"><span>SignalForge</span><span>2026.05.14</span></div>
+  </section>
+
+  <section class="xhs-page accent-blue">
+    <div class="xhs-kicker">Page 2 / Signals</div>
+    <div class="xhs-title">今天我会继续跟踪的 5 条 AI 情报</div>
+    <div class="xhs-sub">直接展示已有速读内容，不再额外做摘要提炼。</div>
+    <div class="xhs-list">
+      <article class="xhs-item quick-card">
+        <div class="xhs-headline"><span class="xhs-rank">1</span><h4>openhuman</h4><span class="xhs-score">Repo</span></div>
+        <div class="quick-copy">
+          <b>核心内容：</b>OpenHuman 是一个基于 Rust 开发的个人 AI 超级智能系统，强调隐私保护、简洁易用和强大功能，支持本地部署运行。
+          <ul><li>采用 Rust 确保高性能和内存安全</li><li>主打私有化部署保障数据隐私</li></ul>
+          <b>值得关注：</b>个人 AI 基础设施正在从云端服务向本地化私有化部署转变。
+        </div>
+      </article>
+      <article class="xhs-item quick-card">
+        <div class="xhs-headline"><span class="xhs-rank">2</span><h4>PersonalAI 2.0</h4><span class="xhs-score">Paper</span></div>
+        <div class="quick-copy">
+          <b>核心内容：</b>通过规划机制增强知识图谱遍历与检索的个性化 LLM 代理框架。
+          <ul><li>整合外部知识图谱与 LLM</li><li>动态多阶段查询处理</li></ul>
+          <b>值得关注：</b>规划机制正在成为突破 GraphRAG 瓶颈的关键方向。
+        </div>
+      </article>
+      <article class="xhs-item quick-card">
+        <div class="xhs-headline"><span class="xhs-rank">3</span><h4>Codex on Windows sandbox</h4><span class="xhs-score">Blog</span></div>
+        <div class="quick-copy">
+          <b>核心内容：</b>OpenAI 为 Windows 上的 Codex 构建安全沙箱，平衡文件访问、网络限制与代理效率。
+          <ul><li>精细控制文件访问权限</li><li>施加网络限制以降低风险</li></ul>
+          <b>值得关注：</b>安全隔离是自主编码代理进入生产环境的前提。
+        </div>
+      </article>
+      <article class="xhs-item quick-card">
+        <div class="xhs-headline"><span class="xhs-rank">4</span><h4>Auto Research 来了</h4><span class="xhs-score">WeChat</span></div>
+        <div class="quick-copy">
+          <b>核心内容：</b>AI 开始接管科研中的长期优化工作，重点从一次性问答转向持续迭代。
+          <ul><li>真实工程优化环境</li><li>衡量持续优化而非单次方案</li></ul>
+          <b>值得关注：</b>科研代理的下一步是“耐心”，而不是只会给创意。
+        </div>
+      </article>
+      <article class="xhs-item quick-card">
+        <div class="xhs-headline"><span class="xhs-rank">5</span><h4>Sulphur-2-base</h4><span class="xhs-score">Model</span></div>
+        <div class="quick-copy">
+          <b>核心内容：</b>Sulphur-2-base 是一个文本到视频生成基础模型，在 HuggingFace 上已有较高热度。
+          <ul><li>专注文本到视频生成</li><li>下载量超过 62 万次</li></ul>
+          <b>值得关注：</b>视频生成模型仍处在高速扩张阶段。
+        </div>
+      </article>
+    </div>
+    <div class="xhs-footer"><span>SignalForge</span><span>2026.05.14</span></div>
+  </section>
+</div>

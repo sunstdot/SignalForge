@@ -34,6 +34,7 @@ from routers.manual_intel import router as manual_intel_router
 from routers.wiki import router as wiki_router
 from routers.last30days import router as last30days_router
 from routers.search import router as search_router
+from routers.venture_radar import router as venture_radar_router
 from services import wingsbot_client
 
 
@@ -81,6 +82,7 @@ app.include_router(manual_intel_router, prefix="/api/manual-intel", tags=["manua
 app.include_router(wiki_router, prefix="/api/wiki", tags=["wiki"])
 app.include_router(last30days_router, prefix="/api/last30days", tags=["last30days"])
 app.include_router(search_router, prefix="/api/search", tags=["search"])
+app.include_router(venture_radar_router, prefix="/api/venture-radar", tags=["venture-radar"])
 
 # 挂载静态分享页目录（必须在路由注册之后）
 share_pages_dir = Path(__file__).parent / "docs" / "share-pages"

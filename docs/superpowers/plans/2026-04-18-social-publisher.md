@@ -56,7 +56,7 @@ def save_social_post(date: str, platform: str, data: Dict):
 
 From the `backend/` directory, run:
 ```bash
-cd /Users/shitaosun/Project/AI-Anything/token-burn/backend
+cd /Users/shitaosun/Project/AI-Personal/token-burn/backend
 python -c "
 from services.storage import save_social_post, load_social_post
 save_social_post('2026-04-18', 'xiaohongshu', {'test': True})
@@ -70,7 +70,7 @@ Expected output: `storage OK`
 - [ ] **Step 3: Clean up test file**
 
 ```bash
-rm /Users/shitaosun/Project/AI-Anything/token-burn/data/social_posts/xiaohongshu/2026-04-18.json
+rm /Users/shitaosun/Project/AI-Personal/token-burn/data/social_posts/xiaohongshu/2026-04-18.json
 ```
 
 - [ ] **Step 4: Commit**
@@ -217,7 +217,7 @@ def generate_social_post(date: str, platform: str, top3_opps: List[Dict]) -> Dic
 - [ ] **Step 2: Verify the module imports correctly**
 
 ```bash
-cd /Users/shitaosun/Project/AI-Anything/token-burn/backend
+cd /Users/shitaosun/Project/AI-Personal/token-burn/backend
 python -c "
 from services.social_poster import generate_social_post, PLATFORM_GENERATORS
 assert 'xiaohongshu' in PLATFORM_GENERATORS
@@ -311,7 +311,7 @@ app.include_router(social.router, prefix="/api/social", tags=["social"])
 - [ ] **Step 3: Verify the server starts**
 
 ```bash
-cd /Users/shitaosun/Project/AI-Anything/token-burn/backend
+cd /Users/shitaosun/Project/AI-Personal/token-burn/backend
 python -c "
 from main import app
 routes = [r.path for r in app.routes]
@@ -613,7 +613,7 @@ Change to:
 - [ ] **Step 5: Verify the frontend compiles**
 
 ```bash
-cd /Users/shitaosun/Project/AI-Anything/token-burn/frontend
+cd /Users/shitaosun/Project/AI-Personal/token-burn/frontend
 pnpm run build 2>&1 | tail -20
 ```
 Expected: build completes with no errors (warnings are OK).

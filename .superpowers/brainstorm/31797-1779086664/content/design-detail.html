@@ -1,0 +1,221 @@
+<style>
+  .section-title { font-size: 11px; font-weight: 700; letter-spacing: .08em; color: #6b7280; text-transform: uppercase; margin: 20px 0 8px; }
+
+  /* ── Action Bar ── */
+  .action-bar {
+    display: flex; align-items: center; gap: 12px;
+    padding: 8px 16px; background: #0f172a;
+    border-bottom: 1px solid #1e293b;
+    font-size: 12px;
+  }
+  .action-bar-count { color: #94a3b8; }
+  .action-bar-count strong { color: #f1f5f9; }
+  .action-bar-spacer { flex: 1; }
+  .btn-clear { background: transparent; border: 1px solid #334155; color: #94a3b8; padding: 4px 10px; border-radius: 5px; font-size: 11px; cursor: pointer; }
+  .btn-gen { background: #9a3412; color: white; border: none; padding: 4px 12px; border-radius: 5px; font-size: 11px; font-weight: 600; cursor: pointer; }
+  .btn-gen:disabled { opacity: .5; cursor: default; }
+  .action-bar-empty { color: #374151; }
+
+  /* ── Briefing Page Signal Item ── */
+  .briefing-frame {
+    background: #111827; border-radius: 10px; border: 1px solid #1f2937; overflow: hidden;
+  }
+  .briefing-header {
+    padding: 8px 14px; border-bottom: 1px solid #1f2937;
+    font-size: 11px; color: #4b5563;
+    display: flex; gap: 8px; align-items: center;
+  }
+  .tab { padding: 3px 10px; border-radius: 5px; background: #1f2937; color: #6b7280; font-size: 11px; }
+  .tab.active { background: #2563eb22; color: #60a5fa; }
+
+  .sig-item {
+    display: flex; align-items: flex-start; gap: 0;
+    border-bottom: 1px solid #1f2937; padding: 10px 14px;
+    cursor: pointer; transition: background .15s;
+  }
+  .sig-item:hover { background: #1e293b44; }
+  .sig-item.checked { background: #1e3a5f33; }
+  .sig-checkbox {
+    width: 15px; height: 15px; border-radius: 3px; border: 1.5px solid #374151;
+    margin-top: 2px; flex-shrink: 0; margin-right: 10px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .sig-item.checked .sig-checkbox { background: #2563eb; border-color: #2563eb; }
+  .sig-item.checked .sig-checkbox::after { content: '✓'; color: white; font-size: 9px; }
+  .sig-no-qr .sig-checkbox { border-color: #1f2937; cursor: not-allowed; }
+  .sig-body { flex: 1; min-width: 0; }
+  .sig-title { font-size: 13px; color: #e2e8f0; line-height: 1.4; }
+  .sig-item.checked .sig-title { color: #93c5fd; }
+  .sig-no-qr .sig-title { color: #4b5563; }
+  .sig-meta { display: flex; gap: 6px; margin-top: 4px; align-items: center; }
+  .badge { font-size: 10px; padding: 1px 6px; border-radius: 99px; }
+  .badge-repo { background: #15803d22; color: #4ade80; }
+  .badge-news { background: #92400e22; color: #fbbf24; }
+  .badge-model { background: #0e7490; color: #67e8f9; }
+  .badge-paper { background: #7c3aed22; color: #a78bfa; }
+  .no-qr-hint { font-size: 10px; color: #374151; }
+
+  /* ── Opportunity Dashboard Card ── */
+  .opp-frame {
+    background: #111827; border-radius: 10px; border: 1px solid #1f2937; overflow: hidden;
+  }
+  .opp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: #1f2937; }
+  .opp-card {
+    background: #111827; padding: 12px;
+    cursor: pointer; transition: background .15s; position: relative;
+  }
+  .opp-card:hover { background: #1a2332; }
+  .opp-card.checked { background: #052e16; }
+  .opp-card-top { display: flex; align-items: flex-start; gap: 8px; margin-bottom: 6px; }
+  .opp-cb {
+    width: 15px; height: 15px; border-radius: 3px; border: 1.5px solid #374151;
+    flex-shrink: 0; display: flex; align-items: center; justify-content: center;
+    margin-top: 1px;
+  }
+  .opp-card.checked .opp-cb { background: #16a34a; border-color: #16a34a; }
+  .opp-card.checked .opp-cb::after { content: '✓'; color: white; font-size: 9px; }
+  .opp-card-title { font-size: 12px; font-weight: 600; color: #e2e8f0; line-height: 1.4; flex: 1; }
+  .opp-card.checked .opp-card-title { color: #4ade80; }
+  .opp-score-tag { font-size: 10px; color: #6b7280; white-space: nowrap; }
+  .opp-insight { font-size: 11px; color: #6b7280; line-height: 1.5; }
+  .opp-type { font-size: 10px; padding: 1px 6px; border-radius: 99px; background: #16a34a22; color: #4ade80; display: inline-block; margin-top: 5px; }
+  .opp-type.rdev { background: #2563eb22; color: #60a5fa; }
+
+  /* ── Toast ── */
+  .toast {
+    position: fixed; bottom: 24px; right: 24px;
+    background: #052e16; border: 1px solid #16a34a; color: #4ade80;
+    padding: 10px 16px; border-radius: 8px; font-size: 12px;
+    display: none;
+  }
+</style>
+
+<h2>设计细节确认</h2>
+<p class="subtitle">展示操作栏状态、情报复选框、机会卡片复选框三个部分的交互细节</p>
+
+<!-- Action Bar States -->
+<div class="section-title">① 顶部操作栏（嵌在两个页面的 sticky header 里）</div>
+<div style="display:flex;flex-direction:column;gap:6px">
+
+  <div style="font-size:11px;color:#4b5563;margin-bottom:2px">未选中时 — 不占空间，不显示（或 display:none）</div>
+
+  <div class="action-bar" style="opacity:.4">
+    <span class="action-bar-empty">尚未选择情报或机会</span>
+  </div>
+
+  <div style="font-size:11px;color:#4b5563;margin-top:6px;margin-bottom:2px">已选中时 — 显示计数和操作按钮</div>
+  <div class="action-bar">
+    <span class="action-bar-count">已选 <strong>3 条情报</strong> · <strong>2 个机会</strong></span>
+    <span class="action-bar-spacer"></span>
+    <button class="btn-clear">清空</button>
+    <button class="btn-gen">生成分享页 →</button>
+  </div>
+
+  <div style="font-size:11px;color:#4b5563;margin-top:6px;margin-bottom:2px">生成中状态</div>
+  <div class="action-bar">
+    <span class="action-bar-count">已选 <strong>3 条情报</strong> · <strong>2 个机会</strong></span>
+    <span class="action-bar-spacer"></span>
+    <button class="btn-clear" disabled>清空</button>
+    <button class="btn-gen" disabled>生成中...</button>
+  </div>
+</div>
+
+<!-- BriefingPage signals -->
+<div class="section-title">② AI 情报页 — 每条情报左侧加复选框</div>
+<div class="briefing-frame">
+  <div class="briefing-header">
+    <span class="tab active">全部</span>
+    <span class="tab">论文</span>
+    <span class="tab">仓库</span>
+    <span class="tab">资讯</span>
+    <span style="margin-left:auto;color:#2563eb;font-size:11px">已选 2 条</span>
+  </div>
+
+  <div class="sig-item checked">
+    <div class="sig-checkbox"></div>
+    <div class="sig-body">
+      <div class="sig-title">oven-sh/bun — Incredibly fast JavaScript runtime, bundler, test runner</div>
+      <div class="sig-meta"><span class="badge badge-repo">仓库</span></div>
+    </div>
+  </div>
+
+  <div class="sig-item">
+    <div class="sig-checkbox"></div>
+    <div class="sig-body">
+      <div class="sig-title">OpenAI and Malta partner to bring ChatGPT Plus to all citizens</div>
+      <div class="sig-meta"><span class="badge badge-news">资讯</span></div>
+    </div>
+  </div>
+
+  <div class="sig-item checked">
+    <div class="sig-checkbox"></div>
+    <div class="sig-body">
+      <div class="sig-title">openbmb/MiniCPM-V-4.6 多模态模型</div>
+      <div class="sig-meta"><span class="badge badge-model">模型</span></div>
+    </div>
+  </div>
+
+  <div class="sig-item sig-no-qr">
+    <div class="sig-checkbox"></div>
+    <div class="sig-body">
+      <div class="sig-title">Aligning Latent Geometry with Spherical Flow Matching</div>
+      <div class="sig-meta">
+        <span class="badge badge-paper">论文</span>
+        <span class="no-qr-hint">暂无速读，无法加入分享页</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- OpportunityDashboard cards -->
+<div class="section-title">③ 全部机会页 — 每张卡片左上角加复选框</div>
+<div class="opp-frame">
+  <div class="opp-grid">
+    <div class="opp-card checked">
+      <div class="opp-card-top">
+        <div class="opp-cb"></div>
+        <div class="opp-card-title">AI 驱动的代码安全审查机器人</div>
+        <div class="opp-score-tag">18/20</div>
+      </div>
+      <div class="opp-insight">AI 比传统 SAST 更理解代码语义，误报更低</div>
+      <span class="opp-type">商业机会</span>
+    </div>
+
+    <div class="opp-card">
+      <div class="opp-card-top">
+        <div class="opp-cb"></div>
+        <div class="opp-card-title">Claude Token Saver：代码库智能索引插件</div>
+        <div class="opp-score-tag">17/20</div>
+      </div>
+      <div class="opp-insight">100% 本地代码预索引可大幅减少每次对话的 token 消耗</div>
+      <span class="opp-type">商业机会</span>
+    </div>
+
+    <div class="opp-card checked">
+      <div class="opp-card-top">
+        <div class="opp-cb"></div>
+        <div class="opp-card-title">企业文档问答 SaaS 工具</div>
+        <div class="opp-score-tag">16/20</div>
+      </div>
+      <div class="opp-insight">办公文档问答精度突破，轻量级企业知识库问答产品可行</div>
+      <span class="opp-type">商业机会</span>
+    </div>
+
+    <div class="opp-card">
+      <div class="opp-card-top">
+        <div class="opp-cb"></div>
+        <div class="opp-card-title">代码审查 AI Agent 提效工具</div>
+        <div class="opp-score-tag">8/10</div>
+      </div>
+      <div class="opp-insight">结合 Claude Code 自动审查 PR 中的安全风险</div>
+      <span class="opp-type rdev">研发提效</span>
+    </div>
+  </div>
+</div>
+
+<div class="section-title">④ 生成后行为</div>
+<div style="font-size:12px;color:#94a3b8;line-height:1.8;padding:8px 0">
+  点"生成分享页"→ POST /api/share-pages/generate（带日期 + 选中 ID 列表）<br>
+  → 后端覆盖写入 <code style="background:#1f2937;padding:1px 5px;border-radius:3px">docs/share-pages/2026-05-18.html</code><br>
+  → 前端自动在新标签页打开 <code style="background:#1f2937;padding:1px 5px;border-radius:3px">/api/share-pages/2026-05-18.html</code>
+</div>

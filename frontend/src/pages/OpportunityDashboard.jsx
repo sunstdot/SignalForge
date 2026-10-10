@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { useShareSelection, ShareSelectionBar } from './useShareSelection'
+import { buildIdeaPayloadFromOpportunity } from './opportunityIdeaPayload'
 
 const TYPE_STYLES = {
   business: { label: '商业机会', color: '#16a34a', bg: '#f0fdf4' },
@@ -80,6 +81,7 @@ function OpportunityDashboard() {
   const [activeType, setActiveType] = useState('all')
   const [search, setSearch] = useState('')
   const [selected, setSelected] = useState(null)
+  const [ideaSaveStates, setIdeaSaveStates] = useState({})
 
   useEffect(() => {
     let cancelled = false
@@ -121,6 +123,27 @@ function OpportunityDashboard() {
   const avgScore = allItems.length
     ? (allItems.reduce((sum, item) => sum + item.totalScore / item.scoreMax, 0) / allItems.length * 10).toFixed(1)
     : '0.0'
+
+  async function saveBusinessOpportunityToIdeaPool(item) {
+    if (!item || item.kind !== 'business' || ideaSaveStates[item.id] === 'saved' || ideaSaveStates[item.id] === 'saving') return
+
+    const payload = buildIdeaPayloadFromOpportunity(item, date)
+    if (!payload) return
+
+    setIdeaSaveStates(prev => ({ ...prev, [item.id]: 'saving' }))
+    try {
+      const res = await fetch('/api/experiments/ideas', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      })
+      if (!res.ok) throw new Error(`HTTP ${res.status}`)
+      setIdeaSaveStates(prev => ({ ...prev, [item.id]: 'saved' }))
+    } catch (error) {
+      console.error('Failed to save opportunity idea:', error)
+      setIdeaSaveStates(prev => ({ ...prev, [item.id]: 'error' }))
+    }
+  }
 
   return (
     <>
@@ -194,6 +217,10 @@ function OpportunityDashboard() {
                 onToggle={item.kind === 'business'
                   ? (e) => { e.stopPropagation(); toggleOpportunity(item.rawId) }
                   : null}
+                onSaveIdea={item.kind === 'business'
+                  ? (e) => { e.stopPropagation(); saveBusinessOpportunityToIdeaPool(item) }
+                  : null}
+                ideaSaveState={ideaSaveStates[item.id]}
               />
             ))}
           </section>
@@ -214,7 +241,7 @@ function Stat({ label, value, color }) {
   )
 }
 
-function OpportunityCard({ item, onOpen, selected = false, onToggle }) {
+function OpportunityCard({ item, onOpen, selected = false, onToggle, onSaveIdea, ideaSaveState }) {
   const style = TYPE_STYLES[item.type] || TYPE_STYLES.default
   const labels = SCORE_LABELS[item.kind === 'business' ? 'business' : 'rdev']
 
@@ -268,6 +295,19 @@ function OpportunityCard({ item, onOpen, selected = false, onToggle }) {
         <span>{item.source}</span>
         <span>{item.audience.slice(0, 2).join(' / ')}</span>
       </div>
+      {onSaveIdea && (
+        <div className="opportunity-card-actions">
+          <button
+            type="button"
+            className="opportunity-idea-button"
+            onClick={onSaveIdea}
+            disabled={ideaSaveState === 'saving' || ideaSaveState === 'saved'}
+          >
+            {ideaSaveState === 'saving' ? '加入中...' : ideaSaveState === 'saved' ? '已加入想法池' : '加入想法池'}
+          </button>
+          {ideaSaveState === 'error' && <span>保存失败，请重试</span>}
+        </div>
+      )}
     </article>
   )
 }

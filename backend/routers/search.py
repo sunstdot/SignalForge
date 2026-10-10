@@ -8,7 +8,7 @@ from fastapi import APIRouter, HTTPException
 
 from services.last30days_jobs import create_job, finish_job, get_job
 from services.last30days_importer import run_last30days_via_wingsbot
-from services.last30days_brief import build_brief, brief_slug, load_brief, load_history
+from services.last30days_brief import build_brief, brief_slug, legacy_brief_slug, load_brief, load_history
 
 router = APIRouter()
 
@@ -43,7 +43,7 @@ async def search_history():
 @router.get("/brief")
 async def cached_brief(topic: str):
     """直接读取某 topic 已缓存的 brief 文件（用于刷新后恢复，不重新抓取）。"""
-    brief = load_brief(brief_slug(topic))
+    brief = load_brief(brief_slug(topic)) or load_brief(legacy_brief_slug(topic))
     if brief is None:
         raise HTTPException(status_code=404, detail="no cached brief")
     return brief

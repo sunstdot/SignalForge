@@ -1,0 +1,117 @@
+<style>
+  .xhs-stage{display:grid;grid-template-columns:repeat(2,minmax(320px,420px));gap:24px;align-items:start}
+  .xhs-page{aspect-ratio:3/4;background:#fbfaf7;border:1px solid #eadfce;border-radius:18px;padding:24px;display:flex;flex-direction:column;box-shadow:0 18px 40px rgba(70,50,20,.10)}
+  .xhs-kicker{font-size:12px;color:#9a3412;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+  .xhs-title{font-size:28px;line-height:1.1;font-weight:800;margin:8px 0 6px;color:#1f2937}
+  .xhs-sub{font-size:13px;line-height:1.5;color:#6b7280;margin-bottom:16px}
+  .xhs-list{display:flex;flex-direction:column;gap:10px}
+  .xhs-item{background:white;border:1px solid #eadfce;border-radius:12px;padding:12px}
+  .xhs-headline{display:grid;grid-template-columns:22px 1fr auto;gap:10px;align-items:center;margin-bottom:7px}
+  .xhs-rank{width:22px;height:22px;border-radius:999px;background:#111827;color:white;display:grid;place-items:center;font-size:12px;font-weight:700}
+  .xhs-score{font-size:11px;font-weight:700;color:#b45309;white-space:nowrap}
+  .xhs-item h4{font-size:15px;line-height:1.3;margin:0;color:#111827}
+  .xhs-item p{font-size:12px;line-height:1.55;margin:0;color:#4b5563}
+  .xhs-meta{display:flex;align-items:center;gap:8px;margin-top:8px}
+  .xhs-tag{display:inline-block;font-size:11px;color:#2563eb;background:#eff6ff;border-radius:999px;padding:3px 8px}
+  .xhs-origin{font-size:11px;color:#9ca3af}
+  .xhs-footer{margin-top:auto;padding-top:16px;font-size:12px;color:#6b7280;display:flex;justify-content:space-between}
+  .accent-blue .xhs-kicker{color:#1d4ed8}
+  .accent-blue .xhs-score{color:#2563eb}
+  .accent-blue .xhs-rank{background:#1d4ed8}
+  @media(max-width:900px){.xhs-stage{grid-template-columns:1fr}}
+</style>
+
+<h2>双页小红书样稿 v2</h2>
+<p class="subtitle">第一页已改成“序号 + 标题 + 分数”同一行。灰字用于说明文案来源逻辑，不一定进入最终成品。</p>
+
+<div class="xhs-stage">
+  <section class="xhs-page">
+    <div class="xhs-kicker">Page 1 / Business</div>
+    <div class="xhs-title">今天最值得看的 3 个 AI 商业机会</div>
+    <div class="xhs-sub">从 18 个候选里先挑分数最高、最容易讲清楚的 3 个。</div>
+    <div class="xhs-list">
+      <article class="xhs-item">
+        <div class="xhs-headline">
+          <span class="xhs-rank">1</span>
+          <h4>AI 编程助手的超级记忆平台</h4>
+          <span class="xhs-score">16 / 20</span>
+        </div>
+        <p>解决代理遗忘上下文、重复解释项目背景的问题，适合做记忆层 SaaS。</p>
+        <div class="xhs-meta"><span class="xhs-tag">开发者工具</span><span class="xhs-origin">core_insight + product_form</span></div>
+      </article>
+      <article class="xhs-item">
+        <div class="xhs-headline">
+          <span class="xhs-rank">2</span>
+          <h4>闪电离线多语言配音桌面工具</h4>
+          <span class="xhs-score">16 / 20</span>
+        </div>
+        <p>抓住端侧 TTS 的速度和隐私优势，面向视频创作者做一次性付费产品。</p>
+        <div class="xhs-meta"><span class="xhs-tag">内容生产</span><span class="xhs-origin">core_insight + product_form</span></div>
+      </article>
+      <article class="xhs-item">
+        <div class="xhs-headline">
+          <span class="xhs-rank">3</span>
+          <h4>一键生成电商产品 3D 模型</h4>
+          <span class="xhs-score">16 / 20</span>
+        </div>
+        <p>把 3D 重建门槛从专业设备降到普通照片输入，适合包装成 Web 服务。</p>
+        <div class="xhs-meta"><span class="xhs-tag">电商 SaaS</span><span class="xhs-origin">core_insight + product_form</span></div>
+      </article>
+    </div>
+    <div class="xhs-footer"><span>SignalForge</span><span>2026.05.14</span></div>
+  </section>
+
+  <section class="xhs-page accent-blue">
+    <div class="xhs-kicker">Page 2 / Signals</div>
+    <div class="xhs-title">今天我会继续跟踪的 5 条 AI 情报</div>
+    <div class="xhs-sub">这里先按来源多样化挑选，后续可再叠加质量排序规则。</div>
+    <div class="xhs-list">
+      <article class="xhs-item">
+        <div class="xhs-headline">
+          <span class="xhs-rank">1</span>
+          <h4>openhuman</h4>
+          <span class="xhs-score">Repo</span>
+        </div>
+        <p>个人 AI 基础设施继续升温，说明“私有智能体”仍有产品空间。</p>
+        <div class="xhs-meta"><span class="xhs-tag">GitHub Trending</span><span class="xhs-origin">title + original_content 二次提炼</span></div>
+      </article>
+      <article class="xhs-item">
+        <div class="xhs-headline">
+          <span class="xhs-rank">2</span>
+          <h4>PersonalAI 2.0</h4>
+          <span class="xhs-score">Paper</span>
+        </div>
+        <p>个性化检索开始引入规划机制，记忆与检索会继续融合。</p>
+        <div class="xhs-meta"><span class="xhs-tag">HuggingFace Papers</span><span class="xhs-origin">title + summary 二次提炼</span></div>
+      </article>
+      <article class="xhs-item">
+        <div class="xhs-headline">
+          <span class="xhs-rank">3</span>
+          <h4>Codex on Windows sandbox</h4>
+          <span class="xhs-score">Blog</span>
+        </div>
+        <p>AI coding 工具开始补齐企业级安全和隔离能力。</p>
+        <div class="xhs-meta"><span class="xhs-tag">OpenAI Blog</span><span class="xhs-origin">title + raw_text 二次提炼</span></div>
+      </article>
+      <article class="xhs-item">
+        <div class="xhs-headline">
+          <span class="xhs-rank">4</span>
+          <h4>Auto Research 来了</h4>
+          <span class="xhs-score">WeChat</span>
+        </div>
+        <p>科研 agent 化继续推进，知识工作自动化的边界在上移。</p>
+        <div class="xhs-meta"><span class="xhs-tag">极客公园</span><span class="xhs-origin">title + raw_text 二次提炼</span></div>
+      </article>
+      <article class="xhs-item">
+        <div class="xhs-headline">
+          <span class="xhs-rank">5</span>
+          <h4>Sulphur-2-base</h4>
+          <span class="xhs-score">Model</span>
+        </div>
+        <p>模型更新继续密集，垂直能力分化仍在加快。</p>
+        <div class="xhs-meta"><span class="xhs-tag">HuggingFace Models</span><span class="xhs-origin">title + metadata 二次提炼</span></div>
+      </article>
+    </div>
+    <div class="xhs-footer"><span>SignalForge</span><span>2026.05.14</span></div>
+  </section>
+</div>

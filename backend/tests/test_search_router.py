@@ -51,7 +51,7 @@ class SearchBriefRouterTest(unittest.TestCase):
                     break
                 time.sleep(0.05)
             self.assertEqual(job["status"], "done")
-            self.assertEqual(job["brief_slug"], "loop-engineering")  # job carries slug ref only
+            self.assertRegex(job["brief_slug"], r"^loop-engineering-[0-9a-f]{8}$")  # job carries slug ref only
             self.assertEqual(job["brief"]["meta"]["total"], 3)       # brief loaded from file
 
     def test_cached_brief_by_topic(self):

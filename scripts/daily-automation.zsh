@@ -1,5 +1,5 @@
 #!/bin/zsh
-# SignalForge 每日情报自动化：收集 → 构建静态站点 → 部署 staging → 发布 GitHub Pages
+# SignalForge 每日情报自动化：收集 → 构建静态站点 → 部署 staging → 发布 GitHub Pages → 发布 GitHub Pages
 #
 # 由 launchd 定时调用（com.signalforge.daily.plist），也可手动执行。
 # 日志写到 logs/daily-automation.log，按日期轮转。
@@ -50,20 +50,18 @@ echo_to_log "✓ 静态站点构建完成"
 
 # ─── Step 3: 部署到 staging ────────────────────────────────────────
 log "Step 3: deploy to staging"
-cd "$FRONTEND_DIR"
 /usr/local/bin/jinx dist -e staging >> "$LOG_FILE" 2>&1
 echo_to_log "✓ 部署到 staging 完成"
 
 # ─── Step 4: 构建 GitHub Pages 版本 ────────────────────────────────
 log "Step 4: build GitHub Pages static site"
-cd "$FRONTEND_DIR"
 rm -rf dist
 npm run build:pages >> "$LOG_FILE" 2>&1
 echo_to_log "✓ GitHub Pages 静态站点构建完成"
 
 # ─── Step 5: 发布到 GitHub Pages ──────────────────────────────────
 log "Step 5: deploy to GitHub Pages"
-/bin/zsh "$PROJECT_ROOT/scripts/deploy-github-pages.zsh" >> "$LOG_FILE" 2>&1
+"$PROJECT_ROOT/scripts/deploy-github-pages.zsh" >> "$LOG_FILE" 2>&1
 echo_to_log "✓ GitHub Pages 发布完成"
 
 log "全部步骤成功 ✅"

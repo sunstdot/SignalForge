@@ -1,0 +1,165 @@
+<style>
+  .demo-wrap { display: flex; gap: 20px; flex-wrap: wrap; }
+  .demo-panel {
+    flex: 1; min-width: 320px; background: #1a1a1a; border-radius: 12px;
+    border: 1px solid #333; overflow: hidden;
+  }
+  .demo-panel-header {
+    padding: 10px 14px; border-bottom: 1px solid #333;
+    font-size: 11px; color: #888; font-weight: 600; letter-spacing: .06em;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .demo-badge { background: #2563eb22; color: #60a5fa; padding: 2px 8px; border-radius: 99px; font-size: 10px; }
+
+  /* Floating bar */
+  .float-bar {
+    background: #111827; border: 1px solid #374151; border-radius: 10px;
+    padding: 10px 16px; margin: 0 0 16px;
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 12px;
+  }
+  .float-bar-info { font-size: 12px; color: #9ca3af; }
+  .float-bar-info strong { color: #f9fafb; }
+  .float-bar-actions { display: flex; gap: 8px; }
+  .btn-clear { background: transparent; border: 1px solid #374151; color: #9ca3af; padding: 5px 12px; border-radius: 6px; font-size: 12px; cursor: pointer; }
+  .btn-gen { background: #9a3412; color: white; border: none; padding: 5px 14px; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer; }
+
+  /* Signal item */
+  .signal-item {
+    margin: 8px; background: #111; border: 1px solid #2d2d2d; border-radius: 8px;
+    padding: 10px 12px; position: relative;
+  }
+  .signal-item.selected { border-color: #2563eb; background: #1e293b; }
+  .signal-top { display: flex; align-items: flex-start; gap: 8px; }
+  .signal-check { width: 16px; height: 16px; border-radius: 4px; border: 2px solid #444; flex-shrink: 0; margin-top: 2px; background: transparent; }
+  .signal-check.checked { background: #2563eb; border-color: #2563eb; position: relative; }
+  .signal-check.checked::after { content: '✓'; color: white; font-size: 10px; position: absolute; top: -1px; left: 2px; }
+  .signal-title { font-size: 13px; color: #e5e7eb; line-height: 1.4; }
+  .signal-meta { display: flex; gap: 6px; margin-top: 6px; padding-left: 24px; }
+  .signal-badge { font-size: 10px; padding: 1px 7px; border-radius: 99px; }
+  .badge-paper { background: #7c3aed22; color: #a78bfa; }
+  .badge-repo { background: #15803d22; color: #4ade80; }
+  .badge-news { background: #92400e22; color: #fbbf24; }
+  .badge-model { background: #0e7490; color: #67e8f9; }
+
+  /* Opportunity card */
+  .opp-card {
+    margin: 8px; background: #111; border: 1px solid #2d2d2d; border-radius: 8px; padding: 10px 12px;
+    position: relative;
+  }
+  .opp-card.selected { border-color: #16a34a; background: #052e16; }
+  .opp-top { display: flex; align-items: flex-start; gap: 8px; }
+  .opp-check { width: 16px; height: 16px; border-radius: 4px; border: 2px solid #444; flex-shrink: 0; margin-top: 3px; background: transparent; }
+  .opp-check.checked { background: #16a34a; border-color: #16a34a; position: relative; }
+  .opp-check.checked::after { content: '✓'; color: white; font-size: 10px; position: absolute; top: -1px; left: 2px; }
+  .opp-title { font-size: 13px; color: #e5e7eb; font-weight: 600; line-height: 1.4; }
+  .opp-score { margin-left: auto; font-size: 11px; color: #6b7280; white-space: nowrap; }
+  .opp-insight { font-size: 11px; color: #6b7280; margin-top: 4px; padding-left: 24px; line-height: 1.5; }
+  .opp-type-tag { font-size: 10px; padding: 1px 7px; border-radius: 99px; background: #16a34a22; color: #4ade80; margin-top: 5px; display: inline-block; margin-left: 24px; }
+
+  .page-hint { font-size: 11px; color: #4b5563; padding: 6px 8px; }
+</style>
+
+<h2>选内容 → 生成分享页</h2>
+<p class="subtitle">在 AI情报页 和 全部机会页 各加多选框，选好后点顶部按钮生成分享页。下面是设计预览：</p>
+
+<div class="section">
+  <p class="label">顶部悬浮操作栏（两个页面共享选中状态）</p>
+  <div class="float-bar">
+    <div class="float-bar-info">已选 <strong>3 条情报</strong> · <strong>2 个机会</strong></div>
+    <div class="float-bar-actions">
+      <button class="btn-clear">清空选择</button>
+      <button class="btn-gen">生成分享页 →</button>
+    </div>
+  </div>
+</div>
+
+<div class="demo-wrap">
+  <!-- 情报页 -->
+  <div class="demo-panel">
+    <div class="demo-panel-header">
+      AI 情报页（BriefingPage）
+      <span class="demo-badge">3 已选</span>
+    </div>
+    <div class="page-hint">只有已生成速读的条目可勾选</div>
+
+    <div class="signal-item selected">
+      <div class="signal-top">
+        <div class="signal-check checked"></div>
+        <div class="signal-title">oven-sh/bun — Incredibly fast JavaScript runtime, bundler, test runner</div>
+      </div>
+      <div class="signal-meta">
+        <span class="signal-badge badge-repo">仓库</span>
+      </div>
+    </div>
+
+    <div class="signal-item">
+      <div class="signal-top">
+        <div class="signal-check"></div>
+        <div class="signal-title">OpenAI and Malta partner to bring ChatGPT Plus to all citizens</div>
+      </div>
+      <div class="signal-meta">
+        <span class="signal-badge badge-news">资讯</span>
+      </div>
+    </div>
+
+    <div class="signal-item selected">
+      <div class="signal-top">
+        <div class="signal-check checked"></div>
+        <div class="signal-title">openbmb/MiniCPM-V-4.6 多模态模型</div>
+      </div>
+      <div class="signal-meta">
+        <span class="signal-badge badge-model">模型</span>
+      </div>
+    </div>
+
+    <div class="signal-item selected">
+      <div class="signal-top">
+        <div class="signal-check checked"></div>
+        <div class="signal-title">Aligning Latent Geometry with Spherical Flow Matching</div>
+      </div>
+      <div class="signal-meta">
+        <span class="signal-badge badge-paper">论文</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 机会看板 -->
+  <div class="demo-panel">
+    <div class="demo-panel-header">
+      全部机会页（OpportunityDashboard）
+      <span class="demo-badge" style="background:#16a34a22;color:#4ade80">2 已选</span>
+    </div>
+    <div class="page-hint">商业机会与研发机会均可勾选</div>
+
+    <div class="opp-card selected">
+      <div class="opp-top">
+        <div class="opp-check checked"></div>
+        <div class="opp-title">AI驱动的代码安全审查机器人</div>
+        <div class="opp-score">18/20</div>
+      </div>
+      <div class="opp-insight">AI比传统SAST更理解代码语义，误报更低，可为开发者提供轻量即时的安全反馈。</div>
+      <span class="opp-type-tag">商业机会</span>
+    </div>
+
+    <div class="opp-card">
+      <div class="opp-top">
+        <div class="opp-check"></div>
+        <div class="opp-title">Claude Token Saver：代码库智能索引插件</div>
+        <div class="opp-score">17/20</div>
+      </div>
+      <div class="opp-insight">100%本地代码预索引可大幅减少每次对话的token消耗，直接省钱效果立竿见影。</div>
+      <span class="opp-type-tag">商业机会</span>
+    </div>
+
+    <div class="opp-card selected">
+      <div class="opp-top">
+        <div class="opp-check checked"></div>
+        <div class="opp-title">企业文档问答 SaaS 工具</div>
+        <div class="opp-score">16/20</div>
+      </div>
+      <div class="opp-insight">办公文档问答精度突破，使轻量级企业知识库问答产品可行。</div>
+      <span class="opp-type-tag">商业机会</span>
+    </div>
+  </div>
+</div>

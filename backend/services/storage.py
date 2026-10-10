@@ -99,9 +99,26 @@ def get_content_item_by_id(item_id: str) -> Optional[Dict]:
     return None
 
 
+NON_DAILY_ORIGINS = {"last30days", "venture-product-radar"}
+
+
+def _has_daily_content(date: str) -> bool:
+    """该日期是否有真正的 daily 采集内容。
+
+    辅助导入数据不应作为"今日 AI 情报"档期出现。只要当天存在任意一条普通日更来源的
+    内容，就算一次真实采集。
+    """
+    items = _load_content_file(date)
+    return any(
+        (item.get("metadata") or {}).get("origin") not in NON_DAILY_ORIGINS
+        for item in items
+    )
+
+
 def get_all_dates() -> List[str]:
-    """返回有内容的日期列表（倒序）"""
-    return sorted([p.stem for p in CONTENT_DIR.glob("*.json")], reverse=True)
+    """返回真正采集过 daily 内容的日期列表（倒序）。"""
+    dates = sorted([p.stem for p in CONTENT_DIR.glob("*.json")], reverse=True)
+    return [d for d in dates if _has_daily_content(d)]
 
 
 def get_content_stats() -> Dict:
@@ -216,6 +233,24 @@ def load_rdev_opportunities(date: str) -> Optional[Dict]:
 def save_rdev_opportunities(date: str, data: Dict):
     path = RDEV_DIR / f"{date}.json"
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def _cache_has_items(path: Path, key: str) -> bool:
+    if not path.exists():
+        return False
+    values = json.loads(path.read_text(encoding="utf-8")).get(key)
+    return isinstance(values, list) and len(values) > 0
+
+
+def get_opportunity_dates() -> List[str]:
+    """返回至少有一类机会缓存数据的日期列表（倒序）。"""
+    dates = {path.stem for path in OPPORTUNITIES_DIR.glob("*.json")}
+    dates.update(path.stem for path in RDEV_DIR.glob("*.json"))
+    return [
+        date for date in sorted(dates, reverse=True)
+        if _cache_has_items(OPPORTUNITIES_DIR / f"{date}.json", "opportunities")
+        or _cache_has_items(RDEV_DIR / f"{date}.json", "solutions")
+    ]
 
 
 # ───────────────────────── 实验想法 ─────────────────────────

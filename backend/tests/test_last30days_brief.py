@@ -5,7 +5,7 @@ from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from services.last30days_brief import aggregate_brief, synthesize_narrative, build_brief
+from services.last30days_brief import aggregate_brief, synthesize_narrative, build_brief, _load_topic_items, brief_slug
 
 
 def _item(st, title, score, date, author, vol, eng):
@@ -123,6 +123,18 @@ class HistoryTest(unittest.TestCase):
         self.assertEqual([h["slug"] for h in hist], ["loop-engineering", "agents"])
         self.assertEqual(hist[0]["total"], 7)  # updated count, deduped
 
+    def test_record_dedups_same_topic_when_slug_changes(self):
+        import tempfile
+        import services.last30days_brief as mod
+        with tempfile.TemporaryDirectory() as d:
+            with patch.object(mod, "HISTORY_FILE", Path(d) / "history.json"):
+                mod.record_history("openAI相关的信息", "openai", 0)
+                mod.record_history("openAI相关的信息", "openai-b3dc6240", 16)
+                hist = mod.load_history()
+        self.assertEqual(len(hist), 1)
+        self.assertEqual(hist[0]["slug"], "openai-b3dc6240")
+        self.assertEqual(hist[0]["total"], 16)
+
     def test_load_history_empty_when_missing(self):
         import tempfile
         import services.last30days_brief as mod
@@ -143,13 +155,73 @@ class BriefFileTest(unittest.TestCase):
                  patch.object(mod, "synthesize_narrative", return_value={}):
                 mod.build_brief("Loop Engineering")  # persist=True default
                 slug = brief_slug("Loop Engineering")
-                self.assertEqual(slug, "loop-engineering")
-                self.assertTrue((Path(d) / "loop-engineering.json").exists())
+                self.assertTrue(slug.startswith("loop-engineering-"))
+                self.assertTrue((Path(d) / f"{slug}.json").exists())
                 loaded = load_brief(slug)
                 self.assertEqual(loaded["meta"]["total"], 3)
         # missing slug → None
         with patch.object(mod, "BRIEFS_DIR", Path(d)):
             self.assertIsNone(load_brief("loop-engineering"))
+
+
+class LoadTopicItemsTest(unittest.TestCase):
+    def test_finds_topic_items_beyond_default_content_page(self):
+        distractors = [
+            {
+                "title": f"Other item {i}",
+                "tags": ["Other"],
+                "metadata": {"origin": "last30days", "topic": "Other"},
+            }
+            for i in range(600)
+        ]
+        target = {
+            "title": "OpenAI chip discussion",
+            "tags": ["OpenAI"],
+            "metadata": {"origin": "last30days", "topic": "OpenAI"},
+        }
+        all_items = distractors + [target]
+
+        def fake_get_content_items(limit):
+            return all_items[:limit]
+
+        with patch("services.last30days_brief.get_content_items", side_effect=fake_get_content_items):
+            items = _load_topic_items("OpenAI")
+
+        self.assertEqual(items, [target])
+
+    def test_matches_named_entity_inside_descriptive_query(self):
+        target = {
+            "title": "OpenAI chip discussion",
+            "tags": ["OpenAI"],
+            "metadata": {"origin": "last30days", "topic": "OpenAI"},
+        }
+
+        with patch("services.last30days_brief.get_content_items", return_value=[target]):
+            items = _load_topic_items("openAI相关的信息")
+
+        self.assertEqual(items, [target])
+
+    def test_descriptive_query_token_does_not_match_unrelated_titles(self):
+        unrelated = {
+            "title": "Peter Steinberger joins OpenAI",
+            "tags": ["Peter Steinberger"],
+            "metadata": {"origin": "last30days", "topic": "Peter Steinberger"},
+        }
+
+        with patch("services.last30days_brief.get_content_items", return_value=[unrelated]):
+            items = _load_topic_items("openAI相关的信息")
+
+        self.assertEqual(items, [])
+
+
+class SlugTest(unittest.TestCase):
+    def test_slug_keeps_readable_prefix_and_hashes_original_topic(self):
+        self.assertRegex(brief_slug("OpenAI"), r"^openai-[0-9a-f]{8}$")
+        self.assertRegex(brief_slug("openAI相关的信息"), r"^openai-[0-9a-f]{8}$")
+        self.assertRegex(brief_slug("大模型推理成本"), r"^topic-[0-9a-f]{8}$")
+
+    def test_slug_distinguishes_mixed_and_plain_topics(self):
+        self.assertNotEqual(brief_slug("OpenAI"), brief_slug("openAI相关的信息"))
 
 
 if __name__ == "__main__":

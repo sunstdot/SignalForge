@@ -1,7 +1,9 @@
 """内容相关 API"""
 from datetime import datetime
 from typing import Optional
+from urllib.parse import urlparse
 from fastapi import APIRouter, Query, HTTPException
+from pydantic import BaseModel, Field
 
 from services.storage import get_content_items, get_content_item_by_id, get_content_stats, load_quick_reads, save_quick_read
 from services.llm_client import chat_async
@@ -98,6 +100,30 @@ async def quick_read(request: dict):
         save_quick_read(date, item_id, summary)
 
     return {"summary": summary, "cached": False}
+
+
+class PaperQuickReadRequest(BaseModel):
+    item_id: str = Field(min_length=1)
+
+
+@router.post("/paper-quick-read")
+async def paper_quick_read(request: PaperQuickReadRequest):
+    from services.paper_quick_read import read_paper
+
+    item = get_content_item_by_id(request.item_id)
+    if not item:
+        raise HTTPException(status_code=404, detail="未找到这篇论文，请刷新页面后重试。")
+    if item.get("source_type") not in {"paper", "arxiv"}:
+        raise HTTPException(status_code=400, detail="论文速读仅支持论文条目。")
+    url = urlparse(item.get("url") or "")
+    if url.scheme not in {"http", "https"} or not url.hostname:
+        raise HTTPException(status_code=400, detail="论文缺少有效的原文链接。")
+    try:
+        return await read_paper(item)
+    except TimeoutError:
+        raise HTTPException(status_code=504, detail="论文速读超时，请稍后重试。")
+    except Exception:
+        raise HTTPException(status_code=502, detail="论文速读生成失败，请重试；若持续失败，请检查 Wingsbot 服务与模型配置。")
 
 
 @router.get("/{id}")

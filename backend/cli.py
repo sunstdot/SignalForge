@@ -372,6 +372,55 @@ def cmd_import_last30days(args):
         print(f"✅ 批量导入 {n} 条情报")
 
 
+# `python3 backend/cli.py venture-radar` 的完整调用链路（当前为 direct 模式，不调用 Wingsbot Agent）：
+#
+# main()
+#   └─ argparse 解析 venture-radar 子命令
+#      ├─ --mode：radar（默认）/ vc / product / finance
+#      ├─ --sources：all（默认）或逗号分隔的数据源
+#      ├─ --lookback-days：7（默认）
+#      └─ --max-items：30（默认）
+#   └─ venture_parser.set_defaults(func=cmd_venture_radar)
+#      └─ args.func(args) → cmd_venture_radar(args)
+#
+# cmd_venture_radar(args)
+#   └─ run_venture_product_radar_direct(...)
+#      ├─ build_direct_venture_radar_command(...)
+#      │  └─ 组装外部命令：当前 Python 解释器 + venture-product-radar skill 脚本
+#      │     + 固定周报主题 + mode/sources/lookback_days/max_items
+#      ├─ subprocess.run(check=True, capture_output=True, text=True)
+#      │  └─ 同步运行 venture_product_radar.py；脚本通过 RSS、GDELT、GitHub、
+#      │     Hacker News、Hugging Face、Product Hunt 等连接器采集数据，并将
+#      │     WebSearchEnricher 产出的查询保存为后续研究任务（不会由 Agent 自动执行 WebSearch）。
+#      ├─ 脚本把 JSON 写入 ~/Documents/VentureProductRadar，并在 stdout 最后一行打印路径
+#      ├─ _report_path_from_stdout(stdout) 校验并取得报告路径
+#      └─ import_venture_product_radar_file(report_path)
+#         └─ import_venture_radar_report(report_path)
+#         ├─ 校验 schema_version 和 topic
+#         ├─ 复制原始 JSON 到 data/venture_radar/reports
+#         └─ 更新 data/venture_radar/index.json 的报告摘要和 ISO 周索引
+#   └─ 打印 report_path、reports_archived 和 archive.id
+#
+# Wingsbot 能力走另一条链路，不会经过本函数：
+# POST /api/venture-radar/research（或 /vc、/product、/finance）
+#   → 后台线程 → run_venture_product_radar_via_wingsbot(...) → _trigger_wingsbot(...)
+#   → AgentLoop.process_direct(...) → Agent 加载 skill、执行 WebSearch/Bash/MCP、补证并保存 JSON
+#   → 与 direct 模式汇合，只导入周归档；客户端通过 GET /research/{job_id} 查询状态。
+def cmd_venture_radar(args):
+    """运行本周创投产品雷达并导入周归档"""
+    from services.venture_product_radar_importer import run_venture_product_radar_direct
+
+    result = run_venture_product_radar_direct(
+        mode=args.mode,
+        sources=args.sources,
+        lookback_days=args.lookback_days,
+        max_items=args.max_items,
+    )
+    print(f"✅ Venture radar report: {result['report_path']}")
+    print(f"✓ Archived reports: {result['reports_archived']}")
+    print(f"✓ Archive id: {result['archive']['id']}")
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="TokenBurner CLI - AI 情报收集工具",
@@ -430,6 +479,13 @@ def main():
     l30_parser.add_argument("--file", help="解析单个 raw v3 markdown 文件")
     l30_parser.add_argument("--dir", help="批量解析目录（默认 ~/Documents/Last30Days）")
     l30_parser.set_defaults(func=cmd_import_last30days)
+
+    venture_parser = subparsers.add_parser("venture-radar", help="运行本周创投产品雷达并导入归档")
+    venture_parser.add_argument("--mode", choices=["radar", "vc", "product", "finance"], default="radar")
+    venture_parser.add_argument("--sources", default="all", help="逗号分隔 source 或 all")
+    venture_parser.add_argument("--lookback-days", type=int, default=7)
+    venture_parser.add_argument("--max-items", type=int, default=30)
+    venture_parser.set_defaults(func=cmd_venture_radar)
 
     args = parser.parse_args()
     if not args.command:

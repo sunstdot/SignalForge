@@ -90,19 +90,11 @@ sources:
         category: ["ai", "meta", "engineering"]
         fetchInterval: 3600
         priority: "high"
-
-      - name: "Cohere Blog"
-        type: "direct"
-        source_type: "blog"
-        url: "https://cohere.com/blog/rss.xml"
-        category: ["ai", "cohere", "enterprise"]
-        fetchInterval: 3600
-        priority: "high"
   
       - name: "Anthropic Blog"
         type: "direct"
         source_type: "blog"
-        url: "https://rss.app/feeds/yQRnUTh3nySegGbE.xml"
+        url: "rsshub://anthropic/research"
         category: ["ai", "anthropic", "official"]
         fetchInterval: 3600
         priority: "high"
@@ -148,14 +140,6 @@ sources:
         fetchInterval: 3600
         priority: "high"
 
-      - name: "AI Investor News"
-        type: "direct"
-        source_type: "investor"
-        url: "https://rss.app/rss-feed?keyword=Artificial%20Intelligence&region=US&lang=en"
-        category: ["investor", "ai", "us", "news"]
-        fetchInterval: 3600
-        priority: "high"
-
       - name: "The AI Valley"
         type: "direct"
         source_type: "news"
@@ -175,15 +159,6 @@ sources:
         url: "https://www.bensbites.com/feed"
         category: ["ai", "tools", "weekly"]
         fetchInterval: 86400
-
-      # ----------------------------------------------------------
-      # 4.3 论文相关
-      # ----------------------------------------------------------
-      - name: "AMiner"
-        type: "direct"
-        url: "https://www.aminer.cn/rss"
-        category: ["ai", "papers", "science"]
-        fetchInterval: 3600
 
       # ----------------------------------------------------------
       # 4.4 技术/AI 博客

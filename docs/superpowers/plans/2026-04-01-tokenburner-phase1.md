@@ -164,7 +164,7 @@ Thumbs.db
 - [ ] **Step 4: Initialize git and commit**
 
 ```bash
-cd /Users/shitaosun/Project/AI-Anything/token-burn
+cd /Users/shitaosun/Project/AI-Personal/token-burn
 git init
 git add package.json turbo.json .gitignore
 git commit -m "chore: initialize monorepo structure"
@@ -358,7 +358,7 @@ export * from './types/config';
 - [ ] **Step 6: Install dependencies and build**
 
 ```bash
-cd /Users/shitaosun/Project/AI-Anything/token-burn/packages/shared
+cd /Users/shitaosun/Project/AI-Personal/token-burn/packages/shared
 pnpm install
 pnpm build
 ```
@@ -366,7 +366,7 @@ pnpm build
 - [ ] **Step 7: Commit**
 
 ```bash
-cd /Users/shitaosun/Project/AI-Anything/token-burn
+cd /Users/shitaosun/Project/AI-Personal/token-burn
 git add packages/shared/
 git commit -m "feat(shared): add content and config types"
 ```
@@ -563,7 +563,7 @@ export * from './models';
 - [ ] **Step 6: Install and build**
 
 ```bash
-cd /Users/shitaosun/Project/AI-Anything/token-burn/packages/ai-client
+cd /Users/shitaosun/Project/AI-Personal/token-burn/packages/ai-client
 pnpm install
 pnpm build
 ```
@@ -571,7 +571,7 @@ pnpm build
 - [ ] **Step 7: Commit**
 
 ```bash
-cd /Users/shitaosun/Project/AI-Anything/token-burn
+cd /Users/shitaosun/Project/AI-Personal/token-burn
 git add packages/ai-client/
 git commit -m "feat(ai-client): add OpenRouter client with multi-model support"
 ```
@@ -923,14 +923,14 @@ export class DatabaseClient {
 - [ ] **Step 5: Install dependencies**
 
 ```bash
-cd /Users/shitaosun/Project/AI-Anything/token-burn/apps/collector
+cd /Users/shitaosun/Project/AI-Personal/token-burn/apps/collector
 pnpm install
 ```
 
 - [ ] **Step 6: Commit**
 
 ```bash
-cd /Users/shitaosun/Project/AI-Anything/token-burn
+cd /Users/shitaosun/Project/AI-Personal/token-burn
 git add apps/collector/
 git commit -m "feat(collector): add database schema and client"
 ```
@@ -1060,7 +1060,7 @@ describe('fetchArxivPapers', () => {
 - [ ] **Step 3: Run test to verify**
 
 ```bash
-cd /Users/shitaosun/Project/AI-Anything/token-burn/apps/collector
+cd /Users/shitaosun/Project/AI-Personal/token-burn/apps/collector
 pnpm test tests/sources/arxiv.test.ts
 ```
 
@@ -1069,7 +1069,7 @@ Expected: Test passes with actual arXiv data fetched
 - [ ] **Step 4: Commit**
 
 ```bash
-cd /Users/shitaosun/Project/AI-Anything/token-burn
+cd /Users/shitaosun/Project/AI-Personal/token-burn
 git add apps/collector/src/sources/arxiv.ts apps/collector/tests/
 git commit -m "feat(collector): add arXiv data source"
 ```
@@ -1189,14 +1189,14 @@ describe('fetchGitHubTrending', () => {
 - [ ] **Step 3: Run test**
 
 ```bash
-cd /Users/shitaosun/Project/AI-Anything/token-burn/apps/collector
+cd /Users/shitaosun/Project/AI-Personal/token-burn/apps/collector
 pnpm test tests/sources/github.test.ts
 ```
 
 - [ ] **Step 4: Commit**
 
 ```bash
-cd /Users/shitaosun/Project/AI-Anything/token-burn
+cd /Users/shitaosun/Project/AI-Personal/token-burn
 git add apps/collector/src/sources/github.ts
 git commit -m "feat(collector): add GitHub trending data source"
 ```
@@ -1344,7 +1344,7 @@ function parseSummaryResponse(text: string): SummaryResult {
 - [ ] **Step 3: Commit**
 
 ```bash
-cd /Users/shitaosun/Project/AI-Anything/token-burn
+cd /Users/shitaosun/Project/AI-Personal/token-burn
 git add apps/collector/src/pipeline/
 git commit -m "feat(collector): add AI processing pipeline (filter + summarize)"
 ```
@@ -1539,7 +1539,7 @@ async function generateSummary(
 - [ ] **Step 3: Commit**
 
 ```bash
-cd /Users/shitaosun/Project/AI-Anything/token-burn
+cd /Users/shitaosun/Project/AI-Personal/token-burn
 git add apps/collector/src/briefing/
 git commit -m "feat(collector): add daily briefing generator"
 ```
@@ -1795,7 +1795,7 @@ pipeline:
 - [ ] **Step 4: Commit**
 
 ```bash
-cd /Users/shitaosun/Project/AI-Anything/token-burn
+cd /Users/shitaosun/Project/AI-Personal/token-burn
 git add apps/collector/src/index.ts apps/collector/src/config/ config/
 git commit -m "feat(collector): add main service entry point and config"
 ```
@@ -2117,14 +2117,14 @@ export default function HomePage() {
 - [ ] **Step 9: Install and build**
 
 ```bash
-cd /Users/shitaosun/Project/AI-Anything/token-burn/apps/web
+cd /Users/shitaosun/Project/AI-Personal/token-burn/apps/web
 pnpm install
 ```
 
 - [ ] **Step 10: Commit**
 
 ```bash
-cd /Users/shitaosun/Project/AI-Anything/token-burn
+cd /Users/shitaosun/Project/AI-Personal/token-burn
 git add apps/web/
 git commit -m "feat(web): add Next.js dashboard for daily briefing"
 ```
@@ -2242,7 +2242,7 @@ OPENROUTER_API_KEY=your_api_key_here
 - [ ] **Step 4: Commit**
 
 ```bash
-cd /Users/shitaosun/Project/AI-Anything/token-burn
+cd /Users/shitaosun/Project/AI-Personal/token-burn
 git add package.json README.md .env.example
 git commit -m "docs: add README and environment configuration"
 ```

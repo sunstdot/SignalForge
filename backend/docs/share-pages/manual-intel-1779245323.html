@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>我的情报收藏精选</title>
+  <style>
+body{margin:0;padding:32px;background:#f5f4f1;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}
+.xhs-stage{display:grid;grid-template-columns:repeat(3,360px);gap:20px}
+.xhs-page{aspect-ratio:3/4;background:#fbfaf7;border:1px solid #eadfce;border-radius:18px;padding:22px;display:flex;flex-direction:column;overflow:hidden}
+.xhs-kicker{font-size:12px;font-weight:700;letter-spacing:.08em;color:#9a3412}
+h1{font-size:22px;line-height:1.12;margin:8px 0 12px}
+.xhs-list{display:flex;flex-direction:column;gap:10px;overflow:hidden}
+.xhs-item{background:white;border:1px solid #eadfce;border-radius:12px;padding:12px;overflow:hidden}
+.xhs-headline{display:grid;grid-template-columns:22px 1fr;gap:8px;align-items:flex-start;margin-bottom:6px}
+.xhs-rank{width:22px;height:22px;border-radius:999px;background:#111827;color:white;display:grid;place-items:center;font-size:12px;flex-shrink:0}
+h4{font-size:13px;line-height:1.35;margin:0;color:#111827;font-weight:700}
+p,li{font-size:11px;line-height:1.55;color:#374151}
+.quick-copy p{margin:0 0 4px}
+.quick-copy ul{margin:4px 0 4px 14px;padding:0}
+.note{font-style:italic;color:#6b7280;font-size:11px;margin:0 0 4px}
+footer{margin-top:auto;padding-top:12px;display:flex;justify-content:space-between;color:#6b7280;font-size:11px}
+</style>
+</head>
+<body>
+  <main class="xhs-stage">
+    
+    <section class="xhs-page">
+      <div class="xhs-kicker">📌 我的情报精选 · 1/1</div>
+      <h1>精选情报速读</h1>
+      <div class="xhs-list">
+        <article class="xhs-item">
+          <div class="xhs-headline">
+            <span class="xhs-rank">1</span>
+            <h4>Learning Beyond Gradients</h4>
+          </div>
+          <p class="note">💬 一种新的范式,在AIcoding能力越来越强的今天，维护规则的成本变得更低。</p>
+          <div class="quick-copy"><p><strong>核心内容</strong>：文章提出了一种超越梯度下降的新学习范式“启发式学习”，核心是用编程式策略替代神经网络权重更新，借助编码代理持续迭代一个包含规则、测试、记忆与反馈的软件系统，从而大幅提升样本效率、可解释性与抗遗忘能力。</p><p><strong>关键信息</strong>：</p><ul><li>作者在维护环境池时意外发现，用编码代理迭代生成的纯代码策略，在雅达利、MuJoCo等环境中达到或超越了常见深度强化学习结果，部分甚至触及理论上限。</li><li>这种新范式被定义为“启发式学习”，它更新的是软件结构而非神经网络参数；其反馈可来自奖励、测试、日志、回放或人工输入，更新方式是直接编辑代码。</li><li>启发式学习所维护的对象称为“启发式系统”，它不仅包含策略代码，还整合了状态检测、反馈通道、实验记录、回归测试与显式记忆等模块。</li><li>相比深度强化学习，启发式学习具有可解释性强、样本效率高、支持回归测试、可通过工程手段约束过拟合，并能将旧能力固化为规则和测试以缓解灾难性遗忘。</li></ul><p><strong>值得关注</strong>：编码代理改变了维护成本曲线，让过去难以长期持有的手工规则可以持续迭代，这可能成为预训练、RLHF和大规模RL之后的下一轮范式转折点。</p></div>
+        </article></div>
+      <footer><span>SignalForge 手动情报</span><span>2026-05-19</span></footer>
+    </section>
+  </main>
+</body>
+</html>

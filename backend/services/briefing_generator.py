@@ -117,10 +117,11 @@ def generate_briefing_for_date(date: str) -> Optional[Dict]:
         "hackernews": 20,
         "newsletter": 10,
         "news": 20,
+        "anthropic_blog": 5,
     }
     PER_SOURCE_LIMIT = 3  # 每个具体 source 最多 3 条，避免单源垄断
     # 聚合源（每条来自不同项目/论文），不受 per-source 限制
-    NO_PER_SOURCE_LIMIT_TYPES = {"arxiv", "paper", "github", "repo", "model", "smolai", "hackernews"}
+    NO_PER_SOURCE_LIMIT_TYPES = {"arxiv", "paper", "github", "repo", "model", "smolai", "hackernews", "anthropic_blog"}
 
     by_type: Dict[str, List] = {}
     for item in unique_items:
@@ -130,7 +131,10 @@ def generate_briefing_for_date(date: str) -> Optional[Dict]:
     items = []
     for t, type_items in by_type.items():
         limit = type_limits.get(t, 10)
-        type_items.sort(key=lambda x: -x.get("relevance_score", 0))
+        if t == "anthropic_blog":
+            type_items.sort(key=lambda x: x.get("published_at", ""), reverse=True)
+        else:
+            type_items.sort(key=lambda x: -x.get("relevance_score", 0))
         # 先做每类 top N，再做每 source 限流（聚合源跳过限流）
         source_counts: Dict[str, int] = {}
         skip_per_source = t in NO_PER_SOURCE_LIMIT_TYPES
@@ -143,8 +147,12 @@ def generate_briefing_for_date(date: str) -> Optional[Dict]:
             source_counts[src] = source_counts.get(src, 0) + 1
             items.append(item)
 
-    # 最终排序：按 relevance_score 降序
-    items.sort(key=lambda x: -x.get("relevance_score", 0))
+    # 最终排序：普通条目按相关度，Agent 获取的 Anthropic 文章固定追加到末尾。
+    regular_items = [item for item in items if item.get("source_type") != "anthropic_blog"]
+    anthropic_items = [item for item in items if item.get("source_type") == "anthropic_blog"]
+    regular_items.sort(key=lambda x: -x.get("relevance_score", 0))
+    anthropic_items.sort(key=lambda x: x.get("published_at", ""), reverse=True)
+    items = regular_items + anthropic_items
 
     result_items = []
     for item in items:

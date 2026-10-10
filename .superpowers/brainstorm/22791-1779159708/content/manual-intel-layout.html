@@ -1,0 +1,273 @@
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f5f5; display: flex; min-height: 100vh; }
+
+  /* Sidebar */
+  .sidebar {
+    width: 220px; flex-shrink: 0; background: #fafafa; border-right: 1px solid #e5e5e5;
+    padding: 20px 12px; display: flex; flex-direction: column; gap: 4px;
+  }
+  .sidebar-title { font-size: 18px; font-weight: 700; color: #111; padding: 0 8px 4px; }
+  .sidebar-sub { font-size: 12px; color: #999; padding: 0 8px 16px; }
+  .sidebar-label { font-size: 10px; font-weight: 600; color: #aaa; text-transform: uppercase; letter-spacing: 0.08em; padding: 4px 8px 6px; }
+  .menu-item {
+    display: flex; align-items: center; gap: 8px; padding: 8px 10px; border-radius: 6px;
+    font-size: 13px; color: #444; cursor: pointer; transition: background 0.15s;
+  }
+  .menu-item:hover { background: #eee; }
+  .menu-item.active { background: #e8f0fe; color: #1a56db; font-weight: 500; }
+  .menu-item.new-item { background: #fff8e6; color: #b45309; border: 1.5px dashed #f59e0b; }
+  .menu-item.new-item:hover { background: #fef3c7; }
+  .divider { height: 1px; background: #e5e5e5; margin: 8px 0; }
+
+  /* Main content */
+  .main { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+  .page-header {
+    background: #fff; border-bottom: 1px solid #e5e5e5; padding: 20px 28px 16px;
+  }
+  .page-title { font-size: 20px; font-weight: 700; color: #111; margin-bottom: 4px; display: flex; align-items: center; gap: 8px; }
+  .page-subtitle { font-size: 13px; color: #888; }
+
+  /* Input area */
+  .input-area {
+    background: #fff; margin: 16px 28px; border-radius: 10px;
+    border: 1px solid #e5e5e5; padding: 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+  .input-row { display: flex; gap: 8px; margin-bottom: 10px; }
+  .url-input {
+    flex: 1; border: 1.5px solid #d1d5db; border-radius: 6px; padding: 9px 12px;
+    font-size: 13px; color: #374151; outline: none;
+    background: #f9fafb;
+  }
+  .platform-select {
+    border: 1.5px solid #d1d5db; border-radius: 6px; padding: 9px 10px;
+    font-size: 13px; color: #374151; background: #f9fafb; width: 120px;
+  }
+  .submit-btn {
+    background: #1a56db; color: #fff; border: none; border-radius: 6px;
+    padding: 9px 16px; font-size: 13px; font-weight: 500; cursor: pointer; white-space: nowrap;
+  }
+  .note-input {
+    width: 100%; border: 1.5px solid #e5e7eb; border-radius: 6px; padding: 8px 12px;
+    font-size: 12px; color: #6b7280; background: #f9fafb; resize: none; height: 36px;
+    font-family: inherit;
+  }
+
+  /* Items list */
+  .items-list { padding: 0 28px 28px; display: flex; flex-direction: column; gap: 12px; overflow-y: auto; }
+  .item-card {
+    background: #fff; border-radius: 10px; border: 1px solid #e5e5e5;
+    padding: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  .item-header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 10px; }
+  .item-title { font-size: 14px; font-weight: 600; color: #111; line-height: 1.4; flex: 1; margin-right: 12px; }
+  .item-title a { color: #1a56db; text-decoration: none; }
+  .item-title a:hover { text-decoration: underline; }
+  .item-meta { display: flex; align-items: center; gap: 6px; margin-top: 6px; }
+  .badge {
+    font-size: 11px; padding: 2px 7px; border-radius: 4px; font-weight: 500;
+  }
+  .badge-x { background: #f0f0f0; color: #333; }
+  .badge-reddit { background: #fff0eb; color: #c0392b; }
+  .badge-blog { background: #eef2ff; color: #4338ca; }
+  .badge-manual { background: #f0fdf4; color: #15803d; border: 1px solid #bbf7d0; font-size: 10px; }
+  .item-date { font-size: 11px; color: #aaa; }
+  .item-note { font-size: 12px; color: #6b7280; background: #f9fafb; border-radius: 5px; padding: 6px 10px; margin-bottom: 10px; font-style: italic; }
+
+  /* Analysis sections */
+  .analysis-sections { display: flex; flex-direction: column; gap: 8px; }
+  .analysis-block {
+    border: 1px solid #e5e7eb; border-radius: 7px; overflow: hidden;
+  }
+  .analysis-header {
+    display: flex; align-items: center; gap: 6px; padding: 8px 12px;
+    background: #f9fafb; cursor: pointer; font-size: 12px; font-weight: 500; color: #374151;
+    justify-content: space-between;
+  }
+  .analysis-header:hover { background: #f3f4f6; }
+  .analysis-content { padding: 10px 12px; font-size: 12px; color: #4b5563; line-height: 1.6; }
+  .analysis-content.collapsed { display: none; }
+  .chevron { font-size: 10px; color: #9ca3af; transition: transform 0.2s; }
+  .chevron.open { transform: rotate(180deg); }
+
+  .item-actions { display: flex; gap: 6px; flex-shrink: 0; }
+  .action-btn {
+    font-size: 11px; padding: 4px 8px; border-radius: 5px; border: 1px solid #e5e7eb;
+    background: #fff; color: #6b7280; cursor: pointer;
+  }
+  .action-btn:hover { background: #f9fafb; color: #374151; }
+  .action-btn.danger:hover { border-color: #fca5a5; background: #fef2f2; color: #dc2626; }
+
+  .filter-bar { display: flex; gap: 6px; padding: 12px 28px 0; }
+  .filter-chip {
+    font-size: 12px; padding: 4px 10px; border-radius: 20px; border: 1px solid #e5e7eb;
+    background: #fff; color: #6b7280; cursor: pointer;
+  }
+  .filter-chip.active { background: #1a56db; color: #fff; border-color: #1a56db; }
+
+  .empty-state { text-align: center; padding: 48px 0; color: #9ca3af; font-size: 14px; }
+  .count-badge { font-size: 11px; background: #e5e7eb; color: #6b7280; border-radius: 10px; padding: 1px 6px; margin-left: 4px; }
+</style>
+
+<div style="display:flex; min-height: 85vh; border-radius: 10px; overflow: hidden; border: 1px solid #e5e5e5;">
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="sidebar-title">TokenBurner</div>
+    <div class="sidebar-sub">AI Intelligence Hub</div>
+    <div class="sidebar-label">Menu</div>
+    <div class="menu-item active"><span>📊</span><span>今日 AI 情报</span></div>
+    <div class="menu-item"><span>🎯</span><span>今日 AI 情报机会</span></div>
+    <div class="menu-item"><span>🧭</span><span>机会看板</span></div>
+    <div class="menu-item"><span>🔬</span><span>实验直播场</span></div>
+    <div class="menu-item"><span>💡</span><span>实验想法池</span></div>
+    <div class="divider"></div>
+    <div class="menu-item new-item" style="cursor:pointer;">
+      <span>📌</span><span>我的情报收藏</span>
+    </div>
+  </div>
+
+  <!-- Main area -->
+  <div class="main">
+    <div class="page-header">
+      <div class="page-title">📌 我的情报收藏 <span class="count-badge">3</span></div>
+      <div class="page-subtitle">手动录入的情报，自动生成速读与机会分析</div>
+    </div>
+
+    <!-- URL Input -->
+    <div class="input-area">
+      <div class="input-row">
+        <input class="url-input" value="https://x.com/karpathy/status/..." placeholder="粘贴文章链接…" readonly />
+        <select class="platform-select">
+          <option>𝕏 (Twitter)</option>
+          <option>Reddit</option>
+          <option>Blog</option>
+          <option>HackerNews</option>
+          <option>其他</option>
+        </select>
+        <button class="submit-btn">+ 录入情报</button>
+      </div>
+      <textarea class="note-input" placeholder="添加备注（可选）：为什么觉得这条内容值得收藏？" readonly></textarea>
+    </div>
+
+    <!-- Filter bar -->
+    <div class="filter-bar">
+      <div class="filter-chip active">全部</div>
+      <div class="filter-chip">𝕏</div>
+      <div class="filter-chip">Reddit</div>
+      <div class="filter-chip">Blog</div>
+    </div>
+
+    <!-- Items -->
+    <div class="items-list" style="margin-top:12px;">
+
+      <!-- Item 1 -->
+      <div class="item-card">
+        <div class="item-header">
+          <div style="flex:1;">
+            <div class="item-title">
+              <a href="#">Andrej Karpathy: 未来一年 AI Coding 的演进方向，以及为何当前工具仍有根本性局限</a>
+            </div>
+            <div class="item-meta">
+              <span class="badge badge-x">𝕏</span>
+              <span class="badge badge-manual">手动录入</span>
+              <span class="item-date">2026-05-19 09:32</span>
+            </div>
+          </div>
+          <div class="item-actions">
+            <button class="action-btn">重新分析</button>
+            <button class="action-btn danger">删除</button>
+          </div>
+        </div>
+        <div class="item-note">💬 karpathy 对 AI coding 工具的批判很有深度，值得结合我们自己的产品思考</div>
+        <div class="analysis-sections">
+          <div class="analysis-block">
+            <div class="analysis-header" onclick="toggle(this)">
+              <span>⚡ 速读摘要</span><span class="chevron open">▼</span>
+            </div>
+            <div class="analysis-content">
+              <strong>核心内容：</strong>Karpathy 认为当前 AI coding 工具在上下文管理和长任务规划上存在根本性缺陷，预测未来 12 个月将出现「代码理解型」Agent 而非「代码生成型」工具。<br><br>
+              <strong>关键信息：</strong><br>
+              - 当前工具本质是「自动补全++」，缺乏对整个代码库的理解<br>
+              - 真正的突破在于 persistent memory + codebase graph 结合<br>
+              - 未来 Agent 会主动维护对项目的「心智模型」
+            </div>
+          </div>
+          <div class="analysis-block">
+            <div class="analysis-header" onclick="toggle(this)">
+              <span>💼 商业机会</span><span class="chevron">▼</span>
+            </div>
+            <div class="analysis-content collapsed">
+              开发面向中小团队的「代码库理解层」工具，作为现有 AI coding 助手的中间件，提供持久化的项目语义图谱。目标用户：10-50 人工程团队，痛点是 AI 工具在大型 monorepo 中的失效问题。
+            </div>
+          </div>
+          <div class="analysis-block">
+            <div class="analysis-header" onclick="toggle(this)">
+              <span>🔬 研发机会</span><span class="chevron">▼</span>
+            </div>
+            <div class="analysis-content collapsed">
+              研究方向：基于增量更新的代码库语义图（Code Knowledge Graph），结合 AST 解析与 LLM embedding，实现跨文件的上下文压缩。技术路径：Tree-sitter + 向量索引 + 增量 diff 更新机制。
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="item-card">
+        <div class="item-header">
+          <div style="flex:1;">
+            <div class="item-title">
+              <a href="#">Reddit r/MachineLearning: 实用主义 vs 学术派 — 当下做 AI 产品最大的认知错位在哪</a>
+            </div>
+            <div class="item-meta">
+              <span class="badge badge-reddit">Reddit</span>
+              <span class="badge badge-manual">手动录入</span>
+              <span class="item-date">2026-05-18 21:10</span>
+            </div>
+          </div>
+          <div class="item-actions">
+            <button class="action-btn">重新分析</button>
+            <button class="action-btn danger">删除</button>
+          </div>
+        </div>
+        <div class="analysis-sections">
+          <div class="analysis-block">
+            <div class="analysis-header" onclick="toggle(this)">
+              <span>⚡ 速读摘要</span><span class="chevron">▼</span>
+            </div>
+            <div class="analysis-content collapsed">速读内容…</div>
+          </div>
+          <div class="analysis-block">
+            <div class="analysis-header" onclick="toggle(this)">
+              <span>💼 商业机会</span><span class="chevron">▼</span>
+            </div>
+            <div class="analysis-content collapsed">商业机会分析…</div>
+          </div>
+          <div class="analysis-block">
+            <div class="analysis-header" onclick="toggle(this)">
+              <span>🔬 研发机会</span><span class="chevron">▼</span>
+            </div>
+            <div class="analysis-content collapsed">研发机会分析…</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+function toggle(header) {
+  const content = header.nextElementSibling;
+  const chevron = header.querySelector('.chevron');
+  const isOpen = !content.classList.contains('collapsed');
+  if (isOpen) {
+    content.classList.add('collapsed');
+    chevron.classList.remove('open');
+  } else {
+    content.classList.remove('collapsed');
+    chevron.classList.add('open');
+  }
+}
+</script>
