@@ -1,50 +1,19 @@
-"""Use Wingsbot Agent to discover Anthropic's latest technical articles."""
-
+"""从 Anthropic 官方栏目页确定性获取近期技术文章。"""
 import hashlib
-import json
 import re
-from datetime import datetime
+from datetime import date, datetime, timedelta
 from typing import Dict, List
 from urllib.parse import urlsplit, urlunsplit
 
-ANTHROPIC_TECHNICAL_ARTICLES_PROMPT = """你是一名技术情报研究 Agent。请获取 Anthropic 官方技术博客最新的 5 篇技术文章。
+import aiohttp
+from bs4 import BeautifulSoup
 
-执行要求：
-1. 必须实际使用网页搜索和读取工具，不要依赖记忆回答。
-2. 只接受 anthropic.com 官方域名下engineering和research上的文章。
-4. 每个文章上有发布日期，按文章官方发布日期降序排序，只保留最新 5 篇文章。
-5. 必须打开这5个候选的文章页面，核验官方英文标题、规范 URL、发布日期、所属栏目和正文内容，如果发现不符合要求，从前面排序的文章中顺位补上继续核验，直到找到符合要求的5篇文章。
-6. 排除招聘、活动、纯公司公告、政策声明以及其他非技术内容。
-7. 为每篇文章撰写不超过 150 个中文字符的技术摘要，并提供主题标签。
-8. 如果无法核验某个字段，放弃该文章，不要猜测。
-
-最终只输出严格 JSON，不要输出 Markdown 代码块或任何解释。结构必须是：
-{
-  "source": "Anthropic",
-  "fetched_at": "ISO 8601",
-  "articles": [
-    {
-      "title": "官方英文标题",
-      "url": "Anthropic 官方 URL",
-      "published_at": "YYYY-MM-DD",
-      "section": "栏目名称",
-      "summary": "中文技术摘要",
-      "tags": ["anthropic", "technical", "主题"]
-    }
-  ]
-}
-"""
-
-
-async def ainvoke_wingsbot(content: str, **kwargs):
-    """Import lazily so an unavailable optional Agent cannot break RSS collection."""
-    from .wingsbot_client import ainvoke_wingsbot as invoke
-
-    return await invoke(content, **kwargs)
+BASE_URL = "https://www.anthropic.com"
+SECTIONS = ("engineering", "research")
 
 
 def normalize_url(url: str) -> str:
-    """Return a stable URL suitable for cross-source deduplication."""
+    """归一化 URL，去除追踪参数，供跨源去重使用。"""
     try:
         parts = urlsplit(url.strip())
         host = (parts.hostname or "").lower()
@@ -55,111 +24,99 @@ def normalize_url(url: str) -> str:
         return ""
     if port:
         host = f"{host}:{port}"
-    path = parts.path.rstrip("/") or "/"
-    return urlunsplit((parts.scheme.lower(), host, path, "", ""))
+    return urlunsplit((parts.scheme.lower(), host, parts.path.rstrip("/") or "/", "", ""))
 
 
-def _is_anthropic_url(url: str) -> bool:
-    parts = urlsplit(url)
-    host = (parts.hostname or "").lower()
-    return parts.scheme.lower() in {"http", "https"} and (
-        host == "anthropic.com" or host.endswith(".anthropic.com")
-    ) and parts.path.rstrip("/") != ""
+def parse_anthropic_articles(html: str, section: str) -> List[Dict]:
+    """分别解析 Engineering 列表和 Research publication 列表。"""
+    if section not in SECTIONS:
+        return []
+    soup = BeautifulSoup(html, "html.parser")
+    articles = []
+    seen = set()
+    for link in soup.select(f'a[href^="/{section}/"]'):
+        path = link.get("href", "").split("?", 1)[0]
+        if path.count("/") != 2 or path in seen:
+            continue  # 排除 /research/team/* 导航等链接
+        title = link.select_one("h3" if section == "engineering" else '[class*="PublicationList"][class*="title"]')
+        time = link.select_one("time")
+        if not title or not time:
+            continue
+        try:
+            value = time.get("datetime") or time.get_text(" ", strip=True)
+            published = (date.fromisoformat(value[:10]) if re.match(r"^\d{4}-\d{2}-\d{2}", value)
+                         else datetime.strptime(value, "%b %d, %Y").date())
+        except (ValueError, TypeError):
+            continue
+        seen.add(path)
+        articles.append({
+            "title": title.get_text(" ", strip=True),
+            "url": BASE_URL + path,
+            "published_at": published.isoformat(),
+            "section": section,
+        })
+    return sorted(articles, key=lambda item: item["published_at"], reverse=True)
 
 
-def _parse_response_content(raw: str) -> Dict:
-    text = raw.strip()
-    fenced = re.fullmatch(r"```(?:json)?\s*(.*?)\s*```", text, re.DOTALL | re.IGNORECASE)
-    if fenced:
-        text = fenced.group(1)
-    payload = json.loads(text)
-    if not isinstance(payload, dict) or payload.get("source") != "Anthropic":
-        raise ValueError("Wingsbot response has an invalid source")
-    fetched_at = payload.get("fetched_at")
-    if not isinstance(fetched_at, str):
-        raise ValueError("Wingsbot response has an invalid fetched_at")
-    try:
-        datetime.fromisoformat(fetched_at.replace("Z", "+00:00"))
-    except ValueError as exc:
-        raise ValueError("Wingsbot response has an invalid fetched_at") from exc
-    articles = payload.get("articles")
-    if not isinstance(articles, list):
-        raise ValueError("Wingsbot response must contain an articles array")
-    required_strings = {"title", "url", "published_at", "section", "summary"}
-    for article in articles:
-        if not isinstance(article, dict):
-            raise ValueError("Wingsbot response contains an invalid article")
-        if any(not isinstance(article.get(key), str) for key in required_strings):
-            raise ValueError("Wingsbot response contains an invalid article field")
-        tags = article.get("tags")
-        if not isinstance(tags, list) or any(not isinstance(tag, str) for tag in tags):
-            raise ValueError("Wingsbot response contains invalid tags")
-    return payload
+async def _fetch_html(url: str) -> str:
+    timeout = aiohttp.ClientTimeout(total=15)
+    async with aiohttp.ClientSession(timeout=timeout) as session:
+        async with session.get(url, headers={"User-Agent": "Mozilla/5.0"}) as response:
+            response.raise_for_status()
+            return await response.text()
 
 
-def _article_to_item(article: Dict, target_date: str | None) -> Dict | None:
-    if not isinstance(article, dict):
-        return None
-
-    title = article.get("title")
-    url = article.get("url")
-    published_at = article.get("published_at")
-    summary = article.get("summary")
-    section = article.get("section")
-    tags = article.get("tags")
-    if not all(isinstance(value, str) and value.strip() for value in (
-        title, url, published_at, summary, section
-    )):
-        return None
-    try:
-        datetime.strptime(published_at, "%Y-%m-%d")
-    except ValueError:
-        return None
-    if not _is_anthropic_url(url):
-        return None
-
-    canonical_url = normalize_url(url)
-    if not canonical_url:
-        return None
-    item_id = "anthropic-" + hashlib.sha256(canonical_url.encode("utf-8")).hexdigest()[:20]
-    clean_tags = [tag.strip() for tag in tags if isinstance(tag, str) and tag.strip()] if isinstance(tags, list) else []
-    return {
-        "id": item_id,
-        "title": title.strip(),
-        "url": canonical_url,
-        "source": "Anthropic",
-        "source_type": "anthropic_blog",
-        "summary": summary.strip()[:150],
-        "published_at": published_at,
-        "created_at": target_date or datetime.now().strftime("%Y-%m-%d"),
-        "category": [section.strip()],
-        "tags": clean_tags,
-        "relevance_score": 8,
-    }
+def _body(html: str) -> tuple[str, str]:
+    soup = BeautifulSoup(html, "html.parser")
+    description = soup.find("meta", attrs={"name": "description"})
+    summary = description.get("content", "").strip() if description else ""
+    article = soup.select_one("main article") or soup.select_one("main")
+    raw = article.get_text(" ", strip=True)[:6000] if article else ""
+    return summary, raw
 
 
 async def fetch_anthropic_technical_articles(target_date: str | None = None) -> List[Dict]:
-    """Ask Wingsbot for verified articles; failures never block collection."""
-    try:
-        result = await ainvoke_wingsbot(
-            ANTHROPIC_TECHNICAL_ARTICLES_PROMPT,
-            session_key="signalforge:anthropic-technical-blog",
-            structured=True,
-        )
-        if not getattr(result, "ok", False):
-            raise RuntimeError(getattr(result, "error", "Wingsbot invocation failed"))
-        payload = _parse_response_content(str(getattr(result, "content", "")))
+    """抓取近三天的官方文章；独立栏目失败不影响其他栏目。"""
+    target = date.fromisoformat(target_date) if target_date else date.today()
+    candidates = []
+    for section in SECTIONS:
+        try:
+            html = await _fetch_html(f"{BASE_URL}/{section}")
+            candidates.extend(
+                item for item in parse_anthropic_articles(html, section)
+                if target - timedelta(days=2) <= date.fromisoformat(item["published_at"]) <= target
+            )
+        except Exception as exc:
+            print(f"  ✗ Anthropic {section} failed: {exc}")
 
-        items = []
-        seen_urls = set()
-        for article in payload["articles"]:
-            item = _article_to_item(article, target_date)
-            if item is None or item["url"] in seen_urls:
-                continue
-            seen_urls.add(item["url"])
-            items.append(item)
-        items.sort(key=lambda item: item["published_at"], reverse=True)
-        return items[:5]
-    except Exception as exc:
-        print(f"  ✗ Anthropic Blog failed: {exc}")
-        return []
+    items = []
+    seen = set()
+    for article in sorted(candidates, key=lambda item: item["published_at"], reverse=True):
+        url = normalize_url(article["url"])
+        if url in seen or len(items) >= 5:
+            continue
+        try:
+            summary, raw = _body(await _fetch_html(url))
+        except Exception as exc:
+            print(f"  ✗ Anthropic article failed ({url}): {exc}")
+            continue
+        if not raw and not summary:
+            continue
+        seen.add(url)
+        items.append({
+            "id": "anthropic-" + hashlib.sha256(url.encode()).hexdigest()[:20],
+            "source": "Anthropic",
+            "source_type": "anthropic_blog",
+            "title": article["title"],
+            "url": url,
+            "summary": summary or raw[:300],
+            "original_content": summary or raw[:500],
+            "raw_text": raw or summary,
+            "published_at": article["published_at"],
+            "published_date": article["published_at"],
+            "created_at": target.isoformat(),
+            "category": [article["section"].capitalize()],
+            "tags": ["anthropic", article["section"]],
+            "relevance_score": 8,
+        })
+    return items

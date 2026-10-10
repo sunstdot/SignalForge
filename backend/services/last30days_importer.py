@@ -9,10 +9,11 @@ import re
 import shutil
 import time
 import uuid
+from datetime import date, timedelta
 from pathlib import Path
 from typing import Dict, List, Optional
 
-from services.storage import store_content_items
+from services.storage import _load_content_file, store_content_items
 from services.wingsbot_client import invoke_wingsbot, require_artifact
 
 # raw 平台标记 -> (source_type, 显示名)
@@ -193,6 +194,7 @@ def parse_last30days_json(text: str) -> List[Dict]:
                 "cluster_title": cluster_title,
                 "cluster_score": cluster_score,
                 "origin": "last30days",
+                "source_published_at": _parse_date(primary.get("published_at")),
                 "author": author,
                 "engagement": _format_engagement(engagement),
                 "volume": _sum_engagement(engagement),
@@ -209,10 +211,35 @@ def parse_last30days_json(text: str) -> List[Dict]:
 DEFAULT_L30_DIR = Path.home() / "Documents" / "Last30Days"
 
 
-def import_last30days_file(path) -> int:
-    """解析单个 raw v3 JSON 报告并入库，返回新增条数。"""
+def import_last30days_file(path, *, collected_on: Optional[str] = None,
+                           lookback_days: int = 2) -> int:
+    """导入报告；每日订阅只收近期内容，搜索模式保持原有日期归档语义。"""
     text = Path(path).read_text(encoding="utf-8")
-    return store_content_items(parse_last30days_json(text))
+    items = parse_last30days_json(text)
+    if collected_on:
+        collection_day = date.fromisoformat(collected_on)
+        earliest = collection_day - timedelta(days=lookback_days)
+        prior_ids = {
+            entry.get("id")
+            for days_ago in range(1, lookback_days + 1)
+            for entry in _load_content_file((collection_day - timedelta(days=days_ago)).isoformat())
+        }
+        recent = []
+        for item in items:
+            # 报告 range_to 只能用于交互搜索兜底，不能冒充帖子的真实发布日期。
+            if not (item.get("metadata") or {}).get("source_published_at"):
+                continue
+            try:
+                published = date.fromisoformat(item["date"])
+            except (ValueError, KeyError, TypeError):
+                continue
+            if earliest <= published <= collection_day and item["id"] not in prior_ids:
+                item["published_at"] = item["date"]
+                item["created_at"] = collected_on
+                item["metadata"]["daily_watchlist"] = True
+                recent.append(item)
+        items = recent
+    return store_content_items(items) if items else 0
 
 
 def import_last30days_dir(directory=None) -> int:
@@ -235,10 +262,14 @@ def _cleanup_invocation_dir(path: Path) -> None:
     if resolved.parent == base and resolved.name.startswith(_INVOCATION_DIR_PREFIX):
         shutil.rmtree(resolved, ignore_errors=True)
 
-def run_last30days_via_wingsbot(topic: str) -> int:
-    """通过 wingsbot 触发 last30days，再导入产出的最新 JSON 报告，返回新增条数。"""
+def run_last30days_via_wingsbot(topic: str, *, collected_on: Optional[str] = None,
+                                lookback_days: int = 2) -> int:
+    """通过 wingsbot 触发 last30days；每日模式仅导入近期内容。"""
     json_path = _trigger_wingsbot(topic)
     try:
+        if collected_on:
+            return import_last30days_file(json_path, collected_on=collected_on,
+                                          lookback_days=lookback_days)
         return import_last30days_file(json_path)
     finally:
         _cleanup_invocation_dir(json_path.parent)
@@ -255,8 +286,12 @@ def _build_wingsbot_prompt(topic: str, output_dir: Optional[Path] = None) -> str
     - SKILL.md 禁止 --emit=md 作为主流程，但 json 是允许的输出格式之一。
     """
     output_dir = output_dir or L30_OUTPUT_DIR
+    handle = topic[1:] if topic.startswith("@") and re.fullmatch(r"[A-Za-z0-9_]{1,15}", topic[1:]) else None
+    handle_instruction = (f"该话题是指定的 X 账号，请在检索中追加 `--x-handle {handle}`，"
+                          "同时保留 Reddit/HN/Web 检索。\n" if handle else "")
     return (
         f"请调用 last30days 技能研究话题「{topic}」，我需要拿到结构化数据而不是文字总结。\n\n"
+        f"{handle_instruction}"
         "执行要求：\n"
         "1. 必须真正执行 last30days 脚本（通过 Bash 工具调用 scripts/last30days.py），"
         "不要凭记忆编造结果。如果工具不可用就明确报错，不要伪造「已保存」的回复。\n"

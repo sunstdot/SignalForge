@@ -148,6 +148,14 @@ Sources
   -> Frontend dashboard + optional video render
 ```
 
+### 今日信号（Phase 1）
+
+简报页默认展示最多 15 条「灵感 / 执行」信号；「全部内容」仍可查看原有数据源。公司博客按技术、产品发布、公司新闻分桶，PR 默认不进入今日信号；Anthropic 官方 Engineering / Research 近期文章优先直抓正文，原 RSS 保留为兜底。
+
+`backend/config/collector.yaml` 的 `sources.watchlist.topics` 可调整每日话题；在 `accounts` 中填写 X handle（例如 `"builder"`）可额外跟踪特定账号。每日采集会调用本机 `last30days`/Wingsbot 检索，**是否能取得 X 内容取决于本机可用的检索渠道**，不保证免费渠道持续可用。每个话题首次成功执行后，当天重跑不会重复请求；历史日期的 `collect` 不触发实时搜索。如需控制模型调用成本，可以缩减话题或将 `watchlist.enabled` 设为 `false`。
+
+当前是基于现有相关度和来源多样性的轻量初筛；跨源趋势聚类、完整打分与反馈学习属于后续阶段。
+
 ## 快速开始
 
 ### 1. 安装依赖

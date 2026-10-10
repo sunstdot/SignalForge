@@ -2,7 +2,8 @@
 import asyncio
 import json
 import os
-from datetime import datetime
+import re
+from datetime import datetime, timedelta
 from typing import List, Dict
 import yaml
 
@@ -12,6 +13,8 @@ from .arxiv_fetcher import fetch_arxiv_papers
 from .github_fetcher import fetch_github_trending
 from .models_fetcher import fetch_model_platforms
 from .anthropic_blog_fetcher import fetch_anthropic_technical_articles, normalize_url
+from .company_blog import apply_company_blog_policy
+from .watchlist_daily import run_watchlist_daily
 from .chinese_briefer import generate_chinese_brief
 from .llm_client import chat
 
@@ -35,9 +38,35 @@ async def run_collection(target_date: str = None):
     for item in all_items:
         item["created_at"] = target_date
 
+    # 官方栏目页会连续两天包含同一篇新文，避免跨天重复推送。
+    prior_ids = set()
+    day = datetime.strptime(target_date, "%Y-%m-%d")
+    for delta in (1, 2):
+        previous = (day - timedelta(days=delta)).strftime("%Y-%m-%d")
+        prior_ids.update(
+            old.get("id") for old in _load_content_file(previous)
+            if old.get("source_type") == "anthropic_blog"
+        )
+    all_items = [
+        item for item in all_items
+        if item.get("source_type") != "anthropic_blog" or item.get("id") not in prior_ids
+    ]
+
+    # 公司博客分桶与折叠：保留所有原始条目
+    all_items = apply_company_blog_policy(all_items)
+
     # 存储到文件
     stored = store_content_items(all_items)
     print(f"✓ Stored {stored} new items")
+
+    watchlist = config.get("sources", {}).get("watchlist", {})
+    # 历史回填不触发昂贵的实时搜索，也不把旧帖伪装成当日新消息。
+    if watchlist.get("enabled") and target_date == datetime.now().strftime("%Y-%m-%d"):
+        print("\n📡 Running last30days watchlist...")
+        accounts = [f"@{handle.lstrip('@')}" for handle in watchlist.get("accounts", [])
+                    if isinstance(handle, str) and re.fullmatch(r"[A-Za-z0-9_]{1,15}", handle.lstrip('@'))]
+        topics = list(dict.fromkeys(watchlist.get("topics", []) + accounts))
+        stored += await asyncio.to_thread(run_watchlist_daily, topics, target_date)
 
     print("\n🎉 Collection completed!")
     return stored
@@ -86,7 +115,10 @@ def _run_batch_quick_reads(date: str):
     # 有 summary 或 original_content 可用，且未缓存
     to_process = [
         i for i in items
-        if (i.get("summary") or i.get("original_content")) and i["id"] not in cached
+        if (i.get("summary") or i.get("original_content"))
+        and i["id"] not in cached
+        and i.get("content_bucket") != "corporate"
+        and not i.get("dup_of")
     ]
 
     if not to_process:
@@ -245,7 +277,7 @@ async def fetch_all_sources(config: Dict, target_date: str = None) -> List[Dict]
         return_exceptions=True
     )
 
-    seen_urls = set()
+    seen_urls = {}
     for (name, _), result in zip(tasks, results):
         if isinstance(result, Exception):
             print(f"  ✗ {name} failed: {result}")
@@ -254,16 +286,19 @@ async def fetch_all_sources(config: Dict, target_date: str = None) -> List[Dict]
             for item in result:
                 if item.get("relevance_score", 0) == 0:
                     item["relevance_score"] = 8
-            accepted = []
+            accepted = 0
             for item in result:
                 normalized_url = normalize_url(str(item.get("url", "")))
                 if name == "Anthropic Blog" and normalized_url in seen_urls:
+                    # 保留 RSS 兜底，但同一篇文章优先用核验过正文的官方直抓版本。
+                    all_items[seen_urls[normalized_url]] = item
+                    accepted += 1
                     continue
                 if normalized_url:
-                    seen_urls.add(normalized_url)
-                accepted.append(item)
-            all_items.extend(accepted)
-            print(f"  ✓ {name}: {len(accepted)} items")
+                    seen_urls.setdefault(normalized_url, len(all_items))
+                all_items.append(item)
+                accepted += 1
+            print(f"  ✓ {name}: {accepted} items")
         else:
             print(f"  ✗ {name}: unexpected result")
 

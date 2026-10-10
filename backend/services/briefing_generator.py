@@ -2,7 +2,8 @@
 from datetime import datetime, timedelta
 from typing import List, Dict, Optional
 
-from .storage import _load_content_file, get_all_dates, save_briefing_file
+from .storage import _load_content_file, get_all_dates, load_quick_reads, save_briefing_file
+from .signal_feed import build_signal_feed
 import json
 import uuid
 
@@ -172,6 +173,7 @@ def generate_briefing_for_date(date: str) -> Optional[Dict]:
         "id": str(uuid.uuid4()),
         "date": date,
         "items": result_items,
+        "signals": build_signal_feed(today_items, load_quick_reads(date)),
         "summary": None,
         "generated_at": datetime.now().isoformat(),
     }

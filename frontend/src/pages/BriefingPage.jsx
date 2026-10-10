@@ -3,9 +3,11 @@ import { useParams, Link } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import PaperQuickRead from '../components/PaperQuickRead'
 import { useShareSelection, ShareSelectionBar } from './useShareSelection'
+import { getSignalItems } from './dailySignalData'
 
 const CATEGORY_TABS = [
-  { key: 'all', label: '全部', icon: '∗' },
+  { key: 'signals', label: '今日信号', icon: '✦' },
+  { key: 'all', label: '全部内容', icon: '∗' },
   { key: 'paper', label: '论文', icon: '📄' },
   { key: 'repo', label: '仓库', icon: '🛠️' },
   { key: 'model', label: '模型', icon: '🤖' },
@@ -31,6 +33,10 @@ const SOURCE_TYPE_MAP = {
   blog: { label: '官方博客', badge: 'badge-model' },
   wechat: { label: '公众号', badge: 'badge-news' },
   hackernews: { label: 'HackerNews', badge: 'badge-smolai' },
+  hn: { label: 'HackerNews', badge: 'badge-smolai' },
+  x: { label: 'X', badge: 'badge-news' },
+  reddit: { label: 'Reddit', badge: 'badge-news' },
+  anthropic_blog: { label: 'Anthropic 技术', badge: 'badge-model' },
   investor: { label: '投资者资讯', badge: 'badge-news' }
 }
 
@@ -39,7 +45,8 @@ function BriefingPage() {
   const { date } = useParams()
   const { signalIds, opportunityIds, toggleSignal, clearAll, generating, generate } = useShareSelection(date)
   const [briefing, setBriefing] = useState(null)
-  const [activeCategory, setActiveCategory] = useState('all')
+  const [activeCategory, setActiveCategory] = useState('signals')
+  const [activeSignalTrack, setActiveSignalTrack] = useState('inspiration')
   const [loading, setLoading] = useState(true)
   const [opportunities, setOpportunities] = useState([])
   const [oppsLoading, setOppsLoading] = useState(false)
@@ -64,6 +71,8 @@ function BriefingPage() {
       const res = await fetch(`/api/briefing/${date}`, { signal })
       const briefingData = await res.json()
       setBriefing(briefingData)
+      setActiveCategory(briefingData?.signals ? 'signals' : 'all')
+      setActiveSignalTrack('inspiration')
     } catch (error) {
       if (error.name !== 'AbortError') console.error('Failed to fetch data:', error)
       return
@@ -143,7 +152,7 @@ function BriefingPage() {
   }
 
   const filteredItems = useMemo(() => {
-    if (!briefing) return []
+    if (!briefing || activeCategory === 'signals') return []
     let items = briefing.items || []
     if (activeCategory !== 'all') {
       items = items.filter(item => {
@@ -151,7 +160,7 @@ function BriefingPage() {
         if (activeCategory === 'paper') return type === 'arxiv' || type === 'paper'
         if (activeCategory === 'repo') return type === 'repo' || type === 'github'
         if (activeCategory === 'model') return type === 'model'
-        if (activeCategory === 'blog') return type === 'blog'
+        if (activeCategory === 'blog') return type === 'blog' || type === 'anthropic_blog'
         if (activeCategory === 'wechat') return type === 'wechat'
         if (activeCategory === 'smolai') return type === 'smolai' || type === 'hackernews' || item.source === 'HackerNews Daily'
         if (activeCategory === 'investor') return type === 'investor'
@@ -238,7 +247,7 @@ function BriefingPage() {
               <span>{tab.label}</span>
             </button>
           ))}
-          <button
+          {activeCategory !== 'signals' && <button
             onClick={() => setSortOrder(o => o === 'desc' ? 'asc' : 'desc')}
             className="ml-auto text-xs px-3 py-1.5 rounded border font-medium transition-all flex items-center gap-1"
             style={{
@@ -249,7 +258,7 @@ function BriefingPage() {
             }}
           >
             {sortOrder === 'desc' ? '↓ 倒序' : '↑ 正序'}
-          </button>
+          </button>}
         </div>
       </div>
 
@@ -265,7 +274,45 @@ function BriefingPage() {
             </div>
           </div>
         )}
-        <section className="space-y-4">
+        {activeCategory === 'signals' && (
+          <section className="space-y-4" aria-label="今日信号">
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <div>
+                <h2 className="text-xl font-bold" style={{ color: 'var(--text-primary)' }}>今日信号</h2>
+                <p className="text-xs mt-1" style={{ color: 'var(--text-muted)' }}>
+                  精选 {briefing.signals?.total ?? 0} 条 · 原始信息仍可在「全部内容」查看
+                </p>
+              </div>
+              <div className="flex gap-2" role="group" aria-label="信号轨道">
+                {[
+                  { key: 'inspiration', label: '灵感雷达' },
+                  { key: 'execution', label: '执行雷达' },
+                ].map(track => (
+                  <button key={track.key} type="button" className={`tab-btn ${activeSignalTrack === track.key ? 'active' : ''}`}
+                    onClick={() => setActiveSignalTrack(track.key)}>
+                    {track.label} ({getSignalItems(briefing, track.key).length})
+                  </button>
+                ))}
+              </div>
+            </div>
+            {getSignalItems(briefing, activeSignalTrack).length === 0 ? (
+              <p className="text-sm py-6" style={{ color: 'var(--text-muted)' }}>
+                这条轨道今天暂无线索。可切换轨道，或查看全部内容。
+              </p>
+            ) : getSignalItems(briefing, activeSignalTrack).map(item => (
+              <article key={item.id} className="rounded-lg border p-4" style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}>
+                <div className="flex items-center justify-between gap-3">
+                  <a href={item.url} target="_blank" rel="noopener noreferrer" className="font-semibold hover:underline"
+                    style={{ color: 'var(--text-primary)' }}>{item.title}</a>
+                  <span className="text-xs whitespace-nowrap" style={{ color: 'var(--accent-blue)' }}>{item.source}</span>
+                </div>
+                {item.so_what && <p className="text-sm mt-2" style={{ color: 'var(--text-secondary)' }}>{item.so_what}</p>}
+                <p className="text-xs mt-2" style={{ color: 'var(--text-muted)' }}>{item.why}{item.published_at ? ` · ${item.published_at}` : ''}</p>
+              </article>
+            ))}
+          </section>
+        )}
+        {activeCategory !== 'signals' && <section className="space-y-4">
           {filteredItems.map((item, index) => (
             <ContentCard key={item.id} item={item} index={index + 1}
               cachedSummary={quickReads[item.id]}
@@ -275,7 +322,7 @@ function BriefingPage() {
               onToggle={() => toggleSignal(item.id)}
             />
           ))}
-        </section>
+        </section>}
       </div>
     </>
   )

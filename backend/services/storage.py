@@ -110,7 +110,8 @@ def _has_daily_content(date: str) -> bool:
     """
     items = _load_content_file(date)
     return any(
-        (item.get("metadata") or {}).get("origin") not in NON_DAILY_ORIGINS
+        (item.get("metadata") or {}).get("daily_watchlist") is True
+        or (item.get("metadata") or {}).get("origin") not in NON_DAILY_ORIGINS
         for item in items
     )
 

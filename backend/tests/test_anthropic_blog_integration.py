@@ -1,10 +1,12 @@
+from datetime import datetime
+
 import pytest
 
 from backend.services import briefing_generator, collector
 
 
 @pytest.mark.asyncio
-async def test_collector_appends_agent_articles_without_replacing_rss(monkeypatch):
+async def test_collector_prefers_verified_direct_article_over_duplicate_rss(monkeypatch):
     rss_item = {
         "id": "rss-1",
         "title": "RSS copy",
@@ -41,7 +43,23 @@ async def test_collector_appends_agent_articles_without_replacing_rss(monkeypatc
         {"sources": {"rss": {"enabled": True}}}, target_date="2026-09-17"
     )
 
-    assert [item["id"] for item in result] == ["rss-1", "agent-new"]
+    assert [item["id"] for item in result] == ["agent-duplicate", "agent-new"]
+
+
+@pytest.mark.asyncio
+async def test_collector_keeps_rss_article_when_direct_fetch_fails(monkeypatch):
+    rss_item = {"id": "rss", "url": "https://www.anthropic.com/research/a", "source": "Anthropic Blog"}
+
+    async def fake_rss(*args, **kwargs):
+        return [rss_item]
+
+    async def fake_anthropic(*args, **kwargs):
+        return []
+
+    monkeypatch.setattr(collector, "fetch_rss_feeds", fake_rss)
+    monkeypatch.setattr(collector, "fetch_anthropic_technical_articles", fake_anthropic)
+    result = await collector.fetch_all_sources({"sources": {"rss": {"enabled": True}}})
+    assert result == [rss_item]
 
 
 @pytest.mark.asyncio
@@ -70,6 +88,12 @@ async def test_collector_preserves_existing_item_with_malformed_url(monkeypatch)
 
 
 def test_briefing_always_places_anthropic_agent_articles_last(monkeypatch):
+    class FixtureDatetime(datetime):
+        @classmethod
+        def now(cls, tz=None):
+            return cls(2026, 9, 17, tzinfo=tz)
+
+    monkeypatch.setattr(briefing_generator, "datetime", FixtureDatetime)
     items = [
         {
             "id": "agent",
