@@ -61,6 +61,7 @@ def get_latest_briefing() -> Optional[Dict]:
 def generate_briefing_for_date(date: str) -> Optional[Dict]:
     """为指定日期生成简报：优先当天内容，不足时向前补充最多 2 天"""
     fetched_at = datetime.now()
+    signal_date = datetime.strptime(date, "%Y-%m-%d")
     dates = get_all_dates()
     all_dates_in_range = [d for d in dates if d <= date]
 
@@ -173,7 +174,10 @@ def generate_briefing_for_date(date: str) -> Optional[Dict]:
         "id": str(uuid.uuid4()),
         "date": date,
         "items": result_items,
-        "signals": build_signal_feed(today_items, load_quick_reads(date)),
+        "signals": build_signal_feed(
+            [item for item in today_items if _is_recent_feed_item(item, signal_date)],
+            load_quick_reads(date),
+        ),
         "summary": None,
         "generated_at": datetime.now().isoformat(),
     }

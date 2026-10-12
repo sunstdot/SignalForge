@@ -15,8 +15,11 @@ test('daily radar shows both tracks and preserves the complete archive', async (
       const path = new URL(route.request().url()).pathname
       if (path === '/api/briefing/2026-10-10') {
         return route.fulfill({ json: { date: '2026-10-10', items: [x, paper, pr], signals: {
-          inspiration: [{ ...x, so_what: '可以试做新的工作流', why: '一手社区信号' }],
-          execution: [{ ...paper, so_what: '值得评估', why: '技术内容' }], total: 2,
+          inspiration: [{ ...x, takeaway: '开发者发布了可复现的 Agent 工作流和公开测试结果。',
+            facts: ['提供公开的基准测试', '披露了失败案例'],
+            so_what: '可以对照现有流程评估是否值得试用。', evidence: '32 likes, 8 replies' }],
+          execution: [{ ...paper, takeaway: '论文提供新的 Agent 评估方法和复现实验。',
+            so_what: '可以用来检查现有 Agent 的可靠性。', evidence: '' }], total: 2,
         } } })
       }
       if (path === '/api/dates') return route.fulfill({ json: { dates: ['2026-10-10'] } })
@@ -25,7 +28,11 @@ test('daily radar shows both tracks and preserves the complete archive', async (
     await page.goto(`${url}/briefing/2026-10-10`)
     const radar = page.getByRole('region', { name: '今日信号' })
     await radar.getByRole('link', { name: x.title }).waitFor()
-    assert.match(await radar.innerText(), /可以试做新的工作流/)
+    assert.match(await radar.innerText(), /发生了什么.*开发者发布了可复现的 Agent 工作流/s)
+    assert.match(await radar.innerText(), /关键信息.*提供公开的基准测试/s)
+    assert.match(await radar.innerText(), /值得看什么.*可以对照现有流程评估/s)
+    assert.match(await radar.innerText(), /32 likes, 8 replies/)
+    assert.equal(await radar.getByRole('link', { name: /查看原文/ }).count(), 1)
     assert.equal(await radar.getByText(paper.title).count(), 0)
     await radar.getByRole('button', { name: /执行雷达/ }).click()
     await radar.getByRole('link', { name: paper.title }).waitFor()

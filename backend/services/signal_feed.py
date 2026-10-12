@@ -10,9 +10,10 @@ INSPIRATION = {"x", "reddit", "hn", "hackernews", "producthunt", "rss", "news",
 UPSTREAM = {"x", "reddit", "hn", "producthunt"}
 GENERIC_FEEDS = {"rss", "news", "newsletter", "wechat", "investor", "smolai", "hackernews", "blog"}
 AI_TERMS = re.compile(
-    r"\b(?:ai|llm|gpt|claude|gemini|agent|agents|model|models|inference|prompt|"
+    r"\b(?:ai|llm|gpt|claude|gemini|agent|agents|inference|prompt|"
     r"rag|mcp|openai|anthropic|deepmind|huggingface|neural|machine learning|"
-    r"vibe coding|copilot)\b|人工智能|大模型|智能体|模型|提示词|推理|开源",
+    r"vibe coding|copilot)\b|\b(?:language|foundation|multimodal|generative|reasoning)\s+models?\b|"
+    r"人工智能|大模型|智能体|模型|提示词|推理|开源",
     re.IGNORECASE,
 )
 
@@ -23,6 +24,10 @@ def _track(item: Dict) -> str | None:
         bucket = classify_company_blog(item)
     if bucket == "corporate":
         return None
+    if bucket in {"product_launch", "technical"} and item.get("source_type") != "anthropic_blog":
+        source_text = f"{item.get('title', '')} {str(item.get('summary') or item.get('original_content') or '')[:500]}"
+        if not AI_TERMS.search(source_text):
+            return None
     if bucket == "product_launch":
         return "inspiration"
     if bucket == "technical":
@@ -47,11 +52,37 @@ def _priority(item: Dict) -> float:
     return score
 
 
-def _card(item: Dict, track: str, quick_reads: Dict) -> Dict:
-    cached = quick_reads.get(item.get("id")) or ""
-    insight = re.search(r"\*\*值得关注\*\*\s*[：:]\s*(.+)", cached)
-    so_what = (insight.group(1).strip() if insight else
-               str(item.get("summary") or item.get("original_content") or "").strip()[:160])
+def _quick_read_context(item: Dict, cached: str) -> tuple[str, str, list[str]] | None:
+    """只使用有原始材料支撑的既有速读，不从标题臆测重要性。"""
+    title = " ".join(str(item.get("title") or "").split()).casefold()
+    original = " ".join(str(item.get("original_content") or "").split())
+    summary = " ".join(str(item.get("summary") or "").split())
+    if item.get("source_type") == "x":
+        # X 帖子本身就是标题：只有足够完整的原帖文本才可当作材料。
+        if max(len(original), len(summary), len(title)) < 80:
+            return None
+    elif not any(len(text) >= 45 and text.casefold() != title for text in (original, summary)):
+        return None
+    if item.get("source_type") == "anthropic_blog" and original.casefold().startswith(
+        "anthropic is an ai safety and research company"
+    ) and summary == original:
+        # 栏目页有时只有站点简介，并没有抓到这篇文章的正文。
+        return None
+    core = re.search(r"\*\*核心内容\*\*\s*[：:]\s*([^\n]+)", cached)
+    insight = re.search(r"\*\*值得关注\*\*\s*[：:]\s*([^\n]+)", cached)
+    if not core or not insight:
+        return None
+    takeaway, so_what = core.group(1).strip(), insight.group(1).strip()
+    if min(len(takeaway), len(so_what)) < 15 or takeaway.casefold() == title or takeaway == so_what:
+        return None
+    detail = re.search(r"\*\*关键信息\*\*\s*[：:]\s*(.*?)(?=\n\s*\n|\n\*\*|\Z)", cached, re.DOTALL)
+    facts = [fact.strip()[:100] for fact in re.findall(r"(?m)^\s*[-•]\s*(.+)$", detail.group(1) if detail else "")
+             if len(fact.strip()) >= 5][:2]
+    return takeaway[:240], so_what[:200], facts
+
+
+def _card(item: Dict, track: str, context: tuple[str, str, list[str]]) -> Dict:
+    takeaway, so_what, facts = context
     metadata = item.get("metadata") or {}
     evidence = str(metadata.get("engagement") or "").strip()
     if evidence:
@@ -67,7 +98,8 @@ def _card(item: Dict, track: str, quick_reads: Dict) -> Dict:
         "source": item.get("source", ""), "source_type": item.get("source_type", ""),
         "published_at": item.get("published_at") or item.get("published_date") or item.get("date"),
         "relevance_score": item.get("relevance_score", 0),
-        "track": track, "so_what": so_what, "why": why,
+        "track": track, "takeaway": takeaway, "facts": facts, "so_what": so_what,
+        "evidence": evidence, "why": why,
     }
 
 
@@ -77,12 +109,34 @@ def build_signal_feed(items: List[Dict], quick_reads: Dict | None = None, limit:
     if limit <= 0:
         return feed
     tracks = {"inspiration": [], "execution": []}
+    contexts = {}
     for item in items:
         if item.get("dup_of") or not item.get("id"):
             continue
         track = _track(item)
-        if track:
-            tracks[track].append(item)
+        if not track:
+            continue
+        context = _quick_read_context(item, (quick_reads or {}).get(item["id"]) or "")
+        if not context:
+            continue
+        if item.get("source_type") in UPSTREAM:
+            metadata = item.get("metadata") or {}
+            if item["source_type"] == "x":
+                # 浏览量不是互动；不能因为 0 赞帖子被看过就称之为社区信号。
+                interactions = sum(
+                    int(value.replace(",", "")) for value in re.findall(
+                        r"(\d[\d,]*)\s+(?:likes?|replies|reposts|retweets|quotes)\b",
+                        str(metadata.get("engagement") or ""), re.IGNORECASE
+                    )
+                )
+                if interactions < 20:
+                    continue
+            else:
+                volume = metadata.get("volume")
+                if not isinstance(volume, (int, float)) or volume < 30:
+                    continue
+        contexts[item["id"]] = context
+        tracks[track].append(item)
     for group in tracks.values():
         group.sort(key=lambda item: (-_priority(item), item.get("id", "")))
 
@@ -115,6 +169,6 @@ def build_signal_feed(items: List[Dict], quick_reads: Dict | None = None, limit:
         take(track, [item], limit)
 
     for track, group in selected.items():
-        feed[track] = [_card(item, track, quick_reads or {}) for item in group]
+        feed[track] = [_card(item, track, contexts[item["id"]]) for item in group]
     feed["total"] = len(seen)
     return feed

@@ -280,7 +280,7 @@ function BriefingPage() {
               <div>
                 <h2 className="text-xl font-bold" style={{ color: 'var(--text-primary)' }}>今日信号</h2>
                 <p className="text-xs mt-1" style={{ color: 'var(--text-muted)' }}>
-                  精选 {briefing.signals?.total ?? 0} 条 · 原始信息仍可在「全部内容」查看
+                  符合标准 {briefing.signals?.total ?? 0} 条 · 不凑数 · 原始信息仍可在「全部内容」查看
                 </p>
               </div>
               <div className="flex gap-2" role="group" aria-label="信号轨道">
@@ -297,7 +297,7 @@ function BriefingPage() {
             </div>
             {getSignalItems(briefing, activeSignalTrack).length === 0 ? (
               <p className="text-sm py-6" style={{ color: 'var(--text-muted)' }}>
-                这条轨道今天暂无线索。可切换轨道，或查看全部内容。
+这条轨道今天没有足够依据的信号；可切换轨道，或在「全部内容」查看原始信息。
               </p>
             ) : getSignalItems(briefing, activeSignalTrack).map(item => (
               <article key={item.id} className="rounded-lg border p-4" style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}>
@@ -306,8 +306,23 @@ function BriefingPage() {
                     style={{ color: 'var(--text-primary)' }}>{item.title}</a>
                   <span className="text-xs whitespace-nowrap" style={{ color: 'var(--accent-blue)' }}>{item.source}</span>
                 </div>
-                {item.so_what && <p className="text-sm mt-2" style={{ color: 'var(--text-secondary)' }}>{item.so_what}</p>}
-                <p className="text-xs mt-2" style={{ color: 'var(--text-muted)' }}>{item.why}{item.published_at ? ` · ${item.published_at}` : ''}</p>
+                {item.takeaway && <p className="text-sm mt-3" style={{ color: 'var(--text-secondary)', lineHeight: 1.7 }}>
+                  <strong style={{ color: 'var(--text-primary)' }}>发生了什么：</strong>{item.takeaway}
+                </p>}
+                {Array.isArray(item.facts) && item.facts.length > 0 && <div className="text-sm mt-2" style={{ color: 'var(--text-secondary)', lineHeight: 1.7 }}>
+                  <strong style={{ color: 'var(--text-primary)' }}>关键信息：</strong>
+                  <ul className="list-disc pl-5 mt-1">{item.facts.map((fact, index) => <li key={`${item.id}-fact-${index}`}>{fact}</li>)}</ul>
+                </div>}
+                {item.so_what && <p className="text-sm mt-2" style={{ color: 'var(--text-secondary)', lineHeight: 1.7 }}>
+                  <strong style={{ color: 'var(--text-primary)' }}>值得看什么：</strong>{item.so_what}
+                </p>}
+                {item.evidence && <p className="text-xs mt-2" style={{ color: 'var(--text-muted)' }}>
+                  讨论数据：{item.evidence}
+                </p>}
+                <div className="flex justify-between items-center gap-3 text-xs mt-3" style={{ color: 'var(--text-muted)' }}>
+                  <span>{item.takeaway ? 'AI 速读 · 请核对原文' : item.why}{item.published_at ? ` · ${item.published_at}` : ''}</span>
+                  <a href={item.url} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-blue)' }}>查看原文 ↗</a>
+                </div>
               </article>
             ))}
           </section>
