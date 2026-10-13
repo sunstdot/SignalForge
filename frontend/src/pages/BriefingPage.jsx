@@ -3,7 +3,8 @@ import { useParams, Link } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import PaperQuickRead from '../components/PaperQuickRead'
 import { useShareSelection, ShareSelectionBar } from './useShareSelection'
-import { getSignalItems } from './dailySignalData'
+import { getSignalItems, getEventItems } from './dailySignalData'
+import EventRadar from './EventRadar'
 
 const CATEGORY_TABS = [
   { key: 'signals', label: '今日信号', icon: '✦' },
@@ -280,10 +281,12 @@ function BriefingPage() {
               <div>
                 <h2 className="text-xl font-bold" style={{ color: 'var(--text-primary)' }}>今日信号</h2>
                 <p className="text-xs mt-1" style={{ color: 'var(--text-muted)' }}>
-                  符合标准 {briefing.signals?.total ?? 0} 条 · 不凑数 · 原始信息仍可在「全部内容」查看
+                  {Array.isArray(briefing.signals?.events)
+                    ? `具体事件 ${getEventItems(briefing).length} 件 · 不凑数 · 原始信息仍可在「全部内容」查看`
+                    : `符合标准 ${briefing.signals?.total ?? 0} 条 · 不凑数 · 原始信息仍可在「全部内容」查看`}
                 </p>
               </div>
-              <div className="flex gap-2" role="group" aria-label="信号轨道">
+              {!Array.isArray(briefing.signals?.events) && <div className="flex gap-2" role="group" aria-label="信号轨道">
                 {[
                   { key: 'inspiration', label: '灵感雷达' },
                   { key: 'execution', label: '执行雷达' },
@@ -293,9 +296,12 @@ function BriefingPage() {
                     {track.label} ({getSignalItems(briefing, track.key).length})
                   </button>
                 ))}
-              </div>
+              </div>}
             </div>
-            {getSignalItems(briefing, activeSignalTrack).length === 0 ? (
+            {Array.isArray(briefing.signals?.events) ? (
+              <EventRadar events={getEventItems(briefing)} sourceStatus={briefing.signals.source_status}
+                selectionStatus={briefing.signals.selection_status} />
+            ) : getSignalItems(briefing, activeSignalTrack).length === 0 ? (
               <p className="text-sm py-6" style={{ color: 'var(--text-muted)' }}>
 这条轨道今天没有足够依据的信号；可切换轨道，或在「全部内容」查看原始信息。
               </p>

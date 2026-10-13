@@ -1,9 +1,15 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
-import { getSignalItems } from './dailySignalData.js'
+import { getSignalItems, getEventItems } from './dailySignalData.js'
 
 const page = readFileSync(new URL('./BriefingPage.jsx', import.meta.url), 'utf8')
+
+test('event items come from cached radar and old snapshots stay empty', () => {
+  assert.deepEqual(getEventItems({ signals: { events: [{ id: 'event-1' }] } }), [{ id: 'event-1' }])
+  assert.deepEqual(getEventItems({ signals: { inspiration: [{ id: 'old' }] } }), [])
+  assert.deepEqual(getEventItems(null), [])
+})
 
 test('daily signal view uses separate inspiration/execution tracks and keeps all-content entry', () => {
   const briefing = { signals: {

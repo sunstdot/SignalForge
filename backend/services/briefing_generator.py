@@ -4,6 +4,8 @@ from typing import List, Dict, Optional
 
 from .storage import _load_content_file, get_all_dates, load_quick_reads, save_briefing_file
 from .signal_feed import build_signal_feed
+from .source_run_store import load_source_run
+from .event_radar import load_event_radar
 import json
 import uuid
 
@@ -65,7 +67,10 @@ def generate_briefing_for_date(date: str) -> Optional[Dict]:
     dates = get_all_dates()
     all_dates_in_range = [d for d in dates if d <= date]
 
-    # 先取当天内容，按 source_type 分组
+    # 仅读取已落盘的研究结果；GET 不进行搜索或调用模型。
+    source_status = load_source_run(date)
+    radar = load_event_radar(date)
+    has_radar_state = bool(source_status) or bool(radar)
     today_items = _load_content_file(date)
     today_types = {i.get("source_type") for i in today_items}
 
@@ -76,7 +81,8 @@ def generate_briefing_for_date(date: str) -> Optional[Dict]:
     missing_types = IMPORTANT_TYPES - today_types
 
     for extra_day in range(1, 3):
-        if not missing_types:
+        # 当天所有信源失败时展示故障，而非将昨日信息冒充今日发现。
+        if not missing_types or (not today_items and has_radar_state):
             break
         prev = (datetime.strptime(date, "%Y-%m-%d") - timedelta(days=extra_day)).strftime("%Y-%m-%d")
         if prev not in all_dates_in_range:
@@ -95,7 +101,7 @@ def generate_briefing_for_date(date: str) -> Optional[Dict]:
         if _is_recent_feed_item(item, fetched_at)
     ]
 
-    if not all_items:
+    if not all_items and not has_radar_state:
         return None
 
     # 去重（优先保留当天的，created_at 较大的优先）
@@ -170,14 +176,19 @@ def generate_briefing_for_date(date: str) -> Optional[Dict]:
             "created_at": item.get("created_at", ""),
         })
 
+    signals = build_signal_feed(
+        [item for item in today_items if _is_recent_feed_item(item, signal_date)],
+        load_quick_reads(date),
+    )
+    if has_radar_state:
+        signals['events'] = radar.get('events', [])
+        signals['source_status'] = source_status
+        signals['selection_status'] = radar.get('selection_status', 'unavailable' if radar else 'not_run')
     briefing = {
         "id": str(uuid.uuid4()),
         "date": date,
         "items": result_items,
-        "signals": build_signal_feed(
-            [item for item in today_items if _is_recent_feed_item(item, signal_date)],
-            load_quick_reads(date),
-        ),
+        "signals": signals,
         "summary": None,
         "generated_at": datetime.now().isoformat(),
     }

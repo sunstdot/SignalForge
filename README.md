@@ -239,6 +239,10 @@ python cli.py stats
 python cli.py refetch YYYY-MM-DD
 ```
 
+默认情报发现不再自动检索 `AI agent`、`vibe coding`、`RAG`、`LLM new model`；原话题配置和手工 last30days 搜索保留。每日流水线新增 HN 原生热榜（与原 HackerNews Daily RSS 并存）及 `collector.yaml` 中列出的 11 个 Reddit 社区；公开访问的 403/429、超时按来源记录为「不可用」，不等同于「没有帖子」。已取得的原始条目保存在 `data/content/`，采集状态在 `data/source_runs/`；速读后每天最多额外调用**一次**模型批量选择不超过 5 件具体事件，再以专名限额查找 HN／Reddit 讨论。筛选和查询分别缓存在 `data/event_radar/`；简报及静态快照只读取缓存。无需授权的 X 事件搜索未证实可靠时标记「不可用」，不会静默使用 X API 或 Wingsbot 按事件研究。新公开来源进入速读每次最多 20 条，速读仍会消耗 token；历史日期不运行新来源的实时发现或事件研究。
+
+本机 pnpm 11 若提示 `ERR_PNPM_IGNORED_BUILDS`，可使用根目录 `npm run daily` 执行相同命令；以上说明**不要求现在实际运行日报**。
+
 ## 生成视频
 
 项目根目录包含 Remotion composition，可以把情报内容渲染为短视频：
@@ -509,6 +513,10 @@ python cli.py chinese --date YYYY-MM-DD
 python cli.py stats
 python cli.py refetch YYYY-MM-DD
 ```
+
+Daily discovery no longer automatically runs the broad `AI agent`, `vibe coding`, `RAG`, or `LLM new model` searches; their configuration and manual last30days searches remain available. Native HN topstories (alongside the existing HackerNews Daily RSS) and the eleven configured subreddit hot feeds are best-effort public sources: 403/429/timeout means **unavailable**, not “no posts.” Raw content lives in `data/content/`, per-source coverage in `data/source_runs/`. After quick reads, at most **one additional batch model call per day** selects up to five specific events; bounded HN/Reddit lookups and selection are cached in `data/event_radar/`. Briefing GET and static snapshots read local caches only. Anonymous X event search is marked unavailable unless a verifiable public provider exists; it does not start per-event Wingsbot searches or use X credentials. At most 20 newly collected social items enter the quick-read batch (which still consumes tokens). Historical dates do not launch live event research.
+
+If pnpm 11 reports `ERR_PNPM_IGNORED_BUILDS`, root `npm run daily` invokes the same pipeline; this documentation does **not** require running it now.
 
 ## Render Video
 

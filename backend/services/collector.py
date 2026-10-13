@@ -17,6 +17,7 @@ from .anthropic_blog_fetcher import fetch_anthropic_technical_articles, normaliz
 from .hn_top_fetcher import fetch_hn_top
 from .subreddit_fetcher import fetch_subreddits
 from .source_run_store import save_source_run
+from .event_radar import run_event_radar
 from .company_blog import apply_company_blog_policy
 from .watchlist_daily import run_watchlist_daily
 from .chinese_briefer import generate_chinese_brief
@@ -92,6 +93,10 @@ async def run_daily(date: str):
     print("Step 2/2: 批量生成速读摘要")
     print("=" * 50)
     _run_batch_quick_reads(date)
+
+    # 历史回填与简报 GET 不启动实时查证或额外模型调用。
+    if date == datetime.now().strftime('%Y-%m-%d'):
+        await run_event_radar(date)
 
     # 统计
     print("\n" + "=" * 50)
