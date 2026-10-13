@@ -20,7 +20,9 @@ def isolated_daily_files(tmp_path, monkeypatch):
     monkeypatch.setattr(storage, 'QUICK_READS_DIR', tmp_path / 'quick_reads')
     monkeypatch.setattr(storage, 'DATA_DIR', tmp_path)
     monkeypatch.setattr(source_run_store, 'SOURCE_RUN_DIR', tmp_path / 'source_runs')
-    monkeypatch.setattr(event_radar, 'EVENT_DIR', tmp_path / 'event_radar')
+    # The loader's default cache_dir was bound at import time; isolate the GET at its call boundary.
+    monkeypatch.setattr(briefing_generator, 'load_event_radar',
+                        lambda day: event_radar.load_event_radar(day, cache_dir=tmp_path / 'event_radar'))
     return tmp_path
 
 

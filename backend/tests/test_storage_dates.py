@@ -22,11 +22,16 @@ class GetAllDatesTest(unittest.TestCase):
     def setUp(self):
         self._tmp = tempfile.TemporaryDirectory()
         self.content_dir = Path(self._tmp.name)
-        self._patch = patch.object(storage, "CONTENT_DIR", self.content_dir)
-        self._patch.start()
+        self._patches = [
+            patch.object(storage, "CONTENT_DIR", self.content_dir),
+            patch.object(storage, "DATA_DIR", self.content_dir),
+        ]
+        for patcher in self._patches:
+            patcher.start()
 
     def tearDown(self):
-        self._patch.stop()
+        for patcher in reversed(self._patches):
+            patcher.stop()
         self._tmp.cleanup()
 
     def test_excludes_dates_with_only_last30days_imports(self):

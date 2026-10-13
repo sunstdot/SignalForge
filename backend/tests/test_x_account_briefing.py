@@ -3,12 +3,12 @@ from fastapi.testclient import TestClient
 import pytest
 
 from main import app
-from services import briefing_generator, source_run_store, storage, x_account_daily
+from services import briefing_generator, event_radar, source_run_store, storage, x_account_daily
 
 
 @pytest.fixture
 def files(tmp_path, monkeypatch):
-    for kind in ('content', 'briefings', 'quick_reads', 'account_runs', 'source_runs'):
+    for kind in ('content', 'briefings', 'quick_reads', 'account_runs', 'source_runs', 'event_radar'):
         (tmp_path / kind).mkdir()
     monkeypatch.setattr(storage, 'CONTENT_DIR', tmp_path / 'content')
     monkeypatch.setattr(storage, 'BRIEFINGS_DIR', tmp_path / 'briefings')
@@ -16,6 +16,8 @@ def files(tmp_path, monkeypatch):
     monkeypatch.setattr(storage, 'DATA_DIR', tmp_path)
     monkeypatch.setattr(x_account_daily, 'ACCOUNT_RUN_DIR', tmp_path / 'account_runs')
     monkeypatch.setattr(source_run_store, 'SOURCE_RUN_DIR', tmp_path / 'source_runs')
+    monkeypatch.setattr(briefing_generator, 'load_event_radar',
+                        lambda day: event_radar.load_event_radar(day, cache_dir=tmp_path / 'event_radar'))
     return tmp_path
 
 
