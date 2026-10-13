@@ -63,6 +63,13 @@ sources:
       - ClaudeAI
       - DeepSeek
 
+  # 关注账号是独立公开主页采集，非 watchlist 的 @handle 话题检索。
+  x_public_accounts:
+    enabled: true
+    handles: [oran_ge, dotey, fkysly, thsottiaux]
+    max_posts_per_account: 5
+    lookback_days: 2
+
   # ============================================================
   # 三、AI 模型平台（新增）
   # ============================================================

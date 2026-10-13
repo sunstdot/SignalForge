@@ -18,6 +18,7 @@ from .hn_top_fetcher import fetch_hn_top
 from .subreddit_fetcher import fetch_subreddits
 from .source_run_store import save_source_run
 from .event_radar import run_event_radar
+from .x_account_daily import run_x_account_daily
 from .company_blog import apply_company_blog_policy
 from .watchlist_daily import run_watchlist_daily
 from .chinese_briefer import generate_chinese_brief
@@ -66,6 +67,19 @@ async def run_collection(target_date: str = None):
     # 存储到文件
     stored = store_content_items(all_items)
     print(f"✓ Stored {stored} new items")
+
+    account_config = config.get("sources", {}).get("x_public_accounts", {})
+    if account_config.get("enabled") and target_date == datetime.now().strftime("%Y-%m-%d"):
+        try:
+            accounts = await run_x_account_daily(
+                target_date, account_config.get("handles", []),
+                max_posts_per_account=account_config.get("max_posts_per_account", 5),
+                lookback_days=account_config.get("lookback_days", 2),
+            )
+            stored += accounts.get("stored_count", 0)
+        except Exception as exc:
+            # A blocked public profile must not erase official RSS/HN content.
+            print(f"  ✗ X public account collection unavailable: {type(exc).__name__}")
 
     watchlist = config.get("sources", {}).get("watchlist", {})
     # 历史回填不触发昂贵的实时搜索，也不把旧帖伪装成当日新消息。
@@ -135,6 +149,8 @@ def _run_batch_quick_reads(date: str):
 
     # 新公开社区/热榜会一次带回大量帖子；已有信源的速读额度不受影响。
     social_origins = {"hn_top", "reddit_subreddit", "x_public_account"}
+    # Always leave room for directly followed accounts, even after a large HN list.
+    to_process.sort(key=lambda item: 0 if (item.get("metadata") or {}).get("origin") == "x_public_account" else 1)
     social_count = 0
     bounded = []
     for item in to_process:
