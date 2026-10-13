@@ -27,7 +27,7 @@ async function showBriefing(data, check) {
   }
 }
 
-test('default account section shows quote/original link and unavailable account without inventing posts', async () => {
+test('account evidence stays visible beside events and unavailable accounts invent no posts', async () => {
   await showBriefing({ date: day, items: [raw], signals: {
     inspiration: [], execution: [], total: 0,
     accounts: [
@@ -44,15 +44,13 @@ test('default account section shows quote/original link and unavailable account 
         hn: { status: 'no_results', posts: [] }, reddit: { status: 'unavailable', posts: [] } } }],
   } }, async (page, calls) => {
     const radar = page.getByRole('region', { name: '今日信号' })
-    await radar.getByRole('button', { name: /关注账号/ }).waitFor({ timeout: 15000 })
+    await radar.getByRole('heading', { name: '关注账号' }).waitFor({ timeout: 15000 })
     await radar.getByRole('link', { name: /查看原帖/ }).waitFor({ timeout: 15000 })
     assert.match(await radar.innerText(), /@oran_ge.*引用帖/s)
     assert.match(await radar.innerText(), /@dotey.*采集不可用/s)
     assert.equal(await radar.getByRole('link', { name: /查看原帖/ }).count(), 1)
-    assert.equal(await radar.getByRole('heading', { name: 'Agent Compiler launched' }).count(), 0)
+    assert.equal(await radar.getByRole('heading', { name: 'Agent Compiler launched' }).count(), 1)
     const before = calls()
-    await radar.getByRole('button', { name: /事件追踪/ }).click()
-    await radar.getByRole('heading', { name: 'Agent Compiler launched' }).waitFor()
     await page.getByRole('button', { name: /全部内容/ }).click()
     await page.getByText(raw.title).waitFor()
     assert.equal(calls(), before)

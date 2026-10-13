@@ -6,18 +6,18 @@ import { useShareSelection, ShareSelectionBar } from './useShareSelection'
 import { getSignalItems, getEventItems, getAccountItems } from './dailySignalData'
 import EventRadar from './EventRadar'
 import AccountRadar from './AccountRadar'
+import './BriefingRadar.css'
 
 const CATEGORY_TABS = [
-  { key: 'signals', label: '今日信号', icon: '✦' },
-  { key: 'all', label: '全部内容', icon: '∗' },
-  { key: 'paper', label: '论文', icon: '📄' },
-  { key: 'repo', label: '仓库', icon: '🛠️' },
-  { key: 'model', label: '模型', icon: '🤖' },
-  { key: 'news', label: '资讯', icon: '📰' },
-  { key: 'blog', label: 'AI公司博客', icon: '🏢' },
-  { key: 'wechat', label: '微信公众号', icon: '💬' },
-  { key: 'smolai', label: 'Smol资讯', icon: '⚡' },
-  { key: 'investor', label: '投资者资讯', icon: '💼' }
+  { key: 'all', label: '全部内容' },
+  { key: 'paper', label: '论文' },
+  { key: 'repo', label: '仓库' },
+  { key: 'model', label: '模型' },
+  { key: 'news', label: '资讯' },
+  { key: 'blog', label: 'AI公司博客' },
+  { key: 'wechat', label: '微信公众号' },
+  { key: 'smolai', label: 'Smol资讯' },
+  { key: 'investor', label: '投资者资讯' }
 ]
 
 const SOURCE_TYPE_MAP = {
@@ -49,7 +49,6 @@ function BriefingPage() {
   const [briefing, setBriefing] = useState(null)
   const [activeCategory, setActiveCategory] = useState('signals')
   const [activeSignalTrack, setActiveSignalTrack] = useState('inspiration')
-  const [activeRadarTab, setActiveRadarTab] = useState('accounts')
   const [loading, setLoading] = useState(true)
   const [opportunities, setOpportunities] = useState([])
   const [oppsLoading, setOppsLoading] = useState(false)
@@ -76,7 +75,6 @@ function BriefingPage() {
       setBriefing(briefingData)
       setActiveCategory(briefingData?.signals ? 'signals' : 'all')
       setActiveSignalTrack('inspiration')
-      setActiveRadarTab(Array.isArray(briefingData?.signals?.accounts) ? 'accounts' : 'events')
     } catch (error) {
       if (error.name !== 'AbortError') console.error('Failed to fetch data:', error)
       return
@@ -214,115 +212,59 @@ function BriefingPage() {
 
   return (
     <>
-      {/* Header */}
-      <header
-        className="sticky top-0 z-20 px-6 py-4 border-b"
-        style={{ backgroundColor: 'var(--bg-primary)', borderColor: 'var(--border)' }}
-      >
-        <div className="flex items-center gap-4 mb-4">
-          <div className="window-dots">
-            <span className="window-dot window-dot-red" />
-            <span className="window-dot window-dot-yellow" />
-            <span className="window-dot window-dot-green" />
+      <div className="briefing-shell">
+        <header className="briefing-topbar">
+          <div className="briefing-heading">
+            <h1>今日 AI 情报</h1>
+            <time dateTime={date}>{date}</time>
           </div>
-          <div className="flex items-center gap-2 text-sm">
-            <span style={{ color: 'var(--text-primary)' }}>TokenBurner</span>
-            <span style={{ color: 'var(--text-muted)' }}>/</span>
-            <span style={{ color: 'var(--accent-blue)' }}>{date}</span>
-            <span style={{ color: 'var(--text-muted)' }}>/</span>
-            <span style={{ color: 'var(--text-primary)' }}>今日 AI 情报</span>
-          </div>
-        </div>
-        <ShareSelectionBar
-          signalIds={signalIds}
-          opportunityIds={opportunityIds}
-          generating={generating}
-          onClear={clearAll}
-          onGenerate={generate}
-        />
-      </header>
-
-      {/* Category Tabs */}
-      <div className="px-6 py-4 border-b" style={{ borderColor: 'var(--border)' }}>
-        <div className="flex items-center gap-2">
-          {CATEGORY_TABS.map((tab) => (
-            <button
-              key={tab.key}
-              onClick={() => setActiveCategory(tab.key)}
-              className={`tab-btn ${activeCategory === tab.key ? 'active' : ''}`}
-            >
-              <span>{tab.icon}</span>
-              <span>{tab.label}</span>
-            </button>
-          ))}
-          {activeCategory !== 'signals' && <button
-            onClick={() => setSortOrder(o => o === 'desc' ? 'asc' : 'desc')}
-            className="ml-auto text-xs px-3 py-1.5 rounded border font-medium transition-all flex items-center gap-1"
-            style={{
-              color: 'var(--text-secondary)',
-              borderColor: 'var(--border)',
-              backgroundColor: 'var(--bg-secondary)',
-              whiteSpace: 'nowrap',
-            }}
-          >
-            {sortOrder === 'desc' ? '↓ 倒序' : '↑ 正序'}
-          </button>}
-        </div>
-      </div>
-
-      {/* Content */}
-      <div className="p-6" style={{ maxWidth: '900px' }}>
-        {briefing.summary && (
-          <div className="mb-6">
-            <h2 className="text-xl font-bold mb-4" style={{ color: 'var(--text-primary)' }}>
-              AI 技术日报总览
-            </h2>
-            <div className="markdown-content text-sm" style={{ color: 'var(--text-secondary)', lineHeight: 1.8 }}>
-              <ReactMarkdown>{briefing.summary}</ReactMarkdown>
-            </div>
-          </div>
-        )}
-        {activeCategory === 'signals' && (
-          <section className="space-y-4" aria-label="今日信号">
-            <div className="flex flex-wrap items-center justify-between gap-3">
-              <div>
-                <h2 className="text-xl font-bold" style={{ color: 'var(--text-primary)' }}>今日信号</h2>
-                <p className="text-xs mt-1" style={{ color: 'var(--text-muted)' }}>
-                  {hasRadar
-                    ? `关注动态 ${getAccountItems(briefing).reduce((sum, group) => sum + (group.posts?.length || 0), 0)} 条 · 具体事件 ${getEventItems(briefing).length} 件 · 不凑数 · 原始信息仍可在「全部内容」查看`
-                    : `符合标准 ${briefing.signals?.total ?? 0} 条 · 不凑数 · 原始信息仍可在「全部内容」查看`}
-                </p>
+          <ShareSelectionBar
+            signalIds={signalIds}
+            opportunityIds={opportunityIds}
+            generating={generating}
+            onClear={clearAll}
+            onGenerate={generate}
+          />
+        </header>
+        <main className="briefing-page">
+          <nav className="briefing-main-nav" aria-label="日报视图">
+            <button type="button" aria-pressed={activeCategory === 'signals'}
+              className={activeCategory === 'signals' ? 'active' : ''}
+              onClick={() => setActiveCategory('signals')}>今日信号</button>
+            <button type="button" aria-pressed={activeCategory !== 'signals'}
+              className={activeCategory !== 'signals' ? 'active' : ''}
+              onClick={() => setActiveCategory('all')}>全部内容</button>
+          </nav>
+          {activeCategory === 'signals' && (
+            <section className="briefing-signals" aria-label="今日信号">
+              <div className="briefing-signals-intro">
+                <h2>今日信号</h2>
+                <p>{hasRadar
+                  ? `具体事件 ${getEventItems(briefing).length} 件 · 可核验账号动态 ${getAccountItems(briefing).reduce((sum, group) => sum + (group.posts?.length || 0), 0)} 条 · 原始信息仍可在「全部内容」查看`
+                  : `符合标准 ${briefing.signals?.total ?? 0} 条 · 原始信息仍可在「全部内容」查看`}</p>
+                {hasEvents && hasAccounts && <a className="briefing-account-jump" href="#briefing-following">查看关注账号</a>}
               </div>
-              <div className="flex gap-2" role="group" aria-label="信号轨道">
-                {hasAccounts && <button type="button" className={`tab-btn ${activeRadarTab === 'accounts' ? 'active' : ''}`}
-                  onClick={() => setActiveRadarTab('accounts')}>
-                  关注账号
-                </button>}
-                {hasEvents && <button type="button" className={`tab-btn ${activeRadarTab === 'events' ? 'active' : ''}`}
-                  onClick={() => setActiveRadarTab('events')}>
-                  事件追踪 ({getEventItems(briefing).length})
-                </button>}
-                {!hasEvents && [
-                  { key: 'inspiration', label: '灵感雷达' },
-                  { key: 'execution', label: '执行雷达' },
-                ].map(track => (
-                  <button key={track.key} type="button" className={`tab-btn ${(hasAccounts ? activeRadarTab === 'legacy' : true) && activeSignalTrack === track.key ? 'active' : ''}`}
-                    onClick={() => { setActiveSignalTrack(track.key); setActiveRadarTab('legacy') }}>
-                    {track.label} ({getSignalItems(briefing, track.key).length})
-                  </button>
-                ))}
-              </div>
-            </div>
-            {hasAccounts && activeRadarTab === 'accounts' ? (
-              <AccountRadar accounts={getAccountItems(briefing)} />
-            ) : hasEvents && activeRadarTab === 'events' ? (
-              <EventRadar events={getEventItems(briefing)} sourceStatus={briefing.signals.source_status}
-                selectionStatus={briefing.signals.selection_status} />
-            ) : getSignalItems(briefing, activeSignalTrack).length === 0 ? (
-              <p className="text-sm py-6" style={{ color: 'var(--text-muted)' }}>
-这条轨道今天没有足够依据的信号；可切换轨道，或在「全部内容」查看原始信息。
-              </p>
-            ) : getSignalItems(briefing, activeSignalTrack).map(item => (
+              {hasRadar && <div className="briefing-radar-grid">
+                {hasEvents && <EventRadar events={getEventItems(briefing)} sourceStatus={briefing.signals.source_status}
+                  selectionStatus={briefing.signals.selection_status} />}
+                {hasAccounts && <AccountRadar accounts={getAccountItems(briefing)} />}
+              </div>}
+              {!hasEvents && <div className="briefing-legacy">
+                <div className="briefing-legacy-nav" role="group" aria-label="信号轨道">
+                  {[
+                    { key: 'inspiration', label: '灵感雷达' },
+                    { key: 'execution', label: '执行雷达' },
+                  ].map(track => (
+                    <button key={track.key} type="button" aria-pressed={activeSignalTrack === track.key}
+                      className={`tab-btn ${activeSignalTrack === track.key ? 'active' : ''}`}
+                      onClick={() => setActiveSignalTrack(track.key)}>
+                      {track.label} ({getSignalItems(briefing, track.key).length})
+                    </button>
+                  ))}
+                </div>
+                {getSignalItems(briefing, activeSignalTrack).length === 0 ? (
+                  <p className="briefing-empty">这条轨道今天没有足够依据的信号；可切换轨道，或在「全部内容」查看原始信息。</p>
+                ) : getSignalItems(briefing, activeSignalTrack).map(item => (
               <article key={item.id} className="rounded-lg border p-4" style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}>
                 <div className="flex items-center justify-between gap-3">
                   <a href={item.url} target="_blank" rel="noopener noreferrer" className="font-semibold hover:underline"
@@ -347,20 +289,42 @@ function BriefingPage() {
                   <a href={item.url} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-blue)' }}>查看原文 ↗</a>
                 </div>
               </article>
-            ))}
-          </section>
-        )}
-        {activeCategory !== 'signals' && <section className="space-y-4">
-          {filteredItems.map((item, index) => (
-            <ContentCard key={item.id} item={item} index={index + 1}
-              cachedSummary={quickReads[item.id]}
-              date={date}
-              onQuickRead={(id, summary) => setQuickReads(prev => ({ ...prev, [id]: summary }))}
-              selected={signalIds.includes(item.id)}
-              onToggle={() => toggleSignal(item.id)}
-            />
-          ))}
-        </section>}
+                ))}
+              </div>}
+            </section>
+          )}
+          {briefing.summary && <details className="briefing-summary">
+            <summary>日报总览 <span>展开查看全文</span></summary>
+            <div className="markdown-content briefing-summary-content">
+              <ReactMarkdown>{briefing.summary}</ReactMarkdown>
+            </div>
+          </details>}
+          {activeCategory !== 'signals' && <section className="briefing-archive" aria-label="全部内容归档">
+            <div className="briefing-archive-header">
+              <div><h2>原始内容</h2><p>保留当天采集的全部条目，可按来源浏览。</p></div>
+              <button type="button" className="briefing-sort" onClick={() => setSortOrder(o => o === 'desc' ? 'asc' : 'desc')}>
+                {sortOrder === 'desc' ? '↓ 倒序' : '↑ 正序'}
+              </button>
+            </div>
+            <div className="briefing-filter-list" role="group" aria-label="内容分类">
+              {CATEGORY_TABS.map(tab => <button key={tab.key} type="button"
+                aria-pressed={activeCategory === tab.key}
+                className={activeCategory === tab.key ? 'active' : ''}
+                onClick={() => setActiveCategory(tab.key)}>{tab.label}</button>)}
+            </div>
+            <div className="briefing-archive-list">
+              {filteredItems.map((item, index) => (
+                <ContentCard key={item.id} item={item} index={index + 1}
+                  cachedSummary={quickReads[item.id]}
+                  date={date}
+                  onQuickRead={(id, summary) => setQuickReads(prev => ({ ...prev, [id]: summary }))}
+                  selected={signalIds.includes(item.id)}
+                  onToggle={() => toggleSignal(item.id)}
+                />
+              ))}
+            </div>
+          </section>}
+        </main>
       </div>
     </>
   )
