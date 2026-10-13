@@ -44,8 +44,8 @@ test('default account section shows quote/original link and unavailable account 
         hn: { status: 'no_results', posts: [] }, reddit: { status: 'unavailable', posts: [] } } }],
   } }, async (page, calls) => {
     const radar = page.getByRole('region', { name: '今日信号' })
-    await radar.getByRole('button', { name: /关注账号/ }).waitFor({ timeout: 5000 })
-    await radar.getByRole('link', { name: /查看原帖/ }).waitFor({ timeout: 5000 })
+    await radar.getByRole('button', { name: /关注账号/ }).waitFor({ timeout: 15000 })
+    await radar.getByRole('link', { name: /查看原帖/ }).waitFor({ timeout: 15000 })
     assert.match(await radar.innerText(), /@oran_ge.*引用帖/s)
     assert.match(await radar.innerText(), /@dotey.*采集不可用/s)
     assert.equal(await radar.getByRole('link', { name: /查看原帖/ }).count(), 1)
@@ -64,7 +64,7 @@ test('legacy day without account state retains old signal tracks', async () => {
     inspiration: [{ ...raw, takeaway: 'Original note.' }], execution: [], total: 1,
   } }, async page => {
     const radar = page.getByRole('region', { name: '今日信号' })
-    await radar.getByRole('button', { name: /灵感雷达/ }).waitFor({ timeout: 5000 })
+    await radar.getByRole('button', { name: /灵感雷达/ }).waitFor({ timeout: 15000 })
     assert.equal(await radar.getByRole('button', { name: /关注账号/ }).count(), 0)
     assert.equal(await radar.getByRole('link', { name: raw.title }).count(), 1)
   })

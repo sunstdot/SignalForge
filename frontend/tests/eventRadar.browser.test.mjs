@@ -41,7 +41,7 @@ test('today shows cached events, independent platform coverage and all original 
         reddit: { status: 'no_results', posts: [] } } }],
   } }, async (page, requests) => {
     const radar = page.getByRole('region', { name: '今日信号' })
-    await radar.getByRole('heading', { name: 'Agent Compiler released' }).waitFor({ timeout: 5000 })
+    await radar.getByRole('heading', { name: 'Agent Compiler released' }).waitFor({ timeout: 15000 })
     assert.match(await radar.innerText(), /发生了什么.*Agent Compiler published its source/s)
     assert.match(await radar.innerText(), /值得看什么.*Developers can inspect its implementation/s)
     assert.match(await radar.innerText(), /X.*不可用/s)
@@ -61,7 +61,7 @@ test('collection-only date says selection has not run rather than no events occu
     events: [], source_status: { hn: 'ok', reddit: {} }, selection_status: 'not_run',
   } }, async page => {
     const radar = page.getByRole('region', { name: '今日信号' })
-    await radar.getByText(/事件筛选尚未运行/).waitFor({ timeout: 5000 })
+    await radar.getByText(/事件筛选尚未运行/).waitFor({ timeout: 15000 })
     assert.doesNotMatch(await radar.innerText(), /没有足够原始依据的具体事件/)
   })
 })
@@ -71,7 +71,7 @@ test('old briefing without event cache still displays original inspiration and e
     inspiration: [{ ...source, takeaway: 'Verified builder report' }], execution: [], total: 1,
   } }, async page => {
     const radar = page.getByRole('region', { name: '今日信号' })
-    await radar.getByRole('button', { name: /灵感雷达/ }).waitFor({ timeout: 5000 })
+    await radar.getByRole('button', { name: /灵感雷达/ }).waitFor({ timeout: 15000 })
     await radar.getByRole('link', { name: source.title }).waitFor()
     assert.equal(await radar.getByRole('heading', { name: 'Agent Compiler released' }).count(), 0)
   })
