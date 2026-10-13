@@ -1,5 +1,5 @@
 import unittest
-from datetime import datetime
+from datetime import datetime, timedelta
 from unittest.mock import patch
 
 from backend.services import collector
@@ -21,6 +21,24 @@ class DailyCollectionDateTest(unittest.IsolatedAsyncioTestCase):
             await collector.run_daily("2026-05-12")
 
         self.assertEqual(calls["target_date"], "2026-05-12")
+
+    async def test_run_collection_does_not_rearchive_recent_hn_or_reddit_post(self):
+        today = datetime.now().strftime('%Y-%m-%d')
+        yesterday = (datetime.now() - timedelta(days=1)).strftime('%Y-%m-%d')
+        stored = []
+        items = [
+            {'id': 'hn-123', 'source_type': 'hn', 'url': 'https://news.ycombinator.com/item?id=123'},
+            {'id': 'reddit-abc', 'source_type': 'reddit', 'url': 'https://reddit.com/comments/abc'},
+            {'id': 'rss-new', 'source_type': 'rss', 'url': 'https://example.com/new'},
+        ]
+        def load(day):
+            return items[:2] if day == yesterday else []
+        with (patch.object(collector, 'load_config', return_value={'sources': {}}),
+              patch.object(collector, 'fetch_all_sources', return_value=items),
+              patch.object(collector, '_load_content_file', side_effect=load),
+              patch.object(collector, 'store_content_items', side_effect=lambda rows: stored.extend(rows) or len(rows))):
+            await collector.run_collection(target_date=today)
+        self.assertEqual([item['id'] for item in stored], ['rss-new'])
 
     async def test_run_collection_stores_all_items_under_target_date(self):
         stored_items = []

@@ -3,6 +3,7 @@ import asyncio
 import json
 import os
 import re
+import httpx
 from datetime import datetime, timedelta
 from typing import List, Dict
 import yaml
@@ -13,6 +14,9 @@ from .arxiv_fetcher import fetch_arxiv_papers
 from .github_fetcher import fetch_github_trending
 from .models_fetcher import fetch_model_platforms
 from .anthropic_blog_fetcher import fetch_anthropic_technical_articles, normalize_url
+from .hn_top_fetcher import fetch_hn_top
+from .subreddit_fetcher import fetch_subreddits
+from .source_run_store import save_source_run
 from .company_blog import apply_company_blog_policy
 from .watchlist_daily import run_watchlist_daily
 from .chinese_briefer import generate_chinese_brief
@@ -40,16 +44,19 @@ async def run_collection(target_date: str = None):
 
     # 官方栏目页会连续两天包含同一篇新文，避免跨天重复推送。
     prior_ids = set()
+    prior_social_ids = set()
     day = datetime.strptime(target_date, "%Y-%m-%d")
     for delta in (1, 2):
         previous = (day - timedelta(days=delta)).strftime("%Y-%m-%d")
-        prior_ids.update(
-            old.get("id") for old in _load_content_file(previous)
-            if old.get("source_type") == "anthropic_blog"
-        )
+        for old in _load_content_file(previous):
+            if old.get("source_type") == "anthropic_blog":
+                prior_ids.add(old.get("id"))
+            if old.get("source_type") in {"hn", "reddit"}:
+                prior_social_ids.add(old.get("id"))
     all_items = [
         item for item in all_items
-        if item.get("source_type") != "anthropic_blog" or item.get("id") not in prior_ids
+        if (item.get("source_type") != "anthropic_blog" or item.get("id") not in prior_ids)
+        and (item.get("source_type") not in {"hn", "reddit"} or item.get("id") not in prior_social_ids)
     ]
 
     # 公司博客分桶与折叠：保留所有原始条目
@@ -120,6 +127,18 @@ def _run_batch_quick_reads(date: str):
         and i.get("content_bucket") != "corporate"
         and not i.get("dup_of")
     ]
+
+    # 新公开社区/热榜会一次带回大量帖子；已有信源的速读额度不受影响。
+    social_origins = {"hn_top", "reddit_subreddit", "x_public_account"}
+    social_count = 0
+    bounded = []
+    for item in to_process:
+        if (item.get("metadata") or {}).get("origin") in social_origins:
+            if social_count >= 20:
+                continue
+            social_count += 1
+        bounded.append(item)
+    to_process = bounded
 
     if not to_process:
         print(f"✅ All {len(cached)} items already cached")
@@ -301,6 +320,42 @@ async def fetch_all_sources(config: Dict, target_date: str = None) -> List[Dict]
             print(f"  ✓ {name}: {accepted} items")
         else:
             print(f"  ✗ {name}: unexpected result")
+
+    # 历史回填仍保留原采集器，但不去实时追踪过去日期的社交热榜。
+    if target_date == datetime.now().strftime("%Y-%m-%d"):
+        discovery = sources_config.get("hn_top", {})
+        communities = sources_config.get("reddit_communities", {})
+        jobs = []
+        async with httpx.AsyncClient(timeout=8, follow_redirects=True) as client:
+            if discovery.get("enabled"):
+                jobs.append(("hn", fetch_hn_top(client, target_date, limit=discovery.get("limit", 20))))
+            if communities.get("enabled"):
+                jobs.append(("reddit", fetch_subreddits(
+                    client, target_date, communities.get("names", []),
+                    max_per_sub=communities.get("max_per_sub", 3),
+                )))
+            results = await asyncio.gather(*(task for _, task in jobs), return_exceptions=True)
+        if jobs:
+            status = {"errors": {}}
+            if discovery.get("enabled"):
+                status["hn"] = "unavailable"
+            if communities.get("enabled"):
+                status["reddit"] = {}
+            for (source, _), result in zip(jobs, results):
+                if isinstance(result, Exception):
+                    status["errors"][source] = type(result).__name__
+                    if source == "reddit":
+                        status["reddit"] = {
+                            f"r/{name}": "unavailable" for name in communities.get("names", [])
+                        }
+                    continue
+                all_items.extend(result["items"])
+                if source == "hn":
+                    status["hn"] = result["status"]
+                else:
+                    status["reddit"] = result["statuses"]
+                    status["errors"].update(result.get("errors", {}))
+            save_source_run(target_date, status)
 
     return all_items
 

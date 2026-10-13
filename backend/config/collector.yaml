@@ -28,11 +28,10 @@ sources:
     timeRange: daily
 
   # ============================================================
-  # 每日上游话题（实时检索，依赖本机 last30days 技能；历史回填跳过）
-  # 可按需求修改话题；源不可用时不会阻断原有 RSS 采集。
+  # 手工可启用的话题检索；默认用具体信源发现事件，不运行宽泛话题。
   # ============================================================
   watchlist:
-    enabled: true
+    enabled: false
     topics:
       - "AI agent"
       - "vibe coding"
@@ -41,6 +40,28 @@ sources:
     # 需要重点跟踪的 X 账号（填写 handle；无需 @ 也可）。
     # accounts: ["your_favorite_builder"]
     accounts: []
+
+  # HN 原生热榜，和 HackerNews Daily RSS 摘要并存。
+  hn_top:
+    enabled: true
+    limit: 20
+
+  # 订阅指定社区的公开 hot Atom feed；限速或登录墙视为未覆盖。
+  reddit_communities:
+    enabled: true
+    max_per_sub: 3
+    names:
+      - AI_Agents
+      - aipromptprogramming
+      - Anthropic
+      - artificial
+      - ArtificialInteligence
+      - AskReddit
+      - BeAmazed
+      - ChatGPT
+      - ChatGPTCoding
+      - ClaudeAI
+      - DeepSeek
 
   # ============================================================
   # 三、AI 模型平台（新增）
