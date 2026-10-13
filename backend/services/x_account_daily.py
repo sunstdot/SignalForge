@@ -121,8 +121,11 @@ async def run_x_account_daily(day: str, handles: list[str], *, cache_dir: Path |
         }
 
     if client is None:
-        async with httpx.AsyncClient(timeout=8, follow_redirects=True) as owned:
-            runs = await asyncio.gather(*(fetch_one(owned, handle) for handle in selected))
+        async def isolated_fetch(handle):
+            # A public page may set a guest cookie. Never pass it to a second account.
+            async with httpx.AsyncClient(timeout=8, follow_redirects=True) as isolated:
+                return await fetch_one(isolated, handle)
+        runs = await asyncio.gather(*(isolated_fetch(handle) for handle in selected))
     else:
         runs = await asyncio.gather(*(fetch_one(client, handle) for handle in selected))
     for handle, result in zip(selected, runs):

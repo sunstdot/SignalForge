@@ -241,6 +241,8 @@ python cli.py refetch YYYY-MM-DD
 
 默认情报发现不再自动检索 `AI agent`、`vibe coding`、`RAG`、`LLM new model`；原话题配置和手工 last30days 搜索保留。每日流水线新增 HN 原生热榜（与原 HackerNews Daily RSS 并存）及 `collector.yaml` 中列出的 11 个 Reddit 社区；公开访问的 403/429、超时按来源记录为「不可用」，不等同于「没有帖子」。已取得的原始条目保存在 `data/content/`，采集状态在 `data/source_runs/`；速读后每天最多额外调用**一次**模型批量选择不超过 5 件具体事件，再以专名限额查找 HN／Reddit 讨论。筛选和查询分别缓存在 `data/event_radar/`；简报及静态快照只读取缓存。无需授权的 X 事件搜索未证实可靠时标记「不可用」，不会静默使用 X API 或 Wingsbot 按事件研究。公开 X 账号主页只暴露有限的首屏帖子，不能代表完整时间线；即使可核验本人原创／引用及发布时间，也必须标注「部分覆盖」。新公开来源进入速读每次最多 20 条，速读仍会消耗 token；历史日期不运行新来源的实时发现或事件研究。
 
+`sources.x_public_accounts.handles` 默认关注 `oran_ge`、`dotey`、`fkysly`、`thsottiaux`，可自行编辑。账号路径仅读取免登录的公开主页、核验本人原创／引用及真实帖子链接，不采普通回复或纯转发；每账号的 `partial/unavailable/ok` 状态与帖子记录在 `data/account_runs/`，仅合格原文进入 `data/content/`。默认简报展示「关注账号／事件追踪」并保留「全部内容」和旧日期的灵感／执行视图；点击日期或生成静态快照不会再请求 X。
+
 本机 pnpm 11 若提示 `ERR_PNPM_IGNORED_BUILDS`，可使用根目录 `npm run daily` 执行相同命令；以上说明**不要求现在实际运行日报**。
 
 ## 生成视频
@@ -515,6 +517,8 @@ python cli.py refetch YYYY-MM-DD
 ```
 
 Daily discovery no longer automatically runs the broad `AI agent`, `vibe coding`, `RAG`, or `LLM new model` searches; their configuration and manual last30days searches remain available. Native HN topstories (alongside the existing HackerNews Daily RSS) and the eleven configured subreddit hot feeds are best-effort public sources: 403/429/timeout means **unavailable**, not “no posts.” Raw content lives in `data/content/`, per-source coverage in `data/source_runs/`. After quick reads, at most **one additional batch model call per day** selects up to five specific events; bounded HN/Reddit lookups and selection are cached in `data/event_radar/`. Briefing GET and static snapshots read local caches only. Anonymous X event search is marked unavailable unless a verifiable public provider exists; it does not start per-event Wingsbot searches or use X credentials. Anonymous public X profiles expose only a limited first page: verifiable originals/quotes must still be marked **partial coverage**, never a complete timeline. At most 20 newly collected social items enter the quick-read batch (which still consumes tokens). Historical dates do not launch live event research.
+
+`sources.x_public_accounts.handles` initially follows `oran_ge`, `dotey`, `fkysly`, and `thsottiaux`, and remains editable. The account path reads only anonymous public profiles; verifiable authored originals/quotes are retained, ordinary replies and pure reposts are excluded. Per-handle `partial/unavailable/ok` coverage and verified posts are cached in `data/account_runs/`; eligible original items also enter `data/content/`. The new default briefing has Account Watch and Event Tracking sections, with All Content and the old Inspiration/Execution view for older archives. Browsing a briefing or building static snapshots never fetches X again.
 
 If pnpm 11 reports `ERR_PNPM_IGNORED_BUILDS`, root `npm run daily` invokes the same pipeline; this documentation does **not** require running it now.
 

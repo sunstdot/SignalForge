@@ -104,7 +104,8 @@ NON_DAILY_ORIGINS = {"last30days", "venture-product-radar"}
 
 def _has_daily_content(date: str) -> bool:
     """有每日原始内容或明确的当日采集状态；手工导入单独不成档期。"""
-    if (DATA_DIR / 'source_runs' / f'{date}.json').is_file():
+    if ((DATA_DIR / 'source_runs' / f'{date}.json').is_file()
+            or (DATA_DIR / 'account_runs' / f'{date}.json').is_file()):
         return True
     items = _load_content_file(date)
     return any(
@@ -118,6 +119,7 @@ def get_all_dates() -> List[str]:
     """包含已记录故障状态的日报日期，仍不包含仅手工导入的档期。"""
     dates = {p.stem for p in CONTENT_DIR.glob('*.json')}
     dates.update(p.stem for p in (DATA_DIR / 'source_runs').glob('*.json'))
+    dates.update(p.stem for p in (DATA_DIR / 'account_runs').glob('*.json'))
     return [d for d in sorted(dates, reverse=True) if _has_daily_content(d)]
 
 

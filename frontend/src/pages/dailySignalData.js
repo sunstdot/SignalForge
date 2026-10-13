@@ -9,3 +9,11 @@ export function getEventItems(briefing) {
   const items = briefing?.signals?.events
   return Array.isArray(items) ? items : []
 }
+
+export function getAccountItems(briefing) {
+  const groups = briefing?.signals?.accounts
+  return Array.isArray(groups)
+    ? groups.filter(group => group && typeof group.handle === 'string')
+      .map(group => ({ ...group, posts: Array.isArray(group.posts) ? group.posts : [] }))
+    : []
+}

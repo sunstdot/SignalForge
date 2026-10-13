@@ -2,6 +2,7 @@
 from datetime import date, timedelta
 from unittest.mock import patch
 
+import httpx
 import pytest
 
 from backend.services import collector, storage
@@ -78,6 +79,29 @@ async def test_previous_day_and_last30days_post_url_are_not_reinserted(account_s
     saved = await account_daily.run_x_account_daily(DAY, ['oran_ge'], today=DAY)
     assert len(saved['accounts']['@oran_ge']['posts']) == 3  # verified raw posts survive the display cache
     assert [item['id'] for item in storage._load_content_file(DAY)] == ['x-last30days-1', new['id']]
+
+
+@pytest.mark.asyncio
+async def test_public_guest_cookie_is_never_shared_between_followed_profiles(account_storage, monkeypatch):
+    requests = []
+    def respond(request):
+        requests.append((request.url.path, request.headers.get('cookie')))
+        assert not request.headers.get('cookie')
+        handle = request.url.path.strip('/')
+        ident = '2109821043506610569' if handle == 'oran_ge' else '2109879000000000000'
+        body = (f'<article><a href="/{handle}">User @{handle}</a>'
+                f'<a href="/{handle}/status/{ident}">6h</a>'
+                f'<div>Public project update by @{handle}.</div></article>')
+        return httpx.Response(200, text=body, headers={
+            'Content-Type': 'text/html', 'Set-Cookie': 'guest_id=anonymous; Path=/; Secure',
+        })
+    real_client = httpx.AsyncClient
+    def anonymous_client(**kwargs):
+        return real_client(transport=httpx.MockTransport(respond), **kwargs)
+    monkeypatch.setattr(account_daily.httpx, 'AsyncClient', anonymous_client)
+    result = await account_daily.run_x_account_daily(DAY, ['oran_ge', 'dotey'], today=DAY)
+    assert [record['status'] for record in result['accounts'].values()] == ['partial', 'partial']
+    assert len(requests) == 2
 
 
 @pytest.mark.asyncio

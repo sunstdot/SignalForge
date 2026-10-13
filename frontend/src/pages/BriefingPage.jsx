@@ -3,8 +3,9 @@ import { useParams, Link } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import PaperQuickRead from '../components/PaperQuickRead'
 import { useShareSelection, ShareSelectionBar } from './useShareSelection'
-import { getSignalItems, getEventItems } from './dailySignalData'
+import { getSignalItems, getEventItems, getAccountItems } from './dailySignalData'
 import EventRadar from './EventRadar'
+import AccountRadar from './AccountRadar'
 
 const CATEGORY_TABS = [
   { key: 'signals', label: '今日信号', icon: '✦' },
@@ -48,6 +49,7 @@ function BriefingPage() {
   const [briefing, setBriefing] = useState(null)
   const [activeCategory, setActiveCategory] = useState('signals')
   const [activeSignalTrack, setActiveSignalTrack] = useState('inspiration')
+  const [activeRadarTab, setActiveRadarTab] = useState('accounts')
   const [loading, setLoading] = useState(true)
   const [opportunities, setOpportunities] = useState([])
   const [oppsLoading, setOppsLoading] = useState(false)
@@ -74,6 +76,7 @@ function BriefingPage() {
       setBriefing(briefingData)
       setActiveCategory(briefingData?.signals ? 'signals' : 'all')
       setActiveSignalTrack('inspiration')
+      setActiveRadarTab(Array.isArray(briefingData?.signals?.accounts) ? 'accounts' : 'events')
     } catch (error) {
       if (error.name !== 'AbortError') console.error('Failed to fetch data:', error)
       return
@@ -205,6 +208,10 @@ function BriefingPage() {
     )
   }
 
+  const hasAccounts = Array.isArray(briefing.signals?.accounts)
+  const hasEvents = Array.isArray(briefing.signals?.events)
+  const hasRadar = hasAccounts || hasEvents
+
   return (
     <>
       {/* Header */}
@@ -281,24 +288,34 @@ function BriefingPage() {
               <div>
                 <h2 className="text-xl font-bold" style={{ color: 'var(--text-primary)' }}>今日信号</h2>
                 <p className="text-xs mt-1" style={{ color: 'var(--text-muted)' }}>
-                  {Array.isArray(briefing.signals?.events)
-                    ? `具体事件 ${getEventItems(briefing).length} 件 · 不凑数 · 原始信息仍可在「全部内容」查看`
+                  {hasRadar
+                    ? `关注动态 ${getAccountItems(briefing).reduce((sum, group) => sum + (group.posts?.length || 0), 0)} 条 · 具体事件 ${getEventItems(briefing).length} 件 · 不凑数 · 原始信息仍可在「全部内容」查看`
                     : `符合标准 ${briefing.signals?.total ?? 0} 条 · 不凑数 · 原始信息仍可在「全部内容」查看`}
                 </p>
               </div>
-              {!Array.isArray(briefing.signals?.events) && <div className="flex gap-2" role="group" aria-label="信号轨道">
-                {[
+              <div className="flex gap-2" role="group" aria-label="信号轨道">
+                {hasAccounts && <button type="button" className={`tab-btn ${activeRadarTab === 'accounts' ? 'active' : ''}`}
+                  onClick={() => setActiveRadarTab('accounts')}>
+                  关注账号
+                </button>}
+                {hasEvents && <button type="button" className={`tab-btn ${activeRadarTab === 'events' ? 'active' : ''}`}
+                  onClick={() => setActiveRadarTab('events')}>
+                  事件追踪 ({getEventItems(briefing).length})
+                </button>}
+                {!hasEvents && [
                   { key: 'inspiration', label: '灵感雷达' },
                   { key: 'execution', label: '执行雷达' },
                 ].map(track => (
-                  <button key={track.key} type="button" className={`tab-btn ${activeSignalTrack === track.key ? 'active' : ''}`}
-                    onClick={() => setActiveSignalTrack(track.key)}>
+                  <button key={track.key} type="button" className={`tab-btn ${(hasAccounts ? activeRadarTab === 'legacy' : true) && activeSignalTrack === track.key ? 'active' : ''}`}
+                    onClick={() => { setActiveSignalTrack(track.key); setActiveRadarTab('legacy') }}>
                     {track.label} ({getSignalItems(briefing, track.key).length})
                   </button>
                 ))}
-              </div>}
+              </div>
             </div>
-            {Array.isArray(briefing.signals?.events) ? (
+            {hasAccounts && activeRadarTab === 'accounts' ? (
+              <AccountRadar accounts={getAccountItems(briefing)} />
+            ) : hasEvents && activeRadarTab === 'events' ? (
               <EventRadar events={getEventItems(briefing)} sourceStatus={briefing.signals.source_status}
                 selectionStatus={briefing.signals.selection_status} />
             ) : getSignalItems(briefing, activeSignalTrack).length === 0 ? (

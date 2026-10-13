@@ -1,9 +1,18 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
-import { getSignalItems, getEventItems } from './dailySignalData.js'
+import { getSignalItems, getEventItems, getAccountItems } from './dailySignalData.js'
 
 const page = readFileSync(new URL('./BriefingPage.jsx', import.meta.url), 'utf8')
+
+test('account groups preserve handle coverage and legacy snapshots stay empty', () => {
+  const group = { handle: '@dotey', status: 'partial', posts: [{ id: 'x-1', kind: 'quote' }] }
+  assert.deepEqual(getAccountItems({ signals: { accounts: [group] } }), [group])
+  assert.deepEqual(getAccountItems({ signals: { inspiration: [{ id: 'old' }] } }), [])
+  assert.deepEqual(getAccountItems(null), [])
+  assert.deepEqual(getAccountItems({ signals: { accounts: [{ handle: '@oran_ge', status: 'partial' }, null] } }),
+    [{ handle: '@oran_ge', status: 'partial', posts: [] }])
+})
 
 test('event items come from cached radar and old snapshots stay empty', () => {
   assert.deepEqual(getEventItems({ signals: { events: [{ id: 'event-1' }] } }), [{ id: 'event-1' }])
