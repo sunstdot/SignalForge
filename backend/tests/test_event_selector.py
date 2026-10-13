@@ -114,6 +114,34 @@ def test_other_model_exception_is_isolated_and_cached(tmp_path):
     assert len(calls) == 1
 
 
+def test_prompt_version_change_on_same_day_never_triggers_a_second_model_charge(tmp_path):
+    legacy = {'id': 'event-previous-version', 'seed_ids': ['hn-123']}
+    path = tmp_path / f'{DAY}.selection.json'
+    path.write_text(json.dumps({'version': 0, 'status': 'ok', 'events': [legacy]}), encoding='utf-8')
+    def do_not_charge_again(messages):
+        raise AssertionError('a same-day selection was already made')
+    assert select_events(DAY, SEEDS, {}, cache_dir=tmp_path, ask=do_not_charge_again) == [legacy]
+
+
+def test_existing_concurrent_reservation_prevents_a_second_model_call(tmp_path):
+    (tmp_path / f'{DAY}.selection.lock').write_text('another daily worker', encoding='utf-8')
+    def no_second_request(messages):
+        raise AssertionError('a concurrent worker already reserved the call')
+    assert select_events(DAY, SEEDS, {}, cache_dir=tmp_path, ask=no_second_request) == []
+    assert not (tmp_path / f'{DAY}.selection.json').exists()
+
+
+def test_request_is_reserved_before_model_call_so_crash_cannot_recharge(tmp_path):
+    path = tmp_path / f'{DAY}.selection.json'
+    observed = []
+    def inspect_and_fail(messages):
+        observed.append(json.loads(path.read_text(encoding='utf-8'))['status'] if path.exists() else 'missing')
+        raise RuntimeError('provider disappeared')
+    assert select_events(DAY, SEEDS, {}, cache_dir=tmp_path, ask=inspect_and_fail) == []
+    assert observed == ['in_progress']
+    assert json.loads(path.read_text(encoding='utf-8'))['status'] == 'unavailable'
+
+
 def test_model_error_is_cached_and_does_not_repeat_a_paid_request(tmp_path):
     attempts = []
     def offline(messages):

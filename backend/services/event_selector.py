@@ -113,11 +113,12 @@ def select_events(day: str, items: list[dict], quick_reads: dict[str, str], *,
     if path.is_file():
         try:
             saved = json.loads(path.read_text(encoding='utf-8'))
-            if saved.get('version') == PROMPT_VERSION:
-                return saved.get('events', [])
+            if isinstance(saved, dict) and isinstance(saved.get('events'), list):
+                # A prompt-version change cannot silently charge twice on the same date.
+                return saved['events']
         except (OSError, ValueError, TypeError):
-            # A damaged cache is not evidence of a previous successful model call.
             pass
+        return []  # damaged same-day state is unavailable, never an automatic new charge
     candidates = _candidate_items(day, items)
     input_hash = hashlib.sha256('|'.join(item['id'] for item in candidates).encode()).hexdigest()
     if not candidates:
@@ -144,6 +145,24 @@ def select_events(day: str, items: list[dict], quick_reads: dict[str, str], *,
         'Use a specific named entity in query. An empty events list is valid.\n'
         + json.dumps(evidence, ensure_ascii=False)
     )
+    # Reserve across concurrent daily workers before calling the model. A crash fails closed.
+    path.parent.mkdir(parents=True, exist_ok=True)
+    lock_path = path.with_suffix('.lock')
+    try:
+        fd = os.open(lock_path, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o600)
+    except FileExistsError:
+        return []
+    try:
+        if path.is_file():
+            try:
+                return json.loads(path.read_text(encoding='utf-8')).get('events', [])
+            except (OSError, ValueError, TypeError):
+                return []
+        _write_json(path, {'version': PROMPT_VERSION, 'status': 'in_progress',
+                           'input_hash': input_hash, 'events': []})
+    finally:
+        os.close(fd)
+        lock_path.unlink(missing_ok=True)
     try:
         payload = json.loads(ask([{'role': 'user', 'content': prompt}]))
         if not isinstance(payload, dict) or not isinstance(payload.get('events'), list):
