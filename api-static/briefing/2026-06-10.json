@@ -1,0 +1,73 @@
+{
+  "id": "6f406568-7cf7-454d-9add-fe75a9312847",
+  "date": "2026-06-10",
+  "items": [
+    {
+      "id": "l30-x-31614a911292",
+      "title": "💡 Peter Steinberger put it plainly: \"You shouldn't be prompting coding agents anymore. You should be designing loops that prompt your agents",
+      "source": "X",
+      "source_type": "x",
+      "url": "https://x.com/DataScienceDojo/status/2064739436395434269",
+      "summary": "💡 Peter Steinberger put it plainly: \"You shouldn't be prompting coding agents anymore. You should be designing loops that prompt your agents.\" Boris Cherny, head of Claude Code at Anthropic, backed it up: \"I don't prompt Claude anymore. I have loops running that prompt Claude. My job is to write loops.\" So, what makes it different from prompt engineering?...",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 10,
+      "created_at": "2026-06-10"
+    },
+    {
+      "id": "l30-x-9b66f59f4ad7",
+      "title": "AI coding 的瓶頸，正在從 Prompt 轉移到 Loop。Peter Steinberger 說，不要再 prompt agents，要設計會 prompt agents 的 loops。",
+      "source": "X",
+      "source_type": "x",
+      "url": "https://x.com/wang_hang0413/status/2064646555530088654",
+      "summary": "AI coding 的瓶頸，正在從 Prompt 轉移到 Loop。Peter Steinberger 說，不要再 prompt agents，要設計會 prompt agents 的 loops。 Boris Cherny 也說，他現在的工作不是 prompt Claude，而是寫 loops。AI coding 的下一階段，不是比 prompt。而是比設計一套可以自己運轉的 agent loop。真正有用的 loop 要能自動發現問題、分派任務、開 worktree、讀 skills，最後把狀態寫回去。 Prompt Engineer 解決的是「這一輪怎麼問; Loop Engineer 解決的是「整個系統怎麼自己推進」。Prompt 是一次性的 ; Loop 是可重複、可驗證、可接續的系統。 但這不...",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 7,
+      "created_at": "2026-06-10"
+    },
+    {
+      "id": "l30-reddit-3960e0707625",
+      "title": "Anthropic closing the path to life science research",
+      "source": "Reddit",
+      "source_type": "reddit",
+      "url": "https://www.reddit.com/r/singularity/comments/1u2flqe/anthropic_closing_the_path_to_life_science/",
+      "summary": "Anthropic closing the path to life science research",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 0,
+      "created_at": "2026-06-10"
+    },
+    {
+      "id": "l30-reddit-e9b91feb51dd",
+      "title": "Dario Amodei says he started Anthropic because Altman is liar not because of safety reasons.",
+      "source": "Reddit",
+      "source_type": "reddit",
+      "url": "https://www.reddit.com/r/singularity/comments/1u25uy6/dario_amodei_says_he_started_anthropic_because/",
+      "summary": "Dario Amodei says he started Anthropic because Altman is liar not because of safety reasons.",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 0,
+      "created_at": "2026-06-10"
+    },
+    {
+      "id": "l30-reddit-1428a0eb1963",
+      "title": "Anthropic is intentionally nerfing Fable when asked to develop other LLMs",
+      "source": "Reddit",
+      "source_type": "reddit",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u1s2oz/anthropic_is_intentionally_nerfing_fable_when/",
+      "summary": "Anthropic is intentionally nerfing Fable when asked to develop other LLMs",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 0,
+      "created_at": "2026-06-10"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-06-19T10:22:35.389454"
+}

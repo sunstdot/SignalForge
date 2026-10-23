@@ -1,0 +1,576 @@
+{
+  "date": "2026-05-25",
+  "opportunities": [
+    {
+      "opportunity_title": "跨境电商离线翻译与SEO文案润色工具",
+      "core_insight": "1.8B模型可在普通电脑上运行，翻译质量足以支撑商品文案，摆脱API调用成本，使离线批量翻译可行",
+      "product_form": "帮助跨境电商卖家批量生成多语言产品描述和优化关键词的桌面工具",
+      "target_users": "亚马逊/Shopify卖家、外贸创业者，需频繁翻译产品页面，对成本和效率敏感",
+      "mvp_features": [
+        "导入CSV一键批量翻译标题/五点描述",
+        "翻译后SEO关键词自动本地化优化",
+        "多语种预览并直接导出到店铺模板"
+      ],
+      "business_model": "买断制 $49，含1年更新；或按使用量订阅 $9.9/月",
+      "competitive_barrier": "",
+      "risks": "小语种翻译质量可能不及DeepL，需持续微调模型",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 18,
+      "source_title": "🤗 tencent/Hy-MT2-1.8B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/tencent/Hy-MT2-1.8B",
+      "item_id": "hf-model-7e9e2738f9eb"
+    },
+    {
+      "opportunity_title": "AI短视频一键生成器",
+      "core_insight": "开源视频生成模型质量已达可用级，下载量证明需求旺盛，可包装为无需设计能力的短视频创作工具。",
+      "product_form": "帮助社交媒体运营和电商卖家从文本生成营销短视频的在线工具",
+      "target_users": "电商店主、短视频创作者、社交媒体运营，需大量原创视频素材，付费意愿中高",
+      "mvp_features": [
+        "文案转生成短视频",
+        "提供多种视频模板",
+        "视频剪辑和字幕添加"
+      ],
+      "business_model": "按生成视频时长计费，基础包$29/月含10分钟视频",
+      "competitive_barrier": "",
+      "risks": "生成视频质量不稳定，可能无法满足商业标准，算力成本高",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 5,
+        "tech_timing": 5,
+        "buildability": 3
+      },
+      "total_score": 18,
+      "source_title": "🤗 SulphurAI/Sulphur-2-base",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/SulphurAI/Sulphur-2-base",
+      "item_id": "hf-model-967b88027b16"
+    },
+    {
+      "opportunity_title": "文生图质量自动优选API",
+      "core_insight": "该论文提出了可工程化的图片质量评估方法，能替代人工从数百张生成图中挑出最佳匹配，节省70%筛选时间。",
+      "product_form": "为电商和设计平台提供批量图片质量评分与排序的API服务",
+      "target_users": "电商代运营、AI绘画工具开发者，需大量图片质量审核，愿按调用量付费",
+      "mvp_features": [
+        "上传图片批量评分",
+        "按文本匹配度排序",
+        "返回质量报告"
+      ],
+      "business_model": "按API调用次数收费，$0.01/次，包月套餐$99",
+      "competitive_barrier": "",
+      "risks": "规则评分可能与主观审美不一致，客户信任建立周期长",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 18,
+      "source_title": "AutoRubric-T2I: Robust Rule-Based Reward Model for Text-to-Image Alignment",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "source_url": "https://huggingface.co/papers/2605.17602",
+      "item_id": "hf-paper-8c7d2015657b"
+    },
+    {
+      "opportunity_title": "TokenSaver：本地代码智能索引器",
+      "core_insight": "100%本地的预索引代码图谱能大幅减少AI编码工具的token消耗与工具调用，直接降低开发者使用成本，此前无完整方案。",
+      "product_form": "帮助使用AI编码工具的开发者减少token消耗、节省API费用的本地桌面应用",
+      "target_users": "重度使用Claude Code、Cursor的独立开发者和小团队，痛点：token费用高，付费意愿强",
+      "mvp_features": [
+        "一键索引本地项目",
+        "集成Claude Code、Cursor等插件",
+        "仪表盘显示节省的token与费用"
+      ],
+      "business_model": "一次性买断$19.99",
+      "competitive_barrier": "",
+      "risks": "开源项目codegraph的直接竞争与IDE原生集成功能",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 17,
+      "source_title": "colbymchenry/codegraph — Pre-indexed code knowledge graph for Claude Code, Codex, Cursor, OpenCode, and H",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/colbymchenry/codegraph",
+      "item_id": "github-f4834b6c3db9"
+    },
+    {
+      "opportunity_title": "视频智能摘要与多语言标签生成器",
+      "core_insight": "2B模型可本地离线运行，自动从视频提取摘要、亮点和标签，过去需要昂贵云API且延时高",
+      "product_form": "帮助视频创作者快速生成视频摘要、精彩片段时间戳和SEO标签的桌面应用",
+      "target_users": "YouTube博主、在线讲师、企业培训部门，需节省视频后期时间，提高内容可发现性",
+      "mvp_features": [
+        "拖放视频自动生成多语种摘要",
+        "自动检测精彩片段并输出时间戳和标签",
+        "生成含翻译的准确字幕并导出SRT"
+      ],
+      "business_model": "免费版100MB/月，Pro版$19/月无限处理",
+      "competitive_barrier": "",
+      "risks": "模型可能误判内容生成错误摘要，视频处理对硬件有要求",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 17,
+      "source_title": "🤗 NemoStation/Marlin-2B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/NemoStation/Marlin-2B",
+      "item_id": "hf-model-f02735264517"
+    },
+    {
+      "opportunity_title": "隐私优先的本地多模态文档助手",
+      "core_insight": "端侧多模态模型可使用户在本地处理敏感图片与文档，避免数据外泄，此前此类AI必须依赖云端。",
+      "product_form": "帮助律师、医生等处理隐私文件的桌面端AI分析工具",
+      "target_users": "律师、医生、研究人员，需即时常分析图文且数据不能上网，愿为买断软件付费",
+      "mvp_features": [
+        "图片文字识别与分析",
+        "文档自动摘要",
+        "本地知识库问答"
+      ],
+      "business_model": "买断制 $99，含一年更新，企业授权$299",
+      "competitive_barrier": "",
+      "risks": "端侧模型准确度可能不及云端大模型，用户对本地性能期望较高",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 17,
+      "source_title": "🤗 openbmb/MiniCPM-V-4.6",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/openbmb/MiniCPM-V-4.6",
+      "item_id": "hf-model-b3847c8d781e"
+    },
+    {
+      "opportunity_title": "AI实时背景音乐生成器",
+      "core_insight": "该技术能实时生成与互动音乐，使直播、播客等场景的AI动态伴奏成为可能，填补音效师空缺。",
+      "product_form": "帮助内容创作者在直播时自动生成自适应背景音乐的桌面软件",
+      "target_users": "游戏主播、播客主、视频创作者，需要免版税且能实时变化的背景音乐，月付意愿强",
+      "mvp_features": [
+        "选择情绪标签生成背景音乐",
+        "根据说话内容自动改变节奏",
+        "无限时长流式播放"
+      ],
+      "business_model": "订阅制 $9.9/月，支持多平台音频输出",
+      "competitive_barrier": "",
+      "risks": "生成音乐版权界定模糊，低延迟实时生成对硬件要求高",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 17,
+      "source_title": "Live Music Diffusion Models: Efficient Fine-Tuning and Post-Training of Interactive Diffusion Music Generators",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "source_url": "https://huggingface.co/papers/2605.22717",
+      "item_id": "hf-paper-0a16050d65b6"
+    },
+    {
+      "opportunity_title": "AI安全评估助手，一键生成合规报告",
+      "core_insight": "结构化技能让AI代理能自动执行规范的安全评估，之前缺乏标准化技能集，无法生成可落地的合规报告",
+      "product_form": "帮助中小企业IT负责人通过AI自动进行网络安全评估并导出合规报告的平台",
+      "target_users": "中小企业IT/安全负责人，没有专职安全团队，需低成本满足合规要求，愿为SaaS付费",
+      "mvp_features": [
+        "输入域名/资产自动评分并输出漏洞清单",
+        "一键生成基于NIST/ISO的合规报告",
+        "对话式AI安全顾问，解释风险与修复步骤"
+      ],
+      "business_model": "按月订阅，基础版$29/月，专业版$99/月",
+      "competitive_barrier": "",
+      "risks": "AI评估准确性有局限，误报/漏报可能引发法律纠纷",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "mukul975/Anthropic-Cybersecurity-Skills — 754 structured cybersecurity skills for AI agents · Mapped to 5 frameworks: MITR",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+      "item_id": "github-7c7aa2756d1d"
+    },
+    {
+      "opportunity_title": "HR文档智能写作助手",
+      "core_insight": "该1B模型专为HR领域预训练，可直接生成职位描述、绩效评估等专业文档，之前缺乏垂直领域小模型。",
+      "product_form": "帮助HR快速生成招聘与绩效文档的SaaS写作工具",
+      "target_users": "中小企业的HR专员和招聘经理，需频繁撰写规范文档，时间成本高，愿为提效付费",
+      "mvp_features": [
+        "输入关键词生成职位描述",
+        "绩效评估模板填空式生成",
+        "多语言HR文档翻译"
+      ],
+      "business_model": "订阅制，$19/月无限生成，企业版$99/月",
+      "competitive_barrier": "",
+      "risks": "模型可能产生不准确的HR内容，需要人工审核",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 5
+      },
+      "total_score": 16,
+      "source_title": "🤗 sapientinc/HRM-Text-1B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/sapientinc/HRM-Text-1B",
+      "item_id": "hf-model-59891ca2454a"
+    },
+    {
+      "opportunity_title": "Datasette AI Chat：自然语言数据探索SaaS",
+      "core_insight": "Datasette的可扩展Jump to菜单使无代码嵌入AI对话成为可能，大幅降低数据查询门槛，此前需全栈自研。",
+      "product_form": "帮助业务人员用自然语言查询和分析数据库的SaaS平台",
+      "target_users": "中小企业市场/运营人员，不懂SQL，想快速从数据获洞察，愿月付$19-99",
+      "mvp_features": [
+        "上传CSV/连接PostgreSQL数据库",
+        "基于datasette-agent的聊天式查询与图表生成",
+        "可定制的Jump to快捷问题菜单"
+      ],
+      "business_model": "订阅制，按数据库数量和查询量分层定价",
+      "competitive_barrier": "",
+      "risks": "深度依赖Datasette开源项目方向，AI生成SQL准确性影响体验",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "datasette-agent 0.1a4",
+      "source": "Simon Willison",
+      "source_type": "rss",
+      "source_url": "https://simonwillison.net/2026/May/24/datasette-agent/#atom-everything",
+      "item_id": "atom-simon-willison-ec49f1cf690b"
+    },
+    {
+      "opportunity_title": "面向自我托管用户的一次性买断AI媒体中心",
+      "core_insight": "Plex涨价致用户出逃，结合GPT-5.6/Claude多模态能力，可做AI自动标注视频内容与自然语言搜索的媒体服务器，此前AI理解视频精度不足",
+      "product_form": "帮助讨厌月费的自托管用户用AI智能管理本地影视库、摆脱Plex昂贵订阅的一次性买断媒体中心软件",
+      "target_users": "拥有TB级本地影视资源、反感订阅制、具备基础NAS/docker操作能力的个人用户，愿为终身使用付$49-79",
+      "mvp_features": [
+        "本地媒体库自动扫描与索引",
+        "AI自动生成影片描述、演员、类型标签与封面",
+        "自然语言搜索：'找有激烈枪战的喜剧片'"
+      ],
+      "business_model": "一次性买断，基础版$29仅库管理，Pro版$79含AI功能终身使用，用户自带AI API密钥",
+      "competitive_barrier": "",
+      "risks": "开源Jellyfin竞争激烈，AI调用成本转嫁用户可能阻碍尝鲜，视频AI分析速度慢影响体验",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "The $500 Price Increase",
+      "source": "Tedium",
+      "source_type": "rss",
+      "source_url": "https://feed.tedium.co/link/15204/17345764/plex-price-increase-self-hosting",
+      "item_id": "atom-tedium-def6773bec9a"
+    },
+    {
+      "opportunity_title": "数学论文证明自动审校工具",
+      "core_insight": "模型首次具备自动检测数学证明逻辑漏洞的能力，可替代人工审稿的初筛环节，此前AI无法可靠完成此类任务",
+      "product_form": "帮助数学与理论计算机研究者提前发现论文证明错误的SaaS工具，上传LaTeX/PDF即可获得逐步骤漏洞分析和反例",
+      "target_users": "数学、理论物理、计算机科学研究生和教授，论文投稿前自查，痛点强烈，付费意愿高",
+      "mvp_features": [
+        "LaTeX/PDF证明段落自动提取与解析",
+        "AI逐步骤逻辑漏洞检测并高亮可疑断言",
+        "自动生成反例或弱化条件建议"
+      ],
+      "business_model": "月付$19基础版（10篇/月），Pro版$49/月无限次数",
+      "competitive_barrier": "",
+      "risks": "模型幻觉可能输出错误漏洞标记，学术严谨性要求极高，用户信任难建立",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "悬了 80 年的数学猜想，被 GPT 推翻了",
+      "source": "赛博禅心",
+      "source_type": "wechat",
+      "source_url": "https://mp.weixin.qq.com/s?__biz=MzkzNDQxOTU2MQ==&mid=2247517370&idx=1&sn=c83a9e54a2ced43671ed7e809a8bcfcf",
+      "item_id": "rss-赛博禅心-f286e18e27a6"
+    },
+    {
+      "opportunity_title": "AgentTeam：编码代理协作管理平台",
+      "core_insight": "将单代理命令行操作升级为多代理任务分配与进度跟踪，填补了团队使用AI代理的协作管理空白，此前缺乏此类平台。",
+      "product_form": "帮助开发团队管理和协调多个AI编码代理的SaaS协作平台",
+      "target_users": "小型开发团队、技术创业者，痛点：多代理任务混乱、缺乏跟踪，愿意为协作付费",
+      "mvp_features": [
+        "代理任务看板分配",
+        "进度与日志跟踪",
+        "代理技能库积累与复用"
+      ],
+      "business_model": "免费2个代理，不限量$29/月",
+      "competitive_barrier": "",
+      "risks": "GitHub Copilot等大厂可能推出团队版代理管理功能",
+      "scores": {
+        "pain_point": 3,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 15,
+      "source_title": "multica-ai/multica — The open-source managed agents platform. Turn coding agents into real teammates ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/multica-ai/multica",
+      "item_id": "github-f5b316d2b7cf"
+    },
+    {
+      "opportunity_title": "一体式本地多模态知识库",
+      "core_insight": "27B多模态模型经量化后可在消费级GPU运行，使个人搭建私密文档/图片问答系统成为可能，成本骤降。",
+      "product_form": "帮助小微企业或个人在私有电脑上部署的智能文档与图片问答平台",
+      "target_users": "中小企业、独立研究者，需要查询内部资料库但无IT团队，节约云服务费",
+      "mvp_features": [
+        "拖拽上传文档构建知识库",
+        "自然语言提问回答",
+        "支持图片内容检索"
+      ],
+      "business_model": "开源免费增值，提供付费的部署安装包和技术支持$199/年",
+      "competitive_barrier": "",
+      "risks": "量化可能导致回答精度下降，27B模型运行仍需较好GPU，可能劝退部分用户",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 15,
+      "source_title": "🤗 unsloth/Qwen3.6-27B-MTP-GGUF",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/unsloth/Qwen3.6-27B-MTP-GGUF",
+      "item_id": "hf-model-fd92262662d1"
+    },
+    {
+      "opportunity_title": "秒级个性化AI头像生成器",
+      "core_insight": "收敛速度10倍提升使个人化模型微调从小时级降到分钟级，普通用户也能即时训练专属风格模型",
+      "product_form": "帮助社交媒体用户用几张自拍快速训练专属风格并生成多种AI头像的在线工具",
+      "target_users": "普通消费者、短视频创作者，希望低成本获得独特个人IP头像，愿为便捷付费",
+      "mvp_features": [
+        "用户上传5-10张自拍照片",
+        "一键选择卡通、油画等预设风格",
+        "5分钟内完成训练并输出8张高质量头像"
+      ],
+      "business_model": "按套收费$4.99/套头像或$9.99/月无限生成",
+      "competitive_barrier": "",
+      "risks": "RAEv2开源可用性不明，模型部署成本高，用户照片隐私风险",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 3
+      },
+      "total_score": 15,
+      "source_title": "not much happened today",
+      "source": "Smol AI News",
+      "source_type": "smolai",
+      "source_url": "https://news.smol.ai/issues/26-05-21-not-much/",
+      "item_id": "rss-smol-ai-news-561968b1a60d"
+    },
+    {
+      "opportunity_title": "安全文件同步与备份工具",
+      "core_insight": "用内存安全语言重写rsync核心协议，从根源消除RCE等6类高危漏洞，使文件同步工具的安全级别迈入可商用阶段。",
+      "product_form": "帮助开发者与运维人员安全同步、备份文件的跨平台桌面/CLI工具",
+      "target_users": "重视数据安全的开发者、运维工程师、中小团队，担心rsync漏洞但缺乏可靠替代品",
+      "mvp_features": [
+        "基于Go的rsync兼容同步引擎",
+        "增量备份与定时任务",
+        "Web图形化配置界面",
+        "端到端加密传输通道"
+      ],
+      "business_model": "个人版一次性$29，团队版按席位$9/月，提供私有化部署许可",
+      "competitive_barrier": "",
+      "risks": "rsync官方修复后独特性下降；开源竞品快速跟进",
+      "scores": {
+        "pain_point": 3,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 14,
+      "source_title": "How my minimal, memory-safe Go rsync steers clear of vulnerabilities",
+      "source": "Michael Stapelberg",
+      "source_type": "rss",
+      "source_url": "https://michael.stapelberg.ch/posts/2026-05-24-minimal-memory-safe-go-rsync-vulns/",
+      "item_id": "atom-michael-stapelberg-729bdbfc0b58"
+    },
+    {
+      "opportunity_title": "CodeMap：交互式代码知识图谱",
+      "core_insight": "自动将代码库转化为可探索、搜索和提问的知识图谱，降低新人理解复杂项目的门槛，此前缺乏这种一体化交互工具。",
+      "product_form": "帮助开发者快速理解陌生代码库的交互式知识图谱Web应用",
+      "target_users": "新入职开发者、开源贡献者、技术顾问，痛点：梳理大型代码库耗时，付费意愿中等",
+      "mvp_features": [
+        "GitHub仓库连接自动生成图谱",
+        "节点搜索与依赖高亮",
+        "自然语言问答（如“认证流程涉及哪些文件”）"
+      ],
+      "business_model": "个人免费，团队订阅$10/月",
+      "competitive_barrier": "",
+      "risks": "GitHub代码导航功能可能内建类似交互式浏览",
+      "scores": {
+        "pain_point": 3,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 3
+      },
+      "total_score": 13,
+      "source_title": "Lum1104/Understand-Anything — Graphs that teach &gt; graphs that impress. Turn any code into an interactive kn",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/Lum1104/Understand-Anything",
+      "item_id": "github-2e1d81dcb402"
+    },
+    {
+      "opportunity_title": "企业合规本地AI分析师",
+      "core_insight": "Cohere模型以企业安全与事实性著称，量化版降低部署成本，可为企业提供合规无云的内部AI分析。",
+      "product_form": "协助企业内审和合规部门分析内部文件、合同的本地AI工具",
+      "target_users": "金融机构、律所的内审与合规团队，严格要求数据本地处理，有预算",
+      "mvp_features": [
+        "合同关键条款提取",
+        "违规风险提示",
+        "离线操作确保数据隔离"
+      ],
+      "business_model": "企业版年订阅 $999起，包含定制模型与部署支持",
+      "competitive_barrier": "",
+      "risks": "模型下载量偏低，生态成熟度不足，市场教育成本高",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 2,
+        "tech_timing": 3,
+        "buildability": 3
+      },
+      "total_score": 12,
+      "source_title": "🤗 CohereLabs/command-a-plus-05-2026-w4a4",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/CohereLabs/command-a-plus-05-2026-w4a4",
+      "item_id": "hf-model-fac1fba8e384"
+    }
+  ],
+  "analyzed_item_ids": [
+    "github-2e1d81dcb402",
+    "github-b45d1f22a611",
+    "github-45962e8cb66e",
+    "github-022c9970da1a",
+    "github-da5bc715cf36",
+    "github-b757d828d191",
+    "github-35b401b2d43a",
+    "github-f4834b6c3db9",
+    "github-f5b316d2b7cf",
+    "github-332aef856035",
+    "github-2fcea6741f14",
+    "github-b855c9f7f218",
+    "github-62077d8b2783",
+    "github-119fd7632609",
+    "github-051a34a777a7",
+    "github-7c7aa2756d1d",
+    "hf-model-5845c8d58d74",
+    "hf-model-7e9e2738f9eb",
+    "hf-model-f02735264517",
+    "hf-model-1e787567a084",
+    "hf-model-4810f52a1891",
+    "hf-model-59891ca2454a",
+    "hf-model-967b88027b16",
+    "hf-model-b3847c8d781e",
+    "hf-model-fd92262662d1",
+    "hf-model-fac1fba8e384",
+    "hf-paper-f60e0fad67ac",
+    "hf-paper-8c7d2015657b",
+    "hf-paper-0a16050d65b6",
+    "hf-paper-5dc753fa544b",
+    "hf-paper-41924c3a49a0",
+    "hf-paper-1bec4edd8309",
+    "hf-paper-3ab7d1ea64bd",
+    "hf-paper-1ab65111cadb",
+    "hf-paper-4e4430de071d",
+    "hf-paper-05a9cab9a398",
+    "rss-openai-blog-f2261073b77c",
+    "rss-openai-blog-740545d72e85",
+    "rss-openai-blog-973c5765af89",
+    "rss-google-deepmind-blog-a5b423e0d34d",
+    "rss-google-ai-blog-18f4f93feb30",
+    "rss-google-ai-blog-58130303da4c",
+    "rss-google-ai-blog-c1e2764b80c5",
+    "rss-smol-ai-news-561968b1a60d",
+    "rss-hackernews-daily-17bc295ecc9c",
+    "rss-all-in-podcast-974f542b3e47",
+    "rss-all-in-podcast-be1c75a2fb3e",
+    "rss-all-in-podcast-639447ee6584",
+    "atom-the-ai-valley-ae707495b8e3",
+    "rss-latent-space-4a8fcbecd901",
+    "rss-ben's-bites-e16ad69717c6",
+    "atom-simon-willison-c7347b6fc251",
+    "atom-simon-willison-ec49f1cf690b",
+    "atom-simon-willison-94756da5eb52",
+    "rss-gary-marcus-a9a098c7013a",
+    "atom-george-hotz-06dfb1d86547",
+    "rss-entropic-thoughts-54d492d1c2db",
+    "rss-daniel-delaney-6f6aa9078f13",
+    "rss-antirez-c7f12317d1b8",
+    "atom-matklad-a5a5ea814f20",
+    "atom-armin-ronacher-32605b951100",
+    "rss-jim-nielsen-8bef286d73b4",
+    "rss-xe-iaso-8cef7f1d07d8",
+    "atom-michael-stapelberg-729bdbfc0b58",
+    "rss-the-old-new-thing-455507906e4d",
+    "atom-ken-shirriff-0fd27a27322f",
+    "rss-sean-goedecke-c43355302912",
+    "rss-ibrahim-diallo-8f2f9379cba2",
+    "rss-john-d.-cook-2f0b7bd5c13f",
+    "atom-susam-6b030c634aa7",
+    "rss-works-on-my-machine-a2850986c5a7",
+    "rss-hillel-wayne-f9a57ab264dd",
+    "rss-terence-eden-d83a9324c916",
+    "rss-dave-farquhar-1b1707fe22d9",
+    "rss-brutecat-13889f7b7a9c",
+    "rss-arpit-bhayani-3744158ac72d",
+    "rss-krebs-on-security-8222c28695a4",
+    "rss-troy-hunt-99e482b48425",
+    "rss-micah-lee-ef1f622e73a1",
+    "rss-jeff-geerling-5e731cc90e6e",
+    "rss-pluralistic-325869b22b29",
+    "rss-joan-westenberg-397320cd2af7",
+    "rss-where's-your-ed-at-f011aa92728f",
+    "rss-bert-hubert-c6e723bee6b3",
+    "atom-matt-welsh-4271cbe1cac0",
+    "atom-dylan-nesbitt-0748a9e69682",
+    "rss-construction-physics-d1a327eb6cbc",
+    "atom-tedium-def6773bec9a",
+    "rss-the-digital-antiquar-f081aa6a74b0",
+    "rss-appso-fcfbd9a67671",
+    "rss-机器之心-e667ad6f02b9",
+    "rss-机器之心-95655cff993d",
+    "rss-量子位-394ac6bd628c",
+    "rss-量子位-90d80d50d5ff",
+    "rss-量子位-21e537cb2a67",
+    "rss-虎嗅-b45c5374c6d2",
+    "rss-虎嗅-2b416a2c0bf1",
+    "rss-虎嗅-24b6a07023c6",
+    "rss-赛博禅心-f286e18e27a6"
+  ],
+  "remaining": 0
+}

@@ -1,0 +1,577 @@
+{
+  "date": "2026-04-10",
+  "opportunities": [
+    {
+      "opportunity_title": "AI语音练口语",
+      "core_insight": "OmniVoice作为开源TTS模型，支持多语言且可本地部署，能提供低成本的口语练习语音交互",
+      "product_form": "帮助用户练习外语口语的AI对话应用",
+      "target_users": "英语/日语/韩语学习者，付费意愿强，活跃用户千万级",
+      "mvp_features": [
+        "AI情景对话",
+        "发音纠正反馈",
+        "角色扮演练习"
+      ],
+      "business_model": "免费体验版，会员39元/月，课程包单独售卖",
+      "competitive_barrier": "口语纠正模型和教育内容体系",
+      "risks": "大厂教育产品竞争，用户对准确性要求高",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 5,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 20,
+      "source_title": "🤗 k2-fsa/OmniVoice",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/k2-fsa/OmniVoice",
+      "item_id": "hf-model-b0310e0acf74"
+    },
+    {
+      "opportunity_title": "二次元头像生成",
+      "core_insight": "日漫角色LoRA可批量生成二次元风格头像，满足社交媒体需求",
+      "product_form": "帮助用户生成二次元风格社交头像的微信小程序/网页应用",
+      "target_users": "95后、00后社交用户，想要个性化二次元头像",
+      "mvp_features": [
+        "上传照片转二次元",
+        "多风格选择",
+        "高清下载"
+      ],
+      "business_model": "免费生成1张，会员¥6-12月卡无限生成",
+      "competitive_barrier": "生成效果自然度、传播裂变",
+      "risks": "形象争议、竞品复制",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 5,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 20,
+      "source_title": "🎨 水野　明里（みずの　あかり） / 放課後 濡れた制服 - anime (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "source_url": "https://civitai.com/models/2531452",
+      "item_id": "civitai-2531452"
+    },
+    {
+      "opportunity_title": "截图问答助手",
+      "core_insight": "Gemma-4-31B支持图像+文本多模态输入，且开源可本地部署，能够实现截图内容的智能理解与问答",
+      "product_form": "帮助用户快速理解截图/图片内容的效率工具",
+      "target_users": "需要经常处理截图、扫描件的职场人士，付费意愿强，月活跃50万+",
+      "mvp_features": [
+        "截图上传自动理解内容",
+        "基于内容的多轮问答",
+        "一键复制提取文字"
+      ],
+      "business_model": "免费版每日3次，会员19元/月无限次，网页端+浏览器插件",
+      "competitive_barrier": "基于开源模型微调的中文优化数据壁垒",
+      "risks": "大厂推出类似功能会压缩生存空间",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 19,
+      "source_title": "🤗 google/gemma-4-31B-it",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/google/gemma-4-31B-it",
+      "item_id": "hf-model-2d0f16bac7e1"
+    },
+    {
+      "opportunity_title": "跨境电商物料生成",
+      "core_insight": "any-to-any模型可实现图像描述生成、商品图背景替换等一站式物料制作，大幅降低跨境卖家内容制作成本",
+      "product_form": "帮助跨境电商卖家快速生成商品素材的工具",
+      "target_users": "亚马逊/Shopee/Temu卖家，付费意愿强，商家数百万",
+      "mvp_features": [
+        "商品图背景替换",
+        "多语言描述生成",
+        "主图模板套用"
+      ],
+      "business_model": "按生成次数计费，99元/月会员不限量",
+      "competitive_barrier": "电商场景prompt和模板数据积累",
+      "risks": "电商平台政策变化，图像版权风险",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 5,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 19,
+      "source_title": "🤗 google/gemma-4-E4B-it",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/google/gemma-4-E4B-it",
+      "item_id": "hf-model-73665a6e3a2f"
+    },
+    {
+      "opportunity_title": "有声书生成器",
+      "core_insight": "VoxCPM2和OmniVoice等开源TTS模型已具备多语言高质量语音合成能力，成本远低于传统配音",
+      "product_form": "帮助作者/出版社将文字内容快速转为有声书的工具",
+      "target_users": "网文作者、自媒体、出版社，日活跃10万+",
+      "mvp_features": [
+        "多音色选择",
+        "情感控制调节",
+        "批量章节生成"
+      ],
+      "business_model": "免费1000字，会员39元/月无限生成，商用授权另计",
+      "competitive_barrier": "中文语音优化和情感模型训练数据",
+      "risks": "版权争议，音质与传统真人配音仍有差距",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 18,
+      "source_title": "🤗 openbmb/VoxCPM2",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/openbmb/VoxCPM2",
+      "item_id": "hf-model-b2cd1173ff38"
+    },
+    {
+      "opportunity_title": "LoRA一键生图",
+      "core_insight": "LoRA模型已标准化，调用门槛大幅降低，可作为生成引擎为终端用户提供服务",
+      "product_form": "帮助二次元爱好者快速生成指定角色风格图片的AI生图工具",
+      "target_users": "18-30岁二次元爱好者、游戏玩家、社交媒体内容创作者，愿意为个性化头像/壁纸付费",
+      "mvp_features": [
+        "选择LoRA模型+输入提示词",
+        "一键生成高清图片",
+        "下载/分享功能"
+      ],
+      "business_model": "免费生成低分辨率，会员¥9.9-29.9/月生成高清无水印图片",
+      "competitive_barrier": "模型优化调优、生成效果差异化、用户体验",
+      "risks": "版权争议、内容审核、算力成本",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 18,
+      "source_title": "🎨 Keqing (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "source_url": "https://civitai.com/models/2531492",
+      "item_id": "civitai-2531492"
+    },
+    {
+      "opportunity_title": "AI技能商店",
+      "core_insight": "AI Agent技能正成为显性需求，但缺乏可发现、可交易的技能市场",
+      "product_form": "帮助AI开发者发现、购买、出售定制AI Skills的工具市场",
+      "target_users": "独立AI开发者、小团队AI应用创业者、需要定制化AI能力的中小企业技术负责人",
+      "mvp_features": [
+        "技能搜索与分类",
+        "技能预览试用",
+        "一键集成到主流Agent框架",
+        "交易支付"
+      ],
+      "business_model": "交易抽成15%+技能订阅费，单个技能定价9.9-99元",
+      "competitive_barrier": "早期积累的优质技能数量和开发者口碑",
+      "risks": "大厂入场免费提供类似服务",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 17,
+      "source_title": "KKKKhazix/khazix-skills — 数字生命卡兹克开源的 AI Skills 合集",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/KKKKhazix/khazix-skills",
+      "item_id": "github-edaa5547747f"
+    },
+    {
+      "opportunity_title": "Agent框架教学社区",
+      "core_insight": "Nous Research的Hermes Agent框架文档完善但缺少中文系统教学",
+      "product_form": "帮助中文开发者快速学习Agent框架并应用到企业自动化的在线学院",
+      "target_users": "想转型AI开发的后端工程师、想要搭建企业AI Agent的技术负责人",
+      "mvp_features": [
+        "中文视频教程",
+        "企业场景实战案例",
+        "1对1咨询",
+        "认证考试"
+      ],
+      "business_model": "课程299-999元+企业培训定制服务",
+      "competitive_barrier": "原创中文教学内容和行业口碑",
+      "risks": "免费开源文档竞争",
+      "scores": {
+        "pain_point": 3,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 17,
+      "source_title": "alchaincyf/hermes-agent-orange-book — Hermes Agent 从入门到精通 · 橙皮书系列 · Nous Research 开源 AI Agent 框架实战指南",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/alchaincyf/hermes-agent-orange-book",
+      "item_id": "github-13c2191b859c"
+    },
+    {
+      "opportunity_title": "个人知识库OS",
+      "core_insight": "Twitter书签本地存储+AI理解是知识管理的下一个形态",
+      "product_form": "帮助内容创作者和投资人管理全网高价值信息的AI知识管理系统",
+      "target_users": "自媒体创作者、投资人、研究员等需要系统性管理碎片化信息的人群",
+      "mvp_features": [
+        "多平台内容聚合",
+        "AI自动打标签",
+        "语义搜索",
+        "写作引用"
+      ],
+      "business_model": "免费版+Pro版39元/月",
+      "competitive_barrier": "多平台接入能力和AI理解精度",
+      "risks": "平台API限制和用户迁移成本低",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 17,
+      "source_title": "afar1/fieldtheory-cli — Sync and locally store all of your X/Twitter bookmarks. Free and open source CLI",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/afar1/fieldtheory-cli",
+      "item_id": "github-a4b838b5b33e"
+    },
+    {
+      "opportunity_title": "论文代码复现助手",
+      "core_insight": "将arXiv论文直接转为可运行代码，填补学术到工程的重要Gap",
+      "product_form": "帮助AI研究者快速验证论文方法的工具",
+      "target_users": "AI研究人员、研究生、想复现前沿技术的工程师",
+      "mvp_features": [
+        "论文PDF解析",
+        "核心算法提取",
+        "代码脚手架生成",
+        "Colab一键运行"
+      ],
+      "business_model": "免费使用+企业API订阅",
+      "competitive_barrier": "代码生成准确性和多领域覆盖",
+      "risks": "论文方法描述不完整导致复现困难",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 17,
+      "source_title": "PrathamLearnsToCode/paper2code — Agent skill to turn any arxiv paper into a working implementation",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/PrathamLearnsToCode/paper2code",
+      "item_id": "github-700fa1c35bfa"
+    },
+    {
+      "opportunity_title": "多模态聊天应用",
+      "core_insight": "Gemma-4-E4B是any-to-any模型，支持文本/图像/音频等多种输入输出组合，可打造统一的多模态交互体验",
+      "product_form": "面向普通用户的下一代AI伴侣应用",
+      "target_users": "18-35岁年轻用户，追求新奇交互体验，月活目标100万+",
+      "mvp_features": [
+        "图像识别聊天",
+        "语音对话交互",
+        "多模态内容创作"
+      ],
+      "business_model": "免费基础版，会员25元/月解锁全部功能，广告变现",
+      "competitive_barrier": "用户体验和交互设计，品牌心智",
+      "risks": "大厂同类产品竞争，用户留存挑战",
+      "scores": {
+        "pain_point": 3,
+        "market_size": 5,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 17,
+      "source_title": "🤗 google/gemma-4-E4B-it",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/google/gemma-4-E4B-it",
+      "item_id": "hf-model-73665a6e3a2f"
+    },
+    {
+      "opportunity_title": "代码知识图谱工具",
+      "core_insight": "将代码仓库转为可查询知识图谱，大幅提升大型项目的代码理解效率",
+      "product_form": "帮助中大型开发团队快速理解遗留代码的技术文档生成工具",
+      "target_users": "维护大型遗留系统的技术团队、代码审查需求高的开发团队",
+      "mvp_features": [
+        "代码图谱生成",
+        "自然语言查询代码",
+        "依赖关系可视化",
+        "代码变更分析"
+      ],
+      "business_model": "按项目仓库收费，企业版99元/月起",
+      "competitive_barrier": "图谱构建精度和大规模代码处理能力",
+      "risks": "GitHub Copilot等大厂免费功能覆盖",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "safishamsi/graphify — AI coding assistant skill (Claude Code, Codex, OpenCode, OpenClaw, Factory Droid",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/safishamsi/graphify",
+      "item_id": "github-9aa0b457af7c"
+    },
+    {
+      "opportunity_title": "论文代码复现助手",
+      "core_insight": "paper2code思路可将学术论文快速转为可运行代码，解决研究者复现难题",
+      "product_form": "帮助AI研究人员快速复现论文代码的效率工具",
+      "target_users": "AI研究员、研究生、想跟进最新论文的工程师",
+      "mvp_features": [
+        "arXiv论文解析",
+        "自动生成代码框架",
+        "依赖环境配置",
+        "云端运行"
+      ],
+      "business_model": "免费基础功能+Pro版29元/月",
+      "competitive_barrier": "代码生成质量和对复杂论文的理解能力",
+      "risks": "论文代码本身的不确定性和版权问题",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "safishamsi/graphify — AI coding assistant skill (Claude Code, Codex, OpenCode, OpenClaw, Factory Droid",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/safishamsi/graphify",
+      "item_id": "github-9aa0b457af7c"
+    },
+    {
+      "opportunity_title": "AI知识库一体机",
+      "core_insight": "AI-first知识库+创业OS概念，面向创作者和小型团队的一体化工具",
+      "product_form": "帮助早期创业者和内容创作者管理知识、任务、财务的一体化工具",
+      "target_users": "独立创业者、自媒体博主、小型内容团队",
+      "mvp_features": [
+        "AI语义笔记",
+        "任务管理",
+        "项目进度追踪",
+        "数据可视化"
+      ],
+      "business_model": "免费版+专业版49元/月",
+      "competitive_barrier": "AI能力整合深度和用户体验",
+      "risks": "Notion、Obsidian等成熟产品竞争",
+      "scores": {
+        "pain_point": 3,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 5
+      },
+      "total_score": 16,
+      "source_title": "hilash/cabinet — AI-first knowledge base and startup OS",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/hilash/cabinet",
+      "item_id": "github-9b5409465f26"
+    },
+    {
+      "opportunity_title": "短视频口播修复",
+      "core_insight": "Netflix的void-model实现了视频到视频的转换，可用于口播视频的快速后期处理，降低专业视频制作门槛",
+      "product_form": "帮助自媒体创作者快速修复口播视频的AI工具",
+      "target_users": "抖音/B站/视频号创作者，付费意愿强，月活跃100万+",
+      "mvp_features": [
+        "口型同步修正",
+        "背景环境替换",
+        "画质增强修复"
+      ],
+      "business_model": "按视频时长计费，5元/分钟，月付会员299元",
+      "competitive_barrier": "垂直领域视频处理工作流和数据积累",
+      "risks": "技术成熟度待验证，版权风险",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 5,
+        "tech_timing": 4,
+        "buildability": 3
+      },
+      "total_score": 16,
+      "source_title": "🤗 netflix/void-model",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/netflix/void-model",
+      "item_id": "hf-model-b88ea472e3ac"
+    },
+    {
+      "opportunity_title": "论文精读助手",
+      "core_insight": "Qwen3.5-27B经Claude推理能力蒸馏后，逻辑推理和理解能力大幅提升，适合复杂文档深度分析",
+      "product_form": "帮助研究者快速理解论文核心思想的工具",
+      "target_users": "高校学生、科研人员，日活跃30万+",
+      "mvp_features": [
+        "论文一键上传",
+        "核心观点自动提取",
+        "问答式深入理解"
+      ],
+      "business_model": "免费3篇/天，会员49元/月不限量，API调用按次计费",
+      "competitive_barrier": "学术领域问答数据积累和优化",
+      "risks": "学术用户付费意愿相对较低",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "🤗 Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled",
+      "item_id": "hf-model-5a5b20cc1da7"
+    },
+    {
+      "opportunity_title": "发票/文档数字化",
+      "core_insight": "百度千帆OCR具备高精度的文字识别能力，结合大模型可实现文档的智能理解与结构化",
+      "product_form": "帮助企业快速将纸质文档/发票数字化的工具",
+      "target_users": "中小企业财务/行政人员，会计事务所，付费意愿强",
+      "mvp_features": [
+        "发票自动识别录入",
+        "文档结构化提取",
+        "财务系统对接"
+      ],
+      "business_model": "按识别次数收费，企业版999元/年起，私有化部署另议",
+      "competitive_barrier": "企业客户关系和财务场景数据积累",
+      "risks": "企业采购周期长，竞品低价竞争",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "🤗 baidu/Qianfan-OCR",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/baidu/Qianfan-OCR",
+      "item_id": "hf-model-fcfacb051911"
+    },
+    {
+      "opportunity_title": "本地化LoRA库",
+      "core_insight": "海外LoRA模型缺少中文介绍和使用指南，中国用户使用门槛高",
+      "product_form": "帮助中国用户发现、筛选、使用CivitAI LoRA模型的中文导航站",
+      "target_users": "AI绘画初学者、想要使用特定风格模型但不懂英文的国内用户",
+      "mvp_features": [
+        "LoRA模型中文介绍",
+        "一键复制提示词",
+        "模型评价和推荐"
+      ],
+      "business_model": "广告变现+导流至付费生成服务",
+      "competitive_barrier": "内容运营效率、SEO排名、用户信任",
+      "risks": "版权投诉、流量获取成本",
+      "scores": {
+        "pain_point": 3,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 5
+      },
+      "total_score": 16,
+      "source_title": "🎨 #WATW - 🇳🇿 New Zealand (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "source_url": "https://civitai.com/models/2238641",
+      "item_id": "civitai-2238641"
+    },
+    {
+      "opportunity_title": "本地AI语音助手",
+      "core_insight": "端侧多模态AI突破使得离线语音对话成为可能，隐私敏感场景存在刚需",
+      "product_form": "帮助注重隐私的商务人士实现离线语音交互的本地AI助手",
+      "target_users": "商务人士、律师、医生等需要离线处理敏感对话的用户，付费意愿高",
+      "mvp_features": [
+        "离线语音唤醒",
+        "本地大模型推理",
+        "敏感内容本地处理不上传",
+        "会议纪要生成"
+      ],
+      "business_model": "一次性付费99元下载，后续功能订阅制",
+      "competitive_barrier": "端侧模型优化能力和隐私保护口碑",
+      "risks": "端侧模型能力短期内仍弱于云端",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 15,
+      "source_title": "fikrikarim/parlor — On-device, real-time multimodal AI. Have natural voice and vision conversations ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/fikrikarim/parlor",
+      "item_id": "github-b759fcbff766"
+    },
+    {
+      "opportunity_title": "本地微调服务",
+      "core_insight": "Mac上可微调多模态模型让个人开发者也能定制专属AI",
+      "product_form": "帮助个人开发者和小团队定制私有模型的微调服务平台",
+      "target_users": "有私有数据需求的创业者、需要定制化AI的垂直行业从业者",
+      "mvp_features": [
+        "一键上传数据",
+        "可视化微调配置",
+        "模型部署",
+        "API调用"
+      ],
+      "business_model": "按GPU小时计费，微调50元/小时起",
+      "competitive_barrier": "本地部署的隐私优势和易用性",
+      "risks": "大厂API价格战",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 15,
+      "source_title": "mattmireles/gemma-tuner-multimodal — Fine-tune Gemma 4 and 3n with audio, images and text on Apple Silicon, using PyT",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/mattmireles/gemma-tuner-multimodal",
+      "item_id": "github-dac1face2a1c"
+    }
+  ],
+  "analyzed_item_ids": [
+    "github-324dca1fa921",
+    "github-f8d79b4ea321",
+    "github-9671d97e8d57",
+    "github-625dbf2069d9",
+    "github-db76cfda3b02",
+    "github-15e11757994b",
+    "github-c37765835b8d",
+    "github-79f8f4c4b535",
+    "github-f68fc10d8ba4",
+    "github-f1aa082a6499",
+    "github-edaa5547747f",
+    "github-b759fcbff766",
+    "github-f3c28199c0f0",
+    "github-13c2191b859c",
+    "github-dac1face2a1c",
+    "github-9aa0b457af7c",
+    "github-a4b838b5b33e",
+    "github-700fa1c35bfa",
+    "github-9b5409465f26",
+    "github-d53b1aebbbbc",
+    "hf-model-2d0f16bac7e1",
+    "hf-model-a3e36e1accc3",
+    "hf-model-2f79a3598954",
+    "hf-model-b88ea472e3ac",
+    "hf-model-b2cd1173ff38",
+    "hf-model-5a5b20cc1da7",
+    "hf-model-73665a6e3a2f",
+    "hf-model-0ea922f56cb4",
+    "hf-model-b0310e0acf74",
+    "hf-model-fcfacb051911",
+    "civitai-2531492",
+    "civitai-2531478",
+    "civitai-2238641",
+    "civitai-2531466",
+    "civitai-2494898",
+    "civitai-2508801",
+    "civitai-2528526",
+    "civitai-2531444",
+    "civitai-2531452",
+    "civitai-2531426"
+  ],
+  "remaining": 17
+}

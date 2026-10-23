@@ -1,0 +1,33 @@
+{
+  "id": "3071313f-bb16-493d-831c-79772168299f",
+  "date": "2026-03-29",
+  "items": [
+    {
+      "id": "github-1195351825",
+      "title": "unlucas-br/noisecloud: Para detalhes consulte: https://unlucas-br.github.io/noisecloud/",
+      "source": "GitHub",
+      "source_type": "repo",
+      "url": "https://github.com/unlucas-br/noisecloud",
+      "summary": "⭐ 39 stars | Para detalhes consulte: https://unlucas-br.github.io/noisecloud/",
+      "category": [
+        "前端技术",
+        "开发者工具"
+      ],
+      "relevance_score": 5.0,
+      "created_at": "2026-03-29T15:11:02.000Z"
+    }
+  ],
+  "signals": {
+    "inspiration": [],
+    "execution": [],
+    "total": 0,
+    "learning": {
+      "active_references": [],
+      "themes": [],
+      "value_patterns": [],
+      "search_clues": []
+    }
+  },
+  "summary": null,
+  "generated_at": "2026-10-23T17:33:07.605505"
+}

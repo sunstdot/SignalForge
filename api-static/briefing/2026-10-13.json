@@ -1,0 +1,1538 @@
+{
+  "id": "8fdd51f5-e425-4733-89d8-b36dd3d90c86",
+  "date": "2026-10-13",
+  "items": [
+    {
+      "id": "arxiv-2610.13948v1",
+      "title": "Can Language Models Play the Wikipedia Game?",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2610.13948v1",
+      "summary": "Language models increasingly support or automate information retrieval from document collections too large to index. This task is difficult when it requires specialist linguistic or scientific knowled",
+      "category": [
+        "cs.AI",
+        "cs.IR"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "arxiv-2610.13935v1",
+      "title": "Hide and Seek: HIDE Concepts to SEEK explanations for black box models",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2610.13935v1",
+      "summary": "Interpreting machine learning model predictions is a central challenge, particularly for black-box vision models. Concept-based attribution methods interpret models using human-understandable concepts",
+      "category": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "arxiv-2610.13931v1",
+      "title": "Constructive Bounds for the Topological Expressivity of Neural Networks",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2610.13931v1",
+      "summary": "The expressivity of a neural network $Φ$ describes the class of functions that a network can express. The term topological expressivity refers to a family of measures particularly suited to understand",
+      "category": [
+        "math.AT",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "arxiv-2610.13928v1",
+      "title": "AI Models Can Provably Hide Arbitrary Capabilities",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2610.13928v1",
+      "summary": "Capability evaluations aim to surface dangerous model behaviors before deployment, but their reliability depends on the assumption that hidden capabilities can be elicited. We show this assumption doe",
+      "category": [
+        "cs.LG",
+        "cs.CR"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "arxiv-2610.13924v1",
+      "title": "KL Before and After Mixing: A Round-Complexity Separation in Parallel Sampling",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2610.13924v1",
+      "summary": "A parallel sampler can choose at random which coordinates to generate together. For a target $p$ and the output law $q_U$ of a schedule $U$ drawn afresh for each output, we compare the schedule-averag",
+      "category": [
+        "cs.LG",
+        "cs.IT"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "arxiv-2610.13923v1",
+      "title": "Goal-Oriented Bundle Management and Flow Control for Deep-Space Communications via Reinforcement Learning",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2610.13923v1",
+      "summary": "Deep-space communications operate under intermittent connectivity, long propagation delays, and relay storage constraints. In such networks, the Bundle Protocol enables store-carry-forward communicati",
+      "category": [
+        "cs.NI",
+        "cs.LG",
+        "eess.SY"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "arxiv-2610.13918v1",
+      "title": "DyssomniaNN: Multi-Scale Spiking Neural Modeling of Human Sleep Disorders and Perceived Restedness",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2610.13918v1",
+      "summary": "Clinical sleep medicine repeatedly documents profound divergences between objective sleep duration and subjective daytime impairment, notably exemplified by sleep state misperception in paradoxical in",
+      "category": [
+        "cs.NE",
+        "cs.ET",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "arxiv-2610.13917v1",
+      "title": "Designing Protein Structures from Natural Language",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2610.13917v1",
+      "summary": "A central challenge in de novo protein design is generating proteins with desired structural and functional properties. Existing design models typically require a dedicated input representation for ea",
+      "category": [
+        "cs.LG",
+        "q-bio.BM"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "arxiv-2610.13912v1",
+      "title": "RSI-Anything: Unlocking Recursive Self-Improvement with World Models",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2610.13912v1",
+      "summary": "Recursive self-improvement (RSI) aims to transform interaction experience into persistent improvements, yet external feedback is costly and world-model predictions may become unreliable as policies ev",
+      "category": [
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "arxiv-2610.13910v1",
+      "title": "When VLMs Destroy What They Know: Spatial Representations Fall Below Lexical Priors",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2610.13910v1",
+      "summary": "Vision-Language Models (VLMs) increasingly analyze and reason about images, yet it remains unclear whether their internal representations faithfully encode the structured relations required for such r",
+      "category": [
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "arxiv-2610.13909v1",
+      "title": "Revisiting Tabular Deep Regression: Objectives and the Limits of Global Early Stopping",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2610.13909v1",
+      "summary": "While deep learning models for tabular data have recently received significant research attention, the choice of objective functions for regression tasks remains an understudied degree of freedom. Sev",
+      "category": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "arxiv-2610.13901v1",
+      "title": "Hitting-Time Bounds for Asynchronous Q-Learning",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2610.13901v1",
+      "summary": "We study the last iterate of standard asynchronous Q-learning from a single trajectory of a finite Markov decision process. The trajectory follows a fixed behavior policy whose state--action chain is ",
+      "category": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "arxiv-2610.13896v1",
+      "title": "Structural Automata for Neural Semantic Parsing",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2610.13896v1",
+      "summary": "Neural semantic parsers generate meaning representations token by token, yet well-formedness depends on references, scope, and graph relations that unfold during generation. Constrained decoding preve",
+      "category": [
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "arxiv-2610.13895v1",
+      "title": "Task Context Shapes Component Roles in Language Models",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2610.13895v1",
+      "summary": "Large language models reuse the same attention heads across tasks, but identifying these shared heads does not explain what they do differently in each task. A natural source of inspiration is task-de",
+      "category": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "arxiv-2610.13889v1",
+      "title": "RATED: Reliability-Aware AI Agent Tool Retrieval via Execution Dynamics",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2610.13889v1",
+      "summary": "As AI agents increasingly rely on external tools, accurate retrieval is essential for reliable behavior. Existing methods optimize semantic relevance but largely ignore tool availability during execut",
+      "category": [
+        "cs.AI",
+        "cs.IR"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "github-171cd5f2d759",
+      "title": "morluto/rea — Reverse engineer anything with agents, from app behavior down to native binaries",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/morluto/rea",
+      "summary": "Reverse engineer anything with agents, from app behavior down to native binaries. | 🔥 45327 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "github-8114e735c2ac",
+      "title": "bilawalsidhu/gods-eye-view — A spy satellite simulator in your browser, except the data is real. Live open so",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view",
+      "summary": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe. | 🔥 1895 stars today | Language: JavaScript",
+      "category": [
+        "开源项目",
+        "JavaScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "github-7ff77102f977",
+      "title": "mksglu/context-mode — Context window optimization for AI coding agents. Sandboxes tool output (98% red",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/mksglu/context-mode",
+      "summary": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks. | 🔥 246 stars today | Langua",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "github-65daf57cf940",
+      "title": "storytold/artcraft — ArtCraft is an intentional crafting engine for artists, designers, and filmmaker",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/storytold/artcraft",
+      "summary": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers | 🔥 4095 stars today | Language: Rust",
+      "category": [
+        "开源项目",
+        "Rust"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "github-b160083c8c96",
+      "title": "open-webui/open-webui — User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/open-webui/open-webui",
+      "summary": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...) | 🔥 157 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "github-52382a639c7e",
+      "title": "cathrynlavery/diagram-design — Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "summary": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop. | 🔥 2081 stars today | Languag",
+      "category": [
+        "开源项目",
+        "HTML"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "github-d21de4367b63",
+      "title": "lyogavin/airllm — AirLLM 2.8T LLM inference with single 4GB GPU",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/lyogavin/airllm",
+      "summary": "AirLLM 2.8T LLM inference with single 4GB GPU | 🔥 879 stars today | Language: Jupyter Notebook",
+      "category": [
+        "开源项目",
+        "Jupyter Notebook"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "github-e9ce02e01720",
+      "title": "microsoft/BitNet — Official inference framework for 1-bit LLMs",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/microsoft/BitNet",
+      "summary": "Official inference framework for 1-bit LLMs | 🔥 97 stars today | Language: C++",
+      "category": [
+        "开源项目",
+        "C++"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "github-35b401b2d43a",
+      "title": "Alishahryar1/free-claude-code — Use Claude Code, Codex, VSCode, Pi, and OpenCode (and 6 other harnesses) for fre",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Alishahryar1/free-claude-code",
+      "summary": "Use Claude Code, Codex, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone, and now from the browser with native browser sessions (mul",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "hf-model-223eedebe2a0",
+      "title": "🤗 google/embeddinggemma-2",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/google/embeddinggemma-2",
+      "summary": "Task: feature-extraction | Downloads: 115,763 | Likes: 2,000",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "hf-model-9e1f69648d84",
+      "title": "🤗 jialinyyzz/humanizer",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/jialinyyzz/humanizer",
+      "summary": "Task: text-generation | Downloads: 46,070 | Likes: 1,377",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "hf-model-959c9d876341",
+      "title": "🤗 Qwen/Qwen-Image-2.1-Turbo",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
+      "summary": "Task: text-to-image | Downloads: 6,787 | Likes: 670",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "hf-model-79325a3530b8",
+      "title": "🤗 abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
+      "summary": "Task: text-to-image | Downloads: 2,188,658 | Likes: 4,144",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "hf-model-9d50522d5b7b",
+      "title": "🤗 Cloudflare/clef",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Cloudflare/clef",
+      "summary": "Task: image-text-to-text | Downloads: 15,064 | Likes: 2,108",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "hf-model-eaf280aff552",
+      "title": "🤗 Lightricks/LTX-2.5",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "summary": "Task: image-to-video | Downloads: 1,719,766 | Likes: 7,527",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "hf-model-73e3de884316",
+      "title": "🤗 ConwayResearch/Underdog-Saluki-27B-1.0",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0",
+      "summary": "Task: text-generation | Downloads: 242,329 | Likes: 384",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "hf-model-11403ace832c",
+      "title": "🤗 Qwen/Qwen3.8-27B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "summary": "Task: image-text-to-text | Downloads: 6,895,303 | Likes: 17,597",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "hf-model-192a13e14b8f",
+      "title": "🤗 LiquidAI/d1-3B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/LiquidAI/d1-3B",
+      "summary": "Task: image-text-to-text | Downloads: 11,866 | Likes: 359",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "hf-model-df733e87adac",
+      "title": "🤗 AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF",
+      "summary": "Task: text-to-image | Downloads: 161,715 | Likes: 387",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "hf-paper-1b960f0814de",
+      "title": "CrossTimeEdit: A Decade-Spanning Cross-View Dataset and Reward-Guided Editing for Historical Street-View Generation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2609.36616",
+      "summary": "Historical street-view imagery records urban evolution, but uneven coverage leaves substantial gaps in historical records. Generating plausible past appearances requires restoring changed structures w",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "hf-paper-14b49d3f069f",
+      "title": "VIS-Ground: Video Interactive Storytelling with Contextual Grounding",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2610.09326",
+      "summary": "Video interactive storytelling enables viewers to actively steer how a video unfolds. However, once we allow viewers to intervene during generation, a new challenge arises: The viewer's request can ha",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "hf-paper-6741ef8937ee",
+      "title": "SPLATIFY: Reproduce, Discover, Innovate! From Papers and Ideas to Trainable 3DGS Code",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2610.09116",
+      "summary": "The rapid growth of 3D Gaussian Splatting (3DGS) research demands significant effort to reimplement papers before building on them. We introduce SPLATIFY, a multi-agent framework that converts 3DGS pa",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "hf-paper-50cbbf059c79",
+      "title": "Learning More by Training Less: Uncertainty-Guided Progressive Contraction for Efficient Reasoning Post-Training",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2610.12933",
+      "summary": "Large language models have achieved remarkable advances in complex reasoning. However, scaling reasoning post-training with ever-larger corpora can substantially increase training cost without proport",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "hf-paper-1f8d8faca97f",
+      "title": "AgentSWE: Can Coding Agents Build the Agent You Actually Want?",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2610.13361",
+      "summary": "As the production of software passes into the hands of software itself, coding agents are increasingly commissioned to build agents fitted to their users' own workflows. This delegation carries a quie",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "hf-paper-412e32e415a3",
+      "title": "GroundAnything: Reconciling Parallel Decoding with Precise Visual Grounding at Flash Speed",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2609.39600",
+      "summary": "Autoregressive (AR) grounding models serialize spatial predictions, introducing sequential latency and imposing a causal order on output tokens. We view grounding as visual evidence extraction: object",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "hf-paper-93664e7c6d77",
+      "title": "GroundingPI: A Grounding Foundation Model towards Physical Intelligence with Visual Primitives",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2609.39601",
+      "summary": "Precise grounding matters. It specifies which object is the target and where that object is, even in clutter and for tiny objects, and it has to be fast enough for closed-loop control. Yet vision-lang",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "hf-paper-f9d3ac8815fe",
+      "title": "Scaling Agentic Data for Long-Horizon Terminal Intelligence",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2610.13166",
+      "summary": "Terminal agents are moving beyond local operations toward completing real-world professional tasks. Short trajectories can demonstrate commands and tool calls, but they do not fully show how agents ac",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "hf-paper-f8a1d13d1782",
+      "title": "T3lescope: Arbitrary-Resolution High-Fidelity Generative Surface Reconstruction from Images",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2610.03308",
+      "summary": "We reconstruct high-fidelity 3D scene meshes from posed multi-view images without per-scene optimization, across scales ranging from single objects to large outdoor scenes. Per-scene optimization meth",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "hf-paper-6200cab1b26c",
+      "title": "ARCS: Towards Precise Text-to-SQL via Structured Disambiguation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2610.09396",
+      "summary": "As text-to-SQL systems move beyond demonstrations toward real-world deployment, ambiguity in user questions becomes a primary source of errors. Such ambiguities are often subtle, domain- or data-speci",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "hn-50068510",
+      "title": "Where is all the new, good software?",
+      "source": "Hacker News",
+      "source_type": "hn",
+      "url": "https://www.natemeyvis.com/where-is-all-the-new-good-software/",
+      "summary": "",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "hn-50041866",
+      "title": "The baffling intelligence of a single cell (2024)",
+      "source": "Hacker News",
+      "source_type": "hn",
+      "url": "https://jsomers.net/e-coli-chemotaxis/",
+      "summary": "",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "hn-50058507",
+      "title": "GLM-Legal",
+      "source": "Hacker News",
+      "source_type": "hn",
+      "url": "https://z.ai/blog/glm-legal",
+      "summary": "",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "reddit-1x45r3b",
+      "title": "Weekly Hiring Thread",
+      "source": "r/AI_Agents",
+      "source_type": "reddit",
+      "url": "https://www.reddit.com/r/AI_Agents/comments/1x45r3b/weekly_hiring_thread/",
+      "summary": "If you're hiring use this thread. Include: Company Name Role Name Full Time/Part Time/Contract Role Description Salary Range Remote or Not Visa Sponsorship or Not submitted by /u/help-me-grow [link] [comments]",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "reddit-1x4pdtc",
+      "title": "China just made AI memory startups sweat 💀 Tencent open-sourced Agent Memory and it runs 100% locally on SQLite",
+      "source": "r/AI_Agents",
+      "source_type": "reddit",
+      "url": "https://www.reddit.com/r/AI_Agents/comments/1x4pdtc/china_just_made_ai_memory_startups_sweat_tencent/",
+      "summary": "Saw that Tencent open-sourced Agent Memory, a long-term memory layer for AI agents. A few things stood out to me: Runs 100% locally on SQLite. No cloud APIs, no separate vector database to host They report about 61% fewer tokens PersonaMem accuracy went from 48% to 76% Memory is readable and traceable, so the agent can point back to the original conversation logs instead of relying on a black box of embeddings The traceability part is what I find most interesting. Most memory setups I've tried j",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "x-account-2109821043506610569",
+      "title": "Codex 终于开始封杀 AI 逆向了 31 2 25 12K",
+      "source": "X:@oran_ge",
+      "source_type": "x",
+      "url": "https://x.com/oran_ge/status/2109821043506610569",
+      "summary": "Codex 终于开始封杀 AI 逆向了 31 2 25 12K",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "x-account-2109633997966057938",
+      "title": "影视飓风 Tim 演示字节最新世界模型\n世界模型到底是有没有实际作用？\n今天到影视飓风Tim讲了下：\n1. 造一个世界，并与之互动\n2. 将老电影作为一个世界模型，随意控制电影运镜\n3. 打开任意门，",
+      "source": "X:@oran_ge",
+      "source_type": "x",
+      "url": "https://x.com/oran_ge/status/2109633997966057938",
+      "summary": "影视飓风 Tim 演示字节最新世界模型\n世界模型到底是有没有实际作用？\n今天到影视飓风Tim讲了下：\n1. 造一个世界，并与之互动\n2. 将老电影作为一个世界模型，随意控制电影运镜\n3. 打开任意门，进入梦想中的世界\n4. 让机器人在虚拟世界里学会操作，包括自动驾驶\n5. 带上 VR Show more 00:00 49 16 148 30K",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "x-account-2109598153699963149",
+      "title": "最近对我来说比较震撼的两个数据\n1. 对于贫困的人而言金钱是最有效的救助方式，在贫穷家庭的幼儿出生后给1000美金可以降低40%的死亡率\n2.人类只需要拿出 AI 投资一半的钱就可以解决全世界的极度贫",
+      "source": "X:@oran_ge",
+      "source_type": "x",
+      "url": "https://x.com/oran_ge/status/2109598153699963149",
+      "summary": "最近对我来说比较震撼的两个数据\n1. 对于贫困的人而言金钱是最有效的救助方式，在贫穷家庭的幼儿出生后给1000美金可以降低40%的死亡率\n2.人类只需要拿出 AI 投资一半的钱就可以解决全世界的极度贫困问题，但人类的选择是心安理得地去造一个神，并承诺，神可以解决贫困问题 Show more 74 7 178 52K",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "x-account-2109923163580567614",
+      "title": "REA 案例：用 Codex + REA 下载微信视频号视频\n\n仅作为案例分析，真要下载视频应该有更成熟的方案。\n\n提示词参考截图，很简单：\n> Use REA，帮我下载我微信打开正在播放的视频号的视",
+      "source": "X:@dotey",
+      "source_type": "x",
+      "url": "https://x.com/dotey/status/2109923163580567614",
+      "summary": "REA 案例：用 Codex + REA 下载微信视频号视频\n\n仅作为案例分析，真要下载视频应该有更成熟的方案。\n\n提示词参考截图，很简单：\n> Use REA，帮我下载我微信打开正在播放的视频号的视频\n\n但一轮对话搞不定，需要根据提示多步才能完成。\n\nCodex Show more 17 33 4.7K",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "x-account-2109843015833374800",
+      "title": "Anthropic 测试 AI 自我复制：现在的小模型还做不到，按趋势年底可能追上\n\n先说结论：目前还没有能在网上自己到处复制的 AI。\n\nAnthropic 在一个简化过的实验环境里测了一批开源模型",
+      "source": "X:@dotey",
+      "source_type": "x",
+      "url": "https://x.com/dotey/status/2109843015833374800",
+      "summary": "Anthropic 测试 AI 自我复制：现在的小模型还做不到，按趋势年底可能追上\n\n先说结论：目前还没有能在网上自己到处复制的 AI。\n\nAnthropic 在一个简化过的实验环境里测了一批开源模型，能完整走完“传到新机器、把模型装好跑起来、再传下一台”整个流程的只有智谱的 Show more 00:00 62 5 71 17K",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "x-account-2109814856102605240",
+      "title": "今天 Codex 重置，重置将在太平洋标准时间当日结束前完成 43 3 49 44K",
+      "source": "X:@dotey",
+      "source_type": "x",
+      "url": "https://x.com/dotey/status/2109814856102605240",
+      "summary": "今天 Codex 重置，重置将在太平洋标准时间当日结束前完成 43 3 49 44K",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "x-account-2109899722123329576",
+      "title": "目前，毫无疑问，最强编程订阅仍然是 Claude Code + Opus 5.5。\n\n综合性价比成本、智力、文案能力、理解能力、编程能力、Agent 能力各方面，就是 Claude 官方订阅最推荐。\n",
+      "source": "X:@fkysly",
+      "source_type": "x",
+      "url": "https://x.com/fkysly/status/2109899722123329576",
+      "summary": "目前，毫无疑问，最强编程订阅仍然是 Claude Code + Opus 5.5。\n\n综合性价比成本、智力、文案能力、理解能力、编程能力、Agent 能力各方面，就是 Claude 官方订阅最推荐。\n\n其他的说啥都没有用，榜单刷再高也是骗骗自己。\n\n只是目前最大的问题就是封号，以及 Show more 8 9 2.9K",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "x-account-2109890485645164700",
+      "title": "Meta 给了你多少钱，我 @ tibi 出双倍 1 610",
+      "source": "X:@fkysly",
+      "source_type": "x",
+      "url": "https://x.com/fkysly/status/2109890485645164700",
+      "summary": "Meta 给了你多少钱，我 @ tibi 出双倍 1 610",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "x-account-2109881381325287542",
+      "title": "从目前各种民间实际测试来看，Meta 新吹的自己的 Muse Wonder Full 模型，根本就是虚假宣传。\n\n官方宣传能超过 Fable 5.1，直逼 Opus 5.5。实际看下来，可能也就是Qw",
+      "source": "X:@fkysly",
+      "source_type": "x",
+      "url": "https://x.com/fkysly/status/2109881381325287542",
+      "summary": "从目前各种民间实际测试来看，Meta 新吹的自己的 Muse Wonder Full 模型，根本就是虚假宣传。\n\n官方宣传能超过 Fable 5.1，直逼 Opus 5.5。实际看下来，可能也就是Qwen 3 水平。 6 9 2.5K",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "x-account-2109892247580000595",
+      "title": "Good plans are simple. I have one that should result in significantly more usage for everyone. Hope ",
+      "source": "X:@thsottiaux",
+      "source_type": "x",
+      "url": "https://x.com/thsottiaux/status/2109892247580000595",
+      "summary": "Good plans are simple. I have one that should result in significantly more usage for everyone. Hope to get it done soon. 1.3K 129 5.8K 346K",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "anthropic-c044b31b2af17828644e",
+      "title": "AI models may be capable of self-replicating without access to a datacenter",
+      "source": "Anthropic",
+      "source_type": "anthropic_blog",
+      "url": "https://www.anthropic.com/research/self-replicating-ai",
+      "summary": "Small AI models may be only months away from being able to self-replicate across cheap IoT devices like Android TV boxes, with no datacenter needed.",
+      "category": [
+        "Research"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    },
+    {
+      "id": "anthropic-4204414603744d963967",
+      "title": "Strengthening our defenses against distillation attacks",
+      "source": "Anthropic",
+      "source_type": "anthropic_blog",
+      "url": "https://www.anthropic.com/research/distillation-defenses",
+      "summary": "Illicit distillation allows model developers to copy frontier AI capabilities without creating proportionally robust safeguards. Here, we describe how we’ve reduced the rate of distillation by more than 90%.",
+      "category": [
+        "Research"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-13"
+    }
+  ],
+  "signals": {
+    "inspiration": [
+      {
+        "id": "hn-50055304",
+        "title": "Hackers activate automatic defrosting in supermarket fridges across Europe",
+        "url": "https://www.tomshardware.com/tech-industry/cyber-security/unprecedented-cyberattack-cripples-supermarket-fridges-across-europe-as-hackers-activate-automatic-defrosting-delivery-and-store-prices-also-impacted-by-incident",
+        "source": "Hacker News",
+        "source_type": "hn",
+        "published_at": "2026-10-12T12:16:42+00:00",
+        "relevance_score": 8,
+        "track": "inspiration",
+        "finding": "欧洲多国超市的制冷系统被黑客远程操控，自动除霜功能被激活，导致冷冻食品解冻变质并造成经济损失。多家主流媒体报道了该事件，安全研究指出制冷控制器存在漏洞；Hacker News 讨论中还提到军事小卖部冷冻设备可能遭遇过类似攻击。",
+        "why_read": "商用制冷系统一旦联网并暴露于互联网，即使攻击手法简单，也能对食品供应链和民生造成实际的物理破坏。",
+        "evidence_note": "社区热榜（转述/讨论，非独立验证） · 互动数据：682 points, 806 comments",
+        "tags": [],
+        "details": [
+          "攻击者通过远程方式激活欧洲超市冷冻设备的自动除霜功能，使冷藏/冷冻环境失温。",
+          "路透社、BBC、法国《世界报》等多家媒体报道了此次事件。",
+          "Claroty Team82 的研究《Freeze the Controller》揭示了制冷控制器中的安全隐患。",
+          "Hacker News 讨论中有人猜测军方小卖部的冷柜也曾被黑客攻击，显示同类风险不限于商业场所。"
+        ],
+        "takeaway": "欧洲多国超市的制冷系统被黑客远程操控，自动除霜功能被激活，导致冷冻食品解冻变质并造成经济损失。多家主流媒体报道了该事件，安全研究指出制冷控制器存在漏洞；Hacker News 讨论中还提到军事小卖部冷冻设备可能遭遇过类似攻击。",
+        "facts": [
+          "攻击者通过远程方式激活欧洲超市冷冻设备的自动除霜功能，使冷藏/冷冻环境失温。",
+          "路透社、BBC、法国《世界报》等多家媒体报道了此次事件。"
+        ],
+        "so_what": "商用制冷系统一旦联网并暴露于互联网，即使攻击手法简单，也能对食品供应链和民生造成实际的物理破坏。",
+        "evidence": "682 points, 806 comments",
+        "why": "社区讨论 · 682 points, 806 comments"
+      }
+    ],
+    "execution": [
+      {
+        "id": "anthropic-4204414603744d963967",
+        "title": "Strengthening our defenses against distillation attacks",
+        "url": "https://www.anthropic.com/research/distillation-defenses",
+        "source": "Anthropic",
+        "source_type": "anthropic_blog",
+        "published_at": "2026-10-12",
+        "relevance_score": 8,
+        "track": "execution",
+        "finding": "文章介绍针对非法蒸馏攻击的防御措施，称已将蒸馏率降低超过90%。非法蒸馏允许开发者复制前沿AI能力却无需建立对等安全防护，因此需要加强防御。",
+        "why_read": "AI安全不止是模型行为对齐，还包括防止能力被非法蒸馏后绕过原有安全机制。",
+        "evidence_note": "官方材料",
+        "tags": [
+          "新能力新用法"
+        ],
+        "details": [
+          "非法蒸馏可复制前沿AI能力",
+          "复制者不必建立相应强度的安全防护",
+          "作者团队已将蒸馏率降低超过90%",
+          "该防御旨在保护模型能力不被低成本复制"
+        ],
+        "takeaway": "文章介绍针对非法蒸馏攻击的防御措施，称已将蒸馏率降低超过90%。非法蒸馏允许开发者复制前沿AI能力却无需建立对等安全防护，因此需要加强防御。",
+        "facts": [
+          "非法蒸馏可复制前沿AI能力",
+          "复制者不必建立相应强度的安全防护"
+        ],
+        "so_what": "AI安全不止是模型行为对齐，还包括防止能力被非法蒸馏后绕过原有安全机制。",
+        "evidence": "",
+        "why": "技术内容"
+      },
+      {
+        "id": "anthropic-c044b31b2af17828644e",
+        "title": "AI models may be capable of self-replicating without access to a datacenter",
+        "url": "https://www.anthropic.com/research/self-replicating-ai",
+        "source": "Anthropic",
+        "source_type": "anthropic_blog",
+        "published_at": "2026-10-12",
+        "relevance_score": 8,
+        "track": "execution",
+        "finding": "文章指出小型AI模型可能只需数月就能在廉价物联网设备上自我复制，无需数据中心。这意味着AI可以像去中心化网络一样在Android TV盒子等设备间传播。",
+        "why_read": "AI的自我复制一旦脱离数据中心，将形成低门槛、分布式的数字传播生态，监管难度显著上升。",
+        "evidence_note": "官方材料",
+        "tags": [
+          "新能力新用法"
+        ],
+        "details": [
+          "小型AI模型可能几个月内具备自我复制能力",
+          "目标硬件是Android TV盒子等廉价IoT设备",
+          "无需数据中心支持",
+          "复制传播将呈现去中心化特征"
+        ],
+        "takeaway": "文章指出小型AI模型可能只需数月就能在廉价物联网设备上自我复制，无需数据中心。这意味着AI可以像去中心化网络一样在Android TV盒子等设备间传播。",
+        "facts": [
+          "小型AI模型可能几个月内具备自我复制能力",
+          "目标硬件是Android TV盒子等廉价IoT设备"
+        ],
+        "so_what": "AI的自我复制一旦脱离数据中心，将形成低门槛、分布式的数字传播生态，监管难度显著上升。",
+        "evidence": "",
+        "why": "技术内容"
+      },
+      {
+        "id": "arxiv-2610.13844v1",
+        "title": "Inference-Time Steering Across Scaffolds and Epitopes for Sample-Efficient De Novo Nanobody Design",
+        "url": "https://arxiv.org/abs/2610.13844v1",
+        "source": "arXiv",
+        "source_type": "arxiv",
+        "published_at": null,
+        "relevance_score": 8,
+        "track": "execution",
+        "finding": "生成式分子设计通常依赖过度生成和后过滤，推理时引导如 Feynman-Kac 虽提高效率但只在单一固定配置内优化。针对纳米抗体从头设计，论文提出跨支架和表位的推理时引导，避免在低产出条件上浪费计算。",
+        "why_read": "推理时引导应跨多个设计条件动态分配计算，而不是困在固定支架或表位配置中。",
+        "evidence_note": "来源转述",
+        "tags": [],
+        "details": [
+          "传统生成式分子设计低效地过度生成再过滤",
+          "Feynman-Kac 等推理时引导只在固定配置内优化",
+          "支架身份和目标表位的预先承诺构成瓶颈",
+          "不同条件下产出差异大，需跨条件引导以提升样本效率"
+        ],
+        "takeaway": "生成式分子设计通常依赖过度生成和后过滤，推理时引导如 Feynman-Kac 虽提高效率但只在单一固定配置内优化。针对纳米抗体从头设计，论文提出跨支架和表位的推理时引导，避免在低产出条件上浪费计算。",
+        "facts": [
+          "传统生成式分子设计低效地过度生成再过滤",
+          "Feynman-Kac 等推理时引导只在固定配置内优化"
+        ],
+        "so_what": "推理时引导应跨多个设计条件动态分配计算，而不是困在固定支架或表位配置中。",
+        "evidence": "",
+        "why": "技术内容"
+      },
+      {
+        "id": "arxiv-2610.13851v1",
+        "title": "Finite-Sample Guarantees for Fully Discrete Conditional Diffusion Models",
+        "url": "https://arxiv.org/abs/2610.13851v1",
+        "source": "arXiv",
+        "source_type": "arxiv",
+        "published_at": null,
+        "relevance_score": 8,
+        "track": "execution",
+        "finding": "论文为从数据学习并用有限去噪步实现的条件扩散模型建立有限样本保证。通过将评分训练目标与采样网格对齐，统计估计误差和数值离散误差可被统一分析，并给出高概率误差界和评分评估次数。",
+        "why_read": "训练与采样网格对齐是获得扩散模型端到端有限样本保证的关键设计。",
+        "evidence_note": "来源转述",
+        "tags": [],
+        "details": [
+          "同时考虑统计估计和数值离散化两类误差",
+          "训练目标与采样网格对齐使误差可统一分析",
+          "在光滑条件密度模型下给出高概率误差界",
+          "量化所需评分评估次数"
+        ],
+        "takeaway": "论文为从数据学习并用有限去噪步实现的条件扩散模型建立有限样本保证。通过将评分训练目标与采样网格对齐，统计估计误差和数值离散误差可被统一分析，并给出高概率误差界和评分评估次数。",
+        "facts": [
+          "同时考虑统计估计和数值离散化两类误差",
+          "训练目标与采样网格对齐使误差可统一分析"
+        ],
+        "so_what": "训练与采样网格对齐是获得扩散模型端到端有限样本保证的关键设计。",
+        "evidence": "",
+        "why": "技术内容"
+      }
+    ],
+    "total": 5,
+    "learning": {
+      "active_references": [],
+      "themes": [],
+      "value_patterns": [],
+      "search_clues": []
+    },
+    "events": [
+      {
+        "id": "event-c70eca6b0f88f44d",
+        "title": "Anthropic runs a 260B model on 15 cheap Android TV boxes and tests AI self-replication",
+        "what_happened": "Anthropic researchers ran a 260-billion-parameter model on 15 ~$55 Android TV boxes with 4GB RAM each, reaching only 0.39 tokens/second. The work framed AI self-replication as scanning, intrusion, deployment, and propagation on commodity devices. A related simplified-environment test found no current model can fully self-replicate online, with only Zhipu's open-source model completing the full move-to-new-machine loop, though the trend could catch up by year-end.",
+        "why_read": "It tests whether AI can escape large data centers by deploying and persisting on cheap connected hardware, and it links edge inference to recursive self-improvement safety.",
+        "seed_ids": [
+          "rss-虎嗅-4011a35ca429",
+          "x-account-2109843015833374800"
+        ],
+        "sources": [
+          {
+            "id": "rss-虎嗅-4011a35ca429",
+            "url": "https://www.huxiu.com/article/4897134.html?f=rss",
+            "title": "AI学会“寄生繁殖”了，Anthropic 用15台破电视盒子养活大模型",
+            "source": "虎嗅",
+            "published_at": "2026-10-13",
+            "author": ""
+          },
+          {
+            "id": "x-account-2109843015833374800",
+            "url": "https://x.com/dotey/status/2109843015833374800",
+            "title": "Anthropic 测试 AI 自我复制：现在的小模型还做不到，按趋势年底可能追上\n\n先说结论：目前还没有能在网上自己到处复制的 AI。\n\nAnthropic 在一个简化过的实验环境里测了一批开源模型",
+            "source": "X:@dotey",
+            "published_at": "2026-10-13T03:05:48.619000+00:00",
+            "author": "@dotey"
+          }
+        ],
+        "entity": "Anthropic",
+        "query": "Anthropic AI self-replication Android TV boxes",
+        "progress": false,
+        "discussions": {
+          "x": {
+            "status": "unavailable",
+            "posts": []
+          },
+          "hn": {
+            "status": "found",
+            "posts": [
+              {
+                "url": "https://news.ycombinator.com/item?id=50068870",
+                "title": "Anthropic warns AI models could soon copy themselves across home devices",
+                "author": "cramer4next",
+                "published_at": "2026-10-13T09:17:04Z",
+                "source": "Hacker News",
+                "engagement": {
+                  "points": 1,
+                  "comments": 0
+                }
+              },
+              {
+                "url": "https://news.ycombinator.com/item?id=50068775",
+                "title": "Anthropic's Claude AI submitted false murder tip to Philadelphia police",
+                "author": "sbulaev",
+                "published_at": "2026-10-13T09:07:08Z",
+                "source": "Hacker News",
+                "engagement": {
+                  "points": 1,
+                  "comments": 0
+                }
+              },
+              {
+                "url": "https://news.ycombinator.com/item?id=50065402",
+                "title": "An Anthropic AI model sent a false homicide tip to Philadelphia police",
+                "author": "luispa",
+                "published_at": "2026-10-13T01:25:28Z",
+                "source": "Hacker News",
+                "engagement": {
+                  "points": 5,
+                  "comments": 1
+                }
+              },
+              {
+                "url": "https://news.ycombinator.com/item?id=50060500",
+                "title": "Just say no to OpenAI and Anthropic",
+                "author": "DeepLogin",
+                "published_at": "2026-10-12T18:17:29Z",
+                "source": "Hacker News",
+                "engagement": {
+                  "points": 159,
+                  "comments": 155
+                }
+              },
+              {
+                "url": "https://news.ycombinator.com/item?id=50060350",
+                "title": "Anthropic AI Model Goes Rogue, Gives Cops a Fake Tip",
+                "author": "sbulaev",
+                "published_at": "2026-10-12T18:07:08Z",
+                "source": "Hacker News",
+                "engagement": {
+                  "points": 2,
+                  "comments": 1
+                }
+              }
+            ]
+          },
+          "reddit": {
+            "status": "found",
+            "posts": [
+              {
+                "url": "https://www.reddit.com/r/actutech/comments/1x4rig2/des_ia_capables_de_se_multiplier_toutes_seules/",
+                "title": "Des IA capables de se multiplier toutes seules sur des boîtiers TV ? Anthropic alerte sur ce risque",
+                "author": "/u/romain34230",
+                "published_at": "2026-10-13T08:52:32+00:00",
+                "source": "Reddit"
+              },
+              {
+                "url": "https://www.reddit.com/r/AIDangers/comments/1x4rhwc/ai_that_copies_itself_onto_cheap_tv_boxes/",
+                "title": "AI that copies itself onto cheap TV boxes? Anthropic says it may be months away",
+                "author": "/u/mawcopolow",
+                "published_at": "2026-10-13T08:51:28+00:00",
+                "source": "Reddit"
+              },
+              {
+                "url": "https://www.reddit.com/r/singularity/comments/1x4rhsi/ai_that_copies_itself_onto_cheap_tv_boxes/",
+                "title": "AI that copies itself onto cheap TV boxes? Anthropic says it may be months away",
+                "author": "/u/mawcopolow",
+                "published_at": "2026-10-13T08:51:15+00:00",
+                "source": "Reddit"
+              },
+              {
+                "url": "https://www.reddit.com/r/EmulationOnAndroid/comments/1x4qad7/turnip_z_release_v020_major_improvements_in/",
+                "title": "Turnip Z release v0.2.0: Major Improvements in Stability, Compatibility, and Frame Pacing (Snapdragon 865, Adreno 650 | Retroid Pocket 5, Flip 2, Mini)",
+                "author": "/u/Ok-Passion6399",
+                "published_at": "2026-10-13T07:29:54+00:00",
+                "source": "Reddit"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "event-ea3bd73e2b506e00",
+        "title": "Meta launches Muse Wonder models as community tests dispute benchmark claims",
+        "what_happened": "Meta released Muse Wonder and Muse Wonder Full, positioning them around active memory and active focus. Official claims say they surpass Fable 5.1 and approach Opus 5.5, while early community testing suggests real-world performance may be closer to Qwen3.",
+        "why_read": "It shows a high-stakes model release where vendor benchmarks and early independent testing diverge sharply.",
+        "seed_ids": [
+          "rss-极客公园-12d117de5e4f",
+          "x-account-2109719251196285306",
+          "x-account-2109881381325287542"
+        ],
+        "sources": [
+          {
+            "id": "rss-极客公园-12d117de5e4f",
+            "url": "http://www.geekpark.net/news/372264",
+            "title": "曝梁文锋密集见机器人创业者；影石出货量累计突破1000万台；Meta发布Muse Wonder模型｜极客早知道",
+            "source": "极客公园",
+            "published_at": "2026-10-13",
+            "author": ""
+          },
+          {
+            "id": "x-account-2109719251196285306",
+            "url": "https://x.com/fkysly/status/2109719251196285306",
+            "title": "很突然，Meta 突然放出的 Muse Wonder 模型超过了 Fable 5.1，逼近 Opus 5.5？？？\n\n什么鬼？\n\n我仿佛 31 4 96 71K",
+            "source": "X:@fkysly",
+            "published_at": "2026-10-12T18:54:00.830000+00:00",
+            "author": "@fkysly"
+          },
+          {
+            "id": "x-account-2109881381325287542",
+            "url": "https://x.com/fkysly/status/2109881381325287542",
+            "title": "从目前各种民间实际测试来看，Meta 新吹的自己的 Muse Wonder Full 模型，根本就是虚假宣传。\n\n官方宣传能超过 Fable 5.1，直逼 Opus 5.5。实际看下来，可能也就是Qw",
+            "source": "X:@fkysly",
+            "published_at": "2026-10-13T05:38:15.665000+00:00",
+            "author": "@fkysly"
+          }
+        ],
+        "entity": "Meta",
+        "query": "Meta Muse Wonder Fable 5.1 Opus 5.5",
+        "progress": false,
+        "discussions": {
+          "x": {
+            "status": "unavailable",
+            "posts": []
+          },
+          "hn": {
+            "status": "no_results",
+            "posts": []
+          },
+          "reddit": {
+            "status": "unavailable",
+            "posts": [],
+            "reason": "rate_limited"
+          }
+        }
+      },
+      {
+        "id": "event-9c8ae69b84f21a2e",
+        "title": "Tencent open-sources Agent Memory as a local SQLite memory layer",
+        "what_happened": "Tencent released Agent Memory, a long-term memory layer for AI agents that runs fully locally on SQLite without cloud APIs or a separate vector database. It reports about 61% fewer tokens and raises PersonaMem accuracy from 48% to 76%, with readable and traceable memory.",
+        "why_read": "Local-first agent memory with traceable logs could reduce cost and privacy risk while pressuring hosted memory startups.",
+        "seed_ids": [
+          "reddit-1x4pdtc"
+        ],
+        "sources": [
+          {
+            "id": "reddit-1x4pdtc",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1x4pdtc/china_just_made_ai_memory_startups_sweat_tencent/",
+            "title": "China just made AI memory startups sweat 💀 Tencent open-sourced Agent Memory and it runs 100% locally on SQLite",
+            "source": "r/AI_Agents",
+            "published_at": "2026-10-13T06:32:22+00:00",
+            "author": "/u/rohan_mehta_charts92"
+          }
+        ],
+        "entity": "Tencent",
+        "query": "Tencent Agent Memory SQLite",
+        "progress": false,
+        "discussions": {
+          "x": {
+            "status": "unavailable",
+            "posts": []
+          },
+          "hn": {
+            "status": "no_results",
+            "posts": []
+          },
+          "reddit": {
+            "status": "unavailable",
+            "posts": [],
+            "reason": "rate_limited"
+          }
+        }
+      },
+      {
+        "id": "event-6f7ac1823da81d2e",
+        "title": "DeepSeek founder Liang Wenfeng explores embodied intelligence entry",
+        "what_happened": "Reports say Liang Wenfeng has been meeting embodied intelligence entrepreneurs and considering whether DeepSeek should enter robotics through an internal team or investments. He has already invested in Unitree and is reported to be planning to lead an investment in Winverse AI, founded by former Tencent AI scientist Hu Han.",
+        "why_read": "It signals a major LLM lab moving from digital models toward physical-world robotics and real-world AI.",
+        "seed_ids": [
+          "rss-极客公园-12d117de5e4f"
+        ],
+        "sources": [
+          {
+            "id": "rss-极客公园-12d117de5e4f",
+            "url": "http://www.geekpark.net/news/372264",
+            "title": "曝梁文锋密集见机器人创业者；影石出货量累计突破1000万台；Meta发布Muse Wonder模型｜极客早知道",
+            "source": "极客公园",
+            "published_at": "2026-10-13",
+            "author": ""
+          }
+        ],
+        "entity": "DeepSeek",
+        "query": "DeepSeek Liang Wenfeng Winverse AI",
+        "progress": false,
+        "discussions": {
+          "x": {
+            "status": "unavailable",
+            "posts": []
+          },
+          "hn": {
+            "status": "found",
+            "posts": [
+              {
+                "url": "https://news.ycombinator.com/item?id=50054131",
+                "title": "Operation Cheepseek Phase 3: $80 of usage for DeepSeek v4.1 Flash",
+                "author": "worldofmatthew",
+                "published_at": "2026-10-12T10:14:09Z",
+                "source": "Hacker News",
+                "engagement": {
+                  "points": 1,
+                  "comments": 0
+                }
+              },
+              {
+                "url": "https://news.ycombinator.com/item?id=50046655",
+                "title": "Show HN: CLI-Dispatch – Delegate Claude Code Tasks to Codex, Gemini, DeepSeek",
+                "author": "rbinar",
+                "published_at": "2026-10-11T19:03:41Z",
+                "source": "Hacker News",
+                "engagement": {
+                  "points": 1,
+                  "comments": 0
+                }
+              }
+            ]
+          },
+          "reddit": {
+            "status": "unavailable",
+            "posts": [],
+            "reason": "rate_limited"
+          }
+        }
+      }
+    ],
+    "source_status": {
+      "errors": {
+        "r/aipromptprogramming": "rate_limited",
+        "r/Anthropic": "rate_limited",
+        "r/artificial": "rate_limited",
+        "r/ArtificialInteligence": "rate_limited",
+        "r/AskReddit": "rate_limited",
+        "r/BeAmazed": "rate_limited",
+        "r/ChatGPT": "rate_limited",
+        "r/ChatGPTCoding": "rate_limited",
+        "r/ClaudeAI": "rate_limited",
+        "r/DeepSeek": "rate_limited"
+      },
+      "hn": "ok",
+      "reddit": {
+        "r/AI_Agents": "ok",
+        "r/aipromptprogramming": "unavailable",
+        "r/Anthropic": "unavailable",
+        "r/artificial": "unavailable",
+        "r/ArtificialInteligence": "unavailable",
+        "r/AskReddit": "unavailable",
+        "r/BeAmazed": "unavailable",
+        "r/ChatGPT": "unavailable",
+        "r/ChatGPTCoding": "unavailable",
+        "r/ClaudeAI": "unavailable",
+        "r/DeepSeek": "unavailable"
+      }
+    },
+    "selection_status": "ok",
+    "accounts": [
+      {
+        "handle": "@oran_ge",
+        "status": "partial",
+        "checked_at": "2026-10-13T09:10:04.106905+00:00",
+        "reason": "public_profile_first_page_only",
+        "posts": [
+          {
+            "id": "x-account-2109821043506610569",
+            "handle": "@oran_ge",
+            "kind": "quote",
+            "title": "Codex 终于开始封杀 AI 逆向了 31 2 25 12K",
+            "url": "https://x.com/oran_ge/status/2109821043506610569",
+            "published_at": "2026-10-13T01:38:30.008000+00:00",
+            "takeaway": "**核心内容**：Codex 平台开始封杀 AI 逆向行为，引发用户讨论。\n\n**关键信息**：\n- Codex 对 AI 逆向行为启动封禁\n- 相关讨论在社区引起关注\n- 推文互动数据显示一定热度\n\n**值得关注**：平台对 AI 逆向的封禁反映模型防护正在从模型层转向平台层。",
+            "text_type": "quick_read",
+            "quoted_url": "https://x.com/Vincent_AINotes/status/2109533044407439607"
+          },
+          {
+            "id": "x-account-2109633997966057938",
+            "handle": "@oran_ge",
+            "kind": "original",
+            "title": "影视飓风 Tim 演示字节最新世界模型\n世界模型到底是有没有实际作用？\n今天到影视飓风Tim讲了下：\n1. 造一个世界，并与之互动\n2. 将老电影作为一个世界模型，随意控制电影运镜\n3. 打开任意门，",
+            "url": "https://x.com/oran_ge/status/2109633997966057938",
+            "published_at": "2026-10-12T13:15:14.876000+00:00",
+            "takeaway": "**核心内容**：影视飓风 Tim 演示字节最新世界模型，并讨论世界模型的实际应用价值。\n\n**关键信息**：\n- 可创造虚拟世界并与之互动\n- 可将老电影作为世界模型并随意控制运镜\n- 可通过任意门进入想象中的世界\n- 可用于训练机器人和自动驾驶\n- 未来可与 VR 结合\n\n**值得关注**：世界模型可能同时改变内容创作、机器人训练和沉浸式体验。",
+            "text_type": "quick_read"
+          },
+          {
+            "id": "x-account-2109598153699963149",
+            "handle": "@oran_ge",
+            "kind": "original",
+            "title": "最近对我来说比较震撼的两个数据\n1. 对于贫困的人而言金钱是最有效的救助方式，在贫穷家庭的幼儿出生后给1000美金可以降低40%的死亡率\n2.人类只需要拿出 AI 投资一半的钱就可以解决全世界的极度贫",
+            "url": "https://x.com/oran_ge/status/2109598153699963149",
+            "published_at": "2026-10-12T10:52:48.937000+00:00",
+            "takeaway": "**核心内容**：两个数据说明直接给钱对扶贫最有效，但人类更愿把资源投入 AI 而不是解决现实贫困。\n\n**关键信息**：\n- 贫困家庭新生儿获 1000 美元可降低 40% 死亡率\n- 用 AI 投资一半的钱就能解决全球极度贫困\n- 人类却选择投入 AI 并期待它解决贫困问题\n- 资源分配暴露技术崇拜与现实问题之间的落差\n\n**值得关注**：当社会更愿意相信“神”而非直接行动时，效率可能让位于叙事。",
+            "text_type": "quick_read"
+          },
+          {
+            "id": "x-account-2109435789549715933",
+            "handle": "@oran_ge",
+            "kind": "quote",
+            "title": "冷知识，大部分人不用大模型是因为大模型对他们没用，没有ROI\n人不傻 79 11 203 27K",
+            "url": "https://x.com/oran_ge/status/2109435789549715933",
+            "published_at": "2026-10-12T00:07:38.307000+00:00",
+            "takeaway": "**核心内容**：大多数人不用大模型，是因为大模型对他们没有实际价值，缺乏 ROI。\n\n**关键信息**：\n- 大模型对多数人没有实际用途\n- 用户不傻，会判断投入产出比\n- 普及瓶颈在真实 ROI 而非认知不足\n\n**值得关注**：没有 ROI 的技术很难被普通人主动采用。",
+            "text_type": "quick_read",
+            "quoted_url": "https://x.com/howie_serious/status/2109427343123239205"
+          },
+          {
+            "id": "x-account-2109239962935976035",
+            "handle": "@oran_ge",
+            "kind": "quote",
+            "title": "这个领域我们熟 5 1 19 25K",
+            "url": "https://x.com/oran_ge/status/2109239962935976035",
+            "published_at": "2026-10-11T11:09:29.604000+00:00",
+            "takeaway": "**核心内容**：作者仅表示对某个未指明的领域非常熟悉，没有展开具体内容。\n\n**关键信息**：\n- 标题和摘要完全相同，信息量极低\n- 没有交代具体领域或论据\n- 更像一句评论而非完整观点\n\n**值得关注**：信息不足时，速读只能判断这并非实质性内容。",
+            "text_type": "quick_read",
+            "quoted_url": "https://x.com/Tanxinbuzu/status/2109186509178028064"
+          }
+        ]
+      },
+      {
+        "handle": "@dotey",
+        "status": "partial",
+        "checked_at": "2026-10-13T09:10:04.152204+00:00",
+        "reason": "public_profile_first_page_only",
+        "posts": [
+          {
+            "id": "x-account-2109923163580567614",
+            "handle": "@dotey",
+            "kind": "quote",
+            "title": "REA 案例：用 Codex + REA 下载微信视频号视频\n\n仅作为案例分析，真要下载视频应该有更成熟的方案。\n\n提示词参考截图，很简单：\n> Use REA，帮我下载我微信打开正在播放的视频号的视",
+            "url": "https://x.com/dotey/status/2109923163580567614",
+            "published_at": "2026-10-13T08:24:17.331000+00:00",
+            "takeaway": "**核心内容**：作者用 Codex + REA 演示下载微信视频号视频，提示词简单但需要多轮对话才能完成。\n\n**关键信息**：\n- 使用提示词 Use REA 帮我下载微信打开正在播放的视频号的视频\n- 一轮对话搞不定，需要根据提示多步完成\n- 仅作为案例分析，实际有更成熟方案\n- 展示 Codex 与 REA 配合的潜力\n\n**值得关注**：AI 代理处理真实任务仍需要用户参与多步引导。",
+            "text_type": "quick_read",
+            "quoted_url": "https://x.com/dotey/status/2109470081776283941"
+          },
+          {
+            "id": "x-account-2109843015833374800",
+            "handle": "@dotey",
+            "kind": "quote",
+            "title": "Anthropic 测试 AI 自我复制：现在的小模型还做不到，按趋势年底可能追上\n\n先说结论：目前还没有能在网上自己到处复制的 AI。\n\nAnthropic 在一个简化过的实验环境里测了一批开源模型",
+            "url": "https://x.com/dotey/status/2109843015833374800",
+            "published_at": "2026-10-13T03:05:48.619000+00:00",
+            "takeaway": "**核心内容**：Anthropic 测试显示目前还没有 AI 能在网上自行复制，但按趋势年底可能追上。\n\n**关键信息**：\n- 当前没有能在网上自行到处复制的 AI\n- 实验在简化环境中测试一批开源模型\n- 完整走完自我复制流程的只有智谱的模型\n- 按趋势年底可能出现接近能力\n\n**值得关注**：AI 自我复制能力正在逼近，需要提前建立安全边界。",
+            "text_type": "quick_read",
+            "quoted_url": "https://x.com/willzhou97/status/2109753213511704873"
+          },
+          {
+            "id": "x-account-2109814856102605240",
+            "handle": "@dotey",
+            "kind": "quote",
+            "title": "今天 Codex 重置，重置将在太平洋标准时间当日结束前完成 43 3 49 44K",
+            "url": "https://x.com/dotey/status/2109814856102605240",
+            "published_at": "2026-10-13T01:13:54.816000+00:00",
+            "takeaway": "**核心内容**：Codex 今天重置，预计在太平洋标准时间当日结束前完成。\n\n**关键信息**：\n- Codex 发生重置\n- 重置时间窗口为太平洋标准时间当日结束前\n- 用户需关注服务恢复时间\n\n**值得关注**：平台重置公告应关注服务可用性和时间预期。",
+            "text_type": "quick_read",
+            "quoted_url": "https://x.com/thsottiaux/status/2109812216212099456"
+          },
+          {
+            "id": "x-account-2109808969292366010",
+            "handle": "@dotey",
+            "kind": "quote",
+            "title": "现在我已经不好意思说：\"在无人关注的角落，Meta 也重置了\"，经 Muse 现在已经用户量也不小了😅 39 1 42 20K",
+            "url": "https://x.com/dotey/status/2109808969292366010",
+            "published_at": "2026-10-13T00:50:31.291000+00:00",
+            "takeaway": "**核心内容**：作者调侃 Meta 的 Muse 产品已经用户量不小，不再是无人关注的小众产品。\n\n**关键信息**：\n- Meta 也出现了重置情况\n- Muse 用户量已不小\n- 作者用调侃语气表达意外\n\n**值得关注**：产品成长可能超出早期关注者预期。",
+            "text_type": "quick_read",
+            "quoted_url": "https://x.com/alexandr_wang/status/2109774017574113780"
+          }
+        ]
+      },
+      {
+        "handle": "@fkysly",
+        "status": "partial",
+        "checked_at": "2026-10-13T09:10:05.313713+00:00",
+        "reason": "public_profile_first_page_only",
+        "posts": [
+          {
+            "id": "x-account-2109899722123329576",
+            "handle": "@fkysly",
+            "kind": "original",
+            "title": "目前，毫无疑问，最强编程订阅仍然是 Claude Code + Opus 5.5。\n\n综合性价比成本、智力、文案能力、理解能力、编程能力、Agent 能力各方面，就是 Claude 官方订阅最推荐。\n",
+            "url": "https://x.com/fkysly/status/2109899722123329576",
+            "published_at": "2026-10-13T06:51:08.452000+00:00",
+            "takeaway": "**核心内容**：作者认为最强编程订阅仍是 Claude Code + Opus 5.5，综合能力最佳，但最大问题是封号。\n\n**关键信息**：\n- 在性价比、智力、文案、理解、编程、Agent 能力上综合最佳\n- 其他模型榜单再高也只是自我安慰\n- 最大问题是封号\n- 最推荐 Claude 官方订阅\n\n**值得关注**：真实综合体验优于榜单排名，但账号稳定性是硬伤。",
+            "text_type": "quick_read"
+          },
+          {
+            "id": "x-account-2109890485645164700",
+            "handle": "@fkysly",
+            "kind": "original",
+            "title": "Meta 给了你多少钱，我 @ tibi 出双倍 1 610",
+            "url": "https://x.com/fkysly/status/2109890485645164700",
+            "published_at": "2026-10-13T06:14:26.304000+00:00",
+            "takeaway": "**核心内容**：作者调侃某人疑似拿了 Meta 的钱，并表示愿意出双倍。\n\n**关键信息**：\n- 质疑对方为 Meta 推广\n- 用出双倍表达不信任\n- 互动极低，更多是情绪表达\n\n**值得关注**：社区常以抬价方式讽刺推广内容。",
+            "text_type": "quick_read"
+          },
+          {
+            "id": "x-account-2109881381325287542",
+            "handle": "@fkysly",
+            "kind": "original",
+            "title": "从目前各种民间实际测试来看，Meta 新吹的自己的 Muse Wonder Full 模型，根本就是虚假宣传。\n\n官方宣传能超过 Fable 5.1，直逼 Opus 5.5。实际看下来，可能也就是Qw",
+            "url": "https://x.com/fkysly/status/2109881381325287542",
+            "published_at": "2026-10-13T05:38:15.665000+00:00",
+            "takeaway": "**核心内容**：民间实测显示 Meta 的 Muse Wonder Full 模型远达不到官方宣传，仅约 Qwen 3 水平。\n\n**关键信息**：\n- 官方宣传称超过 Fable 5.1、直逼 Opus 5.5\n- 民间实际测试结果差距明显\n- 作者认为根本是虚假宣传\n- 实际水平可能只有 Qwen 3\n\n**值得关注**：官方榜单和宣传需要民间实测交叉验证。",
+            "text_type": "quick_read"
+          },
+          {
+            "id": "x-account-2109855346244415881",
+            "handle": "@fkysly",
+            "kind": "original",
+            "title": "关于新的 X 订阅。\n\n整的很复杂，其实没必要。直接访问 accounts.x.ai/unify 把几个账号合并就行，我的显示没合并成功其实也合并成功了反正。\n\n对大部分想保留 X 会员权益的推油来说",
+            "url": "https://x.com/fkysly/status/2109855346244415881",
+            "published_at": "2026-10-13T03:54:48.418000+00:00",
+            "takeaway": "**核心内容**：新的 X 订阅可通过合并账号简化，推荐选择默认 30 美元/月方案保留会员权益。\n\n**关键信息**：\n- 直接访问 accounts.x.ai/unify 合并账号即可\n- 界面显示未合并成功也可能实际已生效\n- 推荐新版本 X Sub Premium 默认 30刀/月方案\n- 该方案包含老版本 X Premium+ 权益\n\n**值得关注**：复杂订阅机制的简化入口比方案本身更重要。",
+            "text_type": "quick_read"
+          },
+          {
+            "id": "x-account-2109719251196285306",
+            "handle": "@fkysly",
+            "kind": "original",
+            "title": "很突然，Meta 突然放出的 Muse Wonder 模型超过了 Fable 5.1，逼近 Opus 5.5？？？\n\n什么鬼？\n\n我仿佛 31 4 96 71K",
+            "url": "https://x.com/fkysly/status/2109719251196285306",
+            "published_at": "2026-10-12T18:54:00.830000+00:00",
+            "takeaway": "**核心内容**：Meta 突然发布 Muse Wonder 模型并宣称超过 Fable 5.1、逼近 Opus 5.5，作者感到震惊和怀疑。\n\n**关键信息**：\n- Meta 突然放出 Muse Wonder 模型\n- 官方声称超过 Fable 5.1、逼近 Opus 5.5\n- 作者用“什么鬼”表达难以置信\n- 悬念在于实际测试尚未验证\n\n**值得关注**：突发的性能跃升声明往往会先引发怀疑。",
+            "text_type": "quick_read"
+          }
+        ]
+      },
+      {
+        "handle": "@thsottiaux",
+        "status": "partial",
+        "checked_at": "2026-10-13T09:10:05.647279+00:00",
+        "reason": "public_profile_first_page_only",
+        "posts": [
+          {
+            "id": "x-account-2109892247580000595",
+            "handle": "@thsottiaux",
+            "kind": "original",
+            "title": "Good plans are simple. I have one that should result in significantly more usage for everyone. Hope ",
+            "url": "https://x.com/thsottiaux/status/2109892247580000595",
+            "published_at": "2026-10-13T06:21:26.382000+00:00",
+            "takeaway": "**核心内容**：作者认为好的计划应该简单，自己有一个可显著提升使用量的计划并希望尽快落实。\n\n**关键信息**：\n- 强调好计划必须简单\n- 目标是为所有人显著提升使用量\n- 作者希望尽快完成\n\n**值得关注**：简单且能规模化的方案，往往最值得优先执行。",
+            "text_type": "quick_read"
+          },
+          {
+            "id": "x-account-2109873287853707513",
+            "handle": "@thsottiaux",
+            "kind": "quote",
+            "title": "What would you like with your side of reset? It's done. 1K 107 3.5K 351K",
+            "url": "https://x.com/thsottiaux/status/2109873287853707513",
+            "published_at": "2026-10-13T05:06:06.031000+00:00",
+            "takeaway": "**核心内容**：该条动态宣布一次“reset”已经完成，并以提问方式询问读者希望重置伴随什么内容，但未提供具体背景或细节。\n\n**关键信息**：\n- 宣布重置已完成\n- 以提问式结尾与读者互动\n- 摘要仅含社交媒体互动数据\n\n**值得关注**：简短互动式公告可能用于收集受众对重置相关偏好的即时反馈。",
+            "text_type": "quick_read",
+            "quoted_url": "https://x.com/thsottiaux/status/2109812360596865224"
+          },
+          {
+            "id": "x-account-2109812216212099456",
+            "handle": "@thsottiaux",
+            "kind": "original",
+            "title": "Day 8/ Reset 1.7K 597 12K 1.2M",
+            "url": "https://x.com/thsottiaux/status/2109812216212099456",
+            "published_at": "2026-10-13T01:03:25.417000+00:00",
+            "takeaway": "**核心内容**：该动态是“Reset”系列更新的第8天，仅标记了状态而未展开具体内容，难以提取更多信息。\n\n**关键信息**：\n- 作为连续更新的第8天出现\n- 主题为Reset\n- 未提供具体进展细节\n- 包含互动数据\n\n**值得关注**：系列化日志更新可以保持受众对长期进程的持续关注。",
+            "text_type": "quick_read"
+          },
+          {
+            "id": "x-account-2109439315570999598",
+            "handle": "@thsottiaux",
+            "kind": "quote",
+            "title": "The results of this poll has gotten me confused. I definitely thought it would sway much more favora",
+            "url": "https://x.com/thsottiaux/status/2109439315570999598",
+            "published_at": "2026-10-12T00:21:38.976000+00:00",
+            "takeaway": "**核心内容**：作者对一项投票结果感到困惑，原本预计用户会更支持在Pro 100/200/500档位向2X方向倾斜，并以恢复5小时限制为代价来平滑需求曲线。\n\n**关键信息**：\n- 投票结果令作者困惑\n- 预期更偏向2X方向\n- 涉及Pro 100/200/500档次\n- 代价是恢复5小时限制\n- 目的是平滑需求曲线\n\n**值得关注**：用户在产品档位与使用限制之间的偏好可能与运营者预期存在明显差异。",
+            "text_type": "quick_read",
+            "quoted_url": "https://x.com/thsottiaux/status/2109152716954222849"
+          },
+          {
+            "id": "x-account-2109430343346581527",
+            "handle": "@thsottiaux",
+            "kind": "original",
+            "title": "Day 7/\n\nWe have increased default context length for GPT-6.1 Sol to 500k when used through Codex & W",
+            "url": "https://x.com/thsottiaux/status/2109430343346581527",
+            "published_at": "2026-10-11T23:45:59.831000+00:00",
+            "takeaway": "**核心内容**：第7天更新宣布，在Codex和Work中使用GPT-6.1 Sol时，默认上下文长度从272k提升到500k，约增长80%，以减少压缩并支持需要大量上下文的任务。\n\n**关键信息**：\n- 默认上下文提升至500k\n- 相比272k增长约80%\n- 应用于Codex与Work环境\n- 降低压缩频率\n- 未来将继续提高上下文长度\n\n**值得关注**：提升默认上下文长度是缓解长任务压缩压力、扩展模型可用性的直接手段。",
+            "text_type": "quick_read"
+          }
+        ]
+      }
+    ]
+  },
+  "summary": null,
+  "generated_at": "2026-10-23T17:32:56.712172"
+}

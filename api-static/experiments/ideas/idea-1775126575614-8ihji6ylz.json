@@ -1,0 +1,21 @@
+{
+  "id": "idea-1775126575614-8ihji6ylz",
+  "content_id": "github-1197029054",
+  "title": "** 构建迷你编码代理：从需求到代码的端到端实现\n\n**",
+  "description": "**\n- **实验目标**: 深入理解编码代理的核心机制，通过实现一个简化版的编码代理系统，掌握从自然语言需求到可执行代码的转换流程\n- **具体任务**: \n  1. 研读项目源码，梳理编码代理的核心组件（需求理解、代码生成、验证测试）\n  2. 使用OpenAI API或开源LLM，实现一个能处理简单Python函数需求的代理（如数据处理、算法实现）\n  3. 添加代码验证机制：自动运行单元测试，根据测试结果迭代优化代码\n  4. 对比分析：你的实现 vs 原项目方法，记录关键差异和改进点\n- **预期产出**: \n  - 可运行的迷你编码代理代码（200-300行）\n  - 5-8个测试用例及成功率统计\n  - 技术博客文章（含架构图、流程图、实验数据）\n- **学习价值**: 掌握LLM应用开发、Prompt工程、代码生成与验证的完整链路，理解编码代理的局限性与优化方向\n\n**",
+  "difficulty": "medium",
+  "estimated_days": 7,
+  "tags": [
+    "** LLM应用开发",
+    "代码生成",
+    "Prompt工程",
+    "自动化测试"
+  ],
+  "status": "selected",
+  "priority": 9.0,
+  "briefing_date": "2026-04-02",
+  "source_type": "repo",
+  "source_title": "sanbuphy/learn-coding-agent: Research on Coding Agents",
+  "source_url": "https://github.com/sanbuphy/learn-coding-agent",
+  "created_at": "2026-04-02T10:42:55.614Z"
+}

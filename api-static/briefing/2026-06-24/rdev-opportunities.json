@@ -1,0 +1,593 @@
+{
+  "date": "2026-06-24",
+  "solutions": [
+    {
+      "type": "研发提效",
+      "title": "本地模型生成单元测试与注释",
+      "trigger": "Qwythos-9B GGUF模型发布，支持本地推理",
+      "scenario": "为遗留代码补写单测和注释耗时，用云端API有源码泄漏风险，现有做法是人工编写",
+      "ai_solution": "本地运行Qwythos-9B模型，通过IDE插件对函数一键生成单测和注释，边界是复杂业务逻辑仍需人工审核",
+      "implementation": "VS Code插件+Ollama本地推理，选中代码即生成",
+      "audience": [
+        "后端",
+        "大前端"
+      ],
+      "impact": "单元测试编写效率提升40%，源码不出本地",
+      "difficulty": "低",
+      "resistance": "本地推理需8GB+显存，低配开发机无法使用",
+      "scores": {
+        "efficiency": 9,
+        "feasibility": 8,
+        "business_impact": 5,
+        "overall": 9
+      },
+      "total_score": 9,
+      "source_title": "🤗 empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
+      "item_id": "hf-model-caa021b2a0eb"
+    },
+    {
+      "type": "业务赋能",
+      "title": "AI一键克隆竞品落地页实现快速A/B测试",
+      "trigger": "AI网站克隆工具可一键复制任意网页结构及样式",
+      "scenario": "在商业化营销落地页搭建中，目前依赖前端手工切图还原，痛点在于竞品优秀页面复刻周期长、质量不稳定",
+      "ai_solution": "利用AI编码代理自动提取目标页面DOM、样式与交互逻辑，生成可直接运行的React/Vue代码，快速部署多版本测试页",
+      "implementation": "通过CLI工具集成到CI流程，输入URL即可生成页面并发布到灰度环境",
+      "audience": [
+        "大前端",
+        "产品运营"
+      ],
+      "impact": "营销页上线时间从3天缩短至2小时，A/B测试迭代速度提升10倍",
+      "difficulty": "低",
+      "resistance": "产运可能忽视版权合规风险，需法务审核",
+      "scores": {
+        "efficiency": 9,
+        "feasibility": 8,
+        "business_impact": 9,
+        "overall": 9
+      },
+      "total_score": 9,
+      "source_title": "JCodesMore/ai-website-cloner-template — Clone any website with one command using AI coding agents",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/JCodesMore/ai-website-cloner-template",
+      "item_id": "github-b692d5bf7ede"
+    },
+    {
+      "type": "研发提效",
+      "title": "内部技术雷达自动聚合与推送",
+      "trigger": "worldmonitor展示AI驱动的实时全球情报聚合能力",
+      "scenario": "技术TL需手动扫描GitHub/arXiv等追踪技术动态，耗时且易遗漏关键趋势，目前无统一看板",
+      "ai_solution": "复用worldmonitor架构，自动抓取、摘要和分类AI论文、开源项目、安全漏洞，生成日报",
+      "implementation": "搭建内部Web仪表板，飞书机器人每日推送定制化技术摘要",
+      "audience": [
+        "技术TL"
+      ],
+      "impact": "每周节省技术调研约5小时/人，加速技术选型",
+      "difficulty": "低",
+      "resistance": "数据源爬取合规风险，需与法务确认",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 8,
+        "business_impact": 5,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "koala73/worldmonitor — Real-time global intelligence dashboard. AI-powered news aggregation, geopolitic",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/koala73/worldmonitor",
+      "item_id": "github-95fd42017b1c"
+    },
+    {
+      "type": "研发提效",
+      "title": "AI多轮对话梳理非功能需求",
+      "trigger": "论文验证LLM多轮对话评估非功能需求的准确性和满意度",
+      "scenario": "需求评审中非功能需求(NFR)常被遗忘或描述模糊，导致架构返工，目前依赖人工经验",
+      "ai_solution": "用多轮对话助理引导产品/开发逐步细化性能、安全等NFR，自动输出结构化文档，边界是无法替代领域专家决策",
+      "implementation": "集成到Jira/飞书，创建需求时自动触发对话机器人并生成NFR卡片",
+      "audience": [
+        "产品运营",
+        "后端",
+        "大前端"
+      ],
+      "impact": "减少20%因NFR遗漏导致的后期返工成本",
+      "difficulty": "低",
+      "resistance": "产品经理可能认为增加了额外流程环节",
+      "scores": {
+        "efficiency": 7,
+        "feasibility": 9,
+        "business_impact": 6,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "Accuracy and Satisfaction in Multi-Turn LLM Dialogues for NFR Assessment",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "source_url": "https://arxiv.org/abs/2606.24834v1",
+      "item_id": "arxiv-2606.24834v1"
+    },
+    {
+      "type": "业务赋能",
+      "title": "结构感知文生图自动生成广告素材",
+      "trigger": "IV-CoT实现空间关系与物体数量精确的文生图",
+      "scenario": "运营制作广告图需指定商品位置和数量，现有做法反复与设计师沟通，周期长",
+      "ai_solution": "使用IV-CoT模型让运营输入文本指令生成符合设计规范的广告图，确保元素结构准确",
+      "implementation": "接入内部素材生成平台，提供模板提示词，批量生成",
+      "audience": [
+        "产品运营"
+      ],
+      "impact": "广告素材制作周期从2天缩短至2小时",
+      "difficulty": "中",
+      "resistance": "生成风格可能不符合品牌调性，需LoRA微调",
+      "scores": {
+        "efficiency": 7,
+        "feasibility": 7,
+        "business_impact": 9,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "IV-CoT: Implicit Visual Chain-of-Thought for Structure-Aware Text-to-Image Generation",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "source_url": "https://arxiv.org/abs/2606.24849v1",
+      "item_id": "arxiv-2606.24849v1"
+    },
+    {
+      "type": "研发提效",
+      "title": "设计稿与前端页面OCR自动走查",
+      "trigger": "Unlimited-OCR提供高精度文字提取能力",
+      "scenario": "UI走查人工对比设计图和前端页面文字、位置和内容，易漏检细小组件，现有做法是手动标注",
+      "ai_solution": "截取设计稿和页面截图，用OCR提取文字和坐标，自动比对差异并生成报告",
+      "implementation": "集成到GitLab CI，构建后自动截图OCR对比，结果推送飞书",
+      "audience": [
+        "大前端",
+        "测试"
+      ],
+      "impact": "UI走查时间减少70%，回归测试效率大增",
+      "difficulty": "中",
+      "resistance": "需要精确对齐坐标，初期配置和维护成本较高",
+      "scores": {
+        "efficiency": 9,
+        "feasibility": 7,
+        "business_impact": 5,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "🤗 baidu/Unlimited-OCR",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/baidu/Unlimited-OCR",
+      "item_id": "hf-model-e66836d0026b"
+    },
+    {
+      "type": "业务赋能",
+      "title": "证件信息OCR自动填充提升注册转化",
+      "trigger": "百度OCR模型可精确提取身份证等图片文字",
+      "scenario": "用户注册需拍照上传身份证并手动输入信息，流程冗长，目前做法易导致用户流失",
+      "ai_solution": "集成Unlimited-OCR，自动识别证件字段并填入表单，减少用户操作步骤",
+      "implementation": "移动端集成OCR SDK，用户拍照即填充，数据不出端",
+      "audience": [
+        "客户端",
+        "产品运营"
+      ],
+      "impact": "注册转化率提升5%，用户输入错误率降为零",
+      "difficulty": "低",
+      "resistance": "需确保隐私合规，本地处理敏感信息",
+      "scores": {
+        "efficiency": 6,
+        "feasibility": 9,
+        "business_impact": 9,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "🤗 baidu/Unlimited-OCR",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/baidu/Unlimited-OCR",
+      "item_id": "hf-model-e66836d0026b"
+    },
+    {
+      "type": "研发提效",
+      "title": "Slack AI助理自动处理Code Review提醒与日报",
+      "trigger": "Claude新增多用户、主动、持久化Slack代理能力",
+      "scenario": "在研发协同中，目前人工提醒MR审核、催促日报填写，痛点在于重复沟通占用大量TL与PM时间",
+      "ai_solution": "部署Claude SlackBot按规则主动提醒并汇总日报，自动检测未关闭MR并通知责任人",
+      "implementation": "通过Slack App接入Claude API，配置频道监听与定时任务，无需额外开发",
+      "audience": [
+        "技术TL",
+        "大前端"
+      ],
+      "impact": "TL每日可节省30分钟沟通成本，日报按时提交率提升至95%",
+      "difficulty": "低",
+      "resistance": "员工可能抵触自动化催促，需要逐步让团队适应",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 9,
+        "business_impact": 6,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "[AINews] Claude Tag: Multiplayer, Proactive, Persistent Agents in Slack",
+      "source": "Latent Space",
+      "source_type": "rss",
+      "source_url": "https://www.latent.space/p/ainews-claude-tag-multiplayer-proactive",
+      "item_id": "rss-latent-space-14262d6e0c95"
+    },
+    {
+      "type": "研发提效",
+      "title": "自动化编程循环Agent",
+      "trigger": "程序员已从手动提示Claude转为编写循环让Claude自动完成任务",
+      "scenario": "在日常开发中，程序员手动向LLM提问来修复bug、生成单测，重复耗时；核心痛点是每次都要手动描述上下文和需求。",
+      "ai_solution": "构建状态机循环，自动检测代码变更触发Claude执行预设任务（如生成测试、修复lint错误），无需人工提示。",
+      "implementation": "集成在CI/CD流水线中，通过GitHub Action自动调用Claude API执行循环任务。",
+      "audience": [
+        "后端",
+        "大前端"
+      ],
+      "impact": "减少手动提示时间，自动生成测试和代码修复，预计节省30%重复性工作。",
+      "difficulty": "低",
+      "resistance": "团队担心自动修改代码质量，需要逐步推广。",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 7,
+        "business_impact": 5,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "The Coming Loop",
+      "source": "Armin Ronacher",
+      "source_type": "rss",
+      "source_url": "https://lucumr.pocoo.org/2026/6/23/the-coming-loop/",
+      "item_id": "atom-armin-ronacher-5fc3690993a6"
+    },
+    {
+      "type": "业务赋能",
+      "title": "广告投放智能分析看板",
+      "trigger": "使用LLM驱动数据分析，自动推送决策建议",
+      "scenario": "商业化运营团队需要分析广告投放数据，手动制作报表和决策，耗时且延迟；无法实时响应市场变化。",
+      "ai_solution": "借鉴stock_analysis架构，构建LLM驱动的广告数据多维分析看板，自动生成投放建议并推送。",
+      "implementation": "部署定时任务拉取数据，LLM分析后通过飞书机器人推送决策看板。",
+      "audience": [
+        "产品运营",
+        "技术TL"
+      ],
+      "impact": "运营决策响应时间从小时级降到分钟级，预计ROI提升10%。",
+      "difficulty": "中",
+      "resistance": "需要打通广告平台数据，数据格式差异大。",
+      "scores": {
+        "efficiency": 7,
+        "feasibility": 7,
+        "business_impact": 9,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "ZhuLinsen/daily_stock_analysis — LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "item_id": "github-c40e892699f1"
+    },
+    {
+      "type": "研发提效",
+      "title": "端侧代码助手轻量化",
+      "trigger": "量化技术可让本地模型在极小体积达到较高质量",
+      "scenario": "客户端程序员离线时需要代码补全和生成，当前端侧模型体积大、推理慢，导致体验差。",
+      "ai_solution": "采用专家感知量化，将代码大模型压缩到接近Q2尺寸但保持Q4质量，部署到IDE插件或移动端。",
+      "implementation": "结合llama.cpp等引擎，量化后在VS Code插件中提供离线代码建议。",
+      "audience": [
+        "客户端",
+        "大前端"
+      ],
+      "impact": "离线代码补全延迟降低60%，模型包体积缩小70%，提高开发体验。",
+      "difficulty": "中",
+      "resistance": "量化可能丢失部分代码生成能力，需评估精度。",
+      "scores": {
+        "efficiency": 9,
+        "feasibility": 7,
+        "business_impact": 5,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "Expert-aware quantisation: near-Q4 quality at near-Q2 size?",
+      "source": "Martin Alderson",
+      "source_type": "rss",
+      "source_url": "https://martinalderson.com/posts/expert-aware-quantisation/?utm_source=rss&utm_medium=rss&utm_campaign=feed",
+      "item_id": "rss-martin-alderson-532b8e2a4da6"
+    },
+    {
+      "type": "研发提效",
+      "title": "毫秒级代码知识图谱查询",
+      "trigger": "高性能MCP服务器将代码库索引为持久知识图谱",
+      "scenario": "阅读老旧微服务代码时目前使用全局搜索和IDE跳转，核心痛点在于跨服务调用关系不直观理解耗时长。",
+      "ai_solution": "基于MCP服务器构建VS Code插件结合LLM，支持自然语言查询架构与调用链，秒级返回精准答案。",
+      "implementation": "内部部署MCP服务并索引核心仓库，开发VS Code插件调用MCP与Claude/GPT进行语义理解。",
+      "audience": [
+        "后端",
+        "大前端"
+      ],
+      "impact": "代码理解时间缩短60%，新成员上手速度显著加快。",
+      "difficulty": "中",
+      "resistance": "敏感代码库索引需满足数据安全合规，初期部署资源投入。",
+      "scores": {
+        "efficiency": 9,
+        "feasibility": 7,
+        "business_impact": 6,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "DeusData/codebase-memory-mcp — High-performance code intelligence MCP server. Indexes codebases into a persiste",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/DeusData/codebase-memory-mcp",
+      "item_id": "github-43e2422355ff"
+    },
+    {
+      "type": "业务赋能",
+      "title": "广告长图自动合规审核",
+      "trigger": "新模型可一次解析数十页长文档高效提取文字",
+      "scenario": "广告素材上线前需人工审核是否含违规文字，目前外包逐张查看，核心痛点在于成本高且长图易遗漏。",
+      "ai_solution": "使用百度无限OCR模型将广告素材全文提取，结合审核规则引擎自动识别违规内容并驳回或放行。",
+      "implementation": "接入广告投放平台，素材上传触发OCR解析与规则匹配，自动返回审核结果。",
+      "audience": [
+        "产品运营"
+      ],
+      "impact": "审核人力成本降低70%，广告上线速度显著加快。",
+      "difficulty": "低",
+      "resistance": "模型部署需GPU资源，准确率需与现有审核系统对齐。",
+      "scores": {
+        "efficiency": 6,
+        "feasibility": 8,
+        "business_impact": 9,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "百度开源无限OCR，跑通长程解析，核心作者YY疑是来自DeepSeek",
+      "source": "机器之心",
+      "source_type": "wechat",
+      "source_url": "https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651040687&idx=2&sn=11f7171bdd0d0f945fccf4d07599b020",
+      "item_id": "rss-机器之心-02767dee25e1"
+    },
+    {
+      "type": "业务赋能",
+      "title": "基于小语种BERT优化印度市场评论情感分析",
+      "trigger": "该工作发布了马拉地语词性标注数据集及BERT模型",
+      "scenario": "在出海App的UGC内容风控中，目前仅用英文模型处理多语种评论，痛点在于小语种误判率高、人工审核成本大",
+      "ai_solution": "集成Marathi BERT进行细粒度情感与垃圾内容识别，提升非英语内容审核准确率",
+      "implementation": "通过模型热加载到现有内容安全服务，新增语种路由规则，无需改动主干流程",
+      "audience": [
+        "后端",
+        "产品运营"
+      ],
+      "impact": "目标市场垃圾评论召回率提升15%，减少人工审核成本20人日/月",
+      "difficulty": "低",
+      "resistance": "小语种语料可能涉及本地隐私法规，需合规评估",
+      "scores": {
+        "efficiency": 6,
+        "feasibility": 8,
+        "business_impact": 7,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "L3Cube-MahaPOS: A Marathi Part-of-Speech Tagging Dataset and BERT Models",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "source_url": "https://arxiv.org/abs/2606.24825v1",
+      "item_id": "arxiv-2606.24825v1"
+    },
+    {
+      "type": "研发提效",
+      "title": "选择最优微调策略提升内部代码补全模型效果",
+      "trigger": "研究揭示了不同预训练目标下微调与提示调优的最佳匹配策略",
+      "scenario": "在自研代码生成模型优化中，目前沿用通用微调配置，痛点在于不同下游任务（补全、翻译、注释）效果波动大",
+      "ai_solution": "依据任务类型自动选择提示调优或全参数微调，并匹配最佳预训练目标组合，提升下游任务得分",
+      "implementation": "构建内部模型微调实验平台，接入MLflow追踪，为每个新任务推荐调优配置",
+      "audience": [
+        "后端",
+        "技术TL"
+      ],
+      "impact": "代码补全采纳率提升10%，单次调优实验周期缩短50%",
+      "difficulty": "中",
+      "resistance": "算法团队需额外维护多套配置模板，初期沟通成本较高",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 6,
+        "business_impact": 5,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "Matching Tasks to Objectives: Fine-Tuning and Prompt-Tuning Strategies for Encoder-Decoder Pre-trained Language Models",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "source_url": "https://arxiv.org/abs/2606.24841v1",
+      "item_id": "arxiv-2606.24841v1"
+    },
+    {
+      "type": "研发提效",
+      "title": "构建跨平台正则兼容性检查CLI工具",
+      "trigger": "文章梳理了不同实现间正则特性的差异与兼容方法",
+      "scenario": "在前端、后端、数据库校验中，常出现同一正则表达式在不同环境行为不一致，痛点在于缺乏统一检查工具导致线上校验错误",
+      "ai_solution": "基于兼容性规则库，自动扫描项目中正则并标记跨平台风险点，结合LLM给出改写建议",
+      "implementation": "封装为CLI工具，通过Pre-commit Hook在提交时自动检查并报告",
+      "audience": [
+        "大前端",
+        "后端"
+      ],
+      "impact": "杜绝跨端正则兼容性问题，预计减少此类线上Bug 80%以上",
+      "difficulty": "低",
+      "resistance": "团队成员可能忽视报告，需配合CI拦截策略强制执行",
+      "scores": {
+        "efficiency": 7,
+        "feasibility": 9,
+        "business_impact": 4,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "Regular expressions that work “everywhere”",
+      "source": "John D. Cook",
+      "source_type": "rss",
+      "source_url": "https://www.johndcook.com/blog/2026/06/23/regex-everywhere/",
+      "item_id": "rss-john-d.-cook-e89258c80578"
+    },
+    {
+      "type": "研发提效",
+      "title": "领域Agent团队工厂",
+      "trigger": "该项目可设计特定领域Agent团队并生成技能",
+      "scenario": "在大型项目中，需要多个专业Agent（如前端组件生成、API测试）协作，目前手动配置，难维护。",
+      "ai_solution": "利用Harness定义前端组件Agent、后端测试Agent等，自动生成协作技能，实现多Agent流水线。",
+      "implementation": "基于Harness框架，部署内部Agent编排服务，通过Webhook触发任务。",
+      "audience": [
+        "技术TL",
+        "后端"
+      ],
+      "impact": "快速构建多Agent协作流程，提高研发自动化程度，减少人催环节。",
+      "difficulty": "中",
+      "resistance": "新框架学习成本，需要技术TL主导。",
+      "scores": {
+        "efficiency": 7,
+        "feasibility": 6,
+        "business_impact": 5,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "revfactory/harness — A meta-skill that designs domain-specific agent teams, defines specialized agent",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/revfactory/harness",
+      "item_id": "github-d390cae184b6"
+    },
+    {
+      "type": "业务赋能",
+      "title": "单图生成3D商品场景",
+      "trigger": "技术可从单张图片生成可探索的3D场景",
+      "scenario": "电商APP中，商品详情页只能展示2D图片和视频，无法让用户自由旋转查看；消费者购买转化受限于静态展示。",
+      "ai_solution": "在商品上传时，利用FLAT模型将商品主图实时生成3D场景，用户可交互旋转查看，提升购买信心。",
+      "implementation": "服务端集成FLAT模型，API返回3D文件，客户端使用Three.js渲染。",
+      "audience": [
+        "客户端",
+        "产品运营"
+      ],
+      "impact": "预计商品详情页停留时长+20%，转化率提升5%。",
+      "difficulty": "高",
+      "resistance": "3D渲染性能要求高，需客户端适配；生成质量需保障。",
+      "scores": {
+        "efficiency": 5,
+        "feasibility": 4,
+        "business_impact": 9,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "FLAT: Feedforward Latent Triangle Splatting for Geometrically Accurate Scene Generation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "source_url": "https://huggingface.co/papers/2606.24876",
+      "item_id": "hf-paper-2cbda5f2aecd"
+    },
+    {
+      "type": "业务赋能",
+      "title": "引入日本LLM本地化服务",
+      "trigger": "日本发布了挑战Claude的模型，可能更懂日文",
+      "scenario": "在面向日本市场的APP中，使用通用LLM处理日文咨询，存在文化偏差和语言不地道的问题。",
+      "ai_solution": "使用日版Claude竞品模型进行日文智能客服和内容生成，提高日本用户满意度。",
+      "implementation": "接入该日本LLM的API，替换现有AI客服的日文模块。",
+      "audience": [
+        "产品运营",
+        "大前端"
+      ],
+      "impact": "日文场景下用户满意度提升，咨询解决率提高15%。",
+      "difficulty": "低",
+      "resistance": "需评估模型可用性和成本，可能涉及数据安全合规。",
+      "scores": {
+        "efficiency": 5,
+        "feasibility": 6,
+        "business_impact": 8,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "Japan's answer to Claude Mythos",
+      "source": "The AI Valley",
+      "source_type": "news",
+      "source_url": "https://kill-the-newsletter.com/feeds/sg5lm1gdqvvwgskcyk8q/entries/z5r8ugdosc9b42vl8p6a.html",
+      "item_id": "atom-the-ai-valley-8ad148459ec0"
+    },
+    {
+      "type": "研发提效",
+      "title": "技术文档自动生成",
+      "trigger": "豆包专业版新增办公任务模式与Office集成",
+      "scenario": "在编写技术方案文档时，目前工程师手动撰写，核心痛点在于耗时且模板化内容重复劳动多。",
+      "ai_solution": "利用豆包专业版的任务模式联动飞书文档，基于需求描述自动生成符合模板的技术方案大纲与详细内容。",
+      "implementation": "飞书机器人调用豆包专业版API，在飞书文档中直接生成并协作编辑。",
+      "audience": [
+        "后端",
+        "大前端",
+        "技术TL"
+      ],
+      "impact": "技术文档初稿撰写效率提升50%，使工程师更专注于核心设计。",
+      "difficulty": "低",
+      "resistance": "豆包专业版数据安全与合规审查可能成为阻碍。",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 8,
+        "business_impact": 5,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "实测豆包专业版，我愿意当第一批掏钱的人",
+      "source": "APPSO",
+      "source_type": "wechat",
+      "source_url": "https://mp.weixin.qq.com/s/RPjHb3c9ai3acyBIpDOvUQ",
+      "item_id": "rss-appso-e539d66d2114"
+    }
+  ],
+  "top_pick": {
+    "title": "本地模型生成单元测试与注释",
+    "why_now": "Qwythos-9B GGUF模型发布，支持本地推理",
+    "mvp_path": "VS Code插件+Ollama本地推理，选中代码即生成",
+    "strategy": "自下而上：先找2-3个极客同学验证，再整理ROI数据推广"
+  },
+  "analyzed_count": 40,
+  "analyzed_item_ids": [
+    "rss-where's-your-ed-at-8cdfc01a3592",
+    "rss-ben's-bites-74831c53f96b",
+    "github-95fd42017b1c",
+    "arxiv-2606.24834v1",
+    "rss-gary-marcus-27456ea37423",
+    "hf-model-caa021b2a0eb",
+    "github-341f3a671438",
+    "arxiv-2606.24849v1",
+    "hf-model-e66836d0026b",
+    "atom-aresluna-3bbd68b53cfb",
+    "atom-oldvcr-8a395f27bf80",
+    "github-b692d5bf7ede",
+    "arxiv-2606.24824v1",
+    "arxiv-2606.24825v1",
+    "arxiv-2606.24841v1",
+    "rss-john-d.-cook-e89258c80578",
+    "rss-construction-physics-7892e5daa755",
+    "rss-latent-space-14262d6e0c95",
+    "hf-paper-50b99e39083e",
+    "rss-机器之心-d4456ce41aa3",
+    "atom-armin-ronacher-5fc3690993a6",
+    "github-d390cae184b6",
+    "atom-dynomight-507cdd8bde63",
+    "hf-paper-2cbda5f2aecd",
+    "rss-xe-iaso-2e36b38b9feb",
+    "atom-the-ai-valley-8ad148459ec0",
+    "github-c40e892699f1",
+    "rss-experimental-history-cf33cd01e22d",
+    "rss-martin-alderson-532b8e2a4da6",
+    "rss-openai-blog-1b1b1aa40d91",
+    "rss-appso-e539d66d2114",
+    "rss-krebs-on-security-8381e8c1023f",
+    "arxiv-2606.24851v1",
+    "atom-simon-willison-8abb6c44f2b7",
+    "hf-paper-1b104b924f8d",
+    "rss-terence-eden-fad0f710e49e",
+    "github-43e2422355ff",
+    "rss-机器之心-02767dee25e1",
+    "rss-appso-32b9a3cf5329",
+    "github-3c19e4a80a3d"
+  ]
+}

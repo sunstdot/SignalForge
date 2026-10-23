@@ -1,0 +1,19 @@
+{
+  "id": "1ce1d6c2-a1d5-42cd-bf24-85a5d3b4de60",
+  "content_id": "",
+  "title": "代码知识图谱生成工具",
+  "description": "**机会点**\n将任意代码仓库转化为可查询的知识图谱，帮助开发者快速理解大型项目架构和依赖关系\n\n**推导依据**\ngraphify获得13,160星，支持多AI编码助手集成，填补了代码理解与知识提取的工具空白\n\n**为什么现在**\n代码仓库日趋庞大，维护成本高；AI代码助手需要理解项目上下文",
+  "difficulty": "medium",
+  "estimated_days": 7,
+  "tags": [],
+  "status": "pending",
+  "priority": 15.0,
+  "briefing_date": "",
+  "source_type": "repo",
+  "source_title": "safishamsi/graphify — AI coding assistant skill (Claude Code, Codex, OpenCode, OpenClaw, Factory Droid",
+  "source_url": "https://github.com/safishamsi/graphify",
+  "inspiration": "",
+  "product_concept": {},
+  "source_context": "",
+  "created_at": "2026-04-09T12:27:54.790432"
+}

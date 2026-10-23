@@ -1,0 +1,2026 @@
+{
+  "id": "3fcf7abd-0f98-407f-951e-5ce78afe1fdd",
+  "date": "2026-10-23",
+  "items": [
+    {
+      "id": "arxiv-2610.31670v1",
+      "title": "Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2610.31670v1",
+      "summary": "Robotic foundation models are typically evaluated through costly closed-loop rollouts, which motivates cheap offline proxies for model capability. The Platonic Representation Hypothesis (PRH) suggests",
+      "category": [
+        "cs.CV",
+        "cs.LG",
+        "cs.RO"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "arxiv-2610.31667v1",
+      "title": "Direct Pass@$k$ Optimization for Thought Pruning: Balancing Quality and Diversity in Test-Time Reasoning",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2610.31667v1",
+      "summary": "Test-time scaling has emerged as a key inference strategy for reasoning models, where a model generates a large number of candidate solutions in the hope of finding at least one correct solution. Runn",
+      "category": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "arxiv-2610.31663v1",
+      "title": "Phase Transition from Random Features to Fully Trainable Networks",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2610.31663v1",
+      "summary": "Constructing accurate and computationally tractable approximation spaces is a fundamental task in scientific computing. Partially trainable neural networks bridge fixed random features and fully adapt",
+      "category": [
+        "math.NA",
+        "cs.LG",
+        "math.ST"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "arxiv-2610.31662v1",
+      "title": "Reliable AI-Assisted Decisions via Selective Auditing",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2610.31662v1",
+      "summary": "We consider online monitoring of an AI system that produces a sequence of decisions. At each round, the system outputs a proposed decision together with a confidence score estimating the trustworthine",
+      "category": [
+        "stat.ML",
+        "cs.LG",
+        "stat.ME"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "arxiv-2610.31659v1",
+      "title": "SpectralCanary: Embarrassingly Simple Low-Frequency Traces for T2I Dataset-Use Auditing",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2610.31659v1",
+      "summary": "Auditing whether a text-to-image (T2I) model was fine-tuned on a particular image collection is difficult: a model can absorb collection-level visual characteristics without reproducing training image",
+      "category": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "arxiv-2610.31657v1",
+      "title": "Cost-Aware Abstention for LLM-Based IT Ticket Classification",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2610.31657v1",
+      "summary": "Wrong automatic routing of an IT support ticket can cost more than human triage. We evaluate cost-aware abstention as an offline, cost-conditional readiness assessment: select a routing policy on cali",
+      "category": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "arxiv-2610.31656v1",
+      "title": "METTA: Memory-Enhanced Test-Time Adaptation for Meta-Reinforcement Learning",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2610.31656v1",
+      "summary": "Meta-reinforcement learning aims to train agents that adapt quickly to unseen tasks from limited interaction, but this requires representing task evidence over long interaction histories. Classical re",
+      "category": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "arxiv-2610.31650v1",
+      "title": "EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2610.31650v1",
+      "summary": "Tool-using language model agents rely on environmental facts to decide whether an action is permitted. When a tool response omits a safety-relevant fact, an agent may carry out a prohibited action eve",
+      "category": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "arxiv-2610.31646v1",
+      "title": "Low-Bit N-Gram Embeddings for Language Models",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2610.31646v1",
+      "summary": "Many recent open-weight language models use n-gram embedding tables to improve performance. These tables store learned representations of short token sequences, such as pairs or triples of consecutive",
+      "category": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "arxiv-2610.31642v1",
+      "title": "A Fix for Softmax and Cross-Entropy",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2610.31642v1",
+      "summary": "Standard implementations of softmax, log-softmax, and cross-entropy have two numerical bugs. The first bug, Softmax Collapse, rounds the target logit's gradient to zero if that one logit is much large",
+      "category": [
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "arxiv-2610.31639v1",
+      "title": "Causal Chain of Thought: Mitigating Attention Leakage via Context Isolation",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2610.31639v1",
+      "summary": "Chain-of-thought (CoT) prompting elicits step-by-step rationales that appear to explain model predictions, but there is no guarantee these steps causally drive the final answer. In standard autoregres",
+      "category": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "arxiv-2610.31636v1",
+      "title": "Can an Agent Debug a Web Corpus? Agentic Auditing of Slovak FineWeb2",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2610.31636v1",
+      "summary": "Multilingual pipelines such as FineWeb2 apply one recipe across a thousand languages, leaving the failure modes of individual languages unanticipated. We use an LLM once, as a corpus debugger rather t",
+      "category": [
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "arxiv-2610.31633v1",
+      "title": "BeNice! Closing Looping's Inference-Memory Gap via KV-Sharing",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2610.31633v1",
+      "summary": "Looped architectures scale quality while keeping parameter count fixed by repeatedly passing activations through the same block of layers. During inference, each recurrence generates independent KV-ca",
+      "category": [
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "arxiv-2610.31624v1",
+      "title": "Questioning Instrumental Convergence in RLVR: Checkpoint Evidence from OLMo-3",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2610.31624v1",
+      "summary": "Instrumental convergence is often invoked as a general reason to expect capable agents to acquire or express power-seeking subgoals: self-preservation, resource acquisition, deception, or resistance t",
+      "category": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "arxiv-2610.31620v1",
+      "title": "Bilingual Language Models Capture Cross-Linguistic Influence in Second-Language Reading",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2610.31620v1",
+      "summary": "While monolingual language model (LM) surprisal is widely established as a predictor of reading times, it cannot capture the non-native (L2) reading dynamics that are shaped by the reader's first lang",
+      "category": [
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "github-7d0bbdd9d65c",
+      "title": "php/php-src — The PHP Interpreter",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/php/php-src",
+      "summary": "The PHP Interpreter | 🔥 287 stars today | Language: C",
+      "category": [
+        "开源项目",
+        "C"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "github-022c9970da1a",
+      "title": "anthropics/knowledge-work-plugins — Open source repository of plugins primarily intended for knowledge workers to us",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "summary": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork | 🔥 303 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "github-f93f47da99e7",
+      "title": "DietrichGebert/ponytail — Makes your AI agent think like the laziest senior dev in the room. The best code",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "summary": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote. | 🔥 1948 stars today | Language: JavaScript",
+      "category": [
+        "开源项目",
+        "JavaScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "github-8d0637ef9a8c",
+      "title": "cloudflare/security-audit-skill — A coding-agent skill for multi-phase security audits with independently verified",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "summary": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings | 🔥 2979 stars today | Language: JavaScript",
+      "category": [
+        "开源项目",
+        "JavaScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "github-9f990a99fa1a",
+      "title": "Graphify-Labs/graphify — Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryab",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Graphify-Labs/graphify",
+      "summary": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, e",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "github-4f0e377d7908",
+      "title": "supabase/supabase — The Postgres development platform. Supabase gives you a dedicated Postgres datab",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/supabase/supabase",
+      "summary": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications. | 🔥 693 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "github-6d367161229f",
+      "title": "fastapi/fastapi — FastAPI framework, high performance, easy to learn, fast to code, ready for prod",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/fastapi/fastapi",
+      "summary": "FastAPI framework, high performance, easy to learn, fast to code, ready for production | 🔥 101 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "github-2d4dd75a2349",
+      "title": "luongnv89/claude-howto — A visual, example-driven guide to Claude Code — from basic concepts to advanced ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/luongnv89/claude-howto",
+      "summary": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value. | 🔥 177 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "github-a0440a030428",
+      "title": "Meloong-Git/PCL — Minecraft 启动器 Plain Craft Launcher（PCL）。",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Meloong-Git/PCL",
+      "summary": "Minecraft 启动器 Plain Craft Launcher（PCL）。 | 🔥 119 stars today | Language: Visual Basic .NET",
+      "category": [
+        "开源项目",
+        "Visual Basic .NET"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "hf-model-862a39cabc26",
+      "title": "🤗 deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "summary": "Task: image-text-to-text | Downloads: 51,911 | Likes: 2,439",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "hf-model-07d61b75c524",
+      "title": "🤗 black-forest-labs/flux-3-image-klein-comfy",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
+      "summary": "Task: image-to-image | Downloads: 512,524 | Likes: 1,328",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "hf-model-e0c940e651c2",
+      "title": "🤗 RecursiveSI/flint",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/RecursiveSI/flint",
+      "summary": "Task: text-generation | Downloads: 420 | Likes: 593",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "hf-model-7fe083ffda06",
+      "title": "🤗 OpenMOSS-Team/MOSS-Image-SFT",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
+      "summary": "Task: text-to-image | Downloads: 6,890 | Likes: 608",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "hf-model-fdd8340e0644",
+      "title": "🤗 OpenMOSS-Team/MOSS-Image-Base",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base",
+      "summary": "Task: text-to-image | Downloads: 5,013 | Likes: 506",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "hf-model-eaf280aff552",
+      "title": "🤗 Lightricks/LTX-2.5",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "summary": "Task: image-to-video | Downloads: 2,054,990 | Likes: 8,941",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "hf-model-c4128a0be12c",
+      "title": "🤗 fishaudio/drama-3",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/fishaudio/drama-3",
+      "summary": "Task: text-to-speech | Downloads: 16,305 | Likes: 929",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "hf-model-3dc77f930463",
+      "title": "🤗 Comfy-Org/MOSS-Image",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Comfy-Org/MOSS-Image",
+      "summary": "Downloads: 1,463,386 | Likes: 380",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "hf-model-3895647e0b41",
+      "title": "🤗 XHToken/Spark-X2.6-4B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
+      "summary": "Task: text-generation | Downloads: 482 | Likes: 377",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "hf-model-223eedebe2a0",
+      "title": "🤗 google/embeddinggemma-2",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/google/embeddinggemma-2",
+      "summary": "Task: feature-extraction | Downloads: 185,259 | Likes: 2,856",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "hf-paper-80f483be288d",
+      "title": "MambaAct: Efficient Mamba Action Experts for Flow-Matching Vision-Language-Action Models",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2610.22951",
+      "summary": "Vision-language-action (VLA) models have shown strong promise for generalist robotic manipulation, but their inference cost remains a major bottleneck for real-time control. This limitation is especia",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "hf-paper-c0b97ebfd620",
+      "title": "SplatLab: Autonomous Scientific Discovery for 3DGS Research",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2610.30468",
+      "summary": "Reproducing a published 3DGS paper takes weeks of expert engineering before any extension can be proposed. Prior autonomous-research systems read papers, draft hypotheses, and write code, but are limi",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "hf-paper-b2548c2f0a2c",
+      "title": "RTAformer: Relation-Transition-Aware Transformer for Video Scene Graph Generation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2610.20091",
+      "summary": "Video scene graph generation (VidSGG) aims to capture objects and their evolving relationships in videos. This requires accounting for both the persistence of object identities and abrupt changes in r",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "hf-paper-84dfb80bf769",
+      "title": "IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2610.30949",
+      "summary": "We present IQuest-Q1, a sparse Mixture-of-Experts (MoE) agentic foundation model with 320B total parameters (15B activated). IQuest-Q1 is developed through a three-stage process: (1) stable and effici",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "hf-paper-5edf564ebea8",
+      "title": "WeVisOne-VL: Unified Visual Perception from Objects to Pixels",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2610.31329",
+      "summary": "Existing vision-language models (VLMs) remain unreliable for fine-grained visual perception. In this report, we present WeVisOne-VL (WeChat Vision All-in-One), a powerful VLM that unifies object-level",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "hf-paper-a246aae80171",
+      "title": "What Generation Knows: Unlocking Fine-Grained Understanding in Unified Multimodal Models",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2610.23987",
+      "summary": "Fine-grained visual understanding requires distinguishing subtle differences in local attributes and spatial relations, yet remains challenging for existing vision-language models. Unified multimodal ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "hf-paper-8a3ecc8c4a9c",
+      "title": "What Makes a Good Unmasking Policy? A Controlled Study of Learned Unmasking in Diffusion Language Models",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2610.31576",
+      "summary": "Masked diffusion language models generate tokens in parallel, but their efficiency depends on which predictions are committed. Learned unmasking policies improve the speed--accuracy trade-off, yet dif",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "hf-paper-7a92446f277b",
+      "title": "RLSplat: Resource-Linear Budget Control for Feed-forward 3D Gaussian Splatting",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2610.27712",
+      "summary": "Feed-forward 3D Gaussian Splatting (FF3DGS) reconstructs 3D scenes from images in a single forward pass, making it well-suited to applications that must operate within limited resource budgets. To fur",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "hf-paper-cc44a06b31f7",
+      "title": "TILDE: Teacher-in-the-Loop Distillation from Embodied Foundation Models",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2610.25376",
+      "summary": "Large-scale action pretraining equips Embodied Foundation Models (EFMs) with strong manipulation capabilities, with particular strengths in generalization and closed-loop robustness, but reproducing s",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "hf-paper-34e276a1fbf0",
+      "title": "RouteWeaver: Weaving Mode Selection and Execution into Unified LLM Routing",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2610.19705",
+      "summary": "LLM routing dynamically selects and coordinates heterogeneous language models across diverse tasks. However, existing approaches are largely built around a predefined execution paradigm, such as singl",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-openai-blog-139683c4cb22",
+      "title": "Build more responsive apps with the Decisions API",
+      "source": "OpenAI Blog",
+      "source_type": "blog",
+      "url": "https://openai.com/index/decisions-api",
+      "summary": "Fast, focused, low-cost decisions for any application.",
+      "category": [
+        "ai",
+        "openai",
+        "official"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-meta-engineering-8b188d0c122b",
+      "title": "The Thin Orchestrator: How We Made Our AI Agents More Reliable by Giving the Router Less to Do",
+      "source": "Meta Engineering",
+      "source_type": "blog",
+      "url": "https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/",
+      "summary": "Sometimes, giving an AI agent all of the knowledge it needs is the wrong approach. At Meta, we&#8217;ve seen notable improvements in efficiency and accuracy by keeping the orchestration layer of our d",
+      "category": [
+        "ai",
+        "meta",
+        "engineering"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-hackernews-daily-691e677aee0d",
+      "title": "2026-10-23 Hacker News Top Stories",
+      "source": "HackerNews Daily",
+      "source_type": "hackernews",
+      "url": "https://supertechfans.com/cn/post/2026-10-23-HackerNews/",
+      "summary": "2026-10-23 Hacker News Top Stories # Quad9 因 beIN 推动的法国 DNS 屏蔽裁决，宣布 11 月 24 日停止服务法国用户；它认为按地域可靠执行不可行，也拒绝把法国的屏蔽要求扩展到全球。 eMudhra 宣布退出约占其全球营收 1% 的 SSL/TLS 证书业务，承诺协助客户免费换证、维持状态服务，并继续提交事故根因报告。 pepsipu 发布支持 ",
+      "category": [
+        "tech",
+        "news",
+        "hackernews",
+        "daily"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-all-in-podcast-28c981cb41ca",
+      "title": "The Frontier Ideas a16z Wants to Fund | Marc Andreessen, Ben Horowitz & Chris Dixon",
+      "source": "All-In Podcast",
+      "source_type": "investor",
+      "url": "https://a16z.simplecast.com/episodes/tbc-gRs50MgP",
+      "summary": "a16z is expanding a16z crypto into a16z Frontier, a broader mandate to back founders building at the edges of what's possible. Chris Dixon joins Marc Andreessen, Ben Horowitz, and Erik Torenberg to ex",
+      "category": [
+        "investor",
+        "vc",
+        "tech",
+        "podcast"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "atom-the-ai-valley-d0ea853da23d",
+      "title": "Anthropic unveils Claude Duet",
+      "source": "The AI Valley",
+      "source_type": "news",
+      "url": "https://kill-the-newsletter.com/feeds/sg5lm1gdqvvwgskcyk8q/entries/ev2q1vl3qb31shhlqe1a736vzy5h2ve9s78yotar.html",
+      "summary": "Anthropic unveils Claude Duet 96 :root { color-scheme: light; supported-color-schemes: light; } body { margin: 0; padding: 0; min-width: 100%!important; -ms-text-size-adjust: 100% !important; -webkit-",
+      "category": [
+        "ai",
+        "news",
+        "daily"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-latent-space-17056638eaa4",
+      "title": "Why AI Compute Comes in Rectangles — Erik Bernhardsson, Modal CEO",
+      "source": "Latent Space",
+      "source_type": "rss",
+      "url": "https://www.latent.space/p/modal-d",
+      "summary": "Elastic GPUs, sandbox growth, and the economics of the agent cloud",
+      "category": [
+        "ai",
+        "news",
+        "daily"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-latent-space-ee6a72f4fbf7",
+      "title": "You are the Team  — Anekha Sokhal, Moshi",
+      "source": "Latent Space",
+      "source_type": "rss",
+      "url": "https://www.latent.space/p/moshi",
+      "summary": "How Moshi turns market data into actionable insights, and why AI tools have to fit the trader&#8217;s workflow.",
+      "category": [
+        "ai",
+        "news",
+        "daily"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-ben's-bites-34b5725409ea",
+      "title": "Claude’s personal agent",
+      "source": "Ben's Bites",
+      "source_type": "rss",
+      "url": "https://www.bensbites.com/p/claudes-personal-agent",
+      "summary": "And how I run the newsletter with agents",
+      "category": [
+        "ai",
+        "tools",
+        "weekly"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "atom-simon-willison-17d3d90c0cc1",
+      "title": "DE STAAT - FREEDOM (Official Music Video)",
+      "source": "Simon Willison",
+      "source_type": "rss",
+      "url": "https://simonwillison.net/2026/Oct/22/de-staat-freedom/",
+      "summary": "DE STAAT - FREEDOM (Official Music Video) OK well this is a first for me... at 00:44 in this new music video by Dutch alternative rock band De Staat : The visual effects are credited to Matties Groote",
+      "category": [
+        "tech",
+        "ai",
+        "python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "atom-simon-willison-4b2657f99d2e",
+      "title": "Donating Agent Skills to the Agentic AI Foundation",
+      "source": "Simon Willison",
+      "source_type": "rss",
+      "url": "https://simonwillison.net/2026/Oct/22/donating-agent-skills/",
+      "summary": "Donating Agent Skills to the Agentic AI Foundation News today from Anthropic: We’re committed to keeping Agent Skills open, community-driven, and vendor-neutral. Today, we are donating the standard to",
+      "category": [
+        "tech",
+        "ai",
+        "python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "atom-simon-willison-6564974e6eb5",
+      "title": "Quoting Armin Ronacher",
+      "source": "Simon Willison",
+      "source_type": "rss",
+      "url": "https://simonwillison.net/2026/Oct/22/armin-ronacher/",
+      "summary": "As fun as AI is, we built so much bad software over the last 30 years, and now the universe is punishing us for our sins. &mdash; Armin Ronacher Tags: security , generative-ai , armin-ronacher , ai , ",
+      "category": [
+        "tech",
+        "ai",
+        "python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-gary-marcus-9d5710526f56",
+      "title": "All the king’s horses and all the king’s men haven’t been able to put CoreWeave back together again",
+      "source": "Gary Marcus",
+      "source_type": "rss",
+      "url": "https://garymarcus.substack.com/p/all-the-kings-horses-and-all-the",
+      "summary": "Nobody in the tech industry wants to see them collapse, but the stock has dropped over 50% in the last six months, anyway",
+      "category": [
+        "ai",
+        "ml"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-gary-marcus-12840c29387b",
+      "title": "Breaking news: U.S. banks are taking hits from AI agents",
+      "source": "Gary Marcus",
+      "source_type": "rss",
+      "url": "https://garymarcus.substack.com/p/breaking-news-us-banks-are-taking",
+      "summary": "Who knows what piece of infrastructure might be attacked next.",
+      "category": [
+        "ai",
+        "ml"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-interconnects-4a50336822da",
+      "title": "Latest open artifacts (#25): DeepSeek V4.1 Flash 1017, American-made models, and new regulatory controls in the US &amp; China",
+      "source": "Interconnects",
+      "source_type": "rss",
+      "url": "https://www.interconnects.ai/p/latest-open-artifacts-25-deepseek",
+      "summary": "Western open models strike back",
+      "category": [
+        "ai",
+        "ml",
+        "blog"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-entropic-thoughts-3278127e7c80",
+      "title": "Script dependencies with Nix",
+      "source": "Entropic Thoughts",
+      "source_type": "rss",
+      "url": "https://entropicthoughts.com/python-dependencies-with-nix",
+      "summary": "In the theme of NixOS enabling fearlessness, here&amp;rsquo;s a way I use Nix on other Linux distributions to sleep better at night: managing dependencies of simple scripts. This way of using Nix is f",
+      "category": [
+        "tech",
+        "ai"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-simone-d4a7b5c5a51f",
+      "title": "Going Somewhere",
+      "source": "Simone",
+      "source_type": "rss",
+      "url": "https://simone.org/somewhere/",
+      "summary": "Vicky, driving me home from O'Hare, got sixteen dollars for the best conversation I had in months. The last line is hers.",
+      "category": [
+        "tech",
+        "ai"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-jim-nielsen-c82ab539be21",
+      "title": "No Need for Retirement When Utopia Is Around the Corner",
+      "source": "Jim Nielsen",
+      "source_type": "rss",
+      "url": "https://blog.jim-nielsen.com/2026/skip-retirement-for-utopia/",
+      "summary": "I’ve mentioned before my interest in the history and development of nuclear weapons . Currently, I’m reading The Doomsday Machine: Confessions of a Nuclear War Planner by Daniel Ellsberg (of Pentagon ",
+      "category": [
+        "tech",
+        "web",
+        "frontend"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-xe-iaso-e7a1382c80c9",
+      "title": "\"No way to prevent this\" say users of only language where this regularly happens",
+      "source": "Xe Iaso",
+      "source_type": "rss",
+      "url": "https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-93479/",
+      "summary": "",
+      "category": [
+        "tech",
+        "go",
+        "web"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "atom-eli-bendersky-88dddcbe21a6",
+      "title": "Notes on the complex roots of unity",
+      "source": "Eli Bendersky",
+      "source_type": "rss",
+      "url": "https://eli.thegreenplace.net/2026/notes-on-the-complex-roots-of-unity/",
+      "summary": "One of the most wonderful aspects of math is how deep we can get by studying seemingly trivial questions. Consider the roots of unity, where &quot;unity&quot; simply means the number 1. Basics: roots ",
+      "category": [
+        "tech",
+        "programming"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-the-old-new-thing-1749241baa26",
+      "title": "Why didn’t we use Ro­Register­For­Apartment­Shutdown to clean up the unmarshalable delegate?",
+      "source": "The Old New Thing",
+      "source_type": "rss",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20261021-00/?p=112786/",
+      "summary": "Too many requirements, some of which bring us full circle. The post Why didn&#8217;t we use &lt;CODE&gt;Ro&amp;shy;Register&amp;shy;For&amp;shy;Apartment&amp;shy;Shutdown&lt;/CODE&gt; to clean up the ",
+      "category": [
+        "tech",
+        "windows",
+        "programming"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-max-bernstein-2b93ace1a349",
+      "title": "Rails is a JIT compiler",
+      "source": "Max Bernstein",
+      "source_type": "rss",
+      "url": "https://bernsteinbear.com/blog/rails-is-a-jit-compiler/?utm_source=rss",
+      "summary": "Originally published on Rails At Scale . The title was bait to get you to open this article. But fear not! We will be generating code at run-time today. (See the PR for a sneak peek.) Sam popped into ",
+      "category": [
+        "tech",
+        "compilers"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "atom-ken-shirriff-c972771f73a6",
+      "title": "Inside the Intel 8087 chip: floating-point addition and subtraction",
+      "source": "Ken Shirriff",
+      "source_type": "rss",
+      "url": "http://www.righto.com/feeds/4354998070789191613/comments/default",
+      "summary": "In 1980, Intel introduced the 8087, a chip that made floating-point operations much faster in the IBM PC and other systems. Although the 8087 supports advanced operations such as tangents, square root",
+      "category": [
+        "tech",
+        "hardware",
+        "reverse-engineering"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-sean-goedecke-4c48f52397e8",
+      "title": "Software is slow because of bad design, not slow languages",
+      "source": "Sean Goedecke",
+      "source_type": "rss",
+      "url": "https://seangoedecke.com/software-is-slow-because-of-bad-design-not-slow-languages/",
+      "summary": "",
+      "category": [
+        "tech",
+        "software"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-ibrahim-diallo-5256ad1f6b59",
+      "title": "Productivity",
+      "source": "Ibrahim Diallo",
+      "source_type": "rss",
+      "url": "https://idiallo.com/byte-size/productivity-video",
+      "summary": "I'd say in a given week I probably only do about fifteen minutes of real, actual, work. &amp;mdash; Office Space I was watching a video where a guy said he has 8 agents working in the background. He w",
+      "category": [
+        "tech",
+        "programming"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-john-d.-cook-fc27f12b9199",
+      "title": "Working around a strange Python problem",
+      "source": "John D. Cook",
+      "source_type": "rss",
+      "url": "https://www.johndcook.com/blog/2026/10/22/pep-723/",
+      "summary": "A Python script that worked a few days ago wouldn&#8217;t work today. I suspect it might have something to do with my updating everything I could think of in response to recent security breaches. I go",
+      "category": [
+        "math",
+        "programming"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-john-d.-cook-f1d5e78fe58c",
+      "title": "How the eMudrha certificate debacle might have happened",
+      "source": "John D. Cook",
+      "source_type": "rss",
+      "url": "https://www.johndcook.com/blog/2026/10/22/certificate-debacle/",
+      "summary": "You may have seen references to a password being the number 4. There are countless allusions to this online, but they don&#8217;t give the context. As I mentioned in an earlier post, eMudrha was using",
+      "category": [
+        "math",
+        "programming"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-hillel-wayne-6d19f34df981",
+      "title": "NYC, New Webinar, Differential Testing",
+      "source": "Hillel Wayne",
+      "source_type": "rss",
+      "url": "https://buttondown.com/hillelwayne/archive/nyc-new-webinar-differential-testing/",
+      "summary": "Been a while! Man, it's so much harder to write essays for a newsletter when I have a full time job writing essays for a company. So three bits of housekeeping first of all: As of last month I now liv",
+      "category": [
+        "tech",
+        "formal-methods"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-terence-eden-424d806a18b1",
+      "title": "Gadget Review: Mokin 17 Port USB-C Tower ★★☆☆☆",
+      "source": "Terence Eden",
+      "source_type": "rss",
+      "url": "https://shkspr.mobi/blog/2026/10/gadget-review-mokin-17-port-usb-c-tower/",
+      "summary": "The good folks at Mokin have sent me their new USB-C hub and it is a beast. This is the MODK2403 - the latest in their line of high-tech USB-C docks. It does close to everything you could want and has",
+      "category": [
+        "tech",
+        "web"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-dave-farquhar-076013365553",
+      "title": "Windows 7 released Oct 22, 2009",
+      "source": "Dave Farquhar",
+      "source_type": "rss",
+      "url": "https://dfarq.homeip.net/windows-7-released-oct-22-2009/?utm_source=rss&utm_medium=rss&utm_campaign=windows-7-released-oct-22-2009",
+      "summary": "On October 22, 2009, Windows 7 was released. It went on to become one of the most popular Windows versions of all time, providing a much needed bounce back after Windows Vista. Two of the most beloved",
+      "category": [
+        "tech"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-mat-duggan-6fe834827428",
+      "title": "ClickHouse Will Let You Be Wrong at Scale",
+      "source": "Mat Duggan",
+      "source_type": "rss",
+      "url": "https://matduggan.com/clickhouse-will-let-you-be-wrong-at-scale/",
+      "summary": "So I&apos;ve posted before how I think ClickHouse is great. Its columnar storage is fast, it has amazing compression. I won&apos;t bore you with those details, you can see them all here: https://matdu",
+      "category": [
+        "tech",
+        "security"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "atom-herman-ab9830d5c600",
+      "title": "If people would just",
+      "source": "Herman",
+      "source_type": "rss",
+      "url": "https://herman.bearblog.dev/if-people-would-just/",
+      "summary": "People use the word just a lot when talking about problems. If people would just drive slowly near schools. If people would just pay their taxes. If people would just follow the rules. It's a sentence",
+      "category": [
+        "tech",
+        "productivity"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-martin-alderson-02f21488682e",
+      "title": "How the AI boom might really end: 5 scenarios",
+      "source": "Martin Alderson",
+      "source_type": "rss",
+      "url": "https://martinalderson.com/posts/how-the-ai-boom-might-really-end/?utm_source=rss&utm_medium=rss&utm_campaign=feed",
+      "summary": "With chip stocks on their longest losing streak since 2008 and Anthropic heading for IPO, five ways the AI boom could end - and why I think the value is real but may not flow to the people putting the",
+      "category": [
+        "tech"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-krebs-on-security-8651e625050e",
+      "title": "Widespread PHP Flaw May Cause Many Site Outages Today",
+      "source": "Krebs on Security",
+      "source_type": "rss",
+      "url": "https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/",
+      "summary": "Expect to see quite a few websites serving \"404\" or \"Page Not Found\" errors today: Nearly 70 percent of websites need to update their core software to fix a pair of vulnerabilities that allow an attac",
+      "category": [
+        "security",
+        "tech"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-troy-hunt-504df8d56553",
+      "title": "Weekly Update 526: Building HIBP AI/SI First",
+      "source": "Troy Hunt",
+      "source_type": "rss",
+      "url": "https://www.troyhunt.com/weekly-update-526/",
+      "summary": "I have this sense that we&apos;ve passed the point where &quot;vibe coding&quot; is a derogatory term. I have no empirical evidence for this; it&apos;s more a feeling that those weaponising the term h",
+      "category": [
+        "security",
+        "tech"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-lcamtuf-4910c0234776",
+      "title": "The Secret Life of Circuits is now in stock everywhere",
+      "source": "lcamtuf",
+      "source_type": "rss",
+      "url": "https://blog.coredump.cx/p/the-secret-life-of-circuits-is-now",
+      "summary": "For the past couple of weeks, you could get my latest book &#8212; The Secret Life of Circuits &#8212; directly from the publisher.",
+      "category": [
+        "tech",
+        "security"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-jeff-geerling-05d008eb26bc",
+      "title": "Upgrade your PHP installs immediately to protect against php2shell",
+      "source": "Jeff Geerling",
+      "source_type": "rss",
+      "url": "https://www.jeffgeerling.com/blog/2026/php-vulnerability-php2shell/",
+      "summary": "This morning, two critical PHP Security Advisories were published: RCE via OOM corruption (9.2/10) RCE via stale global state (9.2/10) If you're running PHP for any service, you need to upgrade immedi",
+      "category": [
+        "tech",
+        "hardware",
+        "raspberry-pi"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-steve-blank-ebaac794601b",
+      "title": "The Lean Educator Conference",
+      "source": "Steve Blank",
+      "source_type": "rss",
+      "url": "https://steveblank.com/2026/10/19/the-lean-educator-conference/",
+      "summary": "Announcing a Lean Educators Conference. Teaching Lean in the Age of AI. November 18-19th at K&#38;S Ranch, California. When AI hit our spring Lean Launchpad for Deep Tech class, our teaching team was ",
+      "category": [
+        "startup",
+        "business"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-pluralistic-dde04163e2b7",
+      "title": "Pluralistic: Adversarial interoperability is a team sport (21 Oct 2026)",
+      "source": "Pluralistic",
+      "source_type": "rss",
+      "url": "https://pluralistic.net/2026/10/21/brittle-individualism/",
+      "summary": "Today's links Adversarial interoperability is a team sport: Vibe-coded jailbreaks are fun, but don't solve the problem. Hey look at this: Delights to delectate. Object permanence: Labour Whip's pro-Ir",
+      "category": [
+        "tech",
+        "policy"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "atom-anil-dash-4beb0c11da9f",
+      "title": "How to install an app on your Commodore 64",
+      "source": "Anil Dash",
+      "source_type": "rss",
+      "url": "https://anildash.com/2026/10/08/install-an-app-commodore-64/",
+      "summary": "It’s time to install an app! But here in 1986, we still call them “programs,” not apps. So, you’ll want to set aside some time to get started installing a program. Since you have a Commodore 64, there",
+      "category": [
+        "tech",
+        "culture"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-where's-your-ed-at-60a8ee7a0029",
+      "title": "AI Had Better Work Out",
+      "source": "Where's Your Ed At",
+      "source_type": "rss",
+      "url": "https://www.wheresyoured.at/ai-had-better-work-out/",
+      "summary": "If you liked this piece, you should subscribe to my premium newsletter, and you can subscribe on the following links: &#x24;70 a year , &#x24;18 a quarter , or &#x24;7 a month . In return, you get a w",
+      "category": [
+        "tech",
+        "business"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-construction-physics-f88543195718",
+      "title": "Reading List 10/17/26",
+      "source": "Construction Physics",
+      "source_type": "rss",
+      "url": "https://www.construction-physics.com/p/reading-list-101726",
+      "summary": "Icon&#8217;s fundraising, employment in China&#8217;s solar industry, grid-scale battery reliability, Tesla&#8217;s flying roadster, and more.",
+      "category": [
+        "science",
+        "engineering"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "atom-tedium-bf2f4b473bf8",
+      "title": "Death & Domains",
+      "source": "Tedium",
+      "source_type": "rss",
+      "url": "https://feed.tedium.co/link/15204/17501584/death-domains-commentary",
+      "summary": "A recent piece on “forever domains” sparked bigger questions about permanence online: when domain owners die out, do we need new systems that don&#39;t rely on domains at all? Should domains last fore",
+      "category": [
+        "tech",
+        "history"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-量子位-8410564441b3",
+      "title": "百度世界2026前瞻：10+重磅分论坛，全面解码AI时代的智能组织进化路径",
+      "source": "量子位",
+      "source_type": "wechat",
+      "url": "https://www.qbitai.com/2026/10/504901.html",
+      "summary": "10月21日，百度官方公众号发文披露了百度世界2026分论坛的更多议程信息。",
+      "category": [
+        "ai",
+        "tech",
+        "wechat",
+        "chinese"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-虎嗅-91dd572a1cb9",
+      "title": "宁德时代，一场大考",
+      "source": "虎嗅",
+      "source_type": "wechat",
+      "url": "https://www.huxiu.com/article/4899924.html?f=rss",
+      "summary": "本文来自微信公众号： 正和岛 ，作者：拐枣 多卖了610亿，只多赚了27亿 这几天，宁德时代被推上了舆论的风口浪尖。市场情绪的骤变，从其股价的连续下探中便可见一斑。 10月22日开盘，宁德时代A股报222.11元/股，跌幅2.54%，股价创年内新低。长期看，相较于今年5月7日创下历史新高的467.34元，以开盘价计，跌幅已超过50%，市值跌破一万亿人民币；短期看，仅10月21日一天，宁德时代市值就",
+      "category": [
+        "tech",
+        "business",
+        "wechat",
+        "chinese"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-虎嗅-75aebc58d39c",
+      "title": "iPhone Duo排到明年，折叠屏真的进入大众市场了吗？",
+      "source": "虎嗅",
+      "source_type": "wechat",
+      "url": "https://www.huxiu.com/article/4899923.html?f=rss",
+      "summary": "本文来自微信公众号： 财观二姐 ，作者：二姐 今天，苹果首款折叠屏手机iPhone Duo正式发售。 这也是苹果进入智能手机市场以来，第一次把一部iPhone从中间折起来。 国行iPhone Duo提供256GB、512GB、1TB和2TB四种版本，起售价15999元，最高售价26499元。 产品还没正式到店，市场已经提前热了起来。10月16日开启预售后，部分版本的预计交付时间很快延至2027年1",
+      "category": [
+        "tech",
+        "business",
+        "wechat",
+        "chinese"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-虎嗅-1f45ac19ef23",
+      "title": "浦江科技评论｜AI重塑文创：从创作工具到生产系统",
+      "source": "虎嗅",
+      "source_type": "wechat",
+      "url": "https://www.huxiu.com/article/4899916.html?f=rss",
+      "summary": "本文来自微信公众号： 猫头鹰科技社 ，作者：浦江科技评论，原文标题：《浦江科技评论｜AI重塑文创：从创作工具到生产系统》 《浦江科技评论》真实记录与传播科技创业的最佳实践，带您穿透噪音，洞悉未来。 对文创产业而言，2026年可能是一个分水岭。生成式人工智能不再只是创作链条边缘的效率工具，而是开始成为重构生产方式的系统变量。影视、短剧、动漫、游戏等行业都出现了工业化信号，显示出AI文创正在“从生成内",
+      "category": [
+        "tech",
+        "business",
+        "wechat",
+        "chinese"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-founder-park-5f65bc635992",
+      "title": "Personal AI 都在谈的「意图捕获」，可能是今天企业级 Agent 最需要的",
+      "source": "Founder Park",
+      "source_type": "wechat",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzY5ODQwMTkxNA==&mid=2247517391&idx=1&sn=0e9cfa82b9458201c76aef403d3ed06c",
+      "summary": "Personal AI 这一波，核心的变化，可能是交付形式的变化。过去的通用 Agent 更像是「单次任务交付」。",
+      "category": [
+        "startup",
+        "founder",
+        "wechat",
+        "chinese"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-founder-park-82cf0acb6fe4",
+      "title": "REA 能逆向产品，但它能逆向一门生意吗？",
+      "source": "Founder Park",
+      "source_type": "wechat",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzY5ODQwMTkxNA==&mid=2247517388&idx=1&sn=2f7fc380181bf81d12bd71d9ad58b1d2",
+      "summary": "上周六，我们又在极客公园办了一场线下 Meetup · Idea Rush。这次，我们和做 AI 图片、AI 视频生成方向的创业者们聊了聊，当生成模型逐渐成为公共能力后，产品的价值在哪？以及下一代的 AI 视觉产品可能长什么样？ 大家在现场给出的答案高度收敛：不再单纯靠「我也能生成」，而是要：选对具体场景、给人足够的控制权、把审美与判断封装成产品、找到可持续触达用户的窄入口。 5 位分享者带来了他",
+      "category": [
+        "startup",
+        "founder",
+        "wechat",
+        "chinese"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-paperagent-181e6bd1e4c2",
+      "title": "3篇NeurIPS顶会Skill，很精彩",
+      "source": "PaperAgent",
+      "source_type": "wechat",
+      "url": "https://mp.weixin.qq.com/s?__biz=Mzk0MTYzMzMxMA==&mid=2247512907&idx=1&sn=2fb2c90984cb1169dda36c7daaf44dd5",
+      "summary": "",
+      "category": [
+        "ai",
+        "papers",
+        "agent",
+        "wechat",
+        "chinese"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-paperagent-3b915f90ee3c",
+      "title": "Atria Dawn更新了：Agentic超级智能",
+      "source": "PaperAgent",
+      "source_type": "wechat",
+      "url": "https://mp.weixin.qq.com/s?__biz=Mzk0MTYzMzMxMA==&mid=2247512907&idx=2&sn=8137003a367c6aee0def2772fe47d6c2",
+      "summary": "",
+      "category": [
+        "ai",
+        "papers",
+        "agent",
+        "wechat",
+        "chinese"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-极客公园-069610f032c5",
+      "title": "中国 AI 硬件的下一个爆款，可能生在「网球场」",
+      "source": "极客公园",
+      "source_type": "wechat",
+      "url": "http://www.geekpark.net/news/372807",
+      "summary": "头图来源：Hirdwire 2024 年巴黎奥运会，郑钦文在罗兰·加洛斯捧起金牌的那个下午，中国的网球场预订量在一周内翻了数倍。两年后，最先把这股热潮变成生意的，是一群造机器的深圳工程师。 过去一年，至少四款中国团队打造的 AI 球类机器人在 Kickstarter 上筹得百万美元级资金。庞伯特以 26255% 的超募率卷走 265 万美元；智能家居大厂 SwitchBot 推出的 Acemate",
+      "category": [
+        "ai",
+        "thinking",
+        "wechat",
+        "chinese"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-极客公园-c0b3d71c9363",
+      "title": "硅谷爆火的两万块智能床，是智商税吗？我睡了 100 天",
+      "source": "极客公园",
+      "source_type": "wechat",
+      "url": "http://www.geekpark.net/news/372805",
+      "summary": "两万元，一个床套。 这可能是极客公园史上体验过单价最高的消费级产品之一。 我终于也睡上了马斯克、扎克伯格同款的床。Eight Sleep，这个曾被一众硅谷大佬点赞过的品牌，在今年 4 月正式进入中国市场。短短半年时间里，Pod 5 在国内 INNO 100 平台上卖出了 600 万元，随后它又迅速推出新一代产品 Pod 6，参数升级，还补上了单人尺寸。 很多中国家庭的卧室里，床垫往往是最舍得花钱的",
+      "category": [
+        "ai",
+        "thinking",
+        "wechat",
+        "chinese"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "hn-50202285",
+      "title": "Local Wikipedia: Wikipedia, but only for things a half hour walk from you",
+      "source": "Hacker News",
+      "source_type": "hn",
+      "url": "https://edjefferson.com/localwiki/",
+      "summary": "",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "hn-50202681",
+      "title": "Docker is weird",
+      "source": "Hacker News",
+      "source_type": "hn",
+      "url": "https://codeandcake.dev/posts/2026-10-22-docker-is-weird",
+      "summary": "",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "hn-50201445",
+      "title": "How does Fable 5.1 hide messages in images?",
+      "source": "Hacker News",
+      "source_type": "hn",
+      "url": "https://www.lesswrong.com/posts/WHEQps5PK8LrrcTAb/how-does-fable-5-1-hide-messages-in-images",
+      "summary": "",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "reddit-1xbr4a7",
+      "title": "Weekly Thread: Project Display",
+      "source": "r/AI_Agents",
+      "source_type": "reddit",
+      "url": "https://www.reddit.com/r/AI_Agents/comments/1xbr4a7/weekly_thread_project_display/",
+      "summary": "Weekly thread to show off your AI Agents and LLM Apps! Top voted projects will be featured in our weekly newsletter . submitted by /u/help-me-grow [link] [comments]",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "reddit-1xcqkgw",
+      "title": "Anthropic's own data suggests we're becoming middle managers for AI agents",
+      "source": "r/AI_Agents",
+      "source_type": "reddit",
+      "url": "https://www.reddit.com/r/AI_Agents/comments/1xcqkgw/anthropics_own_data_suggests_were_becoming_middle/",
+      "summary": "anthropic published data on what agents did to work inside their own company this month, and this post isn't about 6-to-1 hours but about how we are spending our time on and it's mostly maintainance and task like building skills for agents, reviewing their output, babysitting pipelines, went from 10% of the average employee’s agent sessions last fall to 22% this spring which is about 80% of interactive session time is the human sitting there waiting to give input and in an april survey, 20% of p",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "x-account-2113442974537584672",
+      "title": "当我们直接得到答案\n也许就不会再快乐 2 1 25 3.8K",
+      "source": "X:@oran_ge",
+      "source_type": "x",
+      "url": "https://x.com/oran_ge/status/2113442974537584672",
+      "summary": "当我们直接得到答案\n也许就不会再快乐 2 1 25 3.8K",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "x-account-2113425021158699384",
+      "title": "SemiAnalysis：Anthropic 在部分账号上测试新额度，每月总量少约两成，5 小时额度多约两成\n\nSemiAnalysis 说 Anthropic 正在对 Claude 订阅额度做 A/",
+      "source": "X:@dotey",
+      "source_type": "x",
+      "url": "https://x.com/dotey/status/2113425021158699384",
+      "summary": "SemiAnalysis：Anthropic 在部分账号上测试新额度，每月总量少约两成，5 小时额度多约两成\n\nSemiAnalysis 说 Anthropic 正在对 Claude 订阅额度做 A/B 测试（同一个套餐给不同用户不同设置，比较效果）。\n\n测试组账号的 5 小时额度提高约 20%，每月总共能用的量折合 API 价格少约 20%。最近 X Show more 117 74 21K",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "x-account-2113363249194222032",
+      "title": "旧金山聚变公司 Marathon Fusion 称用中子把水银变成了金子，金价不会受影响，他们真正要卖的是抗癌药原料\n\nMarathon Fusion 是旧金山一家 28 人的创业公司。10 月 21",
+      "source": "X:@dotey",
+      "source_type": "x",
+      "url": "https://x.com/dotey/status/2113363249194222032",
+      "summary": "旧金山聚变公司 Marathon Fusion 称用中子把水银变成了金子，金价不会受影响，他们真正要卖的是抗癌药原料\n\nMarathon Fusion 是旧金山一家 28 人的创业公司。10 月 21 日，公司在 X 上发帖说，上个月他们用核聚变产生的中子，把水银（汞）变成了稳定的金子，速度是欧洲核子研究中心 CERN 2025 年纪录的 Show more 30 26 163 41K",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "x-account-2113330196401303844",
+      "title": "我只希望 Claude Code 能支持读取 .agents/skills，别自己搞一套 .claude/skills 58 4 88 21K",
+      "source": "X:@dotey",
+      "source_type": "x",
+      "url": "https://x.com/dotey/status/2113330196401303844",
+      "summary": "我只希望 Claude Code 能支持读取 .agents/skills，别自己搞一套 .claude/skills 58 4 88 21K",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "x-account-2113484841736122584",
+      "title": "Tim 这一波不知道会吸引多少国内的 UP主来 X。\n\n这一波的播放量和互动、以及激励收益、潜在传播价值将远远甩开国内平台了 196",
+      "source": "X:@fkysly",
+      "source_type": "x",
+      "url": "https://x.com/fkysly/status/2113484841736122584",
+      "summary": "Tim 这一波不知道会吸引多少国内的 UP主来 X。\n\n这一波的播放量和互动、以及激励收益、潜在传播价值将远远甩开国内平台了 196",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "x-account-2113470467092938888",
+      "title": "说实话，比起相信大部分工程师自己手写的代码来说，我更愿意相信 AI 写出来的代码。\n\n如果只谈 Opus 5.5 的话，大部分工程师的代码都不值一提。\n\n某些人辛辛苦苦写一周的代码实现，还不如 Opu",
+      "source": "X:@fkysly",
+      "source_type": "x",
+      "url": "https://x.com/fkysly/status/2113470467092938888",
+      "summary": "说实话，比起相信大部分工程师自己手写的代码来说，我更愿意相信 AI 写出来的代码。\n\n如果只谈 Opus 5.5 的话，大部分工程师的代码都不值一提。\n\n某些人辛辛苦苦写一周的代码实现，还不如 Opus 5.5 一分钟写出来的。 14 48 6K",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "x-account-2113315724236378236",
+      "title": "只有我唯一关心 Tim @ mediastorm_en 这波创作者收益能拿到多少钱吗？ 2 3 2.2K",
+      "source": "X:@fkysly",
+      "source_type": "x",
+      "url": "https://x.com/fkysly/status/2113315724236378236",
+      "summary": "只有我唯一关心 Tim @ mediastorm_en 这波创作者收益能拿到多少钱吗？ 2 3 2.2K",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "x-account-2113492187770175603",
+      "title": "Day 18/ Decisions API is GA, OpenResponses joined the Linux Foundation, we shipped some performance ",
+      "source": "X:@thsottiaux",
+      "source_type": "x",
+      "url": "https://x.com/thsottiaux/status/2113492187770175603",
+      "summary": "Day 18/ Decisions API is GA, OpenResponses joined the Linux Foundation, we shipped some performance improvements and Uber is going all-in on codex & work. But yes… that’s a reset! 1K 290 6.3K 661K",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "x-account-2113162277688070445",
+      "title": "Day 17/ Bet you thought we forgot, but no, it’s reset day today.\n\nAlso good time to remind you to ge",
+      "source": "X:@thsottiaux",
+      "source_type": "x",
+      "url": "https://x.com/thsottiaux/status/2113162277688070445",
+      "summary": "Day 17/ Bet you thought we forgot, but no, it’s reset day today.\n\nAlso good time to remind you to get Daybreak Blue access, it only takes 15 mins and you don’t want to have to do it in the middle of an incident. 2.5K 554 13K 2.2M",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "x-account-2113029655095836957",
+      "title": "Dot, Dotter, Dottest 1.9K 110 5K 1.6M",
+      "source": "X:@thsottiaux",
+      "source_type": "x",
+      "url": "https://x.com/thsottiaux/status/2113029655095836957",
+      "summary": "Dot, Dotter, Dottest 1.9K 110 5K 1.6M",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-openai-blog-39c8c1e08705",
+      "title": "OpenAI and Poland’s NASK partner to advance AI safety and security",
+      "source": "OpenAI Blog",
+      "source_type": "blog",
+      "url": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
+      "summary": "OpenAI and Poland’s NASK are partnering on AI safety, security, and technical research to strengthen safeguards and support a more resilient digital ecosystem.",
+      "category": [
+        "ai",
+        "openai",
+        "official"
+      ],
+      "relevance_score": 4,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-google-deepmind-blog-dc2f0fdc8ce1",
+      "title": "Beyond tree cover: mapping the world’s forest types",
+      "source": "Google DeepMind Blog",
+      "source_type": "blog",
+      "url": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
+      "summary": "A global map categorizing every 10-meter patch of land on Earth into distinct forest types.",
+      "category": [
+        "ai",
+        "google",
+        "deepmind"
+      ],
+      "relevance_score": 4,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-google-ai-blog-aec1886eb4d5",
+      "title": "Southeast Asia’s digital economy to hit $368 billion",
+      "source": "Google AI Blog",
+      "source_type": "blog",
+      "url": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026/",
+      "summary": "Widespread AI adoption is propelling Southeast Asia's digital economy to a projected $368 billion in 2026 and $1 trillion by 2035.",
+      "category": [
+        "ai",
+        "google",
+        "official"
+      ],
+      "relevance_score": 4,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-meta-engineering-c870f6abff11",
+      "title": "GenRecs Tokenization: Transforming Ads Recommendation at Meta with Stable Model Vocabulary",
+      "source": "Meta Engineering",
+      "source_type": "blog",
+      "url": "https://engineering.fb.com/2026/10/19/ml-applications/genrecs-tokenization-transforming-ads-recommendation-at-meta-with-stable-model-vocabulary/",
+      "summary": "Generative Recommenders (GenRecs) represent a paradigm shift from scoring every ad to reasoning about ad content and user preferences together in order to predict the best outcome for advertisers. Lev",
+      "category": [
+        "ai",
+        "meta",
+        "engineering"
+      ],
+      "relevance_score": 4,
+      "created_at": "2026-10-23"
+    },
+    {
+      "id": "rss-meta-engineering-fd8a6deb70d4",
+      "title": "Inside Prometheus: Meta’s Journey to a Gigawatt-Scale Supercluster",
+      "source": "Meta Engineering",
+      "source_type": "blog",
+      "url": "https://engineering.fb.com/2026/10/19/data-center-engineering/inside-prometheus-meta-gigawatt-scale-supercluster/",
+      "summary": "With the recent release of the Muse family of foundational models, we want to take you inside the infrastructure that has made it all possible. The first phase of Prometheus, our gigawatt-scale superc",
+      "category": [
+        "ai",
+        "meta",
+        "engineering"
+      ],
+      "relevance_score": 4,
+      "created_at": "2026-10-23"
+    }
+  ],
+  "signals": {
+    "inspiration": [
+      {
+        "id": "hn-50195488",
+        "title": "Show HN: OnKey – I'm a bad singer, so I built an app to show where I'm off-key",
+        "url": "https://github.com/dsmurrell/onkey",
+        "source": "Hacker News",
+        "source_type": "hn",
+        "published_at": "2026-10-22T14:04:44+00:00",
+        "relevance_score": 8,
+        "track": "inspiration",
+        "finding": "一位自称唱功很差的开发者因不满现有唱歌评分应用充斥非原唱歌曲，借助Claude Code开发了OnKey应用，实时显示自己哪里跑调。他认为跟着原唱练习更容易提升音准和节奏。",
+        "why_read": "AI编程工具让'为自己造工具'的门槛降到几乎为零——个人痛点就是最小可行的产品起点。",
+        "evidence_note": "社区热榜（转述/讨论，非独立验证） · 互动数据：44 points, 24 comments",
+        "tags": [
+          "新问题与需求"
+        ],
+        "details": [
+          "作者从'很糟'进步到'差但不糟'，靠唱歌评分应用",
+          "痛点：现有应用曲库被非原唱版本淹没",
+          "用Claude Code（AI Agent）编写了OnKey",
+          "应用功能是可视化显示演唱中的音准偏差位置"
+        ],
+        "takeaway": "一位自称唱功很差的开发者因不满现有唱歌评分应用充斥非原唱歌曲，借助Claude Code开发了OnKey应用，实时显示自己哪里跑调。他认为跟着原唱练习更容易提升音准和节奏。",
+        "facts": [
+          "作者从'很糟'进步到'差但不糟'，靠唱歌评分应用",
+          "痛点：现有应用曲库被非原唱版本淹没"
+        ],
+        "so_what": "AI编程工具让'为自己造工具'的门槛降到几乎为零——个人痛点就是最小可行的产品起点。",
+        "evidence": "44 points, 24 comments",
+        "why": "社区讨论 · 44 points, 24 comments"
+      }
+    ],
+    "execution": [
+      {
+        "id": "arxiv-2610.31593v1",
+        "title": "Simulated Control Evals",
+        "url": "https://arxiv.org/abs/2610.31593v1",
+        "source": "arXiv",
+        "source_type": "arxiv",
+        "published_at": null,
+        "relevance_score": 8,
+        "track": "execution",
+        "finding": "控制评估（control evaluations）检验的是：当 AI 模型'故意使坏'时，安全护栏能否仍阻止不良后果。传统做法依赖专门构建的控制环境再外推到部署，但护栏效果可能依赖控制环境未覆盖的部署特征；本文提出'模拟控制评估'（simulated control evaluations），让控制评估能在更贴近部署的环境中运行。",
+        "why_read": "安全评估的结论只有在测试环境覆盖部署环境的关键特征时才可外推，用模拟环境替代专用测试床能让'红队式'控制评估更贴近真实风险。",
+        "evidence_note": "来源转述",
+        "tags": [
+          "对比与选择"
+        ],
+        "details": [
+          "控制评估将模型视为有意图的对手，测量护栏的最坏情况有效性",
+          "传统控制场景是为评估专门搭的，与真实部署环境有分布差异",
+          "外推风险：护栏在部署中的效果取决于控制场景未表示的环境/任务特征",
+          "模拟控制评估通过模拟部署环境来扩大可评估的场景范围"
+        ],
+        "takeaway": "控制评估（control evaluations）检验的是：当 AI 模型'故意使坏'时，安全护栏能否仍阻止不良后果。传统做法依赖专门构建的控制环境再外推到部署，但护栏效果可能依赖控制环境未覆盖的部署特征；本文提出'模拟控制评估'（simulated control evaluations），让控制评估能在更贴近部署的环境中运行。",
+        "facts": [
+          "控制评估将模型视为有意图的对手，测量护栏的最坏情况有效性",
+          "传统控制场景是为评估专门搭的，与真实部署环境有分布差异"
+        ],
+        "so_what": "安全评估的结论只有在测试环境覆盖部署环境的关键特征时才可外推，用模拟环境替代专用测试床能让'红队式'控制评估更贴近真实风险。",
+        "evidence": "",
+        "why": "技术内容"
+      },
+      {
+        "id": "arxiv-2610.31594v1",
+        "title": "CRANE: Post-Hoc Counterfactual Retrieval for Multimodal Classifiers",
+        "url": "https://arxiv.org/abs/2610.31594v1",
+        "source": "arXiv",
+        "source_type": "arxiv",
+        "published_at": null,
+        "relevance_score": 8,
+        "track": "execution",
+        "finding": "提出 CRANE，首个面向多模态分类器的事后（post-hoc）反事实解释方法。现有多模态可解释方法对每个模态独立做归因，无法给出连贯的整体解释，也不能迁移到任意预训练多模态架构；CRANE 通过检索式反事实生成填补这一空白。",
+        "why_read": "多模态模型的解释不能靠单模态归因的简单拼接，跨模态一致的反事实需要以检索真实样本为锚点来生成。",
+        "evidence_note": "来源转述",
+        "tags": [
+          "实践方法",
+          "失败与限制"
+        ],
+        "details": [
+          "反事实解释此前只在表格、时序、文本、图像等单模态场景有专门框架",
+          "现有多模态解释方法逐模态独立归因，解释不连贯",
+          "CRANE 是事后方法，适用于任意预训练多模态分类器，无需改模型",
+          "采用检索式（retrieval-based）思路生成跨模态反事实"
+        ],
+        "takeaway": "提出 CRANE，首个面向多模态分类器的事后（post-hoc）反事实解释方法。现有多模态可解释方法对每个模态独立做归因，无法给出连贯的整体解释，也不能迁移到任意预训练多模态架构；CRANE 通过检索式反事实生成填补这一空白。",
+        "facts": [
+          "反事实解释此前只在表格、时序、文本、图像等单模态场景有专门框架",
+          "现有多模态解释方法逐模态独立归因，解释不连贯"
+        ],
+        "so_what": "多模态模型的解释不能靠单模态归因的简单拼接，跨模态一致的反事实需要以检索真实样本为锚点来生成。",
+        "evidence": "",
+        "why": "技术内容"
+      },
+      {
+        "id": "github-022c9970da1a",
+        "title": "anthropics/knowledge-work-plugins — Open source repository of plugins primarily intended for knowledge workers to us",
+        "url": "https://github.com/anthropics/knowledge-work-plugins",
+        "source": "GitHub Trending",
+        "source_type": "repo",
+        "published_at": "2026-10-23",
+        "relevance_score": 8,
+        "track": "execution",
+        "finding": "Anthropic 官方开源的知识工作者插件仓库，主要供 Claude Cowork 场景使用。Python 编写，当日 303 星，反映官方在'AI 办公协作'方向上的生态布局。",
+        "why_read": "模型厂商亲自开源面向办公场景的插件库，意味着竞争焦点正从模型能力转向'智能体+工具'的落地生态。",
+        "evidence_note": "来源转述",
+        "tags": [
+          "新能力新用法"
+        ],
+        "details": [
+          "Anthropic 官方出品，可信度高",
+          "面向知识工作者的 Claude Cowork 插件集合",
+          "插件机制是扩展 Claude 办公能力的标准方式",
+          "开源便于企业按需定制与审计"
+        ],
+        "takeaway": "Anthropic 官方开源的知识工作者插件仓库，主要供 Claude Cowork 场景使用。Python 编写，当日 303 星，反映官方在'AI 办公协作'方向上的生态布局。",
+        "facts": [
+          "Anthropic 官方出品，可信度高",
+          "面向知识工作者的 Claude Cowork 插件集合"
+        ],
+        "so_what": "模型厂商亲自开源面向办公场景的插件库，意味着竞争焦点正从模型能力转向'智能体+工具'的落地生态。",
+        "evidence": "",
+        "why": "技术内容"
+      },
+      {
+        "id": "github-2d4dd75a2349",
+        "title": "luongnv89/claude-howto — A visual, example-driven guide to Claude Code — from basic concepts to advanced ",
+        "url": "https://github.com/luongnv89/claude-howto",
+        "source": "GitHub Trending",
+        "source_type": "repo",
+        "published_at": "2026-10-23",
+        "relevance_score": 8,
+        "track": "execution",
+        "finding": "claude-howto 是一份可视化、示例驱动的 Claude Code 使用指南，覆盖从基础概念到高级智能体玩法，附带可直接复制粘贴的模板。Python 编写（文档型仓库），当日 177 星。",
+        "why_read": "围绕 AI 编码工具的'可复制模板式'教程持续走热，说明工具的瓶颈已从能力转向用户的用法与最佳实践传播。",
+        "evidence_note": "来源转述",
+        "tags": [
+          "新能力新用法",
+          "实践方法"
+        ],
+        "details": [
+          "面向 Claude Code 的图文教程，强调示例驱动",
+          "内容跨度大：从入门概念到多智能体高级用法",
+          "提供即拿即用的 copy-paste 模板，降低上手成本",
+          "177 星说明 Claude Code 用户群对优质教程需求旺盛"
+        ],
+        "takeaway": "claude-howto 是一份可视化、示例驱动的 Claude Code 使用指南，覆盖从基础概念到高级智能体玩法，附带可直接复制粘贴的模板。Python 编写（文档型仓库），当日 177 星。",
+        "facts": [
+          "面向 Claude Code 的图文教程，强调示例驱动",
+          "内容跨度大：从入门概念到多智能体高级用法"
+        ],
+        "so_what": "围绕 AI 编码工具的'可复制模板式'教程持续走热，说明工具的瓶颈已从能力转向用户的用法与最佳实践传播。",
+        "evidence": "",
+        "why": "技术内容"
+      }
+    ],
+    "total": 5,
+    "learning": {
+      "active_references": [],
+      "themes": [],
+      "value_patterns": [],
+      "search_clues": []
+    },
+    "events": [],
+    "source_status": {
+      "errors": {
+        "r/aipromptprogramming": "rate_limited",
+        "r/Anthropic": "rate_limited",
+        "r/artificial": "rate_limited",
+        "r/ArtificialInteligence": "rate_limited",
+        "r/AskReddit": "rate_limited",
+        "r/BeAmazed": "rate_limited",
+        "r/ChatGPT": "rate_limited",
+        "r/ChatGPTCoding": "rate_limited",
+        "r/ClaudeAI": "rate_limited",
+        "r/DeepSeek": "rate_limited"
+      },
+      "hn": "ok",
+      "reddit": {
+        "r/AI_Agents": "ok",
+        "r/aipromptprogramming": "unavailable",
+        "r/Anthropic": "unavailable",
+        "r/artificial": "unavailable",
+        "r/ArtificialInteligence": "unavailable",
+        "r/AskReddit": "unavailable",
+        "r/BeAmazed": "unavailable",
+        "r/ChatGPT": "unavailable",
+        "r/ChatGPTCoding": "unavailable",
+        "r/ClaudeAI": "unavailable",
+        "r/DeepSeek": "unavailable"
+      }
+    },
+    "selection_status": "unavailable",
+    "accounts": [
+      {
+        "handle": "@oran_ge",
+        "status": "partial",
+        "checked_at": "2026-10-23T08:52:54.461671+00:00",
+        "reason": "public_profile_first_page_only",
+        "posts": [
+          {
+            "id": "x-account-2113442974537584672",
+            "handle": "@oran_ge",
+            "kind": "original",
+            "title": "当我们直接得到答案\n也许就不会再快乐 2 1 25 3.8K",
+            "url": "https://x.com/oran_ge/status/2113442974537584672",
+            "published_at": "2026-10-23T01:30:45.658000+00:00",
+            "takeaway": "**核心内容**：一篇哲思短文：当我们能直接得到答案时，也许就失去了快乐。文章暗示探索与求解的过程本身就是快乐的来源，在答案唾手可得的时代尤其值得警惕。\n\n**关键信息**：\n- 直接得到答案可能让人失去快乐\n- 快乐往往来自探索和思考的过程而非结果\n- 暗含对 AI 即时答疑时代的反思\n\n**值得关注**：答案的即时性可能以牺牲思考的乐趣为代价。",
+            "text_type": "quick_read"
+          }
+        ]
+      },
+      {
+        "handle": "@dotey",
+        "status": "partial",
+        "checked_at": "2026-10-23T08:52:54.489950+00:00",
+        "reason": "public_profile_first_page_only",
+        "posts": [
+          {
+            "id": "x-account-2113425021158699384",
+            "handle": "@dotey",
+            "kind": "quote",
+            "title": "SemiAnalysis：Anthropic 在部分账号上测试新额度，每月总量少约两成，5 小时额度多约两成\n\nSemiAnalysis 说 Anthropic 正在对 Claude 订阅额度做 A/",
+            "url": "https://x.com/dotey/status/2113425021158699384",
+            "published_at": "2026-10-23T00:19:25.239000+00:00",
+            "takeaway": "**核心内容**：SemiAnalysis 报道 Anthropic 正对 Claude 订阅额度做 A/B 测试：测试组账号的 5 小时额度提高约 20%，但每月可用总量（折合 API 价格）减少约 20%，即短期更宽松、长期总量收紧。\n\n**关键信息**：\n- Anthropic 对 Claude 订阅额度进行 A/B 测试，不同用户看到不同设置\n- 测试组 5 小时额度提高约 20%\n- 每月总量折合 API 价格减少约 20%\n- 属于用短期体验换长期成本控制的策略调整\n\n**值得关注**：Anthropic 在用「更宽松的短时额度」换取「更低的月度总成本」，实际总供给在收缩。",
+            "text_type": "quick_read",
+            "quoted_url": "https://x.com/SemiAnalysis_/status/2113383965784502444"
+          },
+          {
+            "id": "x-account-2113363249194222032",
+            "handle": "@dotey",
+            "kind": "quote",
+            "title": "旧金山聚变公司 Marathon Fusion 称用中子把水银变成了金子，金价不会受影响，他们真正要卖的是抗癌药原料\n\nMarathon Fusion 是旧金山一家 28 人的创业公司。10 月 21",
+            "url": "https://x.com/dotey/status/2113363249194222032",
+            "published_at": "2026-10-22T20:13:57.655000+00:00",
+            "takeaway": "**核心内容**：旧金山 28 人创业公司 Marathon Fusion 宣称用核聚变产生的中子把水银变成了稳定的金子，速度超过 CERN 2025 年的纪录。但公司表示这不会影响金价，其真正商业模式是出售抗癌药物原料（医用同位素）。\n\n**关键信息**：\n- Marathon Fusion 是旧金山一家 28 人的聚变创业公司\n- 10 月 21 日在 X 宣布用聚变中子将汞嬗变为稳定金\n- 速度号称超过 CERN 2025 年纪录\n- 产量太小不会冲击金价\n- 真正的商业目标是抗癌药原料（医用同位素）\n\n**值得关注**：「点汞成金」只是聚变副产品的噱头，核嬗变真正值钱的是医用同位素而非黄金。",
+            "text_type": "quick_read",
+            "quoted_url": "https://x.com/MarathonFusion/status/2113001073019662481"
+          },
+          {
+            "id": "x-account-2113330196401303844",
+            "handle": "@dotey",
+            "kind": "quote",
+            "title": "我只希望 Claude Code 能支持读取 .agents/skills，别自己搞一套 .claude/skills 58 4 88 21K",
+            "url": "https://x.com/dotey/status/2113330196401303844",
+            "published_at": "2026-10-22T18:02:37.255000+00:00",
+            "takeaway": "**核心内容**：用户吐槽 Claude Code 自建 .claude/skills 目录，而不支持读取通用的 .agents/skills 路径，呼吁工具间统一技能目录标准，避免各家各搞一套。\n\n**关键信息**：\n- Claude Code 使用自己的 .claude/skills 目录\n- 用户希望其兼容通用的 .agents/skills 路径\n- 反映出 AI 编程工具生态缺乏统一配置标准\n- 重复配置给多工具用户带来负担\n\n**值得关注**：AI 编程工具的技能配置亟需跨厂商的通用标准，否则用户将被各家私有目录绑架。",
+            "text_type": "quick_read",
+            "quoted_url": "https://x.com/ClaudeDevs/status/2113328526413996100"
+          },
+          {
+            "id": "x-account-2113312593821794320",
+            "handle": "@dotey",
+            "kind": "quote",
+            "title": "卡普空确认遭受针对其 CAPCOM ID 账户系统的网络攻击，影响全球 11,774,247 个账户。 6 20 11K",
+            "url": "https://x.com/dotey/status/2113312593821794320",
+            "published_at": "2026-10-22T16:52:40.473000+00:00",
+            "takeaway": "**核心内容**：卡普空确认其 CAPCOM ID 账户系统遭受网络攻击，全球约 1177 万个账户受影响，是一起大规模游戏行业数据安全事件。\n\n**关键信息**：\n- 卡普空 CAPCOM ID 系统遭网络攻击\n- 全球 11,774,247 个账户受影响\n- 属于游戏行业罕见的大规模账户泄露事件\n\n**值得关注**：游戏厂商的账户系统已成攻击重点目标，千万级用户数据安全不容小觑。",
+            "text_type": "quick_read",
+            "quoted_url": "https://x.com/H4ckmanac/status/2113192512391160110"
+          }
+        ]
+      },
+      {
+        "handle": "@fkysly",
+        "status": "partial",
+        "checked_at": "2026-10-23T08:52:55.526703+00:00",
+        "reason": "public_profile_first_page_only",
+        "posts": [
+          {
+            "id": "x-account-2113484841736122584",
+            "handle": "@fkysly",
+            "kind": "quote",
+            "title": "Tim 这一波不知道会吸引多少国内的 UP主来 X。\n\n这一波的播放量和互动、以及激励收益、潜在传播价值将远远甩开国内平台了 196",
+            "url": "https://x.com/fkysly/status/2113484841736122584",
+            "published_at": "2026-10-23T04:17:07.576000+00:00",
+            "takeaway": "**核心内容**：影视飓风 Tim 在 X 上爆火，作者认为这波播放量、互动、激励收益和传播价值远超国内平台，可能吸引大量国内 UP 主转战 X 平台。\n\n**关键信息**：\n- Tim（影视飓风）在 X 上获得现象级传播\n- X 的播放量、互动和创作者激励收益被认为远超国内平台\n- 可能引发国内 UP 主迁移 X 的潮流\n\n**值得关注**：X 的创作者经济回报正在对国内内容平台形成虹吸效应。",
+            "text_type": "quick_read",
+            "quoted_url": "https://x.com/mediastorm_en/status/2113263456090763450"
+          },
+          {
+            "id": "x-account-2113470467092938888",
+            "handle": "@fkysly",
+            "kind": "original",
+            "title": "说实话，比起相信大部分工程师自己手写的代码来说，我更愿意相信 AI 写出来的代码。\n\n如果只谈 Opus 5.5 的话，大部分工程师的代码都不值一提。\n\n某些人辛辛苦苦写一周的代码实现，还不如 Opu",
+            "url": "https://x.com/fkysly/status/2113470467092938888",
+            "published_at": "2026-10-23T03:20:00.394000+00:00",
+            "takeaway": "**核心内容**：作者直言比起多数工程师手写的代码，更愿意相信 AI 写的代码：以 Opus 5.5 为例，部分工程师一周的实现还不如它一分钟的输出，引发热议（48 条评论）。\n\n**关键信息**：\n- 作者更信任 AI 生成的代码而非多数工程师手写代码\n- Opus 5.5 一分钟可完成部分工程师一周的工作\n- 观点激进，引发较多争论\n\n**值得关注**：顶级模型的编码能力已越过「多数普通工程师」这条线，工程师的价值锚点正在上移。",
+            "text_type": "quick_read"
+          },
+          {
+            "id": "x-account-2113315724236378236",
+            "handle": "@fkysly",
+            "kind": "original",
+            "title": "只有我唯一关心 Tim @ mediastorm_en 这波创作者收益能拿到多少钱吗？ 2 3 2.2K",
+            "url": "https://x.com/fkysly/status/2113315724236378236",
+            "published_at": "2026-10-22T17:05:06.822000+00:00",
+            "takeaway": "**核心内容**：一条轻松的吐槽：大家都在讨论 Tim 在 X 上爆火，而作者唯一关心的是他这波创作者收益到底能拿多少钱。\n\n**关键信息**：\n- 关注点落在 Tim（mediastorm_en）的 X 创作者收益金额上\n- 侧面反映 X 创作者激励已成为热议话题\n- 属于轻松向的互动帖子\n\n**值得关注**：创作者激励的实际金额已成为衡量 X 平台吸引力最直观的指标。",
+            "text_type": "quick_read"
+          },
+          {
+            "id": "x-account-2113237140369011125",
+            "handle": "@fkysly",
+            "kind": "original",
+            "title": "我发现对 Opus 5.5 来说我只有两种说法了：\n1. 那你看着办吧\n2. 我也没办法啊 8 1 31 35K",
+            "url": "https://x.com/fkysly/status/2113237140369011125",
+            "published_at": "2026-10-22T11:52:50.968000+00:00",
+            "takeaway": "**核心内容**：一条幽默段子：面对 Opus 5.5，作者只剩两句话——「那你看着办吧」和「我也没办法啊」，调侃 AI 强到人类只需放权或认输。\n\n**关键信息**：\n- 调侃 Opus 5.5 能力强到人类无话可说\n- 「你看着办」代表完全放权给 AI\n- 「我也没办法」代表人类能力边界被碾压\n- 以段子形式反映 AI 使用者的无力感与依赖感\n\n**值得关注**：当 AI 足够强时，使用者的角色会从「指导者」退化为「旁观者」。",
+            "text_type": "quick_read"
+          },
+          {
+            "id": "x-account-2113184275084476731",
+            "handle": "@fkysly",
+            "kind": "original",
+            "title": "如果你们这波把股市亏的钱拿来买 Tokens，那都不知道能买多少了。\n\n如果拿来买 5090 或者 DGX Spark，估计早 Tokens 自由了吧 1 1.2K",
+            "url": "https://x.com/fkysly/status/2113184275084476731",
+            "published_at": "2026-10-22T08:22:46.902000+00:00",
+            "takeaway": "**核心内容**：一条调侃帖：如果把股市亏的钱拿去买 Tokens，早就实现「Tokens 自由」了；哪怕买 5090 显卡或 DGX Spark 本地跑模型也更划算，暗讽炒股不如投资算力。\n\n**关键信息**：\n- 股市亏损的钱足够买海量 Tokens\n- 买 5090 或 DGX Spark 本地部署也能实现「Tokens 自由」\n- 调侃算力消费比炒股更值得\n\n**值得关注**：在 AI 时代，算力支出正在被重新定义为一种「稳赚」的自我投资。",
+            "text_type": "quick_read"
+          }
+        ]
+      },
+      {
+        "handle": "@thsottiaux",
+        "status": "partial",
+        "checked_at": "2026-10-23T08:52:55.327162+00:00",
+        "reason": "public_profile_first_page_only",
+        "posts": [
+          {
+            "id": "x-account-2113492187770175603",
+            "handle": "@thsottiaux",
+            "kind": "original",
+            "title": "Day 18/ Decisions API is GA, OpenResponses joined the Linux Foundation, we shipped some performance ",
+            "url": "https://x.com/thsottiaux/status/2113492187770175603",
+            "published_at": "2026-10-23T04:46:19.007000+00:00",
+            "takeaway": "**核心内容**：每日更新系列第 18 天：Decisions API 正式发布（GA）、OpenResponses 加入 Linux 基金会、多项性能改进上线，Uber 全面押注 codex 与 work 产品——但作者调侃「没错，这又是一次额度重置」。\n\n**关键信息**：\n- Decisions API 正式 GA\n- OpenResponses 项目加入 Linux 基金会\n- 发布多项性能改进\n- Uber 全面采用 codex 与 work\n- 以「reset」梗收尾，呼应额度重置话题\n\n**值得关注**：该系列用每日出货的节奏造势，生态合作（Linux 基金会、Uber）是建立行业标准的关键信号。",
+            "text_type": "quick_read"
+          },
+          {
+            "id": "x-account-2113162277688070445",
+            "handle": "@thsottiaux",
+            "kind": "original",
+            "title": "Day 17/ Bet you thought we forgot, but no, it’s reset day today.\n\nAlso good time to remind you to ge",
+            "url": "https://x.com/thsottiaux/status/2113162277688070445",
+            "published_at": "2026-10-22T06:55:22.314000+00:00",
+            "takeaway": "**核心内容**：每日更新系列第 17 天：提醒用户今天是额度重置日，同时建议花 15 分钟开通 Daybreak Blue 权限，避免在事故（incident）发生时手忙脚乱。\n\n**关键信息**：\n- 当日为额度重置日\n- 提醒用户开通 Daybreak Blue 访问权限\n- 开通仅需 15 分钟\n- 强调不要等事故中途才处理权限问题\n\n**值得关注**：应急权限必须提前配置，运维工具的「事前 15 分钟」能避免事故中的致命延误。",
+            "text_type": "quick_read"
+          },
+          {
+            "id": "x-account-2113029655095836957",
+            "handle": "@thsottiaux",
+            "kind": "original",
+            "title": "Dot, Dotter, Dottest 1.9K 110 5K 1.6M",
+            "url": "https://x.com/thsottiaux/status/2113029655095836957",
+            "published_at": "2026-10-21T22:08:22.624000+00:00",
+            "takeaway": "**核心内容**：一条仅有「Dot, Dotter, Dottest」三个词的玩梗帖，属于该每日更新系列的插曲，信息极少但互动量很高（160 万浏览），大概率是围绕状态点/命名比较的幽默内容。\n\n**关键信息**：\n- 内容为英文比较级文字游戏「Dot, Dotter, Dottest」\n- 实质信息极少，属于轻松玩梗\n- 浏览量达 160 万，系列自带流量效应明显\n\n**值得关注**：当一个系列建立起关注度后，即使是无实质内容的玩梗帖也能获得巨大传播。",
+            "text_type": "quick_read"
+          },
+          {
+            "id": "x-account-2112712984644784534",
+            "handle": "@thsottiaux",
+            "kind": "quote",
+            "title": "Day 16/\n\nYou can now cache for 12h in the API and for logged in users across Codex & Work we keep ca",
+            "url": "https://x.com/thsottiaux/status/2112712984644784534",
+            "published_at": "2026-10-21T01:10:02.505000+00:00",
+            "takeaway": "**核心内容**：每日更新系列第 16 天：API 缓存窗口延长至 12 小时；登录用户在 Codex 与 Work 中缓存永久保留，回到旧对话或隔几小时继续都能保证命中缓存、无额外费用惩罚。\n\n**关键信息**：\n- API 缓存时长提升至 12 小时\n- 登录用户在 Codex 与 Work 中缓存永久保留\n- 恢复旧对话或隔数小时继续不再有缓存惩罚\n- 保证命中缓存，降低长对话成本\n\n**值得关注**：缓存策略的延长直接降低了长会话和断续使用的成本，是提升 AI 编程工具体验的关键杠杆。",
+            "text_type": "quick_read",
+            "quoted_url": "https://x.com/OpenAIDevs/status/2112603916076781778"
+          }
+        ]
+      }
+    ]
+  },
+  "summary": null,
+  "generated_at": "2026-10-23T17:32:56.541341"
+}

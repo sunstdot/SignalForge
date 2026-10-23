@@ -1,0 +1,202 @@
+{
+  "247e14aceaa7": {
+    "job_id": "247e14aceaa7",
+    "topic": "OpenAI",
+    "status": "done",
+    "count": 0,
+    "error": null,
+    "brief_slug": "openai",
+    "started_at": "2026-06-25T10:40:46",
+    "finished_at": "2026-06-25T10:41:41"
+  },
+  "3cbf52404fc4": {
+    "job_id": "3cbf52404fc4",
+    "topic": "OpenAI",
+    "status": "error",
+    "count": null,
+    "error": "wingsbot 未产出 last30days 报告文件。agent 返回（节选）：\n文件已成功保存！以下是研究结果摘要：\n\n---\n\n## 📊 OpenAI — 近30天研究结果\n\n**时间范围：** 2026-05-26 至 2026-06-25\n**数据来源：** X (18条帖子) + Hacker News (30条故事)\n\n### 核心发现\n\n**1. 🔥 OpenAI 自研 AI 芯片「Jalapeño」官宣**\n@FinanceYF5 报道：OpenAI 第一块自研 AI 芯片正式官宣，联合 Broadcom 量产，专为 ChatGPT、Codex 和 Agent 产品的 LLM 推理负载定制。从模型到产品，再到底层芯片——OpenAI 在补全全栈，对 NVIDIA 的依赖开始松动。\n\n**2. 💰 微软持有 OpenAI ~25% 股份**\n@TheNarrenschiff 评论：对比 NVDA 和 MSFT 市值，微软持有 OpenAI 约 25% 的股份，引发市场讨论。\n\n**3. 🏗️ Stargate Argentina 项目**\n@maxifirtman 提",
+    "brief_slug": null,
+    "started_at": "2026-06-25T10:56:49",
+    "finished_at": "2026-06-25T10:56:53"
+  },
+  "e8a54417625d": {
+    "job_id": "e8a54417625d",
+    "topic": "OpenAI",
+    "status": "done",
+    "count": 10,
+    "error": null,
+    "brief_slug": "openai",
+    "started_at": "2026-06-25T20:00:02",
+    "finished_at": "2026-06-25T20:01:10"
+  },
+  "e87d8d7e290b": {
+    "job_id": "e87d8d7e290b",
+    "topic": "openAI相关的信息",
+    "status": "done",
+    "count": 0,
+    "error": null,
+    "brief_slug": "openai",
+    "started_at": "2026-06-25T20:24:13",
+    "finished_at": "2026-06-25T20:25:34"
+  },
+  "8e2a5ae8269d": {
+    "job_id": "8e2a5ae8269d",
+    "topic": "SpaceX",
+    "status": "running",
+    "count": null,
+    "error": null,
+    "brief_slug": null,
+    "started_at": "2026-06-26T10:59:14",
+    "finished_at": null
+  },
+  "41cfc34489ea": {
+    "job_id": "41cfc34489ea",
+    "topic": "SpaceX",
+    "status": "done",
+    "count": 15,
+    "error": null,
+    "brief_slug": "spacex-1c41e0e9",
+    "started_at": "2026-06-26T11:29:21",
+    "finished_at": "2026-06-26T11:32:58"
+  },
+  "46753d37d8ed": {
+    "job_id": "46753d37d8ed",
+    "topic": "Anthropic",
+    "status": "error",
+    "count": null,
+    "error": "wingsbot 未产出 last30days 报告文件。agent 返回（节选）：\nRaw v3 markdown 已成功保存。现在呈现研究结果：\n\n---\n\n🌐 last30days v3.0.0 · synced 2026-06-26\n\nWhat I learned:\n\n**Anthropic 发布 Claude 4.5 Opus，性能全面超越 GPT-5** - 据 [@Anthropic](https://x.com/Anthropic) 官方宣布，Claude 4.5 Opus 在多项基准测试中超越 GPT-5，包括 MMLU-Pro（89.2% vs 88.7%）、GPQA Diamond（86.5% vs 84.1%）、SWE-bench Verified（72.3% vs 70.1%）。该推文获得 **18,442 likes / 3,891 rt**，是本月最高互动量的事件。\n\n**Claude 4.5 Opus 定价争议** - 输入 $30/百万 token，输出 $150/百万 token，相比 GPT-5 贵 3 倍。[@nickfloats](https:",
+    "brief_slug": null,
+    "started_at": "2026-06-26T17:54:38",
+    "finished_at": "2026-06-26T17:54:51"
+  },
+  "e42771449fe7": {
+    "job_id": "e42771449fe7",
+    "topic": "唐杰",
+    "status": "error",
+    "count": null,
+    "error": "wingsbot 未产出 last30days 报告文件。agent 返回（节选）：\nRaw v3 markdown 已成功保存。现在呈现研究结果：\n\n---\n\n🌐 last30days v3.0.0 · synced 2026-06-26\n\nWhat I learned:\n\n**唐杰（Jie Tang）—— 清华大学教授、智谱AI（Zhipu AI）创始人** - 唐杰是清华大学计算机系教授、博士生导师，也是智谱AI（Zhipu AI）的创始人兼首席科学家。他领导开发了 GLM（General Language Model）系列大模型，包括 GLM-130B、ChatGLM 系列等。\n\n**智谱AI 发布 GLM-5 大模型** - 据 [@ZhipuAI](https://x.com/ZhipuAI) 官方宣布，智谱AI 发布了新一代 GLM-5 大模型，在多项中文和英文基准测试中表现优异。该模型在 C-Eval、MMLU 等评测中达到领先水平。\n\n**智谱AI 完成新一轮融资** - 智谱AI 近期完成了新一轮融资，估值达到新高。投资方包括多家国有资本和战略投资者，显示中国 AI",
+    "brief_slug": null,
+    "started_at": "2026-06-30T16:43:46",
+    "finished_at": "2026-06-30T16:44:05"
+  },
+  "a75d24f32749": {
+    "job_id": "a75d24f32749",
+    "topic": "唐杰",
+    "status": "error",
+    "count": null,
+    "error": "wingsbot 未产出 last30days 报告文件。agent 返回（节选）：\nRaw v3 markdown 已成功保存。现在呈现研究结果：\n\n---\n\n🌐 last30days v3.0.0 · synced 2026-06-26\n\nWhat I learned:\n\n**唐杰（Jie Tang）—— 清华大学教授、智谱AI（Zhipu AI）创始人** - 唐杰是清华大学计算机系教授、博士生导师，也是智谱AI（Zhipu AI）的创始人兼首席科学家。他领导开发了 GLM（General Language Model）系列大模型，包括 GLM-130B、ChatGLM 系列等。\n\n**智谱AI 发布 GLM-5 大模型** - 据 [@ZhipuAI](https://x.com/ZhipuAI) 官方宣布，智谱AI 发布了新一代 GLM-5 大模型，在多项中文和英文基准测试中表现优异。该模型在 C-Eval、MMLU 等评测中达到领先水平。\n\n**智谱AI 完成新一轮融资** - 智谱AI 近期完成了新一轮融资，估值达到新高。投资方包括多家国有资本和战略投资者，显示中国 AI",
+    "brief_slug": null,
+    "started_at": "2026-06-30T17:13:09",
+    "finished_at": "2026-06-30T17:13:16"
+  },
+  "fb3321693514": {
+    "job_id": "fb3321693514",
+    "topic": "唐杰",
+    "status": "error",
+    "count": null,
+    "error": "wingsbot 未产出 last30days 报告文件。agent 返回（节选）：\nRaw v3 markdown 已成功保存。现在呈现研究结果：\n\n---\n\n🌐 last30days v3.0.0 · synced 2026-06-26\n\nWhat I learned:\n\n**唐杰（Jie Tang）—— 清华大学教授、智谱AI（Zhipu AI）创始人** - 唐杰是清华大学计算机系教授、博士生导师，也是智谱AI（Zhipu AI）的创始人兼首席科学家。他领导开发了 GLM（General Language Model）系列大模型，包括 GLM-130B、ChatGLM 系列等。\n\n**智谱AI 发布 GLM-5 大模型** - 据 [@ZhipuAI](https://x.com/ZhipuAI) 官方宣布，智谱AI 发布了新一代 GLM-5 大模型，在多项中文和英文基准测试中表现优异。该模型在 C-Eval、MMLU 等评测中达到领先水平。\n\n**智谱AI 完成新一轮融资** - 智谱AI 近期完成了新一轮融资，估值达到新高。投资方包括多家国有资本和战略投资者，显示中国 AI",
+    "brief_slug": null,
+    "started_at": "2026-06-30T17:55:14",
+    "finished_at": "2026-06-30T17:55:28"
+  },
+  "77f492c0b82c": {
+    "job_id": "77f492c0b82c",
+    "topic": "唐杰",
+    "status": "error",
+    "count": null,
+    "error": "wingsbot 未产出 last30days 报告文件。agent 返回（节选）：\nRaw v3 markdown 已成功保存。现在呈现研究结果：\n\n---\n\n🌐 last30days v3.0.0 · synced 2026-06-26\n\nWhat I learned:\n\n**唐杰（Jie Tang）—— 清华大学教授、智谱AI（Zhipu AI）创始人** - 唐杰是清华大学计算机系教授、博士生导师，也是智谱AI（Zhipu AI）的创始人兼首席科学家。他领导开发了 GLM（General Language Model）系列大模型，包括 GLM-130B、ChatGLM 系列等。\n\n**智谱AI 发布 GLM-5 大模型** - 据 [@ZhipuAI](https://x.com/ZhipuAI) 官方宣布，智谱AI 发布了新一代 GLM-5 大模型，在多项中文和英文基准测试中表现优异。该模型在 C-Eval、MMLU 等评测中达到领先水平。\n\n**智谱AI 完成新一轮融资** - 智谱AI 近期完成了新一轮融资，估值达到新高。投资方包括多家国有资本和战略投资者，显示中国 AI",
+    "brief_slug": null,
+    "started_at": "2026-06-30T18:10:40",
+    "finished_at": "2026-06-30T18:10:46"
+  },
+  "da1e94973152": {
+    "job_id": "da1e94973152",
+    "topic": "唐杰",
+    "status": "error",
+    "count": null,
+    "error": "wingsbot 未产出 last30days 报告文件。agent 返回（节选）：\nRaw v3 markdown 已成功保存。现在呈现研究结果：\n\n---\n\n🌐 last30days v3.0.0 · synced 2026-06-26\n\nWhat I learned:\n\n**唐杰（Jie Tang）—— 清华大学教授、智谱AI（Zhipu AI）创始人** - 唐杰是清华大学计算机系教授、博士生导师，也是智谱AI（Zhipu AI）的创始人兼首席科学家。他领导开发了 GLM（General Language Model）系列大模型，包括 GLM-130B、ChatGLM 系列等。\n\n**智谱AI 发布 GLM-5 大模型** - 据 [@ZhipuAI](https://x.com/ZhipuAI) 官方宣布，智谱AI 发布了新一代 GLM-5 大模型，在多项中文和英文基准测试中表现优异。该模型在 C-Eval、MMLU 等评测中达到领先水平。\n\n**智谱AI 完成新一轮融资** - 智谱AI 近期完成了新一轮融资，估值达到新高。投资方包括多家国有资本和战略投资者，显示中国 AI",
+    "brief_slug": null,
+    "started_at": "2026-06-30T19:13:22",
+    "finished_at": "2026-06-30T19:13:28"
+  },
+  "3cf1b85f266f": {
+    "job_id": "3cf1b85f266f",
+    "topic": "唐杰",
+    "status": "error",
+    "count": null,
+    "error": "wingsbot 未产出 last30days JSON 报告文件。agent 返回（节选）：\nRaw v3 JSON 已成功保存。现在呈现研究结果：\n\n---\n\n🌐 last30days v3.0.0 · synced 2026-06-26\n\nWhat I learned:\n\n**唐杰（Jie Tang）—— 清华大学教授、智谱AI（Zhipu AI）创始人** - 唐杰是清华大学计算机系教授、博士生导师，也是智谱AI（Zhipu AI）的创始人兼首席科学家。他领导开发了 GLM（General Language Model）系列大模型，包括 GLM-130B、ChatGLM 系列等。\n\n**智谱AI 发布 GLM-5 大模型** - 据 [@ZhipuAI](https://x.com/ZhipuAI) 官方宣布，智谱AI 发布了新一代 GLM-5 大模型，在多项中文和英文基准测试中表现优异。该模型在 C-Eval、MMLU 等评测中达到领先水平。\n\n**智谱AI 完成新一轮融资** - 智谱AI 近期完成了新一轮融资，估值达到新高。投资方包括多家国有资本和战略投资者，显示中国 A",
+    "brief_slug": null,
+    "started_at": "2026-07-01T10:13:12",
+    "finished_at": "2026-07-01T10:13:29"
+  },
+  "ca327ae0a8d7": {
+    "job_id": "ca327ae0a8d7",
+    "topic": "唐杰",
+    "status": "done",
+    "count": 14,
+    "error": null,
+    "brief_slug": "topic-0064c8c5",
+    "started_at": "2026-07-01T15:22:32",
+    "finished_at": "2026-07-01T15:24:27"
+  },
+  "c8787f353bce": {
+    "job_id": "c8787f353bce",
+    "topic": "Anthropic",
+    "status": "done",
+    "count": 41,
+    "error": null,
+    "brief_slug": "anthropic-75d68f6d",
+    "started_at": "2026-07-01T15:33:43",
+    "finished_at": "2026-07-01T15:36:23"
+  },
+  "b737843fd688": {
+    "job_id": "b737843fd688",
+    "topic": "AI sales automation startup opportunities",
+    "status": "error",
+    "count": null,
+    "error": "wingsbot is not importable. Run `pip install -e /Users/shitaosun/Project/AI-Personal/wingsbot` in the SignalForge environment.",
+    "brief_slug": null,
+    "started_at": "2026-07-10T15:25:38",
+    "finished_at": "2026-07-10T15:25:38"
+  },
+  "307e8aa36d7b": {
+    "job_id": "307e8aa36d7b",
+    "topic": "AI sales automation startup opportunities",
+    "status": "error",
+    "count": null,
+    "error": "wingsbot is not importable. Run `pip install -e /Users/shitaosun/Project/AI-Personal/wingsbot` in the SignalForge environment.",
+    "brief_slug": null,
+    "started_at": "2026-07-10T17:41:44",
+    "finished_at": "2026-07-10T17:41:44"
+  },
+  "e3127bdbdd67": {
+    "job_id": "e3127bdbdd67",
+    "topic": "AI sales automation startup opportunities",
+    "status": "done",
+    "count": 27,
+    "error": null,
+    "brief_slug": null,
+    "started_at": "2026-07-10T17:42:04",
+    "finished_at": "2026-07-10T17:49:43"
+  },
+  "784ea6331f3d": {
+    "job_id": "784ea6331f3d",
+    "topic": "融资",
+    "status": "done",
+    "count": 19,
+    "error": null,
+    "brief_slug": null,
+    "started_at": "2026-07-20T17:00:33",
+    "finished_at": "2026-07-20T17:05:06"
+  },
+  "21bbce4ea8c7": {
+    "job_id": "21bbce4ea8c7",
+    "topic": "kimi",
+    "status": "done",
+    "count": 16,
+    "error": null,
+    "brief_slug": null,
+    "started_at": "2026-07-20T17:10:24",
+    "finished_at": "2026-07-20T17:12:52"
+  }
+}

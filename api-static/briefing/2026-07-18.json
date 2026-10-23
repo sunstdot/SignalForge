@@ -1,0 +1,60 @@
+{
+  "id": "4c73db99-4bfd-4e3c-aa88-65f0c3b4e807",
+  "date": "2026-07-18",
+  "items": [
+    {
+      "id": "vpr-funding-32a103d5c372",
+      "title": "Netflix / InterPositive Acquisition funding",
+      "source": "Venture Product Radar",
+      "source_type": "funding",
+      "url": "https://techcrunch.com/2026/07/19/netflix-paid-587m-for-ben-afflecks-ai-filmmaking-startup",
+      "summary": "$587M (acquisition) - Acquisition - Netflix (acquirer)",
+      "category": [
+        "融资"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-07-18"
+    },
+    {
+      "id": "vpr-product-f7649e215025",
+      "title": "Autoplot",
+      "source": "Venture Product Radar",
+      "source_type": "product",
+      "url": "https://www.producthunt.com/products/autoplot",
+      "summary": "<p>\n            Unify data analysis and plotting in one powerful workspace\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/autoplot?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1200936?app_id=339\">Link</a>\n          </p>",
+      "category": [
+        "AI venture funding product launches startup signals"
+      ],
+      "relevance_score": 3,
+      "created_at": "2026-07-18"
+    },
+    {
+      "id": "vpr-product-9dfca342ca36",
+      "title": "CaptureKit",
+      "source": "Venture Product Radar",
+      "source_type": "product",
+      "url": "https://www.producthunt.com/products/capturekit-2",
+      "summary": "<p>\n            Keep your desktop clean by auto-organizing screenshots.\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/capturekit-2?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1200351?app_id=339\">Link</a>\n          </p>",
+      "category": [
+        "AI venture funding product launches startup signals"
+      ],
+      "relevance_score": 3,
+      "created_at": "2026-07-18"
+    },
+    {
+      "id": "vpr-product-99da2e5c9a5c",
+      "title": "Backbeat Forge",
+      "source": "Venture Product Radar",
+      "source_type": "product",
+      "url": "https://www.producthunt.com/products/backbeat-forge",
+      "summary": "<p>\n            Turn drum audio into a score you can actually edit\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/backbeat-forge?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1200821?app_id=339\">Link</a>\n          </p>",
+      "category": [
+        "AI venture funding product launches startup signals"
+      ],
+      "relevance_score": 3,
+      "created_at": "2026-07-18"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-08-10T14:49:13.938794"
+}

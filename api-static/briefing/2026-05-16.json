@@ -1,0 +1,422 @@
+{
+  "id": "74b55bf1-092d-40c4-8e68-a78abf71efbe",
+  "date": "2026-05-16",
+  "items": [
+    {
+      "id": "github-3b31abe37078",
+      "title": "tinyhumansai/openhuman — Your Personal AI super intelligence. Private, Simple and extremely powerful.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/tinyhumansai/openhuman",
+      "summary": "Your Personal AI super intelligence. Private, Simple and extremely powerful. | 🔥 1696 stars today | Language: Rust",
+      "category": [
+        "开源项目",
+        "Rust"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-14"
+    },
+    {
+      "id": "github-8c0e793b57fc",
+      "title": "rohitg00/agentmemory — #1 Persistent memory for AI coding agents based on real-world benchmarks",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/rohitg00/agentmemory",
+      "summary": "#1 Persistent memory for AI coding agents based on real-world benchmarks | 🔥 1379 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-14"
+    },
+    {
+      "id": "github-ecb7de9cc8a0",
+      "title": "obra/superpowers — An agentic skills framework &amp; software development methodology that works.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/obra/superpowers",
+      "summary": "An agentic skills framework &amp; software development methodology that works. | 🔥 1401 stars today | Language: Shell",
+      "category": [
+        "开源项目",
+        "Shell"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-14"
+    },
+    {
+      "id": "github-9b9d31207248",
+      "title": "yikart/AiToEarn — Let's use AI to Earn!",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/yikart/AiToEarn",
+      "summary": "Let's use AI to Earn! | 🔥 981 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-14"
+    },
+    {
+      "id": "github-efac7acf711e",
+      "title": "influxdata/telegraf — Agent for collecting, processing, aggregating, and writing metrics, logs, and ot",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/influxdata/telegraf",
+      "summary": "Agent for collecting, processing, aggregating, and writing metrics, logs, and other arbitrary data. | 🔥 13 stars today | Language: Go",
+      "category": [
+        "开源项目",
+        "Go"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-14"
+    },
+    {
+      "id": "github-4f0cca454833",
+      "title": "millionco/react-doctor — Your agent writes bad React. This catches it",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/millionco/react-doctor",
+      "summary": "Your agent writes bad React. This catches it | 🔥 604 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-14"
+    },
+    {
+      "id": "github-c6876fab784a",
+      "title": "K-Dense-AI/scientific-agent-skills — A set of ready to use Agent Skills for research, science, engineering, analysis,",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "summary": "A set of ready to use Agent Skills for research, science, engineering, analysis, finance and writing. | 🔥 99 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-14"
+    },
+    {
+      "id": "github-51bfbb3ca05d",
+      "title": "danielmiessler/Personal_AI_Infrastructure — Agentic AI Infrastructure for magnifying HUMAN capabilities.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/danielmiessler/Personal_AI_Infrastructure",
+      "summary": "Agentic AI Infrastructure for magnifying HUMAN capabilities. | 🔥 435 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-14"
+    },
+    {
+      "id": "github-0c632f3bd507",
+      "title": "supertone-inc/supertonic — Lightning-Fast, On-Device, Multilingual TTS — running natively via ONNX.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/supertone-inc/supertonic",
+      "summary": "Lightning-Fast, On-Device, Multilingual TTS — running natively via ONNX. | 🔥 859 stars today | Language: Swift",
+      "category": [
+        "开源项目",
+        "Swift"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-14"
+    },
+    {
+      "id": "github-9e3b2f422063",
+      "title": "CloakHQ/CloakBrowser — Stealth Chromium that passes every bot detection test. Drop-in Playwright replac",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/CloakHQ/CloakBrowser",
+      "summary": "Stealth Chromium that passes every bot detection test. Drop-in Playwright replacement with source-level fingerprint patches. 30/30 tests passed. | 🔥 1835 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-14"
+    },
+    {
+      "id": "github-06e6a3ccccc3",
+      "title": "mattpocock/skills — Skills for Real Engineers. Straight from my .claude directory.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/mattpocock/skills",
+      "summary": "Skills for Real Engineers. Straight from my .claude directory. | 🔥 3392 stars today | Language: Shell",
+      "category": [
+        "开源项目",
+        "Shell"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-14"
+    },
+    {
+      "id": "github-2749c6c7bf77",
+      "title": "ArthurBrussee/brush — 3D Reconstruction for all",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/ArthurBrussee/brush",
+      "summary": "3D Reconstruction for all | 🔥 81 stars today | Language: Rust",
+      "category": [
+        "开源项目",
+        "Rust"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-14"
+    },
+    {
+      "id": "github-b1e504c026ad",
+      "title": "imthenachoman/How-To-Secure-A-Linux-Server — An evolving how-to guide for securing a Linux server.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/imthenachoman/How-To-Secure-A-Linux-Server",
+      "summary": "An evolving how-to guide for securing a Linux server. | 🔥 234 stars today",
+      "category": [
+        "开源项目"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-14"
+    },
+    {
+      "id": "github-5a3e932be56f",
+      "title": "apernet/hysteria — Hysteria is a powerful, lightning fast and censorship resistant proxy.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/apernet/hysteria",
+      "summary": "Hysteria is a powerful, lightning fast and censorship resistant proxy. | 🔥 485 stars today | Language: Go",
+      "category": [
+        "开源项目",
+        "Go"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-14"
+    },
+    {
+      "id": "github-8a39575133bf",
+      "title": "rasbt/LLMs-from-scratch — Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "summary": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step | 🔥 821 stars today | Language: Jupyter Notebook",
+      "category": [
+        "开源项目",
+        "Jupyter Notebook"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-14"
+    },
+    {
+      "id": "github-3bf999ed99e1",
+      "title": "ton-blockchain/acton — Toolchain for TON smart contract development and beyond",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/ton-blockchain/acton",
+      "summary": "Toolchain for TON smart contract development and beyond | 🔥 18 stars today | Language: Rust",
+      "category": [
+        "开源项目",
+        "Rust"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-14"
+    },
+    {
+      "id": "github-41a3a6df42c5",
+      "title": "trycua/cua — Open-source infrastructure for Computer-Use Agents. Sandboxes, SDKs, and benchma",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/trycua/cua",
+      "summary": "Open-source infrastructure for Computer-Use Agents. Sandboxes, SDKs, and benchmarks to train and evaluate AI agents that can control full desktops (macOS, Linux, Windows). | 🔥 245 stars today | Langua",
+      "category": [
+        "开源项目",
+        "HTML"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-14"
+    },
+    {
+      "id": "github-8ecb815d1d90",
+      "title": "github/spec-kit — 💫 Toolkit to help you get started with Spec-Driven Development",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/github/spec-kit",
+      "summary": "💫 Toolkit to help you get started with Spec-Driven Development | 🔥 1120 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-14"
+    },
+    {
+      "id": "hf-paper-74618f62192f",
+      "title": "PersonalAI 2.0: Enhancing knowledge graph traversal/retrieval with planning mechanism for Personalized LLM Agents",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.13481",
+      "summary": "We introduce PersonalAI 2.0 (PAI-2), a novel framework, designed to enhance large language model (LLM) based systems through integration of external knowledge graphs (KG). The proposed approach addres",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-14"
+    },
+    {
+      "id": "hf-paper-5aa728c6c951",
+      "title": "From Pixels to Concepts: Do Segmentation Models Understand What They Segment?",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.09591",
+      "summary": "Segmentation is a fundamental vision task underlying numerous downstream applications. Recent promptable segmentation models, such as Segment Anything Model 3 (SAM3), extend segmentation from category",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-14"
+    },
+    {
+      "id": "hf-paper-f0d8486b98ed",
+      "title": "FrameSkip: Learning from Fewer but More Informative Frames in VLA Training",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.13757",
+      "summary": "Vision-Language-Action (VLA) policies are commonly trained from dense robot demonstration trajectories, often collected through teleoperation, by sampling every recorded frame as if it provided equall",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-14"
+    },
+    {
+      "id": "hf-paper-bfae1fb25360",
+      "title": "Offline Preference Optimization for Rectified Flow with Noise-Tracked Pairs",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.09433",
+      "summary": "Existing preference datasets for text-to-image models typically store only the final winner/loser images. This representation is insufficient for rectified flow (RF) models, whose generation is natura",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-14"
+    },
+    {
+      "id": "hf-paper-1e7bc2464b01",
+      "title": "MulTaBench: Benchmarking Multimodal Tabular Learning with Text and Image",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.10616",
+      "summary": "Tabular Foundation Models have recently established the state of the art in supervised tabular learning, by leveraging pretraining to learn generalizable representations of numerical and categorical s",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-14"
+    },
+    {
+      "id": "hf-paper-da91d00b1211",
+      "title": "Learning Agentic Policy from Action Guidance",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.12004",
+      "summary": "Agentic reinforcement learning (RL) for Large Language Models (LLMs) critically depends on the exploration capability of the base policy, as training signals emerge only within its in-capability regio",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-14"
+    },
+    {
+      "id": "hf-paper-e83ffc6c87b0",
+      "title": "Vividh-ASR: A Complexity-Tiered Benchmark and Optimization Dynamics for Robust Indic Speech Recognition",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.13087",
+      "summary": "Fine-tuning multilingual ASR models like Whisper for low-resource languages often improves read speech but degrades spontaneous audio performance, a phenomenon we term studio-bias. To diagnose this mi",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-14"
+    },
+    {
+      "id": "hf-paper-ed701efa1e3a",
+      "title": "F-GRPO: Factorized Group-Relative Policy Optimization for Unified Candidate Generation and Ranking",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.12995",
+      "summary": "Traditional retrieval pipelines optimize utility through stages of candidate retrieval and reranking, where ranking operates over a predefined candidate set. Large Language Models (LLMs) broaden this ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-14"
+    },
+    {
+      "id": "hf-paper-839510b6e474",
+      "title": "Predicting Decisions of AI Agents from Limited Interaction through Text-Tabular Modeling",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.12411",
+      "summary": "AI agents negotiate and transact in natural language with unfamiliar counterparts: a buyer bot facing an unknown seller, or a procurement assistant negotiating with a supplier. In such interactions, t",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-14"
+    },
+    {
+      "id": "hf-paper-a8578fa95a01",
+      "title": "MemReread: Enhancing Agentic Long-Context Reasoning via Memory-Guided Rereading",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.10268",
+      "summary": "To tackle long-context reasoning tasks without the quadratic complexity of standard attention mechanisms, approaches based on agent memory have emerged, which typically maintain a dynamically updated ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-14"
+    },
+    {
+      "id": "l30-tiktok-ef167c05fb51",
+      "title": "Peter Steinberger literally just fixed the biggest problem with OpenClaw. And it will save your workflows. We know the last few weeks were r",
+      "source": "TikTok",
+      "source_type": "tiktok",
+      "url": "https://www.tiktok.com/@jgoldieseo/video/7640626277971545357",
+      "summary": "Peter Steinberger literally just fixed the biggest problem with OpenClaw. And it will save your workflows. We know the last few weeks were rough. The tool kept crashing. Your memory got wiped out. Hermes from News Research even passed them up. It was a huge mess for business owners. But version 5.12 changes everything. It is much lighter now. It runs smoo...",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 6,
+      "created_at": "2026-05-16"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-06-19T10:22:35.812053"
+}

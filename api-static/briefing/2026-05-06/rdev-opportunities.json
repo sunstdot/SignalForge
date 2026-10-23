@@ -1,0 +1,603 @@
+{
+  "date": "2026-05-06",
+  "solutions": [
+    {
+      "type": "业务赋能",
+      "title": "用TabPFN模型提升表格数据预测效率",
+      "trigger": "出现表格数据基础模型TabPFN",
+      "scenario": "在业务数据分析、用户行为预测、风控建模等场景中，目前使用传统机器学习流程繁琐，核心痛点在于特征工程耗时、模型调优周期长",
+      "ai_solution": "引入TabPFN作为表格数据的预训练基础模型，快速生成高质量预测结果",
+      "implementation": "集成到数据分析平台或BI工具中作为预测模块",
+      "audience": [
+        "后端",
+        "产品运营",
+        "技术TL"
+      ],
+      "impact": "将预测模型开发周期从天级缩短到分钟级",
+      "difficulty": "中",
+      "resistance": "需确认模型效果与业务场景的匹配度",
+      "scores": {
+        "efficiency": 9,
+        "feasibility": 7,
+        "business_impact": 7,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "PriorLabs/TabPFN — ⚡ TabPFN: Foundation Model for Tabular Data ⚡",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/PriorLabs/TabPFN",
+      "item_id": "github-005d5badcbcf"
+    },
+    {
+      "type": "业务赋能",
+      "title": "基于Qwen3.6构建多模态智能客服",
+      "trigger": "阿里发布Qwen3.6-27B多模态模型下载量超160万",
+      "scenario": "在电商、客服场景中，目前使用规则回复或小模型效果有限，核心痛点在于复杂问题理解能力弱、多轮对话体验差",
+      "ai_solution": "基于Qwen3.6-27B构建企业级智能客服，支持图像理解+文本对话多模态交互",
+      "implementation": "部署为云端API服务，对接现有客服系统或App入口",
+      "audience": [
+        "产品运营",
+        "客户端",
+        "大前端"
+      ],
+      "impact": "预计可处理60%常规咨询，降低人工客服成本30%",
+      "difficulty": "中",
+      "resistance": "需解决模型幻觉问题，确保回答准确性",
+      "scores": {
+        "efficiency": 7,
+        "feasibility": 7,
+        "business_impact": 8,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "🤗 Qwen/Qwen3.6-27B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.6-27B",
+      "item_id": "hf-model-4481c76e29d1"
+    },
+    {
+      "type": "研发提效",
+      "title": "跨格式数据转换中间件",
+      "trigger": "格式比应用更重要，强调数据互操作性",
+      "scenario": "在多端数据对接场景中，前端、客户端、后端数据格式不统一，联调耗时",
+      "ai_solution": "开发数据格式自动转换服务，支持JSON/XML/Protobuf/Parquet等格式互转",
+      "implementation": "Node.js中间件 + 格式解析库 + 飞书Webhooks触发",
+      "audience": [
+        "大前端",
+        "客户端",
+        "后端"
+      ],
+      "impact": "联调时间减少50%，数据格式错误率降低90%",
+      "difficulty": "低",
+      "resistance": "现有系统数据格式已固化，改造成本",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 9,
+        "business_impact": 5,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "A Social Filesystem",
+      "source": "Overreacted",
+      "source_type": "rss",
+      "source_url": "https://overreacted.io/a-social-filesystem/",
+      "item_id": "rss-overreacted-f8483a3b9cee"
+    },
+    {
+      "type": "业务赋能",
+      "title": "基于MRC协议优化内部AI训练集群",
+      "trigger": "OpenAI发布MRC协议提升大规模AI训练网络性能",
+      "scenario": "在大模型训练场景中，目前使用传统TCP协议面临网络抖动导致的训练中断问题，核心痛点在于集群网络不稳定影响训练效率",
+      "ai_solution": "引入MRC多路径可靠连接协议，通过多路径传输和智能重传机制提升网络韧性，降低训练失败率",
+      "implementation": "集成到公司内部GPU集群调度系统，作为底层网络层升级",
+      "audience": [
+        "后端",
+        "技术TL"
+      ],
+      "impact": "预计可将大规模训练任务的网络相关中断减少60%，提升GPU利用率15%",
+      "difficulty": "高",
+      "resistance": "需要基础设施团队深度配合，升级成本较高",
+      "scores": {
+        "efficiency": 7,
+        "feasibility": 5,
+        "business_impact": 8,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "Unlocking large scale AI training networks with MRC (Multipath Reliable Connection)",
+      "source": "OpenAI Blog",
+      "source_type": "blog",
+      "source_url": "https://openai.com/index/mrc-supercomputer-networking",
+      "item_id": "rss-openai-blog-2c0d932a3bc4"
+    },
+    {
+      "type": "研发提效",
+      "title": "用DocuSeal替代纸质合同签署流程",
+      "trigger": "GitHub出现开源DocuSign替代方案获高star",
+      "scenario": "在团队合同、协议签署场景中，目前使用纸质打印+扫描流程效率低下，核心痛点在于审批流程冗长、归档管理困难",
+      "ai_solution": "部署开源DocuSeal实现线上文档签署、模板填充、自动归档",
+      "implementation": "通过Docker部署集成到内部审批系统或飞书机器人",
+      "audience": [
+        "产品运营",
+        "技术TL"
+      ],
+      "impact": "合同签署周期从周级缩短至天级，节省打印扫描人力",
+      "difficulty": "低",
+      "resistance": "法务部门对电子签名法律效力的认可",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 8,
+        "business_impact": 6,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "docusealco/docuseal — Open source DocuSign alternative. Create, fill, and sign digital documents ✍️",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/docusealco/docuseal",
+      "item_id": "github-fefd490b2ead"
+    },
+    {
+      "type": "业务赋能",
+      "title": "商业化文档签署SDK嵌入App",
+      "trigger": "开源文档签署工具可嵌入商业化产品",
+      "scenario": "在电商、租赁、金融等需要合同签署的业务中，目前接入第三方签署API成本高，核心痛点在于定制化程度低、费用昂贵",
+      "ai_solution": "基于开源DocuSeal二次开发，提供可定制的签署SDK给客户使用",
+      "implementation": "封装为SaaS服务或私有化部署方案提供给B端客户",
+      "audience": [
+        "产品运营",
+        "技术TL"
+      ],
+      "impact": "降低签署功能接入成本50%，提升业务闭环率",
+      "difficulty": "中",
+      "resistance": "需要投入开发资源进行产品化封装",
+      "scores": {
+        "efficiency": 6,
+        "feasibility": 7,
+        "business_impact": 7,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "docusealco/docuseal — Open source DocuSign alternative. Create, fill, and sign digital documents ✍️",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/docusealco/docuseal",
+      "item_id": "github-fefd490b2ead"
+    },
+    {
+      "type": "研发提效",
+      "title": "用Scrapling框架自动化竞品数据采集",
+      "trigger": "GitHub出现自适应Web爬虫框架获高star",
+      "scenario": "在竞品分析、市场监控场景中，目前使用定制化爬虫维护成本高，核心痛点在于网站改版导致爬虫失效需频繁重构",
+      "ai_solution": "引入自适应Scrapling框架，利用其自动处理反爬、IP封禁、动态内容加载等能力",
+      "implementation": "部署为内部数据采集服务，封装为API供产品和运营使用",
+      "audience": [
+        "产品运营",
+        "后端"
+      ],
+      "impact": "降低爬虫维护工作量70%，提升数据采集及时性",
+      "difficulty": "中",
+      "resistance": "需遵守robots协议，避免法律风险",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 7,
+        "business_impact": 6,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "D4Vinci/Scrapling — 🕷️ An adaptive Web Scraping framework that handles everything from a single requ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/D4Vinci/Scrapling",
+      "item_id": "github-2c69330ad020"
+    },
+    {
+      "type": "研发提效",
+      "title": "用Qwen3.6模型辅助代码审查",
+      "trigger": "Qwen3.6-27B具备图像文本理解能力",
+      "scenario": "在代码Review场景中，审查者需理解需求文档+代码逻辑，核心痛点在于跨文档理解耗时、遗漏问题多",
+      "ai_solution": "利用多模态能力同时理解PR描述、代码变更、相关技术文档，生成审查建议",
+      "implementation": "集成到GitLab/GitHub作为Code Review助手插件",
+      "audience": [
+        "大前端",
+        "客户端",
+        "后端"
+      ],
+      "impact": "提升Review效率，遗漏缺陷减少40%",
+      "difficulty": "中",
+      "resistance": "需训练针对代码场景的微调模型",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 6,
+        "business_impact": 6,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "🤗 Qwen/Qwen3.6-27B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.6-27B",
+      "item_id": "hf-model-4481c76e29d1"
+    },
+    {
+      "type": "业务赋能",
+      "title": "订阅业务反欺诈风控模型",
+      "trigger": "Xbox订阅出现欺诈问题的讨论",
+      "scenario": "在订阅制业务中，目前依靠规则判断欺诈行为，核心痛点在于新型欺诈模式难以识别、误伤率偏高",
+      "ai_solution": "引入基于机器学习的订阅反欺诈模型，识别异常订阅模式和设备特征",
+      "implementation": "集成到订单校验流程，实时拦截可疑订单",
+      "audience": [
+        "后端",
+        "产品运营"
+      ],
+      "impact": "预计可减少欺诈损失50%，误伤率降低至5%以下",
+      "difficulty": "中",
+      "resistance": "需积累足够的欺诈样本数据",
+      "scores": {
+        "efficiency": 6,
+        "feasibility": 7,
+        "business_impact": 8,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "Microsoft Game Pass Ultimate Billing Fraud",
+      "source": "Jay D",
+      "source_type": "rss",
+      "source_url": "https://jayd.ml/2026/02/14/microsoft-game-pass-fraud.html",
+      "item_id": "atom-jay-d-d58463f35780"
+    },
+    {
+      "type": "业务赋能",
+      "title": "RSS内容AI聚合推荐系统",
+      "trigger": "RSS订阅源比搜索引擎带来更稳定流量",
+      "scenario": "在内容运营和SEO场景中，运营人员需要手动追踪多个RSS源，内容消费效率低",
+      "ai_solution": "构建RSS内容AI聚合系统，自动抓取、分类、生成摘要，按用户兴趣推荐",
+      "implementation": "飞书/钉钉机器人 + RSS聚合API + 文本摘要模型",
+      "audience": [
+        "产品运营"
+      ],
+      "impact": "运营效率提升50%，内容覆盖盲区减少80%",
+      "difficulty": "低",
+      "resistance": "需要运营人员调整现有内容获取习惯",
+      "scores": {
+        "efficiency": 7,
+        "feasibility": 8,
+        "business_impact": 6,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "RSS Feeds Send Me More Traffic Than Google",
+      "source": "Terence Eden",
+      "source_type": "rss",
+      "source_url": "https://shkspr.mobi/blog/2026/05/rss-feeds-send-me-more-traffic-than-google/",
+      "item_id": "rss-terence-eden-a6158bec2f02"
+    },
+    {
+      "type": "研发提效",
+      "title": "会议纪要AI提炼行动项",
+      "trigger": "工作中明确表达需求能获得更好结果",
+      "scenario": "在需求评审和会议场景中，团队成员经常模糊表达需求，会后行动项不明确",
+      "ai_solution": "会议语音转写后自动提取关键需求、决策点、行动项和负责人",
+      "implementation": "VS Code插件 + 语音输入 + LLM行动项提取",
+      "audience": [
+        "大前端",
+        "客户端",
+        "后端",
+        "技术TL"
+      ],
+      "impact": "需求对齐时间减少30%，会议纪要产出效率提升60%",
+      "difficulty": "低",
+      "resistance": "团队成员对语音记录的隐私顾虑",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 7,
+        "business_impact": 5,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "Say the Thing You Want",
+      "source": "Terrible Software",
+      "source_type": "rss",
+      "source_url": "https://terriblesoftware.org/2026/04/01/say-the-thing-you-want/",
+      "item_id": "rss-terrible-software-56b09ae0fcd8"
+    },
+    {
+      "type": "研发提效",
+      "title": "代码安全漏洞AI扫描Agent",
+      "trigger": "ShinyHunters等攻击者利用低资源就能获取权限",
+      "scenario": "在代码审查场景中，安全漏洞依赖人工检查，容易遗漏OWASP Top 10问题",
+      "ai_solution": "CI/CD集成安全扫描Agent，自动检测SQL注入、认证绕过、敏感信息泄露等漏洞",
+      "implementation": "GitLab Webhook + SAST工具 + LLM漏洞解释",
+      "audience": [
+        "后端",
+        "测试"
+      ],
+      "impact": "安全漏洞发现率提升70%，人工审查工作量减少40%",
+      "difficulty": "中",
+      "resistance": "需要安全团队配合定义扫描规则和误报处理",
+      "scores": {
+        "efficiency": 7,
+        "feasibility": 6,
+        "business_impact": 8,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "Weekly Update 502",
+      "source": "Troy Hunt",
+      "source_type": "rss",
+      "source_url": "https://www.troyhunt.com/weekly-update-502/",
+      "item_id": "rss-troy-hunt-7c34a1e57338"
+    },
+    {
+      "type": "研发提效",
+      "title": "代码文档智能搜索Agent",
+      "trigger": "搜索Agent能处理高难度、长周期任务",
+      "scenario": "在大型代码库中，开发者难以快速定位API文档、历史Bug修复、相关代码",
+      "ai_solution": "构建语义化代码搜索Agent，支持自然语言查询代码库、文档、知识库",
+      "implementation": "RAG架构 + 代码索引 + VS Code插件",
+      "audience": [
+        "大前端",
+        "客户端",
+        "后端",
+        "测试"
+      ],
+      "impact": "代码检索时间从小时级降至分钟级",
+      "difficulty": "中",
+      "resistance": "代码索引构建成本、搜索精度调优",
+      "scores": {
+        "efficiency": 9,
+        "feasibility": 6,
+        "business_impact": 6,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "OpenSeeker-v2: Pushing the Limits of Search Agents with Informative and High-Difficulty Trajectories",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "source_url": "https://arxiv.org/abs/2605.04036v1",
+      "item_id": "arxiv-2605.04036v1"
+    },
+    {
+      "type": "研发提效",
+      "title": "技术知识自测AI助手",
+      "trigger": "LLM最适合非确定性和文本处理，可用于知识巩固",
+      "scenario": "程序员学习新技术时，缺乏互动式知识检验，遗忘曲线难以克服",
+      "ai_solution": "开发每日技术知识问答助手，基于用户技术栈自动生成选择题、编程题",
+      "implementation": "飞书/钉钉小程序 + LLM题目生成 + 错题本",
+      "audience": [
+        "大前端",
+        "客户端",
+        "后端"
+      ],
+      "impact": "技术知识留存率提升40%，学习效率提升30%",
+      "difficulty": "低",
+      "resistance": "程序员主动学习意愿低，需要运营推动",
+      "scores": {
+        "efficiency": 7,
+        "feasibility": 8,
+        "business_impact": 5,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "Claude, Teach Me Something",
+      "source": "Hugo Tunius",
+      "source_type": "rss",
+      "source_url": "https://hugotunius.se/2025/10/26/claude-teach-me-something.html",
+      "item_id": "atom-hugo-tunius-d11997e3da01"
+    },
+    {
+      "type": "研发提效",
+      "title": "Code Review自动化Agent",
+      "trigger": "SuperAgent可处理研究、编码、创作的长周期任务",
+      "scenario": "在代码审查场景中，PR堆积严重，人工审查耗时长，难以覆盖所有代码路径",
+      "ai_solution": "集成deer-flow架构，构建自动代码审查Agent，检查风格、逻辑错误、性能问题",
+      "implementation": "GitHub App + deer-flow框架 + PR自动评论",
+      "audience": [
+        "大前端",
+        "客户端",
+        "后端",
+        "测试"
+      ],
+      "impact": "代码审查效率提升60%，初级问题自动修复",
+      "difficulty": "中",
+      "resistance": "误报率高、审查深度不足、开发者信任度低",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 6,
+        "business_impact": 7,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "bytedance/deer-flow — An open-source long-horizon SuperAgent harness that researches, codes, and creat",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/bytedance/deer-flow",
+      "item_id": "github-3d9a6ebdd114"
+    },
+    {
+      "type": "业务赋能",
+      "title": "文案风格一致性检测工具",
+      "trigger": "语言不断演变，社区特定词汇理解成本高",
+      "scenario": "在运营文案创作场景中，不同运营人员文案风格不统一，新词汇理解困难",
+      "ai_solution": "构建文案风格检测工具，自动识别不符合品牌调性、可能引发误解的表述",
+      "implementation": "飞书插件 + 风格规则库 + LLM改写建议",
+      "audience": [
+        "产品运营"
+      ],
+      "impact": "文案审核时间减少70%，品牌调性一致性提升",
+      "difficulty": "低",
+      "resistance": "风格规则定义主观、运营接受度",
+      "scores": {
+        "efficiency": 7,
+        "feasibility": 8,
+        "business_impact": 6,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "Content for Content’s Sake",
+      "source": "Armin Ronacher",
+      "source_type": "rss",
+      "source_url": "https://lucumr.pocoo.org/2026/5/4/content-for-contents-sake/",
+      "item_id": "atom-armin-ronacher-2403b16f5185"
+    },
+    {
+      "type": "业务赋能",
+      "title": "金融市场分析AI助手",
+      "trigger": "金融市场语言基础模型发布",
+      "scenario": "金融业务中，分析师需要快速理解财报、研报中的专业术语和趋势",
+      "ai_solution": "基于Kronos模型构建金融文档理解与生成能力，辅助投研分析",
+      "implementation": "API接入 + 内部金融知识库 + Web端",
+      "audience": [
+        "产品运营",
+        "后端"
+      ],
+      "impact": "提升投研效率30%，辅助做出更快投资决策",
+      "difficulty": "中",
+      "resistance": "金融合规审查和模型准确性验证",
+      "scores": {
+        "efficiency": 7,
+        "feasibility": 6,
+        "business_impact": 8,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "shiyu-coder/Kronos — Kronos: A Foundation Model for the Language of Financial Markets",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/shiyu-coder/Kronos",
+      "item_id": "github-332aef856035"
+    },
+    {
+      "type": "研发提效",
+      "title": "智能RAG编排开发助手",
+      "trigger": "RAG系统固定检索策略不适用多任务",
+      "scenario": "企业知识库问答场景中，固定RAG策略无法适应FAQ、文档分析、多轮对话等不同任务",
+      "ai_solution": "实现可插拔的RAG策略编排，根据任务类型自动选择检索策略",
+      "implementation": "",
+      "audience": [
+        "大前端",
+        "后端"
+      ],
+      "impact": "提升知识库问答准确率20-40%，减少人工调优成本",
+      "difficulty": "低",
+      "resistance": "需要适配现有知识库系统",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 7,
+        "business_impact": 6,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "An Agent-Oriented Pluggable Experience-RAG Skill for Experience-Driven Retrieval Strategy Orchestration",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "source_url": "https://arxiv.org/abs/2605.03989v1",
+      "item_id": "arxiv-2605.03989v1"
+    },
+    {
+      "type": "研发提效",
+      "title": "端侧推理加速集成",
+      "trigger": "Gemma 4多token预测提升3倍解码速度",
+      "scenario": "移动端/浏览器端部署小模型时，推理速度影响用户体验和响应延迟",
+      "ai_solution": "集成Gemma 4 MTP drafters到端侧推理框架，实现更快响应",
+      "implementation": "移动端SDK + WebAssembly推理引擎",
+      "audience": [
+        "客户端",
+        "大前端"
+      ],
+      "impact": "端侧推理延迟降低60%，提升用户体验",
+      "difficulty": "中",
+      "resistance": "需要模型量化适配和硬件兼容性测试",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 6,
+        "business_impact": 7,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "Inference, systems, and efficiency: Gemma 4 drafters, SGLang/RadixArk, and provider economics",
+      "source": "Smol AI News",
+      "source_type": "smolai",
+      "source_url": "https://x.com/googlegemma/status/2051713412431007808",
+      "item_id": "smolai-49ef4eecfb9b"
+    },
+    {
+      "type": "研发提效",
+      "title": "LLM推理成本优化",
+      "trigger": "Gemma 4推理效率提升降低调用成本",
+      "scenario": "大规模AI应用调用第三方LLM API成本居高不下",
+      "ai_solution": "利用SGLang/RadixArk优化推理吞吐量，降低单次调用成本",
+      "implementation": "API网关层集成 + 自研推理调度系统",
+      "audience": [
+        "后端",
+        "技术TL"
+      ],
+      "impact": "LLM API调用成本降低40-60%",
+      "difficulty": "中",
+      "resistance": "需要运维和DevOps配合改造",
+      "scores": {
+        "efficiency": 7,
+        "feasibility": 7,
+        "business_impact": 8,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "Inference, systems, and efficiency: Gemma 4 drafters, SGLang/RadixArk, and provider economics",
+      "source": "Smol AI News",
+      "source_type": "smolai",
+      "source_url": "https://x.com/googlegemma/status/2051713412431007808",
+      "item_id": "smolai-49ef4eecfb9b"
+    }
+  ],
+  "top_pick": {
+    "title": "跨格式数据转换中间件",
+    "why_now": "格式比应用更重要，强调数据互操作性",
+    "mvp_path": "Node.js中间件 + 格式解析库 + 飞书Webhooks触发",
+    "strategy": "自下而上：先找2-3个极客同学验证，再整理ROI数据推广"
+  },
+  "analyzed_count": 40,
+  "analyzed_item_ids": [
+    "rss-openai-blog-2c0d932a3bc4",
+    "github-763dab5ecb5c",
+    "rss-maurycy-3a2892c494d1",
+    "github-fefd490b2ead",
+    "github-2c69330ad020",
+    "github-005d5badcbcf",
+    "rss-abort-retry-fail-df93fdd82251",
+    "hf-model-4481c76e29d1",
+    "atom-jay-d-d58463f35780",
+    "rss-xe-iaso-f3f49e167515",
+    "github-0f102ccedd61",
+    "rss-appso-6dcbd345c35c",
+    "rss-latent-space-c75bbebd45bc",
+    "rss-entropic-thoughts-0adf9efc7a5f",
+    "rss-赛博禅心-d74480a2b3d3",
+    "github-99fd18364cea",
+    "rss-daniel-delaney-8b7216a7609f",
+    "hf-paper-76600a213315",
+    "rss-jim-nielsen-6e122b546ef0",
+    "rss-dave-farquhar-a60970b16502",
+    "rss-terence-eden-a6158bec2f02",
+    "rss-terrible-software-56b09ae0fcd8",
+    "rss-troy-hunt-7c34a1e57338",
+    "hf-model-4fd7535cd23e",
+    "rss-overreacted-f8483a3b9cee",
+    "arxiv-2605.04036v1",
+    "atom-hugo-tunius-d11997e3da01",
+    "github-3d9a6ebdd114",
+    "atom-armin-ronacher-2403b16f5185",
+    "hf-model-0ffb50283e16",
+    "rss-philip-laine-70fd39087f95",
+    "hf-paper-f4e38f8c056e",
+    "github-332aef856035",
+    "arxiv-2605.03989v1",
+    "rss-all-in-podcast-51593384d64a",
+    "smolai-49ef4eecfb9b",
+    "rss-meta-engineering-9dfe3b4eb3b0",
+    "rss-机器之心-3892dc8ac511",
+    "rss-antirez-c4f0151cdfbe",
+    "rss-brutecat-04035f9f6535"
+  ]
+}

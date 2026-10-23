@@ -1,0 +1,579 @@
+{
+  "date": "2026-04-13",
+  "opportunities": [
+    {
+      "opportunity_title": "AI推理教练",
+      "core_insight": "Qwen3.5-27B经Claude-4-Opus蒸馏，推理能力极强且成本更低",
+      "product_form": "帮助学生和职场人提升逻辑思维和问题解决能力的AI陪练",
+      "target_users": "备考公考/考研的学生、面试求职者、逻辑思维训练需求者",
+      "mvp_features": [
+        "题目上传AI分析思路",
+        "分步骤推理引导",
+        "同类题目举一反三",
+        "错题本智能归纳"
+      ],
+      "business_model": "免费版每日5题，会员39元/月无限题库，季卡99元",
+      "competitive_barrier": "教育领域的解题思路库和用户数据积累",
+      "risks": "教育赛道监管政策不确定",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 5,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 20,
+      "source_title": "🤗 Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled",
+      "item_id": "hf-model-5a5b20cc1da7"
+    },
+    {
+      "opportunity_title": "AI第二大脑",
+      "core_insight": "Obsidian+AI的组合让知识管理智能化，个人知识库可被AI分析和关联",
+      "product_form": "帮助知识工作者用AI管理个人知识库的笔记插件",
+      "target_users": "研究者、作家、创业者、知识焦虑者，愿意为效率工具付费",
+      "mvp_features": [
+        "AI自动标签分类",
+        "知识关联推荐",
+        "问答式知识检索"
+      ],
+      "business_model": "免费基础功能+高级AI能力订阅，月付19元",
+      "competitive_barrier": "Obsidian生态先发优势、插件体验",
+      "risks": "Obsidian官方可能推出类似功能",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 19,
+      "source_title": "alchaincyf/obsidian-ai-orange-book — Obsidian + Claude Code: Rebuild Your Second Brain with AI · 橙皮书系列 · 用AI重建你的第二大脑",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/alchaincyf/obsidian-ai-orange-book",
+      "item_id": "github-77911ecb66da"
+    },
+    {
+      "opportunity_title": "人生导师AI",
+      "core_insight": "张雪峰.skill的成功表明垂直领域的认知操作系统有强需求",
+      "product_form": "面向高考/考研/职业规划的AI咨询助手",
+      "target_users": "高考生、考研学生、职场新人，焦虑规划决策，愿付费咨询",
+      "mvp_features": [
+        "个性化规划建议",
+        "数据库查询",
+        "案例分析"
+      ],
+      "business_model": "免费体验+深度咨询付费，99元/次",
+      "competitive_barrier": "数据积累、专业背书",
+      "risks": "专业责任风险、内容准确性",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 5,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 19,
+      "source_title": "alchaincyf/nuwa-skill — 你想蒸馏的下一个员工，何必是同事。蒸馏任何人的思维方式——心智模型、决策启发式、表达DNA。Distill how anyone thinks.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/alchaincyf/nuwa-skill",
+      "item_id": "github-625dbf2069d9"
+    },
+    {
+      "opportunity_title": "高考志愿AI导师",
+      "core_insight": "张雪峰的认知操作系统可被产品化，解决信息不对称和选择困难",
+      "product_form": "帮助高考生制定志愿填报策略的AI工具",
+      "target_users": "高考生家长、高三学生， 信息焦虑强，付费意愿高",
+      "mvp_features": [
+        "分数定位",
+        "院校推荐",
+        "风险评估"
+      ],
+      "business_model": "会员订阅+志愿报告付费，199元/高考季",
+      "competitive_barrier": "数据实时性、算法准确性",
+      "risks": "志愿失误责任、政策变化",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 5,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 19,
+      "source_title": "alchaincyf/zhangxuefeng-skill — 张雪峰.skill — 张雪峰的认知操作系统。高考志愿/考研/职业规划的实战思维框架。由女娲.skill生成。",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/alchaincyf/zhangxuefeng-skill",
+      "item_id": "github-15e11757994b"
+    },
+    {
+      "opportunity_title": "AI提示词工坊",
+      "core_insight": "多语言提示词生成和元数据编辑功能的结合，首次让中文用户能直接生成适合中文语境的AI绘画提示词",
+      "product_form": "帮助中文AI绘画新手快速生成高质量提示词的效率工具",
+      "target_users": "中文AI绘画爱好者、小红书/B站创作者、约稿画师，痛点：不会写英文提示词、生成效果不稳定，愿付9.9-29.9元/月",
+      "mvp_features": [
+        "中文自然语言转英文提示词",
+        "热门风格模板库",
+        "参数智能推荐",
+        "历史记录云同步"
+      ],
+      "business_model": "免费基础功能+付费高级模板库，定价9.9元/月或49元/年",
+      "competitive_barrier": "中文提示词优化经验和热门风格调校数据积累",
+      "risks": "大厂免费工具竞争，需快速积累用户形成网络效应",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 19,
+      "source_title": "🎨 Prompt Generator Pro | Image & Video Metadata Editor | Multilanguage | AI Chat and More~ (Other)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "source_url": "https://civitai.com/models/2209261",
+      "item_id": "civitai-2209261"
+    },
+    {
+      "opportunity_title": "AI使用量仪表盘",
+      "core_insight": "Claude Usage提供本地Token使用追踪、费用和会话历史监控，填补官方仪表盘空白",
+      "product_form": "帮助高频AI用户追踪和优化AI使用成本的本地工具",
+      "target_users": "AI重度用户、独立开发者、Small Business主理人，月度AI支出200+，付费意愿高",
+      "mvp_features": [
+        "多平台使用量聚合（Claude+GPT+Gemini）",
+        "费用趋势分析",
+        "会话历史搜索",
+        "预算提醒"
+      ],
+      "business_model": "免费版基础功能，专业版49元/年（含多平台聚合和深度分析）",
+      "competitive_barrier": "数据本地处理的隐私保护和跨平台聚合能力",
+      "risks": "官方可能推出类似功能",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 18,
+      "source_title": "phuryn/claude-usage — A local dashboard for tracking your Claude Code token usage, costs, and session ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/phuryn/claude-usage",
+      "item_id": "github-2554f73f6b8a"
+    },
+    {
+      "opportunity_title": "AI算法刷题宝",
+      "core_insight": "自托管ML学习平台填补了中文开发者学习AI算法的需求空白，即时反馈提升学习效率",
+      "product_form": "帮助AI/ML开发者练习算法题目的在线学习平台",
+      "target_users": "算法工程师、ML研究者、转型AI的开发者，付费意愿强，追求高效学习",
+      "mvp_features": [
+        "68道AI专项题库",
+        "浏览器即时评测",
+        "AI解题思路提示"
+      ],
+      "business_model": "免费试用+订阅会员（无限刷题、答案解析、进度追踪）月付29元",
+      "competitive_barrier": "题库独家性、交互体验、本土化内容",
+      "risks": "大厂推出类似产品，内容版权争议",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 18,
+      "source_title": "whwangovo/pyre-code — A self-hosted ML coding practice platform. 68 problems from ReLU to flow matchin",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/whwangovo/pyre-code",
+      "item_id": "github-222d207cf425"
+    },
+    {
+      "opportunity_title": "Gemma视觉助手",
+      "core_insight": "Gemma-4-31B多模态能力成熟，可实现图像理解+对话+行动一体化",
+      "product_form": "帮助内容创作者快速理解图片内容并生成文案的多模态工具",
+      "target_users": "自媒体博主、电商运营、文案写手，需要快速根据图片产出内容，日均可产10+条",
+      "mvp_features": [
+        "上传图片自动识别内容要素",
+        "一键生成多平台适配文案",
+        "批量处理图集"
+      ],
+      "business_model": "免费版每日5次，会员版29元/月无限次，季卡69元",
+      "competitive_barrier": "对中文语境优化的提示词工程和数据飞轮",
+      "risks": "大厂可能推出类似功能，竞争窗口期短",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 18,
+      "source_title": "🤗 google/gemma-4-31B-it",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/google/gemma-4-31B-it",
+      "item_id": "hf-model-2d0f16bac7e1"
+    },
+    {
+      "opportunity_title": "技术图表生成助手",
+      "core_insight": "Claude Code可直接生成专业SVG/PNG技术图表，且支持AI/Agent领域深度知识，大幅降低技术文档可视化门槛",
+      "product_form": "帮助技术文档作者快速生成架构图、流程图的Web工具",
+      "target_users": "技术博主、AI/ML文档工程师、技术布道者，需频繁制作技术图表，付费意愿中-high",
+      "mvp_features": [
+        "支持8种图表类型的模板选择",
+        "中文技术术语优化",
+        "一键导出PNG/SVG",
+        "历史图表管理"
+      ],
+      "business_model": "免费50次/月，付费版19元/月无限生成，企业版99元/月",
+      "competitive_barrier": "深度整合Claude Code的中文优化和模板库",
+      "risks": "大厂可能推出类似功能",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 17,
+      "source_title": "yizhiyanhua-ai/fireworks-tech-graph — Claude Code skill for generating production-quality SVG+PNG technical diagrams. ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/yizhiyanhua-ai/fireworks-tech-graph",
+      "item_id": "github-3ce675fb159f"
+    },
+    {
+      "opportunity_title": "Linux网络哨兵",
+      "core_insight": "Linux桌面用户缺乏专业网络监控工具，Little Snitch Linux开源组件使开发成为可能",
+      "product_form": "帮助Linux专业用户监控应用网络行为的桌面安全工具",
+      "target_users": "Linux桌面用户、开发者、安全爱好者，付费意愿中等，对隐私安全敏感",
+      "mvp_features": [
+        "实时网络流量监控",
+        "应用级连接阻止",
+        "规则可视化配置"
+      ],
+      "business_model": "开源免费基础版+Pro版（规则云同步、告警推送）付费，定价9.9美元/年",
+      "competitive_barrier": "先发优势、社区生态、本地化支持",
+      "risks": "大厂可能推出竞品，功能同质化",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 17,
+      "source_title": "obdev/littlesnitch-linux — Open Source components of Little Snitch for Linux",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/obdev/littlesnitch-linux",
+      "item_id": "github-bc7a978bddaa"
+    },
+    {
+      "opportunity_title": "人格AI商店",
+      "core_insight": "以人为中心的Agent技能有强需求，可做成技能市场的蓝海",
+      "product_form": "交易各种人格化AI助手的技能市场平台",
+      "target_users": "普通用户、企业培训、情感陪伴需求者，愿为人格化AI付费",
+      "mvp_features": [
+        "技能预览",
+        "定制对话",
+        "社区评分"
+      ],
+      "business_model": "交易抽成+会员订阅， 30%交易手续费",
+      "competitive_barrier": "供给端内容质量、用户信任",
+      "risks": "内容合规风险、同行复制",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 5,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 17,
+      "source_title": "xixu-me/awesome-persona-distill-skills — 同事.skill, 女娲.skill, 前任.skill… Curated list of Agent Skills centered on people, r",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/xixu-me/awesome-persona-distill-skills",
+      "item_id": "github-c37765835b8d"
+    },
+    {
+      "opportunity_title": "文档知识库助手",
+      "core_insight": "LLM Wiki将文档自动转为关联知识库，超越传统RAG的简单问答，实现知识网络化",
+      "product_form": "帮助个人和团队将散落文档整合为可探索知识网络的桌面应用",
+      "target_users": "独立开发者、科研人员、内容创作者，有大量笔记文档需结构化，付费意愿中",
+      "mvp_features": [
+        "文档自动导入与知识提取",
+        "知识节点关联可视化",
+        "自然语言知识问答",
+        "与Obsidian/飞书文档同步"
+      ],
+      "business_model": "免费个人版，Pro版39元/月（高级关联分析），团队版99元/月",
+      "competitive_barrier": "知识图谱可视化和中文语义理解",
+      "risks": "大厂笔记产品可能集成类似功能",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "nashsu/llm_wiki — LLM Wiki is a cross-platform desktop application that turns your documents into ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/nashsu/llm_wiki",
+      "item_id": "github-014ff964b050"
+    },
+    {
+      "opportunity_title": "AI账号注册助手",
+      "core_insight": "Chrome扩展可自动化OpenAI OAuth注册、验证码和CPA回调，降低AI服务使用门槛",
+      "product_form": "帮助国内用户一键注册OpenAI等AI服务账号的浏览器工具",
+      "target_users": "想使用OpenAI但被注册流程卡住的普通用户，技术爱好者，付费意愿中",
+      "mvp_features": [
+        "OAuth自动填写",
+        "短信验证码接收集成",
+        "账号状态监控",
+        "多账号管理"
+      ],
+      "business_model": "免费基础功能，高级功能9.9元/次，或月卡29元",
+      "competitive_barrier": "稳定的接收码通道和反检测机制",
+      "risks": "政策风险，账号可能被封",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "QLHazyCoder/codex-oauth-automation-extension — Chrome扩展：支持OpenAI OAuth注册、验证码获取、CPA回调验证与自动恢复",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/QLHazyCoder/codex-oauth-automation-extension",
+      "item_id": "github-cd982db319ed"
+    },
+    {
+      "opportunity_title": "LLM记忆服务",
+      "core_insight": "mempalace验证了AI记忆系统的高效性，可作为Agent的底层能力输出",
+      "product_form": "为AI应用开发者提供记忆存储和检索的API服务",
+      "target_users": "AI应用开发者、Agent构建者，需要长期上下文记忆能力",
+      "mvp_features": [
+        "向量存储+检索",
+        "记忆压缩",
+        "上下文管理"
+      ],
+      "business_model": "按API调用量计费， 免费额度+超量付费",
+      "competitive_barrier": "性能优化、向量库技术积累",
+      "risks": "大厂可能推出免费方案",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "milla-jovovich/mempalace — The highest-scoring AI memory system ever benchmarked. And it's free.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/milla-jovovich/mempalace",
+      "item_id": "github-324dca1fa921"
+    },
+    {
+      "opportunity_title": "VoxCPM语音工坊",
+      "core_insight": "VoxCPM2定位文本转语音，可低成本实现中文多音色合成",
+      "product_form": "帮助自媒体创作者将文章转化为语音配音的AI工具",
+      "target_users": "短视频创作者、有声书主播、知识付费讲师，对配音成本敏感",
+      "mvp_features": [
+        "中文多音色选择",
+        "情感控制（高兴/悲伤/正式）",
+        "语速调节",
+        "一键下载"
+      ],
+      "business_model": "免费1000字/月，付费版19元/月10000字，企业API调用按字符计费",
+      "competitive_barrier": "中文语音的情感和韵律调优",
+      "risks": "大厂TTS效果已较好，需差异化",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 5
+      },
+      "total_score": 16,
+      "source_title": "🤗 openbmb/VoxCPM2",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/openbmb/VoxCPM2",
+      "item_id": "hf-model-b2cd1173ff38"
+    },
+    {
+      "opportunity_title": "全模态AI工作流",
+      "core_insight": "Gemma-4-E4B支持any-to-any，可处理文本、图像、音频、视频任意转换",
+      "product_form": "帮助用户用自然语言描述需求，自动调用多模态能力完成任务的工作流平台",
+      "target_users": "中小企业主、运营人员，需要一站式解决多类型内容创作",
+      "mvp_features": [
+        "自然语言描述需求",
+        "自动选择最优模型组合",
+        "一键生成多格式内容",
+        "历史记录管理"
+      ],
+      "business_model": "免费版100点/月，付费版99元/月1000点，企业定制面议",
+      "competitive_barrier": "工作流编排的易用性和模型调度优化",
+      "risks": "技术复杂，MVP开发周期长",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 3
+      },
+      "total_score": 16,
+      "source_title": "🤗 google/gemma-4-E4B-it",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/google/gemma-4-E4B-it",
+      "item_id": "hf-model-73665a6e3a2f"
+    },
+    {
+      "opportunity_title": "AI知识伙伴",
+      "core_insight": "Claude+Obsidian组合实现持续累积的AI知识库，基于Karpathy的LLM Wiki模式",
+      "product_form": "让AI帮你自动研究和整理知识库的Obsidian插件",
+      "target_users": "知识工作者、研究人员、需要AI辅助做研究的用户，付费意愿中",
+      "mvp_features": [
+        "/save自动保存要点",
+        "/autoresearch主题研究",
+        "知识库对话问答",
+        "定期知识回顾提醒"
+      ],
+      "business_model": "免费基础功能，Pro版19元/月（含自动研究和深度分析）",
+      "competitive_barrier": "与Obsidian生态深度整合和中文优化",
+      "risks": "功能相对小众",
+      "scores": {
+        "pain_point": 3,
+        "market_size": 2,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 15,
+      "source_title": "AgriciDaniel/claude-obsidian — Claude + Obsidian knowledge companion. Persistent, compounding wiki vault based ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/AgriciDaniel/claude-obsidian",
+      "item_id": "github-c1ff3e56c994"
+    },
+    {
+      "opportunity_title": "思维蒸馏机",
+      "core_insight": "nuwa-skill证明个人思维方式可以被数字化并复用，解决专家经验传承难题",
+      "product_form": "帮助企业或个人将专家思维转化为可复用的AI助手",
+      "target_users": "培训行业、企业HR、知识管理负责人，需要传承专家经验",
+      "mvp_features": [
+        "思维模式采集",
+        "提示词生成",
+        "数字顾问上线"
+      ],
+      "business_model": "按项目制收费，单次5000-50000元",
+      "competitive_barrier": "方法论积累、案例库",
+      "risks": "需求验证难，定制化重",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 3
+      },
+      "total_score": 15,
+      "source_title": "alchaincyf/nuwa-skill — 你想蒸馏的下一个员工，何必是同事。蒸馏任何人的思维方式——心智模型、决策启发式、表达DNA。Distill how anyone thinks.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/alchaincyf/nuwa-skill",
+      "item_id": "github-625dbf2069d9"
+    },
+    {
+      "opportunity_title": "有声书AI工作室",
+      "core_insight": "VoxCPM2可生成高质量中文语音，成本远低于人工录制",
+      "product_form": "帮助出版社和个人作者将电子书转为有声书的自动化平台",
+      "target_users": "网文作者、独立出版人、小型出版社，想做有声书但预算有限",
+      "mvp_features": [
+        "上传txt/epub自动转语音",
+        "多角色AI分声道",
+        "背景音乐添加",
+        "在线校对编辑"
+      ],
+      "business_model": "按字数计费0.5元/千字，会员制199元/月不限量",
+      "competitive_barrier": "中文多音字读音纠正的专业知识库",
+      "risks": "音质与真人比仍有差距，用户付费意愿待验证",
+      "scores": {
+        "pain_point": 3,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 15,
+      "source_title": "🤗 openbmb/VoxCPM2",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/openbmb/VoxCPM2",
+      "item_id": "hf-model-b2cd1173ff38"
+    },
+    {
+      "opportunity_title": "OmniVoice配音神器",
+      "core_insight": "OmniVoice下载量近40万说明市场需求旺盛，且支持多语言",
+      "product_form": "面向出海内容创作者的AI多语言配音工具",
+      "target_users": "做TikTok/YouTubeShorts的出海博主，需要快速配多语言",
+      "mvp_features": [
+        "一键翻译配音",
+        "口型同步预览",
+        "20+语种选择",
+        "多音色匹配"
+      ],
+      "business_model": "免费版含水印，付费版49元/月无水印，企业API按分钟计费",
+      "competitive_barrier": "出海场景的本地化理解和多语言模型库",
+      "risks": "heygen等竞品已占据市场，需差异化",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 15,
+      "source_title": "🤗 k2-fsa/OmniVoice",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/k2-fsa/OmniVoice",
+      "item_id": "hf-model-b0310e0acf74"
+    }
+  ],
+  "analyzed_item_ids": [
+    "github-db76cfda3b02",
+    "github-13c2191b859c",
+    "github-3ce675fb159f",
+    "github-dac1face2a1c",
+    "github-014ff964b050",
+    "github-cd982db319ed",
+    "github-2554f73f6b8a",
+    "github-a366b1b02c6a",
+    "github-c1ff3e56c994",
+    "github-7b920ca48613",
+    "github-bc7a978bddaa",
+    "github-222d207cf425",
+    "github-6c373d83b4da",
+    "github-8873232726ec",
+    "github-77911ecb66da",
+    "github-324dca1fa921",
+    "github-625dbf2069d9",
+    "github-15e11757994b",
+    "github-c37765835b8d",
+    "github-382ad2d4cbfd",
+    "hf-model-2f79a3598954",
+    "hf-model-2d0f16bac7e1",
+    "hf-model-b2cd1173ff38",
+    "hf-model-a3e36e1accc3",
+    "hf-model-3e19acb863ad",
+    "hf-model-b88ea472e3ac",
+    "hf-model-b0310e0acf74",
+    "hf-model-73665a6e3a2f",
+    "hf-model-5a5b20cc1da7",
+    "hf-model-0ea922f56cb4",
+    "civitai-2538901",
+    "civitai-2209261",
+    "civitai-2526388",
+    "civitai-2538861",
+    "civitai-1416582",
+    "civitai-2538859",
+    "civitai-2538818",
+    "civitai-2538837",
+    "civitai-2525381",
+    "civitai-2538448"
+  ],
+  "remaining": 25
+}

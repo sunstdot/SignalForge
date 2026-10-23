@@ -1,0 +1,21 @@
+{
+  "id": "idea-1775126542010-od3uwue3s",
+  "content_id": "arxiv-2604.01202v1",
+  "title": "** 决策探针：验证小模型推理前的决策编码\n\n**",
+  "description": "**\n- **核心思路**: 在开源小模型（如Llama-3-8B）上复现论文的核心发现——训练线性探针从推理token生成前的隐藏层激活中预测最终决策，验证\"决策先于推理\"假设。\n\n- **实现步骤**:\n  1. 准备100-200个简单的工具调用任务（如数学计算、信息查询），收集模型在生成CoT前的隐藏层激活（关注最后几层的第一个token位置）\n  2. 训练简单的逻辑回归探针，从激活向量预测二分类决策（使用工具vs不使用工具）\n  3. 在测试集上评估探针准确率，并与随机基线、仅基于prompt的分类器对比\n  4. 可视化分析：哪些层的激活包含最多决策信息，决策信号何时出现\n\n- **成功标准**: \n  - 探针在推理生成前达到>70%准确率（显著高于随机）\n  - 发现特定层（如倒数2-5层）的决策信号最强\n  - 能复现论文图2的趋势：越接近输出层，决策信息越明确\n\n- **可能挑战**: \n  - 小模型可能决策信号较弱，需要调整探针复杂度\n  - 需要仔细设计任务确保\"正确答案\"明确\n  - 激活提取和存储可能占用较大内存\n\n**",
+  "difficulty": "medium",
+  "estimated_days": 7,
+  "tags": [
+    "** interpretability",
+    "linear-probing",
+    "hidden-states",
+    "decision-making"
+  ],
+  "status": "pending",
+  "priority": 9.0,
+  "briefing_date": "2026-04-02",
+  "source_type": "paper",
+  "source_title": "Therefore I am. I Think",
+  "source_url": "https://arxiv.org/abs/2604.01202v1",
+  "created_at": "2026-04-02T10:42:22.010Z"
+}

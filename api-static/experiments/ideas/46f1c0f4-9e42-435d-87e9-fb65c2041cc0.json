@@ -1,0 +1,19 @@
+{
+  "id": "46f1c0f4-9e42-435d-87e9-fb65c2041cc0",
+  "content_id": "",
+  "title": "多AI编程API统一路由与成本优化平台",
+  "description": "**核心洞察**\n开发者需管理多AI工具API key且易超限，此路由器聚合免费提供商并自动切换，可包装为统一网关服务。\n\n**产品形态**\n帮助AI编码开发者统一管理API并降低成本的网关SaaS\n\n**目标用户**\n使用多种AI编程工具的个人开发者和团队，痛点：多key管理复杂、成本高，付费意愿高\n\n**核心功能（MVP）**\n- 统一API端点\n- 智能回退与负载均衡\n- 用量监控面板\n\n**商业模式**\n按请求量阶梯计费，或月费$19含100万token\n\n**潜在风险**\n滥用免费API可能违反条款导致封禁；过度依赖第三方稳定性",
+  "difficulty": "medium",
+  "estimated_days": 7,
+  "tags": [],
+  "status": "pending",
+  "priority": 16.0,
+  "briefing_date": "",
+  "source_type": "repo",
+  "source_title": "decolua/9router — Unlimited FREE AI coding. Connect Claude Code, Codex, Cursor, Cline, Copilot, An",
+  "source_url": "https://github.com/decolua/9router",
+  "inspiration": "",
+  "product_concept": {},
+  "source_context": "",
+  "created_at": "2026-05-12T15:21:08.195556"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "22ca4836-7619-4df4-bd20-1a5857b7839a",
+  "date": "2026-06-15",
+  "items": [
+    {
+      "id": "l30-x-f24195282a25",
+      "title": "学 AI Agent 上 YouTube ,这几个频道少看一个都亏:",
+      "source": "X",
+      "source_type": "x",
+      "url": "https://x.com/ai_xiaomu/status/2066538721441087729",
+      "summary": "学 AI Agent 上 YouTube ,这几个频道少看一个都亏: Lex Fridman:#490 State of AI 2026 / #491 OpenClaw 创始人 Peter Steinberger , 大佬深度访谈。 Latent Space:每周一期 , 专聊 AI 工程实践 , RL Environments 那期必看。 李沐(Mu Li):亚马逊首席科学家 , 中文区《动手学 AI Agent》Python 实操党必看。 Andrej Karpathy(个人频道):autoresearch / nanochat 全套手把手 , 看完能自己训小模型。 睡前 30 分钟刷一集 , 比刷抖音值 100 倍。",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-15"
+    },
+    {
+      "id": "l30-x-dd09b56d2c73",
+      "title": "@jxnlco Peter Steinberger, Vincent Koc - most of OpenClaw maintainers I would imagine",
+      "source": "X",
+      "source_type": "x",
+      "url": "https://x.com/aditya_advani/status/2066594525825413613",
+      "summary": "@jxnlco Peter Steinberger, Vincent Koc - most of OpenClaw maintainers I would imagine",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 7,
+      "created_at": "2026-06-15"
+    },
+    {
+      "id": "l30-x-3b476227564e",
+      "title": "卧槽！互联网顶尖那批人，直接把脑子开源了！",
+      "source": "X",
+      "source_type": "x",
+      "url": "https://x.com/Bitcoin188/status/2066411364110000300",
+      "summary": "卧槽！互联网顶尖那批人，直接把脑子开源了！ 这11个GitHub仓库，真的能让你少走三年弯路，白嫖党直接起飞！ 兄弟们赶紧码住，慢慢啃，别手动找资料了！ PilotDeck（OpenBMB） 几分钟部署一个能自己干活的AI Agent，真正的开源智能体框架！ https://t.co/98hMZF1woa… andrej-karpathy-skills（Karpathy） 一个CLAUDE.md文件直接封神，17万+星，AI编程铁律天花板！ https://t.co/1Crh8hZamc… MemPalace AI记忆系统，LongMemEval接近满分，记忆永不丢失！ https://t.co/swvtshq80C… OpenClaw（Peter Steinberger） 私人AI助理，37万+星，Gi...",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 7,
+      "created_at": "2026-06-15"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-06-19T10:22:35.365540"
+}

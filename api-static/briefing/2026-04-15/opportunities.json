@@ -1,0 +1,588 @@
+{
+  "date": "2026-04-15",
+  "opportunities": [
+    {
+      "opportunity_title": "中文情感TTS配音工具",
+      "core_insight": "OmniVoice下载量53万证明TTS已是成熟技术，但中文市场缺乏高情感表达、低延迟的配音工具",
+      "product_form": "为短视频创作者提供AI中文配音服务",
+      "target_users": "短视频创作者、知识付费博主、需要配音的小商家",
+      "mvp_features": [
+        "20+中文情感音色选择",
+        "语速/语调调节",
+        "多音字智能处理",
+        "秒级生成",
+        "热门短视频模板"
+      ],
+      "business_model": "免费生成30秒+付费会员$29/月无限生成",
+      "competitive_barrier": "需要调优中文情感表达形成差异化",
+      "risks": "大厂入场免费，竞争激烈",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 5,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 20,
+      "source_title": "🤗 k2-fsa/OmniVoice",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/k2-fsa/OmniVoice",
+      "item_id": "hf-model-b0310e0acf74"
+    },
+    {
+      "opportunity_title": "AI配音工坊",
+      "core_insight": "开源TTS模型已达到消费级可用水平，成本从商用API的每分钟数元降至近乎为零",
+      "product_form": "帮助短视频创作者、知识付费讲师快速生成专业配音的在线工具",
+      "target_users": "知识类博主、播客主、有声书创业者，付费意愿强但被高昂配音成本困扰",
+      "mvp_features": [
+        "中文多音色选择",
+        "语速/停顿调节",
+        "一键生成音频",
+        "多语言支持"
+      ],
+      "business_model": "免费用户100字/次，付费会员29元/月无限生成",
+      "competitive_barrier": "音色库丰富度和中文发音自然度",
+      "risks": "大厂免费入场竞争",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 19,
+      "source_title": "🤗 netflix/void-model",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/netflix/void-model",
+      "item_id": "hf-model-b88ea472e3ac"
+    },
+    {
+      "opportunity_title": "中文写作助手",
+      "core_insight": "GLM-5.1在中文理解上表现优秀，可针对中国用户做深度优化",
+      "product_form": "帮助职场人士、学生写邮件、报告、简历的写作辅助工具",
+      "target_users": "职场白领、大学生、体制内写作者，需高质量中文输出",
+      "mvp_features": [
+        "智能润色",
+        "格式模板",
+        "查重降重",
+        "风格定制"
+      ],
+      "business_model": "免费版有限额，Pro版39元/月",
+      "competitive_barrier": "中文语境深度优化和垂直场景",
+      "risks": "大厂同类产品免费",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 5,
+        "tech_timing": 4,
+        "buildability": 5
+      },
+      "total_score": 19,
+      "source_title": "🤗 zai-org/GLM-5.1",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/zai-org/GLM-5.1",
+      "item_id": "hf-model-2f79a3598954"
+    },
+    {
+      "opportunity_title": "AI语音明信片",
+      "core_insight": "多模态音频生成能力可让用户输入文字生成带背景音乐的语音祝福",
+      "product_form": "帮助用户生成节日祝福、生日卡片等AI语音贺卡的小程序",
+      "target_users": "C端用户，送礼场景，微信生态内传播，付费意愿中等",
+      "mvp_features": [
+        "文字转语音+情感配音",
+        "AI配乐生成",
+        "精美模板+贺卡卡片设计",
+        "一键分享微信"
+      ],
+      "business_model": "免费生成3张，会员9.9元无限生成，节日特供包装",
+      "competitive_barrier": "微信生态深度整合+节日热点运营+社交裂变机制",
+      "risks": "工具类生命周期短，需持续热点运营",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 5,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 19,
+      "source_title": "Audio-Omni: Extending Multi-modal Understanding to Versatile Audio Generation and Editing",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "source_url": "https://huggingface.co/papers/2604.10708",
+      "item_id": "hf-paper-a50792c1bd08"
+    },
+    {
+      "opportunity_title": "个人AI助手定制平台",
+      "core_insight": "Hermes-agent展示了个性化AI Agent的可行性，国内个人用户对定制AI助手需求强烈但缺乏低门槛工具",
+      "product_form": "帮助用户定制个性化AI助手的无代码平台",
+      "target_users": "知识工作者、博主、小微企业家，愿为个人AI助手付299-999元",
+      "mvp_features": [
+        "角色设定",
+        "知识库接入",
+        "记忆训练",
+        "多平台接入"
+      ],
+      "business_model": "免费基础版+付费专业版299元/月+定制服务",
+      "competitive_barrier": "记忆和个性化技术的深度",
+      "risks": "大模型API成本控制和用户留存",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 18,
+      "source_title": "NousResearch/hermes-agent — The agent that grows with you",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/NousResearch/hermes-agent",
+      "item_id": "github-3c19e4a80a3d"
+    },
+    {
+      "opportunity_title": "AI语音内容工作室",
+      "core_insight": "Voicebox提供开源语音合成，可以低成本生成高质量中文语音内容，满足知识付费和内容创作需求",
+      "product_form": "AI语音内容生成平台，服务知识博主和出版业",
+      "target_users": "知识博主、有声书作者、教育机构",
+      "mvp_features": [
+        "文字转语音",
+        "多音色选择",
+        "情感调节",
+        "背景音乐"
+      ],
+      "business_model": "按分钟计费0.5-2元/分钟，套餐99-499元",
+      "competitive_barrier": "音色质量和多语言支持",
+      "risks": "版权问题和情感合成准确性",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 18,
+      "source_title": "jamiepine/voicebox — The open-source voice synthesis studio",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/jamiepine/voicebox",
+      "item_id": "github-2267c9689012"
+    },
+    {
+      "opportunity_title": "Claude记忆库",
+      "core_insight": "Claude Code缺乏长期记忆能力，claude-mem用AI压缩技术实现上下文复用，解决开发者重复解释背景的痛点",
+      "product_form": "帮助开发者自动管理和复用AI编程会话上下文的工具",
+      "target_users": "高频使用Claude Code的中高级开发者，日均编程4h+，对效率提升付费意愿强",
+      "mvp_features": [
+        "自动捕获Claude会话上下文",
+        "AI压缩关键信息",
+        "一键恢复历史项目上下文",
+        "支持多项目隔离"
+      ],
+      "business_model": "订阅制月付$9.9，MVP阶段免费提供基础功能",
+      "competitive_barrier": "需深入理解Claude Code API和Agent工作流，形成技术壁垒",
+      "risks": "Claude官方可能内置类似功能",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 18,
+      "source_title": "thedotmack/claude-mem — A Claude Code plugin that automatically captures everything Claude does during y",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/thedotmack/claude-mem",
+      "item_id": "github-555c3517c1da"
+    },
+    {
+      "opportunity_title": "AI播客剪辑神器",
+      "core_insight": "Audio-Omni统一了音频理解、生成、编辑能力，新模型可一次性完成降噪、配乐、语音增强等多任务",
+      "product_form": "帮助播客主/短视频创作者一键完成音频后期制作的Web工具",
+      "target_users": "中文播客主、短视频创作者、UP主，忍受手动剪辑噪音和配乐匹配痛点，付费意愿强",
+      "mvp_features": [
+        "一键降噪+音量平衡",
+        "AI智能配乐(根据内容匹配版权音乐)",
+        "语音增强与人声美化",
+        "多语言配音翻译"
+      ],
+      "business_model": "免费版月处理30分钟，会员版99元/月不限时长，按需付费导出",
+      "competitive_barrier": "中文语音优化+本土音乐版权库+极简拖拽交互体验",
+      "risks": "大厂入局免费版可能冲击，需快速建立用户粘性",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 18,
+      "source_title": "Audio-Omni: Extending Multi-modal Understanding to Versatile Audio Generation and Editing",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "source_url": "https://huggingface.co/papers/2604.10708",
+      "item_id": "hf-paper-a50792c1bd08"
+    },
+    {
+      "opportunity_title": "Claude最佳实践分享站",
+      "core_insight": "国内开发者缺乏系统学习AI编程工具的中文资源，Claude Code最佳实践仓库提供了成熟的学习范本",
+      "product_form": "帮助中文开发者学习Claude高效编程技巧的付费教程平台",
+      "target_users": "1-3年经验的Python/JS开发者，想提升AI辅助编程效率，愿付99-199元购买系统课程",
+      "mvp_features": [
+        "精选案例中文解读",
+        "prompt模板库",
+        "实战项目演练"
+      ],
+      "business_model": "在线课程+Prompt模板商店，课程定价199元，模板9.9-29.9元",
+      "competitive_barrier": "内容翻译和本地化需要专业积累",
+      "risks": "大厂可能推出免费竞品",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 17,
+      "source_title": "shanraisshan/claude-code-best-practice — from vibe coding to agentic engineering - practice makes claude perfect",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/shanraisshan/claude-code-best-practice",
+      "item_id": "github-ad5992dffaf0"
+    },
+    {
+      "opportunity_title": "AI Agent开发模板库",
+      "core_insight": "Superpowers提供了agentic skills框架，国内开发者需要开箱即用的AI Agent开发模板",
+      "product_form": "提供多种场景AI Agent开发模板的商店",
+      "target_users": "想快速搭建AI Agent的开发者和企业",
+      "mvp_features": [
+        "常见场景模板",
+        "工作流编排",
+        "一键部署",
+        "定制修改"
+      ],
+      "business_model": "模板付费29-199元，定制服务更高",
+      "competitive_barrier": "模板质量和场景覆盖",
+      "risks": "大厂免费工具竞争",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 17,
+      "source_title": "obra/superpowers — An agentic skills framework &amp; software development methodology that works.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/obra/superpowers",
+      "item_id": "github-ecb7de9cc8a0"
+    },
+    {
+      "opportunity_title": "文档转Markdown工具",
+      "core_insight": "markitdown解决了文档转Markdown的痛点，国内用户对本地优先的笔记工具和知识管理需求旺盛",
+      "product_form": "本地优先的文档转换和笔记管理工具",
+      "target_users": "开发者、作家、知识工作者，需要文档格式转换",
+      "mvp_features": [
+        "多种格式转Markdown",
+        "本地存储",
+        "双向同步",
+        "插件生态"
+      ],
+      "business_model": "免费工具+高级功能订阅39元/月",
+      "competitive_barrier": "用户体验和生态建设",
+      "risks": "大厂笔记产品免费竞争",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 5
+      },
+      "total_score": 17,
+      "source_title": "microsoft/markitdown — Python tool for converting files and office documents to Markdown.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/microsoft/markitdown",
+      "item_id": "github-e4b7ba63c2bd"
+    },
+    {
+      "opportunity_title": "AI语音陪伴应用",
+      "core_insight": "开源语音合成技术成熟，可以打造情感陪伴类AI产品，满足都市人孤独感需求",
+      "product_form": "AI语音陪伴社交应用",
+      "target_users": "20-35岁都市年轻人，寻求情感陪伴和倾诉",
+      "mvp_features": [
+        "AI语音对话",
+        "角色选择",
+        "情感识别",
+        "定时提醒"
+      ],
+      "business_model": "免费基础对话+会员29元/月解锁高级角色",
+      "competitive_barrier": "对话体验和用户粘性",
+      "risks": "内容合规和用户隐私",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 5,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 17,
+      "source_title": "jamiepine/voicebox — The open-source voice synthesis studio",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/jamiepine/voicebox",
+      "item_id": "github-2267c9689012"
+    },
+    {
+      "opportunity_title": "有声书AI生成平台",
+      "core_insight": "TTS技术成熟使有声书制作成本大幅下降，中文有声内容需求旺盛但制作门槛高",
+      "product_form": "一站式中文有声书/有声漫画生成平台",
+      "target_users": "网文作者、自媒体、内容创业者",
+      "mvp_features": [
+        "文本上传一键转语音",
+        "多角色AI配音",
+        "背景音乐和音效",
+        "导出多格式"
+      ],
+      "business_model": "按生成时长收费，每分钟$0.5，企业定制更贵",
+      "competitive_barrier": "需要积累多角色配音模型和后期处理能力",
+      "risks": "版权问题，有声书需授权",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 17,
+      "source_title": "🤗 k2-fsa/OmniVoice",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/k2-fsa/OmniVoice",
+      "item_id": "hf-model-b0310e0acf74"
+    },
+    {
+      "opportunity_title": "图文秒创",
+      "core_insight": "Gemma-4的多模态理解能力已经很强，可以实现图片自动配文、社交媒体内容批量生成",
+      "product_form": "帮助社交媒体运营者、小红书/抖音创作者快速生成图文内容的效率工具",
+      "target_users": "小红书博主、电商运营、微商，需大量伪原创或灵感激发",
+      "mvp_features": [
+        "图片智能配文",
+        "多平台风格适配",
+        "批量处理",
+        "敏感词过滤"
+      ],
+      "business_model": "按生成条数计费，0.5元/条，月卡99元",
+      "competitive_barrier": "中文语境理解和小众平台适配",
+      "risks": "内容平台政策收紧",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 5
+      },
+      "total_score": 17,
+      "source_title": "🤗 google/gemma-4-31B-it",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/google/gemma-4-31B-it",
+      "item_id": "hf-model-2d0f16bac7e1"
+    },
+    {
+      "opportunity_title": "AI记忆笔记",
+      "core_insight": "时间知识图谱将离散事件串联成动态关系网络，解决笔记软件无法建立知识关联的核心痛点",
+      "product_form": "帮助知识工作者管理碎片化想法和项目进程的AI笔记工具",
+      "target_users": "知识工作者、研究生、咨询顾问，需要管理大量碎片信息和项目时间线，付费意愿强",
+      "mvp_features": [
+        "自动时间线串联",
+        "AI概念关联推荐",
+        "智能回顾提醒",
+        "项目进展可视化"
+      ],
+      "business_model": "免费100条笔记，会员39元/月，团队版99元/人/月",
+      "competitive_barrier": "时间知识图谱算法+中文语义理解优化+先发积累的用户数据",
+      "risks": "大厂笔记应用可能快速复制，需建立差异化体验",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 17,
+      "source_title": "Time is Not a Label: Continuous Phase Rotation for Temporal Knowledge Graphs and Agentic Memory",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "source_url": "https://huggingface.co/papers/2604.11544",
+      "item_id": "hf-paper-b61d94e3305a"
+    },
+    {
+      "opportunity_title": "Claude代码技能市场",
+      "core_insight": "Karpathy的洞见揭示了LLM编码的系统性缺陷，单个CLAUDE.md文件即可显著提升效果",
+      "product_form": "提供经过验证的CLAUDE.md配置文件的 marketplace",
+      "target_users": "使用Claude Code的开发者，希望优化AI编码效率的团队",
+      "mvp_features": [
+        "CLAUDE.md技能模板库",
+        "一键安装社区验证的技能",
+        "按语言/框架分类",
+        "用户评分和评论系统"
+      ],
+      "business_model": "免费基础模板+付费高级技能包，团队版$29/月",
+      "competitive_barrier": "需要积累大量高质量CLAUDE.md内容形成社区效应",
+      "risks": "开源模板易被复制，差异化难度大",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 5
+      },
+      "total_score": 16,
+      "source_title": "thedotmack/claude-mem — A Claude Code plugin that automatically captures everything Claude does during y",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/thedotmack/claude-mem",
+      "item_id": "github-555c3517c1da"
+    },
+    {
+      "opportunity_title": "中文CLAUDE.md模板库",
+      "core_insight": "Karpathy技能针对英文编程场景，中文开发者的思维方式和工具链有独特需求",
+      "product_form": "面向中文开发者的CLAUDE.md优化指南和模板",
+      "target_users": "中文开发者、使用Claude Code进行中文项目开发的技术人员",
+      "mvp_features": [
+        "中文项目适配的CLAUDE.md模板",
+        "中文技术文档理解优化",
+        "本土框架(React/Vue/小程序)最佳实践",
+        "视频教程"
+      ],
+      "business_model": "付费模板包$19，包含10+场景模板",
+      "competitive_barrier": "深耕中文开发者社区，形成本地化内容壁垒",
+      "risks": "天花板明显，仅是工具类内容产品",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 5
+      },
+      "total_score": 16,
+      "source_title": "forrestchang/andrej-karpathy-skills — A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Kar",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/forrestchang/andrej-karpathy-skills",
+      "item_id": "github-41a9464d5efe"
+    },
+    {
+      "opportunity_title": "动漫角色LoRA中文社区",
+      "core_insight": "Nami LoRA下载量超3000证明动漫AI生图在中国有强需求，但中文社区缺乏高质量资源和教程",
+      "product_form": "动漫AI创作资源平台+中文教程社区",
+      "target_users": "二次元爱好者、AI绘画初学者到进阶创作者，愿为独家资源付费",
+      "mvp_features": [
+        "热门LoRA模型收录与评测",
+        "中文提示词模板库",
+        "从零入门教程",
+        "模型分享与求资源"
+      ],
+      "business_model": "会员订阅$9.9/月，解锁高级模型和专属教程",
+      "competitive_barrier": "需要积累独家资源和形成创作者社区",
+      "risks": "版权风险，模型下载可能受限",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "🎨 Nami - One piece (waiNSFW) (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "source_url": "https://civitai.com/models/1726733",
+      "item_id": "civitai-1726733"
+    },
+    {
+      "opportunity_title": "语音克隆工具",
+      "core_insight": "开源TTS模型支持少样本克隆，个人品牌可以用自己的声音做内容",
+      "product_form": "帮助知识付费作者、企业家克隆自有声音用于自动化内容生产的工具",
+      "target_users": "知识付费讲师、企业家IP、有声书录制者，想用自己的声音但时间有限",
+      "mvp_features": [
+        "5分钟样本克隆",
+        "情感控制",
+        "长文本合成",
+        "API开放"
+      ],
+      "business_model": "克隆199元/次，生成按字数收费",
+      "competitive_barrier": "克隆效果自然度和法律合规",
+      "risks": "伦理和法律风险",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "🤗 openbmb/VoxCPM2",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/openbmb/VoxCPM2",
+      "item_id": "hf-model-b2cd1173ff38"
+    },
+    {
+      "opportunity_title": "电商主图优化",
+      "core_insight": "图像区域级质量评估技术可用于自动识别和优化商品主图",
+      "product_form": "帮助淘宝、拼多多商家自动优化商品主图质量的工具",
+      "target_users": "电商卖家、MCN机构，需大量商品图片优化",
+      "mvp_features": [
+        "主图质量评分",
+        "AI自动抠图",
+        "背景增强",
+        "多平台尺寸适配"
+      ],
+      "business_model": "按图片张数收费，0.3元/张，包月99元",
+      "competitive_barrier": "电商场景深度训练数据",
+      "risks": "大平台自带工具",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "Panoptic Pairwise Distortion Graph",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "source_url": "https://huggingface.co/papers/2604.11004",
+      "item_id": "hf-paper-df4ef9dd2d9e"
+    }
+  ],
+  "analyzed_item_ids": [
+    "github-ad5992dffaf0",
+    "github-c43d9b688406",
+    "github-3c19e4a80a3d",
+    "github-332aef856035",
+    "github-90a874f93a44",
+    "github-903275be124a",
+    "github-ecb7de9cc8a0",
+    "github-e4b7ba63c2bd",
+    "github-ec9987c48f87",
+    "github-2267c9689012",
+    "github-555c3517c1da",
+    "github-41a9464d5efe",
+    "civitai-2543946",
+    "civitai-2535507",
+    "civitai-1726733",
+    "civitai-2543993",
+    "civitai-2543992",
+    "hf-model-b1cd45c4732d",
+    "hf-model-b0310e0acf74",
+    "hf-model-7799d1d27bd5",
+    "hf-model-b88ea472e3ac",
+    "hf-model-a3e36e1accc3",
+    "hf-model-f7a19edc802a",
+    "hf-model-2d0f16bac7e1",
+    "hf-model-b2cd1173ff38",
+    "hf-model-3e19acb863ad",
+    "hf-model-2f79a3598954",
+    "hf-paper-c38e6e64722b",
+    "hf-paper-df4ef9dd2d9e",
+    "hf-paper-72ea32dd80a7",
+    "hf-paper-7452d8591a2f",
+    "hf-paper-1698b5c193c7",
+    "hf-paper-2eeb695f5887",
+    "hf-paper-000ea5afde92",
+    "hf-paper-a50792c1bd08",
+    "hf-paper-b61d94e3305a",
+    "hf-paper-a8eecb03dc80",
+    "rss-虎嗅-bcb833a3e622",
+    "rss-虎嗅-5fad5be1f843",
+    "rss-虎嗅-d3cd0faf76ea"
+  ],
+  "remaining": 15
+}

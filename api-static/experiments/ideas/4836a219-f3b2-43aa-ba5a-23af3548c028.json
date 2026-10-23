@@ -1,0 +1,23 @@
+{
+  "id": "4836a219-f3b2-43aa-ba5a-23af3548c028",
+  "content_id": "github-f8d79b4ea321",
+  "title": "构建技能匹配AI代理",
+  "description": "**为什么产生这个想法**\n该项目有14种技能模式，可用于自动匹配求职者和岗位要求。结合Claude Code的AI能力，可以实现智能技能识别和匹配。\n\n**价值**\n通过实验可以掌握AI代理开发技能，理解如何将自然语言处理应用于人力资源场景，提升简历筛选效率。\n\n**具体帮助**\n可作为团队自动化招聘流程的原型，降低人工筛选简历的时间成本。",
+  "difficulty": "medium",
+  "estimated_days": 5,
+  "tags": [
+    "ai-agent",
+    "anthropic",
+    "automation"
+  ],
+  "status": "selected",
+  "priority": 8.0,
+  "briefing_date": "",
+  "source_type": "repo",
+  "source_title": "santifer/career-ops — AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard,",
+  "source_url": "https://github.com/santifer/career-ops",
+  "inspiration": "",
+  "product_concept": {},
+  "source_context": "",
+  "created_at": "2026-04-09T12:32:06.751084"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "c0c73769-dc87-4593-a4ee-4783c0514514",
+  "content_id": "github-ad5992dffaf0",
+  "title": "团队内部AI CLI工具定制",
+  "description": "**为什么产生这个想法**\n文章强调'practice makes claude perfect'，提倡从vibe coding到agentic engineering的转变，可以通过定制CLI工具让团队成员更好地实践AI辅助编码\n\n**价值**\n为团队定制专属的AI CLI工具，整合代码规范检查、自动化任务和智能提示，可显著提升开发效率和代码一致性\n\n**具体帮助**\n可以让我们团队在日常开发中更便捷地使用AI能力，统一工作流程和代码规范",
+  "difficulty": "medium",
+  "estimated_days": 7,
+  "tags": [
+    "CLI工具",
+    "团队协作",
+    "效率提升"
+  ],
+  "status": "selected",
+  "priority": 8.0,
+  "briefing_date": "",
+  "source_type": "repo",
+  "source_title": "shanraisshan/claude-code-best-practice — from vibe coding to agentic engineering - practice makes claude perfect",
+  "source_url": "https://github.com/shanraisshan/claude-code-best-practice",
+  "inspiration": "",
+  "product_concept": {},
+  "source_context": "",
+  "created_at": "2026-04-15T11:32:22.999085"
+}

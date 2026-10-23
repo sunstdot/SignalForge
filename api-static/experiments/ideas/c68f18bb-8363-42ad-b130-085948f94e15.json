@@ -1,0 +1,19 @@
+{
+  "id": "c68f18bb-8363-42ad-b130-085948f94e15",
+  "content_id": "",
+  "title": "Gemma4企业知识库方案",
+  "description": "**机会点**\n基于Gemma-4-26B-A4B为企业构建私有知识库问答系统，支持企业内部文档智能检索\n\n**推导依据**\nGemma-4-26B-A4B下载66万+，企业知识管理需求大，私有化部署是关键痛点\n\n**为什么现在**\n企业数字化转型，智能知识库需求爆发，但现有方案成本高、部署复杂",
+  "difficulty": "medium",
+  "estimated_days": 7,
+  "tags": [],
+  "status": "pending",
+  "priority": 18.0,
+  "briefing_date": "",
+  "source_type": "model",
+  "source_title": "🤗 google/gemma-4-26B-A4B-it",
+  "source_url": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+  "inspiration": "",
+  "product_concept": {},
+  "source_context": "",
+  "created_at": "2026-04-08T09:41:24.779242"
+}

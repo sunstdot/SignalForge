@@ -1,0 +1,309 @@
+{
+  "id": "e8b14dc2-1087-45d6-937c-166421ea50a7",
+  "date": "2026-05-18",
+  "items": [
+    {
+      "id": "l30-reddit-4fb5fec5af68",
+      "title": "OpenClaw founder Peter Steinberger spent $1.3 million in API tokens in 30 days.",
+      "source": "Reddit",
+      "source_type": "reddit",
+      "url": "https://www.reddit.com/r/theprimeagen/comments/1tgfcr2/openclaw_founder_peter_steinberger_spent_13/",
+      "summary": "they just want to normalize this shit Are these guys just like: \"Make google maps clone, handle upto a million request a second, make no mistakes\" to background agents???? So.. in 30 days he paid the yearly base salary of around 5 mid level+ engineers. Is this supposed to be a flex? How much did he make back from the products he created?",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-18"
+    },
+    {
+      "id": "github-ea2813c4428d",
+      "title": "oven-sh/bun — Incredibly fast JavaScript runtime, bundler, test runner, and package manager – ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/oven-sh/bun",
+      "summary": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one | 🔥 397 stars today | Language: Rust",
+      "category": [
+        "开源项目",
+        "Rust"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "github-c6876fab784a",
+      "title": "K-Dense-AI/scientific-agent-skills — A set of ready to use Agent Skills for research, science, engineering, analysis,",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "summary": "A set of ready to use Agent Skills for research, science, engineering, analysis, finance and writing. | 🔥 673 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "github-ecb7de9cc8a0",
+      "title": "obra/superpowers — An agentic skills framework &amp; software development methodology that works.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/obra/superpowers",
+      "summary": "An agentic skills framework &amp; software development methodology that works. | 🔥 1305 stars today | Language: Shell",
+      "category": [
+        "开源项目",
+        "Shell"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "github-f8eddf5eef1e",
+      "title": "Anil-matcha/Open-Generative-AI — Open-source alternative to AI video platforms — Free AI image &amp; video genera",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Anil-matcha/Open-Generative-AI",
+      "summary": "Open-source alternative to AI video platforms — Free AI image &amp; video generation studio with 200+ models (Flux, Midjourney, Kling, Sora, Veo). No content filters. Self-hosted, MIT licensed. | 🔥 31",
+      "category": [
+        "开源项目",
+        "JavaScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "github-0c632f3bd507",
+      "title": "supertone-inc/supertonic — Lightning-Fast, On-Device, Multilingual TTS — running natively via ONNX.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/supertone-inc/supertonic",
+      "summary": "Lightning-Fast, On-Device, Multilingual TTS — running natively via ONNX. | 🔥 749 stars today | Language: Swift",
+      "category": [
+        "开源项目",
+        "Swift"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "github-3b31abe37078",
+      "title": "tinyhumansai/openhuman — Your Personal AI super intelligence. Private, Simple and extremely powerful.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/tinyhumansai/openhuman",
+      "summary": "Your Personal AI super intelligence. Private, Simple and extremely powerful. | 🔥 1549 stars today | Language: Rust",
+      "category": [
+        "开源项目",
+        "Rust"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "github-30b4721fb285",
+      "title": "ruvnet/RuView — π RuView turns commodity WiFi signals into real-time spatial intelligence, vital",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/ruvnet/RuView",
+      "summary": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video. | 🔥 1010 stars today | Language: Rust",
+      "category": [
+        "开源项目",
+        "Rust"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "github-f4834b6c3db9",
+      "title": "colbymchenry/codegraph — Pre-indexed code knowledge graph for Claude Code — fewer tokens, fewer tool call",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/colbymchenry/codegraph",
+      "summary": "Pre-indexed code knowledge graph for Claude Code — fewer tokens, fewer tool calls, 100% local | 🔥 416 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "hf-paper-621413283416",
+      "title": "Aligning Latent Geometry for Spherical Flow Matching in Image Generation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.15193",
+      "summary": "Latent flow matching for image generation usually transports Gaussian noise to variational autoencoder latents along linear paths. Both endpoints, however, concentrate in thin spherical shells, and a ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "hf-paper-f4f052608f81",
+      "title": "WildTableBench: Benchmarking Multimodal Foundation Models on Table Understanding In the Wild",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.01018",
+      "summary": "Using multimodal foundation models to analyze table images is a high-value yet challenging application in consumer and enterprise scenarios. Despite its importance, current evaluations rely largely on",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "hf-paper-5675af190cd3",
+      "title": "Long Context Pre-Training with Lighthouse Attention",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.06554",
+      "summary": "Training causal transformers at extreme sequence lengths is bottlenecked by the quadratic time and memory of scaled dot-product attention (SDPA). In this work, we propose Lighthouse Attention, a train",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "hf-paper-c46c2a80156f",
+      "title": "Boosting Reinforcement Learning with Verifiable Rewards via Randomly Selected Few-Shot Guidance",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.15012",
+      "summary": "Reinforcement Learning with Verifiable Rewards (RLVR) has achieved great success in developing Large Language Models (LLMs) with chain-of-thought rollouts for many tasks such as math and coding. Never",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "hf-paper-f1cdb3ee0216",
+      "title": "PreScam: A Benchmark for Predicting Scam Progression from Early Conversations",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.12243",
+      "summary": "Conversational scams, such as romance and investment scams, are emerging as a major form of online fraud. Unlike one-shot scam lures such as fake lottery or unpaid toll messages, they unfold through m",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "hf-paper-5a8bcc3c0569",
+      "title": "Sat3DGen: Comprehensive Street-Level 3D Scene Generation from Single Satellite Image",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.14984",
+      "summary": "Generating a street-level 3D scene from a single satellite image is a crucial yet challenging task. Current methods present a stark trade-off: geometry-colorization models achieve high geometric fidel",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "hf-paper-806ae40b0688",
+      "title": "Learning to Communicate Locally for Large-Scale Multi-Agent Pathfinding",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.07637",
+      "summary": "Multi-agent pathfinding (MAPF) is a widely used abstraction for multi-robot trajectory planning problems, where multiple homogeneous agents move simultaneously within a shared environment. Although so",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "hf-paper-1a0a1db7514b",
+      "title": "ViMU: Benchmarking Video Metaphorical Understanding",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.14607",
+      "summary": "Any new medium, once it emerges, is used for more than the transmission of overt content alone. The information it carries typically operates on two levels: one is the content directly presented, whil",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "hf-paper-e5db503b324d",
+      "title": "Boosting Omni-Modal Language Models: Staged Post-Training with Visually Debiased Evaluation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.12034",
+      "summary": "Omni-modal language models are intended to jointly understand audio, visual inputs, and language, but benchmark gains can be inflated when visual evidence alone is enough to answer a query. We study w",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "hf-paper-4781c9635333",
+      "title": "BEAM: Binary Expert Activation Masking for Dynamic Routing in MoE",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.14438",
+      "summary": "Mixture-of-Experts (MoE) architectures enhance the efficiency of large language models by activating only a subset of experts per token. However, standard MoE employs a fixed Top-K routing strategy, l",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-05-17"
+    },
+    {
+      "id": "l30-reddit-485467cc4887",
+      "title": "Il vero costo dell'AI",
+      "source": "Reddit",
+      "source_type": "reddit",
+      "url": "https://www.reddit.com/r/ItalyInformatica/comments/1tghkdv/il_vero_costo_dellai/",
+      "summary": "Queste sono le statistiche di utilizzo di modelli di AI di Peter Steinberger. Per chi non lo conoscesse, il creatore di OpenClaw. Ha consumato più di 600 MILIARDI di token in 30 giorni (circa 1.000.000$), una media di 20 MILIARDI al giorno (circa 40.000$). Ultimamente si sente sempre di più dire che lo sviluppo software è stato risolto, che l&#39;AI ci so...",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 6,
+      "created_at": "2026-05-18"
+    },
+    {
+      "id": "l30-tiktok-3e6497a9b61e",
+      "title": "Mientras muchos usaban la IA para hacer imágenes… alguien pasó más de un año enseñándole cómo trabajar con PDFs y tareas reales. 🤯 Peter Ste",
+      "source": "TikTok",
+      "source_type": "tiktok",
+      "url": "https://www.tiktok.com/@fatima_varela/video/7641093755667320071",
+      "summary": "Mientras muchos usaban la IA para hacer imágenes… alguien pasó más de un año enseñándole cómo trabajar con PDFs y tareas reales. 🤯 Peter Steinberger entendió antes que muchos que el futuro de la inteligencia artificial no era solo responder… era ejecutar. Así nació OpenClaw. La verdadera innovación casi nunca empieza siendo viral. Empieza resolviendo prob...",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 4,
+      "created_at": "2026-05-18"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-06-19T10:22:35.731935"
+}

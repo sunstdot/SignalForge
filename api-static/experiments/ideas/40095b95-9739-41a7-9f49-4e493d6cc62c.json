@@ -1,0 +1,23 @@
+{
+  "id": "40095b95-9739-41a7-9f49-4e493d6cc62c",
+  "content_id": "rss-chadnauseam-f22843a4ddb6",
+  "title": "for循环vs函数式性能对比",
+  "description": "**为什么产生这个想法**\n文章强调函数式方法的优势，但未涉及性能层面。通过实际测试可以验证在数据处理场景下两种方式的具体性能差异。\n\n**价值**\n为团队选择数据处理方案提供数据支撑，明确在不同数据量级下应该选用传统循环还是函数式方法，优化系统性能。\n\n**具体帮助**\n设计benchmark测试用例，对比map/filter/reduce与for循环在大数据量下的执行时间，形成技术选型参考文档。",
+  "difficulty": "hard",
+  "estimated_days": 7,
+  "tags": [
+    "性能优化",
+    "函数式编程",
+    "Benchmark"
+  ],
+  "status": "pending",
+  "priority": 8.0,
+  "briefing_date": "",
+  "source_type": "rss",
+  "source_title": "whats-wrong-with-a-for-loop",
+  "source_url": "https://chadnauseam.com/coding/tips/whats-wrong-with-a-for-loop",
+  "inspiration": "",
+  "product_concept": {},
+  "source_context": "",
+  "created_at": "2026-04-08T12:03:35.727226"
+}

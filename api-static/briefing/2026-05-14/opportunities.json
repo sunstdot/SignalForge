@@ -1,0 +1,579 @@
+{
+  "date": "2026-05-14",
+  "opportunities": [
+    {
+      "opportunity_title": "AI编程助手的超级记忆平台",
+      "core_insight": "该库提供了高性能的持久化记忆层，可让AI编码代理真正记住项目全貌，解决当前代理遗忘上下文、重复解释的痛点。",
+      "product_form": "帮助使用AI编程助手的开发团队解决代理丢失项目记忆、效率下降问题的记忆层SaaS。",
+      "target_users": "高频使用Copilot/Cursor等AI编程工具的开发者与团队，因重复解释上下文而痛苦、愿意为效率付费。",
+      "mvp_features": [
+        "跨会话的项目上下文记忆API",
+        "记忆管理仪表板与搜索",
+        "一键集成GitHub Copilot/Cursor等流行代理"
+      ],
+      "business_model": "免费额度 + 团队订阅，按席位定价。",
+      "competitive_barrier": "",
+      "risks": "IDE或AI编程工具可能很快内置类似功能，市场窗口短。",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "rohitg00/agentmemory — #1 Persistent memory for AI coding agents based on real-world benchmarks",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/rohitg00/agentmemory",
+      "item_id": "github-8c0e793b57fc"
+    },
+    {
+      "opportunity_title": "闪电离线多语言配音桌面工具",
+      "core_insight": "该引擎实现端侧极速多语言TTS，摆脱云延迟与隐私风险，可构建一次性付费的本地配音应用，满足内容创作者对速度与隐私的双重需求。",
+      "product_form": "帮助视频创作者、播客主持人生成多语言高质量语音的离线桌面应用。",
+      "target_users": "YouTuber、在线课程讲师等需要频繁配音的内容创作者，看重隐私和响应速度，愿意买断工具。",
+      "mvp_features": [
+        "多语言文本转语音",
+        "语速与语调调节",
+        "导出MP3/WAV",
+        "完全离线运行"
+      ],
+      "business_model": "一次性付费桌面应用，定价$29.99。",
+      "competitive_barrier": "",
+      "risks": "底层技术开源，可能被整合进免费工具，需快速建立品牌与使用习惯。",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "supertone-inc/supertonic — Lightning-Fast, On-Device, Multilingual TTS — running natively via ONNX.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/supertone-inc/supertonic",
+      "item_id": "github-0c632f3bd507"
+    },
+    {
+      "opportunity_title": "永不封禁的无头浏览器API",
+      "core_insight": "该浏览器能绕过所有反爬检测，可提供稳定的网页自动化API，解决数据抓取被封锁的行业刚需。",
+      "product_form": "帮助数据分析师、开发者稳定获取公开网页数据的无头浏览器API平台。",
+      "target_users": "需要竞品监控、市场数据的分析师与中小电商运营者，常因反爬封禁而中断，愿意为高成功率付费。",
+      "mvp_features": [
+        "RESTful无头浏览器调用",
+        "内置反检测保证高成功率",
+        "并发请求管理"
+      ],
+      "business_model": "按API调用量阶梯付费，提供免费测试额度。",
+      "competitive_barrier": "",
+      "risks": "法律与伦理风险高，可能被滥用于恶意爬取，平台需承担合规压力。",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 3
+      },
+      "total_score": 16,
+      "source_title": "CloakHQ/CloakBrowser — Stealth Chromium that passes every bot detection test. Drop-in Playwright replac",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/CloakHQ/CloakBrowser",
+      "item_id": "github-9e3b2f422063"
+    },
+    {
+      "opportunity_title": "一键生成电商产品3D模型",
+      "core_insight": "开源Rust库将3D重建从专业设备降低到普通照片输入，可包装成零门槛Web服务。",
+      "product_form": "帮助电商卖家将多张产品照片自动生成可嵌入网页的3D模型的SaaS工具",
+      "target_users": "电商店主、市场人员：需提升产品展示但无3D建模预算，愿按模型数付费",
+      "mvp_features": [
+        "多角度照片上传与自动对齐",
+        "云端3D重建引擎",
+        "模型预览、编辑与glTF/USDZ下载"
+      ],
+      "business_model": "按模型计费$5/个，或月订阅$29生成20个模型",
+      "competitive_barrier": "",
+      "risks": "重建质量可能达不到商业产品图标准，用户流失",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "ArthurBrussee/brush — 3D Reconstruction for all",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/ArthurBrussee/brush",
+      "item_id": "github-2749c6c7bf77"
+    },
+    {
+      "opportunity_title": "一键部署抗审查代理SaaS面板",
+      "core_insight": "Hysteria协议提供更好的速度和抗审查能力，但普通用户配置困难，面板可降低门槛。",
+      "product_form": "帮助需要自建代理的用户在VPS上一键部署并管理Hysteria服务器的控制面板",
+      "target_users": "有限技术能力的翻墙用户、小企业，需要稳定代理但不会命令行，愿月付$5-$10",
+      "mvp_features": [
+        "VPS自动安装脚本并绑定面板",
+        "用户流量统计与多账户管理",
+        "一键导出客户端配置文件"
+      ],
+      "business_model": "按月订阅面板服务费$5-$10",
+      "competitive_barrier": "",
+      "risks": "法律与支付渠道风险，可能被禁止接入主流支付",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "apernet/hysteria — Hysteria is a powerful, lightning fast and censorship resistant proxy.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/apernet/hysteria",
+      "item_id": "github-5a3e932be56f"
+    },
+    {
+      "opportunity_title": "AI桌面助手云服务",
+      "core_insight": "可靠的桌面沙箱和SDK使得可以构建托管AI agent服务，让用户通过自然语言自动化桌面任务。",
+      "product_form": "提供即用即付的云端Windows/Mac桌面，由AI代理执行数据采集、表单填写等重复操作的平台",
+      "target_users": "电商运营、市场、HR等知识工作者，需频繁进行跨系统重复操作，愿按小时付费",
+      "mvp_features": [
+        "远程桌面会话启动AI代理",
+        "自然语言指令转操作",
+        "操作录制与回放复用"
+      ],
+      "business_model": "按代理执行时长计费，约$5/小时",
+      "competitive_barrier": "",
+      "risks": "任务执行成功率不稳定，初期用户体验差导致流失",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 3
+      },
+      "total_score": 16,
+      "source_title": "trycua/cua — Open-source infrastructure for Computer-Use Agents. Sandboxes, SDKs, and benchma",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/trycua/cua",
+      "item_id": "github-41a3a6df42c5"
+    },
+    {
+      "opportunity_title": "文字转短视频生成器",
+      "core_insight": "高下载量表明市场需求大，自部署开源模型可提供比Runway更低价的视频生成服务。",
+      "product_form": "为自媒体和电商卖家提供输入促销文案一键生成15-30秒营销短视频的SaaS工具",
+      "target_users": "TikTok/Instagram内容创作者、小商家，需要频繁出片但预算有限，对价格敏感",
+      "mvp_features": [
+        "文案解析与分镜生成",
+        "模板化视频合成引擎",
+        "在线添加字幕与背景音乐"
+      ],
+      "business_model": "按视频计费$0.5/条，或月订阅$15包30条视频",
+      "competitive_barrier": "",
+      "risks": "视频质量不如商业闭源模型，用户可能流失至Runway等",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "🤗 SulphurAI/Sulphur-2-base",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/SulphurAI/Sulphur-2-base",
+      "item_id": "hf-model-967b88027b16"
+    },
+    {
+      "opportunity_title": "本地多模态私人AI助手",
+      "core_insight": "GGUF量化使多模态27B模型可在消费级硬件上运行，解锁离线隐私AI助理，此前本地部署多模态大模型成本过高",
+      "product_form": "帮助隐私敏感用户在本地安全管理和问答私人图片与文档的AI助手软件",
+      "target_users": "律师、独立研究者、创作者等需离线处理敏感材料的个人，愿为数据私密性付费",
+      "mvp_features": [
+        "拖拽导入图片/文档并自动索引",
+        "自然语言搜索与问答图片内容",
+        "全本地加密存储，零数据外传"
+      ],
+      "business_model": "一次性购买 $29.99",
+      "competitive_barrier": "",
+      "risks": "本地模型回答质量依赖硬件，用户可能期望过高导致差评",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "🤗 unsloth/Qwen3.6-27B-MTP-GGUF",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/unsloth/Qwen3.6-27B-MTP-GGUF",
+      "item_id": "hf-model-fd92262662d1"
+    },
+    {
+      "opportunity_title": "面向AI编码助手的Windows安全沙箱环境",
+      "core_insight": "Windows此前缺乏面向AI代理的易用安全隔离方案，该情报公开的方法可直接产品化，让AI安全读写本地文件成为可能",
+      "product_form": "帮助Windows开发者安全运行AI自动代码和文件操作的本地沙箱应用",
+      "target_users": "使用Copilot、Cursor等AI编码助手的Windows开发者，担心误删文件/执行危险代码，愿为安全便利付费",
+      "mvp_features": [
+        "一键创建隔离环境并配置允许访问的文件夹",
+        "细粒度网络权限控制面板",
+        "与主流AI编码助手工作流的无缝集成"
+      ],
+      "business_model": "Freemium订阅，个人版$9/月，团队版$49/月",
+      "competitive_barrier": "",
+      "risks": "微软或OpenAI未来可能将同类沙箱直接整合进Windows或Codex",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "Building a safe, effective sandbox to enable Codex on Windows",
+      "source": "OpenAI Blog",
+      "source_type": "blog",
+      "source_url": "https://openai.com/index/building-codex-windows-sandbox",
+      "item_id": "rss-openai-blog-49a108cb408a"
+    },
+    {
+      "opportunity_title": "AI代码安全漏洞扫描器",
+      "core_insight": "AI现在能高精准发现代码安全漏洞，使独立开发者可构建轻量级扫描SaaS，过去需要复杂规则库与安全团队",
+      "product_form": "帮助个人开发者和小团队自动扫描GitHub仓库中安全漏洞的AI驱动SaaS工具",
+      "target_users": "独立开发者、小型初创团队，安全意识强但缺预算，愿意为自动化安全检测付费",
+      "mvp_features": [
+        "关联GitHub仓库一键启动扫描",
+        "按严重等级分类展示漏洞与修复建议",
+        "支持定时自动扫描与Pull Request集成"
+      ],
+      "business_model": "免费扫描公开仓库，私有仓库$9/月起",
+      "competitive_barrier": "",
+      "risks": "AI误报率可能影响信任，需与GitHub Advanced Security等竞争",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 3
+      },
+      "total_score": 16,
+      "source_title": "Patch Tuesday, May 2026 Edition",
+      "source": "Krebs on Security",
+      "source_type": "rss",
+      "source_url": "https://krebsonsecurity.com/2026/05/patch-tuesday-may-2026-edition/",
+      "item_id": "rss-krebs-on-security-5070bf3d82ed"
+    },
+    {
+      "opportunity_title": "廉价多模态图片描述API",
+      "core_insight": "开源多模态小模型可自托管，提供远低于GPT-4V成本的图片alt文本和标签生成API。",
+      "product_form": "为电商平台和CMS开发者提供的按调用量计费的图片内容理解API服务",
+      "target_users": "中小电商、内容网站开发者，需要自动生成图片描述、关键词，注重API成本",
+      "mvp_features": [
+        "REST图片上传与描述生成",
+        "多语言alt文本输出",
+        "批量处理与Webhook回调"
+      ],
+      "business_model": "按千次调用$0.5，大容量月订阅套餐",
+      "competitive_barrier": "",
+      "risks": "大厂多模态API可能快速降价，压缩利润空间",
+      "scores": {
+        "pain_point": 3,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 5
+      },
+      "total_score": 15,
+      "source_title": "🤗 openbmb/MiniCPM-V-4.6",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/openbmb/MiniCPM-V-4.6",
+      "item_id": "hf-model-b3847c8d781e"
+    },
+    {
+      "opportunity_title": "在线SVG迷你图快速生成器",
+      "core_insight": "生成迷你图的SVG代码极度简单，但普通用户仍需可视化界面批量生成并嵌入网页，此前依赖Excel或JS库",
+      "product_form": "帮助内容创作者、博主快速生成可嵌入网页的精美SVG迷你图的在线工具",
+      "target_users": "博客作者、产品经理、数据分析师，需要轻量数据可视化，愿意为便捷性付费",
+      "mvp_features": [
+        "粘贴数据实时预览迷你图",
+        "自定义颜色、线宽与面积填充",
+        "一键导出SVG/PNG或获取嵌入代码"
+      ],
+      "business_model": "免费基础功能，Pro版$5/月解锁高级样式和批量生成",
+      "competitive_barrier": "",
+      "risks": "技术门槛低，易被复制，需快速积累用户形成品牌",
+      "scores": {
+        "pain_point": 3,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 5
+      },
+      "total_score": 15,
+      "source_title": "Stupidly Simple SVG Sparklines",
+      "source": "Terence Eden",
+      "source_type": "rss",
+      "source_url": "https://shkspr.mobi/blog/2026/05/stupidly-simple-svg-sparklines/",
+      "item_id": "rss-terence-eden-1a059fbee852"
+    },
+    {
+      "opportunity_title": "智能指针：屏幕语义理解鼠标助手",
+      "core_insight": "多模态视觉模型已能实时理解屏幕内容，此前此类交互需手动截图+提示词，现在可封装成通用桌面插件。",
+      "product_form": "帮助办公人员和内容创作者通过鼠标划选和自然语言指令完成跨应用内容搬运、格式转换与信息提取的桌面AI助手。",
+      "target_users": "经常在多个应用间复制整理信息的白领、研究者、新媒体编辑，愿意为自动化效率工具月付10美元左右。",
+      "mvp_features": [
+        "鼠标划选区域自动识别内容类型（文本/表格/图片）并提取结构化信息",
+        "语音或文本输入指令对选中内容执行操作（如“转成Markdown”“翻译成英文”“复制到剪贴板”）",
+        "支持跨应用拖拽移动内容，如将网页表格直接插入到Excel中"
+      ],
+      "business_model": "免费版限每日30次操作，Pro版$9.9/月无限使用，企业版按团队人数收费。",
+      "competitive_barrier": "",
+      "risks": "大模型API成本与延迟可能影响体验，操作系统可能内置类似功能导致产品被替代。",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 3
+      },
+      "total_score": 15,
+      "source_title": "杀死 ChatGPT 聊天框的，是「鼠标」",
+      "source": "APPSO",
+      "source_type": "wechat",
+      "source_url": "https://mp.weixin.qq.com/s/8ApwKS3dFIJ4ckb5EVF_AA",
+      "item_id": "rss-appso-ebef24bbe869"
+    },
+    {
+      "opportunity_title": "AI生成代码自动审查服务",
+      "core_insight": "该工具能精准检测AI代理产出的低质量React代码，可包装为CI检查环节，弥补AI生成代码缺乏质量控制的空白。",
+      "product_form": "帮助React开发团队自动审查AI生成代码、防止低质量代码进入生产环境的GitHub Action与SaaS。",
+      "target_users": "频繁使用AI编写React代码的独立开发者及小型团队，担心代码可维护性与性能问题，愿意为质量付费。",
+      "mvp_features": [
+        "GitHub PR自动扫描AI生成代码",
+        "问题分类与修复建议",
+        "项目级代码质量趋势仪表板"
+      ],
+      "business_model": "免费开源小用量 + 付费团队版，按仓库数量定价。",
+      "competitive_barrier": "",
+      "risks": "仅聚焦React生态，市场天花板有限；大厂可能免费提供类似检查。",
+      "scores": {
+        "pain_point": 3,
+        "market_size": 2,
+        "tech_timing": 4,
+        "buildability": 5
+      },
+      "total_score": 14,
+      "source_title": "millionco/react-doctor — Your agent writes bad React. This catches it",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/millionco/react-doctor",
+      "item_id": "github-4f0cca454833"
+    },
+    {
+      "opportunity_title": "科研多面手AI助手",
+      "core_insight": "这些预置技能可直接组装为垂直研究助手，让科研人员用自然语言完成文献综述、数据分析等任务，此前缺乏这样低门槛的聚合工具。",
+      "product_form": "帮助研究生、科研人员加速文献调研与数据分析的AI多技能助手SaaS。",
+      "target_users": "高校研究生、实验室研究人员，面对海量文献与数据整理耗时，有付费提升效率的意愿。",
+      "mvp_features": [
+        "论文智能检索与摘要生成",
+        "数据分析技能一键执行",
+        "多语言报告自动生成"
+      ],
+      "business_model": "按月订阅，提供免费处理篇数与数据量上限。",
+      "competitive_barrier": "",
+      "risks": "开源技能集容易被竞品复制，差异化需依赖产品体验与垂直深耕。",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 3
+      },
+      "total_score": 14,
+      "source_title": "K-Dense-AI/scientific-agent-skills — A set of ready to use Agent Skills for research, science, engineering, analysis,",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "item_id": "github-c6876fab784a"
+    },
+    {
+      "opportunity_title": "互动式LLM训练营",
+      "core_insight": "详尽的开源教程降低了学习门槛，云端实验室可免除环境配置痛点，实现边学边练。",
+      "product_form": "为AI学习者提供预装依赖和数据集并可逐步执行代码的云端Jupyter学习平台",
+      "target_users": "想要转行NLP的开发者、学生，愿为免环境折腾和系统学习路径付费",
+      "mvp_features": [
+        "浏览器内Jupyter Notebook环境",
+        "课程进度追踪与成就体系",
+        "GPU资源按需分配"
+      ],
+      "business_model": "月订阅$19.9，含基础GPU时数，超出按量付费",
+      "competitive_barrier": "",
+      "risks": "开源免费内容直接竞争，付费转化率可能较低",
+      "scores": {
+        "pain_point": 3,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 14,
+      "source_title": "rasbt/LLMs-from-scratch — Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/rasbt/LLMs-from-scratch",
+      "item_id": "github-8a39575133bf"
+    },
+    {
+      "opportunity_title": "CFO AI 助手：自动生成财务分析报告",
+      "core_insight": "Codex可根据原始业务数据自动生成完整的管理报告和差异分析，省去财务团队数小时的手动 Excel 工作，此前无 AI 直接理解财务上下文并输出格式化报告的能力。",
+      "product_form": "帮助中小企业财务经理自动生成月度经营分析报告和差异说明的 SaaS 工具",
+      "target_users": "中小企业财务经理、分析人员，每月需花 8-16 小时制作 MBR 和差异分析，付费意愿强",
+      "mvp_features": [
+        "上传 Excel/CSV 自动生成 MBR 报告",
+        "差异桥自动计算与文字解释",
+        "报告模板与品牌化导出"
+      ],
+      "business_model": "订阅制，$29/月起，按团队规模分级定价",
+      "competitive_barrier": "",
+      "risks": "依赖 OpenAI API 成本与稳定性，财务数据敏感导致获客难度大",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 3,
+        "buildability": 4
+      },
+      "total_score": 14,
+      "source_title": "How finance teams use Codex",
+      "source": "OpenAI Blog",
+      "source_type": "blog",
+      "source_url": "https://openai.com/academy/how-finance-teams-use-codex",
+      "item_id": "rss-openai-blog-14f0330ce5a9"
+    },
+    {
+      "opportunity_title": "LLM 应用实时可观测性快速面板",
+      "core_insight": "可观测性查询速度提升 12-15 倍，使得实时、高频率的 LLM 调用链分析与成本监控成为可能，此前因延迟过高无法做细粒度可视化交互。",
+      "product_form": "帮助 AI 产品团队实时监控和优化 LLM 应用性能与成本的轻量级仪表盘",
+      "target_users": "构建 LLM 应用的产品团队和技术负责人，需监控 token 消耗、延迟和异常",
+      "mvp_features": [
+        "一键接入 LangSmith 数据源",
+        "实时调用链时间轴与成本热力图",
+        "异常检测与 Slack 告警"
+      ],
+      "business_model": "月度订阅，基础版免费，Pro 版 $49/月",
+      "competitive_barrier": "",
+      "risks": "SmithDB 可能是 LangChain 内部组件未对外公开，生态依赖风险高",
+      "scores": {
+        "pain_point": 3,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 3
+      },
+      "total_score": 13,
+      "source_title": "not much happened today",
+      "source": "Smol AI News",
+      "source_type": "smolai",
+      "source_url": "https://news.smol.ai/issues/26-05-13-not-much/",
+      "item_id": "rss-smol-ai-news-517a4d1f9d71"
+    }
+  ],
+  "analyzed_item_ids": [
+    "github-3b31abe37078",
+    "github-8c0e793b57fc",
+    "github-ecb7de9cc8a0",
+    "github-9b9d31207248",
+    "github-efac7acf711e",
+    "github-4f0cca454833",
+    "github-c6876fab784a",
+    "github-51bfbb3ca05d",
+    "github-0c632f3bd507",
+    "github-9e3b2f422063",
+    "github-06e6a3ccccc3",
+    "github-2749c6c7bf77",
+    "github-b1e504c026ad",
+    "github-5a3e932be56f",
+    "github-8a39575133bf",
+    "github-3bf999ed99e1",
+    "github-41a3a6df42c5",
+    "github-8ecb815d1d90",
+    "hf-model-967b88027b16",
+    "hf-model-b3847c8d781e",
+    "hf-model-d6be4a0dd0b2",
+    "hf-model-fd141927797a",
+    "hf-model-fe96e83596e6",
+    "hf-model-4810f52a1891",
+    "hf-model-f3fc7d86e6c4",
+    "hf-model-fd92262662d1",
+    "hf-model-79856f8f8d86",
+    "hf-model-4481c76e29d1",
+    "hf-paper-74618f62192f",
+    "hf-paper-5aa728c6c951",
+    "hf-paper-f0d8486b98ed",
+    "hf-paper-bfae1fb25360",
+    "hf-paper-1e7bc2464b01",
+    "hf-paper-da91d00b1211",
+    "hf-paper-e83ffc6c87b0",
+    "hf-paper-ed701efa1e3a",
+    "hf-paper-839510b6e474",
+    "hf-paper-a8578fa95a01",
+    "rss-openai-blog-49a108cb408a",
+    "rss-openai-blog-7e8d14b05daf",
+    "rss-openai-blog-14f0330ce5a9",
+    "rss-google-ai-blog-493dd3fda709",
+    "rss-google-ai-blog-70615ef3544f",
+    "rss-meta-engineering-511fa71969f4",
+    "rss-smol-ai-news-517a4d1f9d71",
+    "rss-hackernews-daily-6cd1b0a3d759",
+    "rss-all-in-podcast-712b13d372ac",
+    "rss-all-in-podcast-135365b290ec",
+    "rss-all-in-podcast-90cdcea92073",
+    "atom-the-ai-valley-777dc44caed0",
+    "rss-latent-space-45ba57bc81f3",
+    "rss-ben's-bites-4020c77ab40a",
+    "atom-simon-willison-ff537b75f2fc",
+    "atom-simon-willison-fd5aac82b5dc",
+    "rss-gary-marcus-7aa50278ecc5",
+    "rss-interconnects-d65d74701df3",
+    "atom-george-hotz-0dc737c49a3b",
+    "rss-entropic-thoughts-36802538af60",
+    "rss-daniel-delaney-9d5b84f9de20",
+    "rss-maurycy-fe2ed43ca678",
+    "atom-matklad-a528540135d9",
+    "atom-armin-ronacher-ebab17f3b4d1",
+    "rss-jim-nielsen-4f3493b188be",
+    "rss-xe-iaso-89f6167fcc6b",
+    "rss-the-old-new-thing-32065e7f8b12",
+    "rss-max-bernstein-efbf0cd5d2cd",
+    "rss-evan-hahn-05d762691ca8",
+    "rss-sean-goedecke-729e3a21a218",
+    "rss-ibrahim-diallo-431afc6ff9da",
+    "rss-ibrahim-diallo-9dec38d9d18b",
+    "rss-john-d.-cook-e8692436377c",
+    "atom-susam-b1e2f3775628",
+    "rss-james-shore-a27820a51fc1",
+    "rss-hillel-wayne-e1af2a56352a",
+    "rss-terence-eden-1a059fbee852",
+    "rss-dave-farquhar-38436552d2c2",
+    "atom-jyn-f23f513617d4",
+    "rss-arpit-bhayani-567c989997aa",
+    "rss-krebs-on-security-5070bf3d82ed",
+    "rss-troy-hunt-48fd9cc8d42a",
+    "rss-jeff-geerling-4053bfcc401e",
+    "rss-pluralistic-8ea39949ed9e",
+    "atom-dynomight-9ad0a4448669",
+    "rss-experimental-history-19513b709e35",
+    "rss-joan-westenberg-4bd9fe452ffc",
+    "rss-where's-your-ed-at-cc977952e4f6",
+    "rss-fernando-borretti-c510e3f20574",
+    "rss-bert-hubert-ec61443d9473",
+    "atom-dylan-nesbitt-57b019b54301",
+    "rss-construction-physics-bde81bea2e58",
+    "atom-tedium-f1a48b6a17da",
+    "rss-the-digital-antiquar-cc92f97d6dea",
+    "rss-appso-3bd4b1c2b430",
+    "rss-appso-47549110a00e",
+    "rss-appso-ebef24bbe869",
+    "rss-量子位-ce7103d91f77",
+    "rss-量子位-6b6a618db297",
+    "rss-量子位-b14fa8fc24f6",
+    "rss-虎嗅-51528bcd049e",
+    "rss-虎嗅-0528984fe3a5",
+    "rss-虎嗅-21e94886f1c9",
+    "rss-极客公园-1fbedb7089dd"
+  ],
+  "remaining": 0
+}

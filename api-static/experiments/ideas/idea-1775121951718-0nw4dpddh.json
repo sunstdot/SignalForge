@@ -1,0 +1,19 @@
+{
+  "id": "idea-1775121951718-0nw4dpddh",
+  "content_id": "arxiv-2604.01202v1",
+  "title": "复现: Therefore I am. I Think",
+  "description": "基于论文「Therefore I am. I Think」的核心方法进行复现实验。\n\n本研究探讨了大型语言推理模型在做出选择时的决策顺序问题。研究发现，模型实际上可能在生成推理文本（chain-of-thought）之前就已经编码了决策信息。通过线性探针解码、激活引导实验和行为分析，研究表明决策可能先于明确的推理过程产生，而推理文本更多是对预先决策的合理化解释。\n\n#...",
+  "difficulty": "hard",
+  "estimated_days": 14,
+  "tags": [
+    "AI研究",
+    "大语言模型应用"
+  ],
+  "status": "pending",
+  "priority": 9.0,
+  "briefing_date": "2026-04-02",
+  "source_type": "paper",
+  "source_title": "Therefore I am. I Think",
+  "source_url": "https://arxiv.org/abs/2604.01202v1",
+  "created_at": "2026-04-02T09:25:51.718Z"
+}

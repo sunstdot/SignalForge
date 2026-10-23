@@ -1,0 +1,668 @@
+{
+  "date": "2026-06-01",
+  "opportunities": [
+    {
+      "opportunity_title": "AI分布式攻击实时监控防火墙",
+      "core_insight": "有状态在线监控能关联恶意Agent的分布式行为，弥补传统无状态检测的盲区，使检测LLM驱动的攻击成为可能。",
+      "product_form": "帮助安全团队实时检测和阻止利用LLM进行的分布式攻击的SaaS安全网关。",
+      "target_users": "企业安全运维人员，面临LLM API滥用和Agent攻击威胁，付费意愿高。",
+      "mvp_features": [
+        "接入OpenAI等API流量监控",
+        "基于行为序列的异常Agent检测",
+        "攻击告警与自动阻断"
+      ],
+      "business_model": "按API请求量订阅，起步$99/月。",
+      "competitive_barrier": "",
+      "risks": "大厂和云安全厂商可能快速推出类似方案，竞争激烈。",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 18,
+      "source_title": "Stateful Online Monitoring Catches Distributed Agent Attacks",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "source_url": "https://arxiv.org/abs/2605.31593v1",
+      "item_id": "arxiv-2605.31593v1"
+    },
+    {
+      "opportunity_title": "多事件AI视频故事导演",
+      "core_insight": "无需额外训练即可让DiT模型生成包含多个事件的连贯视频，解决了以往只能生成单一片段的瓶颈。",
+      "product_form": "帮助内容创作者根据多段叙事脚本一键生成多场景连贯短剧的视频创作SaaS。",
+      "target_users": "短视频创作者、营销人员，需要高效产出剧情连贯的视频内容，降低拍摄剪辑成本。",
+      "mvp_features": [
+        "多事件文本脚本输入与解析",
+        "渐进式视频生成引导与控制",
+        "场景连贯性预览与微调"
+      ],
+      "business_model": "按生成视频分钟数订阅，$29/月包含基础时长。",
+      "competitive_barrier": "",
+      "risks": "生成视频质量可能不够商业级，导致用户付费意愿低于预期。",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 17,
+      "source_title": "TunerDiT: Training-free Progressive Steering of Diffusion Transformer for Multi-Event Video Generation",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "source_url": "https://arxiv.org/abs/2605.31590v1",
+      "item_id": "arxiv-2605.31590v1"
+    },
+    {
+      "opportunity_title": "通用传感器预测性维护SaaS",
+      "core_insight": "JEPA生成的语义嵌入可统一异构传感器表示，实现零样本异常检测，省去为每类传感器单独建模特训的成本。",
+      "product_form": "帮助设备运维人员上传传感器数据即可自动发现异常并预警的工业IoT监控平台。",
+      "target_users": "中小型制造工厂的设备维修主管，缺乏数据科学团队，渴望低成本实现智能运维。",
+      "mvp_features": [
+        "多格式传感器数据上传与解析",
+        "基于JEPA语义嵌入的异常自动标注",
+        "实时告警与历史趋势可视化"
+      ],
+      "business_model": "按监控设备数订阅，$49/月起。",
+      "competitive_barrier": "",
+      "risks": "实际工业数据噪声大、缺失多，可能大幅降低模型效果，导致误报多。",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 17,
+      "source_title": "Giving Sensors a Voice: Multimodal JEPA for Semantic Time-Series Embeddings",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "source_url": "https://arxiv.org/abs/2605.31580v1",
+      "item_id": "arxiv-2605.31580v1"
+    },
+    {
+      "opportunity_title": "Unchained AI 创作工作台",
+      "core_insight": "大量用户希望获得无安全限制的 AI 文本和图像生成能力，现有主流接口均有严格审查。",
+      "product_form": "帮助小说作者、角色扮演玩家、内容创作者摆脱审查限制的 AI 创意写作与聊天平台",
+      "target_users": "网文作者、TRPG 玩家、成人内容创作者等，对无审查 AI 有强烈需求且愿意付费",
+      "mvp_features": [
+        "无过滤聊天/故事生成",
+        "多角色记忆管理",
+        "私密文件保存与导出"
+      ],
+      "business_model": "每月 9.99 美元订阅，提供更高并发和更长上下文",
+      "competitive_barrier": "",
+      "risks": "可能面临平台政策风险和法律合规问题",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 17,
+      "source_title": "🤗 HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+      "item_id": "hf-model-1464fa38faac"
+    },
+    {
+      "opportunity_title": "DataForge AI - 一键生成垂直领域微调数据",
+      "core_insight": "通过LLM Agent自动生成领域特化训练数据，让无AI团队的中小企业也能低成本微调定制模型",
+      "product_form": "帮助中小企业快速生成垂直领域微调训练数据的自助SaaS平台",
+      "target_users": "零售、法律、医疗等行业中小企业，需要定制AI助手但缺乏标注数据",
+      "mvp_features": [
+        "上传行业文档自动生成问答对",
+        "数据质量自动评估与去重",
+        "一键导出训练数据集"
+      ],
+      "business_model": "按月订阅，基础版$49/月生成1000条数据",
+      "competitive_barrier": "",
+      "risks": "自动生成数据可能存在事实错误，需提供人工审核入口",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 17,
+      "source_title": "Exploring Autonomous Agentic Data Engineering for Model Specialization",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "source_url": "https://huggingface.co/papers/2605.30407",
+      "item_id": "hf-paper-fa194f25339e"
+    },
+    {
+      "opportunity_title": "实时手语对话助手",
+      "core_insight": "新模型实现视觉手语实时转文字/语音，延迟与准确率首次达到可用级，此前端到端延迟与精度都无法落地",
+      "product_form": "帮助听障用户与健听人实时无障碍沟通的移动端AI翻译应用",
+      "target_users": "听障人士、手语使用者、特殊教育教师及家属，有强沟通痛点，愿为无障碍工具订阅付费",
+      "mvp_features": [
+        "摄像头实时手语转文字",
+        "对方语音实时转文字展示",
+        "对话历史保存与分享"
+      ],
+      "business_model": "基础免费，无限翻译月付$9.9，机构按席位收费",
+      "competitive_barrier": "",
+      "risks": "复杂背景/快速手语识别准确率不足，隐私与无障碍法规风险",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 17,
+      "source_title": "9 demos of Gemini Omni and Gemini 3.5 in action",
+      "source": "Google AI Blog",
+      "source_type": "blog",
+      "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos/",
+      "item_id": "rss-google-ai-blog-6aee6b02d3b5"
+    },
+    {
+      "opportunity_title": "儿童探索式学习相机",
+      "core_insight": "实时多模态理解可让儿童手持设备拍摄任意物体即获得趣味讲解，取代被动视频，实现探索式早教",
+      "product_form": "面向3-8岁儿童的智能相机App，即时识别物体并用童趣语音讲解相关知识",
+      "target_users": "年轻家长，希望孩子远离被动刷视频，愿为高质量互动教育内容按月付费",
+      "mvp_features": [
+        "一键拍摄物体识别",
+        "儿童化语音知识讲解",
+        "家长看板记录探索足迹"
+      ],
+      "business_model": "订阅制$6.99/月，提供周认知报告与家长控制",
+      "competitive_barrier": "",
+      "risks": "儿童隐私合规要求高，内容安全审核成本，AI偶尔答非所问导致体验下降",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 17,
+      "source_title": "9 demos of Gemini Omni and Gemini 3.5 in action",
+      "source": "Google AI Blog",
+      "source_type": "blog",
+      "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos/",
+      "item_id": "rss-google-ai-blog-6aee6b02d3b5"
+    },
+    {
+      "opportunity_title": "纯净搜索：一键去除AI摘要的Google搜索",
+      "core_insight": "利用Google未公开的&udm=14参数可强制返回传统链接式结果，避开AI摘要，此前该参数鲜为人知，每逢Google激怒用户便出现需求爆发。",
+      "product_form": "帮助反感AI搜索摘要的普通用户获得无干扰、快速、传统网页搜索体验的极简搜索网站。",
+      "target_users": "不满Google搜索结果被AI概述污染的用户，注重简洁与隐私，愿意为干净工具小额付费或接受非侵入广告。",
+      "mvp_features": [
+        "默认添加&udm=14并去除AI概述的搜索框",
+        "多国语言界面及暗黑模式",
+        "无跟踪的隐私保护声明与广告位"
+      ],
+      "business_model": "免费使用，通过非侵入式文字广告或接受捐赠盈利。",
+      "competitive_barrier": "",
+      "risks": "Google可能屏蔽或修改参数，使产品失效。",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 17,
+      "source_title": "One &udm After Another",
+      "source": "Tedium",
+      "source_type": "rss",
+      "source_url": "https://feed.tedium.co/link/15204/17351430/google-ai-udm14-reflection",
+      "item_id": "atom-tedium-5563d9f30ec5"
+    },
+    {
+      "opportunity_title": "AI一键营销短视频生成SaaS",
+      "core_insight": "开源项目将视频生成门槛降到一句文案，非创作者可即时产出营销视频，此前需剪辑技能或外包。",
+      "product_form": "帮助电商卖家、自媒体运营者解决短视频制作耗时费力问题的在线AI视频工厂",
+      "target_users": "社交电商店主、TikTok/抖音运营者、中小商家，无剪辑能力但每日需要发布多条营销视频",
+      "mvp_features": [
+        "输入文案或产品链接自动生成口播+素材视频",
+        "多行业模板选择（电商/本地生活/知识付费）",
+        "一键导出1080P去水印视频"
+      ],
+      "business_model": "订阅制，$19/月基础版（30个视频），$49/月专业版",
+      "competitive_barrier": "",
+      "risks": "视频质量受底层模型限制，可能产生失真内容导致用户流失",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "harry0703/MoneyPrinterTurbo — 利用AI大模型，一键生成高清短视频 Generate short videos with one click using AI LLM.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "item_id": "github-d7fa42b7f3f5"
+    },
+    {
+      "opportunity_title": "一站式多语言逼真语音创作平台",
+      "core_insight": "免分词器TTS大幅降低多语言语音生成门槛，创作者可一站式制作跨语种有声内容，无需复杂技术集成",
+      "product_form": "帮助内容创作者与教育者用AI生成多语种有声书、配音和定制化语音角色的SaaS工具",
+      "target_users": "YouTuber、播客制作者、有声书工作室、多语言教学机构，需高效产出自然语音",
+      "mvp_features": [
+        "文本转语音支持20+语言及情绪控制",
+        "创意音色设计面板(语速/语调/情感)",
+        "声音克隆(上传样本生成专属音色)"
+      ],
+      "business_model": "按字符/分钟计费订阅，免费体验5000字",
+      "competitive_barrier": "",
+      "risks": "开源模型被大厂集成导致竞争，语音合成质量需对齐11labs",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 3
+      },
+      "total_score": 16,
+      "source_title": "OpenBMB/VoxCPM — VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice D",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/OpenBMB/VoxCPM",
+      "item_id": "github-4af2333a3281"
+    },
+    {
+      "opportunity_title": "中小企业无代码AI助手团队搭建器",
+      "core_insight": "元技能自动生成领域Agent，将定制化企业AI助手的开发门槛从数月降至零代码，中小企业可即刻部署",
+      "product_form": "帮助中小企业用自然语言描述业务需求，自动生成专属客服、销售等AI助手团队的SaaS平台",
+      "target_users": "电商店主、在线教育机构、小型服务公司，无开发能力急需7x24自动应答系统",
+      "mvp_features": [
+        "自然语言描述自动生成agent团队配置",
+        "对接Shopify/WhatsApp/微信的即插即用",
+        "测试对话与人工接管模式"
+      ],
+      "business_model": "按月订阅，按活跃agent数量及对话量计费",
+      "competitive_barrier": "",
+      "risks": "LLM底层能力依赖第三方，大厂推出竞品可复刻",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 5,
+        "tech_timing": 4,
+        "buildability": 3
+      },
+      "total_score": 16,
+      "source_title": "revfactory/harness — A meta-skill that designs domain-specific agent teams, defines specialized agent",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/revfactory/harness",
+      "item_id": "github-d390cae184b6"
+    },
+    {
+      "opportunity_title": "AI长期记忆伴侣App",
+      "core_insight": "可扩展记忆层让AI在每次对话中累积用户上下文，实现持久化个性化陪伴，之前会话隔离无法记忆",
+      "product_form": "帮助个人用户构建与AI的长期记忆关系，用于日记反思、学习陪伴、客户关系记忆的个人应用",
+      "target_users": "需要AI深度陪伴的孤独人群、学生、销售从业者，愿为连续性记忆付费",
+      "mvp_features": [
+        "创建记忆空间并自动提取对话要点",
+        "记忆检索与时间线摘要",
+        "接入主流LLM作为对话界面"
+      ],
+      "business_model": "Freemium，免费10条记忆链，付费解锁无限记忆与自定义模型",
+      "competitive_barrier": "",
+      "risks": "隐私与记忆数据安全风险，用户对长期记忆的期望与现实差距",
+      "scores": {
+        "pain_point": 3,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "supermemoryai/supermemory — Memory engine and app that is extremely fast, scalable. The Memory API for the A",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/supermemoryai/supermemory",
+      "item_id": "github-7a6c007db3eb"
+    },
+    {
+      "opportunity_title": "秒变视频头像生成器",
+      "core_insight": "该模型能将静态照片快速转为会说话的视频头像，而此前这类功能需依赖昂贵的人工或复杂软件。",
+      "product_form": "帮助社交媒体创作者和普通用户通过一张自拍生成会说话的虚拟头像视频的在线工具",
+      "target_users": "短视频博主、在线教育讲师、虚拟主播爱好者，愿意为高频视频制作付费",
+      "mvp_features": [
+        "上传照片生成动态头像",
+        "文本转语音驱动口型",
+        "导出高清视频"
+      ],
+      "business_model": "按生成视频次数付费，套餐 9.9 元/10 条视频",
+      "competitive_barrier": "",
+      "risks": "动作自然度可能不足，需要后续优化",
+      "scores": {
+        "pain_point": 3,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "🤗 meituan-longcat/LongCat-Video-Avatar-1.5",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.5",
+      "item_id": "hf-model-9a3d2d5f2bb3"
+    },
+    {
+      "opportunity_title": "HR 智囊文本助手",
+      "core_insight": "企业 HR 日常需要大量撰写职位描述、面试评价、通知等，该模型可将专业知识直接嵌入生成流程。",
+      "product_form": "帮助中小企业的 HR 快速生成标准化招聘与员工沟通文档的 SaaS 工具",
+      "target_users": "中小企业 HR 或没有专职 HR 的创始人，重复性文案痛点明显，支付订阅费意愿高",
+      "mvp_features": [
+        "一句话生成完整职位描述",
+        "简历摘要与匹配度打分",
+        "新人入职邮件模板库"
+      ],
+      "business_model": "每月 19 美元订阅，支持 10 个岗位同步管理",
+      "competitive_barrier": "",
+      "risks": "模型输出可能存在偏见，需人工审核",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 5
+      },
+      "total_score": 16,
+      "source_title": "🤗 sapientinc/HRM-Text-1B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/sapientinc/HRM-Text-1B",
+      "item_id": "hf-model-59891ca2454a"
+    },
+    {
+      "opportunity_title": "基于Hy3冠军模型的智能客服SaaS",
+      "core_insight": "Hy3在OpenRouter排名大幅领先，可能代表成本更低、质量更高，使独立开发者能以低价调用顶级模型，构建有竞争力的AI客服产品，此前因成本过高无法实现",
+      "product_form": "帮助中小企业网站用最新冠军模型提供24/7智能客服的SaaS聊天插件",
+      "target_users": "电商卖家、SaaS公司、内容网站，需自动化客服但预算有限，愿月付$29-$99",
+      "mvp_features": [
+        "网站嵌入聊天窗口",
+        "基于Hy3的自动对话与FAQ匹配",
+        "简单后台可上传知识文档"
+      ],
+      "business_model": "按月订阅，基础版$29/月含3000次对话，高级版$99/月",
+      "competitive_barrier": "",
+      "risks": "Hy3模型供应不稳定或API涨价，依赖第三方导致服务质量不可控",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "The mysterious Hy3 LLM is topping OpenRouter Model Rankings by a large margin",
+      "source": "Max Woolf",
+      "source_type": "rss",
+      "source_url": "https://minimaxir.com/2026/05/openrouter-hy3/",
+      "item_id": "rss-max-woolf-e38b0f2d8065"
+    },
+    {
+      "opportunity_title": "一键生成图片购物清单",
+      "core_insight": "通过多模态定位模型自动识别图中物品并匹配商品链接，让非技术用户轻松实现图片到购买。",
+      "product_form": "帮助普通消费者在不方便文字搜索时，通过拍照或截图直接发现同款商品的 AI 购物助手",
+      "target_users": "追求穿搭/家居灵感的普通用户，尤其是不擅长关键词搜索的人群，付费意愿中等",
+      "mvp_features": [
+        "上传图片自动框出所有可购买物品",
+        "点击物品显示相似商品列表及价格",
+        "收藏夹与一键跳转电商平台"
+      ],
+      "business_model": "按商品点击收费或 affiliate 佣金，订阅制月费 $4.99",
+      "competitive_barrier": "",
+      "risks": "定位精度不足导致错误商品推荐，影响体验",
+      "scores": {
+        "pain_point": 3,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 15,
+      "source_title": "🤗 nvidia/LocateAnything-3B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/nvidia/LocateAnything-3B",
+      "item_id": "hf-model-7dc946291cd1"
+    },
+    {
+      "opportunity_title": "AgentGuard - LLM Agent行为安全防火墙",
+      "core_insight": "利用论文防御技术为生产环境Agent提供运行时攻击检测与阻断，填补当前Agent安全空白",
+      "product_form": "帮助AI应用开发者保护Agent免受后门攻击的轻量级安全中间件",
+      "target_users": "使用LangChain等框架构建Agent的企业开发者，担心agent越权或执行恶意指令",
+      "mvp_features": [
+        "自动拦截可疑文件读写和工具调用",
+        "后门攻击模式检测规则库",
+        "实时告警与安全日志"
+      ],
+      "business_model": "开源核心免费，企业版订阅$29/月/实例",
+      "competitive_barrier": "",
+      "risks": "攻击手法演进快，检测规则需持续迭代更新",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 15,
+      "source_title": "From Prompt Injection to Persistent Control: Defending Agentic Harness Against Trojan Backdoors",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "source_url": "https://huggingface.co/papers/2605.31042",
+      "item_id": "hf-paper-d6a69312eb77"
+    },
+    {
+      "opportunity_title": "Agent工具智能编排器，解决工具选择难题",
+      "core_insight": "当前多工具AI Agent普遍存在工具调用混乱问题，新训练范式预示解决方向；可先用LLM路由和工具描述增强，让现有Agent选对工具。",
+      "product_form": "帮助AI Agent开发者自动分析任务语义并精准选择工具组合的中间件/SaaS服务。",
+      "target_users": "构建多工具AI Agent的开发者，面临agent调用错误工具的痛点，愿意为提升可靠性付费。",
+      "mvp_features": [
+        "基于语义相似度的工具自动匹配API",
+        "工具调用日志与错误分析仪表板",
+        "一键集成主流Agent框架的插件"
+      ],
+      "business_model": "按Agent调用次数收费，免费层10K次/月，Pro$29/月。",
+      "competitive_barrier": "",
+      "risks": "基础模型能力提升后可能直接解决工具选择问题，造成中间件冗余。",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 15,
+      "source_title": "别光给Agent加Tool了，它根本选不明白！复旦×通义提出全新CUA训练范式",
+      "source": "量子位",
+      "source_type": "wechat",
+      "source_url": "https://www.qbitai.com/2026/05/427005.html",
+      "item_id": "rss-量子位-ae11dbb23e6d"
+    },
+    {
+      "opportunity_title": "Markdown在线文档转换器",
+      "core_insight": "微软开源的高质量转Markdown工具，让非开发者也能轻松将Word/PDF等转为干净Markdown，替代手动排版。",
+      "product_form": "帮助写作者、博主、学生将各类文档一键转为高保真Markdown的在线服务",
+      "target_users": "技术文档作者、Markdown博客写手、学术作者，常需将Office或PDF内容复用为Markdown格式",
+      "mvp_features": [
+        "拖放上传Word/PDF/HTML自动转Markdown",
+        "实时预览与编辑修正",
+        "支持批量转换与导出ZIP"
+      ],
+      "business_model": "免费10次/月，Pro版$5/月无限转换且保留复杂表格与图片",
+      "competitive_barrier": "",
+      "risks": "微软可能直接在Office中内置此功能，使独立产品失去价值",
+      "scores": {
+        "pain_point": 3,
+        "market_size": 2,
+        "tech_timing": 4,
+        "buildability": 5
+      },
+      "total_score": 14,
+      "source_title": "microsoft/markitdown — Python tool for converting files and office documents to Markdown.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/microsoft/markitdown",
+      "item_id": "github-e4b7ba63c2bd"
+    },
+    {
+      "opportunity_title": "离线AI户外生存助手",
+      "core_insight": "边缘AI与知识库结合可在无网络环境下提供交互式生存指导，取代静态手册，极端场景价值极高",
+      "product_form": "帮助徒步、露营、灾难准备者在无信号区域获得AI辅助生存指导与核心工具的移动应用",
+      "target_users": "户外徒步爱好者、灾难准备者、地质工作者，对安全付费意愿强",
+      "mvp_features": [
+        "离线急救与野外生存知识库问答",
+        "基于本地小模型的紧急决策建议",
+        "指南针、求生信号等实用工具"
+      ],
+      "business_model": "应用一次性付费或订阅，考虑与户外硬件捆绑销售",
+      "competitive_barrier": "",
+      "risks": "离线AI决策可能有误导致安全问题，法律责任与信任建立困难",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 3
+      },
+      "total_score": 14,
+      "source_title": "Crosstalk-Solutions/project-nomad — Project N.O.M.A.D, is a self-contained, offline survival computer packed with cr",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/Crosstalk-Solutions/project-nomad",
+      "item_id": "github-ef46190fa444"
+    },
+    {
+      "opportunity_title": "LayoutGPT - 从功能描述生成3D室内布局",
+      "core_insight": "将自然语言功能需求直接转化为3D空间布局，省去手动摆放家具，降低室内设计门槛",
+      "product_form": "面向室内设计师和装修业主的AI空间规划在线工具",
+      "target_users": "室内设计师、家居博主、准备装修的房主，需要快速出图与反复调整",
+      "mvp_features": [
+        "输入功能描述生成3D场景",
+        "多风格切换与简单编辑",
+        "导出通用3D格式如OBJ/GLB"
+      ],
+      "business_model": "按量付费$1.99/场景，包月$19.99无限生成",
+      "competitive_barrier": "",
+      "risks": "生成布局可能不完全符合建筑规范，需专业校验",
+      "scores": {
+        "pain_point": 3,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 3
+      },
+      "total_score": 14,
+      "source_title": "Function2Scene: 3D Indoor Scene Layout from Functional Specifications",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "source_url": "https://huggingface.co/papers/2605.30819",
+      "item_id": "hf-paper-f986c7e8fcf4"
+    }
+  ],
+  "analyzed_item_ids": [
+    "arxiv-2605.31603v1",
+    "arxiv-2605.31596v1",
+    "arxiv-2605.31594v1",
+    "arxiv-2605.31593v1",
+    "arxiv-2605.31590v1",
+    "arxiv-2605.31586v1",
+    "arxiv-2605.31584v1",
+    "arxiv-2605.31581v1",
+    "arxiv-2605.31580v1",
+    "arxiv-2605.31575v1",
+    "arxiv-2605.31564v1",
+    "arxiv-2605.31563v1",
+    "arxiv-2605.31562v1",
+    "arxiv-2605.31561v1",
+    "arxiv-2605.31559v1",
+    "github-d7fa42b7f3f5",
+    "github-e4b7ba63c2bd",
+    "github-2c69330ad020",
+    "github-026bd99f07a4",
+    "github-bf3cb64d8bdc",
+    "github-ca5914a6a241",
+    "github-4af2333a3281",
+    "github-d390cae184b6",
+    "github-28a3870d256f",
+    "github-7a6c007db3eb",
+    "github-ef46190fa444",
+    "github-1ea6b72e6e40",
+    "github-edaa7e474219",
+    "github-c00d3abc21e1",
+    "github-62077d8b2783",
+    "hf-model-7dc946291cd1",
+    "hf-model-fb5690113a11",
+    "hf-model-1464fa38faac",
+    "hf-model-c4fc025e1795",
+    "hf-model-9a3d2d5f2bb3",
+    "hf-model-7a75c3884a2f",
+    "hf-model-5845c8d58d74",
+    "hf-model-fe96e83596e6",
+    "hf-model-62bdcf8ff0ba",
+    "hf-model-59891ca2454a",
+    "hf-paper-95d15bc7502b",
+    "hf-paper-712038da057d",
+    "hf-paper-d6a69312eb77",
+    "hf-paper-310dde492816",
+    "hf-paper-430dccf4643a",
+    "hf-paper-f599b591a9f8",
+    "hf-paper-fa194f25339e",
+    "hf-paper-f986c7e8fcf4",
+    "hf-paper-ce8ab8ab70a8",
+    "hf-paper-ebd44a1d2aef",
+    "rss-openai-blog-be876b176720",
+    "rss-openai-blog-ce0322c55738",
+    "rss-openai-blog-2f358dc4a504",
+    "rss-google-ai-blog-bb0319888f69",
+    "rss-google-ai-blog-6aee6b02d3b5",
+    "rss-google-ai-blog-7a1c98af09d2",
+    "rss-meta-engineering-b57cbf737ec4",
+    "rss-smol-ai-news-d697d74349cb",
+    "rss-hackernews-daily-f930bacc2210",
+    "rss-all-in-podcast-36d3a7566679",
+    "rss-all-in-podcast-6a7207a7104e",
+    "rss-all-in-podcast-9133ce85775d",
+    "atom-the-ai-valley-7909a1b4d331",
+    "rss-latent-space-38724748d868",
+    "rss-ben's-bites-96f6d8cbeac1",
+    "atom-simon-willison-1290a53c5d62",
+    "atom-simon-willison-a94e18e9af92",
+    "rss-gary-marcus-083d05aa581f",
+    "rss-interconnects-11e918bd96e6",
+    "rss-max-woolf-e38b0f2d8065",
+    "rss-entropic-thoughts-39f61ef24339",
+    "rss-simone-957577ec87cf",
+    "rss-maurycy-745696aa12d9",
+    "atom-armin-ronacher-c596fc2ec1ce",
+    "rss-xe-iaso-88c9e01d6b2b",
+    "rss-miguel-grinberg-68d0af091003",
+    "atom-eli-bendersky-c686fdcb8fb5",
+    "rss-the-old-new-thing-05483bff1f44",
+    "rss-dragas-e2b6c79a0d41",
+    "atom-ken-shirriff-884b9d4af795",
+    "rss-evan-hahn-6ce5c7eb4538",
+    "rss-sean-goedecke-43a57b4ab7d0",
+    "rss-ibrahim-diallo-4c0adac922c5",
+    "rss-john-d.-cook-00a2377224f9",
+    "rss-giles-thomas-472e0e73a532",
+    "rss-terrible-software-a023ae8ad79b",
+    "rss-hillel-wayne-4c79daba116c",
+    "rss-terence-eden-4dc1b3e77536",
+    "rss-dave-farquhar-b732654ee011",
+    "rss-abort-retry-fail-59980755f1cd",
+    "atom-oldvcr-25543ce89fde",
+    "rss-heyparis-ee8e9807001d",
+    "atom-herman-3e70316e2dd5",
+    "rss-martin-alderson-5956230dc86f",
+    "atom-simon-tatham-7e5259e3c10b",
+    "rss-jeff-geerling-b3fe634031f0",
+    "rss-pluralistic-dfd6872a41d2",
+    "atom-dynomight-ca47b2c30c4e",
+    "rss-experimental-history-1758d48a2dad",
+    "rss-joan-westenberg-e422576588fc",
+    "rss-where's-your-ed-at-ee8cde2edf5a",
+    "rss-bert-hubert-2b6bfcabd051",
+    "atom-dylan-nesbitt-cebd7c4ee210",
+    "rss-construction-physics-ac72fdf52e18",
+    "atom-tedium-5563d9f30ec5",
+    "rss-the-digital-antiquar-cc92f97d6dea",
+    "rss-appso-24ef597b8072",
+    "rss-量子位-f81f8ec2f46c",
+    "rss-量子位-ae11dbb23e6d",
+    "rss-量子位-179cb134a530",
+    "rss-虎嗅-0da0a967d5bc",
+    "rss-虎嗅-a6b2c66e0d01",
+    "rss-虎嗅-5e9bdb22e8c9",
+    "rss-腾讯科技-426d2c49166b"
+  ],
+  "remaining": 52
+}

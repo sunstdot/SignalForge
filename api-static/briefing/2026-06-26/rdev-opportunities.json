@@ -1,0 +1,594 @@
+{
+  "date": "2026-06-26",
+  "solutions": [
+    {
+      "type": "研发提效",
+      "title": "超长上下文代码生成驱动全栈开发",
+      "trigger": "Codex输出token数数十倍增长，表明AI已能直接生成完整功能模块而非仅补全单行",
+      "scenario": "在日常开发中，目前做法是Copilot给出单行或函数级补全，核心痛点在于仍需大量人工拼接逻辑，无法直接根据需求描述生成整个Service/组件",
+      "ai_solution": "集成支持超长上下文的新版Codex API，在IDE中实现“需求→完整代码块”的一键生成，由开发者审查后点击确认插入，边界在于复杂业务逻辑仍需人工干预",
+      "implementation": "打造VS Code/JetBrains插件，结合PRD片段自动生成完整API路由+数据层+前端组件，并在预览窗口中diff展示",
+      "audience": [
+        "大前端",
+        "客户端",
+        "后端"
+      ],
+      "impact": "常规CRUD页面开发速度提升2倍，人均效能提升40%",
+      "difficulty": "低",
+      "resistance": "需统一接入OpenAI企业版并解决代码安全合规审核，部分团队可能抵触全自动生成",
+      "scores": {
+        "efficiency": 10,
+        "feasibility": 8,
+        "business_impact": 7,
+        "overall": 9
+      },
+      "total_score": 9,
+      "source_title": "[AINews] OpenAI reports median internal Codex output tokens grew 56x in Research, 32x in Customer Support, 27x in Engineering, and 13x in Legal since November 2025.",
+      "source": "Latent Space",
+      "source_type": "rss",
+      "source_url": "https://www.latent.space/p/ainews-openai-reports-median-internal",
+      "item_id": "rss-latent-space-47422a7cd7ae"
+    },
+    {
+      "type": "研发提效",
+      "title": "AI Agent自动拆解需求生成任务卡",
+      "trigger": "OpenAI研究显示AI Agent能处理更长更复杂任务",
+      "scenario": "在需求评审后，开发负责人手动将PRD拆解为开发任务并创建JIRA卡片，痛点在于耗时长且易遗漏边界条件",
+      "ai_solution": "使用GPT-4级别Agent读取PRD文档，自动拆解任务、估算工时、生成JIRA卡片并分配给对应小组，边界在于复杂业务逻辑仍需人工复核",
+      "implementation": "飞书机器人监听Confluence更新，调用Agent后通过JIRA API创建任务",
+      "audience": [
+        "技术TL"
+      ],
+      "impact": "需求拆解和任务分发时间从2小时缩短至15分钟",
+      "difficulty": "中",
+      "resistance": "Teams可能担心Agent错误拆分导致理解偏差",
+      "scores": {
+        "efficiency": 9,
+        "feasibility": 7,
+        "business_impact": 7,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "How agents are transforming work",
+      "source": "OpenAI Blog",
+      "source_type": "blog",
+      "source_url": "https://openai.com/index/how-agents-are-transforming-work",
+      "item_id": "rss-openai-blog-24d4c9543d4c"
+    },
+    {
+      "type": "研发提效",
+      "title": "自然语言驱动自动化端到端测试",
+      "trigger": "page-agent支持用自然语言控制网页界面",
+      "scenario": "在回归测试中，使用Playwright/Selenium编写脚本需大量维护，核心痛点在于用例编写繁琐、变更频繁",
+      "ai_solution": "用page-agent将自然语言测试用例转换为浏览器操作，自动执行并截图对比差异，边界在于复杂交互和验证逻辑需人工复核",
+      "implementation": "集成到现有测试框架，提供YAML格式自然语言用例",
+      "audience": [
+        "测试",
+        "大前端"
+      ],
+      "impact": "测试脚本编写时间减少50%，维护成本显著降低",
+      "difficulty": "中",
+      "resistance": "测试团队可能对自然语言精确度存疑，需保留原有脚本",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 7,
+        "business_impact": 6,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "alibaba/page-agent — JavaScript in-page GUI agent. Control web interfaces with natural language.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/alibaba/page-agent",
+      "item_id": "github-37881c2a0de6"
+    },
+    {
+      "type": "研发提效",
+      "title": "Mac端一站式容器化开发环境",
+      "trigger": "apple/container利用轻量级VM在Apple芯片上高效运行Linux容器，简化本地开发环境搭建",
+      "scenario": "在新成员入职或切换项目时，目前做法是手动配置Docker Desktop或远程开发机，核心痛点在于资源占用高、网络配置复杂且与x86兼容性差",
+      "ai_solution": "基于该工具封装公司内部开发镜像，结合AI辅助生成Dockerfile及环境修复脚本，实现一条命令拉起与生产一致的轻量级环境",
+      "implementation": "封装成命令行工具并通过Homebrew分发，集成到新人onboarding文档，搭配Copilot自动补全环境变量",
+      "audience": [
+        "大前端",
+        "客户端",
+        "后端"
+      ],
+      "impact": "开发环境就绪时间从半天缩短至30分钟，降低30%的环境相关支持工单",
+      "difficulty": "低",
+      "resistance": "部分老旧Intel Mac无法使用，需逐步推动设备升级",
+      "scores": {
+        "efficiency": 9,
+        "feasibility": 9,
+        "business_impact": 5,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "apple/container — A tool for creating and running Linux containers using lightweight virtual machi",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/apple/container",
+      "item_id": "github-5543913f04eb"
+    },
+    {
+      "type": "研发提效",
+      "title": "Claude Code辅助游戏客户端重构",
+      "trigger": "Claude Code已实际参与Fable 5开发，证明其能理解并修改大型C++/C#游戏代码库",
+      "scenario": "在客户端老旧工程的维护中，目前做法是资深工程师手工迁移模块，核心痛点在于代码体量巨大、上下文繁多，新人无法接手",
+      "ai_solution": "使用Claude Code作为编程助手，输入整个模块路径，由其自动分析依赖、提出重构方案并生成Pull Request，边界在于复杂渲染逻辑仍需手工验证",
+      "implementation": "将Claude Code集成到内部Client CI，在对指定模块发起重构任务后，自动生成分支并创建MR供Review",
+      "audience": [
+        "客户端",
+        "技术TL"
+      ],
+      "impact": "游戏/客户端模块重构人力投入减少50%，历史代码维护周期缩短60%",
+      "difficulty": "中",
+      "resistance": "Anthropic API调用成本较高，且需要打通内部代码仓库权限",
+      "scores": {
+        "efficiency": 9,
+        "feasibility": 7,
+        "business_impact": 6,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "Fable 5要回来了？「怪人」Dario Amodei被撤下谈判桌",
+      "source": "机器之心",
+      "source_type": "wechat",
+      "source_url": "https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651041184&idx=2&sn=59d67a2ec7b2d2ac04d9189534a946b6",
+      "item_id": "rss-机器之心-3c8ff5ff8726"
+    },
+    {
+      "type": "研发提效",
+      "title": "Gemini自动执行端到端UI回归测试",
+      "trigger": "Gemini 3.5 Flash具备计算机使用能力，可以模拟人类操作浏览器和移动应用",
+      "scenario": "在发版前的回归测试中，目前做法是编写维护庞大Selenium/Appium脚本，核心痛点在于UI频繁变更导致脚本脆弱，维护成本极高",
+      "ai_solution": "利用Gemini的computer use模式，仅用自然语言描述测试场景，模型自主探索页面、截图对比并生成测试报告，边界在于复杂业务流程可能卡住需人工接管",
+      "implementation": "在CI Pipeline中增加Gemini Flash测试节点，输入产品验收标准文本，输出通过/失败及截图差异",
+      "audience": [
+        "测试",
+        "大前端",
+        "客户端"
+      ],
+      "impact": "UI自动化测试脚本维护成本降低80%，用例覆盖度提升50%",
+      "difficulty": "低",
+      "resistance": "Google API稳定性及数据出境合规风险，且精度需持续监控",
+      "scores": {
+        "efficiency": 9,
+        "feasibility": 8,
+        "business_impact": 5,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "Introducing computer use in Gemini 3.5 Flash",
+      "source": "Google DeepMind Blog",
+      "source_type": "blog",
+      "source_url": "https://deepmind.google/blog/introducing-computer-use-in-gemini-3-5-flash/",
+      "item_id": "rss-google-deepmind-blog-8efda96ee963"
+    },
+    {
+      "type": "业务赋能",
+      "title": "AI行程规划嵌入旅游商业化模块",
+      "trigger": "开源全栈旅行规划器展示出现代化协作旅游平台形态，可结合LLM生成个性化行程",
+      "scenario": "在票务或旅游产品售卖中，目前做法是提供固定套餐，核心痛点在于用户需求千人千面，固定套餐转化率低，需大量人工客服",
+      "ai_solution": "基于TREK架构并接入GPT-4o，自动根据用户偏好、预算、时间生成动态行程与打包产品，通过PWA推送实时协作行程单，边界在于生成的景点信息需与库存实时对齐防止超卖",
+      "implementation": "Fork该项目作为前端基底，后端对接公司商品中台与LLM Agent，通过SSO打通用户体系，封装为小程序及PWA",
+      "audience": [
+        "大前端",
+        "产品运营"
+      ],
+      "impact": "旅游产品组合购买率提升20%，客单价提高15%，客服咨询量下降30%",
+      "difficulty": "中",
+      "resistance": "需解决库存实时性及生成内容的合规审核，跨部门协作推进较慢",
+      "scores": {
+        "efficiency": 5,
+        "feasibility": 7,
+        "business_impact": 9,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "mauriceboe/TREK — A self-hosted travel/trip planner with real-time collaboration, interactive maps",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/mauriceboe/TREK",
+      "item_id": "github-dd802972cb3a"
+    },
+    {
+      "type": "研发提效",
+      "title": "自然语言自助数据查询",
+      "trigger": "Datasette插件生态的可扩展发布",
+      "scenario": "在产品/运营频繁提数场景中，目前做法是人工写SQL或跑固定报表，核心痛点在于沟通成本高、响应慢",
+      "ai_solution": "基于Datasette+LLM构建自然语言转SQL的问答机器人，产品/运营自助查询，边界在于复杂跨表查询可能失败，需人工兜底",
+      "implementation": "部署Datasette并开发飞书机器人，接入GLM-5.2等模型，提供@Bot说人话查数据",
+      "audience": [
+        "产品运营",
+        "技术TL"
+      ],
+      "impact": "减少临时数据查询需求80%，释放研发每周10+小时",
+      "difficulty": "低",
+      "resistance": "数据权限治理需谨慎，初期可限定只读库",
+      "scores": {
+        "efficiency": 9,
+        "feasibility": 8,
+        "business_impact": 7,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "datasette-export-database 0.3a2",
+      "source": "Simon Willison",
+      "source_type": "rss",
+      "source_url": "https://simonwillison.net/2026/Jun/25/datasette-export-database/#atom-everything",
+      "item_id": "atom-simon-willison-7d0b2e548337"
+    },
+    {
+      "type": "业务赋能",
+      "title": "离线端侧智能导购助手",
+      "trigger": "高性能端侧GGUF模型发布",
+      "scenario": "在电商App商品详情页中，目前做法是线上客服/推荐，核心痛点在于弱网无响应、隐私数据上传顾虑导致咨询率低",
+      "ai_solution": "使用量化后的GLM-5.2在手机端本地运行，提供实时离线商品问答、搭配推荐，边界在于复杂推荐需云侧兜底",
+      "implementation": "通过MediaPipe或ExecuTorch集成模型到Android/iOS App中，使用仅4-bit量化",
+      "audience": [
+        "客户端"
+      ],
+      "impact": "预期离线场景转化率提升15%，咨询响应率提升至95%",
+      "difficulty": "中",
+      "resistance": "包体积增大约300MB，需与业务协商接受度",
+      "scores": {
+        "efficiency": 5,
+        "feasibility": 7,
+        "business_impact": 9,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "🤗 unsloth/GLM-5.2-GGUF",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/unsloth/GLM-5.2-GGUF",
+      "item_id": "hf-model-c48b45a35ba4"
+    },
+    {
+      "type": "业务赋能",
+      "title": "AI驱动个性化金融资讯流",
+      "trigger": "Google Finance新App发布，整合AI能力",
+      "scenario": "在自有商业化信息流中嵌入金融模块时，目前是静态列表，核心痛点在于用户停留短、点击率低",
+      "ai_solution": "利用Gemma等模型对用户持仓和行为动态生成个性化财报摘要、异动解读，端侧推理提供即时推送",
+      "implementation": "服务端生成摘要缓存，端上通过Widget展示，实时推送用Firebase集成",
+      "audience": [
+        "大前端",
+        "产品运营"
+      ],
+      "impact": "金融模块CTR预计提升20%，人均停留时长增加30秒",
+      "difficulty": "低",
+      "resistance": "需与内容团队协作获取实时数据源，合规风险需评估",
+      "scores": {
+        "efficiency": 4,
+        "feasibility": 8,
+        "business_impact": 9,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "Our latest Google Finance upgrades, including a new app",
+      "source": "Google AI Blog",
+      "source_type": "blog",
+      "source_url": "https://blog.google/products-and-platforms/products/search/google-finance-updates-june-2026/",
+      "item_id": "rss-google-ai-blog-235f1239691f"
+    },
+    {
+      "type": "业务赋能",
+      "title": "广告创意一键批量生成与编辑",
+      "trigger": "统一图像生成与编辑模型DanceOPD提出",
+      "scenario": "在广告投放准备素材时，目前做法是设计师手动出图，核心痛点在于批量变体效率低、A/B测试素材量不足",
+      "ai_solution": "利用DanceOPD的结合T2I与局部编辑能力，输入产品图和文案即可生成数十套背景、元素变化的素材，边界在于可能需要抽检后使用",
+      "implementation": "搭建内部工具平台，调用微调后的模型API，输出批量图片到CDN并自动配上传",
+      "audience": [
+        "产品运营",
+        "大前端"
+      ],
+      "impact": "素材产率提升10倍，A/B测试覆盖增加，预期整体广告CTR提升5%",
+      "difficulty": "中",
+      "resistance": "生成内容合规审核需构建筛选流水线，品牌风格一致性需精调",
+      "scores": {
+        "efficiency": 5,
+        "feasibility": 7,
+        "business_impact": 9,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "DanceOPD: On-Policy Generative Field Distillation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "source_url": "https://huggingface.co/papers/2606.27377",
+      "item_id": "hf-paper-f982655b6a61"
+    },
+    {
+      "type": "研发提效",
+      "title": "AI自动修复内存安全漏洞",
+      "trigger": "讽刺内存不安全语言的博客热议",
+      "scenario": "在C/C++客户端代码编写中，目前做法是静态分析+人工排查，核心痛点在于内存Bug（如UAF）漏检率高且修复耗时",
+      "ai_solution": "利用LLM+SAST工具，针对ASAN/UBSan报告自动生成修复补丁，并解释漏洞成因，边界在于复杂并发问题需人工介入",
+      "implementation": "接入CI的Job，当检测到内存sanitizer报错时，自动调用LLM生成patch并提交到分支",
+      "audience": [
+        "客户端",
+        "后端"
+      ],
+      "impact": "内存Bug平均修复时间缩短70%，线上崩溃降低30%",
+      "difficulty": "中",
+      "resistance": "自动修复的可信度需要逐步建立，初期需强制人工Code Review",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 7,
+        "business_impact": 8,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "\"No way to prevent this\" say users of only language where this regularly happens",
+      "source": "Xe Iaso",
+      "source_type": "rss",
+      "source_url": "https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-8461/",
+      "item_id": "rss-xe-iaso-61e295d3a8c2"
+    },
+    {
+      "type": "研发提效",
+      "title": "需求文档自动解析为代码Prompt",
+      "trigger": "MinerU可将PDF/Office转为LLM就绪文本",
+      "scenario": "在PRD解析场景中，目前手动将PDF需求转述给AI编码助手，痛点在于人工转换耗时且易出错，无法衔接自动化工作流。",
+      "ai_solution": "利用MinerU自动转换文档为Markdown/JSON，直接作为Agent Prompt输入，实现需求文档到代码生成的无缝流水线。",
+      "implementation": "集成到内部文档服务，提供REST API，触发转换后输出结构化Prompt给Copilot或自研Agent。",
+      "audience": [
+        "技术TL",
+        "大前端",
+        "后端"
+      ],
+      "impact": "每份需求文档人工解析时间从4小时降至分钟级，加速开发kickoff。",
+      "difficulty": "低",
+      "resistance": "非结构化设计稿仍需人工介入，文档版本管理复杂。",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 8,
+        "business_impact": 6,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "opendatalab/MinerU — Transforms complex documents like PDFs and Office docs into LLM-ready markdown/J",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/opendatalab/MinerU",
+      "item_id": "github-33bcf7cefff3"
+    },
+    {
+      "type": "业务赋能",
+      "title": "运营自助短视频批量生产",
+      "trigger": "开源视频制作Agent系统，自动化生成视频",
+      "scenario": "商业化广告素材制作中，依赖外包或视频团队手工剪辑，痛点在于成本高、周期长，导致素材更新慢、测试迭代不足。",
+      "ai_solution": "集成OpenMontage Agent到内容管理后台，运营输入商品图文自动合成多版本短视频，支持A/B测试选优。",
+      "implementation": "封装为内部微服务，提供Web拖拽界面，输出mp4到CDN。",
+      "audience": [
+        "产品运营"
+      ],
+      "impact": "营销视频生产效率提升10倍以上，素材测试周期从周缩至天，预计CTR提升5%。",
+      "difficulty": "中",
+      "resistance": "AI生成视频质量不稳定，需建立人工审核环节，可能拉长流程。",
+      "scores": {
+        "efficiency": 9,
+        "feasibility": 7,
+        "business_impact": 9,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "calesthio/OpenMontage — World's first open-source, agentic video production system. 12 pipelines, 52 too",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/calesthio/OpenMontage",
+      "item_id": "github-7ce4a54dcf0f"
+    },
+    {
+      "type": "业务赋能",
+      "title": "零成本SEO自助优化平台",
+      "trigger": "开源SEO分析工具，替代商业产品",
+      "scenario": "网站SEO优化目前依赖昂贵的商业工具或手动检查，痛点在于成本高、无法批量定制，运营不能自助优化。",
+      "ai_solution": "将open-seo集成到CMS，自动爬取页面评分，结合大模型生成标题、描述等优化建议，运营可一键应用。",
+      "implementation": "通过NPM包集成后端服务，提供管理看板，API自动更新meta标签。",
+      "audience": [
+        "产品运营",
+        "大前端"
+      ],
+      "impact": "SEO诊断成本降为零，单页面优化从10分钟缩至秒级，预计自然流量提升15%。",
+      "difficulty": "低",
+      "resistance": "开源工具有时数据覆盖不如商业版，需运营认可数据可靠性。",
+      "scores": {
+        "efficiency": 7,
+        "feasibility": 9,
+        "business_impact": 8,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "every-app/open-seo — Open source alternative to Semrush and Ahrefs",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/every-app/open-seo",
+      "item_id": "github-b8bbc72b583f"
+    },
+    {
+      "type": "研发提效",
+      "title": "Agent自动化集成测试用例生成",
+      "trigger": "AI Agent能执行多步骤、需推理的任务",
+      "scenario": "在接口定义完成后，测试手动编写集成测试脚本，痛点在于联调阶段需求变更频繁导致用例维护成本高",
+      "ai_solution": "Agent监听API文档变更，自动生成/更新Postman或pytest测试用例，并执行基本断言验证，边界在于异常场景仍需人工设计",
+      "implementation": "CI流水线中Webhook触发Agent，输出测试代码并提交MR",
+      "audience": [
+        "测试",
+        "后端"
+      ],
+      "impact": "集成测试编写效率提升60%，回归测试覆盖速度加快",
+      "difficulty": "中",
+      "resistance": "测试团队可能担忧用例质量不可控",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 7,
+        "business_impact": 6,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "How agents are transforming work",
+      "source": "OpenAI Blog",
+      "source_type": "blog",
+      "source_url": "https://openai.com/index/how-agents-are-transforming-work",
+      "item_id": "rss-openai-blog-24d4c9543d4c"
+    },
+    {
+      "type": "研发提效",
+      "title": "企业微信AI助手解答研发日常问题",
+      "trigger": "企业微信AI升级，增强自然语言处理能力",
+      "scenario": "开发人员频繁在群里询问接口、部署、告警等问题，打断他人，目前靠人工解答，痛点在于重复问题耗时且知识分散",
+      "ai_solution": "基于企业微信AI构建研发知识问答机器人，集成内部Wiki、Swagger、告警系统，用自然语言回复常见技术问题并执行简单操作",
+      "implementation": "企业微信群机器人+内部知识库RAG检索",
+      "audience": [
+        "后端",
+        "大前端",
+        "测试"
+      ],
+      "impact": "减少重复性打断，预计每人日省20分钟，提升信息获取速度",
+      "difficulty": "低",
+      "resistance": "知识库初期整理成本高，部分老员工习惯直接问人",
+      "scores": {
+        "efficiency": 7,
+        "feasibility": 8,
+        "business_impact": 5,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "苹果多款产品涨价，普涨20%/OpenAI或推迟IPO到明年/李飞飞：10年后只剩两类工作者",
+      "source": "APPSO",
+      "source_type": "wechat",
+      "source_url": "https://mp.weixin.qq.com/s/D4vRMZlc2-noBu_hy-cIGQ",
+      "item_id": "rss-appso-02fa65a485a9"
+    },
+    {
+      "type": "业务赋能",
+      "title": "AIGC广告视频物理合理性自动审核",
+      "trigger": "文本生成视频物理合理性评估方法",
+      "scenario": "运营部门使用AIGC工具批量生成广告视频时，部分素材违反物理规律显得虚假，目前靠人工审核，痛点在于效率低且标准不一",
+      "ai_solution": "集成该评估模型作为AIGC素材的质量门禁，自动过滤物体悬浮、运动异常等不合理视频，边界在于仅评估物理一致性而非整体美感",
+      "implementation": "在视频生成API输出后调用评估服务，低分自动打回重生成",
+      "audience": [
+        "产品运营"
+      ],
+      "impact": "减少低质素材上线率，预计广告CTR提升3%",
+      "difficulty": "中",
+      "resistance": "运营可能认为AI审核过于严苛影响创意多样性",
+      "scores": {
+        "efficiency": 6,
+        "feasibility": 7,
+        "business_impact": 7,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "Physics Question Scene Graph: Fine-grained Evaluation of Physical Plausibility in Text-to-Video Generation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "source_url": "https://huggingface.co/papers/2606.25306",
+      "item_id": "hf-paper-90579a0d74df"
+    },
+    {
+      "type": "研发提效",
+      "title": "一键克隆竞品页面生成可编辑代码",
+      "trigger": "AI代理命令克隆任何网站",
+      "scenario": "前端接到新页面需求无设计稿时，常手动参考竞品并重新切图写代码，痛点在于重复劳动多、效率低",
+      "ai_solution": "使用该工具一键克隆目标页面，生成React/Vue组件代码，开发者只需修改数据和样式，边界在于复杂动画和动态交互可能丢失",
+      "implementation": "CLI工具集成到内部脚手架，执行npx ai-clone [url]即可",
+      "audience": [
+        "大前端"
+      ],
+      "impact": "原型页面开发时间缩短70%，快速进入评审",
+      "difficulty": "低",
+      "resistance": "版权合规风险，需限制仅用于内部参考",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 8,
+        "business_impact": 5,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "JCodesMore/ai-website-cloner-template — Clone any website with one command using AI coding agents",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/JCodesMore/ai-website-cloner-template",
+      "item_id": "github-b692d5bf7ede"
+    },
+    {
+      "type": "研发提效",
+      "title": "质量感知筛选代码-文档数据集",
+      "trigger": "质量感知数据选择方法可用于筛选高质量研发文档与代码片段，提升下游模型效果",
+      "scenario": "在构建内部代码生成或代码摘要数据集时，目前做法是直接爬取仓库中的注释，核心痛点在于注释质量参差不齐，训练出的模型输出不可靠",
+      "ai_solution": "基于论文中的质量度量方法，训练一个小型质量评估模型，自动对(代码,注释)对打分，仅保留高分对用于微调StarCoder/Code Llama",
+      "implementation": "开发一个GitLab CI Job，在推送时自动运行质量评估脚本，将过审数据导入标注平台",
+      "audience": [
+        "后端",
+        "技术TL"
+      ],
+      "impact": "领域微调模型的代码补全接受率提升10-15%，减少开发者手动修改次数",
+      "difficulty": "中",
+      "resistance": "需要积累一批人工标注的质量样本训练评估模型，冷启动成本较高",
+      "scores": {
+        "efficiency": 7,
+        "feasibility": 7,
+        "business_impact": 6,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "Less is More: Quality-Aware Training Data Selection for Scientific Summarization",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "source_url": "https://arxiv.org/abs/2606.24828v1",
+      "item_id": "arxiv-2606.24828v1"
+    }
+  ],
+  "top_pick": {
+    "title": "超长上下文代码生成驱动全栈开发",
+    "why_now": "Codex输出token数数十倍增长，表明AI已能直接生成完整功能模块而非仅补全单行",
+    "mvp_path": "打造VS Code/JetBrains插件，结合PRD片段自动生成完整API路由+数据层+前端组件，并在预览窗口中diff展示",
+    "strategy": "自下而上：先找2-3个极客同学验证，再整理ROI数据推广"
+  },
+  "analyzed_count": 40,
+  "analyzed_item_ids": [
+    "rss-jim-nielsen-41662a0fae8c",
+    "rss-openai-blog-24d4c9543d4c",
+    "rss-appso-02fa65a485a9",
+    "github-37881c2a0de6",
+    "rss-john-d.-cook-56c1612f3946",
+    "hf-paper-90579a0d74df",
+    "arxiv-2606.24839v1",
+    "github-b692d5bf7ede",
+    "rss-the-old-new-thing-a894a7f2f19d",
+    "arxiv-2606.24841v1",
+    "rss-量子位-948ace7cde6d",
+    "arxiv-2606.24879v1",
+    "arxiv-2606.24828v1",
+    "github-5543913f04eb",
+    "rss-openai-blog-24a3a922502a",
+    "rss-construction-physics-0ac3179892de",
+    "rss-latent-space-47422a7cd7ae",
+    "rss-机器之心-3c8ff5ff8726",
+    "rss-google-deepmind-blog-8efda96ee963",
+    "github-dd802972cb3a",
+    "hf-model-d85ec644568f",
+    "hf-paper-24e2fd156c57",
+    "atom-simon-willison-7d0b2e548337",
+    "hf-model-c48b45a35ba4",
+    "rss-hackernews-daily-00bb0592c60b",
+    "rss-google-ai-blog-235f1239691f",
+    "hf-model-72339137e72c",
+    "hf-paper-a4244ea96fb9",
+    "hf-paper-f982655b6a61",
+    "rss-xe-iaso-61e295d3a8c2",
+    "github-33bcf7cefff3",
+    "rss-meta-engineering-5c8da0810029",
+    "github-7ce4a54dcf0f",
+    "hf-model-ff55a456952e",
+    "github-b8bbc72b583f",
+    "arxiv-2606.24824v1",
+    "github-a13753c0fb52",
+    "hf-model-9ba0a3d6e09d",
+    "l30-x-d1b88e3106ea",
+    "rss-troy-hunt-f02c4afd3d88"
+  ]
+}
