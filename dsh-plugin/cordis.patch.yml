@@ -1,0 +1,7 @@
+- insert:
+    - id: signalforge
+      name: 'dsh-signalforge'
+      config:
+        timezone: Asia/Shanghai
+        maxSignals: 5
+        lookbackHours: 48

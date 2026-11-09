@@ -20,7 +20,7 @@ test('event items come from cached radar and old snapshots stay empty', () => {
   assert.deepEqual(getEventItems(null), [])
 })
 
-test('daily signal view uses separate inspiration/execution tracks and keeps all-content entry', () => {
+test('daily signal view shows a curated list and keeps all-content entry', () => {
   const briefing = { signals: {
     inspiration: [{ id: 'x1', title: 'Product inspiration' }],
     execution: [{ id: 'p1', title: 'New paper' }], total: 2,
@@ -29,9 +29,10 @@ test('daily signal view uses separate inspiration/execution tracks and keeps all
   assert.deepEqual(getSignalItems(briefing, 'execution').map(item => item.id), ['p1'])
   assert.deepEqual(getSignalItems({}, 'execution'), [])
   assert.match(page, /setActiveCategory\] = useState\('signals'\)/)
-  assert.match(page, /getSignalItems\(briefing, activeSignalTrack\)/)
   assert.match(page, /setActiveCategory\(briefingData\?\.signals \? 'signals' : 'all'\)/)
   assert.match(page, /今日信号/)
   assert.match(page, /全部内容/)
+  assert.match(page, /SignalCard/)
+  assert.match(page, /SignalLearningPanel/)
   assert.match(page, /activeCategory === 'blog'\) return type === 'blog' \|\| type === 'anthropic_blog'/)
 })

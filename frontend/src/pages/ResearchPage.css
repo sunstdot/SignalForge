@@ -1,0 +1,570 @@
+/* 深度调研页。沿用 index.css 的设计变量，不改动既有样式。 */
+
+.research-page {
+  padding: 32px 40px 64px;
+  max-width: 1600px;
+}
+
+.research-header {
+  margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.research-title {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin: 0 0 6px;
+}
+
+.research-sub {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.research-warn {
+  font-size: 13px;
+  line-height: 1.6;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #f5d9a8;
+  background: #fdf6e8;
+  color: #8a6100;
+}
+
+.research-layout {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 32px;
+  align-items: start;
+}
+
+/* ── 侧栏：run 列表 ── */
+.research-sidebar {
+  position: sticky;
+  top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.research-run-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  text-align: left;
+  color: var(--text-primary);
+  text-decoration: none;
+  cursor: pointer;
+  background: transparent;
+  font: inherit;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.research-run-item:hover {
+  background: var(--bg-secondary);
+}
+
+.research-run-item.active {
+  background: var(--accent-blue-light);
+  border-color: #c7dcfb;
+}
+
+.research-run-topic {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.4;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.research-run-meta {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── 主区 ── */
+.research-main {
+  min-width: 0;
+}
+
+.research-composer {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.research-label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--text-muted);
+  margin-top: 8px;
+}
+
+.research-input,
+.research-textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-size: 14px;
+  font-family: inherit;
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+
+.research-input:focus,
+.research-textarea:focus {
+  outline: none;
+  border-color: var(--accent-blue);
+}
+
+.research-textarea {
+  resize: vertical;
+}
+
+.research-input--date {
+  max-width: 200px;
+}
+
+.research-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.research-submit {
+  padding: 10px 22px;
+  border-radius: 8px;
+  border: 1px solid var(--accent-blue);
+  background: var(--accent-blue);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.research-submit:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.research-hint {
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--text-muted);
+  margin: 12px 0 0;
+}
+
+.research-error {
+  font-size: 13px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: #fdeaea;
+  border: 1px solid #f6c9c9;
+  color: var(--accent-red);
+  margin-top: 12px;
+}
+
+/* ── run 头部与指标 ── */
+.research-run-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.research-run-title {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.research-stage {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--bg-secondary);
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.research-stage--done {
+  background: #e8f5ec;
+  color: var(--accent-green);
+}
+
+.research-stage--failed {
+  background: #fdeaea;
+  color: var(--accent-red);
+}
+
+.research-stage--running {
+  background: var(--accent-blue-light);
+  color: var(--accent-blue);
+}
+
+.research-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(96px, 1fr));
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.research-stat {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 14px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.research-stat b {
+  font-size: 20px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-primary);
+}
+
+.research-stat span {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+/* ── 成稿 ── */
+.research-report {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 48px 56px 56px;
+  font-size: 15.5px;
+  line-height: 1.95;
+  color: #2b2b2b;
+  letter-spacing: 0.01em;
+}
+
+/* 正文保持单栏阅读宽度：一行 70-80 个汉字左右最省力 */
+.research-report > * {
+  max-width: 74ch;
+}
+
+.research-h {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 40px 0 16px;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+}
+
+.research-h:first-child {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+.research-h + .research-p,
+.research-h + .research-list {
+  margin-top: 0;
+}
+
+.research-p {
+  margin: 0 0 1.15em;
+  text-align: justify;
+  word-break: break-word;
+}
+
+.research-list {
+  margin: 0 0 1.15em;
+  padding-left: 1.35em;
+}
+
+.research-list li {
+  margin: 0 0 0.6em;
+  padding-left: 0.15em;
+}
+
+.research-list li::marker {
+  color: var(--text-muted);
+}
+
+.research-code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.88em;
+  padding: 0.12em 0.4em;
+  border-radius: 4px;
+  background: var(--bg-secondary);
+  color: #8a4b00;
+}
+
+.research-quote {
+  margin: 1.4em 0;
+  padding: 2px 0 2px 18px;
+  border-left: 2px solid var(--border);
+  color: var(--text-muted);
+  font-size: 14.5px;
+  line-height: 1.85;
+}
+
+.research-gap {
+  height: 8px;
+}
+
+/* 引用角标：轻量上标，不打断句子节奏。
+   连续引用合并成一组，最多显示 3 个，其余折叠为 +N。 */
+.research-cite-group {
+  display: inline;
+  white-space: nowrap;
+  margin-left: 1px;
+  vertical-align: baseline;
+  font-size: 0.72em;
+  line-height: 1;
+}
+
+.research-cite {
+  font-family: inherit;
+  font-size: inherit;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+  padding: 0;
+  border: none;
+  background: none;
+  color: #9aa6b2;
+  cursor: pointer;
+  vertical-align: super;
+  transition: color 0.12s ease;
+}
+
+.research-cite:hover {
+  color: var(--accent-blue);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.research-cite-more {
+  font-size: inherit;
+  color: #b8c2cc;
+  vertical-align: super;
+  margin-left: 1px;
+}
+
+/* ── 证据抽屉 ── */
+.research-drawer {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 380px;
+  background: #fff;
+  border-left: 1px solid var(--border);
+  box-shadow: -8px 0 24px rgba(0, 0, 0, 0.06);
+  padding: 24px;
+  overflow-y: auto;
+  z-index: 40;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.research-drawer-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.research-badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: var(--bg-secondary);
+  color: var(--text-muted);
+}
+
+.research-drawer-close {
+  font-size: 12px;
+  color: var(--text-muted);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 6px;
+}
+
+.research-drawer-close:hover {
+  color: var(--text-primary);
+}
+
+.research-drawer-claim {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.research-drawer-quote {
+  margin: 0;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: var(--bg-secondary);
+  font-size: 13px;
+  line-height: 1.75;
+  color: var(--text-primary);
+}
+
+.research-drawer-link {
+  font-size: 12px;
+  color: var(--accent-blue);
+  word-break: break-all;
+  line-height: 1.6;
+}
+
+.research-drawer-meta {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+/* ── 来源列表 ── */
+.research-section {
+  margin-top: 32px;
+}
+
+.research-section-title {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.research-source-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.research-source-item {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  font-size: 13px;
+  line-height: 1.6;
+  padding: 8px 12px;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.research-source-item a {
+  color: var(--text-primary);
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+  min-width: 0;
+}
+
+.research-source-item a:hover {
+  color: var(--accent-blue);
+}
+
+.research-tier {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.research-tier--official {
+  background: #e8f5ec;
+  color: var(--accent-green);
+}
+
+.research-tier--firsthand {
+  background: var(--accent-blue-light);
+  color: var(--accent-blue);
+}
+
+.research-tier--media {
+  background: #fdf6e8;
+  color: var(--accent-yellow);
+}
+
+.research-tier--secondary {
+  background: var(--bg-secondary);
+  color: var(--text-muted);
+}
+
+.research-source-status {
+  font-size: 11px;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.research-empty {
+  padding: 64px 24px;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 14px;
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+}
+
+@media (max-width: 1100px) {
+  .research-page {
+    padding: 20px;
+  }
+
+  .research-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .research-sidebar {
+    position: static;
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: 8px;
+  }
+
+  .research-run-item {
+    min-width: 180px;
+  }
+
+  .research-report {
+    padding: 20px;
+  }
+
+  .research-drawer {
+    width: 100%;
+  }
+}

@@ -105,6 +105,9 @@ function Sidebar() {
         <Link to="/venture-radar" className={`menu-item ${isActive('/venture-radar') ? 'active' : ''}`}>
           <span>🛰️</span><span>创投产品雷达</span>
         </Link>
+        <Link to="/research" className={`menu-item ${isActive('/research') ? 'active' : ''}`}>
+          <span>🧪</span><span>深度调研</span>
+        </Link>
       </div>
 
       {/* Archives */}

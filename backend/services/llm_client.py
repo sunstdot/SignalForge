@@ -39,7 +39,7 @@ def _get_required_api_key(env_name: str, provider: str) -> str:
 # Kimi (Moonshot AI) — 默认 provider
 # ============================================================
 KIMI_BASE_URL = "https://api.moonshot.cn/v1"
-KIMI_DEFAULT_MODEL = "kimi-k2.5"
+KIMI_DEFAULT_MODEL = "kimi-k3"
 
 
 def query_kimi_model(
@@ -54,18 +54,14 @@ def query_kimi_model(
         completion = client.chat.completions.create(model=model_id, messages=messages)
         return {"content": completion.choices[0].message.content, "reasoning_details": None}
     except Exception as e:
-        logger.exception(
-            "Kimi request failed: model_id=%s message_count=%s error_type=%s error=%s",
-            model_id, len(messages), type(e).__name__, e,
-        )
-        return None
+        _raise_llm_error("Kimi", model_id, len(messages), e)
 
 
 # ============================================================
-# DeepSeek — 用于商业机会 & 研发效能机会分析
+# DeepSeek — 独立端点与凭证（DEEPSEEK_API_KEY）
 # ============================================================
-DEEPSEEK_BASE_URL = "https://api.deepseek.com"
-DEEPSEEK_DEFAULT_MODEL = "deepseek-v4-pro"
+DEEPSEEK_BASE_URL = "https://api.deepseek.com/v1"
+DEEPSEEK_DEFAULT_MODEL = "deepseek-chat"
 
 
 def query_deepseek_model(
@@ -80,11 +76,21 @@ def query_deepseek_model(
         completion = client.chat.completions.create(model=model_id, messages=messages)
         return {"content": completion.choices[0].message.content, "reasoning_details": None}
     except Exception as e:
-        logger.exception(
-            "DeepSeek request failed: model_id=%s message_count=%s error_type=%s error=%s",
-            model_id, len(messages), type(e).__name__, e,
-        )
-        return None
+        _raise_llm_error("DeepSeek", model_id, len(messages), e)
+
+
+def _raise_llm_error(provider: str, model_id: str, message_count: int, error: Exception) -> None:
+    """记录并原样抛出上游错误。
+
+    早期版本记完日志就 return None，上层只能看到"LLM 返回空响应"，
+    真正的原因（欠费、余额不足、限流、模型名写错）全被吞掉，
+    排查时只能靠猜。这里保留日志，同时把原因带给调用方。
+    """
+    logger.exception(
+        "%s request failed: model_id=%s message_count=%s error_type=%s error=%s",
+        provider, model_id, message_count, type(error).__name__, error,
+    )
+    raise RuntimeError(f"{provider} 调用失败：{type(error).__name__}: {error}") from error
 
 
 # ============================================================
@@ -94,22 +100,24 @@ def chat(
     messages: List[Dict],
     system_prompt: str = "",
     model: Optional[str] = None,
-    provider: str = "kimi",
+    provider: Optional[str] = None,
 ) -> str:
     """
     统一调用入口。
-    provider: "kimi"（默认）| "deepseek"
+    provider: "kimi" | "deepseek"；不传则读 LLM_PROVIDER 环境变量，默认 "kimi"
     model:    不传则使用对应 provider 的默认模型
     """
+    provider = (provider or os.getenv("LLM_PROVIDER", "") or "kimi").strip().lower()
+
     full_messages = []
     if system_prompt:
         full_messages.append({"role": "system", "content": system_prompt})
     full_messages.extend(messages)
 
     if provider == "deepseek":
-        result = query_deepseek_model(full_messages, model=model or DEEPSEEK_DEFAULT_MODEL)
+        result = query_deepseek_model(full_messages, model=model)
     else:
-        result = query_deepseek_model(full_messages, model=model or DEEPSEEK_DEFAULT_MODEL)
+        result = query_kimi_model(full_messages, model=model)
 
     content = (result or {}).get("content") or ""
     if content:
@@ -122,7 +130,7 @@ async def chat_async(
     messages: List[Dict],
     system_prompt: str = "",
     model: Optional[str] = None,
-    provider: str = "kimi",
+    provider: Optional[str] = None,
 ) -> str:
     """chat() 的异步版本，在线程池中执行，不阻塞事件循环。"""
     loop = asyncio.get_event_loop()

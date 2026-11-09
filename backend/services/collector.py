@@ -15,12 +15,13 @@ from .github_fetcher import fetch_github_trending
 from .models_fetcher import fetch_model_platforms
 from .anthropic_blog_fetcher import fetch_anthropic_technical_articles, normalize_url
 from .hn_top_fetcher import fetch_hn_top
-from .subreddit_fetcher import fetch_subreddits
+from .subreddit_fetcher import fetch_subreddits, enrich_subreddit_comments
 from .source_run_store import save_source_run
 from .event_radar import run_event_radar
 from .x_account_daily import run_x_account_daily
 from .company_blog import apply_company_blog_policy
 from .watchlist_daily import run_watchlist_daily
+from .signal_learning import learned_watchlist_queries
 from .chinese_briefer import generate_chinese_brief
 from .llm_client import chat
 
@@ -89,6 +90,13 @@ async def run_collection(target_date: str = None):
                     if isinstance(handle, str) and re.fullmatch(r"[A-Za-z0-9_]{1,15}", handle.lstrip('@'))]
         topics = list(dict.fromkeys(watchlist.get("topics", []) + accounts))
         stored += await asyncio.to_thread(run_watchlist_daily, topics, target_date)
+
+    # 学习到的检索线索参与后续采集：少量、具体、可追溯，仅作用于当日。
+    if target_date == datetime.now().strftime("%Y-%m-%d"):
+        learned_queries = learned_watchlist_queries(max_queries=3)
+        if learned_queries:
+            print(f"\n🧠 Running learned acquisition: {len(learned_queries)} clue(s)")
+            stored += await asyncio.to_thread(run_watchlist_daily, learned_queries, target_date)
 
     print("\n🎉 Collection completed!")
     return stored
@@ -174,8 +182,15 @@ def _run_batch_quick_reads(date: str):
         batch = to_process[batch_start:batch_start + BATCH_SIZE]
         print(f"  Batch {batch_start // BATCH_SIZE + 1}: {len(batch)} items...", end=" ", flush=True)
 
+        def _source_text(item):
+            base = (item.get("summary") or item.get("original_content") or "")
+            comments = (item.get("metadata") or {}).get("comments") or []
+            if comments:
+                base = base + "\n回复摘录：\n" + "\n".join(f"- {c}" for c in comments)
+            return base[:500]
+
         items_text = "\n".join(
-            f"[{idx}] 标题：{item['title']}\n    摘要：{(item.get('summary') or item.get('original_content') or '')[:500]}"
+            f"[{idx}] 标题：{item['title']}\n    摘要：{_source_text(item)}"
             for idx, item in enumerate(batch, 1)
         )
 
@@ -370,6 +385,9 @@ async def fetch_all_sources(config: Dict, target_date: str = None) -> List[Dict]
                             f"r/{name}": "unavailable" for name in communities.get("names", [])
                         }
                     continue
+                if source == "reddit":
+                    # 有价值的信息可能在回复中：有界抓取 top 回复，失败不丢主帖。
+                    await enrich_subreddit_comments(client, result["items"])
                 all_items.extend(result["items"])
                 if source == "hn":
                     status["hn"] = result["status"]

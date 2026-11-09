@@ -1,0 +1,68 @@
+{
+  "name": "dsh-signalforge",
+  "version": "0.1.4",
+  "description": "SignalForge for DeepSeek Harness: pull daily AI news, get Chinese signals and business/engineering opportunities, and browse every candidate.",
+  "type": "module",
+  "license": "MIT",
+  "author": "sunstdot",
+  "homepage": "https://github.com/sunstdot/signalforge-dsh#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunstdot/signalforge-dsh.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sunstdot/signalforge-dsh/issues"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "ai-news",
+    "signalforge",
+    "briefing",
+    "intelligence"
+  ],
+  "engines": {
+    "dsh": "^0.2.1-rc.5"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "src/*.js",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    "install.sh",
+    "scripts/*.mjs",
+    "PUBLISHING.md",
+    "scripts/*.sh",
+    "docs/screenshots/*.webp",
+    "docs/screenshots/*.jpg"
+  ],
+  "scripts": {
+    "test": "node scripts/test-analyze.mjs && node scripts/test-enrich.mjs",
+    "check": "node scripts/check.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

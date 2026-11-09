@@ -195,3 +195,124 @@ def test_briefing_exposes_signal_feed_without_losing_full_items(monkeypatch):
     assert len(briefing["items"]) == 2
     assert briefing["signals"]["total"] == 2
     assert briefing["signals"]["inspiration"][0]["id"] == "x"
+
+
+# ── 学习驱动的筛选与去重（可控样本） ──
+
+from backend.services import signal_learning as _learning
+
+
+def _reference_with(pref_id, topic, evidence_forms, query):
+    return {
+        "id": pref_id, "url": f"https://example.com/{pref_id}", "title": f"参考 {pref_id}",
+        "user_reason": "", "user_wants": "", "content_snippet": topic, "status": "active",
+        "analysis_status": "complete",
+        "analysis": {
+            "topic": topic, "scenario": "", "contribution_type": "experience",
+            "contribution": topic, "value_reason": "", "value_reason_source": "inferred",
+            "evidence_forms": evidence_forms,
+            "search_clues": [{"query": query, "subreddits": [], "handles": []}],
+            "uncertain": "",
+        },
+        "feedback": [],
+    }
+
+
+def test_useful_content_outside_initial_five_tags_is_selected():
+    # 不含五类标签关键词、但确有具体认识的内容仍可入选（标签不是门槛）。
+    item = _item("unlabeled", "blog", 9, "AI Company", content_bucket="technical",
+                 summary="An AI model latent-space compression trick reduces memory use with reproducible numbers.",
+                 original_content="The compression approach for the AI model reduces memory and includes measured results.")
+    feed = build_signal_feed([item], {"unlabeled": _quick_read(
+        core="提出一种模型隐空间压缩方式，实测内存占用下降。",
+        insight="可以在自己的推理服务里尝试同样压缩思路，评估收益。")})
+    assert feed["total"] == 1
+    assert feed["execution"][0]["tags"] == []
+
+
+def test_short_important_announcement_not_filtered_by_length():
+    # 简短的重要公告：长度不是硬门槛，有互动证据和成文速读即可入选。
+    post = "We now support function calling."
+    item = _item("short", "x", 9, title=post, summary=post,
+                 metadata={"author": "builder", "engagement": "31 likes, 4 replies", "volume": 35})
+    feed = build_signal_feed([item], {"short": _quick_read(
+        core="该服务新增 function calling 支持，可接入结构化工具调用。",
+        insight="此前缺的接口现在补齐，可以评估迁移。")})
+    assert [i["id"] for i in feed["inspiration"]] == ["short"]
+
+
+def test_quote_with_missing_context_notes_boundary_not_fabricated():
+    post = "Important: the referenced post claims a new capability."
+    item = _item("quote", "x", 9, title=post, summary=post,
+                 metadata={"author": "builder", "engagement": "22 likes", "volume": 22,
+                           "post_type": "quote", "quoted_url": "https://x.com/other/status/1"})
+    feed = build_signal_feed([item], {"quote": _quick_read(
+        core="作者引用了一篇声称具备新能力的第三方帖子。",
+        insight="需要先核对被引用原文是否属实，再决定是否采信。")})
+    card = feed["inspiration"][0]
+    assert "引用" in card["evidence_note"] and "未随文核验" in card["evidence_note"]
+    assert card["quoted_url"] == "https://x.com/other/status/1"
+
+
+def test_same_source_different_events_are_not_merged():
+    items = [
+        _item("launch-a", "blog", 9, "AI Company", content_bucket="technical",
+              summary="Company released an inference runtime with public benchmarks."),
+        _item("launch-b", "blog", 8, "AI Company", content_bucket="technical",
+              summary="Company released a different AI model evaluation dataset tool with public benchmarks."),
+    ]
+    feed = build_signal_feed(items, {i["id"]: _quick_read() for i in items})
+    ids = [i["id"] for i in feed["execution"]]
+    assert set(ids) == {"launch-a", "launch-b"}
+
+
+def test_same_topic_independent_practices_are_not_deduped():
+    items = [
+        _item("practice-1", "reddit", 8, title="How I run agent evals",
+              summary="A team's full evaluation workflow with failure cases and costs.",
+              metadata={"author": "a", "volume": 40, "engagement": "40 upvotes, 5 replies"}),
+        _item("practice-2", "reddit", 8, title="A different agent eval setup",
+              summary="An opposing take with a different workflow and counterexample results.",
+              metadata={"author": "b", "volume": 40, "engagement": "40 upvotes, 5 replies"}),
+    ]
+    feed = build_signal_feed(items, {i["id"]: _quick_read() for i in items})
+    assert {i["id"] for i in feed["inspiration"]} == {"practice-1", "practice-2"}
+
+
+def test_learned_value_match_reorders_and_marks_card():
+    preferences = _learning.build_preferences([
+        _reference_with("r1", "Agent 处理客服记录", ["process", "failure", "cost"], "agent 客服 流程")
+    ])
+    items = [
+        _item("generic", "rss", 9, "Newsletter",
+              summary="New LLM agent workflow with open implementation and results."),
+        _item("valued", "rss", 7, "Builder Blog",
+              summary="We processed support tickets with an agent: full pipeline, failure cases, and cost."),
+    ]
+    feed = build_signal_feed(items, {i["id"]: _quick_read() for i in items}, limit=5,
+                             preferences=preferences)
+    ids = [i["id"] for i in feed["inspiration"] + feed["execution"]]
+    assert ids == ["valued", "generic"] or ids[0] == "valued"
+    valued = next(i for i in feed["inspiration"] + feed["execution"] if i["id"] == "valued")
+    assert "r1" in valued.get("learned_from", [])
+
+
+def test_learned_value_match_relaxes_x_engagement_but_topic_only_does_not():
+    preferences = _learning.build_preferences([
+        _reference_with("r1", "Agent 处理客服记录", ["process", "failure"], "agent 客服 流程")
+    ])
+    # 低互动但命中价值特征：放宽到 5 次互动以上即可入选。
+    valued = _item("valued", "x", 8,
+                   title="We processed tickets with an agent, full pipeline and failures.",
+                   summary="We processed tickets with an agent, full pipeline and failures.",
+                   metadata={"author": "a", "engagement": "6 likes", "volume": 6})
+    # 低互动且只命中品牌词（主题）不命中价值特征：仍被过滤。
+    topic_only = _item("topic-only", "x", 8,
+                       title="Agent for customer service is promising.",
+                       summary="Agent for customer service is promising.",
+                       metadata={"author": "b", "engagement": "6 likes", "volume": 6})
+    feed = build_signal_feed([valued, topic_only], {i["id"]: _quick_read() for i in [valued, topic_only]},
+                             preferences=preferences)
+    ids = [i["id"] for i in feed["inspiration"]]
+    assert "valued" in ids
+    assert "topic-only" not in ids

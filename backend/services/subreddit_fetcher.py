@@ -47,6 +47,70 @@ def _parse_entry(entry, name: str, day: str):
     }
 
 
+def _extract_comments(payload) -> list[str]:
+    """从 reddit comments JSON 中提取有实质内容的回复（有界递归）。"""
+    comments: list[str] = []
+    if not isinstance(payload, list) or len(payload) < 2:
+        return comments
+
+    def walk(node, depth):
+        if depth > 3 or len(comments) >= 10:
+            return
+        if isinstance(node, dict):
+            child = node.get("data") or {}
+            if node.get("kind") == "t1" and child.get("body"):
+                body = " ".join(str(child["body"]).split())
+                if len(body) >= 20:
+                    comments.append(body[:600])
+            replies = child.get("replies")
+            if isinstance(replies, dict):
+                for c in (replies.get("data") or {}).get("children") or []:
+                    walk(c, depth + 1)
+        elif isinstance(node, list):
+            for c in node:
+                walk(c, depth)
+
+    for child in (payload[1].get("data") or {}).get("children") or []:
+        walk(child, 1)
+    return comments
+
+
+async def enrich_subreddit_comments(client: httpx.AsyncClient, items: list[dict], *,
+                                    max_posts: int = 20, max_comments: int = 5,
+                                    pause_seconds: float = 0.5) -> dict:
+    """为已采集的 reddit 主帖抓取 top 回复；有界、尽力而为，不因失败丢弃主帖。
+
+    有价值的信息可能在回复中；回复抓取失败时在 metadata 里保留缺失状态。
+    """
+    statuses: dict = {}
+    for item in items[:max_posts]:
+        if item.get("source_type") != "reddit" or not str(item.get("id", "")).startswith("reddit-"):
+            continue
+        post_id = str(item["id"])[len("reddit-"):]
+        if not post_id:
+            continue
+        url = f"https://www.reddit.com/comments/{post_id}.json"
+        metadata = item.setdefault("metadata", {})
+        try:
+            if pause_seconds:
+                await asyncio.sleep(pause_seconds)
+            response = await client.get(
+                url, params={"limit": max(1, min(max_comments, 10)), "depth": 1},
+                headers={"User-Agent": "SignalForge/0.1 (public feed)"}, timeout=8)
+            response.raise_for_status()
+            comments = _extract_comments(response.json())
+            metadata["comments"] = comments
+            metadata["comments_fetched"] = True
+            if not comments:
+                metadata["context_missing"] = True
+            statuses[item["id"]] = "ok"
+        except Exception as exc:  # noqa: BLE001
+            metadata["comments_fetched"] = False
+            metadata["context_missing"] = True
+            statuses[item["id"]] = type(exc).__name__
+    return statuses
+
+
 async def fetch_subreddits(client: httpx.AsyncClient, day: str, names: list[str],
                            max_per_sub: int = 3, *, pause_seconds: float = 1) -> dict:
     """Collect public hot feeds, stopping on a rate limit instead of escalating requests."""

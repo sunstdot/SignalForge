@@ -92,3 +92,60 @@ async def test_bad_subreddit_name_and_old_or_missing_dates_do_not_fabricate_item
     assert result['items'] == []
     assert result['statuses']['r/../../private'] == 'unavailable'
     assert result['statuses']['r/AI_Agents'] == 'partial'
+
+
+from backend.services.subreddit_fetcher import enrich_subreddit_comments, _extract_comments
+
+
+def test_extract_comments_walks_replies_with_bounded_depth():
+    payload = [
+        {"data": {"children": []}},
+        {"data": {"children": [
+            {"kind": "t1", "data": {"body": "This is the first substantive reply about the workflow.",
+                                    "replies": {"data": {"children": [
+                                        {"kind": "t1", "data": {"body": "A nested counterexample that is also useful.", "replies": ""}},
+                                    ]}}}},
+            {"kind": "t1", "data": {"body": "short", "replies": ""}},
+        ]}},
+    ]
+    comments = _extract_comments(payload)
+    assert comments[0].startswith("This is the first")
+    assert "counterexample" in comments[1]
+    assert all(len(c) >= 20 for c in comments)
+
+
+@pytest.mark.asyncio
+async def test_enrich_comments_marks_missing_state_without_dropping_post():
+    import httpx
+
+    def respond(request):
+        if "comments" in request.url.path:
+            return httpx.Response(200, json=[
+                {"data": {"children": []}},
+                {"data": {"children": [
+                    {"kind": "t1", "data": {"body": "A useful counterexample reply with enough detail.", "replies": ""}},
+                ]}},
+            ])
+        return httpx.Response(500)
+
+    item = {"id": "reddit-abc", "source_type": "reddit", "title": "Post", "metadata": {}}
+    async with httpx.AsyncClient(transport=httpx.MockTransport(respond)) as client:
+        statuses = await enrich_subreddit_comments(client, [item], pause_seconds=0)
+    assert statuses[item["id"]] == "ok"
+    assert item["metadata"]["comments_fetched"] is True
+    assert item["metadata"]["comments"][0].startswith("A useful counterexample")
+
+
+@pytest.mark.asyncio
+async def test_enrich_comments_failure_marks_context_missing():
+    import httpx
+
+    def respond(request):
+        return httpx.Response(429)
+
+    item = {"id": "reddit-abc", "source_type": "reddit", "title": "Post", "metadata": {}}
+    async with httpx.AsyncClient(transport=httpx.MockTransport(respond)) as client:
+        statuses = await enrich_subreddit_comments(client, [item], pause_seconds=0)
+    assert statuses[item["id"]] == "HTTPStatusError" or statuses[item["id"]]
+    assert item["metadata"]["comments_fetched"] is False
+    assert item["metadata"]["context_missing"] is True

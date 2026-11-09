@@ -14,6 +14,7 @@ import DailyOpportunityPage from './pages/DailyOpportunityPage'
 import ManualIntelPage from './pages/ManualIntelPage'
 import SearchPage from './pages/SearchPage'
 import VentureRadarPage from './pages/VentureRadarPage'
+import ResearchPage from './pages/ResearchPage'
 import NotFound from './pages/NotFound'
 
 function App() {
@@ -34,6 +35,8 @@ function App() {
           <Route path="/search" element={<SearchPage />} />
           <Route path="/venture-radar" element={<VentureRadarPage />} />
           <Route path="/venture-radar/week/:weekId" element={<VentureRadarPage />} />
+          <Route path="/research" element={<ResearchPage />} />
+          <Route path="/research/:runId" element={<ResearchPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>

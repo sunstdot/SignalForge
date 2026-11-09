@@ -4,6 +4,7 @@ from typing import List, Dict, Optional
 
 from .storage import _load_content_file, get_all_dates, load_quick_reads, save_briefing_file
 from .signal_feed import build_signal_feed
+from .signal_learning import effective_preferences
 from .source_run_store import load_source_run
 from .event_radar import load_event_radar
 from .x_account_daily import load_x_account_day
@@ -196,10 +197,18 @@ def generate_briefing_for_date(date: str) -> Optional[Dict]:
         })
 
     quick_reads = load_quick_reads(date)
+    preferences = effective_preferences()
     signals = build_signal_feed(
         [item for item in today_items if _is_recent_feed_item(item, signal_date)],
         quick_reads,
+        preferences=preferences,
     )
+    signals['learning'] = {
+        'active_references': preferences.get('active_references', []),
+        'themes': preferences.get('themes', []),
+        'value_patterns': preferences.get('value_patterns', []),
+        'search_clues': preferences.get('search_clues', []),
+    }
     if has_radar_state:
         signals['events'] = radar.get('events', [])
         signals['source_status'] = source_status

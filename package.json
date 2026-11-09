@@ -9,9 +9,9 @@
     "render": "remotion render src/index.ts AIIntelligenceShort out/ai-intelligence-short.mp4",
     "dev:legacy": "./start.sh",
     "dev:frontend": "cd frontend && pnpm dev",
-    "dev:backend": "cd backend && source venv/bin/activate && uvicorn main:app --reload --port 8000",
+    "dev:backend": "cd backend && source venv/bin/activate && uvicorn main:app --reload --port 8001",
     "build": "cd frontend && pnpm build",
-    "start": "cd backend && source venv/bin/activate && uvicorn main:app --host 0.0.0.0 --port 8000",
+    "start": "cd backend && source venv/bin/activate && uvicorn main:app --host 0.0.0.0 --port 8001",
     "daily": "cd backend && source venv/bin/activate && python cli.py daily",
     "collect": "cd backend && source venv/bin/activate && python cli.py collect",
     "briefing": "cd backend && source venv/bin/activate && python cli.py briefing",
@@ -20,15 +20,15 @@
     "venture-radar": "cd backend && source venv/bin/activate && python cli.py venture-radar"
   },
   "dependencies": {
-    "@remotion/cli": "^4.0.289",
-    "playwright": "^1.60.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "remotion": "^4.0.289"
+    "@remotion/cli": "^4.0.535",
+    "playwright": "^1.64.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.535"
   },
   "devDependencies": {
-    "@types/react": "^18.2.43",
-    "@types/react-dom": "^18.2.17",
-    "typescript": "^5.3.3"
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "typescript": "^5.9.3"
   }
 }

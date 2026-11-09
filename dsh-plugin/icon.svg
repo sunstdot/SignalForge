@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="SignalForge">
+  <defs>
+    <linearGradient id="sf-bg" x1="8" y1="6" x2="56" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0d1b2a"/>
+      <stop offset="1" stop-color="#123b4a"/>
+    </linearGradient>
+    <linearGradient id="sf-beam" x1="18" y1="46" x2="48" y2="18" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#34d399"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#sf-bg)"/>
+  <g fill="none" stroke="url(#sf-beam)" stroke-linecap="round">
+    <path d="M14 46a26 26 0 0 1 36 0" opacity=".35" stroke-width="2.4"/>
+    <path d="M20 43.5a19 19 0 0 1 24 0" opacity=".65" stroke-width="2.4"/>
+    <path d="M26 41a11.5 11.5 0 0 1 12 0" opacity=".95" stroke-width="2.4"/>
+  </g>
+  <path d="M32 42 46 21" stroke="#e6fbf6" stroke-width="2.2" stroke-linecap="round" opacity=".9"/>
+  <circle cx="32" cy="42" r="4.2" fill="#e6fbf6"/>
+  <circle cx="32" cy="42" r="1.8" fill="#0d1b2a"/>
+  <circle cx="47" cy="19" r="3" fill="#34d399"/>
+  <circle cx="47" cy="19" r="6" fill="#34d399" opacity=".22"/>
+</svg>

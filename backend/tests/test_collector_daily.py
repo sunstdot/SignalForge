@@ -66,6 +66,45 @@ class DailyCollectionDateTest(unittest.IsolatedAsyncioTestCase):
             ["2026-05-12", "2026-05-12", "2026-05-12"],
         )
 
+    async def test_run_collection_uses_learned_watchlist_queries(self):
+        """下一次实际采集任务确实使用新增检索线索。"""
+        today = datetime.now().strftime('%Y-%m-%d')
+        calls = []
+
+        def fake_run_watchlist(topics, target_date):
+            calls.append(list(topics))
+            return 0
+
+        with (patch.object(collector, 'load_config', return_value={'sources': {}}),
+              patch.object(collector, 'fetch_all_sources', return_value=[]),
+              patch.object(collector, '_load_content_file', return_value=[]),
+              patch.object(collector, 'store_content_items', return_value=0),
+              patch.object(collector, 'learned_watchlist_queries',
+                           return_value=['agent 客服记录 高频问题']),
+              patch.object(collector, 'run_watchlist_daily', side_effect=fake_run_watchlist)):
+            await collector.run_collection(target_date=today)
+
+        self.assertEqual(calls, [['agent 客服记录 高频问题']])
+
+    async def test_run_collection_skips_learned_queries_for_historical_dates(self):
+        """历史回填不触发学习到的实时检索。"""
+        calls = []
+
+        def fake_run_watchlist(topics, target_date):
+            calls.append(list(topics))
+            return 0
+
+        with (patch.object(collector, 'load_config', return_value={'sources': {}}),
+              patch.object(collector, 'fetch_all_sources', return_value=[]),
+              patch.object(collector, '_load_content_file', return_value=[]),
+              patch.object(collector, 'store_content_items', return_value=0),
+              patch.object(collector, 'learned_watchlist_queries',
+                           return_value=['agent 客服记录 高频问题']),
+              patch.object(collector, 'run_watchlist_daily', side_effect=fake_run_watchlist)):
+            await collector.run_collection(target_date="2026-05-12")
+
+        self.assertEqual(calls, [])
+
 
 if __name__ == "__main__":
     unittest.main()

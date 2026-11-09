@@ -156,6 +156,42 @@ Sources
 
 当前是基于现有相关度和来源多样性的轻量初筛；跨源趋势聚类、完整打分与反馈学习属于后续阶段。
 
+## DeepSeek Harness 插件（Phase 1）
+
+仓库里的 [`dsh-plugin/`](dsh-plugin/README.md) 把「今日 AI 情报」「今日 AI 情报机会」和「全部情报」做成了 DeepSeek Harness 的侧栏插件：点一次「获取今日资讯」，抓取当天 AI 来源，用**当前登录的 DeepSeek 账号**精选信号并生成商业/研发机会；全部候选也会补上中文速读，并在「全部情报」标签里按论文/仓库/资讯等分类搜索筛选。结果按天保存和回看。
+
+本机已经装到 `desktop` profile；侧栏没有出现时刷新一次页面。安装到别的 profile：
+
+```bash
+cd dsh-plugin
+./install.sh desktop
+```
+
+`dsh-plugin/` 已发布为独立插件：
+
+- 包名：`dsh-signalforge`
+- 公开仓库：<https://github.com/sunstdot/signalforge-dsh>
+- v0.1.4 Release：<https://github.com/sunstdot/signalforge-dsh/releases/tag/v0.1.4>
+- 首选分发：GitHub 仓库 + Release 里的 `.tgz` 与 `SHA256SUMS`（npm 可选，不是 DSH 插件的必要条件）
+- 发布与安装步骤：见 [`dsh-plugin/PUBLISHING.md`](dsh-plugin/PUBLISHING.md)
+- 公开 README：见 [`dsh-plugin/README.md`](dsh-plugin/README.md)
+
+其他人可以直接安装：
+
+```bash
+# 从 GitHub 源码
+dsh plugin --profile desktop add "github:sunstdot/signalforge-dsh"
+
+# 或下载 Release 里的 .tgz，校验后安装
+shasum -a 256 -c SHA256SUMS
+dsh plugin --profile desktop add "$PWD/dsh-signalforge-0.1.4.tgz"
+
+# npm 发布后（可选）
+dsh plugin --profile desktop add dsh-signalforge
+```
+
+第一期覆盖 28 个免登录来源（HN、arXiv、HF Papers、GitHub Trending，以及 OpenAI/Anthropic/Cognition/DeepMind/Google Research/Meta AI/NVIDIA/Apple ML/LangChain/Cohere/Cloudflare/AWS 等 15 个官方博客和若干 Newsletter/媒体），不依赖原有 FastAPI 后端。实现细节、API、数据目录和已知边界见 [`dsh-plugin/README.md`](dsh-plugin/README.md)。
+
 ## 快速开始
 
 ### 1. 安装依赖

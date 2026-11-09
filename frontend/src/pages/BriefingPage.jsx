@@ -6,6 +6,7 @@ import { useShareSelection, ShareSelectionBar } from './useShareSelection'
 import { getSignalItems, getEventItems, getAccountItems } from './dailySignalData'
 import EventRadar from './EventRadar'
 import AccountRadar from './AccountRadar'
+import SignalLearningPanel from './SignalLearningPanel'
 import './BriefingRadar.css'
 
 const CATEGORY_TABS = [
@@ -48,7 +49,7 @@ function BriefingPage() {
   const { signalIds, opportunityIds, toggleSignal, clearAll, generating, generate } = useShareSelection(date)
   const [briefing, setBriefing] = useState(null)
   const [activeCategory, setActiveCategory] = useState('signals')
-  const [activeSignalTrack, setActiveSignalTrack] = useState('inspiration')
+  const [showLearning, setShowLearning] = useState(false)
   const [loading, setLoading] = useState(true)
   const [opportunities, setOpportunities] = useState([])
   const [oppsLoading, setOppsLoading] = useState(false)
@@ -74,7 +75,6 @@ function BriefingPage() {
       const briefingData = await res.json()
       setBriefing(briefingData)
       setActiveCategory(briefingData?.signals ? 'signals' : 'all')
-      setActiveSignalTrack('inspiration')
     } catch (error) {
       if (error.name !== 'AbortError') console.error('Failed to fetch data:', error)
       return
@@ -208,6 +208,19 @@ function BriefingPage() {
 
   const hasAccounts = Array.isArray(briefing.signals?.accounts)
   const hasEvents = Array.isArray(briefing.signals?.events)
+  const signalCards = [
+    ...getSignalItems(briefing, 'inspiration'),
+    ...getSignalItems(briefing, 'execution'),
+  ]
+  const signalCardIds = new Set(signalCards.map(item => item.id))
+  // 关注账号中已进入上方信号的帖不再在账号区重复展示
+  const accountGroupsDeduped = getAccountItems(briefing).map(group => ({
+    ...group,
+    posts: (group.posts || []).filter(post => !signalCardIds.has(post.id)),
+  }))
+  const learning = briefing.signals?.learning || {}
+  const activeReferenceCount = (learning.active_references || []).length
+  const learningThemes = (learning.themes || []).map(theme => theme.text).slice(0, 3).join('、')
   const hasRadar = hasAccounts || hasEvents
 
   return (
@@ -238,59 +251,36 @@ function BriefingPage() {
           {activeCategory === 'signals' && (
             <section className="briefing-signals" aria-label="今日信号">
               <div className="briefing-signals-intro">
-                <h2>今日信号</h2>
-                <p>{hasRadar
-                  ? `具体事件 ${getEventItems(briefing).length} 件 · 可核验账号动态 ${getAccountItems(briefing).reduce((sum, group) => sum + (group.posts?.length || 0), 0)} 条 · 原始信息仍可在「全部内容」查看`
-                  : `符合标准 ${briefing.signals?.total ?? 0} 条 · 原始信息仍可在「全部内容」查看`}</p>
-                {hasEvents && hasAccounts && <a className="briefing-account-jump" href="#briefing-following">查看关注账号</a>}
+                <div className="briefing-signals-title-row">
+                  <h2>今日信号</h2>
+                  <button type="button" className="briefing-learn-btn"
+                    aria-expanded={showLearning}
+                    onClick={() => setShowLearning(v => !v)}>
+                    {showLearning ? '收起参考学习' : '用这条信息，帮我发现更多'}
+                  </button>
+                </div>
+                <p>精选 {signalCards.length} 条（不凑数） · 依据与边界见每条卡片 · 原始信息可在「全部内容」查看</p>
+                {activeReferenceCount > 0 && (
+                  <p className="briefing-learning-note">已有 {activeReferenceCount} 条参考信息正在影响筛选：{learningThemes}</p>
+                )}
               </div>
-              {hasRadar && <div className="briefing-radar-grid">
-                {hasEvents && <EventRadar events={getEventItems(briefing)} sourceStatus={briefing.signals.source_status}
-                  selectionStatus={briefing.signals.selection_status} />}
-                {hasAccounts && <AccountRadar accounts={getAccountItems(briefing)} />}
-              </div>}
-              {!hasEvents && <div className="briefing-legacy">
-                <div className="briefing-legacy-nav" role="group" aria-label="信号轨道">
-                  {[
-                    { key: 'inspiration', label: '灵感雷达' },
-                    { key: 'execution', label: '执行雷达' },
-                  ].map(track => (
-                    <button key={track.key} type="button" aria-pressed={activeSignalTrack === track.key}
-                      className={`tab-btn ${activeSignalTrack === track.key ? 'active' : ''}`}
-                      onClick={() => setActiveSignalTrack(track.key)}>
-                      {track.label} ({getSignalItems(briefing, track.key).length})
-                    </button>
-                  ))}
-                </div>
-                {getSignalItems(briefing, activeSignalTrack).length === 0 ? (
-                  <p className="briefing-empty">这条轨道今天没有足够依据的信号；可切换轨道，或在「全部内容」查看原始信息。</p>
-                ) : getSignalItems(briefing, activeSignalTrack).map(item => (
-              <article key={item.id} className="rounded-lg border p-4" style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}>
-                <div className="flex items-center justify-between gap-3">
-                  <a href={item.url} target="_blank" rel="noopener noreferrer" className="font-semibold hover:underline"
-                    style={{ color: 'var(--text-primary)' }}>{item.title}</a>
-                  <span className="text-xs whitespace-nowrap" style={{ color: 'var(--accent-blue)' }}>{item.source}</span>
-                </div>
-                {item.takeaway && <p className="text-sm mt-3" style={{ color: 'var(--text-secondary)', lineHeight: 1.7 }}>
-                  <strong style={{ color: 'var(--text-primary)' }}>发生了什么：</strong>{item.takeaway}
-                </p>}
-                {Array.isArray(item.facts) && item.facts.length > 0 && <div className="text-sm mt-2" style={{ color: 'var(--text-secondary)', lineHeight: 1.7 }}>
-                  <strong style={{ color: 'var(--text-primary)' }}>关键信息：</strong>
-                  <ul className="list-disc pl-5 mt-1">{item.facts.map((fact, index) => <li key={`${item.id}-fact-${index}`}>{fact}</li>)}</ul>
-                </div>}
-                {item.so_what && <p className="text-sm mt-2" style={{ color: 'var(--text-secondary)', lineHeight: 1.7 }}>
-                  <strong style={{ color: 'var(--text-primary)' }}>值得看什么：</strong>{item.so_what}
-                </p>}
-                {item.evidence && <p className="text-xs mt-2" style={{ color: 'var(--text-muted)' }}>
-                  讨论数据：{item.evidence}
-                </p>}
-                <div className="flex justify-between items-center gap-3 text-xs mt-3" style={{ color: 'var(--text-muted)' }}>
-                  <span>{item.takeaway ? 'AI 速读 · 请核对原文' : item.why}{item.published_at ? ` · ${item.published_at}` : ''}</span>
-                  <a href={item.url} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-blue)' }}>查看原文 ↗</a>
-                </div>
-              </article>
-                ))}
-              </div>}
+              {showLearning && <SignalLearningPanel onChanged={() => fetchData()} />}
+              {signalCards.length === 0 ? (
+                <p className="briefing-empty">今天没有足够依据的信号；可在「全部内容」查看原始信息。</p>
+              ) : signalCards.map(item => <SignalCard key={item.id} item={item} />)}
+              {hasEvents && (
+                <details className="briefing-fold">
+                  <summary>具体事件 {getEventItems(briefing).length} 件<span>展开查看</span></summary>
+                  <EventRadar events={getEventItems(briefing)} sourceStatus={briefing.signals.source_status}
+                    selectionStatus={briefing.signals.selection_status} />
+                </details>
+              )}
+              {hasAccounts && (
+                <details className="briefing-fold">
+                  <summary>关注账号动态<span>按账号折叠查看，已进入上方信号的内容不再重复</span></summary>
+                  <AccountRadar accounts={accountGroupsDeduped} />
+                </details>
+              )}
             </section>
           )}
           {briefing.summary && <details className="briefing-summary">
@@ -338,6 +328,59 @@ const SOURCE_TYPE_BADGE = {
   model: { label: '模型', color: '#10b981' },
   rss:   { label: '资讯', color: '#f59e0b' },
   news:  { label: '资讯', color: '#f59e0b' },
+}
+
+function SignalCard({ item }) {
+  const [expanded, setExpanded] = useState(false)
+  const hasMore = (item.details || []).length > 0 || (item.comments || []).length > 0 || item.quoted_url
+  return (
+    <article className="signal-card">
+      <div className="signal-card-head">
+        <a href={item.url} target="_blank" rel="noopener noreferrer" className="signal-card-title">{item.title}</a>
+        <span className="signal-card-source">{item.source}</span>
+      </div>
+      {(item.tags || []).length > 0 && (
+        <div className="signal-card-tags">
+          {item.tags.map(tag => <span key={tag} className="signal-tag">{tag}</span>)}
+        </div>
+      )}
+      {item.finding && <p className="signal-line"><strong>发现了什么：</strong>{item.finding}</p>}
+      {item.why_read && <p className="signal-line"><strong>为什么值得看：</strong>{item.why_read}</p>}
+      {item.evidence_note && <p className="signal-evidence">依据与边界：{item.evidence_note}</p>}
+      {item.learned_reason && <p className="signal-learned">{item.learned_reason}</p>}
+      <div className="signal-card-foot">
+        <span>{item.takeaway ? 'AI 速读 · 请核对原文' : ''}{item.published_at ? ` · ${String(item.published_at).slice(0, 16)}` : ''}</span>
+        <a href={item.url} target="_blank" rel="noopener noreferrer">查看原文 ↗</a>
+      </div>
+      {hasMore && (
+        <div className="signal-expand">
+          <button type="button" className="signal-expand-btn" aria-expanded={expanded}
+            onClick={() => setExpanded(v => !v)}>
+            {expanded ? '收起细节' : '展开细节与讨论'}
+          </button>
+          {expanded && (
+            <div className="signal-detail">
+              {(item.details || []).length > 0 && (
+                <>
+                  <strong>关键信息：</strong>
+                  <ul>{item.details.map((fact, index) => <li key={`${item.id}-detail-${index}`}>{fact}</li>)}</ul>
+                </>
+              )}
+              {(item.comments || []).length > 0 && (
+                <>
+                  <strong>有价值的回复摘录：</strong>
+                  <ul>{item.comments.map((comment, index) => <li key={`${item.id}-comment-${index}`}>{comment}</li>)}</ul>
+                </>
+              )}
+              {item.quoted_url && (
+                <p><a href={item.quoted_url} target="_blank" rel="noopener noreferrer">查看被引用原帖 ↗</a></p>
+              )}
+            </div>
+          )}
+        </div>
+      )}
+    </article>
+  )
 }
 
 function ScoreDot({ value }) {
