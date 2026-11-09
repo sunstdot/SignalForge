@@ -1,0 +1,1174 @@
+{
+  "id": "cf667dba-1247-4d1c-bdff-137748295698",
+  "date": "2026-06-02",
+  "items": [
+    {
+      "id": "l30-instagram-163d7e44aa99",
+      "title": "Peter Steinberger, creator of OpenClaw, comes to Microsoft Build to talk through how OpenClaw will be integrated on Windows as a native Wind",
+      "source": "Instagram",
+      "source_type": "instagram",
+      "url": "https://www.instagram.com/reel/DZF-fH_jeZK/",
+      "summary": "You can totally run OpenClaw inside your company now. You'll notice immediately it looks like a native Windows app because it is. It's written in WinUI 3, it's got all kinds of information about my gateway, other machines that are participating in my claw, my sessions, and my usage. I've also got quick access to things like chat, canvas, the main dashboar...",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-02"
+    },
+    {
+      "id": "arxiv-2606.17056v1",
+      "title": "The Value Axis: Language Models Encode Whether They're on the Right Track",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.17056v1",
+      "summary": "We investigate whether language models internally track the value of their current trajectory, defined as the likelihood that their ongoing strategy will achieve their goals. Using synthetic, in-conte",
+      "category": [
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "arxiv-2606.17053v1",
+      "title": "Context-Aware RL for Agentic and Multimodal LLMs",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.17053v1",
+      "summary": "Large language models (LLMs) often fail when answering requires identifying a small but decisive piece of evidence within a long or complex context, such as a single line in a tool trace or a subtle d",
+      "category": [
+        "cs.CL",
+        "cs.CV"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "arxiv-2606.17048v1",
+      "title": "Exact Posterior Score Estimation for Solving Linear Inverse Problems",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.17048v1",
+      "summary": "Diffusion and flow-based models learn powerful data priors by training a denoiser to reverse Gaussian corruption. To use this prior to solve a linear inverse problem, one needs to sample from the post",
+      "category": [
+        "cs.LG",
+        "cs.CV",
+        "stat.ML"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "arxiv-2606.17046v1",
+      "title": "Geometric Action Model for Robot Policy Learning",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.17046v1",
+      "summary": "Generalist robot policies must follow user instructions while reasoning about how objects, cameras, and robot actions interact in the 3D physical world. Recent vision-language-action models (VLAs) and",
+      "category": [
+        "cs.RO",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "arxiv-2606.17043v1",
+      "title": "Hierarchical Advantage Weighting for Online RL Fine-Tuning of VLAs from Sparse Episode Outcomes",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.17043v1",
+      "summary": "When pretrained VLA policies are fine-tuned through online RL, each rollout episode produces only a single binary outcome (success or failure), yet the actor update requires per-transition supervision",
+      "category": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "arxiv-2606.17041v1",
+      "title": "Benchmarking LLM Agents on Meta-Analysis Articles from Nature Portfolio",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.17041v1",
+      "summary": "Meta-analysis is a demanding form of evidence synthesis that combines literature retrieval, PI/ECO-guided study selection, and statistical aggregation. Its structured, verifiable workflow makes it an ",
+      "category": [
+        "cs.CL",
+        "cs.IR"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "arxiv-2606.17037v1",
+      "title": "The Importance of Phase in Neural Representations: An Internal Oppenheim-Lim Test of Image Classifiers",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.17037v1",
+      "summary": "Oppenheim and Lim (1981) showed that natural images stay recognizable when reconstructed from their Fourier phase alone, while the magnitude carries little of their identity. We ask whether trained im",
+      "category": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "arxiv-2606.17035v1",
+      "title": "Your Privacy My Cloak: Backdoor Attacks on Differentially Private Federated Learning",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.17035v1",
+      "summary": "Prior research suggests that differential privacy (DP) inherently enhances the robustness of federated learning (FL) against backdoor attacks. In this paper, we challenge this assumption. Through an e",
+      "category": [
+        "cs.LG",
+        "cs.CR"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "arxiv-2606.17034v1",
+      "title": "KVEraser: Learning to Steer KV Cache for Efficient Localized Context Erasing",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.17034v1",
+      "summary": "Post-hoc context erasing over the KV cache is challenging because a local edit has a global consequence: once a span has been processed, its influence propagates into the cached states of all subseque",
+      "category": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "arxiv-2606.17029v1",
+      "title": "DEEPRUBRIC: Evidence-Tree Rubric Supervision for Efficient Reinforcement Learning of Deep Research Agents",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.17029v1",
+      "summary": "Deep research agents synthesize long-form reports by searching and reasoning over retrieved evidence. Reinforcement learning with rubric-based rewards improves these agents by optimizing them against ",
+      "category": [
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "arxiv-2606.17028v1",
+      "title": "HAMON: Passive Optical Sequence Mixing for Long-Horizon Forecasting",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.17028v1",
+      "summary": "Simple linear and frequency-domain models remain surprisingly competitive in long-horizon time-series forecasting, and recent mechanistic evidence suggests that standard forecasting benchmarks may not",
+      "category": [
+        "cs.LG",
+        "cs.AI",
+        "cs.AR"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "arxiv-2606.17024v1",
+      "title": "ExpRL: Exploratory RL for LLM Mid-Training",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.17024v1",
+      "summary": "Sparse reward reinforcement learning (RL) has become a standard tool for improving LLM reasoning, but its success depends critically on the coverage present in the base model. In practice, models are ",
+      "category": [
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "arxiv-2606.17022v1",
+      "title": "Learning the Geometry of Data: A Mathematical Review of Shape Space Analysis",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.17022v1",
+      "summary": "A central objective of machine learning is to identify structure and patterns in data. Advances in data acquisition have increasingly produced datasets whose observations possess rich geometric form, ",
+      "category": [
+        "math.ST",
+        "cs.LG",
+        "stat.ML"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "arxiv-2606.17020v1",
+      "title": "FusionRS: A Large-Scale RGB-Infrared Remote Sensing Dataset for Dual-Modal Vision-Language Foundation Models",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.17020v1",
+      "summary": "Remote sensing vision-language models have advanced Earth observation understanding, but most existing work remains centered on RGB imagery, leaving the complementary information in infrared data unde",
+      "category": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "arxiv-2606.17016v1",
+      "title": "TokenPilot: Cache-Efficient Context Management for LLM Agents",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.17016v1",
+      "summary": "As LLM agents are deployed in long-horizon sessions, context accumulation drives up inference costs. Existing approaches utilize text pruning or dynamic memory eviction to minimize token footprints; h",
+      "category": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "github-578f691c2936",
+      "title": "iptv-org/iptv — Collection of publicly available IPTV channels from all over the world",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/iptv-org/iptv",
+      "summary": "Collection of publicly available IPTV channels from all over the world | 🔥 2657 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "github-27389ae3e7aa",
+      "title": "teslamate-org/teslamate — A self-hosted data logger for your Tesla 🚘 [main maintainer=@JakobLichterfeld]",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/teslamate-org/teslamate",
+      "summary": "A self-hosted data logger for your Tesla 🚘 [main maintainer=@JakobLichterfeld] | 🔥 33 stars today | Language: Elixir",
+      "category": [
+        "开源项目",
+        "Elixir"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "github-9153cb7357d4",
+      "title": "Panniantong/Agent-Reach — Give your AI agent eyes to see the entire internet. Read &amp; search Twitter, R",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "summary": "Give your AI agent eyes to see the entire internet. Read &amp; search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees. | 🔥 1100 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "github-1e2dfee4ddb2",
+      "title": "meshery/meshery — Meshery, the cloud native manager",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/meshery/meshery",
+      "summary": "Meshery, the cloud native manager | 🔥 228 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "github-98661d582404",
+      "title": "chatwoot/chatwoot — Open-source live-chat, email support, omni-channel desk. An alternative to Inter",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/chatwoot/chatwoot",
+      "summary": "Open-source live-chat, email support, omni-channel desk. An alternative to Intercom, Zendesk, Salesforce Service Cloud etc. 🔥💬 | 🔥 431 stars today | Language: Ruby",
+      "category": [
+        "开源项目",
+        "Ruby"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "github-f9c90ecc5788",
+      "title": "krahets/hello-algo — 《Hello 算法》：动画图解、一键运行的数据结构与算法教程。支持简中、繁中、English、日本語，提供 Python, Java, C++, C, C#, ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/krahets/hello-algo",
+      "summary": "《Hello 算法》：动画图解、一键运行的数据结构与算法教程。支持简中、繁中、English、日本語，提供 Python, Java, C++, C, C#, JS, Go, Swift, Rust, Ruby, Kotlin, TS, Dart 等代码实现 | 🔥 71 stars today | Language: Java",
+      "category": [
+        "开源项目",
+        "Java"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "github-eba900591972",
+      "title": "freeCodeCamp/freeCodeCamp — freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming,",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+      "summary": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | 🔥 736 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "github-41a3a6df42c5",
+      "title": "trycua/cua — Open-source infrastructure for Computer-Use Agents. Sandboxes, SDKs, and benchma",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/trycua/cua",
+      "summary": "Open-source infrastructure for Computer-Use Agents. Sandboxes, SDKs, and benchmarks to train and evaluate AI agents that can control full desktops (macOS, Linux, Windows). | 🔥 70 stars today | Languag",
+      "category": [
+        "开源项目",
+        "HTML"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "github-e2e2f93d1ee7",
+      "title": "jwasham/coding-interview-university — A complete computer science study plan to become a software engineer.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/jwasham/coding-interview-university",
+      "summary": "A complete computer science study plan to become a software engineer. | 🔥 364 stars today",
+      "category": [
+        "开源项目"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "github-b45d1f22a611",
+      "title": "rohitg00/ai-engineering-from-scratch — Learn it. Build it. Ship it for others.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "summary": "Learn it. Build it. Ship it for others. | 🔥 562 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "github-36be392a8c9c",
+      "title": "music-assistant/server — Music Assistant is a free, opensource Media library manager that connects to you",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/music-assistant/server",
+      "summary": "Music Assistant is a free, opensource Media library manager that connects to your streaming services and a wide range of connected speakers. The server is the beating heart, the core of Music Assistan",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "github-a13753c0fb52",
+      "title": "Free-TV/IPTV — M3U Playlist for free TV channels",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Free-TV/IPTV",
+      "summary": "M3U Playlist for free TV channels | 🔥 361 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "github-1b213c3d737c",
+      "title": "Introduction-to-Autonomous-Robots/Introduction-to-Autonomous-Robots — Introduction to Autonomous Robots",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Introduction-to-Autonomous-Robots/Introduction-to-Autonomous-Robots",
+      "summary": "Introduction to Autonomous Robots | 🔥 489 stars today | Language: TeX",
+      "category": [
+        "开源项目",
+        "TeX"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "github-7bc9388a9725",
+      "title": "Raphire/Win11Debloat — A simple, lightweight PowerShell script that allows you to remove pre-installed ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Raphire/Win11Debloat",
+      "summary": "A simple, lightweight PowerShell script that allows you to remove pre-installed apps, disable telemetry, as well as perform various other changes to declutter and customize your Windows experience. Wi",
+      "category": [
+        "开源项目",
+        "PowerShell"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "github-6551c4c539c6",
+      "title": "mikeroyal/Self-Hosting-Guide — Self-Hosting Guide. Learn all about locally hosting (on premises &amp; private w",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/mikeroyal/Self-Hosting-Guide",
+      "summary": "Self-Hosting Guide. Learn all about locally hosting (on premises &amp; private web servers) and managing software applications by yourself or your organization. Including Cloud, LLMs, WireGuard, Autom",
+      "category": [
+        "开源项目",
+        "Dockerfile"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "github-64557b06e1a0",
+      "title": "itsfatduck/optimizerDuck — Free, open-source Windows optimization tool for performance, privacy, and simpli",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/itsfatduck/optimizerDuck",
+      "summary": "Free, open-source Windows optimization tool for performance, privacy, and simplicity. | 🔥 340 stars today | Language: C#",
+      "category": [
+        "开源项目",
+        "C#"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "github-8bfc53b24ab7",
+      "title": "NVIDIA/SkillSpector — Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/NVIDIA/SkillSpector",
+      "summary": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, and security risks. | 🔥 1079 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "github-332aef856035",
+      "title": "shiyu-coder/Kronos — Kronos: A Foundation Model for the Language of Financial Markets",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/shiyu-coder/Kronos",
+      "summary": "Kronos: A Foundation Model for the Language of Financial Markets | 🔥 396 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "github-d7fa42b7f3f5",
+      "title": "harry0703/MoneyPrinterTurbo — 利用AI大模型，一键生成高清短视频 Generate short videos with one click using AI LLM.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "summary": "利用AI大模型，一键生成高清短视频 Generate short videos with one click using AI LLM. | 🔥 1937 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-01"
+    },
+    {
+      "id": "github-e4b7ba63c2bd",
+      "title": "microsoft/markitdown — Python tool for converting files and office documents to Markdown.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/microsoft/markitdown",
+      "summary": "Python tool for converting files and office documents to Markdown. | 🔥 2798 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-01"
+    },
+    {
+      "id": "hf-paper-547aa33ec6c2",
+      "title": "Hierarchical Advantage Weighting for Online RL Fine-Tuning of VLAs from Sparse Episode Outcomes",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.17043",
+      "summary": "When pretrained VLA policies are fine-tuned through online RL, each rollout episode produces only a single binary outcome (success or failure), yet the actor update requires per-transition supervision",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "hf-paper-bb44c099c159",
+      "title": "Memento: Reconstruct to Remember for Consistent Long Video Generation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.14667",
+      "summary": "Long-form video generation requires recurring subjects to remain consistent across various shots, viewpoints, motions, and scene transitions. Existing temporal decomposition methods improve scalabilit",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "hf-paper-ea29992764b4",
+      "title": "SP^3: Spherical Priors for Plug-and-Play Restoration",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.16396",
+      "summary": "In this paper, we introduce SP^3, a novel Plug-and-Play algorithm that accelerates maximum a posteriori image restoration by replacing denoisers with Spherical Encoders (SE) as generative priors. SP^3",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "hf-paper-9b941477a2b0",
+      "title": "GD^2PO: Mitigating Multi-Reward Conflicts via Group-Dynamic reward-Decoupled Policy Optimization",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.16771",
+      "summary": "As LLMs advance, post-training reinforcement learning (RL) increasingly relies on multi-dimensional rewards to cultivate comprehensive capabilities. This shift demands new algorithms capable of optimi",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "hf-paper-f1bd048a84d1",
+      "title": "MMDiff: Extending Diffusion Transformers for Multi-Modal Generation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.16673",
+      "summary": "Diffusion transformers have demonstrated remarkable generative capabilities, yet the rich perceptual representations computed across their denoising trajectory are discarded once the content is render",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "hf-paper-ad4488af9f6a",
+      "title": "DreamX-World 1.0: A General-Purpose Interactive World Model",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.16993",
+      "summary": "DreamX-World 1.0 is a general-purpose interactive text/image-to-video world model for controllable long-horizon generation. It supports camera navigation, revisits to previously observed regions, and ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "hf-paper-438c5cf76afb",
+      "title": "Selective Control under Noisy Perception: Governance Failures Hidden by Aggregate Metrics in Modular Networks",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.14819",
+      "summary": "A content-moderation system can score well on every standard accuracy metric and still cause real harm, if its mistakes fall on the few users who connect otherwise separate communities. We show this i",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "hf-paper-55b242f3bf6c",
+      "title": "Who Flips? Self- and Cross-Model Counterarguments Reveal Answer Instability in LLMs",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.16011",
+      "summary": "Standard accuracy benchmarks are designed to test how closely large language models (LLMs) approach correct answers, but are not suitable for testing whether LLMs stick with a correct answer when that",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "hf-paper-275ff0103b60",
+      "title": "Where Did It Go Wrong? Process-Level Evaluation of Web Agents with Semantic State Tracking",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.15673",
+      "summary": "Web agents act through long interaction sequences, yet existing benchmarks evaluate only terminal success, discarding all process information and offering little guidance on improvement. In this work,",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "hf-paper-743973ca01a1",
+      "title": "PermaVid: Consistent Video Generation Across Edits via Disentangled Context Memory",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.16449",
+      "summary": "Consistent video generation under editing operations requires persistence: when edits modify scene appearance or layout, subsequent generations should remain coherent across time and viewpoints. Howev",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "hf-paper-95d15bc7502b",
+      "title": "Light Interaction: Training-Free Inference Acceleration for Interactive Video World Models",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.31158",
+      "summary": "Interactive video world models generate video chunk by chunk in response to user-controlled camera movements, enabling applications such as real-time game simulation, virtual scene navigation, and emb",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-01"
+    },
+    {
+      "id": "hf-paper-712038da057d",
+      "title": "Lumos-Nexus: Efficient Frequency Bridging with Homogeneous Latent Space for Video Unified Models",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.31603",
+      "summary": "Connector-based video unified models have demonstrated strong capability in instruction-grounded video synthesis, but integrating a large high-fidelity generator into the unified training loop is comp",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-01"
+    },
+    {
+      "id": "hf-paper-d6a69312eb77",
+      "title": "From Prompt Injection to Persistent Control: Defending Agentic Harness Against Trojan Backdoors",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.31042",
+      "summary": "LLM agents are evolving from conversational chatbots to operational tools in real-world workspaces. In local agentic harnesses, an LLM can read and write files, call tools, and reuse workspace state a",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-01"
+    },
+    {
+      "id": "hf-paper-310dde492816",
+      "title": "LongTraceRL: Learning Long-Context Reasoning from Search Agent Trajectories with Rubric Rewards",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.31584",
+      "summary": "Long-context reasoning remains a central challenge for large language models, which often fail to locate and integrate key information in extensive distracting content. Reinforcement learning with ver",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-01"
+    },
+    {
+      "id": "hf-paper-430dccf4643a",
+      "title": "Representation Forcing for Bottleneck-Free Unified Multimodal Models",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2605.31604",
+      "summary": "Unified multimodal models (UMMs) aim to handle perception and generation in a single model. Yet existing UMMs still rely on a frozen, separately pretrained VAE for image generation, imposing a structu",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-01"
+    },
+    {
+      "id": "rss-hackernews-daily-631d1ab9eb94",
+      "title": "2026 06 15 HackerNews",
+      "source": "HackerNews Daily",
+      "source_type": "hackernews",
+      "url": "https://supertechfans.com/cn/post/2026-06-15-HackerNews/",
+      "summary": "2026-06-15 Hacker News Top Stories # 保罗·格雷厄姆认为初创公司通过用户真心喜爱带来的指数增长可合法赚取十亿美元，年轻创业者应关注自己这代人的未满足需求。 美国生成式AI使用呈约三成积极、三成偶尔、三成不用的三分格局，社会净正面评价仅+8%，企业需提供多样选项以适应从接受到拒绝的连续谱。 本田思域车机因使用公开测试密钥签名，攻击者通过USB物理接入即可执行任意代",
+      "category": [
+        "tech",
+        "news",
+        "hackernews",
+        "daily"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "rss-latent-space-24da9ac82b93",
+      "title": "[AINews] Satya on Loopcraft: Building Frontier Ecosystems",
+      "source": "Latent Space",
+      "source_type": "rss",
+      "url": "https://www.latent.space/p/ainews-satya-on-loopcraft-building",
+      "summary": "a quiet day lets us report on Satya's hit essay",
+      "category": [
+        "ai",
+        "news",
+        "daily"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "atom-simon-willison-0775eb76e508",
+      "title": "The Fable 5 Export Controls Harm US Cyber Defense",
+      "source": "Simon Willison",
+      "source_type": "rss",
+      "url": "https://simonwillison.net/2026/Jun/16/fable-5-export-controls/#atom-everything",
+      "summary": "The Fable 5 Export Controls Harm US Cyber Defense I quoted The Atlantic quoting Kate Moussouris earlier, when I should have gone straight to the source. Here she is confirming that the \"jailbreak\" tha",
+      "category": [
+        "tech",
+        "ai",
+        "python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "atom-simon-willison-80f3be0b7092",
+      "title": "Quoting Matteo Wong, The Atlantic",
+      "source": "Simon Willison",
+      "source_type": "rss",
+      "url": "https://simonwillison.net/2026/Jun/16/matteo-wong-the-atlantic/#atom-everything",
+      "summary": "Katie Moussouris, a cybersecurity expert and the CEO of Luta Security, told me that Anthropic shared with her a copy of the White House’s report on the Fable jailbreak to get her appraisal. (She said ",
+      "category": [
+        "tech",
+        "ai",
+        "python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "atom-simon-willison-996ae3ecc584",
+      "title": "Cloudflare CAPTCHA on at least one ampersand",
+      "source": "Simon Willison",
+      "source_type": "rss",
+      "url": "https://simonwillison.net/2026/Jun/16/captcha-on-at-least-one-ampersand/#atom-everything",
+      "summary": "TIL: Cloudflare CAPTCHA on at least one ampersand I'm using Cloudflare's CAPTCHA (they call it a \"Web Application Firewall &gt; Custom rules &gt; Managed Challenge\" these days) to prevent crawlers fro",
+      "category": [
+        "tech",
+        "ai",
+        "python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "rss-gary-marcus-86e00fe49fb0",
+      "title": "What Washington must do",
+      "source": "Gary Marcus",
+      "source_type": "rss",
+      "url": "https://garymarcus.substack.com/p/what-washington-must-do",
+      "summary": "&#8221;The only way out is through&#8221;",
+      "category": [
+        "ai",
+        "ml"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "rss-interconnects-a45f76bf35ef",
+      "title": "Welcome to the AGI era of AI governance",
+      "source": "Interconnects",
+      "source_type": "rss",
+      "url": "https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
+      "summary": "It's a one-way door and we weren't ready for it.",
+      "category": [
+        "ai",
+        "ml",
+        "blog"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "rss-maurycy-6ee8d4742540",
+      "title": "Arp 185:",
+      "source": "Maurycy",
+      "source_type": "rss",
+      "url": "https://maurycyz.com/astro/arp185/",
+      "summary": "North is left. 0.35\"/pixel (7.7' by 20' field). FWHM = 5.5\" Arp filled this under \"galaxies with narrow filaments\", but I don't really see why. It's a barred sprial with irregular arms and a faint ext",
+      "category": [
+        "tech",
+        "ai"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "atom-eli-bendersky-0d697641651a",
+      "title": "Plugins case study: Pluggy",
+      "source": "Eli Bendersky",
+      "source_type": "rss",
+      "url": "https://eli.thegreenplace.net/2026/plugins-case-study-pluggy/",
+      "summary": "Recently I came upon Pluggy , a Python library for developing plugin systems. It was originally developed as part of the pytest project - known for its rich plugin ecosystem - and later extracted into",
+      "category": [
+        "tech",
+        "programming"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "rss-the-old-new-thing-35774fcb604c",
+      "title": "The time the x86 emulator team found code so bad that they fixed it during emulation",
+      "source": "The Old New Thing",
+      "source_type": "rss",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260615-00/?p=112419",
+      "summary": "Offensive content in the eyes of a software engineer. The post The time the x86 emulator team found code so bad that they fixed it during emulation appeared first on The Old New Thing .",
+      "category": [
+        "tech",
+        "windows",
+        "programming"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "atom-hugo-tunius-7e17420280be",
+      "title": "The Sword Juggling Fallacy",
+      "source": "Hugo Tunius",
+      "source_type": "rss",
+      "url": "https://hugotunius.se/2026/06/15/the-sword-juggling-fallacy.html",
+      "summary": "Sword juggling is simple. I’ll prove it to you by explaining it. First, acquire three – or, if you feel ambitious, four swords. Divide the swords between your hands. Starting with one hand, the one ho",
+      "category": [
+        "tech",
+        "rust"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "rss-sean-goedecke-a4c8235c2403",
+      "title": "AI GPUs probably live longer than three years",
+      "source": "Sean Goedecke",
+      "source_type": "rss",
+      "url": "https://seangoedecke.com/ai-gpus-live-longer-than-three-years/",
+      "summary": "",
+      "category": [
+        "tech",
+        "software"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "rss-john-d.-cook-05138a50aa26",
+      "title": "Testing pentagonal numbers",
+      "source": "John D. Cook",
+      "source_type": "rss",
+      "url": "https://www.johndcook.com/blog/2026/06/15/testing-pentagonal-numbers/",
+      "summary": "The nth pentagonal number Pn is the number of dots in diagrams like those below with n concentric pentagons. We have the formula Pn = (3n² − n)/2 where n is a positive integer. If n is an integer but ",
+      "category": [
+        "math",
+        "programming"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "rss-john-d.-cook-6498e0a40a7c",
+      "title": "Quaternion Rotations, Claude, and Lean",
+      "source": "John D. Cook",
+      "source_type": "rss",
+      "url": "https://www.johndcook.com/blog/2026/06/15/quaternions-claude-lean/",
+      "summary": "I got an email message this afternoon reporting a typo in a blog post from about a year ago on converting between quaternions and rotation matrices [1]. The email said exactly where the typo was, but ",
+      "category": [
+        "math",
+        "programming"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "rss-john-d.-cook-0dc3658dc809",
+      "title": "Writing Prolog with ChatGPT",
+      "source": "John D. Cook",
+      "source_type": "rss",
+      "url": "https://www.johndcook.com/blog/2026/06/15/writing-prolog-with-chatgpt/",
+      "summary": "A few days ago I wrote about using Claude to solve a chess puzzle by writing Prolog code. This morning I tried a similar chess puzzle with ChatGPT. The task is to place a queen, king, rook, bishop, an",
+      "category": [
+        "math",
+        "programming"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "rss-giles-thomas-6ef2e5d32daf",
+      "title": "JAX: commitment issues",
+      "source": "Giles Thomas",
+      "source_type": "rss",
+      "url": "https://www.gilesthomas.com/2026/06/jax-commitment-issues",
+      "summary": "Imagine you have JAX code like this, and run it on a machine with CUDA set up: key = jax . random . key ( 42 ) cpu0 = jax . devices ( &quot;cpu&quot; )[ 0 ] with jax . default_device ( cpu0 ): array =",
+      "category": [
+        "tech",
+        "python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "rss-terence-eden-42a5abf30682",
+      "title": "[RSS Club] What happens to old posts?",
+      "source": "Terence Eden",
+      "source_type": "rss",
+      "url": "https://shkspr.mobi/blog/2026/06/rss-club-what-happens-to-old-posts/",
+      "summary": "Welcome to RSS Club! These posts are only available to RSS and Atom subscribers. You can read more about the idea at Dave Rupert&#039;s site. I recently received an email from a distraught reader: I w",
+      "category": [
+        "tech",
+        "web"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "rss-terence-eden-025f27347ddd",
+      "title": "Did Frank Sinatra really think \"Something\" was a Lennon/McCartney song?",
+      "source": "Terence Eden",
+      "source_type": "rss",
+      "url": "https://shkspr.mobi/blog/2026/06/did-frank-sinatra-really-think-something-was-a-lennon-mccartney-song/",
+      "summary": "Read enough articles about The Beatles and you&#039;ll repeatedly hit the claim that Frank Sinatra frequently introduced his cover of George Harrison&#039;s &#34;Something&#34; as his &#34;favourite L",
+      "category": [
+        "tech",
+        "web"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "rss-dave-farquhar-5d74408319d3",
+      "title": "GIF’s June 1987 debut",
+      "source": "Dave Farquhar",
+      "source_type": "rss",
+      "url": "https://dfarq.homeip.net/gifs-june-1987-debut/?utm_source=rss&utm_medium=rss&utm_campaign=gifs-june-1987-debut",
+      "summary": "On June 16, 1987, the GIF file format made its debut. That&#8217;s right, GIF predates the modern Internet. The first web browsers supported GIF because it was already very popular in the early 1990s ",
+      "category": [
+        "tech"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "atom-oldvcr-16a6b75668ff",
+      "title": "Building a serial and VGA \"everything console\"",
+      "source": "OldVCR",
+      "source_type": "rss",
+      "url": "https://oldvcr.blogspot.com/feeds/7900423283602789203/comments/default",
+      "summary": "Some of our recent (and some upcoming) projects are oriented to systems with serial consoles, but it's been getting pretty old dragging around old CRT terminals or tying up Mac laptops with a serial p",
+      "category": [
+        "tech",
+        "retro"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "rss-tom-renner-7e28490cb65c",
+      "title": "Things that made me think: Open Source trust relationships, knowledge without provenance, and theory building",
+      "source": "Tom Renner",
+      "source_type": "rss",
+      "url": "https://tomrenner.com/posts/ttmmt-4/",
+      "summary": "This series is a place to collect interesting things I&rsquo;ve seen, read, or heard, along with some brief thoughts (often incomplete and/or inconclusive) that they provoked. AI Agent Lands PRs in Ma",
+      "category": [
+        "tech"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "rss-martin-alderson-c7414ee79495",
+      "title": "A brief history of KV cache compression developments",
+      "source": "Martin Alderson",
+      "source_type": "rss",
+      "url": "https://martinalderson.com/posts/a-brief-history-of-kv-cache-compression-developments/?utm_source=rss&utm_medium=rss&utm_campaign=feed",
+      "summary": "How KV cache compression - from MQA and GQA to MLA and linear-attention hybrids - quietly unlocked the long context windows that make modern agentic LLMs possible.",
+      "category": [
+        "tech"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "rss-troy-hunt-ad26aa24380a",
+      "title": "Weekly Update 508",
+      "source": "Troy Hunt",
+      "source_type": "rss",
+      "url": "https://www.troyhunt.com/weekly-update-508/",
+      "summary": "Light switches. How on earth is it so hard to find decent light switches?! It sounds ridiculous until you actually spend enough time looking for ones that meet two simple criteria: Aren&apos;t statefu",
+      "category": [
+        "security",
+        "tech"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "rss-pluralistic-6adcea6e3efb",
+      "title": "Pluralistic: AI and amateurism (15 Jun 2026)",
+      "source": "Pluralistic",
+      "source_type": "rss",
+      "url": "https://pluralistic.net/2026/06/15/vernacular/",
+      "summary": "Today's links AI and amateurism: When is generative content vernacular? Hey look at this: Delights to delectate. Object permanence: Disney characters x clean underwear; Transparent Pontiac; Makers v d",
+      "category": [
+        "tech",
+        "policy"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "atom-anil-dash-8abd7816a1b9",
+      "title": "Maybe it's time for lots of little indie AIs to take over",
+      "source": "Anil Dash",
+      "source_type": "rss",
+      "url": "https://anildash.com/2026/06/15/indie-AI-takeover/",
+      "summary": "“[T]here can be alternatives. What we can imagine is, rather than the ChatGPT killer, a lot of different little AIs from little responsible players.” That’s me, in The Guardian a few days ago, trying ",
+      "category": [
+        "tech",
+        "culture"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "rss-where's-your-ed-at-554996295293",
+      "title": "Exclusive: OpenAI Losses Increased Nearly 8X in 2025, With Spending Hitting $34 Billion",
+      "source": "Where's Your Ed At",
+      "source_type": "rss",
+      "url": "https://www.wheresyoured.at/exclusive-openai-financials/",
+      "summary": "Soundtrack: In Flames - Colony To further support my independent journalism, please subscribe to my premium newsletter. It&#x2019;s $7 a month or $70 a year. If you&#x2019;re subscribed to the free ne",
+      "category": [
+        "tech",
+        "business"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "rss-where's-your-ed-at-662a8e196a43",
+      "title": "AI's Brokenomics",
+      "source": "Where's Your Ed At",
+      "source_type": "rss",
+      "url": "https://www.wheresyoured.at/brokenomics/",
+      "summary": "If you liked this piece, you should subscribe to my premium newsletter. It&#x2019;s $70 a year, or $7 a month, and in return you get a weekly newsletter that&#x2019;s usually anywhere from 5,000 to 18",
+      "category": [
+        "tech",
+        "business"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "rss-bert-hubert-5d5b6bd856ca",
+      "title": "EU & Civil Society need to progress on Digital Autonomy",
+      "source": "Bert Hubert",
+      "source_type": "rss",
+      "url": "https://berthub.eu/articles/posts/eu-civil-society-need-progress-digital-autonomy/",
+      "summary": "By now (happily) everyone wants to talk about digital autonomy, although some parties insist we talk about sovereignty. Fine. tl;dr: The discussions on digital autonomy are now going round in circles.",
+      "category": [
+        "tech",
+        "networking"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-016"
+    },
+    {
+      "id": "l30-tiktok-21094ed7e350",
+      "title": "Peter Steinberger, creator of OpenClaw, comes to Microsoft Build to talk through how OpenClaw will be integrated on Windows as a native Wind",
+      "source": "TikTok",
+      "source_type": "tiktok",
+      "url": "https://www.tiktok.com/@verge/video/7646864511802101005",
+      "summary": "Peter Steinberger, creator of OpenClaw, comes to Microsoft Build to talk through how OpenClaw will be integrated on Windows as a native Windows app paired with new security features called Microsoft Execution Containers. He says “You can totally run OpenClaw inside your company now” after the team does an onstage demo using a Surface Laptop Ultra. #micros...",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 7,
+      "created_at": "2026-06-02"
+    },
+    {
+      "id": "l30-tiktok-d57e2af83e50",
+      "title": "OpenClaw creator Peter Steinberger came to Microsoft’s Build Developers Conference to discuss OpenClaw for Windows, even claiming it’s safe",
+      "source": "TikTok",
+      "source_type": "tiktok",
+      "url": "https://www.tiktok.com/@cnetdotcom/video/7646858475187784974",
+      "summary": "OpenClaw creator Peter Steinberger came to Microsoft’s Build Developers Conference to discuss OpenClaw for Windows, even claiming it’s safe enough to bring to work. (btw does that lobster even have claws??) #microsoftbuild #ai #microsoft #build2026 #openclaw",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 7,
+      "created_at": "2026-06-02"
+    },
+    {
+      "id": "l30-reddit-be936d87a921",
+      "title": "Peter Steinberger made a tiny skill that lets Codex/OpenClaw call out when it gets stuck",
+      "source": "Reddit",
+      "source_type": "reddit",
+      "url": "https://www.reddit.com/r/myclaw/comments/1tunh0g/peter_steinberger_made_a_tiny_skill_that_lets/",
+      "summary": "I don't quite get it. \"Say\" works in Mac OS without needing any external provider. And the skill to alert you like this is like two sentences. It's a neat idea, but his solution seems over engineered You can have claude code set up a ding notification to call you back with basically a two sentence prompt: \"Add to my global claude code settings two hooks -...",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 6,
+      "created_at": "2026-06-02"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-06-19T10:22:35.456318"
+}

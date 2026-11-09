@@ -1,0 +1,23 @@
+{
+  "id": "6bebf7bf-1940-44fe-8d41-b26f05202457",
+  "content_id": "hf-paper-2a51b220e3a9",
+  "title": "神经记忆接口原型",
+  "description": "**为什么产生这个想法**\n文章提出Neural Computers将计算、内存和I/O统一在学习的运行时状态中，这启发我们探索神经网络的记忆能力如何与外部存储系统交互。\n\n**价值**\n可构建更高效的问答系统，使模型能够访问和利用外部知识库，提升实时性和准确性，降低模型重训练成本。\n\n**具体帮助**\n团队可快速验证RAG增强方案的可行性，为下一代智能助手提供技术储备。",
+  "difficulty": "medium",
+  "estimated_days": 7,
+  "tags": [
+    "神经记忆",
+    "RAG",
+    "向量数据库"
+  ],
+  "status": "pending",
+  "priority": 8.0,
+  "briefing_date": "",
+  "source_type": "paper",
+  "source_title": "Neural Computers",
+  "source_url": "https://huggingface.co/papers/2604.06425",
+  "inspiration": "",
+  "product_concept": {},
+  "source_context": "",
+  "created_at": "2026-04-09T13:07:18.392181"
+}

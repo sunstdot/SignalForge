@@ -1,0 +1,417 @@
+{
+  "query": "SpaceX",
+  "topic": "SpaceX",
+  "headline": "SpaceX股价重挫30%，同时收购Cursor AI布局人工智能",
+  "kicker": "综合简报 · 多空博弈加剧",
+  "lede": "过去30天，SpaceX在资本市场经历剧烈震荡，<b>SPCX基金从高点回落逾30%</b>，空头兴趣飙升。与此同时，SpaceX宣布以全股票交易收购Cursor AI，<b>意图打造最强实用AI模型</b>，引发社区对估值与战略转型的激烈争论。",
+  "consensus": {
+    "left": 42,
+    "right": 58,
+    "leftLabel": "看多",
+    "leftSub": "AI收购与常态发射",
+    "rightLabel": "看空",
+    "rightSub": "估值回调与做空压力"
+  },
+  "meta": {
+    "total": 15,
+    "platforms": {
+      "x": 15,
+      "reddit": 0,
+      "hn": 0
+    },
+    "took": "—",
+    "window": "近 30 天",
+    "featured": 0
+  },
+  "themes": [
+    {
+      "n": "01",
+      "title": "资本市场剧烈震荡",
+      "html": "SPCX在创下IPO后高点后急转直下，<num>30%</num>的跌幅引发空头大量涌入，空头净额比例升至<num>13%</num>。<q>Bearish bets against SpaceX are rising</q><src>@algofinixai</src> 万亿估值与股价低迷的现实形成强烈反差，部分观点认为这不过是一场<q>waste and corruption</q><src>@sd_rocketman</src>的证伪。"
+    },
+    {
+      "n": "02",
+      "title": "战略收购Cursor AI",
+      "html": "SpaceX宣布行使期权，以全股票交易收购@cursor_ai，目标直指<hl>世界最实用的AI模型</hl>。<q>SpaceX has exercised the option to acquire @cursor_ai in an all-stock transaction</q><src>@SpaceX</src> 此举被视为SpaceX在AI赛道的关键布局，但也让部分投资者对其资源聚焦产生疑虑。"
+    },
+    {
+      "n": "03",
+      "title": "常态发射与地面动态",
+      "html": "Starlink 17-45任务完成又一批迷你卫星部署，助推器B1081完成第<num>25</num>次复用。<src>@ShorealoneFilms</src> 同日，一艘SpaceX货物回收船进入卡纳维拉尔港，被目击者拍摄并猜测是Doug或Bob。<src>@FloridaWorld111</src> 发射节奏保持，但市场焦点已从工程转向金融叙事。"
+    },
+    {
+      "n": "04",
+      "title": "社区争议与文化符号",
+      "html": "用户对比SpaceX与NASA的T恤文化，追问<q>When are the kids gonna start rocking SpaceX tees?</q><src>@NitroHarrison</src> 同时，流言四起：传闻SpaceX谋求收购T-Mobile，<q>Starpipe</q>名称真实性遭调侃，社区甚至发起<q>SpaceX or Nvidia?</q>的投票。这些折射出公众对SpaceX定位的模糊与期待。"
+    }
+  ],
+  "patterns": [
+    {
+      "n": 1,
+      "text": "股价高位回落叠加空头押注，形成“估值修正”叙事",
+      "src": "@Defi_princex, @algofinixai, @HabitTradeNews",
+      "lead": true
+    },
+    {
+      "n": 2,
+      "text": "通过并购切入AI赛道，寻求第二增长曲线",
+      "src": "@SpaceX, @dev_artak",
+      "lead": false
+    },
+    {
+      "n": 3,
+      "text": "常态化发射与回收作业维持运营热度，但难以支撑万亿估值",
+      "src": "@ShorealoneFilms, @FloridaWorld111",
+      "lead": false
+    },
+    {
+      "n": 4,
+      "text": "公众与投资者对SpaceX的文化认同和多元化扩张充满猜测",
+      "src": "@NitroHarrison, @RoryCrave, @d704b8d0c14f",
+      "lead": false
+    },
+    {
+      "n": 5,
+      "text": "“浪费与腐败”等负面指控开始出现，考验品牌声誉",
+      "src": "@sd_rocketman, @SwedishGerman13",
+      "lead": false
+    }
+  ],
+  "deepDive": [
+    {
+      "k": "A",
+      "q": "SpaceX为何选择收购一家AI公司，而非自行开发？",
+      "a": "Cursor AI以代码生成和AI辅助编程见长，其模型集成能力可能加速SpaceX从火箭设计到星链网络优化的全链条自动化。<b>全股票交易</b>表明卖方对SpaceX远期股权价值认可，同时避免现金消耗。此举亦是对冲卫星互联网与AI融合浪潮的战略卡位。"
+    },
+    {
+      "k": "B",
+      "q": "SPCX基金空头比例升至13%意味着什么？",
+      "a": "SPCX是追踪SpaceX估值变化的衍生品指标，13%的空头净额显示市场对短期估值分歧加剧。结合20亿美元融资传闻与<num>30%</num>回调，空方押注流动性收紧下的估值回归，<b>万亿俱乐部叙事遭遇现实压力</b>。"
+    },
+    {
+      "k": "C",
+      "q": "“Starpipe”名称是否真实，背后有何含义？",
+      "a": "社区帖子对“Starpipe”提出质疑，推测可能是“Starship”的谐音或梗。<b>目前并无官方项目名为Starpipe</b>，大概率是网友对SpaceX庞大工程的低成本调侃，反映了外界对其神秘感的消解与娱乐化解构。"
+    }
+  ],
+  "dashboard": {
+    "tiles": [
+      {
+        "p": "x",
+        "label": "X",
+        "n": 15,
+        "sub": "42,657 ♥"
+      }
+    ],
+    "volumeTotal": "42,657",
+    "volume": [
+      {
+        "p": "x",
+        "name": "X",
+        "pct": 100.0,
+        "raw": "42,657"
+      }
+    ],
+    "insight": "X平台讨论高度集中于<b>股价波动与AI收购</b>，发射操作更多作为背景板，显示市场已将焦点从工程奇迹转向资本叙事，多空博弈全面升温。"
+  },
+  "voices": [
+    "@SpaceX",
+    "@NitroHarrison",
+    "@FloridaWorld111",
+    "@algofinixai",
+    "@ShorealoneFilms",
+    "@HabitTradeNews"
+  ],
+  "caveat": "Reddit / Hacker News 本次返回 0 条 —— 可能是该话题近 30 天讨论少、provider 未启用，或检索被平台限流。",
+  "rawNote": "",
+  "timeline": [
+    {
+      "day": "6月26日",
+      "dayNote": "周五",
+      "items": [
+        {
+          "id": "l30-x-73aa0983f9c3",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "@NitroHarrison",
+          "handle": "@NitroHarrison",
+          "score": 6,
+          "title": "When are the kids gonna start rocking SpaceX tees like we used to rock NASA tees?",
+          "sum": "When are the kids gonna start rocking SpaceX tees like we used to rock NASA tees?",
+          "tags": [
+            "SpaceX"
+          ],
+          "stat": "3likes",
+          "reason": "",
+          "url": "https://x.com/NitroHarrison/status/2070348694247944467"
+        },
+        {
+          "id": "l30-x-d1b88e3106ea",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "@FloridaWorld111",
+          "handle": "@FloridaWorld111",
+          "score": 6,
+          "title": "@XFreeze @elonmusk I saw one of the SpaceX cargo recovery boats this morning entering Port Canaveral, FL. 🚀 Not sure if this is Doug or Bob.",
+          "sum": "@XFreeze @elonmusk I saw one of the SpaceX cargo recovery boats this morning entering Port Canaveral, FL. 🚀 Not sure if this is Doug or Bob. https://t.co/SBpPZhyWa1",
+          "tags": [
+            "SpaceX"
+          ],
+          "stat": "1likes, 1rt",
+          "reason": "",
+          "url": "https://x.com/FloridaWorld111/status/2070348344770150619"
+        },
+        {
+          "id": "l30-x-f0767ad7f26e",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "@ShorealoneFilms",
+          "handle": "@ShorealoneFilms",
+          "score": 6,
+          "title": "(2) @SpaceX  launch's another batch of @Starlink  mini-sats into LEO from @SLDelta30 on the STARLINK 17-45 mission (Booster B1081.25) with a",
+          "sum": "(2) @SpaceX launch's another batch of @Starlink mini-sats into LEO from @SLDelta30 on the STARLINK 17-45 mission (Booster B1081.25) with a beautiful SoCal evening as a backdrop... Photos from above Gl",
+          "tags": [
+            "SpaceX"
+          ],
+          "stat": "1likes",
+          "reason": "",
+          "url": "https://x.com/ShorealoneFilms/status/2070348779967107493"
+        },
+        {
+          "id": "l30-x-bc09a2cefe71",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "@HabitTradeNews",
+          "handle": "@HabitTradeNews",
+          "score": 6,
+          "title": "🔥🔥Trillion-Dollar Valuation Meets SpaceX’s Sharp Decline as a Reality Check: OpenAI Delays IPO to 2027, Hitting the Brakes on AI Capitalizat",
+          "sum": "🔥🔥Trillion-Dollar Valuation Meets SpaceX’s Sharp Decline as a Reality Check: OpenAI Delays IPO to 2027, Hitting the Brakes on AI Capitalization #Breaking #HabitTrade #SpaceX #OpenAI #IPO $SPCX https:/",
+          "tags": [
+            "SpaceX"
+          ],
+          "stat": "1likes",
+          "reason": "",
+          "url": "https://x.com/HabitTradeNews/status/2070348438764728684"
+        },
+        {
+          "id": "l30-x-729bafebbc66",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "@SwedishGerman13",
+          "handle": "@SwedishGerman13",
+          "score": 6,
+          "title": "@jljuic @carnalsin_ @omgsidewalks Any proof that they are underpaid? Or just another lying narrative to push. I am quite certain the enginee",
+          "sum": "@jljuic @carnalsin_ @omgsidewalks Any proof that they are underpaid? Or just another lying narrative to push. I am quite certain the engineers working at Nvidia and SpaceX are doing very well",
+          "tags": [
+            "SpaceX"
+          ],
+          "stat": "1likes",
+          "reason": "",
+          "url": "https://x.com/SwedishGerman13/status/2070347836743627104"
+        },
+        {
+          "id": "l30-x-d0534d9563b8",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "@EsquireDePalma",
+          "handle": "@EsquireDePalma",
+          "score": 6,
+          "title": "@MsVeilMoney Pltr and SpaceX, 50/50.",
+          "sum": "@MsVeilMoney Pltr and SpaceX, 50/50.",
+          "tags": [
+            "SpaceX"
+          ],
+          "stat": "",
+          "reason": "",
+          "url": "https://x.com/EsquireDePalma/status/2070347696305733704"
+        },
+        {
+          "id": "l30-x-3324fe1f2be7",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "@sd_rocketman",
+          "handle": "@sd_rocketman",
+          "score": 6,
+          "title": "Actually SpaceX is a lot of waste and corruption",
+          "sum": "Actually SpaceX is a lot of waste and corruption",
+          "tags": [
+            "SpaceX"
+          ],
+          "stat": "",
+          "reason": "",
+          "url": "https://x.com/sd_rocketman/status/2070349209384124624"
+        },
+        {
+          "id": "l30-x-d704b8d0c14f",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "@4TESLANZ",
+          "handle": "@4TESLANZ",
+          "score": 6,
+          "title": "Is the name Starpipe real? or someone is mocking SpaceX?",
+          "sum": "Is the name Starpipe real? or someone is mocking SpaceX?",
+          "tags": [
+            "SpaceX"
+          ],
+          "stat": "",
+          "reason": "",
+          "url": "https://x.com/4TESLANZ/status/2070347891756114362"
+        },
+        {
+          "id": "l30-x-fb67ff2e87b5",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "@DAOJING_",
+          "handle": "@DAOJING_",
+          "score": 6,
+          "title": "Would you rather own:",
+          "sum": "Would you rather own: 🚀 SpaceX or 🤖 Nvidia?",
+          "tags": [
+            "SpaceX"
+          ],
+          "stat": "",
+          "reason": "",
+          "url": "https://x.com/DAOJING_/status/2070347473311137827"
+        },
+        {
+          "id": "l30-x-b0fea747bb19",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "@RoryCrave",
+          "handle": "@RoryCrave",
+          "score": 6,
+          "title": "SpaceX asked to buy T-Mobile",
+          "sum": "SpaceX asked to buy T-Mobile https://t.co/VDUsygJ4ni",
+          "tags": [
+            "SpaceX"
+          ],
+          "stat": "",
+          "reason": "",
+          "url": "https://x.com/RoryCrave/status/2070349243559108633"
+        },
+        {
+          "id": "l30-x-8068b3e842b8",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "@dev_artak",
+          "handle": "@dev_artak",
+          "score": 6,
+          "title": "@grok @elonmusk @Starlink @SpaceX @xai @X @neuralink @XDevelopers @mayemusk 😉",
+          "sum": "@grok @elonmusk @Starlink @SpaceX @xai @X @neuralink @XDevelopers @mayemusk 😉",
+          "tags": [
+            "SpaceX"
+          ],
+          "stat": "1re",
+          "reason": "",
+          "url": "https://x.com/dev_artak/status/2070348871104962931"
+        },
+        {
+          "id": "l30-x-7a90d754b284",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "@DegenApeDev",
+          "handle": "@DegenApeDev",
+          "score": 6,
+          "title": "The whole crypto market is now worth 1/2 as much as @SpaceX",
+          "sum": "The whole crypto market is now worth 1/2 as much as @SpaceX What do you think? 🧐",
+          "tags": [
+            "SpaceX"
+          ],
+          "stat": "",
+          "reason": "",
+          "url": "https://x.com/DegenApeDev/status/2070347941232140683"
+        }
+      ]
+    },
+    {
+      "day": "6月24日",
+      "dayNote": "周三",
+      "items": [
+        {
+          "id": "l30-x-31533f92b481",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "@Defi_princex",
+          "handle": "@Defi_princex",
+          "score": 7,
+          "title": "SpaceX has had a rough few days. After reports of a planned $20 billion fundraising round, $SPCX dropped more than 30% from last week’s high",
+          "sum": "SpaceX has had a rough few days. After reports of a planned $20 billion fundraising round, $SPCX dropped more than 30% from last week’s high. Despite the pullback, some investors are treating it as a ",
+          "tags": [
+            "SpaceX"
+          ],
+          "stat": "",
+          "reason": "",
+          "url": "https://x.com/Defi_princex/status/2069868445504594240"
+        },
+        {
+          "id": "l30-x-29fe8bc36689",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "@algofinixai",
+          "handle": "@algofinixai",
+          "score": 6,
+          "title": "📊 SPCX - SHORT SELLERS TARGET SPACEX Bearish bets against SpaceX are rising after the stock fell about 30% from its post-IPO high. Short int",
+          "sum": "📊 SPCX - SHORT SELLERS TARGET SPACEX Bearish bets against SpaceX are rising after the stock fell about 30% from its post-IPO high. Short interest jumped to 13% Why it matters: Initial AI read: monitor",
+          "tags": [
+            "SpaceX"
+          ],
+          "stat": "1likes",
+          "reason": "",
+          "url": "https://x.com/algofinixai/status/2069779772641849667"
+        }
+      ]
+    },
+    {
+      "day": "6月16日",
+      "dayNote": "周二",
+      "items": [
+        {
+          "id": "l30-x-e421d7319ea1",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "@SpaceX",
+          "handle": "@SpaceX",
+          "score": 6,
+          "title": "SpaceX has exercised the option to acquire @cursor_ai in an all-stock transaction with the goal of building the world’s most useful AI model",
+          "sum": "SpaceX has exercised the option to acquire @cursor_ai in an all-stock transaction with the goal of building the world’s most useful AI models. For the past few months, SpaceXAI has been jointly traini",
+          "tags": [
+            "SpaceX"
+          ],
+          "stat": "36,643likes, 4,336rt, 1,668re",
+          "reason": "",
+          "url": "https://x.com/SpaceX/status/2066873915717136548"
+        }
+      ]
+    }
+  ]
+}

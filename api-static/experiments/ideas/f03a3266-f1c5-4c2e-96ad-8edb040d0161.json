@@ -1,0 +1,23 @@
+{
+  "id": "f03a3266-f1c5-4c2e-96ad-8edb040d0161",
+  "content_id": "github-f8d79b4ea321",
+  "title": "搭建Go数据可视化仪表板",
+  "description": "**为什么产生这个想法**\n该项目使用Go语言构建仪表板，展示批量处理结果和AI分析数据，可视化呈现求职状态和技能分析。\n\n**价值**\n学习Go语言Web开发，掌握实时数据展示技能，便于监控批量任务执行状态和结果分析。\n\n**具体帮助**\n团队可使用该仪表板监控多个求职申请的进度和AI匹配结果分布情况。",
+  "difficulty": "hard",
+  "estimated_days": 7,
+  "tags": [
+    "go",
+    "dashboard",
+    "visualization"
+  ],
+  "status": "pending",
+  "priority": 8.0,
+  "briefing_date": "",
+  "source_type": "repo",
+  "source_title": "santifer/career-ops — AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard,",
+  "source_url": "https://github.com/santifer/career-ops",
+  "inspiration": "",
+  "product_concept": {},
+  "source_context": "",
+  "created_at": "2026-04-09T12:32:06.768610"
+}

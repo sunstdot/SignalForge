@@ -1,0 +1,672 @@
+{
+  "date": "2026-05-11",
+  "opportunities": [
+    {
+      "opportunity_title": "无限免费AI编程桌面聚合器",
+      "core_insight": "聚合免费API实现零成本无限量编程辅助，大幅降低个人开发者AI使用成本",
+      "product_form": "帮助个人开发者零成本使用多模型AI编程的桌面客户端",
+      "target_users": "价格敏感、用量大的个人开发者，受限于免费配额，渴望无限使用",
+      "mvp_features": [
+        "统一对话界面，自动路由最优免费模型",
+        "代码编辑器内联补全",
+        "用量统计与配额管理"
+      ],
+      "business_model": "免费使用，高级团队协作功能按月 $5 订阅",
+      "competitive_barrier": "",
+      "risks": "严重违反各AI服务免费条款，账号封禁与法律风险",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 18,
+      "source_title": "decolua/9router — Unlimited FREE AI coding. Connect Claude Code, Codex, Cursor, Cline, Copilot, An",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/decolua/9router",
+      "item_id": "github-6a861e785610"
+    },
+    {
+      "opportunity_title": "高通过率反检测数据采集API",
+      "core_insight": "完美模拟真实浏览器的隐形浏览器技术，让原本无法抓取的网站数据获取成为可能",
+      "product_form": "帮助数据采集公司和分析师获取高防护网站结构化数据的API服务",
+      "target_users": "舆情监控、电商比价、竞品分析团队，需要稳定获取难以抓取的网站数据",
+      "mvp_features": [
+        "API输入URL返回HTML/JSON",
+        "内置IP代理轮换",
+        "请求成功率监控面板"
+      ],
+      "business_model": "按请求量分层计价，$99/月起",
+      "competitive_barrier": "",
+      "risks": "违反目标网站条款，法律风险；IP被封锁",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 18,
+      "source_title": "CloakHQ/CloakBrowser — Stealth Chromium that passes every bot detection test. Drop-in Playwright replac",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/CloakHQ/CloakBrowser",
+      "item_id": "github-9e3b2f422063"
+    },
+    {
+      "opportunity_title": "一键式PII检测与脱敏合规平台",
+      "core_insight": "OpenAI开源的高精度隐私检测模型使构建合规工具的成本骤降，让中小企业也能负担得起GDPR/CCPA级别的自动扫描服务。",
+      "product_form": "帮助中小企业自动识别并脱敏文档、邮件、数据库中的个人身份信息的SaaS平台",
+      "target_users": "欧盟及北美中小企业的法务、合规、IT负责人，面临严厉罚款，需要低成本自动化方案",
+      "mvp_features": [
+        "上传文件/粘贴文本，自动高亮PII实体",
+        "一键脱敏并生成安全副本",
+        "提供API供数据管道批量处理"
+      ],
+      "business_model": "免费版每月100次检测，专业版$29/月起，按用量加购",
+      "competitive_barrier": "",
+      "risks": "漏报或误报可能引发合规事故，OpenAI未来可能直接提供竞争性服务",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 18,
+      "source_title": "🤗 openai/privacy-filter",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/openai/privacy-filter",
+      "item_id": "hf-model-b6a7c38191ac"
+    },
+    {
+      "opportunity_title": "GPT-5.5-Cyber驱动的AI渗透测试助理",
+      "core_insight": "新模型专为网络安全微调，可自动化漏洞挖掘与利用脚本生成，让独立安全研究者效率跃升",
+      "product_form": "帮助安全研究员和白帽黑客自动化执行渗透测试任务并生成专业漏洞报告的AI代理工具",
+      "target_users": "独立安全研究员、渗透测试顾问，手动挖掘耗时且易遗漏，愿为效率工具付费",
+      "mvp_features": [
+        "基于目标的漏洞探测Agent（端口扫描/目录爆破/弱口令检测）",
+        "利用GPT-5.5-Cyber自动生成Exploit建议和脚本",
+        "一键生成符合OWASP等标准的渗透测试报告"
+      ],
+      "business_model": "按测试次数或月订阅，$49/月起",
+      "competitive_barrier": "",
+      "risks": "GPT-5.5-Cyber API可能限制访问或禁止自动化攻击，需合规合法使用",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 18,
+      "source_title": "Scaling Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber",
+      "source": "OpenAI Blog",
+      "source_type": "blog",
+      "source_url": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber",
+      "item_id": "rss-openai-blog-6a3f232352e8"
+    },
+    {
+      "opportunity_title": "AI编程代理性能增强插件",
+      "core_insight": "为现有AI编程助手添加持久记忆、安全技能，减少重复提示，之前无此类即插即用增强层",
+      "product_form": "帮助使用Claude Code/Cursor等工具的开发者提升生成质量和效率的IDE插件",
+      "target_users": "经常使用AI编程但受困于上下文遗忘、代码不安全问题的个人/团队开发者，愿为提效付费",
+      "mvp_features": [
+        "记忆系统：自动记住项目规范与偏好",
+        "安全扫描：代码生成后自动检查漏洞",
+        "一键安装到VSCode/JetBrains"
+      ],
+      "business_model": "按月订阅 $9.9，团队版 $29",
+      "competitive_barrier": "",
+      "risks": "依赖底层AI助手API，可能被官方功能覆盖",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 17,
+      "source_title": "affaan-m/everything-claude-code — The agent harness performance optimization system. Skills, instincts, memory, se",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/affaan-m/everything-claude-code",
+      "item_id": "github-d3e1ec1110dd"
+    },
+    {
+      "opportunity_title": "随机知识卡片——反社交媒体碎片学习工具",
+      "core_insight": "LLM 非确定性生成使随机知识推送自然有趣，替代无意识滚动，此前无法低成本实现随机但有质量的知识碎片。",
+      "product_form": "帮助想减少社交媒体时间的用户用随机有趣知识填充碎片时间的移动Web应用",
+      "target_users": "下意识刷手机、想利用碎片时间学习新知但难以坚持的普通用户，愿意小额订阅",
+      "mvp_features": [
+        "一键获取随机知识卡片",
+        "保存与收藏喜欢的内容",
+        "每日定时推送新知识"
+      ],
+      "business_model": "免费使用基础功能，订阅去广告+主题定制$1.99/月",
+      "competitive_barrier": "",
+      "risks": "知识内容质量波动大，用户留存难，竞争壁垒低",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 5
+      },
+      "total_score": 17,
+      "source_title": "Claude, Teach Me Something",
+      "source": "Hugo Tunius",
+      "source_type": "rss",
+      "source_url": "https://hugotunius.se/2025/10/26/claude-teach-me-something.html",
+      "item_id": "atom-hugo-tunius-d11997e3da01"
+    },
+    {
+      "opportunity_title": "自然语言屏幕任务自动化精灵",
+      "core_insight": "视觉定位模型将GUI自动化从“元素抓取”变为“看图说话”，大幅降低自动化编写成本，让普通用户也能用自然语言操作软件",
+      "product_form": "帮助办公室人员自动完成重复性屏幕操作（填表、数据录入、报告生成）的桌面自动化代理",
+      "target_users": "财务、行政、电商运营等每天面对重复软件操作的上班族，愿意为节省时间付费",
+      "mvp_features": [
+        "自然语言描述任务",
+        "录屏回放并自动优化",
+        "跨应用数据搬运与填入"
+      ],
+      "business_model": "按自动化任务数量付费，基础包$19/月含500次操作",
+      "competitive_barrier": "",
+      "risks": "Phi-Ground精度在特定UI上可能不稳定，需持续微调；微软可能推出同类商业产品",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 17,
+      "source_title": "曝苹果重新设计macOS27液态玻璃/阿里千问或推出AI购物功能/马斯克版AI编程产品曝光",
+      "source": "APPSO",
+      "source_type": "wechat",
+      "source_url": "https://mp.weixin.qq.com/s/O7JUpq7FqzNDiGCCweSTtA",
+      "item_id": "rss-appso-ffe676b5baed"
+    },
+    {
+      "opportunity_title": "Mac本地隐私AI助手",
+      "core_insight": "Apple Silicon本地高效推理+便捷菜单栏管理，使隐私敏感的Mac用户也能流畅使用大模型",
+      "product_form": "帮助注重数据私密的Mac用户无需联网即可使用AI对话与文档分析的桌面应用",
+      "target_users": "律师、医生、企业高管等Mac用户，对云端AI有隐私顾虑，愿一次性购买",
+      "mvp_features": [
+        "菜单栏图标与快速提问",
+        "本地聊天与文档摘要",
+        "一键下载与管理主流开源模型"
+      ],
+      "business_model": "一次性 $49 购买，附加模型包按需付费",
+      "competitive_barrier": "",
+      "risks": "大模型受设备RAM限制，体验不及云端；用户群较小",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "jundot/omlx — LLM inference server with continuous batching &amp; SSD caching for Apple Silico",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/jundot/omlx",
+      "item_id": "github-092a29c4919a"
+    },
+    {
+      "opportunity_title": "自然语言驱动的桌面自动化助理",
+      "core_insight": "该开源栈将桌面UI操控能力封装为可编程代理，使得将自然语言指令转化为跨应用的自动化流程成为可能，此前这类能力仅掌握在大厂手中。",
+      "product_form": "帮助中小企业员工和自由职业者通过自然语言自动完成重复性桌面操作的SaaS工具",
+      "target_users": "行政、客服、财务等需频繁操作多个软件且不会编程的非技术用户，愿意为效率付费",
+      "mvp_features": [
+        "自然语言描述任务，代理自动执行",
+        "支持常见办公软件和浏览器自动化",
+        "任务模板录制与团队共享"
+      ],
+      "business_model": "按月订阅，基础版免费10次/天，Pro版$19.9/月",
+      "competitive_barrier": "",
+      "risks": "复杂界面变化适应性有限，可能存在操作失误与安全隐私风险",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 3
+      },
+      "total_score": 16,
+      "source_title": "bytedance/UI-TARS-desktop — The Open-Source Multimodal AI Agent Stack: Connecting Cutting-Edge AI Models and",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/bytedance/UI-TARS-desktop",
+      "item_id": "github-8c3e92502432"
+    },
+    {
+      "opportunity_title": "AI设计文档生成器",
+      "core_insight": "Claude Opus 4.6能以中等努力生成媲美人类的设计文档，将16小时手工写作降至分钟级，此前AI生成设计文档的质量和可用性不足以替代人工。",
+      "product_form": "帮助开发者和技术团队快速生成结构化设计文档的在线SaaS工具",
+      "target_users": "软件开发者、技术团队负责人、自由职业者，痛点：手写设计文档耗时，愿为效率工具付费",
+      "mvp_features": [
+        "输入需求自动生成设计文档大纲与正文",
+        "支持架构/API/功能设计等多种模板",
+        "在线富文本编辑、评论与Markdown/PDF导出"
+      ],
+      "business_model": "个人免费试用，团队订阅$19/月，企业年付定制",
+      "competitive_barrier": "",
+      "risks": "依赖Claude API的稳定性与成本，Notion AI等大厂竞争",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 5
+      },
+      "total_score": 16,
+      "source_title": "Which Design Doc Did a Human Write?",
+      "source": "Refactoring English",
+      "source_type": "rss",
+      "source_url": "https://refactoringenglish.com/blog/ai-vs-human-design-doc/",
+      "item_id": "rss-refactoring-english-fdbc8a9f08fb"
+    },
+    {
+      "opportunity_title": "AI编码代理安全沙箱及审批平台",
+      "core_insight": "企业广泛采用AI编码代理但担心安全风险，OpenAI公布的最佳实践可转化为产品化的安全层，此前缺乏可参考的企业级安全方案",
+      "product_form": "帮助DevOps和安全团队管理AI编码代理执行环境，提供沙箱隔离、操作审批、网络控制与实时遥测的安全层工具",
+      "target_users": "企业DevOps/安全工程师，需控制AI编码代理但无现成工具，付费意愿高",
+      "mvp_features": [
+        "Docker化安全沙箱一键部署",
+        "对代码操作进行敏感度评级与审批流（PR式）",
+        "代理操作日志遥测与异常告警"
+      ],
+      "business_model": "SaaS，按团队规模月订阅，$99起/月",
+      "competitive_barrier": "",
+      "risks": "OpenAI可能直接内建此类功能，产品差异化不足",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "Running Codex safely at OpenAI",
+      "source": "OpenAI Blog",
+      "source_type": "blog",
+      "source_url": "https://openai.com/index/running-codex-safely",
+      "item_id": "rss-openai-blog-09a84312cc4b"
+    },
+    {
+      "opportunity_title": "AI实时模拟面试官",
+      "core_insight": "GPT-Realtime-2实现超低延迟实时语音交互，使模拟面试体验逼近真人对话，此前语音模型延迟高、体验差。",
+      "product_form": "帮助求职者练习面试的AI实时语音模拟面试官Web应用",
+      "target_users": "大学生和求职者，面试紧张缺乏反馈，愿意为提升面试表现月付$9.9",
+      "mvp_features": [
+        "按职位和难度选择面试题",
+        "AI实时语音提问并追问",
+        "对话后生成评分和改进报告"
+      ],
+      "business_model": "免费试用3次，月度订阅$9.9不限次",
+      "competitive_barrier": "",
+      "risks": "强依赖OpenAI API稳定性，大厂可能快速推出类似功能",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "5 gardening tips you can try right in Search",
+      "source": "Google AI Blog",
+      "source_type": "blog",
+      "source_url": "https://blog.google/products-and-platforms/products/search/gardening-tips/",
+      "item_id": "rss-google-ai-blog-5329de4b0dfc"
+    },
+    {
+      "opportunity_title": "智能钢琴陪练：高精度演奏评分与反馈",
+      "core_insight": "高质量对齐的乐谱-演奏数据让自动评分模型能够准确捕捉节奏、错音等细节，此前缺乏大规模精准配对数据",
+      "product_form": "帮助钢琴练习者通过手机录音获得逐音级即时评估和改进建议的App",
+      "target_users": "钢琴初学者、考级学生，缺乏教师实时指导，愿为陪练工具月付10美元",
+      "mvp_features": [
+        "上传演奏音频自动对齐乐谱",
+        "错音与节奏错误可视化标记",
+        "练习历史与进步曲线"
+      ],
+      "business_model": "按月订阅9.9美元，提供基础乐谱库和详细反馈",
+      "competitive_barrier": "",
+      "risks": "音频转音符准确度依赖现有转录技术，可能影响核心体验",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 3
+      },
+      "total_score": 15,
+      "source_title": "PianoCoRe: Combined and Refined Piano MIDI Dataset",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "source_url": "https://huggingface.co/papers/2605.06627",
+      "item_id": "hf-paper-b3828e65e074"
+    },
+    {
+      "opportunity_title": "自我进化桌面自动化代理",
+      "core_insight": "极低token成本+自我进化能力，让复杂工作流自动化的商业运营成本降至可大规模推广",
+      "product_form": "帮助中小企业运营人员用自然语言描述即可完成跨系统操作自动化的桌面RPA工具",
+      "target_users": "无编程能力的运营、财务、HR，陷于重复跨应用操作，愿意按流程付费",
+      "mvp_features": [
+        "自然语言输入任务描述",
+        "自动分解任务并演化技能",
+        "可视化的操作回放与日志"
+      ],
+      "business_model": "按成功完成的任务付费，或 $19/月 基础版",
+      "competitive_barrier": "",
+      "risks": "自我演化行为可能失控，系统控制需高权限，安全担忧",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 3
+      },
+      "total_score": 15,
+      "source_title": "lsdefine/GenericAgent — Self-evolving agent: grows skill tree from 3.3K-line seed, achieving full system",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/lsdefine/GenericAgent",
+      "item_id": "github-3479977d2cc8"
+    },
+    {
+      "opportunity_title": "AI编程代理技能市场",
+      "core_insight": "将已验证的工程技能打包成可买卖的数字资产，降低团队培训和使用AI代理的门槛",
+      "product_form": "帮助使用AI编程代理的开发团队快速获取和集成高质量技能包的在线市场",
+      "target_users": "已采用AI编码助手但需要标准化工作流的企业开发团队",
+      "mvp_features": [
+        "技能分类与浏览",
+        "一键导入Cursor/Claude Code",
+        "评论与评分系统"
+      ],
+      "business_model": "技能包 $19 一次性，或 $49/月 无限订阅",
+      "competitive_barrier": "",
+      "risks": "开源社区免费技能快速跟进，变现壁垒低",
+      "scores": {
+        "pain_point": 3,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 5
+      },
+      "total_score": 15,
+      "source_title": "addyosmani/agent-skills — Production-grade engineering skills for AI coding agents.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/addyosmani/agent-skills",
+      "item_id": "github-0508d109f745"
+    },
+    {
+      "opportunity_title": "一键本地AI加速桌面助手",
+      "core_insight": "MTP技术大幅降低本地推理延迟，使低配设备也能流畅运行中大型模型，用户体验从“能用”跃迁到“好用”",
+      "product_form": "帮助非技术用户零门槛在个人电脑上运行私密AI助手的桌面应用（安装即用）",
+      "target_users": "注重隐私的普通白领/自由职业者/中小企业主，不想学技术但需要本地AI写作、总结、翻译",
+      "mvp_features": [
+        "一键安装本地模型环境",
+        "内置优化版Gemma 4聊天界面",
+        "文档拖拽即时问答"
+      ],
+      "business_model": "基础功能免费，高级模型包/无限制上下文订阅$9.9/月",
+      "competitive_barrier": "",
+      "risks": "LM Studio等竞品可能快速集成MTP，先发窗口期短",
+      "scores": {
+        "pain_point": 3,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 5
+      },
+      "total_score": 15,
+      "source_title": "/r/LocalLlama + /r/localLLM Recap 1. Multi-Token Prediction Local Inference",
+      "source": "Smol AI News",
+      "source_type": "smolai",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1t6se6r/multitoken_prediction_mtp_for_llamacpp_gemma_4/",
+      "item_id": "smolai-3cf17a1081de"
+    },
+    {
+      "opportunity_title": "模块化本地AI桌面助手：按需加载能力",
+      "core_insight": "EMO的模块化特性让普通电脑也能运行大模型能力，用户只下载写作、编程等特定模块，大幅降低本地AI门槛",
+      "product_form": "帮助隐私敏感用户在本地免费使用按需启用的AI模块的桌面应用",
+      "target_users": "自由职业者、学生、初级开发者，不愿为云AI付费且在意隐私，愿为专用模块一次性付费",
+      "mvp_features": [
+        "模块市场选择写作/编程/翻译等能力",
+        "一键加载本地推理无网络",
+        "模块间无感切换的对话界面"
+      ],
+      "business_model": "基础框架免费，每个专业模块一次性购买9.9美元",
+      "competitive_barrier": "",
+      "risks": "EMO模型尚未完全开源或性能在拆分后有显著下降",
+      "scores": {
+        "pain_point": 3,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 3
+      },
+      "total_score": 14,
+      "source_title": "EMO: Pretraining Mixture of Experts for Emergent Modularity",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "source_url": "https://huggingface.co/papers/2605.06663",
+      "item_id": "hf-paper-d5d1daf92510"
+    },
+    {
+      "opportunity_title": "照片转3D场景电商展示工具",
+      "core_insight": "将复杂的3D重建技术封装为简易编辑器，使非技术用户可生成交互式3D产品展示",
+      "product_form": "帮助电商卖家/房产中介用手机照片快速创建嵌入网页的3D场景的SaaS工具",
+      "target_users": "中小电商店主、房产经纪人，需要提升商品展示但无3D技能",
+      "mvp_features": [
+        "多角度图片上传",
+        "自动生成3D高斯泼溅场景",
+        "复制iframe代码嵌入店铺"
+      ],
+      "business_model": "按月 $29 生成100场景，高阶 $79 无限",
+      "competitive_barrier": "",
+      "risks": "生成质量受图片影响大，需后端GPU算力成本",
+      "scores": {
+        "pain_point": 3,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 14,
+      "source_title": "playcanvas/supersplat — 3D Gaussian Splat Editor",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/playcanvas/supersplat",
+      "item_id": "github-4062f864fd38"
+    },
+    {
+      "opportunity_title": "零代码全自动交易机器人平台",
+      "core_insight": "原生代理全自动执行交易策略，让无编程能力散户也能获得量化交易能力",
+      "product_form": "帮助散户投资者一键开启全自动股票/加密货币交易的云端策略平台",
+      "target_users": "有资金但无编程能力的普通投资者，希望自动化交易但不懂代码",
+      "mvp_features": [
+        "连接交易所API",
+        "预置经典策略模板",
+        "风险控制仪表盘"
+      ],
+      "business_model": "月订阅 $39，或利润分成模式",
+      "competitive_barrier": "",
+      "risks": "金融市场波动风险、监管合规风险、用户资金安全",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 3,
+        "buildability": 3
+      },
+      "total_score": 14,
+      "source_title": "HKUDS/AI-Trader — \"AI-Trader: 100% Fully-Automated Agent-Native Trading\"",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/HKUDS/AI-Trader",
+      "item_id": "github-8b40834d069a"
+    },
+    {
+      "opportunity_title": "基于开源模型的文生视频营销工具",
+      "core_insight": "开源text-to-video模型降低了视频生成成本，使独立开发者可提供低价视频创作工具，而无需依赖昂贵的闭源API。",
+      "product_form": "帮助社交媒体运营者和电商卖家从文本快速生成营销短视频的在线工具",
+      "target_users": "社交媒体经理、电商小商家，需频繁制作视频宣传，预算有限，愿意为效率付费",
+      "mvp_features": [
+        "输入产品描述或文案自动生成短视频",
+        "内置多种营销模板和背景音乐",
+        "一键导出至主流平台规格"
+      ],
+      "business_model": "免费额度+付费订阅，月费$19.99，无限制生成",
+      "competitive_barrier": "",
+      "risks": "开源模型部署成本高，视频质量可能不足以吸引付费用户",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 3,
+        "buildability": 3
+      },
+      "total_score": 14,
+      "source_title": "🤗 SulphurAI/Sulphur-2-base",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/SulphurAI/Sulphur-2-base",
+      "item_id": "hf-model-967b88027b16"
+    },
+    {
+      "opportunity_title": "隐私优先的离线文档AI助手",
+      "core_insight": "4B活跃参数的强性能模型可在消费级硬件本地运行，首次使离线隐私文档AI具实用价值，此前本地模型太弱或太大。",
+      "product_form": "帮助律师/医生等处理敏感文件的本地文档问答桌面软件",
+      "target_users": "律师、医生、记者等高频处理机密文件者，愿意为隐私支付$49/年",
+      "mvp_features": [
+        "一键安装本地AI引擎",
+        "导入PDF/Word等文档",
+        "自然语言提问并溯源回答"
+      ],
+      "business_model": "基础版免费，高级功能年订阅$49",
+      "competitive_barrier": "",
+      "risks": "本地模型性能仍逊于云端，用户硬件门槛高，市场教育成本大",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 2,
+        "tech_timing": 4,
+        "buildability": 2
+      },
+      "total_score": 12,
+      "source_title": "Google is partnering with XPRIZE and Range Media Partners on the $3.5 million Future Vision film competition.",
+      "source": "Google AI Blog",
+      "source_type": "blog",
+      "source_url": "https://blog.google/innovation-and-ai/technology/ai/future-vision-film-competition-xprize/",
+      "item_id": "rss-google-ai-blog-5f907f4d68cc"
+    }
+  ],
+  "analyzed_item_ids": [
+    "hf-paper-a5f373c244bd",
+    "hf-paper-cddb9fc2bc64",
+    "hf-paper-ab70ec583e39",
+    "hf-paper-99653a9f6610",
+    "hf-paper-3bccfc0197f8",
+    "hf-paper-86e38306b950",
+    "hf-paper-51b105466e13",
+    "hf-paper-6e974c35e33e",
+    "hf-paper-b3828e65e074",
+    "hf-paper-d5d1daf92510",
+    "github-917ab9b9ed6e",
+    "github-d3e1ec1110dd",
+    "github-6a861e785610",
+    "github-3479977d2cc8",
+    "github-4062f864fd38",
+    "github-e00b02d7c0ac",
+    "github-092a29c4919a",
+    "github-8b40834d069a",
+    "github-9e3b2f422063",
+    "github-0508d109f745",
+    "github-b318f7d6d63c",
+    "github-8c3e92502432",
+    "hf-model-70b0f02555a8",
+    "hf-model-4481c76e29d1",
+    "hf-model-79856f8f8d86",
+    "hf-model-b6a7c38191ac",
+    "hf-model-f3fc7d86e6c4",
+    "hf-model-fd141927797a",
+    "hf-model-667efcd6957b",
+    "hf-model-fe96e83596e6",
+    "hf-model-d6be4a0dd0b2",
+    "hf-model-967b88027b16",
+    "rss-hackernews-daily-0a2ce96f9d97",
+    "rss-troy-hunt-e7c6cce066e0",
+    "rss-latent-space-77dd036b336a",
+    "rss-ben's-bites-b7c2f427aeee",
+    "rss-interconnects-1676b241ad34",
+    "atom-george-hotz-0dc737c49a3b",
+    "rss-max-woolf-1e287d7aaa37",
+    "rss-entropic-thoughts-fd924e8ad15f",
+    "rss-daniel-delaney-8b7216a7609f",
+    "rss-grant-slatton-ed0d2efe187e",
+    "rss-simone-417310cdabaf",
+    "rss-gwern-a01af67dcafc",
+    "rss-maurycy-3a2892c494d1",
+    "rss-antirez-c4f0151cdfbe",
+    "atom-matklad-0c396db9c6dd",
+    "atom-armin-ronacher-ebab17f3b4d1",
+    "rss-overreacted-f8483a3b9cee",
+    "rss-mitchell-hashimoto-89eae6eebb45",
+    "rss-jim-nielsen-6e122b546ef0",
+    "rss-xe-iaso-537c535d47ad",
+    "rss-miguel-grinberg-071ae6d95fec",
+    "atom-eli-bendersky-b5271e46254d",
+    "atom-michael-stapelberg-74a089c846a7",
+    "rss-beej-bd53a0b5e435",
+    "atom-rachel-by-the-bay-36a38cb9a81f",
+    "rss-the-old-new-thing-17001149dbdf",
+    "rss-dragas-913864d355b7",
+    "atom-hugo-tunius-d11997e3da01",
+    "rss-max-bernstein-3750563b286f",
+    "atom-ken-shirriff-599dc29eafda",
+    "rss-evan-hahn-eba88065deb1",
+    "rss-tim-schinkel-d507827d97a3",
+    "rss-sean-goedecke-363b6e354a8d",
+    "rss-ibrahim-diallo-a14571193a5e",
+    "rss-skyfall-639a77c2a876",
+    "rss-giles-thomas-89f5510cdb3e",
+    "atom-susam-075697c61020",
+    "rss-terrible-software-56b09ae0fcd8",
+    "rss-philip-laine-70fd39087f95",
+    "rss-refactoring-english-fdbc8a9f08fb",
+    "rss-works-on-my-machine-6b6ff75159b6",
+    "rss-hillel-wayne-7cd6d7c2c7e6",
+    "rss-terence-eden-2a45a10ef8d8",
+    "atom-jay-d-d58463f35780",
+    "rss-dave-farquhar-97e178aae020",
+    "atom-jyn-f23f513617d4",
+    "rss-brutecat-04035f9f6535",
+    "rss-abort-retry-fail-df93fdd82251",
+    "atom-oldvcr-99604ff20410",
+    "rss-bogdan-the-geek-70b5ee4e23bb",
+    "rss-heyparis-c57846771966",
+    "rss-openai-blog-09a84312cc4b",
+    "rss-openai-blog-6a3f232352e8",
+    "rss-openai-blog-b655fa9f550b",
+    "rss-google-deepmind-blog-c122dcde12a0",
+    "rss-google-deepmind-blog-b59858efc780",
+    "rss-google-deepmind-blog-86d148703bef",
+    "rss-google-ai-blog-70615ef3544f",
+    "rss-google-ai-blog-5329de4b0dfc",
+    "rss-google-ai-blog-5f907f4d68cc",
+    "rss-meta-engineering-7ae07aecb513",
+    "rss-meta-engineering-9dfe3b4eb3b0",
+    "rss-meta-engineering-44b3259ff1d6",
+    "smolai-925c9ba19aac",
+    "smolai-3835ec2d4caf",
+    "smolai-6ae8f252a117",
+    "smolai-d9b040097d99",
+    "smolai-b2da45641b1b",
+    "smolai-9ab3f2316d84",
+    "smolai-3cf17a1081de",
+    "smolai-a9830aa76078",
+    "smolai-4ea1d2dd8820",
+    "rss-all-in-podcast-2730c34d9eef",
+    "rss-all-in-podcast-89cfc58eafb9",
+    "rss-all-in-podcast-51593384d64a",
+    "atom-the-ai-valley-3f9d6ca982c7",
+    "rss-appso-ffe676b5baed",
+    "rss-机器之心-10d454c2764c",
+    "rss-机器之心-9062ed146da9",
+    "rss-机器之心-c5fb89e64516",
+    "rss-量子位-2d01fe22d4f4",
+    "rss-虎嗅-832ab64b8adc",
+    "rss-虎嗅-ef5d3b4ad37d",
+    "rss-虎嗅-c450438b5cb1",
+    "rss-赛博禅心-ae454bfa7328",
+    "rss-founder-park-0d24d7881899"
+  ],
+  "remaining": 15
+}

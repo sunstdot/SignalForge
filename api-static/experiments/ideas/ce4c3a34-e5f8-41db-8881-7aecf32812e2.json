@@ -1,0 +1,23 @@
+{
+  "id": "ce4c3a34-e5f8-41db-8881-7aecf32812e2",
+  "content_id": "atom-simon-willison-4b795dd72a88",
+  "title": "CLI工具LLM调用实践",
+  "description": "**为什么产生这个想法**\n文章提到LLM同时提供Python库和CLI工具，CLI方式适合快速原型开发和脚本自动化。\n\n**价值**\nCLI工具可快速集成到CI/CD流程，实现自动化测试、代码审查等场景的无缝AI能力接入。\n\n**具体帮助**\n技术人员可快速在终端中调用LLM进行各种任务，提升开发效率。",
+  "difficulty": "easy",
+  "estimated_days": 2,
+  "tags": [
+    "CLI",
+    "自动化",
+    "工具"
+  ],
+  "status": "pending",
+  "priority": 8.0,
+  "briefing_date": "",
+  "source_type": "rss",
+  "source_title": "research-llm-apis 2026-04-04",
+  "source_url": "https://simonwillison.net/2026/Apr/5/research-llm-apis/#atom-everything",
+  "inspiration": "",
+  "product_concept": {},
+  "source_context": "",
+  "created_at": "2026-04-05T16:30:30.736997"
+}

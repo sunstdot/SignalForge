@@ -1,0 +1,595 @@
+{
+  "date": "2026-07-10",
+  "solutions": [
+    {
+      "type": "研发提效",
+      "title": "AI驱动的技术简历筛选与面试准备助手",
+      "trigger": "GitHub 3716星 AI求职框架可自动评估职位、定制简历、写求职信",
+      "scenario": "技术团队招聘季TL需翻看数百份简历，人工匹配岗位需求、准备针对面试题，耗时且可能遗漏匹配项",
+      "ai_solution": "基于Claude Code的AI框架解析JD与简历，自动评分匹配度，生成定制面试问题和大纲，辅助招聘决策",
+      "implementation": "改造为内部飞书Bot，接收简历附件，返回结构化评估报告并写入招聘系统",
+      "audience": [
+        "技术TL"
+      ],
+      "impact": "简历初筛耗时减少70%，面试提问针对性提升50%",
+      "difficulty": "低",
+      "resistance": "需脱敏处理候选人信息，合规审核数据流向",
+      "scores": {
+        "efficiency": 9,
+        "feasibility": 9,
+        "business_impact": 6,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "MadsLorentzen/ai-job-search — AI-powered job application framework built on Claude Code. Fork it, fill in your",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/MadsLorentzen/ai-job-search",
+      "item_id": "github-71337312e4a0"
+    },
+    {
+      "type": "研发提效",
+      "title": "全仓库级代码依赖分析与自动化重构",
+      "trigger": "Jet-Long实现高效长上下文扩展，突破百万token窗口",
+      "scenario": "大前端/微服务项目重构时，需跨数十个仓库分析调用链，目前依赖全局搜索和人工梳理，极易遗漏跨服务影响面",
+      "ai_solution": "加载整个代码基到长上下文模型，精准绘制调用图谱，对计划变更自动生成影响面报告和重构PR",
+      "implementation": "GitLab CI中添加长上下文分析Job，输出Markdown报告并附代码补丁",
+      "audience": [
+        "大前端",
+        "后端"
+      ],
+      "impact": "大型重构风险评估时间减少90%，线上事故风险降低50%",
+      "difficulty": "中",
+      "resistance": "需要自部署支持超长上下文的推理服务，推理延迟较高",
+      "scores": {
+        "efficiency": 9,
+        "feasibility": 6,
+        "business_impact": 7,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "Jet-Long: Efficient Long-Context Extension with Dynamic Bifocal RoPE",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "source_url": "https://huggingface.co/papers/2607.07740",
+      "item_id": "hf-paper-dd8d4a45101d"
+    },
+    {
+      "type": "研发提效",
+      "title": "基于Muse Spark的多模态Bug自动分诊Agent",
+      "trigger": "Meta发布Muse Spark 1.1，主打Agent能力、编码和多模态理解，API公测",
+      "scenario": "线上用户反馈带截图/录屏的Bug，目前由人工客服分类后流转给对应研发组，定位慢且易分错",
+      "ai_solution": "用Muse Spark构建Agent，直接理解用户上传的多模态反馈，关联代码库自动定位嫌疑模块，生成待修复工单",
+      "implementation": "在内部工单系统(TAPD/Jira)中注册Webhook，Agent接收新工单后异步分析并回写诊断结果",
+      "audience": [
+        "大前端",
+        "后端"
+      ],
+      "impact": "Bug分诊与定位时间从平均4小时缩短至30分钟",
+      "difficulty": "中",
+      "resistance": "新模型API成本较高，且需充分评测其代码定位准确率",
+      "scores": {
+        "efficiency": 9,
+        "feasibility": 7,
+        "business_impact": 8,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "为了跟 GPT-5.6 抢头条，扎克伯格破天荒到对手地盘「打广告」",
+      "source": "APPSO",
+      "source_type": "wechat",
+      "source_url": "https://mp.weixin.qq.com/s/Zlqb_34lz8zVCIrayMNuiQ",
+      "item_id": "rss-appso-421e13d78fbd"
+    },
+    {
+      "type": "业务赋能",
+      "title": "端侧多模态搜索增强电商转化",
+      "trigger": "Muse Spark多模态理解能力与百万token上下文可用于端侧",
+      "scenario": "用户电商搜索时只能用文本，难以准确描述商品视觉特征，导致搜索匹配率低，流失率高",
+      "ai_solution": "将多模态理解能力部署在App内，用户拍照或上传灵感图，模型理解并搜索相似商品，生成搭配推荐",
+      "implementation": "通过Meta Model API在搜索服务中增加多模态索引，客户端集成拍照搜同款功能",
+      "audience": [
+        "客户端",
+        "产品运营"
+      ],
+      "impact": "拍摄搜索使用率提升20%，搜索结果点击率提升25%，CVR提升10%",
+      "difficulty": "中",
+      "resistance": "API依赖外部服务，需要保证接口可用性与数据合规",
+      "scores": {
+        "efficiency": 5,
+        "feasibility": 7,
+        "business_impact": 9,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "为了跟 GPT-5.6 抢头条，扎克伯格破天荒到对手地盘「打广告」",
+      "source": "APPSO",
+      "source_type": "wechat",
+      "source_url": "https://mp.weixin.qq.com/s/Zlqb_34lz8zVCIrayMNuiQ",
+      "item_id": "rss-appso-421e13d78fbd"
+    },
+    {
+      "type": "业务赋能",
+      "title": "自动3D模型轻量化提升电商加载与转化",
+      "trigger": "GitHub 403星自动四边形重网格工具，可快速优化3D模型面数",
+      "scenario": "电商App中3D商品展示需高保真低面数模型，目前由美术手动减面，周期长且质量不稳定，影响页面性能与体验",
+      "ai_solution": "将autoremesher集成到3D资产处理管线，自动将高模转换为四边形网格并减面，保留细节，加快加载",
+      "implementation": "搭建CI/CD脚本，美术提交高模后自动触发重网格处理，输出低面数模型推送到CDN",
+      "audience": [
+        "客户端",
+        "产品运营"
+      ],
+      "impact": "3D商品模型准备时间减少80%，页面加载速度提升30%，CVR提升5%",
+      "difficulty": "低",
+      "resistance": "工具为C++命令行，需封装为服务并与内部资产管理系统对接",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 9,
+        "business_impact": 7,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "huxingyi/autoremesher — Automatic quad remeshing tool",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/huxingyi/autoremesher",
+      "item_id": "github-a6b8a26d8483"
+    },
+    {
+      "type": "研发提效",
+      "title": "使用GPT-5.6模型重构遗留代码",
+      "trigger": "OpenAI发布GPT-5.6家族Sol、Terra、Luna模型，Codex同步更新",
+      "scenario": "在维护老旧前端/客户端屎山代码时，目前靠人工阅读和手动重构，核心痛点在于理解业务逻辑耗时、容易引入新Bug",
+      "ai_solution": "利用GPT-5.6 Codex对复杂遗留模块进行语义理解与安全重构，输出带单测的重构代码，模型边界是需人工审核业务关键路径",
+      "implementation": "集成到VS Code插件，选中代码块直接触发GPT-5.6 Codex重构建议并生成Diff视图",
+      "audience": [
+        "大前端",
+        "客户端"
+      ],
+      "impact": "预计减少50%以上的重构分析时间，降低回归测试成本",
+      "difficulty": "低",
+      "resistance": "团队对AI生成代码质量缺乏信任，需严格Code Review流程保障",
+      "scores": {
+        "efficiency": 9,
+        "feasibility": 8,
+        "business_impact": 5,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "not much happened today",
+      "source": "Smol AI News",
+      "source_type": "smolai",
+      "source_url": "https://news.smol.ai/issues/26-07-09-not-much/",
+      "item_id": "rss-smol-ai-news-156a67bdf486"
+    },
+    {
+      "type": "研发提效",
+      "title": "将Agent工程技能植入CI/CD代码审查",
+      "trigger": "GitHub仓库提供生产级AI编码代理的工程化技能模板",
+      "scenario": "在PR代码评审中，目前做法是资深工程师人工审查，核心痛点在于低效重复的规范检查消耗大量精力，高级逻辑问题易遗漏",
+      "ai_solution": "使用agent-skills封装最佳实践规则，让AI Agent自动审查并标出潜在Bug、性能热点，辅以修复建议，能力边界在于业务特异性判断仍需人工",
+      "implementation": "通过GitLab/GitHub Actions Webhook触发AI Agent，直接评论PR并提供修复diff",
+      "audience": [
+        "大前端",
+        "客户端",
+        "后端",
+        "技术TL"
+      ],
+      "impact": "降低初级代码规范问题80%以上，释放高级工程师精力聚焦架构设计",
+      "difficulty": "中",
+      "resistance": "CI流程需改造并与现有代码规范对齐，初期间接引入噪音告警",
+      "scores": {
+        "efficiency": 9,
+        "feasibility": 7,
+        "business_impact": 5,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "addyosmani/agent-skills — Production-grade engineering skills for AI coding agents.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/addyosmani/agent-skills",
+      "item_id": "github-0508d109f745"
+    },
+    {
+      "type": "研发提效",
+      "title": "用GPT-5.6生成端到端接口测试用例",
+      "trigger": "GPT-5.6提供三级模型选择及详细定价，推理能力提升",
+      "scenario": "在前后端联调中，目前做法是手动编写接口测试和Mock数据，核心痛点在于契约文档与实现不同步、造数据耗时",
+      "ai_solution": "利用GPT-5.6根据OpenAPI文档自动生成参数化测试用例与Mock服务代码，覆盖正常及异常场景，边界是无法处理商业逻辑深度耦合的测试",
+      "implementation": "作为CLI工具或vs Code插件，读取swagger.json后生成Postman Collection或Jest/Pytest测试文件",
+      "audience": [
+        "大前端",
+        "后端",
+        "测试"
+      ],
+      "impact": "接口测试编写效率提升60%以上，Mock数据准确度达90%",
+      "difficulty": "低",
+      "resistance": "可能生成过度测试或错误断言，需要人工审查并调整权重",
+      "scores": {
+        "efficiency": 9,
+        "feasibility": 8,
+        "business_impact": 4,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "The new GPT-5.6 family: Luna, Terra, Sol",
+      "source": "Simon Willison",
+      "source_type": "rss",
+      "source_url": "https://simonwillison.net/2026/Jul/9/gpt-5-6/#atom-everything",
+      "item_id": "atom-simon-willison-b29dbe02fb63"
+    },
+    {
+      "type": "研发提效",
+      "title": "Codex+ChatGPT实现自动化代码Review",
+      "trigger": "Codex并入ChatGPT后代码理解与生成能力增强",
+      "scenario": "在每日代码评审中，目前靠高级工程师手动Review，痛点在于低级bug、安全漏洞、风格不一致问题反复出现，人力不足。",
+      "ai_solution": "借助GPT-5.6中Codex的能力，对Pull Request差异自动进行分析，标注潜在缺陷、性能隐患，并生成修复建议评论。",
+      "implementation": "通过GitLab Webhook在MR创建时调用API，将AI评审结果以评论形式自动回写。",
+      "audience": [
+        "后端",
+        "大前端"
+      ],
+      "impact": "减少代码评审人力投入30%，拦截60%的常见低级bug，加速合入速度。",
+      "difficulty": "中",
+      "resistance": "部分资深工程师不信任AI审查结论，需磨合与权限控制。",
+      "scores": {
+        "efficiency": 9,
+        "feasibility": 8,
+        "business_impact": 7,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "GPT-5.6正式上线,Codex并入ChatGPT/微信转账红包可以「一键直达」了/阶跃星辰将推出智能体手机",
+      "source": "APPSO",
+      "source_type": "wechat",
+      "source_url": "https://mp.weixin.qq.com/s/UXjQOdGdyQcy7BDDltGulQ",
+      "item_id": "rss-appso-4368a46ac3ea"
+    },
+    {
+      "type": "研发提效",
+      "title": "SLORR压缩代码补全模型降低推理成本",
+      "trigger": "SLORR在训练中引入低秩正则化实现高效模型压缩",
+      "scenario": "在内部代码助手模型部署时，目前大型模型导致推理延迟高、GPU显存占用大，痛点在于成本与响应速度难以兼顾。",
+      "ai_solution": "采用SLORR方法在模型微调阶段加入低秩正则化，直接产出结构稀疏的低秩模型，推理时减少计算量和显存。",
+      "implementation": "在模型训练平台集成SLORR损失函数，调整训练脚本，产出压缩后的代码模型。",
+      "audience": [
+        "技术TL",
+        "后端"
+      ],
+      "impact": "代码补全推理延迟降低50%，服务所需GPU集群规模减少40%，每年节省数十万成本。",
+      "difficulty": "中",
+      "resistance": "需修改现有训练流水线，验证压缩后模型精度不下降需要时间。",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 7,
+        "business_impact": 7,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "SLORR: Simple and Efficient In-Training Low-Rank Regularization",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.08754v1",
+      "item_id": "arxiv-2607.08754v1"
+    },
+    {
+      "type": "业务赋能",
+      "title": "Figma插件实现即时AI设计草图生成",
+      "trigger": "Flash-BoN在扩散模型推理时生成快速草稿",
+      "scenario": "在UI设计师产出图标、插画时，目前先用传统DALL·E等工具生成再精修，痛点在于等待时间久，打断心流，试错成本高。",
+      "ai_solution": "基于Flash-BoN技术实现近乎实时的多方案草图生成，设计师一键获得6-8个变体，选取方向后再精生成。",
+      "implementation": "开发Figma插件，调用公司内部部署的Flash-BoN模型服务，返回预览图并支持插入画布。",
+      "audience": [
+        "大前端"
+      ],
+      "impact": "设计出图速度提升5倍，单需求设计周期缩短30%。",
+      "difficulty": "中",
+      "resistance": "设计师对AI风格统一性的质疑，需提供足够的可调控参数。",
+      "scores": {
+        "efficiency": 9,
+        "feasibility": 7,
+        "business_impact": 7,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "Flash-BoN: Instant Drafts for Inference-Time Scaling in Diffusion Models",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "source_url": "https://huggingface.co/papers/2607.04461",
+      "item_id": "hf-paper-e7278691bfbc"
+    },
+    {
+      "type": "研发提效",
+      "title": "AI驱动屎山代码自动化重构",
+      "trigger": "DesktopCommanderMCP赋予Claude终端控制和文件编辑能力",
+      "scenario": "在维护历史遗留代码时，目前做法是手工跨文件搜索并修改，痛点在于依赖关系复杂易遗漏，且重复劳动巨大",
+      "ai_solution": "通过MCP让Claude直接操作文件系统、执行shell搜索，自动提取依赖并生成diff，程序员仅需审核",
+      "implementation": "搭建内部Claude Desktop+MCP Server环境，为程序员提供一键重构工具栏",
+      "audience": [
+        "大前端",
+        "客户端",
+        "后端"
+      ],
+      "impact": "跨文件重构效率提升50%，回归bug减少20%",
+      "difficulty": "低",
+      "resistance": "部分开发者对AI直接修改代码不信任，需建立强制Code Review流程",
+      "scores": {
+        "efficiency": 9,
+        "feasibility": 8,
+        "business_impact": 6,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "wonderwhy-er/DesktopCommanderMCP — This is MCP server for Claude that gives it terminal control, file system search",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
+      "item_id": "github-7ac80ddf126b"
+    },
+    {
+      "type": "业务赋能",
+      "title": "端侧离线商品语音讲解提升转化",
+      "trigger": "pocket-tts是纯CPU运行的轻量TTS模型，可直接嵌入移动端",
+      "scenario": "在电商App商品详情页中，目前纯图文展示，用户快速跳出，痛点在于缺乏即时语音指引未能留住用户",
+      "ai_solution": "利用pocket-tts在本地离线生成商品卖点语音，无需服务端开销，保护用户隐私，提升沉浸感",
+      "implementation": "将pocket-tts模型转为移动端ONNX，在App内集成SDK，根据商品信息实时合成语音解说",
+      "audience": [
+        "客户端",
+        "产品运营"
+      ],
+      "impact": "详情页平均停留时长提升15%，下单转化率提升3%-5%",
+      "difficulty": "低",
+      "resistance": "需评估CPU占用对低端机型的性能影响，避免增加卡顿",
+      "scores": {
+        "efficiency": 6,
+        "feasibility": 8,
+        "business_impact": 9,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "kyutai-labs/pocket-tts — A TTS that fits in your CPU (and pocket)",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/kyutai-labs/pocket-tts",
+      "item_id": "github-b94a86e31c4c"
+    },
+    {
+      "type": "业务赋能",
+      "title": "实时语音交互数字人直播带货",
+      "trigger": "Vidu S1支持语音控制实时视频生成，可驱动数字人",
+      "scenario": "在商业化直播带货中，目前完全依赖真人主播，成本高且无法24小时在线，痛点在于人力有限且互动响应不及时",
+      "ai_solution": "利用Vidu S1打造实时交互数字人，接收观众语音指令改变介绍内容，实现全天候智能直播",
+      "implementation": "接入Vidu S1 API，结合直播间语音识别，开发实时渲染数字人直播客户端",
+      "audience": [
+        "客户端",
+        "产品运营"
+      ],
+      "impact": "直播时长增加3倍，互动率提升20%，单场GMV预期提升15%",
+      "difficulty": "中",
+      "resistance": "需与直播平台推流协议对接，低延迟要求高",
+      "scores": {
+        "efficiency": 6,
+        "feasibility": 7,
+        "business_impact": 9,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "Vidu S1: A Real-Time Interactive Video Generation Model",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "source_url": "https://huggingface.co/papers/2607.03118",
+      "item_id": "hf-paper-aad3320c5b90"
+    },
+    {
+      "type": "研发提效",
+      "title": "AI自动生成测试用例Excel并维护",
+      "trigger": "OfficeCLI让AI Agent能够读写Word、Excel、PPT而无须Office安装",
+      "scenario": "在测试用例管理场景中，目前手工维护Excel，需求变更后需逐条更新，痛点在于重复劳动巨大且容易出错",
+      "ai_solution": "利用OfficeCLI让LLM读取需求文档，自动在Excel中生成/更新测试用例，测试人员只做审核",
+      "implementation": "构建CI Job，在PRD更新时触发OfficeCLI和内部LLM生成新版本测试用例Excel",
+      "audience": [
+        "测试"
+      ],
+      "impact": "测试用例维护时间减少50%，需求变更响应速度提升60%",
+      "difficulty": "低",
+      "resistance": "部分企业测试用例模板复杂，需模板适配和格式化工作",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 9,
+        "business_impact": 6,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "iOfficeAI/OfficeCLI — OfficeCLI is the first and best Office suite purpose-built for AI agents to read",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/iOfficeAI/OfficeCLI",
+      "item_id": "github-858949c86c7e"
+    },
+    {
+      "type": "研发提效",
+      "title": "接入Grok 4.5加速复杂代码生成与审查",
+      "trigger": "SpaceXAI发布Opus级新模型Grok 4.5，编码能力可能领先",
+      "scenario": "在核心支付/广告算法模块编写时，当前Copilot对复杂逻辑联想不足，人工编写易出Bug且审查耗时长",
+      "ai_solution": "通过API将Grok 4.5集成到Cursor/VSCode，对高难度模块生成多方案代码并附带测试，辅助人工Review",
+      "implementation": "开发VSCode插件，支持模型切换，将Grok 4.5作为可选后端",
+      "audience": [
+        "大前端",
+        "后端"
+      ],
+      "impact": "复杂模块研发周期缩短20%，代码首次通过率提升15%",
+      "difficulty": "中",
+      "resistance": "模型API稳定性与内部数据安全审查，需评估出口合规",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 7,
+        "business_impact": 7,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "[AINews] SpaceXAI launches Grok 4.5, first Opus-class model post Cursor acquisition",
+      "source": "Latent Space",
+      "source_type": "rss",
+      "source_url": "https://www.latent.space/p/ainews-spacexai-launches-grok-45",
+      "item_id": "rss-latent-space-252bae60fd15"
+    },
+    {
+      "type": "业务赋能",
+      "title": "基于科学谱系推理的营销创意自动生成",
+      "trigger": "该论文揭示科学想法可像基因组一样重组变异产生创新",
+      "scenario": "商业化运营团队策划信息流广告创意时，灵感枯竭，目前依赖头脑风暴和历史经验，爆款创意产出不稳定",
+      "ai_solution": "将历史高转化广告创意编码为谱系图，利用谱系推理模型重组成千上万条新文案与素材组合，预测潜力",
+      "implementation": "接入广告投放平台的创意中心，作为AI创意工坊，产出可直接A/B测试的素材组",
+      "audience": [
+        "产品运营"
+      ],
+      "impact": "广告创意产出量提升3倍，高潜创意识别准确率提高40%，CTR提升15%",
+      "difficulty": "中",
+      "resistance": "需要积累大量标注好效果的历史创意数据，冷启动困难",
+      "scores": {
+        "efficiency": 6,
+        "feasibility": 6,
+        "business_impact": 9,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "Ideas Have Genomes: Benchmarking Scientific Lineage Reasoning and Lineage-Grounded Idea Generation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "source_url": "https://huggingface.co/papers/2607.08758",
+      "item_id": "hf-paper-0df950ccd98f"
+    },
+    {
+      "type": "研发提效",
+      "title": "AI辅助生成技术理解写作模板与总结",
+      "trigger": "博客建议通过写作来固化不懂的知识，凸显知识内化需求",
+      "scenario": "在技术团队做知识沉淀时，目前做法是成员手动写文档，核心痛点在于表达困难、耗时，导致知识流失严重",
+      "ai_solution": "使用大模型根据代码提交记录或调试过程自动生成技术博客草稿，程序员只需审阅修改，能力边界在于准确传递领域细节",
+      "implementation": "在代码仓库中加Git Hook，提交时触发大模型生成变更解读文档草稿并推送到内部Wiki",
+      "audience": [
+        "大前端",
+        "后端",
+        "客户端",
+        "技术TL"
+      ],
+      "impact": "技术文档产出量预计提升200%，降低新人上手成本20%-30%",
+      "difficulty": "低",
+      "resistance": "部分开发者认为写文档是额外负担，需要调整文化鼓励分享",
+      "scores": {
+        "efficiency": 7,
+        "feasibility": 9,
+        "business_impact": 4,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "Blog about things you don't understand yet",
+      "source": "Sean Goedecke",
+      "source_type": "rss",
+      "source_url": "https://seangoedecke.com/blog-about-things-you-dont-understand-yet/",
+      "item_id": "rss-sean-goedecke-bbb646d854d5"
+    },
+    {
+      "type": "业务赋能",
+      "title": "扩散模型数值稳定性约束优化生成质量",
+      "trigger": "论文揭示前向扩散分数精度不足以保证采样稳定性",
+      "scenario": "在电商商品图生成场景中，目前扩散模型偶尔输出失真图像或异常纹理，痛点在于采样轨迹数值不稳定导致生成质量波动。",
+      "ai_solution": "引入论文提出的数值稳定性评估指标，在模型训练阶段加入稳定性正则化，微调扩散采样器以提升生成一致性。",
+      "implementation": "在训练平台的微调脚本中嵌入该损失项，重新训练内部图像生成模型。",
+      "audience": [
+        "产品运营",
+        "大前端"
+      ],
+      "impact": "商品图生成可用率从80%提升至95%，修图人工复核量下降50%。",
+      "difficulty": "中",
+      "resistance": "需重新训练模型，GPU资源与排期协调困难。",
+      "scores": {
+        "efficiency": 5,
+        "feasibility": 6,
+        "business_impact": 8,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "Score Accuracy Along the Forward Diffusion Does Not Certify Numerical Stability in Diffusion Sampling",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "source_url": "https://arxiv.org/abs/2607.08757v1",
+      "item_id": "arxiv-2607.08757v1"
+    },
+    {
+      "type": "业务赋能",
+      "title": "扩散模型超分辨率增强商品图",
+      "trigger": "天文图像处理启发利用AI提升低分辨率图像细节",
+      "scenario": "在商家上传商品图时图片质量参差不齐，目前依赖人工用PS修复，痛点在于修图耗时、高峰期拥堵，影响商品上架速度。",
+      "ai_solution": "利用扩散模型实现端到端4倍超分辨率与去噪，自动增强图片细节，使其达到平台质量标准，无需人工干预。",
+      "implementation": "在商品图片上传的后端处理流中增加AI超分微服务，异步处理并替换原图。",
+      "audience": [
+        "产品运营"
+      ],
+      "impact": "商品图处理效率提升80%，商品上架时间缩短2小时，带动CVR提升约2%。",
+      "difficulty": "中",
+      "resistance": "大量图片处理增加计算成本，需评估ROI。",
+      "scores": {
+        "efficiency": 7,
+        "feasibility": 7,
+        "business_impact": 8,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "The Tadpole galaxy:",
+      "source": "Maurycy",
+      "source_type": "rss",
+      "source_url": "https://maurycyz.com/astro/arp188/",
+      "item_id": "rss-maurycy-9551851f58d3"
+    }
+  ],
+  "top_pick": {
+    "title": "AI驱动的技术简历筛选与面试准备助手",
+    "why_now": "GitHub 3716星 AI求职框架可自动评估职位、定制简历、写求职信",
+    "mvp_path": "改造为内部飞书Bot，接收简历附件，返回结构化评估报告并写入招聘系统",
+    "strategy": "自下而上：先找2-3个极客同学验证，再整理ROI数据推广"
+  },
+  "analyzed_count": 40,
+  "analyzed_item_ids": [
+    "hf-paper-05c6c3d973ca",
+    "rss-lcamtuf-ef1f080c5ce7",
+    "github-71337312e4a0",
+    "rss-latent-space-252bae60fd15",
+    "rss-giles-thomas-dfae584f5fa5",
+    "hf-paper-dd8d4a45101d",
+    "hf-paper-0df950ccd98f",
+    "rss-appso-421e13d78fbd",
+    "rss-all-in-podcast-8f3f0d7ab6bb",
+    "github-a6b8a26d8483",
+    "rss-smol-ai-news-156a67bdf486",
+    "github-0508d109f745",
+    "rss-jim-nielsen-de6148ba94c8",
+    "rss-xe-iaso-19e7b1752776",
+    "arxiv-2607.08734v1",
+    "atom-simon-willison-b29dbe02fb63",
+    "hf-model-46ba0cfe1884",
+    "github-787a47d3135e",
+    "rss-ibrahim-diallo-f9d6e74e70bd",
+    "rss-sean-goedecke-bbb646d854d5",
+    "atom-dylan-nesbitt-269d00c1eec5",
+    "arxiv-2607.08757v1",
+    "rss-appso-4368a46ac3ea",
+    "arxiv-2607.08754v1",
+    "rss-maurycy-9551851f58d3",
+    "hf-paper-e7278691bfbc",
+    "hf-paper-eecafbdf1bd0",
+    "rss-all-in-podcast-73d8eb0bf69e",
+    "rss-bert-hubert-329ee9f7b47f",
+    "rss-experimental-history-1d9a3d576485",
+    "hf-model-28ff5c77480e",
+    "arxiv-2607.08740v1",
+    "github-7ac80ddf126b",
+    "github-b94a86e31c4c",
+    "hf-model-602ecaa7fd20",
+    "rss-机器之心-2fd5699d67c4",
+    "hf-paper-aad3320c5b90",
+    "rss-虎嗅-4c5ae099bb45",
+    "github-858949c86c7e",
+    "rss-krebs-on-security-84abaadd2bd3"
+  ]
+}

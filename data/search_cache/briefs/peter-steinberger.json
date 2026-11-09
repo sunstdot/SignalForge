@@ -1,0 +1,168 @@
+{
+  "query": "Peter Steinberger",
+  "topic": "Peter Steinberger",
+  "headline": "Peter Steinberger",
+  "kicker": "综合简报 · last30days · 社交独家热点",
+  "lede": "",
+  "consensus": {
+    "left": 50,
+    "right": 50,
+    "leftLabel": "",
+    "leftSub": "",
+    "rightLabel": "",
+    "rightSub": ""
+  },
+  "meta": {
+    "total": 5,
+    "platforms": {
+      "x": 5,
+      "reddit": 0,
+      "hn": 0
+    },
+    "took": "—",
+    "window": "近 30 天",
+    "featured": 5
+  },
+  "themes": [],
+  "patterns": [],
+  "deepDive": [],
+  "dashboard": {
+    "tiles": [
+      {
+        "p": "x",
+        "label": "X",
+        "n": 5,
+        "sub": "0 ♥"
+      }
+    ],
+    "volumeTotal": "0",
+    "volume": [
+      {
+        "p": "x",
+        "name": "X",
+        "pct": 0,
+        "raw": "0"
+      }
+    ],
+    "insight": ""
+  },
+  "voices": [],
+  "caveat": "YouTube / TikTok / Instagram 本次返回 0 条 —— 视频侧数据缺失。",
+  "rawNote": "",
+  "timeline": [
+    {
+      "day": "6月12日",
+      "dayNote": "周五",
+      "items": [
+        {
+          "id": "l30-x-447213a170c3",
+          "p": "x",
+          "feat": true,
+          "time": "",
+          "ago": "",
+          "who": "X",
+          "handle": "",
+          "score": 9,
+          "title": "A TWEET WITH 6.5 MILLION VIEWS JUST KILLED THE PROMPT ENGINEER JOB TITLE",
+          "sum": "A TWEET WITH 6.5 MILLION VIEWS JUST KILLED THE PROMPT ENGINEER JOB TITLE Peter Steinberger wrote 8 words that changed how builders think about AI: \"you should be designing loops that prompt your agent",
+          "tags": [
+            "Peter Steinberger"
+          ],
+          "stat": "",
+          "reason": "",
+          "url": "https://x.com/humzaakhalid/status/2065365984899391862"
+        }
+      ]
+    },
+    {
+      "day": "6月11日",
+      "dayNote": "周四",
+      "items": [
+        {
+          "id": "l30-x-bcf9a54a8716",
+          "p": "x",
+          "feat": true,
+          "time": "",
+          "ago": "",
+          "who": "X",
+          "handle": "",
+          "score": 9,
+          "title": "\"Loop engineering\" has been everywhere this past week.",
+          "sum": "\"Loop engineering\" has been everywhere this past week. The short version: you stop prompting AI agents by hand and start designing systems that prompt them for you. It started with two people. Boris C",
+          "tags": [
+            "Peter Steinberger"
+          ],
+          "stat": "",
+          "reason": "",
+          "url": "https://x.com/free_ai_guides/status/2065011148894969902"
+        },
+        {
+          "id": "l30-x-7b64ea90e449",
+          "p": "x",
+          "feat": true,
+          "time": "",
+          "ago": "",
+          "who": "X",
+          "handle": "",
+          "score": 9,
+          "title": "\"Stop prompting coding agents. Start designing loops.\" - Peter Steinberger",
+          "sum": "\"Stop prompting coding agents. Start designing loops.\" - Peter Steinberger Most devs are still stuck in: Prompt → Wait → Review → Repeat Meanwhile the cracked builders are creating loops that: • Find ",
+          "tags": [
+            "Peter Steinberger"
+          ],
+          "stat": "",
+          "reason": "",
+          "url": "https://x.com/_princegupta13/status/2065181758254203283"
+        }
+      ]
+    },
+    {
+      "day": "6月10日",
+      "dayNote": "周三",
+      "items": [
+        {
+          "id": "l30-x-31614a911292",
+          "p": "x",
+          "feat": true,
+          "time": "",
+          "ago": "",
+          "who": "X",
+          "handle": "",
+          "score": 10,
+          "title": "💡 Peter Steinberger put it plainly: \"You shouldn't be prompting coding agents anymore. You should be designing loops that prompt your agents",
+          "sum": "💡 Peter Steinberger put it plainly: \"You shouldn't be prompting coding agents anymore. You should be designing loops that prompt your agents.\" Boris Cherny, head of Claude Code at Anthropic, backed it",
+          "tags": [
+            "Peter Steinberger"
+          ],
+          "stat": "",
+          "reason": "",
+          "url": "https://x.com/DataScienceDojo/status/2064739436395434269"
+        }
+      ]
+    },
+    {
+      "day": "6月09日",
+      "dayNote": "周二",
+      "items": [
+        {
+          "id": "l30-x-2ed72eb10379",
+          "p": "x",
+          "feat": true,
+          "time": "",
+          "ago": "",
+          "who": "X",
+          "handle": "",
+          "score": 10,
+          "title": "Peter Steinberger recently said: \"You shouldn't be prompting coding agents anymore. You should be designing loops that prompt your agents.\"",
+          "sum": "Peter Steinberger recently said: \"You shouldn't be prompting coding agents anymore. You should be designing loops that prompt your agents.\" loop engineering is in the zeitgeist as when most people say",
+          "tags": [
+            "Peter Steinberger"
+          ],
+          "stat": "",
+          "reason": "",
+          "url": "https://x.com/omni_georgio/status/2064467117966049684"
+        }
+      ]
+    }
+  ]
+}

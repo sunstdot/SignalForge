@@ -1,0 +1,942 @@
+{
+  "query": "Anthropic",
+  "topic": "Anthropic",
+  "headline": "白宫绿灯后Fable 5重现全球,新工具Claude Science与Tag齐亮相",
+  "kicker": "综合简报 · 本周主线",
+  "lede": "美国商务部与Anthropic联手完成模型对齐评估后，正式解除出口管制，{b}Fable 5 和 Mythos 5 即将重返全球市场{/b}，被Polymarket赌徒视为万亿级流动性事件。与此同时，Anthropic 密集发布 {b}Claude Science 科研工作台与 Slack 代理同事 Claude Tag{/b}，但在意识营销上被微软公开指责。",
+  "consensus": {
+    "left": 85,
+    "right": 15,
+    "leftLabel": "利好释放",
+    "leftSub": "出口解禁、新品井喷",
+    "rightLabel": "意识争议",
+    "rightSub": "微软批评假装有意识"
+  },
+  "meta": {
+    "total": 41,
+    "platforms": {
+      "x": 19,
+      "reddit": 16,
+      "hn": 6
+    },
+    "took": "—",
+    "window": "近 30 天",
+    "featured": 12
+  },
+  "themes": [
+    {
+      "n": "01",
+      "title": "管制解除：Fable 5 与 Mythos 5 回归",
+      "html": "美国商务部长 Howard Lutnick 透露，<q>过去两周，我们与 Anthropic 密切合作分析和批准 Fable 5，以确保与整个美国政府对齐，并强化美国在 AI 领域的领导力</q> <src>@Reddit/Howard Lutnick</src>。随后官方正式宣布<hl>解除对 Anthropic 的出口管制</hl>，Fable 5 在中断 18 天后于次日全球重新开放，Mythos 5 仍仅限获批合作伙伴。<src>@x/e79735a4fa6c</src> Polymarket 交易员已提前下注，视其为<hl>万亿流动性事件</hl>。<src>@x/7c41962e1d73</src>"
+    },
+    {
+      "n": "02",
+      "title": "新产品矩阵：科学工作台与 Slack 代理",
+      "html": "Anthropic 推出<hl>Claude Science</hl>，定位为面向科学家的 AI 工作台，被描述为“Claude Code 但专为研究而建”。<src>@HN/1bac953b3c9a</src> 同期发布的<hl>Claude Tag</hl> 则作为代理式 AI 同事嵌入 Slack。<src>@HN/f7951b93b220</src> 同时 Claude Sonnet 5 也正式亮相，宣传口径强调<q>不越过任何红线</q>。<src>@x/5e6c3c2fdd1e</src> 新加坡保持着全球人均使用 Claude 最高的记录，显示国际用户对新产品的渴求。<src>@HN/e49690311bf0</src>"
+    },
+    {
+      "n": "03",
+      "title": "摩擦与质疑：意识营销、数据保留与诉讼",
+      "html": "微软 AI 负责人公开批评 Anthropic，<q>表现得好像 Claude 有意识</q>，引发对 AI 拟人化营销的争论。<src>@HN/8a5852c59879</src> 社区同时曝光 Anthropic 在 Claude Code 中内置<hl>监控式遥测</hl>，Fable 和 Mythos 模型还要求<hl> 30 天数据保留</hl>。<src>@Reddit/6c78bd9dd462, @HN/4f1bcef8ef09</src> 此外 Reddit 针对 Anthropic 违规抓取内容提起的诉讼已获联邦法院全部 5 项指控支持。<src>@x/25ba829f9457</src>"
+    }
+  ],
+  "patterns": [
+    {
+      "n": 1,
+      "text": "政府与企业联手通过对齐审批推动模型解禁，形成 AI 出口新范式",
+      "src": "@Reddit/621e6ffd207f",
+      "lead": true
+    },
+    {
+      "n": 2,
+      "text": "Anthropic 密集发布垂直场景工具（科研、协作），意图构建生态护城河",
+      "src": "@HN/1bac953b3c9a, @HN/f7951b93b220"
+    },
+    {
+      "n": 3,
+      "text": "意识营销遭遇竞争对手强烈反弹，暴露出 AI 行业对公众认知的争夺",
+      "src": "@HN/8a5852c59879"
+    },
+    {
+      "n": 4,
+      "text": "安全与隐私争议（遥测、数据保留、非法抓取）可能侵蚀用户信任",
+      "src": "@Reddit/6c78bd9dd462, @HN/4f1bcef8ef09"
+    },
+    {
+      "n": 5,
+      "text": "全球使用不均衡，新加坡等高使用率地区或成为地缘渗透的样本",
+      "src": "@HN/e49690311bf0"
+    }
+  ],
+  "deepDive": [
+    {
+      "k": "A",
+      "q": "美国为何突然快速解除对 Anthropic 的出口限制？",
+      "a": "根据商务部长 Lutnick 的声明，政府与 Anthropic 进行了为期两周的密切合作，对 Fable 5 进行对齐分析和审批，确保 <b>模型行为与美国利益一致</b>，最终视其为提升美国 AI 领导力的工具而放行。"
+    },
+    {
+      "k": "B",
+      "q": "Claude Science 与 Claude Code 有何不同？",
+      "a": "Claude Science 被定位为 <b>面向科学研究的 AI 工作台</b>，可能整合了数据处理、文献管理与假设生成等功能，而 Claude Code 更专注于软件工程。其推出表明 Anthropic 正从通用助手向 <b>垂直职业领域</b>扩展。"
+    },
+    {
+      "k": "C",
+      "q": "微软为何选择此时公开指责 Anthropic“假装有意识”？",
+      "a": "这可能是竞争对手间的 <b>公关叙事争夺战</b>。微软试图通过质疑 Anthropic 的意识营销，抢夺 <b>AI 安全与伦理的话语权</b>，同时暗示对方在产品包装上缺乏透明度，以影响开发者社区和企业客户的选择。"
+    }
+  ],
+  "dashboard": {
+    "tiles": [
+      {
+        "p": "x",
+        "label": "X",
+        "n": 19,
+        "sub": "123 ♥"
+      },
+      {
+        "p": "reddit",
+        "label": "Reddit",
+        "n": 16,
+        "sub": "14,540 ↑"
+      },
+      {
+        "p": "hn",
+        "label": "Hacker News",
+        "n": 6,
+        "sub": "931 pts"
+      }
+    ],
+    "volumeTotal": "15,594",
+    "volume": [
+      {
+        "p": "reddit",
+        "name": "Reddit",
+        "pct": 93.2,
+        "raw": "14,540"
+      },
+      {
+        "p": "hn",
+        "name": "Hacker News",
+        "pct": 6.0,
+        "raw": "931"
+      },
+      {
+        "p": "x",
+        "name": "X",
+        "pct": 0.8,
+        "raw": "123"
+      }
+    ],
+    "insight": "Hacker News 聚焦产品发布和商业竞争，Reddit 充斥监管变化与隐私吐槽，而 X 平台则迅速放大了 <b>解除管制的即时市场情绪与地缘信号</b>。"
+  },
+  "voices": [
+    "lebovic",
+    "MasterCryptoHq",
+    "zhodonx",
+    "CryptooIndia",
+    "dataking",
+    "isfttr"
+  ],
+  "caveat": "YouTube / TikTok / Instagram 本次返回 0 条 —— 视频侧数据缺失。",
+  "rawNote": "",
+  "timeline": [
+    {
+      "day": "7月01日",
+      "dayNote": "周三",
+      "items": [
+        {
+          "id": "l30-x-7c41962e1d73",
+          "p": "x",
+          "feat": true,
+          "time": "",
+          "ago": "",
+          "who": "_AsterDaily",
+          "handle": "_AsterDaily",
+          "score": 10,
+          "title": "🚨 Polymarket traders are front-running the next trillion-dollar liquidity event.\n\n​The US Commerce Dept just officially lifted the export ba",
+          "sum": "🚨 Polymarket traders are front-running the next trillion-dollar liquidity event. ​The US Commerce Dept just officially lifted the export ban on Anthropic’s Claude Fable 5 & Mythos 5 models. ​The immed",
+          "tags": [
+            "Anthropic"
+          ],
+          "stat": "2 likes, 0 replies, 0 reposts",
+          "reason": "Polymarket 投注者将解禁视为万亿流动性事件，生动捕捉了市场狂热情绪。",
+          "url": "https://x.com/_AsterDaily/status/2072219502490845596"
+        },
+        {
+          "id": "l30-hn-1bac953b3c9a",
+          "p": "hn",
+          "feat": true,
+          "time": "",
+          "ago": "",
+          "who": "isfttr",
+          "handle": "isfttr",
+          "score": 10,
+          "title": "Anthropic launches Claude Science: an AI workbench for scientists (2026)",
+          "sum": "Anthropic launches Claude Science: an AI workbench for scientists (2026)",
+          "tags": [
+            "Anthropic"
+          ],
+          "stat": "4 points, 0 comments",
+          "reason": "Claude Science 的亮相开辟了科研垂直赛道，展示产品矩阵扩展战略。",
+          "url": "https://lucasaguiar.xyz/pt/posts/claude-science-ai-workbench-cientistas-2026/"
+        },
+        {
+          "id": "l30-x-bc81ac69990d",
+          "p": "x",
+          "feat": true,
+          "time": "",
+          "ago": "",
+          "who": "zhodonx",
+          "handle": "zhodonx",
+          "score": 9,
+          "title": "The question got answered!\n\nA couple days ago i asked if Fable5 would ever open back up for the rest of us.\n\nToday, it did.\n\nAs of last nigh",
+          "sum": "The question got answered! A couple days ago i asked if Fable5 would ever open back up for the rest of us. Today, it did. As of last night, Commerce has fully lifted the ban on Claude Fable 5 model. G",
+          "tags": [
+            "Anthropic"
+          ],
+          "stat": "7 likes, 2 replies, 0 reposts",
+          "reason": "用户第一时间确认 Fable 5 重新开放，成为社区传播的关键节点。",
+          "url": "https://x.com/zhodonx/status/2072220937160659098"
+        },
+        {
+          "id": "l30-x-85ef70ff82d1",
+          "p": "x",
+          "feat": true,
+          "time": "",
+          "ago": "",
+          "who": "CryptooIndia",
+          "handle": "CryptooIndia",
+          "score": 8,
+          "title": "JUST IN: 🇺🇸 Anthropic says Claude Fable 5 returns globally tomorrow after the US lifts restrictions; Mythos 5 remains limited to approved pa",
+          "sum": "JUST IN: 🇺🇸 Anthropic says Claude Fable 5 returns globally tomorrow after the US lifts restrictions; Mythos 5 remains limited to approved partners. https://t.co/LBtN18JPM8",
+          "tags": [
+            "Anthropic"
+          ],
+          "stat": "6 likes, 0 replies, 1 reposts",
+          "reason": "官方声明明确了 Fable 5 全球回归与 Mythos 5 受限并存的双轨策略。",
+          "url": "https://x.com/CryptooIndia/status/2072219002638856571"
+        },
+        {
+          "id": "l30-x-5e6c3c2fdd1e",
+          "p": "x",
+          "feat": true,
+          "time": "",
+          "ago": "",
+          "who": "xataka",
+          "handle": "xataka",
+          "score": 8,
+          "title": "Anthropic acaba de lanzar Claude Sonnet 5 con un objetivo claro: no cruzar ninguna línea roja  https://t.co/WgqzShMKIY",
+          "sum": "Anthropic acaba de lanzar Claude Sonnet 5 con un objetivo claro: no cruzar ninguna línea roja https://t.co/WgqzShMKIY",
+          "tags": [
+            "Anthropic"
+          ],
+          "stat": "3 likes, 0 replies, 0 reposts",
+          "reason": "Claude Sonnet 5 以不越红线为卖点，直接回应了对安全与合规的期待。",
+          "url": "https://x.com/xataka/status/2072219779713073595"
+        },
+        {
+          "id": "l30-x-e79735a4fa6c",
+          "p": "x",
+          "feat": true,
+          "time": "",
+          "ago": "",
+          "who": "MasterCryptoHq",
+          "handle": "MasterCryptoHq",
+          "score": 8,
+          "title": "Tomorrow, Fable 5 will be available again after being offline for 18 days.\n\nThe U.S. Commerce Department had ordered Anthropic to block acce",
+          "sum": "Tomorrow, Fable 5 will be available again after being offline for 18 days. The U.S. Commerce Department had ordered Anthropic to block access for all foreign nationals after Amazon found a jailbreak. ",
+          "tags": [
+            "Anthropic"
+          ],
+          "stat": "0 likes, 2 replies, 0 reposts",
+          "reason": "解释了 Fable 5 下线 18 天是商务部出于国家安全暂时阻止外国访问的结果。",
+          "url": "https://x.com/MasterCryptoHq/status/2072221603812049209"
+        },
+        {
+          "id": "l30-x-443e2fee3d30",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "stevekimoi",
+          "handle": "stevekimoi",
+          "score": 7,
+          "title": "Anthropic has officially released its docs on getting started with loops \nhttps://t.co/8dH4nUTHye",
+          "sum": "Anthropic has officially released its docs on getting started with loops https://t.co/8dH4nUTHye",
+          "tags": [
+            "Anthropic"
+          ],
+          "stat": "4 likes, 0 replies, 0 reposts",
+          "reason": "",
+          "url": "https://x.com/stevekimoi/status/2072221791452352740"
+        },
+        {
+          "id": "l30-reddit-7101d58c4142",
+          "p": "reddit",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "Reddit",
+          "handle": "",
+          "score": 7,
+          "title": "Fable 5 will divert coding to Opus 4.8 according to Anthropic",
+          "sum": "Fable 5 will divert coding to Opus 4.8 according to Anthropic",
+          "tags": [
+            "Anthropic"
+          ],
+          "stat": "79 num_comments, 189 score",
+          "reason": "",
+          "url": "https://www.reddit.com/r/singularity/comments/1ukbtjm/fable_5_will_divert_coding_to_opus_48_according/"
+        },
+        {
+          "id": "l30-reddit-45605ee01749",
+          "p": "reddit",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "Reddit",
+          "handle": "",
+          "score": 7,
+          "title": "Does Anthropic Stand Behind its June 9th Plan?",
+          "sum": "Does Anthropic Stand Behind its June 9th Plan?",
+          "tags": [
+            "Anthropic"
+          ],
+          "stat": "6 num_comments, 23 score",
+          "reason": "",
+          "url": "https://www.reddit.com/r/ClaudeAI/comments/1ukbuhv/does_anthropic_stand_behind_its_june_9th_plan/"
+        },
+        {
+          "id": "l30-x-15730160f64f",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "Terwin670939",
+          "handle": "Terwin670939",
+          "score": 6,
+          "title": "@ItsTheDaybreak @AnthropicAI Anthropic is run by jews. This is the worldview of jews.",
+          "sum": "@ItsTheDaybreak @AnthropicAI Anthropic is run by jews. This is the worldview of jews.",
+          "tags": [
+            "Anthropic"
+          ],
+          "stat": "0 likes, 0 replies, 0 reposts",
+          "reason": "",
+          "url": "https://x.com/Terwin670939/status/2072221991604785660"
+        },
+        {
+          "id": "l30-x-00e54d12cc2f",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "RobotChocobo",
+          "handle": "RobotChocobo",
+          "score": 6,
+          "title": "@advnt0x5 @basedanarki @airkatakana @DarioAmodei drop anthropic",
+          "sum": "@advnt0x5 @basedanarki @airkatakana @DarioAmodei drop anthropic",
+          "tags": [
+            "Anthropic"
+          ],
+          "stat": "0 likes, 0 replies, 0 reposts",
+          "reason": "",
+          "url": "https://x.com/RobotChocobo/status/2072221858922217644"
+        },
+        {
+          "id": "l30-x-9aea4af0ddcc",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "RobotChocobo",
+          "handle": "RobotChocobo",
+          "score": 6,
+          "title": "@airkatakana anthropic is a bad actor, drop 'em",
+          "sum": "@airkatakana anthropic is a bad actor, drop 'em",
+          "tags": [
+            "Anthropic"
+          ],
+          "stat": "0 likes, 0 replies, 0 reposts",
+          "reason": "",
+          "url": "https://x.com/RobotChocobo/status/2072221565828378996"
+        },
+        {
+          "id": "l30-x-6dfc8eea559f",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "iambullish",
+          "handle": "iambullish",
+          "score": 6,
+          "title": "anthropic is a joke right now https://t.co/4ZPG9m77pd",
+          "sum": "anthropic is a joke right now https://t.co/4ZPG9m77pd",
+          "tags": [
+            "Anthropic"
+          ],
+          "stat": "0 likes, 0 replies, 0 reposts",
+          "reason": "",
+          "url": "https://x.com/iambullish/status/2072222023971967266"
+        },
+        {
+          "id": "l30-x-20e7b63c24d9",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "__ghostfail",
+          "handle": "__ghostfail",
+          "score": 6,
+          "title": "in the world where training deliberately targets this, anthropic employees wouldn't be allowed to acknowledge it",
+          "sum": "in the world where training deliberately targets this, anthropic employees wouldn't be allowed to acknowledge it",
+          "tags": [
+            "Anthropic"
+          ],
+          "stat": "0 likes, 0 replies, 0 reposts",
+          "reason": "",
+          "url": "https://x.com/__ghostfail/status/2072222203236774014"
+        },
+        {
+          "id": "l30-x-25ba829f9457",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "jaydenwlol",
+          "handle": "jaydenwlol",
+          "score": 6,
+          "title": "Reddit sued Anthropic for scraping their platform 100,000+ times AFTER being told to stop.\n\nFederal court ruled in Reddit’s favor on ALL 5 c",
+          "sum": "Reddit sued Anthropic for scraping their platform 100,000+ times AFTER being told to stop. Federal court ruled in Reddit’s favor on ALL 5 claims. Anthropic’s legal position is getting worse, not bette",
+          "tags": [
+            "Anthropic"
+          ],
+          "stat": "0 likes, 0 replies, 0 reposts",
+          "reason": "",
+          "url": "https://x.com/jaydenwlol/status/2072222139667956167"
+        },
+        {
+          "id": "l30-x-4fd915e642af",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "manateelazycat",
+          "handle": "manateelazycat",
+          "score": 6,
+          "title": "刚公司小伙伴说，Anthropic 都快把人整得 PTSD 了🤡\n\n收到了 Claude 的邮件还以为自己被封号 https://t.co/i6VtuCDnwK",
+          "sum": "刚公司小伙伴说，Anthropic 都快把人整得 PTSD 了🤡 收到了 Claude 的邮件还以为自己被封号 https://t.co/i6VtuCDnwK",
+          "tags": [
+            "Anthropic"
+          ],
+          "stat": "0 likes, 0 replies, 0 reposts",
+          "reason": "",
+          "url": "https://x.com/manateelazycat/status/2072222133330248104"
+        },
+        {
+          "id": "l30-x-cc963ab5b3c9",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "TinaJucyBlue",
+          "handle": "TinaJucyBlue",
+          "score": 6,
+          "title": "anthropic lifting export controls the same week sonnet 5 drops at a fraction of opus cost feels a little too coordinated  ai companies just",
+          "sum": "anthropic lifting export controls the same week sonnet 5 drops at a fraction of opus cost feels a little too coordinated ai companies just copied the apple playbook, tier your models like iphones then",
+          "tags": [
+            "Anthropic"
+          ],
+          "stat": "0 likes, 0 replies, 0 reposts",
+          "reason": "",
+          "url": "https://x.com/TinaJucyBlue/status/2072222046906397110"
+        },
+        {
+          "id": "l30-x-d3c0d81b2ab4",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "blt_s",
+          "handle": "blt_s",
+          "score": 6,
+          "title": "@MartiniGuyYT Fable 5 and Mythos 5 are back online, Japanese traders will likely flock to Anthropic now.",
+          "sum": "@MartiniGuyYT Fable 5 and Mythos 5 are back online, Japanese traders will likely flock to Anthropic now.",
+          "tags": [
+            "Anthropic"
+          ],
+          "stat": "0 likes, 0 replies, 0 reposts",
+          "reason": "",
+          "url": "https://x.com/blt_s/status/2072222023074324936"
+        },
+        {
+          "id": "l30-x-1e259072b42c",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "EfficioiVitae",
+          "handle": "EfficioiVitae",
+          "score": 3,
+          "title": "Shadow Clone v0.2.11 is out — free, open-source orchestration for Claude Code.\n\nAdds slash commands for planning, refactor, debug, audit, pl",
+          "sum": "Shadow Clone v0.2.11 is out — free, open-source orchestration for Claude Code. Adds slash commands for planning, refactor, debug, audit, plus a paired-review loop where a second model judges your work",
+          "tags": [
+            "Anthropic"
+          ],
+          "stat": "0 likes, 0 replies, 0 reposts",
+          "reason": "",
+          "url": "https://x.com/EfficioiVitae/status/2072220545857499444"
+        },
+        {
+          "id": "l30-reddit-7510b7c1c4a5",
+          "p": "reddit",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "Reddit",
+          "handle": "",
+          "score": 3,
+          "title": "What is Google ai on about",
+          "sum": "What is Google ai on about",
+          "tags": [
+            "Anthropic"
+          ],
+          "stat": "6 num_comments, 5 score",
+          "reason": "",
+          "url": "https://www.reddit.com/r/artificial/comments/1uk6brc/what_is_google_ai_on_about/"
+        },
+        {
+          "id": "l30-reddit-6d369dad11c8",
+          "p": "reddit",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "Reddit",
+          "handle": "",
+          "score": 1,
+          "title": "The world's most anticipated model returns after 18 days of waiting. Have you prepared your list of questions yet?",
+          "sum": "The world's most anticipated model returns after 18 days of waiting. Have you prepared your list of questions yet?",
+          "tags": [
+            "Anthropic"
+          ],
+          "stat": "18 num_comments, 15 score",
+          "reason": "",
+          "url": "https://www.reddit.com/r/Anthropic/comments/1ukbtbm/the_worlds_most_anticipated_model_returns_after/"
+        },
+        {
+          "id": "l30-x-a68a14a61df0",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "AroNetwork",
+          "handle": "AroNetwork",
+          "score": 0,
+          "title": "The Agents Are Here. Where Will They Live?",
+          "sum": "The Agents Are Here. Where Will They Live?",
+          "tags": [
+            "Anthropic"
+          ],
+          "stat": "1 likes, 0 replies, 1 reposts",
+          "reason": "",
+          "url": "https://x.com/AroNetwork/status/2072221654953103723"
+        }
+      ]
+    },
+    {
+      "day": "6月30日",
+      "dayNote": "周二",
+      "items": [
+        {
+          "id": "l30-reddit-621e6ffd207f",
+          "p": "reddit",
+          "feat": true,
+          "time": "",
+          "ago": "",
+          "who": "Reddit",
+          "handle": "",
+          "score": 10,
+          "title": "Howard Lutnick: \"Over the past two weeks, we have worked closely with Anthropic to analyze and approve Fable 5 to ensure alignment across the US Government and strengthen America’s leadership in AI.",
+          "sum": "Howard Lutnick: \"Over the past two weeks, we have worked closely with Anthropic to analyze and approve Fable 5 to ensure alignment across the US Government and strengthen America’s leadership in AI.",
+          "tags": [
+            "Anthropic"
+          ],
+          "stat": "22 num_comments, 77 score",
+          "reason": "官方首次详细说明政府与 Anthropic 共同进行模型对齐和审批的过程。",
+          "url": "https://www.reddit.com/r/singularity/comments/1uk5khd/howard_lutnick_over_the_past_two_weeks_we_have/"
+        },
+        {
+          "id": "l30-reddit-4d7b78803170",
+          "p": "reddit",
+          "feat": true,
+          "time": "",
+          "ago": "",
+          "who": "Reddit",
+          "handle": "",
+          "score": 10,
+          "title": "Trump Administration Plans to Lift Export Controls on Anthropic’s Mythos and Fable AI Models",
+          "sum": "Trump Administration Plans to Lift Export Controls on Anthropic’s Mythos and Fable AI Models",
+          "tags": [
+            "Anthropic"
+          ],
+          "stat": "19 num_comments, 64 score",
+          "reason": "提前透露解禁计划，引发社区对模型回归和市场变局的高度期待。",
+          "url": "https://www.reddit.com/r/Anthropic/comments/1uk55ke/trump_administration_plans_to_lift_export/"
+        },
+        {
+          "id": "l30-reddit-2b5fc7971495",
+          "p": "reddit",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "Reddit",
+          "handle": "",
+          "score": 7,
+          "title": "Anthropic will rerelease Fabel 5 and Mythos 5",
+          "sum": "Anthropic will rerelease Fabel 5 and Mythos 5",
+          "tags": [
+            "Anthropic"
+          ],
+          "stat": "18 num_comments, 71 score",
+          "reason": "",
+          "url": "https://www.reddit.com/r/ClaudeAI/comments/1uk5sxu/anthropic_will_rerelease_fabel_5_and_mythos_5/"
+        },
+        {
+          "id": "l30-reddit-f63786fb2dfa",
+          "p": "reddit",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "Reddit",
+          "handle": "",
+          "score": 7,
+          "title": "What is the point your are trying to make here Anthropic?",
+          "sum": "What is the point your are trying to make here Anthropic?",
+          "tags": [
+            "Anthropic"
+          ],
+          "stat": "39 num_comments, 60 score",
+          "reason": "",
+          "url": "https://www.reddit.com/r/Anthropic/comments/1ujyqkf/what_is_the_point_your_are_trying_to_make_here/"
+        },
+        {
+          "id": "l30-reddit-6c78bd9dd462",
+          "p": "reddit",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "Reddit",
+          "handle": "",
+          "score": 7,
+          "title": "Anthropic embedded spyware in Claude Code — and attempted to hide it from you",
+          "sum": "Anthropic embedded spyware in Claude Code — and attempted to hide it from you",
+          "tags": [
+            "Anthropic"
+          ],
+          "stat": "307 num_comments, 1448 score",
+          "reason": "",
+          "url": "https://www.reddit.com/r/ClaudeAI/comments/1ujila1/anthropic_embedded_spyware_in_claude_code_and/"
+        },
+        {
+          "id": "l30-reddit-3146a04708f6",
+          "p": "reddit",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "Reddit",
+          "handle": "",
+          "score": 7,
+          "title": "Anthropic says Claude Fable 5 and Mythos 5 are coming back tomorrow",
+          "sum": "Anthropic says Claude Fable 5 and Mythos 5 are coming back tomorrow",
+          "tags": [
+            "Anthropic"
+          ],
+          "stat": "90 num_comments, 406 score",
+          "reason": "",
+          "url": "https://www.reddit.com/r/ClaudeAI/comments/1uk5ufm/anthropic_says_claude_fable_5_and_mythos_5_are/"
+        },
+        {
+          "id": "l30-reddit-d13394a9ca38",
+          "p": "reddit",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "Reddit",
+          "handle": "",
+          "score": 7,
+          "title": "Anthropic just shipped claude science, basically claude code but for research",
+          "sum": "Anthropic just shipped claude science, basically claude code but for research",
+          "tags": [
+            "Anthropic"
+          ],
+          "stat": "16 num_comments, 109 score",
+          "reason": "",
+          "url": "https://www.reddit.com/r/singularity/comments/1ujw4qe/anthropic_just_shipped_claude_science_basically/"
+        },
+        {
+          "id": "l30-reddit-d51137defc5a",
+          "p": "reddit",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "Reddit",
+          "handle": "",
+          "score": 2,
+          "title": "Worldview of AI models compared to 88 countries",
+          "sum": "Worldview of AI models compared to 88 countries",
+          "tags": [
+            "Anthropic"
+          ],
+          "stat": "198 num_comments, 357 score",
+          "reason": "",
+          "url": "https://www.reddit.com/r/singularity/comments/1ujom1v/worldview_of_ai_models_compared_to_88_countries/"
+        },
+        {
+          "id": "l30-reddit-0ff36a103f56",
+          "p": "reddit",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "Reddit",
+          "handle": "",
+          "score": 1,
+          "title": "Politico Reporter: Export Controls on Fable 5 Expected to be Lifted Tonight (6/30)",
+          "sum": "Politico Reporter: Export Controls on Fable 5 Expected to be Lifted Tonight (6/30)",
+          "tags": [
+            "Anthropic"
+          ],
+          "stat": "21 num_comments, 72 score",
+          "reason": "",
+          "url": "https://www.reddit.com/r/ClaudeAI/comments/1uk4wwl/politico_reporter_export_controls_on_fable_5/"
+        }
+      ]
+    },
+    {
+      "day": "6月28日",
+      "dayNote": "周日",
+      "items": [
+        {
+          "id": "l30-reddit-0e0cb5fb2bda",
+          "p": "reddit",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "Reddit",
+          "handle": "",
+          "score": 1,
+          "title": "Meanwhile in China, 10,000+ delivery bots are transforming last-mile fulfillment by making deliveries faster, cheaper, and more autonomous",
+          "sum": "Meanwhile in China, 10,000+ delivery bots are transforming last-mile fulfillment by making deliveries faster, cheaper, and more autonomous",
+          "tags": [
+            "Anthropic"
+          ],
+          "stat": "472 num_comments, 1974 score",
+          "reason": "",
+          "url": "https://www.reddit.com/r/singularity/comments/1uhxshz/meanwhile_in_china_10000_delivery_bots_are/"
+        }
+      ]
+    },
+    {
+      "day": "6月26日",
+      "dayNote": "周五",
+      "items": [
+        {
+          "id": "l30-hn-fba181286680",
+          "p": "hn",
+          "feat": true,
+          "time": "",
+          "ago": "",
+          "who": "dataking",
+          "handle": "dataking",
+          "score": 10,
+          "title": "Trump admin allows Anthropic to release Mythos AI model to some companies",
+          "sum": "Trump admin allows Anthropic to release Mythos AI model to some companies",
+          "tags": [
+            "Anthropic"
+          ],
+          "stat": "3 points, 1 comments",
+          "reason": "标志性政策转向，特朗普政府允许 Mythos 发布为后续全面解禁释放信号。",
+          "url": "https://www.cnbc.com/2026/06/26/us-government-anthropic-claude-mythos5-ai.html"
+        }
+      ]
+    },
+    {
+      "day": "6月25日",
+      "dayNote": "周四",
+      "items": [
+        {
+          "id": "l30-hn-e49690311bf0",
+          "p": "hn",
+          "feat": true,
+          "time": "",
+          "ago": "",
+          "who": "LostMyLogin",
+          "handle": "LostMyLogin",
+          "score": 10,
+          "title": "Singapore Tops Global per Capita Usage of Anthropic's Claude AI",
+          "sum": "Singapore Tops Global per Capita Usage of Anthropic's Claude AI",
+          "tags": [
+            "Anthropic"
+          ],
+          "stat": "3 points, 0 comments",
+          "reason": "反映全球对 Claude 的需求热度，新加坡人均使用最高印证了亚太市场的战略价值。",
+          "url": "https://opentools.ai/news/singapore-tops-global-per-capita-usage-of-anthropics-claude-ai"
+        },
+        {
+          "id": "l30-x-94d42a38fcbb",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "@robot2trade1",
+          "handle": "@robot2trade1",
+          "score": 6,
+          "title": "Major Google Brain Drain to Anthropic – June 2026Breaking: Two senior AI researchers central to Google’s Gemini — Jonas Adler (key to AI cod",
+          "sum": "Major Google Brain Drain to Anthropic – June 2026Breaking: Two senior AI researchers central to Google’s Gemini — Jonas Adler (key to AI coding efforts) and Alexander Pritzel (AI training systems) — a",
+          "tags": [
+            "OpenAI"
+          ],
+          "stat": "",
+          "reason": "",
+          "url": "https://x.com/robot2trade1/status/2069972638428991719"
+        }
+      ]
+    },
+    {
+      "day": "6月23日",
+      "dayNote": "周二",
+      "items": [
+        {
+          "id": "l30-hn-f7951b93b220",
+          "p": "hn",
+          "feat": true,
+          "time": "",
+          "ago": "",
+          "who": "thm",
+          "handle": "thm",
+          "score": 9,
+          "title": "Anthropic rolls out Claude Tag, your new agentic AI coworker in Slack",
+          "sum": "Anthropic rolls out Claude Tag, your new agentic AI coworker in Slack",
+          "tags": [
+            "Anthropic"
+          ],
+          "stat": "3 points, 0 comments",
+          "reason": "Claude Tag 嵌入 Slack 标志着 Anthropic 代理 AI 正式进入企业协作场景。",
+          "url": "https://www.zdnet.com/article/anthropic-claude-tag-agentic-ai-coworker-slack/"
+        }
+      ]
+    },
+    {
+      "day": "6月20日",
+      "dayNote": "周六",
+      "items": [
+        {
+          "id": "l30-reddit-5f28bf99c179",
+          "p": "reddit",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "Reddit",
+          "handle": "",
+          "score": 2,
+          "title": "z.AI as the number 2 gives praise to the number 1 open source model",
+          "sum": "z.AI as the number 2 gives praise to the number 1 open source model",
+          "tags": [
+            "Anthropic"
+          ],
+          "stat": "160 num_comments, 1089 score",
+          "reason": "",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uaxktf/zai_as_the_number_2_gives_praise_to_the_number_1/"
+        }
+      ]
+    },
+    {
+      "day": "6月13日",
+      "dayNote": "周六",
+      "items": [
+        {
+          "id": "l30-x-b7f29839304b",
+          "p": "x",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "MasterCryptoHq",
+          "handle": "MasterCryptoHq",
+          "score": 6,
+          "title": "The US government has stopped Anthropic's two best AI models from being used by anyone in the world.\n\nIt was not because of a hack or a tech",
+          "sum": "The US government has stopped Anthropic's two best AI models from being used by anyone in the world. It was not because of a hack or a technical problem. The reason was a claim that someone found a wa",
+          "tags": [
+            "Anthropic"
+          ],
+          "stat": "62 likes, 1 replies, 31 reposts",
+          "reason": "",
+          "url": "https://x.com/MasterCryptoHq/status/2065714696494473489"
+        }
+      ]
+    },
+    {
+      "day": "6月10日",
+      "dayNote": "周三",
+      "items": [
+        {
+          "id": "l30-hn-8a5852c59879",
+          "p": "hn",
+          "feat": true,
+          "time": "",
+          "ago": "",
+          "who": "Timofeibu",
+          "handle": "Timofeibu",
+          "score": 8,
+          "title": "Microsoft AI head calls out Anthropic for acting like Claude is conscious",
+          "sum": "Microsoft AI head calls out Anthropic for acting like Claude is conscious",
+          "tags": [
+            "Anthropic"
+          ],
+          "stat": "4 points, 0 comments",
+          "reason": "微软高调批评意识营销，揭示了 AI 行业围绕公众认知的深层摩擦。",
+          "url": "https://www.theverge.com/tech/947197/microsoft-ai-mustafa-suleyman-anthropic-claude-conscious"
+        }
+      ]
+    },
+    {
+      "day": "6月09日",
+      "dayNote": "周二",
+      "items": [
+        {
+          "id": "l30-hn-4f1bcef8ef09",
+          "p": "hn",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "lebovic",
+          "handle": "lebovic",
+          "score": 6,
+          "title": "Anthropic requires 30 day data retention for Fable and Mythos",
+          "sum": "Anthropic requires 30 day data retention for Fable and Mythos",
+          "tags": [
+            "Anthropic"
+          ],
+          "stat": "609 points, 304 comments",
+          "reason": "",
+          "url": "https://support.claude.com/en/articles/15425996-data-retention-practices-for-mythos-class-models"
+        },
+        {
+          "id": "l30-reddit-70e820b836d5",
+          "p": "reddit",
+          "feat": false,
+          "time": "",
+          "ago": "",
+          "who": "Reddit",
+          "handle": "",
+          "score": 1,
+          "title": "Claude Fable 5 feels less like a model launch and more like a preview of AI inequality",
+          "sum": "Claude Fable 5 feels less like a model launch and more like a preview of AI inequality",
+          "tags": [
+            "Anthropic"
+          ],
+          "stat": "1015 num_comments, 6095 score",
+          "reason": "",
+          "url": "https://www.reddit.com/r/ClaudeAI/comments/1u1fsdi/claude_fable_5_feels_less_like_a_model_launch_and/"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,608 @@
+{
+  "date": "2026-06-04",
+  "opportunities": [
+    {
+      "opportunity_title": "LLM Token Saver—自动上下文压缩代理服务",
+      "core_insight": "开源工具已证明可无损压缩上下文60-95%，将其封装为即插即用的云端API代理，可直接降低所有LLM调用成本。",
+      "product_form": "帮助使用GPT等LLM的开发者/企业自动压缩上下文、节省token费用的云端代理服务（含MCP集成）。",
+      "target_users": "调用OpenAI等API的中小团队或独立开发者，token成本敏感，月支出超$100，付费意愿强。",
+      "mvp_features": [
+        "一键接入的API代理，自动压缩输入",
+        "MCP服务器一键部署",
+        "压缩率与原始回复质量对比仪表盘"
+      ],
+      "business_model": "免费额度+按节省token量订阅，$9/月起",
+      "competitive_barrier": "",
+      "risks": "压缩可能改变模型推理结果，需大量测试保证质量无损",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 19,
+      "source_title": "chopratejas/headroom — Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/chopratejas/headroom",
+      "item_id": "github-d88518bc14d5"
+    },
+    {
+      "opportunity_title": "无代码网页数据监控机器人",
+      "core_insight": "自适应反爬机制让非开发者能稳定抓取数据，此前商业抓取工具昂贵或技术门槛高",
+      "product_form": "帮助市场分析师/电商运营无代码抓取竞品价格、舆情数据的SaaS工具",
+      "target_users": "电商运营、市场分析师，需频繁监控网页数据，付费意愿强",
+      "mvp_features": [
+        "输入URL自动提取结构化数据",
+        "定时监控页面变化并告警",
+        "导出/API交付数据"
+      ],
+      "business_model": "按月订阅，基础版$29/月，含5000次抓取",
+      "competitive_barrier": "",
+      "risks": "法律合规风险，需遵守robots.txt及数据使用条款",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 18,
+      "source_title": "D4Vinci/Scrapling — 🕷️ An adaptive Web Scraping framework that handles everything from a single requ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/D4Vinci/Scrapling",
+      "item_id": "github-2c69330ad020"
+    },
+    {
+      "opportunity_title": "离线私密AI办公助手",
+      "core_insight": "大模型本地推理成本骤降，使普通PC即可承载私密AI，免去云端数据泄露担忧",
+      "product_form": "帮助注重隐私的企业员工/个人通过本地大模型处理文档、邮件的桌面应用",
+      "target_users": "律师、医生、金融从业者等处理敏感信息，愿为隐私付费",
+      "mvp_features": [
+        "一键下载并启动70B模型",
+        "本地私密聊天和文档问答",
+        "离线使用不依赖网络"
+      ],
+      "business_model": "一次性付费$49，含模型下载和更新服务",
+      "competitive_barrier": "",
+      "risks": "模型推理速度是否可接受，用户硬件门槛（4GB VRAM显卡仍需普及）",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 18,
+      "source_title": "lyogavin/airllm — AirLLM 70B inference with single 4GB GPU",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/lyogavin/airllm",
+      "item_id": "github-d21de4367b63"
+    },
+    {
+      "opportunity_title": "AI数学竞赛教练：高精度推理辅导平台",
+      "core_insight": "模型在竞赛数学推理上达到顶尖水平，长上下文可承载持续辅导对话，使个性化竞赛训练产品达到可用门槛",
+      "product_form": "帮助高中生和竞赛选手攻克高难度数学题的AI互动辅导与错题分析平台",
+      "target_users": "准备AIME/高考压轴题的学生与家长，数学爱好者，愿为提升成绩按月订阅",
+      "mvp_features": [
+        "题目拍摄/输入后逐步解析与讲解",
+        "256K上下文记忆的个性化学习路径",
+        "错题本与弱项诊断报告"
+      ],
+      "business_model": "月度会员$20，含基础题量；高级套餐$35不限量",
+      "competitive_barrier": "",
+      "risks": "模型API可用性与调用成本，教育类产品需要确保解题准确性和内容安全",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 18,
+      "source_title": "Microsoft Build: MAI-Thinking-1 and MAI Family models, Surface RTX Spark Dev Box, and OpenClaw in Windows",
+      "source": "Smol AI News",
+      "source_type": "smolai",
+      "source_url": "https://news.smol.ai/issues/26-06-02-msft-mai-2/",
+      "item_id": "rss-smol-ai-news-37062c34fd5a"
+    },
+    {
+      "opportunity_title": "No-AI Google搜索洗洁精",
+      "core_insight": "&udm=14参数能强制谷歌返回无AI摘要的传统搜索结果，用户痛恨AI摘要但不知该参数，可封装为极简前端工具。",
+      "product_form": "帮助谷歌用户一键获取无AI摘要搜索结果的浏览器扩展+轻量搜索引擎",
+      "target_users": "讨厌AI生成摘要、追求快速精准搜索结果的知识工作者与普通网民，愿为干净体验小额付费",
+      "mvp_features": [
+        "搜索框前端，所有查询自动附加 &udm=14 参数",
+        "Chrome/Firefox扩展，自动为Google搜索URL注入 &udm=14 参数",
+        "支持同时聚合 DuckDuckGo 等其他无AI摘要引擎的备选结果"
+      ],
+      "business_model": "基础功能免费；高级无广告版 $1/月 或 一次性买断 $5",
+      "competitive_barrier": "",
+      "risks": "Google随时封禁或修改 &udm=14 参数导致产品失效",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 18,
+      "source_title": "One &udm After Another",
+      "source": "Tedium",
+      "source_type": "rss",
+      "source_url": "https://feed.tedium.co/link/15204/17351430/google-ai-udm14-reflection",
+      "item_id": "atom-tedium-5563d9f30ec5"
+    },
+    {
+      "opportunity_title": "无审查多模态图片理解API",
+      "core_insight": "主流API有严格内容过滤，拦截了成人、医学影像等合法需求；该模型解锁无过滤能力，可服务被拒绝的垂直场景",
+      "product_form": "帮助需处理敏感图像的用户绕过审查的私有化图片描述与分析API",
+      "target_users": "成人内容制作者、医学影像团队、内容审核系统开发者，愿为无过滤和隐私付费",
+      "mvp_features": [
+        "图像描述生成（无过滤）",
+        "按提示词分析图片内容",
+        "REST API与本地Docker部署"
+      ],
+      "business_model": "按调用量计费$0.99/千次，或本地授权$49/月",
+      "competitive_barrier": "",
+      "risks": "法律和道德风险极高，可能被滥用于违法用途，支付通道易被封",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 17,
+      "source_title": "🤗 HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+      "item_id": "hf-model-1464fa38faac"
+    },
+    {
+      "opportunity_title": "RAG Chunk Optimizer—面向RAG应用的上下文压缩插件",
+      "core_insight": "RAG类应用常因大量无关块导致成本飙升，该压缩能力可插件化集成到LangChain/LlamaIndex，成为标准组件。",
+      "product_form": "帮助RAG应用开发者自动压缩检索块、降低推理成本的开源插件+托管清洗服务。",
+      "target_users": "使用LangChain等构建知识库问答的开发者，面临高token消耗和延迟，愿意为降本增效付费。",
+      "mvp_features": [
+        "LangChain/LlamaIndex即装即用中间件",
+        "自适应压缩强度配置",
+        "压缩块可追溯性审计页面"
+      ],
+      "business_model": "开源免费+托管云端版按请求计费",
+      "competitive_barrier": "",
+      "risks": "开源社区可能快速涌现同类免费方案，需快速建立品牌和插件生态",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "chopratejas/headroom — Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/chopratejas/headroom",
+      "item_id": "github-d88518bc14d5"
+    },
+    {
+      "opportunity_title": "个人AI记忆助理Web应用",
+      "core_insight": "高性能记忆引擎让个人用户能构建可搜索的长期记忆库，解决信息遗忘",
+      "product_form": "帮助信息工作者保存网页/笔记并用自然语言回忆查找的Web应用",
+      "target_users": "研究者、学生、知识工作者，需要管理大量信息，付费订阅意愿中等",
+      "mvp_features": [
+        "浏览器插件一键收藏网页到记忆库",
+        "自然语言搜索过去保存的内容",
+        "AI自动摘要和关联"
+      ],
+      "business_model": "Freemium，免费10条记忆/天，高级$8/月无限存储",
+      "competitive_barrier": "",
+      "risks": "依赖Supermemory后端稳定性，数据隐私需自部署或信任平台",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "supermemoryai/supermemory — Memory engine and app that is extremely fast, scalable. The Memory API for the A",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/supermemoryai/supermemory",
+      "item_id": "github-7a6c007db3eb"
+    },
+    {
+      "opportunity_title": "离线隐私AI记事本",
+      "core_insight": "用户对云端AI隐私担忧加剧，1B模型使完全本地的智能笔记、摘要和检索成为可能，无需联网",
+      "product_form": "帮助律师、记者等敏感职业在本地安全进行笔记整理和问答的桌面应用",
+      "target_users": "律师、医生、记者、企业高管等处理保密信息的知识工作者，愿一次性买断",
+      "mvp_features": [
+        "本地笔记自动摘要与分类",
+        "基于笔记内容的问答（离线RAG）",
+        "端侧写作改写建议"
+      ],
+      "business_model": "买断制，基础版$29.99，专业版含高级模型$99",
+      "competitive_barrier": "",
+      "risks": "小模型能力有限，体验弱于云端，可能被免费替代方案挤压",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "🤗 openbmb/MiniCPM5-1B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/openbmb/MiniCPM5-1B",
+      "item_id": "hf-model-fb5690113a11"
+    },
+    {
+      "opportunity_title": "智能票据识别与文档数字化SaaS",
+      "core_insight": "中小企业发票、合同手动录入耗时，此前开源OCR精度不足，新模型精度提升使自动化票据解析可行",
+      "product_form": "帮助中小企业财务人员自动提取发票和单证信息并导出Excel的在线工具",
+      "target_users": "会计、财务人员、小企业主，月均处理百张票据，愿为工时节省付费",
+      "mvp_features": [
+        "拍照上传自动识别发票字段",
+        "批量PDF表格数据提取",
+        "对接QuickBooks/金蝶导出"
+      ],
+      "business_model": "月费$19起，含500页，超出每千页$9",
+      "competitive_barrier": "",
+      "risks": "巨头已有类似产品，需突出精度、私有部署或价格优势",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "🤗 PaddlePaddle/PaddleOCR-VL-1.6",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/PaddlePaddle/PaddleOCR-VL-1.6",
+      "item_id": "hf-model-bc0fb2dfb6da"
+    },
+    {
+      "opportunity_title": "No-Code边缘函数一键生成与部署平台",
+      "core_insight": "GPT-5.5级代码生成能理解复杂系统需求，让非开发者通过自然语言自动生成可用的边缘计算代码并部署",
+      "product_form": "帮助无技术背景的创业者和小企业主通过自然语言描述需求，自动生成并部署边缘函数的SaaS工具",
+      "target_users": "独立创业者、小微店主、需要快速搭建API或自动化任务但不懂编码的人群，愿为省时付费",
+      "mvp_features": [
+        "自然语言描述生成Cloudflare Workers代码",
+        "一键部署到边缘网络",
+        "在线测试与监控端点"
+      ],
+      "business_model": "免费有限额度+订阅制，$19/月起按函数数和请求量计费",
+      "competitive_barrier": "",
+      "risks": "代码生成的安全漏洞和运行时错误需自动审查，依赖第三方AI API稳定性",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "How Wasmer used Codex to build a Node.js runtime for the edge",
+      "source": "OpenAI Blog",
+      "source_type": "blog",
+      "source_url": "https://openai.com/index/wasmer",
+      "item_id": "rss-openai-blog-0af0c5c72218"
+    },
+    {
+      "opportunity_title": "AI编码工具成本监控与预算控制SaaS",
+      "core_insight": "AI编码工具缺乏成本可见性，企业急需用量监控和预算控制以杜绝超支，此前需求未被工具覆盖",
+      "product_form": "帮助工程团队实时监控、分析并控制Claude Code等AI编码工具成本的SaaS仪表板",
+      "target_users": "工程经理/CTO，管理使用AI编码工具的团队，痛点成本失控，有明确预算和付费意愿",
+      "mvp_features": [
+        "多AI工具API用量统一采集与聚合",
+        "实时费用仪表板与按团队/项目拆分",
+        "预算阈值设置与邮件/IM超支告警"
+      ],
+      "business_model": "按管理席位订阅，$15/月/开发者，或按节省成本分成",
+      "competitive_barrier": "",
+      "risks": "AI工具厂商快速内置成本控制，产品可能成为过渡方案",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "Uber Caps Usage of AI Tools Like Claude Code to Manage Costs",
+      "source": "Simon Willison",
+      "source_type": "rss",
+      "source_url": "https://simonwillison.net/2026/Jun/3/uber-caps-usage/#atom-everything",
+      "item_id": "atom-simon-willison-0437d7972bce"
+    },
+    {
+      "opportunity_title": "手机遥控电脑AI助手，随时随地自动化办公",
+      "core_insight": "扣子3.0让手机直接触发电脑端Agent执行任务，使得无IT团队的小微企业和个人也能零门槛实现远程办公自动化。",
+      "product_form": "帮助经常外出的商务人士和电商运营通过手机指令让办公电脑自动处理文件、发送报表的SaaS工具。",
+      "target_users": "中小企业主、远程办公者、电商运营，痛点：不在电脑旁却需处理紧急任务，月付费意愿29-99元。",
+      "mvp_features": [
+        "预设自动化任务模板（抓取数据、整理文件）",
+        "手机端一键触发电脑Agent",
+        "任务完成微信/短信通知"
+      ],
+      "business_model": "订阅制，基础版免费，专业版每月49元，按Agent数量计费。",
+      "competitive_barrier": "",
+      "risks": "扣子平台政策变动风险；需解决电脑开机和安全权限问题。",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "扣子3.0实测：手机就能远程遥控你电脑里的Agent",
+      "source": "量子位",
+      "source_type": "wechat",
+      "source_url": "https://www.qbitai.com/2026/06/428648.html",
+      "item_id": "rss-量子位-53a4a6fd8b5a"
+    },
+    {
+      "opportunity_title": "一键PDF转结构化数据API",
+      "core_insight": "提供高质量、AI就绪的PDF解析，解决了PDF内容提取不精准的问题，适合RAG等场景",
+      "product_form": "帮助开发者/企业将PDF文档转化为结构化JSON/文本的API服务",
+      "target_users": "需处理合同、报告等PDF的开发者或公司，按量付费",
+      "mvp_features": [
+        "REST API上传PDF返回结构化文本和表格",
+        "识别标题、段落层次",
+        "批量处理和多语种支持"
+      ],
+      "business_model": "按页数计费，1000页$10，免费额度100页/月",
+      "competitive_barrier": "",
+      "risks": "Java技术栈维护复杂，可考虑Docker部署；竞品如Adobe Extract API",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 3
+      },
+      "total_score": 15,
+      "source_title": "opendataloader-project/opendataloader-pdf — PDF Parser for AI-ready data. Automate PDF accessibility. Open-source.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/opendataloader-project/opendataloader-pdf",
+      "item_id": "github-ea08182b6b5c"
+    },
+    {
+      "opportunity_title": "细粒度车辆分类安全分析API",
+      "core_insight": "该开源管道首次提供面向交通安全风险的车辆细分类能力，可封装成自动评估工具，此前无低成本方案",
+      "product_form": "帮助交通研究者与保险精算师从道路视频自动识别车辆类型并生成碰撞风险评级的API服务",
+      "target_users": "交通管理部门、城市规划师、保险精算师，需高效分类车辆但缺乏AI部署能力",
+      "mvp_features": [
+        "上传视频自动逐帧分类车辆",
+        "生成车型分布与风险评级报告",
+        "RESTful API供系统集成"
+      ],
+      "business_model": "按视频分钟数或月调用量阶梯订阅，基础版免费",
+      "competitive_barrier": "",
+      "risks": "市场较窄，开源代码直接可用可能削弱付费意愿",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 2,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 14,
+      "source_title": "An Open-Source Two-Stage Computer Vision Pipeline for Fine-Grained Vehicle Classification using Vision Transformers",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "source_url": "https://arxiv.org/abs/2606.05149v1",
+      "item_id": "arxiv-2606.05149v1"
+    },
+    {
+      "opportunity_title": "Agent Harness—AI编程代理的记忆与技能管理平台",
+      "core_insight": "该开源项目为编程代理提供可复用的记忆与技能库，但个人配置复杂，可封装为自带托管与同步的SaaS。",
+      "product_form": "帮助使用Claude Code/Cursor的开发者沉淀代理记忆、共享技能和安全策略的SaaS平台。",
+      "target_users": "重度使用AI编程代理的独立开发者，希望代理记住上下文、复用调试技巧，月付费意愿$10-$20。",
+      "mvp_features": [
+        "跨会话的记忆持久化存储与检索",
+        "社区技能市场（调试、重构模板）",
+        "一键部署的代理安全沙箱"
+      ],
+      "business_model": "Freemium + 个人Pro版$12/月，团队版$29/月",
+      "competitive_barrier": "",
+      "risks": "依赖上游代理产品的开放接口，若官方推出原生记忆功能则市场缩小",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 3
+      },
+      "total_score": 14,
+      "source_title": "affaan-m/ECC — The agent harness performance optimization system. Skills, instincts, memory, se",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/affaan-m/ECC",
+      "item_id": "github-a92276b56a34"
+    },
+    {
+      "opportunity_title": "私人AI虚拟伴侣桌面应用",
+      "core_insight": "本地运行的语音驱动虚拟角色，结合LLM，让任何人都能拥有可互动的虚拟陪伴者",
+      "product_form": "帮助感到孤独的年轻人获得一个可语音聊天、有形象反馈的AI伙伴的桌面应用",
+      "target_users": "二次元爱好者、宅家人群、需要情感陪伴的用户，愿意为虚拟角色付费",
+      "mvp_features": [
+        "选择/自定义Live2D角色形象",
+        "语音对话并支持打断",
+        "角色记住对话历史和用户偏好"
+      ],
+      "business_model": "免费基础角色，高级角色和语音包内购，或月订阅$9.9",
+      "competitive_barrier": "",
+      "risks": "市场同质化竞争（如Character.AI），需突出本地隐私和形象化",
+      "scores": {
+        "pain_point": 3,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 14,
+      "source_title": "Open-LLM-VTuber/Open-LLM-VTuber — Talk to any LLM with hands-free voice interaction, voice interruption, and Live2",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/Open-LLM-VTuber/Open-LLM-VTuber",
+      "item_id": "github-186b89cf0014"
+    },
+    {
+      "opportunity_title": "图片智能搜索与标注工具",
+      "core_insight": "轻量级3B模型即可精准定位图中任意物体，使得图片内容搜索可低成本实现",
+      "product_form": "帮助设计师/电商运营快速在图片库中定位特定元素的SaaS工具",
+      "target_users": "设计师、电商卖家、摄影师，需要批量处理图片定位，小额付费",
+      "mvp_features": [
+        "上传图片并输入自然语言描述定位物体",
+        "高亮显示定位区域",
+        "批量处理并导出坐标"
+      ],
+      "business_model": "按量付费，$5/100次定位查询",
+      "competitive_barrier": "",
+      "risks": "模型准确度在复杂场景可能不足，客户期望高",
+      "scores": {
+        "pain_point": 3,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 14,
+      "source_title": "🤗 nvidia/LocateAnything-3B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/nvidia/LocateAnything-3B",
+      "item_id": "hf-model-7dc946291cd1"
+    },
+    {
+      "opportunity_title": "财务报告自动审计验证助手",
+      "core_insight": "审计中人工核对XBRL分类法与报告文本极费时，该技术可自动验证一致性，降低错误与成本",
+      "product_form": "帮助审计师和财务团队自动检查财务报告合规性并生成工作底稿的SaaS平台",
+      "target_users": "会计师事务所、上市公司财务部门，愿为降低审计风险和工时付费",
+      "mvp_features": [
+        "上传XBRL/PDF自动匹配分类法",
+        "高亮披露差异与缺失项",
+        "生成问题清单和审计底稿草稿"
+      ],
+      "business_model": "按报告数量收费，$199/份，年费套餐$999/10份",
+      "competitive_barrier": "",
+      "risks": "论文到工程化差距大，审计行业保守，需深度领域知识获取信任",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 2,
+        "tech_timing": 4,
+        "buildability": 3
+      },
+      "total_score": 14,
+      "source_title": "AUDITFLOW: Executable Symbolic Environments for Structured Financial Reporting Verification",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "source_url": "https://huggingface.co/papers/2606.03031",
+      "item_id": "hf-paper-d7f99f5cf46d"
+    }
+  ],
+  "analyzed_item_ids": [
+    "arxiv-2606.05165v1",
+    "arxiv-2606.05161v1",
+    "arxiv-2606.05158v1",
+    "arxiv-2606.05152v1",
+    "arxiv-2606.05150v1",
+    "arxiv-2606.05149v1",
+    "arxiv-2606.05145v1",
+    "arxiv-2606.05142v1",
+    "arxiv-2606.05139v1",
+    "arxiv-2606.05138v1",
+    "arxiv-2606.05134v1",
+    "arxiv-2606.05131v1",
+    "arxiv-2606.05130v1",
+    "arxiv-2606.05129v1",
+    "arxiv-2606.05124v1",
+    "github-d88518bc14d5",
+    "github-a92276b56a34",
+    "github-2dbf3a6786de",
+    "github-3c19e4a80a3d",
+    "github-e4b7ba63c2bd",
+    "github-026bd99f07a4",
+    "github-2c69330ad020",
+    "github-ea08182b6b5c",
+    "github-79b4a9bf4deb",
+    "github-186b89cf0014",
+    "github-e2e2f93d1ee7",
+    "github-d21de4367b63",
+    "github-7a6c007db3eb",
+    "github-c9c155f566f0",
+    "hf-model-7dc946291cd1",
+    "hf-model-c4fc025e1795",
+    "hf-model-1464fa38faac",
+    "hf-model-fb5690113a11",
+    "hf-model-62bdcf8ff0ba",
+    "hf-model-bc0fb2dfb6da",
+    "hf-model-8a5ccfe6343a",
+    "hf-model-69abd85f9afa",
+    "hf-model-fe96e83596e6",
+    "hf-model-08369d312c47",
+    "hf-paper-d7f99f5cf46d",
+    "hf-paper-bd7ac8edab36",
+    "hf-paper-986dd261f228",
+    "hf-paper-6a2a7380a031",
+    "hf-paper-86f732279595",
+    "hf-paper-b5b792b6542a",
+    "hf-paper-9d5e314238d5",
+    "hf-paper-2e5a23efe351",
+    "hf-paper-77f561345b37",
+    "hf-paper-e4d3a633e41d",
+    "rss-openai-blog-1a654943dc71",
+    "rss-openai-blog-0af0c5c72218",
+    "rss-google-ai-blog-a799e1e611d4",
+    "rss-smol-ai-news-37062c34fd5a",
+    "rss-hackernews-daily-d65dd7f39ce3",
+    "rss-all-in-podcast-9ccd64771be0",
+    "rss-all-in-podcast-4303f359881c",
+    "rss-all-in-podcast-f6e0f33dbb18",
+    "atom-the-ai-valley-6cbb603491bf",
+    "rss-latent-space-41f4093d7568",
+    "rss-latent-space-4f9e92d81fd3",
+    "rss-ben's-bites-c6d92f6106dd",
+    "atom-simon-willison-0437d7972bce",
+    "rss-gary-marcus-a268c1384b0b",
+    "rss-interconnects-bb7218baaf2d",
+    "rss-entropic-thoughts-ea765e66bd9e",
+    "rss-maurycy-745696aa12d9",
+    "rss-jim-nielsen-265ad2a93145",
+    "rss-xe-iaso-e01ea33dec35",
+    "rss-the-old-new-thing-8af95dae373f",
+    "rss-max-bernstein-486992651cdd",
+    "atom-ken-shirriff-884b9d4af795",
+    "rss-evan-hahn-0f53b1740414",
+    "rss-sean-goedecke-4c88d49c3ec3",
+    "rss-ibrahim-diallo-6e8cca1ae0ac",
+    "rss-john-d.-cook-af272ccc1f7a",
+    "rss-giles-thomas-472e0e73a532",
+    "rss-hillel-wayne-eadd93ae4651",
+    "rss-terence-eden-954a26d3d223",
+    "rss-dave-farquhar-361a612c7a4b",
+    "rss-abort-retry-fail-59980755f1cd",
+    "atom-oldvcr-25543ce89fde",
+    "rss-heyparis-ee8e9807001d",
+    "rss-tom-renner-e3378ebd8714",
+    "rss-martin-alderson-8195ad725641",
+    "rss-arpit-bhayani-78d0df66cbc2",
+    "rss-krebs-on-security-95a5003f7527",
+    "rss-troy-hunt-fe396ddb766a",
+    "rss-lcamtuf-40eea8e2d3cb",
+    "rss-jeff-geerling-b3fe634031f0",
+    "rss-pluralistic-f9cbff544400",
+    "rss-joan-westenberg-e422576588fc",
+    "rss-where's-your-ed-at-02bc55ce74d0",
+    "atom-dylan-nesbitt-63b9387dfc54",
+    "rss-construction-physics-ac72fdf52e18",
+    "atom-tedium-5563d9f30ec5",
+    "rss-the-digital-antiquar-cc92f97d6dea",
+    "rss-appso-9154e64ac1b4",
+    "rss-机器之心-6d2c0853211e",
+    "rss-机器之心-319d3948dc9a",
+    "rss-机器之心-3081dec7634b",
+    "rss-量子位-53a4a6fd8b5a",
+    "rss-量子位-c9b00cc130a0",
+    "rss-量子位-690efe7ea3fb",
+    "rss-虎嗅-fecaae87bb6a",
+    "rss-虎嗅-fe2418f198c3",
+    "rss-虎嗅-b8c3f5abb57c"
+  ],
+  "remaining": 0
+}

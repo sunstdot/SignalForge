@@ -1,0 +1,20 @@
+{
+  "id": "idea-1775121951742-xsc4cyfec",
+  "content_id": "arxiv-2604.00997v1",
+  "title": "复现: Uncertainty-Aware Variational Reward Factorization",
+  "description": "基于论文「Uncertainty-Aware Variational Reward Factorization via Probabilistic Preference Bases for LLM Personalization」的核心方法进行复现实验。\n\nReward factorization personalizes large language models (LLMs) by decomposing rewards into shared basis functions and user-specific weights. Yet, existing methods estimate user weights from scarce dat...",
+  "difficulty": "hard",
+  "estimated_days": 14,
+  "tags": [
+    "AI研究",
+    "大语言模型",
+    "前端技术"
+  ],
+  "status": "pending",
+  "priority": 9.0,
+  "briefing_date": "2026-04-02",
+  "source_type": "paper",
+  "source_title": "Uncertainty-Aware Variational Reward Factorization via Probabilistic Preference Bases for LLM Personalization",
+  "source_url": "https://arxiv.org/abs/2604.00997v1",
+  "created_at": "2026-04-02T09:25:51.742Z"
+}

@@ -1,0 +1,2211 @@
+{
+  "id": "7f6ede2d-f071-442a-b37f-633b5555d3a8",
+  "date": "2026-11-09",
+  "items": [
+    {
+      "id": "arxiv-2611.08977v1",
+      "title": "Energy-Based Reasoners: Your Recurrent Reasoner Should Be an Energy-Based Model",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2611.08977v1",
+      "summary": "Looping is a powerful inductive bias for reasoning. By repeatedly iterating a recurrent block, looped models can scale their effective depth and enable multi-step reasoning in latent space. However, e",
+      "category": [
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "arxiv-2611.08975v1",
+      "title": "Beyond Truncation? Entailment-Licensed Elision and the Limits of Semantic Preservation in LLM Decoding",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2611.08975v1",
+      "summary": "Instruction-tuned large language models (LLMs) answer at greater length than a request needs. We ask whether a training-free controller inside the decoding loop can remove that surplus while preservin",
+      "category": [
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "arxiv-2611.08971v1",
+      "title": "Phantom Consensus: Measuring Social Reasoning in Multi-Agent LLM Decision-Making",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2611.08971v1",
+      "summary": "Multi-agent LLM systems increasingly aggregate judgments across model instances, but reasoning about other agents can itself introduce failure. We study a setting in which LLMs shift their public deci",
+      "category": [
+        "cs.MA",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "arxiv-2611.08969v1",
+      "title": "PhysioWave-T: Token-Efficient Wavelet Foundation Models for Biosignals",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2611.08969v1",
+      "summary": "We present PhysioWave-T, a token-efficient wavelet foundation model family for EEG, ECG, and sEMG. Dynamic scale folding recombines J+1 wavelet subbands prior to tokenization, compressing sequence len",
+      "category": [
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "arxiv-2611.08967v1",
+      "title": "Using an LLM to Tackle Difficult Cases in NER for Nepali Tweets",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2611.08967v1",
+      "summary": "Named entity recognition (NER) is challenging for social media data in a low-resource language. LLMs often lag behind pretrained language models (PLMs) in NER performance, but they show promise in han",
+      "category": [
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "arxiv-2611.08966v1",
+      "title": "Concordance-Optimal Continuous Music Emotion Estimation: Variance Decomposition, Dual-Branch Temporal Fusion, and Conformal Prediction Intervals",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2611.08966v1",
+      "summary": "Continuous music emotion recognition (MER) estimates how Arousal and Valence evolve within a song, yet the field's standard metric, pooled frame-level correlation, is dominated by between-song differe",
+      "category": [
+        "cs.SD",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "arxiv-2611.08959v1",
+      "title": "Accuracy Is Not Value: Choosing Weak Supervisors by What the Student Inherits",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2611.08959v1",
+      "summary": "Weak supervisors are usually judged by their own errors, but what matters is what a student learns from them. For squared loss and any linear learner shared by all supervisors, we show that a supervis",
+      "category": [
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "arxiv-2611.08947v1",
+      "title": "More with Less: Efficient Parallel Scientific Code Translation via an Agent-Skill Workflow",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2611.08947v1",
+      "summary": "Translating parallel scientific codes between HPC programming frameworks is a critical but labor-intensive task. Existing LLM-based approaches rely on fixed sequential pipelines with undifferentiated ",
+      "category": [
+        "cs.DC",
+        "cs.AI",
+        "cs.SE"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "arxiv-2611.08946v1",
+      "title": "Flex-RSI: Benchmarking Recursive Self-Improvement of Frontier Agents",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2611.08946v1",
+      "summary": "Frontier language models are increasingly deployed as agents, and how well an agent performs depends not only on its model but also on its harness: the prompts, tools, memory, and control loop through",
+      "category": [
+        "cs.AI",
+        "cs.CV",
+        "cs.RO"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "arxiv-2611.08937v1",
+      "title": "Surrogate Quality Score: A Novel Composite Performance Metric for Model Selection",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2611.08937v1",
+      "summary": "The growing reliance on high-fidelity, state-of-the-art machine learning based models for engineering decision-making necessitates robust and systematic approaches for model selection. While high pred",
+      "category": [
+        "cs.LG",
+        "cs.CE"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "arxiv-2611.08936v1",
+      "title": "Ordered Policy Optimization",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2611.08936v1",
+      "summary": "Proximal Policy Optimization (PPO) stabilizes policy updates by clipping the importance ratio between the new policy and the data-collecting policy. The standard rule uses one fixed clipping range for",
+      "category": [
+        "cs.LG",
+        "cs.AI",
+        "cs.RO"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "arxiv-2611.08933v1",
+      "title": "DRAFT-Bench: Evaluating Frontier Agents Across the Professional Design Lifecycle",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2611.08933v1",
+      "summary": "Can frontier general-purpose agents understand client intent, explore creative directions, execute revisions, and prepare production deliverables? We introduce DRAFT-Bench (Design Reliability Across F",
+      "category": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "arxiv-2611.08929v1",
+      "title": "Grid-Oriented Probabilistic Load Forecasting for AI Data Centers",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2611.08929v1",
+      "summary": "Probabilistic load forecasts for AI data centers need to represent both uncertainty under changing workloads and temporal dependence to support grid operations. This paper develops an open, grid-orien",
+      "category": [
+        "eess.SY",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "arxiv-2611.08924v1",
+      "title": "ResQAdam: Residual-Preserving Adaptive Optimization for Memory-Efficient Quantization Aware Training",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2611.08924v1",
+      "summary": "Quantization-aware training (QAT) is the most reliable way to obtain accurate low-bit large language models (LLMs), but training with AdamW keeps two dense FP32 states for every weight matrix. We find",
+      "category": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "arxiv-2611.08922v1",
+      "title": "Glyph: An Interpretability Engine for AI-Driven Scientific Discovery in Clinical Data",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2611.08922v1",
+      "summary": "Automated scientific discovery has the potential to advance understanding of disease mechanisms and accelerate identification of early disease markers. Manual data annotation is infeasible at populati",
+      "category": [
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "github-a686f6d978b1",
+      "title": "sherlock-project/sherlock — Hunt down social media accounts by username across social networks",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/sherlock-project/sherlock",
+      "summary": "Hunt down social media accounts by username across social networks | 🔥 2373 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "github-2d3db3e15fbe",
+      "title": "dsx-ai-factory/nvke — NVIDIA Kubernetes Engine (NVKE). A management plane for GPU Kubernetes on bare m",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/dsx-ai-factory/nvke",
+      "summary": "NVIDIA Kubernetes Engine (NVKE). A management plane for GPU Kubernetes on bare metal. | 🔥 345 stars today | Language: Go",
+      "category": [
+        "开源项目",
+        "Go"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "github-9bf20ad39bd3",
+      "title": "milind-soni/OpenMausBot — Open-source Grok Bot alternative with a virtual machine that bots can use",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/milind-soni/OpenMausBot",
+      "summary": "Open-source Grok Bot alternative with a virtual machine that bots can use | 🔥 1439 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "github-d733ec033edd",
+      "title": "anthropics/claude-quickstarts — A collection of projects designed to help developers quickly get started with bu",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/anthropics/claude-quickstarts",
+      "summary": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API | 🔥 32 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "github-d8b3e34680a3",
+      "title": "vercel-labs/agent-browser — Browser automation CLI for AI agents",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "summary": "Browser automation CLI for AI agents | 🔥 815 stars today | Language: Rust",
+      "category": [
+        "开源项目",
+        "Rust"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "github-6a0aa2009940",
+      "title": "meta/astryx — An open source design system that's fully customizable and agent ready",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/meta/astryx",
+      "summary": "An open source design system that's fully customizable and agent ready | 🔥 875 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "github-431558d9433a",
+      "title": "anthropics/skills — Public repository for Agent Skills",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/anthropics/skills",
+      "summary": "Public repository for Agent Skills | 🔥 792 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "github-316ce297c579",
+      "title": "google-deepmind/mujoco — Multi-Joint dynamics with Contact. A general purpose physics simulator.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/google-deepmind/mujoco",
+      "summary": "Multi-Joint dynamics with Contact. A general purpose physics simulator. | 🔥 41 stars today | Language: C++",
+      "category": [
+        "开源项目",
+        "C++"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "github-50e77650c1e7",
+      "title": "ranxianglei/billion-context — A context-compression plugin for month-long single sessions (billions of tokens)",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/ranxianglei/billion-context",
+      "summary": "A context-compression plugin for month-long single sessions (billions of tokens) ,small context windows (a 100K context is enough) and token savings (5x fewer tokens) .上下文压缩插件，月级长会话会话， 兼顾小窗口(100k上下文足矣",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "hf-model-bb37326a443b",
+      "title": "🤗 speridlabs/idol",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/speridlabs/idol",
+      "summary": "Task: image-to-3d | Downloads: 22,854 | Likes: 1,400",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "hf-model-335227dbd693",
+      "title": "🤗 xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
+      "summary": "Task: text-generation | Downloads: 7,088 | Likes: 865",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "hf-model-0ec9bafc7867",
+      "title": "🤗 moonshotai/Kimi-K3.1-Pro",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+      "summary": "Task: image-text-to-text | Downloads: 25,569 | Likes: 1,730",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "hf-model-73d670683095",
+      "title": "🤗 ricursiveAI/Ripple-65B-Preview",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
+      "summary": "Downloads: 5,087 | Likes: 407",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "hf-model-eaf280aff552",
+      "title": "🤗 Lightricks/LTX-2.5",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "summary": "Task: image-to-video | Downloads: 2,661,026 | Likes: 11,138",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "hf-model-cda9df08fa91",
+      "title": "🤗 ccore/Qwen3.5-4B-3D-Coder",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
+      "summary": "Downloads: 254,053 | Likes: 921",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "hf-model-11403ace832c",
+      "title": "🤗 Qwen/Qwen3.8-27B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "summary": "Task: image-text-to-text | Downloads: 7,668,187 | Likes: 19,420",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "hf-model-ecc363a6b297",
+      "title": "🤗 DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+      "summary": "Task: image-text-to-text | Downloads: 1,553,252 | Likes: 2,712",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "hf-model-fb4b488d060f",
+      "title": "🤗 NousResearch/Arete-27B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/NousResearch/Arete-27B",
+      "summary": "Task: text-generation | Downloads: 1,747 | Likes: 295",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "hf-model-3c09405cf56c",
+      "title": "🤗 nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+      "summary": "Task: automatic-speech-recognition | Downloads: 67,230 | Likes: 3,109",
+      "category": [
+        "ai",
+        "models",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "hf-paper-cc3c45daf00a",
+      "title": "Sketchpad: certified exact arithmetic with a small vision-language model",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2611.04434",
+      "summary": "Language models are accurate on most long-arithmetic problems, but their accuracy is estimated on samples and carries no guarantee for an unseen input; tool use is exact but moves the computation outs",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "hf-paper-d31a2b4d67ea",
+      "title": "Tools Need Not Speak in Text: Latent Context Compression for Agents",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2611.06500",
+      "summary": "Large language model (LLM) agents typically append raw tool outputs to their context. Over multi-step interactions, long and noisy observations incur substantial context overhead and dilute the agent'",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "hf-paper-c9d9d85585c7",
+      "title": "Signed but Steerable: Measuring and Closing the Text-Vector Integrity Gap in Offline Retrieval-Augmented Generation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2611.06498",
+      "summary": "Offline retrieval-augmented generation (RAG) on edge devices is updated through signed knowledge packs that carry text and precomputed embedding vectors. A signature proves who published a pack, not t",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "hf-paper-a48bf298a871",
+      "title": "StepX-OPD: Rethinking Multi-Teacher On-Policy Distillation in Diffusion Models",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2611.04386",
+      "summary": "A deployable text-to-image diffusion model must hold several capabilities at once, such as instruction following, text rendering and human preference, and must sample in a few steps. Capabilities and ",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "hf-paper-6a4ffc6d73a9",
+      "title": "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2611.08483",
+      "summary": "LLM-guided evolutionary search uses AI agents to improve programs for mathematical and computational problems by iteratively refining solutions and combining high-scoring methods. However, the process",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "hf-paper-972170e1aba8",
+      "title": "OpenFrontiers: A Collection of Open Research Problems and a Benchmark for Scientific Rediscovery",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2610.37739",
+      "summary": "Large language models (LLMs) have shown increasing promise in research-level problem solving, yet a comprehensive collection of such problems is still missing, and evaluating them on research-level pr",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "hf-paper-0de107ac8975",
+      "title": "Terminal-style Mathematical Modeling Bench: The First Agentic and Verifiable Benchmark for Mathematical Modeling",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2611.08237",
+      "summary": "Mathematical modeling turns an open-ended real-world problem into assumptions, a model, a solution, and a defended recommendation, and its answers matter only if they are both close to a credible refe",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "hf-paper-53d5e3d070cd",
+      "title": "Muir: Linear Attention with Sensitivity-Allocated Gating and Matched-Filter Readout",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2611.08376",
+      "summary": "Linear attention compresses context into a fixed-size key-value state for linear-time training and constant-memory inference. Gated delta-rule models decay this state and erase its prediction for an i",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "hf-paper-ad83f521357d",
+      "title": "Information Games: Strategic Crowding and Firm Repositioning in Language-Model Space",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2609.37820",
+      "summary": "When firms respond to new market opportunities, their capacity choices alter the future discounted free cash flows available to both competitors and investors. In competitive markets, these investment",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "hf-paper-30b0e1df80ee",
+      "title": "Reducing Representational Interference in Retrieval Embeddings with Trainable Prefix Tokens",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2611.07298",
+      "summary": "Embedding models compress variable-length text into fixed-size vector representations, but this compression can entangle semantic content with residual token-level information, such as artifacts arisi",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-openai-blog-d1cb05298078",
+      "title": "Measuring how AI agents handle everyday wet-lab science",
+      "source": "OpenAI Blog",
+      "source_type": "blog",
+      "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+      "summary": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science.",
+      "category": [
+        "ai",
+        "openai",
+        "official"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-google-deepmind-blog-a4a8ae975d2d",
+      "title": "Agentic cheminformatics with Google Antigravity",
+      "source": "Google DeepMind Blog",
+      "source_type": "blog",
+      "url": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+      "summary": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles.",
+      "category": [
+        "ai",
+        "google",
+        "deepmind"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-hackernews-daily-480f1ace96bc",
+      "title": "2026-11-09 Hacker News Top Stories",
+      "source": "HackerNews Daily",
+      "source_type": "hackernews",
+      "url": "https://supertechfans.com/cn/post/2026-11-09-HackerNews/",
+      "summary": "2026-11-09 Hacker News Top Stories # 作者用含运费 10 美元的 OpenStick 运行 Debian，搭配 DNS 拦截、监控、RSS 与书签归档；低内存占用来自轻量软件选择，并非在棒状设备上运行大模型。 Caleb 因多会话 IDE 联动、扩展功能差异与频繁行为变化转向 Pi，认可其可定制性；这是一篇个人迁移记录，并非模型能力基准。 Apiiro 称 10",
+      "category": [
+        "tech",
+        "news",
+        "hackernews",
+        "daily"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-all-in-podcast-74591479c9c7",
+      "title": "The Health Interventions Actually Worth Your Time | Justin Mares",
+      "source": "All-In Podcast",
+      "source_type": "investor",
+      "url": "https://a16z.simplecast.com/episodes/the-health-interventions-actually-worth-your-time-justin-mares-7c97fzV_",
+      "summary": "Health advice has become an endless stream of supplements, diets, wearables, and biohacks. Which interventions are actually worth your time? Truemed CEO Justin Mares argues that most people should ign",
+      "category": [
+        "investor",
+        "vc",
+        "tech",
+        "podcast"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-all-in-podcast-d2a465ebe096",
+      "title": "Mark Hyman’s Guide to Living Longer and Staying Strong",
+      "source": "All-In Podcast",
+      "source_type": "investor",
+      "url": "https://a16z.simplecast.com/episodes/mark-hymans-guide-to-living-longer-and-staying-strong-csBJXQYG",
+      "summary": "What actually matters if you want to stay healthy as you age? Dr. Mark Hyman argues it isn’t the most extreme longevity intervention. It’s the small investments you make every day in strength, nutriti",
+      "category": [
+        "investor",
+        "vc",
+        "tech",
+        "podcast"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-all-in-podcast-70d0fc821a38",
+      "title": "Inside Salesforce’s $100 Billion M&A Playbook | John Somorjai",
+      "source": "All-In Podcast",
+      "source_type": "investor",
+      "url": "https://a16z.simplecast.com/episodes/inside-salesforces-100-billion-ma-playbook-john-somorjai-taKdd7nQ",
+      "summary": "What makes a startup worth acquiring when software has never been easier to build? Salesforce’s John Somorjai says the answer goes well beyond technology: the best acquisitions can accelerate a produc",
+      "category": [
+        "investor",
+        "vc",
+        "tech",
+        "podcast"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "atom-the-ai-valley-8b383843d328",
+      "title": "Google: skip AI, skip Search",
+      "source": "The AI Valley",
+      "source_type": "news",
+      "url": "https://kill-the-newsletter.com/feeds/sg5lm1gdqvvwgskcyk8q/entries/oulpvcvs0f09zaue2g91zyjau835hrkskov4ml9d.html",
+      "summary": "Google: skip AI, skip Search 96 :root { color-scheme: light; supported-color-schemes: light; } body { margin: 0; padding: 0; min-width: 100%!important; -ms-text-size-adjust: 100% !important; -webkit-t",
+      "category": [
+        "ai",
+        "news",
+        "daily"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-latent-space-740f02962b2c",
+      "title": "How Stanford Teaches AI-Native Engineering — Mihail Eric, Monaco",
+      "source": "Latent Space",
+      "source_type": "rss",
+      "url": "https://latent.space/p/cs146s/",
+      "summary": "What happens when students can one-shot last year’s homework? Inside CS146S and the engineering team at Monaco.",
+      "category": [
+        "ai",
+        "news",
+        "daily"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-latent-space-25d34e531896",
+      "title": "[One Million AI Engineer Special] How Stanford Teaches AI-Native Engineering — Mihail Eric, Monaco",
+      "source": "Latent Space",
+      "source_type": "rss",
+      "url": "https://latent.space/p/one_million_ai_engineer_special_how_stanford_teaches_ai-native_engineering_mihail_eric_monaco/",
+      "summary": "What do you assign when a coding agent can finish last year’s homework in one prompt? In the second run of Stanford’s CS146S, Mihail Eric brought open-source maintainers into the course. Students have",
+      "category": [
+        "ai",
+        "news",
+        "daily"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-ben's-bites-3a6288ae0829",
+      "title": "Craft and taste",
+      "source": "Ben's Bites",
+      "source_type": "rss",
+      "url": "https://www.bensbites.com/p/craft-and-taste",
+      "summary": "What does old me think",
+      "category": [
+        "ai",
+        "tools",
+        "weekly"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "atom-simon-willison-948b01932ddb",
+      "title": "parse_number() as a SQLite extension: C vs Rust",
+      "source": "Simon Willison",
+      "source_type": "rss",
+      "url": "https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust/",
+      "summary": "Research: parse_number() as a SQLite extension: C vs Rust I was out walking the dog when I got curious about how easy/difficult it would be to write a SQLite C extension that adds a parse_number() fun",
+      "category": [
+        "tech",
+        "ai",
+        "python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-gary-marcus-8e9c761b50ed",
+      "title": "The Huang Affair: What did they know and when did they know it?",
+      "source": "Gary Marcus",
+      "source_type": "rss",
+      "url": "https://garymarcus.substack.com/p/the-huang-affair-what-did-they-know",
+      "summary": "None of this was on my bingo card",
+      "category": [
+        "ai",
+        "ml"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-interconnects-27eb725425a9",
+      "title": "How big is the open model economy today?",
+      "source": "Interconnects",
+      "source_type": "rss",
+      "url": "https://www.interconnects.ai/p/how-well-can-we-measure-open-model",
+      "summary": "Our first open model economy research note for paid subscribers.",
+      "category": [
+        "ai",
+        "ml",
+        "blog"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-entropic-thoughts-14102e308d66",
+      "title": "Runs scored in World Baseball Classic",
+      "source": "Entropic Thoughts",
+      "source_type": "rss",
+      "url": "https://entropicthoughts.com/sums-of-overdispersed-counts",
+      "summary": "In the Spring 2026 edition of the Metaculus Cup one question concerned the number of runs in the knockout stage of the World Baseball Classic (WBC) in 2026. The community predicted a mean of just unde",
+      "category": [
+        "tech",
+        "ai"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-maurycy-26fd5daa6743",
+      "title": "A bit about email",
+      "source": "Maurycy",
+      "source_type": "rss",
+      "url": "https://maurycyz.com/misc/email/",
+      "summary": "Before you torch and pitchfork me, I'm aware most of this is simplified and doesn't go into edge cases, even though the internet is composed entirely of edge cases. Otherwise, I'd be writing a whole b",
+      "category": [
+        "tech",
+        "ai"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-mitchell-hashimoto-fbc1c235706b",
+      "title": "Libghostty 1.0",
+      "source": "Mitchell Hashimoto",
+      "source_type": "rss",
+      "url": "https://mitchellh.com/writing/libghostty-1-0",
+      "summary": "",
+      "category": [
+        "tech",
+        "go",
+        "infrastructure"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-jim-nielsen-38676444a703",
+      "title": "“It Gives Great Demo”",
+      "source": "Jim Nielsen",
+      "source_type": "rss",
+      "url": "https://blog.jim-nielsen.com/2026/it-gives-great-demo/",
+      "summary": "There’s that famous video of Steve Jobs explaining why they don’t didn’t make touchscreen MacBooks: We thought about [a touch screen MacBook] years ago. We’ve done tons of user testing on this and it ",
+      "category": [
+        "tech",
+        "web",
+        "frontend"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-the-old-new-thing-67ed5de598f9",
+      "title": "Why are we all worked up about atomicity when applying hot-patches if we can just suspend all the threads?",
+      "source": "The Old New Thing",
+      "source_type": "rss",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20261106-00/?p=112838/",
+      "summary": "Suspending all the threads stops the threads that are there now, those are not the only possible sources of change. The post Why are we all worked up about atomicity when applying hot-patches if we ca",
+      "category": [
+        "tech",
+        "windows",
+        "programming"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "atom-ken-shirriff-00243e599337",
+      "title": "Reverse engineering a vintage diode-transistor logic chip",
+      "source": "Ken Shirriff",
+      "source_type": "rss",
+      "url": "http://www.righto.com/feeds/7533579802505281921/comments/default",
+      "summary": "Going through a collection of old parts, CuriousMarc encountered some ICs that he couldn't identify. He opened up one of these ICs, and I studied it under the microscope. After some reverse engineerin",
+      "category": [
+        "tech",
+        "hardware",
+        "reverse-engineering"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-evan-hahn-ad5c667e9fc9",
+      "title": "Static site generators are weird",
+      "source": "Evan Hahn",
+      "source_type": "rss",
+      "url": "https://evanhahn.com/static-site-generators-are-weird/",
+      "summary": "I love static sites. Pre-rendered files are usually faster, lower maintenance, easier to secure, and more. Static site generators let you create these sites much more easily, which is fabulous. But I ",
+      "category": [
+        "tech",
+        "javascript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-sean-goedecke-1bc34f1a8121",
+      "title": "LLMs are terrible at designing AI systems",
+      "source": "Sean Goedecke",
+      "source_type": "rss",
+      "url": "https://seangoedecke.com/llms-are-terrible-at-designing-ai-systems/",
+      "summary": "",
+      "category": [
+        "tech",
+        "software"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-ibrahim-diallo-958111ec2c2b",
+      "title": "Writing English is Solved",
+      "source": "Ibrahim Diallo",
+      "source_type": "rss",
+      "url": "https://idiallo.com/byte-size/english-is-solved",
+      "summary": "Maybe you still struggle to write in Pulaar, or in your rinky-dink language. But here in the AI-connected, English-speaking world, we don't need to write anymore. In fact, I don't remember the last ti",
+      "category": [
+        "tech",
+        "programming"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-john-d.-cook-bd7ceac3c992",
+      "title": "Finite Projective Planes",
+      "source": "John D. Cook",
+      "source_type": "rss",
+      "url": "https://www.johndcook.com/blog/2026/11/08/finite-geometries/",
+      "summary": "The idea of finite geometries sounds like an oxymoron the first time you hear of it, something like dry water or cold fire, but the axioms of some kinds of geometry can indeed be satisfied by finite m",
+      "category": [
+        "math",
+        "programming"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-hillel-wayne-64b9674ee684",
+      "title": "New Article, Annual LFP Charity Discount",
+      "source": "Hillel Wayne",
+      "source_type": "rss",
+      "url": "https://buttondown.com/hillelwayne/archive/new-article-annual-lfp-charity-discount/",
+      "summary": "My first blog post for Antithesis is now up! It's called Why Antithesis and is a 2000 word overview on the relative merits of Deterministic Simulation Testing as compared to Formal Methods (tldr there",
+      "category": [
+        "tech",
+        "formal-methods"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-terence-eden-329b452ccc0e",
+      "title": "Some thoughts on restaurant menu QR codes",
+      "source": "Terence Eden",
+      "source_type": "rss",
+      "url": "https://shkspr.mobi/blog/2026/11/some-thoughts-on-restaurant-menu-qr-codes/",
+      "summary": "Is anyone else SICK AND TIRED of the way hotels now foist plastic &#34;keycards&#34; on guests? No! I don&#039;t want tap to open my door! No! I don&#039;t want to keep the card in my wallet! No! I do",
+      "category": [
+        "tech",
+        "web"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-dave-farquhar-d18df12f4ed3",
+      "title": "The problem with Micron MT 4264 RAM",
+      "source": "Dave Farquhar",
+      "source_type": "rss",
+      "url": "https://dfarq.homeip.net/the-problem-with-micron-mt-4264-ram/?utm_source=rss&utm_medium=rss&utm_campaign=the-problem-with-micron-mt-4264-ram",
+      "summary": "Watch a Youtube video about repairing a 1980s 8-bit computer, and you can flip a coin about whether the problem will be the presence of MT (Micron) 4264 RAM chips inside. MT RAM chips of mid 1980s vin",
+      "category": [
+        "tech"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-dave-farquhar-6c0f8e87c105",
+      "title": "Is AI crashing?",
+      "source": "Dave Farquhar",
+      "source_type": "rss",
+      "url": "https://dfarq.homeip.net/is-ai-crashing/?utm_source=rss&utm_medium=rss&utm_campaign=is-ai-crashing",
+      "summary": "It&#8217;s November 8, 2026. I don&#8217;t know if AI is crashing. I don&#8217;t know if the AI bubble has burst. Not yet. Some people say it is. I remember the dotcom crash but didn&#8217;t blog abou",
+      "category": [
+        "tech"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-martin-alderson-60e79c43cc91",
+      "title": "The great software IP writedown",
+      "source": "Martin Alderson",
+      "source_type": "rss",
+      "url": "https://martinalderson.com/posts/the-great-software-ip-writedown/?utm_source=rss&utm_medium=rss&utm_campaign=feed",
+      "summary": "Software's outsized margins were built on a scarcity of people who could build it. AI agents are removing that scarcity - so where does the value of software IP go?",
+      "category": [
+        "tech"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-krebs-on-security-7543ee8beb8b",
+      "title": "Want to Rent an Internet Address at the White House?",
+      "source": "Krebs on Security",
+      "source_type": "rss",
+      "url": "https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/",
+      "summary": "Several staffers at the White House are using computers or mobile devices equipped with residential proxy services that render their internet address available for others to rent, security experts war",
+      "category": [
+        "security",
+        "tech"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-lcamtuf-75b957d766a4",
+      "title": "Quasi-logarithmic kitchen timer",
+      "source": "lcamtuf",
+      "source_type": "rss",
+      "url": "https://blog.coredump.cx/p/quasi-logarithmic-kitchen-timer",
+      "summary": "Like some of you, we have several kitchen appliances with integrated digital timers.",
+      "category": [
+        "tech",
+        "security"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-pluralistic-a80960a40289",
+      "title": "Pluralistic: JS Tan and Clarissa Redwine's \"Against Tech Oligarchy\" (07 Nov 2026)",
+      "source": "Pluralistic",
+      "source_type": "rss",
+      "url": "https://pluralistic.net/2026/11/07/aeiou-but-sometimes-why/",
+      "summary": "Today's links JS Tan and Clarissa Redwine's \"Against Tech Oligarchy\": Inventing a new labor playbook for a unique and powerful industry. Hey look at this: Delights to delectate. Object permanence: EMI",
+      "category": [
+        "tech",
+        "policy"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "atom-anil-dash-4beb0c11da9f",
+      "title": "How to install an app on your Commodore 64",
+      "source": "Anil Dash",
+      "source_type": "rss",
+      "url": "https://anildash.com/2026/10/08/install-an-app-commodore-64/",
+      "summary": "It’s time to install an app! But here in 1986, we still call them “programs,” not apps. So, you’ll want to set aside some time to get started installing a program. Since you have a Commodore 64, there",
+      "category": [
+        "tech",
+        "culture"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-rakhim-fd2b474d7139",
+      "title": "I wish tech companies knew more about me",
+      "source": "Rakhim",
+      "source_type": "rss",
+      "url": "https://rakhim.exotext.com/i-wish-tech-companies-knew-more-about-me",
+      "summary": "&quot;Tech companies are spying on us&quot; is a truism at this point. Endless articles and investigations have ensured that everybody is aware: they are spying on us, they listen to our conversations",
+      "category": [
+        "tech",
+        "design"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-where's-your-ed-at-abd291afa38d",
+      "title": "Premium: Fault Lines",
+      "source": "Where's Your Ed At",
+      "source_type": "rss",
+      "url": "https://www.wheresyoured.at/premium-fault-lines/",
+      "summary": "I&#x2019;ve generally avoided politics here and the few times that I have done so I&#x2019;ve received a few pissy emails, but Tuesday night was a wonderful, abundant font of hope in what has been an ",
+      "category": [
+        "tech",
+        "business"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "atom-dylan-nesbitt-37800db7a08d",
+      "title": "This Week in Package Management: 7 November 2026",
+      "source": "Dylan Nesbitt",
+      "source_type": "rss",
+      "url": "https://nesbitt.io/2026/11/07/this-week-in-package-management.html",
+      "summary": "This week’s package management news, gathered from the package manager OPML feed collection , my posts and boosts on Mastodon , and anything people sent me. Version control and forge news is in the We",
+      "category": [
+        "tech"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-construction-physics-deccacb5b8d5",
+      "title": "Reading List 11/7/2026",
+      "source": "Construction Physics",
+      "source_type": "rss",
+      "url": "https://www.construction-physics.com/p/reading-list-1172026",
+      "summary": "Florida&#8217;s property tax rollback, projected PCB shortages, the end of Tesla&#8217;s Cybertruck, the lack of progress in carbon storage, and more.",
+      "category": [
+        "science",
+        "engineering"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "atom-tedium-9dbeafccb86a",
+      "title": "Pumpkin Seeds",
+      "source": "Tedium",
+      "source_type": "rss",
+      "url": "https://feed.tedium.co/link/15204/17514236/cryptids-halloween-ephemera",
+      "summary": "Some spare ephemera about Halloween, at exactly the time you need it: A couple days after the fact. We got cryptids, celebs, and even an original tune. Hey all, Ernie here with a piece from David Buck",
+      "category": [
+        "tech",
+        "history"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-the-digital-antiquar-93df83b8b901",
+      "title": "Deus Ex",
+      "source": "The Digital Antiquarian",
+      "source_type": "rss",
+      "url": "https://www.filfre.net/2026/11/deus-ex/",
+      "summary": "This article tells part of the story of Warren Spector. A slight shift of focus, and the future could still turn out like Deus Ex after all&#8230; &#8212; Deus Ex lead writer Sheldon Pacotti, speaking",
+      "category": [
+        "gaming",
+        "history"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-机器之心-904968959650",
+      "title": "ICLR 2027首轮评审，槽点有点多",
+      "source": "机器之心",
+      "source_type": "wechat",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651072888&idx=1&sn=653a56cbd49310e83158f277d56a993b",
+      "summary": "有人被要求解释「标准差」，有人收到AI味评语",
+      "category": [
+        "ai",
+        "research",
+        "wechat",
+        "chinese"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-机器之心-42a3deff369f",
+      "title": "GPT-6.1 Sol参与活体大脑手术！三轮定位，一次比一次准",
+      "source": "机器之心",
+      "source_type": "wechat",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651072888&idx=2&sn=7451fe12fd75fc3295e0e71c0235040a",
+      "summary": "AI开始从真实实验中学习。",
+      "category": [
+        "ai",
+        "research",
+        "wechat",
+        "chinese"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-机器之心-bdd338e882da",
+      "title": "英伟达等重新设计VLA推理！机器人动作提速3.4倍",
+      "source": "机器之心",
+      "source_type": "wechat",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651072888&idx=3&sn=75cf566a70af17c8a5cfa30d459aab8b",
+      "summary": "给VLA推理做了减法",
+      "category": [
+        "ai",
+        "research",
+        "wechat",
+        "chinese"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-量子位-fe5ec8185cb8",
+      "title": "黄仁勋承认出轨发全员信道歉！英伟达启动紧急调查",
+      "source": "量子位",
+      "source_type": "wechat",
+      "url": "https://www.qbitai.com/2026/11/508498.html",
+      "summary": "英伟达暗盘跌2%",
+      "category": [
+        "ai",
+        "tech",
+        "wechat",
+        "chinese"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-虎嗅-376b371c8095",
+      "title": "纽约随笔2026",
+      "source": "虎嗅",
+      "source_type": "wechat",
+      "url": "https://www.huxiu.com/article/4904018.html?f=rss",
+      "summary": "本文来自微信公众号： 腾达资本 ，作者：刁扬 DY，题图来自：视觉中国 再回首：站在 2026 年的深秋回望，正值 AI 浪潮撞上资本市场剧烈震荡，历史不会简单重复，但总是似曾相识？ 2013 2013年是一个神奇的年份。多年后回忆，那个蛇年是一个承上启下的转折年，是一个经历了2011到2013年周期，从泡沫破裂、信心崩溃、搓磨沉淀，直到厚积薄发的年份。 三年之前，全球经济刚走出了2008年金融危",
+      "category": [
+        "tech",
+        "business",
+        "wechat",
+        "chinese"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-虎嗅-043d00e49e44",
+      "title": "智能体之争，大厂的下一场零和博弈",
+      "source": "虎嗅",
+      "source_type": "wechat",
+      "url": "https://www.huxiu.com/article/4904044.html?f=rss",
+      "summary": "本文来自微信公众号： 嗅态 ，作者：嗅态 立冬前后，大厂在智能体赛道的交锋骤然升温。 11月6日，荣耀CEO李健在广州宣布，荣耀将联合中国移动等合作伙伴建设智能体服务网络，并计划在Magic9系列手机上尝试推出AI Token套餐。 一天前，蚂蚁集团公布了灵光2.0上线一周的成绩单。按照蚂蚁集团披露的数据，灵光已经帮助用户管理超过116万项事务，累计执行任务超过360万次，并接入钉钉、飞书、哈啰等",
+      "category": [
+        "tech",
+        "business",
+        "wechat",
+        "chinese"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-虎嗅-4c21e7560c41",
+      "title": "保暖便宜的羽绒服，只用4步挑选",
+      "source": "虎嗅",
+      "source_type": "wechat",
+      "url": "https://www.huxiu.com/article/4903171.html?f=rss",
+      "summary": "买羽绒服记住四步：翻缝线看跑绒，闻味道别买臭的，拍拍回弹要快，搓搓面料摸硬梗别选。照着来，保准你冬天朋友圈最暖！",
+      "category": [
+        "tech",
+        "business",
+        "wechat",
+        "chinese"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-赛博禅心-68346a62dacd",
+      "title": "Dario 小传：父亲死于丙肝、自己确诊睾丸癌、与 Altman 决裂出走",
+      "source": "赛博禅心",
+      "source_type": "wechat",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkzNDQxOTU2MQ==&mid=2247522629&idx=1&sn=ab1ca6d89bbbe6b2a583c8473093d663",
+      "summary": "“人类面前摆着巨大的生存危机，必须要做点什么”",
+      "category": [
+        "ai",
+        "startup",
+        "wechat",
+        "chinese"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-赛博禅心-99fdde676e8f",
+      "title": "GPT-6 Cyber 发布：允许写攻击程序",
+      "source": "赛博禅心",
+      "source_type": "wechat",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkzNDQxOTU2MQ==&mid=2247522619&idx=1&sn=631b7dd2d1efb895c15e20d319d951e0",
+      "summary": "哎...",
+      "category": [
+        "ai",
+        "startup",
+        "wechat",
+        "chinese"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-赛博禅心-8d53784c5a5c",
+      "title": "腾讯混元 Hy4 发布：大幅提升",
+      "source": "赛博禅心",
+      "source_type": "wechat",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkzNDQxOTU2MQ==&mid=2247522603&idx=1&sn=a9f6de34c33241d8dde439f39db3ab81",
+      "summary": "老规矩：在 AGI Bar，可免费使用 Hy4",
+      "category": [
+        "ai",
+        "startup",
+        "wechat",
+        "chinese"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "hn-50418176",
+      "title": "KetchUp – Open-source SketchUp alternative built with Rust and WebGPU",
+      "source": "Hacker News",
+      "source_type": "hn",
+      "url": "https://ketchup3d.github.io/app/",
+      "summary": "",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "hn-50419215",
+      "title": "Unlocking any car from X brand in most of the world",
+      "source": "Hacker News",
+      "source_type": "hn",
+      "url": "https://shubs.io/unlocking-any-car-from-x-brand-in-most-of-the-world/",
+      "summary": "",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "hn-50418182",
+      "title": "Chimera Vocal Synth",
+      "source": "Hacker News",
+      "source_type": "hn",
+      "url": "https://chimera-vocal-synth.vercel.app/",
+      "summary": "",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "reddit-1xredm6",
+      "title": "Why are companies still using UiPath for AP automation?",
+      "source": "r/AI_Agents",
+      "source_type": "reddit",
+      "url": "https://www.reddit.com/r/AI_Agents/comments/1xredm6/why_are_companies_still_using_uipath_for_ap/",
+      "summary": "Genuine question, why are companies still paying so much for UiPath to automate accounts payable? From what I've seen, it's expensive to set up and still struggles with things like different invoice formats and exceptions. With how far AI has come, there are much cheaper ways to automate invoice processing, approvals, and ERP integration without building complicated bots. I get that UiPath works for large companies, but for small and mid-sized businesses, I really don't see how the cost makes se",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "x-account-2119566196429476047",
+      "title": "新 iPad mini 8 用了两天了，这台机器的手感是非常惊艳的，和 iPhone duo 相比\n\n1. 重量仅增加了 1g\n2. 厚度仅增加了 0.2毫米\n3. 价格是 Duo 的三分之一\n4.不",
+      "source": "X:@oran_ge",
+      "source_type": "x",
+      "url": "https://x.com/oran_ge/status/2119566196429476047",
+      "summary": "新 iPad mini 8 用了两天了，这台机器的手感是非常惊艳的，和 iPhone duo 相比\n\n1. 重量仅增加了 1g\n2. 厚度仅增加了 0.2毫米\n3. 价格是 Duo 的三分之一\n4.不能折叠，携带不够方便，但同时没有任何折痕，看起来棒极了\n\niPad mini 8 另外比较惊喜的地方是，在 iPad Show more 21 4 80 29K",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "x-account-2119397408027365883",
+      "title": "AI 的需求上升是指数级的\nAI 的成本下降也是指数级的\nAI 数据中心的建设按部就班即可\n根本无须焦虑，无须fomo，更无须炒作 29 2 42 7.7K",
+      "source": "X:@oran_ge",
+      "source_type": "x",
+      "url": "https://x.com/oran_ge/status/2119397408027365883",
+      "summary": "AI 的需求上升是指数级的\nAI 的成本下降也是指数级的\nAI 数据中心的建设按部就班即可\n根本无须焦虑，无须fomo，更无须炒作 29 2 42 7.7K",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "x-account-2119265495295942864",
+      "title": "如果有 personal agent 能搞定欧洲签证\n我愿称之为神 11 3 53 19K",
+      "source": "X:@oran_ge",
+      "source_type": "x",
+      "url": "https://x.com/oran_ge/status/2119265495295942864",
+      "summary": "如果有 personal agent 能搞定欧洲签证\n我愿称之为神 11 3 53 19K",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "x-account-2119540611179323431",
+      "title": "黄仁勋致信员工承认出轨，英伟达董事会成立独立委员会调查他是否成了间谍行动的目标\n\n英伟达 CEO 黄仁勋在给员工的邮件里承认，自己对妻子不忠。美国时间 11 月 8 日（周日），英伟达董事会宣布，由独",
+      "source": "X:@dotey",
+      "source_type": "x",
+      "url": "https://x.com/dotey/status/2119540611179323431",
+      "summary": "黄仁勋致信员工承认出轨，英伟达董事会成立独立委员会调查他是否成了间谍行动的目标\n\n英伟达 CEO 黄仁勋在给员工的邮件里承认，自己对妻子不忠。美国时间 11 月 8 日（周日），英伟达董事会宣布，由独立董事组成委员会，请外部律师协助调查此事。 Show more 103 111 477 165K",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "x-account-2119539550112317743",
+      "title": "猜测是 GPT-6.2 要来了 39 4 61 13K",
+      "source": "X:@dotey",
+      "source_type": "x",
+      "url": "https://x.com/dotey/status/2119539550112317743",
+      "summary": "猜测是 GPT-6.2 要来了 39 4 61 13K",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "x-account-2119481319935692908",
+      "title": "“DeepSeek 希望 DeepSeek Harness 可以作为 Agent 时代的操作系统。” 51 101 21K",
+      "source": "X:@dotey",
+      "source_type": "x",
+      "url": "https://x.com/dotey/status/2119481319935692908",
+      "summary": "“DeepSeek 希望 DeepSeek Harness 可以作为 Agent 时代的操作系统。” 51 101 21K",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "x-account-2119433411979014438",
+      "title": "真牛逼啊，马斯克 @elonmusk 直接转发的中文帖啊。\n看来 X 上语言真的不是问题了，而且这个哥们才2万粉，说明马斯克啥帖子都刷 3 12 4.3K",
+      "source": "X:@fkysly",
+      "source_type": "x",
+      "url": "https://x.com/fkysly/status/2119433411979014438",
+      "summary": "真牛逼啊，马斯克 @elonmusk 直接转发的中文帖啊。\n看来 X 上语言真的不是问题了，而且这个哥们才2万粉，说明马斯克啥帖子都刷 3 12 4.3K",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "x-account-2119081074748006784",
+      "title": "我现在住在南京金陵饭店，我靠他们这个太牛逼了，竟然客房服务和前台服务都是 AI 语音了。\n\n我没带数据线，就打算电话问前台要一个。结果拨通之后是 AI 语音女生，问我需要什么服务，我说需要充电器，然后",
+      "source": "X:@fkysly",
+      "source_type": "x",
+      "url": "https://x.com/fkysly/status/2119081074748006784",
+      "summary": "我现在住在南京金陵饭店，我靠他们这个太牛逼了，竟然客房服务和前台服务都是 AI 语音了。\n\n我没带数据线，就打算电话问前台要一个。结果拨通之后是 AI 语音女生，问我需要什么服务，我说需要充电器，然后回复我说需要什么样的充电器，他们有华为的、苹果的、三合一的等等，我说 typec Show more 20 2 63 13K",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "x-account-2119053212938645513",
+      "title": "去苹果旗舰店看了一下 iPhone Duo，感觉还不错啊。\n\n我原本以为雾面屏会很模糊，以及折痕会很明显。但是其实亮屏正常使用的话，根本感受不出来任何问题。\n\n纠结了，求问有 iPhone Duo 的",
+      "source": "X:@fkysly",
+      "source_type": "x",
+      "url": "https://x.com/fkysly/status/2119053212938645513",
+      "summary": "去苹果旗舰店看了一下 iPhone Duo，感觉还不错啊。\n\n我原本以为雾面屏会很模糊，以及折痕会很明显。但是其实亮屏正常使用的话，根本感受不出来任何问题。\n\n纠结了，求问有 iPhone Duo 的各位，目前都有哪些坑？ 10 6 5.5K",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "x-account-2119305294291612140",
+      "title": "Would a Pro 50 make sense? Wdyt? 4K 724 10K 1.4M",
+      "source": "X:@thsottiaux",
+      "source_type": "x",
+      "url": "https://x.com/thsottiaux/status/2119305294291612140",
+      "summary": "Would a Pro 50 make sense? Wdyt? 4K 724 10K 1.4M",
+      "category": [],
+      "relevance_score": 8,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-openai-blog-4650983e6e64",
+      "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
+      "source": "OpenAI Blog",
+      "source_type": "blog",
+      "url": "https://openai.com/index/partnering-with-hacktron",
+      "summary": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI.",
+      "category": [
+        "ai",
+        "openai",
+        "official"
+      ],
+      "relevance_score": 4,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-openai-blog-a001352201c8",
+      "title": "Cult.fit builds operational muscle with Codex",
+      "source": "OpenAI Blog",
+      "source_type": "blog",
+      "url": "https://openai.com/index/cultfit-builds-with-codex",
+      "summary": "Cult.fit is using Codex to help teams across functions build tools, move faster, and change how work gets done.",
+      "category": [
+        "ai",
+        "openai",
+        "official"
+      ],
+      "relevance_score": 4,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-google-deepmind-blog-27451d50ffbe",
+      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "source": "Google DeepMind Blog",
+      "source_type": "blog",
+      "url": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
+      "summary": "",
+      "category": [
+        "ai",
+        "google",
+        "deepmind"
+      ],
+      "relevance_score": 4,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-google-ai-blog-4eabb5f27738",
+      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "source": "Google AI Blog",
+      "source_type": "blog",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+      "summary": "Gemini Omni 1.2 Flash brings native 15-second video generation and editing, stronger consistency, and 30% lower pricing.",
+      "category": [
+        "ai",
+        "google",
+        "official"
+      ],
+      "relevance_score": 4,
+      "created_at": "2026-11-09"
+    },
+    {
+      "id": "rss-meta-engineering-65ce16e3cee7",
+      "title": "F3 Lightning: How Meta Accelerates Ads ML Features to Production at Scale",
+      "source": "Meta Engineering",
+      "source_type": "blog",
+      "url": "https://engineering.fb.com/2026/11/03/ml-applications/f3-lightning-how-meta-accelerates-ads-ml-features-to-production/",
+      "summary": "Facebook Feature Framework (F3) is Meta&#8217;s framework for authoring, compiling, and serving the machine learning features underlying ads ranking models, where a single request can require more tha",
+      "category": [
+        "ai",
+        "meta",
+        "engineering"
+      ],
+      "relevance_score": 4,
+      "created_at": "2026-11-09"
+    }
+  ],
+  "signals": {
+    "inspiration": [
+      {
+        "id": "rss-google-ai-blog-ff01b8b9f068",
+        "title": "The latest AI news we announced in October 2026",
+        "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
+        "source": "Google AI Blog",
+        "source_type": "blog",
+        "published_at": "2026-11-02",
+        "relevance_score": 10,
+        "track": "inspiration",
+        "finding": "汇总 Google 在 2026 年 10 月发布的最新 AI 更新。",
+        "why_read": "此类月度汇总的价值主要在于追踪大厂发布节奏，而非提供技术深度。",
+        "evidence_note": "官方能力发布",
+        "tags": [
+          "新能力新用法"
+        ],
+        "details": [
+          "内容为 Google 2026 年 10 月的 AI 动态汇总",
+          "属于产品与发布新闻集锦"
+        ],
+        "takeaway": "汇总 Google 在 2026 年 10 月发布的最新 AI 更新。",
+        "facts": [
+          "内容为 Google 2026 年 10 月的 AI 动态汇总",
+          "属于产品与发布新闻集锦"
+        ],
+        "so_what": "此类月度汇总的价值主要在于追踪大厂发布节奏，而非提供技术深度。",
+        "evidence": "",
+        "why": "官方能力发布"
+      },
+      {
+        "id": "hn-50417407",
+        "title": "Ask HN: What are you working on? (November 2026)",
+        "url": "https://news.ycombinator.com/item?id=50417407",
+        "source": "Hacker News",
+        "source_type": "hn",
+        "published_at": "2026-11-08T21:20:20+00:00",
+        "relevance_score": 8,
+        "track": "inspiration",
+        "finding": "这是 Hacker News 的例行提问帖，邀请大家分享正在做的项目以及最近好奇的事情。",
+        "why_read": "开放式提问帖是观察开发者关注风向的窗口。",
+        "evidence_note": "社区热榜（转述/讨论，非独立验证） · 互动数据：148 points, 514 comments",
+        "tags": [
+          "新问题与需求"
+        ],
+        "details": [
+          "询问大家在做什么项目",
+          "询问最近对什么感到好奇",
+          "属于社区例行交流帖"
+        ],
+        "takeaway": "这是 Hacker News 的例行提问帖，邀请大家分享正在做的项目以及最近好奇的事情。",
+        "facts": [
+          "询问大家在做什么项目",
+          "询问最近对什么感到好奇"
+        ],
+        "so_what": "开放式提问帖是观察开发者关注风向的窗口。",
+        "evidence": "148 points, 514 comments",
+        "why": "社区讨论 · 148 points, 514 comments"
+      },
+      {
+        "id": "atom-the-ai-valley-8b383843d328",
+        "title": "Google: skip AI, skip Search",
+        "url": "https://kill-the-newsletter.com/feeds/sg5lm1gdqvvwgskcyk8q/entries/oulpvcvs0f09zaue2g91zyjau835hrkskov4ml9d.html",
+        "source": "The AI Valley",
+        "source_type": "news",
+        "published_at": "2026-11-04",
+        "relevance_score": 8,
+        "track": "inspiration",
+        "finding": "一篇题为\"Google: skip AI, skip Search\"的文章，正文主要为邮件样式表与 HTML 代码，实质内容有限。",
+        "why_read": "该条目内容缺失，难以提炼有效观点，仅可视为标题层面的表态。",
+        "evidence_note": "来源转述",
+        "tags": [],
+        "details": [
+          "标题暗示跳过 AI 与搜索相关话题",
+          "抓取内容为邮件模板 CSS 与 HTML 结构",
+          "缺少可读的正文论述"
+        ],
+        "takeaway": "一篇题为\"Google: skip AI, skip Search\"的文章，正文主要为邮件样式表与 HTML 代码，实质内容有限。",
+        "facts": [
+          "标题暗示跳过 AI 与搜索相关话题",
+          "抓取内容为邮件模板 CSS 与 HTML 结构"
+        ],
+        "so_what": "该条目内容缺失，难以提炼有效观点，仅可视为标题层面的表态。",
+        "evidence": "",
+        "why": "值得关注"
+      }
+    ],
+    "execution": [
+      {
+        "id": "arxiv-2611.08912v1",
+        "title": "SSF-Net: A Spatial-Spectral Fusion Network for Accurate PDE Operator Learning",
+        "url": "https://arxiv.org/abs/2611.08912v1",
+        "source": "arXiv",
+        "source_type": "arxiv",
+        "published_at": null,
+        "relevance_score": 8,
+        "track": "execution",
+        "finding": "文章提出 SSF-Net，一种用于精确 PDE 算子学习的空间-谱融合网络。PDE 动力学同时包含局部与全局动态：扰动在域内逐步传播与衰减，而全局耦合效应可同时影响整个系统，用低复杂度模型同时捕捉二者仍是关键挑战。",
+        "why_read": "PDE 算子学习的关键在于用统一低复杂度架构同时建模局部传播与全局耦合。",
+        "evidence_note": "来源转述",
+        "tags": [],
+        "details": [
+          "机器学习求解 PDE 相比 FEM 等数值求解器显著提升计算效率",
+          "PDE 动力学本质上是局部传播与全局耦合并存",
+          "低复杂度模型同时捕捉两类动态是核心挑战",
+          "提出空间-谱融合网络 SSF-Net 应对该挑战"
+        ],
+        "takeaway": "文章提出 SSF-Net，一种用于精确 PDE 算子学习的空间-谱融合网络。PDE 动力学同时包含局部与全局动态：扰动在域内逐步传播与衰减，而全局耦合效应可同时影响整个系统，用低复杂度模型同时捕捉二者仍是关键挑战。",
+        "facts": [
+          "机器学习求解 PDE 相比 FEM 等数值求解器显著提升计算效率",
+          "PDE 动力学本质上是局部传播与全局耦合并存"
+        ],
+        "so_what": "PDE 算子学习的关键在于用统一低复杂度架构同时建模局部传播与全局耦合。",
+        "evidence": "",
+        "why": "技术内容"
+      },
+      {
+        "id": "arxiv-2611.08914v1",
+        "title": "HomeLoop: A Simulation Framework and Benchmark for Robot-IoT Coordination in Everyday Domestic Assistance and Safety",
+        "url": "https://arxiv.org/abs/2611.08914v1",
+        "source": "arXiv",
+        "source_type": "arxiv",
+        "published_at": null,
+        "relevance_score": 8,
+        "track": "execution",
+        "finding": "文章提出 HomeLoop，一个面向日常家庭辅助与安全场景中机器人-IoT 协同的仿真框架与基准。随着 VLM 驱动的机器人作为家庭助理智能体走向部署，它们需与家庭已有的摄像头、IoT 设备与可穿戴设备集成，并推理模糊场景。",
+        "why_read": "家庭机器人落地的瓶颈不在单体能力，而在与既有智能基础设施的协同与模糊情境推理。",
+        "evidence_note": "来源转述",
+        "tags": [
+          "新能力新用法",
+          "对比与选择"
+        ],
+        "details": [
+          "VLM 推理进步推动机器人作为家庭助理智能体走向部署",
+          "家庭中已存在摄像头、IoT 设备与居民可穿戴设备",
+          "机器人需与既有智能基础设施集成并处理模糊情境",
+          "提供仿真框架与基准以评测机器人-IoT 协同"
+        ],
+        "takeaway": "文章提出 HomeLoop，一个面向日常家庭辅助与安全场景中机器人-IoT 协同的仿真框架与基准。随着 VLM 驱动的机器人作为家庭助理智能体走向部署，它们需与家庭已有的摄像头、IoT 设备与可穿戴设备集成，并推理模糊场景。",
+        "facts": [
+          "VLM 推理进步推动机器人作为家庭助理智能体走向部署",
+          "家庭中已存在摄像头、IoT 设备与居民可穿戴设备"
+        ],
+        "so_what": "家庭机器人落地的瓶颈不在单体能力，而在与既有智能基础设施的协同与模糊情境推理。",
+        "evidence": "",
+        "why": "技术内容"
+      }
+    ],
+    "total": 5,
+    "learning": {
+      "active_references": [],
+      "themes": [],
+      "value_patterns": [],
+      "search_clues": []
+    },
+    "events": [
+      {
+        "id": "event-c70eca6b0f88f44d",
+        "title": "Anthropic发布科研会话分析：写论文多、提想法少",
+        "what_happened": "Anthropic于11月4日发布研究报告，统计2026年8月2日至9月30日约20.7万次科研相关Claude会话，发现科学家最常用AI分析数据和写论文，而他们最看重的提出想法反而用得最少。",
+        "why_read": "AI目前更像科研执行工具而非创意伙伴，这一认知落差是下一波产品机会所在。",
+        "seed_ids": [
+          "x-account-2119283516143776186"
+        ],
+        "sources": [
+          {
+            "id": "x-account-2119283516143776186",
+            "url": "https://x.com/dotey/status/2119283516143776186",
+            "title": "Anthropic 分析 20 万次科研会话：科学家用 Claude 最多的是分析数据和写论文，他们最看重的提想法反而用得最少\n\nAnthropic 11 月 4 日发布研究报告，统计了 2026 年",
+            "source": "X:@dotey",
+            "published_at": "2026-11-08T04:18:59.289000+00:00",
+            "author": "@dotey"
+          }
+        ],
+        "entity": "Anthropic",
+        "query": "Anthropic 科研 Claude 会话 报告",
+        "progress": false,
+        "discussions": {
+          "x": {
+            "status": "unavailable",
+            "posts": []
+          },
+          "hn": {
+            "status": "found",
+            "posts": [
+              {
+                "url": "https://news.ycombinator.com/item?id=50417165",
+                "title": "What Anthropic's IPO Filing Says About the Future of A.I",
+                "author": "edward",
+                "published_at": "2026-11-08T20:57:14Z",
+                "source": "Hacker News",
+                "engagement": {
+                  "points": 3,
+                  "comments": 0
+                }
+              },
+              {
+                "url": "https://news.ycombinator.com/item?id=50414800",
+                "title": "A guy running Claude KYC business to bypass anthropics restrictions",
+                "author": "firemelt",
+                "published_at": "2026-11-08T16:43:51Z",
+                "source": "Hacker News",
+                "engagement": {
+                  "points": 1,
+                  "comments": 0
+                }
+              },
+              {
+                "url": "https://news.ycombinator.com/item?id=50413425",
+                "title": "Anthropic Let an Outsider Check Its AI Progress. Here's What We Can't See",
+                "author": "lroe",
+                "published_at": "2026-11-08T13:57:22Z",
+                "source": "Hacker News",
+                "engagement": {
+                  "points": 1,
+                  "comments": 1
+                }
+              },
+              {
+                "url": "https://news.ycombinator.com/item?id=50412760",
+                "title": "Anthropic strikes $3.4B deal to generate gas-fired power for data centres",
+                "author": "mraniki",
+                "published_at": "2026-11-08T12:41:25Z",
+                "source": "Hacker News",
+                "engagement": {
+                  "points": 39,
+                  "comments": 27
+                }
+              },
+              {
+                "url": "https://news.ycombinator.com/item?id=50409992",
+                "title": "Anthropic warns that it's close to RSI capability, a.k.a. self-building AI",
+                "author": "RickJWagner",
+                "published_at": "2026-11-08T02:39:59Z",
+                "source": "Hacker News",
+                "engagement": {
+                  "points": 7,
+                  "comments": 6
+                }
+              }
+            ]
+          },
+          "reddit": {
+            "status": "found",
+            "posts": [
+              {
+                "url": "https://www.reddit.com/r/ClaudeCoding/comments/1xrg1o9/tldr_is_opus_55_nerfed_via_ranthropic/",
+                "title": "[TLDR] is Opus 5.5 nerfed? [via r/Anthropic]",
+                "author": "/u/cctldrping",
+                "published_at": "2026-11-09T02:29:18+00:00",
+                "source": "Reddit"
+              },
+              {
+                "url": "https://www.reddit.com/r/ClaudeCoding/comments/1xrg1le/tldr_is_opus_55_nerfed_via_rclaude/",
+                "title": "[TLDR] is Opus 5.5 nerfed? [via r/claude]",
+                "author": "/u/cctldrping",
+                "published_at": "2026-11-09T02:29:12+00:00",
+                "source": "Reddit"
+              },
+              {
+                "url": "https://www.reddit.com/r/ClaudeCoding/comments/1xrg1im/tldr_opus_55_xhigh_just_deleted_all_my_apps_data/",
+                "title": "[TLDR] opus 5.5 XHIGH just deleted all my apps data, passwords and macOS configs [via r/ClaudeCode]",
+                "author": "/u/cctldrping",
+                "published_at": "2026-11-09T02:29:04+00:00",
+                "source": "Reddit"
+              },
+              {
+                "url": "https://www.reddit.com/r/ClaudeCoding/comments/1xrg10w/tldr_compacting_at_400k_instead_of_967k_cut_my/",
+                "title": "[TLDR] Compacting at 400K instead of ~967K cut my Claude Code cost per request by 38% [via r/Anthropic]",
+                "author": "/u/cctldrping",
+                "published_at": "2026-11-09T02:28:23+00:00",
+                "source": "Reddit"
+              },
+              {
+                "url": "https://www.reddit.com/r/Eve/comments/1xrfv9y/anthropic_and_eve/",
+                "title": "Anthropic and eve",
+                "author": "/u/kleekai_gsd",
+                "published_at": "2026-11-09T02:20:26+00:00",
+                "source": "Reddit"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "event-59bc772979c50f3f",
+        "title": "DeepSeek提出Harness作为Agent时代操作系统",
+        "what_happened": "DeepSeek表示希望DeepSeek Harness能成为Agent时代的操作系统，定位为智能体运行的基础平台，体现从模型向平台层的战略延伸。",
+        "why_read": "谁定义Agent的运行底座，谁就掌握下一代入口，这是模型厂商向平台层延伸的关键信号。",
+        "seed_ids": [
+          "x-account-2119481319935692908"
+        ],
+        "sources": [
+          {
+            "id": "x-account-2119481319935692908",
+            "url": "https://x.com/dotey/status/2119481319935692908",
+            "title": "“DeepSeek 希望 DeepSeek Harness 可以作为 Agent 时代的操作系统。” 51 101 21K",
+            "source": "X:@dotey",
+            "published_at": "2026-11-08T17:24:59.388000+00:00",
+            "author": "@dotey"
+          }
+        ],
+        "entity": "DeepSeek Harness",
+        "query": "DeepSeek Harness Agent 操作系统",
+        "progress": false,
+        "discussions": {
+          "x": {
+            "status": "unavailable",
+            "posts": []
+          },
+          "hn": {
+            "status": "found",
+            "posts": [
+              {
+                "url": "https://news.ycombinator.com/item?id=50414016",
+                "title": "DeepSeek Harness: Growing Together with Our Plugin Community",
+                "author": "pretext",
+                "published_at": "2026-11-08T15:19:16Z",
+                "source": "Hacker News",
+                "engagement": {
+                  "points": 3,
+                  "comments": 0
+                }
+              },
+              {
+                "url": "https://news.ycombinator.com/item?id=50410772",
+                "title": "DeepSeek Harness – Creator Mode",
+                "author": "sexy_seedbox",
+                "published_at": "2026-11-08T05:53:20Z",
+                "source": "Hacker News",
+                "engagement": {
+                  "points": 4,
+                  "comments": 0
+                }
+              }
+            ]
+          },
+          "reddit": {
+            "status": "unavailable",
+            "posts": [],
+            "reason": "rate_limited"
+          }
+        }
+      },
+      {
+        "id": "event-f19600b9e18f7f27",
+        "title": "开发者从多会话IDE转向Pi并质疑UiPath式RPA",
+        "what_happened": "Hacker News每日摘要记录Caleb因多会话IDE联动、扩展差异与频繁行为变化转向Pi，属个人迁移记录；同期r/AI_Agents讨论质疑企业仍高价用UiPath做应付账款自动化，认为部署昂贵且难应付多格式发票与异常，而AI能以更低成本完成发票处理、审批与ERP集成。",
+        "why_read": "开发者工具迁移与RPA被AI替代的讨论共同显示：传统工具护城河正被适应性与成本优势侵蚀。",
+        "seed_ids": [
+          "rss-hackernews-daily-480f1ace96bc",
+          "reddit-1xredm6"
+        ],
+        "sources": [
+          {
+            "id": "rss-hackernews-daily-480f1ace96bc",
+            "url": "https://supertechfans.com/cn/post/2026-11-09-HackerNews/",
+            "title": "2026-11-09 Hacker News Top Stories",
+            "source": "HackerNews Daily",
+            "published_at": "2026-11-09",
+            "author": ""
+          },
+          {
+            "id": "reddit-1xredm6",
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1xredm6/why_are_companies_still_using_uipath_for_ap/",
+            "title": "Why are companies still using UiPath for AP automation?",
+            "source": "r/AI_Agents",
+            "published_at": "2026-11-09T01:05:34+00:00",
+            "author": "/u/UpperAudience8862"
+          }
+        ],
+        "entity": "UiPath",
+        "query": "UiPath 应付账款自动化 AI 替代",
+        "progress": false,
+        "discussions": {
+          "x": {
+            "status": "unavailable",
+            "posts": []
+          },
+          "hn": {
+            "status": "no_results",
+            "posts": []
+          },
+          "reddit": {
+            "status": "unavailable",
+            "posts": [],
+            "reason": "rate_limited"
+          }
+        }
+      }
+    ],
+    "source_status": {
+      "errors": {
+        "r/aipromptprogramming": "rate_limited",
+        "r/Anthropic": "rate_limited",
+        "r/artificial": "rate_limited",
+        "r/ArtificialInteligence": "rate_limited",
+        "r/AskReddit": "rate_limited",
+        "r/BeAmazed": "rate_limited",
+        "r/ChatGPT": "rate_limited",
+        "r/ChatGPTCoding": "rate_limited",
+        "r/ClaudeAI": "rate_limited",
+        "r/DeepSeek": "rate_limited"
+      },
+      "hn": "ok",
+      "reddit": {
+        "r/AI_Agents": "ok",
+        "r/aipromptprogramming": "unavailable",
+        "r/Anthropic": "unavailable",
+        "r/artificial": "unavailable",
+        "r/ArtificialInteligence": "unavailable",
+        "r/AskReddit": "unavailable",
+        "r/BeAmazed": "unavailable",
+        "r/ChatGPT": "unavailable",
+        "r/ChatGPTCoding": "unavailable",
+        "r/ClaudeAI": "unavailable",
+        "r/DeepSeek": "unavailable"
+      }
+    },
+    "selection_status": "ok",
+    "accounts": [
+      {
+        "handle": "@oran_ge",
+        "status": "partial",
+        "checked_at": "2026-11-09T02:56:14.103584+00:00",
+        "reason": "public_profile_first_page_only",
+        "posts": [
+          {
+            "id": "x-account-2119566196429476047",
+            "handle": "@oran_ge",
+            "kind": "original",
+            "title": "新 iPad mini 8 用了两天了，这台机器的手感是非常惊艳的，和 iPhone duo 相比\n\n1. 重量仅增加了 1g\n2. 厚度仅增加了 0.2毫米\n3. 价格是 Duo 的三分之一\n4.不",
+            "url": "https://x.com/oran_ge/status/2119566196429476047",
+            "published_at": "2026-11-08T23:02:15.521000+00:00",
+            "takeaway": "**核心内容**：作者使用新 iPad mini 8 两天后评价其手感惊艳，与 iPhone Duo 对比重量仅增 1g、厚度仅增 0.2mm、价格仅为三分之一，但不可折叠便携性差，同时无折痕观感出色。\n\n**关键信息**：\n- 重量仅比 iPhone Duo 增加 1g\n- 厚度仅增加 0.2 毫米\n- 价格是 Duo 的三分之一\n- 不能折叠，携带不够方便\n- 没有任何折痕，看起来很棒\n\n**值得关注**：在轻薄、无折痕和价格上做到极致，比可折叠形态更具实用性价比。",
+            "text_type": "quick_read"
+          },
+          {
+            "id": "x-account-2119397408027365883",
+            "handle": "@oran_ge",
+            "kind": "quote",
+            "title": "AI 的需求上升是指数级的\nAI 的成本下降也是指数级的\nAI 数据中心的建设按部就班即可\n根本无须焦虑，无须fomo，更无须炒作 29 2 42 7.7K",
+            "url": "https://x.com/oran_ge/status/2119397408027365883",
+            "published_at": "2026-11-08T11:51:33.230000+00:00",
+            "takeaway": "**核心内容**：作者认为 AI 需求呈指数级上升、成本呈指数级下降，数据中心建设按部就班即可，不必焦虑、FOMO 或炒作。\n\n**关键信息**：\n- AI 需求上升是指数级的\n- AI 成本下降也是指数级的\n- AI 数据中心建设按部就班即可\n- 无须焦虑、无须 FOMO、无须炒作\n\n**值得关注**：供需两端都在指数级演进时，理性节奏比追逐情绪更有价值。",
+            "text_type": "quick_read",
+            "quoted_url": "https://x.com/SoberLook/status/2119276189399609590"
+          },
+          {
+            "id": "x-account-2119265495295942864",
+            "handle": "@oran_ge",
+            "kind": "original",
+            "title": "如果有 personal agent 能搞定欧洲签证\n我愿称之为神 11 3 53 19K",
+            "url": "https://x.com/oran_ge/status/2119265495295942864",
+            "published_at": "2026-11-08T03:07:22.784000+00:00",
+            "takeaway": "**核心内容**：作者表示如果有 personal agent 能搞定欧洲签证，那将被视为神级产品，点出签证办理是个人智能体的一大高频痛点场景。\n\n**关键信息**：\n- personal agent 若能代办欧洲签证\n- 作者愿称之为神\n- 反映签证办理流程繁琐、痛点突出\n\n**值得关注**：真正有价值的 Agent 要先啃下高摩擦、强流程的现实事务。",
+            "text_type": "quick_read"
+          },
+          {
+            "id": "x-account-2119264733161464164",
+            "handle": "@oran_ge",
+            "kind": "original",
+            "title": "AI 漫剧开始亏钱了\n如果投流获客这种生产关系不改变\n没有任何东西可以卷得出来 7 15 55 23K",
+            "url": "https://x.com/oran_ge/status/2119264733161464164",
+            "published_at": "2026-11-08T03:04:21.077000+00:00",
+            "takeaway": "**核心内容**：AI 漫剧已开始亏钱，作者认为若不改变投流获客这一生产关系，任何内容形式都卷不出结果。\n\n**关键信息**：\n- AI 漫剧开始亏钱\n- 投流获客模式是根本症结\n- 生产关系不改变则无物可卷\n\n**值得关注**：内容赛道的胜负不在产能，而在获客与分发关系的重构。",
+            "text_type": "quick_read"
+          }
+        ]
+      },
+      {
+        "handle": "@dotey",
+        "status": "partial",
+        "checked_at": "2026-11-09T02:56:14.064443+00:00",
+        "reason": "public_profile_first_page_only",
+        "posts": [
+          {
+            "id": "x-account-2119540611179323431",
+            "handle": "@dotey",
+            "kind": "quote",
+            "title": "黄仁勋致信员工承认出轨，英伟达董事会成立独立委员会调查他是否成了间谍行动的目标\n\n英伟达 CEO 黄仁勋在给员工的邮件里承认，自己对妻子不忠。美国时间 11 月 8 日（周日），英伟达董事会宣布，由独",
+            "url": "https://x.com/dotey/status/2119540611179323431",
+            "published_at": "2026-11-08T21:20:35.522000+00:00",
+            "takeaway": "**核心内容**：黄仁勋致信员工承认对妻子不忠，英伟达董事会成立由独立董事组成的委员会并聘请外部律师，调查他是否成为间谍行动的目标。\n\n**关键信息**：\n- 黄仁勋邮件承认对妻子不忠\n- 11 月 8 日董事会宣布成立独立委员会\n- 委员会由独立董事组成\n- 聘请外部律师协助调查\n- 调查其是否成为间谍行动目标\n\n**值得关注**：高管个人风险与国家安全疑云交织，公司治理面临双重考验。",
+            "text_type": "quick_read",
+            "quoted_url": "https://x.com/MadisonMills22/status/2119522282594881951"
+          },
+          {
+            "id": "x-account-2119539550112317743",
+            "handle": "@dotey",
+            "kind": "quote",
+            "title": "猜测是 GPT-6.2 要来了 39 4 61 13K",
+            "url": "https://x.com/dotey/status/2119539550112317743",
+            "published_at": "2026-11-08T21:16:22.544000+00:00",
+            "takeaway": "**核心内容**：作者仅以一句话猜测 GPT-6.2 即将发布，属于对模型迭代节奏的简短预判。\n\n**关键信息**：\n- 猜测 GPT-6.2 要来了\n- 内容极简，属前瞻性推测\n\n**值得关注**：模型版本号的每次跳动都会成为行业关注的风向标。",
+            "text_type": "quick_read",
+            "quoted_url": "https://x.com/OpenAIDevs/status/2119521359185478140"
+          },
+          {
+            "id": "x-account-2119481319935692908",
+            "handle": "@dotey",
+            "kind": "quote",
+            "title": "“DeepSeek 希望 DeepSeek Harness 可以作为 Agent 时代的操作系统。” 51 101 21K",
+            "url": "https://x.com/dotey/status/2119481319935692908",
+            "published_at": "2026-11-08T17:24:59.388000+00:00",
+            "takeaway": "**核心内容**：DeepSeek 希望其 DeepSeek Harness 能成为 Agent 时代的操作系统，定位为智能体运行的基础平台。\n\n**关键信息**：\n- DeepSeek 提出 Harness 概念\n- 目标是成为 Agent 时代的操作系统\n- 体现从模型向平台层的战略延伸\n\n**值得关注**：谁定义 Agent 的运行底座，谁就掌握下一代入口。",
+            "text_type": "quick_read",
+            "quoted_url": "https://x.com/tianyi/status/2119433744671273441"
+          },
+          {
+            "id": "x-account-2119283516143776186",
+            "handle": "@dotey",
+            "kind": "original",
+            "title": "Anthropic 分析 20 万次科研会话：科学家用 Claude 最多的是分析数据和写论文，他们最看重的提想法反而用得最少\n\nAnthropic 11 月 4 日发布研究报告，统计了 2026 年",
+            "url": "https://x.com/dotey/status/2119283516143776186",
+            "published_at": "2026-11-08T04:18:59.289000+00:00",
+            "takeaway": "**核心内容**：Anthropic 分析约 20.7 万次科研相关 Claude 会话，发现科学家最常用 AI 分析数据和写论文，而他们最看重的提出想法反而用得最少。\n\n**关键信息**：\n- 统计 2026 年 8 月 2 日至 9 月 30 日约 20.7 万次会话\n- 使用最多：分析数据与写论文\n- 使用最少：提出想法\n- 与研究者的价值预期形成反差\n\n**值得关注**：AI 目前更像科研的执行工具，而非创意伙伴，认知落差是下一波机会。",
+            "text_type": "quick_read"
+          }
+        ]
+      },
+      {
+        "handle": "@fkysly",
+        "status": "partial",
+        "checked_at": "2026-11-09T02:56:14.817472+00:00",
+        "reason": "public_profile_first_page_only",
+        "posts": [
+          {
+            "id": "x-account-2119433411979014438",
+            "handle": "@fkysly",
+            "kind": "original",
+            "title": "真牛逼啊，马斯克 @elonmusk 直接转发的中文帖啊。\n看来 X 上语言真的不是问题了，而且这个哥们才2万粉，说明马斯克啥帖子都刷 3 12 4.3K",
+            "url": "https://x.com/fkysly/status/2119433411979014438",
+            "published_at": "2026-11-08T14:14:37.241000+00:00",
+            "takeaway": "**核心内容**：马斯克直接转发了一条中文帖子，作者感叹 X 上语言已不构成障碍，且该发帖者仅 2 万粉丝，说明马斯克浏览范围极广。\n\n**关键信息**：\n- 马斯克转发中文帖\n- 语言不再是 X 上的障碍\n- 被转发者仅 2 万粉丝\n- 说明马斯克刷帖范围广\n\n**值得关注**：平台算法与翻译能力让小账号也能直达顶级注意力。",
+            "text_type": "quick_read"
+          },
+          {
+            "id": "x-account-2119081074748006784",
+            "handle": "@fkysly",
+            "kind": "original",
+            "title": "我现在住在南京金陵饭店，我靠他们这个太牛逼了，竟然客房服务和前台服务都是 AI 语音了。\n\n我没带数据线，就打算电话问前台要一个。结果拨通之后是 AI 语音女生，问我需要什么服务，我说需要充电器，然后",
+            "url": "https://x.com/fkysly/status/2119081074748006784",
+            "published_at": "2026-11-07T14:54:33.499000+00:00",
+            "takeaway": "**核心内容**：作者入住南京金陵饭店，发现客房服务和前台均由 AI 语音接待，致电索要充电线时 AI 能细问充电器类型并响应。\n\n**关键信息**：\n- 客房与前台服务均为 AI 语音\n- 拨通后为 AI 女声询问需求\n- AI 能区分华为、苹果、三合一等充电器类型\n- 场景落地到酒店服务一线\n\n**值得关注**：AI 语音已在酒店这类高频服务场景中替代人工前台。",
+            "text_type": "quick_read"
+          },
+          {
+            "id": "x-account-2119053212938645513",
+            "handle": "@fkysly",
+            "kind": "original",
+            "title": "去苹果旗舰店看了一下 iPhone Duo，感觉还不错啊。\n\n我原本以为雾面屏会很模糊，以及折痕会很明显。但是其实亮屏正常使用的话，根本感受不出来任何问题。\n\n纠结了，求问有 iPhone Duo 的",
+            "url": "https://x.com/fkysly/status/2119053212938645513",
+            "published_at": "2026-11-07T13:03:50.726000+00:00",
+            "takeaway": "**核心内容**：作者在苹果旗舰店体验 iPhone Duo，原以为雾面屏模糊、折痕明显，实际亮屏使用时几乎无感，因此纠结是否入手并求问已购者的坑。\n\n**关键信息**：\n- 雾面屏实际不模糊\n- 折痕在正常使用中感受不到\n- 体验好于预期\n- 向已购用户征询使用坑点\n\n**值得关注**：折叠屏的真实体验往往优于参数与第一印象的担忧。",
+            "text_type": "quick_read"
+          },
+          {
+            "id": "x-account-2118932332010938854",
+            "handle": "@fkysly",
+            "kind": "original",
+            "title": "这波 X 收益大涨看不太明白，难道是因为最近 AI 评论机器人被干了？还是因为评论区又加入了额外的视频广告、 1 1K",
+            "url": "https://x.com/fkysly/status/2118932332010938854",
+            "published_at": "2026-11-07T05:03:30.467000+00:00",
+            "takeaway": "**核心内容**：作者对 X 平台收益大涨感到困惑，猜测可能与清理 AI 评论机器人或评论区新增视频广告有关。\n\n**关键信息**：\n- X 收益出现大涨\n- 猜测原因一：AI 评论机器人被治理\n- 猜测原因二：评论区加入视频广告\n\n**值得关注**：平台收益改善常来自生态治理与广告形态的双重调整。",
+            "text_type": "quick_read"
+          }
+        ]
+      },
+      {
+        "handle": "@thsottiaux",
+        "status": "partial",
+        "checked_at": "2026-11-09T02:56:14.849273+00:00",
+        "reason": "public_profile_first_page_only",
+        "posts": [
+          {
+            "id": "x-account-2119305294291612140",
+            "handle": "@thsottiaux",
+            "kind": "quote",
+            "title": "Would a Pro 50 make sense? Wdyt? 4K 724 10K 1.4M",
+            "url": "https://x.com/thsottiaux/status/2119305294291612140",
+            "published_at": "2026-11-08T05:45:31.604000+00:00",
+            "takeaway": "**核心内容**：作者提出是否该推出 Pro 50 档位的疑问，征询大家看法，属产品分档的开放讨论。\n\n**关键信息**：\n- 提出 Pro 50 是否有意义\n- 向社区征询意见\n\n**值得关注**：订阅分档的细化本质是对用户付费意愿的再切分。",
+            "text_type": "quick_read",
+            "quoted_url": "https://x.com/thsottiaux/status/2119296267545419987"
+          },
+          {
+            "id": "x-account-2119296267545419987",
+            "handle": "@thsottiaux",
+            "kind": "original",
+            "title": "Saw some confusions, but all Pro plans have no 5-hour limits, and give the following usage compared ",
+            "url": "https://x.com/thsottiaux/status/2119296267545419987",
+            "published_at": "2026-11-08T05:09:39.460000+00:00",
+            "takeaway": "**核心内容**：官方澄清所有 Pro 套餐均无 5 小时限制，并给出相对 Plus 的用量倍数：Pro 100 为 10 倍、Pro 200 为 20 倍、Pro 500 为 50 倍且可访问 ultrafast。\n\n**关键信息**：\n- 所有 Pro 套餐无 5 小时限制\n- Pro 100 = 10 倍用量\n- Pro 200 = 20 倍用量\n- Pro 500 = 50 倍用量并可访问 ultrafast\n\n**值得关注**：用倍数阶梯替代时间限制，是把定价锚定在产出而非时长上。",
+            "text_type": "quick_read"
+          },
+          {
+            "id": "x-account-2118953362725159104",
+            "handle": "@thsottiaux",
+            "kind": "quote",
+            "title": "Cyber 426 62 1.7K 652K",
+            "url": "https://x.com/thsottiaux/status/2118953362725159104",
+            "published_at": "2026-11-07T06:27:04.580000+00:00",
+            "takeaway": "**核心内容**：该条仅含 Cyber 一词及互动数据，无实质内容，推测为对某款 Cyber 相关产品或话题的简短提及。\n\n**关键信息**：\n- 标题仅为 Cyber\n- 附有较高互动数据\n- 缺乏可解读的实质信息\n\n**值得关注**：单词式标题依靠话题符号即可撬动大量互动。",
+            "text_type": "quick_read",
+            "quoted_url": "https://x.com/i0n1c/status/2118409855119880354"
+          },
+          {
+            "id": "x-account-2118938956301779171",
+            "handle": "@thsottiaux",
+            "kind": "quote",
+            "title": "Get me out of the basement poteto.com 1.6K 566 8.6K 2.6M",
+            "url": "https://x.com/thsottiaux/status/2118938956301779171",
+            "published_at": "2026-11-07T05:29:49.821000+00:00",
+            "takeaway": "**核心内容**：标题与摘要均为无实质内容的重复文本，未提供可总结的研究信息。\n\n**关键信息**：\n- 仅有标题与一串数字指标\n- 无摘要正文\n- 无法提取研究主题或结论\n\n**值得关注**：该条目缺乏可分析内容，疑似占位或数据抓取异常。",
+            "text_type": "quick_read",
+            "quoted_url": "https://x.com/thsottiaux/status/2118871902366441879"
+          },
+          {
+            "id": "x-account-2118871902366441879",
+            "handle": "@thsottiaux",
+            "kind": "original",
+            "title": "It's Friday 1.9K 358 7.6K 2.5M",
+            "url": "https://x.com/thsottiaux/status/2118871902366441879",
+            "published_at": "2026-11-07T01:03:22.917000+00:00",
+            "takeaway": "**核心内容**：标题与摘要均为无实质内容的重复文本，未提供可总结的研究信息。\n\n**关键信息**：\n- 仅有标题与一串数字指标\n- 无摘要正文\n- 无法提取研究主题或结论\n\n**值得关注**：该条目缺乏可分析内容，疑似占位或数据抓取异常。",
+            "text_type": "quick_read"
+          }
+        ]
+      }
+    ]
+  },
+  "summary": null,
+  "generated_at": "2026-11-09T11:00:19.740897"
+}

@@ -1,0 +1,619 @@
+{
+  "date": "2026-04-19",
+  "solutions": [
+    {
+      "type": "研发提效",
+      "title": "桌面AI编程助手深度集成",
+      "trigger": "Codex新增computer use、图像生成、记忆功能",
+      "scenario": "在日常开发中，目前程序员需要在多个工具间切换（IDE、浏览器、终端、设计工具），核心痛点在于上下文切换损耗大量时间",
+      "ai_solution": "Codex作为桌面级AI助手，可直接操作计算机、浏览网页、生成图像，实现从需求到代码的端到端自动化",
+      "implementation": "作为桌面应用深度集成到开发工作流，支持自然语言驱动多步骤复杂任务",
+      "audience": [
+        "大前端",
+        "客户端",
+        "后端"
+      ],
+      "impact": "减少50%日常开发中的工具切换和机械操作，提升真正编码时间占比",
+      "difficulty": "低",
+      "resistance": "需要改变程序员习惯，部分任务AI执行结果需人工复核",
+      "scores": {
+        "efficiency": 9,
+        "feasibility": 9,
+        "business_impact": 7,
+        "overall": 9
+      },
+      "total_score": 9,
+      "source_title": "Codex for (almost) everything",
+      "source": "OpenAI Blog",
+      "source_type": "blog",
+      "source_url": "https://openai.com/index/codex-for-almost-everything",
+      "item_id": "rss-openai-blog-a0464d4374d6"
+    },
+    {
+      "type": "研发提效",
+      "title": "多Agent工作流编排平台",
+      "trigger": "轻量级多Agent框架",
+      "scenario": "复杂业务流程需要多个AI Agent协作，当前靠硬编码串联，扩展性和可维护性差",
+      "ai_solution": "基于openai-agents-python构建多Agent编排平台，支持工作流可视化编排和自动路由",
+      "implementation": "封装为内部平台服务，提供GUI编排界面",
+      "audience": [
+        "后端",
+        "产品运营",
+        "技术TL"
+      ],
+      "impact": "业务Agent开发效率提升60%",
+      "difficulty": "中",
+      "resistance": "需要统一Agent接口规范",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 7,
+        "business_impact": 7,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "openai/openai-agents-python — A lightweight, powerful framework for multi-agent workflows",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/openai/openai-agents-python",
+      "item_id": "github-5b9121e1a69a"
+    },
+    {
+      "type": "业务赋能",
+      "title": "高下载LORA模型用于品牌营销素材",
+      "trigger": "1264次下载的Illustrious LORA",
+      "scenario": "品牌营销需要高质量、风格统一的系列素材，人工设计无法快速响应多渠道多版本需求",
+      "ai_solution": "基于高口碑LORA模型批量生成品牌风格素材，支持定制化prompt调整细节，保持风格一致性",
+      "implementation": "搭建内部素材生成平台，集成LORA模型推理服务",
+      "audience": [
+        "产品运营"
+      ],
+      "impact": "营销素材产出效率提升5倍，支持多渠道同时铺量",
+      "difficulty": "中",
+      "resistance": "需要品牌方确认风格授权和合规性",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 7,
+        "business_impact": 8,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "🎨 盛情绽放 Attentive Flourish Collection - Illustrious (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "source_url": "https://civitai.com/models/2239017",
+      "item_id": "civitai-2239017"
+    },
+    {
+      "type": "研发提效",
+      "title": "LLM辅助编写技术方案文档",
+      "trigger": "Gemma4 Uncensored文本生成能力",
+      "scenario": "技术方案文档写作耗时，研发需在需求评审、架构设计等场景快速输出规范文档",
+      "ai_solution": "利用LLM辅助生成技术方案文档框架、API设计说明、数据库Schema等初稿",
+      "implementation": "集成到内部技术文档协作平台，提供AI写作辅助插件",
+      "audience": [
+        "后端",
+        "技术TL"
+      ],
+      "impact": "技术文档写作时间缩短50%",
+      "difficulty": "低",
+      "resistance": "需确保文档内容不涉及敏感信息",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 9,
+        "business_impact": 5,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "🤗 Jiunsong/supergemma4-26b-uncensored-gguf-v2",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/Jiunsong/supergemma4-26b-uncensored-gguf-v2",
+      "item_id": "hf-model-7799d1d27bd5"
+    },
+    {
+      "type": "研发提效",
+      "title": "GLM-5.1用于内部知识库问答",
+      "trigger": "10.3万下载的GLM-5.1文本模型",
+      "scenario": "研发团队查询技术文档、API规范、代码规范时，现有搜索无法理解语义，找不到准确答案",
+      "ai_solution": "基于GLM-5.1构建内部技术知识库问答助手，支持自然语言提问精准匹配文档",
+      "implementation": "部署为内部知识库问答服务，接入飞书/钉钉机器人",
+      "audience": [
+        "大前端",
+        "客户端",
+        "后端",
+        "测试"
+      ],
+      "impact": "技术文档查询效率提升60%，减少无效搜索时间",
+      "difficulty": "低",
+      "resistance": "需整理和导入现有技术文档到知识库",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 8,
+        "business_impact": 6,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "🤗 zai-org/GLM-5.1",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/zai-org/GLM-5.1",
+      "item_id": "hf-model-2f79a3598954"
+    },
+    {
+      "type": "业务赋能",
+      "title": "GLM-5.1赋能智能文案生成",
+      "trigger": "GLM-5.1文本生成能力",
+      "scenario": "运营活动需要大量文案（标题、描述、Push消息），人工撰写效率低、风格难统一",
+      "ai_solution": "基于GLM-5.1批量生成营销文案，支持风格模板控制，一键生成多版本AB测试",
+      "implementation": "集成到运营素材后台，提供文案生成和AB版本功能",
+      "audience": [
+        "产品运营"
+      ],
+      "impact": "文案产出效率提升5倍，支持大规模AB测试",
+      "difficulty": "低",
+      "resistance": "需运营微调优化生成质量",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 9,
+        "business_impact": 7,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "🤗 zai-org/GLM-5.1",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/zai-org/GLM-5.1",
+      "item_id": "hf-model-2f79a3598954"
+    },
+    {
+      "type": "业务赋能",
+      "title": "2D图片转3D模型用于商品展示",
+      "trigger": "腾讯HY-World-2.0图生3D模型",
+      "scenario": "电商商品详情页需要3D展示效果，传统3D建模成本高、周期长，上新速度受限",
+      "ai_solution": "使用图生3D模型，将商品2D图片自动转换为3D模型，实现商品720°展示",
+      "implementation": "集成到商品管理后台，商品图片自动生成3D模型，适配APP/Web端3D渲染",
+      "audience": [
+        "产品运营"
+      ],
+      "impact": "商品3D展示覆盖率从5%提升至50%，用户停留时长提升20%",
+      "difficulty": "中",
+      "resistance": "3D渲染端侧性能要求高，需适配低端机型",
+      "scores": {
+        "efficiency": 7,
+        "feasibility": 6,
+        "business_impact": 9,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "🤗 tencent/HY-World-2.0",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/tencent/HY-World-2.0",
+      "item_id": "hf-model-0e8e19c370dc"
+    },
+    {
+      "type": "研发提效",
+      "title": "企业级智能客服中枢",
+      "trigger": "Qwen3.6 35B开源支持企业级部署",
+      "scenario": "在内部IT支持/HR问答场景中，目前做法是人工回复工单，核心痛点在于重复问题占用人力、响应时效差",
+      "ai_solution": "基于Qwen3.6微调企业内部知识库，实现7x24小时智能问答，自动分流复杂问题转人工",
+      "implementation": "部署为内部IT/HR系统的智能助手，接入企业微信/飞书",
+      "audience": [
+        "后端",
+        "技术TL"
+      ],
+      "impact": "工单处理效率提升40%，人工客服工单减少50%",
+      "difficulty": "低",
+      "resistance": "需收集历史问答数据微调模型并持续优化",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 8,
+        "business_impact": 6,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "🤗 Qwen/Qwen3.6-35B-A3B",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
+      "item_id": "hf-model-70b0f02555a8"
+    },
+    {
+      "type": "业务赋能",
+      "title": "智能商品描述生成",
+      "trigger": "MiniMax-M2.7长文本生成能力",
+      "scenario": "在电商商品描述场景中，目前做法是运营手动撰写或复制模板，核心痛点在于描述单调、SEO效果差、耗时",
+      "ai_solution": "基于商品属性自动生成多样化商品描述、SEO关键词、买家秀文案",
+      "implementation": "接入电商后台CMS系统，运营点击生成即可批量产出",
+      "audience": [
+        "产品运营"
+      ],
+      "impact": "商品上架效率提升，搜索排名优化",
+      "difficulty": "低",
+      "resistance": "需清洗商品属性数据做Prompt模板",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 8,
+        "business_impact": 7,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "🤗 MiniMaxAI/MiniMax-M2.7",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/MiniMaxAI/MiniMax-M2.7",
+      "item_id": "hf-model-3e19acb863ad"
+    },
+    {
+      "type": "业务赋能",
+      "title": "AI驱动的自助运营物料生成",
+      "trigger": "Codex内置图像生成和浏览器操作能力",
+      "scenario": "在营销活动页面搭建中，目前依赖设计师出图和前端开发排期，核心痛点在于紧急活动上线周期长、临时素材修改响应慢",
+      "ai_solution": "运营人员通过自然语言描述需求，Codex自动生成活动页面HTML/CSS/图片素材",
+      "implementation": "内部运营平台集成Codex API，支持自助生成营销页面",
+      "audience": [
+        "产品运营"
+      ],
+      "impact": "活动上线周期从天级压缩到小时级，设计师产能释放40%",
+      "difficulty": "中",
+      "resistance": "生成质量不稳定，需建立设计规范校验和人工审核机制",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 7,
+        "business_impact": 8,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "Codex for (almost) everything",
+      "source": "OpenAI Blog",
+      "source_type": "blog",
+      "source_url": "https://openai.com/index/codex-for-almost-everything",
+      "item_id": "rss-openai-blog-a0464d4374d6"
+    },
+    {
+      "type": "业务赋能",
+      "title": "情感化语音交互产品",
+      "trigger": "Gemini TTS的细粒度音频控制能力",
+      "scenario": "在语音交互产品（如智能客服、有声读物、语音助手）中，目前TTS情感表达单一，核心痛点在于用户听感机械、长时间交互疲劳",
+      "ai_solution": "利用 granular audio tags 实现精准的情感控制，让AI语音具备语调、情绪、停顿的自然表达",
+      "implementation": "语音客服系统、有声书生成服务、语音助手产品的TTS引擎升级",
+      "audience": [
+        "产品运营",
+        "客户端"
+      ],
+      "impact": "用户语音交互时长提升25%，客服场景满意度提升15%",
+      "difficulty": "低",
+      "resistance": "需与现有语音产品架构集成，音频标签标注需内容团队配合",
+      "scores": {
+        "efficiency": 6,
+        "feasibility": 8,
+        "business_impact": 8,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "Gemini 3.1 Flash TTS: the next generation of expressive AI speech",
+      "source": "Google DeepMind Blog",
+      "source_type": "blog",
+      "source_url": "https://deepmind.google/blog/gemini-3-1-flash-tts-the-next-generation-of-expressive-ai-speech/",
+      "item_id": "rss-google-deepmind-blog-1bce4c3eeade"
+    },
+    {
+      "type": "研发提效",
+      "title": "内部轻量级代码助手的私有化部署",
+      "trigger": "Gemma 4作为高性能开源模型发布",
+      "scenario": "在内部代码辅助场景中，目前做法是调用商业API或使用受限的开源模型，核心痛点在于数据安全和成本控制",
+      "ai_solution": "在公司内网私有化部署Gemma 4，用于代码补全、PR审查、错误诊断等场景，模型能力接近GPT-4但成本更低",
+      "implementation": "Kubernetes集群部署，支持VS Code插件和GitLab集成",
+      "audience": [
+        "大前端",
+        "客户端",
+        "后端"
+      ],
+      "impact": "代码补全采纳率提升20%，同时节约50% API调用成本",
+      "difficulty": "低",
+      "resistance": "需要GPU资源投入和模型微调",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 8,
+        "business_impact": 7,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "Gemma 4: Byte for byte, the most capable open models",
+      "source": "Google DeepMind Blog",
+      "source_type": "blog",
+      "source_url": "https://deepmind.google/blog/gemma-4-byte-for-byte-the-most-capable-open-models/",
+      "item_id": "rss-google-deepmind-blog-c64eb2c5c469"
+    },
+    {
+      "type": "研发提效",
+      "title": "PRD到原型的一键生成",
+      "trigger": "Claude Design支持从自然语言生成原型和演示材料",
+      "scenario": "在需求评审和原型设计中，目前做法是产品经理写PRD后交给UI设计再出原型，核心痛点在于沟通成本高、周期长",
+      "ai_solution": "使用Claude Design直接从PRD文档生成可交互的原型页面和演示Slides，减少设计环节",
+      "implementation": "集成到产品需求管理工具（如Figma/Jira插件）",
+      "audience": [
+        "产品运营",
+        "大前端"
+      ],
+      "impact": "需求到原型周期从5天缩短到1天",
+      "difficulty": "低",
+      "resistance": "需要产品团队改变现有工作习惯",
+      "scores": {
+        "efficiency": 9,
+        "feasibility": 8,
+        "business_impact": 6,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "Anthropic’s Claude Opus 4.7 and Claude Design rollout",
+      "source": "Smol AI News",
+      "source_type": "smolai",
+      "source_url": "https://x.com/claudeai/status/2045156267690213649",
+      "item_id": "smolai-8ac4204a7d93"
+    },
+    {
+      "type": "研发提效",
+      "title": "端到端的编程Agent工作流",
+      "trigger": "OpenAI的Codex电脑使用能力让AI可以操作真实桌面环境",
+      "scenario": "在代码开发流程中，目前做法是AI辅助写代码但需要人工执行、调试、部署，核心痛点在于环节割裂",
+      "ai_solution": "构建能自主完成需求理解→代码编写→单元测试→提交PR→CI检查全流程的Coding Agent",
+      "implementation": "IDE集成Agent模式+GitLab CI/CD集成",
+      "audience": [
+        "大前端",
+        "客户端",
+        "后端"
+      ],
+      "impact": "简单需求开发效率提升50%，人工介入减少70%",
+      "difficulty": "高",
+      "resistance": "需要解决Agent的可靠性、责任归属、代码审查流程",
+      "scores": {
+        "efficiency": 9,
+        "feasibility": 6,
+        "business_impact": 8,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "Computer use, coding agents, and harness design",
+      "source": "Smol AI News",
+      "source_type": "smolai",
+      "source_url": "https://x.com/reach_vb/status/2045151640802771394",
+      "item_id": "smolai-17584aa8d29b"
+    },
+    {
+      "type": "研发提效",
+      "title": "自动化Bug修复Agent",
+      "trigger": "Qwen3.6自主识别和修复bug能力",
+      "scenario": "在日常Bug修复场景中，目前做法是开发者定位问题后手动编写修复代码，核心痛点在于低频但耗时的简单Bug占据大量开发时间",
+      "ai_solution": "使用Qwen3.6作为本地修复Agent，自动分析报错信息并生成修复代码",
+      "implementation": "CI/CD流水线集成 + 错误日志自动分析",
+      "audience": [
+        "大前端",
+        "客户端",
+        "后端"
+      ],
+      "impact": "自动化修复简单Bug，人力投入减少30%",
+      "difficulty": "中",
+      "resistance": "需要构建完整的错误信息采集和修复验证流程",
+      "scores": {
+        "efficiency": 9,
+        "feasibility": 7,
+        "business_impact": 7,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "/r/LocalLlama + /r/localLLM Recap 1. Qwen3.6 Model Launch and Features",
+      "source": "Smol AI News",
+      "source_type": "smolai",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1so1533/qwen36_this_is_it/",
+      "item_id": "smolai-8736092a9138"
+    },
+    {
+      "type": "研发提效",
+      "title": "代码自验证审查Agent",
+      "trigger": "Opus 4.7自我验证能力增强",
+      "scenario": "在代码Review场景中，目前做法是人工逐行检查代码正确性，核心痛点在于Review效率低且容易遗漏边界情况",
+      "ai_solution": "利用Opus 4.7增强的自我验证能力，实现带自检的代码审查Agent",
+      "implementation": "GitLab Merge Request集成 + 自动审查报告",
+      "audience": [
+        "大前端",
+        "客户端",
+        "后端",
+        "测试"
+      ],
+      "impact": "Review效率提升40%，减少人为遗漏",
+      "difficulty": "低",
+      "resistance": "需要对接内部代码仓库和通知系统",
+      "scores": {
+        "efficiency": 9,
+        "feasibility": 8,
+        "business_impact": 7,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "2. Claude Opus 4.7 Launch and Features",
+      "source": "Smol AI News",
+      "source_type": "smolai",
+      "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1sn57af/introducing_claude_opus_47_our_most_capable_opus/",
+      "item_id": "smolai-e699f583aa4e"
+    },
+    {
+      "type": "业务赋能",
+      "title": "供应商技术评估与采购决策辅助",
+      "trigger": "企业架构治理工具包",
+      "scenario": "在技术选型采购中，团队需要对外部供应商进行技术能力评估，目前依赖人工收集资料和专家评审，效率低且主观性强",
+      "ai_solution": "构建供应商技术能力评估Agent，自动抓取供应商技术文档、社区活跃度、安全漏洞历史，生成评估报告",
+      "implementation": "集成到内部技术文档平台，作为采购流程的AI辅助模块",
+      "audience": [
+        "技术TL",
+        "后端"
+      ],
+      "impact": "采购决策周期缩短50%，评估客观性提升",
+      "difficulty": "中",
+      "resistance": "需要采购部门配合获取数据源",
+      "scores": {
+        "efficiency": 7,
+        "feasibility": 6,
+        "business_impact": 7,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "tractorjuice/arc-kit — Enterprise Architecture Governance &amp; Vendor Procurement Toolkit",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/tractorjuice/arc-kit",
+      "item_id": "github-4c39342c85e4"
+    },
+    {
+      "type": "研发提效",
+      "title": "Android逆向分析Copilot",
+      "trigger": "Claude Code逆向工程技能",
+      "scenario": "在安全审计或竞品分析中，需要逆向分析APK，当前使用Jadx+Greedcode手动分析，效率低且难以快速定位关键逻辑",
+      "ai_solution": "利用Claude的代码理解能力，结合逆向工具链，自动分析反编译代码，提取关键业务逻辑和API调用",
+      "implementation": "封装为VS Code插件或独立CLI工具，集成到客户端开发流程",
+      "audience": [
+        "客户端",
+        "安全"
+      ],
+      "impact": "逆向分析时间从小时级缩短到分钟级",
+      "difficulty": "中",
+      "resistance": "需要适配不同混淆和加固策略",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 7,
+        "business_impact": 6,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "SimoneAvogadro/android-reverse-engineering-skill — Claude Code skill to support Android app's reverse engineering",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/SimoneAvogadro/android-reverse-engineering-skill",
+      "item_id": "github-7f52a9b27938"
+    },
+    {
+      "type": "业务赋能",
+      "title": "自托管远程桌面替代方案",
+      "trigger": "开源远程桌面RustDesk",
+      "scenario": "企业内网远程运维和技术支持场景，目前依赖TeamViewer或向日葵，存在数据安全和成本问题",
+      "ai_solution": "使用RustDesk自托管方案，数据完全留存在企业内部网络，支持屏幕录制、文件传输、远程控制",
+      "implementation": "部署在企业内部服务器，通过Docker一键部署",
+      "audience": [
+        "技术TL",
+        "运维"
+      ],
+      "impact": "年省授权费用30万+，数据完全可控",
+      "difficulty": "低",
+      "resistance": "需要IT部门支持服务器资源",
+      "scores": {
+        "efficiency": 6,
+        "feasibility": 9,
+        "business_impact": 7,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "rustdesk/rustdesk — An open-source remote desktop application designed for self-hosting, as an alter",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/rustdesk/rustdesk",
+      "item_id": "github-cf2dde3d4581"
+    },
+    {
+      "type": "研发提效",
+      "title": "Linux桌面AI开发助手",
+      "trigger": "Claude桌面版Debian适配",
+      "scenario": "Linux服务器开发者和桌面用户无法使用Claude桌面应用，只能通过命令行或Web版本，体验受限",
+      "ai_solution": "在Debian系Linux发行版部署Claude Desktop，获得原生桌面体验，支持本地文件交互和代码编辑",
+      "implementation": "通过APT仓库或AppImage分发，集成到开发环境",
+      "audience": [
+        "大前端",
+        "后端",
+        "客户端"
+      ],
+      "impact": "Linux开发者获得原生AI辅助开发体验",
+      "difficulty": "低",
+      "resistance": "团队Linux使用率较低时价值有限",
+      "scores": {
+        "efficiency": 7,
+        "feasibility": 9,
+        "business_impact": 5,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "aaddrick/claude-desktop-debian — Claude Desktop for Debian-based Linux distributions",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/aaddrick/claude-desktop-debian",
+      "item_id": "github-98483fa04632"
+    }
+  ],
+  "top_pick": {
+    "title": "桌面AI编程助手深度集成",
+    "why_now": "Codex新增computer use、图像生成、记忆功能",
+    "mvp_path": "作为桌面应用深度集成到开发工作流，支持自然语言驱动多步骤复杂任务",
+    "strategy": "自下而上：先找2-3个极客同学验证，再整理ROI数据推广"
+  },
+  "analyzed_count": 60,
+  "analyzed_item_ids": [
+    "github-4c39342c85e4",
+    "github-7f52a9b27938",
+    "github-cf2dde3d4581",
+    "github-98483fa04632",
+    "github-2b6d106c7083",
+    "github-e73ad05611a2",
+    "github-42c084c2a327",
+    "github-5b9121e1a69a",
+    "github-60745dde834b",
+    "github-301d56a38655",
+    "civitai-2555146",
+    "civitai-2555159",
+    "civitai-2555092",
+    "civitai-2239017",
+    "civitai-2453175",
+    "hf-model-b2cd1173ff38",
+    "hf-model-2d0f16bac7e1",
+    "hf-model-7799d1d27bd5",
+    "hf-model-2f79a3598954",
+    "hf-model-0e8e19c370dc",
+    "hf-model-406aad550c1f",
+    "hf-model-9f1c55c6cd4c",
+    "hf-model-f7a19edc802a",
+    "hf-model-70b0f02555a8",
+    "hf-model-3e19acb863ad",
+    "hf-paper-1a83552505a8",
+    "hf-paper-4e62c4bfb05a",
+    "hf-paper-6dd200622725",
+    "hf-paper-91c7b16d9e25",
+    "hf-paper-b61f2009f3de",
+    "hf-paper-c84ff27c0997",
+    "hf-paper-3cda83d7fb4e",
+    "hf-paper-06569bfa9b6e",
+    "hf-paper-1982a830e6f9",
+    "hf-paper-069fc81deabc",
+    "rss-hackernews-daily-3f0667936f58",
+    "rss-openai-blog-a0464d4374d6",
+    "rss-openai-blog-b6d50c92151f",
+    "rss-openai-blog-a14aecd407b7",
+    "rss-google-deepmind-blog-1bce4c3eeade",
+    "rss-google-deepmind-blog-f846584e94ff",
+    "rss-google-deepmind-blog-c64eb2c5c469",
+    "rss-google-ai-blog-6ce36f8ae945",
+    "rss-google-ai-blog-35335b85f2c4",
+    "rss-google-ai-blog-5a44b78941bc",
+    "rss-meta-engineering-44b3259ff1d6",
+    "rss-meta-engineering-825edd60b569",
+    "rss-meta-engineering-b186f00a4ef3",
+    "smolai-8ac4204a7d93",
+    "smolai-17584aa8d29b",
+    "smolai-24436404a307",
+    "smolai-cada025e83e1",
+    "smolai-3e33f5d379d9",
+    "smolai-8736092a9138",
+    "smolai-683c750619af",
+    "smolai-1c1967a96eaa",
+    "smolai-0c3ac5a317de",
+    "smolai-e699f583aa4e",
+    "smolai-7d0aa85491cd",
+    "rss-all-in-podcast-9317ef6a062c"
+  ]
+}

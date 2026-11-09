@@ -1,0 +1,594 @@
+{
+  "id": "0a86f7b4-6056-4224-a8a0-51bf7f38a0e8",
+  "date": "2026-06-05",
+  "items": [
+    {
+      "id": "arxiv-2606.05165v1",
+      "title": "STRIDE: Training Data Attribution via Sparse Recovery from Subset Perturbations",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.05165v1",
+      "summary": "Training Data Attribution (TDA) seeks to trace a model's predictions back to its training data. The gold standard for TDA relies on causal interventions, observing how a model changes when data is add",
+      "category": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-04"
+    },
+    {
+      "id": "arxiv-2606.05161v1",
+      "title": "Beyond Text Following: Repairable Arbitration Reversals in Audio-Language Models",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.05161v1",
+      "summary": "Audio-language models (ALMs) often follow text that conflicts with audio, even when the audio evidence is clear. This raises a basic question: is the audio-supported answer unavailable, or is it repre",
+      "category": [
+        "cs.SD",
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-04"
+    },
+    {
+      "id": "arxiv-2606.05158v1",
+      "title": "Streaming Communication in Multi-Agent Reasoning",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.05158v1",
+      "summary": "Multi-agent reasoning systems adopt a \"generate-then-transfer\" paradigm that forces end-to-end latency to scale linearly with pipeline depth. We introduce StreamMA, a multi-agent reasoning system that",
+      "category": [
+        "cs.CL",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-04"
+    },
+    {
+      "id": "arxiv-2606.05152v1",
+      "title": "Reinforcement Learning from Rich Feedback with Distributional DAgger",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.05152v1",
+      "summary": "Reasoning models have advanced rapidly, but the dominant reinforcement learning from verifiable rewards (RLVR) recipe remains surprisingly narrow: sample many responses and reward each with a single b",
+      "category": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-04"
+    },
+    {
+      "id": "arxiv-2606.05150v1",
+      "title": "Multi-Column RBF Neural Network Using Adaptive and Non-Adaptive Particle Swarm Optimization",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.05150v1",
+      "summary": "The radial basis function neural network (RBFN) trained with a gradient descending algorithm provides an effective fully connected structure in both shallow and deep networks. The error correction (Er",
+      "category": [
+        "cs.NE",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-04"
+    },
+    {
+      "id": "arxiv-2606.05149v1",
+      "title": "An Open-Source Two-Stage Computer Vision Pipeline for Fine-Grained Vehicle Classification using Vision Transformers",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.05149v1",
+      "summary": "Vehicle body type is a significant determinant of cyclist injury severity in overtaking crashes, yet automated tools for classifying vehicles into injury-risk-relevant categories from naturalistic roa",
+      "category": [
+        "cs.CV",
+        "cs.LG",
+        "eess.IV"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-04"
+    },
+    {
+      "id": "arxiv-2606.05145v1",
+      "title": "Failed Reasoning Traces Tell You What Is Fixable (But Not by Reading Them)",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.05145v1",
+      "summary": "When post-trained language models fail on reasoning problems, the common test-time-scaling response is to spend more compute on additional attempts, and the failed traces play no further role. We argu",
+      "category": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-04"
+    },
+    {
+      "id": "arxiv-2606.05142v1",
+      "title": "GeM-NR: Geometry-Aware Multi-View Editing for Nonrigid Scene Changes",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.05142v1",
+      "summary": "Recent developments in multi-view image editing with generative models have brought us a step closer toward general 3D content generation and customization. Most existing works focus on rigid or appea",
+      "category": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-04"
+    },
+    {
+      "id": "arxiv-2606.05139v1",
+      "title": "BBOmix: A Tabular Benchmark for Hyperparameter Optimization of Unsupervised Biological Representation Learning",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.05139v1",
+      "summary": "The rapid advancement of high-throughput sequencing has led to large, high-dimensional omics datasets. Deep unsupervised learning architectures, particularly Autoencoders (AEs), are increasingly used ",
+      "category": [
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-04"
+    },
+    {
+      "id": "arxiv-2606.05138v1",
+      "title": "Generating Financial Time Series by Matching Random Convolutional Features",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.05138v1",
+      "summary": "Generating realistic financial time series is challenging as training data is often limited to a single historical path. With such scarce data, overfitting is hard to avoid, especially under adversari",
+      "category": [
+        "cs.LG",
+        "q-fin.ST"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-04"
+    },
+    {
+      "id": "arxiv-2606.05134v1",
+      "title": "Activation-Based Active Learning for In-Context Learning: Challenges and Insights",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.05134v1",
+      "summary": "Deep active learning has previously been explored for LLM in-context sample selection, but not with methods that utilise recent advances in understanding of transformer activations. In this paper, we ",
+      "category": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-04"
+    },
+    {
+      "id": "arxiv-2606.05131v1",
+      "title": "Deep Embedded Multiplicative DMD for Algebra-Preserving Koopman Learning",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.05131v1",
+      "summary": "Koopman theory turns nonlinear dynamics into a linear spectral problem. In computation, however, everything depends on a hard finite-dimensional choice: the observables must be expressive, nearly inva",
+      "category": [
+        "cs.LG",
+        "math.DS",
+        "math.NA"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-04"
+    },
+    {
+      "id": "arxiv-2606.05130v1",
+      "title": "Towards Efficient and Evidence-grounded Mobility Prediction with LLM-Driven Agent",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.05130v1",
+      "summary": "Individual-level mobility prediction is central to urban simulation, transportation planning, and policy analysis. Supervised sequence models achieve strong accuracy but require task-specific training",
+      "category": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-04"
+    },
+    {
+      "id": "arxiv-2606.05129v1",
+      "title": "Preserving Data Privacy in Learning Causal Structure with Fully Homomorphic Encryption",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.05129v1",
+      "summary": "Preserving data privacy is an important topic in structural data management and data mining. However, the issue of privacy leakage in distributed causal structure learning is a persistent challenge, e",
+      "category": [
+        "cs.CR",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-04"
+    },
+    {
+      "id": "arxiv-2606.05124v1",
+      "title": "Geometry Gaussians: Decoupling Appearance and Geometry in Gaussian Splatting",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.05124v1",
+      "summary": "After the success of 3D Gaussian Splatting (3DGS) for novel view synthesis, many works have explored how to also use it for geometric surface representation. However, extracting accurate geometric inf",
+      "category": [
+        "cs.GR",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-04"
+    },
+    {
+      "id": "github-d88518bc14d5",
+      "title": "chopratejas/headroom — Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/chopratejas/headroom",
+      "summary": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server. | 🔥 3530 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-04"
+    },
+    {
+      "id": "github-a92276b56a34",
+      "title": "affaan-m/ECC — The agent harness performance optimization system. Skills, instincts, memory, se",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/affaan-m/ECC",
+      "summary": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond. | 🔥 2141 stars today | Langu",
+      "category": [
+        "开源项目",
+        "JavaScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-04"
+    },
+    {
+      "id": "github-2dbf3a6786de",
+      "title": "aquasecurity/trivy — Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/aquasecurity/trivy",
+      "summary": "Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more | 🔥 24 stars today | Language: Go",
+      "category": [
+        "开源项目",
+        "Go"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-04"
+    },
+    {
+      "id": "github-3c19e4a80a3d",
+      "title": "NousResearch/hermes-agent — The agent that grows with you",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "summary": "The agent that grows with you | 🔥 1735 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-04"
+    },
+    {
+      "id": "github-e4b7ba63c2bd",
+      "title": "microsoft/markitdown — Python tool for converting files and office documents to Markdown.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/microsoft/markitdown",
+      "summary": "Python tool for converting files and office documents to Markdown. | 🔥 1984 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-04"
+    },
+    {
+      "id": "github-026bd99f07a4",
+      "title": "nesquena/hermes-webui — Hermes WebUI: The best way to use Hermes Agent from the web or from your phone!",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/nesquena/hermes-webui",
+      "summary": "Hermes WebUI: The best way to use Hermes Agent from the web or from your phone! | 🔥 719 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-04"
+    },
+    {
+      "id": "github-2c69330ad020",
+      "title": "D4Vinci/Scrapling — 🕷️ An adaptive Web Scraping framework that handles everything from a single requ",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/D4Vinci/Scrapling",
+      "summary": "🕷️ An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl! | 🔥 1067 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-04"
+    },
+    {
+      "id": "github-ea08182b6b5c",
+      "title": "opendataloader-project/opendataloader-pdf — PDF Parser for AI-ready data. Automate PDF accessibility. Open-source.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/opendataloader-project/opendataloader-pdf",
+      "summary": "PDF Parser for AI-ready data. Automate PDF accessibility. Open-source. | 🔥 570 stars today | Language: Java",
+      "category": [
+        "开源项目",
+        "Java"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-04"
+    },
+    {
+      "id": "github-79b4a9bf4deb",
+      "title": "odoo/odoo — Odoo. Open Source Apps To Grow Your Business.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/odoo/odoo",
+      "summary": "Odoo. Open Source Apps To Grow Your Business. | 🔥 29 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-04"
+    },
+    {
+      "id": "github-186b89cf0014",
+      "title": "Open-LLM-VTuber/Open-LLM-VTuber — Talk to any LLM with hands-free voice interaction, voice interruption, and Live2",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/Open-LLM-VTuber/Open-LLM-VTuber",
+      "summary": "Talk to any LLM with hands-free voice interaction, voice interruption, and Live2D taking face running locally across platforms | 🔥 693 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-04"
+    },
+    {
+      "id": "github-e2e2f93d1ee7",
+      "title": "jwasham/coding-interview-university — A complete computer science study plan to become a software engineer.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/jwasham/coding-interview-university",
+      "summary": "A complete computer science study plan to become a software engineer. | 🔥 330 stars today",
+      "category": [
+        "开源项目"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-04"
+    },
+    {
+      "id": "github-d21de4367b63",
+      "title": "lyogavin/airllm — AirLLM 70B inference with single 4GB GPU",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/lyogavin/airllm",
+      "summary": "AirLLM 70B inference with single 4GB GPU | 🔥 208 stars today | Language: Jupyter Notebook",
+      "category": [
+        "开源项目",
+        "Jupyter Notebook"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-04"
+    },
+    {
+      "id": "github-7a6c007db3eb",
+      "title": "supermemoryai/supermemory — Memory engine and app that is extremely fast, scalable. The Memory API for the A",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/supermemoryai/supermemory",
+      "summary": "Memory engine and app that is extremely fast, scalable. The Memory API for the AI era. | 🔥 600 stars today | Language: TypeScript",
+      "category": [
+        "开源项目",
+        "TypeScript"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-04"
+    },
+    {
+      "id": "github-c9c155f566f0",
+      "title": "HKUDS/Vibe-Trading — \"Vibe-Trading: Your Personal Trading Agent\"",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "url": "https://github.com/HKUDS/Vibe-Trading",
+      "summary": "\"Vibe-Trading: Your Personal Trading Agent\" | 🔥 197 stars today | Language: Python",
+      "category": [
+        "开源项目",
+        "Python"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-04"
+    },
+    {
+      "id": "hf-paper-d7f99f5cf46d",
+      "title": "AUDITFLOW: Executable Symbolic Environments for Structured Financial Reporting Verification",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.03031",
+      "summary": "Structured financial audit verification is difficult for language-model agents because correctness depends on structured evidence rather than text alone. A model must link reported facts to taxonomy c",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-04"
+    },
+    {
+      "id": "hf-paper-bd7ac8edab36",
+      "title": "MeshWeaver: Sparse-Voxel-Guided Surface Weaving for Autoregressive Mesh Generation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.04688",
+      "summary": "Autoregressive mesh generation has gained attention by tokenizing meshes into sequences and training models in a language-modeling fashion. However, existing approaches suffer from two fundamental lim",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-04"
+    },
+    {
+      "id": "hf-paper-986dd261f228",
+      "title": "MMG2Skill: Can Agents Distill In-the-Wild Guides into Self-Evolving Skills?",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.01993",
+      "summary": "Abundant procedural knowledge on the Web holds great potential for helping agents solve long-horizon tasks. However, such knowledge is often multimodal, heterogeneous, noisy, and implicitly assumes hu",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-04"
+    },
+    {
+      "id": "hf-paper-6a2a7380a031",
+      "title": "Streaming Communication in Multi-Agent Reasoning",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.05158",
+      "summary": "Multi-agent reasoning systems adopt a \"generate-then-transfer\" paradigm that forces end-to-end latency to scale linearly with pipeline depth. We introduce StreamMA, a multi-agent reasoning system that",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-04"
+    },
+    {
+      "id": "hf-paper-86f732279595",
+      "title": "Where Do Deep-Research Agents Go Wrong? Span-Level Error Localization in Agent Trajectories",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.02060",
+      "summary": "Deep-research agents solve tasks through long trajectories of search, tool use, evidence inspection, and answer synthesis. Evaluation based on final answers shows whether an agent succeeds, but not wh",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-04"
+    },
+    {
+      "id": "hf-paper-b5b792b6542a",
+      "title": "Audio Interaction Model",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.05121",
+      "summary": "Audio is an inherently interactive modality, yet today's Large Audio Language Models (LALMs) are offline, and streaming audio models each handle only a single task such as streaming ASR or voice chatt",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-04"
+    },
+    {
+      "id": "hf-paper-9d5e314238d5",
+      "title": "BraveGuard: From Open-World Threats to Safer Computer-Use Agents",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.01166",
+      "summary": "Computer-use agents extend language models from text generation to sustained interaction with files, terminals, browsers, and external tools. This shift creates safety risks that are difficult to dete",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-04"
+    },
+    {
+      "id": "hf-paper-2e5a23efe351",
+      "title": "Score-Control for Hallucination Reduction in Diffusion Models",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.00377",
+      "summary": "Diffusion models have emerged as the backbone of modern generative AI, powering advances in vision, language, audio and other modalities. Despite their success, they suffer from hallucinations, implau",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-04"
+    },
+    {
+      "id": "hf-paper-77f561345b37",
+      "title": "Echo-Infinity: Learning Evolving Memory for Real-Time Infinite Video Generation",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.04527",
+      "summary": "We present Echo Infinity, an autoregressive (AR) framework towards real-time infinite video generation that employs a learnable evolving memory to dynamically filter, abstract, and compress any-length",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-04"
+    },
+    {
+      "id": "hf-paper-e4d3a633e41d",
+      "title": "GRAIL: Generating Humanoid Loco-Manipulation from 3D Assets and Video Priors",
+      "source": "HuggingFace Papers",
+      "source_type": "paper",
+      "url": "https://huggingface.co/papers/2606.05160",
+      "summary": "Scaling humanoid loco-manipulation requires robot-compatible demonstrations across diverse objects, whole-body motions, and scene geometries, but teleoperation and motion capture are difficult to scal",
+      "category": [
+        "ai",
+        "papers",
+        "huggingface"
+      ],
+      "relevance_score": 8,
+      "created_at": "2026-06-04"
+    },
+    {
+      "id": "l30-instagram-1342cef17b4d",
+      "title": "Peter Steinberger has been over at OpenAI just spending ALL their tokens, man. And it's pretty amazing! He's not writing code, he's building",
+      "source": "Instagram",
+      "source_type": "instagram",
+      "url": "https://www.instagram.com/reel/DZN3U8HBmoH/",
+      "summary": "He showed that he had spent about $1.3 million in tokens in just one month, and people looked at that and they freaked out, understandably so. If you look at all the things that he's building, he's thinking about software development in a very different way. He is not translating that $1.3 million in tokens into direct output of code. He is building a sof...",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 6,
+      "created_at": "2026-06-05"
+    },
+    {
+      "id": "l30-tiktok-05ea2b4fb139",
+      "title": "Peter Steinberger has been over at OpenAI just spending ALL their tokens, man. And it's pretty amazing! He's not writing code, he's building",
+      "source": "TikTok",
+      "source_type": "tiktok",
+      "url": "https://www.tiktok.com/@matthewberman_ai/video/7648001768680475917",
+      "summary": "Peter Steinberger has been over at OpenAI just spending ALL their tokens, man. And it's pretty amazing! He's not writing code, he's building a code factory. The frontier! #ai #future #llm #chatgpt",
+      "category": [
+        "Peter Steinberger"
+      ],
+      "relevance_score": 6,
+      "created_at": "2026-06-05"
+    }
+  ],
+  "summary": null,
+  "generated_at": "2026-06-19T10:22:35.410120"
+}

@@ -1,0 +1,96 @@
+{
+  "id": "45d99f00-c701-437f-aeb6-1434765e1c73",
+  "url": "https://trinkle23897.github.io/learning-beyond-gradients/#zh-section-5",
+  "title": "Learning Beyond Gradients",
+  "source_platform": "Blog",
+  "user_note": "一种新的范式,在AIcoding能力越来越强的今天，维护规则的成本变得更低。",
+  "added_at": "2026-05-19T17:01:18.516114",
+  "content_snippet": "Learning Beyond Gradients English 中文 Dark Learning Beyond Gradients Jiayi Weng Continual Learning has remained hard largely because of catastrophic forgetting in neural networks: learn something new, and old capabilities can get overwritten. But what if we do not put all of our attention on neural network weights? Is there another way to make progress? As LLM agents get stronger, coding gets faster and better. But the phenomenon I find more interesting is different: a coding agent can keep reading failures, editing code, adding tests, and watching replays, and a program system can improve without training a new network or updating weights. That made me rethink heuristics: hand-written rules and programmatic policies. Many heuristics were not useless; they were simply too expensive to maintain. Coding agents change that maintenance curve. Rules that used to be one-off patches may start to become code worth owning for the long term. Anything that can be iterated on continuously starts to become more solvable. That is also what Continual Learning has always wanted. Could this become the next paradigm after pretraining, RLHF, and large-scale RL/RLVR? # The Anomaly While maintaining EnvPool in my spare time, I wanted a cheaper way to test whether game environments were behaving correctly. Running a neural network every time was too expensive for CI. The initial question was: Can we write cheap, reproducible heuristics that are much stronger than a random policy,\nand use them to drive environments into informative states? I tried using Codex ( gpt-5.4 ) to write a rule-based version, with no neural network at all. After a few rounds, the results were far more surprising than I expected: In Atari Breakout, a programmatic policy went from 387 -> 507 -> 839 -> 864 , eventually reaching the theoretical maximum score. In MuJoCo Ant, a pure Python policy first learned a rhythmic gait, then added short-horizon model planning, and finally reached 6000+ , in the range of common Deep RL results. In MuJoCo HalfCheetah, interpretable gait/posture rules plus online planning reached a five-episode evaluation mean of 11836.7 , also in the range of common Deep RL results. In VizDoom, a first-person visual-control task, cv2/NumPy screen CV without neural-network training reached mean=557.0 and min=440.0 over 10 seeds on D3 Battle. Across Atari57, I ran 57 games x 2 observation modes x 3 repeats = 342 coding-agent search trajectories. The results were uneven, but under a fixed environment-step budget, median HNS around 1M environment steps was already far above PPO-style Deep RL baselines at the same step count. The raw scores were surprising enough. But the more interesting part was: Codex was not training a neural network. It was maintaining a software system that could keep growing. Breakout policy was far beyond \"move left when the ball is on the left.\" The policy had grown action probes, state readers, ball and paddle detectors, landing prediction, stuck-loop detection, regression tests, video replays, and experiment logs. Ant policy was more than a gait formula too: it had rhythmic control, posture feedback, contact signals, and short-horizon model rollouts. That is when I felt a new concept was needed. The thing being updated was no longer just a policy function. It was a software system with memory, feedback channels, and regression mechanisms. # Heuristic Learning After more iteration with Codex, I started calling this process Heuristic Learning (HL) : HL is built out of program code. Like Deep RL as commonly practiced today, it has a loop of state, action, feedback, and update; unlike that setup, the object being updated is software structure rather than neural-network parameters. Its feedback is consumed by a coding agent, and can come from environment reward, test cases, logs, videos, replays, or human feedback. Its updates do not use backpropagation. The coding agent directly edits policies, state detectors, tests, configuration, or memory. HL is the learning and update process. The object maintained by HL over time can be called a Heuristic System (HS) . An HS is more than an isolated policy.py . It contains at least a programmatic policy, state representation, feedback channels, experiment records, replays or tests, memory, and an update mechanism executed by a coding agent. A single rule is not enough. Rules, feedback, history, and the next update path all need to connect before it becomes an HS. As a table: Axis Deep RL HL Policy Neural network parameters Code: rules, state machines, controllers, MPC, macro-actions State Usually explicit observations Usually explicit variables, detectors, caches, and other readable representations Action Produced by a neural network forward pass Produced by executing code logic Feedback Mainly fixed reward Provided through coding-agent context: tests, environment feedback, logs, and replays all count Update Gradient-based updates to neural-network parameters in a Deep RL algorithm Direct code edits by a coding agent Memory On-policy methods basically have none; off-policy methods have replay buffers Can explicitly store trials, summaries, failure reasons, replays, and version diffs Heuristic Learning has several useful properties compared with Deep RL: Explainability: neural networks are hard to explain, while HL policies can often be translated into plain language. Sample Efficiency: one effective code update can jump directly to a new policy, rather than slowly climbing through learning-rate tuning. Regression-testability: old capabilities can become tests, replays, or golden cases. Overfitting can be constrained: code heuristics can still overfit to seeds, environment details, or test loopholes, but simplification, regression checks, and multi-seed evaluation provide an engineering form of regularization. It can avoid part of catastrophic forgetting: old capabilities do not have to live only inside model weights; they can be written into rule sets and tests.",
+  "quick_read": "**核心内容**：文章提出了一种超越梯度下降的新学习范式“启发式学习”，核心是用编程式策略替代神经网络权重更新，借助编码代理持续迭代一个包含规则、测试、记忆与反馈的软件系统，从而大幅提升样本效率、可解释性与抗遗忘能力。\n\n**关键信息**：\n- 作者在维护环境池时意外发现，用编码代理迭代生成的纯代码策略，在雅达利、MuJoCo等环境中达到或超越了常见深度强化学习结果，部分甚至触及理论上限。\n- 这种新范式被定义为“启发式学习”，它更新的是软件结构而非神经网络参数；其反馈可来自奖励、测试、日志、回放或人工输入，更新方式是直接编辑代码。\n- 启发式学习所维护的对象称为“启发式系统”，它不仅包含策略代码，还整合了状态检测、反馈通道、实验记录、回归测试与显式记忆等模块。\n- 相比深度强化学习，启发式学习具有可解释性强、样本效率高、支持回归测试、可通过工程手段约束过拟合，并能将旧能力固化为规则和测试以缓解灾难性遗忘。\n\n**值得关注**：编码代理改变了维护成本曲线，让过去难以长期持有的手工规则可以持续迭代，这可能成为预训练、RLHF和大规模RL之后的下一轮范式转折点。",
+  "business_opps": [
+    {
+      "opportunity_title": "LLM驱动的启发式策略持续迭代平台",
+      "core_insight": "LLM编码代理可自动阅读失败、编辑代码并运行测试，把高昂的规则维护成本降至近乎零，使纯规则策略媲美深度RL。",
+      "product_form": "帮助游戏/机器人开发者在CI中自动生成并持续优化可解释行为测试规则的SaaS工具。",
+      "target_users": "游戏开发团队、机器人仿真工程师，痛点是RL测试成本高且不可解释，愿为提升迭代效率付费。",
+      "mvp_features": [
+        "接入环境API持续采集失败状态",
+        "LLM代理自动修改规则代码并回测",
+        "可解释的策略版本与性能报告面板"
+      ],
+      "business_model": "按测试运行时长或代理调用次数计费，个人免费层+团队订阅。",
+      "risks": "LLM生成代码的稳定性与正确性不足，依赖外部模型API的延迟和成本。",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 17
+    },
+    {
+      "opportunity_title": "业务规则自演进引擎（Rules-as-Code持续学习）",
+      "core_insight": "编码代理能让陈旧的手写业务规则像软件一样持续迭代，解决金融、电商等领域规则维护昂贵且滞后的问题。",
+      "product_form": "帮助金融/电商/物流企业将硬编码规则转化为可自动监控、测试和优化代码块的API与仪表板产品。",
+      "target_users": "金融风控、电商推荐、物流调度团队的技术负责人，痛点规则失效快、人工调整慢。",
+      "mvp_features": [
+        "导入现有规则代码并接入业务指标",
+        "LLM代理根据指标波动生成改进脚本",
+        "沙盒回测对比新旧规则效果并一键发布"
+      ],
+      "business_model": "按规则数量与迭代频次的企业年订阅，提供私有部署增值服务。",
+      "risks": "业务逻辑高度敏感，代码注入与合规风险大，客户信任建立周期长。",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 3
+      },
+      "total_score": 16
+    }
+  ],
+  "rdev_opps": [
+    {
+      "type": "研发提效",
+      "title": "AI代理自动迭代CI测试策略",
+      "trigger": "编程代理通过失败日志与回放持续编写优化启发式规则，无需训练网络",
+      "scenario": "在CI/CD流水线中，目前依靠人工编写或模型驱动的环境测试，核心痛点在于测试脚本维护成本高、覆盖不足且集成测试运行慢",
+      "ai_solution": "利用LLM代理分析CI失败日志、环境状态与代码变更，自动生成轻量级启发式测试脚本并不断优化，替代昂贵神经网络推理",
+      "implementation": "在GitLab CI中集成代理服务，每次构建失败触发分析并自动提交优化后的测试脚本PR",
+      "audience": [
+        "后端",
+        "测试开发"
+      ],
+      "impact": "测试脚本维护人力减少50%，环境异常检出率提升30%",
+      "difficulty": "中",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 7,
+        "business_impact": 6,
+        "overall": 8
+      },
+      "total_score": 8
+    },
+    {
+      "type": "业务赋能",
+      "title": "可进化的游戏/仿真策略服务",
+      "trigger": "纯规则策略通过编码代理迭代达到Atari Breakout理论最高分，超越深度RL基线",
+      "scenario": "在游戏AI或机器人仿真中，目前多采用强化学习训练模型，痛点在于训练周期长、推理成本高且策略不可解释",
+      "ai_solution": "提供编码代理平台，根据环境反馈持续编写与优化“规则+在线规划”的程序化策略，替代或辅助神经网络模型，实现低资源进化",
+      "implementation": "提供SDK嵌入引擎，云端代理分析对局数据，自动更新策略代码并下发，实现AI策略持续进化",
+      "audience": [
+        "游戏开发",
+        "机器人仿真"
+      ],
+      "impact": "AI策略开发周期从天级缩短至小时级，推理计算成本降低90%",
+      "difficulty": "中",
+      "scores": {
+        "efficiency": 9,
+        "feasibility": 7,
+        "business_impact": 8,
+        "overall": 8
+      },
+      "total_score": 8
+    }
+  ]
+}

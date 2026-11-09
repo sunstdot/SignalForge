@@ -1,0 +1,572 @@
+{
+  "date": "2026-06-26",
+  "opportunities": [
+    {
+      "opportunity_title": "AI文档预处理API平台",
+      "core_insight": "MinerU提供高精度文档解析，直接输出LLM-ready格式，解决企业AI数据准备痛点，此前解析质量差。",
+      "product_form": "帮助AI开发者和企业将复杂文档转换为结构化数据的SaaS平台",
+      "target_users": "AI工程师、知识管理团队、需构建RAG应用的企业，按用量付费",
+      "mvp_features": [
+        "上传PDF/Office在线转换",
+        "API接口返回Markdown/JSON",
+        "批量处理及Webhook通知"
+      ],
+      "business_model": "免费版每月100页，付费$0.05/页或包月$99起",
+      "competitive_barrier": "",
+      "risks": "开源工具可能被直接集成自建，需增加增值功能如脱敏、表格识别优化",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 5,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 19,
+      "source_title": "opendatalab/MinerU — Transforms complex documents like PDFs and Office docs into LLM-ready markdown/J",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/opendatalab/MinerU",
+      "item_id": "github-33bcf7cefff3"
+    },
+    {
+      "opportunity_title": "虚拟创始团队AI合弄制",
+      "core_insight": "直接复用硅谷顶级加速器总裁的AI角色配置，让独立创业者即刻拥有多角色虚拟团队，弥补合弄缺失。",
+      "product_form": "帮助独立开发者/创业者通过对话界面与AI CEO、设计师等角色协同，产出PRD、技术方案、设计稿的SaaS。",
+      "target_users": "个人创业者、独立开发者、学生创业团队，缺乏多角色经验和建议，愿意为虚拟团队按月付费。",
+      "mvp_features": [
+        "多角色选择与切换对话",
+        "基于项目描述自动生成PRD/架构图",
+        "任务拆解与进度看板"
+      ],
+      "business_model": "月$49，无限角色交互，提供文档导出和团队共享空间。",
+      "competitive_barrier": "",
+      "risks": "依赖Claude API成本和稳定性，同类工具可能快速涌现，用户粘性需靠深度行业适配维持。",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 18,
+      "source_title": "garrytan/gstack — Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO,",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/garrytan/gstack",
+      "item_id": "github-33fa2f582c33"
+    },
+    {
+      "opportunity_title": "口语化AI操作助手：用自然语言控制电脑",
+      "core_insight": "低延迟廉价的计算机操作能力让普通用户无需编程即可用自然语言实现重复桌面任务自动化，之前Claude Computer Use成本过高无法普及",
+      "product_form": "帮助非技术白领用自然语言描述来自动化重复电脑操作的桌面RPA工具",
+      "target_users": "行政/财务/运营等需频繁操作多系统且无编程能力的白领，愿意为每天节省1小时付费",
+      "mvp_features": [
+        "自然语言录入任务步骤并实时演示执行",
+        "任务流程录制与回放",
+        "异常处理自动暂停并请求人工确认"
+      ],
+      "business_model": "按月订阅$29起，按自动化任务条数分阶梯定价",
+      "competitive_barrier": "",
+      "risks": "用户对给予AI电脑控制权存在安全担忧，Gemini API政策变动风险",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 18,
+      "source_title": "Introducing computer use in Gemini 3.5 Flash",
+      "source": "Google DeepMind Blog",
+      "source_type": "blog",
+      "source_url": "https://deepmind.google/blog/introducing-computer-use-in-gemini-3-5-flash/",
+      "item_id": "rss-google-deepmind-blog-8efda96ee963"
+    },
+    {
+      "opportunity_title": "AI视频工厂（一键生成营销视频）",
+      "core_insight": "开源完整视频制作Agent pipeline让全自动生成高质量视频成为可能，成本骤降，昔日需团队多日的任务现在几分钟完成。",
+      "product_form": "帮助电商卖家、内容创作者通过输入产品链接或文案，自动生成营销短视频的SaaS平台。",
+      "target_users": "跨境电商卖家、社媒运营、自媒体创作者，视频制作耗时且昂贵，急需低成本快产出的工具，订阅付费。",
+      "mvp_features": [
+        "模板化视频风格选择",
+        "基于产品链接/文案自动生成分镜与素材",
+        "在线预览与微调后导出MP4"
+      ],
+      "business_model": "月度订阅$29起，按视频时长和数量分级付费。",
+      "competitive_barrier": "",
+      "risks": "开源项目更新依赖社区，视频版权素材可能侵权，生成质量稳定性待验证。",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 5,
+        "tech_timing": 5,
+        "buildability": 3
+      },
+      "total_score": 17,
+      "source_title": "calesthio/OpenMontage — World's first open-source, agentic video production system. 12 pipelines, 52 too",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/calesthio/OpenMontage",
+      "item_id": "github-7ce4a54dcf0f"
+    },
+    {
+      "opportunity_title": "AI网站灵感转代码平台",
+      "core_insight": "一键网站克隆能力使非开发者也能复制喜爱布局，AI自动生成差异化代码，极大降低建站门槛。",
+      "product_form": "帮助创业者/小企业主输入目标网址，自动生成可定制Next.js网站代码并在线的工具。",
+      "target_users": "非技术创始人、自由职业者、小店主，想快速获得专业网站但无力雇佣开发者，愿按次或月付。",
+      "mvp_features": [
+        "输入URL生成视觉相似但代码原创的页面",
+        "在线可视化编辑器微调内容",
+        "一键部署至Vercel/Netlify"
+      ],
+      "business_model": "按生成次数$5/次 或 月付$39不限次，包含托管部署增值服务。",
+      "competitive_barrier": "",
+      "risks": "版权与法律风险需确保生成代码不直接复制商业秘密，AI输出质量波动可能导致返工。",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 17,
+      "source_title": "JCodesMore/ai-website-cloner-template — Clone any website with one command using AI coding agents",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/JCodesMore/ai-website-cloner-template",
+      "item_id": "github-b692d5bf7ede"
+    },
+    {
+      "opportunity_title": "自然语言浏览器自动化助手",
+      "core_insight": "page-agent让普通用户零代码执行复杂网页操作，过往同类工具需脚本编程，门槛极高。",
+      "product_form": "帮助白领和电商卖家自动执行重复性网页操作的浏览器扩展",
+      "target_users": "行政人员、电商运营、研究人员，每天处理大量表单和网页，愿意为节省时间付费",
+      "mvp_features": [
+        "自然语言输入指令",
+        "自动识别表单并填写",
+        "定时抓取指定网页数据"
+      ],
+      "business_model": "免费版每日10次操作，专业版$9.9/月无限次",
+      "competitive_barrier": "",
+      "risks": "大厂可能内置相似功能，需快速建立用户习惯壁垒",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 17,
+      "source_title": "alibaba/page-agent — JavaScript in-page GUI agent. Control web interfaces with natural language.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/alibaba/page-agent",
+      "item_id": "github-37881c2a0de6"
+    },
+    {
+      "opportunity_title": "实时AI视觉创作工具（面向内容创作者）",
+      "core_insight": "Turbo级文生图速度使实时交互成为可能，之前因生成延迟高无法实现动态即时反馈创作。",
+      "product_form": "帮助社交媒体运营和电商卖家快速产出视觉素材的实时AI图像生成SaaS工具。",
+      "target_users": "自媒体人、电商卖家、营销设计师，急需低门槛快速出图，愿意为高效率付费。",
+      "mvp_features": [
+        "输入文字秒级生成图像",
+        "内置常用设计模板与风格",
+        "一键导出无水印高清图"
+      ],
+      "business_model": "订阅制，免费版带水印，Pro版$9.9/月去水印+批量生成",
+      "competitive_barrier": "",
+      "risks": "Krea官方可能推出类似产品，开源模型容易被复制成同质服务",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 5
+      },
+      "total_score": 17,
+      "source_title": "🤗 krea/Krea-2-Turbo",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/krea/Krea-2-Turbo",
+      "item_id": "hf-model-5ec433f73bf6"
+    },
+    {
+      "opportunity_title": "NFR需求获取对话助手",
+      "core_insight": "现有开发工具只关注功能需求，多轮对话可系统化引出性能、安全等非功能需求，填补项目早期空白",
+      "product_form": "帮助产品经理与架构师通过多轮对话收集并生成结构化非功能需求文档的AI助手",
+      "target_users": "软件产品经理、技术负责人、解决方案架构师，需完整定义NFR避免后期返工",
+      "mvp_features": [
+        "引导式多轮提问对话",
+        "自动生成NFR规格文档",
+        "一键导出至JIRA或Confluence"
+      ],
+      "business_model": "SaaS订阅制，团队版$29/月支持3个成员",
+      "competitive_barrier": "",
+      "risks": "门槛低，大厂可能迅速集成至已有开发平台，需快速占领垂直场景",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 5
+      },
+      "total_score": 17,
+      "source_title": "Accuracy and Satisfaction in Multi-Turn LLM Dialogues for NFR Assessment",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "source_url": "https://arxiv.org/abs/2606.24834v1",
+      "item_id": "arxiv-2606.24834v1"
+    },
+    {
+      "opportunity_title": "截图/描述一键转前端代码的AI原型生成器",
+      "core_insight": "此前模型前端代码质量差、无法直接运行，本次跃迁使从截图或文字描述生成高保真可运行页面首次实用化。",
+      "product_form": "帮助非技术产品的创始人、设计师快速生成可交互前端原型的SaaS工具",
+      "target_users": "无代码创业者、产品经理、UI/UX设计师，需快速验证页面想法，愿为省时付费",
+      "mvp_features": [
+        "上传设计截图或描述需求生成HTML/Tailwind代码",
+        "内嵌实时预览与一键部署到临时域名",
+        "基于GLM-5.2的前端专用微调提示链"
+      ],
+      "business_model": "订阅制，每月$19起，按生成页面数分层",
+      "competitive_barrier": "",
+      "risks": "模型API供应不稳定或代码仍需大量手动修正",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "Privacy-Aware Infrastructure in the AI-Native Era: An Asset Classification Case Study",
+      "source": "Meta Engineering",
+      "source_type": "blog",
+      "source_url": "https://engineering.fb.com/2026/06/25/security/privacy-aware-infrastructure-in-the-ai-native-era-an-asset-classification-case-study/",
+      "item_id": "rss-meta-engineering-5c8da0810029"
+    },
+    {
+      "opportunity_title": "AI深度行业研究与长报告自动写作助手",
+      "core_insight": "56x增长表明模型可稳定生成长篇、结构化、有深度的报告，此前因输出长度和连贯性限制无法实现自动写作。",
+      "product_form": "帮助分析师、咨询顾问、学生根据主题生成带有引用的深度研究报告的AI写作工具",
+      "target_users": "行业分析师、管理咨询师、学术研究者、商业尽调人员，痛点耗时长，愿为高质量初稿付费",
+      "mvp_features": [
+        "输入主题后自动联网搜集Source并生成万词深度报告",
+        "可引用来源的段落级溯源链接",
+        "多轮追问补全与章节重写"
+      ],
+      "business_model": "按报告字数或篇数收费，基础版$29/月",
+      "competitive_barrier": "",
+      "risks": "报告事实准确性与幻觉风险，依赖OpenAI API成本较高",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 3
+      },
+      "total_score": 16,
+      "source_title": "Privacy-Aware Infrastructure in the AI-Native Era: An Asset Classification Case Study",
+      "source": "Meta Engineering",
+      "source_type": "blog",
+      "source_url": "https://engineering.fb.com/2026/06/25/security/privacy-aware-infrastructure-in-the-ai-native-era-an-asset-classification-case-study/",
+      "item_id": "rss-meta-engineering-5c8da0810029"
+    },
+    {
+      "opportunity_title": "精准布局营销图生成器",
+      "core_insight": "通过隐式视觉思维链使文生图模型真正理解空间布局，使营销人员能一键生成符合准确构图的广告图",
+      "product_form": "帮助社交媒体运营人员输入布局要求生成精准广告图的AI工具",
+      "target_users": "营销经理、社交媒体运营，需要快速产出合规广告图的团队",
+      "mvp_features": [
+        "自然语言描述对象位置关系",
+        "实时布局草图预览",
+        "调用增强模型生成精准图像"
+      ],
+      "business_model": "每月$19无限量生成，提供免费5张试用",
+      "competitive_barrier": "",
+      "risks": "底层模型提示模板可能随基座升级而失效，需持续维护",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 16,
+      "source_title": "IV-CoT: Implicit Visual Chain-of-Thought for Structure-Aware Text-to-Image Generation",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "source_url": "https://arxiv.org/abs/2606.24849v1",
+      "item_id": "arxiv-2606.24849v1"
+    },
+    {
+      "opportunity_title": "AI价值投资研究助手",
+      "core_insight": "多Agent框架模拟巴菲特等大师方法论，将专业级价值分析能力降维至个人投资者可负担的订阅服务。",
+      "product_form": "帮助散户投资者输入股票代码即可获得深度基本面分析报告和估值评分的Web研究工具。",
+      "target_users": "中文市场价值投资爱好者，缺乏专业研究渠道，愿为深度分析报告小额付费。",
+      "mvp_features": [
+        "输入A股/美股代码生成分析",
+        "四大师视角多Agent辩论输出结论",
+        "关键财务指标可视化与风险提示"
+      ],
+      "business_model": "按月$9.99订阅，每月提供有限数量深度报告；提供按次购买。",
+      "competitive_barrier": "",
+      "risks": "金融合规风险必须显著声明非投资建议；实时财务数据源获取成本高。",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 3
+      },
+      "total_score": 15,
+      "source_title": "xbtlin/ai-berkshire — AI 时代的伯克希尔：基于 Claude Code 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Be",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/xbtlin/ai-berkshire",
+      "item_id": "github-7ce0ed1300f4"
+    },
+    {
+      "opportunity_title": "开源依赖漏洞自动修复管家",
+      "core_insight": "将漏洞发现到修复的全流程自动化，企业无需安全专家即可管理开源依赖风险，此前人工沟通成本高",
+      "product_form": "帮助中小开发团队自动扫描、验证和修复开源依赖漏洞的SaaS平台",
+      "target_users": "使用大量开源库的中小开发团队/初创公司，缺乏专职安全人员，愿意为自动化安全付费",
+      "mvp_features": [
+        "连接GitHub/GitLab仓库自动分析依赖并扫描漏洞",
+        "验证漏洞可利用性并生成修复补丁",
+        "自动向目标仓库或内部Fork提交PR并跟踪修复状态"
+      ],
+      "business_model": "按月订阅，按项目数或依赖数分级定价，$29/月起",
+      "competitive_barrier": "",
+      "risks": "自动生成补丁可能引入新风险，需严格测试；与Snyk等竞争需差异化",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 3
+      },
+      "total_score": 15,
+      "source_title": "Scrutineer: scanning open source without flooding maintainers",
+      "source": "Dylan Nesbitt",
+      "source_type": "rss",
+      "source_url": "https://nesbitt.io/2026/06/25/scrutineer.html",
+      "item_id": "atom-dylan-nesbitt-2ad1fbbe9e4f"
+    },
+    {
+      "opportunity_title": "电商3D商品模型生成器",
+      "core_insight": "图像到3D高斯泼溅质量突破，让普通卖家低成本创建用于AR展示的高保真模型，此前细节丢失严重",
+      "product_form": "帮助电商卖家将产品照片一键转为可交互3D模型的在线SaaS工具",
+      "target_users": "跨境电商独立卖家、品牌商，需要3D/AR商品展示但预算有限",
+      "mvp_features": [
+        "上传多角度商品照",
+        "生成高保真3DGS模型",
+        "导出GLB/glTF用于网页AR"
+      ],
+      "business_model": "按模型次数订阅，基础版$9.9/月生成20个模型",
+      "competitive_barrier": "",
+      "risks": "强依赖FLUX3D开源及部署进度，若模型发布延期则无法启动",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 3
+      },
+      "total_score": 15,
+      "source_title": "FLUX3D: High-Fidelity 3D Gaussian Generation with Diffusion-Aligned Sparse Representation",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "source_url": "https://arxiv.org/abs/2606.24874v1",
+      "item_id": "arxiv-2606.24874v1"
+    },
+    {
+      "opportunity_title": "品牌视觉标识一键提取器",
+      "core_insight": "用标准格式让AI编码代理理解设计系统，实现网站视觉标识自动提取并生成可跨项目复用的设计令牌文件。",
+      "product_form": "帮助前端开发者/设计师从任意网站自动提取品牌颜色、字体、间距并生成DESIGN.md规范的Chrome插件及SaaS。",
+      "target_users": "前端开发者、独立设计师、中小创业公司，需快速统一品牌视觉却缺乏设计系统文档，愿意为效率付费。",
+      "mvp_features": [
+        "输入URL自动提取设计令牌",
+        "生成符合DESIGN.md规范的Markdown文件",
+        "预览AI根据规范生成的示例组件"
+      ],
+      "business_model": "免费基础提取+高级导出/团队协作订阅月费$19。",
+      "competitive_barrier": "",
+      "risks": "提取准确率受网站复杂性影响，需避免直接复制受版权保护的设计。",
+      "scores": {
+        "pain_point": 3,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 14,
+      "source_title": "google-labs-code/design.md — A format specification for describing a visual identity to coding agents. DESIGN",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/google-labs-code/design.md",
+      "item_id": "github-9557790edde4"
+    },
+    {
+      "opportunity_title": "一键私有云部署方案（基于CasaOS）",
+      "core_insight": "CasaOS大幅降低个人云搭建门槛，但普通用户仍需配置硬件，可提供预装SD卡或远程安装服务。",
+      "product_form": "帮助家庭用户用旧电脑或树莓派轻松搭建私有云的无代码解决方案",
+      "target_users": "关注隐私的家庭用户、NAS小白，一次付费永久使用",
+      "mvp_features": [
+        "预装CasaOS的树莓派SD卡售卖",
+        "一键远程安装脚本",
+        "手机App远程管理文件"
+      ],
+      "business_model": "SD卡含系统售价$29.99，远程安装服务$19.99一次",
+      "competitive_barrier": "",
+      "risks": "硬件供应链和售后支持复杂，利润薄，难以规模化",
+      "scores": {
+        "pain_point": 3,
+        "market_size": 3,
+        "tech_timing": 4,
+        "buildability": 4
+      },
+      "total_score": 14,
+      "source_title": "IceWhaleTech/CasaOS — CasaOS - A simple, easy-to-use, elegant open-source Personal Cloud system.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/IceWhaleTech/CasaOS",
+      "item_id": "github-0c0c45e8a109"
+    },
+    {
+      "opportunity_title": "社交媒体竞品分析工具",
+      "core_insight": "多平台爬虫能力可支撑自动化品牌监控与竞品分析，但之前个人获取跨平台数据成本高且易被封。",
+      "product_form": "帮助品牌和MCN机构监控社媒动态、分析竞品内容的在线分析平台",
+      "target_users": "品牌营销人员、MCN运营、市场分析师，按月订阅",
+      "mvp_features": [
+        "输入关键词或竞品ID自动爬取内容",
+        "评论情感分析",
+        "定时报告生成"
+      ],
+      "business_model": "基础监测$29/月，高级分析$99/月",
+      "competitive_barrier": "",
+      "risks": "平台反爬严苛可能导致服务中断，需持续维护代理和应对法律风险",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 4,
+        "tech_timing": 4,
+        "buildability": 2
+      },
+      "total_score": 14,
+      "source_title": "NanmiCoder/MediaCrawler — 小红书笔记 | 评论爬虫、抖音视频 | 评论爬虫、快手视频 | 评论爬虫、B 站视频 ｜ 评论爬虫、微博帖子 ｜ 评论爬虫、百度贴吧帖子 ｜ 百度贴吧评论回复爬",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/NanmiCoder/MediaCrawler",
+      "item_id": "github-8124c4da7c5c"
+    },
+    {
+      "opportunity_title": "数据分析Agent自动评测平台",
+      "core_insight": "对于产出代码+图表+文字的分析Agent，需要专用自动化评估体系，帮助开发团队保证质量",
+      "product_form": "帮助AI团队自动评测其数据分析Agent多维输出质量的SaaS平台",
+      "target_users": "构建AI数据分析产品的初创公司或企业实验室，需迭代优化Agent",
+      "mvp_features": [
+        "上传测试数据集与场景",
+        "自动运行Agent并获取结果",
+        "多维度评分与回归诊断"
+      ],
+      "business_model": "按评估任务数计费，$99/月包含500次评测",
+      "competitive_barrier": "",
+      "risks": "目标市场较小，评估标准未形成行业共识，获客困难",
+      "scores": {
+        "pain_point": 3,
+        "market_size": 2,
+        "tech_timing": 4,
+        "buildability": 3
+      },
+      "total_score": 12,
+      "source_title": "Grading the Grader: Lessons from Evaluating an Agentic Data Analysis System",
+      "source": "arXiv",
+      "source_type": "arxiv",
+      "source_url": "https://arxiv.org/abs/2606.24839v1",
+      "item_id": "arxiv-2606.24839v1"
+    }
+  ],
+  "analyzed_item_ids": [
+    "github-9557790edde4",
+    "github-7ce4a54dcf0f",
+    "github-7ce0ed1300f4",
+    "github-dd802972cb3a",
+    "github-5543913f04eb",
+    "github-b692d5bf7ede",
+    "github-b8bbc72b583f",
+    "github-33fa2f582c33",
+    "github-97f5dcf509f8",
+    "github-7c7aa2756d1d",
+    "github-37881c2a0de6",
+    "github-0c0c45e8a109",
+    "github-33bcf7cefff3",
+    "github-a13753c0fb52",
+    "github-ad5992dffaf0",
+    "github-8124c4da7c5c",
+    "hf-model-46ba0cfe1884",
+    "hf-model-e66836d0026b",
+    "hf-model-72339137e72c",
+    "hf-model-ff55a456952e",
+    "hf-model-caa021b2a0eb",
+    "hf-model-d85ec644568f",
+    "hf-model-7d9ab165315b",
+    "hf-model-c48b45a35ba4",
+    "hf-model-5ec433f73bf6",
+    "hf-model-9ba0a3d6e09d",
+    "hf-paper-8cc4fb12fb71",
+    "hf-paper-136d46bcc2c2",
+    "hf-paper-b24c3851b849",
+    "hf-paper-f982655b6a61",
+    "hf-paper-7289d4f87861",
+    "hf-paper-09903637e0cd",
+    "hf-paper-90579a0d74df",
+    "hf-paper-aa2011c6ddd7",
+    "hf-paper-24e2fd156c57",
+    "hf-paper-a4244ea96fb9",
+    "rss-openai-blog-24d4c9543d4c",
+    "rss-openai-blog-24a3a922502a",
+    "rss-google-deepmind-blog-8efda96ee963",
+    "rss-google-ai-blog-235f1239691f",
+    "rss-meta-engineering-5c8da0810029",
+    "rss-smol-ai-news-ea66cb57b14e",
+    "rss-hackernews-daily-00bb0592c60b",
+    "rss-all-in-podcast-2a4c78613f47",
+    "rss-all-in-podcast-9bc46836ede9",
+    "atom-the-ai-valley-3d002ac1fee6",
+    "rss-latent-space-47422a7cd7ae",
+    "rss-ben's-bites-b48accfa5f92",
+    "atom-simon-willison-dc57f9f0dc7f",
+    "atom-simon-willison-7d0b2e548337",
+    "rss-gary-marcus-badee2a36541",
+    "rss-jim-nielsen-41662a0fae8c",
+    "rss-xe-iaso-61e295d3a8c2",
+    "rss-the-old-new-thing-5aa6c86ac64a",
+    "rss-the-old-new-thing-a894a7f2f19d",
+    "rss-john-d.-cook-56c1612f3946",
+    "rss-john-d.-cook-f9e4e5f60cae",
+    "rss-john-d.-cook-ad4ccc919b7c",
+    "rss-giles-thomas-17b463204656",
+    "rss-refactoring-english-158ec150e6a6",
+    "rss-terence-eden-48da1572e3c7",
+    "rss-dave-farquhar-8a378a7f3c2f",
+    "rss-troy-hunt-f02c4afd3d88",
+    "rss-lcamtuf-82885d9ecdfc",
+    "rss-jeff-geerling-233c84af3b0b",
+    "rss-pluralistic-2c6337d0fc5b",
+    "atom-dylan-nesbitt-2ad1fbbe9e4f",
+    "rss-construction-physics-0ac3179892de",
+    "rss-appso-02fa65a485a9",
+    "rss-机器之心-bc2147a50892",
+    "rss-机器之心-3c8ff5ff8726",
+    "rss-机器之心-25b1d6941780",
+    "rss-量子位-948ace7cde6d",
+    "rss-量子位-a0dd5a22c5b6",
+    "rss-量子位-87630b6c7a80",
+    "rss-虎嗅-2d1a18f9665a",
+    "rss-虎嗅-7209dd230539",
+    "rss-虎嗅-af57f33be608",
+    "arxiv-2606.24884v1",
+    "arxiv-2606.24879v1",
+    "arxiv-2606.24874v1",
+    "arxiv-2606.24855v1",
+    "arxiv-2606.24854v1",
+    "arxiv-2606.24851v1",
+    "arxiv-2606.24849v1",
+    "arxiv-2606.24842v1",
+    "arxiv-2606.24841v1",
+    "arxiv-2606.24839v1",
+    "arxiv-2606.24834v1",
+    "arxiv-2606.24832v1",
+    "arxiv-2606.24828v1",
+    "arxiv-2606.24825v1",
+    "arxiv-2606.24824v1",
+    "l30-x-73aa0983f9c3",
+    "l30-x-d1b88e3106ea",
+    "l30-x-f0767ad7f26e"
+  ],
+  "remaining": 1
+}

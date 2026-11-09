@@ -1,0 +1,53 @@
+{
+  "id": "fae83ee0-3e36-4e3c-90ee-ca040b2d7541",
+  "url": "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f",
+  "title": "llm-wiki · GitHub",
+  "source_platform": "other",
+  "user_note": "Andrej Kapathy大神构想的LLM Wiki，去年我也有类似的想法，但是没有整理成很好的方案",
+  "added_at": "2026-05-20T19:41:56.963709",
+  "content_snippet": "llm-wiki · GitHub Skip to content Search Gists Search Gists Sign in Sign up You signed in with another tab or window. Reload to refresh your session. You signed out in another tab or window. Reload to refresh your session. You switched accounts on another tab or window. Reload to refresh your session. Dismiss alert Instantly share code, notes, and snippets. karpathy / llm-wiki.md Created April 4, 2026 16:25 Show Gist options Download ZIP Star 5,000+ ( 5,000+ ) You must be signed in to star a gist Fork 5,000+ ( 5,000+ ) You must be signed in to fork a gist Embed Select an option Embed Embed this gist in your website. Share Copy sharable link for this gist. Clone via HTTPS Clone using the web URL. No results found Learn more about clone URLs Clone this repository at &lt;script src=&quot;https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f.js&quot;&gt;&lt;/script&gt; Save karpathy/442a6bf555914893e9891c11519de94f to your computer and use it in GitHub Desktop. Embed Select an option Embed Embed this gist in your website. Share Copy sharable link for this gist. Clone via HTTPS Clone using the web URL. No results found Learn more about clone URLs Clone this repository at &lt;script src=&quot;https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f.js&quot;&gt;&lt;/script&gt; Save karpathy/442a6bf555914893e9891c11519de94f to your computer and use it in GitHub Desktop. Download ZIP llm-wiki Raw llm-wiki.md LLM Wiki A pattern for building personal knowledge bases using LLMs. This is an idea file, it is designed to be copy pasted to your own LLM Agent (e.g. OpenAI Codex, Claude Code, OpenCode / Pi, or etc.). Its goal is to communicate the high level idea, but your agent will build out the specifics in collaboration with you. The core idea Most people's experience with LLMs and documents looks like RAG: you upload a collection of files, the LLM retrieves relevant chunks at query time, and generates an answer. This works, but the LLM is rediscovering knowledge from scratch on every question. There's no accumulation. Ask a subtle question that requires synthesizing five documents, and the LLM has to find and piece together the relevant fragments every time. Nothing is built up. NotebookLM, ChatGPT file uploads, and most RAG systems work this way. The idea here is different. Instead of just retrieving from raw documents at query time, the LLM incrementally builds and maintains a persistent wiki — a structured, interlinked collection of markdown files that sits between you and the raw sources. When you add a new source, the LLM doesn't just index it for later retrieval. It reads it, extracts the key information, and integrates it into the existing wiki — updating entity pages, revising topic summaries, noting where new data contradicts old claims, strengthening or challenging the evolving synthesis. The knowledge is compiled once and then kept current , not re-derived on every query. This is the key difference: the wiki is a persistent, compounding artifact. The cross-references are already there. The contradictions have already been flagged. The synthesis already reflects everything you've read. The wiki keeps getting richer with every source you add and every question you ask. You never (or rarely) write the wiki yourself — the LLM writes and maintains all of it. You're in charge of sourcing, exploration, and asking the right questions. The LLM does all the grunt work — the summarizing, cross-referencing, filing, and bookkeeping that makes a knowledge base actually useful over time. In practice, I have the LLM agent open on one side and Obsidian open on the other. The LLM makes edits based on our conversation, and I browse the results in real time — following links, checking the graph view, reading the updated pages. Obsidian is the IDE; the LLM is the programmer; the wiki is the codebase. This can apply to a lot of different contexts. A few examples: Personal : tracking your own goals, health, psychology, self-improvement — filing journal entries, articles, podcast notes, and building up a structured picture of yourself over time. Research : going deep on a topic over weeks or months — reading papers, articles, reports, and incrementally building a comprehensive wiki with an evolving thesis. Reading a book : filing each chapter as you go, building out pages for characters, themes, plot threads, and how they connect. By the end you have a rich companion wiki. Think of fan wikis like Tolkien Gateway — thousands of interlinked pages covering characters, places, events, languages, built by a community of volunteers over years. You could build something like that personally as you read, with the LLM doing all the cross-referencing and maintenance. Business/team : an internal wiki maintained by LLMs, fed by Slack threads, meeting transcripts, project documents, customer calls. Possibly with humans in the loop reviewing updates. The wiki stays current because the LLM does the maintenance that no one on the team wants to do. Competitive analysis, due diligence, trip planning, course notes, hobby deep-dives — anything where you're accumulating knowledge over time and want it organized rather than scattered. Architecture There are three layers: Raw sources — your curated collection of source documents. Articles, papers, images, data files. These are immutable — the LLM reads from them but never modifies them. This is your source of truth. The wiki — a directory of LLM-generated markdown files. Summaries, entity pages, concept pages, comparisons, an overview, a synthesis. The LLM owns this layer entirely. It creates pages, updates them when new sources arrive, maintains cross-references, and keeps everything consistent. You read it; the LLM writes it. The schema — a document (e.g. CLAUDE.md for Claude Code or AGENTS.md for Codex) that tells the LLM how the wiki is structured, what the conventions are, and what workflows to follow when ingesting sources, answering questions, or maintaining",
+  "quick_read": "**核心内容**：这篇文章提出了一种用 LLM 持续构建个人或团队知识库的新范式——不是每次查询时临时检索原始文档（RAG），而是让 LLM 提前将原始资料编译成结构化、相互链接的 Markdown 维基，并长期维护与更新。用户不写 wiki，只提供资料和问题，LLM 做所有提取、总结、交叉引用和一致性维护，从而让知识随着每次添加和对话不断积累深化。\n\n**关键信息**：\n- 与传统 RAG（检索增强生成）仅在查询时检索片段不同，LLM Wiki 是在文档摄入时就提取关键信息并整合到已有知识结构中，形成持久化、可迭代的复合产物。\n- 系统分为三层：不可修改的原始资料层、LLM 完全维护的 Markdown 维基层、以及定义结构和工作流规范的 schema 文档（如 CLAUDE.md）。\n- 实践方式：LLM 代理在一侧编辑，用户在 Obsidian 等工具中实时浏览结果，维基作为“代码库”，LLM 是“程序员”。\n- 应用场景广泛：个人提升（目标/健康/心理追踪）、深度研究、书籍阅读整理（类似粉丝维基）、团队内部知识库（从会议、Slack、项目文档自动维护）等。\n\n**值得关注**：把 LLM 从一个按需回答的检索器，转变为一个持续“编译”知识并维护状态的知识库构建代理，这种从“即用即扔”到“积累资产”的思维切换，是让 LLM 输出真正随时间增值的关键。",
+  "business_opps": [
+    {
+      "opportunity_title": "LLM 驱动个人维基自动生成器",
+      "core_insight": "LLM 可持续从笔记、文章里提取实体与关系，持久化为结构化维基，摆脱每次查询重新检索的低效。",
+      "product_form": "帮助终身学习者和研究者将碎片化信息自动整理成相互链接、持续更新的个人知识维基的 SaaS 工具",
+      "target_users": "研究员、写作者、重度笔记用户；面临资料堆积、难综合的痛点；愿按月度订阅付费",
+      "mvp_features": [
+        "拖拽上传多格式文档，自动抽取关键实体与主题",
+        "自动生成并持续更新 Markdown 维基页面，含交叉链接与矛盾标记",
+        "可视化知识图谱浏览与自然语言查询"
+      ],
+      "business_model": "免费版有限存储，Pro 版按月收费 (9-19美元) 或按调用量计费",
+      "risks": "LLM 处理成本高、生成内容质量不稳定，用户信任建立难",
+      "scores": {
+        "pain_point": 4,
+        "market_size": 3,
+        "tech_timing": 5,
+        "buildability": 4
+      },
+      "total_score": 16
+    },
+    {
+      "opportunity_title": "自治团队维基：让内部知识保鲜进化",
+      "core_insight": "用 LLM 监听项目文档与讨论，自动整合与更新团队 Wiki，避免信息过期和碎片化。",
+      "product_form": "帮助中小团队解决文档过时、信息孤岛问题的持续进化型团队知识管理平台",
+      "target_users": "初创团队、远程项目组；文档分散、难维护；有团队协作工具预算，接受按席位付费",
+      "mvp_features": [
+        "接入 Slack、Notion、Google Docs 等信息源",
+        "自动创建/修订维基页面，标注最新更新与冲突点",
+        "差异摘要推送与手动审核工作流"
+      ],
+      "business_model": "按团队席位数按月订阅 (如每席位 15 美元/月)",
+      "risks": "数据隐私顾虑与多重集成复杂度高，冷启动时价值展示慢",
+      "scores": {
+        "pain_point": 5,
+        "market_size": 4,
+        "tech_timing": 5,
+        "buildability": 3
+      },
+      "total_score": 17
+    }
+  ],
+  "rdev_opps": []
+}

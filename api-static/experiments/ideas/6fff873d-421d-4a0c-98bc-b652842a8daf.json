@@ -1,0 +1,23 @@
+{
+  "id": "6fff873d-421d-4a0c-98bc-b652842a8daf",
+  "content_id": "github-b759fcbff766",
+  "title": "本地离线语音助手开发",
+  "description": "**为什么产生这个想法**\n基于Parlor的完全本地运行和语音交互特性，可以开发不依赖云端的隐私安全语音助手，文章强调的本地部署和低延迟特点使其成为可能。\n\n**价值**\n满足隐私敏感场景需求，无需网络即可使用，降低延迟提升体验，可应用于智能家居、个人助理等离线场景。\n\n**具体帮助**\n团队可快速验证本地AI助手的可行性，为产品增加离线语音交互能力，降低对云服务的依赖。",
+  "difficulty": "medium",
+  "estimated_days": 5,
+  "tags": [
+    "语音识别",
+    "本地部署",
+    "隐私保护"
+  ],
+  "status": "selected",
+  "priority": 8.0,
+  "briefing_date": "",
+  "source_type": "repo",
+  "source_title": "fikrikarim/parlor — On-device, real-time multimodal AI. Have natural voice and vision conversations ",
+  "source_url": "https://github.com/fikrikarim/parlor",
+  "inspiration": "",
+  "product_concept": {},
+  "source_context": "",
+  "created_at": "2026-04-08T20:58:55.860644"
+}

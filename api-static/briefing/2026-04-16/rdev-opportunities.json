@@ -1,0 +1,616 @@
+{
+  "date": "2026-04-16",
+  "solutions": [
+    {
+      "type": "业务赋能",
+      "title": "百度文生图赋能营销内容生产",
+      "trigger": "百度ERNIE-Image-Turbo文生图模型",
+      "scenario": "在互联网产品运营中，需要大量营销海报、配图、社交媒体素材，传统方式依赖设计师逐张制作，产能受限",
+      "ai_solution": "接入百度ERNIE-Image-Turbo API，通过文本描述快速生成营销配图，支持批量、多风格、可控编辑的素材生产",
+      "implementation": "集成ERNIE-Image-Turbo到营销内容管理平台，提供运营自助生成素材能力",
+      "audience": [
+        "产品运营",
+        "大前端"
+      ],
+      "impact": "营销素材产能提升5倍，单张素材成本从50元降至5元",
+      "difficulty": "低",
+      "resistance": "API调用成本控制，需优化提示词工程提升出图质量",
+      "scores": {
+        "efficiency": 9,
+        "feasibility": 9,
+        "business_impact": 9,
+        "overall": 9
+      },
+      "total_score": 9,
+      "source_title": "🤗 baidu/ERNIE-Image-Turbo",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/baidu/ERNIE-Image-Turbo",
+      "item_id": "hf-model-73a346378827"
+    },
+    {
+      "type": "业务赋能",
+      "title": "LoRA素材库赋能运营设计",
+      "trigger": "CivitAI上轻量级图像生成LoRA模型",
+      "scenario": "在电商促销/运营活动页面设计中，设计师需要为不同活动快速制作大量banner、配图素材，现有方式是人工PS或找素材库，效率低且版权风险",
+      "ai_solution": "利用LoRA模型快速生成特定风格的运营素材图，支持批量定制化输出，可覆盖80%的标准化运营素材需求",
+      "implementation": "集成LoRA推理到设计资源管理平台，提供API供运营自助生成营销素材",
+      "audience": [
+        "产品运营",
+        "大前端"
+      ],
+      "impact": "素材生成周期从2天缩短至2小时，人力成本降低60%",
+      "difficulty": "中",
+      "resistance": "需要训练公司专属风格LoRA，初期样本数据准备耗时",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 7,
+        "business_impact": 8,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "🎨 Hips slider (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "source_url": "https://civitai.com/models/2546450",
+      "item_id": "civitai-2546450"
+    },
+    {
+      "type": "业务赋能",
+      "title": "IP联名素材智能生成",
+      "trigger": "二次元风格LoRA模型",
+      "scenario": "在游戏联动/IP授权产品营销中，需要大量制作符合特定IP风格的宣传素材，传统方式依赖原画师手绘，周期长成本高",
+      "ai_solution": "使用特定IP风格的LoRA模型自动生成符合授权IP调性的营销素材，支持快速批量产出",
+      "implementation": "构建内部IP素材LoRA库，集成到营销素材生成平台",
+      "audience": [
+        "产品运营",
+        "大前端"
+      ],
+      "impact": "联名素材制作周期缩短70%，单次活动节省设计成本2-5万",
+      "difficulty": "中",
+      "resistance": "需要获取IP授权，版权合规风险需评估",
+      "scores": {
+        "efficiency": 9,
+        "feasibility": 7,
+        "business_impact": 7,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "🎨 Yahagi (矢矧) - KanColle: Kantai Collection (艦隊これくしょん -艦これ-) - COMMISSION (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "source_url": "https://civitai.com/models/2545575",
+      "item_id": "civitai-2545575"
+    },
+    {
+      "type": "研发提效",
+      "title": "PRD原型图快速生成",
+      "trigger": "百度轻量级文生图能力",
+      "scenario": "在产品需求评审阶段，产品经理需要快速制作产品原型示意图，传统方式是使用Axure等工具绘制，效率低",
+      "ai_solution": "利用文生图模型根据需求描述快速生成产品界面示意图，辅助需求评审和客户沟通",
+      "implementation": "集成到需求管理工具（如Jira、飞书文档）的插件",
+      "audience": [
+        "产品运营",
+        "大前端"
+      ],
+      "impact": "原型制作时间从4小时缩短至30分钟",
+      "difficulty": "低",
+      "resistance": "生成图像精确可控性有限，需人工二次调整",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 9,
+        "business_impact": 6,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "🤗 baidu/ERNIE-Image-Turbo",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/baidu/ERNIE-Image-Turbo",
+      "item_id": "hf-model-73a346378827"
+    },
+    {
+      "type": "业务赋能",
+      "title": "ERNIE文生图企业级智能营销",
+      "trigger": "百度ERNIE-Image文生图模型",
+      "scenario": "在电商平台的商品主图、详情页配图、活动横幅等场景中，需要大量符合品牌调性的图片素材，人工制作成本高",
+      "ai_solution": "基于ERNIE-Image构建企业级营销素材生成平台，支持品牌风格学习、文案融合、批量生成的完整工作流",
+      "implementation": "搭建企业内部文生图服务平台，封装ERNIE-Image API并集成品牌素材库",
+      "audience": [
+        "产品运营",
+        "大前端"
+      ],
+      "impact": "营销素材产出效率提升300%，单次大促节省设计人力50人天",
+      "difficulty": "中",
+      "resistance": "需与品牌方确认AI生成素材的合规性",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 8,
+        "business_impact": 9,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "🤗 baidu/ERNIE-Image",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/baidu/ERNIE-Image",
+      "item_id": "hf-model-9f1c55c6cd4c"
+    },
+    {
+      "type": "研发提效",
+      "title": "本地化Gemma代码助手",
+      "trigger": "支持GGUF格式的Gemma 26B轻量模型",
+      "scenario": "在代码审查和重构场景中，需要对历史遗留代码进行理解和优化，但代码注释缺失、文档老旧，理解成本高",
+      "ai_solution": "部署轻量级Gemma模型到本地IDE，通过自然语言交互帮助开发者理解复杂代码逻辑、生成代码注释、提出重构建议",
+      "implementation": "集成到VS Code/IDEA作为本地代码理解助手插件",
+      "audience": [
+        "后端",
+        "大前端",
+        "客户端"
+      ],
+      "impact": "代码理解时间缩短50%，重构效率提升30%",
+      "difficulty": "低",
+      "resistance": "模型对中文代码的理解能力可能有限",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 9,
+        "business_impact": 6,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "🤗 Jiunsong/supergemma4-26b-uncensored-gguf-v2",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/Jiunsong/supergemma4-26b-uncensored-gguf-v2",
+      "item_id": "hf-model-7799d1d27bd5"
+    },
+    {
+      "type": "研发提效",
+      "title": "UI截图直接生成可编辑代码",
+      "trigger": "多模态image-text-to-text模型",
+      "scenario": "在前端开发中，设计师交付UI截图后，开发者需要手动还原为React/Vue代码，过程繁琐且易出错",
+      "ai_solution": "利用Gemma-4的多模态能力，识别UI截图布局和样式，直接输出可编辑的前端组件代码",
+      "implementation": "VS Code插件或Figma插件形式，截图上传后返回代码",
+      "audience": [
+        "大前端"
+      ],
+      "impact": "减少50%的前端界面还原工作量",
+      "difficulty": "中",
+      "resistance": "模型对复杂布局识别准确率待验证",
+      "scores": {
+        "efficiency": 9,
+        "feasibility": 7,
+        "business_impact": 6,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "🤗 google/gemma-4-31B-it",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/google/gemma-4-31B-it",
+      "item_id": "hf-model-2d0f16bac7e1"
+    },
+    {
+      "type": "研发提效",
+      "title": "技术方案文档智能生成助手",
+      "trigger": "GLM-5.1文本生成能力",
+      "scenario": "技术评审需要编写大量技术方案文档，研发人员常因文档写作耗时而头疼",
+      "ai_solution": "基于GLM-5.1构建技术方案生成助手，输入API接口或架构图自动生成规范的技术文档",
+      "implementation": "GitLab Webhook或飞书机器人，PRD/接口文档作为输入",
+      "audience": [
+        "大前端",
+        "后端",
+        "技术TL"
+      ],
+      "impact": "技术文档编写时间缩短70%",
+      "difficulty": "低",
+      "resistance": "需要整理内部文档模板作为few-shot示例",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 9,
+        "business_impact": 5,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "🤗 zai-org/GLM-5.1",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/zai-org/GLM-5.1",
+      "item_id": "hf-model-2f79a3598954"
+    },
+    {
+      "type": "业务赋能",
+      "title": "营销物料批量生成工具",
+      "trigger": "MiniMax文本生成能力",
+      "scenario": "大厂运营活动频繁需要大量文案、海报描述、push文案，人工撰写耗时",
+      "ai_solution": "构建营销物料生成平台，输入活动主题自动生成多版本文案、标题、描述",
+      "implementation": "内部运营后台插件，支持批量导出",
+      "audience": [
+        "产品运营"
+      ],
+      "impact": "营销文案生成效率提升5倍",
+      "difficulty": "低",
+      "resistance": "需对接业务方审核流程",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 9,
+        "business_impact": 7,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "🤗 MiniMaxAI/MiniMax-M2.7",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/MiniMaxAI/MiniMax-M2.7",
+      "item_id": "hf-model-3e19acb863ad"
+    },
+    {
+      "type": "研发提效",
+      "title": "代码仓库安全扫描工具",
+      "trigger": "AI文件类型检测能力",
+      "scenario": "项目代码库混入了非代码文件（如恶意脚本、敏感数据），传统方式依赖文件后缀",
+      "ai_solution": "利用Magika的AI内容识别能力，扫描仓库所有文件，精准识别文件真实类型，标记潜在风险",
+      "implementation": "CI/CD流水线集成脚本，提交即扫描",
+      "audience": [
+        "后端",
+        "安全团队"
+      ],
+      "impact": "代码泄露风险提前发现，扫描效率提升",
+      "difficulty": "低",
+      "resistance": "需与现有安全流程对接",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 9,
+        "business_impact": 7,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "google/magika — Fast and accurate AI powered file content types detection",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/google/magika",
+      "item_id": "github-6b7d140c7b2a"
+    },
+    {
+      "type": "研发提效",
+      "title": "内部AI Agent快速部署平台",
+      "trigger": "TypeScript云Agent开源模板",
+      "scenario": "团队需要快速搭建各类AI Agent服务（如Code Review、需求分析、日志分析），从零开发耗时长",
+      "ai_solution": "基于open-agents模板，使用TypeScript快速构建和部署内部AI Agent服务",
+      "implementation": "内部DevOps平台，一键部署",
+      "audience": [
+        "后端",
+        "技术TL"
+      ],
+      "impact": "AI Agent服务上线周期从周缩短到天",
+      "difficulty": "低",
+      "resistance": "需适配内部技术栈",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 9,
+        "business_impact": 6,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "vercel-labs/open-agents — An open source template for building cloud agents.",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/vercel-labs/open-agents",
+      "item_id": "github-e7ad6c23f068"
+    },
+    {
+      "type": "业务赋能",
+      "title": "金融业务AI团队协作方案",
+      "trigger": "AI Hedge Fund Team多角色协作",
+      "scenario": "在商业化业务数据分析场景中，目前做法是运营手工提取数据+分析师撰写报告，核心痛点在于响应慢、无法实时决策",
+      "ai_solution": "借鉴AI Hedge Fund的多Agent分工模式，为业务团队构建数据采集、分析、报告生成的自动化流水线",
+      "implementation": "内部数据平台Webhook+飞书机器人播报",
+      "audience": [
+        "产品运营",
+        "技术TL"
+      ],
+      "impact": "预期将日报生成时间从2小时缩短至5分钟，提升业务决策效率",
+      "difficulty": "中",
+      "resistance": "需要数据团队配合打通数据源，敏感数据安全管控",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 6,
+        "business_impact": 9,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "virattt/ai-hedge-fund — An AI Hedge Fund Team",
+      "source": "GitHub Trending",
+      "source_type": "repo",
+      "source_url": "https://github.com/virattt/ai-hedge-fund",
+      "item_id": "github-90a874f93a44"
+    },
+    {
+      "type": "研发提效",
+      "title": "Headless自动化测试平台",
+      "trigger": "情报提及headless软件，可能涉及自动化测试场景",
+      "scenario": "在Web前端自动化测试场景中，目前主要依赖Selenium等重型方案，启动慢、资源消耗大，核心痛点在于CI/CD环境下的测试执行效率",
+      "ai_solution": "利用轻量级headless浏览器（如Puppeteer/Playwright）结合AI生成测试用例，可实现快速页面交互、截图比对、API响应验证",
+      "implementation": "VS Code插件 + CI/CD Webhook集成",
+      "audience": [
+        "大前端",
+        "测试"
+      ],
+      "impact": "测试用例生成时间从小时级缩短至分钟级，CI执行效率提升50%以上",
+      "difficulty": "低",
+      "resistance": "测试覆盖率评估和用例维护成本",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 9,
+        "business_impact": 5,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "Big lab leaks",
+      "source": "Ben's Bites",
+      "source_type": "rss",
+      "source_url": "https://www.bensbites.com/p/big-lab-leaks",
+      "item_id": "rss-ben's-bites-e78689f5551f"
+    },
+    {
+      "type": "研发提效",
+      "title": "Code Review AI Agent",
+      "trigger": "AI编码代理的详细实践讨论，涉及代码审查场景",
+      "scenario": "在代码Review场景中，目前做法是人工逐行检查，核心痛点在于大PR漏看问题、风格不一致、潜在Bug漏检",
+      "ai_solution": "利用大模型分析代码变更，自动检测潜在Bug、安全漏洞、风格问题，并提供修复建议，可实现PR自动评论",
+      "implementation": "GitLab/GitHub Webhook + 大模型API",
+      "audience": [
+        "大前端",
+        "客户端",
+        "后端",
+        "技术TL"
+      ],
+      "impact": "Review效率提升40%，Bug泄露率降低25%",
+      "difficulty": "低",
+      "resistance": "误报率控制和业务逻辑理解准确度",
+      "scores": {
+        "efficiency": 9,
+        "feasibility": 8,
+        "business_impact": 7,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "An AI agent coding skeptic tries AI agent coding, in excessive detail",
+      "source": "Max Woolf",
+      "source_type": "rss",
+      "source_url": "https://minimaxir.com/2026/02/ai-agent-coding/",
+      "item_id": "rss-max-woolf-1e287d7aaa37"
+    },
+    {
+      "type": "业务赋能",
+      "title": "端侧AI推理优化方案",
+      "trigger": "涉及AI硬件、模型推理、端侧部署",
+      "scenario": "在移动端AI功能场景中，目前做法是调用云端API，核心痛点在于网络延迟、隐私风险、流量消耗",
+      "ai_solution": "利用模型压缩、量化、端侧推理框架（如MLKit/TFLite）实现本地化AI能力，可用于智能推荐、图像处理、语音识别等场景",
+      "implementation": "移动端SDK + 模型管理平台",
+      "audience": [
+        "客户端",
+        "产品运营"
+      ],
+      "impact": "端侧体验延迟降低80%，隐私合规性提升，商业化转化率提升10-15%",
+      "difficulty": "中",
+      "resistance": "模型精度与性能的权衡、机型覆盖",
+      "scores": {
+        "efficiency": 6,
+        "feasibility": 7,
+        "business_impact": 9,
+        "overall": 8
+      },
+      "total_score": 8,
+      "source_title": "May 2021 Gwern.net Newsletter",
+      "source": "Gwern",
+      "source_type": "rss",
+      "source_url": "https://gwern.substack.com/p/may-2021-gwernnet-newsletter",
+      "item_id": "rss-gwern-a01af67dcafc"
+    },
+    {
+      "type": "业务赋能",
+      "title": "制服风格素材工业化生产",
+      "trigger": "特定风格LoRA模型",
+      "scenario": "在校园类、青春类产品的运营活动中，需要大量特定风格（制服、校服等）的素材，传统方式难以快速批量获取",
+      "ai_solution": "使用特定风格LoRA模型批量生成目标风格素材图，支持场景、动作、人物细节的定制化控制",
+      "implementation": "搭建内部素材LoRA生成服务，开放API给运营和设计团队",
+      "audience": [
+        "产品运营"
+      ],
+      "impact": "特定风格素材获取效率提升10倍，减少外部采购成本",
+      "difficulty": "低",
+      "resistance": "需关注版权边界，避免侵权争议",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 8,
+        "business_impact": 6,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "🎨 大洗女子学園 制服 (LORA)",
+      "source": "CivitAI",
+      "source_type": "model",
+      "source_url": "https://civitai.com/models/2546420",
+      "item_id": "civitai-2546420"
+    },
+    {
+      "type": "研发提效",
+      "title": "NVFP4加速版Gemma代码辅助",
+      "trigger": "NVIDIA FP4加速的Gemma大模型",
+      "scenario": "在代码开发过程中，开发者需要辅助生成代码、调试bug、编写文档，当前依赖Copilot等工具但有时无法满足特定场景需求",
+      "ai_solution": "部署NVFP4加速版Gemma-4-31B作为本地代码辅助模型，提供代码生成、代码审查、技术方案文档撰写等能力",
+      "implementation": "集成到企业内部代码平台（如GitLab、CodeHub）作为可选辅助引擎",
+      "audience": [
+        "后端",
+        "大前端",
+        "客户端"
+      ],
+      "impact": "代码生成采纳率提升20%，技术文档撰写效率提升40%",
+      "difficulty": "中",
+      "resistance": "需要GPU资源支持模型部署，运维成本较高",
+      "scores": {
+        "efficiency": 7,
+        "feasibility": 7,
+        "business_impact": 5,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "🤗 LilaRest/gemma-4-31B-it-NVFP4-turbo",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/LilaRest/gemma-4-31B-it-NVFP4-turbo",
+      "item_id": "hf-model-b1cd45c4732d"
+    },
+    {
+      "type": "研发提效",
+      "title": "多模态代码图表理解生成",
+      "trigger": "Gemma-4-31B图文多模态模型",
+      "scenario": "在系统架构设计和技术方案评审中，需要将文字需求转换为架构图、流程图，当前依赖Visio等工具手动绘制，效率低",
+      "ai_solution": "利用图文多模态模型，根据技术方案描述自动生成架构图、流程图、时序图，支持一键导出设计文档",
+      "implementation": "集成到技术方案协作平台（如飞书、Confluence）作为图表生成插件",
+      "audience": [
+        "后端",
+        "技术TL"
+      ],
+      "impact": "技术文档图表制作时间缩短80%，沟通效率提升50%",
+      "difficulty": "中",
+      "resistance": "生成图表的准确性需要人工校验",
+      "scores": {
+        "efficiency": 8,
+        "feasibility": 7,
+        "business_impact": 6,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "🤗 dealignai/Gemma-4-31B-JANG_4M-CRACK",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/dealignai/Gemma-4-31B-JANG_4M-CRACK",
+      "item_id": "hf-model-a3e36e1accc3"
+    },
+    {
+      "type": "业务赋能",
+      "title": "智能商品图理解和生成",
+      "trigger": "Gemma多模态理解能力",
+      "scenario": "在电商商品上新场景中，需要为商品拍摄照片、制作主图和详情页配图，拍摄成本高且周期长",
+      "ai_solution": "利用多模态模型理解商品特征，结合文生图能力自动生成商品展示图，支持背景更换、角度调整、光线优化",
+      "implementation": "集成到电商商品管理后台，作为商品图智能处理模块",
+      "audience": [
+        "产品运营",
+        "客户端"
+      ],
+      "impact": "商品图制作成本降低70%，上新周期缩短50%",
+      "difficulty": "中",
+      "resistance": "需保证生成图的商品特征准确性",
+      "scores": {
+        "efficiency": 7,
+        "feasibility": 7,
+        "business_impact": 8,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "🤗 dealignai/Gemma-4-31B-JANG_4M-CRACK",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/dealignai/Gemma-4-31B-JANG_4M-CRACK",
+      "item_id": "hf-model-a3e36e1accc3"
+    },
+    {
+      "type": "业务赋能",
+      "title": "VoxCPM智能语音播报赋能",
+      "trigger": "中文文本转语音开源模型",
+      "scenario": "在资讯类、阅读类APP中，需要为文章、资讯提供语音播报能力，当前依赖TTS厂商API，成本高且定制化程度低",
+      "ai_solution": "部署VoxCPM2作为自研TTS引擎，提供多音色、多语速的语音播报能力，支持情感化语音定制",
+      "implementation": "集成到APP客户端和后台服务，提供语音合成API",
+      "audience": [
+        "客户端",
+        "产品运营"
+      ],
+      "impact": "TTS API成本降低60%，语音用户体验提升（支持情感化）",
+      "difficulty": "中",
+      "resistance": "需优化模型推理性能以满足实时性要求",
+      "scores": {
+        "efficiency": 7,
+        "feasibility": 7,
+        "business_impact": 8,
+        "overall": 7
+      },
+      "total_score": 7,
+      "source_title": "🤗 openbmb/VoxCPM2",
+      "source": "HuggingFace Models",
+      "source_type": "model",
+      "source_url": "https://huggingface.co/openbmb/VoxCPM2",
+      "item_id": "hf-model-b2cd1173ff38"
+    }
+  ],
+  "top_pick": {
+    "title": "百度文生图赋能营销内容生产",
+    "why_now": "百度ERNIE-Image-Turbo文生图模型",
+    "mvp_path": "集成ERNIE-Image-Turbo到营销内容管理平台，提供运营自助生成素材能力",
+    "strategy": "自下而上：先找2-3个极客同学验证，再整理ROI数据推广"
+  },
+  "analyzed_count": 60,
+  "analyzed_item_ids": [
+    "civitai-2546450",
+    "civitai-2545575",
+    "civitai-2546420",
+    "civitai-2546425",
+    "hf-model-73a346378827",
+    "hf-model-b1cd45c4732d",
+    "hf-model-9f1c55c6cd4c",
+    "hf-model-7799d1d27bd5",
+    "hf-model-a3e36e1accc3",
+    "hf-model-b2cd1173ff38",
+    "hf-model-2d0f16bac7e1",
+    "hf-model-2f79a3598954",
+    "hf-model-f7a19edc802a",
+    "hf-model-3e19acb863ad",
+    "github-e7a886008a80",
+    "github-6b7d140c7b2a",
+    "github-3479977d2cc8",
+    "github-e7ad6c23f068",
+    "github-d2b1af007926",
+    "github-2267c9689012",
+    "github-ecb7de9cc8a0",
+    "github-903275be124a",
+    "github-90a874f93a44",
+    "github-2b6d106c7083",
+    "github-555c3517c1da",
+    "github-ec9987c48f87",
+    "github-41a9464d5efe",
+    "hf-paper-baccfebfc32a",
+    "hf-paper-b3b845486bc8",
+    "hf-paper-7f0a26b58db4",
+    "hf-paper-2f9b9fb282fa",
+    "hf-paper-89900b79412b",
+    "hf-paper-694fd323af68",
+    "hf-paper-0d79ac4675ba",
+    "hf-paper-af1ccc15741a",
+    "hf-paper-0694ac51bca0",
+    "hf-paper-5fc69304e829",
+    "rss-hackernews-daily-90acc08160ae",
+    "atom-simon-willison-52ac47e5af6e",
+    "rss-latent-space-e4e09087d7a0",
+    "rss-ben's-bites-e78689f5551f",
+    "atom-george-hotz-eb1254a2a061",
+    "rss-max-woolf-1e287d7aaa37",
+    "rss-entropic-thoughts-9a51bb10cbcc",
+    "rss-daniel-delaney-d171c531ea27",
+    "rss-grant-slatton-ed0d2efe187e",
+    "rss-simone-417310cdabaf",
+    "rss-gwern-a01af67dcafc",
+    "rss-maurycy-996b8f456044",
+    "rss-antirez-9ff36ae83519",
+    "atom-matklad-09e36c0a6aa6",
+    "atom-armin-ronacher-46e39b9f505c",
+    "rss-overreacted-f8483a3b9cee",
+    "rss-mitchell-hashimoto-dc1de0519785",
+    "rss-xe-iaso-f3f49e167515",
+    "rss-miguel-grinberg-d7e49b59f55b",
+    "atom-eli-bendersky-30e157307cae",
+    "atom-michael-stapelberg-74a089c846a7",
+    "rss-beej-bd53a0b5e435",
+    "rss-mjg59-4a7cec557872"
+  ]
+}
